@@ -1,0 +1,105 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Newsletter from '../components/Newsletter.astro';
+
+const aboutSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'Sobre o Sonar Musical',
+  url: 'https://sonarmusical.com.br/about',
+  inLanguage: 'pt-BR',
+  description: 'O Sonar Musical é um blog de equipamentos musicais que publica análises honestas e guias de compra para guitarristas.',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Sonar Musical',
+    url: 'https://sonarmusical.com.br',
+  },
+};
+---
+
+<BaseLayout
+  title="Sobre"
+  description="O Sonar Musical é seu guia de confiança para equipamentos musicais. Publicamos análises honestas e guias de compra para guitarristas de todos os níveis."
+  schema={aboutSchema}
+>
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <!-- Cabeçalho -->
+    <div class="mb-16 text-center">
+      <div class="inline-flex items-center justify-center w-16 h-16 bg-brand/10 rounded-2xl mb-6" aria-hidden="true">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round">
+          <path d="M9 18V5l12-2v13" />
+          <circle cx="6" cy="18" r="3" />
+          <circle cx="18" cy="16" r="3" />
+        </svg>
+      </div>
+      <h1 class="text-4xl font-black mb-4">Sobre o Sonar Musical</h1>
+      <p class="text-muted text-lg leading-relaxed max-w-xl mx-auto">
+        Seu guia de confiança para guitarras, amplificadores, pedais e tudo mais.
+      </p>
+    </div>
+
+    <!-- Missão -->
+    <section class="mb-12 p-8 bg-elevated border border-border rounded-2xl">
+      <h2 class="text-xl font-bold mb-4 text-brand">Nossa Missão</h2>
+      <p class="text-gray-300 leading-relaxed">
+        Comprar equipamento musical pela internet é difícil. Você está cercado de textos de marketing, especificações infladas e análises escritas por quem passou 20 minutos com o produto. Criamos o Sonar Musical para cortar esse ruído.
+      </p>
+      <p class="text-gray-300 leading-relaxed mt-4">
+        Cada análise que publicamos é escrita por quem realmente toca. Vivemos com os equipamentos, usamos em situações reais e entregamos um veredicto honesto — incluindo o que não funciona e para quem o produto não é indicado.
+      </p>
+    </section>
+
+    <!-- O que cobrimos -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-6">O que Abordamos</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        {[
+          { icon: '🎸', title: 'Guitarras', desc: 'Elétricas e violões em todas as faixas de preço.' },
+          { icon: '🔊', title: 'Amplificadores', desc: 'Amps valvulados, transistorizados e de modelagem para treino e shows.' },
+          { icon: '⚡', title: 'Pedais e Efeitos', desc: 'Overdrive, delay, reverb, modulação e guias completos de pedalboard.' },
+          { icon: '📋', title: 'Guias de Compra', desc: 'Recomendações por estilo, orçamento e nível de experiência.' },
+          { icon: '🎵', title: 'Acessórios', desc: 'Cordas, palhetas, afinadores, straps e os detalhes que fazem diferença.' },
+          { icon: '🎓', title: 'Dicas para Iniciantes', desc: 'Conselhos práticos para quem está começando a jornada musical.' },
+        ].map(({ icon, title, desc }) => (
+          <div class="flex gap-4 p-5 bg-card border border-border rounded-xl">
+            <span class="text-2xl" aria-hidden="true">{icon}</span>
+            <div>
+              <h3 class="font-semibold mb-1">{title}</h3>
+              <p class="text-sm text-muted">{desc}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <!-- Padrões editoriais -->
+    <section class="mb-12 p-8 bg-elevated border border-border rounded-2xl">
+      <h2 class="text-xl font-bold mb-4">Nossos Padrões Editoriais</h2>
+      <ul class="space-y-3">
+        {[
+          'Nunca aceitamos pagamento por análises positivas.',
+          'Se recebemos um produto para análise, informamos claramente.',
+          'Nossas recomendações são baseadas em testes, não em comissões de afiliados.',
+          'Atualizamos as análises quando os produtos mudam significativamente.',
+        ].map((item) => (
+          <li class="flex items-start gap-3 text-gray-300 text-sm">
+            <span class="text-brand mt-0.5 font-bold" aria-hidden="true">✓</span>
+            {item}
+          </li>
+        ))}
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <div class="text-center">
+      <a
+        href="/blog"
+        class="inline-block px-8 py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-lg shadow-brand/25"
+      >
+        Ler Nossas Análises
+      </a>
+    </div>
+  </div>
+
+  <Newsletter />
+</BaseLayout>

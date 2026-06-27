@@ -1,0 +1,114 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const categories = ['Todas', ...Array.from(new Set(allPosts.map((p) => p.data.category)))];
+---
+
+<BaseLayout
+  title="Análises e Artigos"
+  description="Navegue por todas as análises de guitarras, amplificadores, pedais e acessórios do Sonar Musical. Guias de compra e dicas para todos os níveis."
+>
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <!-- Cabeçalho da página -->
+    <div class="mb-12 text-center">
+      <h1 class="text-4xl font-black mb-4">Análises e Artigos</h1>
+      <p class="text-muted max-w-xl mx-auto">
+        {posts.length} artigos sobre guitarras, amplificadores, pedais e muito mais.
+      </p>
+    </div>
+
+    <!-- Filtro por categoria -->
+    <div class="flex flex-wrap gap-2 mb-10 justify-center" role="list" aria-label="Filtrar por categoria" id="category-filters">
+      {categories.map((cat) => (
+        <button
+          type="button"
+          data-category={cat}
+          class={`category-btn px-4 py-2 rounded-full text-sm font-medium border transition-all ${
+            cat === 'Todas'
+              ? 'bg-brand border-brand text-white'
+              : 'bg-transparent border-border text-muted hover:text-white hover:border-white/20'
+          }`}
+          aria-pressed={cat === 'Todas' ? 'true' : 'false'}
+        >
+          {cat}
+        </button>
+      ))}
+    </div>
+
+    <!-- Grid de posts -->
+    <div id="posts-grid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {posts.map((post) => (
+        <div data-category-item={post.data.category}>
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            pubDate={post.data.pubDate}
+            category={post.data.category}
+            image={post.data.image}
+            imageAlt={post.data.imageAlt}
+            rating={post.data.rating}
+            featured={post.data.featured}
+          />
+        </div>
+      ))}
+    </div>
+
+    <!-- Estado vazio -->
+    <div id="empty-state" class="hidden text-center py-20">
+      <p class="text-muted text-lg">Nenhum artigo encontrado nesta categoria ainda.</p>
+      <button data-category="Todas" class="category-btn mt-4 text-brand underline underline-offset-2 text-sm">
+        Mostrar todos os posts
+      </button>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const buttons = document.querySelectorAll<HTMLElement>('.category-btn');
+  const items = document.querySelectorAll<HTMLElement>('[data-category-item]');
+  const emptyState = document.getElementById('empty-state')!;
+
+  function filterPosts(selected: string) {
+    let visible = 0;
+    items.forEach((item) => {
+      const matches = selected === 'Todas' || item.dataset.categoryItem === selected;
+      item.style.display = matches ? '' : 'none';
+      if (matches) visible++;
+    });
+    emptyState.classList.toggle('hidden', visible > 0);
+
+    buttons.forEach((btn) => {
+      const active = btn.dataset.category === selected;
+      btn.classList.toggle('bg-brand', active);
+      btn.classList.toggle('border-brand', active);
+      btn.classList.toggle('text-white', active);
+      btn.classList.toggle('text-muted', !active);
+      btn.classList.toggle('border-border', !active);
+      btn.setAttribute('aria-pressed', String(active));
+    });
+
+    const url = new URL(window.location.href);
+    if (selected === 'Todas') {
+      url.searchParams.delete('categoria');
+    } else {
+      url.searchParams.set('categoria', selected);
+    }
+    window.history.replaceState({}, '', url);
+  }
+
+  buttons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      filterPosts(btn.dataset.category!);
+    });
+  });
+
+  // Aplica filtro da URL ao carregar
+  const urlCategory = new URLSearchParams(window.location.search).get('categoria');
+  if (urlCategory) filterPosts(urlCategory);
+</script>

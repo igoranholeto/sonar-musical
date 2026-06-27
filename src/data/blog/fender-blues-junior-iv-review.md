@@ -1,0 +1,63 @@
+---
+title: "Fender Blues Junior IV: Ainda o Rei dos Amplificadores de Prática?"
+description: "O Blues Junior é o amplificador favorito dos guitarristas há décadas. Testamos a versão mais recente para ver se ainda se sustenta em 2025."
+pubDate: 2025-01-22
+category: "Amplificadores"
+rating: 4.5
+pros: ["Excelente headroom limpo", "Reverb de mola real e generoso", "Compacto e portátil", "Responde bem ao volume da guitarra"]
+cons: ["Fica alto antes de saturar naturalmente", "Alto-falante Eminence de fábrica deixa a desejar", "Sem loop de efeitos"]
+tags: ["fender", "amplificador", "amp valvulado", "amp de prática", "blues", "review"]
+featured: true
+author: "Sonar Musical"
+---
+
+Poucos amplificadores têm o prestígio duradouro do Fender Blues Junior. Desde sua estreia em 1995, ele esteve em quartos, salas de ensaio e palcos de clube — uma daquelas peças raras de equipamento que funciona em qualquer nível de musicalidade. O Blues Junior IV é a versão mais recente, e passamos várias semanas com um para descobrir se a Fender manteve a fórmula certa.
+
+## Primeiras Impressões
+
+O Blues Junior IV chega numa carcaça compacta em tweed que esconde o quanto de volume ele consegue produzir. Com 15 watts rodando um único alto-falante de 12" da Eminence, parece uma caixinha amigável. E é — até você passar do meio no controle de volume.
+
+A qualidade de construção parece sólida. Os controles são claramente identificados, os botões têm uma resistência satisfatória e o chassi parece resistente sem ser pesado. É um amplificador pronto para shows que não precisa de roadie.
+
+## Controles e Recursos
+
+O painel de controle é reconfortantemente simples:
+- **Volume** (ganho do pré-amplificador)
+- **Master** (volume de saída)
+- **Bass / Mid / Treble** (equalização)
+- **Reverb**
+- **Chave Fat** — adiciona calor no médio-grave e ganho
+
+A chave Fat merece destaque especial. Ativá-la transforma o amplificador de uma máquina de som limpo e firme para algo mais quente e comprimido. Para quem toca blues, é a diferença entre educado e bravo. Para os demais, é uma boa variação tonal sem precisar de um pedal a mais.
+
+O reverb de mola é um dos melhores nesta faixa de preço. É rico sem ser excessivo, e responde naturalmente ao volume — abre um pouco em volumes mais altos, como um reverb vintage faria.
+
+## Sons Limpos
+
+É aqui que o Blues Junior conquista sua reputação. O canal limpo é Fender puro: cristalino, articulado e dinamicamente responsivo. Abaixe o volume na guitarra e ele limpa lindamente. Toque com força e ele começa a comprimir e respirar. Este é um amplificador que recompensa quem toca com expressão.
+
+A resposta de graves num único 12" é naturalmente limitada, mas o Blues Junior lida com isso com elegância. Você não vai confundir com um gabinete 4x12", mas também não tem boom ou barro desconfortável.
+
+## Distorção e Overdrive
+
+Aqui a nuance importa. O Blues Junior não é um amp de alto ganho, e tentar fazê-lo parecer um leva à decepção. Em volumes mais altos de pré-amp, o amplificador sim satura — mas você vai precisar empurrar o volume master além do confortável para a maioria dos ambientes domésticos.
+
+A maioria dos guitarristas usa um pedal de overdrive leve na frente (um Tube Screamer ou similar) para empurrar o amp para saturação em volumes mais baixos. Essa combinação soa muito bem. O amp responde a pedais de forma excelente.
+
+## Aviso sobre Volume
+
+Quinze watts de potência valvulada num alto-falante de 12" é **alto** — mais alto do que muita gente espera. Se você toca estritamente no quarto e precisa de baixo volume, considere o Blues Cube menor ou um amp de prática com saída para fone. O Blues Junior realmente brilha em volumes que nem sempre são adequados para apartamentos.
+
+## Para Quem é Este Amplificador?
+
+- Músicos que tocam ao vivo e precisam de um amp valvulado confiável e portátil
+- Guitarristas de blues e rock clássico que querem os sons limpos autênticos da Fender
+- Jogadores intermediários prontos para dar um passo à frente de um amp de modelagem
+
+## Veredicto
+
+O Blues Junior IV não reinventa a fórmula, e não precisa. Ele continua sendo um dos melhores amps valvulados pequenos que você pode comprar pelo preço. Os sons limpos são genuinamente bonitos, o reverb é uma atração à parte, e a qualidade de construção passa confiança de que vai durar.
+
+O caminho de upgrade do alto-falante (muitos guitarristas trocam o Eminence de fábrica por um Celestion ou Jensen) extrai ainda mais vida de um amp já excelente — embora soe muito bem de fábrica.
+
+**Avaliação: 4,5 / 5**

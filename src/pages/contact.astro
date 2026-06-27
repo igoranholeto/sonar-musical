@@ -1,0 +1,114 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const contactSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  name: 'Contato — Sonar Musical',
+  url: 'https://sonarmusical.com.br/contact',
+  inLanguage: 'pt-BR',
+};
+---
+
+<BaseLayout
+  title="Contato"
+  description="Tem uma dúvida, quer sugerir um produto para análise ou apenas quer falar com a gente? Entre em contato com o Sonar Musical."
+  schema={contactSchema}
+>
+  <div class="max-w-2xl mx-auto px-4 py-16">
+    <!-- Cabeçalho -->
+    <div class="mb-12 text-center">
+      <h1 class="text-4xl font-black mb-4">Entre em Contato</h1>
+      <p class="text-muted text-lg">
+        Tem uma pergunta, sugestão de análise ou só quer dizer oi? Lemos todas as mensagens.
+      </p>
+    </div>
+
+    <!-- Formulário de contato -->
+    <form
+      class="space-y-5 mb-16"
+      aria-label="Formulário de contato"
+      action="#"
+      method="post"
+      novalidate
+    >
+      <div class="grid sm:grid-cols-2 gap-5">
+        <div>
+          <label for="name" class="block text-sm font-medium mb-2">Nome</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            required
+            placeholder="Seu nome"
+            class="w-full px-4 py-3 bg-card border border-border rounded-xl text-white placeholder-subtle text-sm focus:outline-none focus:border-brand transition-colors"
+          />
+        </div>
+        <div>
+          <label for="contact-email" class="block text-sm font-medium mb-2">E-mail</label>
+          <input
+            id="contact-email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            required
+            placeholder="seu@email.com"
+            class="w-full px-4 py-3 bg-card border border-border rounded-xl text-white placeholder-subtle text-sm focus:outline-none focus:border-brand transition-colors"
+          />
+        </div>
+      </div>
+
+      <div>
+        <label for="subject" class="block text-sm font-medium mb-2">Assunto</label>
+        <select
+          id="subject"
+          name="subject"
+          class="w-full px-4 py-3 bg-card border border-border rounded-xl text-white text-sm focus:outline-none focus:border-brand transition-colors appearance-none"
+        >
+          <option value="">Selecione um assunto…</option>
+          <option value="review-request">Sugestão de análise</option>
+          <option value="question">Dúvida geral</option>
+          <option value="correction">Correção ou atualização</option>
+          <option value="partnership">Parceria / colaboração</option>
+          <option value="other">Outro</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="message" class="block text-sm font-medium mb-2">Mensagem</label>
+        <textarea
+          id="message"
+          name="message"
+          required
+          rows="5"
+          placeholder="O que você quer nos dizer?"
+          class="w-full px-4 py-3 bg-card border border-border rounded-xl text-white placeholder-subtle text-sm focus:outline-none focus:border-brand transition-colors resize-none"
+        ></textarea>
+      </div>
+
+      <button
+        type="submit"
+        class="w-full py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-lg shadow-brand/25"
+      >
+        Enviar Mensagem
+      </button>
+    </form>
+
+    <!-- Cards informativos -->
+    <div class="grid sm:grid-cols-2 gap-4">
+      <div class="p-6 bg-elevated border border-border rounded-xl">
+        <h2 class="font-semibold mb-2">Sugestões de Análise</h2>
+        <p class="text-sm text-muted">
+          Tem um produto que gostaria que analisássemos? Nos conte a marca, modelo e onde encontrá-lo.
+        </p>
+      </div>
+      <div class="p-6 bg-elevated border border-border rounded-xl">
+        <h2 class="font-semibold mb-2">Tempo de Resposta</h2>
+        <p class="text-sm text-muted">
+          Geralmente respondemos em 2 a 3 dias úteis. Para assuntos urgentes, mencione no assunto da mensagem.
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
