@@ -1,0 +1,21 @@
+backend:
+  name: github
+  repo: igoranholeto/sonar-musical
+  branch: master
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: blog
+    label: Artigos
+    folder: src/data/blog
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: Título, name: title, widget: string }
+      - { label: Data, name: date, widget: datetime }
+      - { label: Descrição, name: description, widget: text }
+      - { label: Categoria, name: category, widget: select, options: [Captadores, Amplificadores, Pedaleiras, Guitarras] }
+      - { label: Imagem de capa, name: cover, widget: image, required: false }
+      - { label: Conteúdo, name: body, widget: markdown }
