@@ -1,17 +1,92 @@
 ---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Hero from '../components/Hero.astro';
+import PostCard from '../components/PostCard.astro';
+import CategoryGrid from '../components/CategoryGrid.astro';
+import Newsletter from '../components/Newsletter.astro';
 
+const allPosts = await getCollection('blog');
+const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+const featuredPosts = posts.filter((p) => p.data.featured).slice(0, 3);
+const latestPosts = posts.slice(0, 6);
+
+const homeSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Sonar Musical',
+  url: 'https://sonarmusical.com.br',
+  inLanguage: 'pt-BR',
+  description: 'Análises honestas, guias de compra e dicas para guitarristas de todos os níveis.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: 'https://sonarmusical.com.br/blog?q={search_term_string}',
+    'query-input': 'required name=search_term_string',
+  },
+};
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout
+  title="Sonar Musical"
+  description="Análises honestas, guias de compra e dicas sobre guitarras, amplificadores, pedais e mais. Encontre o equipamento certo sem enrolação."
+  schema={homeSchema}
+>
+  <Hero postsCount={posts.length} />
+
+  <!-- Posts em destaque -->
+  {featuredPosts.length > 0 && (
+    <section class="py-16 max-w-6xl mx-auto px-4">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="text-2xl font-bold">Análises em Destaque</h2>
+        <a href="/blog" class="text-sm text-brand font-medium hover:underline underline-offset-2">
+          Ver todas →
+        </a>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {featuredPosts.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            pubDate={post.data.pubDate}
+            category={post.data.category}
+            image={post.data.image}
+            imageAlt={post.data.imageAlt}
+            rating={post.data.rating}
+            featured={post.data.featured}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Grid de categorias -->
+  <CategoryGrid />
+
+  <!-- Artigos mais recentes -->
+  <section class="py-16 max-w-6xl mx-auto px-4">
+    <div class="flex items-center justify-between mb-8">
+      <h2 class="text-2xl font-bold">Artigos Recentes</h2>
+      <a href="/blog" class="text-sm text-brand font-medium hover:underline underline-offset-2">
+        Ver todos →
+      </a>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      {latestPosts.map((post) => (
+        <PostCard
+          title={post.data.title}
+          description={post.data.description}
+          slug={post.id}
+          pubDate={post.data.pubDate}
+          category={post.data.category}
+          image={post.data.image}
+          imageAlt={post.data.imageAlt}
+          rating={post.data.rating}
+          featured={post.data.featured}
+        />
+      ))}
+    </div>
+  </section>
+
+  <Newsletter />
+</BaseLayout>

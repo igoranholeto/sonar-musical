@@ -1,0 +1,45 @@
+---
+interface Props {
+  value: number;
+  size?: 'sm' | 'md';
+}
+
+const { value, size = 'md' } = Astro.props;
+
+const rounded = Math.round(value * 2) / 2;
+const starSize = size === 'sm' ? 12 : 16;
+---
+
+<div
+  class="flex items-center gap-1"
+  role="img"
+  aria-label={`Rating: ${value} out of 5 stars`}
+  title={`${value}/5`}
+>
+  {Array.from({ length: 5 }, (_, i) => {
+    const filled = i + 1 <= rounded;
+    const half = !filled && i + 0.5 === rounded;
+    return (
+      <svg
+        width={starSize}
+        height={starSize}
+        viewBox="0 0 24 24"
+        aria-hidden="true"
+      >
+        <defs>
+          <linearGradient id={`half-${i}`}>
+            <stop offset="50%" stop-color="#e63946" />
+            <stop offset="50%" stop-color="#2a2a2a" />
+          </linearGradient>
+        </defs>
+        <polygon
+          points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+          fill={filled ? '#e63946' : half ? `url(#half-${i})` : '#2a2a2a'}
+          stroke={filled || half ? '#e63946' : '#2a2a2a'}
+          stroke-width="0"
+        />
+      </svg>
+    );
+  })}
+  <span class="text-xs text-muted ml-0.5">{value}/5</span>
+</div>

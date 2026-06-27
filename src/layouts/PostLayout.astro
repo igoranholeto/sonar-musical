@@ -1,0 +1,283 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Rating from '../components/Rating.astro';
+
+interface Props {
+  title: string;
+  description: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  category: string;
+  image?: string;
+  imageAlt?: string;
+  rating?: number;
+  pros?: string[];
+  cons?: string[];
+  tags?: string[];
+  author?: string;
+}
+
+const {
+  title,
+  description,
+  pubDate,
+  updatedDate,
+  category,
+  image,
+  imageAlt,
+  rating,
+  pros,
+  cons,
+  tags = [],
+  author = 'Sonar Musical',
+} = Astro.props;
+
+const formattedDate = pubDate.toLocaleDateString('pt-BR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const formattedUpdated = updatedDate?.toLocaleDateString('pt-BR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': rating ? 'Review' : 'Article',
+  headline: title,
+  description,
+  inLanguage: 'pt-BR',
+  author: { '@type': 'Organization', name: author },
+  datePublished: pubDate.toISOString(),
+  ...(updatedDate && { dateModified: updatedDate.toISOString() }),
+  publisher: {
+    '@type': 'Organization',
+    name: 'Sonar Musical',
+    url: 'https://sonarmusical.com.br',
+  },
+  ...(image && { image: `https://sonarmusical.com.br${image}` }),
+  ...(rating && {
+    reviewRating: {
+      '@type': 'Rating',
+      ratingValue: rating,
+      bestRating: 5,
+      worstRating: 1,
+    },
+  }),
+};
+
+const categoryColors: Record<string, string> = {
+  Guitarras: 'bg-blue-900/40 text-blue-300',
+  Amplificadores: 'bg-amber-900/40 text-amber-300',
+  Pedais: 'bg-green-900/40 text-green-300',
+  Acessórios: 'bg-purple-900/40 text-purple-300',
+  'Guias de Compra': 'bg-brand/20 text-brand',
+  'Dicas para Iniciantes': 'bg-teal-900/40 text-teal-300',
+};
+const badgeClass = categoryColors[category] ?? 'bg-gray-800 text-gray-300';
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  image={image}
+  type="article"
+  pubDate={pubDate}
+  author={author}
+  schema={articleSchema}
+>
+  <article class="max-w-3xl mx-auto px-4 py-16">
+    <!-- Breadcrumb -->
+    <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
+      <a href="/" class="hover:text-white transition-colors">Início</a>
+      <span aria-hidden="true">/</span>
+      <a href="/blog" class="hover:text-white transition-colors">Blog</a>
+      <span aria-hidden="true">/</span>
+      <span class="text-white" aria-current="page">{title}</span>
+    </nav>
+
+    <!-- Categoria + Avaliação -->
+    <div class="flex items-center gap-3 mb-4">
+      <a
+        href={`/blog?categoria=${encodeURIComponent(category)}`}
+        class={`text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full ${badgeClass}`}
+      >
+        {category}
+      </a>
+      {rating && <Rating value={rating} />}
+    </div>
+
+    <!-- Título -->
+    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-4">{title}</h1>
+
+    <!-- Metadados -->
+    <div class="flex flex-wrap items-center gap-4 text-sm text-muted mb-8 pb-8 border-b border-border">
+      <span>Por <strong class="text-white">{author}</strong></span>
+      <time datetime={pubDate.toISOString()}>
+        {formattedDate}
+      </time>
+      {updatedDate && (
+        <span>
+          Atualizado em: <time datetime={updatedDate.toISOString()}>{formattedUpdated}</time>
+        </span>
+      )}
+    </div>
+
+    <!-- Imagem de capa -->
+    {image && (
+      <figure class="mb-10 rounded-xl overflow-hidden">
+        <img
+          src={image}
+          alt={imageAlt ?? title}
+          width="768"
+          height="432"
+          class="w-full object-cover aspect-video bg-card"
+          loading="eager"
+        />
+      </figure>
+    )}
+
+    <!-- Prós / Contras -->
+    {(pros?.length || cons?.length) && (
+      <div class="grid sm:grid-cols-2 gap-4 mb-10 p-6 bg-elevated rounded-xl border border-border">
+        {pros?.length && (
+          <div>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-green-400 mb-3">Prós</h2>
+            <ul class="space-y-2">
+              {pros.map((p) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <span class="text-green-400 mt-0.5" aria-hidden="true">✓</span>
+                  <span>{p}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+        {cons?.length && (
+          <div>
+            <h2 class="text-sm font-bold uppercase tracking-wider text-red-400 mb-3">Contras</h2>
+            <ul class="space-y-2">
+              {cons.map((c) => (
+                <li class="flex items-start gap-2 text-sm">
+                  <span class="text-red-400 mt-0.5" aria-hidden="true">✗</span>
+                  <span>{c}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    )}
+
+    <!-- Conteúdo do post -->
+    <div class="prose-post">
+      <slot />
+    </div>
+
+    <!-- Tags -->
+    {tags.length > 0 && (
+      <footer class="mt-12 pt-8 border-t border-border">
+        <p class="text-sm text-muted mb-3">Tags:</p>
+        <div class="flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <span class="text-xs bg-card border border-border px-3 py-1 rounded-full text-muted">
+              #{tag}
+            </span>
+          ))}
+        </div>
+      </footer>
+    )}
+  </article>
+
+  <style>
+    .prose-post :global(h2) {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+    .prose-post :global(h3) {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: #f0f0f0;
+    }
+    .prose-post :global(p) {
+      line-height: 1.8;
+      margin-bottom: 1.25rem;
+      color: #cccccc;
+    }
+    .prose-post :global(ul),
+    .prose-post :global(ol) {
+      margin-bottom: 1.25rem;
+      padding-left: 1.5rem;
+      color: #cccccc;
+    }
+    .prose-post :global(li) {
+      margin-bottom: 0.5rem;
+      line-height: 1.7;
+    }
+    .prose-post :global(ul li) {
+      list-style-type: disc;
+    }
+    .prose-post :global(ol li) {
+      list-style-type: decimal;
+    }
+    .prose-post :global(strong) {
+      color: #ffffff;
+      font-weight: 600;
+    }
+    .prose-post :global(a) {
+      color: #e63946;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .prose-post :global(a:hover) {
+      color: #ff5b67;
+    }
+    .prose-post :global(blockquote) {
+      border-left: 3px solid #e63946;
+      padding-left: 1rem;
+      margin: 1.5rem 0;
+      color: #aaaaaa;
+      font-style: italic;
+    }
+    .prose-post :global(code) {
+      background: #1e1e1e;
+      padding: 0.15em 0.4em;
+      border-radius: 4px;
+      font-size: 0.875em;
+      color: #e63946;
+    }
+    .prose-post :global(table) {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      font-size: 0.95rem;
+    }
+    .prose-post :global(th) {
+      background: #1e1e1e;
+      padding: 0.75rem 1rem;
+      text-align: left;
+      font-weight: 600;
+      border-bottom: 1px solid #2a2a2a;
+    }
+    .prose-post :global(td) {
+      padding: 0.75rem 1rem;
+      border-bottom: 1px solid #1a1a1a;
+      color: #cccccc;
+    }
+    .prose-post :global(tr:hover td) {
+      background: #111111;
+    }
+    .prose-post :global(hr) {
+      border-color: #2a2a2a;
+      margin: 2rem 0;
+    }
+  </style>
+</BaseLayout>

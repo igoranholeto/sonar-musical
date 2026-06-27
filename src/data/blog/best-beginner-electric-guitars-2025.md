@@ -1,0 +1,67 @@
+---
+title: "Melhores Guitarras Elétricas para Iniciantes em 2025"
+description: "Começando sua jornada na guitarra? Avaliamos as melhores guitarras elétricas para iniciantes em todas as faixas de preço para você fazer a escolha certa."
+pubDate: 2025-01-10
+category: "Guias de Compra"
+tags: ["iniciante", "guitarra elétrica", "guia de compra", "Squier", "Epiphone"]
+featured: true
+author: "Sonar Musical"
+---
+
+Escolher a primeira guitarra elétrica é uma das decisões mais empolgantes — e ao mesmo tempo mais confusas — que você vai tomar como músico iniciante. Com centenas de opções em faixas de preço muito diferentes, é fácil gastar mais do que precisa ou economizar demais e acabar com um instrumento que vai te travar.
+
+Passamos meses testando guitarras para iniciantes das principais marcas para trazer esse guia definitivo.
+
+## O que faz uma boa guitarra para iniciante?
+
+Uma boa guitarra para iniciante precisa equilibrar três coisas: **tocabilidade**, **durabilidade** e **custo-benefício**. Ela deve ser confortável o suficiente para incentivar a prática constante, bem construída para manter a afinação e com um preço justo pela qualidade entregue.
+
+Aqui estão os instrumentos que se destacaram nos nossos testes.
+
+## 1. Squier Classic Vibe '50s Stratocaster — Melhor Geral
+
+Se pudéssemos recomendar apenas uma guitarra para iniciantes, seria essa. A linha Classic Vibe da Squier (marca de entrada da Fender) entrega muito acima do seu preço. O braço é confortável, as captações têm personalidade real e a qualidade de construção surpreende positivamente.
+
+**Especificações:**
+- Corpo: Alder (Amieiro)
+- Braço: Maple, perfil C
+- Captações: 3 x single-coil Alnico
+- Preço estimado: R$ 2.800–3.400
+
+O som é genuinamente bom — não "bom para o preço", apenas bom. Você vai ouvir o território clássico da Strat: brilhante, articulado, com aquele "quack" característico na posição central.
+
+## 2. Epiphone Les Paul Standard '50s — Melhor para Rock
+
+Se o som brilhante da Stratocaster não é o seu estilo e você prefere rock pesado e blues, a Epiphone Les Paul Standard é a escolha certa. Ela entrega o som encorpado e quente dos humbuckers de uma Gibson por uma fração do preço.
+
+**Especificações:**
+- Corpo: Mogno com tampo de maple
+- Braço: Mogno, perfil C arredondado
+- Captações: 2 x Alnico Classic Pro humbuckers
+- Preço estimado: R$ 3.200–3.800
+
+O único ponto negativo real é o peso — Les Pauls são pesadas, e esta não é exceção. Vale considerar se você planeja tocá-la em pé por longos períodos.
+
+## 3. Yamaha Pacifica 112V — Melhor Até R$ 2.500
+
+A Yamaha Pacifica é uma recomendação consagrada, e por boas razões. Controle de qualidade japonês a um preço acessível. A configuração HSS de captações (um humbucker e dois single-coils) oferece versatilidade que a maioria das guitarras de entrada não consegue igualar.
+
+**Especificações:**
+- Corpo: Alder
+- Braço: Maple
+- Captações: HSS — humbucker Alnico V + 2 single-coils
+- Preço estimado: R$ 2.200–2.700
+
+Não é a guitarra mais bonita desta lista, mas toca muito bem, mantém a afinação e é fácil de regular. A consistência de qualidade da Yamaha não tem comparação na faixa de preço.
+
+## O que evitar
+
+**Fuja dos "kits guitarra" de marcas desconhecidas.** Aquelas guitarras que vêm em pacotes completos por R$ 500–700 (guitarra + amplificador + acessórios) são, quase sem exceção, ruins. São difíceis de afinar, desconfortáveis de tocar e desanimam qualquer iniciante. Gaste um pouco mais por uma marca reconhecida.
+
+**Compre de um lugar com política de devolução.** Cada guitarra toca de forma ligeiramente diferente, mesmo dentro do mesmo modelo. Se possível, experimente antes de comprar. Se comprar online, certifique-se de que pode devolver.
+
+## Conclusão
+
+Para a maioria dos iniciantes, a Squier Classic Vibe ou a Yamaha Pacifica serão suficientes por muitos anos — possivelmente mais do que você espera. São instrumentos que você vai querer tirar do case muito depois de ter superado o estágio de "iniciante".
+
+Boas práticas!
