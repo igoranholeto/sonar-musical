@@ -1,0 +1,133 @@
+---
+interface Props {
+  produto: string;
+  descricao?: string;
+  url: string;
+  preco?: string;
+  imagem?: string;
+  imagemAlt?: string;
+}
+
+const { produto, descricao, url, preco, imagem, imagemAlt } = Astro.props;
+---
+
+<div class="afiliado-cta">
+  <div class="afiliado-cta__badge">Recomendado pelo Sonar Musical</div>
+  <div class="afiliado-cta__body">
+    {imagem && (
+      <div class="afiliado-cta__img-wrap">
+        <img src={imagem} alt={imagemAlt ?? produto} width="120" height="120" loading="lazy" />
+      </div>
+    )}
+    <div class="afiliado-cta__info">
+      <p class="afiliado-cta__produto">{produto}</p>
+      {descricao && <p class="afiliado-cta__descricao">{descricao}</p>}
+      {preco && <p class="afiliado-cta__preco">{preco}</p>}
+    </div>
+    <a href={url} target="_blank" rel="noopener noreferrer sponsored" class="afiliado-cta__btn">
+      Ver Melhor Preço
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+        <polyline points="15 3 21 3 21 9"/>
+        <line x1="10" y1="14" x2="21" y2="3"/>
+      </svg>
+    </a>
+  </div>
+</div>
+
+<style>
+  .afiliado-cta {
+    margin: 2rem 0;
+    border: 1px solid #e63946;
+    border-radius: 12px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #1a1a1a 0%, #1f0a0d 100%);
+  }
+
+  .afiliado-cta__badge {
+    background: #e63946;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.35rem 1rem;
+    display: inline-block;
+  }
+
+  .afiliado-cta__body {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.25rem 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .afiliado-cta__img-wrap {
+    flex-shrink: 0;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #111;
+  }
+
+  .afiliado-cta__img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .afiliado-cta__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    flex: 1;
+    min-width: 160px;
+  }
+
+  .afiliado-cta__produto {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .afiliado-cta__descricao {
+    font-size: 0.875rem;
+    color: #888888;
+    margin: 0;
+  }
+
+  .afiliado-cta__preco {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #e63946;
+    margin: 0;
+  }
+
+  .afiliado-cta__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: #e63946;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    padding: 0.65rem 1.25rem;
+    border-radius: 8px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: background 0.2s, transform 0.15s;
+    flex-shrink: 0;
+  }
+
+  .afiliado-cta__btn:hover {
+    background: #b5202d;
+    transform: translateY(-1px);
+  }
+
+  .afiliado-cta__btn:active {
+    transform: translateY(0);
+  }
+</style>
