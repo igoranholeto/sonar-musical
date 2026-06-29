@@ -10,11 +10,92 @@ collections:
     label: Artigos
     folder: src/data/blog
     create: true
+    extension: mdx
+    format: frontmatter
     slug: "{{slug}}"
     fields:
+      # ── Básico ──────────────────────────────────────────────
       - { label: Título, name: title, widget: string }
-      - { label: Data, name: date, widget: datetime }
-      - { label: Descrição, name: description, widget: text }
-      - { label: Categoria, name: category, widget: select, options: [Captadores, Amplificadores, Pedaleiras, Guitarras] }
-      - { label: Imagem de capa, name: cover, widget: image, required: false }
+      - { label: Meta Title (SEO), name: metaTitle, widget: string, required: false, hint: "Se vazio, usa o título do post. Ideal: até 60 caracteres." }
+      - { label: Descrição / Meta Description, name: description, widget: text, hint: "Ideal: entre 140 e 160 caracteres." }
+      - label: Status
+        name: draft
+        widget: select
+        options:
+          - { label: Publicado, value: false }
+          - { label: Rascunho, value: true }
+        default: false
+      - { label: Data de publicação, name: pubDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
+      - { label: Data de atualização, name: updatedDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Preencha quando atualizar o conteúdo — sinaliza ao Google que o post é fresco." }
+      - { label: Autor, name: author, widget: string, default: "Sonar Musical" }
+
+      # ── Classificação ────────────────────────────────────────
+      - label: Categoria
+        name: category
+        widget: select
+        options:
+          - Guitarras
+          - Amplificadores
+          - Pedais
+          - Acessórios
+          - Guias de Compra
+          - Dicas para Iniciantes
+      - label: Nível de dificuldade
+        name: level
+        widget: select
+        required: false
+        options:
+          - { label: Iniciante, value: iniciante }
+          - { label: Intermediário, value: intermediario }
+          - { label: Avançado, value: avancado }
+      - { label: Tags, name: tags, widget: list, required: false, field: { label: Tag, name: item, widget: string } }
+      - { label: Destaque na home, name: featured, widget: boolean, default: false }
+      - { label: Noindex (não indexar no Google), name: noindex, widget: boolean, default: false, hint: "Ative apenas para rascunhos ou páginas de teste." }
+
+      # ── Imagens ──────────────────────────────────────────────
+      - { label: Imagem de capa, name: image, widget: image, required: false }
+      - { label: Alt text da imagem de capa, name: imageAlt, widget: string, required: false, hint: "Descreva a imagem para acessibilidade e SEO." }
+      - { label: Imagem Open Graph (redes sociais), name: ogImage, widget: image, required: false, hint: "Se vazio, usa a imagem de capa. Tamanho ideal: 1200x630px." }
+
+      # ── Schema / Rich Results ─────────────────────────────────
+      - label: Tipo de conteúdo (Schema)
+        name: schemaType
+        widget: select
+        required: false
+        default: Article
+        options:
+          - { label: Artigo, value: Article }
+          - { label: Review / Análise, value: Review }
+          - { label: Guia passo a passo, value: HowTo }
+      - label: Avaliação (1 a 5)
+        name: rating
+        widget: number
+        value_type: float
+        min: 1
+        max: 5
+        step: 0.5
+        required: false
+        hint: "Usado apenas em posts do tipo Review."
+      - { label: Pontos positivos, name: pros, widget: list, required: false, field: { label: Ponto positivo, name: item, widget: string } }
+      - { label: Pontos negativos, name: cons, widget: list, required: false, field: { label: Ponto negativo, name: item, widget: string } }
+
+      # ── Afiliados ─────────────────────────────────────────────
+      - { label: Post patrocinado, name: sponsored, widget: boolean, default: false, hint: "Adiciona disclaimer de conteúdo patrocinado no topo do post." }
+      - label: Produtos afiliados
+        name: produtos
+        widget: list
+        required: false
+        hint: "Adicione os produtos que aparecem no post. Serão usados para gerar os CTAs."
+        fields:
+          - { label: Nome do produto, name: nome, widget: string }
+          - { label: Descrição curta, name: descricao, widget: string, required: false }
+          - { label: Preço, name: preco, widget: string, required: false, hint: "Ex: A partir de R$ 2.800" }
+          - { label: Imagem do produto, name: imagem, widget: image, required: false }
+          - { label: Alt text da imagem, name: imagemAlt, widget: string, required: false }
+          - { label: URL afiliado, name: url, widget: string }
+
+      # ── Nota do editor ────────────────────────────────────────
+      - { label: Nota do editor, name: editorNote, widget: text, required: false, hint: "Aparece em destaque no topo do post. Use para atualizações importantes." }
+
+      # ── Conteúdo ──────────────────────────────────────────────
       - { label: Conteúdo, name: body, widget: markdown }
