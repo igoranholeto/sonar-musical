@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: igoranholeto/sonar-musical
+  name: git-gateway
   branch: master
-  site_domain: fastidious-kashata-25f3a7.netlify.app
 
 media_folder: public/images
 public_folder: /images
