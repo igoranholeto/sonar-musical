@@ -116,6 +116,9 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
             });
           }
         });
+        if (window.location.hash.includes('recovery_token') || window.location.hash.includes('invite_token')) {
+          window.netlifyIdentity.open();
+        }
       }
     </script>
   </body>
