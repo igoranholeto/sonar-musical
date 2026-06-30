@@ -11,9 +11,10 @@ interface Props {
   imageAlt?: string;
   rating?: number;
   featured?: boolean;
+  eager?: boolean;
 }
 
-const { title, description, slug, pubDate, category, image, imageAlt, rating, featured } = Astro.props;
+const { title, description, slug, pubDate, category, image, imageAlt, rating, featured, eager = false } = Astro.props;
 
 const formattedDate = pubDate.toLocaleDateString('pt-BR', {
   month: 'short',
@@ -42,8 +43,9 @@ const badgeClass = categoryColors[category] ?? 'bg-gray-800 text-gray-300';
         width="400"
         height="225"
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-        loading="lazy"
-        decoding="async"
+        loading={eager ? 'eager' : 'lazy'}
+        fetchpriority={eager ? 'high' : 'auto'}
+        decoding={eager ? 'sync' : 'async'}
       />
     ) : (
       <div class="w-full h-full flex items-center justify-center">
