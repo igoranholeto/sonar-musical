@@ -32,8 +32,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <!-- Seleção de afinação -->
     <div class="mb-8">
-      <label class="block text-center text-sm text-gray-400 mb-3">Afinação</label>
-      <div id="tuning-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
+      <label for="tuning-select" class="block text-center text-sm text-gray-400 mb-3">Afinação</label>
+      <select id="tuning-select" class="tuning-select w-full"></select>
     </div>
 
     <!-- Visor do afinador -->
@@ -159,26 +159,31 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     border-color: var(--color-brand) !important;
     color: var(--color-brand) !important;
   }
-  .tuning-btn {
+  .tuning-select {
     background: var(--color-card);
     border: 1px solid var(--color-border);
-    color: #888;
-    padding: 0.5rem 0.75rem;
-    border-radius: 0.75rem;
-    font-size: 0.8rem;
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.15s;
-    text-align: center;
-  }
-  .tuning-btn:hover {
-    border-color: #555;
     color: #fff;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    cursor: pointer;
+    outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding-right: 2.5rem;
+    transition: border-color 0.15s;
   }
-  .active-tuning {
-    background: rgba(230, 57, 70, 0.12) !important;
-    border-color: var(--color-brand) !important;
-    color: var(--color-brand) !important;
+  .tuning-select:focus,
+  .tuning-select:hover {
+    border-color: var(--color-brand);
+  }
+  .tuning-select option {
+    background: #1a1a1a;
+    color: #fff;
   }
   .string-card {
     background: var(--color-card);
@@ -282,24 +287,25 @@ const needle       = document.getElementById('needle')!;
 const tunerDisplay = document.getElementById('tuner-display')!;
 const inTuneOverlay = document.getElementById('in-tune-overlay')!;
 const stringsDisplay = document.getElementById('strings-display')!;
-const tuningGrid   = document.getElementById('tuning-grid')!;
+const tuningSelect   = document.getElementById('tuning-select') as HTMLSelectElement;
 
-// ─── Render afinações ─────────────────────────────────────────────────────────
+// ─── Render afinações no dropdown ─────────────────────────────────────────────
 function renderTunings() {
-  tuningGrid.innerHTML = '';
+  tuningSelect.innerHTML = '';
   TUNINGS[instrument].forEach((t, i) => {
-    const btn = document.createElement('button');
-    btn.className = 'tuning-btn' + (i === currentTuningIdx ? ' active-tuning' : '');
-    btn.innerHTML = `<div class="font-semibold">${t.label}</div><div class="text-xs opacity-60 mt-0.5">${t.strings.join(' ')}</div>`;
-    btn.addEventListener('click', () => {
-      currentTuningIdx = i;
-      renderTunings();
-      renderStrings();
-      resetDisplay();
-    });
-    tuningGrid.appendChild(btn);
+    const opt = document.createElement('option');
+    opt.value = String(i);
+    opt.textContent = `${t.label} — ${t.strings.join(' ')}`;
+    if (i === currentTuningIdx) opt.selected = true;
+    tuningSelect.appendChild(opt);
   });
 }
+
+tuningSelect.addEventListener('change', () => {
+  currentTuningIdx = parseInt(tuningSelect.value);
+  renderStrings();
+  resetDisplay();
+});
 
 function renderStrings(activeIdx = -1, inTuneIdx = -1) {
   const strings = TUNINGS[instrument][currentTuningIdx].strings;
@@ -347,8 +353,7 @@ let currentAngle = 0;
 
 function setNeedle(cents: number) {
   const angle = Math.max(-90, Math.min(90, cents * 1.8));
-  // Suaviza
-  currentAngle += (angle - currentAngle) * 0.25;
+  currentAngle += (angle - currentAngle) * 0.12;
   needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
 }
 
@@ -378,49 +383,89 @@ function playTuneSound(ctx: AudioContext) {
   osc.stop(ctx.currentTime + 0.6);
 }
 
-// ─── Algoritmo de detecção de frequência (autocorrelação YIN-like) ─────────────
+// ─── Autocorrelação correta + interpolação parabólica ─────────────────────────
 function detectFrequency(buf: Float32Array, sampleRate: number): number {
   const SIZE = buf.length;
-  const MAX_SAMPLES = Math.floor(SIZE / 2);
-  let best_offset = -1;
-  let best_corr = 0;
-  let rms = 0;
+  const HALF = Math.floor(SIZE / 2);
 
+  // Rejeita sinal fraco (silêncio / ruído de fundo)
+  let rms = 0;
   for (let i = 0; i < SIZE; i++) rms += buf[i] * buf[i];
   rms = Math.sqrt(rms / SIZE);
-  if (rms < 0.01) return -1;
+  if (rms < 0.015) return -1;
 
-  let lastCorr = 1;
-  let foundGoodCorr = false;
+  // Autocorrelação real: corr[lag] = Σ buf[i] * buf[i+lag]
+  // Normalizada por corr[0] para ser independente de amplitude
+  const corr0ref = (() => {
+    let s = 0;
+    for (let i = 0; i < HALF; i++) s += buf[i] * buf[i];
+    return s || 1;
+  })();
 
-  for (let offset = 0; offset < MAX_SAMPLES; offset++) {
-    let corr = 0;
-    for (let i = 0; i < MAX_SAMPLES; i++) {
-      corr += Math.abs(buf[i] - buf[i + offset]);
+  // Limites de lag: guitarra/violão ficam entre ~60 Hz e ~1200 Hz
+  const lagMin = Math.floor(sampleRate / 1200);
+  const lagMax = Math.ceil(sampleRate / 60);
+
+  let bestLag = -1;
+  let bestCorr = 0;
+
+  // Procura o primeiro pico de correlação após o primeiro vale
+  let prevCorr = 1;
+  let crossedDip = false;
+
+  for (let lag = lagMin; lag <= lagMax && lag < HALF; lag++) {
+    let c = 0;
+    for (let i = 0; i < HALF; i++) c += buf[i] * buf[i + lag];
+    const norm = c / corr0ref;
+
+    if (!crossedDip && norm < 0.5) crossedDip = true;
+
+    if (crossedDip && norm > prevCorr && norm > bestCorr) {
+      bestCorr = norm;
+      bestLag = lag;
     }
-    corr = 1 - corr / MAX_SAMPLES;
-    if (corr > 0.9 && corr > lastCorr) {
-      foundGoodCorr = true;
-      if (corr > best_corr) {
-        best_corr = corr;
-        best_offset = offset;
-      }
-    } else if (foundGoodCorr) {
-      break;
-    }
-    lastCorr = corr;
+    // Para de subir — encontrou o pico local
+    if (crossedDip && norm < prevCorr && bestLag !== -1) break;
+
+    prevCorr = norm;
   }
 
-  if (best_offset === -1 || best_corr < 0.9) return -1;
+  // Exige confiança mínima para não disparar com ruído
+  if (bestLag === -1 || bestCorr < 0.55) return -1;
 
-  // Interpolação parabólica
-  const shift = best_offset;
-  const s0 = shift > 0 ? (1 - (1 - Math.abs(buf[shift - 1] - buf[shift - 1 + shift])) / MAX_SAMPLES) : best_corr;
-  const s2 = shift + 1 < MAX_SAMPLES ? (1 - (1 - Math.abs(buf[shift + 1] - buf[shift + 1 + shift])) / MAX_SAMPLES) : best_corr;
-  const refinedShift = shift + 0.5 * (s2 - s0) / (2 * best_corr - s0 - s2 || 1);
+  // Interpolação parabólica para sub-sample precision
+  const lagM1 = bestLag - 1;
+  const lagP1 = bestLag + 1;
+  let cM = 0, cP = 0;
+  for (let i = 0; i < HALF; i++) {
+    cM += buf[i] * buf[i + lagM1];
+    cP += buf[i] * buf[i + lagP1];
+  }
+  cM /= corr0ref;
+  cP /= corr0ref;
 
-  return sampleRate / refinedShift;
+  const denom = 2 * bestCorr - cM - cP;
+  const refinedLag = denom !== 0
+    ? bestLag + 0.5 * (cP - cM) / denom
+    : bestLag;
+
+  return sampleRate / refinedLag;
 }
+
+// ─── Filtro mediano: estabiliza leituras frame a frame ────────────────────────
+const FREQ_HISTORY_SIZE = 7;
+const freqHistory: number[] = [];
+
+function medianFreq(freq: number): number {
+  freqHistory.push(freq);
+  if (freqHistory.length > FREQ_HISTORY_SIZE) freqHistory.shift();
+  const valid = freqHistory.filter(f => f > 0).slice().sort((a, b) => a - b);
+  if (valid.length < 3) return -1;
+  return valid[Math.floor(valid.length / 2)];
+}
+
+// Suavização exponencial no valor de cents (evita tremer a nota exibida)
+let smoothedCents = 0;
 
 // ─── Loop de análise ──────────────────────────────────────────────────────────
 function analysisLoop() {
@@ -429,14 +474,19 @@ function analysisLoop() {
   const buf = new Float32Array(analyser.fftSize);
   analyser.getFloatTimeDomainData(buf);
 
-  const freq = detectFrequency(buf, audioCtx.sampleRate);
+  const rawFreq = detectFrequency(buf, audioCtx.sampleRate);
+  const freq = medianFreq(rawFreq);
 
   if (freq > 50 && freq < 1400) {
     const { note, cents, octave } = freqToNoteInfo(freq);
+
+    // Suaviza cents exponencialmente — amortece o balanço da agulha
+    smoothedCents += (cents - smoothedCents) * 0.1;
+
     noteName.textContent = note;
     octaveCents.textContent = `Oitava ${octave} · ${cents > 0 ? '+' : ''}${cents} cents`;
     freqDisplay.textContent = `${freq.toFixed(1)} Hz`;
-    setNeedle(cents);
+    setNeedle(smoothedCents);
 
     // Detecta qual corda está sendo tocada
     const strings = TUNINGS[instrument][currentTuningIdx].strings;
@@ -448,7 +498,7 @@ function analysisLoop() {
       if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
     });
 
-    const absCents = Math.abs(cents);
+    const absCents = Math.abs(smoothedCents);
     const isInTune = absCents <= 5;
 
     if (isInTune) {
@@ -459,23 +509,29 @@ function analysisLoop() {
             playTuneSound(audioCtx);
             inTuneBellPlayed = true;
           }
-        }, 400);
+        }, 600);
       }
     } else {
       if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
       inTuneBellPlayed = false;
       setInTune(false);
-      noteName.style.color = absCents < 15 ? '#facc15' : '#e63946';
+      noteName.style.color = absCents < 20 ? '#facc15' : '#e63946';
     }
 
     renderStrings(closestIdx, isInTune ? closestIdx : -1);
   } else {
-    // Sem sinal
-    noteName.textContent = '—';
-    noteName.style.color = '';
-    octaveCents.textContent = '';
-    freqDisplay.textContent = '— Hz';
-    setNeedle(0);
+    // Sinal fraco ou ausente — decai suavemente para o centro
+    smoothedCents += (0 - smoothedCents) * 0.08;
+    if (Math.abs(smoothedCents) > 0.5) {
+      setNeedle(smoothedCents);
+    } else {
+      smoothedCents = 0;
+      noteName.textContent = '—';
+      noteName.style.color = '';
+      octaveCents.textContent = '';
+      freqDisplay.textContent = '— Hz';
+      setNeedle(0);
+    }
   }
 
   rafId = requestAnimationFrame(analysisLoop);
@@ -493,8 +549,8 @@ micBtn.addEventListener('click', async () => {
     micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 4096;
-    analyser.smoothingTimeConstant = 0.8;
+    analyser.fftSize = 8192;      // mais pontos = mais resolução de frequência
+    analyser.smoothingTimeConstant = 0; // não interfere no time-domain
 
     const source = audioCtx.createMediaStreamSource(micStream);
     source.connect(analyser);
@@ -514,6 +570,8 @@ function stopListening() {
   if (rafId) cancelAnimationFrame(rafId);
   micStream?.getTracks().forEach(t => t.stop());
   audioCtx?.close();
+  freqHistory.length = 0;
+  smoothedCents = 0;
   audioCtx = null;
   analyser = null;
   micStream = null;

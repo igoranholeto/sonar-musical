@@ -8,17 +8,20 @@ interface Props {
   imagemAlt?: string;
 }
 
-const { produto, descricao, url, preco, imagem, imagemAlt } = Astro.props;
+const { produto, descricao, url, preco } = Astro.props;
 ---
 
 <div class="afiliado-cta">
   <div class="afiliado-cta__badge">Recomendado pelo Sonar Musical</div>
   <div class="afiliado-cta__body">
-    {imagem && (
-      <div class="afiliado-cta__img-wrap">
-        <img src={imagem} alt={imagemAlt ?? produto} width="120" height="120" loading="lazy" />
-      </div>
-    )}
+    <!-- Ícone ilustrativo -->
+    <div class="afiliado-cta__icon" aria-hidden="true">
+      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
+        <path d="M9 18V5l12-2v13" />
+        <circle cx="6" cy="18" r="3" />
+        <circle cx="18" cy="16" r="3" />
+      </svg>
+    </div>
     <div class="afiliado-cta__info">
       <p class="afiliado-cta__produto">{produto}</p>
       {descricao && <p class="afiliado-cta__descricao">{descricao}</p>}
@@ -26,7 +29,7 @@ const { produto, descricao, url, preco, imagem, imagemAlt } = Astro.props;
     </div>
     <a href={url} target="_blank" rel="noopener noreferrer sponsored" class="afiliado-cta__btn">
       Ver Melhor Preço
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
         <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
         <polyline points="15 3 21 3 21 9"/>
         <line x1="10" y1="14" x2="21" y2="3"/>
@@ -46,7 +49,7 @@ const { produto, descricao, url, preco, imagem, imagemAlt } = Astro.props;
 
   .afiliado-cta__badge {
     background: #e63946;
-    color: white;
+    color: #ffffff;
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -63,19 +66,17 @@ const { produto, descricao, url, preco, imagem, imagemAlt } = Astro.props;
     flex-wrap: wrap;
   }
 
-  .afiliado-cta__img-wrap {
+  .afiliado-cta__icon {
     flex-shrink: 0;
-    width: 100px;
-    height: 100px;
-    border-radius: 8px;
-    overflow: hidden;
-    background: #111;
-  }
-
-  .afiliado-cta__img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 56px;
+    height: 56px;
+    border-radius: 12px;
+    background: rgba(230, 57, 70, 0.12);
+    border: 1px solid rgba(230, 57, 70, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #e63946;
   }
 
   .afiliado-cta__info {
@@ -91,43 +92,62 @@ const { produto, descricao, url, preco, imagem, imagemAlt } = Astro.props;
     font-weight: 700;
     color: #ffffff;
     margin: 0;
+    line-height: 1.3;
   }
 
   .afiliado-cta__descricao {
     font-size: 0.875rem;
     color: #888888;
     margin: 0;
+    line-height: 1.4;
   }
 
   .afiliado-cta__preco {
-    font-size: 0.9rem;
-    font-weight: 600;
+    font-size: 0.95rem;
+    font-weight: 700;
     color: #e63946;
     margin: 0;
   }
 
   .afiliado-cta__btn {
-    display: inline-flex;
+    display: inline-flex !important;
     align-items: center;
     gap: 0.5rem;
-    background: #e63946;
-    color: white;
+    background: #e63946 !important;
+    color: #ffffff !important;
     font-size: 0.875rem;
     font-weight: 700;
-    padding: 0.65rem 1.25rem;
+    padding: 0.75rem 1.4rem;
     border-radius: 8px;
-    text-decoration: none;
+    text-decoration: none !important;
     white-space: nowrap;
-    transition: background 0.2s, transform 0.15s;
+    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
     flex-shrink: 0;
+    box-shadow: 0 2px 12px rgba(230, 57, 70, 0.3);
+    border: none;
+    cursor: pointer;
   }
 
   .afiliado-cta__btn:hover {
-    background: #b5202d;
+    background: #c0202e !important;
+    color: #ffffff !important;
     transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(230, 57, 70, 0.4);
+    text-decoration: none !important;
   }
 
   .afiliado-cta__btn:active {
     transform: translateY(0);
+  }
+
+  @media (max-width: 480px) {
+    .afiliado-cta__body {
+      gap: 1rem;
+      padding: 1rem;
+    }
+    .afiliado-cta__btn {
+      width: 100%;
+      justify-content: center;
+    }
   }
 </style>
