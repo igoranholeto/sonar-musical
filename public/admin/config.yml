@@ -18,13 +18,7 @@ collections:
       - { label: Título, name: title, widget: string }
       - { label: Meta Title (SEO), name: metaTitle, widget: string, required: false, hint: "Se vazio, usa o título do post. Ideal: até 60 caracteres." }
       - { label: Descrição / Meta Description, name: description, widget: text, hint: "Ideal: entre 140 e 160 caracteres." }
-      - label: Status
-        name: draft
-        widget: select
-        options:
-          - { label: Publicado, value: false }
-          - { label: Rascunho, value: true }
-        default: false
+      - { label: Rascunho (não publicar), name: draft, widget: boolean, default: false }
       - { label: Data de publicação, name: pubDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
       - { label: Data de atualização, name: updatedDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Preencha quando atualizar o conteúdo — sinaliza ao Google que o post é fresco." }
       - { label: Autor, name: author, widget: string, default: "Sonar Musical" }
