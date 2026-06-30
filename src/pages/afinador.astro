@@ -1,0 +1,528 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Afinador Online"
+  description="Afine sua guitarra ou violão online gratuitamente. Suporte a afinações padrão, Drop D, Open G e muito mais."
+>
+  <section class="max-w-2xl mx-auto px-4 py-12">
+    <div class="text-center mb-10">
+      <h1 class="text-3xl font-bold mb-2">Afinador Online</h1>
+      <p class="text-gray-400">Use o microfone para afinar sua guitarra ou violão</p>
+    </div>
+
+    <!-- Seleção de instrumento -->
+    <div class="flex justify-center gap-3 mb-6">
+      <button
+        id="btn-guitarra"
+        class="instrument-btn active-instrument px-6 py-2.5 rounded-xl font-semibold text-sm border transition-all"
+        data-instrument="guitarra"
+      >
+        🎸 Guitarra
+      </button>
+      <button
+        id="btn-violao"
+        class="instrument-btn px-6 py-2.5 rounded-xl font-semibold text-sm border transition-all"
+        data-instrument="violao"
+      >
+        🪕 Violão
+      </button>
+    </div>
+
+    <!-- Seleção de afinação -->
+    <div class="mb-8">
+      <label class="block text-center text-sm text-gray-400 mb-3">Afinação</label>
+      <div id="tuning-grid" class="grid grid-cols-2 sm:grid-cols-3 gap-2"></div>
+    </div>
+
+    <!-- Visor do afinador -->
+    <div
+      id="tuner-display"
+      class="relative bg-card border border-border rounded-2xl p-8 mb-6 transition-all duration-300"
+    >
+      <!-- Nota detectada -->
+      <div class="text-center mb-6">
+        <div id="note-name" class="text-7xl font-bold tracking-tight transition-colors duration-300">—</div>
+        <div id="octave-cents" class="text-gray-500 text-sm mt-1 h-5"></div>
+      </div>
+
+      <!-- Medidor de agulha SVG -->
+      <div class="flex justify-center mb-4">
+        <svg id="needle-svg" viewBox="0 0 300 160" width="300" height="160">
+          <!-- Arco de fundo -->
+          <path
+            d="M 20 140 A 130 130 0 0 1 280 140"
+            fill="none"
+            stroke="#2a2a2a"
+            stroke-width="12"
+            stroke-linecap="round"
+          />
+          <!-- Zona verde central -->
+          <path
+            id="arc-green"
+            d="M 135 140 A 130 130 0 0 1 165 140"
+            fill="none"
+            stroke="#22c55e"
+            stroke-width="12"
+            stroke-linecap="round"
+            opacity="0.25"
+          />
+          <!-- Marcas de escala -->
+          <g id="scale-marks" stroke="#444" stroke-width="1.5">
+            <!-- -50 -->
+            <line x1="20" y1="140" x2="28" y2="140" transform="rotate(-90 150 140)" />
+            <!-- -25 -->
+            <line x1="20" y1="140" x2="26" y2="140" transform="rotate(-45 150 140)" />
+            <!-- 0 -->
+            <line x1="20" y1="140" x2="20" y2="126" transform="rotate(0 150 140)" />
+            <!-- +25 -->
+            <line x1="20" y1="140" x2="26" y2="140" transform="rotate(45 150 140)" />
+            <!-- +50 -->
+            <line x1="20" y1="140" x2="28" y2="140" transform="rotate(90 150 140)" />
+          </g>
+          <!-- Labels -->
+          <text x="22" y="138" fill="#555" font-size="10" text-anchor="middle">-50</text>
+          <text x="70" y="60" fill="#555" font-size="10" text-anchor="middle">-25</text>
+          <text x="150" y="18" fill="#555" font-size="10" text-anchor="middle">0</text>
+          <text x="230" y="60" fill="#555" font-size="10" text-anchor="middle">+25</text>
+          <text x="278" y="138" fill="#555" font-size="10" text-anchor="middle">+50</text>
+          <!-- Agulha -->
+          <line
+            id="needle"
+            x1="150"
+            y1="140"
+            x2="150"
+            y2="20"
+            stroke="#e63946"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            transform="rotate(0 150 140)"
+          />
+          <!-- Pivô -->
+          <circle cx="150" cy="140" r="6" fill="#e63946" />
+        </svg>
+      </div>
+
+      <!-- Frequência -->
+      <div class="text-center">
+        <span id="freq-display" class="text-gray-600 text-xs font-mono">— Hz</span>
+      </div>
+
+      <!-- Overlay "afinado" -->
+      <div
+        id="in-tune-overlay"
+        class="absolute inset-0 rounded-2xl flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300"
+        style="background: rgba(34,197,94,0.08)"
+      >
+        <div class="text-center">
+          <div class="text-5xl mb-1">✓</div>
+          <div class="text-green-400 font-bold text-lg">Afinado!</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cordas da afinação atual -->
+    <div id="strings-display" class="grid grid-cols-6 gap-2 mb-8"></div>
+
+    <!-- Botão microfone -->
+    <div class="flex justify-center">
+      <button
+        id="mic-btn"
+        class="flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-200 bg-brand hover:bg-brand-dark text-white shadow-lg hover:shadow-brand/30"
+      >
+        <svg id="mic-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+          <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
+          <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+          <line x1="12" y1="19" x2="12" y2="22"/>
+        </svg>
+        <span id="mic-label">Ativar Microfone</span>
+      </button>
+    </div>
+
+    <p id="mic-status" class="text-center text-xs text-gray-600 mt-3 h-4"></p>
+  </section>
+</BaseLayout>
+
+<style>
+  .instrument-btn {
+    background: var(--color-card);
+    border-color: var(--color-border);
+    color: #888;
+  }
+  .instrument-btn:hover {
+    border-color: #555;
+    color: #fff;
+  }
+  .active-instrument {
+    background: rgba(230, 57, 70, 0.12);
+    border-color: var(--color-brand) !important;
+    color: var(--color-brand) !important;
+  }
+  .tuning-btn {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    color: #888;
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.15s;
+    text-align: center;
+  }
+  .tuning-btn:hover {
+    border-color: #555;
+    color: #fff;
+  }
+  .active-tuning {
+    background: rgba(230, 57, 70, 0.12) !important;
+    border-color: var(--color-brand) !important;
+    color: var(--color-brand) !important;
+  }
+  .string-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 0.6rem 0.5rem;
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .string-card.active {
+    border-color: var(--color-brand);
+    background: rgba(230, 57, 70, 0.1);
+  }
+  .string-card.in-tune {
+    border-color: #22c55e;
+    background: rgba(34, 197, 94, 0.12);
+  }
+  #tuner-display.in-tune-state {
+    border-color: #22c55e;
+    box-shadow: 0 0 30px rgba(34, 197, 94, 0.15);
+  }
+  #mic-btn.active {
+    background: #b5202d;
+    animation: pulse-mic 2s infinite;
+  }
+  @keyframes pulse-mic {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(230,57,70,0.4); }
+    50% { box-shadow: 0 0 0 12px rgba(230,57,70,0); }
+  }
+</style>
+
+<script>
+// ─── Dados de afinações ───────────────────────────────────────────────────────
+const TUNINGS: Record<string, { label: string; strings: string[] }[]> = {
+  guitarra: [
+    { label: 'Standard (E)',   strings: ['E2','A2','D3','G3','B3','E4'] },
+    { label: 'Drop D',         strings: ['D2','A2','D3','G3','B3','E4'] },
+    { label: 'Drop C',         strings: ['C2','G2','C3','F3','A3','D4'] },
+    { label: 'Open G',         strings: ['D2','G2','D3','G3','B3','D4'] },
+    { label: 'Open E',         strings: ['E2','B2','E3','G#3','B3','E4'] },
+    { label: 'DADGAD',         strings: ['D2','A2','D3','G3','A3','D4'] },
+    { label: 'Half Step Down', strings: ['Eb2','Ab2','Db3','Gb3','Bb3','Eb4'] },
+    { label: 'Full Step Down', strings: ['D2','G2','C3','F3','A3','D4'] },
+    { label: 'Open D',         strings: ['D2','A2','D3','F#3','A3','D4'] },
+  ],
+  violao: [
+    { label: 'Standard (E)',   strings: ['E2','A2','D3','G3','B3','E4'] },
+    { label: 'Drop D',         strings: ['D2','A2','D3','G3','B3','E4'] },
+    { label: 'Open G',         strings: ['D2','G2','D3','G3','B3','D4'] },
+    { label: 'Nashville',      strings: ['E3','A3','D4','G4','B3','E4'] },
+    { label: 'Open D',         strings: ['D2','A2','D3','F#3','A3','D4'] },
+    { label: 'Half Step Down', strings: ['Eb2','Ab2','Db3','Gb3','Bb3','Eb4'] },
+    { label: 'DADGAD',         strings: ['D2','A2','D3','G3','A3','D4'] },
+  ],
+};
+
+// ─── Mapa nota → frequência ───────────────────────────────────────────────────
+const NOTE_NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
+const ENHARMONICS: Record<string, string> = {
+  'Db':'C#','Eb':'D#','Fb':'E','Gb':'F#','Ab':'G#','Bb':'A#','Cb':'B',
+};
+
+function noteToFreq(note: string): number {
+  let n = note.replace(/(\d)/, '');
+  const oct = parseInt(note.replace(/\D/g, ''));
+  n = ENHARMONICS[n] ?? n;
+  const idx = NOTE_NAMES.indexOf(n);
+  if (idx === -1) return 0;
+  const midi = (oct + 1) * 12 + idx;
+  return 440 * Math.pow(2, (midi - 69) / 12);
+}
+
+function freqToNoteInfo(freq: number): { note: string; cents: number; octave: number } {
+  const midi = 12 * (Math.log2(freq / 440)) + 69;
+  const rounded = Math.round(midi);
+  const cents = Math.round((midi - rounded) * 100);
+  const octave = Math.floor(rounded / 12) - 1;
+  const note = NOTE_NAMES[((rounded % 12) + 12) % 12];
+  return { note, cents, octave };
+}
+
+// ─── Estado ───────────────────────────────────────────────────────────────────
+let instrument = 'guitarra';
+let currentTuningIdx = 0;
+let isListening = false;
+let audioCtx: AudioContext | null = null;
+let analyser: AnalyserNode | null = null;
+let micStream: MediaStream | null = null;
+let rafId: number | null = null;
+let inTuneTimer: ReturnType<typeof setTimeout> | null = null;
+let inTuneBellPlayed = false;
+
+// ─── Referências DOM ──────────────────────────────────────────────────────────
+const micBtn       = document.getElementById('mic-btn')!;
+const micLabel     = document.getElementById('mic-label')!;
+const micStatus    = document.getElementById('mic-status')!;
+const noteName     = document.getElementById('note-name')!;
+const octaveCents  = document.getElementById('octave-cents')!;
+const freqDisplay  = document.getElementById('freq-display')!;
+const needle       = document.getElementById('needle')!;
+const tunerDisplay = document.getElementById('tuner-display')!;
+const inTuneOverlay = document.getElementById('in-tune-overlay')!;
+const stringsDisplay = document.getElementById('strings-display')!;
+const tuningGrid   = document.getElementById('tuning-grid')!;
+
+// ─── Render afinações ─────────────────────────────────────────────────────────
+function renderTunings() {
+  tuningGrid.innerHTML = '';
+  TUNINGS[instrument].forEach((t, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'tuning-btn' + (i === currentTuningIdx ? ' active-tuning' : '');
+    btn.innerHTML = `<div class="font-semibold">${t.label}</div><div class="text-xs opacity-60 mt-0.5">${t.strings.join(' ')}</div>`;
+    btn.addEventListener('click', () => {
+      currentTuningIdx = i;
+      renderTunings();
+      renderStrings();
+      resetDisplay();
+    });
+    tuningGrid.appendChild(btn);
+  });
+}
+
+function renderStrings(activeIdx = -1, inTuneIdx = -1) {
+  const strings = TUNINGS[instrument][currentTuningIdx].strings;
+  stringsDisplay.innerHTML = '';
+  strings.forEach((s, i) => {
+    const card = document.createElement('div');
+    card.className = 'string-card' +
+      (i === activeIdx ? ' active' : '') +
+      (i === inTuneIdx ? ' in-tune' : '');
+    const num = strings.length - i;
+    card.innerHTML = `<div class="text-xs text-gray-500 mb-0.5">${num}ª</div><div class="font-bold text-sm">${s.replace(/\d/, '')}</div><div class="text-xs text-gray-600">${s}</div>`;
+    stringsDisplay.appendChild(card);
+  });
+}
+
+// ─── Instrumento buttons ──────────────────────────────────────────────────────
+document.querySelectorAll('.instrument-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    instrument = (btn as HTMLElement).dataset.instrument!;
+    currentTuningIdx = 0;
+    document.querySelectorAll('.instrument-btn').forEach(b => b.classList.remove('active-instrument'));
+    btn.classList.add('active-instrument');
+    renderTunings();
+    renderStrings();
+    resetDisplay();
+  });
+});
+
+// ─── Inicializa ───────────────────────────────────────────────────────────────
+renderTunings();
+renderStrings();
+
+// ─── Reset display ────────────────────────────────────────────────────────────
+function resetDisplay() {
+  noteName.textContent = '—';
+  noteName.style.color = '';
+  octaveCents.textContent = '';
+  freqDisplay.textContent = '— Hz';
+  setNeedle(0);
+  setInTune(false);
+}
+
+// ─── Agulha ───────────────────────────────────────────────────────────────────
+let currentAngle = 0;
+
+function setNeedle(cents: number) {
+  const angle = Math.max(-90, Math.min(90, cents * 1.8));
+  // Suaviza
+  currentAngle += (angle - currentAngle) * 0.25;
+  needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
+}
+
+// ─── Feedback "afinado" ───────────────────────────────────────────────────────
+function setInTune(on: boolean) {
+  if (on) {
+    tunerDisplay.classList.add('in-tune-state');
+    inTuneOverlay.style.opacity = '1';
+    noteName.style.color = '#22c55e';
+  } else {
+    tunerDisplay.classList.remove('in-tune-state');
+    inTuneOverlay.style.opacity = '0';
+  }
+}
+
+function playTuneSound(ctx: AudioContext) {
+  const osc = ctx.createOscillator();
+  const gain = ctx.createGain();
+  osc.connect(gain);
+  gain.connect(ctx.destination);
+  osc.frequency.value = 880;
+  osc.type = 'sine';
+  gain.gain.setValueAtTime(0, ctx.currentTime);
+  gain.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.02);
+  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
+  osc.start(ctx.currentTime);
+  osc.stop(ctx.currentTime + 0.6);
+}
+
+// ─── Algoritmo de detecção de frequência (autocorrelação YIN-like) ─────────────
+function detectFrequency(buf: Float32Array, sampleRate: number): number {
+  const SIZE = buf.length;
+  const MAX_SAMPLES = Math.floor(SIZE / 2);
+  let best_offset = -1;
+  let best_corr = 0;
+  let rms = 0;
+
+  for (let i = 0; i < SIZE; i++) rms += buf[i] * buf[i];
+  rms = Math.sqrt(rms / SIZE);
+  if (rms < 0.01) return -1;
+
+  let lastCorr = 1;
+  let foundGoodCorr = false;
+
+  for (let offset = 0; offset < MAX_SAMPLES; offset++) {
+    let corr = 0;
+    for (let i = 0; i < MAX_SAMPLES; i++) {
+      corr += Math.abs(buf[i] - buf[i + offset]);
+    }
+    corr = 1 - corr / MAX_SAMPLES;
+    if (corr > 0.9 && corr > lastCorr) {
+      foundGoodCorr = true;
+      if (corr > best_corr) {
+        best_corr = corr;
+        best_offset = offset;
+      }
+    } else if (foundGoodCorr) {
+      break;
+    }
+    lastCorr = corr;
+  }
+
+  if (best_offset === -1 || best_corr < 0.9) return -1;
+
+  // Interpolação parabólica
+  const shift = best_offset;
+  const s0 = shift > 0 ? (1 - (1 - Math.abs(buf[shift - 1] - buf[shift - 1 + shift])) / MAX_SAMPLES) : best_corr;
+  const s2 = shift + 1 < MAX_SAMPLES ? (1 - (1 - Math.abs(buf[shift + 1] - buf[shift + 1 + shift])) / MAX_SAMPLES) : best_corr;
+  const refinedShift = shift + 0.5 * (s2 - s0) / (2 * best_corr - s0 - s2 || 1);
+
+  return sampleRate / refinedShift;
+}
+
+// ─── Loop de análise ──────────────────────────────────────────────────────────
+function analysisLoop() {
+  if (!analyser || !audioCtx) return;
+
+  const buf = new Float32Array(analyser.fftSize);
+  analyser.getFloatTimeDomainData(buf);
+
+  const freq = detectFrequency(buf, audioCtx.sampleRate);
+
+  if (freq > 50 && freq < 1400) {
+    const { note, cents, octave } = freqToNoteInfo(freq);
+    noteName.textContent = note;
+    octaveCents.textContent = `Oitava ${octave} · ${cents > 0 ? '+' : ''}${cents} cents`;
+    freqDisplay.textContent = `${freq.toFixed(1)} Hz`;
+    setNeedle(cents);
+
+    // Detecta qual corda está sendo tocada
+    const strings = TUNINGS[instrument][currentTuningIdx].strings;
+    let closestIdx = -1;
+    let closestDiff = Infinity;
+    strings.forEach((s, i) => {
+      const sf = noteToFreq(s);
+      const diff = Math.abs(freq - sf);
+      if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
+    });
+
+    const absCents = Math.abs(cents);
+    const isInTune = absCents <= 5;
+
+    if (isInTune) {
+      if (!inTuneTimer) {
+        inTuneTimer = setTimeout(() => {
+          setInTune(true);
+          if (!inTuneBellPlayed && audioCtx) {
+            playTuneSound(audioCtx);
+            inTuneBellPlayed = true;
+          }
+        }, 400);
+      }
+    } else {
+      if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
+      inTuneBellPlayed = false;
+      setInTune(false);
+      noteName.style.color = absCents < 15 ? '#facc15' : '#e63946';
+    }
+
+    renderStrings(closestIdx, isInTune ? closestIdx : -1);
+  } else {
+    // Sem sinal
+    noteName.textContent = '—';
+    noteName.style.color = '';
+    octaveCents.textContent = '';
+    freqDisplay.textContent = '— Hz';
+    setNeedle(0);
+  }
+
+  rafId = requestAnimationFrame(analysisLoop);
+}
+
+// ─── Microfone ────────────────────────────────────────────────────────────────
+micBtn.addEventListener('click', async () => {
+  if (isListening) {
+    stopListening();
+    return;
+  }
+
+  try {
+    micStatus.textContent = 'Solicitando acesso ao microfone…';
+    micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+    audioCtx = new AudioContext();
+    analyser = audioCtx.createAnalyser();
+    analyser.fftSize = 4096;
+    analyser.smoothingTimeConstant = 0.8;
+
+    const source = audioCtx.createMediaStreamSource(micStream);
+    source.connect(analyser);
+
+    isListening = true;
+    micBtn.classList.add('active');
+    micLabel.textContent = 'Parar';
+    micStatus.textContent = 'Ouvindo… toque uma corda!';
+
+    analysisLoop();
+  } catch (e) {
+    micStatus.textContent = 'Acesso ao microfone negado. Verifique as permissões do navegador.';
+  }
+});
+
+function stopListening() {
+  if (rafId) cancelAnimationFrame(rafId);
+  micStream?.getTracks().forEach(t => t.stop());
+  audioCtx?.close();
+  audioCtx = null;
+  analyser = null;
+  micStream = null;
+  isListening = false;
+  micBtn.classList.remove('active');
+  micLabel.textContent = 'Ativar Microfone';
+  micStatus.textContent = '';
+  resetDisplay();
+  renderStrings();
+}
+</script>
+</BaseLayout>
