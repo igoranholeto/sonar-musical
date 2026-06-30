@@ -61,9 +61,26 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
       <meta property="article:author" content={author} />
     )}
 
+    <!-- Preconnect para origens críticas -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" />
+    <link rel="dns-prefetch" href="https://images.unsplash.com" />
+
+    <!-- Preload da fonte Inter (evita FOIT/FOUT) -->
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href="https://fonts.gstatic.com/s/inter/v13/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZ9hiJ-Ek-_EeA.woff2"
+      crossorigin
+    />
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" href="/favicon.ico" />
+
+    <!-- Theme color (melhora percepção de carregamento em mobile) -->
+    <meta name="theme-color" content="#0a0a0a" />
 
     <!-- Sitemap & RSS -->
     <link rel="sitemap" href="/sitemap-index.xml" />
@@ -96,13 +113,24 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
     <!-- Lomadee Afiliados -->
     <meta name="lomadee" content="2324685" />
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WZDXX7MLBD"></script>
+    <!-- Google Analytics (carregado após interação para não impactar LCP) -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-WZDXX7MLBD');
+      function loadGA() {
+        var s = document.createElement('script');
+        s.async = true;
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WZDXX7MLBD';
+        document.head.appendChild(s);
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        window.gtag = gtag;
+        gtag('js', new Date());
+        gtag('config', 'G-WZDXX7MLBD', { send_page_view: true });
+      }
+      if (document.readyState === 'complete') {
+        setTimeout(loadGA, 1000);
+      } else {
+        window.addEventListener('load', function() { setTimeout(loadGA, 1000); });
+      }
     </script>
   </head>
   <body class="min-h-screen flex flex-col">
@@ -120,7 +148,7 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
     </main>
 
     <Footer />
-    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
       window.addEventListener('load', function () {
         if (!window.netlifyIdentity) return;

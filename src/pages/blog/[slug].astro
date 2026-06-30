@@ -14,12 +14,21 @@ export async function getStaticPaths() {
 const { post } = Astro.props;
 const { Content } = await render(post);
 
-// Posts relacionados: mesma categoria, excluindo o atual
+// Posts recomendados: score por tags em comum + recência, sem restrição de categoria
 const allPosts = await getCollection('blog');
+const postTags = new Set(post.data.tags ?? []);
+
 const related = allPosts
-  .filter((p) => p.id !== post.id && p.data.category === post.data.category)
-  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-  .slice(0, 3);
+  .filter((p) => p.id !== post.id)
+  .map((p) => {
+    const sharedTags = (p.data.tags ?? []).filter((t) => postTags.has(t)).length;
+    const sameCategory = p.data.category === post.data.category ? 1 : 0;
+    const recency = p.data.pubDate.valueOf();
+    return { post: p, score: sharedTags * 10 + sameCategory * 3 + recency / 1e12 };
+  })
+  .sort((a, b) => b.score - a.score)
+  .slice(0, 3)
+  .map((r) => r.post);
 ---
 
 <PostLayout
@@ -40,19 +49,36 @@ const related = allPosts
 
   {related.length > 0 && (
     <section class="mt-20 pt-12 border-t border-border">
-      <h2 class="text-xl font-bold mb-6">Artigos Relacionados</h2>
+      <div class="flex items-center gap-3 mb-8">
+        <div class="w-1 h-6 bg-brand rounded-full"></div>
+        <h2 class="text-xl font-bold">Artigos Recomendados</h2>
+      </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {related.map((p) => (
-          <PostCard
-            title={p.data.title}
-            description={p.data.description}
-            slug={p.id}
-            pubDate={p.data.pubDate}
-            category={p.data.category}
-            image={p.data.image}
-            imageAlt={p.data.imageAlt}
-            rating={p.data.rating}
-          />
+          <a
+            href={`/blog/${p.id}`}
+            class="group block bg-card border border-border rounded-xl overflow-hidden hover:border-brand/40 transition-all duration-200 hover:-translate-y-0.5"
+          >
+            {p.data.image && (
+              <div class="aspect-video overflow-hidden bg-elevated">
+                <img
+                  src={p.data.image}
+                  alt={p.data.imageAlt ?? p.data.title}
+                  width="400"
+                  height="225"
+                  loading="lazy"
+                  class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            )}
+            <div class="p-4">
+              <p class="text-xs text-brand font-semibold uppercase tracking-wider mb-2">{p.data.category}</p>
+              <h3 class="font-semibold text-sm leading-snug text-white group-hover:text-brand transition-colors line-clamp-2">
+                {p.data.title}
+              </h3>
+              <p class="text-xs text-muted mt-2 line-clamp-2">{p.data.description}</p>
+            </div>
+          </a>
         ))}
       </div>
     </section>

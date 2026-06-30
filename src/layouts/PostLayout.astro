@@ -136,6 +136,8 @@ const badgeClass = categoryColors[category] ?? 'bg-gray-800 text-gray-300';
           height="432"
           class="w-full object-cover aspect-video bg-card"
           loading="eager"
+          fetchpriority="high"
+          decoding="sync"
         />
       </figure>
     )}

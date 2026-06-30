@@ -43,7 +43,7 @@ const homeSchema = {
         </a>
       </div>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {featuredPosts.map((post) => (
+        {featuredPosts.map((post, i) => (
           <PostCard
             title={post.data.title}
             description={post.data.description}
@@ -54,6 +54,7 @@ const homeSchema = {
             imageAlt={post.data.imageAlt}
             rating={post.data.rating}
             featured={post.data.featured}
+            eager={i === 0}
           />
         ))}
       </div>
