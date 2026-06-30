@@ -234,12 +234,12 @@ const badgeClass = categoryColors[category] ?? 'bg-gray-800 text-gray-300';
       color: #ffffff;
       font-weight: 600;
     }
-    .prose-post :global(a) {
+    .prose-post :global(a:not(.afiliado-cta__btn)) {
       color: #e63946;
       text-decoration: underline;
       text-underline-offset: 3px;
     }
-    .prose-post :global(a:hover) {
+    .prose-post :global(a:not(.afiliado-cta__btn):hover) {
       color: #ff5b67;
     }
     .prose-post :global(blockquote) {
