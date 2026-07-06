@@ -3,8 +3,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Afinador Online"
-  description="Afine sua guitarra ou violão online gratuitamente. Suporte a afinações padrão, Drop D, Open G e muito mais."
+  title="Afinador Online Grátis — Guitarra e Violão"
+  description="Afine sua guitarra ou violão online e de graça. Suporte a afinações Standard, Drop D, Open G, DADGAD e muito mais. Funciona direto no navegador."
 >
   <section class="max-w-2xl mx-auto px-4 py-12">
     <div class="text-center mb-10">
@@ -39,11 +39,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- Visor do afinador -->
     <div
       id="tuner-display"
-      class="relative bg-card border border-border rounded-2xl p-8 mb-6 transition-all duration-300"
+      class="relative bg-card border border-border rounded-2xl p-8 mb-6 transition-all duration-500"
     >
       <!-- Nota detectada -->
-      <div class="text-center mb-6">
-        <div id="note-name" class="text-7xl font-bold tracking-tight transition-colors duration-300">—</div>
+      <div class="text-center mb-2">
+        <div id="note-name" class="text-7xl font-bold tracking-tight transition-colors duration-200">—</div>
+        <div id="in-tune-badge" class="in-tune-badge">✓ Afinado</div>
         <div id="octave-cents" class="text-gray-500 text-sm mt-1 h-5"></div>
       </div>
 
@@ -66,19 +67,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             stroke="#22c55e"
             stroke-width="12"
             stroke-linecap="round"
-            opacity="0.25"
+            opacity="0.3"
           />
           <!-- Marcas de escala -->
-          <g id="scale-marks" stroke="#444" stroke-width="1.5">
-            <!-- -50 -->
+          <g stroke="#444" stroke-width="1.5">
             <line x1="20" y1="140" x2="28" y2="140" transform="rotate(-90 150 140)" />
-            <!-- -25 -->
             <line x1="20" y1="140" x2="26" y2="140" transform="rotate(-45 150 140)" />
-            <!-- 0 -->
             <line x1="20" y1="140" x2="20" y2="126" transform="rotate(0 150 140)" />
-            <!-- +25 -->
             <line x1="20" y1="140" x2="26" y2="140" transform="rotate(45 150 140)" />
-            <!-- +50 -->
             <line x1="20" y1="140" x2="28" y2="140" transform="rotate(90 150 140)" />
           </g>
           <!-- Labels -->
@@ -100,25 +96,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             transform="rotate(0 150 140)"
           />
           <!-- Pivô -->
-          <circle cx="150" cy="140" r="6" fill="#e63946" />
+          <circle id="needle-pivot" cx="150" cy="140" r="6" fill="#e63946" />
         </svg>
       </div>
 
       <!-- Frequência -->
       <div class="text-center">
         <span id="freq-display" class="text-gray-600 text-xs font-mono">— Hz</span>
-      </div>
-
-      <!-- Overlay "afinado" -->
-      <div
-        id="in-tune-overlay"
-        class="absolute inset-0 rounded-2xl flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300"
-        style="background: rgba(34,197,94,0.08)"
-      >
-        <div class="text-center">
-          <div class="text-5xl mb-1">✓</div>
-          <div class="text-green-400 font-bold text-lg">Afinado!</div>
-        </div>
       </div>
     </div>
 
@@ -141,6 +125,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
 
     <p id="mic-status" class="text-center text-xs text-gray-600 mt-3 h-4"></p>
+
+    <!-- Info SEO -->
+    <div class="mt-12 prose prose-sm prose-invert max-w-none text-gray-400">
+      <h2 class="text-white text-lg font-semibold mb-3">Como usar o afinador online</h2>
+      <p>Clique em <strong>Ativar Microfone</strong>, permita o acesso ao microfone e toque uma corda. O afinador detecta automaticamente a nota e mostra se está <span class="text-green-400">afinada (verde)</span>, um pouco alta ou baixa (amarela) ou muito desafinada (vermelha).</p>
+      <p>A agulha aponta para o centro (0) quando a corda está perfeita. Se a agulha vai para a esquerda, a corda está baixa (afrouxe a cravelha para afinar). Se vai para a direita, está alta (aperte a cravelha).</p>
+      <h2 class="text-white text-lg font-semibold mb-3 mt-6">Afinações disponíveis</h2>
+      <p>Suportamos as principais afinações para guitarra e violão: Standard E, Drop D, Drop C, Open G, Open D, Open E, DADGAD, Half Step Down e Full Step Down. Selecione a afinação no menu acima antes de começar.</p>
+    </div>
   </section>
 </BaseLayout>
 
@@ -191,7 +184,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     border-radius: 0.75rem;
     padding: 0.6rem 0.5rem;
     text-align: center;
-    transition: all 0.2s;
+    transition: all 0.3s;
   }
   .string-card.active {
     border-color: var(--color-brand);
@@ -202,8 +195,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     background: rgba(34, 197, 94, 0.12);
   }
   #tuner-display.in-tune-state {
-    border-color: #22c55e;
-    box-shadow: 0 0 30px rgba(34, 197, 94, 0.15);
+    border-color: rgba(34, 197, 94, 0.6);
+    box-shadow: 0 0 24px rgba(34, 197, 94, 0.1);
+  }
+  #tuner-display.holding-state {
+    opacity: 0.85;
   }
   #mic-btn.active {
     background: #b5202d;
@@ -212,6 +208,23 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   @keyframes pulse-mic {
     0%, 100% { box-shadow: 0 0 0 0 rgba(230,57,70,0.4); }
     50% { box-shadow: 0 0 0 12px rgba(230,57,70,0); }
+  }
+  /* In-tune badge — substitui o overlay bloqueante */
+  .in-tune-badge {
+    height: 24px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #22c55e;
+    text-align: center;
+    margin-top: 4px;
+    opacity: 0;
+    transform: translateY(4px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    pointer-events: none;
+  }
+  .in-tune-badge.visible {
+    opacity: 1;
+    transform: translateY(0);
   }
 </style>
 
@@ -276,16 +289,21 @@ let rafId: number | null = null;
 let inTuneTimer: ReturnType<typeof setTimeout> | null = null;
 let inTuneBellPlayed = false;
 
+// Note hold — mantém a nota visível por 1.5s após perder o sinal
+let holdUntil = 0;
+
 // ─── Referências DOM ──────────────────────────────────────────────────────────
-const micBtn       = document.getElementById('mic-btn')!;
-const micLabel     = document.getElementById('mic-label')!;
-const micStatus    = document.getElementById('mic-status')!;
-const noteName     = document.getElementById('note-name')!;
-const octaveCents  = document.getElementById('octave-cents')!;
-const freqDisplay  = document.getElementById('freq-display')!;
-const needle       = document.getElementById('needle')!;
-const tunerDisplay = document.getElementById('tuner-display')!;
-const inTuneOverlay = document.getElementById('in-tune-overlay')!;
+const micBtn        = document.getElementById('mic-btn')!;
+const micLabel      = document.getElementById('mic-label')!;
+const micStatus     = document.getElementById('mic-status')!;
+const noteName      = document.getElementById('note-name')!;
+const octaveCents   = document.getElementById('octave-cents')!;
+const freqDisplay   = document.getElementById('freq-display')!;
+const needle        = document.getElementById('needle')!;
+const needlePivot   = document.getElementById('needle-pivot')!;
+const arcGreen      = document.getElementById('arc-green')!;
+const tunerDisplay  = document.getElementById('tuner-display')!;
+const inTuneBadge   = document.getElementById('in-tune-badge')!;
 const stringsDisplay = document.getElementById('strings-display')!;
 const tuningSelect   = document.getElementById('tuning-select') as HTMLSelectElement;
 
@@ -342,30 +360,56 @@ renderStrings();
 function resetDisplay() {
   noteName.textContent = '—';
   noteName.style.color = '';
+  noteName.style.opacity = '1';
   octaveCents.textContent = '';
   freqDisplay.textContent = '— Hz';
-  setNeedle(0);
+  setNeedle(0, true);
   setInTune(false);
+  tunerDisplay.classList.remove('holding-state');
+  holdUntil = 0;
 }
 
 // ─── Agulha ───────────────────────────────────────────────────────────────────
 let currentAngle = 0;
+let targetAngle = 0;
 
-function setNeedle(cents: number) {
-  const angle = Math.max(-90, Math.min(90, cents * 1.8));
-  currentAngle += (angle - currentAngle) * 0.12;
+// Chamado todo frame; interpola suavemente até targetAngle (spring-like)
+function tickNeedle() {
+  // α=0.07 — movimentação fluida sem lag perceptível
+  currentAngle += (targetAngle - currentAngle) * 0.07;
   needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
 }
 
-// ─── Feedback "afinado" ───────────────────────────────────────────────────────
+function setNeedle(cents: number, instant = false) {
+  targetAngle = Math.max(-90, Math.min(90, cents * 1.8));
+  if (instant) {
+    currentAngle = targetAngle;
+    needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
+  }
+}
+
+// ─── Visual de cor do ponteiro por desvio ────────────────────────────────────
+function updateNeedleColor(absCents: number) {
+  let color: string;
+  if (absCents <= 8)       color = '#22c55e'; // verde
+  else if (absCents <= 25) color = '#facc15'; // amarelo
+  else                     color = '#e63946'; // vermelho
+  needle.setAttribute('stroke', color);
+  needlePivot.setAttribute('fill', color);
+}
+
+// ─── Feedback "afinado" — sutil: sem overlay, apenas cor + badge ──────────────
 function setInTune(on: boolean) {
   if (on) {
     tunerDisplay.classList.add('in-tune-state');
-    inTuneOverlay.style.opacity = '1';
+    tunerDisplay.classList.remove('holding-state');
+    inTuneBadge.classList.add('visible');
     noteName.style.color = '#22c55e';
+    arcGreen.setAttribute('opacity', '0.7');
   } else {
     tunerDisplay.classList.remove('in-tune-state');
-    inTuneOverlay.style.opacity = '0';
+    inTuneBadge.classList.remove('visible');
+    arcGreen.setAttribute('opacity', '0.3');
   }
 }
 
@@ -377,39 +421,33 @@ function playTuneSound(ctx: AudioContext) {
   osc.frequency.value = 880;
   osc.type = 'sine';
   gain.gain.setValueAtTime(0, ctx.currentTime);
-  gain.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.02);
-  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.6);
+  gain.gain.linearRampToValueAtTime(0.1, ctx.currentTime + 0.02);
+  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
   osc.start(ctx.currentTime);
-  osc.stop(ctx.currentTime + 0.6);
+  osc.stop(ctx.currentTime + 0.5);
 }
 
-// ─── Autocorrelação correta + interpolação parabólica ─────────────────────────
+// ─── Autocorrelação + interpolação parabólica ─────────────────────────────────
 function detectFrequency(buf: Float32Array, sampleRate: number): number {
   const SIZE = buf.length;
   const HALF = Math.floor(SIZE / 2);
 
-  // Rejeita sinal fraco (silêncio / ruído de fundo)
   let rms = 0;
   for (let i = 0; i < SIZE; i++) rms += buf[i] * buf[i];
   rms = Math.sqrt(rms / SIZE);
-  if (rms < 0.015) return -1;
+  if (rms < 0.012) return -1;
 
-  // Autocorrelação real: corr[lag] = Σ buf[i] * buf[i+lag]
-  // Normalizada por corr[0] para ser independente de amplitude
   const corr0ref = (() => {
     let s = 0;
     for (let i = 0; i < HALF; i++) s += buf[i] * buf[i];
     return s || 1;
   })();
 
-  // Limites de lag: guitarra/violão ficam entre ~60 Hz e ~1200 Hz
   const lagMin = Math.floor(sampleRate / 1200);
   const lagMax = Math.ceil(sampleRate / 60);
 
   let bestLag = -1;
   let bestCorr = 0;
-
-  // Procura o primeiro pico de correlação após o primeiro vale
   let prevCorr = 1;
   let crossedDip = false;
 
@@ -424,16 +462,13 @@ function detectFrequency(buf: Float32Array, sampleRate: number): number {
       bestCorr = norm;
       bestLag = lag;
     }
-    // Para de subir — encontrou o pico local
     if (crossedDip && norm < prevCorr && bestLag !== -1) break;
 
     prevCorr = norm;
   }
 
-  // Exige confiança mínima para não disparar com ruído
   if (bestLag === -1 || bestCorr < 0.55) return -1;
 
-  // Interpolação parabólica para sub-sample precision
   const lagM1 = bestLag - 1;
   const lagP1 = bestLag + 1;
   let cM = 0, cP = 0;
@@ -452,8 +487,8 @@ function detectFrequency(buf: Float32Array, sampleRate: number): number {
   return sampleRate / refinedLag;
 }
 
-// ─── Filtro mediano: estabiliza leituras frame a frame ────────────────────────
-const FREQ_HISTORY_SIZE = 7;
+// ─── Filtro mediano — 5 frames, menos lag que 7 ───────────────────────────────
+const FREQ_HISTORY_SIZE = 5;
 const freqHistory: number[] = [];
 
 function medianFreq(freq: number): number {
@@ -464,7 +499,7 @@ function medianFreq(freq: number): number {
   return valid[Math.floor(valid.length / 2)];
 }
 
-// Suavização exponencial no valor de cents (evita tremer a nota exibida)
+// Suavização exponencial nos cents — α=0.2 (rastreia rápido, sem nervosismo)
 let smoothedCents = 0;
 
 // ─── Loop de análise ──────────────────────────────────────────────────────────
@@ -477,18 +512,34 @@ function analysisLoop() {
   const rawFreq = detectFrequency(buf, audioCtx.sampleRate);
   const freq = medianFreq(rawFreq);
 
+  // Interpola a agulha todo frame, independente do sinal
+  tickNeedle();
+
   if (freq > 50 && freq < 1400) {
     const { note, cents, octave } = freqToNoteInfo(freq);
 
-    // Suaviza cents exponencialmente — amortece o balanço da agulha
-    smoothedCents += (cents - smoothedCents) * 0.1;
+    // Atualiza hold window — nota fica visível por 1.5s após sinal sumir
+    holdUntil = Date.now() + 1500;
+    tunerDisplay.classList.remove('holding-state');
+    noteName.style.opacity = '1';
+
+    // α=0.2: tracking rápido mas estável
+    smoothedCents += (cents - smoothedCents) * 0.2;
 
     noteName.textContent = note;
     octaveCents.textContent = `Oitava ${octave} · ${cents > 0 ? '+' : ''}${cents} cents`;
     freqDisplay.textContent = `${freq.toFixed(1)} Hz`;
     setNeedle(smoothedCents);
 
-    // Detecta qual corda está sendo tocada
+    const absCents = Math.abs(smoothedCents);
+    updateNeedleColor(absCents);
+
+    // Coloração do nome da nota
+    if (absCents > 8) {
+      noteName.style.color = absCents < 25 ? '#facc15' : '#e63946';
+    }
+
+    // Detecta corda mais próxima
     const strings = TUNINGS[instrument][currentTuningIdx].strings;
     let closestIdx = -1;
     let closestDiff = Infinity;
@@ -498,8 +549,7 @@ function analysisLoop() {
       if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
     });
 
-    const absCents = Math.abs(smoothedCents);
-    const isInTune = absCents <= 5;
+    const isInTune = absCents <= 8;
 
     if (isInTune) {
       if (!inTuneTimer) {
@@ -509,28 +559,44 @@ function analysisLoop() {
             playTuneSound(audioCtx);
             inTuneBellPlayed = true;
           }
-        }, 600);
+        }, 500);
       }
     } else {
       if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
       inTuneBellPlayed = false;
       setInTune(false);
-      noteName.style.color = absCents < 20 ? '#facc15' : '#e63946';
     }
 
     renderStrings(closestIdx, isInTune ? closestIdx : -1);
+
   } else {
-    // Sinal fraco ou ausente — decai suavemente para o centro
-    smoothedCents += (0 - smoothedCents) * 0.08;
-    if (Math.abs(smoothedCents) > 0.5) {
-      setNeedle(smoothedCents);
+    // Sem sinal — decai o ponteiro suavemente
+    smoothedCents += (0 - smoothedCents) * 0.05;
+    setNeedle(smoothedCents);
+
+    const now = Date.now();
+
+    if (now < holdUntil) {
+      // Dentro da janela de hold — mantém a nota visível, levemente dimmed
+      tunerDisplay.classList.add('holding-state');
     } else {
-      smoothedCents = 0;
+      // Hold expirou — limpa o display
+      if (Math.abs(smoothedCents) < 1) smoothedCents = 0;
       noteName.textContent = '—';
       noteName.style.color = '';
+      noteName.style.opacity = '1';
       octaveCents.textContent = '';
       freqDisplay.textContent = '— Hz';
-      setNeedle(0);
+      tunerDisplay.classList.remove('holding-state');
+
+      // Reset needle color para vermelho (inativo)
+      needle.setAttribute('stroke', '#e63946');
+      needlePivot.setAttribute('fill', '#e63946');
+
+      if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
+      inTuneBellPlayed = false;
+      setInTune(false);
+      renderStrings();
     }
   }
 
@@ -546,11 +612,13 @@ micBtn.addEventListener('click', async () => {
 
   try {
     micStatus.textContent = 'Solicitando acesso ao microfone…';
-    micStream = await navigator.mediaDevices.getUserMedia({ audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false } });
+    micStream = await navigator.mediaDevices.getUserMedia({
+      audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false },
+    });
     audioCtx = new AudioContext();
     analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 8192;      // mais pontos = mais resolução de frequência
-    analyser.smoothingTimeConstant = 0; // não interfere no time-domain
+    analyser.fftSize = 8192;
+    analyser.smoothingTimeConstant = 0;
 
     const source = audioCtx.createMediaStreamSource(micStream);
     source.connect(analyser);
@@ -561,7 +629,7 @@ micBtn.addEventListener('click', async () => {
     micStatus.textContent = 'Ouvindo… toque uma corda!';
 
     analysisLoop();
-  } catch (e) {
+  } catch {
     micStatus.textContent = 'Acesso ao microfone negado. Verifique as permissões do navegador.';
   }
 });
@@ -572,6 +640,9 @@ function stopListening() {
   audioCtx?.close();
   freqHistory.length = 0;
   smoothedCents = 0;
+  currentAngle = 0;
+  targetAngle = 0;
+  holdUntil = 0;
   audioCtx = null;
   analyser = null;
   micStream = null;
