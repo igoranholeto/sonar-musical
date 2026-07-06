@@ -4,149 +4,353 @@ interface Props {
   descricao?: string;
   url: string;
   preco?: string;
-  imagem?: string;
+  imagem?: string;       // mantido por compatibilidade, não exibido
   imagemAlt?: string;
+  avaliacao?: number;    // 1–5, ex: 4.5
+  destaques?: string[];  // até 3 bullets de vantagens
+  badge?: string;        // ex: "Melhor Custo-Benefício", "Top Pick"
+  categoria?: 'guitarra' | 'violao' | 'pedal' | 'pedaleira' | 'amplificador' | 'cordas' | 'interface' | 'acessorio';
 }
 
-const { produto, descricao, url, preco } = Astro.props;
+const {
+  produto,
+  descricao,
+  url,
+  preco,
+  avaliacao = 4.5,
+  destaques,
+  badge,
+  categoria = 'guitarra',
+} = Astro.props;
+
+// Ícone por categoria
+const icones: Record<string, string> = {
+  guitarra: `<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>`,
+  violao: `<path d="M12 2a10 10 0 0 0-7 17l5 5h4l5-5a10 10 0 0 0-7-17z"/><line x1="12" y1="12" x2="12" y2="18"/>`,
+  pedal: `<rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="8" cy="14" r="2"/><circle cx="16" cy="14" r="2"/><line x1="5" y1="7" x2="5" y2="4"/><line x1="19" y1="7" x2="19" y2="4"/>`,
+  pedaleira: `<rect x="1" y="6" width="22" height="14" rx="2"/><circle cx="6" cy="13" r="2"/><circle cx="12" cy="13" r="2"/><circle cx="18" cy="13" r="2"/><rect x="4" y="17" width="4" height="2" rx="1"/><rect x="10" y="17" width="4" height="2" rx="1"/>`,
+  amplificador: `<rect x="2" y="3" width="20" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="7"/><line x1="6" y1="7" x2="6" y2="7"/><circle cx="18" cy="7" r="1"/>`,
+  cordas: `<path d="M2 8c5-4 15-4 20 0"/><path d="M2 12c5-4 15-4 20 0"/><path d="M2 16c5-4 15-4 20 0"/><path d="M2 20c5-4 15-4 20 0"/>`,
+  interface: `<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="9" r="1.5"/><line x1="12" y1="15" x2="20" y2="15"/>`,
+  acessorio: `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>`,
+};
+
+const icone = icones[categoria] ?? icones.guitarra;
+
+// Stars
+function renderStars(val: number) {
+  const full = Math.floor(val);
+  const half = val % 1 >= 0.5;
+  let out = '';
+  for (let i = 1; i <= 5; i++) {
+    if (i <= full) out += '<span class="star star--full">★</span>';
+    else if (i === full + 1 && half) out += '<span class="star star--half">★</span>';
+    else out += '<span class="star star--empty">★</span>';
+  }
+  return out;
+}
+const stars = renderStars(avaliacao);
+const avaliacaoLabel = `${avaliacao.toFixed(1)}/5`;
+
+const badgeText = badge ?? 'Recomendação Sonar Musical';
 ---
 
-<div class="afiliado-cta">
-  <div class="afiliado-cta__badge">Recomendado pelo Sonar Musical</div>
-  <div class="afiliado-cta__body">
-    <!-- Ícone ilustrativo -->
-    <div class="afiliado-cta__icon" aria-hidden="true">
-      <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round">
-        <path d="M9 18V5l12-2v13" />
-        <circle cx="6" cy="18" r="3" />
-        <circle cx="18" cy="16" r="3" />
+<div class="cta-card">
+  <!-- Faixa superior -->
+  <div class="cta-card__top">
+    <span class="cta-card__badge">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+      </svg>
+      {badgeText}
+    </span>
+  </div>
+
+  <div class="cta-card__body">
+    <!-- Ícone de categoria -->
+    <div class="cta-card__icon" aria-hidden="true">
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+        <Fragment set:html={icone} />
       </svg>
     </div>
-    <div class="afiliado-cta__info">
-      <p class="afiliado-cta__produto">{produto}</p>
-      {descricao && <p class="afiliado-cta__descricao">{descricao}</p>}
-      {preco && <p class="afiliado-cta__preco">{preco}</p>}
+
+    <!-- Info do produto -->
+    <div class="cta-card__info">
+      <h3 class="cta-card__produto">{produto}</h3>
+
+      <!-- Avaliação -->
+      <div class="cta-card__rating" aria-label={`Avaliação: ${avaliacaoLabel}`}>
+        <span class="cta-card__stars" set:html={stars} />
+        <span class="cta-card__rating-val">{avaliacaoLabel}</span>
+      </div>
+
+      {descricao && <p class="cta-card__descricao">{descricao}</p>}
+
+      {destaques && destaques.length > 0 && (
+        <ul class="cta-card__destaques">
+          {destaques.map(d => <li>{d}</li>)}
+        </ul>
+      )}
     </div>
-    <a href={url} target="_blank" rel="noopener noreferrer sponsored" class="afiliado-cta__btn">
-      Ver Melhor Preço
-      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
-        <polyline points="15 3 21 3 21 9"/>
-        <line x1="10" y1="14" x2="21" y2="3"/>
-      </svg>
-    </a>
+
+    <!-- Preço + CTA -->
+    <div class="cta-card__action">
+      {preco && (
+        <div class="cta-card__preco-wrap">
+          <span class="cta-card__preco-label">A partir de</span>
+          <span class="cta-card__preco">{preco}</span>
+        </div>
+      )}
+
+      <a href={url} target="_blank" rel="noopener noreferrer sponsored" class="cta-card__btn">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        Ver Melhor Preço
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </a>
+
+      <p class="cta-card__trust">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+        Compra segura · Melhor preço verificado
+      </p>
+    </div>
   </div>
 </div>
 
 <style>
-  .afiliado-cta {
-    margin: 2rem 0;
-    border: 1px solid #e63946;
-    border-radius: 12px;
+  .cta-card {
+    margin: 2.5rem 0;
+    border-radius: 14px;
     overflow: hidden;
-    background: linear-gradient(135deg, #1a1a1a 0%, #1f0a0d 100%);
+    border: 1px solid rgba(230, 57, 70, 0.35);
+    background: linear-gradient(135deg, #161616 0%, #1c0b0e 100%);
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(230, 57, 70, 0.08);
+    transition: box-shadow 0.25s, transform 0.25s;
   }
 
-  .afiliado-cta__badge {
-    background: #e63946;
-    color: #ffffff;
-    font-size: 0.7rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.35rem 1rem;
-    display: inline-block;
+  .cta-card:hover {
+    box-shadow: 0 8px 36px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(230, 57, 70, 0.25);
+    transform: translateY(-2px);
   }
 
-  .afiliado-cta__body {
+  /* Faixa topo */
+  .cta-card__top {
+    background: linear-gradient(90deg, #e63946 0%, #b5202d 100%);
+    padding: 0.4rem 1.25rem;
     display: flex;
     align-items: center;
-    gap: 1.25rem;
-    padding: 1.25rem 1.5rem;
-    flex-wrap: wrap;
   }
 
-  .afiliado-cta__icon {
+  .cta-card__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: #fff;
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  /* Corpo */
+  .cta-card__body {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 1.25rem;
+    padding: 1.5rem 1.75rem;
+  }
+
+  /* Ícone */
+  .cta-card__icon {
     flex-shrink: 0;
-    width: 56px;
-    height: 56px;
-    border-radius: 12px;
-    background: rgba(230, 57, 70, 0.12);
-    border: 1px solid rgba(230, 57, 70, 0.25);
+    width: 72px;
+    height: 72px;
+    border-radius: 14px;
+    background: rgba(230, 57, 70, 0.1);
+    border: 1px solid rgba(230, 57, 70, 0.2);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #e63946;
   }
 
-  .afiliado-cta__info {
+  /* Info */
+  .cta-card__info {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    flex: 1;
-    min-width: 160px;
+    gap: 0.4rem;
+    min-width: 0;
   }
 
-  .afiliado-cta__produto {
-    font-size: 1.05rem;
-    font-weight: 700;
+  .cta-card__produto {
+    font-size: 1.1rem;
+    font-weight: 800;
     color: #ffffff;
     margin: 0;
     line-height: 1.3;
+    letter-spacing: -0.01em;
   }
 
-  .afiliado-cta__descricao {
+  .cta-card__rating {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .cta-card__stars {
+    display: flex;
+    gap: 1px;
+    line-height: 1;
+  }
+
+  .star { font-size: 0.95rem; }
+  .star--full  { color: #facc15; }
+  .star--half  { color: #facc15; opacity: 0.6; }
+  .star--empty { color: #3a3a3a; }
+
+  .cta-card__rating-val {
+    font-size: 0.78rem;
+    color: #999;
+    font-weight: 600;
+  }
+
+  .cta-card__descricao {
     font-size: 0.875rem;
-    color: #888888;
+    color: #aaa;
     margin: 0;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
-  .afiliado-cta__preco {
-    font-size: 0.95rem;
+  .cta-card__destaques {
+    list-style: none;
+    padding: 0;
+    margin: 0.25rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+
+  .cta-card__destaques li {
+    font-size: 0.8rem;
+    color: #bbb;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .cta-card__destaques li::before {
+    content: '✓';
+    color: #22c55e;
     font-weight: 700;
-    color: #e63946;
-    margin: 0;
+    font-size: 0.75rem;
+    flex-shrink: 0;
   }
 
-  .afiliado-cta__btn {
+  /* Ação / Preço / Botão */
+  .cta-card__action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.75rem;
+    flex-shrink: 0;
+    min-width: 170px;
+  }
+
+  .cta-card__preco-wrap {
+    text-align: right;
+  }
+
+  .cta-card__preco-label {
+    display: block;
+    font-size: 0.7rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+
+  .cta-card__preco {
+    display: block;
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: #22c55e;
+    letter-spacing: -0.02em;
+    line-height: 1.1;
+  }
+
+  .cta-card__btn {
     display: inline-flex !important;
     align-items: center;
+    justify-content: center;
     gap: 0.5rem;
-    background: #e63946 !important;
+    background: linear-gradient(135deg, #e63946, #c0202d) !important;
     color: #ffffff !important;
-    font-size: 0.875rem;
-    font-weight: 700;
-    padding: 0.75rem 1.4rem;
-    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 800;
+    padding: 0.85rem 1.5rem;
+    border-radius: 10px;
     text-decoration: none !important;
     white-space: nowrap;
-    transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-    flex-shrink: 0;
-    box-shadow: 0 2px 12px rgba(230, 57, 70, 0.3);
-    border: none;
-    cursor: pointer;
+    width: 100%;
+    transition: filter 0.2s, transform 0.15s, box-shadow 0.2s;
+    box-shadow: 0 3px 14px rgba(230, 57, 70, 0.45), inset 0 1px 0 rgba(255,255,255,0.1);
+    letter-spacing: 0.01em;
   }
 
-  .afiliado-cta__btn:hover {
-    background: #c0202e !important;
-    color: #ffffff !important;
+  .cta-card__btn:hover {
+    filter: brightness(1.1);
     transform: translateY(-1px);
-    box-shadow: 0 4px 16px rgba(230, 57, 70, 0.4);
+    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.55);
     text-decoration: none !important;
+    color: #fff !important;
   }
 
-  .afiliado-cta__btn:active {
+  .cta-card__btn:active {
     transform: translateY(0);
+    filter: brightness(0.95);
   }
 
-  @media (max-width: 480px) {
-    .afiliado-cta__body {
+  .cta-card__trust {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.7rem;
+    color: #555;
+    margin: 0;
+  }
+
+  /* Mobile */
+  @media (max-width: 640px) {
+    .cta-card__body {
+      grid-template-columns: 1fr;
       gap: 1rem;
-      padding: 1rem;
+      padding: 1.25rem;
     }
-    .afiliado-cta__btn {
+
+    .cta-card__icon {
+      width: 52px;
+      height: 52px;
+    }
+
+    .cta-card__action {
+      align-items: stretch;
+      min-width: 0;
       width: 100%;
+    }
+
+    .cta-card__preco-wrap {
+      text-align: left;
+    }
+
+    .cta-card__trust {
       justify-content: center;
     }
   }
