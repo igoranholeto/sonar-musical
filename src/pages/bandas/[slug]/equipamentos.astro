@@ -64,145 +64,142 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
     </div>
   </div>
 
-  <!-- Cards de integrantes (flip) -->
-  <section class="max-w-6xl mx-auto px-4 pt-11 pb-1.5">
+  <!-- Cards de integrantes (flip) + setup inline -->
+  <section class="max-w-6xl mx-auto px-4 pt-11 pb-24">
     <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(228px,1fr))" id="member-grid">
       {integrantes.map((membro, i) => {
         const clickable = membro.setup.length > 0;
         return (
-          <div
-            data-member-card={i}
-            data-clickable={clickable ? 'true' : 'false'}
-            class={`member-flip ${clickable ? 'cursor-pointer' : ''} ${i === defaultActiveIndex ? 'is-flipped' : ''}`}
-            style="height:334px"
-            role={clickable ? 'button' : undefined}
-            tabindex={clickable ? 0 : undefined}
-            aria-pressed={clickable ? (i === defaultActiveIndex ? 'true' : 'false') : undefined}
-            aria-label={clickable ? `${membro.nome} — toque para ver o estilo e o setup` : undefined}
-          >
-            <div class="member-flip__front" style={`--front-border:#242424;background:#131313`}>
-              <div class="relative h-[214px]" style={`background:${gradient}`}>
-                {membro.foto ? (
-                  <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
-                ) : (
-                  <span class="absolute inset-0 flex items-center justify-center text-3xl font-extrabold text-white/85">{iniciais(membro.nome)}</span>
+          <Fragment>
+            <div
+              data-member-card={i}
+              data-clickable={clickable ? 'true' : 'false'}
+              class={`member-flip ${clickable ? 'cursor-pointer' : ''} ${i === defaultActiveIndex ? 'is-flipped' : ''}`}
+              style="height:334px"
+              role={clickable ? 'button' : undefined}
+              tabindex={clickable ? 0 : undefined}
+              aria-pressed={clickable ? (i === defaultActiveIndex ? 'true' : 'false') : undefined}
+              aria-label={clickable ? `${membro.nome} — toque para ver o estilo e o setup` : undefined}
+            >
+              <div class="member-flip__front" style={`--front-border:#242424;background:#131313`}>
+                <div class="relative h-[214px]" style={`background:${gradient}`}>
+                  {membro.foto ? (
+                    <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                  ) : (
+                    <span class="absolute inset-0 flex items-center justify-center text-3xl font-extrabold text-white/85">{iniciais(membro.nome)}</span>
+                  )}
+                </div>
+                <div class="p-4 flex-1 flex flex-col justify-center">
+                  <div class="text-lg font-extrabold tracking-tight">{membro.nome}</div>
+                  <div class="text-[13px] font-semibold mt-0.5" style={`color:${accent}`}>{membro.funcao}</div>
+                  {clickable && <div class="text-[11.5px] text-[#666] font-semibold mt-2.5">↻ toque para ver o estilo</div>}
+                </div>
+              </div>
+              <div class="member-flip__back" style={`border-color:${accent}`}>
+                <div class="text-[11px] font-bold uppercase tracking-widest" style={`color:${accent}`}>Estilo &amp; som</div>
+                <div class="text-[17px] font-extrabold mt-1">{membro.nome}</div>
+                <ul class="flex flex-col gap-3 mt-3.5 flex-1 list-none">
+                  {membro.pontos.map((p) => (
+                    <li class="flex gap-2 text-[13.5px] text-[#d2d2d2] leading-snug">
+                      <span class="font-extrabold text-base flex-shrink-0" style={`color:${accent}`}>"</span>{p}
+                    </li>
+                  ))}
+                </ul>
+                <div class="text-[11.5px] text-[#666] font-semibold mt-2">↻ toque para voltar · setup abaixo</div>
+              </div>
+            </div>
+
+            {clickable && (
+              <div data-setup-panel={i} hidden={i !== defaultActiveIndex} style="grid-column:1/-1">
+                <div class="flex items-center gap-3.5 my-6.5">
+                  <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center" style={`background:${gradient}`}>
+                    {membro.foto ? (
+                      <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="w-full h-full object-cover" loading="lazy" />
+                    ) : (
+                      <span class="text-xs font-extrabold text-white/90">{iniciais(membro.nome)}</span>
+                    )}
+                  </div>
+                  <div>
+                    <h2 class="text-[24px] font-extrabold tracking-tight">Setup de {membro.nome}</h2>
+                    <div class="text-[13.5px] text-muted">{membro.funcao} · original × versão low cost</div>
+                  </div>
+                </div>
+
+                <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(280px,1fr))">
+                  {membro.setup.map((g) => (
+                    <div class="bg-[#111] border border-border rounded-2xl overflow-hidden">
+                      <div class="px-4 py-3 border-b border-[#222] text-[11px] font-bold uppercase tracking-wider text-[#8a8a8a]">{g.tipo}</div>
+                      {g.original && (
+                        <div class="p-4" style="border-left:3px solid #e63946;background:linear-gradient(90deg,rgba(230,57,70,.09),transparent 62%)">
+                          <div class="flex items-center gap-2.5">
+                            <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-white bg-brand px-2.5 py-0.5 rounded">Original</span>
+                            {g.original.preco && <span class="text-[12.5px] text-[#b0b0b0] font-semibold">{g.original.preco}</span>}
+                          </div>
+                          <div class="text-base font-bold mt-2.5">{g.original.nome}</div>
+                          {g.original.urlAfiliado ? (
+                            <a
+                              href={g.original.urlAfiliado}
+                              target="_blank"
+                              rel="noopener noreferrer sponsored"
+                              class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
+                            >
+                              Conferir preços →
+                            </a>
+                          ) : (
+                            <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-white/50 bg-white/5 rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
+                              Conferir preços →
+                            </span>
+                          )}
+                        </div>
+                      )}
+                      {g.low && (
+                        <div class="p-4 bg-[#0d0d0d]" style="border-left:3px solid #333">
+                          <div class="flex items-center gap-2.5">
+                            <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-[#d0d0d0] bg-[#2a2a2a] px-2.5 py-0.5 rounded">Low cost</span>
+                            {g.low.preco && <span class="text-[12.5px] font-bold" style="color:oklch(0.78 0.13 155)">{g.low.preco}</span>}
+                          </div>
+                          <div class="text-[15.5px] font-bold mt-2.5">{g.low.nome}</div>
+                          {g.low.obs && <div class="text-[12.5px] text-[#888] mt-1">{g.low.obs}</div>}
+                          {g.low.urlAfiliado ? (
+                            <a
+                              href={g.low.urlAfiliado}
+                              target="_blank"
+                              rel="noopener noreferrer sponsored"
+                              class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
+                            >
+                              Conferir preços →
+                            </a>
+                          ) : (
+                            <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#666] border border-[#2a2a2a] rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
+                              Conferir preços →
+                            </span>
+                          )}
+                        </div>
+                      )}
+                    </div>
+                  ))}
+                </div>
+
+                {membro.resumo && (
+                  <div class="mt-5.5 rounded-[18px] border border-border p-6.5" style="background:linear-gradient(135deg,#151515,#0d0d0d)">
+                    <div class="flex items-center justify-between gap-3 flex-wrap">
+                      <h3 class="text-xl font-extrabold tracking-tight">Sobre {membro.nome}</h3>
+                      <span class="text-[10.5px] font-bold uppercase tracking-wider text-[#7a7a7a] bg-[#1c1c1c] border border-[#2a2a2a] px-2.5 py-1 rounded">Texto provisório</span>
+                    </div>
+                    <div class="flex gap-2.5 flex-wrap mt-3.5">
+                      {membro.anos && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">🗓 {membro.anos}</span>}
+                      {membro.status && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">● {membro.status}</span>}
+                      {membro.inspiracoes && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">✦ Inspirações: {membro.inspiracoes}</span>}
+                    </div>
+                    <p class="text-[15px] text-[#b8b8b8] leading-relaxed mt-4 max-w-2xl">{membro.resumo}</p>
+                  </div>
                 )}
               </div>
-              <div class="p-4 flex-1 flex flex-col justify-center">
-                <div class="text-lg font-extrabold tracking-tight">{membro.nome}</div>
-                <div class="text-[13px] font-semibold mt-0.5" style={`color:${accent}`}>{membro.funcao}</div>
-                {clickable && <div class="text-[11.5px] text-[#666] font-semibold mt-2.5">↻ toque para ver o estilo</div>}
-              </div>
-            </div>
-            <div class="member-flip__back" style={`border-color:${accent}`}>
-              <div class="text-[11px] font-bold uppercase tracking-widest" style={`color:${accent}`}>Estilo &amp; som</div>
-              <div class="text-[17px] font-extrabold mt-1">{membro.nome}</div>
-              <ul class="flex flex-col gap-3 mt-3.5 flex-1 list-none">
-                {membro.pontos.map((p) => (
-                  <li class="flex gap-2 text-[13.5px] text-[#d2d2d2] leading-snug">
-                    <span class="font-extrabold text-base flex-shrink-0" style={`color:${accent}`}>"</span>{p}
-                  </li>
-                ))}
-              </ul>
-              <div class="text-[11.5px] text-[#666] font-semibold mt-2">↻ toque para voltar · setup abaixo</div>
-            </div>
-          </div>
+            )}
+          </Fragment>
         );
       })}
     </div>
-  </section>
-
-  <!-- Setup do integrante ativo -->
-  <section class="max-w-6xl mx-auto px-4 pt-2 pb-24" id="setup-section" hidden={defaultActiveIndex === -1}>
-    {integrantes.map((membro, i) => (
-      <div data-setup-panel={i} hidden={i !== defaultActiveIndex}>
-        <div class="flex items-center gap-3.5 my-6.5">
-          <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center" style={`background:${gradient}`}>
-            {membro.foto ? (
-              <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="w-full h-full object-cover" loading="lazy" />
-            ) : (
-              <span class="text-xs font-extrabold text-white/90">{iniciais(membro.nome)}</span>
-            )}
-          </div>
-          <div>
-            <h2 class="text-[24px] font-extrabold tracking-tight">Setup de {membro.nome}</h2>
-            <div class="text-[13.5px] text-muted">{membro.funcao} · original × versão low cost</div>
-          </div>
-        </div>
-
-        {membro.setup.length > 0 && (
-          <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr))">
-            {membro.setup.map((g) => (
-              <div class="bg-[#111] border border-border rounded-2xl overflow-hidden">
-                <div class="px-4 py-3 border-b border-[#222] text-[11px] font-bold uppercase tracking-wider text-[#8a8a8a]">{g.tipo}</div>
-                {g.original && (
-                  <div class="p-4" style="border-left:3px solid #e63946;background:linear-gradient(90deg,rgba(230,57,70,.09),transparent 62%)">
-                    <div class="flex items-center gap-2.5">
-                      <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-white bg-brand px-2.5 py-0.5 rounded">Original</span>
-                      {g.original.preco && <span class="text-[12.5px] text-[#b0b0b0] font-semibold">{g.original.preco}</span>}
-                    </div>
-                    <div class="text-base font-bold mt-2.5">{g.original.nome}</div>
-                    {g.original.urlAfiliado ? (
-                      <a
-                        href={g.original.urlAfiliado}
-                        target="_blank"
-                        rel="noopener noreferrer sponsored"
-                        class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
-                      >
-                        Conferir preços →
-                      </a>
-                    ) : (
-                      <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-white/50 bg-white/5 rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
-                        Conferir preços →
-                      </span>
-                    )}
-                  </div>
-                )}
-                {g.low && (
-                  <div class="p-4 bg-[#0d0d0d]" style="border-left:3px solid #333">
-                    <div class="flex items-center gap-2.5">
-                      <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-[#d0d0d0] bg-[#2a2a2a] px-2.5 py-0.5 rounded">Low cost</span>
-                      {g.low.preco && <span class="text-[12.5px] font-bold" style="color:oklch(0.78 0.13 155)">{g.low.preco}</span>}
-                    </div>
-                    <div class="text-[15.5px] font-bold mt-2.5">{g.low.nome}</div>
-                    {g.low.obs && <div class="text-[12.5px] text-[#888] mt-1">{g.low.obs}</div>}
-                    {g.low.urlAfiliado ? (
-                      <a
-                        href={g.low.urlAfiliado}
-                        target="_blank"
-                        rel="noopener noreferrer sponsored"
-                        class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
-                      >
-                        Conferir preços →
-                      </a>
-                    ) : (
-                      <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#666] border border-[#2a2a2a] rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
-                        Conferir preços →
-                      </span>
-                    )}
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        )}
-
-        {membro.resumo && (
-          <div class="mt-5.5 rounded-[18px] border border-border p-6.5" style="background:linear-gradient(135deg,#151515,#0d0d0d)">
-            <div class="flex items-center justify-between gap-3 flex-wrap">
-              <h3 class="text-xl font-extrabold tracking-tight">Sobre {membro.nome}</h3>
-              <span class="text-[10.5px] font-bold uppercase tracking-wider text-[#7a7a7a] bg-[#1c1c1c] border border-[#2a2a2a] px-2.5 py-1 rounded">Texto provisório</span>
-            </div>
-            <div class="flex gap-2.5 flex-wrap mt-3.5">
-              {membro.anos && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">🗓 {membro.anos}</span>}
-              {membro.status && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">● {membro.status}</span>}
-              {membro.inspiracoes && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">✦ Inspirações: {membro.inspiracoes}</span>}
-            </div>
-            <p class="text-[15px] text-[#b8b8b8] leading-relaxed mt-4 max-w-2xl">{membro.resumo}</p>
-          </div>
-        )}
-      </div>
-    ))}
   </section>
 </BaseLayout>
 
@@ -252,9 +249,8 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
 <script>
   const cards = document.querySelectorAll<HTMLElement>('[data-member-card][data-clickable="true"]');
   const panels = document.querySelectorAll<HTMLElement>('[data-setup-panel]');
-  const setupSection = document.getElementById('setup-section')!;
 
-  let active: number | null = setupSection.hidden ? null : Number(
+  let active: number | null = Number(
     document.querySelector<HTMLElement>('[data-setup-panel]:not([hidden])')?.dataset.setupPanel
   );
   if (Number.isNaN(active)) active = null;
@@ -268,16 +264,12 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
     panels.forEach((panel) => {
       panel.hidden = panel.dataset.setupPanel !== String(active);
     });
-    setupSection.hidden = active === null;
   }
 
   function toggle(card: HTMLElement) {
     const idx = Number(card.dataset.memberCard);
     active = active === idx ? null : idx;
     apply();
-    if (active !== null) {
-      setupSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-    }
   }
 
   cards.forEach((card) => {
