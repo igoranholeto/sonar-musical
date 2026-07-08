@@ -5,7 +5,7 @@ origem: Londres, Reino Unido
 ano: 1975
 blurb: Guitarras gêmeas galopantes sobre o baixo dedilhado de Steve Harris.
   NWOBHM em estado puro.
-fotoCapa: /images/dave-murray-sunburst-sonar.webp
+fotoCapa: /images/iron-maiden-sonar-banda-ajuste-webp.webp
 fotoCapaAlt: "Iron Maiden Banda "
 integrantes:
   - foto: /images/steve-harris-sonar-integrante.webp
@@ -70,7 +70,8 @@ integrantes:
           nome: Behringer Powerplay In-ear
           preco: ~R$ 900
           obs: Retorno limpo no palco.
-  - fotoAlt: Dave Murray Guitarrista
+  - foto: /images/dave-murray-sunburst-sonar.webp
+    fotoAlt: Dave Murray Guitarrista
     pontos:
       - Legato fluido e vibrato suave — solos "líquidos".
       - "Strat com captação quente: sustain sem perder o brilho."
