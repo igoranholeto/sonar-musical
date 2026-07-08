@@ -49,6 +49,7 @@ const bandas = defineCollection({
     ano: z.number(),
     fotoCapa: z.string().optional(),
     fotoCapaAlt: z.string().optional(),
+    fotoCapaPosition: z.number().min(0).max(100).optional(),
     blurb: z.string(),
     integrantes: z.array(
       z.object({

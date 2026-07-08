@@ -14,13 +14,11 @@ export async function getStaticPaths() {
 }
 
 const { banda } = Astro.props;
-const { nome, genero, origem, ano, fotoCapa, fotoCapaAlt, integrantes } = banda.data;
+const { nome, genero, origem, ano, fotoCapa, fotoCapaAlt, fotoCapaPosition, integrantes } = banda.data;
 
 const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
 const tagBg = generoSoft(genero);
-
-const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
 ---
 
 <BaseLayout
@@ -31,7 +29,14 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
   <!-- Banner -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:300px`}>
     {fotoCapa && (
-      <img src={fotoCapa} alt={fotoCapaAlt ?? nome} class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" />
+      <img
+        src={fotoCapa}
+        alt={fotoCapaAlt ?? nome}
+        class="absolute inset-0 w-full h-full object-cover"
+        style={`object-position:center ${fotoCapaPosition ?? 20}%`}
+        loading="eager"
+        fetchpriority="high"
+      />
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.85) 76%,#0a0a0a)"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-9">
@@ -66,6 +71,20 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
 
   <!-- Cards de integrantes (flip) + setup inline -->
   <section class="max-w-6xl mx-auto px-4 pt-11 pb-24">
+    <div class="flex items-center gap-3.5 mb-6.5">
+      <span
+        class="w-8.5 h-8.5 rounded-lg flex items-center justify-center flex-shrink-0"
+        style={`background:${tagBg};color:${accent}`}
+      >
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 4v11a1 1 0 0 0 1.6.8l2.6-2 2.2 4.8a1 1 0 0 0 1.3.5l1.4-.6a1 1 0 0 0 .5-1.3L16.4 12.6l3-.7A1 1 0 0 0 19.7 10L9.9 3.2A1 1 0 0 0 9 4Z"/>
+        </svg>
+      </span>
+      <div>
+        <h2 class="text-2xl font-extrabold tracking-tight">Clique em um integrante</h2>
+        <div class="text-sm text-muted">O card vira e o setup completo aparece logo abaixo</div>
+      </div>
+    </div>
     <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(228px,1fr))" id="member-grid">
       {integrantes.map((membro, i) => {
         const clickable = membro.setup.length > 0;
@@ -74,11 +93,11 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
             <div
               data-member-card={i}
               data-clickable={clickable ? 'true' : 'false'}
-              class={`member-flip ${clickable ? 'cursor-pointer' : ''} ${i === defaultActiveIndex ? 'is-flipped' : ''}`}
+              class={`member-flip ${clickable ? 'cursor-pointer' : ''}`}
               style="height:334px"
               role={clickable ? 'button' : undefined}
               tabindex={clickable ? 0 : undefined}
-              aria-pressed={clickable ? (i === defaultActiveIndex ? 'true' : 'false') : undefined}
+              aria-pressed={clickable ? 'false' : undefined}
               aria-label={clickable ? `${membro.nome} — toque para ver o estilo e o setup` : undefined}
             >
               <div class="member-flip__front" style={`--front-border:#242424;background:#131313`}>
@@ -110,7 +129,7 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
             </div>
 
             {clickable && (
-              <div data-setup-panel={i} hidden={i !== defaultActiveIndex} style="grid-column:1/-1">
+              <div data-setup-panel={i} hidden style="grid-column:1/-1">
                 <div class="flex items-center gap-3.5 my-6.5">
                   <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center" style={`background:${gradient}`}>
                     {membro.foto ? (
@@ -250,10 +269,7 @@ const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
   const cards = document.querySelectorAll<HTMLElement>('[data-member-card][data-clickable="true"]');
   const panels = document.querySelectorAll<HTMLElement>('[data-setup-panel]');
 
-  let active: number | null = Number(
-    document.querySelector<HTMLElement>('[data-setup-panel]:not([hidden])')?.dataset.setupPanel
-  );
-  if (Number.isNaN(active)) active = null;
+  let active: number | null = null;
 
   function apply() {
     document.querySelectorAll<HTMLElement>('[data-member-card]').forEach((card) => {

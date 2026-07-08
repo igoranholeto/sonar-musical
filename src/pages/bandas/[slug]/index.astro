@@ -12,7 +12,7 @@ export async function getStaticPaths() {
 }
 
 const { banda } = Astro.props;
-const { nome, genero, origem, ano, blurb, fotoCapa, fotoCapaAlt, integrantes } = banda.data;
+const { nome, genero, origem, ano, blurb, fotoCapa, fotoCapaAlt, fotoCapaPosition, integrantes } = banda.data;
 
 const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
@@ -35,7 +35,14 @@ const schema = {
   <!-- Banner -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:380px`}>
     {fotoCapa && (
-      <img src={fotoCapa} alt={fotoCapaAlt ?? nome} class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" />
+      <img
+        src={fotoCapa}
+        alt={fotoCapaAlt ?? nome}
+        class="absolute inset-0 w-full h-full object-cover"
+        style={`object-position:center ${fotoCapaPosition ?? 20}%`}
+        loading="eager"
+        fetchpriority="high"
+      />
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.3),rgba(10,10,10,.82) 74%,#0a0a0a)"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-10">
