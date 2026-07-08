@@ -184,7 +184,7 @@ collections:
             summary: "{{fields.fonte}}: {{fields.nota}}/{{fields.notaMax}}"
             hint: "Inclua também uma linha com fonte \"Sonar Musical\" para a nota da casa — ela aparece na mesma lista."
             fields:
-              - { label: Fonte (ex: AllMusic, Pitchfork, Sonar Musical), name: fonte, widget: string }
+              - { label: "Fonte (ex: AllMusic, Pitchfork, Sonar Musical)", name: fonte, widget: string }
               - { label: Nota, name: nota, widget: number }
               - { label: Nota máxima, name: notaMax, widget: number }
           - label: Músicas mais streamadas (top 5)
