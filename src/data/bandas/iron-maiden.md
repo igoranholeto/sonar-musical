@@ -42,7 +42,8 @@ integrantes:
           nome: Hartke HD75 Combo
           preco: ~R$ 3.200
           obs: Graves definidos pro galope.
-  - fotoAlt: Brucen DIckinson Vocalista
+  - foto: /images/bruce-dickinson-iron-maiden-sonar.webp
+    fotoAlt: Brucen DIckinson Vocalista
     pontos:
       - Alcance operático e vibrato potente — a "Air Raid Siren".
       - Presença teatral que conduz o show do começo ao fim.
@@ -50,8 +51,13 @@ integrantes:
     anos: 1981–1993 · 1999 – hoje
     funcao: Vocal
     status: Vocalista
-    resumo: "[Rascunho — edite este texto] Entrou em 1981, saiu em 1993 pra carreira
-      solo e voltou em 1999. Definiu a fase clássica da banda."
+    resumo: Bruce Dickinson é o vocalista do Iron Maiden desde 1981, com uma breve
+      pausa entre 1993 e 1999 para se dedicar à carreira solo. Sua voz
+      operística de amplo alcance e presença de palco marcante ajudaram a
+      definir álbuns clássicos como "The Number of the Beast" e "Powerslave".
+      Fora dos palcos, é piloto de avião comercial licenciado — já pilotou o
+      Boeing 747 "Ed Force One" da própria banda — e recebeu doutorado honorário
+      em música pela Queen Mary University of London.
     nome: Bruce Dickinson
     setup:
       - tipo: Microfone
@@ -79,8 +85,12 @@ integrantes:
     anos: 1976 – hoje
     funcao: Guitarra
     status: Guitarrista
-    resumo: "[Rascunho — edite este texto] O guitarrista mais longevo do Maiden, no
-      grupo quase ininterruptamente desde 1976."
+    resumo: Dave Murray é guitarrista do Iron Maiden desde os primórdios da banda,
+      sendo o segundo integrante com mais tempo de casa depois de Steve Harris.
+      Conhecido por um estilo solo fluido baseado em técnica legato — inspirado
+      em Jimi Hendrix —, formou ao lado de Adrian Smith uma das duplas de
+      guitarra mais influentes do heavy metal, com harmonias e solos que
+      moldaram o gênero a partir dos anos 80.
     nome: Dave Murray
     setup:
       - tipo: Guitarra
@@ -108,8 +118,11 @@ integrantes:
     anos: 1980–1990 · 1999 – hoje
     funcao: Guitarra
     status: Guitarrista
-    resumo: "[Rascunho — edite este texto] Saiu em 1990 e retornou em 1999. Coautor
-      de vários clássicos da banda."
+    resumo: Adrian Smith entrou para o Iron Maiden em 1980, trazendo um estilo de
+      guitarra rítmico e melódico que se tornou essencial na sonoridade da
+      banda. Amigo de infância de Dave Murray, com quem já tocava na banda
+      Urchin, também compõe boa parte do repertório do grupo e mantém carreira
+      paralela como músico solo.
     nome: Adrian Smith
     setup:
       - tipo: Guitarra
@@ -137,8 +150,11 @@ integrantes:
     anos: 1990 – hoje
     funcao: Guitarra
     status: Guitarrista
-    resumo: "[Rascunho — edite este texto] Entrou em 1990 para a substituição de
-      Adrian Smith e permaneceu, formando o trio de guitarras."
+    resumo: Janick Gers integra o Iron Maiden desde 1990, completando o trio de
+      guitarras ao lado de Dave Murray e Adrian Smith. Seu estilo é descrito
+      como mais áspero, agressivo e cheio de energia cênica, contrastando com o
+      som mais suave de Murray e o tom rítmico de Smith — uma combinação que deu
+      à banda sua textura sonora característica nos anos seguintes.
     nome: Janick Gers
     setup:
       - tipo: Guitarra
@@ -166,8 +182,13 @@ integrantes:
     anos: 1982 – hoje
     funcao: Bateria
     status: Baterista
-    resumo: "[Rascunho — edite este texto] Baterista desde 1982, conhecido pela
-      técnica de tocar só com a ponta dos dedos e pelo kit gigante."
+    resumo: Nicko McBrain é o baterista do Iron Maiden desde 1982, tendo marcado a
+      sonoridade da banda por mais de quatro décadas. Em dezembro de 2024, após
+      se recuperar de um AVC sofrido em 2023, anunciou o afastamento das turnês,
+      permanecendo como membro da "família Iron Maiden" e dedicando-se a
+      projetos pessoais. Desde então, Simon Dawson — baterista de longa data do
+      projeto paralelo British Lion, de Steve Harris — assumiu as apresentações
+      ao vivo da banda.
     nome: Nicko McBrain
     setup:
       - tipo: Bateria
