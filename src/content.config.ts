@@ -79,7 +79,33 @@ const bandas = defineCollection({
         capa: z.string().optional(),
         capaAlt: z.string().optional(),
         spotifyUrl: z.string().optional(),
-        saibaMaisUrl: z.string().optional(),
+        temas: z.array(
+          z.object({
+            tema: z.string(),
+            explicacao: z.string(),
+          })
+        ).default([]),
+        scoresCriticos: z.array(
+          z.object({
+            fonte: z.string(),
+            nota: z.number(),
+            notaMax: z.number(),
+          })
+        ).default([]),
+        musicasPopulares: z.array(
+          z.object({
+            nome: z.string(),
+            streams: z.string(),
+          })
+        ).default([]),
+        videoYoutubeId: z.string().optional(),
+        videoTitulo: z.string().optional(),
+        secoesAnalise: z.array(
+          z.object({
+            titulo: z.string(),
+            texto: z.string(),
+          })
+        ).default([]),
       })
     ).default([]),
   }),

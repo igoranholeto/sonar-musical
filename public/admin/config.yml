@@ -168,4 +168,41 @@ collections:
           - { label: Capa do álbum, name: capa, widget: image, required: false, hint: "Formato quadrado (1:1). Envie no mínimo 800×800px." }
           - { label: Alt text da capa, name: capaAlt, widget: string, required: false }
           - { label: Link do Spotify, name: spotifyUrl, widget: string, required: false, hint: "Cole o link do álbum no Spotify. Se deixar em branco, o botão abre uma busca pelo álbum no Spotify." }
-          - { label: Link para mais informações, name: saibaMaisUrl, widget: string, required: false, hint: "Ex: página da Wikipédia sobre o álbum. Se deixar em branco, o botão abre uma busca na Wikipédia." }
+          - label: Tons e ideias marcantes
+            name: temas
+            widget: list
+            required: false
+            summary: "{{fields.tema}}"
+            hint: "Cada um vira um botão clicável na página, que revela a explicação ao lado."
+            fields:
+              - { label: Tema, name: tema, widget: string, hint: "Ex: Tempo e mortalidade" }
+              - { label: Explicação, name: explicacao, widget: text, hint: "Por que esse tema aparece no álbum — cite a faixa ou contexto." }
+          - label: Notas da crítica e do Sonar Musical
+            name: scoresCriticos
+            widget: list
+            required: false
+            summary: "{{fields.fonte}}: {{fields.nota}}/{{fields.notaMax}}"
+            hint: "Inclua também uma linha com fonte \"Sonar Musical\" para a nota da casa — ela aparece na mesma lista."
+            fields:
+              - { label: Fonte (ex: AllMusic, Pitchfork, Sonar Musical), name: fonte, widget: string }
+              - { label: Nota, name: nota, widget: number }
+              - { label: Nota máxima, name: notaMax, widget: number }
+          - label: Músicas mais streamadas (top 5)
+            name: musicasPopulares
+            widget: list
+            required: false
+            summary: "{{fields.nome}} — {{fields.streams}}"
+            fields:
+              - { label: Nome da música, name: nome, widget: string }
+              - { label: Streams (aproximado), name: streams, widget: string, hint: "Ex: 657 milhões. Dado aproximado, muda com o tempo." }
+          - { label: ID do vídeo do YouTube, name: videoYoutubeId, widget: string, required: false, hint: "Vídeo em português analisando especificamente este álbum. Cole só o ID (ex: dQw4w9WgXcQ)." }
+          - { label: Título do vídeo, name: videoTitulo, widget: string, required: false }
+          - label: Seções de análise (texto livre)
+            name: secoesAnalise
+            widget: list
+            required: false
+            summary: "{{fields.titulo}}"
+            hint: "Aparece abaixo das músicas mais streamadas. Ex: 'Gravação e produção', 'Impacto e legado'."
+            fields:
+              - { label: Título da seção, name: titulo, widget: string }
+              - { label: Texto, name: texto, widget: text }

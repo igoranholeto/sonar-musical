@@ -1,0 +1,298 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import { generoAccent, generoGradient, generoSoft, slugify } from '../../../../utils/generos';
+
+export async function getStaticPaths() {
+  const bandas = await getCollection('bandas');
+  return bandas.flatMap((banda) =>
+    banda.data.albuns.map((album) => ({
+      params: { slug: banda.id, album: slugify(album.nome) },
+      props: { banda, album },
+    }))
+  );
+}
+
+const { banda, album } = Astro.props;
+const { nome: nomeBanda, genero } = banda.data;
+const { nome, ano, descricao, capa, capaAlt, spotifyUrl, temas, scoresCriticos, musicasPopulares, videoYoutubeId, videoTitulo, secoesAnalise } = album;
+
+const accent = generoAccent(genero);
+const gradient = generoGradient(genero);
+const tagBg = generoSoft(genero);
+
+const spotifyHref = spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(`${nomeBanda} ${nome}`)}`;
+const maxStreamValue = musicasPopulares.length
+  ? Math.max(...musicasPopulares.map((m) => parseFloat(m.streams.replace(',', '.')) || 0))
+  : 0;
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'MusicAlbum',
+  name: nome,
+  byArtist: { '@type': 'MusicGroup', name: nomeBanda },
+  ...(ano && { datePublished: String(ano) }),
+  ...(capa && { image: `https://sonarmusical.com.br${capa}` }),
+};
+---
+
+<BaseLayout
+  title={`${nome} — ${nomeBanda}`}
+  description={descricao}
+  image={capa}
+  schema={schema}
+>
+  <!-- Banner com capa desfocada de fundo -->
+  <div class="relative overflow-hidden border-b border-border" style={`background:${gradient}`}>
+    {capa && (
+      <img src={capa} alt="" class="absolute inset-0 w-full h-full object-cover album-bg" aria-hidden="true" />
+    )}
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.92) 80%,#0a0a0a)"></div>
+    <div class="relative max-w-5xl mx-auto px-4 pt-7 pb-10">
+      <div class="flex gap-2.5 flex-wrap">
+        <a
+          href="/bandas"
+          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
+        >
+          ← Todas as bandas
+        </a>
+        <a
+          href={`/bandas/${banda.id}`}
+          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
+        >
+          ← {nomeBanda}
+        </a>
+      </div>
+
+      <div class="flex items-end gap-6 mt-9 flex-wrap">
+        <div class="album-hero-cover flex-shrink-0">
+          {capa ? (
+            <img src={capa} alt={capaAlt ?? nome} loading="eager" fetchpriority="high" />
+          ) : (
+            <div class="w-full h-full flex items-center justify-center" style={`background:${gradient}`}>
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-opacity="0.85" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 18V5l12-2v13" />
+                <circle cx="6" cy="18" r="3" />
+                <circle cx="18" cy="16" r="3" />
+              </svg>
+            </div>
+          )}
+        </div>
+        <div class="flex-1 min-w-64 pb-1">
+          <span
+            class="inline-flex text-[11px] font-bold uppercase tracking-wider px-2.5 py-1.5 rounded-md text-white"
+            style="background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.3)"
+          >
+            {genero} · Álbum
+          </span>
+          <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(30px,5.5vw,58px)">{nome}</h1>
+          <div class="text-[15px] text-white/80 font-medium mt-2.5">
+            {nomeBanda} {ano && <>· {ano}</>}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-5xl mx-auto px-4">
+    <!-- Descrição -->
+    <section class="pt-11">
+      <p class="text-lg leading-relaxed text-[#d8d8d8] max-w-3xl">{descricao}</p>
+      <a
+        href={spotifyHref}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 mt-6 font-bold text-sm rounded-xl px-5 py-3 transition-colors"
+        style="background:#1db954;color:#04170b"
+      >
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.59 14.4a.622.622 0 0 1-.86.21c-2.35-1.44-5.31-1.76-8.79-.96a.624.624 0 1 1-.28-1.22c3.81-.87 7.08-.5 9.71 1.11.31.19.4.59.22.86zm1.22-2.72a.78.78 0 0 1-1.07.26c-2.69-1.65-6.79-2.13-9.98-1.17a.78.78 0 1 1-.45-1.49c3.64-1.1 8.16-.57 11.25 1.32.37.23.48.71.25 1.08zm.11-2.83c-3.23-1.92-8.56-2.09-11.64-1.16a.936.936 0 1 1-.54-1.79c3.54-1.07 9.41-.87 13.13 1.34a.936.936 0 0 1-.95 1.61z"/></svg>
+        Ouvir no Spotify
+      </a>
+    </section>
+
+    <!-- Tons e ideias marcantes -->
+    {temas.length > 0 && (
+      <section class="pt-14">
+        <div class="flex items-center gap-3.5 mb-5">
+          <span class="w-8.5 h-8.5 rounded-lg flex items-center justify-center font-extrabold text-base flex-shrink-0" style={`background:${tagBg};color:${accent}`}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 0-4 12.7V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.3A7 7 0 0 0 12 2Z"/><path d="M9.5 21h5"/></svg>
+          </span>
+          <h2 class="text-2xl font-extrabold tracking-tight">Tons e ideias marcantes</h2>
+        </div>
+        <div class="text-sm text-muted mb-4 -mt-2.5">Clique em um tema para ver por que ele aparece no álbum</div>
+        <div class="flex flex-wrap gap-2.5">
+          {temas.map((t) => (
+            <details class="tema-details">
+              <summary
+                class="text-[13.5px] font-semibold px-4 py-2 rounded-full cursor-pointer select-none"
+                style={`background:${tagBg};color:${accent};border:1px solid rgba(255,255,255,.08)`}
+              >
+                {t.tema}
+              </summary>
+              <p class="tema-details__texto">{t.explicacao}</p>
+            </details>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Scores -->
+    {scoresCriticos.length > 0 && (
+      <section class="pt-14">
+        <div class="flex items-center gap-3.5 mb-6">
+          <span class="w-8.5 h-8.5 rounded-lg flex items-center justify-center font-extrabold text-base flex-shrink-0" style={`background:${tagBg};color:${accent}`}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2Z"/></svg>
+          </span>
+          <h2 class="text-2xl font-extrabold tracking-tight">Como o álbum foi recebido</h2>
+        </div>
+        <div class="flex flex-col gap-4 max-w-2xl">
+          {scoresCriticos.map((score) => {
+            const pct = Math.min(100, (score.nota / score.notaMax) * 100);
+            const isSonar = score.fonte.toLowerCase().includes('sonar');
+            return (
+              <div>
+                <div class="flex items-baseline justify-between text-[13.5px] mb-1.5">
+                  <span class={`font-bold ${isSonar ? '' : 'text-[#e0e0e0]'}`} style={isSonar ? `color:${accent}` : undefined}>
+                    {score.fonte} {isSonar && '★'}
+                  </span>
+                  <span class="font-semibold text-[#999]">{score.nota}/{score.notaMax}</span>
+                </div>
+                <div class="h-2 rounded-full bg-[#1c1c1c] overflow-hidden">
+                  <div class="h-full rounded-full" style={`width:${pct}%;background:${accent};opacity:${isSonar ? 1 : 0.55}`}></div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <!-- Vídeo -->
+    {videoYoutubeId && (
+      <section class="pt-14">
+        <div class="flex items-center gap-3.5 mb-5">
+          <span class="w-8.5 h-8.5 rounded-lg flex items-center justify-center font-extrabold text-base flex-shrink-0" style={`background:${tagBg};color:${accent}`}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m10 8 6 4-6 4V8Z"/><rect x="2" y="4" width="20" height="16" rx="3"/></svg>
+          </span>
+          <h2 class="text-2xl font-extrabold tracking-tight">Assista: uma análise do álbum</h2>
+        </div>
+        <div class="video-embed rounded-2xl overflow-hidden border border-border">
+          <iframe
+            src={`https://www.youtube.com/embed/${videoYoutubeId}`}
+            title={videoTitulo ?? `Análise de ${nome}`}
+            loading="lazy"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        {videoTitulo && <div class="text-[13px] text-[#888] mt-3">{videoTitulo}</div>}
+      </section>
+    )}
+
+    <!-- Músicas mais streamadas -->
+    {musicasPopulares.length > 0 && (
+      <section class="pt-14">
+        <div class="flex items-center gap-3.5 mb-6">
+          <span class="w-8.5 h-8.5 rounded-lg flex items-center justify-center font-extrabold text-base flex-shrink-0" style={`background:${tagBg};color:${accent}`}>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3ZM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3Z"/></svg>
+          </span>
+          <div>
+            <h2 class="text-2xl font-extrabold tracking-tight">Músicas mais streamadas</h2>
+            <div class="text-sm text-muted">Top {musicasPopulares.length} do álbum no Spotify (número aproximado)</div>
+          </div>
+        </div>
+        <div class="flex flex-col gap-3.5">
+          {musicasPopulares.map((musica, i) => {
+            const val = parseFloat(musica.streams.replace(',', '.')) || 0;
+            const pct = maxStreamValue ? Math.max(8, (val / maxStreamValue) * 100) : 0;
+            return (
+              <div class="flex items-center gap-4">
+                <div class="w-7 text-center font-black text-lg flex-shrink-0" style={`color:${i === 0 ? accent : '#555'}`}>{i + 1}</div>
+                <div class="flex-1">
+                  <div class="flex items-baseline justify-between text-[14px] mb-1.5">
+                    <span class="font-bold">{musica.nome}</span>
+                    <span class="font-semibold text-[#999]">{musica.streams} streams</span>
+                  </div>
+                  <div class="h-2.5 rounded-full bg-[#1c1c1c] overflow-hidden">
+                    <div class="h-full rounded-full" style={`width:${pct}%;background:${gradient}`}></div>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    <!-- Seções de análise -->
+    {secoesAnalise.length > 0 && (
+      <section class="pt-14 pb-24 max-w-3xl">
+        {secoesAnalise.map((secao) => (
+          <div class="mb-9 last:mb-0">
+            <h3 class="text-xl font-extrabold tracking-tight mb-3" style={`color:${accent}`}>{secao.titulo}</h3>
+            <p class="text-[16px] leading-relaxed text-[#c8c8c8]">{secao.texto}</p>
+          </div>
+        ))}
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .album-bg {
+    filter: blur(38px) brightness(0.75) saturate(1.2);
+    transform: scale(1.3);
+  }
+  .album-hero-cover {
+    width: 168px;
+    height: 168px;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 20px 45px rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+  }
+  .album-hero-cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .video-embed {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: #000;
+  }
+  .video-embed iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  .tema-details summary {
+    list-style: none;
+    transition: filter 0.15s ease;
+  }
+  .tema-details summary::-webkit-details-marker {
+    display: none;
+  }
+  .tema-details summary:hover {
+    filter: brightness(1.25);
+  }
+  .tema-details[open] {
+    flex: 1 0 100%;
+  }
+  .tema-details[open] summary {
+    filter: brightness(1.25);
+  }
+  .tema-details__texto {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #c4c4c4;
+    background: #131313;
+    border: 1px solid #232323;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-top: 10px;
+  }
+</style>

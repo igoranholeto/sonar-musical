@@ -106,16 +106,249 @@ albuns:
       do jazz modal, gravado quase inteiramente em primeiras tomadas.
     capa: /images/albuns/miles-davis-kind-of-blue.jpg
     capaAlt: Capa do álbum Kind of Blue, de Miles Davis
+    spotifyUrl: https://open.spotify.com/album/1weenld61qoidwYuZ1GESA
+    temas:
+      - tema: Jazz modal
+        explicacao: O álbum abandona as progressões de acordes complexas do
+          bebop em favor de escalas fixas sobre as quais os músicos
+          improvisam livremente. Faixas como "So What" e "All Blues" giram
+          em torno de poucos modos sustentados por longos trechos, dando
+          origem ao que ficou conhecido como jazz modal.
+      - tema: Espaço e minimalismo
+        explicacao: Com harmonias mais simples, o disco valoriza o silêncio
+          e a economia de notas. O trompete de Miles Davis, muitas vezes com
+          surdina Harmon, soa contido e reflexivo, deixando respiro entre as
+          frases em vez de encher cada compasso.
+      - tema: Encontro de gerações e estilos
+        explicacao: A química entre Miles Davis, John Coltrane, Cannonball
+          Adderley, Bill Evans, Paul Chambers e Jimmy Cobb reúne
+          personalidades musicais distintas — do lirismo impressionista de
+          Evans às cascatas harmônicas de Coltrane — em um mesmo projeto
+          coeso.
+      - tema: Improviso quase sem ensaio
+        explicacao: Miles Davis apresentou aos músicos apenas esboços de
+          escalas e melodias pouco antes das sessões, sem partituras
+          completas. O resultado, capturado majoritariamente em poucas
+          tomadas, tem uma espontaneidade que se tornou parte da lenda do
+          álbum.
+    scoresCriticos:
+      - fonte: AllMusic
+        nota: 5
+        notaMax: 5
+      - fonte: The Rolling Stone Album Guide
+        nota: 5
+        notaMax: 5
+      - fonte: Pitchfork
+        nota: 10
+        notaMax: 10
+      - fonte: The Penguin Guide to Jazz
+        nota: 4
+        notaMax: 5
+      - fonte: Q Magazine
+        nota: 5
+        notaMax: 5
+      - fonte: Sonar Musical
+        nota: 10
+        notaMax: 10
+    musicasPopulares:
+      - nome: Blue in Green
+        streams: "201 milhões"
+      - nome: So What
+        streams: "117 milhões"
+      - nome: Freddie Freeloader
+        streams: "63 milhões"
+      - nome: Flamenco Sketches
+        streams: "61 milhões"
+      - nome: All Blues
+        streams: "43 milhões"
+    secoesAnalise:
+      - titulo: Gravação e produção
+        texto: O disco foi gravado em apenas duas sessões, em 2 de março e
+          22 de abril de 1959, no Columbia's 30th Street Studio, em Nova
+          York. Miles Davis chegou ao estúdio sem partituras completas,
+          apenas com esboços de escalas e linhas melódicas, e pediu que os
+          músicos improvisassem quase sem ensaio prévio. Apesar da lenda de
+          que tudo saiu de primeira, apenas "Flamenco Sketches" foi
+          finalizada em uma única tomada — as demais faixas exigiram mais de
+          uma tentativa, ainda que poucas.
+      - titulo: A virada do jazz modal
+        texto: Ao substituir progressões de acordes densas por escalas
+          fixas, Kind of Blue deu aos solistas um tipo de liberdade melódica
+          pouco explorado até então. Essa simplicidade harmônica abriu
+          caminho para uma geração de músicos que passou a improvisar sobre
+          modos em vez de sequências complexas de acordes, mudando os rumos
+          do jazz nas décadas seguintes.
+      - titulo: O disco de jazz mais vendido da história
+        texto: Certificado quíntuplo platina nos Estados Unidos, Kind of
+          Blue segue como o álbum de jazz mais vendido de todos os tempos.
+          Foi selecionado para o National Recording Registry da Biblioteca
+          do Congresso dos EUA em 2002 e aparece entre os discos mais
+          influentes já feitos, citado como referência por músicos de rock,
+          música clássica e até hip-hop.
   - nome: Sketches of Spain
     ano: 1960
     descricao: Parceria com o arranjador Gil Evans, mistura jazz com
       elementos da música clássica e folclórica espanhola.
     capa: /images/albuns/miles-davis-sketches-of-spain.jpg
     capaAlt: Capa do álbum Sketches of Spain, de Miles Davis
+    spotifyUrl: https://open.spotify.com/album/56WqCnM5giX57Jr3aAN2aK
+    temas:
+      - tema: Fusão com a música clássica espanhola
+        explicacao: A faixa de abertura, "Concierto de Aranjuez", ocupa
+          quase metade do disco e é uma releitura do movimento adagio do
+          concerto para violão do compositor espanhol Joaquín Rodrigo,
+          orquestrado por Gil Evans para dar espaço ao trompete de Miles
+          Davis como voz solista.
+      - tema: Raízes do folclore ibérico
+        explicacao: Faixas como "Saeta" e "Solea" bebem de gravações de
+          campo feitas pelo etnomusicólogo Alan Lomax na Galícia e na
+          Andaluzia, incorporando cadências e climas do flamenco e da música
+          popular espanhola ao vocabulário do jazz.
+      - tema: Parceria criativa entre Miles Davis e Gil Evans
+        explicacao: Este foi o terceiro projeto de Davis com o arranjador
+          Gil Evans, que assinou orquestrações elaboradas para metais e
+          percussão. Evans afirmou que a dupla não pretendia inicialmente
+          fazer um álbum espanhol — o projeto cresceu a partir do interesse
+          de Miles Davis pelo Concierto de Aranjuez.
+      - tema: Melancolia e drama orquestral
+        explicacao: Em vez de um combo enxuto, o disco usa uma orquestra
+          para envolver o trompete em texturas dramáticas e melancólicas,
+          aproximando o jazz de uma linguagem quase cinematográfica.
+    scoresCriticos:
+      - fonte: AllMusic
+        nota: 5
+        notaMax: 5
+      - fonte: DownBeat
+        nota: 5
+        notaMax: 5
+      - fonte: The Rolling Stone Album Guide
+        nota: 5
+        notaMax: 5
+      - fonte: The Penguin Guide to Jazz
+        nota: 3.5
+        notaMax: 5
+      - fonte: Pitchfork
+        nota: 10
+        notaMax: 10
+      - fonte: Sonar Musical
+        nota: 9.5
+        notaMax: 10
+    musicasPopulares:
+      - nome: "Concierto de Aranjuez: Adagio"
+        streams: "9,4 milhões"
+      - nome: The Pan Piper
+        streams: "3 milhões"
+      - nome: Will O' the Wisp
+        streams: "2,8 milhões"
+      - nome: Solea
+        streams: "2,7 milhões"
+      - nome: Saeta
+        streams: "0,9 milhão"
+    secoesAnalise:
+      - titulo: Gravação e parceria com Gil Evans
+        texto: As sessões aconteceram entre novembro de 1959 e março de
+          1960, também no Columbia's 30th Street Studio, com Teo Macero
+          estreando como produtor de um álbum de Miles Davis — parceria que
+          se estenderia por boa parte da carreira do trompetista. O projeto
+          nasceu quando Miles ouviu a única gravação disponível do
+          Concierto de Aranjuez e pediu a Gil Evans que o arranjasse,
+          processo que acabou puxando a dupla para explorar outras
+          referências da música folclórica espanhola.
+      - titulo: Terceira corrente entre jazz e clássico
+        texto: Sketches of Spain é frequentemente citado como um exemplo do
+          chamado third stream, termo usado para descrever obras que
+          combinam a linguagem improvisada do jazz com a estrutura formal da
+          música erudita. O crítico Bill Mathieu chegou a chamá-lo de uma
+          das obras musicais mais importantes do século 20.
+      - titulo: Reconhecimento e legado
+        texto: O disco venceu o Grammy de 1961 na categoria de Melhor
+          Composição de Jazz com Mais de Cinco Minutos de Duração e aparece
+          na lista dos 500 maiores álbuns de todos os tempos da revista
+          Rolling Stone. Sua ambição orquestral influenciou gerações
+          posteriores de músicos interessados em cruzar as fronteiras entre
+          jazz e música clássica.
   - nome: Bitches Brew
     ano: 1970
     descricao: Marco da fusão entre jazz e rock, com uso pioneiro de
       instrumentos elétricos e edição experimental em estúdio.
     capa: /images/albuns/miles-davis-bitches-brew.jpg
     capaAlt: Capa do álbum Bitches Brew, de Miles Davis
+    spotifyUrl: https://open.spotify.com/album/3Q0zkOZEOC855ErOOJ1AdO
+    temas:
+      - tema: Fusão entre jazz e rock
+        explicacao: Faixas como "Miles Runs the Voodoo Down" e "Spanish
+          Key" trocam a formação acústica tradicional do jazz por piano
+          elétrico, guitarra e ritmos influenciados pelo funk e pelo rock,
+          criando o que passou a ser chamado de jazz fusion.
+      - tema: O estúdio como instrumento
+        explicacao: O produtor Teo Macero editou intensamente as fitas
+          gravadas, cortando e recolando trechos para criar estruturas que
+          não existiam na performance original. A faixa-título tem 15
+          edições e "Pharaoh's Dance" chega a 19 — só "Miles Runs the Voodoo
+          Down" ficou praticamente intacta.
+      - tema: Improviso coletivo e textura densa
+        explicacao: A gravação reuniu dois baixistas, múltiplos bateristas
+          e vários teclados elétricos tocando simultaneamente, criando
+          camadas rítmicas espessas sobre as quais os solistas improvisavam
+          livremente, sem arranjos fechados.
+      - tema: Influência do rock psicodélico
+        explicacao: Miles Davis se inspirou no que viu no festival de
+          Woodstock em 1969, especialmente na guitarra psicodélica de Jimi
+          Hendrix, o que o levou a buscar uma sonoridade mais elétrica e
+          visceral para o disco.
+    scoresCriticos:
+      - fonte: AllMusic
+        nota: 5
+        notaMax: 5
+      - fonte: MusicHound Jazz
+        nota: 5
+        notaMax: 5
+      - fonte: The Rolling Stone Album Guide
+        nota: 5
+        notaMax: 5
+      - fonte: Mojo
+        nota: 5
+        notaMax: 5
+      - fonte: The Penguin Guide to Jazz
+        nota: 4
+        notaMax: 5
+      - fonte: Pitchfork
+        nota: 9.5
+        notaMax: 10
+      - fonte: Sonar Musical
+        nota: 9.7
+        notaMax: 10
+    musicasPopulares:
+      - nome: Pharaoh's Dance
+        streams: "7,2 milhões"
+      - nome: Bitches Brew
+        streams: "6 milhões"
+      - nome: Miles Runs the Voodoo Down
+        streams: "4,2 milhões"
+      - nome: Spanish Key
+        streams: "3,7 milhões"
+      - nome: John McLaughlin
+        streams: "3,2 milhões"
+    secoesAnalise:
+      - titulo: Gravação e edição no estúdio
+        texto: As sessões aconteceram entre 19 e 21 de agosto de 1969 e
+          foram tocadas ao vivo em estúdio, sem overdubs. Depois, o produtor
+          Teo Macero passou semanas montando o material com loops, cortes e
+          colagens de fita, transformando as improvisações em estruturas
+          musicais que não existiam durante a gravação original — uma
+          abordagem que tratava o estúdio como um instrumento a mais.
+      - titulo: A virada elétrica
+        texto: Ao trocar o combo acústico por piano elétrico, guitarra e uma
+          seção rítmica ampliada com dois baixistas e múltiplos bateristas,
+          Miles Davis rompeu com boa parte da tradição do jazz até então.
+          Essa reinvenção sonora reunia músicos como Wayne Shorter, Chick
+          Corea, Joe Zawinul e John McLaughlin, todos com carreiras
+          marcantes pela frente na fusão entre jazz, rock e funk.
+      - titulo: Impacto comercial e legado
+        texto: Bitches Brew chegou à 35ª posição da Billboard 200 e foi o
+          álbum mais rápido de Miles Davis a vender 500 mil cópias,
+          recebendo certificação de platina em 2003. O disco abriu os olhos
+          da indústria fonográfica para o potencial comercial do jazz e
+          influenciou músicos de gerações seguintes, de artistas de fusion
+          dos anos 1970 a bandas como o Radiohead.
 ---
