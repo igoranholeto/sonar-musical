@@ -1,0 +1,294 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { generoAccent, generoGradient, generoSoft, iniciais } from '../../../utils/generos';
+
+export async function getStaticPaths() {
+  const bandas = await getCollection('bandas');
+  return bandas
+    .filter((banda) => banda.data.integrantes.some((m) => m.setup.length > 0))
+    .map((banda) => ({
+      params: { slug: banda.id },
+      props: { banda },
+    }));
+}
+
+const { banda } = Astro.props;
+const { nome, genero, origem, ano, fotoCapa, fotoCapaAlt, integrantes } = banda.data;
+
+const accent = generoAccent(genero);
+const gradient = generoGradient(genero);
+const tagBg = generoSoft(genero);
+
+const defaultActiveIndex = integrantes.findIndex((m) => m.setup.length > 0);
+---
+
+<BaseLayout
+  title={`Equipamentos — ${nome}`}
+  description={`O setup completo de ${nome}: equipamento original de cada integrante e a versão low cost pra chegar perto do som.`}
+  image={fotoCapa}
+>
+  <!-- Banner -->
+  <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:300px`}>
+    {fotoCapa && (
+      <img src={fotoCapa} alt={fotoCapaAlt ?? nome} class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" />
+    )}
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.85) 76%,#0a0a0a)"></div>
+    <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-9">
+      <div class="flex gap-2.5 flex-wrap">
+        <a
+          href="/bandas"
+          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
+        >
+          ← Todas as bandas
+        </a>
+        <a
+          href={`/bandas/${banda.id}`}
+          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
+        >
+          ← Perfil da banda
+        </a>
+      </div>
+      <div class="mt-24">
+        <span
+          class="inline-flex text-[11.5px] font-bold uppercase tracking-wider px-2.5 py-1.5 rounded-md text-white"
+          style="background:rgba(0,0,0,.42);border:1px solid rgba(255,255,255,.3)"
+        >
+          {genero} · Equipamentos
+        </span>
+        <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(38px,7vw,72px)">{nome}</h1>
+        <p class="text-[15px] text-white/82 max-w-lg leading-relaxed mt-2.5">
+          Toque em um integrante para virar o card e ver o estilo — o setup completo (original × low cost) aparece logo abaixo.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Cards de integrantes (flip) -->
+  <section class="max-w-6xl mx-auto px-4 pt-11 pb-1.5">
+    <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(228px,1fr))" id="member-grid">
+      {integrantes.map((membro, i) => {
+        const clickable = membro.setup.length > 0;
+        return (
+          <div
+            data-member-card={i}
+            data-clickable={clickable ? 'true' : 'false'}
+            class={`member-flip ${clickable ? 'cursor-pointer' : ''} ${i === defaultActiveIndex ? 'is-flipped' : ''}`}
+            style="height:334px"
+            role={clickable ? 'button' : undefined}
+            tabindex={clickable ? 0 : undefined}
+            aria-pressed={clickable ? (i === defaultActiveIndex ? 'true' : 'false') : undefined}
+            aria-label={clickable ? `${membro.nome} — toque para ver o estilo e o setup` : undefined}
+          >
+            <div class="member-flip__front" style={`--front-border:#242424;background:#131313`}>
+              <div class="relative h-[214px]" style={`background:${gradient}`}>
+                {membro.foto ? (
+                  <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="absolute inset-0 w-full h-full object-cover" loading="lazy" />
+                ) : (
+                  <span class="absolute inset-0 flex items-center justify-center text-3xl font-extrabold text-white/85">{iniciais(membro.nome)}</span>
+                )}
+              </div>
+              <div class="p-4 flex-1 flex flex-col justify-center">
+                <div class="text-lg font-extrabold tracking-tight">{membro.nome}</div>
+                <div class="text-[13px] font-semibold mt-0.5" style={`color:${accent}`}>{membro.funcao}</div>
+                {clickable && <div class="text-[11.5px] text-[#666] font-semibold mt-2.5">↻ toque para ver o estilo</div>}
+              </div>
+            </div>
+            <div class="member-flip__back" style={`border-color:${accent}`}>
+              <div class="text-[11px] font-bold uppercase tracking-widest" style={`color:${accent}`}>Estilo &amp; som</div>
+              <div class="text-[17px] font-extrabold mt-1">{membro.nome}</div>
+              <ul class="flex flex-col gap-3 mt-3.5 flex-1 list-none">
+                {membro.pontos.map((p) => (
+                  <li class="flex gap-2 text-[13.5px] text-[#d2d2d2] leading-snug">
+                    <span class="font-extrabold text-base flex-shrink-0" style={`color:${accent}`}>"</span>{p}
+                  </li>
+                ))}
+              </ul>
+              <div class="text-[11.5px] text-[#666] font-semibold mt-2">↻ toque para voltar · setup abaixo</div>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+  </section>
+
+  <!-- Setup do integrante ativo -->
+  <section class="max-w-6xl mx-auto px-4 pt-2 pb-24" id="setup-section" hidden={defaultActiveIndex === -1}>
+    {integrantes.map((membro, i) => (
+      <div data-setup-panel={i} hidden={i !== defaultActiveIndex}>
+        <div class="flex items-center gap-3.5 my-6.5">
+          <div class="w-10 h-10 rounded-full overflow-hidden flex-shrink-0 flex items-center justify-center" style={`background:${gradient}`}>
+            {membro.foto ? (
+              <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="w-full h-full object-cover" loading="lazy" />
+            ) : (
+              <span class="text-xs font-extrabold text-white/90">{iniciais(membro.nome)}</span>
+            )}
+          </div>
+          <div>
+            <h2 class="text-[24px] font-extrabold tracking-tight">Setup de {membro.nome}</h2>
+            <div class="text-[13.5px] text-muted">{membro.funcao} · original × versão low cost</div>
+          </div>
+        </div>
+
+        {membro.setup.length > 0 && (
+          <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(320px,1fr))">
+            {membro.setup.map((g) => (
+              <div class="bg-[#111] border border-border rounded-2xl overflow-hidden">
+                <div class="px-4 py-3 border-b border-[#222] text-[11px] font-bold uppercase tracking-wider text-[#8a8a8a]">{g.tipo}</div>
+                {g.original && (
+                  <div class="p-4" style="border-left:3px solid #e63946;background:linear-gradient(90deg,rgba(230,57,70,.09),transparent 62%)">
+                    <div class="flex items-center gap-2.5">
+                      <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-white bg-brand px-2.5 py-0.5 rounded">Original</span>
+                      {g.original.preco && <span class="text-[12.5px] text-[#b0b0b0] font-semibold">{g.original.preco}</span>}
+                    </div>
+                    <div class="text-base font-bold mt-2.5">{g.original.nome}</div>
+                    {g.original.urlAfiliado ? (
+                      <a
+                        href={g.original.urlAfiliado}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
+                      >
+                        Conferir preços →
+                      </a>
+                    ) : (
+                      <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-white/50 bg-white/5 rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
+                        Conferir preços →
+                      </span>
+                    )}
+                  </div>
+                )}
+                {g.low && (
+                  <div class="p-4 bg-[#0d0d0d]" style="border-left:3px solid #333">
+                    <div class="flex items-center gap-2.5">
+                      <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-[#d0d0d0] bg-[#2a2a2a] px-2.5 py-0.5 rounded">Low cost</span>
+                      {g.low.preco && <span class="text-[12.5px] font-bold" style="color:oklch(0.78 0.13 155)">{g.low.preco}</span>}
+                    </div>
+                    <div class="text-[15.5px] font-bold mt-2.5">{g.low.nome}</div>
+                    {g.low.obs && <div class="text-[12.5px] text-[#888] mt-1">{g.low.obs}</div>}
+                    {g.low.urlAfiliado ? (
+                      <a
+                        href={g.low.urlAfiliado}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
+                      >
+                        Conferir preços →
+                      </a>
+                    ) : (
+                      <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#666] border border-[#2a2a2a] rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
+                        Conferir preços →
+                      </span>
+                    )}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+        {membro.resumo && (
+          <div class="mt-5.5 rounded-[18px] border border-border p-6.5" style="background:linear-gradient(135deg,#151515,#0d0d0d)">
+            <div class="flex items-center justify-between gap-3 flex-wrap">
+              <h3 class="text-xl font-extrabold tracking-tight">Sobre {membro.nome}</h3>
+              <span class="text-[10.5px] font-bold uppercase tracking-wider text-[#7a7a7a] bg-[#1c1c1c] border border-[#2a2a2a] px-2.5 py-1 rounded">Texto provisório</span>
+            </div>
+            <div class="flex gap-2.5 flex-wrap mt-3.5">
+              {membro.anos && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">🗓 {membro.anos}</span>}
+              {membro.status && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">● {membro.status}</span>}
+              {membro.inspiracoes && <span class="text-[12.5px] text-[#d0d0d0] bg-[#1a1a1a] border border-[#262626] px-3 py-1.5 rounded-lg">✦ Inspirações: {membro.inspiracoes}</span>}
+            </div>
+            <p class="text-[15px] text-[#b8b8b8] leading-relaxed mt-4 max-w-2xl">{membro.resumo}</p>
+          </div>
+        )}
+      </div>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .member-flip {
+    position: relative;
+    perspective: 1200px;
+  }
+  .member-flip__front,
+  .member-flip__back {
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    transition: transform 0.42s cubic-bezier(0.4, 0.08, 0.2, 1), opacity 0.3s ease;
+    backface-visibility: hidden;
+  }
+  .member-flip__front {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--front-border, #242424);
+    opacity: 1;
+    transform: rotateY(0deg);
+  }
+  .member-flip__back {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 18px;
+    background: linear-gradient(160deg, #181818, #0d0d0d);
+    border: 1px solid transparent;
+    opacity: 0;
+    pointer-events: none;
+    transform: rotateY(90deg);
+  }
+  .member-flip.is-flipped .member-flip__front {
+    opacity: 0;
+    pointer-events: none;
+    transform: rotateY(-90deg);
+  }
+  .member-flip.is-flipped .member-flip__back {
+    opacity: 1;
+    pointer-events: auto;
+    transform: rotateY(0deg);
+  }
+</style>
+
+<script>
+  const cards = document.querySelectorAll<HTMLElement>('[data-member-card][data-clickable="true"]');
+  const panels = document.querySelectorAll<HTMLElement>('[data-setup-panel]');
+  const setupSection = document.getElementById('setup-section')!;
+
+  let active: number | null = setupSection.hidden ? null : Number(
+    document.querySelector<HTMLElement>('[data-setup-panel]:not([hidden])')?.dataset.setupPanel
+  );
+  if (Number.isNaN(active)) active = null;
+
+  function apply() {
+    document.querySelectorAll<HTMLElement>('[data-member-card]').forEach((card) => {
+      const isActive = active !== null && card.dataset.memberCard === String(active);
+      card.classList.toggle('is-flipped', isActive);
+      if (card.hasAttribute('role')) card.setAttribute('aria-pressed', String(isActive));
+    });
+    panels.forEach((panel) => {
+      panel.hidden = panel.dataset.setupPanel !== String(active);
+    });
+    setupSection.hidden = active === null;
+  }
+
+  function toggle(card: HTMLElement) {
+    const idx = Number(card.dataset.memberCard);
+    active = active === idx ? null : idx;
+    apply();
+    if (active !== null) {
+      setupSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    }
+  }
+
+  cards.forEach((card) => {
+    card.addEventListener('click', () => toggle(card));
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        toggle(card);
+      }
+    });
+  });
+
+  apply();
+</script>

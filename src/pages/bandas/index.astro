@@ -1,0 +1,260 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import BandaCard from '../../components/BandaCard.astro';
+import { GENEROS, generoAccent, generoSoft } from '../../utils/generos';
+
+const allBandas = await getCollection('bandas');
+const bandas = allBandas
+  .map((b) => ({ ...b, membersCount: b.data.integrantes.length }))
+  .sort((a, b) => a.data.nome.localeCompare(b.data.nome));
+
+const counts: Record<string, number> = {};
+allBandas.forEach((b) => {
+  counts[b.data.genero] = (counts[b.data.genero] ?? 0) + 1;
+});
+
+const chips = [
+  { key: 'Todas', label: 'Todas', count: allBandas.length, accent: '#e63946', soft: 'rgba(230,57,70,0.15)' },
+  ...GENEROS.filter((g) => counts[g]).map((g) => ({
+    key: g,
+    label: g,
+    count: counts[g],
+    accent: generoAccent(g),
+    soft: generoSoft(g),
+  })),
+];
+
+const marqueeNames = allBandas.map((b) => b.data.nome);
+---
+
+<BaseLayout
+  title="Bandas"
+  description="O equipamento por trás das lendas — quem toca o quê no palco, e como chegar perto daquele som sem quebrar o cofre."
+>
+  <!-- Hero -->
+  <section class="max-w-6xl mx-auto px-4 pt-16 pb-6">
+    <div class="text-xs font-bold uppercase tracking-[0.22em] text-brand">Nova seção · Sonar Musical</div>
+    <h1 class="font-black tracking-tight leading-[0.9] mt-4" style="font-size:clamp(52px,10vw,116px)">Bandas</h1>
+    <p class="max-w-xl text-[#a5a5a5] text-lg leading-relaxed mt-5">
+      O equipamento por trás das lendas — quem toca o quê no palco, e como chegar perto daquele som sem quebrar o cofre.
+    </p>
+  </section>
+
+  <!-- Marquee -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+      {[...marqueeNames, ...marqueeNames].map((nome) => (
+        <span>{nome}</span>
+        <span aria-hidden="true">·</span>
+      ))}
+    </div>
+  </div>
+
+  <!-- Barra de filtros -->
+  <div class="sticky top-16 z-40 bg-surface/92 backdrop-blur-md border-y border-border mt-3.5">
+    <div class="max-w-6xl mx-auto px-4 py-3.5 flex items-center gap-3.5 flex-wrap">
+      <div class="flex gap-2 flex-wrap flex-1 min-w-60" id="genre-chips">
+        {chips.map((chip, i) => (
+          <button
+            type="button"
+            data-genre-chip={chip.key}
+            aria-pressed={i === 0 ? 'true' : 'false'}
+            class="genre-chip cursor-pointer text-[13px] font-semibold px-3.5 py-2 rounded-full transition-all flex items-center gap-2 border"
+            style={i === 0
+              ? `background:${chip.soft};color:#fff;border-color:${chip.accent}`
+              : `background:#151515;color:#aaa;border-color:#2a2a2a`}
+            data-accent={chip.accent}
+            data-soft={chip.soft}
+          >
+            <span class="w-1.5 h-1.5 rounded-full" style={`background:${chip.accent}`}></span>
+            {chip.label}
+            <span class="opacity-55 font-medium">{chip.count}</span>
+          </button>
+        ))}
+      </div>
+
+      <div class="flex items-center gap-2.5 bg-[#151515] border border-border rounded-lg px-3.5 py-2.5 w-52">
+        <span class="text-subtle text-sm" aria-hidden="true">⌕</span>
+        <input
+          id="search-input"
+          type="search"
+          placeholder="Buscar banda…"
+          class="bg-transparent border-none text-white text-sm w-full focus:outline-none"
+        />
+      </div>
+
+      <details class="relative" id="sort-details">
+        <summary class="cursor-pointer list-none text-[13px] font-semibold text-[#ccc] bg-[#151515] border border-border rounded-lg px-3.5 py-2.5 flex items-center gap-2 select-none">
+          Ordenar: <span id="sort-label">A–Z</span><span class="text-[#666]">▾</span>
+        </summary>
+        <div class="absolute top-12 left-0 sm:left-auto sm:right-0 bg-[#161616] border border-[#2f2f2f] rounded-xl p-1.5 min-w-48 shadow-2xl z-50">
+          <button type="button" data-sort="az" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-white flex justify-between items-center hover:bg-[#222]">A–Z<span class="text-brand sort-check">✓</span></button>
+          <button type="button" data-sort="genre" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-[#bbb] flex justify-between items-center hover:bg-[#222]">Gênero<span class="text-brand sort-check"></span></button>
+          <button type="button" data-sort="year" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-[#bbb] flex justify-between items-center hover:bg-[#222]">Mais antigas<span class="text-brand sort-check"></span></button>
+        </div>
+      </details>
+    </div>
+  </div>
+
+  <!-- Grid -->
+  <section class="max-w-6xl mx-auto px-4 py-8 pb-20">
+    <div class="flex items-baseline justify-between mb-5">
+      <div class="text-sm text-muted"><span id="result-count" class="text-white font-bold">{bandas.length}</span> <span id="result-noun">bandas</span></div>
+      <div class="text-[13px] text-subtle" id="active-genre-label">Todos os gêneros</div>
+    </div>
+
+    <div id="bandas-grid" class="grid gap-[18px]" style="grid-template-columns:repeat(auto-fill,minmax(248px,1fr))">
+      {bandas.map((banda) => (
+        <BandaCard
+          nome={banda.data.nome}
+          slug={banda.id}
+          genero={banda.data.genero}
+          origem={banda.data.origem}
+          ano={banda.data.ano}
+          fotoCapa={banda.data.fotoCapa}
+          fotoCapaAlt={banda.data.fotoCapaAlt}
+          integrantesCount={banda.membersCount}
+        />
+      ))}
+    </div>
+
+    <div id="empty-state" class="hidden text-center py-20 text-[#666]">
+      <div class="text-4xl mb-2.5">🎸</div>
+      <div class="text-base text-[#aaa] font-semibold">Nenhuma banda encontrada</div>
+      <div class="text-sm mt-1.5">Tente outro gênero ou termo de busca.</div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .marquee-wrap {
+    overflow: hidden;
+    margin: 6px 0 4px;
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+  }
+  .marquee-track {
+    display: flex;
+    gap: 40px;
+    width: max-content;
+    white-space: nowrap;
+    animation: marq 34s linear infinite;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #4a4a4a;
+  }
+  @keyframes marq {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  #sort-details[open] summary {
+    color: #fff;
+  }
+  #sort-details summary::-webkit-details-marker {
+    display: none;
+  }
+</style>
+
+<script>
+  const chipButtons = document.querySelectorAll<HTMLButtonElement>('[data-genre-chip]');
+  const searchInput = document.getElementById('search-input') as HTMLInputElement;
+  const sortButtons = document.querySelectorAll<HTMLButtonElement>('.sort-option');
+  const sortDetails = document.getElementById('sort-details') as HTMLDetailsElement;
+  const sortLabel = document.getElementById('sort-label')!;
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-band-card]'));
+  const grid = document.getElementById('bandas-grid')!;
+  const emptyState = document.getElementById('empty-state')!;
+  const resultCount = document.getElementById('result-count')!;
+  const resultNoun = document.getElementById('result-noun')!;
+  const activeGenreLabel = document.getElementById('active-genre-label')!;
+
+  const sortNames: Record<string, string> = { az: 'A–Z', genre: 'Gênero', year: 'Mais antigas' };
+
+  let activeGenre = 'Todas';
+  let query = '';
+  let sort = 'az';
+
+  function applyChipStyles() {
+    chipButtons.forEach((btn) => {
+      const key = btn.dataset.genreChip!;
+      const active = key === activeGenre;
+      const accent = btn.dataset.accent!;
+      const soft = btn.dataset.soft!;
+      btn.setAttribute('aria-pressed', String(active));
+      btn.style.background = active ? soft : '#151515';
+      btn.style.color = active ? '#fff' : '#aaa';
+      btn.style.borderColor = active ? accent : '#2a2a2a';
+    });
+  }
+
+  function applySortStyles() {
+    sortLabel.textContent = sortNames[sort];
+    sortButtons.forEach((btn) => {
+      const active = btn.dataset.sort === sort;
+      btn.classList.toggle('text-white', active);
+      btn.classList.toggle('text-[#bbb]', !active);
+      btn.querySelector('.sort-check')!.textContent = active ? '✓' : '';
+    });
+  }
+
+  function render() {
+    let visible = 0;
+    cards.forEach((card) => {
+      const matchesGenre = activeGenre === 'Todas' || card.dataset.genre === activeGenre;
+      const matchesQuery = !query.trim() || card.dataset.name!.includes(query.trim().toLowerCase());
+      const show = matchesGenre && matchesQuery;
+      card.style.display = show ? '' : 'none';
+      if (show) visible++;
+    });
+
+    const visibleCards = cards.filter((c) => c.style.display !== 'none');
+    visibleCards.sort((a, b) => {
+      if (sort === 'az') return a.dataset.name!.localeCompare(b.dataset.name!);
+      if (sort === 'genre') return a.dataset.genre!.localeCompare(b.dataset.genre!) || a.dataset.name!.localeCompare(b.dataset.name!);
+      if (sort === 'year') return Number(a.dataset.year) - Number(b.dataset.year);
+      return 0;
+    });
+    visibleCards.forEach((card, i) => card.style.order = String(i));
+
+    emptyState.classList.toggle('hidden', visible > 0);
+    grid.classList.toggle('hidden', visible === 0);
+    resultCount.textContent = String(visible);
+    resultNoun.textContent = visible === 1 ? 'banda' : 'bandas';
+    activeGenreLabel.textContent = activeGenre === 'Todas' ? 'Todos os gêneros' : activeGenre;
+
+    applyChipStyles();
+    applySortStyles();
+  }
+
+  chipButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      activeGenre = btn.dataset.genreChip!;
+      render();
+    });
+  });
+
+  searchInput.addEventListener('input', () => {
+    query = searchInput.value;
+    render();
+  });
+
+  sortButtons.forEach((btn) => {
+    btn.addEventListener('click', () => {
+      sort = btn.dataset.sort!;
+      sortDetails.removeAttribute('open');
+      render();
+    });
+  });
+
+  document.addEventListener('click', (e) => {
+    if (sortDetails.open && !sortDetails.contains(e.target as Node)) {
+      sortDetails.removeAttribute('open');
+    }
+  });
+
+  render();
+</script>

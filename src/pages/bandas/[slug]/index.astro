@@ -1,0 +1,130 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { generoAccent, generoGradient, generoSoft, iniciais } from '../../../utils/generos';
+
+export async function getStaticPaths() {
+  const bandas = await getCollection('bandas');
+  return bandas.map((banda) => ({
+    params: { slug: banda.id },
+    props: { banda },
+  }));
+}
+
+const { banda } = Astro.props;
+const { nome, genero, origem, ano, blurb, fotoCapa, fotoCapaAlt, integrantes } = banda.data;
+
+const accent = generoAccent(genero);
+const gradient = generoGradient(genero);
+const tagBg = generoSoft(genero);
+const membersLabel = `${integrantes.length} ${integrantes.length === 1 ? 'integrante' : 'integrantes'}`;
+const equipReady = integrantes.some((m) => m.setup.length > 0);
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'MusicGroup',
+  name: nome,
+  genre: genero,
+  foundingDate: String(ano),
+  ...(fotoCapa && { image: `https://sonarmusical.com.br${fotoCapa}` }),
+  member: integrantes.map((m) => ({ '@type': 'Person', name: m.nome, roleName: m.funcao })),
+};
+---
+
+<BaseLayout title={nome} description={blurb} image={fotoCapa} schema={schema}>
+  <!-- Banner -->
+  <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:380px`}>
+    {fotoCapa && (
+      <img src={fotoCapa} alt={fotoCapaAlt ?? nome} class="absolute inset-0 w-full h-full object-cover" loading="eager" fetchpriority="high" />
+    )}
+    <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.3),rgba(10,10,10,.82) 74%,#0a0a0a)"></div>
+    <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-10">
+      <a
+        href="/bandas"
+        class="inline-flex items-center text-[13.5px] font-semibold text-white bg-black/40 border border-white/30 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
+      >
+        ← Todas as bandas
+      </a>
+      <div class="flex items-end gap-6 mt-32 flex-wrap">
+        <div class="flex-1 min-w-64">
+          <span
+            class="inline-flex text-[11.5px] font-bold uppercase tracking-wider px-2.5 py-1.5 rounded-md"
+            style={`background:${tagBg};color:${accent};border:1px solid rgba(255,255,255,.15)`}
+          >
+            {genero}
+          </span>
+          <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(40px,7vw,76px)">{nome}</h1>
+          <div class="text-base text-white/80 font-medium mt-2.5">{origem} · desde {ano} · {membersLabel}</div>
+        </div>
+      </div>
+      <p class="max-w-2xl text-lg leading-relaxed text-white/90 mt-6">{blurb}</p>
+    </div>
+  </div>
+
+  <!-- Integrantes -->
+  <section class="max-w-6xl mx-auto px-4 pt-14 pb-5">
+    <div class="flex items-center gap-3.5 mb-6.5">
+      <span
+        class="w-8.5 h-8.5 rounded-lg flex items-center justify-center font-extrabold text-base"
+        style={`background:${tagBg};color:${accent}`}
+      >
+        01
+      </span>
+      <div>
+        <h2 class="text-2xl font-extrabold tracking-tight">Integrantes</h2>
+        <div class="text-sm text-muted">Quem forma a banda e o que cada um toca</div>
+      </div>
+    </div>
+    <div class="grid gap-4" style="grid-template-columns:repeat(auto-fill,minmax(300px,1fr))">
+      {integrantes.map((membro) => (
+        <div class="bg-card border border-border rounded-2xl p-5 flex items-center gap-3.5">
+          <div class="w-[54px] h-[54px] rounded-full flex-shrink-0 overflow-hidden flex items-center justify-center" style={`background:${gradient}`}>
+            {membro.foto ? (
+              <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="w-full h-full object-cover" loading="lazy" />
+            ) : (
+              <span class="text-sm font-extrabold text-white/90">{iniciais(membro.nome)}</span>
+            )}
+          </div>
+          <div>
+            <div class="text-[17px] font-bold tracking-tight">{membro.nome}</div>
+            <div class="text-[13px] font-semibold" style={`color:${accent}`}>{membro.funcao}</div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <!-- Equipamentos CTA -->
+  <section class="max-w-6xl mx-auto px-4 pt-11 pb-24">
+    <div class="relative overflow-hidden rounded-[22px] border border-border p-8" style="background:linear-gradient(135deg,#141414,#0d0d0d)">
+      <div class="flex items-start gap-4 flex-wrap">
+        <span
+          class="w-10 h-10 rounded-xl flex items-center justify-center font-extrabold text-[17px] flex-shrink-0"
+          style={`background:${tagBg};color:${accent}`}
+        >
+          02
+        </span>
+        <div class="flex-1 min-w-60">
+          <h2 class="text-2xl font-extrabold tracking-tight">Equipamentos ao vivo</h2>
+          <p class="text-[15px] text-[#999] mt-1.5 max-w-xl leading-relaxed">
+            Cada equipamento usado no palco por {nome} — com as versões budget-friendly pra chegar perto do som.
+          </p>
+          <div class="flex items-center gap-4 mt-5.5 flex-wrap">
+            {equipReady ? (
+              <a
+                href={`/bandas/${banda.id}/equipamentos`}
+                class="inline-flex items-center font-bold text-sm text-white bg-brand rounded-xl px-5.5 py-3.5 hover:bg-brand-dark transition-colors"
+              >
+                Ver equipamentos →
+              </a>
+            ) : (
+              <span class="text-[13.5px] font-semibold" style={`color:${accent}`}>
+                🚧 Página em construção — estamos montando o setup completo desta banda.
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
