@@ -52,4 +52,15 @@ integrantes:
     pontos:
       - Sanfona que enche o arranjo com o sotaque caipira.
       - Baixo simples que sustenta a marcação de baião e guarânia.
+albuns:
+  - nome: Fronteiras do Coração
+    ano: 1990
+    descricao: Traz "Evidências", uma das canções sertanejas mais tocadas
+      e regravadas da história da música brasileira.
+  - nome: Fio de Cabelo
+    ano: 1994
+    descricao: Álbum que emplacou a faixa-título como um dos maiores hits
+      da dupla nos anos 90.
+    capa: /images/albuns/chitaozinho-xororo-fio-de-cabelo.jpg
+    capaAlt: Capa do álbum Fio de Cabelo, de Chitãozinho & Xororó
 ---

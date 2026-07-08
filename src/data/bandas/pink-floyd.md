@@ -100,4 +100,29 @@ integrantes:
           nome: Pearl Export EXX
           preco: ~R$ 6.500
           obs: Kit versátil pra explorar a levada minimalista.
+albuns:
+  - nome: The Dark Side of the Moon
+    ano: 1973
+    descricao: Um dos álbuns mais vendidos da história, explora temas como
+      tempo, dinheiro e sanidade em uma sequência conceitual contínua.
+    capa: /images/albuns/pink-floyd-dark-side-of-the-moon.jpg
+    capaAlt: Capa do álbum The Dark Side of the Moon, do Pink Floyd
+  - nome: Wish You Were Here
+    ano: 1975
+    descricao: Homenagem a Syd Barrett, traz a suíte "Shine On You Crazy
+      Diamond" e reflexões sobre a indústria da música.
+    capa: /images/albuns/pink-floyd-wish-you-were-here.jpg
+    capaAlt: Capa do álbum Wish You Were Here, do Pink Floyd
+  - nome: Animals
+    ano: 1977
+    descricao: Álbum conceitual inspirado em "A Revolução dos Bichos", de
+      George Orwell, com guitarras mais ásperas que os discos anteriores.
+    capa: /images/albuns/pink-floyd-animals.jpg
+    capaAlt: Capa do álbum Animals, do Pink Floyd
+  - nome: The Wall
+    ano: 1979
+    descricao: Ópera rock sobre isolamento e trauma, um dos discos duplos
+      mais icônicos do rock, com "Another Brick in the Wall".
+    capa: /images/albuns/pink-floyd-the-wall.jpg
+    capaAlt: Capa do álbum The Wall, do Pink Floyd
 ---

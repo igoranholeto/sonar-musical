@@ -105,4 +105,29 @@ integrantes:
           nome: Pearl Roadshow
           preco: ~R$ 4.500
           obs: Kit completo de entrada com bom acabamento.
+albuns:
+  - nome: Parachutes
+    ano: 2000
+    descricao: Álbum de estreia, intimista e acústico, com o hit "Yellow"
+      que apresentou a banda ao mundo.
+    capa: /images/albuns/coldplay-parachutes.jpg
+    capaAlt: Capa do álbum Parachutes, do Coldplay
+  - nome: A Rush of Blood to the Head
+    ano: 2002
+    descricao: Consolidou o som atmosférico da banda com guitarras em
+      delay e faixas como "Clocks" e "The Scientist".
+    capa: /images/albuns/coldplay-rush-of-blood.jpg
+    capaAlt: Capa do álbum A Rush of Blood to the Head, do Coldplay
+  - nome: Viva la Vida or Death and All His Friends
+    ano: 2008
+    descricao: Disco mais experimental e orquestral, com produção de Brian
+      Eno e o hit que dá nome ao álbum.
+    capa: /images/albuns/coldplay-viva-la-vida.jpg
+    capaAlt: Capa do álbum Viva la Vida or Death and All His Friends, do Coldplay
+  - nome: A Head Full of Dreams
+    ano: 2015
+    descricao: Som mais pop e colorido, com participações de Beyoncé e Noel
+      Gallagher entre outros convidados.
+    capa: /images/albuns/coldplay-head-full-of-dreams.jpg
+    capaAlt: Capa do álbum A Head Full of Dreams, do Coldplay
 ---

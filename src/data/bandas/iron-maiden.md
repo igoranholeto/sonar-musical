@@ -207,4 +207,29 @@ integrantes:
           nome: Paiste PST7
           preco: ~R$ 3.500
           obs: Brilho e projeção.
+albuns:
+  - nome: The Number of the Beast
+    ano: 1982
+    descricao: Primeiro álbum com Bruce Dickinson nos vocais e o disco que
+      consolidou o Iron Maiden como um dos pilares do heavy metal mundial.
+    capa: /images/albuns/iron-maiden-number-of-the-beast.jpg
+    capaAlt: Capa do álbum The Number of the Beast, do Iron Maiden
+  - nome: Powerslave
+    ano: 1984
+    descricao: Traz "Aces High" e a épica "Rime of the Ancient Mariner",
+      com temática egípcia que também inspirou a turnê seguinte.
+    capa: /images/albuns/iron-maiden-powerslave.jpg
+    capaAlt: Capa do álbum Powerslave, do Iron Maiden
+  - nome: Seventh Son of a Seventh Son
+    ano: 1988
+    descricao: Álbum conceitual mais progressivo da banda, com teclados em
+      destaque e a faixa-título entre as favoritas dos fãs.
+    capa: /images/albuns/iron-maiden-seventh-son.jpg
+    capaAlt: Capa do álbum Seventh Son of a Seventh Son, do Iron Maiden
+  - nome: Brave New World
+    ano: 2000
+    capa: /images/albuns/iron-maiden-brave-new-world.jpg
+    capaAlt: Capa do álbum Brave New World, do Iron Maiden
+    descricao: Marca o retorno de Bruce Dickinson e Adrian Smith à banda,
+      reunindo pela primeira vez a formação de três guitarras.
 ---

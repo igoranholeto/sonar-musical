@@ -64,4 +64,23 @@ integrantes:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500
           obs: Ataque estalado parecido com o original.
+albuns:
+  - nome: Doo-Wops & Hooligans
+    ano: 2010
+    descricao: Álbum de estreia, com hits como "Just the Way You Are" e
+      "Grenade" que projetaram Bruno Mars mundialmente.
+    capa: /images/albuns/bruno-mars-doo-wops-hooligans.jpg
+    capaAlt: Capa do álbum Doo-Wops & Hooligans, de Bruno Mars
+  - nome: Unorthodox Jukebox
+    ano: 2012
+    descricao: Traz influências de funk e reggae mais explícitas, incluindo
+      o hit "Locked Out of Heaven".
+    capa: /images/albuns/bruno-mars-unorthodox-jukebox.jpg
+    capaAlt: Capa do álbum Unorthodox Jukebox, de Bruno Mars
+  - nome: 24K Magic
+    ano: 2016
+    descricao: Mergulho direto no funk e R&B retrô dos anos 80/90, com a
+      faixa-título e "That's What I Like".
+    capa: /images/albuns/bruno-mars-24k-magic.jpg
+    capaAlt: Capa do álbum 24K Magic, de Bruno Mars
 ---

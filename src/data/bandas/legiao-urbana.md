@@ -90,4 +90,29 @@ integrantes:
           nome: Pearl Roadshow
           preco: ~R$ 4.500
           obs: Kit de entrada com boa projeção para ensaio.
+albuns:
+  - nome: Legião Urbana
+    ano: 1985
+    descricao: Álbum de estreia, com "Geração Coca-Cola" e "Será",
+      já mostrando as letras de crítica social de Renato Russo.
+    capa: /images/albuns/legiao-urbana-legiao-urbana.jpg
+    capaAlt: Capa do álbum Legião Urbana, de estreia da banda
+  - nome: Dois
+    ano: 1986
+    descricao: Traz "Faroeste Caboclo", épica de mais de nove minutos que
+      virou um dos maiores clássicos do rock nacional.
+    capa: /images/albuns/legiao-urbana-dois.jpg
+    capaAlt: Capa do álbum Dois, da Legião Urbana
+  - nome: Que País É Este
+    ano: 1987
+    descricao: Reúne faixas antigas e novas, incluindo a icônica
+      faixa-título de crítica política.
+    capa: /images/albuns/legiao-urbana-que-pais-e-este.jpg
+    capaAlt: Capa do álbum Que País É Este, da Legião Urbana
+  - nome: As Quatro Estações
+    ano: 1989
+    descricao: Um dos discos mais vendidos da banda, com "Pais e Filhos" e
+      "Eduardo e Mônica".
+    capa: /images/albuns/legiao-urbana-quatro-estacoes.jpg
+    capaAlt: Capa do álbum As Quatro Estações, da Legião Urbana
 ---
