@@ -7,7 +7,7 @@ blurb: "Rock brasileiro de letra afiada: guitarra com humbuckers quentes, violã
   marcado e a voz inconfundível de Renato Russo."
 fotoCapa: /images/legiao-urbana-banda-sonar.webp
 fotoCapaAlt: legiao urbana
-fotoCapaPosition: 51
+fotoCapaPosition: 60
 integrantes:
   - foto: /images/renato-russo-integrante-sonar.webp
     fotoAlt: renato russo
