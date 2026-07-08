@@ -13,12 +13,55 @@ integrantes:
     funcao: Vocal / Guitarra
     foto: /images/brunomars-integrante-sonar.webp
     fotoAlt: "bruno mars "
+    anos: 2004 – hoje
+    status: Artista principal
+    inspiracoes: Michael Jackson, James Brown, Prince
+    resumo: Bruno Mars é vocalista, guitarrista e o principal nome por trás
+      do som funk/R&B retrô que marcou sua carreira. Toca guitarra com
+      palhetada seca e percussiva no estilo funk, além de uma performance
+      vocal versátil que passeia entre soul, funk e pop.
+    pontos:
+      - Guitarra percussiva com palhetada seca no estilo funk.
+      - Performance vocal versátil entre soul, funk e pop.
+    setup:
+      - tipo: Guitarra
+        original:
+          nome: Fender Stratocaster Custom Shop
+          preco: ~R$ 18.000
+        low:
+          nome: Squier Classic Vibe 60s Stratocaster
+          preco: ~R$ 3.000
+          obs: Timbre single-coil vintage por uma fração do preço.
+      - tipo: Microfone
+        original:
+          nome: Shure Axient Digital (sem fio)
+          preco: ~R$ 15.000
+        low:
+          nome: Shure SM58
+          preco: ~R$ 800
+          obs: Captação vocal clássica e confiável no palco.
   - nome: The Hooligans
     funcao: Teclas / Sopros
     foto: /images/the-hooligans-brunomars-sonar.webp
     fotoAlt: the hooligans banda completa sonar
+    pontos:
+      - Naipe de metais afiado que dá o tempero retrô às músicas.
+      - Teclas quentes estilo Motown por trás dos vocais.
   - nome: Jamareo Artis
     funcao: Baixo
     foto: /images/jarameo-artis-sonar.webp
     fotoAlt: Jarameo Baixista Bruno Mars
+    status: Baixista da banda
+    pontos:
+      - Linhas de baixo groovadas que ancoram o funk retrô.
+      - Levada com slap sutil nos refrões mais dançantes.
+    setup:
+      - tipo: Baixo
+        original:
+          nome: Music Man StingRay
+          preco: ~R$ 12.000
+        low:
+          nome: Sterling by Music Man StingRay Ray4
+          preco: ~R$ 3.500
+          obs: Ataque estalado parecido com o original.
 ---

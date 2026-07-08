@@ -11,12 +11,47 @@ fotoCapaPosition: 9
 integrantes:
   - nome: B.B. King
     funcao: Guitarra / Vocal
+    anos: 1949–2015
+    status: Guitarrista e vocalista principal
+    inspiracoes: T-Bone Walker, Lonnie Johnson, Django Reinhardt
+    resumo: B.B. King foi guitarrista, vocalista e um dos maiores nomes da
+      história do blues. Batizava todas as suas guitarras de "Lucille" e
+      ficou conhecido por um vibrato rápido de pulso e por escolher cada
+      nota com precisão em vez de tocar escalas corridas — um estilo
+      imitado por gerações de guitarristas de blues e rock.
+    pontos:
+      - Vibrato rápido de pulso, apelidado de "butterfly".
+      - Notas escolhidas com precisão — cada bend conta uma frase.
+    setup:
+      - tipo: Guitarra
+        original:
+          nome: Gibson ES-355 "Lucille" (Signature)
+          preco: ~R$ 25.000
+        low:
+          nome: Epiphone ES-335
+          preco: ~R$ 6.000
+          obs: Corpo semi-oco com calor tonal parecido.
+      - tipo: Amplificação
+        original:
+          nome: Fender Twin Reverb
+          preco: ~R$ 15.000
+        low:
+          nome: Fender Champion 40
+          preco: ~R$ 2.500
+          obs: Limpo brilhante clássico Fender por menos.
   - nome: Sonny Freeman
     funcao: Bateria
     foto: /images/sonny-freeman-bbking-sonar.webp
     fotoAlt: Sonny Freeman Baterista BB King
+    status: Baterista de banda de longa data
+    pontos:
+      - Shuffle suingado que sustenta o groove do blues elétrico.
+      - Dinâmica que acompanha as frases vocais e os bends da guitarra.
   - nome: Seção de sopros
     funcao: Metais
     foto: /images/big-band-bbking-sonar.webp
     fotoAlt: big band sonar
+    pontos:
+      - Riffs de metais que respondem às frases da guitarra.
+      - Acordes sustentados que engordam o refrão.
 ---
