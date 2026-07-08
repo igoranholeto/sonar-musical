@@ -30,6 +30,15 @@ export function generoSoft(genero: string): string {
   return `oklch(0.73 0.15 ${hue(genero)} / 0.15)`;
 }
 
+export function slugify(texto: string): string {
+  return texto
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
 export function iniciais(nome: string): string {
   return nome
     .split(' ')

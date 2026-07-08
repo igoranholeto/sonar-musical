@@ -214,22 +214,233 @@ albuns:
       consolidou o Iron Maiden como um dos pilares do heavy metal mundial.
     capa: /images/albuns/iron-maiden-number-of-the-beast.jpg
     capaAlt: Capa do álbum The Number of the Beast, do Iron Maiden
+    spotifyUrl: https://open.spotify.com/album/1eNQWWDcjDNy6cpUlv1gfK
+    temas:
+      - tema: Ocultismo e o imaginário do mal
+        explicacao: A faixa-título nasceu de um pesadelo que Steve Harris teve depois de assistir a "Damien - A Profecia do Mal 2" e ganhou a icônica introdução falada com um trecho do Livro do Apocalipse, lida pelo ator Barry Clayton depois que o cachê pedido por Vincent Price se mostrou alto demais.
+      - tema: Genocídio e colonização
+        explicacao: A faixa "Run to the Hills" conta em duas partes o massacre dos povos nativos americanos pelos colonizadores europeus, alternando entre o ponto de vista do indígena perseguido e o do soldado que executa a violência.
+      - tema: Ficção científica e possessão
+        explicacao: A faixa "Children of the Damned" se baseia nos filmes
+          "Aldeia dos Malditos" e "Os Filhos dos Malditos", adaptados do
+          romance de John Wyndham, sobre crianças com poderes psíquicos
+          aterrorizantes.
+      - tema: Vigilância e perda de identidade
+        explicacao: A faixa "The Prisoner" foi inspirada na série britânica de TV homônima e usa diálogos reais de sua abertura, com autorização do próprio criador Patrick McGoohan, sobre um homem que tenta escapar de uma vila que controla cada aspecto de sua vida.
+      - tema: Execução e resignação diante da morte
+        explicacao: A faixa "Hallowed Be Thy Name" narra os últimos
+          pensamentos de um condenado à forca nos instantes antes da
+          execução, considerada por muitos fãs e críticos o épico mais
+          celebrado da banda.
+    scoresCriticos:
+      - fonte: AllMusic
+        nota: 5
+        notaMax: 5
+      - fonte: Sounds
+        nota: 5
+        notaMax: 5
+      - fonte: Sputnikmusic
+        nota: 4.5
+        notaMax: 5
+      - fonte: Rolling Stone
+        nota: 3.5
+        notaMax: 5
+      - fonte: Pitchfork
+        nota: 9
+        notaMax: 10
+      - fonte: Sonar Musical
+        nota: 9.7
+        notaMax: 10
+    musicasPopulares:
+      - nome: Run to the Hills
+        streams: "480 milhões"
+      - nome: The Number of the Beast
+        streams: "312 milhões"
+      - nome: Hallowed Be Thy Name
+        streams: "230 milhões"
+      - nome: Children of the Damned
+        streams: "51 milhões"
+      - nome: The Prisoner
+        streams: "33 milhões"
+    videoYoutubeId: jMVM9aEIBzE
+    videoTitulo: "IRON MAIDEN - The Number Of The Beast - Decifrando Discos (S02E04) (Daniel Iasbeck & Decifrando Discos Podcast)"
+    secoesAnalise:
+      - titulo: Gravação e produção
+        texto: O álbum foi gravado em cerca de cinco semanas nos Battery Studios, em Londres, no fim de 1981, sob a produção de Martin Birch. Foi o primeiro disco da banda com Bruce Dickinson nos vocais, e boa parte do material já vinha sendo testado ao vivo em shows dos meses anteriores, o que ajudou a dar coesão ao repertório final.
+      - titulo: A capa e a controvérsia
+        texto: A arte de Derek Riggs mostra o mascote Eddie manipulando um Satanás como marionete, enquanto é ele próprio controlado por cordas — uma imagem sobre ambiguidade moral que acabou gerando protestos de grupos religiosos nos Estados Unidos, incluindo queimas públicas de discos e boicotes a shows da turnê.
+      - titulo: Legado
+        texto: Este foi o primeiro álbum do Iron Maiden a chegar ao topo das paradas britânicas e já vendeu mais de 20 milhões de cópias no mundo. Décadas depois, "The Number of the Beast" segue aparecendo em listas como um dos discos mais essenciais da história do heavy metal.
   - nome: Powerslave
     ano: 1984
     descricao: Traz "Aces High" e a épica "Rime of the Ancient Mariner",
       com temática egípcia que também inspirou a turnê seguinte.
     capa: /images/albuns/iron-maiden-powerslave.jpg
     capaAlt: Capa do álbum Powerslave, do Iron Maiden
+    spotifyUrl: https://open.spotify.com/album/2VOr2zaYLdC9orHcHOloge
+    temas:
+      - tema: Mortalidade vista por um faraó
+        explicacao: A faixa-título é descrita pelo próprio Bruce Dickinson como uma alegoria de sua vida como astro do rock, mas contada pela perspectiva de um faraó egípcio que teme a morte mesmo cercado de poder e riqueza.
+      - tema: Tensão da Guerra Fria
+        explicacao: A faixa "2 Minutes to Midnight" critica a escalada armamentista e a retórica anti-soviética da era Reagan, com o título remetendo ao Relógio do Apocalipse usado por cientistas para medir o risco de catástrofe nuclear.
+      - tema: Heroísmo e sacrifício na guerra
+        explicacao: A faixa "Aces High" homenageia os pilotos da Real Força Aérea britânica durante a Batalha da Inglaterra, na Segunda Guerra Mundial, com uma letra que descreve o combate aéreo do ponto de vista de quem está na cabine.
+      - tema: Culpa, loucura e redenção
+        explicacao: A épica "Rime of the Ancient Mariner" adapta o poema de Samuel Taylor Coleridge sobre um marinheiro amaldiçoado depois de matar um albatroz, e Steve Harris já comentou que a música despertou o interesse de muitos ouvintes pelo poema original.
+      - tema: Mitologia egípcia
+        explicacao: A ambientação visual do álbum e da turnê seguinte, batizada de "World Slavery Tour", bebe de símbolos do Livro dos Mortos egípcio, reforçando a ideia da faixa-título sobre poder, escravidão e morte.
+    scoresCriticos:
+      - fonte: Sputnikmusic
+        nota: 5
+        notaMax: 5
+      - fonte: AllMusic
+        nota: 4.5
+        notaMax: 5
+      - fonte: Collector's Guide to Heavy Metal
+        nota: 9
+        notaMax: 10
+      - fonte: MusicHound Rock
+        nota: 3
+        notaMax: 5
+      - fonte: The Rolling Stone Album Guide
+        nota: 2.5
+        notaMax: 5
+      - fonte: Sonar Musical
+        nota: 9.5
+        notaMax: 10
+    musicasPopulares:
+      - nome: 2 Minutes to Midnight
+        streams: "194 milhões"
+      - nome: Aces High
+        streams: "155 milhões"
+      - nome: Powerslave
+        streams: "48 milhões"
+      - nome: Rime of the Ancient Mariner
+        streams: "38 milhões"
+      - nome: Flash of the Blade
+        streams: "21,6 milhões"
+    videoYoutubeId: 0VlhUmq7sKM
+    videoTitulo: "IRON MAIDEN - POWERSLAVE - Decifrando Discos (S02E06) (Daniel Iasbeck & Decifrando Discos Podcast)"
+    secoesAnalise:
+      - titulo: Gravação nas Bahamas
+        texto: O disco foi gravado entre fevereiro e junho de 1984 nos Compass Point Studios, em Nassau, nas Bahamas, sob produção de Martin Birch, com a mixagem finalizada no Electric Lady Studios, em Nova York. Antes de entrar em estúdio, a banda ensaiou por seis semanas no Le Chalet Hotel, na ilha de Jersey, repetindo o método usado no álbum anterior.
+      - titulo: A capa mais luxuosa da banda
+        texto: A arte de Derek Riggs para "Powerslave" é considerada uma das mais elaboradas da carreira do Iron Maiden, ambientada em um templo egípcio dourado com o mascote Eddie retratado como um faraó. A revista Classic Rock chegou a chamá-la de a melhor capa de álbum já feita.
+      - titulo: Legado e a turnê monumental
+        texto: O disco impulsionou a "World Slavery Tour", uma das turnês mais extensas e desgastantes já feitas pela banda, com mais de 190 shows ao redor do mundo. A experiência rendeu o clássico álbum ao vivo "Live After Death" e consolidou "Powerslave" como um dos discos mais aclamados da década de 1980 para o Iron Maiden.
   - nome: Seventh Son of a Seventh Son
     ano: 1988
     descricao: Álbum conceitual mais progressivo da banda, com teclados em
       destaque e a faixa-título entre as favoritas dos fãs.
     capa: /images/albuns/iron-maiden-seventh-son.jpg
     capaAlt: Capa do álbum Seventh Son of a Seventh Son, do Iron Maiden
+    spotifyUrl: https://open.spotify.com/album/4MA3tRypbMVe0pBppCGbmV
+    temas:
+      - tema: Clarividência e dons sobrenaturais
+        explicacao: O conceito do álbum nasceu depois que Steve Harris leu o romance "Seventh Son", de Orson Scott Card, sobre a lenda folclórica do sétimo filho de um sétimo filho, que nasceria com poderes como clarividência — ideia que dá nome à faixa-título.
+      - tema: Luta entre o bem e o mal
+        explicacao: Harris descreveu o disco como uma reflexão sobre "céu e inferno, bem e mal", tema reforçado estruturalmente pela dupla de faixas acústicas que abre e fecha o álbum, "Moonchild" e "Only the Good Die Young".
+      - tema: Sonhos e premonição
+        explicacao: A faixa "Infinite Dreams" trata de visões inquietantes durante o sono, enquanto "The Prophecy" narra a angústia de prever uma tragédia sem conseguir evitá-la.
+      - tema: Fatalismo e destino trágico
+        explicacao: As letras de Bruce Dickinson para as faixas de abertura e fechamento, que compartilham a mesma base acústica, prenunciam desgraça e fracasso para o protagonista da história, dando uma moldura sombria ao conceito do disco.
+      - tema: O dom como maldição
+        explicacao: A faixa "The Clairvoyant" narra a angústia de alguém que enxerga o próprio futuro, inclusive a própria morte se aproximando, sem conseguir impedir o que está por vir.
+    scoresCriticos:
+      - fonte: Kerrang!
+        nota: 5
+        notaMax: 5
+      - fonte: AllMusic
+        nota: 4.5
+        notaMax: 5
+      - fonte: Rock Hard
+        nota: 9
+        notaMax: 10
+      - fonte: Sputnikmusic
+        nota: 4
+        notaMax: 5
+      - fonte: The Collector's Guide to Heavy Metal
+        nota: 6
+        notaMax: 10
+      - fonte: Sonar Musical
+        nota: 9
+        notaMax: 10
+    musicasPopulares:
+      - nome: Can I Play with Madness
+        streams: "70 milhões"
+      - nome: The Evil That Men Do
+        streams: "63 milhões"
+      - nome: Seventh Son of a Seventh Son
+        streams: "31 milhões"
+      - nome: Moonchild
+        streams: "20,5 milhões"
+      - nome: The Clairvoyant
+        streams: "20 milhões"
+    videoYoutubeId: 9spkmZQlbT4
+    videoTitulo: "IRON MAIDEN - SEVENTH SON OF A SEVENTH SON - A História do Álbum (Vida Vitrola)"
+    secoesAnalise:
+      - titulo: Gravação em Munique
+        texto: O álbum foi gravado entre fevereiro e março de 1988 nos Musicland Studios, em Munique, na Alemanha Ocidental, na última colaboração da banda com o produtor Martin Birch. Foi também o primeiro disco do Iron Maiden a usar teclados de forma dedicada, ainda que nenhum músico tenha sido contratado para a função — os próprios integrantes tocaram as partes no estúdio.
+      - titulo: O lado mais progressivo do Maiden
+        texto: Com composições mais longas, melódicas e um conceito ainda que parcial amarrando as faixas, o disco marcou uma guinada em direção ao rock progressivo, se afastando da pegada mais direta de álbuns anteriores. Bruce Dickinson chegou a admitir depois que era "só metade de um álbum conceitual", já que a narrativa não se sustenta de forma totalmente coesa entre as faixas.
+      - titulo: Legado
+        texto: O disco estreou no topo das paradas britânicas e recebeu certificação de ouro e platina em diversos países. Décadas depois, segue sendo citado em listas como um dos grandes álbuns de metal progressivo já gravados.
   - nome: Brave New World
     ano: 2000
     capa: /images/albuns/iron-maiden-brave-new-world.jpg
     capaAlt: Capa do álbum Brave New World, do Iron Maiden
+    spotifyUrl: https://open.spotify.com/album/54kKQOjuoqjp63zfYL4kVe
     descricao: Marca o retorno de Bruce Dickinson e Adrian Smith à banda,
       reunindo pela primeira vez a formação de três guitarras.
+    temas:
+      - tema: Distopia e desumanização
+        explicacao: A faixa-título e a arte da capa remetem diretamente ao romance "Admirável Mundo Novo", de Aldous Huxley, sobre uma sociedade que troca liberdade e individualidade por conforto artificial e controle.
+      - tema: Reencontro e reconstrução
+        explicacao: O álbum marca o retorno de Bruce Dickinson e Adrian Smith à banda, e faixas como "The Nomad" carregam anos de desenvolvimento que remontam à era do álbum "Virtual XI", de 1998, refletindo essa longa jornada até a volta ao Iron Maiden.
+      - tema: Luto e memória familiar
+        explicacao: A faixa "Blood Brothers" foi escrita por Steve Harris como uma homenagem ao pai, já falecido, tratando de laços de sangue e da passagem do tempo entre gerações — e mais tarde passou a ser dedicada em shows a outras perdas, como a do baterista Ronnie James Dio.
+      - tema: Guerra e mercenarismo
+        explicacao: A faixa "The Mercenary" explora a figura do combatente que luta por dinheiro em vez de convicção, levantando questões morais sobre a guerra vista como negócio.
+      - tema: Isolamento e incerteza existencial
+        explicacao: A faixa "Dream of Mirrors" mergulha em imagens de reflexos e realidades paralelas, remetendo à sensação de dúvida sobre o que é real diante de um mundo em transformação.
+    scoresCriticos:
+      - fonte: Kerrang!
+        nota: 5
+        notaMax: 5
+      - fonte: Sputnikmusic
+        nota: 4.5
+        notaMax: 5
+      - fonte: Metal Hammer
+        nota: 9
+        notaMax: 10
+      - fonte: Classic Rock
+        nota: 4
+        notaMax: 5
+      - fonte: AllMusic
+        nota: 3.5
+        notaMax: 5
+      - fonte: NME
+        nota: 4
+        notaMax: 10
+      - fonte: Sonar Musical
+        nota: 8.7
+        notaMax: 10
+    musicasPopulares:
+      - nome: The Wicker Man
+        streams: "76 milhões"
+      - nome: Blood Brothers
+        streams: "52 milhões"
+      - nome: Brave New World
+        streams: "35 milhões"
+      - nome: Ghost of the Navigator
+        streams: "23,5 milhões"
+      - nome: Out of the Silent Planet
+        streams: "13 milhões"
+    videoYoutubeId: biVSOyE6sQA
+    videoTitulo: "IRON MAIDEN - Brave New World - Decifrando Discos (S01E17) (Daniel Iasbeck & Decifrando Discos Podcast)"
+    secoesAnalise:
+      - titulo: A volta por cima
+        texto: Gravado entre 1999 e abril de 2000 no estúdio Guillaume Tell, em Paris, o álbum foi produzido por Kevin Shirley, em sua primeira colaboração com a banda. Foi o primeiro disco de estúdio com a formação clássica de três guitarras, reunindo Dave Murray, Adrian Smith e Janick Gers ao lado de Bruce Dickinson, e boa parte das faixas foi gravada ao vivo em estúdio para capturar a energia do grupo tocando junto.
+      - titulo: Legado de uma nova era
+        texto: O disco chegou ao 7º lugar nas paradas britânicas e ao topo das paradas suecas, marcando a volta triunfante do Iron Maiden depois de uma fase mais instável na segunda metade dos anos 90. Anos depois, a revista Decibel o listou entre os melhores álbuns da década de 2000, consolidando "Brave New World" como o início de uma nova fase de sucesso para a banda.
 ---

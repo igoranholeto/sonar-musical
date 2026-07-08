@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { generoAccent, generoGradient, generoSoft, iniciais } from '../../../utils/generos';
+import { generoAccent, generoGradient, generoSoft, iniciais, slugify } from '../../../utils/generos';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -23,7 +23,7 @@ const equipReady = integrantes.some((m) => m.setup.length > 0);
 const albunsComLinks = albuns.map((album) => ({
   ...album,
   spotifyHref: album.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(`${nome} ${album.nome}`)}`,
-  saibaMaisHref: album.saibaMaisUrl || `https://pt.wikipedia.org/w/index.php?search=${encodeURIComponent(`${nome} ${album.nome} álbum`)}`,
+  saibaMaisHref: `/bandas/${banda.id}/albuns/${slugify(album.nome)}`,
 }));
 
 const schema = {
@@ -191,12 +191,7 @@ const schema = {
                   <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.59 14.4a.622.622 0 0 1-.86.21c-2.35-1.44-5.31-1.76-8.79-.96a.624.624 0 1 1-.28-1.22c3.81-.87 7.08-.5 9.71 1.11.31.19.4.59.22.86zm1.22-2.72a.78.78 0 0 1-1.07.26c-2.69-1.65-6.79-2.13-9.98-1.17a.78.78 0 1 1-.45-1.49c3.64-1.1 8.16-.57 11.25 1.32.37.23.48.71.25 1.08zm.11-2.83c-3.23-1.92-8.56-2.09-11.64-1.16a.936.936 0 1 1-.54-1.79c3.54-1.07 9.41-.87 13.13 1.34a.936.936 0 0 1-.95 1.61z"/></svg>
                   Ouvir no Spotify
                 </a>
-                <a
-                  href={album.saibaMaisHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="disco-card__btn disco-card__btn--info"
-                >
+                <a href={album.saibaMaisHref} class="disco-card__btn disco-card__btn--info">
                   Saiba mais →
                 </a>
               </div>
