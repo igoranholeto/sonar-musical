@@ -34,6 +34,11 @@ collections:
           - Acessórios
           - Guias de Compra
           - Dicas para Iniciantes
+          - Home Studio
+          - Reviews
+          - Tutoriais
+          - Técnica e Teoria
+          - Violões
       - label: Nível de dificuldade
         name: level
         widget: select
@@ -93,3 +98,60 @@ collections:
 
       # ── Conteúdo ──────────────────────────────────────────────
       - { label: Conteúdo, name: body, widget: markdown }
+
+  - name: bandas
+    label: Bandas
+    folder: src/data/bandas
+    create: true
+    extension: md
+    format: frontmatter
+    slug: "{{slug}}"
+    fields:
+      - { label: Nome da banda, name: nome, widget: string }
+      - label: Gênero
+        name: genero
+        widget: select
+        options: [Rock, Metal, Blues, Pop, Jazz, "R&B", Sertanejo, Nacional]
+      - { label: Origem, name: origem, widget: string, hint: "Ex: Londres, Reino Unido" }
+      - { label: Ano de formação, name: ano, widget: number, value_type: int }
+      - { label: Descrição curta (blurb), name: blurb, widget: text, hint: "1-2 frases sobre o som/estilo da banda." }
+      - { label: Foto de capa, name: fotoCapa, widget: image, required: false }
+      - { label: Alt text da foto de capa, name: fotoCapaAlt, widget: string, required: false }
+      - label: Integrantes
+        name: integrantes
+        widget: list
+        summary: "{{fields.nome}} — {{fields.funcao}}"
+        fields:
+          - { label: Nome, name: nome, widget: string }
+          - { label: Função, name: funcao, widget: string, hint: "Ex: Guitarra, Baixo, Vocal" }
+          - { label: Foto, name: foto, widget: image, required: false }
+          - { label: Alt text da foto, name: fotoAlt, widget: string, required: false }
+          - { label: Anos na banda, name: anos, widget: string, required: false, hint: "Ex: 1981 – hoje" }
+          - { label: Status, name: status, widget: string, required: false, hint: "Ex: Membro fundador" }
+          - { label: Inspirações, name: inspiracoes, widget: string, required: false }
+          - { label: Resumo / biografia, name: resumo, widget: text, required: false }
+          - { label: Pontos de estilo (2 traços), name: pontos, widget: list, required: false, field: { label: Ponto, name: item, widget: string } }
+          - label: Setup de equipamentos
+            name: setup
+            widget: list
+            required: false
+            summary: "{{fields.tipo}}"
+            fields:
+              - { label: Tipo (categoria do equipamento), name: tipo, widget: string, hint: "Ex: Guitarra, Amplificação, Bateria" }
+              - label: Original
+                name: original
+                widget: object
+                required: false
+                fields:
+                  - { label: Nome do produto, name: nome, widget: string }
+                  - { label: Preço, name: preco, widget: string, required: false, hint: "Ex: ~R$ 12.000" }
+                  - { label: URL afiliado, name: urlAfiliado, widget: string, required: false }
+              - label: Versão low cost
+                name: low
+                widget: object
+                required: false
+                fields:
+                  - { label: Nome do produto, name: nome, widget: string }
+                  - { label: Preço, name: preco, widget: string, required: false }
+                  - { label: Observação, name: obs, widget: string, required: false, hint: "Por que é uma boa alternativa." }
+                  - { label: URL afiliado, name: urlAfiliado, widget: string, required: false }
