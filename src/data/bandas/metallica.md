@@ -126,4 +126,29 @@ integrantes:
           nome: Zildjian ZBT
           preco: ~R$ 2.800
           obs: Entrada na linha Zildjian com bom brilho.
+albuns:
+  - nome: Master of Puppets
+    ano: 1986
+    descricao: Considerado por muitos o auge do thrash metal técnico da
+      banda, com riffs complexos e mudanças de andamento marcantes.
+    capa: /images/albuns/metallica-master-of-puppets.jpg
+    capaAlt: Capa do álbum Master of Puppets, do Metallica
+  - nome: "...And Justice for All"
+    ano: 1988
+    descricao: Álbum de produção crua e faixas longas, trouxe o hit "One" e
+      o primeiro videoclipe da banda.
+    capa: /images/albuns/metallica-and-justice-for-all.jpg
+    capaAlt: Capa do álbum ...And Justice for All, do Metallica
+  - nome: Metallica (Black Album)
+    ano: 1991
+    descricao: Disco que projetou o Metallica ao mainstream mundial, com
+      "Enter Sandman" e um som mais direto e pesado.
+    capa: /images/albuns/metallica-black-album.jpg
+    capaAlt: Capa do Black Album, do Metallica
+  - nome: Death Magnetic
+    ano: 2008
+    descricao: Retorno a um som mais próximo do thrash das origens após a
+      fase mais experimental dos anos 2000.
+    capa: /images/albuns/metallica-death-magnetic.jpg
+    capaAlt: Capa do álbum Death Magnetic, do Metallica
 ---

@@ -12,13 +12,19 @@ export async function getStaticPaths() {
 }
 
 const { banda } = Astro.props;
-const { nome, genero, origem, ano, blurb, fotoCapa, fotoCapaAlt, fotoCapaPosition, integrantes } = banda.data;
+const { nome, genero, origem, ano, blurb, fotoCapa, fotoCapaAlt, fotoCapaPosition, integrantes, albuns } = banda.data;
 
 const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
 const tagBg = generoSoft(genero);
 const membersLabel = `${integrantes.length} ${integrantes.length === 1 ? 'integrante' : 'integrantes'}`;
 const equipReady = integrantes.some((m) => m.setup.length > 0);
+
+const albunsComLinks = albuns.map((album) => ({
+  ...album,
+  spotifyHref: album.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(`${nome} ${album.nome}`)}`,
+  saibaMaisHref: album.saibaMaisUrl || `https://pt.wikipedia.org/w/index.php?search=${encodeURIComponent(`${nome} ${album.nome} álbum`)}`,
+}));
 
 const schema = {
   '@context': 'https://schema.org',
@@ -102,7 +108,7 @@ const schema = {
   </section>
 
   <!-- Equipamentos CTA -->
-  <section class="max-w-6xl mx-auto px-4 pt-11 pb-24">
+  <section class="max-w-6xl mx-auto px-4 pt-11 pb-5">
     <div class="relative overflow-hidden rounded-[22px] border border-border p-8" style="background:linear-gradient(135deg,#141414,#0d0d0d)">
       <div class="flex items-start gap-4 flex-wrap">
         <span
@@ -134,4 +140,202 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <!-- Discografia -->
+  {albuns.length > 0 && (
+    <section class="pt-11 pb-24">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex items-center gap-3.5 mb-8">
+          <span
+            class="w-8.5 h-8.5 rounded-lg flex items-center justify-center font-extrabold text-base flex-shrink-0"
+            style={`background:${tagBg};color:${accent}`}
+          >
+            03
+          </span>
+          <div>
+            <h2 class="text-2xl font-extrabold tracking-tight">Discografia</h2>
+            <div class="text-sm text-muted">Álbuns que marcaram a carreira de {nome}</div>
+          </div>
+        </div>
+      </div>
+      <div class="disco-shelf">
+        <div class="disco-shelf__track max-w-6xl mx-auto px-4">
+          {albunsComLinks.map((album) => (
+            <div class="disco-card">
+              <div class="disco-card__art">
+                <div class="disco-card__vinyl" style={`background:${gradient}`}></div>
+                <div class="disco-card__cover">
+                  {album.capa ? (
+                    <img src={album.capa} alt={album.capaAlt ?? album.nome} loading="lazy" />
+                  ) : (
+                    <div class="disco-card__cover-fallback" style={`background:${gradient}`}>
+                      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-opacity="0.85" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 18V5l12-2v13" />
+                        <circle cx="6" cy="18" r="3" />
+                        <circle cx="18" cy="16" r="3" />
+                      </svg>
+                    </div>
+                  )}
+                </div>
+              </div>
+              <div class="disco-card__nome">{album.nome}</div>
+              {album.ano && <div class="disco-card__ano" style={`color:${accent}`}>{album.ano}</div>}
+              <p class="disco-card__desc">{album.descricao}</p>
+              <div class="disco-card__actions">
+                <a
+                  href={album.spotifyHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="disco-card__btn disco-card__btn--spotify"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.59 14.4a.622.622 0 0 1-.86.21c-2.35-1.44-5.31-1.76-8.79-.96a.624.624 0 1 1-.28-1.22c3.81-.87 7.08-.5 9.71 1.11.31.19.4.59.22.86zm1.22-2.72a.78.78 0 0 1-1.07.26c-2.69-1.65-6.79-2.13-9.98-1.17a.78.78 0 1 1-.45-1.49c3.64-1.1 8.16-.57 11.25 1.32.37.23.48.71.25 1.08zm.11-2.83c-3.23-1.92-8.56-2.09-11.64-1.16a.936.936 0 1 1-.54-1.79c3.54-1.07 9.41-.87 13.13 1.34a.936.936 0 0 1-.95 1.61z"/></svg>
+                  Ouvir no Spotify
+                </a>
+                <a
+                  href={album.saibaMaisHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="disco-card__btn disco-card__btn--info"
+                >
+                  Saiba mais →
+                </a>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
 </BaseLayout>
+
+<style>
+  .disco-shelf {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scrollbar-width: thin;
+    scroll-snap-type: x proximity;
+  }
+  .disco-shelf__track {
+    display: flex;
+    gap: 34px;
+    padding-bottom: 8px;
+    padding-right: 34px;
+  }
+  .disco-card {
+    flex: 0 0 190px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+  }
+  .disco-card__art {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    margin-bottom: 22px;
+  }
+  .disco-card__vinyl {
+    position: absolute;
+    right: -34px;
+    bottom: -18px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.9;
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .disco-card__vinyl::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, rgba(0, 0, 0, 0.55) 0px, rgba(0, 0, 0, 0.55) 1px, transparent 2px, transparent 5px);
+  }
+  .disco-card__vinyl::after {
+    content: '';
+    position: absolute;
+    inset: 42%;
+    border-radius: 50%;
+    background: #0a0a0a;
+    border: 3px solid rgba(255, 255, 255, 0.15);
+  }
+  .disco-card:hover .disco-card__vinyl {
+    transform: translate(14px, -10px) rotate(35deg);
+  }
+  .disco-card__cover {
+    position: relative;
+    width: 190px;
+    height: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 32px rgba(0, 0, 0, 0.55);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    transition: transform 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .disco-card:hover .disco-card__cover {
+    transform: translate(-6px, 4px) rotate(-2deg);
+  }
+  .disco-card__cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .disco-card__cover-fallback {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .disco-card__nome {
+    font-weight: 800;
+    font-size: 15.5px;
+    letter-spacing: -0.01em;
+    line-height: 1.25;
+  }
+  .disco-card__ano {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .disco-card__desc {
+    font-size: 13px;
+    color: #999;
+    line-height: 1.5;
+    margin-top: 6px;
+    flex: 1;
+  }
+  .disco-card__actions {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 14px;
+  }
+  .disco-card__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 12.5px;
+    font-weight: 700;
+    border-radius: 9px;
+    padding: 8px 12px;
+    transition: filter 0.15s ease, border-color 0.15s ease;
+    white-space: nowrap;
+  }
+  .disco-card__btn--spotify {
+    background: #1db954;
+    color: #04170b;
+  }
+  .disco-card__btn--spotify:hover {
+    filter: brightness(1.08);
+  }
+  .disco-card__btn--info {
+    background: transparent;
+    color: #ccc;
+    border: 1px solid #333;
+  }
+  .disco-card__btn--info:hover {
+    border-color: #555;
+    color: #fff;
+  }
+</style>

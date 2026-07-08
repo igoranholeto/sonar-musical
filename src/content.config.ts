@@ -71,6 +71,17 @@ const bandas = defineCollection({
         ).default([]),
       })
     ),
+    albuns: z.array(
+      z.object({
+        nome: z.string(),
+        ano: z.number().optional(),
+        descricao: z.string(),
+        capa: z.string().optional(),
+        capaAlt: z.string().optional(),
+        spotifyUrl: z.string().optional(),
+        saibaMaisUrl: z.string().optional(),
+      })
+    ).default([]),
   }),
 });
 

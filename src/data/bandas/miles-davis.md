@@ -99,4 +99,23 @@ integrantes:
           nome: Baixo acústico Michael ABX
           preco: ~R$ 5.000
           obs: Entrada acessível para walking bass em estúdio.
+albuns:
+  - nome: Kind of Blue
+    ano: 1959
+    descricao: O álbum de jazz mais vendido da história, referência maior
+      do jazz modal, gravado quase inteiramente em primeiras tomadas.
+    capa: /images/albuns/miles-davis-kind-of-blue.jpg
+    capaAlt: Capa do álbum Kind of Blue, de Miles Davis
+  - nome: Sketches of Spain
+    ano: 1960
+    descricao: Parceria com o arranjador Gil Evans, mistura jazz com
+      elementos da música clássica e folclórica espanhola.
+    capa: /images/albuns/miles-davis-sketches-of-spain.jpg
+    capaAlt: Capa do álbum Sketches of Spain, de Miles Davis
+  - nome: Bitches Brew
+    ano: 1970
+    descricao: Marco da fusão entre jazz e rock, com uso pioneiro de
+      instrumentos elétricos e edição experimental em estúdio.
+    capa: /images/albuns/miles-davis-bitches-brew.jpg
+    capaAlt: Capa do álbum Bitches Brew, de Miles Davis
 ---

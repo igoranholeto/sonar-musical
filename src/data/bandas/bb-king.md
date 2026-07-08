@@ -54,4 +54,23 @@ integrantes:
     pontos:
       - Riffs de metais que respondem às frases da guitarra.
       - Acordes sustentados que engordam o refrão.
+albuns:
+  - nome: Live at the Regal
+    ano: 1965
+    descricao: Gravado ao vivo em Chicago, é considerado um dos melhores
+      álbuns ao vivo de blues já lançados.
+    capa: /images/albuns/bb-king-live-at-the-regal.jpg
+    capaAlt: Capa do álbum Live at the Regal, de B.B. King
+  - nome: Completely Well
+    ano: 1969
+    descricao: Traz "The Thrill Is Gone", a canção mais famosa da carreira
+      de B.B. King, com arranjo de cordas incomum para o blues da época.
+    capa: /images/albuns/bb-king-completely-well.jpg
+    capaAlt: Capa do álbum Completely Well, de B.B. King
+  - nome: Indianola Mississippi Seeds
+    ano: 1970
+    descricao: Mistura blues com soul e rock, com participações de músicos
+      como Leon Russell e Carole King.
+    capa: /images/albuns/bb-king-indianola.jpg
+    capaAlt: Capa do álbum Indianola Mississippi Seeds, de B.B. King
 ---

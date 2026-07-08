@@ -156,3 +156,16 @@ collections:
                   - { label: Preço, name: preco, widget: string, required: false }
                   - { label: Observação, name: obs, widget: string, required: false, hint: "Por que é uma boa alternativa." }
                   - { label: URL afiliado, name: urlAfiliado, widget: string, required: false }
+      - label: Álbuns
+        name: albuns
+        widget: list
+        required: false
+        summary: "{{fields.nome}} ({{fields.ano}})"
+        fields:
+          - { label: Nome do álbum, name: nome, widget: string }
+          - { label: Ano de lançamento, name: ano, widget: number, required: false, value_type: int }
+          - { label: Descrição curta, name: descricao, widget: text, hint: "1-2 frases sobre o álbum." }
+          - { label: Capa do álbum, name: capa, widget: image, required: false, hint: "Formato quadrado (1:1). Envie no mínimo 800×800px." }
+          - { label: Alt text da capa, name: capaAlt, widget: string, required: false }
+          - { label: Link do Spotify, name: spotifyUrl, widget: string, required: false, hint: "Cole o link do álbum no Spotify. Se deixar em branco, o botão abre uma busca pelo álbum no Spotify." }
+          - { label: Link para mais informações, name: saibaMaisUrl, widget: string, required: false, hint: "Ex: página da Wikipédia sobre o álbum. Se deixar em branco, o botão abre uma busca na Wikipédia." }
