@@ -115,7 +115,7 @@ collections:
       - { label: Origem, name: origem, widget: string, hint: "Ex: Londres, Reino Unido" }
       - { label: Ano de formação, name: ano, widget: number, value_type: int }
       - { label: Descrição curta (blurb), name: blurb, widget: text, hint: "1-2 frases sobre o som/estilo da banda." }
-      - { label: Foto de capa, name: fotoCapa, widget: image, required: false }
+      - { label: Foto de capa, name: fotoCapa, widget: image, required: false, hint: "Aparece esticada em banner de largura total. Envie no mínimo 1600×600px (paisagem) para não pixelizar." }
       - { label: Alt text da foto de capa, name: fotoCapaAlt, widget: string, required: false }
       - label: Integrantes
         name: integrantes
@@ -124,7 +124,7 @@ collections:
         fields:
           - { label: Nome, name: nome, widget: string }
           - { label: Função, name: funcao, widget: string, hint: "Ex: Guitarra, Baixo, Vocal" }
-          - { label: Foto, name: foto, widget: image, required: false }
+          - { label: Foto, name: foto, widget: image, required: false, hint: "Aparece em avatar circular e em cards. Envie no mínimo 600×600px." }
           - { label: Alt text da foto, name: fotoAlt, widget: string, required: false }
           - { label: Anos na banda, name: anos, widget: string, required: false, hint: "Ex: 1981 – hoje" }
           - { label: Status, name: status, widget: string, required: false, hint: "Ex: Membro fundador" }
