@@ -109,6 +109,7 @@ integrantes:
           nome: Boss Katana 100 MkII
           preco: ~R$ 2.400
           obs: Ganho British apertado.
+          urlAfiliado: https://meli.la/1rW4Xdf
   - foto: /images/adrian-smith-iron-maiden-sonar.webp
     fotoAlt: Adrian Smith Guitarrista
     pontos:
@@ -141,6 +142,7 @@ integrantes:
           nome: Boss Katana 100 MkII
           preco: ~R$ 2.400
           obs: Crunch clássico.
+          urlAfiliado: https://meli.la/1rW4Xdf
   - foto: /images/janick-gers-iron-maiden-sonar.webp
     fotoAlt: Janick Gers Kick Pose
     pontos:
@@ -173,6 +175,7 @@ integrantes:
           nome: Boss Katana 50
           preco: ~R$ 1.700
           obs: Overdrive dinâmico.
+          urlAfiliado: https://meli.la/2E6pEqu
   - foto: /images/nicko-mcbrain-sonar.webp
     fotoAlt: Nicko Mcbrain Baterista
     pontos:

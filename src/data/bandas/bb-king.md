@@ -31,6 +31,7 @@ integrantes:
           nome: Epiphone ES-335
           preco: ~R$ 6.000
           obs: Corpo semi-oco com calor tonal parecido.
+          urlAfiliado: https://meli.la/1ckVH6v
       - tipo: Amplificação
         original:
           nome: Fender Twin Reverb
@@ -39,6 +40,7 @@ integrantes:
           nome: Fender Champion 40
           preco: ~R$ 2.500
           obs: Limpo brilhante clássico Fender por menos.
+          urlAfiliado: https://meli.la/1cv8RQv
   - nome: Sonny Freeman
     funcao: Bateria
     foto: /images/sonny-freeman-bbking-sonar.webp
