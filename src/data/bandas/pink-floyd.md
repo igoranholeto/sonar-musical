@@ -29,6 +29,7 @@ integrantes:
           nome: Squier Classic Vibe 60s Stratocaster
           preco: ~R$ 3.000
           obs: Base single-coil parecida para explorar o delay.
+          urlAfiliado: https://meli.la/2Zao8tQ
       - tipo: Pedais
         original:
           nome: Binson Echorec (delay vintage)

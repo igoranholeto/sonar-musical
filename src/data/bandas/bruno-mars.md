@@ -32,6 +32,7 @@ integrantes:
           nome: Squier Classic Vibe 60s Stratocaster
           preco: ~R$ 3.000
           obs: Timbre single-coil vintage por uma fração do preço.
+          urlAfiliado: https://meli.la/2Zao8tQ
       - tipo: Microfone
         original:
           nome: Shure Axient Digital (sem fio)
@@ -40,6 +41,7 @@ integrantes:
           nome: Shure SM58
           preco: ~R$ 800
           obs: Captação vocal clássica e confiável no palco.
+          urlAfiliado: https://meli.la/2QjvtJz
   - nome: The Hooligans
     funcao: Teclas / Sopros
     foto: /images/the-hooligans-brunomars-sonar.webp

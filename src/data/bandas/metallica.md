@@ -38,10 +38,12 @@ integrantes:
         original:
           nome: Mesa Boogie Dual Rectifier
           preco: ~R$ 20.000
+          urlAfiliado: https://meli.la/2VqC1Jm
         low:
           nome: Boss Katana 100 MkII
           preco: ~R$ 2.400
           obs: Canais de alto ganho versáteis pro peso do thrash.
+          urlAfiliado: https://meli.la/1rW4Xdf
   - foto: /images/kirk-hammett-integrante-sonar.webp
     fotoAlt: kirk metallica
     pontos:
