@@ -34,6 +34,15 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="generator" content={Astro.generator} />
 
+    <!-- Aplica o tema antes do primeiro paint, evitando flash -->
+    <script is:inline>
+      (function () {
+        var stored = localStorage.getItem('theme');
+        var isDark = stored ? stored === 'dark' : true;
+        document.documentElement.classList.toggle('dark', isDark);
+      })();
+    </script>
+
     <!-- SEO principal -->
     <title>{fullTitle}</title>
     <meta name="description" content={description} />

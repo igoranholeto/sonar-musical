@@ -9,7 +9,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="max-w-2xl mx-auto px-4 py-12">
     <div class="text-center mb-10">
       <h1 class="text-3xl font-bold mb-2">Afinador Online</h1>
-      <p class="text-gray-400">Use o microfone para afinar sua guitarra ou violão</p>
+      <p class="text-muted">Use o microfone para afinar sua guitarra ou violão</p>
     </div>
 
     <!-- Seleção de instrumento -->
@@ -32,7 +32,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
     <!-- Seleção de afinação -->
     <div class="mb-8">
-      <label for="tuning-select" class="block text-center text-sm text-gray-400 mb-3">Afinação</label>
+      <label for="tuning-select" class="block text-center text-sm text-muted mb-3">Afinação</label>
       <select id="tuning-select" class="tuning-select w-full"></select>
     </div>
 
@@ -45,7 +45,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="text-center mb-2">
         <div id="note-name" class="text-7xl font-bold tracking-tight transition-colors duration-200">—</div>
         <div id="in-tune-badge" class="in-tune-badge">✓ Afinado</div>
-        <div id="octave-cents" class="text-gray-500 text-sm mt-1 h-5"></div>
+        <div id="octave-cents" class="text-subtle text-sm mt-1 h-5"></div>
       </div>
 
       <!-- Medidor de agulha SVG -->
@@ -55,7 +55,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           <path
             d="M 20 140 A 130 130 0 0 1 280 140"
             fill="none"
-            stroke="#2a2a2a"
+            stroke="var(--color-border)"
             stroke-width="12"
             stroke-linecap="round"
           />
@@ -70,7 +70,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             opacity="0.3"
           />
           <!-- Marcas de escala -->
-          <g stroke="#444" stroke-width="1.5">
+          <g stroke="var(--color-subtle)" stroke-width="1.5">
             <line x1="20" y1="140" x2="28" y2="140" transform="rotate(-90 150 140)" />
             <line x1="20" y1="140" x2="26" y2="140" transform="rotate(-45 150 140)" />
             <line x1="20" y1="140" x2="20" y2="126" transform="rotate(0 150 140)" />
@@ -78,11 +78,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
             <line x1="20" y1="140" x2="28" y2="140" transform="rotate(90 150 140)" />
           </g>
           <!-- Labels -->
-          <text x="22" y="138" fill="#555" font-size="10" text-anchor="middle">-50</text>
-          <text x="70" y="60" fill="#555" font-size="10" text-anchor="middle">-25</text>
-          <text x="150" y="18" fill="#555" font-size="10" text-anchor="middle">0</text>
-          <text x="230" y="60" fill="#555" font-size="10" text-anchor="middle">+25</text>
-          <text x="278" y="138" fill="#555" font-size="10" text-anchor="middle">+50</text>
+          <text x="22" y="138" fill="var(--color-subtle)" font-size="10" text-anchor="middle">-50</text>
+          <text x="70" y="60" fill="var(--color-subtle)" font-size="10" text-anchor="middle">-25</text>
+          <text x="150" y="18" fill="var(--color-subtle)" font-size="10" text-anchor="middle">0</text>
+          <text x="230" y="60" fill="var(--color-subtle)" font-size="10" text-anchor="middle">+25</text>
+          <text x="278" y="138" fill="var(--color-subtle)" font-size="10" text-anchor="middle">+50</text>
           <!-- Agulha -->
           <line
             id="needle"
@@ -102,7 +102,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <!-- Frequência -->
       <div class="text-center">
-        <span id="freq-display" class="text-gray-600 text-xs font-mono">— Hz</span>
+        <span id="freq-display" class="text-subtle text-xs font-mono">— Hz</span>
       </div>
     </div>
 
@@ -124,14 +124,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </button>
     </div>
 
-    <p id="mic-status" class="text-center text-xs text-gray-600 mt-3 h-4"></p>
+    <p id="mic-status" class="text-center text-xs text-subtle mt-3 h-4"></p>
 
     <!-- Info SEO -->
-    <div class="mt-12 prose prose-sm prose-invert max-w-none text-gray-400">
-      <h2 class="text-white text-lg font-semibold mb-3">Como usar o afinador online</h2>
+    <div class="mt-12 prose prose-sm max-w-none text-muted">
+      <h2 class="text-foreground text-lg font-semibold mb-3">Como usar o afinador online</h2>
       <p>Clique em <strong>Ativar Microfone</strong>, permita o acesso ao microfone e toque uma corda. O afinador detecta automaticamente a nota e mostra se está <span class="text-green-400">afinada (verde)</span>, um pouco alta ou baixa (amarela) ou muito desafinada (vermelha).</p>
       <p>A agulha aponta para o centro (0) quando a corda está perfeita. Se a agulha vai para a esquerda, a corda está baixa (afrouxe a cravelha para afinar). Se vai para a direita, está alta (aperte a cravelha).</p>
-      <h2 class="text-white text-lg font-semibold mb-3 mt-6">Afinações disponíveis</h2>
+      <h2 class="text-foreground text-lg font-semibold mb-3 mt-6">Afinações disponíveis</h2>
       <p>Suportamos as principais afinações para guitarra e violão: Standard E, Drop D, Drop C, Open G, Open D, Open E, DADGAD, Half Step Down e Full Step Down. Selecione a afinação no menu acima antes de começar.</p>
     </div>
   </section>
@@ -141,11 +141,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .instrument-btn {
     background: var(--color-card);
     border-color: var(--color-border);
-    color: #888;
+    color: var(--color-muted);
   }
   .instrument-btn:hover {
-    border-color: #555;
-    color: #fff;
+    border-color: var(--color-subtle);
+    color: var(--color-foreground);
   }
   .active-instrument {
     background: rgba(230, 57, 70, 0.12);
@@ -155,7 +155,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .tuning-select {
     background: var(--color-card);
     border: 1px solid var(--color-border);
-    color: #fff;
+    color: var(--color-foreground);
     padding: 0.75rem 1rem;
     border-radius: 0.75rem;
     font-size: 0.95rem;
@@ -175,8 +175,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     border-color: var(--color-brand);
   }
   .tuning-select option {
-    background: #1a1a1a;
-    color: #fff;
+    background: var(--color-card);
+    color: var(--color-foreground);
   }
   .string-card {
     background: var(--color-card);
@@ -334,7 +334,7 @@ function renderStrings(activeIdx = -1, inTuneIdx = -1) {
       (i === activeIdx ? ' active' : '') +
       (i === inTuneIdx ? ' in-tune' : '');
     const num = strings.length - i;
-    card.innerHTML = `<div class="text-xs text-gray-500 mb-0.5">${num}ª</div><div class="font-bold text-sm">${s.replace(/\d/, '')}</div><div class="text-xs text-gray-600">${s}</div>`;
+    card.innerHTML = `<div class="text-xs text-subtle mb-0.5">${num}ª</div><div class="font-bold text-sm">${s.replace(/\d/, '')}</div><div class="text-xs text-subtle">${s}</div>`;
     stringsDisplay.appendChild(card);
   });
 }

@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Aprender — Em breve"
+  description="Rock Star Quest está em construção. Em breve você vai poder aprender teoria musical jogando, com seu personagem em pixel art."
+>
+  <section class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <div class="w-16 h-16 mx-auto bg-brand/10 rounded-2xl flex items-center justify-center mb-6 text-3xl" aria-hidden="true">
+      🔒
+    </div>
+    <span class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-elevated border border-border text-muted mb-4">
+      Em breve
+    </span>
+    <h1 class="text-4xl sm:text-5xl font-black mb-4">Rock Star Quest</h1>
+    <p class="text-muted text-lg max-w-lg mx-auto mb-10">
+      Estamos ajustando os personagens e inimigos do jogo. Em breve você vai poder criar seu rockstar em pixel art e aprender teoria musical na base do braço.
+    </p>
+
+    <button
+      type="button"
+      disabled
+      aria-disabled="true"
+      class="px-8 py-3.5 bg-elevated border border-border text-subtle font-semibold rounded-xl cursor-not-allowed inline-flex items-center gap-2"
+    >
+      🎮 Jogar agora
+      <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-card border border-border">
+        Em breve
+      </span>
+    </button>
+  </section>
+</BaseLayout>

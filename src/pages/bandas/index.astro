@@ -36,7 +36,7 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
   <section class="max-w-6xl mx-auto px-4 pt-16 pb-6">
     <div class="text-xs font-bold uppercase tracking-[0.22em] text-brand">Nova seção · Sonar Musical</div>
     <h1 class="font-black tracking-tight leading-[0.9] mt-4" style="font-size:clamp(52px,10vw,116px)">Bandas</h1>
-    <p class="max-w-xl text-[#a5a5a5] text-lg leading-relaxed mt-5">
+    <p class="max-w-xl text-muted text-lg leading-relaxed mt-5">
       O equipamento por trás das lendas — quem toca o quê no palco, e como chegar perto daquele som sem quebrar o cofre.
     </p>
   </section>
@@ -62,8 +62,8 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
             aria-pressed={i === 0 ? 'true' : 'false'}
             class="genre-chip cursor-pointer text-[13px] font-semibold px-3.5 py-2 rounded-full transition-all flex items-center gap-2 border"
             style={i === 0
-              ? `background:${chip.soft};color:#fff;border-color:${chip.accent}`
-              : `background:#151515;color:#aaa;border-color:#2a2a2a`}
+              ? `background:${chip.soft};color:var(--color-foreground);border-color:${chip.accent}`
+              : `background:var(--color-elevated);color:var(--color-muted);border-color:var(--color-border)`}
             data-accent={chip.accent}
             data-soft={chip.soft}
           >
@@ -74,24 +74,24 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
         ))}
       </div>
 
-      <div class="flex items-center gap-2.5 bg-[#151515] border border-border rounded-lg px-3.5 py-2.5 w-52">
+      <div class="flex items-center gap-2.5 bg-elevated border border-border rounded-lg px-3.5 py-2.5 w-52">
         <span class="text-subtle text-sm" aria-hidden="true">⌕</span>
         <input
           id="search-input"
           type="search"
           placeholder="Buscar banda…"
-          class="bg-transparent border-none text-white text-sm w-full focus:outline-none"
+          class="bg-transparent border-none text-foreground text-sm w-full focus:outline-none"
         />
       </div>
 
       <details class="relative" id="sort-details">
-        <summary class="cursor-pointer list-none text-[13px] font-semibold text-[#ccc] bg-[#151515] border border-border rounded-lg px-3.5 py-2.5 flex items-center gap-2 select-none">
-          Ordenar: <span id="sort-label">A–Z</span><span class="text-[#666]">▾</span>
+        <summary class="cursor-pointer list-none text-[13px] font-semibold text-muted bg-elevated border border-border rounded-lg px-3.5 py-2.5 flex items-center gap-2 select-none">
+          Ordenar: <span id="sort-label">A–Z</span><span class="text-subtle">▾</span>
         </summary>
-        <div class="absolute top-12 left-0 sm:left-auto sm:right-0 bg-[#161616] border border-[#2f2f2f] rounded-xl p-1.5 min-w-48 shadow-2xl z-50">
-          <button type="button" data-sort="az" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-white flex justify-between items-center hover:bg-[#222]">A–Z<span class="text-brand sort-check">✓</span></button>
-          <button type="button" data-sort="genre" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-[#bbb] flex justify-between items-center hover:bg-[#222]">Gênero<span class="text-brand sort-check"></span></button>
-          <button type="button" data-sort="year" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-[#bbb] flex justify-between items-center hover:bg-[#222]">Mais antigas<span class="text-brand sort-check"></span></button>
+        <div class="absolute top-12 left-0 sm:left-auto sm:right-0 bg-elevated border border-border rounded-xl p-1.5 min-w-48 shadow-2xl z-50">
+          <button type="button" data-sort="az" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-foreground flex justify-between items-center hover:bg-foreground/10">A–Z<span class="text-brand sort-check">✓</span></button>
+          <button type="button" data-sort="genre" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-muted flex justify-between items-center hover:bg-foreground/10">Gênero<span class="text-brand sort-check"></span></button>
+          <button type="button" data-sort="year" class="sort-option w-full text-left cursor-pointer text-[13.5px] px-3 py-2.5 rounded-lg text-muted flex justify-between items-center hover:bg-foreground/10">Mais antigas<span class="text-brand sort-check"></span></button>
         </div>
       </details>
     </div>
@@ -100,7 +100,7 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
   <!-- Grid -->
   <section class="max-w-6xl mx-auto px-4 py-8 pb-20">
     <div class="flex items-baseline justify-between mb-5">
-      <div class="text-sm text-muted"><span id="result-count" class="text-white font-bold">{bandas.length}</span> <span id="result-noun">bandas</span></div>
+      <div class="text-sm text-muted"><span id="result-count" class="text-foreground font-bold">{bandas.length}</span> <span id="result-noun">bandas</span></div>
       <div class="text-[13px] text-subtle" id="active-genre-label">Todos os gêneros</div>
     </div>
 
@@ -119,9 +119,9 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
       ))}
     </div>
 
-    <div id="empty-state" class="hidden text-center py-20 text-[#666]">
+    <div id="empty-state" class="hidden text-center py-20 text-subtle">
       <div class="text-4xl mb-2.5">🎸</div>
-      <div class="text-base text-[#aaa] font-semibold">Nenhuma banda encontrada</div>
+      <div class="text-base text-muted font-semibold">Nenhuma banda encontrada</div>
       <div class="text-sm mt-1.5">Tente outro gênero ou termo de busca.</div>
     </div>
   </section>
@@ -144,7 +144,7 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-    color: #4a4a4a;
+    color: var(--color-subtle);
   }
   @keyframes marq {
     to {
@@ -152,7 +152,7 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
     }
   }
   #sort-details[open] summary {
-    color: #fff;
+    color: var(--color-foreground);
   }
   #sort-details summary::-webkit-details-marker {
     display: none;
@@ -185,9 +185,9 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
       const accent = btn.dataset.accent!;
       const soft = btn.dataset.soft!;
       btn.setAttribute('aria-pressed', String(active));
-      btn.style.background = active ? soft : '#151515';
-      btn.style.color = active ? '#fff' : '#aaa';
-      btn.style.borderColor = active ? accent : '#2a2a2a';
+      btn.style.background = active ? soft : 'var(--color-elevated)';
+      btn.style.color = active ? 'var(--color-foreground)' : 'var(--color-muted)';
+      btn.style.borderColor = active ? accent : 'var(--color-border)';
     });
   }
 
@@ -195,8 +195,8 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
     sortLabel.textContent = sortNames[sort];
     sortButtons.forEach((btn) => {
       const active = btn.dataset.sort === sort;
-      btn.classList.toggle('text-white', active);
-      btn.classList.toggle('text-[#bbb]', !active);
+      btn.classList.toggle('text-foreground', active);
+      btn.classList.toggle('text-muted', !active);
       btn.querySelector('.sort-check')!.textContent = active ? '✓' : '';
     });
   }

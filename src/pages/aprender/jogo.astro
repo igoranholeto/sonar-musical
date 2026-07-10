@@ -1,0 +1,212 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { INSTRUMENTS, SKIN_COLORS, HAIR_COLORS, OUTFIT_COLORS } from '../../data/rpg';
+---
+
+<BaseLayout
+  title="Rock Star Quest"
+  description="Rock Star Quest: crie seu personagem, escolha o instrumento e enfrente oponentes musicais respondendo perguntas de teoria musical em um RPG de pixel art."
+>
+  <section class="max-w-2xl mx-auto px-4 py-12">
+    <a href="/aprender" class="inline-flex items-center gap-1.5 text-sm text-muted hover:text-foreground transition-colors mb-6">
+      ← Voltar para Aprender
+    </a>
+
+    <!-- ============== TELA: CRIAÇÃO DE PERSONAGEM ============== -->
+    <div id="rpg-creation-screen">
+      <div class="text-center mb-8">
+        <h1 class="text-3xl sm:text-4xl font-black mb-2">🎸 Rock Star Quest</h1>
+        <p class="text-muted">Crie seu personagem e parta em turnê contra os inimigos do rock</p>
+      </div>
+
+      <div class="flex justify-center mb-6">
+        <div class="bg-elevated border border-border rounded-2xl p-2">
+          <canvas id="rpg-preview-canvas" width="140" height="150" style="width:140px;height:150px;image-rendering:pixelated;"></canvas>
+        </div>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <label for="rpg-name-input" class="block text-sm font-semibold mb-2">Nome do personagem</label>
+          <input
+            id="rpg-name-input"
+            type="text"
+            maxlength="16"
+            placeholder="Ex: Sônica Sharp"
+            class="w-full px-4 py-3 bg-card border border-border rounded-xl text-foreground placeholder-subtle text-sm focus:outline-none focus:border-brand transition-colors"
+          />
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold mb-2">Instrumento</div>
+          <div class="grid grid-cols-3 gap-2">
+            {INSTRUMENTS.map(({ id, label, emoji }) => (
+              <button
+                type="button"
+                data-instrument={id}
+                class="instrument-swatch flex flex-col items-center gap-1 py-3 rounded-xl border border-border bg-card hover:border-brand/40 transition-colors text-sm font-semibold"
+              >
+                <span class="text-2xl" aria-hidden="true">{emoji}</span>
+                {label}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold mb-2">Cor de pele</div>
+          <div class="flex gap-2">
+            {SKIN_COLORS.map((color) => (
+              <button
+                type="button"
+                data-skin={color}
+                class="skin-swatch w-9 h-9 rounded-full border-2 border-transparent transition-all"
+                style={`background:${color}`}
+                aria-label={`Cor de pele ${color}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold mb-2">Cor do cabelo</div>
+          <div class="flex flex-wrap gap-2">
+            {HAIR_COLORS.map((color) => (
+              <button
+                type="button"
+                data-hair={color}
+                class="hair-swatch w-9 h-9 rounded-full border-2 border-transparent transition-all"
+                style={`background:${color}`}
+                aria-label={`Cor de cabelo ${color}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold mb-2">Cor da roupa</div>
+          <div class="flex flex-wrap gap-2">
+            {OUTFIT_COLORS.map((color) => (
+              <button
+                type="button"
+                data-outfit={color}
+                class="outfit-swatch w-9 h-9 rounded-full border-2 border-transparent transition-all"
+                style={`background:${color}`}
+                aria-label={`Cor de roupa ${color}`}
+              />
+            ))}
+          </div>
+        </div>
+
+        <div>
+          <div class="text-sm font-semibold mb-2">Dificuldade</div>
+          <div class="grid gap-2">
+            <button type="button" data-difficulty="Iniciante" class="difficulty-swatch text-left flex items-center justify-between px-4 py-3 rounded-xl border border-border bg-card hover:border-green-500/50 transition-colors">
+              <span class="font-semibold">Iniciante</span>
+              <span class="text-xs text-muted">Mais tempo por pergunta</span>
+            </button>
+            <button type="button" data-difficulty="Intermediário" class="difficulty-swatch text-left flex items-center justify-between px-4 py-3 rounded-xl border border-border bg-card hover:border-amber-500/50 transition-colors">
+              <span class="font-semibold">Intermediário</span>
+              <span class="text-xs text-muted">Ritmo equilibrado</span>
+            </button>
+            <button type="button" data-difficulty="Avançado" class="difficulty-swatch text-left flex items-center justify-between px-4 py-3 rounded-xl border border-border bg-card hover:border-red-500/50 transition-colors">
+              <span class="font-semibold">Avançado</span>
+              <span class="text-xs text-muted">Tempo curto, perguntas difíceis</span>
+            </button>
+          </div>
+        </div>
+
+        <button
+          id="rpg-start-btn"
+          class="w-full py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-lg shadow-brand/25"
+        >
+          Começar Jornada 🎤
+        </button>
+        <p id="rpg-creation-error" class="text-center text-sm text-red-500 hidden">Escolha um nome e uma dificuldade antes de começar.</p>
+      </div>
+    </div>
+
+    <!-- ============== TELA: ANDANDO (TRANSIÇÃO) ============== -->
+    <div id="rpg-walk-screen" class="hidden text-center">
+      <canvas id="rpg-walk-canvas" width="320" height="180" style="width:100%;image-rendering:pixelated;" class="rounded-2xl border border-border"></canvas>
+      <p id="rpg-walk-label" class="text-muted text-sm mt-3">Procurando o próximo oponente…</p>
+    </div>
+
+    <!-- ============== TELA: BATALHA ============== -->
+    <div id="rpg-battle-screen" class="hidden">
+      <div class="flex items-center justify-between mb-2 text-sm">
+        <div id="rpg-hearts" class="text-lg leading-none"></div>
+        <div id="rpg-round-label" class="font-semibold text-muted"></div>
+        <div id="rpg-score-label" class="font-bold">Pontos: 0</div>
+      </div>
+
+      <div id="rpg-enemy-label" class="text-center text-sm font-bold mb-1"></div>
+      <div id="rpg-enemy-hp" class="text-center text-sm mb-2"></div>
+
+      <canvas id="rpg-battle-canvas" width="320" height="180" style="width:100%;image-rendering:pixelated;" class="rounded-2xl border border-border mb-4"></canvas>
+
+      <div class="h-2 bg-elevated rounded-full overflow-hidden mb-4">
+        <div id="rpg-timer-bar" class="h-full bg-brand transition-[width] duration-100 linear" style="width:100%"></div>
+      </div>
+
+      <h2 id="rpg-question" class="text-lg font-bold mb-4 leading-snug"></h2>
+
+      <div id="rpg-hint-box" class="hidden mb-4 p-3 rounded-xl bg-brand/10 border border-brand/30 text-sm">
+        🎓 <strong>Professor Sonar:</strong> <span id="rpg-hint-text"></span>
+      </div>
+
+      <div id="rpg-options" class="grid gap-3 mb-5"></div>
+
+      <div class="flex items-center justify-center gap-3">
+        <button id="rpg-item-revive" class="rpg-item hidden flex-col items-center gap-1 px-4 py-2 rounded-xl border border-border bg-card hover:border-brand/40 transition-colors text-xs font-semibold" title="Reviver: recupera 1 coração">
+          🧪<br />Reviver
+        </button>
+        <button id="rpg-item-cut" class="rpg-item hidden flex-col items-center gap-1 px-4 py-2 rounded-xl border border-border bg-card hover:border-brand/40 transition-colors text-xs font-semibold" title="Remove 2 alternativas erradas">
+          ✂️<br />Cortar 2
+        </button>
+        <button id="rpg-item-hint" class="rpg-item hidden flex-col items-center gap-1 px-4 py-2 rounded-xl border border-border bg-card hover:border-brand/40 transition-colors text-xs font-semibold" title="Ajuda do Professor Sonar">
+          🎓<br />Dica
+        </button>
+      </div>
+    </div>
+
+    <!-- ============== TELA: GAME OVER ============== -->
+    <div id="rpg-gameover-screen" class="hidden text-center py-8 px-6 rounded-2xl" style="background:linear-gradient(160deg, #4a4a4a, #1e1e1e); color:#f0f0f0;">
+      <div class="text-6xl mb-4">💀</div>
+      <h2 class="text-2xl font-black mb-2">Você foi derrotado!</h2>
+      <p id="rpg-final-score" class="text-lg font-semibold mb-1"></p>
+      <p id="rpg-final-stats" class="text-sm opacity-80 mb-6"></p>
+
+      <div id="rpg-submit-form" class="max-w-xs mx-auto mb-8">
+        <label for="rpg-name-submit-input" class="block text-xs uppercase tracking-wider opacity-70 mb-2">Entrar no ranking global</label>
+        <div class="flex gap-2">
+          <input
+            id="rpg-name-submit-input"
+            type="text"
+            maxlength="16"
+            placeholder="Seu nome"
+            class="flex-1 px-3 py-2.5 rounded-xl bg-black/30 border border-white/20 text-sm text-white placeholder-white/40 focus:outline-none focus:border-brand"
+          />
+          <button id="rpg-submit-score-btn" class="px-4 py-2.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors text-sm whitespace-nowrap">
+            Enviar
+          </button>
+        </div>
+        <p id="rpg-submit-status" class="text-xs mt-2 opacity-70"></p>
+      </div>
+
+      <div class="max-w-xs mx-auto text-left mb-8">
+        <div class="text-xs uppercase tracking-wider opacity-70 mb-2 text-center">🏆 Ranking Global</div>
+        <ol id="rpg-leaderboard-list" class="space-y-1 text-sm"></ol>
+      </div>
+
+      <button id="rpg-play-again-btn" class="px-6 py-3 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors">
+        Jogar de novo
+      </button>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import { initRpgGame } from '../../scripts/rpgGame';
+  initRpgGame();
+</script>

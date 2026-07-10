@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import TabCard from '../../components/TabCard.astro';
+import { TABLATURAS } from '../../data/tablaturas';
+
+const tabs = [...TABLATURAS].sort((a, b) => a.titulo.localeCompare(b.titulo));
+---
+
+<BaseLayout
+  title="Tablaturas"
+  description="Busque tablaturas de guitarra e violão em PDF por música ou artista. Abra no navegador ou baixe. Novas tablaturas adicionadas regularmente pelo Sonar Musical."
+>
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <div class="mb-10 text-center">
+      <h1 class="text-4xl font-black mb-4">Tablaturas</h1>
+      <p class="text-muted max-w-xl mx-auto">
+        {tabs.length} tablaturas disponíveis. Busque por música ou artista — estamos adicionando novas toda semana.
+      </p>
+    </div>
+
+    <div class="max-w-md mx-auto mb-10">
+      <div class="flex items-center gap-2.5 bg-elevated border border-border rounded-xl px-4 py-3">
+        <span class="text-subtle" aria-hidden="true">⌕</span>
+        <input
+          id="tab-search-input"
+          type="search"
+          placeholder="Buscar por música ou artista…"
+          class="bg-transparent border-none text-foreground text-sm w-full focus:outline-none"
+        />
+      </div>
+    </div>
+
+    <div id="tabs-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+      {tabs.map((tab) => (
+        <TabCard {...tab} />
+      ))}
+    </div>
+
+    <div id="tabs-empty-state" class="hidden text-center py-20">
+      <p class="text-muted text-lg">Nenhuma tablatura encontrada para essa busca.</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  const input = document.getElementById('tab-search-input') as HTMLInputElement;
+  const cards = Array.from(document.querySelectorAll<HTMLElement>('.tab-card'));
+  const emptyState = document.getElementById('tabs-empty-state')!;
+
+  input.addEventListener('input', () => {
+    const query = input.value.trim().toLowerCase();
+    let visible = 0;
+    cards.forEach((card) => {
+      const matches = !query || card.dataset.titulo!.includes(query) || card.dataset.artista!.includes(query);
+      card.style.display = matches ? '' : 'none';
+      if (matches) visible++;
+    });
+    emptyState.classList.toggle('hidden', visible > 0);
+  });
+</script>
