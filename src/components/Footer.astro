@@ -37,7 +37,7 @@ const year = new Date().getFullYear();
         <ul class="space-y-2.5">
           {links.map(({ href, label }) => (
             <li>
-              <a href={href} class="text-sm text-gray-400 hover:text-white transition-colors">
+              <a href={href} class="text-sm text-muted hover:text-foreground transition-colors">
                 {label}
               </a>
             </li>
@@ -53,7 +53,7 @@ const year = new Date().getFullYear();
             <li>
               <a
                 href={`/blog?categoria=${encodeURIComponent(cat)}`}
-                class="text-sm text-gray-400 hover:text-white transition-colors"
+                class="text-sm text-muted hover:text-foreground transition-colors"
               >
                 {cat}
               </a>
@@ -66,7 +66,7 @@ const year = new Date().getFullYear();
     <!-- Rodapé inferior -->
     <div class="border-t border-border pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-muted">
       <p>&copy; {year} Sonar Musical. Todos os direitos reservados.</p>
-      <p>Feito com <a href="https://astro.build" class="hover:text-white transition-colors underline underline-offset-2" rel="noopener noreferrer" target="_blank">Astro</a></p>
+      <p>Feito com <a href="https://astro.build" class="hover:text-foreground transition-colors underline underline-offset-2" rel="noopener noreferrer" target="_blank">Astro</a></p>
     </div>
   </div>
 </footer>

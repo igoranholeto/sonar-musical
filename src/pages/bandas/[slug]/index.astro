@@ -38,6 +38,7 @@ const schema = {
 ---
 
 <BaseLayout title={nome} description={blurb} image={fotoCapa} schema={schema}>
+  <div class="theme-locked-dark">
   <!-- Banner -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:380px`}>
     {fotoCapa && (
@@ -201,6 +202,7 @@ const schema = {
       </div>
     </section>
   )}
+  </div>
 </BaseLayout>
 
 <style>

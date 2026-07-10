@@ -23,14 +23,14 @@ const formattedDate = pubDate.toLocaleDateString('pt-BR', {
 });
 
 const categoryColors: Record<string, string> = {
-  Guitarras: 'bg-blue-900/40 text-blue-300',
-  Amplificadores: 'bg-amber-900/40 text-amber-300',
-  Pedais: 'bg-green-900/40 text-green-300',
-  Acessórios: 'bg-purple-900/40 text-purple-300',
+  Guitarras: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
+  Amplificadores: 'bg-amber-100 text-amber-700 dark:bg-amber-900/40 dark:text-amber-300',
+  Pedais: 'bg-green-100 text-green-700 dark:bg-green-900/40 dark:text-green-300',
+  Acessórios: 'bg-purple-100 text-purple-700 dark:bg-purple-900/40 dark:text-purple-300',
   'Guias de Compra': 'bg-brand/20 text-brand',
-  'Dicas para Iniciantes': 'bg-teal-900/40 text-teal-300',
+  'Dicas para Iniciantes': 'bg-teal-100 text-teal-700 dark:bg-teal-900/40 dark:text-teal-300',
 };
-const badgeClass = categoryColors[category] ?? 'bg-gray-800 text-gray-300';
+const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
 ---
 
 <article class="group bg-card rounded-xl border border-border overflow-hidden hover:border-brand/40 transition-all duration-300 flex flex-col">
@@ -49,7 +49,7 @@ const badgeClass = categoryColors[category] ?? 'bg-gray-800 text-gray-300';
       />
     ) : (
       <div class="w-full h-full flex items-center justify-center">
-        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#333" stroke-width="1.5">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="var(--color-border)" stroke-width="1.5">
           <path d="M9 18V5l12-2v13" />
           <circle cx="6" cy="18" r="3" />
           <circle cx="18" cy="16" r="3" />

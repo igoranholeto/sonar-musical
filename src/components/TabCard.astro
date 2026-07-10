@@ -1,0 +1,76 @@
+---
+import { dificuldadeClasses } from '../utils/dificuldade';
+import type { Tablatura } from '../data/tablaturas';
+
+interface Props extends Tablatura {}
+
+const { titulo, artista, artistaSlug, dificuldade, genero, pdf, preview, fonteExterna } = Astro.props;
+const openHref = fonteExterna ? fonteExterna.url : pdf!;
+const filename = pdf ? pdf.split('/').pop() : undefined;
+---
+
+<div
+  data-titulo={titulo.toLowerCase()}
+  data-artista={artista.toLowerCase()}
+  class="tab-card group bg-card border border-border rounded-xl overflow-hidden hover:border-brand/40 transition-all duration-200 flex flex-col"
+>
+  <a href={openHref} target="_blank" rel="noopener noreferrer" class="block relative aspect-[3/4] overflow-hidden bg-elevated" aria-label={`Abrir tablatura de ${titulo}`}>
+    <img
+      src={preview}
+      alt={`Prévia de ${titulo}`}
+      loading="lazy"
+      class="w-full h-full object-cover object-top transition-transform duration-300 group-hover:scale-105"
+    />
+    <span class={`absolute top-3 left-3 text-[11px] font-semibold uppercase tracking-wider px-2.5 py-1 rounded-full ${dificuldadeClasses(dificuldade)}`}>
+      {dificuldade}
+    </span>
+    {fonteExterna && (
+      <span class="absolute bottom-0 inset-x-0 bg-black/60 text-white text-[11px] font-medium px-3 py-1.5 backdrop-blur-sm">
+        Fonte: {fonteExterna.nome}
+      </span>
+    )}
+  </a>
+
+  <div class="p-4 flex flex-col flex-1">
+    <h3 class="font-bold text-base leading-snug mb-1">{titulo}</h3>
+    <p class="text-sm text-muted mb-1">
+      {artistaSlug ? (
+        <a href={`/bandas/${artistaSlug}`} class="hover:text-foreground transition-colors">{artista}</a>
+      ) : (
+        artista
+      )}
+    </p>
+    {genero && <p class="text-xs text-subtle mb-4">{genero}</p>}
+
+    <div class="flex gap-2 mt-auto pt-2">
+      {fonteExterna ? (
+        <a
+          href={fonteExterna.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark transition-colors"
+        >
+          Ver no {fonteExterna.nome} ↗
+        </a>
+      ) : (
+        <>
+          <a
+            href={pdf}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-elevated border border-border hover:border-brand/40 transition-colors"
+          >
+            Abrir
+          </a>
+          <a
+            href={pdf}
+            download={filename}
+            class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark transition-colors"
+          >
+            Download
+          </a>
+        </>
+      )}
+    </div>
+  </div>
+</div>

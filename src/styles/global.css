@@ -1,16 +1,43 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-brand: #e63946;
   --color-brand-dark: #b5202d;
+  --color-surface: #ffffff;
+  --color-elevated: #f4f4f5;
+  --color-card: #ffffff;
+  --color-border: #e5e5e5;
+  --color-muted: #6b6b6b;
+  --color-subtle: #9a9a9a;
+  --color-foreground: #0a0a0a;
+
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.dark {
   --color-surface: #0a0a0a;
   --color-elevated: #111111;
   --color-card: #1a1a1a;
   --color-border: #2a2a2a;
   --color-muted: #888888;
   --color-subtle: #555555;
+  --color-foreground: #ffffff;
+}
 
-  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+/* Seções "modo show" (bandas, álbuns, equipamentos) — sempre escuras, com identidade
+   visual própria, independente do toggle de tema claro/escuro do site. */
+.theme-locked-dark {
+  --color-surface: #0a0a0a;
+  --color-elevated: #111111;
+  --color-card: #1a1a1a;
+  --color-border: #2a2a2a;
+  --color-muted: #888888;
+  --color-subtle: #555555;
+  --color-foreground: #ffffff;
+  background-color: var(--color-surface);
+  color: var(--color-foreground);
 }
 
 @layer base {
@@ -21,8 +48,9 @@
 
   body {
     background-color: var(--color-surface);
-    color: #ffffff;
+    color: var(--color-foreground);
     font-family: var(--font-sans);
+    transition: background-color 0.2s ease, color 0.2s ease;
   }
 
   :focus-visible {
