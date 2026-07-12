@@ -42,17 +42,18 @@ integrantes:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500
           obs: Vários modos de delay, incluindo emulação de fita.
-  - nome: Roger Waters
-    funcao: Baixo / Vocal
-    anos: 1965–1985
-    status: Membro fundador
-    inspiracoes: Rock progressivo, música concreta
-    resumo: Roger Waters cofundou o Pink Floyd em 1965 e foi o principal compositor
-      e letrista da banda até sua saída em 1985. Suas linhas de baixo costumam
-      ser simples e conceituais, sempre a serviço da narrativa dos álbuns.
+  - foto: /images/roger-walter-sonar.webp
     pontos:
       - Linhas de baixo simples e conceituais a serviço da narrativa.
       - Composição e letras que definem a identidade da banda.
+    inspiracoes: Rock progressivo, música concreta
+    anos: 1965–1985
+    funcao: Baixo / Vocal
+    status: Membro fundador
+    resumo: Roger Waters cofundou o Pink Floyd em 1965 e foi o principal compositor
+      e letrista da banda até sua saída em 1985. Suas linhas de baixo costumam
+      ser simples e conceituais, sempre a serviço da narrativa dos álbuns.
+    nome: Roger Waters
     setup:
       - tipo: Baixo
         original:
@@ -62,18 +63,19 @@ integrantes:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
           obs: Tom clássico de P-Bass para linhas melódicas simples.
-  - nome: Richard Wright
-    funcao: Teclados
-    anos: 1965–1979 · 1987–2008
-    status: Membro fundador
+  - foto: /images/richard-sonar.webp
+    pontos:
+      - Camadas de órgão e sintetizador que criam a atmosfera espacial.
+      - Acordes suspensos que dão o clima psicodélico à banda.
     inspiracoes: Miles Davis, música clássica
+    anos: 1965–1979 · 1987–2008
+    funcao: Teclados
+    status: Membro fundador
     resumo: Richard Wright foi tecladista e cofundador do Pink Floyd. Suas camadas
       de órgão e sintetizador ajudaram a criar a atmosfera espacial
       característica da banda, com acordes suspensos que definem o clima
       psicodélico de álbuns como "The Dark Side of the Moon".
-    pontos:
-      - Camadas de órgão e sintetizador que criam a atmosfera espacial.
-      - Acordes suspensos que dão o clima psicodélico à banda.
+    nome: Richard Wright
     setup:
       - tipo: Teclado
         original:
