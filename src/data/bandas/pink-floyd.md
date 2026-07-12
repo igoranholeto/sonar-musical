@@ -85,18 +85,20 @@ integrantes:
           nome: Yamaha PSR-E373 (teclado arranjador)
           preco: ~R$ 1.800
           obs: Sons de órgão e pads para recriar a atmosfera.
-  - nome: Nick Mason
-    funcao: Bateria
-    anos: 1965 – hoje
-    status: Membro fundador
+  - foto: /images/nick-mason-pink-floyd.webp
+    fotoAlt: nick mason pink floyd
+    pontos:
+      - Levada minimalista que dá espaço para os solos.
+      - Uso de efeitos sonoros e percussão experimental nas gravações.
     inspiracoes: Jazz, música experimental
+    anos: 1965 – hoje
+    funcao: Bateria
+    status: Membro fundador
     resumo: Nick Mason é o baterista e único membro presente em todas as formações
       do Pink Floyd desde sua fundação em 1965. Sua levada minimalista dá espaço
       para os solos e para a atmosfera das músicas, além de explorar efeitos
       sonoros e percussão experimental em estúdio.
-    pontos:
-      - Levada minimalista que dá espaço para os solos.
-      - Uso de efeitos sonoros e percussão experimental nas gravações.
+    nome: Nick Mason
     setup:
       - tipo: Bateria
         original:
