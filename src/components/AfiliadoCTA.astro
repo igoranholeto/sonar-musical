@@ -4,11 +4,11 @@ interface Props {
   descricao?: string;
   url: string;
   preco?: string;
-  imagem?: string;       // mantido por compatibilidade, não exibido
+  imagem?: string;
   imagemAlt?: string;
-  avaliacao?: number;    // 1–5, ex: 4.5
-  destaques?: string[];  // até 3 bullets de vantagens
-  badge?: string;        // ex: "Melhor Custo-Benefício", "Top Pick"
+  avaliacao?: number;
+  destaques?: string[];
+  badge?: string;
   categoria?: 'guitarra' | 'violao' | 'pedal' | 'pedaleira' | 'amplificador' | 'cordas' | 'interface' | 'acessorio';
 }
 
@@ -20,24 +20,55 @@ const {
   avaliacao = 4.5,
   destaques,
   badge,
-  categoria = 'guitarra',
 } = Astro.props;
 
-// Ícone por categoria
-const icones: Record<string, string> = {
-  guitarra: `<path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>`,
-  violao: `<path d="M12 2a10 10 0 0 0-7 17l5 5h4l5-5a10 10 0 0 0-7-17z"/><line x1="12" y1="12" x2="12" y2="18"/>`,
-  pedal: `<rect x="2" y="7" width="20" height="14" rx="2"/><circle cx="8" cy="14" r="2"/><circle cx="16" cy="14" r="2"/><line x1="5" y1="7" x2="5" y2="4"/><line x1="19" y1="7" x2="19" y2="4"/>`,
-  pedaleira: `<rect x="1" y="6" width="22" height="14" rx="2"/><circle cx="6" cy="13" r="2"/><circle cx="12" cy="13" r="2"/><circle cx="18" cy="13" r="2"/><rect x="4" y="17" width="4" height="2" rx="1"/><rect x="10" y="17" width="4" height="2" rx="1"/>`,
-  amplificador: `<rect x="2" y="3" width="20" height="18" rx="2"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="7"/><line x1="6" y1="7" x2="6" y2="7"/><circle cx="18" cy="7" r="1"/>`,
-  cordas: `<path d="M2 8c5-4 15-4 20 0"/><path d="M2 12c5-4 15-4 20 0"/><path d="M2 16c5-4 15-4 20 0"/><path d="M2 20c5-4 15-4 20 0"/>`,
-  interface: `<rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="12" r="2"/><circle cx="15" cy="9" r="1.5"/><line x1="12" y1="15" x2="20" y2="15"/>`,
-  acessorio: `<path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>`,
+// Detecta a marca a partir do nome do produto
+const MARCAS = [
+  'Fender', 'Gibson', 'Ibanez', 'Marshall', 'Yamaha', 'Boss', 'Epiphone',
+  'Squier', 'PRS', 'Schecter', 'ESP', 'Focusrite', 'Universal Audio', 'SSL',
+  'Audient', 'Native Instruments', 'Ernie Ball', "D'Addario", 'Elixir', 'GHS',
+  'Taylor', 'Martin', 'Line 6', 'Neural DSP', 'Zoom', 'Blackstar', 'Orange',
+  'Suhr', 'Shure', 'Seymour Duncan', 'DiMarzio', 'Dunlop', 'MXR', 'Electro-Harmonix',
+];
+
+const marca = MARCAS.find(m => produto.toLowerCase().startsWith(m.toLowerCase())) ?? null;
+
+// Cores de marca para o chip
+const marcaCores: Record<string, { bg: string; text: string }> = {
+  'Fender':            { bg: '#1a1a2e', text: '#6ea8d8' },
+  'Squier':            { bg: '#1a1a2e', text: '#6ea8d8' },
+  'Gibson':            { bg: '#1e1a0a', text: '#d4a843' },
+  'Epiphone':          { bg: '#1e1a0a', text: '#d4a843' },
+  'Ibanez':            { bg: '#0a1a1a', text: '#5bc4c4' },
+  'Marshall':          { bg: '#1e1800', text: '#e0bc30' },
+  'Yamaha':            { bg: '#14001a', text: '#c07ad4' },
+  'Boss':              { bg: '#1a0000', text: '#e05555' },
+  'Orange':            { bg: '#1a0d00', text: '#e07830' },
+  'Blackstar':         { bg: '#0a0a14', text: '#7878d4' },
+  'Focusrite':         { bg: '#1a0a0a', text: '#e05050' },
+  'Universal Audio':   { bg: '#0a0a0a', text: '#c0c0c0' },
+  'SSL':               { bg: '#001a0a', text: '#44cc88' },
+  'Audient':           { bg: '#0a0a14', text: '#8888cc' },
+  'Native Instruments':{ bg: '#0a0a0a', text: '#aaaaaa' },
+  'Line 6':            { bg: '#00100a', text: '#44bb88' },
+  'Neural DSP':        { bg: '#0a0a14', text: '#7a88ee' },
+  'Ernie Ball':        { bg: '#1a000a', text: '#cc5580' },
+  "D'Addario":         { bg: '#000a1a', text: '#5588dd' },
+  'Elixir':            { bg: '#001a05', text: '#44aa55' },
+  'GHS':               { bg: '#1a0500', text: '#cc6622' },
+  'Taylor':            { bg: '#0a0a00', text: '#bbaa44' },
+  'Martin':            { bg: '#100800', text: '#cc9944' },
+  'PRS':               { bg: '#140014', text: '#cc66cc' },
+  'Schecter':          { bg: '#0a0000', text: '#cc4444' },
+  'ESP':               { bg: '#0a0a0a', text: '#999999' },
+  'Zoom':              { bg: '#001420', text: '#4499cc' },
 };
 
-const icone = icones[categoria] ?? icones.guitarra;
+const chipStyle = marca && marcaCores[marca]
+  ? `background:${marcaCores[marca].bg};color:${marcaCores[marca].text};border-color:${marcaCores[marca].text}22;`
+  : `background:rgba(255,255,255,0.06);color:#999;border-color:rgba(255,255,255,0.1);`;
 
-// Stars
+// Estrelas
 function renderStars(val: number) {
   const full = Math.floor(val);
   const half = val % 1 >= 0.5;
@@ -50,71 +81,68 @@ function renderStars(val: number) {
   return out;
 }
 const stars = renderStars(avaliacao);
-const avaliacaoLabel = `${avaliacao.toFixed(1)}/5`;
+const avaliacaoLabel = avaliacao.toFixed(1);
 
 const badgeText = badge ?? 'Recomendação Sonar Musical';
 ---
 
-<div class="cta-card">
-  <!-- Faixa superior -->
-  <div class="cta-card__top">
-    <span class="cta-card__badge">
-      <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-      </svg>
-      {badgeText}
-    </span>
+<div class="cta">
+  <!-- Faixa topo com badge -->
+  <div class="cta__stripe">
+    <svg class="cta__stripe-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    </svg>
+    <span>{badgeText}</span>
   </div>
 
-  <div class="cta-card__body">
-    <!-- Ícone de categoria -->
-    <div class="cta-card__icon" aria-hidden="true">
-      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-        <Fragment set:html={icone} />
-      </svg>
-    </div>
-
-    <!-- Info do produto -->
-    <div class="cta-card__info">
-      <h3 class="cta-card__produto">{produto}</h3>
-
-      <!-- Avaliação -->
-      <div class="cta-card__rating" aria-label={`Avaliação: ${avaliacaoLabel}`}>
-        <span class="cta-card__stars" set:html={stars} />
-        <span class="cta-card__rating-val">{avaliacaoLabel}</span>
+  <div class="cta__body">
+    <!-- Coluna principal: nome, avaliação, descrição, bullets -->
+    <div class="cta__main">
+      <div class="cta__header">
+        {marca && (
+          <span class="cta__brand" style={chipStyle}>{marca}</span>
+        )}
+        <h3 class="cta__nome">{produto}</h3>
       </div>
 
-      {descricao && <p class="cta-card__descricao">{descricao}</p>}
+      <div class="cta__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
+        <span class="cta__stars" set:html={stars} />
+        <span class="cta__rating-num">{avaliacaoLabel}</span>
+        <span class="cta__rating-sep">·</span>
+        <span class="cta__rating-label">Avaliação Redação</span>
+      </div>
+
+      {descricao && <p class="cta__descricao">{descricao}</p>}
 
       {destaques && destaques.length > 0 && (
-        <ul class="cta-card__destaques">
-          {destaques.map(d => <li>{d}</li>)}
+        <ul class="cta__bullets">
+          {destaques.slice(0, 3).map(d => <li>{d}</li>)}
         </ul>
       )}
     </div>
 
-    <!-- Preço + CTA -->
-    <div class="cta-card__action">
+    <!-- Coluna lateral: preço + botão + trust -->
+    <div class="cta__sidebar">
       {preco && (
-        <div class="cta-card__preco-wrap">
-          <span class="cta-card__preco-label">A partir de</span>
-          <span class="cta-card__preco">{preco}</span>
+        <div class="cta__preco-bloco">
+          <span class="cta__preco-label">A partir de</span>
+          <span class="cta__preco">{preco}</span>
         </div>
       )}
 
-      <a href={url} target="_blank" rel="noopener noreferrer sponsored" class="cta-card__btn">
-        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <a href={url} target="_blank" rel="noopener noreferrer sponsored" class="cta__btn">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
           <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
         </svg>
         Ver Melhor Preço
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
         </svg>
       </a>
 
-      <p class="cta-card__trust">
-        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <p class="cta__trust">
+        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
         </svg>
         Compra segura · Melhor preço verificado
@@ -124,234 +152,276 @@ const badgeText = badge ?? 'Recomendação Sonar Musical';
 </div>
 
 <style>
-  .cta-card {
-    margin: 2.5rem 0;
-    border-radius: 14px;
+  /* ── Card container ─────────────────────────────────────── */
+  .cta {
+    margin: 2.75rem 0;
+    border-radius: 12px;
     overflow: hidden;
-    border: 1px solid rgba(230, 57, 70, 0.35);
-    background: linear-gradient(135deg, #161616 0%, #1c0b0e 100%);
-    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35), 0 0 0 1px rgba(230, 57, 70, 0.08);
-    transition: box-shadow 0.25s, transform 0.25s;
+    background: #111214;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    box-shadow:
+      0 1px 2px rgba(0, 0, 0, 0.4),
+      0 4px 20px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.22s ease, transform 0.22s ease;
   }
 
-  .cta-card:hover {
-    box-shadow: 0 8px 36px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(230, 57, 70, 0.25);
+  .cta:hover {
+    box-shadow:
+      0 2px 4px rgba(0, 0, 0, 0.4),
+      0 8px 32px rgba(0, 0, 0, 0.35),
+      0 0 0 1px rgba(230, 57, 70, 0.18);
     transform: translateY(-2px);
   }
 
-  /* Faixa topo */
-  .cta-card__top {
-    background: linear-gradient(90deg, #e63946 0%, #b5202d 100%);
-    padding: 0.4rem 1.25rem;
+  /* ── Faixa superior ─────────────────────────────────────── */
+  .cta__stripe {
     display: flex;
     align-items: center;
-  }
-
-  .cta-card__badge {
-    display: inline-flex;
-    align-items: center;
     gap: 0.4rem;
+    padding: 0.45rem 1.5rem;
+    background: linear-gradient(90deg, #c0202d 0%, #e63946 60%, #c0202d 100%);
     color: #fff;
-    font-size: 0.7rem;
+    font-size: 0.68rem;
     font-weight: 800;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
   }
 
-  /* Corpo */
-  .cta-card__body {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    gap: 1.25rem;
-    padding: 1.5rem 1.75rem;
-  }
-
-  /* Ícone */
-  .cta-card__icon {
+  .cta__stripe-star {
+    width: 11px;
+    height: 11px;
     flex-shrink: 0;
-    width: 72px;
-    height: 72px;
-    border-radius: 14px;
-    background: rgba(230, 57, 70, 0.1);
-    border: 1px solid rgba(230, 57, 70, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e63946;
+    opacity: 0.9;
   }
 
-  /* Info */
-  .cta-card__info {
+  /* ── Layout interno ─────────────────────────────────────── */
+  .cta__body {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    gap: 0;
+  }
+
+  /* ── Coluna principal ───────────────────────────────────── */
+  .cta__main {
+    padding: 1.5rem 1.75rem 1.5rem 1.5rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
     display: flex;
     flex-direction: column;
-    gap: 0.4rem;
-    min-width: 0;
+    gap: 0.6rem;
   }
 
-  .cta-card__produto {
-    font-size: 1.1rem;
+  .cta__header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+
+  /* Chip de marca */
+  .cta__brand {
+    display: inline-block;
+    align-self: flex-start;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.2rem 0.55rem;
+    border-radius: 4px;
+    border: 1px solid transparent;
+    line-height: 1;
+  }
+
+  /* Nome do produto */
+  .cta__nome {
+    font-size: 1.05rem;
     font-weight: 800;
-    color: #ffffff;
+    color: #f0f0f0;
     margin: 0;
     line-height: 1.3;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
 
-  .cta-card__rating {
+  /* Avaliação */
+  .cta__rating {
     display: flex;
     align-items: center;
-    gap: 0.4rem;
+    gap: 0.35rem;
+    flex-wrap: wrap;
   }
 
-  .cta-card__stars {
+  .cta__stars {
     display: flex;
     gap: 1px;
     line-height: 1;
   }
 
-  .star { font-size: 0.95rem; }
-  .star--full  { color: #facc15; }
-  .star--half  { color: #facc15; opacity: 0.6; }
-  .star--empty { color: #3a3a3a; }
+  .star            { font-size: 0.85rem; }
+  .star--full      { color: #facc15; }
+  .star--half      { color: #facc15; opacity: 0.55; }
+  .star--empty     { color: rgba(255,255,255,0.12); }
 
-  .cta-card__rating-val {
+  .cta__rating-num {
     font-size: 0.78rem;
-    color: #999;
-    font-weight: 600;
+    font-weight: 700;
+    color: #facc15;
   }
 
-  .cta-card__descricao {
-    font-size: 0.875rem;
-    color: #aaa;
+  .cta__rating-sep {
+    color: rgba(255,255,255,0.2);
+    font-size: 0.7rem;
+  }
+
+  .cta__rating-label {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.35);
+    font-weight: 400;
+  }
+
+  /* Descrição */
+  .cta__descricao {
+    font-size: 0.855rem;
+    color: rgba(255,255,255,0.55);
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.55;
   }
 
-  .cta-card__destaques {
+  /* Bullets */
+  .cta__bullets {
     list-style: none;
     padding: 0;
-    margin: 0.25rem 0 0;
+    margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    gap: 0.3rem;
   }
 
-  .cta-card__destaques li {
-    font-size: 0.8rem;
-    color: #bbb;
+  .cta__bullets li {
+    font-size: 0.815rem;
+    color: rgba(255,255,255,0.65);
+    line-height: 1.45;
     display: flex;
-    align-items: center;
-    gap: 0.4rem;
+    align-items: baseline;
+    gap: 0.45rem;
   }
 
-  .cta-card__destaques li::before {
+  .cta__bullets li::before {
     content: '✓';
     color: #22c55e;
-    font-weight: 700;
-    font-size: 0.75rem;
+    font-weight: 800;
+    font-size: 0.72rem;
     flex-shrink: 0;
+    margin-top: 0.05em;
   }
 
-  /* Ação / Preço / Botão */
-  .cta-card__action {
+  /* ── Sidebar: preço + botão + trust ────────────────────── */
+  .cta__sidebar {
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
-    gap: 0.75rem;
-    flex-shrink: 0;
-    min-width: 170px;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.5rem 1.25rem;
+    background: rgba(255,255,255,0.02);
   }
 
-  .cta-card__preco-wrap {
-    text-align: right;
+  .cta__preco-bloco {
+    text-align: center;
   }
 
-  .cta-card__preco-label {
+  .cta__preco-label {
     display: block;
-    font-size: 0.7rem;
-    color: #666;
+    font-size: 0.65rem;
+    color: rgba(255,255,255,0.3);
     text-transform: uppercase;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.07em;
     font-weight: 600;
-    margin-bottom: 0.1rem;
+    margin-bottom: 0.2rem;
   }
 
-  .cta-card__preco {
+  .cta__preco {
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.35rem;
     font-weight: 900;
-    color: #22c55e;
-    letter-spacing: -0.02em;
+    color: #4ade80;
+    letter-spacing: -0.025em;
     line-height: 1.1;
   }
 
-  .cta-card__btn {
-    display: inline-flex !important;
+  /* Botão CTA */
+  .cta__btn {
+    display: flex !important;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
-    background: linear-gradient(135deg, #e63946, #c0202d) !important;
-    color: #ffffff !important;
-    font-size: 0.9rem;
+    gap: 0.45rem;
+    width: 100%;
+    padding: 0.8rem 1rem;
+    border-radius: 8px;
+    background: #e63946;
+    color: #fff !important;
+    font-size: 0.84rem;
     font-weight: 800;
-    padding: 0.85rem 1.5rem;
-    border-radius: 10px;
     text-decoration: none !important;
     white-space: nowrap;
-    width: 100%;
-    transition: filter 0.2s, transform 0.15s, box-shadow 0.2s;
-    box-shadow: 0 3px 14px rgba(230, 57, 70, 0.45), inset 0 1px 0 rgba(255,255,255,0.1);
     letter-spacing: 0.01em;
+    transition: background 0.18s, box-shadow 0.18s, transform 0.15s;
+    box-shadow: 0 2px 10px rgba(230, 57, 70, 0.35);
   }
 
-  .cta-card__btn:hover {
-    filter: brightness(1.1);
+  .cta__btn:hover {
+    background: #d02f3c;
+    box-shadow: 0 4px 16px rgba(230, 57, 70, 0.5);
     transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(230, 57, 70, 0.55);
     text-decoration: none !important;
     color: #fff !important;
   }
 
-  .cta-card__btn:active {
+  .cta__btn:active {
     transform: translateY(0);
-    filter: brightness(0.95);
+    background: #b8202d;
   }
 
-  .cta-card__trust {
+  /* Trust text */
+  .cta__trust {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.3rem;
-    font-size: 0.7rem;
-    color: #555;
+    font-size: 0.67rem;
+    color: rgba(255,255,255,0.25);
     margin: 0;
+    text-align: center;
+    line-height: 1.4;
   }
 
-  /* Mobile */
-  @media (max-width: 640px) {
-    .cta-card__body {
+  /* ── Mobile ─────────────────────────────────────────────── */
+  @media (max-width: 600px) {
+    .cta__body {
       grid-template-columns: 1fr;
-      gap: 1rem;
-      padding: 1.25rem;
     }
 
-    .cta-card__icon {
-      width: 52px;
-      height: 52px;
+    .cta__main {
+      padding: 1.25rem 1.25rem 1rem;
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
     }
 
-    .cta-card__action {
-      align-items: stretch;
-      min-width: 0;
-      width: 100%;
+    .cta__sidebar {
+      padding: 1rem 1.25rem 1.25rem;
+      background: none;
     }
 
-    .cta-card__preco-wrap {
-      text-align: left;
+    .cta__preco-bloco {
+      display: flex;
+      align-items: baseline;
+      gap: 0.5rem;
     }
 
-    .cta-card__trust {
-      justify-content: center;
+    .cta__preco-label {
+      display: inline;
+      margin-bottom: 0;
+    }
+
+    .cta__trust {
+      font-size: 0.66rem;
     }
   }
 </style>
