@@ -86,18 +86,20 @@ integrantes:
           nome: Yamaha P-125 (piano digital)
           preco: ~R$ 4.000
           obs: Toque leve com sons de piano acústico convincentes.
-  - nome: Paul Chambers
-    funcao: Contrabaixo
-    anos: 1955–1963
-    status: Contrabaixista
+  - foto: /images/paulchambers_sq.webp
+    fotoAlt: paul chambers
+    pontos:
+      - Walking bass constante que sustenta a harmonia.
+      - Solos com arco, pouco comuns no jazz da época.
     inspiracoes: Jimmy Blanton, Oscar Pettiford
+    anos: 1955–1963
+    funcao: Contrabaixo
+    status: Contrabaixista
     resumo: Paul Chambers foi o contrabaixista do quinteto e sexteto de Miles Davis
       por quase uma década, sustentando a harmonia com walking bass constante e
       ocasionalmente se destacando em solos tocados com arco, algo incomum no
       jazz da época.
-    pontos:
-      - Walking bass constante que sustenta a harmonia.
-      - Solos com arco, pouco comuns no jazz da época.
+    nome: Paul Chambers
     setup:
       - tipo: Contrabaixo
         original:
