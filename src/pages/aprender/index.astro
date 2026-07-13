@@ -3,31 +3,45 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
 <BaseLayout
-  title="Aprender — Em breve"
-  description="Rock Star Quest está em construção. Em breve você vai poder aprender teoria musical jogando, com seu personagem em pixel art."
+  title="Aprender"
+  description="Rock Star Quest: aprenda teoria musical jogando. Crie seu personagem, encare inimigos do rock e responda perguntas de teoria musical em um RPG de pixel art."
 >
-  <section class="max-w-2xl mx-auto px-4 py-24 text-center">
-    <div class="w-16 h-16 mx-auto bg-brand/10 rounded-2xl flex items-center justify-center mb-6 text-3xl" aria-hidden="true">
-      🔒
-    </div>
-    <span class="inline-block text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full bg-elevated border border-border text-muted mb-4">
-      Em breve
-    </span>
-    <h1 class="text-4xl sm:text-5xl font-black mb-4">Rock Star Quest</h1>
-    <p class="text-muted text-lg max-w-lg mx-auto mb-10">
-      Estamos ajustando os personagens e inimigos do jogo. Em breve você vai poder criar seu rockstar em pixel art e aprender teoria musical na base do braço.
+  <!-- Hero -->
+  <section class="max-w-2xl mx-auto px-4 pt-16 pb-10 text-center">
+    <div class="text-xs font-bold uppercase tracking-[0.22em] text-brand">Aprender jogando</div>
+    <h1 class="font-black tracking-tight leading-[0.95] mt-4" style="font-size:clamp(40px,8vw,72px)">
+      Rock Star Quest
+    </h1>
+    <p class="text-muted text-lg leading-relaxed mt-5 max-w-lg mx-auto">
+      Crie seu personagem, encare a plateia e responda perguntas de teoria musical para derrotar os inimigos do rock — do baixista sem ensaiar ao temido Maestro das Trevas.
     </p>
 
-    <button
-      type="button"
-      disabled
-      aria-disabled="true"
-      class="px-8 py-3.5 bg-elevated border border-border text-subtle font-semibold rounded-xl cursor-not-allowed inline-flex items-center gap-2"
+    <a
+      href="/aprender/jogo"
+      class="mt-8 px-8 py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-lg shadow-brand/25 inline-flex items-center gap-2"
     >
       🎮 Jogar agora
-      <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded-full bg-card border border-border">
-        Em breve
-      </span>
-    </button>
+    </a>
+  </section>
+
+  <!-- Destaques -->
+  <section class="max-w-3xl mx-auto px-4 pb-20">
+    <div class="grid sm:grid-cols-3 gap-4">
+      <div class="bg-card border border-border rounded-2xl p-5">
+        <div class="text-2xl mb-2" aria-hidden="true">🧑‍🎤</div>
+        <h2 class="font-bold text-sm mb-1">Personagem seu</h2>
+        <p class="text-muted text-sm">Escolha gênero, cor de pele e um visual completo — de Punk a Popstar.</p>
+      </div>
+      <div class="bg-card border border-border rounded-2xl p-5">
+        <div class="text-2xl mb-2" aria-hidden="true">🎸</div>
+        <h2 class="font-bold text-sm mb-1">Teoria musical de verdade</h2>
+        <p class="text-muted text-sm">Perguntas de acordes, escalas e intervalos em três níveis de dificuldade.</p>
+      </div>
+      <div class="bg-card border border-border rounded-2xl p-5">
+        <div class="text-2xl mb-2" aria-hidden="true">🏆</div>
+        <h2 class="font-bold text-sm mb-1">Bosses e ranking</h2>
+        <p class="text-muted text-sm">Enfrente um boss a cada 4 rodadas e dispute o topo do ranking global.</p>
+      </div>
+    </div>
   </section>
 </BaseLayout>

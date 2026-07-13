@@ -4,7 +4,7 @@ const navLinks = [
   { href: '/blog', label: 'Análises' },
   { href: '/bandas', label: 'Bandas' },
   { href: '/tablaturas', label: 'Tablaturas' },
-  { href: '/aprender', label: 'Aprender', disabled: true },
+  { href: '/aprender', label: 'Aprender' },
   { href: '/afinador', label: 'Afinador' },
   { href: '/about', label: 'Sobre' },
   { href: '/contact', label: 'Contato' },
@@ -31,24 +31,8 @@ const currentPath = Astro.url.pathname;
 
     <!-- Nav desktop -->
     <ul class="hidden lg:flex items-center gap-0.5" role="list">
-      {navLinks.map(({ href, label, disabled }) => {
+      {navLinks.map(({ href, label }) => {
         const isActive = href === '/' ? currentPath === '/' : currentPath.startsWith(href);
-        if (disabled) {
-          return (
-            <li>
-              <span
-                aria-disabled="true"
-                title="Em breve"
-                class="px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap text-subtle cursor-not-allowed inline-flex items-center gap-1.5"
-              >
-                {label}
-                <span class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-elevated border border-border">
-                  Em breve
-                </span>
-              </span>
-            </li>
-          );
-        }
         return (
           <li>
             <a
@@ -127,23 +111,8 @@ const currentPath = Astro.url.pathname;
     aria-label="Navegação mobile"
   >
     <ul class="max-w-6xl mx-auto px-4 py-3 flex flex-col gap-1" role="list">
-      {navLinks.map(({ href, label, disabled }) => {
+      {navLinks.map(({ href, label }) => {
         const isActive = href === '/' ? currentPath === '/' : currentPath.startsWith(href);
-        if (disabled) {
-          return (
-            <li>
-              <span
-                aria-disabled="true"
-                class="flex items-center justify-between px-4 py-2.5 rounded-lg text-sm font-medium text-subtle cursor-not-allowed"
-              >
-                {label}
-                <span class="text-[9px] font-bold uppercase tracking-wider px-1.5 py-0.5 rounded-full bg-elevated border border-border">
-                  Em breve
-                </span>
-              </span>
-            </li>
-          );
-        }
         return (
           <li>
             <a
