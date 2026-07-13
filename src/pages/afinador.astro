@@ -81,6 +81,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- Cordas -->
     <div id="strings-display" class="strings-grid"></div>
 
+    <!-- Hint de direção -->
+    <div id="direction-hint" class="direction-hint direction-hint--hidden" aria-live="polite"></div>
+
     <!-- Botão microfone -->
     <div class="mic-wrap">
       <button id="mic-btn" class="mic-btn">
@@ -416,6 +419,58 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     text-align: center;
   }
 
+  /* ── Direction hint ─────────────────────────────────────── */
+  .direction-hint {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    padding: 0.7rem 1.25rem;
+    border-radius: 10px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    margin-bottom: 1.25rem;
+    transition: opacity 0.25s, transform 0.25s;
+  }
+
+  .direction-hint--hidden {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-4px);
+    margin-bottom: 1.25rem;
+    /* ocupa espaço mesmo invisível para evitar layout shift */
+    visibility: hidden;
+  }
+
+  .direction-hint--low {
+    background: rgba(250,204,21,0.1);
+    color: #fde047;
+    border: 1px solid rgba(250,204,21,0.2);
+    visibility: visible;
+  }
+
+  .direction-hint--high {
+    background: rgba(250,204,21,0.1);
+    color: #fde047;
+    border: 1px solid rgba(250,204,21,0.2);
+    visibility: visible;
+  }
+
+  .direction-hint--red-low {
+    background: rgba(230,57,70,0.1);
+    color: #f87171;
+    border: 1px solid rgba(230,57,70,0.2);
+    visibility: visible;
+  }
+
+  .direction-hint--red-high {
+    background: rgba(230,57,70,0.1);
+    color: #f87171;
+    border: 1px solid rgba(230,57,70,0.2);
+    visibility: visible;
+  }
+
   /* ── Info cards ──────────────────────────────────────────── */
   .info-section {
     display: grid;
@@ -559,20 +614,21 @@ let inTuneBellPlayed = false;
 let holdUntil = 0;
 
 // ─── DOM refs ─────────────────────────────────────────────────────────────────
-const micBtn        = document.getElementById('mic-btn')!;
-const micLabel      = document.getElementById('mic-label')!;
-const micStatus     = document.getElementById('mic-status')!;
-const noteName      = document.getElementById('note-name')!;
-const noteOctave    = document.getElementById('note-octave')!;
-const centsPill     = document.getElementById('cents-pill')!;
-const freqDisplay   = document.getElementById('freq-display')!;
-const needle        = document.getElementById('needle')!;
-const needlePivot   = document.getElementById('needle-pivot')!;
-const arcGreen      = document.getElementById('arc-green')!;
-const tunerDisplay  = document.getElementById('tuner-display')!;
-const inTuneBadge   = document.getElementById('in-tune-badge')!;
+const micBtn         = document.getElementById('mic-btn')!;
+const micLabel       = document.getElementById('mic-label')!;
+const micStatus      = document.getElementById('mic-status')!;
+const noteName       = document.getElementById('note-name')!;
+const noteOctave     = document.getElementById('note-octave')!;
+const centsPill      = document.getElementById('cents-pill')!;
+const freqDisplay    = document.getElementById('freq-display')!;
+const needle         = document.getElementById('needle')!;
+const needlePivot    = document.getElementById('needle-pivot')!;
+const arcGreen       = document.getElementById('arc-green')!;
+const tunerDisplay   = document.getElementById('tuner-display')!;
+const inTuneBadge    = document.getElementById('in-tune-badge')!;
+const directionHint  = document.getElementById('direction-hint')!;
 const stringsDisplay = document.getElementById('strings-display')!;
-const tuningSelect  = document.getElementById('tuning-select') as HTMLSelectElement;
+const tuningSelect   = document.getElementById('tuning-select') as HTMLSelectElement;
 
 // ─── Renderiza dropdown de afinações ─────────────────────────────────────────
 function renderTunings() {
@@ -630,6 +686,7 @@ function resetDisplay() {
   noteName.style.color = '';
   noteOctave.textContent = '';
   setCentsPill(null);
+  setDirectionHint(0);
   freqDisplay.textContent = '— Hz';
   setNeedle(0, true);
   setInTune(false);
@@ -638,6 +695,7 @@ function resetDisplay() {
 }
 
 // ─── Cents pill ───────────────────────────────────────────────────────────────
+// Recebe cents derivados de currentAngle para sincronizar com a agulha visual
 function setCentsPill(cents: number | null) {
   if (cents === null) {
     centsPill.textContent = '· · ·';
@@ -652,9 +710,37 @@ function setCentsPill(cents: number | null) {
   else                centsPill.className = 'cents-pill cents-pill--red';
 }
 
+// ─── Direction hint ───────────────────────────────────────────────────────────
+// cents < 0 → nota grave (flat) → apertar cravelha (sobe afinação)
+// cents > 0 → nota aguda (sharp) → soltar cravelha (desce afinação)
+function setDirectionHint(cents: number) {
+  const abs = Math.abs(cents);
+  if (abs <= 8) {
+    directionHint.className = 'direction-hint direction-hint--hidden';
+    directionHint.textContent = '';
+    return;
+  }
+  const isVeryOff = abs > 25;
+  if (cents < 0) {
+    // nota baixa demais → precisa apertar → sobe o tom
+    directionHint.className = `direction-hint ${isVeryOff ? 'direction-hint--red-low' : 'direction-hint--low'}`;
+    directionHint.innerHTML = `<span>↑</span> Nota grave — aperte a cravelha`;
+  } else {
+    // nota alta demais → precisa soltar → desce o tom
+    directionHint.className = `direction-hint ${isVeryOff ? 'direction-hint--red-high' : 'direction-hint--high'}`;
+    directionHint.innerHTML = `<span>↓</span> Nota aguda — solte a cravelha`;
+  }
+}
+
 // ─── Agulha ───────────────────────────────────────────────────────────────────
 let currentAngle = 0;
 let targetAngle = 0;
+
+// Retorna os cents visuais (derivados da posição atual da agulha)
+// Pill, cor e hint sempre derivam daqui → ficam 100% sincronizados com o visual
+function visualCents(): number {
+  return Math.round(currentAngle / 1.8);
+}
 
 function tickNeedle() {
   currentAngle += (targetAngle - currentAngle) * 0.07;
@@ -791,19 +877,23 @@ function analysisLoop() {
     tunerDisplay.classList.remove('holding-state');
 
     smoothedCents += (cents - smoothedCents) * 0.2;
-    const displayCents = Math.round(smoothedCents);
 
     noteName.textContent = note;
     noteOctave.textContent = String(octave);
-    setCentsPill(displayCents);
     freqDisplay.textContent = `${freq.toFixed(1)} Hz`;
+
+    // Avança a agulha em direção ao alvo suavizado
     setNeedle(smoothedCents);
 
-    const absCents = Math.abs(smoothedCents);
-    updateNeedleColor(absCents);
+    // Pill, cor e hint derivam de visualCents() — sempre em sync com a agulha
+    const vc = visualCents();
+    const absVc = Math.abs(vc);
+    setCentsPill(vc);
+    updateNeedleColor(absVc);
+    setDirectionHint(vc);
 
-    if (absCents > 8) {
-      noteName.style.color = absCents < 25 ? '#facc15' : '#e63946';
+    if (absVc > 8) {
+      noteName.style.color = absVc < 25 ? '#facc15' : '#e63946';
     } else {
       noteName.style.color = '';
     }
@@ -816,7 +906,7 @@ function analysisLoop() {
       if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
     });
 
-    const isInTune = absCents <= 8;
+    const isInTune = absVc <= 8;
     if (isInTune) {
       if (!inTuneTimer) {
         inTuneTimer = setTimeout(() => {
@@ -843,6 +933,7 @@ function analysisLoop() {
       noteName.style.color = '';
       noteOctave.textContent = '';
       setCentsPill(null);
+      setDirectionHint(0);
       freqDisplay.textContent = '— Hz';
       tunerDisplay.classList.remove('holding-state');
       needle.setAttribute('stroke', '#e63946');
