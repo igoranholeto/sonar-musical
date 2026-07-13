@@ -256,13 +256,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   /* ── Nota ────────────────────────────────────────────────── */
   .note-block {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 0.5rem;
   }
 
   .note-row {
-    display: inline-flex;
+    display: flex;
     align-items: flex-start;
+    justify-content: center;
     gap: 2px;
     line-height: 1;
   }
@@ -273,7 +276,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     letter-spacing: -0.04em;
     transition: color 0.2s;
     line-height: 1;
-    display: block;
   }
 
   .note-octave {
@@ -659,7 +661,7 @@ function renderStrings(activeIdx = -1, inTuneIdx = -1) {
       + (i === inTuneIdx  ? ' in-tune' : '');
     const num = strings.length - i;
     const noteOnly = s.replace(/\d/, '');
-    card.innerHTML = `<div class="string-num">${num}ª</div><div class="string-note">${noteOnly}</div><div class="string-full">${s}</div>`;
+    card.innerHTML = `<div class="string-num">${num}ª</div><div class="string-note">${noteOnly}</div>`;
     stringsDisplay.appendChild(card);
   });
 }
