@@ -745,7 +745,7 @@ function visualCents(): number {
 }
 
 function tickNeedle() {
-  currentAngle += (targetAngle - currentAngle) * 0.07;
+  currentAngle += (targetAngle - currentAngle) * 0.09;
   needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
 }
 
@@ -794,61 +794,107 @@ function playTuneSound(ctx: AudioContext) {
   } catch (_) { /* silently ignore if audio context closed */ }
 }
 
-// ─── Detecção de frequência (autocorrelação + interpolação parabólica) ────────
+// ─── McLeod Pitch Method (MPM / NSDF) ────────────────────────────────────────
+// Mais confiável que autocorrelação simples — menos erros de oitava em cordas
 function detectFrequency(buf: Float32Array, sampleRate: number): number {
-  const SIZE = buf.length;
-  const HALF = Math.floor(SIZE / 2);
+  const N = buf.length;
+  const W = Math.floor(N / 2);
 
+  // Gate de energia RMS
   let rms = 0;
-  for (let i = 0; i < SIZE; i++) rms += buf[i] * buf[i];
-  rms = Math.sqrt(rms / SIZE);
-  if (rms < 0.012) return -1;
+  for (let i = 0; i < N; i++) rms += buf[i] * buf[i];
+  rms = Math.sqrt(rms / N);
+  if (rms < 0.015) return -1;
 
-  const corr0ref = (() => {
-    let s = 0;
-    for (let i = 0; i < HALF; i++) s += buf[i] * buf[i];
-    return s || 1;
-  })();
+  // Faixa de frequência do violão/guitarra: ~55 Hz (A1) a ~1100 Hz
+  const lagMin = Math.max(1, Math.floor(sampleRate / 1100));
+  const lagMax = Math.min(W - 2, Math.ceil(sampleRate / 55));
 
-  const lagMin = Math.floor(sampleRate / 1200);
-  const lagMax = Math.ceil(sampleRate / 60);
+  // Σ x(i)² para a janela fixa [0, W)
+  let sumX0 = 0;
+  for (let i = 0; i < W; i++) sumX0 += buf[i] * buf[i];
 
-  let bestLag = -1, bestCorr = 0, prevCorr = 1;
-  let crossedDip = false;
+  // Σ x(i+tau)² com janela deslizante — atualização O(1) por passo
+  let sumXt = 0;
+  for (let i = lagMin; i < lagMin + W && i < N; i++) sumXt += buf[i] * buf[i];
 
-  for (let lag = lagMin; lag <= lagMax && lag < HALF; lag++) {
-    let c = 0;
-    for (let i = 0; i < HALF; i++) c += buf[i] * buf[i + lag];
-    const norm = c / corr0ref;
+  // Coleta picos dos lóbulos positivos do NSDF
+  const peaks: Array<{ lag: number; nsdf: number; r: number }> = [];
+  let inLobe = false;
+  let lobeMax = -Infinity;
+  let lobeMaxLag = -1;
+  let lobeMaxR = 0;
 
-    if (!crossedDip && norm < 0.5) crossedDip = true;
-    if (crossedDip && norm > prevCorr && norm > bestCorr) { bestCorr = norm; bestLag = lag; }
-    if (crossedDip && norm < prevCorr && bestLag !== -1) break;
-    prevCorr = norm;
+  for (let tau = lagMin; tau <= lagMax; tau++) {
+    if (tau > lagMin) {
+      sumXt -= buf[tau - 1] * buf[tau - 1];
+      const idx = tau + W - 1;
+      if (idx < N) sumXt += buf[idx] * buf[idx];
+    }
+
+    let r = 0;
+    for (let i = 0; i < W; i++) r += buf[i] * buf[i + tau];
+
+    const denom = sumX0 + sumXt;
+    const nsdf = denom > 1e-8 ? 2 * r / denom : 0;
+
+    if (nsdf > 0) {
+      inLobe = true;
+      if (nsdf > lobeMax) { lobeMax = nsdf; lobeMaxLag = tau; lobeMaxR = r; }
+    } else if (inLobe) {
+      if (lobeMaxLag >= lagMin) peaks.push({ lag: lobeMaxLag, nsdf: lobeMax, r: lobeMaxR });
+      inLobe = false;
+      lobeMax = -Infinity;
+      lobeMaxLag = -1;
+    }
+  }
+  if (inLobe && lobeMaxLag >= lagMin) peaks.push({ lag: lobeMaxLag, nsdf: lobeMax, r: lobeMaxR });
+
+  if (peaks.length === 0) return -1;
+
+  // Rejeita sinal não-harmônico / ruído
+  const globalMax = peaks.reduce((m, p) => Math.max(m, p.nsdf), 0);
+  if (globalMax < 0.35) return -1;
+
+  // Primeiro pico >= K * globalMax (K=0.86 do McLeod) — evita erros de oitava
+  const K = 0.86;
+  let best = peaks[0];
+  for (const p of peaks) {
+    if (p.nsdf >= K * globalMax) { best = p; break; }
   }
 
-  if (bestLag === -1 || bestCorr < 0.55) return -1;
+  const bestLag = best.lag;
+  if (bestLag <= 0 || bestLag + 1 >= N) return -1;
 
-  let cM = 0, cP = 0;
-  for (let i = 0; i < HALF; i++) {
-    cM += buf[i] * buf[i + bestLag - 1];
-    cP += buf[i] * buf[i + bestLag + 1];
+  // Interpolação parabólica para precisão sub-amostra
+  let rM = 0, rP = 0;
+  for (let i = 0; i < W; i++) {
+    rM += buf[i] * buf[i + bestLag - 1];
+    rP += buf[i] * buf[i + bestLag + 1];
   }
-  cM /= corr0ref; cP /= corr0ref;
-  const denom = 2 * bestCorr - cM - cP;
-  const refined = denom !== 0 ? bestLag + 0.5 * (cP - cM) / denom : bestLag;
+  const d = 2 * best.r - rM - rP;
+  const refined = d !== 0 ? bestLag + 0.5 * (rP - rM) / d : bestLag;
   return sampleRate / refined;
 }
 
+// ─── Mediana com limpeza de histórico em silêncio ──────────────────────────
 const FREQ_HISTORY_SIZE = 5;
 const freqHistory: number[] = [];
+let framesSinceValid = 0;
 
 function medianFreq(freq: number): number {
-  freqHistory.push(freq);
-  if (freqHistory.length > FREQ_HISTORY_SIZE) freqHistory.shift();
-  const valid = freqHistory.filter(f => f > 0).slice().sort((a, b) => a - b);
-  if (valid.length < 3) return -1;
-  return valid[Math.floor(valid.length / 2)];
+  if (freq > 0) {
+    framesSinceValid = 0;
+    freqHistory.push(freq);
+    if (freqHistory.length > FREQ_HISTORY_SIZE) freqHistory.shift();
+  } else {
+    framesSinceValid++;
+    // Limpa o histórico após silêncio prolongado para evitar leituras obsoletas
+    if (framesSinceValid > 12) freqHistory.length = 0;
+  }
+  if (freqHistory.length === 0) return -1;
+  const sorted = freqHistory.slice().sort((a, b) => a - b);
+  return sorted[Math.floor(sorted.length / 2)];
 }
 
 let smoothedCents = 0;
@@ -875,10 +921,12 @@ function analysisLoop() {
   if (freq > 50 && freq < 1400) {
     const { note, cents, octave } = freqToNoteInfo(freq);
 
-    holdUntil = Date.now() + 1500;
+    holdUntil = Date.now() + 1000;
     tunerDisplay.classList.remove('holding-state');
 
-    smoothedCents += (cents - smoothedCents) * 0.2;
+    // Snap instantâneo se a nota mudou muito (onset detection)
+    const centsDiff = Math.abs(cents - smoothedCents);
+    smoothedCents += (cents - smoothedCents) * (centsDiff > 30 ? 1.0 : 0.25);
 
     noteName.textContent = note;
     noteOctave.textContent = String(octave);
@@ -924,11 +972,15 @@ function analysisLoop() {
 
     renderStrings(closestIdx, isInTune ? closestIdx : -1);
   } else {
-    smoothedCents += (0 - smoothedCents) * 0.05;
+    // Decaimento rápido para centro — evita agulha parada fora do centro após soltar a corda
+    smoothedCents += (0 - smoothedCents) * 0.12;
     setNeedle(smoothedCents);
 
     if (Date.now() < holdUntil) {
       tunerDisplay.classList.add('holding-state');
+      // Durante hold: pill idle — não mostrar cents defasados
+      setCentsPill(null);
+      setDirectionHint(0);
     } else {
       if (Math.abs(smoothedCents) < 1) smoothedCents = 0;
       noteName.textContent = '—';
@@ -1008,6 +1060,7 @@ function stopListening() {
   micStream?.getTracks().forEach(t => t.stop());
   audioCtx?.close();
   freqHistory.length = 0;
+  framesSinceValid = 0;
   smoothedCents = 0;
   currentAngle = 0;
   targetAngle = 0;
