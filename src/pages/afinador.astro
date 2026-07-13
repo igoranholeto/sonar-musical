@@ -6,157 +6,208 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="Afinador Online Grátis — Guitarra e Violão"
   description="Afine sua guitarra ou violão online e de graça. Suporte a afinações Standard, Drop D, Open G, DADGAD e muito mais. Funciona direto no navegador."
 >
-  <section class="max-w-2xl mx-auto px-4 py-12">
-    <div class="text-center mb-10">
-      <h1 class="text-3xl font-bold mb-2">Afinador Online</h1>
-      <p class="text-muted">Use o microfone para afinar sua guitarra ou violão</p>
+  <section class="tuner-page">
+    <div class="tuner-header">
+      <h1>Afinador Online</h1>
+      <p class="tuner-subtitle">Microfone · Detecção automática · Gratuito</p>
     </div>
 
     <!-- Seleção de instrumento -->
-    <div class="flex justify-center gap-3 mb-6">
-      <button
-        id="btn-guitarra"
-        class="instrument-btn active-instrument px-6 py-2.5 rounded-xl font-semibold text-sm border transition-all"
-        data-instrument="guitarra"
-      >
-        🎸 Guitarra
+    <div class="instrument-tabs">
+      <button id="btn-guitarra" class="tab-btn tab-btn--active" data-instrument="guitarra">
+        Guitarra
       </button>
-      <button
-        id="btn-violao"
-        class="instrument-btn px-6 py-2.5 rounded-xl font-semibold text-sm border transition-all"
-        data-instrument="violao"
-      >
-        🪕 Violão
+      <button id="btn-violao" class="tab-btn" data-instrument="violao">
+        Violão
       </button>
     </div>
 
     <!-- Seleção de afinação -->
-    <div class="mb-8">
-      <label for="tuning-select" class="block text-center text-sm text-muted mb-3">Afinação</label>
-      <select id="tuning-select" class="tuning-select w-full"></select>
+    <div class="tuning-row">
+      <label for="tuning-select" class="tuning-label">Afinação</label>
+      <select id="tuning-select" class="tuning-select"></select>
     </div>
 
     <!-- Visor do afinador -->
-    <div
-      id="tuner-display"
-      class="relative bg-card border border-border rounded-2xl p-8 mb-6 transition-all duration-500"
-    >
+    <div id="tuner-display" class="tuner-display">
+
       <!-- Nota detectada -->
-      <div class="text-center mb-2">
-        <div id="note-name" class="text-7xl font-bold tracking-tight transition-colors duration-200">—</div>
+      <div class="note-block">
+        <div class="note-row">
+          <span id="note-name" class="note-name">—</span>
+          <sup id="note-octave" class="note-octave"></sup>
+        </div>
+        <div id="cents-pill" class="cents-pill cents-pill--idle">· · ·</div>
         <div id="in-tune-badge" class="in-tune-badge">✓ Afinado</div>
-        <div id="octave-cents" class="text-subtle text-sm mt-1 h-5"></div>
       </div>
 
-      <!-- Medidor de agulha SVG -->
-      <div class="flex justify-center mb-4">
-        <svg id="needle-svg" viewBox="0 0 300 160" width="300" height="160">
-          <!-- Arco de fundo -->
-          <path
-            d="M 20 140 A 130 130 0 0 1 280 140"
-            fill="none"
-            stroke="var(--color-border)"
-            stroke-width="12"
-            stroke-linecap="round"
-          />
+      <!-- Medidor SVG -->
+      <div class="needle-wrap">
+        <svg id="needle-svg" viewBox="0 0 300 160" class="needle-svg" aria-hidden="true">
+          <!-- Arco fundo -->
+          <path d="M 20 140 A 130 130 0 0 1 280 140"
+            fill="none" stroke="var(--color-border)" stroke-width="12" stroke-linecap="round"/>
           <!-- Zona verde central -->
-          <path
-            id="arc-green"
-            d="M 135 140 A 130 130 0 0 1 165 140"
-            fill="none"
-            stroke="#22c55e"
-            stroke-width="12"
-            stroke-linecap="round"
-            opacity="0.3"
-          />
-          <!-- Marcas de escala -->
+          <path id="arc-green" d="M 135 140 A 130 130 0 0 1 165 140"
+            fill="none" stroke="#22c55e" stroke-width="12" stroke-linecap="round" opacity="0.3"/>
+          <!-- Marcas -->
           <g stroke="var(--color-subtle)" stroke-width="1.5">
-            <line x1="20" y1="140" x2="28" y2="140" transform="rotate(-90 150 140)" />
-            <line x1="20" y1="140" x2="26" y2="140" transform="rotate(-45 150 140)" />
-            <line x1="20" y1="140" x2="20" y2="126" transform="rotate(0 150 140)" />
-            <line x1="20" y1="140" x2="26" y2="140" transform="rotate(45 150 140)" />
-            <line x1="20" y1="140" x2="28" y2="140" transform="rotate(90 150 140)" />
+            <line x1="20" y1="140" x2="28" y2="140" transform="rotate(-90 150 140)"/>
+            <line x1="20" y1="140" x2="26" y2="140" transform="rotate(-45 150 140)"/>
+            <line x1="20" y1="140" x2="20" y2="126" transform="rotate(0 150 140)"/>
+            <line x1="20" y1="140" x2="26" y2="140" transform="rotate(45 150 140)"/>
+            <line x1="20" y1="140" x2="28" y2="140" transform="rotate(90 150 140)"/>
           </g>
-          <!-- Labels -->
-          <text x="22" y="138" fill="var(--color-subtle)" font-size="10" text-anchor="middle">-50</text>
-          <text x="70" y="60" fill="var(--color-subtle)" font-size="10" text-anchor="middle">-25</text>
-          <text x="150" y="18" fill="var(--color-subtle)" font-size="10" text-anchor="middle">0</text>
-          <text x="230" y="60" fill="var(--color-subtle)" font-size="10" text-anchor="middle">+25</text>
+          <!-- Labels cents -->
+          <text x="22"  y="138" fill="var(--color-subtle)" font-size="10" text-anchor="middle">-50</text>
+          <text x="70"  y="60"  fill="var(--color-subtle)" font-size="10" text-anchor="middle">-25</text>
+          <text x="150" y="18"  fill="var(--color-subtle)" font-size="10" text-anchor="middle">0</text>
+          <text x="230" y="60"  fill="var(--color-subtle)" font-size="10" text-anchor="middle">+25</text>
           <text x="278" y="138" fill="var(--color-subtle)" font-size="10" text-anchor="middle">+50</text>
           <!-- Agulha -->
-          <line
-            id="needle"
-            x1="150"
-            y1="140"
-            x2="150"
-            y2="20"
-            stroke="#e63946"
-            stroke-width="2.5"
-            stroke-linecap="round"
-            transform="rotate(0 150 140)"
-          />
-          <!-- Pivô -->
-          <circle id="needle-pivot" cx="150" cy="140" r="6" fill="#e63946" />
+          <line id="needle" x1="150" y1="140" x2="150" y2="20"
+            stroke="#e63946" stroke-width="2.5" stroke-linecap="round"
+            transform="rotate(0 150 140)"/>
+          <circle id="needle-pivot" cx="150" cy="140" r="6" fill="#e63946"/>
         </svg>
       </div>
 
       <!-- Frequência -->
-      <div class="text-center">
-        <span id="freq-display" class="text-subtle text-xs font-mono">— Hz</span>
+      <div class="freq-row">
+        <span id="freq-display" class="freq-display">— Hz</span>
       </div>
     </div>
 
-    <!-- Cordas da afinação atual -->
-    <div id="strings-display" class="grid grid-cols-6 gap-2 mb-8"></div>
+    <!-- Cordas -->
+    <div id="strings-display" class="strings-grid"></div>
 
     <!-- Botão microfone -->
-    <div class="flex justify-center">
-      <button
-        id="mic-btn"
-        class="flex items-center gap-3 px-8 py-4 rounded-2xl font-semibold text-base transition-all duration-200 bg-brand hover:bg-brand-dark text-white shadow-lg hover:shadow-brand/30"
-      >
-        <svg id="mic-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+    <div class="mic-wrap">
+      <button id="mic-btn" class="mic-btn">
+        <svg id="mic-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
           <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
           <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
           <line x1="12" y1="19" x2="12" y2="22"/>
         </svg>
         <span id="mic-label">Ativar Microfone</span>
       </button>
+      <p id="mic-status" class="mic-status"></p>
     </div>
 
-    <p id="mic-status" class="text-center text-xs text-subtle mt-3 h-4"></p>
+    <!-- Info / SEO — layout em cards -->
+    <div class="info-section">
+      <div class="info-card">
+        <div class="info-card__icon">🎯</div>
+        <h2 class="info-card__title">Como usar</h2>
+        <p class="info-card__text">Clique em <strong>Ativar Microfone</strong>, permita o acesso e toque uma corda. A agulha no centro significa corda afinada.</p>
+        <ul class="info-card__tips">
+          <li><span class="tip-dot tip-dot--green"></span>Verde — afinado</li>
+          <li><span class="tip-dot tip-dot--yellow"></span>Amarelo — ajuste pequeno</li>
+          <li><span class="tip-dot tip-dot--red"></span>Vermelho — muito desafinado</li>
+        </ul>
+      </div>
 
-    <!-- Info SEO -->
-    <div class="mt-12 prose prose-sm max-w-none text-muted">
-      <h2 class="text-foreground text-lg font-semibold mb-3">Como usar o afinador online</h2>
-      <p>Clique em <strong>Ativar Microfone</strong>, permita o acesso ao microfone e toque uma corda. O afinador detecta automaticamente a nota e mostra se está <span class="text-green-400">afinada (verde)</span>, um pouco alta ou baixa (amarela) ou muito desafinada (vermelha).</p>
-      <p>A agulha aponta para o centro (0) quando a corda está perfeita. Se a agulha vai para a esquerda, a corda está baixa (afrouxe a cravelha para afinar). Se vai para a direita, está alta (aperte a cravelha).</p>
-      <h2 class="text-foreground text-lg font-semibold mb-3 mt-6">Afinações disponíveis</h2>
-      <p>Suportamos as principais afinações para guitarra e violão: Standard E, Drop D, Drop C, Open G, Open D, Open E, DADGAD, Half Step Down e Full Step Down. Selecione a afinação no menu acima antes de começar.</p>
+      <div class="info-card">
+        <div class="info-card__icon">↔️</div>
+        <h2 class="info-card__title">Lendo a agulha</h2>
+        <p class="info-card__text">Agulha para a <strong>esquerda</strong>: nota baixa — aperte a cravelha. Agulha para a <strong>direita</strong>: nota alta — afrouxe.</p>
+        <p class="info-card__text">O número em <em>cents</em> mostra o desvio exato. ±8 cents ou menos é considerado afinado.</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-card__icon">🎛️</div>
+        <h2 class="info-card__title">Afinações</h2>
+        <p class="info-card__text">Guitarra: Standard E, Drop D, Drop C, Open G/D/E, DADGAD, Half/Full Step Down.</p>
+        <p class="info-card__text">Violão: Standard, Drop D, Open G/D, Nashville, DADGAD.</p>
+      </div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  .instrument-btn {
-    background: var(--color-card);
-    border-color: var(--color-border);
-    color: var(--color-muted);
+  /* ── Página ──────────────────────────────────────────────── */
+  .tuner-page {
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 2.5rem 1rem 4rem;
   }
-  .instrument-btn:hover {
-    border-color: var(--color-subtle);
+
+  .tuner-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .tuner-header h1 {
+    font-size: 1.85rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    margin: 0 0 0.35rem;
+  }
+
+  .tuner-subtitle {
+    font-size: 0.82rem;
+    color: var(--color-subtle);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  /* ── Tabs instrumento ────────────────────────────────────── */
+  .instrument-tabs {
+    display: flex;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    padding: 4px;
+    gap: 4px;
+    margin-bottom: 1.25rem;
+  }
+
+  .tab-btn {
+    flex: 1;
+    padding: 0.55rem 1rem;
+    border-radius: 7px;
+    border: none;
+    background: transparent;
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.18s, color 0.18s;
+    font-family: inherit;
+  }
+
+  .tab-btn:hover:not(.tab-btn--active) {
     color: var(--color-foreground);
   }
-  .active-instrument {
-    background: rgba(230, 57, 70, 0.12);
-    border-color: var(--color-brand) !important;
-    color: var(--color-brand) !important;
+
+  .tab-btn--active {
+    background: var(--color-brand);
+    color: #fff;
   }
+
+  /* ── Afinação select ─────────────────────────────────────── */
+  .tuning-row {
+    margin-bottom: 1.5rem;
+  }
+
+  .tuning-label {
+    display: block;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--color-subtle);
+    margin-bottom: 0.5rem;
+  }
+
   .tuning-select {
+    width: 100%;
     background: var(--color-card);
     border: 1px solid var(--color-border);
     color: var(--color-foreground);
-    padding: 0.75rem 1rem;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
     border-radius: 0.75rem;
     font-size: 0.95rem;
     font-family: inherit;
@@ -167,69 +218,288 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23888' stroke-width='2' stroke-linecap='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-position: right 1rem center;
-    padding-right: 2.5rem;
     transition: border-color 0.15s;
   }
+
   .tuning-select:focus,
   .tuning-select:hover {
     border-color: var(--color-brand);
+    outline: none;
   }
+
   .tuning-select option {
     background: var(--color-card);
     color: var(--color-foreground);
   }
-  .string-card {
+
+  /* ── Display principal ───────────────────────────────────── */
+  .tuner-display {
     background: var(--color-card);
     border: 1px solid var(--color-border);
-    border-radius: 0.75rem;
-    padding: 0.6rem 0.5rem;
+    border-radius: 1.25rem;
+    padding: 1.75rem 1.5rem 1.25rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.4s, box-shadow 0.4s;
+  }
+
+  .tuner-display.in-tune-state {
+    border-color: rgba(34, 197, 94, 0.5);
+    box-shadow: 0 0 28px rgba(34, 197, 94, 0.1);
+  }
+
+  .tuner-display.holding-state {
+    opacity: 0.82;
+  }
+
+  /* ── Nota ────────────────────────────────────────────────── */
+  .note-block {
     text-align: center;
-    transition: all 0.3s;
+    margin-bottom: 0.5rem;
   }
-  .string-card.active {
-    border-color: var(--color-brand);
-    background: rgba(230, 57, 70, 0.1);
+
+  .note-row {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 2px;
+    line-height: 1;
   }
-  .string-card.in-tune {
-    border-color: #22c55e;
-    background: rgba(34, 197, 94, 0.12);
+
+  .note-name {
+    font-size: 5rem;
+    font-weight: 900;
+    letter-spacing: -0.04em;
+    transition: color 0.2s;
+    line-height: 1;
+    display: block;
   }
-  #tuner-display.in-tune-state {
-    border-color: rgba(34, 197, 94, 0.6);
-    box-shadow: 0 0 24px rgba(34, 197, 94, 0.1);
+
+  .note-octave {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-subtle);
+    margin-top: 0.6rem;
+    line-height: 1;
   }
-  #tuner-display.holding-state {
-    opacity: 0.85;
+
+  /* Cents pill */
+  .cents-pill {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.2rem 0.65rem;
+    border-radius: 999px;
+    font-size: 0.82rem;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.02em;
+    transition: background 0.2s, color 0.2s;
+    min-width: 60px;
+    text-align: center;
   }
-  #mic-btn.active {
-    background: #b5202d;
-    animation: pulse-mic 2s infinite;
-  }
-  @keyframes pulse-mic {
-    0%, 100% { box-shadow: 0 0 0 0 rgba(230,57,70,0.4); }
-    50% { box-shadow: 0 0 0 12px rgba(230,57,70,0); }
-  }
-  /* In-tune badge — substitui o overlay bloqueante */
+
+  .cents-pill--idle   { background: rgba(255,255,255,0.06); color: var(--color-subtle); }
+  .cents-pill--green  { background: rgba(34,197,94,0.15);  color: #4ade80; }
+  .cents-pill--yellow { background: rgba(250,204,21,0.15); color: #fde047; }
+  .cents-pill--red    { background: rgba(230,57,70,0.15);  color: #f87171; }
+
+  /* In-tune badge */
   .in-tune-badge {
-    height: 24px;
-    font-size: 0.85rem;
-    font-weight: 600;
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.8rem;
+    font-weight: 700;
     color: #22c55e;
-    text-align: center;
-    margin-top: 4px;
+    letter-spacing: 0.04em;
     opacity: 0;
     transform: translateY(4px);
-    transition: opacity 0.4s ease, transform 0.4s ease;
-    pointer-events: none;
+    transition: opacity 0.35s, transform 0.35s;
   }
+
   .in-tune-badge.visible {
     opacity: 1;
     transform: translateY(0);
   }
+
+  /* ── Needle SVG ──────────────────────────────────────────── */
+  .needle-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 0.25rem 0 0.5rem;
+  }
+
+  .needle-svg {
+    width: min(300px, 100%);
+    height: auto;
+  }
+
+  /* ── Frequência ──────────────────────────────────────────── */
+  .freq-row {
+    text-align: center;
+  }
+
+  .freq-display {
+    font-size: 0.75rem;
+    font-family: ui-monospace, monospace;
+    color: var(--color-subtle);
+  }
+
+  /* ── Cordas ──────────────────────────────────────────────── */
+  .strings-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .string-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 0.55rem 0.35rem;
+    text-align: center;
+    transition: border-color 0.25s, background 0.25s;
+  }
+
+  .string-card.active  { border-color: var(--color-brand); background: rgba(230,57,70,0.08); }
+  .string-card.in-tune { border-color: #22c55e;            background: rgba(34,197,94,0.1); }
+
+  .string-num  { font-size: 0.65rem; color: var(--color-subtle); margin-bottom: 2px; }
+  .string-note { font-size: 0.85rem; font-weight: 800; }
+  .string-full { font-size: 0.65rem; color: var(--color-subtle); margin-top: 1px; }
+
+  /* ── Microfone ───────────────────────────────────────────── */
+  .mic-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 3.5rem;
+  }
+
+  .mic-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 2.25rem;
+    border-radius: 999px;
+    border: none;
+    background: var(--color-brand);
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background 0.18s, box-shadow 0.18s, transform 0.15s;
+    box-shadow: 0 2px 12px rgba(230,57,70,0.35);
+  }
+
+  .mic-btn:hover {
+    background: #d02f3c;
+    box-shadow: 0 4px 18px rgba(230,57,70,0.45);
+    transform: translateY(-1px);
+  }
+
+  .mic-btn.active {
+    background: #b5202d;
+    animation: pulse-mic 2s infinite;
+  }
+
+  @keyframes pulse-mic {
+    0%,100% { box-shadow: 0 0 0 0 rgba(230,57,70,0.4); }
+    50%      { box-shadow: 0 0 0 12px rgba(230,57,70,0); }
+  }
+
+  .mic-status {
+    font-size: 0.78rem;
+    color: var(--color-subtle);
+    margin: 0;
+    min-height: 1.1em;
+    text-align: center;
+  }
+
+  /* ── Info cards ──────────────────────────────────────────── */
+  .info-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  .info-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 1rem;
+    padding: 1.25rem 1.25rem 1.1rem;
+  }
+
+  .info-card__icon {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+    line-height: 1;
+  }
+
+  .info-card__title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-foreground);
+    margin: 0 0 0.55rem;
+    letter-spacing: -0.01em;
+  }
+
+  .info-card__text {
+    font-size: 0.82rem;
+    color: var(--color-muted);
+    margin: 0 0 0.5rem;
+    line-height: 1.6;
+  }
+
+  .info-card__text:last-child { margin-bottom: 0; }
+
+  .info-card__tips {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .info-card__tips li {
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .tip-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .tip-dot--green  { background: #22c55e; }
+  .tip-dot--yellow { background: #facc15; }
+  .tip-dot--red    { background: #e63946; }
+
+  /* ── Mobile tweaks ───────────────────────────────────────── */
+  @media (max-width: 400px) {
+    .note-name { font-size: 4rem; }
+    .tuner-display { padding: 1.25rem 1rem 1rem; }
+    .strings-grid { gap: 0.35rem; }
+  }
+
+  @media (min-width: 500px) {
+    .info-section {
+      grid-template-columns: 1fr 1fr;
+    }
+    .info-section .info-card:first-child {
+      grid-column: 1 / -1;
+    }
+  }
 </style>
 
 <script>
-// ─── Dados de afinações ───────────────────────────────────────────────────────
+// ─── Afinações ────────────────────────────────────────────────────────────────
 const TUNINGS: Record<string, { label: string; strings: string[] }[]> = {
   guitarra: [
     { label: 'Standard (E)',   strings: ['E2','A2','D3','G3','B3','E4'] },
@@ -253,7 +523,6 @@ const TUNINGS: Record<string, { label: string; strings: string[] }[]> = {
   ],
 };
 
-// ─── Mapa nota → frequência ───────────────────────────────────────────────────
 const NOTE_NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
 const ENHARMONICS: Record<string, string> = {
   'Db':'C#','Eb':'D#','Fb':'E','Gb':'F#','Ab':'G#','Bb':'A#','Cb':'B',
@@ -265,12 +534,11 @@ function noteToFreq(note: string): number {
   n = ENHARMONICS[n] ?? n;
   const idx = NOTE_NAMES.indexOf(n);
   if (idx === -1) return 0;
-  const midi = (oct + 1) * 12 + idx;
-  return 440 * Math.pow(2, (midi - 69) / 12);
+  return 440 * Math.pow(2, ((oct + 1) * 12 + idx - 69) / 12);
 }
 
-function freqToNoteInfo(freq: number): { note: string; cents: number; octave: number } {
-  const midi = 12 * (Math.log2(freq / 440)) + 69;
+function freqToNoteInfo(freq: number) {
+  const midi = 12 * Math.log2(freq / 440) + 69;
   const rounded = Math.round(midi);
   const cents = Math.round((midi - rounded) * 100);
   const octave = Math.floor(rounded / 12) - 1;
@@ -288,16 +556,15 @@ let micStream: MediaStream | null = null;
 let rafId: number | null = null;
 let inTuneTimer: ReturnType<typeof setTimeout> | null = null;
 let inTuneBellPlayed = false;
-
-// Note hold — mantém a nota visível por 1.5s após perder o sinal
 let holdUntil = 0;
 
-// ─── Referências DOM ──────────────────────────────────────────────────────────
+// ─── DOM refs ─────────────────────────────────────────────────────────────────
 const micBtn        = document.getElementById('mic-btn')!;
 const micLabel      = document.getElementById('mic-label')!;
 const micStatus     = document.getElementById('mic-status')!;
 const noteName      = document.getElementById('note-name')!;
-const octaveCents   = document.getElementById('octave-cents')!;
+const noteOctave    = document.getElementById('note-octave')!;
+const centsPill     = document.getElementById('cents-pill')!;
 const freqDisplay   = document.getElementById('freq-display')!;
 const needle        = document.getElementById('needle')!;
 const needlePivot   = document.getElementById('needle-pivot')!;
@@ -305,9 +572,9 @@ const arcGreen      = document.getElementById('arc-green')!;
 const tunerDisplay  = document.getElementById('tuner-display')!;
 const inTuneBadge   = document.getElementById('in-tune-badge')!;
 const stringsDisplay = document.getElementById('strings-display')!;
-const tuningSelect   = document.getElementById('tuning-select') as HTMLSelectElement;
+const tuningSelect  = document.getElementById('tuning-select') as HTMLSelectElement;
 
-// ─── Render afinações no dropdown ─────────────────────────────────────────────
+// ─── Renderiza dropdown de afinações ─────────────────────────────────────────
 function renderTunings() {
   tuningSelect.innerHTML = '';
   TUNINGS[instrument].forEach((t, i) => {
@@ -325,43 +592,44 @@ tuningSelect.addEventListener('change', () => {
   resetDisplay();
 });
 
+// ─── Cordas ───────────────────────────────────────────────────────────────────
 function renderStrings(activeIdx = -1, inTuneIdx = -1) {
   const strings = TUNINGS[instrument][currentTuningIdx].strings;
   stringsDisplay.innerHTML = '';
   strings.forEach((s, i) => {
     const card = document.createElement('div');
-    card.className = 'string-card' +
-      (i === activeIdx ? ' active' : '') +
-      (i === inTuneIdx ? ' in-tune' : '');
+    card.className = 'string-card'
+      + (i === activeIdx  ? ' active'  : '')
+      + (i === inTuneIdx  ? ' in-tune' : '');
     const num = strings.length - i;
-    card.innerHTML = `<div class="text-xs text-subtle mb-0.5">${num}ª</div><div class="font-bold text-sm">${s.replace(/\d/, '')}</div><div class="text-xs text-subtle">${s}</div>`;
+    const noteOnly = s.replace(/\d/, '');
+    card.innerHTML = `<div class="string-num">${num}ª</div><div class="string-note">${noteOnly}</div><div class="string-full">${s}</div>`;
     stringsDisplay.appendChild(card);
   });
 }
 
-// ─── Instrumento buttons ──────────────────────────────────────────────────────
-document.querySelectorAll('.instrument-btn').forEach(btn => {
+// ─── Tabs instrumento ─────────────────────────────────────────────────────────
+document.querySelectorAll('.tab-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     instrument = (btn as HTMLElement).dataset.instrument!;
     currentTuningIdx = 0;
-    document.querySelectorAll('.instrument-btn').forEach(b => b.classList.remove('active-instrument'));
-    btn.classList.add('active-instrument');
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('tab-btn--active'));
+    btn.classList.add('tab-btn--active');
     renderTunings();
     renderStrings();
     resetDisplay();
   });
 });
 
-// ─── Inicializa ───────────────────────────────────────────────────────────────
 renderTunings();
 renderStrings();
 
-// ─── Reset display ────────────────────────────────────────────────────────────
+// ─── Reset ────────────────────────────────────────────────────────────────────
 function resetDisplay() {
   noteName.textContent = '—';
   noteName.style.color = '';
-  noteName.style.opacity = '1';
-  octaveCents.textContent = '';
+  noteOctave.textContent = '';
+  setCentsPill(null);
   freqDisplay.textContent = '— Hz';
   setNeedle(0, true);
   setInTune(false);
@@ -369,13 +637,26 @@ function resetDisplay() {
   holdUntil = 0;
 }
 
+// ─── Cents pill ───────────────────────────────────────────────────────────────
+function setCentsPill(cents: number | null) {
+  if (cents === null) {
+    centsPill.textContent = '· · ·';
+    centsPill.className = 'cents-pill cents-pill--idle';
+    return;
+  }
+  const sign = cents >= 0 ? '+' : '';
+  centsPill.textContent = `${sign}${cents}¢`;
+  const abs = Math.abs(cents);
+  if (abs <= 8)       centsPill.className = 'cents-pill cents-pill--green';
+  else if (abs <= 25) centsPill.className = 'cents-pill cents-pill--yellow';
+  else                centsPill.className = 'cents-pill cents-pill--red';
+}
+
 // ─── Agulha ───────────────────────────────────────────────────────────────────
 let currentAngle = 0;
 let targetAngle = 0;
 
-// Chamado todo frame; interpola suavemente até targetAngle (spring-like)
 function tickNeedle() {
-  // α=0.07 — movimentação fluida sem lag perceptível
   currentAngle += (targetAngle - currentAngle) * 0.07;
   needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
 }
@@ -388,17 +669,13 @@ function setNeedle(cents: number, instant = false) {
   }
 }
 
-// ─── Visual de cor do ponteiro por desvio ────────────────────────────────────
 function updateNeedleColor(absCents: number) {
-  let color: string;
-  if (absCents <= 8)       color = '#22c55e'; // verde
-  else if (absCents <= 25) color = '#facc15'; // amarelo
-  else                     color = '#e63946'; // vermelho
+  const color = absCents <= 8 ? '#22c55e' : absCents <= 25 ? '#facc15' : '#e63946';
   needle.setAttribute('stroke', color);
   needlePivot.setAttribute('fill', color);
 }
 
-// ─── Feedback "afinado" — sutil: sem overlay, apenas cor + badge ──────────────
+// ─── In-tune ──────────────────────────────────────────────────────────────────
 function setInTune(on: boolean) {
   if (on) {
     tunerDisplay.classList.add('in-tune-state');
@@ -414,20 +691,22 @@ function setInTune(on: boolean) {
 }
 
 function playTuneSound(ctx: AudioContext) {
-  const osc = ctx.createOscillator();
-  const gain = ctx.createGain();
-  osc.connect(gain);
-  gain.connect(ctx.destination);
-  osc.frequency.value = 880;
-  osc.type = 'sine';
-  gain.gain.setValueAtTime(0, ctx.currentTime);
-  gain.gain.linearRampToValueAtTime(0.1, ctx.currentTime + 0.02);
-  gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.5);
-  osc.start(ctx.currentTime);
-  osc.stop(ctx.currentTime + 0.5);
+  try {
+    const osc = ctx.createOscillator();
+    const gain = ctx.createGain();
+    osc.connect(gain);
+    gain.connect(ctx.destination);
+    osc.frequency.value = 880;
+    osc.type = 'sine';
+    gain.gain.setValueAtTime(0, ctx.currentTime);
+    gain.gain.linearRampToValueAtTime(0.08, ctx.currentTime + 0.02);
+    gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.4);
+    osc.start(ctx.currentTime);
+    osc.stop(ctx.currentTime + 0.4);
+  } catch (_) { /* silently ignore if audio context closed */ }
 }
 
-// ─── Autocorrelação + interpolação parabólica ─────────────────────────────────
+// ─── Detecção de frequência (autocorrelação + interpolação parabólica) ────────
 function detectFrequency(buf: Float32Array, sampleRate: number): number {
   const SIZE = buf.length;
   const HALF = Math.floor(SIZE / 2);
@@ -446,9 +725,7 @@ function detectFrequency(buf: Float32Array, sampleRate: number): number {
   const lagMin = Math.floor(sampleRate / 1200);
   const lagMax = Math.ceil(sampleRate / 60);
 
-  let bestLag = -1;
-  let bestCorr = 0;
-  let prevCorr = 1;
+  let bestLag = -1, bestCorr = 0, prevCorr = 1;
   let crossedDip = false;
 
   for (let lag = lagMin; lag <= lagMax && lag < HALF; lag++) {
@@ -457,37 +734,24 @@ function detectFrequency(buf: Float32Array, sampleRate: number): number {
     const norm = c / corr0ref;
 
     if (!crossedDip && norm < 0.5) crossedDip = true;
-
-    if (crossedDip && norm > prevCorr && norm > bestCorr) {
-      bestCorr = norm;
-      bestLag = lag;
-    }
+    if (crossedDip && norm > prevCorr && norm > bestCorr) { bestCorr = norm; bestLag = lag; }
     if (crossedDip && norm < prevCorr && bestLag !== -1) break;
-
     prevCorr = norm;
   }
 
   if (bestLag === -1 || bestCorr < 0.55) return -1;
 
-  const lagM1 = bestLag - 1;
-  const lagP1 = bestLag + 1;
   let cM = 0, cP = 0;
   for (let i = 0; i < HALF; i++) {
-    cM += buf[i] * buf[i + lagM1];
-    cP += buf[i] * buf[i + lagP1];
+    cM += buf[i] * buf[i + bestLag - 1];
+    cP += buf[i] * buf[i + bestLag + 1];
   }
-  cM /= corr0ref;
-  cP /= corr0ref;
-
+  cM /= corr0ref; cP /= corr0ref;
   const denom = 2 * bestCorr - cM - cP;
-  const refinedLag = denom !== 0
-    ? bestLag + 0.5 * (cP - cM) / denom
-    : bestLag;
-
-  return sampleRate / refinedLag;
+  const refined = denom !== 0 ? bestLag + 0.5 * (cP - cM) / denom : bestLag;
+  return sampleRate / refined;
 }
 
-// ─── Filtro mediano — 5 frames, menos lag que 7 ───────────────────────────────
 const FREQ_HISTORY_SIZE = 5;
 const freqHistory: number[] = [];
 
@@ -499,12 +763,18 @@ function medianFreq(freq: number): number {
   return valid[Math.floor(valid.length / 2)];
 }
 
-// Suavização exponencial nos cents — α=0.2 (rastreia rápido, sem nervosismo)
 let smoothedCents = 0;
 
 // ─── Loop de análise ──────────────────────────────────────────────────────────
 function analysisLoop() {
   if (!analyser || !audioCtx) return;
+
+  // Verifica se o AudioContext ainda está rodando (pode ser suspenso no mobile)
+  if (audioCtx.state === 'suspended') {
+    audioCtx.resume().catch(() => {});
+    rafId = requestAnimationFrame(analysisLoop);
+    return;
+  }
 
   const buf = new Float32Array(analyser.fftSize);
   analyser.getFloatTimeDomainData(buf);
@@ -512,53 +782,46 @@ function analysisLoop() {
   const rawFreq = detectFrequency(buf, audioCtx.sampleRate);
   const freq = medianFreq(rawFreq);
 
-  // Interpola a agulha todo frame, independente do sinal
   tickNeedle();
 
   if (freq > 50 && freq < 1400) {
     const { note, cents, octave } = freqToNoteInfo(freq);
 
-    // Atualiza hold window — nota fica visível por 1.5s após sinal sumir
     holdUntil = Date.now() + 1500;
     tunerDisplay.classList.remove('holding-state');
-    noteName.style.opacity = '1';
 
-    // α=0.2: tracking rápido mas estável
     smoothedCents += (cents - smoothedCents) * 0.2;
+    const displayCents = Math.round(smoothedCents);
 
     noteName.textContent = note;
-    octaveCents.textContent = `Oitava ${octave} · ${cents > 0 ? '+' : ''}${cents} cents`;
+    noteOctave.textContent = String(octave);
+    setCentsPill(displayCents);
     freqDisplay.textContent = `${freq.toFixed(1)} Hz`;
     setNeedle(smoothedCents);
 
     const absCents = Math.abs(smoothedCents);
     updateNeedleColor(absCents);
 
-    // Coloração do nome da nota
     if (absCents > 8) {
       noteName.style.color = absCents < 25 ? '#facc15' : '#e63946';
+    } else {
+      noteName.style.color = '';
     }
 
-    // Detecta corda mais próxima
+    // Corda mais próxima
     const strings = TUNINGS[instrument][currentTuningIdx].strings;
-    let closestIdx = -1;
-    let closestDiff = Infinity;
+    let closestIdx = -1, closestDiff = Infinity;
     strings.forEach((s, i) => {
-      const sf = noteToFreq(s);
-      const diff = Math.abs(freq - sf);
+      const diff = Math.abs(freq - noteToFreq(s));
       if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
     });
 
     const isInTune = absCents <= 8;
-
     if (isInTune) {
       if (!inTuneTimer) {
         inTuneTimer = setTimeout(() => {
           setInTune(true);
-          if (!inTuneBellPlayed && audioCtx) {
-            playTuneSound(audioCtx);
-            inTuneBellPlayed = true;
-          }
+          if (!inTuneBellPlayed && audioCtx) { playTuneSound(audioCtx); inTuneBellPlayed = true; }
         }, 500);
       }
     } else {
@@ -568,31 +831,22 @@ function analysisLoop() {
     }
 
     renderStrings(closestIdx, isInTune ? closestIdx : -1);
-
   } else {
-    // Sem sinal — decai o ponteiro suavemente
     smoothedCents += (0 - smoothedCents) * 0.05;
     setNeedle(smoothedCents);
 
-    const now = Date.now();
-
-    if (now < holdUntil) {
-      // Dentro da janela de hold — mantém a nota visível, levemente dimmed
+    if (Date.now() < holdUntil) {
       tunerDisplay.classList.add('holding-state');
     } else {
-      // Hold expirou — limpa o display
       if (Math.abs(smoothedCents) < 1) smoothedCents = 0;
       noteName.textContent = '—';
       noteName.style.color = '';
-      noteName.style.opacity = '1';
-      octaveCents.textContent = '';
+      noteOctave.textContent = '';
+      setCentsPill(null);
       freqDisplay.textContent = '— Hz';
       tunerDisplay.classList.remove('holding-state');
-
-      // Reset needle color para vermelho (inativo)
       needle.setAttribute('stroke', '#e63946');
       needlePivot.setAttribute('fill', '#e63946');
-
       if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
       inTuneBellPlayed = false;
       setInTune(false);
@@ -603,7 +857,7 @@ function analysisLoop() {
   rafId = requestAnimationFrame(analysisLoop);
 }
 
-// ─── Microfone ────────────────────────────────────────────────────────────────
+// ─── Microfone — com fix de iOS/Safari ───────────────────────────────────────
 micBtn.addEventListener('click', async () => {
   if (isListening) {
     stopListening();
@@ -612,12 +866,29 @@ micBtn.addEventListener('click', async () => {
 
   try {
     micStatus.textContent = 'Solicitando acesso ao microfone…';
+
     micStream = await navigator.mediaDevices.getUserMedia({
-      audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false },
+      audio: {
+        echoCancellation: false,
+        noiseSuppression: false,
+        autoGainControl: false,
+        // Constraints adicionais para iOS Safari
+        sampleRate: { ideal: 44100 },
+      },
     });
-    audioCtx = new AudioContext();
+
+    // Webkit fallback (iOS Safari < 14.5)
+    const AudioCtxClass = (window.AudioContext || (window as any).webkitAudioContext) as typeof AudioContext;
+    audioCtx = new AudioCtxClass();
+
+    // iOS requer resume() explícito dentro do gesto do usuário
+    if (audioCtx.state === 'suspended') {
+      await audioCtx.resume();
+    }
+
     analyser = audioCtx.createAnalyser();
-    analyser.fftSize = 8192;
+    // fftSize menor para performance em mobile (ainda preciso para baixas frequências)
+    analyser.fftSize = 4096;
     analyser.smoothingTimeConstant = 0;
 
     const source = audioCtx.createMediaStreamSource(micStream);
@@ -629,8 +900,13 @@ micBtn.addEventListener('click', async () => {
     micStatus.textContent = 'Ouvindo… toque uma corda!';
 
     analysisLoop();
-  } catch {
-    micStatus.textContent = 'Acesso ao microfone negado. Verifique as permissões do navegador.';
+  } catch (err: any) {
+    const msg = err?.name === 'NotAllowedError'
+      ? 'Acesso ao microfone negado. Toque o botão novamente e permita o acesso.'
+      : err?.name === 'NotFoundError'
+      ? 'Nenhum microfone encontrado neste dispositivo.'
+      : `Erro ao acessar microfone: ${err?.message ?? 'desconhecido'}`;
+    micStatus.textContent = msg;
   }
 });
 
