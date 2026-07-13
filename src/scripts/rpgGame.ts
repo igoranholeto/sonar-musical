@@ -4,21 +4,63 @@ import {
   BOSS_NAMES,
   SKIN_COLORS,
   HAIR_COLORS,
-  OUTFIT_COLORS,
+  HAIR_STYLES,
+  OUTFIT_STYLES,
+  OUTFIT_COLOR_KEYS,
+  LOOKS_BY_GENDER,
+  getLooks,
+  pickRandom,
   seededPick,
-  type InstrumentId,
+  type Gender,
+  type HairStyleId,
+  type OutfitStyleId,
+  type OutfitColorKey,
+  type Look,
 } from '../data/rpg';
+import { SoundEngine } from './soundEngine';
+import {
+  drawSprite,
+  drawStage,
+  drawImpact,
+  drawHeartIcon,
+  drawReviveIcon,
+  drawCutIcon,
+  drawHintIcon,
+  drawMuteIcon,
+  drawVinylDisc,
+  drawProfessorPortrait,
+  preloadAllSprites,
+  onSpritesLoaded,
+  type Pose,
+} from './spriteEngine';
 
 type Difficulty = 'Iniciante' | 'Intermediário' | 'Avançado';
-type Pose = 'idle' | 'walk' | 'attack' | 'hurt' | 'defeat';
+type Screen = 'cover' | 'creation' | 'walk' | 'battle' | 'gameover';
 
 interface CharacterConfig {
   name: string;
-  instrument: InstrumentId;
+  gender: Gender;
+  skin: string;
+  look: string;
+  hairStyle: HairStyleId;
+  hair: string;
+  outfitStyle: OutfitStyleId;
+  outfit: OutfitColorKey;
+  difficulty: Difficulty;
+}
+
+interface Enemy {
+  name: string;
+  isBoss: boolean;
+  hp: number;
+  maxHp: number;
+  gender: Gender;
   skin: string;
   hair: string;
-  outfit: string;
-  difficulty: Difficulty;
+  hairStyle: HairStyleId;
+  outfit: OutfitColorKey;
+  outfitStyle: OutfitStyleId;
+  bossTint: string | null;
 }
 
 interface LeaderboardEntry {
@@ -35,225 +77,11 @@ const TIME_PER_QUESTION: Record<Difficulty, number> = {
   Intermediário: 14,
   Avançado: 9,
 };
+const BOSS_TINTS = ['#ffd23f', '#ff6b6b', '#8e44ad', '#3ddc84'];
+const MEDAL_COLORS = ['#ffd23f', '#c9c9d4', '#c98a4b'];
 
-const STORAGE_KEY = 'rpg-character';
-
-// ───────────────────────── Desenho (pixel art procedural) ─────────────────────────
-
-function shade(hex: string, amount: number): string {
-  const num = parseInt(hex.replace('#', ''), 16);
-  let r = (num >> 16) + amount;
-  let g = ((num >> 8) & 0x00ff) + amount;
-  let b = (num & 0x0000ff) + amount;
-  r = Math.max(0, Math.min(255, r));
-  g = Math.max(0, Math.min(255, g));
-  b = Math.max(0, Math.min(255, b));
-  return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
-}
-
-function drawInstrument(ctx: CanvasRenderingContext2D, instrument: InstrumentId, armPhase: number, skin: string) {
-  const handX = 9;
-  const handY = -20 + armPhase * 0.3;
-
-  if (instrument === 'bateria') {
-    ctx.fillStyle = shade(skin, -10);
-    ctx.fillRect(handX - 20, handY, 4, 10);
-    ctx.strokeStyle = '#c8a06a';
-    ctx.lineWidth = 1.3;
-    ctx.beginPath();
-    ctx.moveTo(handX, handY);
-    ctx.lineTo(handX + 8, handY - 8);
-    ctx.moveTo(handX - 16, handY);
-    ctx.lineTo(handX - 8, handY - 9);
-    ctx.stroke();
-    return;
-  }
-
-  ctx.fillStyle = shade(skin, -10);
-  ctx.fillRect(handX - 4, handY, 4, 12);
-
-  const bodyColor = instrument === 'guitarra' ? '#b5202d' : '#4a3728';
-  ctx.save();
-  ctx.translate(handX + 2, handY + 6);
-  ctx.rotate(-0.5);
-  ctx.fillStyle = '#5a3a22';
-  ctx.fillRect(-2, -18, 3, 18);
-  ctx.fillStyle = bodyColor;
-  ctx.beginPath();
-  ctx.ellipse(0, 4, 6, 8, 0, 0, Math.PI * 2);
-  ctx.fill();
-  ctx.restore();
-}
-
-interface HumanoidOpts {
-  x: number;
-  groundY: number;
-  scale: number;
-  skin: string;
-  hair: string;
-  outfit: string;
-  instrument: InstrumentId;
-  facing: 1 | -1;
-  pose: Pose;
-  t: number;
-  crown?: boolean;
-}
-
-function drawHumanoid(ctx: CanvasRenderingContext2D, o: HumanoidOpts) {
-  const { x, groundY, scale, skin, hair, outfit, instrument, facing, pose, t } = o;
-
-  let bob = 0;
-  let legPhase = 0;
-  let armPhase = 0;
-  let lean = 0;
-  let rotate = 0;
-  let fallY = 0;
-  let alpha = 1;
-
-  if (pose === 'idle') {
-    bob = Math.sin(t * 2.4) * 1.2;
-  } else if (pose === 'walk') {
-    bob = Math.abs(Math.sin(t * 8)) * 1.5;
-    legPhase = Math.sin(t * 8) * 5;
-    armPhase = Math.sin(t * 8) * 4;
-  } else if (pose === 'attack') {
-    const swing = Math.sin(Math.min(t, 1) * Math.PI);
-    lean = swing * 6;
-    armPhase = swing * 10;
-  } else if (pose === 'hurt') {
-    lean = Math.sin(t * 40) * 3;
-  } else if (pose === 'defeat') {
-    const p = Math.min(t, 1);
-    rotate = p * (Math.PI / 2.2);
-    fallY = p * 4;
-    alpha = 1 - p * 0.85;
-  }
-
-  ctx.save();
-  ctx.globalAlpha = alpha;
-  ctx.translate(x, groundY);
-  ctx.scale(scale * facing, scale);
-  ctx.translate(lean, -bob + fallY);
-  if (rotate) ctx.rotate(rotate);
-
-  if (o.crown) {
-    ctx.save();
-    ctx.fillStyle = '#ffd700';
-    ctx.beginPath();
-    ctx.moveTo(-8, -40);
-    ctx.lineTo(-8, -47);
-    ctx.lineTo(-4, -41);
-    ctx.lineTo(0, -48);
-    ctx.lineTo(4, -41);
-    ctx.lineTo(8, -47);
-    ctx.lineTo(8, -40);
-    ctx.closePath();
-    ctx.fill();
-    ctx.restore();
-  }
-
-  // pernas
-  ctx.fillStyle = shade(outfit, -30);
-  ctx.fillRect(-6 - legPhase * 0.2, -13, 5, 13);
-  ctx.fillRect(1 + legPhase * 0.2, -13, 5, 13);
-
-  // torso
-  ctx.fillStyle = outfit;
-  ctx.fillRect(-8, -28, 16, 16);
-
-  // braço de trás
-  ctx.fillStyle = shade(skin, -10);
-  ctx.fillRect(-11, -26 + armPhase * 0.3, 4, 12);
-
-  // instrumento + braço da frente
-  drawInstrument(ctx, instrument, armPhase, skin);
-
-  // cabeça
-  ctx.fillStyle = skin;
-  ctx.beginPath();
-  ctx.arc(0, -34, 7, 0, Math.PI * 2);
-  ctx.fill();
-
-  // cabelo
-  ctx.fillStyle = hair;
-  ctx.beginPath();
-  ctx.arc(0, -36, 7.2, Math.PI, Math.PI * 2);
-  ctx.fill();
-  ctx.fillRect(-7, -38, 3, 6);
-  ctx.fillRect(4, -38, 3, 6);
-
-  // olhos
-  ctx.fillStyle = '#1a1a1a';
-  ctx.fillRect(-3, -34, 1.6, 1.6);
-  ctx.fillRect(1.4, -34, 1.6, 1.6);
-
-  ctx.restore();
-}
-
-function drawImpact(ctx: CanvasRenderingContext2D, x: number, y: number, progress: number) {
-  const r = 4 + progress * 14;
-  ctx.save();
-  ctx.globalAlpha = Math.max(0, 1 - progress);
-  ctx.strokeStyle = '#ffd23f';
-  ctx.lineWidth = 2;
-  for (let i = 0; i < 6; i++) {
-    const ang = (i / 6) * Math.PI * 2;
-    ctx.beginPath();
-    ctx.moveTo(x + Math.cos(ang) * r * 0.4, y + Math.sin(ang) * r * 0.4);
-    ctx.lineTo(x + Math.cos(ang) * r, y + Math.sin(ang) * r);
-    ctx.stroke();
-  }
-  ctx.restore();
-}
-
-function drawBattleBackground(ctx: CanvasRenderingContext2D, w: number, h: number) {
-  const grad = ctx.createLinearGradient(0, 0, 0, h);
-  grad.addColorStop(0, '#2b1320');
-  grad.addColorStop(1, '#4a1f2e');
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, w, h);
-
-  ctx.fillStyle = '#1a0e14';
-  ctx.fillRect(0, h - 40, w, 40);
-
-  ctx.globalAlpha = 0.15;
-  ctx.fillStyle = '#e63946';
-  for (let i = 0; i < 5; i++) {
-    ctx.beginPath();
-    ctx.arc((w / 5) * i + 20, h - 40, 60, Math.PI, 0);
-    ctx.fill();
-  }
-  ctx.globalAlpha = 1;
-}
-
-function drawWalkBackground(ctx: CanvasRenderingContext2D, w: number, h: number, scrollX: number) {
-  const grad = ctx.createLinearGradient(0, 0, 0, h);
-  grad.addColorStop(0, '#1b1024');
-  grad.addColorStop(1, '#2f1830');
-  ctx.fillStyle = grad;
-  ctx.fillRect(0, 0, w, h);
-
-  ctx.fillStyle = '#140b18';
-  ctx.fillRect(0, h - 30, w, 30);
-
-  ctx.strokeStyle = 'rgba(255,255,255,0.15)';
-  ctx.lineWidth = 2;
-  ctx.setLineDash([10, 14]);
-  ctx.lineDashOffset = -scrollX;
-  ctx.beginPath();
-  ctx.moveTo(0, h - 15);
-  ctx.lineTo(w, h - 15);
-  ctx.stroke();
-  ctx.setLineDash([]);
-
-  ctx.fillStyle = 'rgba(0,0,0,0.4)';
-  for (let i = 0; i < 6; i++) {
-    const bx = ((i * 140 - scrollX * 0.6) % (w + 140)) - 70;
-    ctx.fillRect(bx, h - 60, 26, 30);
-  }
-}
-
-// ───────────────────────── Utilitários ─────────────────────────
+const STORAGE_KEY = 'rsq-character';
+const MUTE_KEY = 'rsq-muted';
 
 function shuffle<T>(arr: T[]): T[] {
   const copy = arr.slice();
@@ -268,151 +96,294 @@ function qs<T extends HTMLElement>(id: string): T {
   return document.getElementById(id) as T;
 }
 
-// ───────────────────────── Motor do jogo ─────────────────────────
-
 export function initRpgGame() {
-  const creationScreen = qs<HTMLDivElement>('rpg-creation-screen');
-  const walkScreen = qs<HTMLDivElement>('rpg-walk-screen');
-  const battleScreen = qs<HTMLDivElement>('rpg-battle-screen');
-  const gameoverScreen = qs<HTMLDivElement>('rpg-gameover-screen');
+  // ── Referências de DOM ──
+  const header = qs<HTMLDivElement>('rsq-header');
+  const coverScreen = qs<HTMLDivElement>('rsq-cover-screen');
+  const creationScreen = qs<HTMLDivElement>('rsq-creation-screen');
+  const walkScreen = qs<HTMLDivElement>('rsq-walk-screen');
+  const battleScreen = qs<HTMLDivElement>('rsq-battle-screen');
+  const gameoverScreen = qs<HTMLDivElement>('rsq-gameover-screen');
 
-  const previewCanvas = qs<HTMLCanvasElement>('rpg-preview-canvas');
+  const muteBtn = qs<HTMLButtonElement>('rsq-mute-btn');
+  const muteBtnCover = qs<HTMLButtonElement>('rsq-mute-btn-cover');
+  const muteIconCanvas = qs<HTMLCanvasElement>('rsq-mute-icon');
+  const muteIconCoverCanvas = qs<HTMLCanvasElement>('rsq-mute-icon-cover');
+  const muteIconCtx = muteIconCanvas.getContext('2d')!;
+  const muteIconCoverCtx = muteIconCoverCanvas.getContext('2d')!;
+
+  const playBtn = qs<HTMLButtonElement>('rsq-play-btn');
+
+  const previewCanvas = qs<HTMLCanvasElement>('rsq-preview-canvas');
   const previewCtx = previewCanvas.getContext('2d')!;
-  const walkCanvas = qs<HTMLCanvasElement>('rpg-walk-canvas');
-  const walkCtx = walkCanvas.getContext('2d')!;
-  const battleCanvas = qs<HTMLCanvasElement>('rpg-battle-canvas');
+  const nameInput = qs<HTMLInputElement>('rsq-name-input');
+  const lookGrid = qs<HTMLDivElement>('rsq-look-grid');
+  const startBtn = qs<HTMLButtonElement>('rsq-start-btn');
+  const creationError = qs<HTMLParagraphElement>('rsq-creation-error');
+
+  const walkPlayerCanvas = qs<HTMLCanvasElement>('rsq-walk-player-canvas');
+  const walkEnemyCanvas = qs<HTMLCanvasElement>('rsq-walk-enemy-canvas');
+  const walkPlayerCard = qs<HTMLDivElement>('rsq-vs-player-card');
+  const walkEnemyCard = qs<HTMLDivElement>('rsq-vs-enemy-card');
+  const walkVsWord = qs<HTMLDivElement>('rsq-vs-label');
+  const walkCaption = qs<HTMLDivElement>('rsq-walk-caption');
+
+  const heartsEl = qs<HTMLDivElement>('rsq-hearts');
+  const roundLabel = qs<HTMLDivElement>('rsq-round-label');
+  const scoreLabel = qs<HTMLDivElement>('rsq-score-label');
+  const enemyLabel = qs<HTMLDivElement>('rsq-enemy-label');
+  const enemyHpEl = qs<HTMLDivElement>('rsq-enemy-hp');
+  const battleCanvas = qs<HTMLCanvasElement>('rsq-battle-canvas');
   const battleCtx = battleCanvas.getContext('2d')!;
+  const timerBar = qs<HTMLDivElement>('rsq-timer-bar');
+  const questionEl = qs<HTMLHeadingElement>('rsq-question');
+  const optionsContainer = qs<HTMLDivElement>('rsq-options');
+  const hintBox = qs<HTMLDivElement>('rsq-hint-box');
+  const hintText = qs<HTMLSpanElement>('rsq-hint-text');
+  const professorCanvas = qs<HTMLCanvasElement>('rsq-professor-canvas');
+  const professorCtx = professorCanvas.getContext('2d')!;
 
-  const nameInput = qs<HTMLInputElement>('rpg-name-input');
-  const startBtn = qs<HTMLButtonElement>('rpg-start-btn');
-  const creationError = qs<HTMLParagraphElement>('rpg-creation-error');
+  const itemReviveBtn = qs<HTMLButtonElement>('rsq-item-revive');
+  const itemCutBtn = qs<HTMLButtonElement>('rsq-item-cut');
+  const itemHintBtn = qs<HTMLButtonElement>('rsq-item-hint');
+  const itemReviveCtx = itemReviveBtn.querySelector('canvas')!.getContext('2d')!;
+  const itemCutCtx = itemCutBtn.querySelector('canvas')!.getContext('2d')!;
+  const itemHintCtx = itemHintBtn.querySelector('canvas')!.getContext('2d')!;
 
-  const heartsEl = qs<HTMLDivElement>('rpg-hearts');
-  const roundLabel = qs<HTMLDivElement>('rpg-round-label');
-  const scoreLabel = qs<HTMLDivElement>('rpg-score-label');
-  const enemyLabel = qs<HTMLDivElement>('rpg-enemy-label');
-  const enemyHpEl = qs<HTMLDivElement>('rpg-enemy-hp');
-  const timerBar = qs<HTMLDivElement>('rpg-timer-bar');
-  const questionEl = qs<HTMLHeadingElement>('rpg-question');
-  const optionsContainer = qs<HTMLDivElement>('rpg-options');
-  const hintBox = qs<HTMLDivElement>('rpg-hint-box');
-  const hintText = qs<HTMLSpanElement>('rpg-hint-text');
-
-  const itemReviveBtn = qs<HTMLButtonElement>('rpg-item-revive');
-  const itemCutBtn = qs<HTMLButtonElement>('rpg-item-cut');
-  const itemHintBtn = qs<HTMLButtonElement>('rpg-item-hint');
-
-  const finalScoreEl = qs<HTMLParagraphElement>('rpg-final-score');
-  const finalStatsEl = qs<HTMLParagraphElement>('rpg-final-stats');
-  const nameSubmitInput = qs<HTMLInputElement>('rpg-name-submit-input');
-  const submitScoreBtn = qs<HTMLButtonElement>('rpg-submit-score-btn');
-  const submitStatus = qs<HTMLParagraphElement>('rpg-submit-status');
-  const leaderboardList = qs<HTMLOListElement>('rpg-leaderboard-list');
-  const playAgainBtn = qs<HTMLButtonElement>('rpg-play-again-btn');
+  const vinylCanvas = qs<HTMLCanvasElement>('rsq-vinyl-canvas');
+  const vinylCtx = vinylCanvas.getContext('2d')!;
+  const finalScoreEl = qs<HTMLDivElement>('rsq-final-score');
+  const finalBossesEl = qs<HTMLDivElement>('rsq-final-bosses');
+  const finalDifficultyEl = qs<HTMLDivElement>('rsq-final-difficulty');
+  const nameSubmitInput = qs<HTMLInputElement>('rsq-name-submit-input');
+  const submitScoreBtn = qs<HTMLButtonElement>('rsq-submit-score-btn');
+  const submitStatus = qs<HTMLParagraphElement>('rsq-submit-status');
+  const leaderboardList = qs<HTMLOListElement>('rsq-leaderboard-list');
+  const playAgainBtn = qs<HTMLButtonElement>('rsq-play-again-btn');
 
   // ── Estado do personagem ──
+  const defaultLook = LOOKS_BY_GENDER.male[0];
   const character: CharacterConfig = {
     name: '',
-    instrument: 'guitarra',
+    gender: 'male',
     skin: SKIN_COLORS[0],
-    hair: HAIR_COLORS[0],
-    outfit: OUTFIT_COLORS[0],
+    look: defaultLook.id,
+    hairStyle: defaultLook.hairStyle,
+    hair: defaultLook.hair,
+    outfitStyle: defaultLook.outfitStyle,
+    outfit: defaultLook.outfit,
     difficulty: 'Iniciante',
   };
 
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || 'null');
-    if (saved) Object.assign(character, saved);
+    if (saved && typeof saved === 'object') Object.assign(character, saved);
   } catch {
     /* ignora */
   }
 
   function saveCharacter() {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(character));
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(character));
+    } catch {
+      /* ignora (localStorage indisponível) */
+    }
   }
 
-  function applySwatchSelection(selector: string, attr: string, value: string) {
-    document.querySelectorAll<HTMLElement>(selector).forEach((el) => {
-      const active = el.dataset[attr] === value;
-      el.classList.toggle('border-brand', active);
-      el.classList.toggle('scale-110', active);
-      el.classList.toggle('border-transparent', !active);
+  // ── Som: mudo ──
+  let muted = false;
+  try {
+    muted = localStorage.getItem(MUTE_KEY) === '1';
+  } catch {
+    /* ignora */
+  }
+  SoundEngine.muted = muted;
+
+  function drawMuteIcons() {
+    drawMuteIcon(muteIconCtx, muteIconCanvas.width, muteIconCanvas.height, muted);
+    drawMuteIcon(muteIconCoverCtx, muteIconCoverCanvas.width, muteIconCoverCanvas.height, muted);
+  }
+  drawMuteIcons();
+
+  function toggleMute() {
+    muted = !muted;
+    SoundEngine.setMuted(muted);
+    try {
+      localStorage.setItem(MUTE_KEY, muted ? '1' : '0');
+    } catch {
+      /* ignora */
+    }
+    drawMuteIcons();
+  }
+  muteBtn.addEventListener('click', toggleMute);
+  muteBtnCover.addEventListener('click', toggleMute);
+
+  // ── Navegação entre telas ──
+  let screenName: Screen = 'cover';
+  function showScreen(name: Screen) {
+    screenName = name;
+    header.classList.toggle('hidden', name === 'cover');
+    coverScreen.classList.toggle('hidden', name !== 'cover');
+    creationScreen.classList.toggle('hidden', name !== 'creation');
+    walkScreen.classList.toggle('hidden', name !== 'walk');
+    battleScreen.classList.toggle('hidden', name !== 'battle');
+    gameoverScreen.classList.toggle('hidden', name !== 'gameover');
+  }
+
+  // ── Sprites: preload + redraw quando as imagens terminarem de carregar ──
+  onSpritesLoaded(() => {
+    if (screenName === 'creation') renderLookGrid();
+    if (screenName === 'walk') drawWalkCards();
+    drawProfessorPortrait(professorCtx, professorCanvas.width, professorCanvas.height);
+  });
+  preloadAllSprites();
+  drawProfessorPortrait(professorCtx, professorCanvas.width, professorCanvas.height);
+  drawReviveIcon(itemReviveCtx, 32, 32);
+  drawCutIcon(itemCutCtx, 32, 32);
+  drawHintIcon(itemHintCtx, 32, 32);
+
+  // ── Tela: criação de personagem ──
+  function renderLookGrid() {
+    lookGrid.innerHTML = '';
+    getLooks(character.gender).forEach((look) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'look-swatch';
+      btn.dataset.look = look.id;
+      btn.classList.toggle('is-active', look.id === character.look);
+
+      const canvas = document.createElement('canvas');
+      canvas.width = 60;
+      canvas.height = 76;
+      canvas.style.width = '56px';
+      canvas.style.height = '70px';
+      const ctx = canvas.getContext('2d')!;
+      ctx.imageSmoothingEnabled = false;
+      drawSprite(ctx, {
+        x: canvas.width / 2,
+        groundY: canvas.height - 4,
+        scale: 1.15,
+        skin: character.skin,
+        hair: look.hair,
+        hairStyle: look.hairStyle,
+        outfit: look.outfit,
+        outfitStyle: look.outfitStyle,
+        gender: character.gender,
+        facing: 1,
+        pose: 'idle',
+        t: 0,
+      });
+
+      const label = document.createElement('span');
+      label.textContent = look.label;
+
+      btn.append(canvas, label);
+      btn.addEventListener('click', () => selectLook(look));
+      lookGrid.appendChild(btn);
     });
   }
 
   function syncCreationUI() {
     nameInput.value = character.name;
-    document.querySelectorAll<HTMLElement>('.instrument-swatch').forEach((el) => {
-      const active = el.dataset.instrument === character.instrument;
-      el.classList.toggle('border-brand', active);
-      el.classList.toggle('bg-brand/10', active);
+    document.querySelectorAll<HTMLElement>('.gender-swatch').forEach((el) => {
+      el.classList.toggle('is-active', el.dataset.gender === character.gender);
+    });
+    document.querySelectorAll<HTMLElement>('.skin-swatch').forEach((el) => {
+      el.classList.toggle('is-active', el.dataset.skin === character.skin);
     });
     document.querySelectorAll<HTMLElement>('.difficulty-swatch').forEach((el) => {
-      const active = el.dataset.difficulty === character.difficulty;
-      el.classList.toggle('border-brand', active);
-      el.classList.toggle('bg-brand/10', active);
+      el.classList.toggle('is-active', el.dataset.difficulty === character.difficulty);
     });
-    applySwatchSelection('.skin-swatch', 'skin', character.skin);
-    applySwatchSelection('.hair-swatch', 'hair', character.hair);
-    applySwatchSelection('.outfit-swatch', 'outfit', character.outfit);
+    renderLookGrid();
   }
 
-  document.querySelectorAll<HTMLElement>('.instrument-swatch').forEach((el) => {
-    el.addEventListener('click', () => {
-      character.instrument = el.dataset.instrument as InstrumentId;
-      syncCreationUI();
-    });
-  });
-  document.querySelectorAll<HTMLElement>('.difficulty-swatch').forEach((el) => {
-    el.addEventListener('click', () => {
-      character.difficulty = el.dataset.difficulty as Difficulty;
-      syncCreationUI();
-    });
+  function selectGender(gender: Gender) {
+    SoundEngine.playClick();
+    const looks = getLooks(gender);
+    const matched = looks.find((l) => l.id === character.look) || looks[0];
+    character.gender = gender;
+    character.look = matched.id;
+    character.hairStyle = matched.hairStyle;
+    character.hair = matched.hair;
+    character.outfitStyle = matched.outfitStyle;
+    character.outfit = matched.outfit;
+    syncCreationUI();
+  }
+
+  function selectSkin(color: string) {
+    SoundEngine.playClick();
+    character.skin = color;
+    syncCreationUI();
+  }
+
+  function selectLook(look: Look) {
+    SoundEngine.playClick();
+    character.look = look.id;
+    character.hairStyle = look.hairStyle;
+    character.hair = look.hair;
+    character.outfitStyle = look.outfitStyle;
+    character.outfit = look.outfit;
+    syncCreationUI();
+  }
+
+  function selectDifficulty(id: Difficulty) {
+    SoundEngine.playClick();
+    character.difficulty = id;
+    syncCreationUI();
+  }
+
+  document.querySelectorAll<HTMLElement>('.gender-swatch').forEach((el) => {
+    el.addEventListener('click', () => selectGender(el.dataset.gender as Gender));
   });
   document.querySelectorAll<HTMLElement>('.skin-swatch').forEach((el) => {
-    el.addEventListener('click', () => {
-      character.skin = el.dataset.skin!;
-      syncCreationUI();
-    });
+    el.addEventListener('click', () => selectSkin(el.dataset.skin!));
   });
-  document.querySelectorAll<HTMLElement>('.hair-swatch').forEach((el) => {
-    el.addEventListener('click', () => {
-      character.hair = el.dataset.hair!;
-      syncCreationUI();
-    });
+  document.querySelectorAll<HTMLElement>('.difficulty-swatch').forEach((el) => {
+    el.addEventListener('click', () => selectDifficulty(el.dataset.difficulty as Difficulty));
   });
-  document.querySelectorAll<HTMLElement>('.outfit-swatch').forEach((el) => {
-    el.addEventListener('click', () => {
-      character.outfit = el.dataset.outfit!;
-      syncCreationUI();
-    });
+  nameInput.addEventListener('input', () => {
+    character.name = nameInput.value.slice(0, 16);
+    creationError.classList.add('hidden');
   });
 
   syncCreationUI();
 
+  // ── Preview do personagem (loop contínuo, ativo apenas na tela de criação) ──
   let previewRaf = 0;
-  function runPreviewLoop() {
-    const start = performance.now();
-    function frame(now: number) {
-      const t = (now - start) / 1000;
-      previewCtx.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
-      drawHumanoid(previewCtx, {
-        x: 70,
-        groundY: 130,
-        scale: 2.6,
-        skin: character.skin,
-        hair: character.hair,
-        outfit: character.outfit,
-        instrument: character.instrument,
-        facing: 1,
-        pose: 'idle',
-        t,
-      });
-      previewRaf = requestAnimationFrame(frame);
-    }
-    previewRaf = requestAnimationFrame(frame);
+  let previewStart = 0;
+  function previewFrame(now: number) {
+    const t = (now - previewStart) / 1000;
+    previewCtx.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
+    previewCtx.fillStyle = '#150b1f';
+    previewCtx.fillRect(0, 0, previewCanvas.width, previewCanvas.height);
+    previewCtx.imageSmoothingEnabled = false;
+    drawSprite(previewCtx, {
+      x: 80,
+      groundY: 150,
+      scale: 1.85,
+      skin: character.skin,
+      hair: character.hair,
+      hairStyle: character.hairStyle,
+      outfit: character.outfit,
+      outfitStyle: character.outfitStyle,
+      gender: character.gender,
+      facing: 1,
+      pose: 'idle',
+      t,
+    });
+    previewRaf = requestAnimationFrame(previewFrame);
   }
-  runPreviewLoop();
+  function startPreviewLoop() {
+    cancelAnimationFrame(previewRaf);
+    previewStart = performance.now();
+    previewRaf = requestAnimationFrame(previewFrame);
+  }
+  startPreviewLoop();
+
+  playBtn.addEventListener('click', () => {
+    SoundEngine.startMusic();
+    showScreen('creation');
+  });
 
   startBtn.addEventListener('click', () => {
     character.name = nameInput.value.trim().slice(0, 16);
@@ -423,6 +394,7 @@ export function initRpgGame() {
     creationError.classList.add('hidden');
     saveCharacter();
     cancelAnimationFrame(previewRaf);
+    SoundEngine.setBattleMode(false, true);
     startRun();
   });
 
@@ -437,8 +409,7 @@ export function initRpgGame() {
   let hasRevive = false;
   let hasCut = false;
   let hasHint = false;
-  let cutUsedThisQuestion = false;
-  let hintUsedThisQuestion = false;
+  let disabledIndices: number[] = [];
 
   let questionQueue: Record<Difficulty, QuizQuestion[]> = {
     Iniciante: [],
@@ -447,33 +418,15 @@ export function initRpgGame() {
   };
   let lastQuestion: QuizQuestion | null = null;
 
-  interface Enemy {
-    name: string;
-    isBoss: boolean;
-    hp: number;
-    maxHp: number;
-    instrument: InstrumentId;
-    skin: string;
-    hair: string;
-    outfit: string;
-  }
   let enemy: Enemy | null = null;
-
   let currentQuestion: QuizQuestion | null = null;
   let timerHandle: number | null = null;
   let timeLeft = 0;
   let answered = false;
 
-  function showScreen(name: 'creation' | 'walk' | 'battle' | 'gameover') {
-    creationScreen.classList.toggle('hidden', name !== 'creation');
-    walkScreen.classList.toggle('hidden', name !== 'walk');
-    battleScreen.classList.toggle('hidden', name !== 'battle');
-    gameoverScreen.classList.toggle('hidden', name !== 'gameover');
-  }
-
   function nextQuestion(difficulty: Difficulty): QuizQuestion {
     if (questionQueue[difficulty].length === 0) {
-      let pool = shuffle(QUIZ_QUESTIONS[difficulty]);
+      const pool = shuffle(QUIZ_QUESTIONS[difficulty]);
       if (lastQuestion && pool[0] === lastQuestion && pool.length > 1) {
         [pool[0], pool[1]] = [pool[1], pool[0]];
       }
@@ -489,23 +442,34 @@ export function initRpgGame() {
     const isBoss = encounterIndex % 4 === 0;
     let name: string;
     if (isBoss) {
-      name = BOSS_NAMES[Math.floor(Math.random() * BOSS_NAMES.length)];
+      name = pickRandom(BOSS_NAMES);
     } else {
       do {
-        name = NORMAL_ENEMY_NAMES[Math.floor(Math.random() * NORMAL_ENEMY_NAMES.length)];
+        name = pickRandom(NORMAL_ENEMY_NAMES);
       } while (name === lastEnemyName && NORMAL_ENEMY_NAMES.length > 1);
     }
     lastEnemyName = name;
-    const instruments: InstrumentId[] = ['guitarra', 'baixo', 'bateria'];
     return {
       name,
       isBoss,
       hp: isBoss ? 3 : 1,
       maxHp: isBoss ? 3 : 1,
-      instrument: seededPick(instruments, name + '-i'),
+      gender: seededPick(['male', 'female'] as const, name + '-g'),
       skin: seededPick(SKIN_COLORS, name + '-s'),
       hair: seededPick(HAIR_COLORS, name + '-h'),
-      outfit: seededPick(OUTFIT_COLORS, name + '-o'),
+      hairStyle: seededPick(
+        HAIR_STYLES.map((h) => h.id),
+        name + '-hs',
+      ),
+      outfit: seededPick(
+        OUTFIT_COLOR_KEYS.map((o) => o.key),
+        name + '-o',
+      ),
+      outfitStyle: seededPick(
+        OUTFIT_STYLES.map((o) => o.id),
+        name + '-os',
+      ),
+      bossTint: isBoss ? seededPick(BOSS_TINTS, name + '-bt') : null,
     };
   }
 
@@ -525,36 +489,42 @@ export function initRpgGame() {
     const t = (now - battleStart) / 1000;
     const w = battleCanvas.width;
     const h = battleCanvas.height;
+    battleCtx.imageSmoothingEnabled = false;
     battleCtx.clearRect(0, 0, w, h);
-    drawBattleBackground(battleCtx, w, h);
+    drawStage(battleCtx, w, h, t, 0);
 
-    const groundY = h - 34;
-    drawHumanoid(battleCtx, {
+    const groundY = h - 24;
+    drawSprite(battleCtx, {
       x: 70,
       groundY,
-      scale: 2.6,
+      scale: 2.8,
       skin: character.skin,
       hair: character.hair,
+      hairStyle: character.hairStyle,
       outfit: character.outfit,
-      instrument: character.instrument,
+      outfitStyle: character.outfitStyle,
+      gender: character.gender,
       facing: 1,
       pose: battleAnim.player,
       t: battleAnim.player === 'idle' ? t : battleAnim.playerT,
     });
 
     if (enemy) {
-      drawHumanoid(battleCtx, {
+      drawSprite(battleCtx, {
         x: 250,
         groundY,
-        scale: enemy.isBoss ? 3.4 : 2.6,
+        scale: enemy.isBoss ? 3.1 : 2.8,
         skin: enemy.skin,
         hair: enemy.hair,
+        hairStyle: enemy.hairStyle,
         outfit: enemy.outfit,
-        instrument: enemy.instrument,
+        outfitStyle: enemy.outfitStyle,
+        gender: enemy.gender,
         facing: -1,
         pose: battleAnim.enemyPose,
         t: battleAnim.enemyPose === 'idle' ? t + 3 : battleAnim.enemyT,
-        crown: enemy.isBoss,
+        isBoss: enemy.isBoss,
+        bossTint: enemy.bossTint,
       });
     }
 
@@ -645,60 +615,117 @@ export function initRpgGame() {
     requestAnimationFrame(step);
   }
 
-  // ── Cena "andando" ──
-  function playWalkTransition(onDone: () => void) {
+  // ── Transição de encontro (cartão VS) ──
+  let walkTimeout: number | null = null;
+  let walkTimeoutSlam: number | null = null;
+
+  function drawWalkCards() {
+    const playerCtx = walkPlayerCanvas.getContext('2d')!;
+    playerCtx.imageSmoothingEnabled = false;
+    playerCtx.clearRect(0, 0, walkPlayerCanvas.width, walkPlayerCanvas.height);
+    drawSprite(playerCtx, {
+      x: walkPlayerCanvas.width / 2,
+      groundY: walkPlayerCanvas.height - 6,
+      scale: 1.4,
+      skin: character.skin,
+      hair: character.hair,
+      hairStyle: character.hairStyle,
+      outfit: character.outfit,
+      outfitStyle: character.outfitStyle,
+      gender: character.gender,
+      facing: 1,
+      pose: 'idle',
+      t: 0,
+    });
+
+    if (!enemy) return;
+    const enemyCtx = walkEnemyCanvas.getContext('2d')!;
+    enemyCtx.imageSmoothingEnabled = false;
+    enemyCtx.clearRect(0, 0, walkEnemyCanvas.width, walkEnemyCanvas.height);
+    drawSprite(enemyCtx, {
+      x: walkEnemyCanvas.width / 2,
+      groundY: walkEnemyCanvas.height - 6,
+      scale: enemy.isBoss ? 1.55 : 1.4,
+      skin: enemy.skin,
+      hair: enemy.hair,
+      hairStyle: enemy.hairStyle,
+      outfit: enemy.outfit,
+      outfitStyle: enemy.outfitStyle,
+      gender: enemy.gender,
+      facing: -1,
+      pose: 'idle',
+      t: 0,
+      isBoss: enemy.isBoss,
+      bossTint: enemy.bossTint,
+    });
+  }
+
+  function playEncounterTransition(onDone: () => void) {
+    if (walkTimeout) clearTimeout(walkTimeout);
+    if (walkTimeoutSlam) clearTimeout(walkTimeoutSlam);
     showScreen('walk');
-    const duration = 1100;
-    const start = performance.now();
-    function step(now: number) {
-      const elapsed = now - start;
-      const t = elapsed / 1000;
-      const w = walkCanvas.width;
-      const h = walkCanvas.height;
-      const scrollX = t * 90;
-      walkCtx.clearRect(0, 0, w, h);
-      drawWalkBackground(walkCtx, w, h, scrollX);
-      drawHumanoid(walkCtx, {
-        x: 90,
-        groundY: h - 24,
-        scale: 2.4,
-        skin: character.skin,
-        hair: character.hair,
-        outfit: character.outfit,
-        instrument: character.instrument,
-        facing: 1,
-        pose: 'walk',
-        t,
-      });
-      if (elapsed < duration) {
-        requestAnimationFrame(step);
-      } else {
-        onDone();
-      }
-    }
-    requestAnimationFrame(step);
+    walkCaption.textContent = enemy ? (enemy.isBoss ? `⚔ ${enemy.name} se aproxima!` : `${enemy.name} apareceu!`) : '';
+    [walkPlayerCard, walkEnemyCard, walkVsWord, walkCaption].forEach((el) => el.classList.remove('is-in'));
+    drawWalkCards();
+
+    walkTimeoutSlam = window.setTimeout(() => {
+      [walkPlayerCard, walkEnemyCard, walkVsWord, walkCaption].forEach((el) => el.classList.add('is-in'));
+    }, 60);
+
+    walkTimeout = window.setTimeout(() => {
+      SoundEngine.setBattleMode(!!(enemy && enemy.isBoss));
+      onDone();
+    }, 1350);
   }
 
   // ── HUD ──
   function renderHearts() {
-    heartsEl.textContent = '❤️'.repeat(hearts) + '🖤'.repeat(HEARTS_MAX - hearts);
+    heartsEl.innerHTML = '';
+    for (let i = 0; i < HEARTS_MAX; i++) {
+      const canvas = document.createElement('canvas');
+      canvas.width = 32;
+      canvas.height = 32;
+      canvas.style.width = '26px';
+      canvas.style.height = '26px';
+      drawHeartIcon(canvas.getContext('2d')!, 32, 32, i < hearts);
+      heartsEl.appendChild(canvas);
+    }
+  }
+
+  function renderEnemyHp() {
+    enemyHpEl.innerHTML = '';
+    if (!enemy) return;
+    for (let i = 0; i < enemy.maxHp; i++) {
+      const dot = document.createElement('div');
+      dot.style.width = '14px';
+      dot.style.height = '14px';
+      dot.style.borderRadius = '4px';
+      dot.style.background = i < enemy!.hp ? '#ffd23f' : 'rgba(255,255,255,0.12)';
+      enemyHpEl.appendChild(dot);
+    }
+  }
+
+  function renderItems() {
+    const cutReady = hasCut && !answered;
+    const hintReady = hasHint && !answered;
+    itemReviveBtn.classList.toggle('is-ready', hasRevive);
+    itemReviveBtn.disabled = !hasRevive;
+    itemCutBtn.classList.toggle('is-ready', cutReady);
+    itemCutBtn.disabled = !cutReady;
+    itemHintBtn.classList.toggle('is-ready', hintReady);
+    itemHintBtn.disabled = !hintReady;
   }
 
   function renderHud() {
     renderHearts();
     scoreLabel.textContent = `Pontos: ${score}`;
     const nextBossIn = 4 - ((encounterIndex - 1) % 4);
-    roundLabel.textContent = enemy?.isBoss
-      ? 'Batalha contra o Boss'
-      : `Próximo boss em ${nextBossIn}`;
+    roundLabel.textContent = enemy?.isBoss ? 'Batalha contra o Boss' : `Próximo boss em ${nextBossIn}`;
     if (enemy) {
-      enemyLabel.textContent = enemy.isBoss ? `👑 ${enemy.name}` : enemy.name;
-      enemyHpEl.textContent = '💥'.repeat(enemy.hp) + '·'.repeat(enemy.maxHp - enemy.hp);
+      enemyLabel.textContent = enemy.isBoss ? `⚔ ${enemy.name}` : enemy.name;
+      renderEnemyHp();
     }
-    itemReviveBtn.classList.toggle('hidden', !hasRevive);
-    itemCutBtn.classList.toggle('hidden', !hasCut);
-    itemHintBtn.classList.toggle('hidden', !hasHint);
-    [itemReviveBtn, itemCutBtn, itemHintBtn].forEach((b) => b.classList.toggle('flex', !b.classList.contains('hidden')));
+    renderItems();
   }
 
   function maybeGrantItems(justWon: boolean) {
@@ -708,7 +735,7 @@ export function initRpgGame() {
     if (streak >= 4 && streak % 4 === 0 && !hasCut) {
       hasCut = true;
     }
-    if (justWon && !enemy?.isBoss && !hasHint && Math.random() < 0.25) {
+    if (justWon && enemy && !enemy.isBoss && !hasHint && Math.random() < 0.3) {
       hasHint = true;
     }
   }
@@ -731,25 +758,21 @@ export function initRpgGame() {
     const total = TIME_PER_QUESTION[character.difficulty];
     const pct = Math.max(0, (timeLeft / total) * 100);
     timerBar.style.width = `${pct}%`;
-    timerBar.classList.toggle('bg-red-500', pct < 25);
-    timerBar.classList.toggle('bg-brand', pct >= 25);
+    timerBar.style.background = pct < 25 ? '#ff6b6b' : '#e63946';
   }
 
   function renderQuestion() {
     answered = false;
-    cutUsedThisQuestion = false;
-    hintUsedThisQuestion = false;
+    disabledIndices = [];
     hintBox.classList.add('hidden');
     currentQuestion = nextQuestion(character.difficulty);
     questionEl.textContent = currentQuestion.question;
     optionsContainer.innerHTML = '';
-    optionsContainer.className = 'grid grid-cols-1 sm:grid-cols-2 gap-3 mb-5';
     currentQuestion.options.forEach((opt, i) => {
       const btn = document.createElement('button');
       btn.textContent = opt;
       btn.dataset.index = String(i);
-      btn.className =
-        'rpg-option text-left px-4 py-3 rounded-xl border border-border bg-card hover:border-brand/40 transition-colors text-sm font-medium';
+      btn.className = 'rsq-option-btn';
       btn.addEventListener('click', () => handleAnswer(i));
       optionsContainer.appendChild(btn);
     });
@@ -759,30 +782,32 @@ export function initRpgGame() {
 
   itemReviveBtn.addEventListener('click', () => {
     if (!hasRevive) return;
+    SoundEngine.playItem();
     hasRevive = false;
     hearts = Math.min(HEARTS_MAX, hearts + 1);
     renderHud();
   });
 
   itemCutBtn.addEventListener('click', () => {
-    if (!hasCut || cutUsedThisQuestion || !currentQuestion) return;
+    if (!hasCut || answered || !currentQuestion) return;
+    SoundEngine.playItem();
     hasCut = false;
-    cutUsedThisQuestion = true;
-    const buttons = Array.from(optionsContainer.querySelectorAll<HTMLButtonElement>('.rpg-option'));
-    const wrongButtons = buttons.filter((b) => Number(b.dataset.index) !== currentQuestion!.correctIndex);
-    shuffle(wrongButtons)
-      .slice(0, 2)
-      .forEach((b) => {
-        b.disabled = true;
-        b.classList.add('opacity-30', 'line-through');
-      });
+    const wrongIdx = currentQuestion.options.map((_, i) => i).filter((i) => i !== currentQuestion!.correctIndex);
+    disabledIndices = shuffle(wrongIdx).slice(0, 2);
+    disabledIndices.forEach((i) => {
+      const btn = optionsContainer.querySelector<HTMLButtonElement>(`[data-index="${i}"]`);
+      if (btn) {
+        btn.disabled = true;
+        btn.classList.add('is-cut');
+      }
+    });
     renderHud();
   });
 
   itemHintBtn.addEventListener('click', () => {
-    if (!hasHint || hintUsedThisQuestion || !currentQuestion) return;
+    if (!hasHint || answered || !currentQuestion) return;
+    SoundEngine.playItem();
     hasHint = false;
-    hintUsedThisQuestion = true;
     hintText.textContent = currentQuestion.hint;
     hintBox.classList.remove('hidden');
     renderHud();
@@ -794,18 +819,20 @@ export function initRpgGame() {
     if (timerHandle) clearInterval(timerHandle);
 
     const correct = index === currentQuestion.correctIndex;
-    const buttons = Array.from(optionsContainer.querySelectorAll<HTMLButtonElement>('.rpg-option'));
+    const buttons = Array.from(optionsContainer.querySelectorAll<HTMLButtonElement>('.rsq-option-btn'));
     buttons.forEach((b) => {
       b.disabled = true;
       const i = Number(b.dataset.index);
       if (i === currentQuestion!.correctIndex) {
-        b.classList.add('!border-green-500', '!bg-green-500/10');
+        b.classList.add('is-correct');
       } else if (i === index) {
-        b.classList.add('!border-red-500', '!bg-red-500/10');
-      } else {
-        b.classList.add('opacity-40');
+        b.classList.add('is-wrong');
+      } else if (!disabledIndices.includes(i)) {
+        b.classList.add('is-faded');
       }
     });
+    renderItems();
+    SoundEngine.playHit();
 
     if (correct) {
       streak++;
@@ -821,7 +848,6 @@ export function initRpgGame() {
             score += 50;
           }
           playDefeatAnim(() => {
-            enemy = null;
             proceedToNextEncounter();
           });
         } else {
@@ -843,7 +869,6 @@ export function initRpgGame() {
           setTimeout(() => renderQuestion(), 300);
         } else {
           // Inimigo comum: errou, ele escapa e o próximo oponente aparece.
-          enemy = null;
           proceedToNextEncounter();
         }
       });
@@ -852,8 +877,8 @@ export function initRpgGame() {
 
   function proceedToNextEncounter() {
     cancelAnimationFrame(battleRaf);
-    playWalkTransition(() => {
-      enemy = buildEnemy();
+    enemy = buildEnemy();
+    playEncounterTransition(() => {
       showScreen('battle');
       startBattleLoop();
       renderQuestion();
@@ -866,12 +891,27 @@ export function initRpgGame() {
     streak = 0;
     encounterIndex = 0;
     bossesDefeated = 0;
+    lastEnemyName = '';
     hasRevive = false;
     hasCut = false;
     hasHint = false;
     questionQueue = { Iniciante: [], Intermediário: [], Avançado: [] };
     lastQuestion = null;
     proceedToNextEncounter();
+  }
+
+  // ── Fim de jogo e ranking ──
+  let gameoverRaf = 0;
+
+  function startVinylSpin() {
+    cancelAnimationFrame(gameoverRaf);
+    const start = performance.now();
+    function step(now: number) {
+      const spin = ((now - start) / 1000) * 0.35;
+      drawVinylDisc(vinylCtx, vinylCanvas.width, vinylCanvas.height, spin);
+      gameoverRaf = requestAnimationFrame(step);
+    }
+    gameoverRaf = requestAnimationFrame(step);
   }
 
   async function fetchLeaderboard(): Promise<LeaderboardEntry[] | null> {
@@ -903,29 +943,51 @@ export function initRpgGame() {
   function renderLeaderboard(entries: LeaderboardEntry[]) {
     leaderboardList.innerHTML = '';
     if (entries.length === 0) {
-      leaderboardList.innerHTML = '<li class="opacity-60 text-center">Nenhuma pontuação registrada ainda.</li>';
+      const li = document.createElement('li');
+      li.className = 'text-center text-sm py-2 opacity-60';
+      li.textContent = 'Nenhuma pontuação registrada ainda.';
+      leaderboardList.appendChild(li);
       return;
     }
     entries.slice(0, 10).forEach((e, i) => {
       const li = document.createElement('li');
-      li.className = 'flex items-center justify-between gap-2';
-      li.innerHTML = `<span>${i + 1}. ${e.name}</span><span class="font-bold">${e.score}</span>`;
+      li.className = 'rsq-leaderboard-row';
+
+      const medal = document.createElement('span');
+      medal.className = 'rsq-medal';
+      medal.style.background = MEDAL_COLORS[i] || 'rgba(255,255,255,0.08)';
+      medal.style.color = i < 3 ? '#1a0d22' : '#b9aecb';
+      medal.textContent = String(i + 1);
+
+      const name = document.createElement('span');
+      name.className = 'flex-1 text-sm font-semibold';
+      name.textContent = e.name;
+
+      const scoreEl = document.createElement('span');
+      scoreEl.className = 'font-bold text-sm';
+      scoreEl.style.color = '#ffd23f';
+      scoreEl.textContent = String(e.score);
+
+      li.append(medal, name, scoreEl);
       leaderboardList.appendChild(li);
     });
   }
 
   async function endRun() {
     cancelAnimationFrame(battleRaf);
+    SoundEngine.stopMusic();
+    SoundEngine.playGameOver(!!enemy?.isBoss);
     showScreen('gameover');
-    finalScoreEl.textContent = `Pontuação final: ${score}`;
-    finalStatsEl.textContent = `Bosses derrotados: ${bossesDefeated} · Dificuldade: ${character.difficulty}`;
+    startVinylSpin();
+    finalScoreEl.textContent = String(score);
+    finalBossesEl.textContent = String(bossesDefeated);
+    finalDifficultyEl.textContent = character.difficulty;
     nameSubmitInput.value = character.name;
     submitStatus.textContent = 'Carregando ranking…';
     leaderboardList.innerHTML = '';
     const entries = await fetchLeaderboard();
     if (entries === null) {
       submitStatus.textContent = 'Ranking global indisponível neste ambiente agora — mas sua pontuação ficou registrada aqui na tela.';
-      leaderboardList.innerHTML = '<li class="opacity-60 text-center">—</li>';
     } else {
       submitStatus.textContent = '';
       renderLeaderboard(entries);
@@ -947,8 +1009,10 @@ export function initRpgGame() {
   });
 
   playAgainBtn.addEventListener('click', () => {
+    cancelAnimationFrame(gameoverRaf);
+    SoundEngine.startMusic();
     showScreen('creation');
     syncCreationUI();
-    runPreviewLoop();
+    startPreviewLoop();
   });
 }
