@@ -2,6 +2,7 @@
 import BaseLayout from './BaseLayout.astro';
 import Rating from '../components/Rating.astro';
 import { slugifyCategory } from '../utils/slug';
+import { unsplashSrc } from '../utils/image';
 
 interface Props {
   title: string;
@@ -154,7 +155,8 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     {image && (
       <figure class="mb-10 rounded-xl overflow-hidden">
         <img
-          src={image}
+          src={unsplashSrc(image, 900)}
+          srcset={`${unsplashSrc(image, 900)} 1x, ${unsplashSrc(image, 1600)} 2x`}
           alt={imageAlt ?? title}
           width="768"
           height="432"
