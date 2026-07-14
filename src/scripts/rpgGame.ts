@@ -46,7 +46,6 @@ interface CharacterConfig {
   hair: string;
   outfitStyle: OutfitStyleId;
   outfit: OutfitColorKey;
-  difficulty: Difficulty;
 }
 
 interface Enemy {
@@ -72,11 +71,13 @@ interface LeaderboardEntry {
 }
 
 const HEARTS_MAX = 3;
-const TIME_PER_QUESTION: Record<Difficulty, number> = {
-  Iniciante: 20,
-  Intermediário: 14,
-  Avançado: 9,
-};
+// Tempo de resposta começa em QUESTION_TIME_START e cai QUESTION_TIME_STEP
+// segundos a cada resposta, até o piso QUESTION_TIME_MIN — fica mais apertado
+// aos poucos ao longo da corrida, sem depender de uma dificuldade escolhida.
+const QUESTION_TIME_START = 20;
+const QUESTION_TIME_MIN = 7;
+const QUESTION_TIME_STEP = 0.35;
+const TIER_ORDER: Difficulty[] = ['Iniciante', 'Intermediário', 'Avançado'];
 const BOSS_TINTS = ['#ffd23f', '#ff6b6b', '#8e44ad', '#3ddc84'];
 const MEDAL_COLORS = ['#ffd23f', '#c9c9d4', '#c98a4b'];
 
@@ -172,7 +173,6 @@ export function initRpgGame() {
     hair: defaultLook.hair,
     outfitStyle: defaultLook.outfitStyle,
     outfit: defaultLook.outfit,
-    difficulty: 'Iniciante',
   };
 
   try {
@@ -255,8 +255,8 @@ export function initRpgGame() {
       const canvas = document.createElement('canvas');
       canvas.width = 60;
       canvas.height = 76;
-      canvas.style.width = '56px';
-      canvas.style.height = '70px';
+      canvas.style.width = '44px';
+      canvas.style.height = '55px';
       const ctx = canvas.getContext('2d')!;
       ctx.imageSmoothingEnabled = false;
       drawSprite(ctx, {
@@ -291,9 +291,6 @@ export function initRpgGame() {
     document.querySelectorAll<HTMLElement>('.skin-swatch').forEach((el) => {
       el.classList.toggle('is-active', el.dataset.skin === character.skin);
     });
-    document.querySelectorAll<HTMLElement>('.difficulty-swatch').forEach((el) => {
-      el.classList.toggle('is-active', el.dataset.difficulty === character.difficulty);
-    });
     renderLookGrid();
   }
 
@@ -326,20 +323,11 @@ export function initRpgGame() {
     syncCreationUI();
   }
 
-  function selectDifficulty(id: Difficulty) {
-    SoundEngine.playClick();
-    character.difficulty = id;
-    syncCreationUI();
-  }
-
   document.querySelectorAll<HTMLElement>('.gender-swatch').forEach((el) => {
     el.addEventListener('click', () => selectGender(el.dataset.gender as Gender));
   });
   document.querySelectorAll<HTMLElement>('.skin-swatch').forEach((el) => {
     el.addEventListener('click', () => selectSkin(el.dataset.skin!));
-  });
-  document.querySelectorAll<HTMLElement>('.difficulty-swatch').forEach((el) => {
-    el.addEventListener('click', () => selectDifficulty(el.dataset.difficulty as Difficulty));
   });
   nameInput.addEventListener('input', () => {
     character.name = nameInput.value.slice(0, 16);
@@ -411,12 +399,15 @@ export function initRpgGame() {
   let hasHint = false;
   let disabledIndices: number[] = [];
 
-  let questionQueue: Record<Difficulty, QuizQuestion[]> = {
-    Iniciante: [],
-    Intermediário: [],
-    Avançado: [],
-  };
+  interface QueuedQuestion {
+    question: QuizQuestion;
+    tier: Difficulty;
+  }
+  let questionQueue: QueuedQuestion[] = [];
   let lastQuestion: QuizQuestion | null = null;
+  let questionsAnswered = 0;
+  let highestTier: Difficulty = 'Iniciante';
+  let questionTimeTotal = QUESTION_TIME_START;
 
   let enemy: Enemy | null = null;
   let currentQuestion: QuizQuestion | null = null;
@@ -424,17 +415,31 @@ export function initRpgGame() {
   let timeLeft = 0;
   let answered = false;
 
-  function nextQuestion(difficulty: Difficulty): QuizQuestion {
-    if (questionQueue[difficulty].length === 0) {
-      const pool = shuffle(QUIZ_QUESTIONS[difficulty]);
-      if (lastQuestion && pool[0] === lastQuestion && pool.length > 1) {
-        [pool[0], pool[1]] = [pool[1], pool[0]];
+  // Fila única, do fácil ao difícil: todas as perguntas de cada nível
+  // embaralhadas dentro do próprio nível e concatenadas em ordem crescente
+  // de dificuldade. Só reembaralha quando a fila inteira se esgota, então as
+  // perguntas não se repetem dentro de uma volta completa.
+  function buildQuestionQueue(): QueuedQuestion[] {
+    return TIER_ORDER.flatMap((tier) => shuffle(QUIZ_QUESTIONS[tier]).map((question) => ({ question, tier })));
+  }
+
+  function nextQuestion(): QuizQuestion {
+    if (questionQueue.length === 0) {
+      questionQueue = buildQuestionQueue();
+      if (lastQuestion && questionQueue[0].question === lastQuestion && questionQueue.length > 1) {
+        [questionQueue[0], questionQueue[1]] = [questionQueue[1], questionQueue[0]];
       }
-      questionQueue[difficulty] = pool;
     }
-    const q = questionQueue[difficulty].shift()!;
-    lastQuestion = q;
-    return q;
+    const entry = questionQueue.shift()!;
+    lastQuestion = entry.question;
+    if (TIER_ORDER.indexOf(entry.tier) > TIER_ORDER.indexOf(highestTier)) {
+      highestTier = entry.tier;
+    }
+    return entry.question;
+  }
+
+  function currentQuestionTime(): number {
+    return Math.max(QUESTION_TIME_MIN, QUESTION_TIME_START - questionsAnswered * QUESTION_TIME_STEP);
   }
 
   function buildEnemy(): Enemy {
@@ -742,7 +747,8 @@ export function initRpgGame() {
 
   function startTimer() {
     if (timerHandle) clearInterval(timerHandle);
-    timeLeft = TIME_PER_QUESTION[character.difficulty];
+    questionTimeTotal = currentQuestionTime();
+    timeLeft = questionTimeTotal;
     updateTimerBar();
     timerHandle = window.setInterval(() => {
       timeLeft -= 0.1;
@@ -755,8 +761,7 @@ export function initRpgGame() {
   }
 
   function updateTimerBar() {
-    const total = TIME_PER_QUESTION[character.difficulty];
-    const pct = Math.max(0, (timeLeft / total) * 100);
+    const pct = Math.max(0, (timeLeft / questionTimeTotal) * 100);
     timerBar.style.width = `${pct}%`;
     timerBar.style.background = pct < 25 ? '#ff6b6b' : '#e63946';
   }
@@ -765,7 +770,7 @@ export function initRpgGame() {
     answered = false;
     disabledIndices = [];
     hintBox.classList.add('hidden');
-    currentQuestion = nextQuestion(character.difficulty);
+    currentQuestion = nextQuestion();
     questionEl.textContent = currentQuestion.question;
     optionsContainer.innerHTML = '';
     currentQuestion.options.forEach((opt, i) => {
@@ -817,6 +822,7 @@ export function initRpgGame() {
     if (answered || !currentQuestion) return;
     answered = true;
     if (timerHandle) clearInterval(timerHandle);
+    questionsAnswered++;
 
     const correct = index === currentQuestion.correctIndex;
     const buttons = Array.from(optionsContainer.querySelectorAll<HTMLButtonElement>('.rsq-option-btn'));
@@ -895,8 +901,10 @@ export function initRpgGame() {
     hasRevive = false;
     hasCut = false;
     hasHint = false;
-    questionQueue = { Iniciante: [], Intermediário: [], Avançado: [] };
+    questionQueue = [];
     lastQuestion = null;
+    questionsAnswered = 0;
+    highestTier = 'Iniciante';
     proceedToNextEncounter();
   }
 
@@ -981,7 +989,7 @@ export function initRpgGame() {
     startVinylSpin();
     finalScoreEl.textContent = String(score);
     finalBossesEl.textContent = String(bossesDefeated);
-    finalDifficultyEl.textContent = character.difficulty;
+    finalDifficultyEl.textContent = highestTier;
     nameSubmitInput.value = character.name;
     submitStatus.textContent = 'Carregando ranking…';
     leaderboardList.innerHTML = '';
@@ -998,7 +1006,7 @@ export function initRpgGame() {
     const name = nameSubmitInput.value.trim().slice(0, 16) || character.name || 'Anônimo';
     submitStatus.textContent = 'Enviando…';
     submitScoreBtn.disabled = true;
-    const entries = await submitScore({ name, score, bosses: bossesDefeated, difficulty: character.difficulty });
+    const entries = await submitScore({ name, score, bosses: bossesDefeated, difficulty: highestTier });
     submitScoreBtn.disabled = false;
     if (entries === null) {
       submitStatus.textContent = 'Não foi possível enviar agora. Tente de novo mais tarde.';
