@@ -1,0 +1,35 @@
+---
+interface Props {
+  photo: string;
+  alt: string;
+  size?: number;
+  badge?: boolean;
+}
+
+const { photo, alt, size = 80, badge = true } = Astro.props;
+const badgeSize = Math.round(size * 0.36);
+---
+
+<span class="relative inline-block flex-shrink-0" style={`width:${size}px;height:${size}px;`}>
+  <img
+    src={photo}
+    alt={alt}
+    width={size}
+    height={size}
+    class="w-full h-full rounded-full object-cover border border-border"
+  />
+  {badge && (
+    <span
+      class="absolute bottom-0 right-0 flex items-center justify-center rounded-full bg-brand ring-2 ring-surface"
+      style={`width:${badgeSize}px;height:${badgeSize}px;`}
+      aria-hidden="true"
+      title="Sonar Musical"
+    >
+      <svg width={Math.round(badgeSize * 0.55)} height={Math.round(badgeSize * 0.55)} viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round">
+        <path d="M9 18V5l12-2v13" />
+        <circle cx="6" cy="18" r="3" />
+        <circle cx="18" cy="16" r="3" />
+      </svg>
+    </span>
+  )}
+</span>

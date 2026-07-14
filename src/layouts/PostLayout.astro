@@ -1,8 +1,10 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Rating from '../components/Rating.astro';
+import AuthorBio from '../components/AuthorBio.astro';
 import { slugifyCategory } from '../utils/slug';
 import { unsplashSrc } from '../utils/image';
+import { getAuthorByName } from '../data/authors';
 
 interface Props {
   title: string;
@@ -52,13 +54,24 @@ const absoluteImage = image
 
 const canonicalPostUrl = new URL(Astro.url.pathname, Astro.site).href;
 
+const authorRecord = getAuthorByName(author);
+const authorSchema = authorRecord
+  ? {
+      '@type': 'Person',
+      name: authorRecord.name,
+      url: `https://sonarmusical.com.br/autor/${authorRecord.slug}/`,
+      image: `https://sonarmusical.com.br${authorRecord.photo}`,
+      ...(authorRecord.sameAs.length > 0 && { sameAs: authorRecord.sameAs }),
+    }
+  : { '@type': 'Organization', name: author };
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': rating ? 'Review' : 'Article',
   headline: title,
   description,
   inLanguage: 'pt-BR',
-  author: { '@type': 'Organization', name: author },
+  author: authorSchema,
   datePublished: pubDate.toISOString(),
   ...(updatedDate && { dateModified: updatedDate.toISOString() }),
   publisher: {
@@ -140,7 +153,11 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
 
     <!-- Metadados -->
     <div class="flex flex-wrap items-center gap-4 text-sm text-muted mb-8 pb-8 border-b border-border">
-      <span>Por <strong class="text-foreground">{author}</strong></span>
+      {authorRecord ? (
+        <AuthorBio author={authorRecord} />
+      ) : (
+        <span>Por <strong class="text-foreground">{author}</strong></span>
+      )}
       <time datetime={pubDate.toISOString()}>
         {formattedDate}
       </time>

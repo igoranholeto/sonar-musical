@@ -1,6 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Newsletter from '../components/Newsletter.astro';
+import AuthorAvatar from '../components/AuthorAvatar.astro';
+import { authors } from '../data/authors';
+
+const igor = authors['igor-anholeto'];
 
 const aboutSchema = {
   '@context': 'https://schema.org',
@@ -47,6 +51,22 @@ const aboutSchema = {
       <p class="text-foreground/80 leading-relaxed mt-4">
         Cada análise que publicamos é escrita por quem realmente toca. Vivemos com os equipamentos, usamos em situações reais e entregamos um veredicto honesto — incluindo o que não funciona e para quem o produto não é indicado.
       </p>
+    </section>
+
+    <!-- Autor -->
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-6">Quem Escreve Aqui</h2>
+      <a
+        href={`/autor/${igor.slug}/`}
+        class="flex flex-col sm:flex-row items-start sm:items-center gap-5 p-6 bg-card border border-border rounded-2xl hover:border-brand/40 transition-colors"
+      >
+        <AuthorAvatar photo={igor.photo} alt={igor.name} size={80} />
+        <div>
+          <h3 class="font-bold text-lg">{igor.name}</h3>
+          <p class="text-brand text-sm font-semibold mb-2">{igor.role}</p>
+          <p class="text-sm text-muted leading-relaxed">{igor.shortBio}</p>
+        </div>
+      </a>
     </section>
 
     <!-- O que cobrimos -->

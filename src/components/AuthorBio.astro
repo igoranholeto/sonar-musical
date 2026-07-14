@@ -1,0 +1,20 @@
+---
+import type { Author } from '../data/authors';
+import AuthorAvatar from './AuthorAvatar.astro';
+
+interface Props {
+  author: Author;
+}
+
+const { author } = Astro.props;
+---
+
+<a
+  href={`/autor/${author.slug}/`}
+  class="group inline-flex items-center gap-2.5 hover:opacity-90 transition-opacity"
+>
+  <AuthorAvatar photo={author.photo} alt={author.name} size={36} badge={false} />
+  <span>
+    Por <strong class="text-foreground group-hover:text-brand transition-colors">{author.name}</strong>
+  </span>
+</a>

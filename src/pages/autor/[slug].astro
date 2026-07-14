@@ -1,0 +1,84 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import AuthorAvatar from '../../components/AuthorAvatar.astro';
+import { authors } from '../../data/authors';
+
+export async function getStaticPaths() {
+  return Object.values(authors).map((author) => ({
+    params: { slug: author.slug },
+    props: { author },
+  }));
+}
+
+const { author } = Astro.props;
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter((p) => p.data.author === author.name)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const personSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  mainEntity: {
+    '@type': 'Person',
+    name: author.name,
+    jobTitle: author.role,
+    description: author.bio,
+    image: `https://sonarmusical.com.br${author.photo}`,
+    url: `https://sonarmusical.com.br/autor/${author.slug}/`,
+    ...(author.sameAs.length > 0 && { sameAs: author.sameAs }),
+    worksFor: {
+      '@type': 'Organization',
+      name: 'Sonar Musical',
+      url: 'https://sonarmusical.com.br',
+    },
+  },
+};
+---
+
+<BaseLayout
+  title={author.name}
+  description={author.shortBio}
+  schema={personSchema}
+>
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
+      <a href="/" class="hover:text-foreground transition-colors">Início</a>
+      <span aria-hidden="true">/</span>
+      <span class="text-foreground" aria-current="page">{author.name}</span>
+    </nav>
+
+    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-6 mb-10">
+      <AuthorAvatar photo={author.photo} alt={author.name} size={112} />
+      <div>
+        <h1 class="text-3xl font-black mb-1">{author.name}</h1>
+        <p class="text-brand font-semibold text-sm mb-3">{author.role}</p>
+        <p class="text-muted leading-relaxed">{author.bio}</p>
+      </div>
+    </div>
+
+    {posts.length > 0 && (
+      <section class="mt-16">
+        <h2 class="text-xl font-bold mb-6">Análises de {author.name}</h2>
+        <div class="grid sm:grid-cols-2 gap-6">
+          {posts.map((post) => (
+            <PostCard
+              title={post.data.title}
+              description={post.data.description}
+              slug={post.id}
+              pubDate={post.data.pubDate}
+              category={post.data.category}
+              image={post.data.image}
+              imageAlt={post.data.imageAlt}
+              rating={post.data.rating}
+              featured={post.data.featured}
+            />
+          ))}
+        </div>
+      </section>
+    )}
+  </div>
+</BaseLayout>
