@@ -204,16 +204,32 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
       </li>
 
       <li>
-        <a
-          href="/blog"
-          aria-current={isAnalisesActive ? 'page' : undefined}
-          class={`block px-4 py-2.5 rounded-lg text-sm font-medium transition-colors ${
+        <div
+          class={`flex items-center rounded-lg transition-colors ${
             isAnalisesActive ? 'text-brand bg-brand/10' : 'text-muted hover:text-foreground hover:bg-foreground/5'
           }`}
         >
-          Análises
-        </a>
-        <ul class="mt-1 ml-3 flex flex-col gap-0.5 border-l border-border pl-3" role="list">
+          <a
+            href="/blog"
+            aria-current={isAnalisesActive ? 'page' : undefined}
+            class="flex-1 block pl-4 pr-2 py-2.5 text-sm font-medium"
+          >
+            Análises
+          </a>
+          <button
+            id="mobile-analises-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-analises-submenu"
+            aria-label="Ver categorias de análises"
+            class="pr-3 py-2.5"
+          >
+            <svg id="mobile-analises-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+        </div>
+        <ul id="mobile-analises-submenu" class="hidden mt-1 ml-3 flex flex-col gap-0.5 border-l border-border pl-3" role="list">
           {analiseCategorias.map((cat) => (
             <li>
               <a
@@ -302,5 +318,16 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
 
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeDropdown();
+  });
+
+  // Accordion de categorias "Análises" no menu mobile
+  const mobileAnalisesBtn = document.getElementById('mobile-analises-btn')!;
+  const mobileAnalisesSubmenu = document.getElementById('mobile-analises-submenu')!;
+  const mobileAnalisesIcon = document.getElementById('mobile-analises-icon')!;
+
+  mobileAnalisesBtn.addEventListener('click', () => {
+    const isOpen = mobileAnalisesSubmenu.classList.toggle('hidden') === false;
+    mobileAnalisesBtn.setAttribute('aria-expanded', String(isOpen));
+    mobileAnalisesIcon.classList.toggle('rotate-180', isOpen);
   });
 </script>
