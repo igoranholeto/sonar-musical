@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Guitarra desafinada é o inimigo silencioso de qualquer guitarrista — você pratica, aprende os acordes, mas o resultado soa errado e você não sabe por quê. A resposta quase sempre é: afinação. Este guia cobre todos os métodos para afinar a guitarra, do mais simples ao mais preciso.
 
@@ -115,18 +116,27 @@ Além do Standard E, as mais populares no Brasil:
 
 **Open G:** afinação de slide e blues — D-G-D-G-B-D. Permite tocar acordes inteiros sem pressionar nenhum traste.
 
-## Perguntas frequentes sobre afinação
-
-**Com que frequência devo afinar a guitarra?**
-Antes de cada sessão de prática, sem exceção. Se você toca por mais de uma hora, re-afine no intervalo.
-
-**É normal a guitarra desafinar durante o show?**
-Sim — temperatura, uso intenso e vibração do palco afetam a afinação. Guitarristas profissionais usam múltiplos pedais afinadores e geralmente têm um técnico que checa entre músicas.
-
-**Posso afinar a guitarra usando o piano ou teclado?**
-Sim. A nota Lá central do piano (Lá 3 ou A4) vibra a 440 Hz — a mesma referência dos afinadores modernos. Afine a 5ª corda da guitarra até combinar com esse Lá.
-
-**Que nota começa a afinar: a mais grossa ou a mais fina?**
-Sempre comece pela 6ª corda (mais grossa, Mi grave) e vá para a mais fina. Isso evita que cordas afinadas antes se desafinem com a tensão das seguintes.
+<FAQ items={[
+  {
+    question: "Com que frequência devo afinar a guitarra?",
+    answer: "Antes de cada sessão de prática, sem exceção. Se você toca por mais de uma hora, re-afine no intervalo."
+  },
+  {
+    question: "É normal a guitarra desafinar durante o show?",
+    answer: "Sim — temperatura, uso intenso e vibração do palco afetam a afinação. Guitarristas profissionais usam múltiplos pedais afinadores e geralmente têm um técnico que checa entre músicas."
+  },
+  {
+    question: "Posso afinar a guitarra usando o piano ou teclado?",
+    answer: "Sim. A nota Lá central do piano (Lá 3 ou A4) vibra a 440 Hz — a mesma referência dos afinadores modernos. Afine a 5ª corda da guitarra até combinar com esse Lá."
+  },
+  {
+    question: "Que nota começa a afinar: a mais grossa ou a mais fina?",
+    answer: "Sempre comece pela 6ª corda (mais grossa, Mi grave) e vá para a mais fina. Isso evita que cordas afinadas antes se desafinem com a tensão das seguintes."
+  },
+  {
+    question: "Por que minha guitarra desafina rápido mesmo depois de afinada?",
+    answer: "As causas mais comuns são cordas novas ainda assentando (2–5 dias), tarraxas de baixa qualidade com folga, ou a porca (nut) mal regulada prendendo a corda de forma irregular — veja a seção acima com o diagnóstico completo de cada causa."
+  }
+]} />
 
 Pronto para afinar agora? Abra o [afinador online gratuito](/afinador) e comece. Se está iniciando na guitarra, veja também nosso guia das [melhores guitarras elétricas para iniciantes](/blog/melhores-guitarras-eletricas-para-iniciantes-2026).

@@ -1,0 +1,32 @@
+---
+interface TimelineItem {
+  year: string;
+  title: string;
+  text: string;
+}
+
+interface Props {
+  items: TimelineItem[];
+}
+
+const { items } = Astro.props;
+---
+
+<div class="my-10 relative border-l-2 border-border pl-8 space-y-9">
+  {items.map((item) => (
+    <div class="relative">
+      <span class="absolute -left-[2.6rem] top-0.5 flex h-5 w-5 items-center justify-center rounded-full bg-brand ring-4 ring-surface" aria-hidden="true"></span>
+      <p class="text-xs font-bold uppercase tracking-wider text-brand mb-1">{item.year}</p>
+      <h3 class="text-base font-bold text-foreground mb-1.5">{item.title}</h3>
+      <div class="text-sm text-muted leading-relaxed timeline-text" set:html={item.text} />
+    </div>
+  ))}
+</div>
+
+<style>
+  .timeline-text :global(a) {
+    color: var(--color-brand);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

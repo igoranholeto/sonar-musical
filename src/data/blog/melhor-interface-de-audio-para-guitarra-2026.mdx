@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Você tem uma guitarra boa, um amplificador decente, mas quando tenta gravar no computador o som sai fraco, com ruído e latência que torna impossível tocar junto com a gravação. O problema é a interface de áudio — ou a falta dela.
 
@@ -165,3 +166,26 @@ Para quem quer gravar guitarra com processamento de amp emulado (sem amplificado
 | Quer bundle com software NI | Komplete Audio 2 |
 
 Para completar o setup de home studio, considere também uma [pedaleira multi-efeitos](/blog/melhor-pedaleira-de-guitarra-2026) como alternativa ao amplificador físico — as pedaleiras premium de hoje têm saída USB que funciona diretamente como interface de áudio, eliminando a necessidade de comprar interface separada. E lembre de afinar com o [afinador online](/afinador) antes de gravar.
+
+<FAQ items={[
+  {
+    question: "Preciso de amplificador para gravar guitarra com interface de áudio?",
+    answer: "Não necessariamente. Você pode gravar em linha (DI), plugando a guitarra direto na entrada de instrumento da interface e usando um simulador de amplificador em software (como Guitar Rig ou Amplitube) para dar o timbre. É o método mais comum em home studio — sem microfone, sem vizinho reclamando do volume."
+  },
+  {
+    question: "Dá para gravar guitarra só com o microfone do notebook?",
+    answer: "Não recomendamos. A entrada de microfone de um notebook não foi projetada para instrumentos: tem alta latência, ruído de fundo alto e ganho insuficiente. Mesmo uma interface de entrada como a Scarlett Solo já resolve todos esses problemas por menos de R$ 900."
+  },
+  {
+    question: "O que é entrada Hi-Z e por que preciso dela?",
+    answer: "Hi-Z (alta impedância) é o tipo de entrada projetado especificamente para instrumentos com captação passiva, como a guitarra elétrica. Ligar a guitarra numa entrada comum de linha ou microfone resulta em som fraco e sem definição — verifique se a interface tem uma entrada de instrumento (1/4\") dedicada antes de comprar."
+  },
+  {
+    question: "Uma pedaleira substitui a interface de áudio para gravar?",
+    answer: "Sim, na maioria dos casos. Pedaleiras premium como as da nossa <a href=\"/blog/melhor-pedaleira-de-guitarra-2026\">lista de melhores pedaleiras</a> têm saída USB que funciona como interface de áudio completa — processa o efeito e manda o sinal já pronto pro computador, sem precisar comprar equipamento separado."
+  },
+  {
+    question: "Quantas entradas de interface eu preciso para gravar guitarra sozinho?",
+    answer: "Uma ou duas entradas resolvem para a maioria dos guitarristas — uma para a guitarra e, opcionalmente, outra para microfone de vocal. Só vale investir em interfaces com mais entradas se você grava banda completa ou várias fontes ao mesmo tempo."
+  }
+]} />

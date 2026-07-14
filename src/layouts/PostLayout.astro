@@ -1,6 +1,7 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Rating from '../components/Rating.astro';
+import { slugifyCategory } from '../utils/slug';
 
 interface Props {
   title: string;
@@ -44,6 +45,12 @@ const formattedUpdated = updatedDate?.toLocaleDateString('pt-BR', {
   day: 'numeric',
 });
 
+const absoluteImage = image
+  ? (/^https?:\/\//.test(image) ? image : `https://sonarmusical.com.br${image}`)
+  : undefined;
+
+const canonicalPostUrl = new URL(Astro.url.pathname, Astro.site).href;
+
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': rating ? 'Review' : 'Article',
@@ -58,8 +65,13 @@ const articleSchema = {
     name: 'Sonar Musical',
     url: 'https://sonarmusical.com.br',
   },
-  ...(image && { image: `https://sonarmusical.com.br${image}` }),
+  ...(absoluteImage && { image: absoluteImage }),
   ...(rating && {
+    itemReviewed: {
+      '@type': 'Product',
+      name: title,
+      ...(absoluteImage && { image: absoluteImage }),
+    },
     reviewRating: {
       '@type': 'Rating',
       ratingValue: rating,
@@ -68,6 +80,18 @@ const articleSchema = {
     },
   }),
 };
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sonarmusical.com.br/blog' },
+    { '@type': 'ListItem', position: 3, name: title, item: canonicalPostUrl },
+  ],
+};
+
+const pageSchema = [articleSchema, breadcrumbSchema];
 
 const categoryColors: Record<string, string> = {
   Guitarras: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
@@ -87,7 +111,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   type="article"
   pubDate={pubDate}
   author={author}
-  schema={articleSchema}
+  schema={pageSchema}
 >
   <article class="max-w-3xl mx-auto px-4 py-16">
     <!-- Breadcrumb -->
@@ -102,7 +126,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     <!-- Categoria + Avaliação -->
     <div class="flex items-center gap-3 mb-4">
       <a
-        href={`/blog?categoria=${encodeURIComponent(category)}`}
+        href={`/categoria/${slugifyCategory(category)}/`}
         class={`text-xs font-semibold uppercase tracking-wider px-3 py-1 rounded-full ${badgeClass}`}
       >
         {category}

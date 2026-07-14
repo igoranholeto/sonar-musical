@@ -1,0 +1,31 @@
+---
+interface Props {
+  label?: string;
+}
+
+const { label = 'Resposta rápida' } = Astro.props;
+---
+
+<div class="my-8 rounded-xl border-l-4 border-brand bg-elevated px-6 py-5 quick-answer">
+  <p class="text-xs font-bold uppercase tracking-wider text-brand mb-2">{label}</p>
+  <div class="text-[0.95rem] text-foreground leading-relaxed quick-answer__body">
+    <slot />
+  </div>
+</div>
+
+<style>
+  .quick-answer__body :global(strong) {
+    color: var(--color-brand);
+  }
+  .quick-answer__body :global(a) {
+    color: var(--color-brand);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .quick-answer__body :global(p) {
+    margin: 0;
+  }
+  .quick-answer__body :global(p + p) {
+    margin-top: 0.6rem;
+  }
+</style>

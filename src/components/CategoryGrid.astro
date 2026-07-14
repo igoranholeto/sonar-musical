@@ -1,4 +1,6 @@
 ---
+import { slugifyCategory } from '../utils/slug';
+
 const categories = [
   {
     name: 'Guitarras',
@@ -53,7 +55,7 @@ const categories = [
   <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
     {categories.map(({ name, description, icon, color, badge }) => (
       <a
-        href={`/blog?categoria=${encodeURIComponent(name)}`}
+        href={`/categoria/${slugifyCategory(name)}/`}
         class={`group flex flex-col items-center text-center p-5 rounded-xl border bg-gradient-to-b transition-all duration-300 ${color}`}
       >
         <span class="text-3xl mb-3" aria-hidden="true">{icon}</span>

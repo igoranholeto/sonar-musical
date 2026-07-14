@@ -12,6 +12,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 **Veredito rápido:** A Squier Classic Vibe '60s Stratocaster é a melhor guitarra que você pode comprar abaixo de R$ 3.000. As captações Alnico têm caráter real de vintage, a construção supera o preço em muito e a tocabilidade deixa guitarras do dobro do preço envergonhadas. Os pontos fracos existem — e vou explicá-los — mas não justificam comprar outra coisa nessa faixa.
 
@@ -131,3 +132,26 @@ Depois de comprar, calibre com o [afinador online gratuito](/afinador) e troque 
   destaques={["Captações Alnico — caráter vintage autêntico pelo preço", "Construção inspirada nos anos 60 com madeiras sólidas", "Qualidade muito acima da média da faixa de preço"]}
   url="https://meli.la/2Zao8tQ"
 />
+
+<FAQ items={[
+  {
+    question: "A Squier Classic Vibe precisa de upgrades para soar bem?",
+    answer: "Não. Ela funciona muito bem de fábrica para a grande maioria dos guitarristas, e investir muito em upgrades numa guitarra dessa faixa de preço tem retorno decrescente. Se for investir em algo, priorize um setup profissional com nivelamento de fretas antes de trocar componentes."
+  },
+  {
+    question: "Squier Classic Vibe serve para tocar metal?",
+    answer: "Não é a escolha ideal. As captações single-coil combinadas com alta distorção captam ruído (hum) perceptível, e o tremolo vintage de 6 parafusos não é feito para mergulhos profundos e uso intenso de alavanca, comuns no metal."
+  },
+  {
+    question: "Qual a diferença entre a Squier Classic Vibe e a Fender Player Stratocaster?",
+    answer: "A Player Strat custa mais do dobro e tem captações Player Series Alnico 5 ligeiramente mais consistentes e com mais output. A diferença é real, mas para a maioria dos guitarristas intermediários não justifica o dobro do preço."
+  },
+  {
+    question: "A Squier Classic Vibe é só para iniciantes, ou serve para quem já tem experiência?",
+    answer: "Serve bem para iniciantes avançados e intermediários também — o caráter vintage genuíno das captações Alnico é algo que muita guitarra de preço maior não entrega. Só fica limitada quando comparada lado a lado com modelos americanos de alto padrão, como a American Professional II."
+  },
+  {
+    question: "Vale a pena trocar a captação bridge da Squier Classic Vibe?",
+    answer: "Vale, se você já sabe que quer mais output ou um caráter sonoro diferente. Trocar por uma Seymour Duncan SSL-1 ou Fender CS Fat 50s eleva o som para perto do nível de uma guitarra americana, por um investimento de R$ 300–500."
+  }
+]} />

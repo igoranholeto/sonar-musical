@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Trocar as captações é a modificação que mais transforma o som de uma guitarra — mais do que qualquer pedal ou configuração de amplificador. Mas a escolha entre passiva e ativa confunde muitos guitarristas. Este guia explica tudo o que você precisa saber para tomar a decisão certa.
 
@@ -137,3 +138,26 @@ O custo da instalação profissional é R$ 80–150 em qualquer luthier. As capt
 | Country e surf | Fender V-Mod II ou Texas Special |
 
 Para guitarristas de metal com guitarras de 7 cordas, veja nosso guia das [melhores guitarras de 7 cordas](/blog/melhor-guitarra-7-cordas-2026) — a maioria já vem com captações adequadas para metal. E para qualquer guitarra, afine sempre com nosso [afinador online](/afinador) antes de começar.
+
+<FAQ items={[
+  {
+    question: "Vale a pena trocar as captações da minha guitarra?",
+    answer: "Vale quando sua guitarra tem captações genéricas sem caráter (comum em instrumentos de entrada) e você já sabe exatamente que som está buscando. Não vale a pena se você está começando agora — aprenda primeiro com o que tem, ou se o problema real está no amplificador ou na técnica, não na captação."
+  },
+  {
+    question: "Captação ativa gasta bateria mesmo com a guitarra guardada?",
+    answer: "Sim, se o cabo ficar conectado no jack. A maioria das captações ativas usa um jack \"stereo\" que só fecha o circuito da bateria quando o plugue está inserido — por isso a regra é sempre desconectar o cabo quando a guitarra vai ficar guardada, mesmo por um dia."
+  },
+  {
+    question: "Como sei que a bateria da captação ativa está acabando?",
+    answer: "O sinal perde força e clareza de forma perceptível — fica mais fraco e abafado antes de sumir completamente. Troque a bateria de 9V preventivamente a cada 6–12 meses de uso regular, ou assim que notar queda de volume."
+  },
+  {
+    question: "Dá para trocar de captação ativa para passiva na mesma guitarra?",
+    answer: "Sim, mas geralmente exige trocar a eletrônica interna também — captações ativas usam potenciômetros de valor diferente (25k) das passivas (250k ou 500k), além do compartimento de bateria que fica sem uso. Um luthier resolve isso numa única visita."
+  },
+  {
+    question: "Quanto custa trocar as captações de uma guitarra?",
+    answer: "A instalação profissional custa R$ 80–150 em qualquer luthier. As captações em si variam de R$ 300 (Seymour Duncan básico) a R$ 900+ (EMG, Fishman Fluence), dependendo da marca e do modelo escolhido."
+  }
+]} />

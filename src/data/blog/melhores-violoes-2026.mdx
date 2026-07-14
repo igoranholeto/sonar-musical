@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 O violão é o instrumento mais democrático do Brasil — presente em todo tipo de música, de samba a metal acústico. Mas escolher o violão certo é mais difícil do que parece: preço, formato do corpo, tipo de madeira e qualidade da construção afetam diretamente como você vai tocar e evoluir. Este guia avalia 7 violões de 2026 organizados por faixa de preço.
 
@@ -191,3 +192,26 @@ O GA é o formato Taylor que serve para tudo: strumming, fingerpicking, acompanh
 | Toca ao vivo regularmente | Martin D-10E ou Taylor 214ce |
 
 Se ainda está decidindo entre violão e guitarra elétrica, leia nosso guia [violão ou guitarra: por onde começar](/blog/violao-ou-guitarra-por-onde-comecar). E depois de comprar o instrumento, use o [afinador online](/afinador) para manter tudo em dia.
+
+<FAQ items={[
+  {
+    question: "Violão de nylon ou de aço: qual escolher para começar?",
+    answer: "Depende do estilo: nylon tem cordas mais macias, mais fáceis para os dedos e é o padrão para MPB, samba e bossa nova. Aço tem som mais brilhante e projetado, usado em sertanejo, folk e rock — e é o tipo de violão coberto nesta lista. Se seu estilo é mais acústico e melódico, considere também um nylon."
+  },
+  {
+    question: "Posso trocar cordas de nylon por cordas de aço no mesmo violão?",
+    answer: "Não, nunca. Violões de nylon são construídos para suportar a tensão baixa dessas cordas — colocar cordas de aço, que têm tensão muito maior, pode empenar ou até rachar o braço e o tampo. O oposto (nylon num violão de aço) também não funciona bem: o som fica sem projeção."
+  },
+  {
+    question: "Topo sólido faz tanta diferença assim no som?",
+    answer: "Sim, e a diferença aumenta com o tempo. Um topo sólido é uma peça única de madeira que vibra livremente e melhora sonoramente conforme as fibras \"abrem\" com o uso — um topo laminado (madeira prensada) não tem essa evolução. A diferença fica perceptível a partir de violões na faixa de R$ 1.200."
+  },
+  {
+    question: "Violão com captador embutido é melhor que microfone para tocar ao vivo?",
+    answer: "Para a maioria dos palcos, sim — elimina problemas de feedback e posicionamento que um microfone externo tem. Sistemas como o Fishman MX-T ou o Taylor Expression System 2 captam a vibração da própria madeira, entregando um som mais fiel ao violão do que microfones genéricos amplificados."
+  },
+  {
+    question: "Violão de criança precisa ser de tamanho reduzido?",
+    answer: "Sim. Para crianças de 2 a 5 anos, o recomendado é 1/4 do tamanho padrão; de 5 a 8 anos, 1/2; de 8 a 12 anos, 3/4. Um violão de tamanho adulto (4/4) para uma criança pequena dificulta a postura e a formação de acordes, o que desanima o aprendizado logo no início."
+  }
+]} />
