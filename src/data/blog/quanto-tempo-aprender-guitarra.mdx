@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 A pergunta mais feita por quem quer aprender guitarra: "Quanto tempo vai levar?" A resposta honesta depende de quanto você pratica, como pratica e o que você define como "aprender". Este guia vai sem enrolação.
 
@@ -133,19 +134,28 @@ Parece óbvio — mas muita gente desiste porque pratica exercícios técnicos q
 
 **Comparação com guitarristas famosos:** o YouTube cheio de virtuosos fazendo coisas impossíveis é inspirador e desanimador ao mesmo tempo. Lembre: você está vendo o resultado de anos de prática dedicada.
 
-## Perguntas frequentes
-
-**Tenho 30/40/50 anos — é tarde para começar?**  
-Não existe "tarde" para aprender guitarra. Adultos têm vantagens que crianças não têm: autodisciplina, entendimento de padrões, capacidade de praticar com foco. A progressão é um pouco mais lenta, mas o nível alcançável é o mesmo.
-
-**Preciso aprender violão antes da guitarra elétrica?**  
-Não. Veja nosso guia completo: [violão ou guitarra: por onde começar](/blog/violao-ou-guitarra-por-onde-comecar).
-
-**Devo aprender teoria musical?**  
-Não é obrigatório para tocar, mas acelera muito o aprendizado depois do nível básico. Entender por que as escalas funcionam onde funcionam muda a forma como você improvisa.
-
-**Qual guitarra é mais fácil para iniciantes — elétrica ou acústica?**  
-A guitarra elétrica é mais fácil mecanicamente (cordas mais finas, ação mais baixa). O violão acústico exige mais força dos dedos mas não precisa de amplificador. Ambas servem para começar.
+<FAQ items={[
+  {
+    question: "Tenho 30/40/50 anos — é tarde para começar?",
+    answer: "Não existe \"tarde\" para aprender guitarra. Adultos têm vantagens que crianças não têm: autodisciplina, entendimento de padrões, capacidade de praticar com foco. A progressão é um pouco mais lenta, mas o nível alcançável é o mesmo."
+  },
+  {
+    question: "Preciso aprender violão antes da guitarra elétrica?",
+    answer: "Não. Veja nosso guia completo: <a href=\"/blog/violao-ou-guitarra-por-onde-comecar\">violão ou guitarra: por onde começar</a>."
+  },
+  {
+    question: "Devo aprender teoria musical?",
+    answer: "Não é obrigatório para tocar, mas acelera muito o aprendizado depois do nível básico. Entender por que as escalas funcionam onde funcionam muda a forma como você improvisa."
+  },
+  {
+    question: "Qual guitarra é mais fácil para iniciantes — elétrica ou acústica?",
+    answer: "A guitarra elétrica é mais fácil mecanicamente (cordas mais finas, ação mais baixa). O violão acústico exige mais força dos dedos mas não precisa de amplificador. Ambas servem para começar."
+  },
+  {
+    question: "Preciso de aula particular ou dá para aprender sozinho com vídeos?",
+    answer: "Dá para aprender sozinho, e muita gente aprende. Mas mesmo uma aula por mês com um bom professor evita vícios de postura e técnica que levam anos para desaparecer — é o investimento com melhor retorno nas primeiras semanas."
+  }
+]} />
 
 ---
 

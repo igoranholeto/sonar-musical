@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 O amplificador é metade do seu som. Pode parecer exagero, mas qualquer guitarrista experiente sabe que uma guitarra boa num amp ruim soa pior do que uma guitarra mediana num amp excelente. Se você está escolhendo seu próximo amplificador de guitarra, este guia foi feito para você.
 
@@ -167,6 +168,29 @@ A Orange tem um som inconfundível, e o Rocker 15 entrega esse caráter britâni
 | Blackstar HT-5R MkII | 5W | Valvulado | Bedroom/Gravação | R$ 3.200 |
 | Fender Mustang GTX50 | 50W | Digital | Variedade de estilos | R$ 3.500 |
 | Orange Rocker 15 | 15W | Valvulado | Blues/Classic Rock | R$ 6.000 |
+
+<FAQ items={[
+  {
+    question: "Qual a diferença entre amplificador valvulado e transistor?",
+    answer: "Válvulas entregam mais dinâmica e uma saturação natural e musical, mas custam mais, pesam mais e as válvulas se desgastam com o tempo. Transistores são mais baratos, mais leves e praticamente não exigem manutenção. Um detalhe que confunde muita gente: os watts não são diretamente comparáveis entre os dois — um valvulado de 15W soa mais alto e satura antes de um transistor de 50W, porque a distorção da válvula acontece de forma diferente."
+  },
+  {
+    question: "Quantos watts preciso num amplificador de guitarra?",
+    answer: "Para tocar em casa, 5–15W já bastam (e muitos amps desse tipo têm modo de potência reduzida para saturar em volume baixo). Para ensaio com banda, o ideal é 20–50W. Para tocar em palco com PA, mesmo 15–20W valvulados já projetam bem, já que o som costuma ser microfonado — não é preciso um amp de 100W."
+  },
+  {
+    question: "Preciso de um mini amplificador para tocar em casa ou apartamento?",
+    answer: "Não necessariamente um mini amp dedicado: amplificadores como o Blackstar HT-5R MkII já reduzem a potência até 0.5W, permitindo saturação real em volume de apartamento sem comprometer o som. Um mini amp separado só vale a pena se você quer algo ainda mais portátil, para levar na mochila ou praticar sem se preocupar com espaço."
+  },
+  {
+    question: "Amplificador valvulado realmente soa melhor que transistor?",
+    answer: "Soa diferente, não necessariamente melhor. A resposta dinâmica de um valvulado — como ele reage à força com que você toca — é difícil de replicar. Mas amplificadores de transistor modernos com circuitos de saturação analógica, como o Boss Katana, chegam muito perto do caráter valvulado por uma fração do preço e sem a manutenção."
+  },
+  {
+    question: "Posso usar um amplificador de baixo ou teclado para tocar guitarra?",
+    answer: "Não é recomendado. Amplificadores de baixo e teclado são projetados para reproduzir frequências e dinâmicas diferentes das de uma guitarra elétrica, e tendem a soar sem definição ou distorcer de forma desagradável com pedais de overdrive. Vale investir num amplificador de guitarra dedicado, mesmo que seja um modelo de entrada."
+  }
+]} />
 
 ## Conclusão: qual amplificador de guitarra comprar?
 

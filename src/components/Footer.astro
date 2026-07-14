@@ -1,4 +1,6 @@
 ---
+import { slugifyCategory } from '../utils/slug';
+
 const categories = ['Guitarras', 'Amplificadores', 'Pedais', 'Acessórios', 'Guias de Compra', 'Dicas para Iniciantes'];
 
 const links = [
@@ -52,7 +54,7 @@ const year = new Date().getFullYear();
           {categories.map((cat) => (
             <li>
               <a
-                href={`/blog?categoria=${encodeURIComponent(cat)}`}
+                href={`/categoria/${slugifyCategory(cat)}/`}
                 class="text-sm text-muted hover:text-foreground transition-colors"
               >
                 {cat}

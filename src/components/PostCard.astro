@@ -1,5 +1,6 @@
 ---
 import Rating from './Rating.astro';
+import { slugifyCategory } from '../utils/slug';
 
 interface Props {
   title: string;
@@ -67,7 +68,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   <div class="p-5 flex flex-col flex-1">
     <div class="flex items-center gap-2 mb-3">
       <a
-        href={`/blog?categoria=${encodeURIComponent(category)}`}
+        href={`/categoria/${slugifyCategory(category)}/`}
         class={`text-xs font-semibold uppercase tracking-wider px-2.5 py-0.5 rounded-full ${badgeClass}`}
       >
         {category}

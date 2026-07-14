@@ -14,6 +14,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Poucos amplificadores têm o prestígio duradouro do Fender Blues Junior. Desde sua estreia em 1995, ele esteve em quartos, salas de ensaio e palcos de clube — uma daquelas peças raras de equipamento que funciona em qualquer nível de musicalidade. O Blues Junior IV é a versão mais recente, e passamos várias semanas com um para descobrir se a Fender manteve a fórmula certa.
 
@@ -74,3 +75,26 @@ O caminho de upgrade do alto-falante (muitos guitarristas trocam o Eminence de f
   imagemAlt="Fender Blues Junior IV — amplificador valvulado de 15 watts"
   url="https://meli.la/1CcEWT2"
 />
+
+<FAQ items={[
+  {
+    question: "O Blues Junior IV é bom para iniciantes?",
+    answer: "É mais indicado para jogadores intermediários que já sabem o que buscam num amp valvulado. Para quem está começando agora, ele é alto demais para a maioria dos ambientes domésticos e não tem recursos de baixo volume — vale considerar opções com potência reduzível, como as do nosso <a href=\"/blog/melhor-amplificador-de-guitarra-2026\">guia de amplificadores de guitarra</a>."
+  },
+  {
+    question: "O Blues Junior é alto demais para apartamento?",
+    answer: "Sim, na maioria dos casos. Os 15W valvulados num único 12\" são mais altos do que muita gente espera — para saturar naturalmente, você precisa passar do meio do volume, o que já incomoda vizinhos. Amplificadores com modo de potência reduzida (0.5W) são mais adequados para tocar em casa."
+  },
+  {
+    question: "Vale a pena trocar o alto-falante de fábrica do Blues Junior?",
+    answer: "Muitos guitarristas trocam o Eminence de fábrica por um Celestion ou Jensen e relatam ganho real de qualidade — mas não é essencial. O amp já soa muito bem de fábrica; a troca é um upgrade opcional para quem quer extrair ainda mais do instrumento."
+  },
+  {
+    question: "O Blues Junior tem canal de distorção pesada?",
+    answer: "Não é o forte dele. É um amp de baixo ganho, ideal para sons limpos e overdrive suave via chave Fat. Para saturação mais pesada, a maioria dos guitarristas usa um pedal de overdrive na frente (como um Tube Screamer) em vez de empurrar o volume master do amplificador."
+  },
+  {
+    question: "O Blues Junior IV tem loop de efeitos?",
+    answer: "Não. É uma das limitações reais do amp — todos os pedais precisam ficar na frente da entrada, sem opção de colocar delay e reverb depois do pré-amp via FX loop, como em amplificadores mais completos."
+  }
+]} />

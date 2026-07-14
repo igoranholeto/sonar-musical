@@ -1,0 +1,85 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { BLOG_CATEGORIES } from '../../content.config';
+import { slugifyCategory } from '../../utils/slug';
+
+export async function getStaticPaths() {
+  return BLOG_CATEGORIES.map((category) => ({
+    params: { categoria: slugifyCategory(category) },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props as { category: (typeof BLOG_CATEGORIES)[number] };
+
+const allPosts = await getCollection('blog');
+const posts = allPosts
+  .filter((p) => p.data.category === category)
+  .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const intros: Record<(typeof BLOG_CATEGORIES)[number], string> = {
+  Guitarras: 'Análises e guias de compra de guitarras elétricas e violões, dos modelos para iniciantes aos instrumentos profissionais.',
+  Amplificadores: 'Comparativos de combos, cabeçotes e gabinetes para encontrar o amplificador certo para seu estilo e orçamento.',
+  Pedais: 'Reviews de pedais de efeito e guias de montagem de pedalboard, do overdrive básico às cadeias de sinal mais elaboradas.',
+  Acessórios: 'Cordas, palhetas, cabos, capotraste e outros acessórios essenciais para guitarristas e violonistas.',
+  'Guias de Compra': 'Guias completos para escolher o equipamento certo, com comparativos por faixa de preço e uso.',
+  'Dicas para Iniciantes': 'Conteúdo pensado para quem está começando: primeiros passos, erros comuns e como montar seu primeiro setup.',
+  'Home Studio': 'Interfaces de áudio, microfones, monitores de referência e tudo que você precisa para gravar em casa.',
+  Reviews: 'Análises detalhadas de equipamentos, com prós, contras e nossa avaliação final.',
+  Tutoriais: 'Passo a passo de manutenção, configuração e uso de equipamentos musicais.',
+  'Técnica e Teoria': 'Conteúdo sobre técnica de execução e teoria musical aplicada à guitarra e ao violão.',
+  Violões: 'Análises e guias de compra de violões acústicos e eletroacústicos para todos os níveis.',
+};
+const intro = intros[category];
+
+const canonicalPath = `/categoria/${slugifyCategory(category)}/`;
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
+    { '@type': 'ListItem', position: 2, name: 'Análises', item: 'https://sonarmusical.com.br/blog' },
+    { '@type': 'ListItem', position: 3, name: category, item: `https://sonarmusical.com.br${canonicalPath}` },
+  ],
+};
+---
+
+<BaseLayout title={`${category} — Análises e Guias`} description={intro} schema={breadcrumbSchema}>
+  <div class="max-w-6xl mx-auto px-4 py-16">
+    <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
+      <a href="/" class="hover:text-foreground transition-colors">Início</a>
+      <span aria-hidden="true">/</span>
+      <a href="/blog" class="hover:text-foreground transition-colors">Análises</a>
+      <span aria-hidden="true">/</span>
+      <span class="text-foreground" aria-current="page">{category}</span>
+    </nav>
+
+    <div class="mb-12">
+      <h1 class="text-4xl font-black mb-4">{category}</h1>
+      <p class="text-muted max-w-2xl">{intro}</p>
+    </div>
+
+    {posts.length > 0 ? (
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {posts.map((post) => (
+          <PostCard
+            title={post.data.title}
+            description={post.data.description}
+            slug={post.id}
+            pubDate={post.data.pubDate}
+            category={post.data.category}
+            image={post.data.image}
+            imageAlt={post.data.imageAlt}
+            rating={post.data.rating}
+            featured={post.data.featured}
+          />
+        ))}
+      </div>
+    ) : (
+      <p class="text-muted">Ainda não publicamos artigos nesta categoria — volte em breve.</p>
+    )}
+  </div>
+</BaseLayout>

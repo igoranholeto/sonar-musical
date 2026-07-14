@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 A guitarra é um instrumento de madeira, metal e plástico que responde diretamente às condições de uso e armazenamento. Um instrumento bem mantido toca melhor, soa melhor, dura décadas e vale mais se você um dia precisar vender. Um instrumento negligenciado vai ficando cada vez mais difícil de tocar — e eventualmente vai exigir um reparo caro.
 
@@ -146,3 +147,26 @@ Um setup completo em luthier custa R$ 150–300 e inclui todos esses ajustes. Fa
 | Anualmente | Setup completo com luthier |
 
 Uma guitarra bem mantida afia melhor, toca mais fácil e dura décadas. Comece pela rotina mais simples — limpar as cordas — e vá incorporando o resto gradualmente. E não esqueça: afine com o [afinador online gratuito](/afinador) a cada sessão.
+
+<FAQ items={[
+  {
+    question: "Com que frequência devo trocar as cordas da guitarra?",
+    answer: "Depende do uso: quem toca todo dia deve trocar a cada 2–4 semanas, quem toca 3–4x por semana a cada 4–6 semanas, e quem toca ocasionalmente pode esperar 2–3 meses. Guitarras guardadas em ambientes úmidos ou com variação de temperatura oxidam as cordas mais rápido, mesmo sem uso."
+  },
+  {
+    question: "Posso usar produtos de limpeza de móveis na guitarra?",
+    answer: "Não. Álcool isopropílico, vinagre, WD-40 ou polidores domésticos podem atacar o verniz da guitarra, principalmente em acabamentos nitro. Use sempre pano de microfibra e, se precisar de polidor, um produto específico para instrumentos, sem silicone."
+  },
+  {
+    question: "Preciso fazer manutenção mesmo se não tocar muito?",
+    answer: "Sim. Cordas oxidam com o tempo mesmo sem uso, e o ambiente de armazenamento afeta o instrumento inteiro — calor e umidade podem alterar a curvatura do braço. Uma guitarra guardada precisa, no mínimo, de uma checada semestral e troca de cordas antes de voltar a tocar."
+  },
+  {
+    question: "Como saber se preciso ajustar o truss rod?",
+    answer: "Se há buzz (zumbido) em todos os trastes, o braço provavelmente está muito reto e o truss rod precisa afrouxar. Se a ação fica muito alta no meio do braço, o braço tem curvatura excessiva e o truss rod precisa apertar. Na dúvida, leve a um luthier — é o ajuste mais delicado da guitarra."
+  },
+  {
+    question: "Dá para fazer regulagem de ação sozinho, sem luthier?",
+    answer: "Sim, se o ajuste for só no cavalete (altura das cordas) — a maioria tem parafusos acessíveis com chave Allen. Mas se a ação está alta por causa de curvatura do braço, o problema é o truss rod, e mexer apenas no cavalete não resolve — nesse caso, vale chamar um luthier."
+  }
+]} />

@@ -10,7 +10,7 @@ interface Props {
   type?: 'website' | 'article';
   pubDate?: Date;
   author?: string;
-  schema?: Record<string, unknown>;
+  schema?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {

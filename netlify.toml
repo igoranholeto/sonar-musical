@@ -2,6 +2,25 @@
   command = "npm run build"
   publish = "dist"
 
+# Consolida sinais de SEO: força https e domínio apex (sem www)
+[[redirects]]
+  from = "http://sonarmusical.com.br/*"
+  to = "https://sonarmusical.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.sonarmusical.com.br/*"
+  to = "https://sonarmusical.com.br/:splat"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.sonarmusical.com.br/*"
+  to = "https://sonarmusical.com.br/:splat"
+  status = 301
+  force = true
+
 # Cache longo para assets com hash (Astro gera nomes com hash automaticamente)
 [[headers]]
   for = "/_astro/*"

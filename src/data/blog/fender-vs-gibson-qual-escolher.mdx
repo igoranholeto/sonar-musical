@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Fender versus Gibson. É o debate mais antigo do rock. Não existe resposta errada — mas existe a resposta certa *para você*. Este guia compara as duas marcas em todos os critérios que importam de verdade, e termina com uma árvore de decisão simples.
 
@@ -159,3 +160,26 @@ Leia também nosso guia de [guitarras elétricas profissionais](/blog/guitarra-e
   destaques={["Fabricada no México com DNA americano", "Alnico 5 — tom Strat honesto e direto", "Mesmas dimensões de corpo e braço da American"]}
   url="https://meli.la/2tChgoP"
 />
+
+<FAQ items={[
+  {
+    question: "Fender ou Gibson: qual é melhor para iniciante?",
+    answer: "Nenhuma marca é objetivamente melhor para começar — depende do estilo que você quer tocar. Uma Squier Strat (Fender) é a opção mais comum por preço e versatilidade; uma Epiphone Les Paul (Gibson) é igualmente válida se seu foco é rock pesado e blues encorpado desde o início."
+  },
+  {
+    question: "Por que a Gibson é tão mais cara que a Fender?",
+    answer: "A produção americana da Gibson é mais artesanal, com braço colado (mais trabalho manual) e madeiras selecionadas individualmente. A Fender também tem linha 100% americana cara, mas sua produção no México e a linha Squier tornam o preço de entrada muito mais acessível — a Gibson não tem um equivalente direto tão barato quanto a Squier."
+  },
+  {
+    question: "Epiphone é uma Gibson de verdade?",
+    answer: "Sim — a Epiphone é a marca de entrada oficial da própria Gibson, não uma cópia de terceiros. Ela replica os modelos Gibson (Les Paul, SG, ES-335) com madeiras e hardware mais econômicos para reduzir o preço, mas o design e o DNA sonoro são autênticos."
+  },
+  {
+    question: "Dá para tocar metal numa Fender Stratocaster?",
+    answer: "Dá, mas não é o ambiente ideal: as captações single-coil da Strat captam mais ruído (hum) com alta distorção do que os humbuckers de uma Gibson. Muitos guitarristas de metal usam Stratocasters com captações humbucker substituídas na posição bridge para resolver isso."
+  },
+  {
+    question: "Qual guitarra tem mais sustain: Fender ou Gibson?",
+    answer: "Gibson, na maioria dos casos. O braço colado (set-neck) e o corpo mais denso de mogno da Les Paul entregam sustain mais longo que o braço aparafusado (bolt-on) e o corpo mais leve de alder da Stratocaster — é uma das razões pelas quais a Les Paul é tão associada a solos longos e sustentados."
+  }
+]} />

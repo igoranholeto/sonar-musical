@@ -11,6 +11,7 @@ author: "Sonar Musical"
 ---
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Montar um pedalboard parece simples — você compra uns pedais e liga tudo em série. Na prática, erros na ordem dos pedais, fonte errada e cabos ruins podem transformar seu setup em um zumbido barulhento que piora o som em vez de melhorá-lo. Este guia vai do passo zero ao pedalboard funcionando.
 
@@ -137,3 +138,26 @@ Se está começando, estes três pedais cobrem 80% das situações:
 Esses três, com um bom amplificador, entregam tudo que você precisa para blues, rock e pop. Veja nosso guia de [pedais Boss essenciais](/blog/5-pedais-boss-essenciais-para-guitarristas) para mais detalhes.
 
 Não esqueça de afinar com o [afinador online gratuito](/afinador) antes de conectar tudo — e mantenha as cordas novas para máxima resposta dos pedais. Veja nossas recomendações de [melhores cordas de guitarra](/blog/melhores-cordas-de-guitarra-2026).
+
+<FAQ items={[
+  {
+    question: "Posso usar uma fonte comum (chuveirão) no meu pedalboard?",
+    answer: "Não é recomendado. Uma fonte \"chuveirão\" liga vários pedais em série pelo mesmo transformador, distribuindo o mesmo terra para todos — isso cria loops de terra que geram hum e ruído perceptível. Fontes com saídas isoladas custam mais, mas eliminam esse problema."
+  },
+  {
+    question: "Preciso de pedalboard se já tenho uma pedaleira multi-efeitos?",
+    answer: "Não. Uma <a href=\"/blog/melhor-pedaleira-de-guitarra-2026\">pedaleira</a> entrega mais sons por menos custo, menos peso e zero problema de compatibilidade entre pedais. O pedalboard de pedais individuais só faz sentido quando você tem sons muito específicos que nenhum processador emula bem."
+  },
+  {
+    question: "Cabo de patch caro faz diferença real no som?",
+    answer: "Sim. Cabos com blindagem ruim captam ruído e cabos longos acumulam capacitância, cortando frequências agudas — o que é perceptível principalmente com captações passivas de baixo output. Entre pedais, use cabos curtos (15–30 cm) de marcas confiáveis como Mogami, George L's ou Evidence Audio."
+  },
+  {
+    question: "Dá para montar um pedalboard sem soldar nada?",
+    answer: "Sim. Sistemas de cabo sem solda como o George L's permitem montar e remontar a cadeia de pedais só encaixando os conectores — muito mais prático para quem está começando. A fixação dos pedais no board também é sem solda: velcro industrial de qualidade resolve."
+  },
+  {
+    question: "Quantos pedais cabem num pedalboard pequeno?",
+    answer: "Calcule 15–20 cm de espaço por pedal médio. Um board como o Pedaltrain Metro 16 comporta confortavelmente 4–6 pedais compactos. Para mais que isso, é melhor migrar para um board maior desde o início — replanejar o layout depois é trabalhoso."
+  }
+]} />

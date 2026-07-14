@@ -1,6 +1,20 @@
 import { defineCollection, z } from 'astro:content';
 import { glob } from 'astro/loaders';
 
+export const BLOG_CATEGORIES = [
+  'Guitarras',
+  'Amplificadores',
+  'Pedais',
+  'Acessórios',
+  'Guias de Compra',
+  'Dicas para Iniciantes',
+  'Home Studio',
+  'Reviews',
+  'Tutoriais',
+  'Técnica e Teoria',
+  'Violões',
+] as const;
+
 const blog = defineCollection({
   loader: glob({ pattern: '**/*.{md,mdx}', base: './src/data/blog' }),
   schema: z.object({
@@ -8,19 +22,7 @@ const blog = defineCollection({
     description: z.string(),
     pubDate: z.coerce.date(),
     updatedDate: z.coerce.date().optional(),
-    category: z.enum([
-      'Guitarras',
-      'Amplificadores',
-      'Pedais',
-      'Acessórios',
-      'Guias de Compra',
-      'Dicas para Iniciantes',
-      'Home Studio',
-      'Reviews',
-      'Tutoriais',
-      'Técnica e Teoria',
-      'Violões',
-    ]),
+    category: z.enum(BLOG_CATEGORIES),
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     rating: z.number().min(1).max(5).optional(),

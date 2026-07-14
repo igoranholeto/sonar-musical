@@ -22,6 +22,7 @@ sponsored: true
 produtos: []
 ---
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import FAQ from '../../components/FAQ.astro';
 
 Se você já passou algum tempo perto de guitarristas, provavelmente viu os compactos amarelos, azuis e verdes da Boss em praticamente todos os pedalboards — de setups de quarto a palcos de estádio. Desde 1977, a Boss fabrica pedais de efeitos que atingem um equilíbrio quase perfeito entre qualidade, confiabilidade e preço acessível.
 
@@ -136,3 +137,26 @@ Se você está começando do zero, a ordem na cadeia de sinal importa. Uma confi
 Comece com o afinador, adicione as distorções, depois a modulação e por último os efeitos temporais. Esta é a cadeia de sinal mais comum e de melhor resultado sonoro.
 
 Todos esses cinco pedais estão disponíveis nas principais lojas de música do Brasil, e o mercado de usados é farto — é comum encontrá-los em ótimas condições por 30–40% abaixo do preço de varejo. Se você quer tudo isso e mais em um único equipamento, confira nosso guia da [melhor pedaleira de guitarra em 2026](/blog/melhor-pedaleira-de-guitarra-2026).
+
+<FAQ items={[
+  {
+    question: "Qual a diferença entre overdrive e distorção?",
+    answer: "Overdrive (como o BD-2) simula a saturação natural de um amp valvulado empurrado — suave, dinâmico, responde ao volume da guitarra. Distorção (como o DS-1) é mais agressiva e comprimida, com um caráter próprio que se mantém quase igual independente de como você toca. Overdrive para blues e rock clássico, distorção para rock pesado e solos cortantes."
+  },
+  {
+    question: "Pedal Boss funciona com pilha ou precisa de fonte?",
+    answer: "Os dois: todo pedal Boss dessa lista aceita bateria 9V ou fonte externa (adaptador PSA da própria Boss). Para uso ocasional em casa, a pilha resolve. Para pedalboard fixo com vários pedais, uma fonte isolada é melhor — evita ruído e você não precisa trocar pilha no meio do ensaio."
+  },
+  {
+    question: "Em que ordem devo ligar os pedais no pedalboard?",
+    answer: "A ordem recomendada é: afinador → overdrive/distorção → chorus (modulação) → delay → amplificador. Veja nosso <a href=\"/blog/como-montar-pedalboard\">guia completo de como montar um pedalboard</a> para entender o porquê de cada posição."
+  },
+  {
+    question: "Vale a pena comprar pedal Boss usado?",
+    answer: "Sim, os pedais Boss são muito duráveis e o mercado de usados brasileiro é farto — é comum achar unidades em ótimo estado por 30–40% abaixo do preço de loja. Teste sempre os controles e a chave de bypass antes de fechar negócio."
+  },
+  {
+    question: "Preciso comprar os 5 pedais de uma vez para começar?",
+    answer: "Não. Comece pelo afinador (TU-3) e um overdrive (BD-2 ou DS-1) — já cobre a maioria das situações de ensaio e prática. Adicione delay e chorus conforme for sentindo falta desses efeitos no seu som."
+  }
+]} />
