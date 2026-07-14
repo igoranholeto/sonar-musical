@@ -157,22 +157,28 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
     </main>
 
     <Footer />
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-      window.addEventListener('load', function () {
-        if (!window.netlifyIdentity) return;
-        window.netlifyIdentity.on('init', function (user) {
-          if (!user) {
-            window.netlifyIdentity.on('login', function () {
-              document.location.href = '/admin/';
-            });
-          }
-          var hash = window.location.hash;
-          if (hash.includes('recovery_token') || hash.includes('invite_token')) {
+      // O widget de identidade só é necessário quando um link de convite/recuperação
+      // de senha (enviado por e-mail) cai numa página pública. Carregar isso sempre,
+      // em toda página, custa uma requisição e execução de JS sem necessidade — então
+      // só injetamos o script quando o hash da URL indica esse caso.
+      var hash = window.location.hash;
+      if (/recovery_token|invite_token/.test(hash)) {
+        var s = document.createElement('script');
+        s.src = 'https://identity.netlify.com/v1/netlify-identity-widget.js';
+        s.onload = function () {
+          if (!window.netlifyIdentity) return;
+          window.netlifyIdentity.on('init', function (user) {
+            if (!user) {
+              window.netlifyIdentity.on('login', function () {
+                document.location.href = '/admin/';
+              });
+            }
             window.netlifyIdentity.open();
-          }
-        });
-      });
+          });
+        };
+        document.head.appendChild(s);
+      }
     </script>
   </body>
 </html>
