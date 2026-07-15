@@ -32,6 +32,7 @@ integrantes:
           nome: Squier Classic Vibe Telecaster
           preco: ~R$ 2.800
           obs: Timbre brilhante de Telecaster por uma fração do preço.
+          urlAfiliado: https://meli.la/1RSa8Jg
       - tipo: Pedais
         original:
           nome: TC Electronic Nova Delay
@@ -40,6 +41,7 @@ integrantes:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500
           obs: Delay versátil com modos parecidos ao original.
+          urlAfiliado: https://meli.la/24wtScj
   - foto: /images/chris-martin-sonar-otimizado.webp
     fotoAlt: chris martin vocal
     pontos:
@@ -63,6 +65,7 @@ integrantes:
           nome: Yamaha P-125
           preco: ~R$ 4.000
           obs: Toque parecido em formato digital portátil.
+          urlAfiliado: https://meli.la/2ESeLVm
       - tipo: Violão
         original:
           nome: Martin Custom Acoustic
@@ -71,6 +74,7 @@ integrantes:
           nome: Yamaha FG800
           preco: ~R$ 1.900
           obs: Boa projeção e afinação estável pra começar.
+          urlAfiliado: https://meli.la/32BHVVY
   - foto: /images/guy-berryman-sonar.webp
     fotoAlt: guy berryman baixista
     pontos:
@@ -93,6 +97,7 @@ integrantes:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500
           obs: Mesmo timbre estalado por um preço acessível.
+          urlAfiliado: https://meli.la/1gk1ssT
   - foto: /images/will-champion-sonar.webp
     fotoAlt: will baterista coldplay
     pontos:
@@ -115,6 +120,7 @@ integrantes:
           nome: Pearl Roadshow
           preco: ~R$ 4.500
           obs: Kit completo de entrada com bom acabamento.
+          urlAfiliado: https://meli.la/2LdGptf
 albuns:
   - nome: Parachutes
     ano: 2000

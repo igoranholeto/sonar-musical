@@ -66,6 +66,7 @@ integrantes:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500
           obs: Ataque estalado parecido com o original.
+          urlAfiliado: https://meli.la/1gk1ssT
 albuns:
   - nome: Doo-Wops & Hooligans
     ano: 2010

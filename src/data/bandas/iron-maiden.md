@@ -34,6 +34,7 @@ integrantes:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
           obs: Palhetada galopante clássica por menos.
+          urlAfiliado: https://meli.la/16ALw1L
       - tipo: Amplificação
         original:
           nome: Marshall JMP (cabeçote)
