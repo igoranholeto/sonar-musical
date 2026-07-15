@@ -98,14 +98,16 @@ const bars = Array.from({ length: 28 }, (_, i) => {
     50% { transform: scaleY(1); }
   }
 
+  /* Anima só transform, nunca opacity: opacity:0 faz o Chrome não contar
+     o elemento como "pintado" para o LCP, atrasando a métrica. Como o H1
+     daqui é o maior elemento acima da dobra no mobile, isso importa. */
   .hero-in {
-    opacity: 0;
-    animation: hero-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    animation: hero-slide-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) both;
   }
 
-  @keyframes hero-fade-up {
-    from { opacity: 0; transform: translateY(16px); }
-    to   { opacity: 1; transform: translateY(0); }
+  @keyframes hero-slide-up {
+    from { transform: translateY(16px); }
+    to   { transform: translateY(0); }
   }
 
   .hero-blob {
