@@ -32,6 +32,7 @@ integrantes:
           nome: Giannini GN15
           preco: ~R$ 900
           obs: Boa opção pra dedilhado e batida simples.
+          urlAfiliado: https://www.musitechinstrumentos.com.br/Produto_11798,361/Cordas/Violao/Violao-Nylon/Violao-Giannini-GN-15-BK-Preto-Estudante-Nylon.html
   - foto: /images/dado-villa-lobos-integrante-sonar.webp
     fotoAlt: dado villa lobos
     pontos:
@@ -79,6 +80,7 @@ integrantes:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
           obs: Tom clássico de P-Bass por menos.
+          urlAfiliado: https://meli.la/16ALw1L
     foto: /images/renato-rocha-integrante-sonar.webp
     fotoAlt: renato rocha legiao
   - nome: Marcelo Bonfá
@@ -97,6 +99,7 @@ integrantes:
           nome: Pearl Roadshow
           preco: ~R$ 4.500
           obs: Kit de entrada com boa projeção para ensaio.
+          urlAfiliado: https://meli.la/2LdGptf
     foto: /images/marcelo-bonfa-integrante-sonar.webp
     fotoAlt: marcelo bonfa legiao
 albuns:

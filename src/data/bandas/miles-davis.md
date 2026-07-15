@@ -86,6 +86,7 @@ integrantes:
           nome: Yamaha P-125 (piano digital)
           preco: ~R$ 4.000
           obs: Toque leve com sons de piano acústico convincentes.
+          urlAfiliado: https://meli.la/2ESeLVm
   - foto: /images/paulchambers_sq.webp
     fotoAlt: paul chambers
     pontos:

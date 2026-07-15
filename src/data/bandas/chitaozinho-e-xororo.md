@@ -30,6 +30,7 @@ integrantes:
           nome: Rozini Viola Caipira Estudante
           preco: ~R$ 1.200
           obs: Timbre de viola de dez cordas pra começar.
+          urlAfiliado: https://meli.la/2NGsLwn
   - foto: /images/xororo-integrante-sonar.webp
     fotoAlt: xororo foto
     pontos:
@@ -52,6 +53,7 @@ integrantes:
           nome: Giannini GN15
           preco: ~R$ 900
           obs: Boa projeção para o dedilhado sertanejo.
+          urlAfiliado: https://www.musitechinstrumentos.com.br/Produto_11798,361/Cordas/Violao/Violao-Nylon/Violao-Giannini-GN-15-BK-Preto-Estudante-Nylon.html
   - nome: Banda de apoio
     funcao: Sanfona / Baixo
     pontos:

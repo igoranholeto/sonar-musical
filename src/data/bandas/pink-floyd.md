@@ -42,6 +42,7 @@ integrantes:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500
           obs: Vários modos de delay, incluindo emulação de fita.
+          urlAfiliado: https://meli.la/24wtScj
   - foto: /images/roger-walter-sonar.webp
     pontos:
       - Linhas de baixo simples e conceituais a serviço da narrativa.
@@ -63,6 +64,7 @@ integrantes:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
           obs: Tom clássico de P-Bass para linhas melódicas simples.
+          urlAfiliado: https://meli.la/16ALw1L
   - foto: /images/richard-sonar.webp
     pontos:
       - Camadas de órgão e sintetizador que criam a atmosfera espacial.
