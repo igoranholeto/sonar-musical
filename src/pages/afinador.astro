@@ -101,7 +101,13 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <!-- Info / SEO — layout em cards -->
     <div class="info-section">
       <div class="info-card">
-        <div class="info-card__icon">🎯</div>
+        <div class="info-card__icon">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="8" />
+            <circle cx="12" cy="12" r="3" />
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3" />
+          </svg>
+        </div>
         <h2 class="info-card__title">Como usar</h2>
         <p class="info-card__text">Clique em <strong>Ativar Microfone</strong>, permita o acesso e toque uma corda. A agulha no centro significa corda afinada.</p>
         <ul class="info-card__tips">
@@ -112,14 +118,26 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class="info-card">
-        <div class="info-card__icon">↔️</div>
+        <div class="info-card__icon">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M7 7l-4 5 4 5" />
+            <path d="M17 7l4 5-4 5" />
+          </svg>
+        </div>
         <h2 class="info-card__title">Lendo a agulha</h2>
         <p class="info-card__text">Agulha para a <strong>esquerda</strong>: nota baixa — aperte a cravelha. Agulha para a <strong>direita</strong>: nota alta — afrouxe.</p>
         <p class="info-card__text">O número em <em>cents</em> mostra o desvio exato. ±8 cents ou menos é considerado afinado.</p>
       </div>
 
       <div class="info-card">
-        <div class="info-card__icon">🎛️</div>
+        <div class="info-card__icon">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 6h16M4 12h16M4 18h16" />
+            <circle cx="9" cy="6" r="1.6" fill="currentColor" stroke="none" />
+            <circle cx="15" cy="12" r="1.6" fill="currentColor" stroke="none" />
+            <circle cx="7" cy="18" r="1.6" fill="currentColor" stroke="none" />
+          </svg>
+        </div>
         <h2 class="info-card__title">Afinações</h2>
         <p class="info-card__text">Guitarra: Standard E, Drop D, Drop C, Open G/D/E, DADGAD, Half/Full Step Down.</p>
         <p class="info-card__text">Violão: Standard, Drop D, Open G/D, Nashville, DADGAD.</p>
@@ -488,9 +506,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   }
 
   .info-card__icon {
-    font-size: 1.25rem;
-    margin-bottom: 0.5rem;
-    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 0.65rem;
+    background: rgba(230, 57, 70, 0.1);
+    color: var(--color-brand);
+    margin-bottom: 0.9rem;
   }
 
   .info-card__title {

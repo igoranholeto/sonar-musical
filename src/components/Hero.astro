@@ -1,27 +1,50 @@
 ---
+import { getCollection } from 'astro:content';
+
 interface Props {
   postsCount: number;
 }
 const { postsCount } = Astro.props;
+
+const allPosts = await getCollection('blog');
+const categoriesCount = new Set(allPosts.map((p) => p.data.category)).size;
+
+const bars = Array.from({ length: 28 }, (_, i) => {
+  const seed = Math.sin(i * 12.9898) * 43758.5453;
+  const rand = seed - Math.floor(seed);
+  return {
+    height: 18 + Math.round(rand * 55),
+    delay: (i * 0.09).toFixed(2),
+  };
+});
 ---
 
 <section class="relative overflow-hidden py-24 sm:py-32">
-  <!-- Gradiente de fundo -->
+  <!-- Fundo em camadas -->
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-brand/5 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-0 right-0 w-[400px] h-[300px] bg-brand/3 rounded-full blur-3xl"></div>
+    <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-brand/8 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-[-15%] right-[5%] w-[500px] h-[350px] bg-brand/5 rounded-full blur-3xl"></div>
+    <div
+      class="absolute inset-0 opacity-[0.025]"
+      style="background-image: linear-gradient(var(--color-foreground) 1px, transparent 1px), linear-gradient(90deg, var(--color-foreground) 1px, transparent 1px); background-size: 40px 40px;"
+    ></div>
+    <!-- Vinheta pra ancorar o conteúdo central -->
+    <div class="absolute inset-0 bg-gradient-to-b from-surface/0 via-surface/0 to-surface"></div>
   </div>
 
-  <!-- Padrão de grade decorativo -->
-  <div
-    class="absolute inset-0 opacity-[0.03]"
-    style="background-image: linear-gradient(var(--color-foreground) 1px, transparent 1px), linear-gradient(90deg, var(--color-foreground) 1px, transparent 1px); background-size: 40px 40px;"
-    aria-hidden="true"
-  ></div>
+  <!-- Equalizador decorativo -->
+  <div class="absolute inset-x-0 bottom-0 h-24 flex items-end justify-center gap-[3px] opacity-[0.12] pointer-events-none" aria-hidden="true">
+    {bars.map((bar) => (
+      <span
+        class="eq-bar w-[3px] rounded-full bg-brand"
+        style={`height:${bar.height}%; animation-delay:${bar.delay}s;`}
+      ></span>
+    ))}
+  </div>
 
   <div class="relative max-w-6xl mx-auto px-4 text-center">
     <!-- Badge -->
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-xs font-semibold uppercase tracking-wider mb-6">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-xs font-semibold uppercase tracking-wider mb-7">
       <span class="w-1.5 h-1.5 bg-brand rounded-full animate-pulse" aria-hidden="true"></span>
       {postsCount} análises publicadas
     </div>
@@ -29,7 +52,7 @@ const { postsCount } = Astro.props;
     <!-- Título principal -->
     <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-[1.05]">
       Seu Guia para o<br />
-      <span class="text-brand">Som Perfeito</span>
+      <span class="bg-gradient-to-r from-brand via-[#ff5b67] to-brand bg-clip-text text-transparent">Som Perfeito</span>
     </h1>
 
     <!-- Subtítulo -->
@@ -38,7 +61,7 @@ const { postsCount } = Astro.props;
     </p>
 
     <!-- CTAs -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
       <a
         href="/blog"
         class="px-7 py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-lg shadow-brand/25"
@@ -52,5 +75,32 @@ const { postsCount } = Astro.props;
         Sobre o Blog
       </a>
     </div>
+
+    <!-- Linha de confiança -->
+    <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-subtle">
+      <span>{postsCount} análises</span>
+      <span aria-hidden="true">·</span>
+      <span>{categoriesCount} categorias</span>
+      <span aria-hidden="true">·</span>
+      <span>Escrito por quem toca, sem publieditorial</span>
+    </div>
   </div>
 </section>
+
+<style>
+  .eq-bar {
+    animation: eq-pulse 1.8s ease-in-out infinite;
+    transform-origin: bottom;
+  }
+
+  @keyframes eq-pulse {
+    0%, 100% { transform: scaleY(0.5); }
+    50% { transform: scaleY(1); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .eq-bar {
+      animation: none;
+    }
+  }
+</style>
