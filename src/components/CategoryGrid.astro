@@ -1,94 +1,92 @@
 ---
+import { getCollection } from 'astro:content';
 import { slugifyCategory } from '../utils/slug';
+
+const allPosts = await getCollection('blog');
+const countByCategory = new Map<string, number>();
+for (const post of allPosts) {
+  countByCategory.set(post.data.category, (countByCategory.get(post.data.category) ?? 0) + 1);
+}
 
 const categories = [
   {
     name: 'Guitarras',
     description: 'Elétricas e acústicas',
-    icon: '🎸',
-    color: 'from-blue-50 to-blue-50/50 border-blue-200 hover:border-blue-400 dark:from-blue-900/30 dark:to-blue-900/10 dark:border-blue-800/30 dark:hover:border-blue-600/50',
-    badge: 'text-blue-700 dark:text-blue-300',
+    icon: '<path d="M12 2C8 2 4 6 4 11c0 5 4 9 8 11 4-2 8-6 8-11 0-5-4-9-8-9z"/>',
   },
   {
     name: 'Amplificadores',
     description: 'Combos, heads e gabinetes',
-    icon: '🔊',
-    color: 'from-amber-50 to-amber-50/50 border-amber-200 hover:border-amber-400 dark:from-amber-900/30 dark:to-amber-900/10 dark:border-amber-800/30 dark:hover:border-amber-600/50',
-    badge: 'text-amber-700 dark:text-amber-300',
+    icon: '<rect x="4" y="3" width="16" height="18" rx="2"/><circle cx="12" cy="9" r="3"/><circle cx="12" cy="16" r="1.4"/>',
   },
   {
     name: 'Pedais',
     description: 'Efeitos e chain de sinal',
-    icon: '⚡',
-    color: 'from-green-50 to-green-50/50 border-green-200 hover:border-green-400 dark:from-green-900/30 dark:to-green-900/10 dark:border-green-800/30 dark:hover:border-green-600/50',
-    badge: 'text-green-700 dark:text-green-300',
+    icon: '<rect x="4" y="9" width="16" height="9" rx="2"/><circle cx="12" cy="13.5" r="2"/><path d="M8 9V6h8v3"/>',
   },
   {
     name: 'Acessórios',
     description: 'Cordas, palhetas, cabos',
-    icon: '🎵',
-    color: 'from-purple-50 to-purple-50/50 border-purple-200 hover:border-purple-400 dark:from-purple-900/30 dark:to-purple-900/10 dark:border-purple-800/30 dark:hover:border-purple-600/50',
-    badge: 'text-purple-700 dark:text-purple-300',
+    icon: '<path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.8 2.8-2-2 2.8-2.8z"/>',
   },
   {
     name: 'Guias de Compra',
     description: 'Recomendações curadas',
-    icon: '📋',
-    color: 'from-brand/20 to-brand/5 border-brand/20 hover:border-brand/50',
-    badge: 'text-brand',
+    icon: '<rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 9.5l1.5 1.5L13 7.5"/><path d="M8 14.5h8"/><path d="M8 17.5h5"/>',
   },
   {
     name: 'Dicas para Iniciantes',
     description: 'Comece sua jornada bem',
-    icon: '🎓',
-    color: 'from-teal-50 to-teal-50/50 border-teal-200 hover:border-teal-400 dark:from-teal-900/30 dark:to-teal-900/10 dark:border-teal-800/30 dark:hover:border-teal-600/50',
-    badge: 'text-teal-700 dark:text-teal-300',
+    icon: '<path d="M12 3a6 6 0 0 0-4 10.5c.6.5 1 1.3 1 2.5h6c0-1.2.4-2 1-2.5A6 6 0 0 0 12 3z"/><path d="M9.5 18.5h5"/><path d="M10.5 21h3"/>',
   },
   {
     name: 'Violões',
     description: 'Acústicos e eletroacústicos',
-    icon: '🪕',
-    color: 'from-orange-50 to-orange-50/50 border-orange-200 hover:border-orange-400 dark:from-orange-900/30 dark:to-orange-900/10 dark:border-orange-800/30 dark:hover:border-orange-600/50',
-    badge: 'text-orange-700 dark:text-orange-300',
+    icon: '<circle cx="9.5" cy="15.5" r="5"/><circle cx="9.5" cy="15.5" r="2"/><path d="M11.5 11.7L18 3"/><path d="M15.7 5l2.6-1"/>',
   },
   {
     name: 'Home Studio',
     description: 'Interfaces, mics e monitores',
-    icon: '🎙️',
-    color: 'from-rose-50 to-rose-50/50 border-rose-200 hover:border-rose-400 dark:from-rose-900/30 dark:to-rose-900/10 dark:border-rose-800/30 dark:hover:border-rose-600/50',
-    badge: 'text-rose-700 dark:text-rose-300',
+    icon: '<path d="M12 2a3 3 0 0 1 3 3v6a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/><path d="M19 10v1a7 7 0 0 1-14 0v-1"/><path d="M12 18v4"/><path d="M9 22h6"/>',
   },
   {
     name: 'Técnica e Teoria',
     description: 'Aprofunde seu conhecimento',
-    icon: '🎼',
-    color: 'from-indigo-50 to-indigo-50/50 border-indigo-200 hover:border-indigo-400 dark:from-indigo-900/30 dark:to-indigo-900/10 dark:border-indigo-800/30 dark:hover:border-indigo-600/50',
-    badge: 'text-indigo-700 dark:text-indigo-300',
+    icon: '<path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H12v18H6.5A2.5 2.5 0 0 1 4 18.5v-13z"/><path d="M20 5.5A2.5 2.5 0 0 0 17.5 3H12v18h5.5a2.5 2.5 0 0 0 2.5-2.5v-13z"/>',
   },
   {
     name: 'Tutoriais',
     description: 'Passo a passo prático',
-    icon: '📖',
-    color: 'from-cyan-50 to-cyan-50/50 border-cyan-200 hover:border-cyan-400 dark:from-cyan-900/30 dark:to-cyan-900/10 dark:border-cyan-800/30 dark:hover:border-cyan-600/50',
-    badge: 'text-cyan-700 dark:text-cyan-300',
+    icon: '<circle cx="12" cy="12" r="9"/><path d="M10 8.3l6 3.7-6 3.7V8.3z"/>',
   },
 ];
 ---
 
 <section class="py-16 max-w-6xl mx-auto px-4">
-  <div class="flex items-center justify-between mb-8">
-    <h2 class="text-2xl font-bold">Explorar por Categoria</h2>
+  <div class="flex items-end justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-bold">Explorar por Categoria</h2>
+      <p class="text-sm text-muted mt-1">Navegue pelo que já testamos e comparamos.</p>
+    </div>
   </div>
 
-  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3">
-    {categories.map(({ name, description, icon, color, badge }) => (
+  <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3">
+    {categories.map(({ name, description, icon }) => (
       <a
         href={`/categoria/${slugifyCategory(name)}/`}
-        class={`group flex flex-col items-center text-center p-5 rounded-xl border bg-gradient-to-b transition-all duration-300 ${color}`}
+        class="group relative flex flex-col p-5 rounded-xl border border-border bg-card hover:border-brand/50 hover:-translate-y-0.5 transition-all duration-200"
       >
-        <span class="text-3xl mb-3" aria-hidden="true">{icon}</span>
-        <span class={`text-sm font-semibold ${badge} mb-1`}>{name}</span>
-        <span class="text-xs text-subtle leading-tight hidden sm:block">{description}</span>
+        <span
+          class="flex items-center justify-center w-10 h-10 rounded-lg bg-brand/10 text-brand mb-4 group-hover:bg-brand group-hover:text-white transition-colors duration-200"
+          aria-hidden="true"
+        >
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={icon} />
+        </span>
+        <span class="text-sm font-semibold text-foreground mb-1">{name}</span>
+        <span class="text-xs text-subtle leading-tight mb-3">{description}</span>
+        <span class="mt-auto text-[0.7rem] font-medium text-muted">
+          {countByCategory.get(name) ?? 0} {countByCategory.get(name) === 1 ? 'análise' : 'análises'}
+        </span>
       </a>
     ))}
   </div>
