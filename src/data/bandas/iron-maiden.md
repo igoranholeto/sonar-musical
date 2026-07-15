@@ -43,6 +43,7 @@ integrantes:
           nome: Hartke HD75 Combo
           preco: ~R$ 3.200
           obs: Graves definidos pro galope.
+          urlAfiliado: https://meli.la/1GXS6eE
   - foto: /images/bruce-dickinson-iron-maiden-sonar.webp
     fotoAlt: Brucen DIckinson Vocalista
     pontos:
@@ -69,6 +70,7 @@ integrantes:
           nome: Behringer XM8500
           preco: ~R$ 180
           obs: Dinâmico cardioide pra vocal potente.
+          urlAfiliado: https://meli.la/1tbeAkQ
       - tipo: Monitoração
         original:
           nome: In-ear Shure PSM 900
@@ -77,6 +79,7 @@ integrantes:
           nome: Behringer Powerplay In-ear
           preco: ~R$ 900
           obs: Retorno limpo no palco.
+          urlAfiliado: https://meli.la/1MKws86
   - foto: /images/dave-murray-sunburst-sonar.webp
     fotoAlt: Dave Murray Guitarrista
     pontos:
@@ -102,6 +105,7 @@ integrantes:
           nome: Squier Bullet Strat HSS
           preco: ~R$ 1.600
           obs: Humbucker na ponte pro peso.
+          urlAfiliado: https://meli.la/27cqMU6
       - tipo: Amplificação
         original:
           nome: Marshall JCM800
@@ -135,6 +139,7 @@ integrantes:
           nome: Harley Benton Fusion-II HH
           preco: ~R$ 2.500
           obs: Humbucker quente na ponte.
+          urlAfiliado: https://meli.la/1ketVDQ
       - tipo: Amplificação
         original:
           nome: Marshall JCM800
