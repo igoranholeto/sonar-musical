@@ -22,8 +22,8 @@ const bars = Array.from({ length: 28 }, (_, i) => {
 <section class="relative overflow-hidden py-24 sm:py-32">
   <!-- Fundo em camadas -->
   <div class="absolute inset-0 pointer-events-none" aria-hidden="true">
-    <div class="absolute top-[-10%] left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-brand/8 rounded-full blur-3xl"></div>
-    <div class="absolute bottom-[-15%] right-[5%] w-[500px] h-[350px] bg-brand/5 rounded-full blur-3xl"></div>
+    <div class="hero-blob absolute top-[-10%] left-1/2 -translate-x-1/2 w-[900px] h-[500px] bg-brand/8 rounded-full blur-3xl"></div>
+    <div class="hero-blob absolute bottom-[-15%] right-[5%] w-[500px] h-[350px] bg-brand/5 rounded-full blur-3xl" style="animation-delay:-4.5s"></div>
     <div
       class="absolute inset-0 opacity-[0.025]"
       style="background-image: linear-gradient(var(--color-foreground) 1px, transparent 1px), linear-gradient(90deg, var(--color-foreground) 1px, transparent 1px); background-size: 40px 40px;"
@@ -44,40 +44,40 @@ const bars = Array.from({ length: 28 }, (_, i) => {
 
   <div class="relative max-w-6xl mx-auto px-4 text-center">
     <!-- Badge -->
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-xs font-semibold uppercase tracking-wider mb-7">
+    <div class="hero-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-xs font-semibold uppercase tracking-wider mb-7" style="animation-delay:0ms">
       <span class="w-1.5 h-1.5 bg-brand rounded-full animate-pulse" aria-hidden="true"></span>
       {postsCount} análises publicadas
     </div>
 
     <!-- Título principal -->
-    <h1 class="text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-[1.05]">
+    <h1 class="hero-in text-5xl sm:text-6xl lg:text-7xl font-black tracking-tight mb-6 leading-[1.05]" style="animation-delay:90ms">
       Seu Guia para o<br />
       <span class="bg-gradient-to-r from-brand via-[#ff5b67] to-brand bg-clip-text text-transparent">Som Perfeito</span>
     </h1>
 
     <!-- Subtítulo -->
-    <p class="text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed">
+    <p class="hero-in text-lg sm:text-xl text-muted max-w-2xl mx-auto mb-10 leading-relaxed" style="animation-delay:180ms">
       Análises honestas, guias de compra e dicas especializadas sobre guitarras, amplificadores, pedais e tudo mais. Sem hype, só equipamento.
     </p>
 
     <!-- CTAs -->
-    <div class="flex flex-col sm:flex-row gap-4 justify-center mb-10">
+    <div class="hero-in flex flex-col sm:flex-row gap-4 justify-center mb-10" style="animation-delay:270ms">
       <a
         href="/blog"
-        class="px-7 py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors shadow-lg shadow-brand/25"
+        class="px-7 py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30 transition-all duration-200 shadow-lg shadow-brand/25"
       >
         Ver Todas as Análises
       </a>
       <a
         href="/about"
-        class="px-7 py-3.5 bg-foreground/5 border border-border text-foreground font-semibold rounded-xl hover:bg-foreground/10 transition-colors"
+        class="px-7 py-3.5 bg-foreground/5 border border-border text-foreground font-semibold rounded-xl hover:bg-foreground/10 hover:-translate-y-0.5 transition-all duration-200"
       >
         Sobre o Blog
       </a>
     </div>
 
     <!-- Linha de confiança -->
-    <div class="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-subtle">
+    <div class="hero-in flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-xs text-subtle" style="animation-delay:360ms">
       <span>{postsCount} análises</span>
       <span aria-hidden="true">·</span>
       <span>{categoriesCount} categorias</span>
@@ -98,8 +98,32 @@ const bars = Array.from({ length: 28 }, (_, i) => {
     50% { transform: scaleY(1); }
   }
 
+  .hero-in {
+    opacity: 0;
+    animation: hero-fade-up 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  @keyframes hero-fade-up {
+    from { opacity: 0; transform: translateY(16px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+
+  .hero-blob {
+    animation: hero-float 9s ease-in-out infinite;
+  }
+
+  @keyframes hero-float {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50%      { transform: translate(0, -18px) scale(1.04); }
+  }
+
   @media (prefers-reduced-motion: reduce) {
-    .eq-bar {
+    .eq-bar,
+    .hero-blob {
+      animation: none;
+    }
+    .hero-in {
+      opacity: 1;
       animation: none;
     }
   }
