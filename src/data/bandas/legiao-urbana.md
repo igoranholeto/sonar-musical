@@ -52,6 +52,7 @@ integrantes:
         original:
           nome: Gibson Les Paul Studio
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/1PAkAN3
         low:
           nome: Epiphone Les Paul Standard
           preco: ~R$ 3.500
@@ -61,6 +62,7 @@ integrantes:
         original:
           nome: Boss CE-2 Chorus (vintage)
           preco: ~R$ 1.800
+          urlAfiliado: https://meli.la/1nYSgfM
         low:
           nome: Boss CE-2W Chorus
           preco: ~R$ 1.400
@@ -78,6 +80,7 @@ integrantes:
         original:
           nome: Fender Precision Bass
           preco: ~R$ 9.000
+          urlAfiliado: https://meli.la/33TZgz6
         low:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
@@ -97,6 +100,7 @@ integrantes:
         original:
           nome: Pearl Export (kit da época)
           preco: ~R$ 8.000
+          urlAfiliado: https://meli.la/1iX6FXT
         low:
           nome: Pearl Roadshow
           preco: ~R$ 4.500

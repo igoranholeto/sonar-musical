@@ -30,6 +30,7 @@ integrantes:
         original:
           nome: ESP Snakebyte James Hetfield
           preco: ~R$ 25.000
+          urlAfiliado: https://meli.la/31FcdYC
         low:
           nome: LTD Snakebyte (Signature Series)
           preco: ~R$ 6.500
@@ -65,6 +66,7 @@ integrantes:
         original:
           nome: ESP KH-2 Kirk Hammett Signature
           preco: ~R$ 18.000
+          urlAfiliado: https://meli.la/21dH9a8
         low:
           nome: LTD KH-202
           preco: ~R$ 3.800
@@ -74,6 +76,7 @@ integrantes:
         original:
           nome: Dunlop KH95 Kirk Hammett Cry Baby Wah
           preco: ~R$ 1.200
+          urlAfiliado: https://meli.la/2PGqdr2
         low:
           nome: Dunlop Cry Baby Standard GCB95
           preco: ~R$ 450
@@ -98,6 +101,7 @@ integrantes:
         original:
           nome: Fender Robert Trujillo Jazz Bass Signature
           preco: ~R$ 14.000
+          urlAfiliado: https://meli.la/28cEw4h
         low:
           nome: Squier Classic Vibe Jazz Bass
           preco: ~R$ 3.200
@@ -107,6 +111,7 @@ integrantes:
         original:
           nome: Ampeg SVT Classic
           preco: ~R$ 15.000
+          urlAfiliado: https://meli.la/1RijRhe
         low:
           nome: Ampeg BA-115
           preco: ~R$ 3.500
@@ -131,6 +136,7 @@ integrantes:
         original:
           nome: Tama Starclassic (kit signature)
           preco: ~R$ 35.000
+          urlAfiliado: https://meli.la/1tVitRG
         low:
           nome: Pearl Export EXX
           preco: ~R$ 6.500
@@ -140,6 +146,7 @@ integrantes:
         original:
           nome: Zildjian K Custom
           preco: ~R$ 10.000
+          urlAfiliado: https://meli.la/2bPLQYu
         low:
           nome: Zildjian ZBT
           preco: ~R$ 2.800

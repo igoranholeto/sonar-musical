@@ -223,6 +223,7 @@ integrantes:
         original:
           nome: Paiste Signature
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/1n4tkQ8
         low:
           nome: Paiste PST7
           preco: ~R$ 3.500
