@@ -87,6 +87,7 @@ integrantes:
           nome: Yamaha PSR-E373 (teclado arranjador)
           preco: ~R$ 1.800
           obs: Sons de órgão e pads para recriar a atmosfera.
+          urlAfiliado: https://meli.la/1xHobX8
   - foto: /images/nick-mason-pink-floyd.webp
     fotoAlt: nick mason pink floyd
     pontos:
@@ -109,6 +110,7 @@ integrantes:
         low:
           nome: Pearl Export EXX
           preco: ~R$ 6.500
+          urlAfiliado: https://meli.la/2NPjfp2
           obs: Kit versátil pra explorar a levada minimalista.
 albuns:
   - ano: 1973

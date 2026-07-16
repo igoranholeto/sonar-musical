@@ -56,6 +56,7 @@ integrantes:
           nome: Epiphone Les Paul Standard
           preco: ~R$ 3.500
           obs: Timbre encorpado de humbucker por menos.
+          urlAfiliado: https://meli.la/2cJWYZp
       - tipo: Pedais
         original:
           nome: Boss CE-2 Chorus (vintage)
@@ -64,6 +65,7 @@ integrantes:
           nome: Boss CE-2W Chorus
           preco: ~R$ 1.400
           obs: Reedição fiel do chorus clássico.
+          urlAfiliado: https://meli.la/1iXnVQE
   - nome: Renato Rocha
     funcao: Baixo
     anos: 1982–1992
