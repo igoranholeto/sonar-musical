@@ -28,6 +28,7 @@ integrantes:
         original:
           nome: Fender Telecaster Custom
           preco: ~R$ 10.000
+          urlAfiliado: https://meli.la/2G1Lhpy
         low:
           nome: Squier Classic Vibe Telecaster
           preco: ~R$ 2.800
@@ -37,6 +38,7 @@ integrantes:
         original:
           nome: TC Electronic Nova Delay
           preco: ~R$ 2.500
+          urlAfiliado: https://meli.la/2FR48AL
         low:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500
@@ -61,6 +63,7 @@ integrantes:
         original:
           nome: Yamaha CP80 (piano elétrico de palco)
           preco: ~R$ 25.000
+          urlAfiliado: https://meli.la/1EXczq4
         low:
           nome: Yamaha P-125
           preco: ~R$ 4.000
@@ -70,6 +73,7 @@ integrantes:
         original:
           nome: Martin Custom Acoustic
           preco: ~R$ 20.000
+          urlAfiliado: https://meli.la/2NaegMk
         low:
           nome: Yamaha FG800
           preco: ~R$ 1.900
@@ -93,6 +97,7 @@ integrantes:
         original:
           nome: Music Man StingRay
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/2w5DTEK
         low:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500
@@ -116,6 +121,7 @@ integrantes:
         original:
           nome: DW Collector's Series
           preco: ~R$ 28.000
+          urlAfiliado: https://meli.la/2rHzT7c
         low:
           nome: Pearl Roadshow
           preco: ~R$ 4.500

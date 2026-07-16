@@ -27,6 +27,7 @@ integrantes:
         original:
           nome: Gibson ES-355 "Lucille" (Signature)
           preco: ~R$ 25.000
+          urlAfiliado: https://www.ludimusic.com/br/guitarras-hollowbody/gibson-1959-es355-reissue-vos-ebony
         low:
           nome: Epiphone ES-335
           preco: ~R$ 6.000
@@ -36,6 +37,7 @@ integrantes:
         original:
           nome: Fender Twin Reverb
           preco: ~R$ 15.000
+          urlAfiliado: https://meli.la/155eUws
         low:
           nome: Fender Champion 40
           preco: ~R$ 2.500

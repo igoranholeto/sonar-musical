@@ -30,6 +30,7 @@ integrantes:
         original:
           nome: Fender Steve Harris Precision Bass
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/1sEcgZ2
         low:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
@@ -39,6 +40,7 @@ integrantes:
         original:
           nome: Marshall JMP (cabeçote)
           preco: ~R$ 9.000
+          urlAfiliado: https://meli.la/2zarDmT
         low:
           nome: Hartke HD75 Combo
           preco: ~R$ 3.200
@@ -177,6 +179,7 @@ integrantes:
         original:
           nome: Marshall JMP
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/2zarDmT
         low:
           nome: Boss Katana 50
           preco: ~R$ 1.700
