@@ -68,6 +68,7 @@ integrantes:
         original:
           nome: Shure Beta 58A
           preco: ~R$ 1.100
+          urlAfiliado: https://meli.la/2xbTDKZ
         low:
           nome: Behringer XM8500
           preco: ~R$ 180
@@ -77,6 +78,7 @@ integrantes:
         original:
           nome: In-ear Shure PSM 900
           preco: ~R$ 6.000
+          urlAfiliado: https://meli.la/1pAkMk1
         low:
           nome: Behringer Powerplay In-ear
           preco: ~R$ 900
@@ -103,6 +105,7 @@ integrantes:
         original:
           nome: Fender Dave Murray Stratocaster (HSS)
           preco: ~R$ 15.000
+          urlAfiliado: https://meli.la/2Xg1eEv
         low:
           nome: Squier Bullet Strat HSS
           preco: ~R$ 1.600
@@ -112,6 +115,7 @@ integrantes:
         original:
           nome: Marshall JCM800
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/2KrRFjV
         low:
           nome: Boss Katana 100 MkII
           preco: ~R$ 2.400
@@ -137,6 +141,7 @@ integrantes:
         original:
           nome: Jackson Adrian Smith SDX
           preco: ~R$ 8.000
+          urlAfiliado: https://meli.la/1kpuMbd
         low:
           nome: Harley Benton Fusion-II HH
           preco: ~R$ 2.500
@@ -146,6 +151,7 @@ integrantes:
         original:
           nome: Marshall JCM800
           preco: ~R$ 13.000
+          urlAfiliado: https://meli.la/2KrRFjV
         low:
           nome: Boss Katana 100 MkII
           preco: ~R$ 2.400
@@ -171,6 +177,7 @@ integrantes:
         original:
           nome: Fender Janick Gers Stratocaster
           preco: ~R$ 9.000
+          urlAfiliado: https://meli.la/1p3nLLp
         low:
           nome: Squier Classic Vibe 60s Strat
           preco: ~R$ 3.100
