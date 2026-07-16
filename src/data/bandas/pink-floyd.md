@@ -60,6 +60,7 @@ integrantes:
         original:
           nome: Fender Precision Bass
           preco: ~R$ 10.000
+          urlAfiliado: https://meli.la/33TZgz6
         low:
           nome: Squier Affinity P-Bass
           preco: ~R$ 1.900
@@ -83,6 +84,7 @@ integrantes:
         original:
           nome: Hammond Organ + EMS Synthi A
           preco: ~R$ 25.000
+          urlAfiliado: https://meli.la/1tMTanT
         low:
           nome: Yamaha PSR-E373 (teclado arranjador)
           preco: ~R$ 1.800
@@ -107,6 +109,7 @@ integrantes:
         original:
           nome: Ludwig Vistalite (kit translúcido icônico)
           preco: ~R$ 25.000
+          urlAfiliado: https://meli.la/1tbZthn
         low:
           nome: Pearl Export EXX
           preco: ~R$ 6.500

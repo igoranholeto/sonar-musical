@@ -38,6 +38,7 @@ integrantes:
         original:
           nome: Harmon Mute (sem haste)
           preco: ~R$ 800
+          urlAfiliado: https://meli.la/26CNb9r
         low:
           nome: Harmon Mute genérica
           preco: ~R$ 250
@@ -62,6 +63,7 @@ integrantes:
         original:
           nome: Selmer Mark VI
           preco: ~R$ 30.000
+          urlAfiliado: https://www.mercadolivre.com.br/saxofone-selmer-mark-vl/up/MLBU3872694577
         low:
           nome: Yamaha YTS-280
           preco: ~R$ 6.000
