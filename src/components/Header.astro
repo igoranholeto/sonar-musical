@@ -59,7 +59,7 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
       </li>
 
       <!-- Análises com dropdown de subcategorias -->
-      <li class="relative">
+      <li class="relative" id="analises-menu-item">
         <div
           class={`flex items-center rounded-lg transition-colors ${
             isAnalisesActive ? 'text-brand bg-brand/10' : 'text-muted hover:text-foreground hover:bg-foreground/5'
@@ -294,6 +294,18 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
   const dropdownBtn = document.getElementById('analises-dropdown-btn')!;
   const dropdown = document.getElementById('analises-dropdown')!;
   const dropdownIcon = document.getElementById('analises-dropdown-icon')!;
+  const analisesMenuItem = document.getElementById('analises-menu-item')!;
+  let dropdownCloseTimer: ReturnType<typeof setTimeout> | null = null;
+
+  function openDropdown() {
+    if (dropdownCloseTimer) {
+      clearTimeout(dropdownCloseTimer);
+      dropdownCloseTimer = null;
+    }
+    dropdown.classList.remove('hidden');
+    dropdownBtn.setAttribute('aria-expanded', 'true');
+    dropdownIcon.classList.add('rotate-180');
+  }
 
   function closeDropdown() {
     dropdown.classList.add('hidden');
@@ -302,15 +314,24 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
   }
 
   function toggleDropdown() {
-    const isOpen = dropdown.classList.toggle('hidden') === false;
-    dropdownBtn.setAttribute('aria-expanded', String(isOpen));
-    dropdownIcon.classList.toggle('rotate-180', isOpen);
+    if (dropdown.classList.contains('hidden')) openDropdown();
+    else closeDropdown();
   }
 
   dropdownBtn.addEventListener('click', (e) => {
     e.stopPropagation();
     toggleDropdown();
   });
+
+  // Abre ao passar o mouse (desktop); o delay no fechamento evita
+  // que o menu suma ao mover o cursor do botão até a lista.
+  const hoverCapable = window.matchMedia('(hover: hover)').matches;
+  if (hoverCapable) {
+    analisesMenuItem.addEventListener('mouseenter', openDropdown);
+    analisesMenuItem.addEventListener('mouseleave', () => {
+      dropdownCloseTimer = setTimeout(closeDropdown, 150);
+    });
+  }
 
   document.addEventListener('click', (e) => {
     if (!dropdown.contains(e.target as Node) && e.target !== dropdownBtn) closeDropdown();
