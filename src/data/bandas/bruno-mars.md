@@ -28,6 +28,7 @@ integrantes:
         original:
           nome: Fender Stratocaster Custom Shop
           preco: ~R$ 18.000
+          urlAfiliado: https://meli.la/1TPmWGF
         low:
           nome: Squier Classic Vibe 60s Stratocaster
           preco: ~R$ 3.000
@@ -37,6 +38,7 @@ integrantes:
         original:
           nome: Shure Axient Digital (sem fio)
           preco: ~R$ 15.000
+          urlAfiliado: https://meli.la/2kvn2eF
         low:
           nome: Shure SM58
           preco: ~R$ 800
@@ -62,6 +64,7 @@ integrantes:
         original:
           nome: Music Man StingRay
           preco: ~R$ 12.000
+          urlAfiliado: https://meli.la/2w5DTEK
         low:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500

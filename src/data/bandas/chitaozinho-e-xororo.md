@@ -26,6 +26,7 @@ integrantes:
         original:
           nome: Rozini Viola Caipira Artesanal
           preco: ~R$ 4.500
+          urlAfiliado: https://meli.la/2y3EqyZ
         low:
           nome: Rozini Viola Caipira Estudante
           preco: ~R$ 1.200
