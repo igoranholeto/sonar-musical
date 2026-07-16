@@ -33,6 +33,7 @@ integrantes:
           nome: Yamaha YTR-2330
           preco: ~R$ 3.500
           obs: Trompete estudante confiável para começar.
+          urlAfiliado: https://meli.la/1wJusf4
       - tipo: Surdina
         original:
           nome: Harmon Mute (sem haste)
@@ -41,6 +42,7 @@ integrantes:
           nome: Harmon Mute genérica
           preco: ~R$ 250
           obs: Mesmo efeito abafado e nasal.
+          urlAfiliado: https://meli.la/24vBVw7
   - foto: /images/john-coltrane-sonar.webp
     fotoAlt: john coltrane sonar
     pontos:
@@ -64,6 +66,7 @@ integrantes:
           nome: Yamaha YTS-280
           preco: ~R$ 6.000
           obs: Sax estudante com boa afinação e resposta.
+          urlAfiliado: https://meli.la/1eiaPcy
   - foto: /images/bill-evans-sonar.webp
     fotoAlt: bill evans integrante
     pontos:
@@ -110,6 +113,7 @@ integrantes:
           nome: Baixo acústico Michael ABX
           preco: ~R$ 5.000
           obs: Entrada acessível para walking bass em estúdio.
+          urlAfiliado: https://meli.la/1oJcg6X
 albuns:
   - ano: 1959
     descricao: O álbum de jazz mais vendido da história, referência maior do jazz

@@ -34,6 +34,7 @@ integrantes:
           nome: LTD Snakebyte (Signature Series)
           preco: ~R$ 6.500
           obs: Mesma forma icônica com captação ativa por menos.
+          urlAfiliado: https://meli.la/1NjEMj3
       - tipo: Amplificação
         original:
           nome: Mesa Boogie Dual Rectifier
@@ -68,6 +69,7 @@ integrantes:
           nome: LTD KH-202
           preco: ~R$ 3.800
           obs: Formato e captações ativas parecidos com o original.
+          urlAfiliado: https://meli.la/2cYxyCV
       - tipo: Pedais
         original:
           nome: Dunlop KH95 Kirk Hammett Cry Baby Wah
@@ -76,6 +78,7 @@ integrantes:
           nome: Dunlop Cry Baby Standard GCB95
           preco: ~R$ 450
           obs: Mesmo circuito clássico do wah por bem menos.
+          urlAfiliado: https://meli.la/1KPsgCM
   - foto: /images/robert-trujillo-integrante-sonar.webp
     fotoAlt: robert integrante metallica
     pontos:
@@ -99,6 +102,7 @@ integrantes:
           nome: Squier Classic Vibe Jazz Bass
           preco: ~R$ 3.200
           obs: Tom clássico de Jazz Bass por uma fração do preço.
+          urlAfiliado: https://meli.la/1u1Tu8f
       - tipo: Amplificação
         original:
           nome: Ampeg SVT Classic
@@ -107,6 +111,7 @@ integrantes:
           nome: Ampeg BA-115
           preco: ~R$ 3.500
           obs: Combo compacto com o tom grave característico Ampeg.
+          urlAfiliado: https://meli.la/2bjY7RU
   - foto: /images/lars-ulrich-integrante-sonar.jpg
     fotoAlt: lars integrante metallica
     pontos:
@@ -130,6 +135,7 @@ integrantes:
           nome: Pearl Export EXX
           preco: ~R$ 6.500
           obs: Kit versátil com boa projeção para ensaio e palco.
+          urlAfiliado: https://meli.la/2NPjfp2
       - tipo: Pratos
         original:
           nome: Zildjian K Custom
@@ -137,6 +143,7 @@ integrantes:
         low:
           nome: Zildjian ZBT
           preco: ~R$ 2.800
+          urlAfiliado: https://meli.la/34mvdYJ
           obs: Entrada na linha Zildjian com bom brilho.
 albuns:
   - ano: 1986

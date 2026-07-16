@@ -208,6 +208,7 @@ integrantes:
           nome: Pearl Export EXX
           preco: ~R$ 6.500
           obs: Kit versátil de palco.
+          urlAfiliado: https://meli.la/2NPjfp2
       - tipo: Pratos
         original:
           nome: Paiste Signature
@@ -216,6 +217,7 @@ integrantes:
           nome: Paiste PST7
           preco: ~R$ 3.500
           obs: Brilho e projeção.
+          urlAfiliado: https://meli.la/2AST1yX
 albuns:
   - nome: The Number of the Beast
     ano: 1982
