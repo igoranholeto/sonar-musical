@@ -1,0 +1,65 @@
+# Sonar Musical
+
+> Sonar Musical é um blog brasileiro (pt-BR) de análises honestas e guias de compra sobre equipamentos musicais — guitarras, violões, amplificadores, pedais, captadores e acessórios. Todo o conteúdo é escrito e testado por um guitarrista real, sem textos patrocinados disfarçados de review.
+
+Site: https://sonarmusical.com.br
+Idioma: Português (Brasil)
+Autor principal: Igor Silva Anholeto — guitarrista, fundador e responsável por todas as análises publicadas no site (https://sonarmusical.com.br/autor/igor-anholeto/).
+
+Padrões editoriais: análises não são pagas para serem positivas; produtos recebidos para teste são declarados explicitamente; recomendações se baseiam em testes reais, não em comissão de afiliado; análises são atualizadas quando os produtos mudam. Detalhes em /about.
+
+## Guias de Compra e Comparativos
+
+- [Melhores Guitarras Elétricas para Iniciantes em 2026](https://sonarmusical.com.br/blog/melhores-guitarras-eletricas-para-iniciantes-2026/): melhores guitarras elétricas para quem está começando, em todas as faixas de preço.
+- [Guitarra Elétrica Profissional: Os 5 Melhores Modelos de 2026](https://sonarmusical.com.br/blog/guitarra-eletrica-profissional-guia-2026/): seleção de guitarras elétricas profissionais com análise técnica.
+- [Melhor Guitarra de 7 Cordas em 2026](https://sonarmusical.com.br/blog/melhor-guitarra-7-cordas-2026/): top 5 guitarras de 7 cordas para metal e djent.
+- [Melhor Guitarra para Blues em 2026](https://sonarmusical.com.br/blog/melhor-guitarra-para-blues/): 5 opções de guitarra para blues, do iniciante ao profissional.
+- [Melhores Violões de 2026](https://sonarmusical.com.br/blog/melhores-violoes-2026/): top 7 violões por faixa de preço, de R$ 600 a R$ 8.000.
+- [Melhor Amplificador de Guitarra em 2026](https://sonarmusical.com.br/blog/melhor-amplificador-de-guitarra-2026/): top 6 amplificadores testados por perfil de guitarrista.
+- [Melhor Pedaleira de Guitarra em 2026](https://sonarmusical.com.br/blog/melhor-pedaleira-de-guitarra-2026/): comparativo das 5 principais pedaleiras do mercado.
+- [Melhor Interface de Áudio para Guitarra em 2026](https://sonarmusical.com.br/blog/melhor-interface-de-audio-para-guitarra-2026/): 5 melhores interfaces de áudio para gravar guitarra em casa.
+- [Melhores Cordas de Guitarra em 2026](https://sonarmusical.com.br/blog/melhores-cordas-de-guitarra-2026/): quais cordas escolher para cada estilo e orçamento.
+- [Fender vs Gibson: Qual Escolher?](https://sonarmusical.com.br/blog/fender-vs-gibson-qual-escolher/): comparação entre Stratocaster e Les Paul — som, tocabilidade e preço.
+- [Violão ou Guitarra: Por Onde Começar?](https://sonarmusical.com.br/blog/violao-ou-guitarra-por-onde-comecar/): prós e contras de cada instrumento para quem está decidindo por onde começar.
+
+## Reviews de Produtos
+
+- [Fender Blues Junior IV: Ainda o Rei dos Amplificadores de Prática?](https://sonarmusical.com.br/blog/review-fender-blues-junior-iv/): teste completo do amplificador valvulado Fender Blues Junior IV.
+- [Review: Squier Classic Vibe '60s Stratocaster](https://sonarmusical.com.br/blog/squier-classic-vibe-60s-stratocaster-review/): análise da Squier Classic Vibe 60s Stratocaster — vale os R$ 2.500?
+
+## Manutenção e Técnica
+
+- [Como Afinar a Guitarra: Guia Completo](https://sonarmusical.com.br/blog/como-afinar-guitarra-guia-completo/): métodos de afinação por afinador, harmônicos e ouvido.
+- [Manutenção da Guitarra em Casa](https://sonarmusical.com.br/blog/como-fazer-manutencao-guitarra-em-casa/): o que fazer em casa e quando chamar um luthier.
+- [Como Montar um Pedalboard do Zero](https://sonarmusical.com.br/blog/como-montar-pedalboard/): guia passo a passo de montagem de pedalboard.
+- [Captações de Guitarra: Passivas vs Ativas](https://sonarmusical.com.br/blog/captacoes-guitarra-passivas-vs-ativas/): diferenças entre captadores passivos e ativos e quando trocar.
+- [5 Pedais Boss Essenciais para Todo Guitarrista](https://sonarmusical.com.br/blog/5-pedais-boss-essenciais-para-guitarristas/): pedais Boss recomendados para pedalboard.
+
+## Perguntas Frequentes sobre Guitarra
+
+- [Quantas Cordas Tem uma Guitarra?](https://sonarmusical.com.br/blog/quantas-cordas-tem-uma-guitarra/): configurações de 4 a 12 cordas e suas afinações.
+- [Quanto Custa uma Guitarra Elétrica?](https://sonarmusical.com.br/blog/quanto-custa-uma-guitarra-eletrica/): faixas de preço de guitarras elétricas em 2026.
+- [Quanto Tempo Leva para Aprender Guitarra?](https://sonarmusical.com.br/blog/quanto-tempo-aprender-guitarra/): cronograma realista de evolução por nível.
+- [Quem Inventou a Guitarra Elétrica?](https://sonarmusical.com.br/blog/quem-inventou-a-guitarra-eletrica/): história do instrumento, de 1931 até o Brasil.
+
+## Bandas e Artistas
+
+Perfis com biografia, integrantes, equipamento usado e análise de discografia de: [B.B. King](https://sonarmusical.com.br/bandas/bb-king/), [Bruno Mars](https://sonarmusical.com.br/bandas/bruno-mars/), [Chitãozinho & Xororó](https://sonarmusical.com.br/bandas/chitaozinho-e-xororo/), [Coldplay](https://sonarmusical.com.br/bandas/coldplay/), [Iron Maiden](https://sonarmusical.com.br/bandas/iron-maiden/), [Legião Urbana](https://sonarmusical.com.br/bandas/legiao-urbana/), [Metallica](https://sonarmusical.com.br/bandas/metallica/), [Miles Davis](https://sonarmusical.com.br/bandas/miles-davis/) e [Pink Floyd](https://sonarmusical.com.br/bandas/pink-floyd/). Índice completo em https://sonarmusical.com.br/bandas/.
+
+## Ferramentas
+
+- [Afinador Online Grátis](https://sonarmusical.com.br/afinador/): afinador de guitarra e violão via microfone, com suporte a Standard, Drop D, Open G, DADGAD e outras afinações.
+- [Tablaturas](https://sonarmusical.com.br/tablaturas/): tablaturas para download.
+- [Jogo de Teoria Musical](https://sonarmusical.com.br/aprender/jogo/): quiz interativo para aprender teoria musical.
+
+## Sobre
+
+- [Sobre o Sonar Musical](https://sonarmusical.com.br/about/): missão do site, autor e padrões editoriais.
+- [Índice completo do blog](https://sonarmusical.com.br/blog/): todos os artigos publicados.
+- [Mapa do site (XML)](https://sonarmusical.com.br/sitemap-index.xml)
+- [Feed RSS](https://sonarmusical.com.br/rss.xml)
+
+## Optional
+
+- [Categorias](https://sonarmusical.com.br/categoria/guitarras/): artigos filtrados por categoria (Guitarras, Amplificadores, Pedais, Acessórios, Violões, Home Studio, Técnica e Teoria etc.)
+- [Contato](https://sonarmusical.com.br/contact/)
