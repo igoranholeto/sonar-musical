@@ -25,6 +25,15 @@ const {
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`;
+
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Sonar Musical',
+  url: 'https://sonarmusical.com.br',
+  logo: 'https://sonarmusical.com.br/favicon.svg',
+  description: 'Blog de análises honestas e guias de compra sobre equipamentos musicais — guitarras, amplificadores, pedais e mais.',
+};
 ---
 
 <!doctype html>
@@ -103,6 +112,7 @@ const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`
     <link rel="llms.txt" href="/llms.txt" />
 
     <!-- Dados estruturados -->
+    <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}
