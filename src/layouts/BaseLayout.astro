@@ -24,7 +24,12 @@ const {
 } = Astro.props;
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
-const fullTitle = title === 'Sonar Musical' ? title : `${title} | Sonar Musical`;
+// Anexa a marca só quando o resultado cabe nos ~60 caracteres exibidos na SERP;
+// títulos longos ficam sem sufixo pra não serem truncados no Google.
+const fullTitle =
+  title === 'Sonar Musical' || `${title} | Sonar Musical`.length > 60
+    ? title
+    : `${title} | Sonar Musical`;
 
 const organizationSchema = {
   '@context': 'https://schema.org',

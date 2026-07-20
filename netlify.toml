@@ -21,6 +21,13 @@
   status = 301
   force = true
 
+# Redireciona URL antiga do post sobre pedais Boss (404) para o post atual
+[[redirects]]
+  from = "/blog/top-5-boss-pedals-every-guitarist-needs/"
+  to = "/blog/5-pedais-boss-essenciais-para-guitarristas/"
+  status = 301
+  force = true
+
 # Cache longo para assets com hash (Astro gera nomes com hash automaticamente)
 [[headers]]
   for = "/_astro/*"
@@ -56,6 +63,8 @@
     Cache-Control = "public, max-age=3600"
 
 # Headers de segurança em todas as páginas
+# CSP: unpkg.com é exigido pelo Decap CMS em /admin (Netlify aplica o header no site inteiro,
+# regras mais específicas não substituem headers de regras mais amplas)
 [[headers]]
   for = "/*"
   [headers.values]
@@ -65,3 +74,4 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(self), geolocation=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://identity.netlify.com https://unpkg.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://*.google-analytics.com https://*.googletagmanager.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com https://identity.netlify.com; frame-src https://www.youtube.com https://identity.netlify.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"

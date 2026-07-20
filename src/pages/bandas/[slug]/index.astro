@@ -23,7 +23,7 @@ const equipReady = integrantes.some((m) => m.setup.length > 0);
 const albunsComLinks = albuns.map((album) => ({
   ...album,
   spotifyHref: album.spotifyUrl || `https://open.spotify.com/search/${encodeURIComponent(`${nome} ${album.nome}`)}`,
-  saibaMaisHref: `/bandas/${banda.id}/albuns/${slugify(album.nome)}`,
+  saibaMaisHref: `/bandas/${banda.id}/albuns/${slugify(album.nome)}/`,
 }));
 
 const schema = {
@@ -37,7 +37,7 @@ const schema = {
 };
 ---
 
-<BaseLayout title={nome} description={blurb} image={fotoCapa} schema={schema}>
+<BaseLayout title={`${nome}: Equipamentos, Integrantes e Álbuns`} description={blurb} image={fotoCapa} schema={schema}>
   <div class="theme-locked-dark">
   <!-- Banner -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:380px`}>
@@ -45,6 +45,8 @@ const schema = {
       <img
         src={fotoCapa}
         alt={fotoCapaAlt ?? nome}
+        width="1200"
+        height="380"
         class="absolute inset-0 w-full h-full object-cover"
         style={`object-position:center ${fotoCapaPosition ?? 20}%`}
         loading="eager"
@@ -54,7 +56,7 @@ const schema = {
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.3),rgba(10,10,10,.82) 74%,#0a0a0a)"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-10">
       <a
-        href="/bandas"
+        href="/bandas/"
         class="inline-flex items-center text-[13.5px] font-semibold text-white bg-black/40 border border-white/30 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
       >
         ← Todas as bandas
@@ -94,7 +96,7 @@ const schema = {
         <div class="bg-card border border-border rounded-2xl p-5 flex items-center gap-3.5">
           <div class="w-[54px] h-[54px] rounded-full flex-shrink-0 overflow-hidden flex items-center justify-center" style={`background:${gradient}`}>
             {membro.foto ? (
-              <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} class="w-full h-full object-cover" loading="lazy" />
+              <img src={membro.foto} alt={membro.fotoAlt ?? membro.nome} width="54" height="54" class="w-full h-full object-cover" loading="lazy" />
             ) : (
               <span class="text-sm font-extrabold text-white/90">{iniciais(membro.nome)}</span>
             )}
@@ -126,7 +128,7 @@ const schema = {
           <div class="flex items-center gap-4 mt-5.5 flex-wrap">
             {equipReady ? (
               <a
-                href={`/bandas/${banda.id}/equipamentos`}
+                href={`/bandas/${banda.id}/equipamentos/`}
                 class="inline-flex items-center font-bold text-sm text-white bg-brand rounded-xl px-5.5 py-3.5 hover:bg-brand-dark transition-colors"
               >
                 Ver equipamentos →
@@ -167,7 +169,7 @@ const schema = {
                 <div class="disco-card__vinyl" style={`background:${gradient}`}></div>
                 <div class="disco-card__cover">
                   {album.capa ? (
-                    <img src={album.capa} alt={album.capaAlt ?? album.nome} loading="lazy" />
+                    <img src={album.capa} alt={album.capaAlt || `Capa do álbum ${album.nome}`} width="190" height="190" loading="lazy" />
                   ) : (
                     <div class="disco-card__cover-fallback" style={`background:${gradient}`}>
                       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-opacity="0.85" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">

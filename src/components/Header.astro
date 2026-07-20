@@ -3,10 +3,10 @@ import { slugifyCategory } from '../utils/slug';
 
 const navLinks = [
   { href: '/', label: 'Início' },
-  { href: '/bandas', label: 'Bandas' },
-  { href: '/tablaturas', label: 'Tablaturas' },
-  { href: '/aprender', label: 'Aprender' },
-  { href: '/afinador', label: 'Afinador' },
+  { href: '/bandas/', label: 'Bandas' },
+  { href: '/tablaturas/', label: 'Tablaturas' },
+  { href: '/aprender/', label: 'Aprender' },
+  { href: '/afinador/', label: 'Afinador' },
   { href: '/about', label: 'Sobre' },
   { href: '/contact', label: 'Contato' },
 ];
@@ -66,7 +66,7 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
           }`}
         >
           <a
-            href="/blog"
+            href="/blog/"
             aria-current={isAnalisesActive ? 'page' : undefined}
             class="pl-3 pr-1.5 py-2 text-sm font-medium whitespace-nowrap"
           >
@@ -102,7 +102,7 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
           ))}
           <div class="my-1.5 border-t border-border"></div>
           <a
-            href="/blog"
+            href="/blog/"
             role="menuitem"
             class="block px-4 py-2 text-sm font-semibold text-brand hover:bg-foreground/5 transition-colors"
           >
@@ -210,7 +210,7 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
           }`}
         >
           <a
-            href="/blog"
+            href="/blog/"
             aria-current={isAnalisesActive ? 'page' : undefined}
             class="flex-1 block pl-4 pr-2 py-2.5 text-sm font-medium"
           >
