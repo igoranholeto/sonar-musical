@@ -35,7 +35,7 @@ const filename = pdf ? pdf.split('/').pop() : undefined;
     <h3 class="font-bold text-base leading-snug mb-1">{titulo}</h3>
     <p class="text-sm text-muted mb-1">
       {artistaSlug ? (
-        <a href={`/bandas/${artistaSlug}`} class="hover:text-foreground transition-colors">{artista}</a>
+        <a href={`/bandas/${artistaSlug}/`} class="hover:text-foreground transition-colors">{artista}</a>
       ) : (
         artista
       )}

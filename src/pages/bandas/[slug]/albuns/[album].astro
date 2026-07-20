@@ -46,19 +46,19 @@ const schema = {
   <!-- Banner com capa desfocada de fundo -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient}`}>
     {capa && (
-      <img src={capa} alt="" class="absolute inset-0 w-full h-full object-cover album-bg" aria-hidden="true" />
+      <img src={capa} alt="" width="1200" height="420" class="absolute inset-0 w-full h-full object-cover album-bg" aria-hidden="true" />
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.92) 80%,#0a0a0a)"></div>
     <div class="relative max-w-5xl mx-auto px-4 pt-7 pb-10">
       <div class="flex gap-2.5 flex-wrap">
         <a
-          href="/bandas"
+          href="/bandas/"
           class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
         >
           ← Todas as bandas
         </a>
         <a
-          href={`/bandas/${banda.id}`}
+          href={`/bandas/${banda.id}/`}
           class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
         >
           ← {nomeBanda}
@@ -68,7 +68,7 @@ const schema = {
       <div class="flex items-end gap-6 mt-9 flex-wrap">
         <div class="album-hero-cover flex-shrink-0">
           {capa ? (
-            <img src={capa} alt={capaAlt ?? nome} loading="eager" fetchpriority="high" />
+            <img src={capa} alt={capaAlt || `Capa do álbum ${nome}`} width="168" height="168" loading="eager" fetchpriority="high" />
           ) : (
             <div class="w-full h-full flex items-center justify-center" style={`background:${gradient}`}>
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-opacity="0.85" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">

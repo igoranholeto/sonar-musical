@@ -37,7 +37,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
 
 <article class="group bg-card rounded-xl border border-border overflow-hidden hover:border-brand/40 hover:-translate-y-1 hover:shadow-lg hover:shadow-black/20 transition-all duration-300 flex flex-col">
   <!-- Imagem de capa -->
-  <a href={`/blog/${slug}`} class="block overflow-hidden aspect-video bg-elevated relative" tabindex="-1" aria-hidden="true">
+  <a href={`/blog/${slug}/`} class="block overflow-hidden aspect-video bg-elevated relative" tabindex="-1" aria-hidden="true">
     {image ? (
       <img
         src={unsplashSrc(image, 400)}
@@ -79,7 +79,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     </div>
 
     <h2 class="text-base font-bold leading-snug mb-2 line-clamp-2">
-      <a href={`/blog/${slug}`} class="hover:text-brand transition-colors">
+      <a href={`/blog/${slug}/`} class="hover:text-brand transition-colors">
         {title}
       </a>
     </h2>
@@ -89,7 +89,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     <div class="flex items-center justify-between text-xs text-subtle mt-auto">
       <time datetime={pubDate.toISOString()}>{formattedDate}</time>
       <a
-        href={`/blog/${slug}`}
+        href={`/blog/${slug}/`}
         class="font-semibold text-brand hover:underline underline-offset-2"
         aria-label={`Ler: ${title}`}
       >
