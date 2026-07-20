@@ -1,0 +1,1001 @@
+keyword	volume	difficulty	has_paa	parent	intents
+guitarra elétrica	17000	0	PAA	guitarra elétrica	Informational,Commercial,Non-branded,Non-local
+amplificador guitarra	5900	0	PAA	amplificador guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+pedaleira guitarra	4800	0	PAA	pedaleira para guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador de guitarra	1100	0	PAA	amplificador guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+cordas guitarra	900	0	PAA	corda guitarra	Commercial,Transactional,Non-branded,Non-local
+guitarra 7 cordas	800	0	PAA	guitarra 7 cordas	Commercial,Transactional,Non-branded,Non-local
+pedaleira para guitarra	700	0	PAA	pedaleira de guitarra	Informational,Commercial,Non-branded,Non-local
+pedaleira de guitarra	700	0	PAA	pedaleira guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+mini amplificador guitarra	500	0	PAA	mini amplificador guitarra	Commercial,Transactional,Non-branded,Non-local
+cordas de guitarra	450	0	PAA	corda de guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica profissional	400	0	PAA	guitarra elétrica	Commercial,Transactional,Non-branded,Non-local
+cordas da guitarra	350	0	PAA	cordas guitarra	Informational,Non-branded,Non-local
+captador guitarra	300	2	PAA	malagoli	Informational,Commercial,Transactional,Non-branded,Non-local
+quanto custa uma guitarra elétrica	300	0	PAA	guitarra elétrica	Informational,Commercial,Non-branded,Non-local
+amplificador para guitarra	250	0	PAA	amplificador guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+quem inventou a guitarra elétrica	200	0	PAA	quem inventou a guitarra elétrica	Informational,Non-branded,Non-local
+marcha contra a guitarra elétrica	200	0	PAA	passeata contra a guitarra elétrica	Informational,Non-branded,Non-local
+guitarra elétrica infantil	200	0	PAA	guitarra infantil	Commercial,Transactional,Non-branded,Non-local
+guitarra 12 cordas	200	0		guitarra 12 cordas	Informational,Commercial,Transactional,Non-branded,Non-local
+captador de guitarra	200	0	PAA	malagoli	Informational,Commercial,Non-branded,Non-local
+nome das cordas da guitarra	200	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+guitarra elétrica iniciante	200	0	PAA	guitarra para iniciantes	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra 8 cordas	200	0	PAA	guitarra 8 cordas	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica barata	200	0	PAA	guitarra elétrica barata	Informational,Commercial,Transactional,Non-branded,Non-local
+cordas para guitarra	200	0	PAA	cordas guitarra	Commercial,Transactional,Non-branded,Non-local
+cordas guitarra 010	150	0	PAA	corda 010 guitarra	Commercial,Transactional,Non-branded,Non-local
+cordas elixir guitarra 010	150	0	PAA	elixir 010 guitarra	Commercial,Transactional,Branded,Non-local
+pedaleira guitarra profissional	150				
+guitarra cordas	150	0	PAA	corda de guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+quantas cordas tem uma guitarra	150	0	PAA	quantas cordas tem a guitarra	Informational,Non-branded,Non-local
+pedaleira para guitarra profissional	150				
+cordas de guitarra 010	100	0	PAA	corda 010 guitarra	Commercial,Transactional,Non-branded,Non-local
+melhor pedaleira para guitarra	100	0	PAA	melhor pedaleira custo beneficio	Informational,Commercial,Non-branded,Non-local
+guitarra de 12 cordas	100	0	PAA	guitarra 12 cordas	Commercial,Transactional,Non-branded,Non-local
+ei mãe eu tenho uma guitarra elétrica	100				Informational,Non-branded,Non-local
+cordas ernie ball guitarra 010	100	0	PAA	ernie ball super slinky	Commercial,Transactional,Branded,Non-local
+guitarra de 7 cordas	100	0	PAA	guitarra 7 cordas	Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra pequeno	100	0	PAA	mini amplificador guitarra	Commercial,Transactional,Non-branded,Non-local
+cordas guitarra 0.10	90	0	PAA	cordas guitarra 0.10	Commercial,Transactional,Non-branded,Non-local
+cordas elixir guitarra	90	0	PAA	encordoamento elixir	Informational,Commercial,Branded,Non-local
+mini guitarra elétrica	90				Commercial,Transactional,Non-branded,Non-local
+cordas guitarra 09	90				
+guitarra com amplificador	90	0	PAA	guitarra com amplificador	Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica para iniciantes	90	0	PAA	guitarra elétrica iniciante	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica usada	90	0	PAA	guitarra elétrica usada	Commercial,Transactional,Non-branded,Non-local
+melhores cordas para guitarra	90	0	PAA	melhores cordas para guitarra	Informational,Commercial,Non-branded,Non-local
+amplificador de guitarra pequeno	80				Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra tem quantas cordas	80	0	PAA	guitarra	Informational,Non-branded,Non-local
+preço de uma guitarra elétrica	80	0	PAA	guitarra elétrica	Informational,Commercial,Transactional,Non-branded,Non-local
+tipos de guitarra elétrica	80	0	PAA	tipos de guitarra	Informational,Non-branded,Non-local
+cordas de guitarra 09	70				
+melhor amplificador de guitarra	70	0	PAA	melhores amplificadores de guitarra	Informational,Commercial,Non-branded,Non-local
+kit guitarra e amplificador	70	0		kit guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+passeata contra a guitarra elétrica	70	0	PAA	passeata contra a guitarra elétrica	Informational,Non-branded,Non-local
+usado: guitarra elétrica	70				
+rebaixador de cordas guitarra	70	0	PAA	rebaixador de cordas guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica personalizada	70				
+primeira guitarra elétrica	70	0	PAA	quem inventou a guitarra elétrica	Informational,Non-branded,Non-local
+cordas guitarra notas	70	0	PAA	notas guitarra cordas	Informational,Non-branded,Non-local
+pedal distorção	60	0	PAA	pedal distorção	Commercial,Transactional,Non-branded,Non-local
+guitarra de 4 cordas	60				Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica stratocaster	60	0	PAA	guitarra stratocaster	Commercial,Transactional,Branded,Non-local
+guitarra elétrica em inglês	60				Informational,Non-branded,Non-local
+pedal de distorção	60	0	PAA	pedal distorção	Informational,Commercial,Non-branded,Non-local
+cordas elixir guitarra 09	60	0	PAA	corda elixir 09	Commercial,Transactional,Branded,Non-local
+cordas da guitarra nome	60	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+cordas 010 guitarra	60				Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica preço	60	0	PAA	guitarra elétrica	Informational,Commercial,Non-branded,Non-local
+amplificador guitarra marshall	60	0	PAA	marshall mg15	Commercial,Transactional,Branded,Non-local
+guitarra com amplificador embutido	60				
+mini pedaleira guitarra	60				
+elixir cordas guitarra	50	0	PAA	encordoamento elixir	Informational,Commercial,Transactional,Branded,Non-local
+guitarra 4 cordas	50				Commercial,Transactional,Non-branded,Non-local
+qual a melhor pedaleira para guitarra	50	0	PAA	melhor pedaleira custo beneficio	Informational,Commercial,Non-branded,Non-local
+notas da guitarra cordas	50	0	PAA	notas guitarra cordas	Informational,Non-branded,Non-local
+quais são as cordas da guitarra	50	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+notas guitarra cordas	50	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+nomes das cordas da guitarra	50	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+cordas sg guitarra	50	0	PAA	cordas sg	Commercial,Transactional,Branded,Non-local
+cordas 09 guitarra	50				
+guitarra elétrica vermelha	50	0	PAA	guitarra vermelha	Commercial,Transactional,Non-branded,Non-local
+amplificador portatil guitarra	50				Commercial,Transactional,Non-branded,Non-local
+pedaleira para guitarra boss gt-100	50				
+melhores cordas de guitarra	50	0	PAA	melhores cordas para guitarra	Informational,Commercial,Non-branded,Non-local
+cordas guitarra elixir	50	0	PAA	corda de violão elixir	Commercial,Transactional,Branded,Non-local
+guitarra 10 cordas	50				Informational,Commercial,Transactional,Non-branded,Non-local
+pedaleira guitarra zoom	40	0	PAA	pedaleira guitarra zoom	Commercial,Transactional,Branded,Non-local
+amplificador guitarra valvulado	40				Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra 50w	40				Informational,Commercial,Non-branded,Non-local
+amplificador valvulado guitarra	40				Informational,Commercial,Transactional,Non-branded,Non-local
+quantas cordas tem a guitarra	40	0	PAA	quantas cordas tem uma guitarra	Informational,Non-branded,Non-local
+simulador de amplificador de guitarra	40				Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica fender	40				Informational,Commercial,Transactional,Branded,Non-local
+cordas 0.10 guitarra	40				
+ordem das cordas da guitarra	40	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+cordas de guitarra elixir	40	0	PAA	encordoamento elixir	Commercial,Transactional,Branded,Non-local
+primeira guitarra elétrica do mundo	40	0	PAA	quem inventou a guitarra elétrica	Informational,Non-branded,Non-local
+cordas ernie ball guitarra 09	40				
+guitarra pedaleira	40	0	PAA	pedaleira guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+notas das cordas da guitarra	40	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+suporte para amplificador de guitarra	40	0	PAA	suporte amplificador	Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra portatil	30				
+cordas sg guitarra 010	30				
+quando surgiu a guitarra elétrica	30				
+amplificador guitarra fender	30				Informational,Commercial,Transactional,Branded,Non-local
+preço de guitarra elétrica	30	0	PAA	guitarra elétrica	Informational,Commercial,Transactional,Non-branded,Non-local
+nome das cordas guitarra	30	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+amplificador guitarra meteoro	30				Commercial,Transactional,Branded,Non-local
+guitarra elétrica yamaha	30				
+nome cordas guitarra	30	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+guitarra elétrica roxa	30	0	PAA	guitarra roxa	Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica kit	30				
+max cavalera guitarra 4 cordas	30				
+melhor pedaleira guitarra custo benefício	30				
+amplificador guitarra 100w	30	0	PAA	amplificador guitarra 100w	Informational,Commercial,Transactional,Non-branded,Non-local
+pedal de distorção para guitarra	30				Commercial,Transactional,Non-branded,Non-local
+cordas guitarra ordem	30	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+cordas para guitarra 010	30				
+pedaleira de guitarra profissional	30				
+pedaleira guitarra custo beneficio	30				
+cordas da guitarra notas	30	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+pedaleira guitarra boss	30				Informational,Commercial,Branded,Non-local
+cordas de guitarra preço	30				Informational,Commercial,Non-branded,Non-local
+amplificador de guitarra marshall	30	0	PAA	marshall amplificador	Commercial,Transactional,Branded,Non-local
+guitarra de 10 cordas	30				
+cordas 011 guitarra	30	0	PAA	corda 011 guitarra	Commercial,Transactional,Non-branded,Non-local
+notas cordas guitarra	30	0	PAA	notas guitarra cordas	Informational,Non-branded,Non-local
+guitarra elétrica online	30				
+guitarra elétrica kit completo	30				
+pedaleira profissional para guitarra	30				
+pedaleira guitarra digitech	30				
+cordas flatwound guitarra	30				
+pedaleira guitarra gt 100	30				
+cordas guitarra 011	30	0	PAA	corda 011 guitarra	Commercial,Transactional,Non-branded,Non-local
+captador guitarra humbucker	20				
+marcas de amplificador de guitarra	20				
+boss pedaleira guitarra	20				
+cordas elixir 010 guitarra	20				
+mini amplificador para guitarra	20				Commercial,Transactional,Non-branded,Non-local
+pedaleira para guitarra barata	20				Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica virtual	20				
+guitarra quantas cordas	20	0	PAA	guitarra	Informational,Non-branded,Non-local
+cordas guitarra sg	20	0	PAA	cordas sg	Informational,Commercial,Transactional,Branded,Non-local
+mini amplificador de guitarra	20				Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra 200w	20				
+guitarra solar 7 cordas	20	0		solar 7 cordas	Commercial,Transactional,Branded,Non-local
+guitarra elétrica hello kitty	20				
+kit guitarra elétrica	20				Informational,Commercial,Transactional,Non-branded,Non-local
+pedaleira pra guitarra	20	0		pedaleira de guitarra	Commercial,Transactional,Non-branded,Non-local
+abaixador de cordas guitarra	20				
+guitarra captador	20	0	PAA	malagoli	Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra fender frontman 10g reviews	20				
+hey mãe eu tenho uma guitarra elétrica	20				Informational,Non-branded,Non-local
+modelos de guitarra elétrica	20				
+aluguel de amplificador de guitarra	20				
+cordas para guitarra qual a melhor	20				
+origem da guitarra elétrica	20				
+guitarra elétrica rosa	20	0	PAA	guitarra rosa	Informational,Commercial,Transactional,Non-branded,Non-local
+valor de uma guitarra elétrica	20				
+amplificador de guitarra meteoro	20				Commercial,Transactional,Branded,Non-local
+cordas 0.9 guitarra	20				
+melhor amplificador para guitarra	20	0	PAA	amplificador guitarra	Informational,Commercial,Non-branded,Non-local
+notas guitarra 6 cordas	20				
+guitarra elétrica valor	20				
+amplificador portátil guitarra	20				
+quem criou a guitarra elétrica	20	0	PAA	quem inventou a guitarra elétrica	Informational,Non-branded,Non-local
+pedaleira guitarra mooer	20				
+cordas guitarra nome	20				
+valor de guitarra elétrica	20				
+melhores cordas guitarra	20				
+qual melhor pedaleira para guitarra	20				
+limpador de cordas de guitarra	20	0	PAA	limpador de cordas de guitarra	Commercial,Transactional,Non-branded,Non-local
+cordas de guitarra ernie ball	20				
+amplificador guitarra custo beneficio	20	0	PAA	amplificador guitarra custo beneficio	Informational,Commercial,Non-branded,Non-local
+como tocar guitarra elétrica	20				
+amplificador de guitarra valvulado	20				Informational,Commercial,Transactional,Non-branded,Non-local
+quantas cordas a guitarra tem	20				
+pedaleira guitarra tank g	20				
+afinador de guitarra elétrica	20				
+microfone para amplificador de guitarra	20	0	PAA	microfone para amplificador de guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra com um captador	20				
+qual o preço de uma guitarra elétrica	20				
+quanto custa uma pedaleira de guitarra	20				
+guitarra elétrica tagima	20	0	PAA	guitarra tagima	Commercial,Transactional,Branded,Non-local
+amplificador staner guitarra	20				
+cordas de guitarra 011	20				
+qual o melhor pedal de distorção para guitarra	20				
+altura das cordas guitarra	20	0	PAA	altura das cordas guitarra	Informational,Non-branded,Non-local
+ordem cordas guitarra	20	0	PAA	nome das cordas da guitarra	Informational,Non-branded,Non-local
+pedaleira usada para guitarra	20				
+preço de pedaleira para guitarra	20				
+quanto é uma guitarra elétrica	20				
+guitarra elétrica preta	20	0	PAA	guitarra preta	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica olx	20	0		guitarra elétrica usada	Informational,Commercial,Transactional,Branded,Non-local
+amplificador de guitarra barato	20	0	PAA	amplificador de guitarra barato	Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra staner	20				
+pedaleira guitarra barata	20	0	PAA	pedaleira guitarra barata	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica jackson	20				
+encordoamento guitarra 7 cordas	20				
+amplificador guitarra olx	20				Informational,Navigational,Commercial,Transactional,Branded,Non-local
+cordas para guitarra 09	20				
+qual melhor amplificador para guitarra	20				
+guitarra elétrica azul	20	0	PAA	guitarra azul	Commercial,Transactional,Non-branded,Non-local
+captador para guitarra	20	2	PAA	malagoli	Informational,Commercial,Transactional,Non-branded,Non-local
+partes de uma guitarra elétrica	20				
+qual o melhor amplificador para guitarra	20				
+guitarra elétrica ibanez	20				
+pedal guitarra distorção	20				Commercial,Transactional,Non-branded,Non-local
+guitarra 9 cordas	20	0	PAA	guitarra 9 cordas	Informational,Commercial,Transactional,Non-branded,Non-local
+cordas pra guitarra	20				
+cordas guitarra ernie ball	20				
+guitarra elétrica warlock	20				
+qual é a melhor guitarra elétrica?	20				
+uma guitarra tem quantas cordas	20				
+guitarra elétrica flying v	20				
+melhor pedal de distorção	20				Informational,Commercial,Non-branded,Non-local
+amplificador pequeno guitarra	20				
+qual a melhor guitarra elétrica para iniciantes	20				
+quando foi criada a guitarra elétrica	20	0	PAA	guitarra elétrica	Informational,Non-branded,Non-local
+quantas cordas uma guitarra tem	20				
+pedaleira para guitarra zoom	20				Commercial,Transactional,Branded,Non-local
+pedal distorção guitarra	20				Commercial,Transactional,Non-branded,Non-local
+pedaleira azul guitarra	20				
+amplificador guitarra borne	20				Informational,Commercial,Branded,Non-local
+guitarra elétrica les paul	20				
+história da guitarra elétrica	20	0	PAA	história da guitarra elétrica	Informational,Non-branded,Non-local
+guitarra 6 cordas	10				Commercial,Transactional,Non-branded,Non-local
+guitarra ibanez 7 cordas	10				Informational,Commercial,Transactional,Branded,Non-local
+pedaleira de guitarra boa e barata	10				
+jogo de cordas guitarra	10				
+guitarra japonesa de 4 cordas	10				
+kit guitarra completo com pedaleira	10				
+cordas de aço guitarra	10				
+guitarra infantil com microfone e amplificador	10				Commercial,Transactional,Non-branded,Non-local
+cabeçote amplificador guitarra	10				Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra que não precisa de amplificador	10				
+aluguel amplificador guitarra	10				
+cordas para guitarra elixir	10				Informational,Commercial,Transactional,Branded,Non-local
+amplificador de guitarra portatil	10				
+guitarra elétrica sem cordas	10				
+amplificador de guitarra borne	10				Informational,Commercial,Branded,Non-local
+amplificador guitarra usado	10				Commercial,Transactional,Non-branded,Non-local
+pedaleira guitarra gt-100	10				
+captador midi guitarra	10				
+pedaleira guitarra zoom g2	10				
+pedaleira cube baby guitarra	10				
+partes da guitarra elétrica	10				
+afinador guitarra elétrica	10				
+cordas alice guitarra	10				
+pedaleira guitarra zoom g5	10				
+pedaleira guitarra iniciante	10				Informational,Commercial,Transactional,Non-branded,Non-local
+corda para guitarra elétrica	10				
+amplificador de guitarra staner	10				
+pedaleira para guitarra boa e barata	10				
+amplificador guitarra electrica	10				
+guitarra elétrica giannini	10				Commercial,Transactional,Branded,Non-local
+pedaleira guitarra boss gt 100	10				
+guitarra elétrica azul escuro	10				
+melhor pedaleira guitarra	10				
+pedaleira guitarra virtual	10				Informational,Non-branded,Non-local
+amplificador yamaha guitarra	10				
+guitarra elétrica anjo	10				
+amplificador guitarra bluetooth	10				
+cordas de uma guitarra	10				
+guitarra 20 cordas	10				
+suporte para pedaleira de guitarra	10				
+guitarra elétrica infantil com microfone	10				
+guitarra 7 cordas waldman	10				
+guitarra japonesa de quatro cordas	10				
+guitarra 7 cordas barata	10				
+guitarra quantas cordas tem	10				
+guitarra 7 cordas usada	10	0		guitarra 7 cordas	Commercial,Transactional,Non-branded,Non-local
+melhor pedaleira para guitarra custo beneficio	10				
+amplificador guitarra behringer	10				
+como limpar as cordas da guitarra	10				
+guitarra elétrica mais cara do mundo	10				
+pedaleira para guitarra boss	10				Informational,Commercial,Transactional,Branded,Non-local
+melhor pedaleira de guitarra	10				
+qual o melhor captador para guitarra strato	10				
+guitarra de 6 cordas	10				
+cores das cordas da guitarra	10				Informational,Non-branded,Non-local
+as cordas da guitarra	10				
+meteoro amplificador guitarra	10				
+violão com captador de guitarra	10	0	PAA	captador para violão	Informational,Commercial,Non-branded,Non-local
+cabo para amplificador guitarra	10				
+captador ativo guitarra	10				
+amplificador roland guitarra	10				
+usado: pedaleira guitarra	10				
+guitarra de sete cordas	10				
+guitarra 12 cordas rickenbacker	10				
+pedal de distorção guitarra	10				Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica infantil profissional	10				
+quais as cordas da guitarra	10				
+guitarra de 9 cordas	10				
+pré amplificador guitarra	10	0	PAA	pré amplificador guitarra	Commercial,Transactional,Non-branded,Non-local
+transformador para amplificador de guitarra	10				
+nomes cordas guitarra	10				
+melhores marcas de guitarra elétrica	10				
+pedaleira zoom guitarra	10				Informational,Commercial,Branded,Non-local
+mooer pedaleira multi efeitos para guitarra ge100	10				
+amplificador oneal guitarra	10				Informational,Commercial,Transactional,Branded,Non-local
+captador de guitarra fender	10				
+tank g pedaleira guitarra	10				
+guitarra elétrica profissional preço	10	0	PAA	guitarra	Informational,Commercial,Non-branded,Non-local
+plugin amplificador guitarra	10				
+suporte amplificador guitarra	10				
+cordas na guitarra	10				
+amplificador de guitarra laney	10				
+guitarra elétrica usada olx	10				
+amplificador 100w guitarra	10				
+melhor pedal de distorção para guitarra	10				
+cordas elixir guitarra 011	10				
+amplificador de guitarra roland	10				
+inventor da guitarra elétrica	10				
+melhores cordas para guitarra elétrica	10				
+guitarra e amplificador	10	0	PAA	kit guitarra	Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra black friday	10				
+quantas cordas tem guitarra	10	0	PAA	guitarra	Informational,Non-branded,Non-local
+guitarra sete cordas	10				
+melhores pedaleira guitarra	10				
+amplificador valvulado para guitarra	10				Informational,Commercial,Transactional,Non-branded,Non-local
+pedaleira guitarra digital	10				
+guitarra elétrica verde	10				
+amplificador guitarra borne strike g30	10				
+amplificador guitarra grande	10				
+amplificador meteoro guitarra	10				Informational,Commercial,Transactional,Branded,Non-local
+nome das cordas de guitarra	10				
+amplificador de guitarra oneal	10				
+guitarra waldman 7 cordas	10				
+pedaleira guitarra zoom g1	10	0	PAA	pedaleira zoom g1	Informational,Commercial,Branded,Non-local
+quando foi inventada a guitarra elétrica	10				
+guitarra 5 cordas	10				
+amplificador de guitarra behringer	10				
+amplificador de som guitarra	10	0	PAA	amplificador guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+quanto custa um amplificador de guitarra	10	0	PAA	amplificador guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra + pedaleira	10				
+pedaleira guitarra mooer ge100	10				
+abafador de cordas guitarra	10				Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica les paul thomaz teg-350s	10				
+cordas guitarra 7 cordas	10				
+guitarra com pedaleira	10	0	PAA	guitarra com pedaleira	Informational,Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra roland	10				
+guitarra cordas notas	10				
+tipos de amplificador de guitarra	10				
+guitarra 7 cordas floyd rose	10				
+cores das cordas de guitarra sg	10	0	PAA	corda guitarra sg	Informational,Branded,Non-local
+marcha contra guitarra elétrica	10				
+altura ideal das cordas da guitarra	10				
+pedaleira guitarra boa e barata	10				
+pedaleira simples para guitarra	10				
+amplificador guitarra barato	10	0	PAA	amplificador de guitarra barato	Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica com amplificador	10				Commercial,Transactional,Non-branded,Non-local
+amplificador guitarra oneal	10				
+pedaleira guitarra m vave	10				
+cordas da guitarra letras	10				
+gabinete amplificador guitarra	10				
+como regular a altura das cordas da guitarra	10				Informational,Non-branded,Non-local
+guitarra elétrica gibson	10	0	PAA	guitarra gibson	Informational,Commercial,Transactional,Branded,Non-local
+amplificador de guitarra portátil	10				
+amplificador guitarra mini	10				
+guitarra elétrica modelos	10				
+como regular altura das cordas da guitarra	10				
+guitarra elétrica para canhoto	10				
+guitarra elétrica rock	10				
+nota das cordas da guitarra	10				
+guitarra sem cordas	10	0	PAA	guitarra sem corda	Informational,Commercial,Non-branded,Non-local
+captador piezo guitarra	10				
+guitarra de 8 cordas	10				Informational,Commercial,Transactional,Non-branded,Non-local
+pedaleira digital guitarra	10				
+guitarra captador ativo	10				
+guitarra elétrica shopee	10				
+cores das cordas de guitarra	10	0	PAA	cor das cordas do violão	Informational,Non-branded,Non-local
+pedaleira midi para guitarra	10				
+captador guitarra fender	10				
+a guitarra tem quantas cordas	10				
+pedaleira guitarra boss me 25	10				
+amplificador para guitarra marshall	10	0	PAA	marshall amplificador	Commercial,Transactional,Branded,Non-local
+altura cordas guitarra	10	0	PAA	altura das cordas guitarra	Informational,Non-branded,Non-local
+pedaleira zoom para guitarra g1on 100 efeitos	10				
+marcas de cordas de guitarra	10				
+amplificador guitarra 15w	10				
+guitarra elétrica slash	10				
+captador da guitarra	10				
+amplificador para baixo e guitarra	10				
+pedaleira virtual para guitarra	10				Informational,Commercial,Non-branded,Non-local
+letra das cordas da guitarra	10				
+amplificador de guitarra yamaha	10				
+como funciona uma guitarra elétrica	10				
+amplificador guitarra laney	10				
+olx amplificador guitarra	10				
+melhor guitarra elétrica para iniciantes	10				
+7 cordas guitarra	10				
+acordes de guitarra elétrica	10				
+melhor amplificador de guitarra custo beneficio	10				
+sequencia cordas guitarra	10				
+pedaleira de guitarra barata	10	0	PAA	pedaleira guitarra barata	Commercial,Transactional,Non-branded,Non-local
+guitarra jackson 7 cordas	10				
+pedaleira guitarra usada	10				Commercial,Transactional,Non-branded,Non-local
+quantas cordas tem uma guitarra elétrica	10				
+simulador de pedaleira de guitarra para pc	10				Informational,Non-branded,Non-local
+pedaleira boss guitarra	10				
+guitarra elétrica estrela	10				
+guitarra elétrica instrumento	10				
+amplificador guitarra orange	10				
+guitarra elétrica strinberg	10				
+pedaleira vermelha guitarra	10				
+guitarra elétrica telecaster	10				
+guitarra e pedaleira	10				
+cordas nig guitarra 010	10				
+guitarra de 20 cordas	10				
+guitarra com 1 captador	10				
+pedaleira guitarra cube baby	10				
+pedaleira guitarra cuvave	10				
+estilos de guitarra elétrica	10				
+amplificador de guitarra profissional	10				
+pedaleira boa e barata para guitarra	10				
+guitarra notas das cordas	10				
+amplificador guitarra yamaha	10				
+letras das cordas da guitarra	10				
+passeata contra guitarra elétrica	10				
+como afinar guitarra elétrica	10				
+captador guitarra strato	10				
+guitarra elétrica preta e branca	10				
+olx pedaleira guitarra	10				
+amplificador behringer guitarra	10				
+pedaleira de guitarra usada	10				Commercial,Transactional,Non-branded,Non-local
+jogo de cordas guitarra 010	10				
+tipos de cordas de guitarra	10				
+guitarra elétrica de brinquedo	10				
+pedaleira guitarra online	10				
+fone de ouvido para amplificador de guitarra	10				
+melhor captador para guitarra	10				
+pedaleira de guitarra zoom	10	0		pedaleira zoom	Commercial,Transactional,Branded,Non-local
+quantas cordas tem a guitarra portuguesa	10				
+limpa cordas guitarra	10				
+guitarra portuguesa quantas cordas	10				
+guitarra elétrica vermelha e preta	10				
+cordas guitarra nomes	10				Informational,Non-branded,Non-local
+cordas 012 guitarra	10				
+qual o nome das cordas da guitarra	10				
+cordas de guitarra sg	10	0	PAA	cordas sg	Informational,Commercial,Transactional,Branded,Non-local
+pre amplificador para guitarra	10				
+guitarra elétrica engenheiros do hawaii	10				
+como testar captador de guitarra	10				
+pedaleira multiefeitos para guitarra	10				
+amplificador guitarra portátil	10				
+pedaleira guitarra antiga	10				
+guitarra elétrica tagima tw series tg-530	10				
+guitarra amplificador	10	0	PAA	amplificador guitarra	Informational,Commercial,Transactional,Non-branded,Non-local
+guitarra elétrica v	10				
+guitarra baiana 4 cordas	10				Informational,Commercial,Non-branded,Non-local
+fone para amplificador de guitarra	10				
+ordem das cordas guitarra	10				
+guitarra infantil elétrica	10				Informational,Commercial,Transactional,Non-branded,Non-local
+pedaleira guitarra olx	10	0		pedaleira usada	Informational,Commercial,Transactional,Branded,Non-local
+pedal de guitarra distorção	10				
+amplificador de guitarra 100 watts	10				
+amplificador para guitarra boss katana 100					
+amplificador de guitarra roland jazz chorus					
+música ô mãe eu tenho uma guitarra elétrica					
+cordas guitarra super slinky					
+captador de guitarra eagle					
+pedaleira de guitarra barata mercado livre					
+amplificador guitarra block 20tu - onerr					
+como abaixar as cordas da guitarra sem trastejar					
+medidas de cordas para guitarra					
+ajustar amplificador de guitarra					
+como saber as cordas da guitarra					
+cordas de baixo na guitarra					
+como surgiu a guitarra elétrica					
+pedaleira para guitarra de 300 reais					
+guitarra mais pedaleira a venda					
+cordas de guitarra olympia					
+pedaleira para guitarra virtual online					
+amplificador stereo guitarra					
+amplificador mca gx60 para guitarra - 60w					
+testar captador guitarra multimetro					
+como limpar captador guitarra					
+quais sao as melhores cordas para guitarra					
+instalando captador de guitarra					
+pedal de distorção para metal					
+guitarra schecter 8 cordas					
+como transportar amplificador de guitarra					
+pedal de distorção boss ds1					
+oneal amplificador guitarra					
+pior pedaleira guitarra					
+altura ideal cordas guitarra					
+pedal distorção custo beneficio					
+usar computador como amplificador guitarra					
+amplificador guitarra computador					
+funcionamento da guitarra elétrica					
+numeração de cordas de guitarra					
+pedaleira de guitarra serve para violão					
+amplificador guitarra t miranda					
+amplificador guitarra 50 watts					
+amplificador para cubo de guitarra					
+pedaleira guitarra zoom g1 n					
+guitarra ibanez com captador emg					
+cordas nig coloridas guitarra					
+captador guitarra usado					
+guitarra tagima com captador humbucker					
+pedaleira de guitarra top					
+construir amplificador de guitarra caseiro					
+guitarra elétrica strato sunburst aubst13 auburn					
+mini amplificador para guitarra blackstar					
+qual a melhor pedaleira para guitarra do mercado					
+pedaleira de guitarra gt 10					
+pedal distorção e drive					
+pedal mooer distorção					
+cordas para guitarra d'addario					
+captador guitarra cabrera					
+guitarra elétrica gibson flying v					
+captador guitarra sx					
+cordas no braço da guitarra					
+amplificador para guitarra tagima fox 20					
+amplificador yamaha para guitarra					
+amplificador guitarra efeitos					
+amplificador 40w guitarra					
+amplificador guitarra ciclotron					
+amplificador guitarra imagem					
+amplificador de guitarra pc					
+guitarra elétrica mercado livre					Commercial,Transactional,Branded,Non-local
+cordas guitarra monterey					
+cordas sg para guitarra são boas					
+como ajustar o amplificador para guitarra					
+história da guitarra elétrica livro					
+amplificador guitarra electrica marshall					
+letra da música guitarra elétrica					
+cordas de guitarra fluorescente					
+guitarra 7 cordas korn					
+posso usar cordas de violao na guitarra					
+simulador de amplificador de guitarra para pc					Informational,Commercial,Non-branded,Non-local
+amplificador guitarra 50w rms					
+cordas de guitarra 014					
+mini amplificador para guitarra rms					
+como regular amplificador de guitarra meteoro					
+amplificador voz e guitarra					
+melhor pedaleira para guitarra 2023					
+amplificador inalambrico para guitarra					
+guitarra com captador de violao					
+captador de guitarra olx					
+diferença de guitarra elétrica e acustica					
+cordas da guitarra muito altas					
+cordas 013 guitarra					
+esquema pré amplificador guitarra					Informational,Non-branded,Non-local
+cases para amplificador guitarra					
+como abafar o som das cordas da guitarra					
+afinacao guitarra 7 cordas					
+amplificador guitarra custo benefício					
+microfone amplificador guitarra					
+kit guitarra e amplificador iniciante					
+amplificador transistorizado para guitarra					
+qual a função da pedaleira na guitarra					
+amplificador guitarra com footswitch					
+guitarra de 7 cordas mercado livre					
+amplificador de guitarra cubo					
+mini cubo amplificador guitarra benson					
+pedaleira de guitarra g1xon - zoom					
+amplificador acoustic para guitarra					
+como gravar guitarra com pedaleira					
+cordas 0.09 guitarra					
+amplificador de guitarra para tocar na igreja					
+amplificador guitarra sheldon gt-1200, 15w rms					
+amplificador fender de guitarra					
+cordas guitarra elixir 09					
+cordas para guitarra gianini					
+tela amplificador guitarra					
+pedaleira de guitarra vermelha					
+amplificador de guitarra voz					
+amplificador guitarra peavey bandit					
+amplificador de guitarra marshall mg					
+pedal distorção valvulada					
+projeto pedal de distorção para guitarra					
+amplificador de guitarra potente					
+6 cordas da guitarra					
+captador tex-mex p/guitarra trio fender					
+pedaleira guitarra caseira					
+pedaleira guitarra zoom g3xn					
+guitarra 7 cordas 24 casas					
+guitarra elétrica modelo les paul					
+captador guitarra condor					
+guitarra elétrica konig					
+som de pedaleira de guitarra					
+qual o melhor amplificador de guitarra					
+amplificador de guitarra para igreja					
+amplificador guitarra stereo					
+guitarra 7 cordas eagle egt-66					
+como funciona uma pedaleira de guitarra					
+pedaleira de efeito para guitarra boss					
+cable para amplificador guitarra					
+cordas guitarra ghs					
+captador guitarra seymour duncan					
+som de guitarra e pedaleira					
+cordas de guitarra elixir 010					
+nome das cordas para guitarra					
+guitarra com amplificador imbutido					
+como ligar guitarra no amplificador					
+pode usar microfone em amplificador de guitarra					
+amplificador de guitarra mercado libre					
+pack guitarra elétrica					
+cordas guitarra afinação					
+amplificador para guitarra bom					
+pedal de distorção para guitarra groovin hm 300					
+amplificador para guitarra com distorção					
+amplificador para guitarra acustica					
+pedaleira yamaha guitarra					
+amplificador guitarra fender mustang iv v2					
+como trocar cordas de guitarra com microafinação					
+amplificador de guitarra bluetooth					
+guitarra oito cordas					
+guitarra com captador preto					
+guitarra 7 cordas art pro					
+letras cordas guitarra					
+amplificador de estudo guitarra					
+valor de cordas de guitarra					
+pedaleira para guitarra com gravador					
+como improvisar um amplificador de guitarra					
+zoom pedaleira guitarra					
+qual amplificador de guitarra comprar					
+pedaleira para guitarra 110v - v-amp3 - behringer					
+pedal de distorção para guitarra caseiro					
+amplificador guitarra mesa boogie					
+quais são as cordas da guitarra do castiel					
+captador magnético para guitarra					
+como amaciar as cordas da guitarra					
+amplificador guitarra hartke gt60					
+guitarra 7 cordas baritona					
+pedaleira para guitarra zoom g1xon-k					
+amplificador guitarra valvulado 15w					
+preco de captador de guitarra					
+kit guitarra e amplificador tagima					
+amplificador guitarra meteoro nitrous gs100					
+fender amplificador para guitarra champion 40					
+cable para amplificador de guitarra					
+a história da guitarra elétrica					
+comprar cordas sg guitarra					
+amplificador de guitarra americanas					
+amplificador de guitarra cintura					
+guitarra + pedaleira + amplificador					
+para que serve pedal de distorção					
+como alisar as cordas da guitarra					
+como ajustar as cordas da guitarra					
+amplificador para guitarra electrica fender					
+seletor de captador guitarra					
+mini amplificador para guitarra tagima					
+seguencia de cordas guitarra					
+preço médio de uma guitarra elétrica					
+plastico captador guitarra					
+walmart amplificador para guitarra					
+como medir a altura das cordas da guitarra					
+fonte para pedaleira de guitarra					
+cubo amplificador guitarra mackintec maxx10 15w					
+amplificador guitarra peavey 15w					
+como deixar as cordas da guitarra mais lisas					
+ordem das cordas na guitarra					
+captador de guitarra strinberg					
+jogo cordas guitarra 7 cordas					
+método de guitarra elétrica					
+marshall amplificador guitarra					
+pedal zoom distorção					
+amplificador guitarra online					
+como fazer amplificador de guitarra					
+guitarra elétrica stratocaster michael gm237					
+amplificador para guitarra marshall valvulado					
+pedaleira para guitarra olx df					
+captador de guitarra antiga					
+pedal de distorção para guitarra - boss ds-2					
+captador de guitarra completo					
+pedaleira guitarra line					
+fone de ouvido para pedaleira de guitarra					
+encordoamento guitarra 7 cordas 0.11					
+amplificador guitarra waldman					
+amplificador para guitarra stagg ga 20					
+captador jazz guitarra					
+como baixar as cordas da guitarra					
+amplificador de guitarra valvulado meteoro					
+pedaleira guitarra zoom g1n					
+captador guitarra single coil					
+captador humbucker para guitarra					
+captador guitarra preço					
+pedaleira de guitarra para celular					
+abrindo captador guitarra					
+cordas de guitarra nig sao boas					
+guitarra elétrica wiki					
+guitarra eléctrica y amplificador					
+amplificador meteoro para guitarra gs100 elg					
+como tocar guitarra electrica sin amplificador					
+guitarra ledur 7 cordas					
+guitarra ibanez 6 cordas rga 42fm def					
+quanto custa um jogo de cordas para guitarra					
+programa de pedaleira de guitarra					
+amplificador guitarra wallpaper					
+amplificador de guitarra segunda mano					
+amplificador de guitarra vox					
+cordas para guitarra 09 ou 010					
+como tirar cordas de uma guitarra					
+cordas de nylon para guitarra classica					
+cordas para guitarra baiana					
+coloquei cordas de guitarra no violão					
+guitarra elétrica konig st stratocaster					
+como enrolar as cordas da guitarra					
+cordas de guitarra d'addario 0.9					
+captador guitarra emg					
+amplificador de guitarra hayonik					
+como usar pc como amplificador de guitarra					
+guitarra elétrica de até r$ 1.000					
+amplificador vox guitarra					
+amplificador guitarra giannini					
+amplificador para guitarra submarino					
+cordas de guitarra vermelhas					
+amplificador guitarra e voz					
+kit guitarra stratocaster com amplificador					
+pedal de distorção mooer					
+amplificador 25w guitarra					
+amplificador marshall para guitarra electrica					
+cordas para guitarra aliexpress					
+cabo de amplificador de guitarra					
+quantas cordas guitarra tem					
+ferrugem no captador da guitarra					
+o melhor amplificador de guitarra do mundo					
+cordas de guitarra aliexpress					
+letras das cordas de guitarra					
+cordas sg guitarra cores					
+enrolador de cordas de guitarra eletrico					
+guitarra portuguesa instrumento de cordas					
+baixar simulador de pedaleira para guitarra					
+guitarra ibanez captador seymour duncan					
+pedaleira guitarra grava					
+pedaleira para guitarra pg1 efx nux					
+como equalizar um pedal de distorção					
+pedaleira para guitarra no android					
+melhor pedaleira de guitarra para iniciante					
+amplificador guitarra landscape					
+guitarra elétrica zoom					
+amplificador con efectos para guitarra					
+captador da guitarra michael					
+filtro de linha para amplificador de guitarra					
+quantas cordas tem um guitarra					
+chave seletora captador guitarra					
+guitarra canhota 7 cordas					
+guitarra elétrica strato sunburst					
+melhor jogo de cordas para guitarra					
+captador de violão na guitarra					
+melhores marcas cordas guitarra					
+amplificador guitarra e baixo					
+pedaleira zoom g1xon para guitarra					
+como abaixar cordas de guitarra					
+amplificador guitarra usado 50w					
+amplificador/guitarra					
+regulagem de amplificador para guitarra					
+cubo amplificador de guitarra maxx10					
+amplificador de guitarra hotone					
+qual a melhor pedaleira para guitarra 2016					
+amplificador de guitarra liga mas nao sai som					
+pedal de distorção rat					
+guitarra de 3 cordas					
+altura padrão cordas guitarra					
+amplificador de guitarra com ruido					
+cordas de guitarra mercado livre					
+qual altura ideal das cordas da guitarra					
+mejor amplificador guitarra calidad precio					
+pedaleira de guitarra pequena					
+amplificador guitarra com distorção					
+irin guitarra elétrica					
+amplificador staner 30w guitarra					
+guitarra eletrica cordas de nylon					
+fone vox amplificador guitarra					
+aplicativo pedaleira para guitarra					
+video tocando guitarra elétrica					
+pedaleira de guitarra lojas americanas					
+nome das cordas da guitarra para afinar					
+musica guitarra elétrica					
+equalizar amplificador de guitarra					
+como tirar ruido do pedal de distorção					
+altura cordas guitarra strato					
+amplificador de guitarra com fonte de pc					
+amplificador para guitarra meteoro atomic drive					
+guitarra elétrica para crianças					
+melhores pedaleira para guitarra					
+baixo no amplificador de guitarra					
+clark csa 400 guitarra elétrica semi acústica					
+pedaleira para guitarra gt 100					
+amplificador cubo caixa guitarra gt1200 15w					
+pedaleira de guitarra para pc					
+amplificador ampeg guitarra					
+guitarra cort 6 cordas zenox z42 bk ativa					
+guitarra cort captador emg					
+cordas de guitarra espessura					
+simulador amplificador guitarra para pc					
+guitarra com amplificador preço					
+amplificador guitarra fender mustang i v2					
+pedaleira guitarra korg					
+amplificador guitarra para blues					
+configuração amplificador guitarra					
+como afinar guitarra sem amplificador					
+amplificador para guitarra qual comprar					
+pedal de distorção edição limitada ds-1 4a - boss					
+guitarra com captador zebra					
+kit guitarra+cubo+pedaleira					
+afinar guitarra elétrica					
+como fazer um captador de guitarra					Informational,Non-branded,Non-local
+como montar captador de guitarra					
+que amplificador comprar para guitarra electrica					
+amplificador de guitarra em png					
+como se conta as cordas da guitarra					
+mini amplificador guitarra fender deluxe amp					
+amplificador para iniciante guitarra					
+cordas guitarra strato					
+amplificador para guitarra e baixo					
+qual o melhor amplificador pequeno para guitarra					
+amplificador para guitarra fender					
+impedancia captador guitarra					
+amplificador guitarra yamaha thr10					
+amplificador guitarra 80w					
+cordas de guitarra nig					
+amplificador de guitarra lojas americanas					
+como afinar guitarra na pedaleira zoom g1					
+cordas para guitarra importada					
+afinação guitarra 7 cordas		0	PAA	afinação violão 7 cordas	Informational,Non-branded,Non-local
+software emulador de pedal de distorção					
+tom das cordas guitarra					
+marcas boas de cordas de guitarra					
+pedal de distorção metal					
+como colocar cordas na guitarra telecaster					
+cordas ghs guitarra					
+amplificador guitarra 60w					
+guitarra elétrica sx lp série eh3d					
+pedaleira zoom p/ guitarra g2.1nu					
+amplificador de guitarra vox mini superbeetle					
+melhor captador para guitarra strato					
+pedaleira guitarra v amp 2					
+programa pedaleira para guitarra					
+preço das cordas de guitarra					
+amplificador portatil pra ouvir guitarra no fone					
+pedaleira guitarra com loop					
+pedaleira para guitarra line 6 pod hd 500					
+captador guitarra dolphin					
+guitarra com mais cordas					
+ei mãe eu tenho uma guitarra elétrica letra					Informational,Non-branded,Non-local
+amplificador guitarra semi acustica					
+qual melhor amplificador para guitarra iniciante					
+guitarra com amplificador e pedaleira					
+amplificador guitarra voz					
+pedaleira guitarra iniciantes					
+amplificador de guitarra behringer gmx212					
+guitarra com captador mini humbucker					
+pedaleira guitarra roland gp 10s					
+ligar o baixo no amplificador de guitarra					
+guitarra 7 cordas v					
+abaixar cordas guitarra					
+baixar simulador de amplificador de guitarra					
+cordas daddario 0.10 guitarra					
+guitarra waldman st 111lh wh de 6 cordas canhota					
+pedal de distorção joyo					
+amplificador de guitarra marshall 10w					
+promoção de cordas de guitarra					
+melhor pedaleira do mundo para guitarra					
+qual amplificador comprar guitarra					
+amplificador valvulado guitarra custo beneficio					
+como trocar captador guitarra					
+amplificador de guitarra 10 polegadas					
+guitarra captador cover					
+amplificador guitarra olx belem					
+shoptime pedaleira guitarra					
+amplificador de guitarra desenho					
+amplificador guitarra fender frontman 10g, 10w					
+pedal de distorção para voz					
+amplificador bom de guitarra					
+amplificador para guitarra ronsani					
+abaixar cordas da guitarra					
+amplificador borne para guitarra vorax 840 preta					
+pedaleira de guitarra me 70					
+micro amplificador de guitarra					
+cordas para guitarra giannini 010					
+notas cordas da guitarra					
+diferenças entre cordas de guitarra					
+cordas para guitarra daddario					
+captador de rastilho na guitarra					
+lojas americanas amplificador para guitarra					
+como trocar as cordas da guitarra les paul					
+guitarra 8 cordas agile					
+guitarra cordas de nylon					
+cabo para ligar guitarra no amplificador					
+melhor pedal distorção valvulado					
+quais os nomes das cordas da guitarra					
+cort guitarra elétrica 6 cordas x-6 bk black					
+encordoamento guitarra 7 cordas daddario					
+cordas de guitarra medidas					
+mini amplificador p5 para guitarra					
+pedaleira para guitarra boss me 80					
+app amplificador guitarra android					
+pedal distorção meteoro					
+construir amplificador valvulado guitarra					
+amplificador de guitarra vox pathfinder					
+guitarra eagle + amplificador					
+qual o melhor captador de guitarra nacional					
+amplificador guitarra retro					
+amplificador de guitarra borne evidence 200					
+captador duplo guitarra strato					
+pedaleira guitarra mooer ge200					
+amplificador clean guitarra					
+tda7294 amplificador para guitarra					
+como manter as cordas da guitarra limpas					
+jogo de guitarra 7 cordas					
+captador de guitarra telecaster					
+altura de cordas guitarra					
+usar pedaleira de baixo na guitarra					
+guitarra agile 8 cordas					
+pedaleira para guitarra zoom g2 1nu					
+amplificador para guitarra acústica y voz					
+captador passivo guitarra					
+amplificador de guitarra marshall code					
+amplificador de guitarra 15w rms ga-15ii yamaha					
+guitarra sem pedaleira					
+guitarra elétrica epiphone les paul					
+quantas cordas possui uma guitarra					
+amplificador guitarra mapa de palco					
+qual os nomes das cordas da guitarra					
+guitarra 7 cordas jackson					
+aliexpress cordas de guitarra					
+rebaixador de cordas de guitarra					
+pedaleira online para guitarra					
+pedal de distorção submarino					
+amplificador combo guitarra marshall					
+custo beneficio amplificador guitarra					
+amplificador para guitarra 100 watts					
+como ligar o notebook no amplificador de guitarra					
+amplificador guitarra brasil					
+construindo um pedal de distorção					
+qual o amplificador ideal para guitarra					
+melhor marca de pedaleira para guitarra					
+pedal distorção fender					
+captador pra guitarra					
+amplificador de guitarra trace elliot					
+microfono amplificador guitarra					
+pedaleira iniciante guitarra					
+cable guitarra amplificador					
+sg cordas de guitarra					
+amplificador guitarra roland 40					
+amplificador guitarra orange crush cr20l					
+distorção baixo pedal					
+como escolher amplificador para guitarra					
+como tocar guitarra de 7 cordas					
+amplificador para guitarra yamaha					
+amplificador para guitarra custo beneficio					
+amplificador guitarra vox 100w					
+pedaleira para guitarra semi acustica					
+amplificador borne vorax 630 para guitarra					
+esquema de amplificador de guitarra					Informational,Non-branded,Non-local
+quantas cordas tem o baixo e a guitarra					
+ligar guitarra no amplificador					
+amplificador violao guitarra					
+guitarra elétrica black friday					
+cubo amplificador guitarra tagima					
+configurar amplificador guitarra electrica					
+captador guitarra sustainer					
+afinação guitarra havaiana 6 cordas					
+guitarra elétrica venda					
+lojas americanas pedaleira para guitarra					
+guitarra elétrica strato vermelha aubst19 auburn					
+pedaleira boa e barata guitarra					
+amplificador de guitarra alemao					
+modificar amplificador de guitarra					
+potencia ideal amplificador guitarra					
+esquema eletrico de amplificador de guitarra					
+guitarra elétrica feminina					
+amplificador para guitarra mg10cf marshall					
+como trocar as cordas de uma guitarra les paul					
+kit guitarra completo pedaleira					
+guitarra art pro jem 7 cordas					
+rack para amplificador de guitarra					
+como fazer aterramento amplificador guitarra					
+cordas de guitarra giannini 0.9					
+como fazer uma pedaleira de guitarra caseira					
+amplificador guitarra master é bom					
+amplificador guitarra fender blues junior					
+distorção pedal boss					
+preço da pedaleira de guitarra					
+daddario guitarra 12 cordas					
+melhor custo beneficio amplificador de guitarra					
+partes de amplificador de guitarra					
+qual a melhor pedaleira virtual para guitarra					
+ligar contra baixo no amplificador de guitarra					
+harmony st309 guitarra elétrica com alavanca					
+cordas guitarra gianini					
+amplificador de guitarra borne g30					
+quais são as cordas de uma guitarra					
+pedaleira para guitarra wawa					
+quanto custa para abaixar as cordas da guitarra					
+numeração de cordas guitarra					
+mini pedaleira guitarra mooer pogo					
+troco guitarra por amplificador					
+pedaleira guitarra zoom g2.1					
+existe amplificador para guitarra e baixo					
+pedaleira m-vave multiefeito para guitarra tank-g					
+rouxinol cordas para guitarra eletrica					
+guitarra elétrica tagima memphis mg32					Informational,Commercial,Transactional,Branded,Non-local
+esquema pedal de distorção valvulado					
+cordas agudas trastejando guitarra					
+guitarra elétrica eagle					
