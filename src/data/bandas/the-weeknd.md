@@ -49,7 +49,6 @@ albuns:
       apresentou ao mundo o R&B sombrio e enevoado de Abel Tesfaye — festas
       sem alegria, vício e vazio emocional sobre produção fria e
       atmosférica.
-    spotifyUrl: https://open.spotify.com/album/1E3NPPRz2WGuwlBiwXazEA
     temas:
       - tema: Hedonismo como fuga vazia
         explicacao: As festas descritas nas faixas não soam como celebração,

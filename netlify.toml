@@ -62,6 +62,12 @@
   [headers.values]
     Cache-Control = "public, max-age=3600"
 
+# Canonical para o PDF de tablatura (PDFs não têm <link>, só header HTTP)
+[[headers]]
+  for = "/tablaturas/power-chords-essenciais.pdf"
+  [headers.values]
+    Link = '<https://sonarmusical.com.br/tablaturas/power-chords-essenciais.pdf>; rel="canonical"'
+
 # Headers de segurança em todas as páginas
 # CSP: unpkg.com é exigido pelo Decap CMS em /admin (Netlify aplica o header no site inteiro,
 # regras mais específicas não substituem headers de regras mais amplas)

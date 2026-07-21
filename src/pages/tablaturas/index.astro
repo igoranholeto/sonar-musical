@@ -30,6 +30,7 @@ const tabs = [...TABLATURAS].sort((a, b) => a.titulo.localeCompare(b.titulo));
       </div>
     </div>
 
+    <h2 class="sr-only">Tablaturas disponíveis</h2>
     <div id="tabs-grid" class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
       {tabs.map((tab) => (
         <TabCard {...tab} />

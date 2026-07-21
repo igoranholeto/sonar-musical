@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { generoAccent, generoGradient, generoSoft, iniciais, slugify } from '../../../utils/generos';
+import { generoAccent, generoGradient, generoSoft, iniciais, metaDescription, slugify } from '../../../utils/generos';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -37,7 +37,7 @@ const schema = {
 };
 ---
 
-<BaseLayout title={`${nome}: Equipamentos, Integrantes e Álbuns`} description={blurb} image={fotoCapa} schema={schema}>
+<BaseLayout title={`${nome}: Equipamentos, Integrantes e Álbuns`} description={metaDescription(blurb)} image={fotoCapa} schema={schema}>
   <div class="theme-locked-dark">
   <!-- Banner -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient};min-height:380px`}>
