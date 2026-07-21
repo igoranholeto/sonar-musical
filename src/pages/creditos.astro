@@ -1,0 +1,87 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CREDITOS_FOTOS } from '../data/creditos';
+
+// Agrupa os créditos por banda, preservando a ordem de entrada.
+const grupos = CREDITOS_FOTOS.reduce((acc, foto) => {
+  (acc[foto.bandaSlug] ??= { nome: foto.bandaNome, slug: foto.bandaSlug, fotos: [] }).fotos.push(foto);
+  return acc;
+}, {} as Record<string, { nome: string; slug: string; fotos: typeof CREDITOS_FOTOS }>);
+
+const bandas = Object.values(grupos);
+
+const creditosSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Créditos de Imagem — Sonar Musical',
+  url: 'https://sonarmusical.com.br/creditos/',
+  inLanguage: 'pt-BR',
+};
+---
+
+<BaseLayout
+  title="Créditos de Imagem"
+  description="Créditos e licenças das fotos de artistas usadas no Sonar Musical, com atribuição aos fotógrafos e link para as fontes originais."
+  schema={creditosSchema}
+>
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <div class="mb-12">
+      <h1 class="text-4xl font-black mb-4">Créditos de Imagem</h1>
+      <p class="text-muted text-lg leading-relaxed">
+        As fotos de artistas ao vivo usadas nas páginas de bandas vêm do
+        <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline underline-offset-2">Wikimedia Commons</a>,
+        sob licenças <span class="whitespace-nowrap">Creative Commons</span>. Abaixo estão os créditos de cada
+        fotógrafo e o link para o arquivo original — como as licenças exigem, e porque é justo com quem fez a foto.
+      </p>
+    </div>
+
+    <div class="space-y-10">
+      {bandas.map((banda) => (
+        <section aria-labelledby={`banda-${banda.slug}`}>
+          <h2 id={`banda-${banda.slug}`} class="text-xl font-extrabold tracking-tight mb-4">
+            <a href={`/bandas/${banda.slug}/`} class="hover:text-brand transition-colors">{banda.nome}</a>
+          </h2>
+          <ul class="space-y-3">
+            {banda.fotos.map((foto) => (
+              <li class="bg-card border border-border rounded-xl p-4 text-sm leading-relaxed">
+                <div class="font-semibold text-foreground">{foto.descricao}</div>
+                <div class="text-muted mt-1">
+                  Foto de{' '}
+                  {foto.autorUrl ? (
+                    <a href={foto.autorUrl} target="_blank" rel="noopener noreferrer" class="text-brand hover:underline underline-offset-2">{foto.autor}</a>
+                  ) : (
+                    <span class="text-foreground">{foto.autor}</span>
+                  )}
+                  {' · '}
+                  <a href={foto.licencaUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">{foto.licenca}</a>
+                  {' · '}
+                  <a href={foto.fonteUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">fonte</a>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))}
+    </div>
+
+    <section class="mt-14 pt-8 border-t border-border" aria-labelledby="outras-fontes">
+      <h2 id="outras-fontes" class="text-xl font-extrabold tracking-tight mb-4">Outras fontes de imagem</h2>
+      <ul class="space-y-3 text-sm text-muted leading-relaxed">
+        <li class="bg-card border border-border rounded-xl p-4">
+          <span class="font-semibold text-foreground">Capas de álbum.</span> As imagens de capa dos discos
+          pertencem às respectivas gravadoras e artistas, e são exibidas apenas para fins editoriais e de
+          identificação das obras analisadas.
+        </li>
+        <li class="bg-card border border-border rounded-xl p-4">
+          <span class="font-semibold text-foreground">Imagens de equipamentos e ilustrações.</span> Fotos de
+          produtos e imagens ilustrativas dos artigos vêm do{' '}
+          <a href="https://unsplash.com/" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline underline-offset-2">Unsplash</a>,
+          sob a licença gratuita da plataforma.
+        </li>
+      </ul>
+      <p class="text-sm text-muted mt-6">
+        Encontrou um crédito incorreto ou faltando? <a href="/contact/" class="text-brand hover:underline underline-offset-2">Fale com a gente</a> que corrigimos.
+      </p>
+    </section>
+  </div>
+</BaseLayout>
