@@ -3,15 +3,17 @@ nome: The Weeknd
 genero: R&B
 origem: Toronto, Canadá
 ano: 2010
-fotoCapa: /images/the-weeknd-sonar.jpg
-fotoCapaAlt: Palco de show com pirotecnia e público à noite, clima de show de
-  R&B/pop
-fotoCapaPosition: 40
+fotoCapa: /images/the-weeknd-stadium-sonar.jpg
+fotoCapaAlt: Show do The Weeknd no Stade de France lotado durante a turnê After
+  Hours til Dawn
+fotoCapaPosition: 45
 blurb: "Falsete que evoca Michael Jackson sobre camadas de synth-pop sombrio:
   R&B noturno, atmosférico, que virou fenômeno global de streaming."
 integrantes:
   - nome: Abel Tesfaye (The Weeknd)
     funcao: Vocal / Composição / Produção
+    foto: /images/the-weeknd-abel-sonar.jpg
+    fotoAlt: The Weeknd cantando ao vivo no Festival d'été de Québec em 2018
     anos: 2010 – hoje
     status: Artista solo ativo
     inspiracoes: Michael Jackson, Prince, R. Kelly, Cocteau Twins, Siouxsie

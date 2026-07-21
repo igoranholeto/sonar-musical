@@ -6,13 +6,13 @@ ano: 2008
 blurb: Heavy metal teatral com liturgia satânico-pop. Um "Papa" mascarado no
   microfone e "Nameless Ghouls" anônimos construindo hinos de arena
   irresistivelmente melódicos.
-fotoCapa: /images/ghost-band-sonar.jpg
-fotoCapaAlt: Palco de show de heavy metal tomado por fumaça e luz vermelha, clima teatral
-fotoCapaPosition: 40
+fotoCapa: /images/ghost-wacken-2018-sonar.jpg
+fotoCapaAlt: Ghost ao vivo no Wacken Open Air 2018, com cenário de catedral e vitrais no palco
+fotoCapaPosition: 45
 integrantes:
   - nome: Papa V Perpetua
     funcao: Vocal
-    foto: /images/ghost-papa-vocal-sonar.jpg
+    foto: /images/ghost-papa-v-sonar.jpg
     fotoAlt: Silhueta de vocalista com as mãos erguidas diante de luz forte no palco, em pose quase sacerdotal
     anos: 2025 – hoje (persona atual)
     status: Vocalista / frontman
@@ -37,6 +37,8 @@ integrantes:
     setup: []
   - nome: Nameless Ghoul — Guitarra
     funcao: Guitarra
+    foto: /images/ghost-ghoul-guitarra-sonar.jpg
+    fotoAlt: Nameless Ghoul do Ghost mascarado tocando ao vivo sob chuva de confete
     anos: 2008 – hoje (função rotativa)
     status: Instrumentista anônimo
     inspiracoes: Ritchie Blackmore, Uli Jon Roth, Angus Young

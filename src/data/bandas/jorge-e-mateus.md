@@ -3,8 +3,8 @@ nome: Jorge & Mateus
 genero: Sertanejo
 origem: Itumbiara, Goiás, Brasil
 ano: 2005
-fotoCapa: /images/jorge-mateus-capa-sonar.jpg
-fotoCapaAlt: luzes de palco iluminando o público em um show ao vivo
+fotoCapa: /images/jorge-e-mateus-show-sonar.jpg
+fotoCapaAlt: Jorge & Mateus se apresentando ao vivo em show na Bahia
 blurb: "Sertanejo universitário que levou o dueto de vozes para arenas e
   plataformas de streaming: refrões diretos, arranjos de banda completa e
   quase duas décadas de hinos que o público canta em coro."

@@ -3,15 +3,17 @@ nome: Avenged Sevenfold
 genero: Metal
 origem: Huntington Beach, Califórnia, EUA
 ano: 1999
-fotoCapa: /images/avenged-sevenfold-band-sonar.jpg
-fotoCapaAlt: Banda de metal se apresentando ao vivo no palco, sob luzes intensas
-fotoCapaPosition: 40
+fotoCapa: /images/avenged-sevenfold-live-2009-sonar.jpg
+fotoCapaAlt: Avenged Sevenfold ao vivo em festival em 2009, com a banda completa no palco
+fotoCapaPosition: 45
 blurb: Duas guitarras técnicas em disputa cordial, um vocal que evoluiu do grito
   hardcore pro registro melódico e uma reverência assumida ao heavy metal
   clássico de Sabbath, Maiden e Metallica.
 integrantes:
   - nome: M. Shadows
     funcao: Vocal
+    foto: /images/m-shadows-sonar.jpg
+    fotoAlt: M. Shadows cantando ao vivo no festival Nova Rock 2014
     status: Membro fundador
     anos: 1999 – hoje
     inspiracoes: Guns N' Roses, Iron Maiden, Metallica
@@ -47,6 +49,8 @@ integrantes:
           obs: Retorno limpo pra acompanhar a troca de registro vocal.
   - nome: Synyster Gates
     funcao: Guitarra solo
+    foto: /images/synyster-gates-sonar.jpg
+    fotoAlt: Synyster Gates tocando guitarra ao vivo com sua Schecter signature
     status: Guitarrista solo
     anos: 1999 – hoje
     inspiracoes: Eddie Van Halen, jazz (Musicians Institute), Brian Haner Sr.
@@ -81,6 +85,8 @@ integrantes:
           obs: Canais de alto ganho versáteis pros solos mais técnicos.
   - nome: Zacky Vengeance
     funcao: Guitarra base
+    foto: /images/zacky-vengeance-sonar.jpg
+    fotoAlt: Zacky Vengeance tocando guitarra ao vivo no festival Nova Rock 2014
     status: Membro fundador
     anos: 1999 – hoje
     inspiracoes: Iron Maiden, Guns N' Roses, Metallica
@@ -114,6 +120,8 @@ integrantes:
           obs: Ganho encorpado à meia potência, como Zacky usa ao vivo.
   - nome: Johnny Christ
     funcao: Baixo
+    foto: /images/johnny-christ-sonar.jpg
+    fotoAlt: Johnny Christ tocando baixo ao vivo em 2018
     status: Baixista
     anos: 2002 – hoje
     inspiracoes: Robert Trujillo, Cliff Burton
@@ -146,6 +154,8 @@ integrantes:
           obs: Combo compacto com grave definido.
   - nome: Brooks Wackerman
     funcao: Bateria
+    foto: /images/brooks-wackerman-sonar.jpg
+    fotoAlt: Brooks Wackerman tocando bateria ao vivo em 2007, na época do Bad Religion
     status: Baterista
     anos: 2015 – hoje
     inspiracoes: Punk rock, hardcore, Bad Religion
