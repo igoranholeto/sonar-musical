@@ -205,7 +205,6 @@ albuns:
     descricao: Terceiro álbum de estúdio e primeiro grande salto de produção da
       banda, consolidou o Ghost como fenômeno de crítica e público, incluindo
       o Grammy de "Cirice".
-    spotifyUrl: https://open.spotify.com/album/6wKvJHXTeUyBWkCH1Cw2Wp
     temas:
       - tema: Ausência de Deus
         explicacao: O conceito central do disco é uma paisagem urbana
@@ -348,7 +347,6 @@ albuns:
     descricao: Sexto álbum de estúdio e primeiro sob a persona de Papa V
       Perpetua, é descrito pelo próprio Tobias Forge como o disco mais
       introspectivo já feito pela banda.
-    spotifyUrl: https://open.spotify.com/album/2Lbf2VaViq3AFPynBs5FT9
     temas:
       - tema: Mortalidade e reconciliação
         explicacao: O álbum lida abertamente com temas de mortalidade,

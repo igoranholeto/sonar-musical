@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
-import { generoAccent, generoGradient, generoSoft, slugify } from '../../../../utils/generos';
+import { generoAccent, generoGradient, generoSoft, metaDescription, slugify } from '../../../../utils/generos';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -38,7 +38,7 @@ const schema = {
 
 <BaseLayout
   title={`${nome} — ${nomeBanda}`}
-  description={descricao}
+  description={metaDescription(descricao)}
   image={capa}
   schema={schema}
 >
@@ -86,7 +86,7 @@ const schema = {
           >
             {genero} · Álbum
           </span>
-          <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(30px,5.5vw,58px)">{nome}</h1>
+          <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(30px,5.5vw,58px)">{nome === nomeBanda ? `${nome} (Álbum${ano ? ` de ${ano}` : ''})` : nome}</h1>
           <div class="text-[15px] text-white/80 font-medium mt-2.5">
             {nomeBanda} {ano && <>· {ano}</>}
           </div>
