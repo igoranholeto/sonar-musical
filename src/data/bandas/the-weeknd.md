@@ -45,6 +45,8 @@ integrantes:
 albuns:
   - nome: House of Balloons
     ano: 2011
+    capa: /images/albuns/the-weeknd-house-of-balloons.jpg
+    capaAlt: Capa do álbum House of Balloons, de The Weeknd
     descricao: Mixtape de estreia, lançada de graça pela internet, que
       apresentou ao mundo o R&B sombrio e enevoado de Abel Tesfaye — festas
       sem alegria, vício e vazio emocional sobre produção fria e
@@ -109,6 +111,8 @@ albuns:
           como download gratuito e por vias não oficiais.
   - nome: Beauty Behind the Madness
     ano: 2015
+    capa: /images/albuns/the-weeknd-beauty-behind-the-madness.jpg
+    capaAlt: Capa do álbum Beauty Behind the Madness, de The Weeknd
     descricao: Segundo álbum de estúdio e o grande divisor de águas da
       carreira — levou Abel Tesfaye do underground ao topo das paradas, com
       dois hits número 1 na Billboard Hot 100.
@@ -174,6 +178,8 @@ albuns:
           como "Cinquenta Tons de Cinza".
   - nome: Starboy
     ano: 2016
+    capa: /images/albuns/the-weeknd-starboy.jpg
+    capaAlt: Capa do álbum Starboy, de The Weeknd
     descricao: Terceiro álbum de estúdio, que une R&B a synth-pop e new
       wave em parceria com o Daft Punk — tornou-se um dos discos mais
       streamados da história do Spotify.
@@ -237,6 +243,8 @@ albuns:
           reinvenção que acompanhou a virada sonora do disco.
   - nome: After Hours
     ano: 2020
+    capa: /images/albuns/the-weeknd-after-hours.jpg
+    capaAlt: Capa do álbum After Hours, de The Weeknd
     descricao: Quarto álbum de estúdio, marcado pelo visual do terno
       vermelho e rosto ensanguentado, e por "Blinding Lights", que se
       tornaria a canção mais streamada da história do Spotify.
@@ -308,6 +316,8 @@ albuns:
           regras de votação da premiação.
   - nome: Dawn FM
     ano: 2022
+    capa: /images/albuns/the-weeknd-dawn-fm.jpg
+    capaAlt: Capa do álbum Dawn FM, de The Weeknd
     descricao: Quinto álbum de estúdio, concebido como uma estação de
       rádio de purgatório narrada por Jim Carrey, com synth-pop e dance
       sobre temas existenciais de morte e passagem.

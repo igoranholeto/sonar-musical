@@ -181,6 +181,8 @@ integrantes:
 albuns:
   - nome: City of Evil
     ano: 2005
+    capa: /images/albuns/avenged-sevenfold-city-of-evil.jpg
+    capaAlt: Capa do álbum City of Evil, de Avenged Sevenfold
     descricao: Terceiro álbum e o divisor de águas que afastou a banda do
       metalcore dos dois primeiros discos rumo a um heavy metal mais
       clássico, sem vocais guturais e com forte influência da NWOBHM.
@@ -262,6 +264,8 @@ albuns:
           sucesso comercial que viria a seguir.
   - nome: Avenged Sevenfold
     ano: 2007
+    capa: /images/albuns/avenged-sevenfold-avenged-sevenfold.jpg
+    capaAlt: Capa do álbum Avenged Sevenfold, de Avenged Sevenfold
     descricao: Quarto álbum, autoproduzido pela primeira vez e também
       conhecido como "the White Album" por causa da capa minimalista — um
       som mais aberto e melódico, e o último disco gravado com o baterista
@@ -333,6 +337,8 @@ albuns:
           200.
   - nome: Nightmare
     ano: 2010
+    capa: /images/albuns/avenged-sevenfold-nightmare.jpg
+    capaAlt: Capa do álbum Nightmare, de Avenged Sevenfold
     descricao: Quinto álbum, gravado após a morte do baterista fundador
       Jimmy "The Rev" Sullivan, com Mike Portnoy (Dream Theater) nas
       baquetas — um disco de luto que também guarda as últimas composições e
@@ -408,6 +414,8 @@ albuns:
           Ouro no Reino Unido e na Nova Zelândia.
   - nome: Hail to the King
     ano: 2013
+    capa: /images/albuns/avenged-sevenfold-hail-to-the-king.jpg
+    capaAlt: Capa do álbum Hail to the King, de Avenged Sevenfold
     descricao: Sexto álbum, com um som propositalmente mais direto e
       "clássico", inspirado abertamente em Black Sabbath, Iron Maiden,
       Metallica e Guns N' Roses — o disco que consolidou a banda como
