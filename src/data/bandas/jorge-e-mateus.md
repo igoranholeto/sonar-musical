@@ -48,6 +48,8 @@ integrantes:
 albuns:
   - nome: Ao Vivo em Goiânia
     ano: 2007
+    capa: /images/albuns/jorge-e-mateus-ao-vivo-em-goiania.jpg
+    capaAlt: Capa do álbum Ao Vivo em Goiânia, de Jorge & Mateus
     descricao: Álbum de estreia da dupla, gravado ao vivo na capital
       goiana, que apresentou ao Brasil os primeiros grandes hits de Jorge &
       Mateus e projetou o formato "ao vivo" como marca registrada da
@@ -106,6 +108,8 @@ albuns:
         notaMax: 10
   - nome: Ao Vivo e Sem Cortes
     ano: 2010
+    capa: /images/albuns/jorge-e-mateus-ao-vivo-e-sem-cortes.jpg
+    capaAlt: Capa do álbum Ao Vivo e Sem Cortes, de Jorge & Mateus
     descricao: Segundo grande DVD ao vivo da dupla, gravado em Goiânia sem
       cortes de edição, reunindo composições próprias e os hits que
       consolidaram Jorge & Mateus como um dos maiores nomes em turnê do
@@ -166,6 +170,8 @@ albuns:
         notaMax: 10
   - nome: Terra Sem CEP
     ano: 2018
+    capa: /images/albuns/jorge-e-mateus-terra-sem-cep.jpg
+    capaAlt: Capa do álbum Terra Sem CEP, de Jorge & Mateus
     descricao: DVD gravado ao vivo na Estância VillaMix, em Goiânia, que
       emplacou "Propaganda" como um dos maiores hits da carreira da dupla e
       um dos vídeos mais assistidos do sertanejo universitário no YouTube.
@@ -218,6 +224,8 @@ albuns:
         notaMax: 10
   - nome: Check-In
     ano: 2024
+    capa: /images/albuns/jorge-e-mateus-check-in.jpg
+    capaAlt: Capa do álbum Check-In, de Jorge & Mateus
     descricao: Décimo segundo álbum ao vivo da dupla, gravado em múltiplas
       cidades e marcado pela parceria "Haverá Sinais", com Lauana Prado, que
       chegou ao topo das paradas digitais brasileiras.

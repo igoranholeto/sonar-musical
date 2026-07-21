@@ -130,6 +130,8 @@ integrantes:
 albuns:
   - nome: Opus Eponymous
     ano: 2010
+    capa: /images/albuns/ghost-opus-eponymous.jpg
+    capaAlt: Capa do álbum Opus Eponymous, de Ghost
     descricao: Álbum de estreia que definiu o conceito do Ghost — heavy metal
       melódico e teatral com imaginário satânico explícito, produzido com
       estética propositalmente vintage.
@@ -202,6 +204,8 @@ albuns:
           em um cenário então dominado por extremidade técnica.
   - nome: Meliora
     ano: 2015
+    capa: /images/albuns/ghost-meliora.jpg
+    capaAlt: Capa do álbum Meliora, de Ghost
     descricao: Terceiro álbum de estúdio e primeiro grande salto de produção da
       banda, consolidou o Ghost como fenômeno de crítica e público, incluindo
       o Grammy de "Cirice".
@@ -270,6 +274,8 @@ albuns:
           cult em uma das maiores bandas de metal em atividade.
   - nome: Prequelle
     ano: 2018
+    capa: /images/albuns/ghost-prequelle.jpg
+    capaAlt: Capa do álbum Prequelle, de Ghost
     descricao: Quarto álbum de estúdio, inspirado na Peste Negra medieval,
       trouxe os maiores hits da banda até então e uma guinada ainda maior rumo
       ao rock de arena.
@@ -344,6 +350,8 @@ albuns:
           mais tocadas da carreira da banda.
   - nome: Skeletá
     ano: 2025
+    capa: /images/albuns/ghost-skeleta.jpg
+    capaAlt: Capa do álbum Skeletá, de Ghost
     descricao: Sexto álbum de estúdio e primeiro sob a persona de Papa V
       Perpetua, é descrito pelo próprio Tobias Forge como o disco mais
       introspectivo já feito pela banda.
