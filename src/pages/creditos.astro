@@ -53,7 +53,11 @@ const creditosSchema = {
                     <span class="text-foreground">{foto.autor}</span>
                   )}
                   {' · '}
-                  <a href={foto.licencaUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">{foto.licenca}</a>
+                  {foto.licencaUrl ? (
+                    <a href={foto.licencaUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">{foto.licenca}</a>
+                  ) : (
+                    <span>{foto.licenca}</span>
+                  )}
                   {' · '}
                   <a href={foto.fonteUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">fonte</a>
                 </div>

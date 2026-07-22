@@ -10,8 +10,9 @@ export interface CreditoFoto {
   autorUrl?: string;
   /** Nome curto da licença (ex: "CC BY-SA 4.0"). */
   licenca: string;
-  /** URL do texto da licença (deed do Creative Commons). */
-  licencaUrl: string;
+  /** URL do texto da licença (deed do Creative Commons). Ausente em licenças
+   *  de atribuição sem deed público — nesses casos os termos estão na fonte. */
+  licencaUrl?: string;
   /** Página do arquivo original no Wikimedia Commons. */
   fonteUrl: string;
 }
@@ -143,5 +144,66 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
     licenca: 'CC BY 2.0',
     licencaUrl: 'https://creativecommons.org/licenses/by/2.0/deed.pt',
     fonteUrl: 'https://commons.wikimedia.org/wiki/File:Jorge_%26_Mateus_show_na_Bahia.jpg',
+  },
+
+  // Charlie Brown Jr.
+  {
+    descricao: 'Chorão em cima do skate durante show, em 2012 (foto de capa)',
+    bandaSlug: 'charlie-brown-jr',
+    bandaNome: 'Charlie Brown Jr.',
+    autor: 'Editorial J',
+    autorUrl: 'https://www.flickr.com/people/62838085@N06',
+    licenca: 'CC BY-SA 2.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by-sa/2.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Charlie_Brown_Jr._-_Outubro_2012_(cropped).jpg',
+  },
+
+  // Titãs
+  {
+    descricao: 'Titãs ao vivo em 2012, com a banda no palco (foto de capa)',
+    bandaSlug: 'titas',
+    bandaNome: 'Titãs',
+    autor: 'Will Kemet',
+    licenca: 'CC BY 2.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by/2.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Tit%C3%A3s2012.jpg',
+  },
+
+  // Capital Inicial
+  {
+    descricao: 'Capital Inicial ao vivo em palco de grande porte (foto de capa)',
+    bandaSlug: 'capital-inicial',
+    bandaNome: 'Capital Inicial',
+    autor: 'Roni1986',
+    autorUrl: 'https://commons.wikimedia.org/wiki/User:Roni1986',
+    licenca: 'CC BY-SA 4.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by-sa/4.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Capital_Inicial.jpg',
+  },
+  {
+    descricao: 'Dinho Ouro Preto cantando ao vivo',
+    bandaSlug: 'capital-inicial',
+    bandaNome: 'Capital Inicial',
+    autor: 'Elaine Kitahara e Chafik Buttros',
+    licenca: 'CC BY 3.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by/3.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Dinho_Ouro_Preto.jpg',
+  },
+  {
+    descricao: 'Yves Passarell, guitarrista da banda',
+    bandaSlug: 'capital-inicial',
+    bandaNome: 'Capital Inicial',
+    autor: 'Ricardo Stuckert/PR',
+    licenca: 'Atribuição (termos na fonte)',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Yves_Passarell.jpg',
+  },
+  {
+    descricao: 'Flávio Lemos tocando baixo ao vivo',
+    bandaSlug: 'capital-inicial',
+    bandaNome: 'Capital Inicial',
+    autor: 'Rafaeldbo',
+    licenca: 'CC BY-SA 4.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by-sa/4.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Flaviolemoscapitalinicial.jpg',
   },
 ];
