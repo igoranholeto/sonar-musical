@@ -18,6 +18,11 @@ export interface Tablatura {
    * Nunca aponte para versões pagas/PRO — sempre confirme que é a versão free antes de adicionar aqui.
    */
   fonteExterna?: FonteExterna;
+  /**
+   * Guia "como tocar" nosso, quando existe: explica tom, progressão, técnica e
+   * timbre — o que os sites de cifra não cobrem. A cifra em si fica na fonte externa.
+   */
+  guiaUrl?: string;
 }
 
 export const TABLATURAS: Tablatura[] = [
@@ -43,6 +48,7 @@ export const TABLATURAS: Tablatura[] = [
   },
   {
     titulo: 'Enter Sandman',
+    guiaUrl: '/blog/como-tocar-enter-sandman-metallica/',
     artista: 'Metallica',
     artistaSlug: 'metallica',
     dificuldade: 'Intermediário',
@@ -91,6 +97,7 @@ export const TABLATURAS: Tablatura[] = [
   },
   {
     titulo: 'Wish You Were Here',
+    guiaUrl: '/blog/como-tocar-wish-you-were-here-pink-floyd/',
     artista: 'Pink Floyd',
     artistaSlug: 'pink-floyd',
     dificuldade: 'Fácil',
@@ -115,6 +122,7 @@ export const TABLATURAS: Tablatura[] = [
   },
   {
     titulo: 'Tempo Perdido',
+    guiaUrl: '/blog/como-tocar-tempo-perdido-legiao-urbana/',
     artista: 'Legião Urbana',
     artistaSlug: 'legiao-urbana',
     dificuldade: 'Fácil',
@@ -175,6 +183,7 @@ export const TABLATURAS: Tablatura[] = [
   },
   {
     titulo: 'Evidências',
+    guiaUrl: '/blog/como-tocar-evidencias-chitaozinho-e-xororo/',
     artista: 'Chitãozinho & Xororó',
     artistaSlug: 'chitaozinho-e-xororo',
     dificuldade: 'Intermediário',

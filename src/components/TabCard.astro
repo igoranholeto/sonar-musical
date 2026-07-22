@@ -4,7 +4,7 @@ import type { Tablatura } from '../data/tablaturas';
 
 interface Props extends Tablatura {}
 
-const { titulo, artista, artistaSlug, dificuldade, genero, pdf, preview, fonteExterna } = Astro.props;
+const { titulo, artista, artistaSlug, dificuldade, genero, pdf, preview, fonteExterna, guiaUrl } = Astro.props;
 const openHref = fonteExterna ? fonteExterna.url : pdf!;
 const filename = pdf ? pdf.split('/').pop() : undefined;
 ---
@@ -43,6 +43,15 @@ const filename = pdf ? pdf.split('/').pop() : undefined;
       )}
     </p>
     {genero && <p class="text-xs text-subtle mb-4">{genero}</p>}
+
+    {guiaUrl && (
+      <a
+        href={guiaUrl}
+        class="inline-flex items-center gap-1 text-xs font-semibold text-brand hover:underline underline-offset-2 mb-3"
+      >
+        Guia: como tocar →
+      </a>
+    )}
 
     <div class="flex gap-2 mt-auto pt-2">
       {fonteExterna ? (
