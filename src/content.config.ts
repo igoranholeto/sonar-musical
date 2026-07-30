@@ -26,6 +26,7 @@ const blog = defineCollection({
     image: z.string().optional(),
     imageAlt: z.string().optional(),
     rating: z.number().min(1).max(5).optional(),
+    reviewedName: z.string().optional(),
     pros: z.array(z.string()).optional(),
     cons: z.array(z.string()).optional(),
     tags: z.array(z.string()).default([]),

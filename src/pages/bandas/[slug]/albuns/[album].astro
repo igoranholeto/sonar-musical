@@ -8,12 +8,24 @@ export async function getStaticPaths() {
   return bandas.flatMap((banda) =>
     banda.data.albuns.map((album) => ({
       params: { slug: banda.id, album: slugify(album.nome) },
-      props: { banda, album },
+      props: {
+        banda,
+        album,
+        outrosAlbuns: banda.data.albuns
+          .filter((outro) => outro.nome !== album.nome)
+          .map((outro) => ({
+            nome: outro.nome,
+            ano: outro.ano,
+            capa: outro.capa,
+            capaAlt: outro.capaAlt,
+            href: `/bandas/${banda.id}/albuns/${slugify(outro.nome)}/`,
+          })),
+      },
     }))
   );
 }
 
-const { banda, album } = Astro.props;
+const { banda, album, outrosAlbuns } = Astro.props;
 const { nome: nomeBanda, genero } = banda.data;
 const { nome, ano, descricao, capa, capaAlt, spotifyUrl, temas, scoresCriticos, musicasPopulares, videoYoutubeId, videoTitulo, secoesAnalise } = album;
 
@@ -227,7 +239,7 @@ const schema = {
 
     <!-- Seções de análise -->
     {secoesAnalise.length > 0 && (
-      <section class="pt-14 pb-24 max-w-3xl">
+      <section class="pt-14 max-w-3xl">
         {secoesAnalise.map((secao) => (
           <div class="mb-9 last:mb-0">
             <h3 class="text-xl font-extrabold tracking-tight mb-3" style={`color:${accent}`}>{secao.titulo}</h3>
@@ -236,6 +248,58 @@ const schema = {
         ))}
       </section>
     )}
+
+    <!-- Continue explorando a banda -->
+    <section class="pt-14 pb-24">
+      <div class="flex items-center gap-3.5 mb-6">
+        <span class="w-8.5 h-8.5 rounded-lg flex items-center justify-center flex-shrink-0" style={`background:${tagBg};color:${accent}`}>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </span>
+        <h2 class="text-2xl font-extrabold tracking-tight">Mais de {nomeBanda}</h2>
+      </div>
+
+      {outrosAlbuns.length > 0 && (
+        <div class="grid gap-3.5 mb-6" style="grid-template-columns:repeat(auto-fill,minmax(210px,1fr))">
+          {outrosAlbuns.map((outro) => (
+            <a
+              href={outro.href}
+              class="flex items-center gap-3.5 p-3 rounded-xl border border-[#232323] bg-[#131313] hover:border-[#3a3a3a] transition-colors"
+            >
+              <span class="w-13 h-13 rounded-lg overflow-hidden flex-shrink-0" style={`background:${gradient}`}>
+                {outro.capa && (
+                  <img src={outro.capa} alt={outro.capaAlt || `Capa do álbum ${outro.nome}`} width="52" height="52" loading="lazy" class="w-full h-full object-cover" />
+                )}
+              </span>
+              <span class="min-w-0">
+                <span class="block text-[14px] font-bold truncate">{outro.nome}</span>
+                <span class="block text-[12.5px] text-[#8a8a8a] mt-0.5">{outro.ano ? `Álbum de ${outro.ano}` : 'Álbum'}</span>
+              </span>
+            </a>
+          ))}
+        </div>
+      )}
+
+      <div class="flex gap-2.5 flex-wrap">
+        <a
+          href={`/bandas/${banda.id}/`}
+          class="inline-flex items-center text-[13px] font-semibold rounded-full px-4 py-2 border border-[#2a2a2a] bg-[#141414] hover:border-[#3f3f3f] transition-colors"
+        >
+          Perfil e integrantes de {nomeBanda} →
+        </a>
+        <a
+          href={`/bandas/${banda.id}/equipamentos/`}
+          class="inline-flex items-center text-[13px] font-semibold rounded-full px-4 py-2 border border-[#2a2a2a] bg-[#141414] hover:border-[#3f3f3f] transition-colors"
+        >
+          Equipamentos usados por {nomeBanda} →
+        </a>
+        <a
+          href="/tablaturas/"
+          class="inline-flex items-center text-[13px] font-semibold rounded-full px-4 py-2 border border-[#2a2a2a] bg-[#141414] hover:border-[#3f3f3f] transition-colors"
+        >
+          Tablaturas →
+        </a>
+      </div>
+    </section>
   </div>
   </div>
 </BaseLayout>
