@@ -40,7 +40,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'bb-king',
     dificuldade: 'Intermediário',
     genero: 'Blues',
-    preview: '/images/bbking-sonar.webp',
+    preview: '/images/bb-king-1987-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/b-b-king/the-thrill-is-gone-tabs-73271',
       nome: 'Ultimate-Guitar (grátis)',
@@ -53,7 +53,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'metallica',
     dificuldade: 'Intermediário',
     genero: 'Metal',
-    preview: '/images/metallica-banda-capa.webp',
+    preview: '/images/metallica-gershwin-2024-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/metallica/enter-sandman-tabs-8595',
       nome: 'Ultimate-Guitar (grátis)',
@@ -65,7 +65,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'metallica',
     dificuldade: 'Intermediário',
     genero: 'Metal',
-    preview: '/images/metallica-banda-capa.webp',
+    preview: '/images/metallica-gershwin-2024-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/metallica/nothing-else-matters-tabs-8519',
       nome: 'Ultimate-Guitar (grátis)',
@@ -77,7 +77,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'iron-maiden',
     dificuldade: 'Avançado',
     genero: 'Metal',
-    preview: '/images/iron-maiden-sonar-banda-ajuste-webp.webp',
+    preview: '/images/iron-maiden-madrid-2016-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/iron-maiden/the-trooper-tabs-71439',
       nome: 'Ultimate-Guitar (grátis)',
@@ -89,7 +89,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'iron-maiden',
     dificuldade: 'Intermediário',
     genero: 'Metal',
-    preview: '/images/iron-maiden-sonar-banda-ajuste-webp.webp',
+    preview: '/images/iron-maiden-madrid-2016-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/iron-maiden/fear-of-the-dark-tabs-11269',
       nome: 'Ultimate-Guitar (grátis)',
@@ -114,7 +114,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'coldplay',
     dificuldade: 'Fácil',
     genero: 'Pop',
-    preview: '/images/coldplay-band-sonar.webp',
+    preview: '/images/coldplay-wembley-2025-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/coldplay/yellow-chords-16492',
       nome: 'Ultimate-Guitar (grátis)',
@@ -200,7 +200,7 @@ export const TABLATURAS: Tablatura[] = [
     artistaSlug: 'bruno-mars',
     dificuldade: 'Fácil',
     genero: 'Pop',
-    preview: '/images/bruno-mars-sonar.webp',
+    preview: '/images/bruno-mars-24k-tour-sonar.webp',
     fonteExterna: {
       url: 'https://tabs.ultimate-guitar.com/tab/bruno-mars/when-i-was-your-man-chords-1198871',
       nome: 'Ultimate-Guitar (grátis)',

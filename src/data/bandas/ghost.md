@@ -6,9 +6,9 @@ ano: 2008
 blurb: Heavy metal teatral com liturgia satânico-pop. Um "Papa" mascarado no
   microfone e "Nameless Ghouls" anônimos construindo hinos de arena
   irresistivelmente melódicos.
-fotoCapa: /images/ghost-wacken-2018-sonar.jpg
-fotoCapaAlt: Ghost ao vivo no Wacken Open Air 2018, com cenário de catedral e vitrais no palco
-fotoCapaPosition: 45
+fotoCapa: /images/ghost-papa-v-sonar.jpg
+fotoCapaAlt: Vocalista do Ghost (Papa) ao vivo em San Diego, mascarado e apontando para a plateia sob luz vermelha
+fotoCapaPosition: 40
 integrantes:
   - nome: Papa V Perpetua
     funcao: Vocal
