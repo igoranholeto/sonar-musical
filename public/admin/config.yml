@@ -75,6 +75,7 @@ collections:
         step: 0.5
         required: false
         hint: "Usado apenas em posts do tipo Review."
+      - { label: Nome do produto avaliado, name: reviewedName, widget: string, required: false, hint: "Só em Review. Nome limpo do produto (ex.: Fender Blues Junior IV) — vai para o dado estruturado. Sem isso, o Google recebe o título do post como nome do produto." }
       - { label: Pontos positivos, name: pros, widget: list, required: false, field: { label: Ponto positivo, name: item, widget: string } }
       - { label: Pontos negativos, name: cons, widget: list, required: false, field: { label: Ponto negativo, name: item, widget: string } }
 

@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BandaCard from '../../components/BandaCard.astro';
-import { GENEROS, generoAccent, generoSoft } from '../../utils/generos';
+import { GENEROS, generoAccent, generoSoft, slugify } from '../../utils/generos';
 
 const allBandas = await getCollection('bandas');
 const bandas = allBandas
@@ -26,6 +26,21 @@ const chips = [
 ];
 
 const marqueeNames = allBandas.map((b) => b.data.nome);
+
+const bandasComAlbuns = bandas
+  .filter((b) => b.data.albuns.length > 0)
+  .map((b) => ({
+    nome: b.data.nome,
+    slug: b.id,
+    accent: generoAccent(b.data.genero),
+    albuns: b.data.albuns.map((album) => ({
+      nome: album.nome,
+      ano: album.ano,
+      href: `/bandas/${b.id}/albuns/${slugify(album.nome)}/`,
+    })),
+  }));
+
+const totalAlbuns = bandasComAlbuns.reduce((soma, b) => soma + b.albuns.length, 0);
 ---
 
 <BaseLayout
@@ -124,6 +139,37 @@ const marqueeNames = allBandas.map((b) => b.data.nome);
       <div class="text-4xl mb-2.5">🎸</div>
       <div class="text-base text-muted font-semibold">Nenhuma banda encontrada</div>
       <div class="text-sm mt-1.5">Tente outro gênero ou termo de busca.</div>
+    </div>
+  </section>
+
+  <!-- Índice de álbuns: cada análise acessível direto daqui -->
+  <section class="border-t border-border bg-elevated/35">
+    <div class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-2xl font-extrabold tracking-tight">Álbuns analisados</h2>
+      <p class="text-sm text-muted mt-2 mb-8">
+        {totalAlbuns} análises de álbum — temas, recepção da crítica e as faixas mais ouvidas de cada disco.
+      </p>
+
+      <div class="grid gap-x-8 gap-y-7" style="grid-template-columns:repeat(auto-fill,minmax(250px,1fr))">
+        {bandasComAlbuns.map((banda) => (
+          <div>
+            <h3 class="text-[13px] font-bold uppercase tracking-wider mb-3 pb-2 border-b border-border">
+              <a href={`/bandas/${banda.slug}/`} class="hover:opacity-75 transition-opacity" style={`color:${banda.accent}`}>
+                {banda.nome}
+              </a>
+            </h3>
+            <ul class="flex flex-col gap-2">
+              {banda.albuns.map((album) => (
+                <li>
+                  <a href={album.href} class="text-[14px] text-muted hover:text-foreground transition-colors">
+                    {album.nome}{album.ano && <span class="text-subtle"> · {album.ano}</span>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </div>
   </section>
 </BaseLayout>
