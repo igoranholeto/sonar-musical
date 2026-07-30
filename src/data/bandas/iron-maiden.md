@@ -5,8 +5,9 @@ origem: Londres, Reino Unido
 ano: 1975
 blurb: Guitarras gêmeas galopantes sobre o baixo dedilhado de Steve Harris.
   NWOBHM em estado puro.
-fotoCapa: /images/iron-maiden-sonar-banda-ajuste-webp.webp
-fotoCapaAlt: "Iron Maiden Banda "
+fotoCapa: /images/iron-maiden-madrid-2016-sonar.webp
+fotoCapaAlt: Iron Maiden ao vivo em Madri, 2016 — baixista e três guitarristas no palco com cenário maia
+fotoCapaPosition: 40
 integrantes:
   - foto: /images/steve-harris-sonar-integrante.webp
     fotoAlt: steve harris baixista

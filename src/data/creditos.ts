@@ -25,7 +25,7 @@ export interface CreditoFoto {
 export const CREDITOS_FOTOS: CreditoFoto[] = [
   // Ghost
   {
-    descricao: 'Ghost ao vivo no Wacken Open Air 2018 (foto de capa)',
+    descricao: 'Ghost ao vivo no Wacken Open Air 2018 (preview de tablatura)',
     bandaSlug: 'ghost',
     bandaNome: 'Ghost',
     autor: 'Andreas Lawen, Fotandi',
@@ -35,7 +35,7 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
     fonteUrl: 'https://commons.wikimedia.org/wiki/File:Ghost_-_Wacken_Open_Air_2018-5009.jpg',
   },
   {
-    descricao: 'Papa (vocalista) ao vivo em San Diego',
+    descricao: 'Papa (vocalista) ao vivo em San Diego (foto de capa)',
     bandaSlug: 'ghost',
     bandaNome: 'Ghost',
     autor: 'Pink Floyd Fan 101',
@@ -114,17 +114,7 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
 
   // The Weeknd
   {
-    descricao: 'The Weeknd ao vivo no Stade de France (foto de capa)',
-    bandaSlug: 'the-weeknd',
-    bandaNome: 'The Weeknd',
-    autor: 'Zakarie Faibis',
-    autorUrl: 'https://commons.wikimedia.org/wiki/User:Randy110912',
-    licenca: 'CC BY-SA 4.0',
-    licencaUrl: 'https://creativecommons.org/licenses/by-sa/4.0/deed.pt',
-    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Concert_The_Weeknd_Paris_21.jpg',
-  },
-  {
-    descricao: 'The Weeknd ao vivo no Festival d\'été de Québec 2018 (retrato)',
+    descricao: 'The Weeknd ao vivo no Festival d\'été de Québec 2018 (retrato e foto de capa)',
     bandaSlug: 'the-weeknd',
     bandaNome: 'The Weeknd',
     autor: 'Nicolas Padovani',
@@ -205,5 +195,74 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
     licenca: 'CC BY-SA 4.0',
     licencaUrl: 'https://creativecommons.org/licenses/by-sa/4.0/deed.pt',
     fonteUrl: 'https://commons.wikimedia.org/wiki/File:Flaviolemoscapitalinicial.jpg',
+  },
+
+  // Metallica
+  {
+    descricao: 'Metallica no Gershwin Prize da Library of Congress, 2024 (foto de capa)',
+    bandaSlug: 'metallica',
+    bandaNome: 'Metallica',
+    autor: 'Library of Congress',
+    licenca: 'CC0 1.0 (domínio público)',
+    licencaUrl: 'https://creativecommons.org/publicdomain/zero/1.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Metallica_March_2024.jpg',
+  },
+
+  // Coldplay
+  {
+    descricao: 'Coldplay ao vivo no Wembley Stadium (foto de capa)',
+    bandaSlug: 'coldplay',
+    bandaNome: 'Coldplay',
+    autor: 'Raph_PH',
+    autorUrl: 'https://www.flickr.com/people/raph_ph/',
+    licenca: 'CC BY 4.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by/4.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:ColdplayWembley120925_(cropped).jpg',
+  },
+
+  // Bruno Mars
+  {
+    descricao: 'Bruno Mars ao vivo na turnê 24K Magic (foto de capa)',
+    bandaSlug: 'bruno-mars',
+    bandaNome: 'Bruno Mars',
+    autor: 'slgckgc',
+    autorUrl: 'https://www.flickr.com/people/slgckgc/',
+    licenca: 'CC BY 4.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by/4.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:BrunoMars24KMagicWorldTourLive_(cropped).jpg',
+  },
+
+  // Iron Maiden
+  {
+    descricao: 'Iron Maiden ao vivo em Madri, 2016 (foto de capa)',
+    bandaSlug: 'iron-maiden',
+    bandaNome: 'Iron Maiden',
+    autor: 'dr_zoidberg',
+    autorUrl: 'https://www.flickr.com/people/dr_zoidberg/',
+    licenca: 'CC BY-SA 2.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by-sa/2.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Iron_Maiden_live_in_Madrid_13_July_2016.jpg',
+  },
+
+  // B.B. King
+  {
+    descricao: 'B.B. King em evento nos anos 1980 (foto de capa)',
+    bandaSlug: 'bb-king',
+    bandaNome: 'B.B. King',
+    autor: 'Alan Light',
+    autorUrl: 'https://www.flickr.com/people/alan-light/',
+    licenca: 'CC BY 2.0',
+    licencaUrl: 'https://creativecommons.org/licenses/by/2.0/deed.pt',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:B._B._King_(2088048328).jpg',
+  },
+
+  // Miles Davis
+  {
+    descricao: 'Miles Davis tocando trompete ao vivo em 1987 (foto de capa)',
+    bandaSlug: 'miles-davis',
+    bandaNome: 'Miles Davis',
+    autor: 'Firma Hagblom-Foto',
+    licenca: 'Domínio público',
+    fonteUrl: 'https://commons.wikimedia.org/wiki/File:Miles_Davis_1987.png',
   },
 ];

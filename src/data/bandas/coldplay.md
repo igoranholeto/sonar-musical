@@ -5,9 +5,9 @@ origem: Londres, Reino Unido
 ano: 1996
 blurb: "Pop-rock atmosférico: arpejos com delay, Telecaster brilhante e camadas
   de teclado que enchem o estádio."
-fotoCapa: /images/coldplay-band-sonar.webp
-fotoCapaAlt: coldplay banda toda
-fotoCapaPosition: 15
+fotoCapa: /images/coldplay-wembley-2025-sonar.webp
+fotoCapaAlt: Os quatro integrantes do Coldplay de mãos dadas e braços erguidos no palco de Wembley
+fotoCapaPosition: 25
 integrantes:
   - foto: /images/jonny-buckland-sonar.webp
     fotoAlt: Jonny Buckland Guitarrista

@@ -5,9 +5,9 @@ origem: Honolulu, EUA
 ano: 2004
 blurb: "Funk e R&B pop com pegada retrô: guitarra percussiva, naipe de metais
   afiado e teclas quentes estilo Motown."
-fotoCapa: /images/bruno-mars-sonar.webp
-fotoCapaAlt: bruno mars capa sonar
-fotoCapaPosition: 10
+fotoCapa: /images/bruno-mars-24k-tour-sonar.webp
+fotoCapaAlt: Bruno Mars cantando ao vivo ao microfone na turnê 24K Magic, com boné e camisa listrada
+fotoCapaPosition: 12
 integrantes:
   - nome: Bruno Mars
     funcao: Vocal / Guitarra

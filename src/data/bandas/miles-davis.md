@@ -5,9 +5,9 @@ origem: Illinois, EUA
 ano: 1955
 blurb: "Jazz modal com espaço e silêncio: o trompete com surdina Harmon
   sussurrando frases econômicas e melancólicas."
-fotoCapa: /images/miles-davis-sonar.webp
-fotoCapaAlt: miles davies
-fotoCapaPosition: 8
+fotoCapa: /images/miles-davis-1987-sonar.webp
+fotoCapaAlt: Miles Davis tocando trompete ao vivo em 1987, de óculos escuros e paletó estampado
+fotoCapaPosition: 15
 integrantes:
   - foto: /images/miles-davis-cap.webp
     fotoAlt: miles davis

@@ -5,9 +5,9 @@ origem: Los Angeles, EUA
 ano: 1981
 blurb: Thrash metal cirúrgico e pesado. O tom de James virou sinônimo de
   palhetada agressiva com graves apertados e controlados.
-fotoCapa: /images/metallica-banda-capa.webp
-fotoCapaAlt: metallica banda
-fotoCapaPosition: 20
+fotoCapa: /images/metallica-gershwin-2024-sonar.webp
+fotoCapaAlt: Os quatro integrantes do Metallica lado a lado no Gershwin Prize da Library of Congress, em 2024
+fotoCapaPosition: 25
 integrantes:
   - foto: /images/james-integrante-metallica.webp
     fotoAlt: james integrante

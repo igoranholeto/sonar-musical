@@ -5,9 +5,9 @@ origem: Mississippi, EUA
 ano: 1949
 blurb: "O rei do blues: vibrato de borboleta, notas escolhidas a dedo e a
   semi-acústica Lucille cantando cada frase."
-fotoCapa: /images/bbking-sonar.webp
-fotoCapaAlt: bbking-capa
-fotoCapaPosition: 9
+fotoCapa: /images/bb-king-1987-sonar.webp
+fotoCapaAlt: B.B. King de smoking e óculos escuros, retrato em evento nos anos 1980
+fotoCapaPosition: 20
 integrantes:
   - nome: B.B. King
     funcao: Guitarra / Vocal
