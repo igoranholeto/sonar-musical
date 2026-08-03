@@ -27,6 +27,9 @@ export async function getStaticPaths() {
 
 const { banda, album, outrosAlbuns } = Astro.props;
 const { nome: nomeBanda, genero } = banda.data;
+// Só existe página de equipamentos quando algum integrante tem setup preenchido
+// (mesma condição do getStaticPaths de equipamentos.astro). Sem isso, o link 404.
+const equipReady = banda.data.integrantes.some((m) => m.setup.length > 0);
 const { nome, ano, descricao, capa, capaAlt, spotifyUrl, temas, scoresCriticos, musicasPopulares, videoYoutubeId, videoTitulo, secoesAnalise } = album;
 
 const accent = generoAccent(genero);
@@ -286,12 +289,14 @@ const schema = {
         >
           Perfil e integrantes de {nomeBanda} →
         </a>
-        <a
-          href={`/bandas/${banda.id}/equipamentos/`}
-          class="inline-flex items-center text-[13px] font-semibold rounded-full px-4 py-2 border border-[#2a2a2a] bg-[#141414] hover:border-[#3f3f3f] transition-colors"
-        >
-          Equipamentos usados por {nomeBanda} →
-        </a>
+        {equipReady && (
+          <a
+            href={`/bandas/${banda.id}/equipamentos/`}
+            class="inline-flex items-center text-[13px] font-semibold rounded-full px-4 py-2 border border-[#2a2a2a] bg-[#141414] hover:border-[#3f3f3f] transition-colors"
+          >
+            Equipamentos usados por {nomeBanda} →
+          </a>
+        )}
         <a
           href="/tablaturas/"
           class="inline-flex items-center text-[13px] font-semibold rounded-full px-4 py-2 border border-[#2a2a2a] bg-[#141414] hover:border-[#3f3f3f] transition-colors"
