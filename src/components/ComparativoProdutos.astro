@@ -1,0 +1,204 @@
+---
+// Tabela comparativa que vira cards empilhados no mobile (sem overflow horizontal)
+// e tabela real no desktop. colunas[0] é o rótulo da linha (nome do produto).
+//
+// Uso em MDX:
+//   <ComparativoProdutos
+//     colunas={["Captador", "Tipo", "Saída", "Estilo", "Preço"]}
+//     linhas={[
+//       { celulas: ["Seymour Duncan SH-4 JB", "Humbucker", "Alta", "Rock", "R$ 1.100"], destaque: true, badge: "Nossa escolha" },
+//       { celulas: ["EMG 81/85", "Ativo", "Muito alta", "Metal", "R$ 2.800"] },
+//     ]}
+//   />
+interface Linha {
+  celulas: string[];
+  destaque?: boolean;
+  badge?: string;
+}
+
+interface Props {
+  colunas: string[];
+  linhas: Linha[];
+  legenda?: string;
+}
+
+const { colunas, linhas, legenda } = Astro.props;
+---
+
+<figure class="comparativo">
+  <!-- Desktop: tabela -->
+  <div class="comparativo__scroll" role="region" aria-label="Tabela comparativa" tabindex="0">
+    <table class="comparativo__table">
+      <thead>
+        <tr>
+          {colunas.map((c) => <th scope="col">{c}</th>)}
+        </tr>
+      </thead>
+      <tbody>
+        {linhas.map((linha) => (
+          <tr class={linha.destaque ? 'is-destaque' : undefined}>
+            {linha.celulas.map((cel, i) =>
+              i === 0 ? (
+                <th scope="row">
+                  <span class="comparativo__nome">{cel}</span>
+                  {linha.badge && <span class="comparativo__badge">{linha.badge}</span>}
+                </th>
+              ) : (
+                <td>{cel}</td>
+              )
+            )}
+          </tr>
+        ))}
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Mobile: cards -->
+  <div class="comparativo__cards">
+    {linhas.map((linha) => (
+      <div class={`comparativo__card${linha.destaque ? ' is-destaque' : ''}`}>
+        <div class="comparativo__card-head">
+          <span class="comparativo__nome">{linha.celulas[0]}</span>
+          {linha.badge && <span class="comparativo__badge">{linha.badge}</span>}
+        </div>
+        <dl class="comparativo__dl">
+          {colunas.slice(1).map((col, i) => (
+            <div class="comparativo__row">
+              <dt>{col}</dt>
+              <dd>{linha.celulas[i + 1]}</dd>
+            </div>
+          ))}
+        </dl>
+      </div>
+    ))}
+  </div>
+
+  {legenda && <figcaption class="comparativo__legenda">{legenda}</figcaption>}
+</figure>
+
+<style>
+  .comparativo {
+    margin: 2rem 0;
+  }
+
+  /* Displays base declarados ANTES da media query, senão a regra base
+     vence o override por vir depois na cascata (mesma especificidade). */
+  .comparativo__scroll {
+    display: none;
+  }
+  .comparativo__cards {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  /* ── Desktop / tablet: tabela ─────────────────────────── */
+  @media (min-width: 640px) {
+    .comparativo__scroll {
+      display: block;
+      overflow-x: auto;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
+    }
+    .comparativo__cards {
+      display: none;
+    }
+  }
+
+  .comparativo__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  .comparativo__table th[scope='col'] {
+    background: var(--color-elevated);
+    text-align: left;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    white-space: nowrap;
+    color: var(--color-foreground);
+  }
+  .comparativo__table td,
+  .comparativo__table th[scope='row'] {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-muted);
+    text-align: left;
+    vertical-align: top;
+  }
+  .comparativo__table tbody tr:last-child td,
+  .comparativo__table tbody tr:last-child th {
+    border-bottom: none;
+  }
+  .comparativo__table tr.is-destaque td,
+  .comparativo__table tr.is-destaque th[scope='row'] {
+    background: color-mix(in srgb, var(--color-brand) 8%, transparent);
+  }
+
+  /* ── Mobile: cards ────────────────────────────────────── */
+  .comparativo__card {
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 1rem 1.1rem;
+    background: var(--color-card);
+  }
+  .comparativo__card.is-destaque {
+    border-color: color-mix(in srgb, var(--color-brand) 45%, var(--color-border));
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-brand) 25%, transparent);
+  }
+  .comparativo__card-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .comparativo__dl {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .comparativo__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.85rem;
+  }
+  .comparativo__row dt {
+    color: var(--color-subtle);
+    flex-shrink: 0;
+  }
+  .comparativo__row dd {
+    margin: 0;
+    color: var(--color-foreground);
+    text-align: right;
+  }
+
+  /* ── Compartilhado ────────────────────────────────────── */
+  .comparativo__nome {
+    font-weight: 700;
+    color: var(--color-foreground);
+  }
+  .comparativo__badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.15rem 0.45rem;
+    border-radius: 999px;
+    background: var(--color-brand);
+    color: #fff;
+    white-space: nowrap;
+  }
+  .comparativo__legenda {
+    margin-top: 0.6rem;
+    font-size: 0.78rem;
+    color: var(--color-subtle);
+    text-align: center;
+  }
+</style>

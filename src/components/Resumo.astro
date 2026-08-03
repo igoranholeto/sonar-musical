@@ -1,0 +1,89 @@
+---
+// Bloco "Resumo rápido" (TL;DR) com bullets — ótimo para escaneabilidade e
+// para AEO (respostas de IA e featured snippets). Complementa o <QuickAnswer>:
+// o QuickAnswer dá a resposta direta em prosa; o Resumo lista os pontos-chave.
+//
+// Uso em MDX:
+//   <Resumo pontos={[
+//     "Para rock e uso geral: Seymour Duncan SH-4 JB",
+//     "Para metal de alto ganho: EMG 81/85 (ativo)",
+//     "Melhor custo-benefício nacional: Malagoli",
+//   ]} />
+interface Props {
+  titulo?: string;
+  pontos: string[];
+}
+
+const { titulo = 'Resumo rápido', pontos } = Astro.props;
+---
+
+<aside class="resumo" aria-label={titulo}>
+  <p class="resumo__titulo">
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <polyline points="9 11 12 14 22 4" />
+      <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+    </svg>
+    {titulo}
+  </p>
+  <ul class="resumo__lista">
+    {pontos.map((p) => (
+      <li class="resumo__item" set:html={p} />
+    ))}
+  </ul>
+</aside>
+
+<style>
+  .resumo {
+    margin: 2rem 0;
+    border: 1px solid var(--color-border);
+    border-left: 4px solid var(--color-brand);
+    border-radius: 12px;
+    background: var(--color-elevated);
+    padding: 1.25rem 1.5rem;
+  }
+  .resumo__titulo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-brand);
+    margin: 0 0 0.85rem;
+  }
+  .resumo__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.55rem;
+  }
+  .resumo__item {
+    position: relative;
+    padding-left: 1.4rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--color-foreground);
+  }
+  .resumo__item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.5em;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-brand);
+  }
+  .resumo__item :global(strong) {
+    color: var(--color-foreground);
+    font-weight: 700;
+  }
+  .resumo__item :global(a) {
+    color: var(--color-brand);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+</style>

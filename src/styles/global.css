@@ -40,6 +40,19 @@
   color: var(--color-foreground);
 }
 
+/* Transições de página nativas do browser (cross-document / MPA). Cada
+   navegação continua sendo um full load — nenhuma ilha de JS é afetada. Onde
+   não há suporte, a navegação é instantânea (degradação natural). */
+@view-transition {
+  navigation: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition {
+    navigation: none;
+  }
+}
+
 @layer base {
   html {
     scroll-behavior: smooth;

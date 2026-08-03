@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { generoAccent, generoGradient, generoSoft, iniciais, metaDescription, slugify } from '../../../utils/generos';
+import Lightbox from '../../../components/Lightbox.astro';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -169,7 +170,7 @@ const schema = {
                 <div class="disco-card__vinyl" style={`background:${gradient}`}></div>
                 <div class="disco-card__cover">
                   {album.capa ? (
-                    <img src={album.capa} alt={album.capaAlt || `Capa do álbum ${album.nome}`} width="190" height="190" loading="lazy" />
+                    <img src={album.capa} alt={album.capaAlt || `Capa do álbum ${album.nome}`} width="190" height="190" loading="lazy" data-lightbox />
                   ) : (
                     <div class="disco-card__cover-fallback" style={`background:${gradient}`}>
                       <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="white" stroke-opacity="0.85" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
@@ -205,6 +206,7 @@ const schema = {
     </section>
   )}
   </div>
+  <Lightbox />
 </BaseLayout>
 
 <style>

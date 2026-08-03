@@ -1,9 +1,16 @@
 ---
 ---
 
-<section class="py-16 px-4">
+<section id="newsletter" class="py-16 px-4">
   <div class="max-w-2xl mx-auto text-center">
     <div class="bg-elevated border border-border rounded-2xl p-10">
+      <p
+        id="newsletter-sucesso"
+        role="status"
+        class="hidden mb-6 rounded-xl bg-green-500/10 border border-green-500/30 px-4 py-3 text-sm text-green-500 font-medium"
+      >
+        ✓ Inscrição confirmada! Você vai receber as próximas análises no seu e-mail.
+      </p>
       <div class="inline-flex items-center justify-center w-14 h-14 bg-brand/10 rounded-xl mb-6" aria-hidden="true">
         <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#e63946" stroke-width="2" stroke-linecap="round">
           <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
@@ -17,10 +24,18 @@
       <form
         class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
         aria-label="Inscrição na newsletter"
-        action="#"
-        method="post"
-        novalidate
+        name="newsletter"
+        method="POST"
+        action="/?inscrito=1#newsletter"
+        data-netlify="true"
+        netlify-honeypot="bot-field"
       >
+        <!-- Netlify Forms: identifica o formulário no processamento do deploy -->
+        <input type="hidden" name="form-name" value="newsletter" />
+        <!-- Honeypot anti-spam: invisível para humanos, preenchido por bots -->
+        <p class="hidden" aria-hidden="true">
+          <label>Não preencha: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+        </p>
         <label for="email-input" class="sr-only">Endereço de e-mail</label>
         <input
           id="email-input"
@@ -42,3 +57,11 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Revela a confirmação após o redirect do Netlify Forms (?inscrito=1)
+  if (new URLSearchParams(window.location.search).has('inscrito')) {
+    const el = document.getElementById('newsletter-sucesso');
+    el?.classList.remove('hidden');
+  }
+</script>

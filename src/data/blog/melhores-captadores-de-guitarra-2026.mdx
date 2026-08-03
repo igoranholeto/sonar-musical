@@ -13,6 +13,8 @@ author: "Igor Silva Anholeto"
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
 import FAQ from '../../components/FAQ.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
+import ComparativoProdutos from '../../components/ComparativoProdutos.astro';
+import Resumo from '../../components/Resumo.astro';
 
 O captador é o componente que mais define o timbre da sua guitarra — mais que a madeira, mais que a ponte, mais que o amplificador na cadeia de sinal. É também a única peça que você pode trocar por algumas centenas de reais e transformar o instrumento por completo.
 
@@ -22,17 +24,28 @@ Se a sua guitarra soa fina, sem definição na distorção ou com um ruído de f
 Para **rock e uso geral** com humbucker, o **Seymour Duncan SH-4 JB** é o padrão da indústria. Para **metal com alto ganho**, o set **EMG 81/85** (ativo). Para **Stratocaster**, o set **Fender Yosemite**. Se o orçamento é curto, os captadores nacionais da **Malagoli** entregam mais do que o preço sugere.
 </QuickAnswer>
 
+<Resumo pontos={[
+  "<strong>Rock e uso geral:</strong> Seymour Duncan SH-4 JB — o padrão da indústria",
+  "<strong>Metal de alto ganho:</strong> set EMG 81/85 (ativo), ruído praticamente zero",
+  "<strong>Stratocaster / blues e funk:</strong> set Fender Yosemite",
+  "<strong>Melhor custo-benefício nacional:</strong> linha passiva da Malagoli",
+  "<strong>Antes de comprar:</strong> confira o formato do rasgo (humbucker não entra em single coil sem usinar)",
+]} />
+
 ## Comparativo dos 7 captadores
 
-| Captador | Tipo | Saída | Estilo indicado | Preço estimado |
-|---|---|---|---|---|
-| Seymour Duncan SH-4 JB | Humbucker passivo | Alta | Rock, hard rock, versátil | R$ 1.100–1.400 |
-| Seymour Duncan Hot Rodded Set (JB + '59) | Humbucker passivo (par) | Alta / média | Rock e blues no mesmo set | R$ 2.200–2.800 |
-| DiMarzio Super Distortion DP100 | Humbucker passivo | Muito alta | Rock clássico, punk, hard rock | R$ 1.200–1.500 |
-| EMG 81/85 Set | Humbucker ativo | Muito alta | Metal, thrash, death metal | R$ 2.800–3.500 |
-| Fender Yosemite Strat Set | Single coil (trio) | Média | Blues, funk, pop, country | R$ 2.400–3.000 |
-| Fishman Fluence Modern | Ativo multi-voice | Ajustável | Metal moderno, djent | R$ 3.200–4.000 |
-| Malagoli (linha passiva) | Single coil / humbucker | Variável | Custo-benefício nacional | R$ 350–600 |
+<ComparativoProdutos
+  colunas={["Captador", "Tipo", "Saída", "Estilo indicado", "Preço estimado"]}
+  linhas={[
+    { celulas: ["Seymour Duncan SH-4 JB", "Humbucker passivo", "Alta", "Rock, hard rock, versátil", "R$ 1.100–1.400"], destaque: true, badge: "Padrão da indústria" },
+    { celulas: ["Seymour Duncan Hot Rodded Set (JB + '59)", "Humbucker passivo (par)", "Alta / média", "Rock e blues no mesmo set", "R$ 2.200–2.800"] },
+    { celulas: ["DiMarzio Super Distortion DP100", "Humbucker passivo", "Muito alta", "Rock clássico, punk, hard rock", "R$ 1.200–1.500"] },
+    { celulas: ["EMG 81/85 Set", "Humbucker ativo", "Muito alta", "Metal, thrash, death metal", "R$ 2.800–3.500"] },
+    { celulas: ["Fender Yosemite Strat Set", "Single coil (trio)", "Média", "Blues, funk, pop, country", "R$ 2.400–3.000"] },
+    { celulas: ["Fishman Fluence Modern", "Ativo multi-voice", "Ajustável", "Metal moderno, djent", "R$ 3.200–4.000"] },
+    { celulas: ["Malagoli (linha passiva)", "Single coil / humbucker", "Variável", "Custo-benefício nacional", "R$ 350–600"] },
+  ]}
+/>
 
 ## O que olhar antes de comprar um captador
 

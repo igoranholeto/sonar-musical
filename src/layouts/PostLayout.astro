@@ -1,7 +1,10 @@
 ---
+import type { MarkdownHeading } from 'astro';
 import BaseLayout from './BaseLayout.astro';
 import Rating from '../components/Rating.astro';
 import AuthorBio from '../components/AuthorBio.astro';
+import TableOfContents from '../components/TableOfContents.astro';
+import ReadingProgress from '../components/ReadingProgress.astro';
 import { slugifyCategory } from '../utils/slug';
 import { unsplashSrc } from '../utils/image';
 import { getAuthorByName } from '../data/authors';
@@ -20,6 +23,7 @@ interface Props {
   cons?: string[];
   tags?: string[];
   author?: string;
+  headings?: MarkdownHeading[];
 }
 
 const {
@@ -36,7 +40,12 @@ const {
   cons,
   tags = [],
   author = 'Sonar Musical',
+  headings = [],
 } = Astro.props;
+
+// Só monta o índice quando há estrutura suficiente pra justificá-lo.
+const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
+const hasToc = tocHeadings.length >= 3;
 
 const formattedDate = pubDate.toLocaleDateString('pt-BR', {
   year: 'numeric',
@@ -149,7 +158,10 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   author={author}
   schema={pageSchema}
 >
-  <article class="max-w-3xl mx-auto px-4 py-16">
+  <ReadingProgress />
+
+  <div class="mx-auto max-w-6xl px-4 py-16 xl:flex xl:gap-10 xl:justify-center">
+  <article class="w-full max-w-3xl min-w-0" data-pagefind-body>
     <!-- Breadcrumb -->
     <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
       <a href="/" class="hover:text-foreground transition-colors">Início</a>
@@ -207,6 +219,21 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       </figure>
     )}
 
+    <!-- Índice colapsável (mobile/tablet) -->
+    {hasToc && (
+      <details class="xl:hidden mb-10 rounded-xl border border-border bg-card px-5 py-4" open data-pagefind-ignore>
+        <summary class="toc-summary cursor-pointer list-none flex items-center justify-between gap-4 text-sm font-semibold marker:content-none">
+          <span>Neste artigo</span>
+          <svg class="shrink-0 transition-transform duration-200" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </summary>
+        <div class="mt-4">
+          <TableOfContents headings={headings} hideTitle />
+        </div>
+      </details>
+    )}
+
     <!-- Prós / Contras -->
     {(pros?.length || cons?.length) && (
       <div class="grid sm:grid-cols-2 gap-4 mb-10 p-6 bg-elevated rounded-xl border border-border">
@@ -258,6 +285,16 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       </footer>
     )}
   </article>
+
+  <!-- Índice fixo (desktop) -->
+  {hasToc && (
+    <aside class="hidden xl:block w-56 shrink-0">
+      <div class="sticky top-24">
+        <TableOfContents headings={headings} />
+      </div>
+    </aside>
+  )}
+  </div>
 
   <style>
     .prose-post :global(h2) {
@@ -321,11 +358,18 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       font-size: 0.875em;
       color: #e63946;
     }
-    .prose-post :global(table) {
+    /* Tabelas markdown: rolam na horizontal dentro do próprio bloco em telas
+       estreitas, em vez de estourar o layout da página. As tabelas comparativas
+       de produto usam o componente <ComparativoProdutos> (vira cards no mobile). */
+    .prose-post :global(table:not([class])) {
+      display: block;
       width: 100%;
+      max-width: 100%;
+      overflow-x: auto;
       border-collapse: collapse;
       margin: 1.5rem 0;
       font-size: 0.95rem;
+      -webkit-overflow-scrolling: touch;
     }
     .prose-post :global(th) {
       background: var(--color-elevated);
@@ -346,5 +390,51 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       border-color: var(--color-border);
       margin: 2rem 0;
     }
+    /* Compensa o header fixo (h-16) ao pular para uma âncora do índice */
+    .prose-post :global(h2),
+    .prose-post :global(h3) {
+      scroll-margin-top: 6rem;
+    }
+    /* Chevron do índice colapsável (mobile) */
+    .toc-summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] > .toc-summary svg {
+      transform: rotate(180deg);
+    }
   </style>
+
+  {hasToc && (
+    <script>
+      const links = Array.from(
+        document.querySelectorAll<HTMLAnchorElement>('[data-toc-link]')
+      );
+      if (links.length && 'IntersectionObserver' in window) {
+        const slugs = Array.from(new Set(links.map((l) => l.dataset.tocLink!)));
+        const headingEls = slugs
+          .map((id) => document.getElementById(id))
+          .filter((el): el is HTMLElement => el !== null);
+
+        const setActive = (slug: string) => {
+          links.forEach((l) =>
+            l.classList.toggle('is-active', l.dataset.tocLink === slug)
+          );
+        };
+
+        const visible = new Set<string>();
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) visible.add(e.target.id);
+              else visible.delete(e.target.id);
+            });
+            const active = headingEls.find((h) => visible.has(h.id));
+            if (active) setActive(active.id);
+          },
+          { rootMargin: '-80px 0px -70% 0px' }
+        );
+        headingEls.forEach((h) => observer.observe(h));
+      }
+    </script>
+  )}
 </BaseLayout>

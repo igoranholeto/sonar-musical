@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { generoAccent, generoGradient, generoSoft, metaDescription, slugify } from '../../../../utils/generos';
+import Lightbox from '../../../../components/Lightbox.astro';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -83,7 +84,7 @@ const schema = {
       <div class="flex items-end gap-6 mt-9 flex-wrap">
         <div class="album-hero-cover flex-shrink-0">
           {capa ? (
-            <img src={capa} alt={capaAlt || `Capa do álbum ${nome}`} width="168" height="168" loading="eager" fetchpriority="high" />
+            <img src={capa} alt={capaAlt || `Capa do álbum ${nome}`} width="168" height="168" loading="eager" fetchpriority="high" data-lightbox />
           ) : (
             <div class="w-full h-full flex items-center justify-center" style={`background:${gradient}`}>
               <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="white" stroke-opacity="0.85" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
@@ -307,6 +308,7 @@ const schema = {
     </section>
   </div>
   </div>
+  <Lightbox />
 </BaseLayout>
 
 <style>
