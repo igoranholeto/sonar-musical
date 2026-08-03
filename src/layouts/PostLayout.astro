@@ -69,7 +69,7 @@ const authorSchema = authorRecord
 
 const articleSchema = {
   '@context': 'https://schema.org',
-  '@type': rating ? 'Review' : 'Article',
+  '@type': 'Article',
   headline: title,
   description,
   inLanguage: 'pt-BR',
@@ -89,22 +89,33 @@ const articleSchema = {
     },
   },
   ...(absoluteImage && { image: absoluteImage }),
-  ...(rating && {
-    itemReviewed: {
+};
+
+// Post de review de produto único (tem rating): emite um nó Product SEPARADO com o
+// review aninhado. O Google exige que todo Product tenha offers, review ou
+// aggregateRating — aninhar o review aqui satisfaz isso e valida o snippet de produto.
+// (Antes era um Review com itemReviewed: Product "vazio", que o GSC reprovava com
+// "Especifique offers, review ou aggregateRating".) reviewedName dá o nome limpo do
+// produto, sem o "Vale a Pena?/Review" do título do post.
+const productSchema = rating
+  ? {
+      '@context': 'https://schema.org',
       '@type': 'Product',
-      // Nome limpo do produto (frontmatter). Sem ele, o title do post — que carrega
-      // "Vale a Pena?"/"Review" — vazaria como nome do produto no dado estruturado.
       name: reviewedName ?? title,
       ...(absoluteImage && { image: absoluteImage }),
-    },
-    reviewRating: {
-      '@type': 'Rating',
-      ratingValue: rating,
-      bestRating: 5,
-      worstRating: 1,
-    },
-  }),
-};
+      review: {
+        '@type': 'Review',
+        reviewRating: {
+          '@type': 'Rating',
+          ratingValue: rating,
+          bestRating: 5,
+          worstRating: 1,
+        },
+        author: authorSchema,
+        datePublished: pubDate.toISOString(),
+      },
+    }
+  : null;
 
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -116,7 +127,7 @@ const breadcrumbSchema = {
   ],
 };
 
-const pageSchema = [articleSchema, breadcrumbSchema];
+const pageSchema = [articleSchema, ...(productSchema ? [productSchema] : []), breadcrumbSchema];
 
 const categoryColors: Record<string, string> = {
   Guitarras: 'bg-blue-100 text-blue-700 dark:bg-blue-900/40 dark:text-blue-300',
