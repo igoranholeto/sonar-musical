@@ -1,0 +1,77 @@
+---
+// Índice do post. Recebe as headings que o Astro extrai do markdown
+// (render() → headings). Renderiza só H2/H3; o scroll-spy que destaca a
+// seção ativa vive no PostLayout (uma única vez), mirando [data-toc-link].
+import type { MarkdownHeading } from 'astro';
+
+interface Props {
+  headings: MarkdownHeading[];
+  /** Classe extra no <nav> — usada pra diferenciar variante mobile/desktop. */
+  class?: string;
+  /** Oculta o rótulo "Neste artigo" (no mobile o <summary> já cumpre o papel). */
+  hideTitle?: boolean;
+}
+
+const { headings, class: className = '', hideTitle = false } = Astro.props;
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+
+{items.length >= 3 && (
+  <nav class={`toc ${className}`} aria-label="Índice do artigo">
+    {!hideTitle && <p class="toc__title">Neste artigo</p>}
+    <ul class="toc__list">
+      {items.map((h) => (
+        <li class={h.depth === 3 ? 'toc__item toc__item--sub' : 'toc__item'}>
+          <a href={`#${h.slug}`} class="toc__link" data-toc-link={h.slug}>
+            {h.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}
+
+<style>
+  .toc__title {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--color-subtle);
+    margin-bottom: 0.75rem;
+  }
+  .toc__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+  }
+  .toc__item--sub {
+    padding-left: 0.9rem;
+  }
+  .toc__link {
+    display: block;
+    padding: 0.28rem 0.6rem;
+    border-left: 2px solid transparent;
+    margin-left: -0.6rem;
+    font-size: 0.82rem;
+    line-height: 1.35;
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .toc__link:hover {
+    color: var(--color-foreground);
+  }
+  .toc__item--sub .toc__link {
+    font-size: 0.78rem;
+  }
+  /* Estado ativo controlado pelo scroll-spy (adiciona .is-active) */
+  .toc__link.is-active {
+    color: var(--color-brand);
+    border-left-color: var(--color-brand);
+    font-weight: 600;
+  }
+</style>

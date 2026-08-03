@@ -13,7 +13,7 @@ export async function getStaticPaths() {
 }
 
 const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 // Posts recomendados: score por tags em comum + recência, sem restrição de categoria
 const allPosts = await getCollection('blog');
@@ -46,11 +46,12 @@ const related = allPosts
   cons={post.data.cons}
   tags={post.data.tags}
   author={post.data.author}
+  headings={headings}
 >
   <Content />
 
   {related.length > 0 && (
-    <section class="mt-20 pt-12 border-t border-border">
+    <section class="mt-20 pt-12 border-t border-border" data-pagefind-ignore>
       <div class="flex items-center gap-3 mb-8">
         <div class="w-1 h-6 bg-brand rounded-full"></div>
         <h2 class="text-xl font-bold">Artigos Recomendados</h2>
