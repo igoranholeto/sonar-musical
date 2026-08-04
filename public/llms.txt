@@ -4,6 +4,8 @@
 
 Site: https://sonarmusical.com.br
 Idioma: Português (Brasil)
+Contato: oi@sonarmusical.com.br
+Instagram: @sonar_musical (https://www.instagram.com/sonar_musical)
 Autor principal: Igor Silva Anholeto — guitarrista, fundador e responsável por todas as análises publicadas no site (https://sonarmusical.com.br/autor/igor-anholeto/).
 
 Padrões editoriais: análises não são pagas para serem positivas; produtos recebidos para teste são declarados explicitamente; recomendações se baseiam em testes reais, não em comissão de afiliado; análises são atualizadas quando os produtos mudam. Detalhes em /about.
@@ -62,4 +64,4 @@ Perfis com biografia, integrantes, equipamento usado e análise de discografia d
 ## Optional
 
 - [Categorias](https://sonarmusical.com.br/categoria/guitarras/): artigos filtrados por categoria (Guitarras, Amplificadores, Pedais, Acessórios, Violões, Home Studio, Técnica e Teoria etc.)
-- [Contato](https://sonarmusical.com.br/contact/)
+- [Contato](https://sonarmusical.com.br/contact/): e-mail oi@sonarmusical.com.br e Instagram @sonar_musical.
