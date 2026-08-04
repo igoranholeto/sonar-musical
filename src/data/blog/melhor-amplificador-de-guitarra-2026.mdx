@@ -12,6 +12,7 @@ author: "Igor Silva Anholeto"
 
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
 import FAQ from '../../components/FAQ.astro';
+import ComparativoProdutos from '../../components/ComparativoProdutos.astro';
 
 O amplificador é metade do seu som. Pode parecer exagero, mas qualquer guitarrista experiente sabe que uma guitarra boa num amp ruim soa pior do que uma guitarra mediana num amp excelente. Se você está escolhendo seu próximo amplificador de guitarra, este guia foi feito para você — e faz parte do nosso [guia completo do amplificador de guitarra](/blog/amplificador-de-guitarra-guia-completo/).
 
@@ -160,14 +161,17 @@ A Orange tem um som inconfundível, e o Rocker 15 entrega esse caráter britâni
 
 ## Tabela comparativa
 
-| Amplificador | Potência | Tipo | Melhor para | Preço |
-|---|---|---|---|---|
-| Fender Blues Junior IV | 15W | Valvulado | Blues/Jazz/Soul | R$ 4.500 |
-| Boss Katana 50 MkII | 50W | Transistor | Versatilidade | R$ 2.200 |
-| Marshall DSL20CR | 20W | Valvulado | Rock/Metal | R$ 5.500 |
-| Blackstar HT-5R MkII | 5W | Valvulado | Bedroom/Gravação | R$ 3.200 |
-| Fender Mustang GTX50 | 50W | Digital | Variedade de estilos | R$ 3.500 |
-| Orange Rocker 15 | 15W | Valvulado | Blues/Classic Rock | R$ 6.000 |
+<ComparativoProdutos
+  colunas={["Amplificador", "Potência", "Tipo", "Melhor para", "Preço"]}
+  linhas={[
+    { celulas: ["Fender Blues Junior IV", "15W", "Valvulado", "Blues/Jazz/Soul", "R$ 4.500"], destaque: true, badge: "Melhor valvulado" },
+    { celulas: ["Boss Katana 50 MkII", "50W", "Transistor", "Versatilidade", "R$ 2.200"] },
+    { celulas: ["Marshall DSL20CR", "20W", "Valvulado", "Rock/Metal", "R$ 5.500"] },
+    { celulas: ["Blackstar HT-5R MkII", "5W", "Valvulado", "Bedroom/Gravação", "R$ 3.200"] },
+    { celulas: ["Fender Mustang GTX50", "50W", "Digital", "Variedade de estilos", "R$ 3.500"] },
+    { celulas: ["Orange Rocker 15", "15W", "Valvulado", "Blues/Classic Rock", "R$ 6.000"] },
+  ]}
+/>
 
 <FAQ items={[
   {
