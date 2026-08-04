@@ -13,6 +13,7 @@ author: "Igor Silva Anholeto"
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
 import FAQ from '../../components/FAQ.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
+import ComparativoProdutos from '../../components/ComparativoProdutos.astro';
 
 Você mora em apartamento, o vizinho já reclamou duas vezes e o amplificador de 50 watts que você comprou passa 95% do tempo desligado. É o cenário mais comum do guitarrista brasileiro — e é exatamente o problema que um mini amplificador resolve.
 
@@ -24,14 +25,17 @@ Para praticar em casa, **3 a 10 watts resolvem**. O melhor timbre geral da categ
 
 ## Comparativo rápido
 
-| Modelo | Potência | Alimentação | Bluetooth | Preço estimado |
-|---|---|---|---|---|
-| Boss Katana Mini | 7 W | Pilha AA / fonte | Não | R$ 900–1.200 |
-| Blackstar Fly 3 | 3 W | Pilha AA / fonte | Sim (versão BT) | R$ 700–1.000 |
-| Fender Frontman 10G | 10 W | Fonte (tomada) | Não | R$ 700–900 |
-| Positive Grid Spark Mini | 10 W | Bateria interna | Sim | R$ 1.600–2.100 |
-| Yamaha THR10II | 20 W | Fonte / bateria | Sim | R$ 2.900–3.600 |
-| Borne Vorax 630 | 30 W | Fonte (tomada) | Não | R$ 550–750 |
+<ComparativoProdutos
+  colunas={["Modelo", "Potência", "Alimentação", "Bluetooth", "Preço estimado"]}
+  linhas={[
+    { celulas: ["Boss Katana Mini", "7 W", "Pilha AA / fonte", "Não", "R$ 900–1.200"], destaque: true, badge: "Melhor timbre geral" },
+    { celulas: ["Blackstar Fly 3", "3 W", "Pilha AA / fonte", "Sim (versão BT)", "R$ 700–1.000"] },
+    { celulas: ["Fender Frontman 10G", "10 W", "Fonte (tomada)", "Não", "R$ 700–900"] },
+    { celulas: ["Positive Grid Spark Mini", "10 W", "Bateria interna", "Sim", "R$ 1.600–2.100"] },
+    { celulas: ["Yamaha THR10II", "20 W", "Fonte / bateria", "Sim", "R$ 2.900–3.600"] },
+    { celulas: ["Borne Vorax 630", "30 W", "Fonte (tomada)", "Não", "R$ 550–750"] },
+  ]}
+/>
 
 ## O que avaliar antes de comprar
 
