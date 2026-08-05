@@ -1,0 +1,13 @@
+---
+// Injeta um bloco JSON-LD arbitrário na página. Usado por posts que precisam de
+// dados estruturados além do Article + Breadcrumb + FAQPage já emitidos
+// automaticamente (ex.: nós `about`/`mentions` com sameAs para associação de
+// entidade no Knowledge Graph). Mesmo padrão de injeção do componente FAQ.
+interface Props {
+  schema: Record<string, unknown> | Record<string, unknown>[];
+}
+
+const { schema } = Astro.props;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

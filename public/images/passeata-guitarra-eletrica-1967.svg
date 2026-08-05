@@ -1,0 +1,120 @@
+<svg viewBox="0 0 1200 675" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cartaz: A Passeata Contra a Guitarra Elétrica, São Paulo, 17 de julho de 1967">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#141416"/>
+      <stop offset="0.6" stop-color="#0e0e10"/>
+      <stop offset="1" stop-color="#090909"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#e63946" stop-opacity="0.30"/>
+      <stop offset="0.55" stop-color="#b8202d" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#090909" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Figura em marcha, reutilizada na base -->
+    <g id="marcher">
+      <circle cx="0" cy="-40" r="6" fill="#6b6b70"/>
+      <path d="M-7,-33 L7,-33 L5,-12 L9,1 L3,1 L0,-11 L-3,1 L-9,1 L-5,-12 Z" fill="#6b6b70"/>
+      <line x1="6" y1="-30" x2="16" y2="-46" stroke="#6b6b70" stroke-width="3" stroke-linecap="round"/>
+      <rect x="10" y="-64" width="24" height="15" rx="2" fill="#e63946" transform="rotate(-8 22 -56)"/>
+    </g>
+  </defs>
+
+  <!-- Fundo -->
+  <rect width="1200" height="675" fill="url(#bg)"/>
+
+  <!-- Brilho radial (vermelho da marca) atrás da guitarra -->
+  <circle cx="946" cy="322" r="300" fill="url(#glow)"/>
+
+  <!-- Número fantasma 67 -->
+  <text x="950" y="470" font-family="'Arial Black', Arial, sans-serif" font-size="420" font-weight="900" fill="#e63946" opacity="0.06" text-anchor="middle">67</text>
+
+  <!-- Guitarra elétrica -->
+  <g transform="translate(946,322) rotate(-26) scale(0.92)">
+    <!-- braço -->
+    <rect x="120" y="-18" width="326" height="36" rx="4" fill="#232025"/>
+    <rect x="120" y="-18" width="326" height="36" rx="4" fill="none" stroke="#e9e4da" stroke-width="1.5" opacity="0.5"/>
+    <!-- trastes -->
+    <g stroke="#54505a" stroke-width="1.8">
+      <line x1="170" y1="-18" x2="170" y2="18"/>
+      <line x1="214" y1="-18" x2="214" y2="18"/>
+      <line x1="258" y1="-18" x2="258" y2="18"/>
+      <line x1="302" y1="-18" x2="302" y2="18"/>
+      <line x1="346" y1="-18" x2="346" y2="18"/>
+      <line x1="390" y1="-18" x2="390" y2="18"/>
+    </g>
+    <!-- headstock -->
+    <path d="M446,-21 L512,-29 Q528,-25 528,-11 L524,17 Q516,27 496,23 L446,19 Z" fill="#1b181d"/>
+    <g fill="#e9e4da">
+      <circle cx="466" cy="-15" r="3.6"/><circle cx="488" cy="-18" r="3.6"/><circle cx="510" cy="-21" r="3.6"/>
+      <circle cx="466" cy="13" r="3.6"/><circle cx="488" cy="14" r="3.6"/><circle cx="510" cy="11" r="3.6"/>
+    </g>
+    <!-- corpo (silhueta strat estilizada) -->
+    <path d="M-58,-112 C22,-114 44,-74 98,-68 C122,-64 132,-42 132,-18 L132,18 C132,42 122,64 98,68 C44,74 22,114 -58,112 C-132,110 -156,52 -156,0 C-156,-52 -132,-110 -58,-112 Z" fill="#e9e4da"/>
+    <!-- escudo -->
+    <path d="M-64,-74 C-4,-82 34,-42 44,8 C50,44 22,72 -30,74 C-104,77 -132,26 -122,-24 C-116,-54 -104,-68 -64,-74 Z" fill="#c9c1b4"/>
+    <!-- captadores -->
+    <g fill="#1a1418">
+      <rect x="-24" y="-34" width="12" height="46" rx="3" transform="rotate(-16 -18 -11)"/>
+      <rect x="-52" y="-22" width="12" height="46" rx="3" transform="rotate(-16 -46 1)"/>
+      <rect x="-80" y="-10" width="12" height="46" rx="3" transform="rotate(-16 -74 13)"/>
+    </g>
+    <!-- ponte -->
+    <rect x="22" y="-30" width="20" height="60" rx="3" fill="#3a343d" transform="rotate(-16 32 0)"/>
+    <!-- knobs -->
+    <g fill="#1a1418"><circle cx="-96" cy="44" r="8"/><circle cx="-72" cy="54" r="8"/><circle cx="-48" cy="64" r="8"/></g>
+    <!-- cordas -->
+    <g stroke="#6f6b60" stroke-width="1.3" opacity="0.85">
+      <line x1="30" y1="-13" x2="446" y2="-13"/>
+      <line x1="30" y1="-8" x2="446" y2="-8"/>
+      <line x1="30" y1="-3" x2="446" y2="-3"/>
+      <line x1="30" y1="2" x2="446" y2="2"/>
+      <line x1="30" y1="7" x2="446" y2="7"/>
+      <line x1="30" y1="12" x2="446" y2="12"/>
+    </g>
+  </g>
+
+  <!-- Sinal de proibido (vermelho da marca) -->
+  <g>
+    <circle cx="946" cy="322" r="206" fill="none" stroke="#e63946" stroke-width="17"/>
+    <line x1="800" y1="176" x2="1092" y2="468" stroke="#e63946" stroke-width="17" stroke-linecap="round"/>
+  </g>
+
+  <!-- Wordmark (fiel ao logo do site) -->
+  <g transform="translate(80,46)">
+    <rect x="0" y="0" width="34" height="34" rx="9" fill="#e63946"/>
+    <g transform="translate(6,6) scale(0.92)" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l12-2v13"/>
+      <circle cx="6" cy="18" r="3" fill="#fff" stroke="none"/>
+      <circle cx="18" cy="16" r="3" fill="#fff" stroke="none"/>
+    </g>
+    <text x="46" y="24" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="0.3" fill="#f4f4f5">Sonar<tspan fill="#e63946">Musical</tspan></text>
+  </g>
+
+  <!-- Título: hierarquia editorial -->
+  <text x="84" y="250" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="42" font-weight="700" letter-spacing="6" fill="#c9c4bd">A PASSEATA CONTRA A</text>
+  <g font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="700" fill="#e63946" letter-spacing="1">
+    <text x="80" y="352" font-size="98">GUITARRA</text>
+    <text x="80" y="446" font-size="98">ELÉTRICA</text>
+  </g>
+
+  <!-- Faixa do slogan -->
+  <g transform="translate(84,486)">
+    <rect x="0" y="0" width="470" height="44" rx="6" fill="#e63946"/>
+    <text x="24" y="30" font-family="'Helvetica Neue', Helvetica, Arial, sans-serif" font-size="21" font-weight="600" letter-spacing="2" fill="#fff">« DEFENDER O QUE É NOSSO »</text>
+  </g>
+
+  <!-- Base: multidão em marcha (fora da área do slogan) -->
+  <line x1="0" y1="640" x2="1200" y2="640" stroke="#e63946" stroke-width="1.5" opacity="0.4"/>
+  <g>
+    <use href="#marcher" transform="translate(96,668) scale(0.85)"/>
+    <use href="#marcher" transform="translate(168,668) scale(0.78)"/>
+    <use href="#marcher" transform="translate(238,668) scale(0.9)"/>
+    <use href="#marcher" transform="translate(312,668) scale(0.82)"/>
+    <use href="#marcher" transform="translate(384,668) scale(0.86)"/>
+    <use href="#marcher" transform="translate(455,668) scale(0.78)"/>
+    <use href="#marcher" transform="translate(525,668) scale(0.88)"/>
+    <use href="#marcher" transform="translate(596,668) scale(0.8)"/>
+    <use href="#marcher" transform="translate(1064,668) scale(0.84)"/>
+    <use href="#marcher" transform="translate(1134,668) scale(0.78)"/>
+  </g>
+</svg>
