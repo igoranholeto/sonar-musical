@@ -4,11 +4,17 @@ import { slugifyCategory } from '../utils/slug';
 const navLinks = [
   { href: '/', label: 'Início' },
   { href: '/bandas/', label: 'Bandas' },
-  { href: '/tablaturas/', label: 'Tablaturas' },
   { href: '/aprender/', label: 'Aprender' },
-  { href: '/afinador/', label: 'Afinador' },
   { href: '/about/', label: 'Sobre' },
   { href: '/contact/', label: 'Contato' },
+];
+
+// Ferramentas grátis agrupadas em dropdown para não estourar a barra de navegação
+const ferramentas = [
+  { href: '/afinador/', label: 'Afinador' },
+  { href: '/metronomo/', label: 'Metrônomo' },
+  { href: '/acordes/', label: 'Dicionário de Acordes' },
+  { href: '/tablaturas/', label: 'Tablaturas' },
 ];
 
 // Subcategorias com maior potencial de SEO (volume de busca real, via keyword research)
@@ -24,6 +30,7 @@ const analiseCategorias = [
 
 const currentPath = Astro.url.pathname;
 const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWith('/categoria');
+const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWith(href));
 ---
 
 <header class="sticky top-0 z-50 bg-surface/90 backdrop-blur-md border-b border-border">
@@ -108,6 +115,41 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
           >
             Ver todas as análises →
           </a>
+        </div>
+      </li>
+
+      <!-- Ferramentas com dropdown -->
+      <li class="relative" id="ferramentas-menu-item">
+        <button
+          id="ferramentas-dropdown-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="ferramentas-dropdown"
+          class={`flex items-center gap-1 px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap transition-colors ${
+            isFerramentasActive ? 'text-brand bg-brand/10' : 'text-muted hover:text-foreground hover:bg-foreground/5'
+          }`}
+        >
+          Ferramentas
+          <svg id="ferramentas-dropdown-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </button>
+
+        <div
+          id="ferramentas-dropdown"
+          class="hidden absolute left-0 top-full mt-1 w-56 rounded-xl border border-border bg-card shadow-lg py-2 z-50"
+          role="menu"
+        >
+          {ferramentas.map(({ href, label }) => (
+            <a
+              href={href}
+              role="menuitem"
+              aria-current={currentPath.startsWith(href) ? 'page' : undefined}
+              class="block px-4 py-2 text-sm text-muted hover:text-foreground hover:bg-foreground/5 transition-colors"
+            >
+              {label}
+            </a>
+          ))}
         </div>
       </li>
 
@@ -260,6 +302,41 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
         </ul>
       </li>
 
+      <li>
+        <div
+          class={`flex items-center rounded-lg transition-colors ${
+            isFerramentasActive ? 'text-brand bg-brand/10' : 'text-muted hover:text-foreground hover:bg-foreground/5'
+          }`}
+        >
+          <span class="flex-1 pl-4 pr-2 py-2.5 text-sm font-medium">Ferramentas</span>
+          <button
+            id="mobile-ferramentas-btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="mobile-ferramentas-submenu"
+            aria-label="Ver ferramentas"
+            class="pr-3 py-2.5"
+          >
+            <svg id="mobile-ferramentas-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-200">
+              <polyline points="6 9 12 15 18 9" />
+            </svg>
+          </button>
+        </div>
+        <ul id="mobile-ferramentas-submenu" class="hidden mt-1 ml-3 flex flex-col gap-0.5 border-l border-border pl-3" role="list">
+          {ferramentas.map(({ href, label }) => (
+            <li>
+              <a
+                href={href}
+                aria-current={currentPath.startsWith(href) ? 'page' : undefined}
+                class="block px-3 py-1.5 rounded-lg text-sm text-muted hover:text-foreground hover:bg-foreground/5 transition-colors"
+              >
+                {label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </li>
+
       {navLinks.filter(({ href }) => href !== '/').map(({ href, label }) => {
         const isActive = currentPath.startsWith(href);
         return (
@@ -307,65 +384,62 @@ const isAnalisesActive = currentPath.startsWith('/blog') || currentPath.startsWi
     themeColorMeta?.setAttribute('content', isDark ? '#0a0a0a' : '#ffffff');
   });
 
-  // Dropdown de categorias "Análises"
-  const dropdownBtn = document.getElementById('analises-dropdown-btn')!;
-  const dropdown = document.getElementById('analises-dropdown')!;
-  const dropdownIcon = document.getElementById('analises-dropdown-icon')!;
-  const analisesMenuItem = document.getElementById('analises-menu-item')!;
-  let dropdownCloseTimer: ReturnType<typeof setTimeout> | null = null;
-
-  function openDropdown() {
-    if (dropdownCloseTimer) {
-      clearTimeout(dropdownCloseTimer);
-      dropdownCloseTimer = null;
-    }
-    dropdown.classList.remove('hidden');
-    dropdownBtn.setAttribute('aria-expanded', 'true');
-    dropdownIcon.classList.add('rotate-180');
-  }
-
-  function closeDropdown() {
-    dropdown.classList.add('hidden');
-    dropdownBtn.setAttribute('aria-expanded', 'false');
-    dropdownIcon.classList.remove('rotate-180');
-  }
-
-  function toggleDropdown() {
-    if (dropdown.classList.contains('hidden')) openDropdown();
-    else closeDropdown();
-  }
-
-  dropdownBtn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    toggleDropdown();
-  });
-
-  // Abre ao passar o mouse (desktop); o delay no fechamento evita
-  // que o menu suma ao mover o cursor do botão até a lista.
+  // Dropdowns de desktop ("Análises" e "Ferramentas") — mesma mecânica
   const hoverCapable = window.matchMedia('(hover: hover)').matches;
-  if (hoverCapable) {
-    analisesMenuItem.addEventListener('mouseenter', openDropdown);
-    analisesMenuItem.addEventListener('mouseleave', () => {
-      dropdownCloseTimer = setTimeout(closeDropdown, 150);
+
+  function wireDropdown(itemId: string, btnId: string, ddId: string, iconId: string) {
+    const item = document.getElementById(itemId);
+    const button = document.getElementById(btnId);
+    const dd = document.getElementById(ddId);
+    const icon = document.getElementById(iconId);
+    if (!item || !button || !dd) return;
+    let closeTimer: ReturnType<typeof setTimeout> | null = null;
+
+    const open = () => {
+      if (closeTimer) { clearTimeout(closeTimer); closeTimer = null; }
+      dd.classList.remove('hidden');
+      button.setAttribute('aria-expanded', 'true');
+      icon?.classList.add('rotate-180');
+    };
+    const close = () => {
+      dd.classList.add('hidden');
+      button.setAttribute('aria-expanded', 'false');
+      icon?.classList.remove('rotate-180');
+    };
+
+    button.addEventListener('click', (e) => {
+      e.stopPropagation();
+      dd.classList.contains('hidden') ? open() : close();
+    });
+
+    if (hoverCapable) {
+      item.addEventListener('mouseenter', open);
+      item.addEventListener('mouseleave', () => { closeTimer = setTimeout(close, 150); });
+    }
+
+    document.addEventListener('click', (e) => {
+      const t = e.target as Node;
+      if (!dd.contains(t) && !button.contains(t)) close();
+    });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') close(); });
+  }
+
+  wireDropdown('analises-menu-item', 'analises-dropdown-btn', 'analises-dropdown', 'analises-dropdown-icon');
+  wireDropdown('ferramentas-menu-item', 'ferramentas-dropdown-btn', 'ferramentas-dropdown', 'ferramentas-dropdown-icon');
+
+  // Accordions do menu mobile ("Análises" e "Ferramentas")
+  function wireAccordion(btnId: string, submenuId: string, iconId: string) {
+    const button = document.getElementById(btnId);
+    const submenu = document.getElementById(submenuId);
+    const icon = document.getElementById(iconId);
+    if (!button || !submenu) return;
+    button.addEventListener('click', () => {
+      const isOpen = submenu.classList.toggle('hidden') === false;
+      button.setAttribute('aria-expanded', String(isOpen));
+      icon?.classList.toggle('rotate-180', isOpen);
     });
   }
 
-  document.addEventListener('click', (e) => {
-    if (!dropdown.contains(e.target as Node) && e.target !== dropdownBtn) closeDropdown();
-  });
-
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') closeDropdown();
-  });
-
-  // Accordion de categorias "Análises" no menu mobile
-  const mobileAnalisesBtn = document.getElementById('mobile-analises-btn')!;
-  const mobileAnalisesSubmenu = document.getElementById('mobile-analises-submenu')!;
-  const mobileAnalisesIcon = document.getElementById('mobile-analises-icon')!;
-
-  mobileAnalisesBtn.addEventListener('click', () => {
-    const isOpen = mobileAnalisesSubmenu.classList.toggle('hidden') === false;
-    mobileAnalisesBtn.setAttribute('aria-expanded', String(isOpen));
-    mobileAnalisesIcon.classList.toggle('rotate-180', isOpen);
-  });
+  wireAccordion('mobile-analises-btn', 'mobile-analises-submenu', 'mobile-analises-icon');
+  wireAccordion('mobile-ferramentas-btn', 'mobile-ferramentas-submenu', 'mobile-ferramentas-icon');
 </script>

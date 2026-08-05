@@ -9,7 +9,7 @@ const faqItems = [
   },
   {
     question: "Como ler um diagrama de acorde de guitarra?",
-    answer: "As seis linhas verticais são as cordas (da mais grave à esquerda para a mais aguda à direita) e as linhas horizontais são os trastes. As bolinhas mostram onde apertar. Um 'O' acima da corda significa tocá-la solta; um 'X' significa não tocar aquela corda. Quando o acorde não começa no primeiro traste, o número à direita indica em qual casa a figura está."
+    answer: "As seis linhas verticais são as cordas (da mais grave à esquerda para a mais aguda à direita) e as linhas horizontais são os trastes. As bolinhas mostram onde apertar. Um 'O' acima da corda significa tocá-la solta; um 'X' significa não tocar aquela corda. Quando o acorde não começa no primeiro traste, o número à esquerda indica em qual casa a figura está."
   },
   {
     question: "O que significa um acorde 'maior' ou 'menor'?",
@@ -28,11 +28,22 @@ const faqItems = [
     answer: "Não. Com cerca de 8 acordes abertos (C, G, D, E, A, Em, Am, Dm) você já toca centenas de músicas. As formas com pestana vêm depois e, como são móveis, você aprende poucas formas e as aplica a todas as tônicas. Este dicionário serve justamente para consultar na hora que precisar."
   }
 ];
+
+// Renderizados no servidor (evita layout shift / CLS ao aparecerem só via JS)
+const NOTES_UI = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+const QUALITIES_UI = [
+  { key: 'maj', label: 'Maior' },
+  { key: 'm', label: 'Menor' },
+  { key: '7', label: '7' },
+  { key: 'm7', label: 'm7' },
+  { key: 'maj7', label: 'Maj7' },
+  { key: 'sus4', label: 'sus4' },
+];
 ---
 
 <BaseLayout
   title="Dicionário de Acordes de Guitarra e Violão — Grátis"
-  description="Dicionário visual de acordes de guitarra e violão. Escolha a tônica e o tipo (maior, menor, 7, m7, sus4) e veja o diagrama de digitação com o som do acorde. Grátis, no navegador."
+  description="Dicionário visual de acordes de guitarra e violão. Escolha a tônica e o tipo (maior, menor, 7, m7, maj7, sus4) e veja o diagrama de digitação com o som realista do acorde. Grátis."
   schema={{
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
@@ -49,40 +60,46 @@ const faqItems = [
       <p class="chord-subtitle">Guitarra e violão · Diagrama + som · Grátis</p>
     </header>
 
-    <!-- Seleção de tônica -->
     <div class="selector">
       <span class="selector-label">Tônica</span>
-      <div id="root-row" class="chip-row"></div>
+      <div id="root-row" class="root-grid">
+        {NOTES_UI.map((n, i) => (
+          <button type="button" class={`box${i === 0 ? ' box--active' : ''}`} data-root={i}>{n}</button>
+        ))}
+      </div>
     </div>
 
-    <!-- Seleção de tipo -->
     <div class="selector">
       <span class="selector-label">Tipo de acorde</span>
-      <div id="quality-row" class="chip-row"></div>
+      <div id="quality-row" class="quality-grid">
+        {QUALITIES_UI.map((q, i) => (
+          <button type="button" class={`box${i === 0 ? ' box--active' : ''}`} data-qual={q.key}>{q.label}</button>
+        ))}
+      </div>
     </div>
 
-    <!-- Resultado -->
     <div class="chord-result">
-      <div class="chord-name" id="chord-name">C</div>
+      <div class="chord-top">
+        <span class="chord-name" id="chord-name">C</span>
+        <button id="play-chord" class="play-chord-btn" aria-label="Ouvir o acorde">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Ouvir
+        </button>
+      </div>
       <div id="chord-diagram" class="chord-diagram"></div>
-      <button id="play-chord" class="play-chord-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        Ouvir o acorde
-      </button>
       <p id="chord-note" class="chord-note"></p>
     </div>
 
-    <!-- Conteúdo de apoio (SEO) -->
     <section class="chord-article">
       <h2>Como usar o dicionário de acordes</h2>
       <p>
-        Escolha a <strong>tônica</strong> (a nota que dá nome ao acorde, como C ou G) e o <strong>tipo</strong> (maior, menor, com sétima…). O diagrama mostra exatamente onde colocar os dedos, e o botão de áudio toca o acorde para você conferir se está soando certo.
+        Escolha a <strong>tônica</strong> (a nota que dá nome ao acorde, como C ou G) e o <strong>tipo</strong> (maior, menor, com sétima…). O diagrama mostra exatamente onde colocar os dedos, e o botão de áudio toca o acorde com som de corda dedilhada para você conferir se está soando certo.
       </p>
       <p>
-        Se você está começando, comece pelos acordes abertos mais comuns — <strong>C, G, D, E, A, Em, Am e Dm</strong> — que aparecem em milhares de músicas. Só depois parta para as formas com pestana. E lembre: antes de qualquer coisa, deixe o instrumento afinado com o nosso <a href="/afinador/">afinador online</a>, porque um acorde certo numa guitarra desafinada continua soando errado.
+        Se você está começando, comece pelos acordes abertos mais comuns — <strong>C, G, D, E, A, Em, Am e Dm</strong> — que aparecem em milhares de músicas. Só depois parta para as formas com pestana. E lembre: antes de tudo, deixe o instrumento afinado com o nosso <a href="/afinador/">afinador online</a>, porque um acorde certo numa guitarra desafinada continua soando errado.
       </p>
       <p>
-        Para treinar a troca entre acordes no tempo, use o nosso <a href="/metronomo/">metrônomo online</a>. E se quiser entender a lógica por trás das notas de cada acorde, o <a href="/blog/nome-das-cordas-da-guitarra/">guia das cordas da guitarra</a> e o <a href="/aprender/jogo/">jogo de teoria musical</a> ajudam a fixar.
+        Para treinar a troca entre acordes no tempo, use o nosso <a href="/metronomo/">metrônomo online</a>. E para entender a lógica das notas de cada acorde, o <a href="/blog/nome-das-cordas-da-guitarra/">guia das cordas da guitarra</a> e o <a href="/aprender/jogo/">jogo de teoria musical</a> ajudam a fixar.
       </p>
     </section>
 
@@ -91,41 +108,52 @@ const faqItems = [
 </BaseLayout>
 
 <style>
-  .chord-page { max-width: 640px; margin: 0 auto; padding: 3rem 1rem 5rem; }
-  .chord-header { text-align: center; margin-bottom: 2rem; }
-  .chord-header h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 800; letter-spacing: -0.02em; }
-  .chord-subtitle { color: var(--color-muted); margin-top: 0.5rem; font-size: 0.95rem; }
-  .selector { margin-bottom: 1.5rem; }
+  .chord-page { max-width: 560px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  .chord-header { text-align: center; margin-bottom: 1.75rem; }
+  .chord-header h1 { font-size: clamp(1.75rem, 4.5vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em; }
+  .chord-subtitle { color: var(--color-muted); margin-top: 0.4rem; font-size: 0.88rem; }
+  .selector { margin-bottom: 1.25rem; }
   .selector-label {
-    display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em;
-    color: var(--color-muted); font-weight: 700; margin-bottom: 0.75rem;
+    display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--color-muted); font-weight: 700; margin-bottom: 0.6rem;
   }
-  .chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-  .chip {
-    padding: 0.5rem 0.9rem; border-radius: 10px; border: 1px solid var(--color-border);
-    background: var(--color-elevated); color: var(--color-foreground); font-weight: 600;
-    font-size: 0.9rem; cursor: pointer; transition: border-color 0.15s, background 0.15s, color 0.15s;
+  .root-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.4rem; }
+  .quality-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.4rem; }
+  @media (min-width: 480px) { .quality-grid { grid-template-columns: repeat(6, 1fr); } }
+  .box {
+    min-height: 44px; display: flex; align-items: center; justify-content: center;
+    padding: 0.4rem 0.3rem; border-radius: 11px; border: 1px solid var(--color-border);
+    background: var(--color-elevated); color: var(--color-foreground);
+    font-weight: 700; font-size: 0.92rem; cursor: pointer; text-align: center;
+    transition: border-color 0.12s, background 0.12s, color 0.12s, transform 0.06s;
   }
-  .chip:hover { border-color: var(--color-brand); }
-  .chip--active { background: var(--color-brand); border-color: var(--color-brand); color: #fff; }
+  .box:hover { border-color: var(--color-brand); }
+  .box:active { transform: scale(0.95); }
+  .box--active {
+    background: var(--color-brand); border-color: var(--color-brand); color: #fff;
+    box-shadow: 0 3px 10px rgba(230,57,70,0.3);
+  }
+  .quality-grid .box { font-size: 0.8rem; font-weight: 600; }
   .chord-result {
-    background: var(--color-card); border: 1px solid var(--color-border); border-radius: 24px;
-    padding: 2rem; text-align: center; margin-top: 0.5rem;
+    background: var(--color-card); border: 1px solid var(--color-border); border-radius: 20px;
+    padding: 1.5rem; text-align: center; margin-top: 0.25rem;
   }
-  .chord-name { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1.25rem; }
-  .chord-diagram { display: flex; justify-content: center; min-height: 300px; }
-  .chord-diagram svg { max-width: 260px; height: auto; }
+  .chord-top { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.1rem; }
+  .chord-name { font-size: 1.65rem; font-weight: 800; letter-spacing: -0.02em; }
   .play-chord-btn {
-    display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem;
-    padding: 0.75rem 1.75rem; border-radius: 999px; border: none;
-    background: var(--color-brand); color: #fff; font-weight: 700; font-size: 0.95rem; cursor: pointer;
-    box-shadow: 0 4px 14px rgba(230,57,70,0.32); transition: background 0.15s, transform 0.1s;
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.5rem 1.1rem; border-radius: 999px; border: none;
+    background: var(--color-brand); color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+    box-shadow: 0 3px 10px rgba(230,57,70,0.28); transition: background 0.15s, transform 0.1s;
   }
   .play-chord-btn:hover { background: var(--color-brand-dark); }
   .play-chord-btn:active { transform: translateY(1px); }
-  .chord-note { font-size: 0.85rem; color: var(--color-subtle); margin-top: 1rem; min-height: 1.2em; }
-  .chord-article { margin-top: 3rem; }
-  .chord-article h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
+  /* min-height reservado evita layout shift (CLS) ao injetar o SVG via JS */
+  .chord-diagram { display: flex; justify-content: center; min-height: 200px; }
+  .chord-diagram svg { width: 160px; max-width: 100%; height: auto; }
+  .chord-note { font-size: 0.82rem; color: var(--color-subtle); margin-top: 0.9rem; min-height: 1.1em; }
+  .chord-article { margin-top: 2.5rem; }
+  .chord-article h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: 1rem; }
   .chord-article p { line-height: 1.8; color: var(--color-muted); margin-bottom: 1.1rem; }
   .chord-article a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 3px; }
   .chord-article strong { color: var(--color-foreground); }
@@ -138,13 +166,12 @@ const faqItems = [
   const QUALITIES = [
     { key: 'maj', label: 'Maior', suffix: '' },
     { key: 'm', label: 'Menor', suffix: 'm' },
-    { key: '7', label: '7 (dom)', suffix: '7' },
+    { key: '7', label: '7', suffix: '7' },
     { key: 'm7', label: 'm7', suffix: 'm7' },
     { key: 'maj7', label: 'Maj7', suffix: 'maj7' },
     { key: 'sus4', label: 'sus4', suffix: 'sus4' },
   ];
 
-  // Formas móveis (frets relativos ao traste da pestana; -1 = corda abafada). Ordem: E A D G B e
   const E_SHAPE: Record<string, number[]> = {
     maj: [0, 2, 2, 1, 0, 0], m: [0, 2, 2, 0, 0, 0], '7': [0, 2, 0, 1, 0, 0],
     m7: [0, 2, 0, 0, 0, 0], sus4: [0, 2, 2, 2, 0, 0],
@@ -153,8 +180,6 @@ const faqItems = [
     maj: [-1, 0, 2, 2, 2, 0], m: [-1, 0, 2, 2, 1, 0], '7': [-1, 0, 2, 0, 2, 0],
     m7: [-1, 0, 2, 0, 1, 0], maj7: [-1, 0, 2, 1, 2, 0], sus4: [-1, 0, 2, 2, 3, 0],
   };
-
-  // Acordes abertos comuns (frets absolutos; -1 = X, 0 = solta). Ordem: E A D G B e
   const OPEN: Record<string, number[]> = {
     'C-maj': [-1, 3, 2, 0, 1, 0], 'C-7': [-1, 3, 2, 3, 1, 0], 'C-maj7': [-1, 3, 2, 0, 0, 0],
     'D-maj': [-1, -1, 0, 2, 3, 2], 'D-m': [-1, -1, 0, 2, 3, 1], 'D-7': [-1, -1, 0, 2, 1, 2],
@@ -169,15 +194,19 @@ const faqItems = [
 
   type Shape = { frets: number[]; barreFret: number };
 
+  function detectBarre(frets: number[]): number {
+    const positive = frets.filter((f) => f > 0);
+    if (!positive.length) return 0;
+    const min = Math.min(...positive);
+    const count = frets.filter((f) => f === min).length;
+    return count >= 3 && min > 0 ? min : 0;
+  }
+
   function buildShape(rootIdx: number, qual: string): Shape {
     const key = NOTES[rootIdx] + '-' + qual;
-    if (OPEN[key]) {
-      const frets = OPEN[key];
-      // detecta pestana: menor fret > 0 repetido em 3+ cordas
-      return { frets, barreFret: detectBarre(frets) };
-    }
-    const rf6 = (rootIdx - 4 + 12) % 12; // tônica na 6ª corda (E)
-    const rf5 = (rootIdx - 9 + 12) % 12; // tônica na 5ª corda (A)
+    if (OPEN[key]) { const frets = OPEN[key]; return { frets, barreFret: detectBarre(frets) }; }
+    const rf6 = (rootIdx - 4 + 12) % 12;
+    const rf5 = (rootIdx - 9 + 12) % 12;
     const eShape = E_SHAPE[qual];
     const aShape = A_SHAPE[qual];
     let barreFret: number, rel: number[];
@@ -187,23 +216,14 @@ const faqItems = [
     return { frets, barreFret: barreFret > 0 ? barreFret : detectBarre(frets) };
   }
 
-  function detectBarre(frets: number[]): number {
-    const positive = frets.filter((f) => f > 0);
-    if (!positive.length) return 0;
-    const min = Math.min(...positive);
-    const count = frets.filter((f) => f === min).length;
-    return count >= 3 && min > 0 ? min : 0;
-  }
-
   function renderDiagram(frets: number[], barreFret: number): string {
     const played = frets.filter((f) => f > 0);
     const maxF = played.length ? Math.max(...played) : 1;
     const minF = played.length ? Math.min(...played) : 1;
     const base = maxF <= 5 ? 1 : minF;
     const FRETS = 5;
-
-    const W = 220, H = 260;
-    const padX = 26, padTop = 44, padBottom = 24;
+    const W = 200, H = 230;
+    const padX = 24, padTop = 40, padBottom = 18;
     const gridW = W - padX * 2;
     const gridH = H - padTop - padBottom;
     const stringGap = gridW / 5;
@@ -213,79 +233,82 @@ const faqItems = [
 
     let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Diagrama do acorde">`;
 
-    // nut (só na 1ª casa) ou número da casa base
     if (base === 1) {
-      svg += `<rect x="${padX - 1}" y="${padTop - 6}" width="${gridW + 2}" height="6" rx="2" fill="var(--color-foreground)"/>`;
+      svg += `<rect x="${padX - 1}" y="${padTop - 5}" width="${gridW + 2}" height="5" rx="2" fill="var(--color-foreground)"/>`;
     } else {
-      svg += `<text x="${padX - 12}" y="${padTop + fretGap * 0.7}" fill="var(--color-muted)" font-size="13" font-weight="700" text-anchor="end">${base}ª</text>`;
+      svg += `<text x="${padX - 10}" y="${padTop + fretGap * 0.68}" fill="var(--color-muted)" font-size="13" font-weight="700" text-anchor="end">${base}ª</text>`;
     }
-
-    // trastes horizontais
     for (let f = 0; f <= FRETS; f++) {
       svg += `<line x1="${padX}" y1="${yFret(f)}" x2="${padX + gridW}" y2="${yFret(f)}" stroke="var(--color-border)" stroke-width="1.5"/>`;
     }
-    // cordas verticais
     for (let s = 0; s < 6; s++) {
       svg += `<line x1="${x(s)}" y1="${padTop}" x2="${x(s)}" y2="${padTop + gridH}" stroke="var(--color-border)" stroke-width="1.5"/>`;
     }
-
-    // pestana
     if (barreFret > 0) {
       const row = barreFret - base + 1;
       if (row >= 1 && row <= FRETS) {
         const strings = frets.map((f, i) => (f === barreFret ? i : -1)).filter((i) => i >= 0);
         const x1 = x(Math.min(...strings)), x2 = x(Math.max(...strings));
         const cy = yFret(row) - fretGap / 2;
-        svg += `<rect x="${x1 - 8}" y="${cy - 8}" width="${x2 - x1 + 16}" height="16" rx="8" fill="var(--color-brand)" opacity="0.9"/>`;
+        svg += `<rect x="${x1 - 7}" y="${cy - 7}" width="${x2 - x1 + 14}" height="14" rx="7" fill="var(--color-brand)" opacity="0.9"/>`;
       }
     }
-
-    // marcadores O / X e bolinhas
     for (let s = 0; s < 6; s++) {
       const f = frets[s];
       const cx = x(s);
       if (f === -1) {
-        svg += `<text x="${cx}" y="${padTop - 14}" fill="var(--color-subtle)" font-size="15" font-weight="700" text-anchor="middle">×</text>`;
+        svg += `<text x="${cx}" y="${padTop - 12}" fill="var(--color-subtle)" font-size="14" font-weight="700" text-anchor="middle">×</text>`;
       } else if (f === 0) {
-        svg += `<circle cx="${cx}" cy="${padTop - 19}" r="6" fill="none" stroke="var(--color-muted)" stroke-width="1.6"/>`;
+        svg += `<circle cx="${cx}" cy="${padTop - 17}" r="5.5" fill="none" stroke="var(--color-muted)" stroke-width="1.6"/>`;
       } else {
         const row = f - base + 1;
         if (row >= 1 && row <= FRETS) {
           const cy = yFret(row) - fretGap / 2;
-          svg += `<circle cx="${cx}" cy="${cy}" r="9" fill="var(--color-brand)"/>`;
+          svg += `<circle cx="${cx}" cy="${cy}" r="8" fill="var(--color-brand)"/>`;
         }
       }
     }
-
     svg += `</svg>`;
     return svg;
   }
 
-  // ── Áudio (Web Audio) ──
+  // ── Áudio realista: síntese Karplus-Strong (corda dedilhada) ──
   let audioCtx: AudioContext | null = null;
+  function pluck(freq: number, when: number, vol: number) {
+    if (!audioCtx) return;
+    const sr = audioCtx.sampleRate;
+    const N = Math.max(2, Math.round(sr / freq));
+    const len = Math.floor(sr * 2.4);
+    const buffer = audioCtx.createBuffer(1, len, sr);
+    const data = buffer.getChannelData(0);
+    const noise = new Float32Array(N);
+    for (let i = 0; i < N; i++) noise[i] = Math.random() * 2 - 1;
+    const damping = 0.9955;
+    for (let i = 0; i < len; i++) {
+      data[i] = i < N ? noise[i] : damping * 0.5 * (data[i - N] + data[i - N + 1]);
+    }
+    const src = audioCtx.createBufferSource();
+    src.buffer = buffer;
+    const lp = audioCtx.createBiquadFilter();
+    lp.type = 'lowpass'; lp.frequency.value = 3600;
+    const g = audioCtx.createGain();
+    g.gain.setValueAtTime(vol, when);
+    g.gain.exponentialRampToValueAtTime(0.0001, when + 2.3);
+    src.connect(lp); lp.connect(g); g.connect(audioCtx.destination);
+    src.start(when);
+    src.stop(when + 2.4);
+  }
   function playChord(frets: number[]) {
     if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
     if (audioCtx.state === 'suspended') audioCtx.resume();
-    const now = audioCtx.currentTime;
+    const now = audioCtx.currentTime + 0.02;
     let i = 0;
     frets.forEach((f, s) => {
       if (f < 0) return;
       const midi = OPEN_MIDI[s] + f;
       const freq = 440 * Math.pow(2, (midi - 69) / 12);
-      const t = now + i * 0.045; // strum
+      pluck(freq, now + i * 0.03, 0.16);
       i++;
-      const osc = audioCtx!.createOscillator();
-      const gain = audioCtx!.createGain();
-      const filter = audioCtx!.createBiquadFilter();
-      osc.type = 'sawtooth';
-      osc.frequency.value = freq;
-      filter.type = 'lowpass';
-      filter.frequency.value = 2600;
-      gain.gain.setValueAtTime(0.0001, t);
-      gain.gain.exponentialRampToValueAtTime(0.18, t + 0.008);
-      gain.gain.exponentialRampToValueAtTime(0.0001, t + 1.4);
-      osc.connect(filter); filter.connect(gain); gain.connect(audioCtx!.destination);
-      osc.start(t); osc.stop(t + 1.5);
     });
   }
 
@@ -301,27 +324,16 @@ const faqItems = [
   const chordNote = document.getElementById('chord-note')!;
   const playBtn = document.getElementById('play-chord')!;
 
-  NOTES.forEach((n, i) => {
-    const b = document.createElement('button');
-    b.className = 'chip' + (i === 0 ? ' chip--active' : '');
-    b.textContent = n;
-    b.dataset.root = String(i);
-    b.addEventListener('click', () => { rootIdx = i; markActive(rootRow, b); update(); });
-    rootRow.appendChild(b);
+  rootRow.querySelectorAll<HTMLElement>('.box').forEach((b) => {
+    b.addEventListener('click', () => { rootIdx = Number(b.dataset.root); markActive(rootRow, b); update(); });
   });
-
-  QUALITIES.forEach((q, i) => {
-    const b = document.createElement('button');
-    b.className = 'chip' + (i === 0 ? ' chip--active' : '');
-    b.textContent = q.label;
-    b.dataset.qual = q.key;
-    b.addEventListener('click', () => { qualKey = q.key; markActive(qualityRow, b); update(); });
-    qualityRow.appendChild(b);
+  qualityRow.querySelectorAll<HTMLElement>('.box').forEach((b) => {
+    b.addEventListener('click', () => { qualKey = b.dataset.qual!; markActive(qualityRow, b); update(); });
   });
 
   function markActive(row: HTMLElement, active: HTMLElement) {
-    row.querySelectorAll('.chip').forEach((c) => c.classList.remove('chip--active'));
-    active.classList.add('chip--active');
+    row.querySelectorAll('.box').forEach((c) => c.classList.remove('box--active'));
+    active.classList.add('box--active');
   }
 
   function update() {
@@ -330,7 +342,7 @@ const faqItems = [
     currentFrets = shape.frets;
     chordName.textContent = NOTES[rootIdx] + qual.suffix;
     diagram.innerHTML = renderDiagram(shape.frets, shape.barreFret);
-    chordNote.textContent = shape.barreFret > 0 ? 'Acorde com pestana na ' + shape.barreFret + 'ª casa' : 'Acorde na região aberta';
+    chordNote.textContent = shape.barreFret > 0 ? 'Pestana na ' + shape.barreFret + 'ª casa' : 'Região aberta';
   }
 
   playBtn.addEventListener('click', () => playChord(currentFrets));
