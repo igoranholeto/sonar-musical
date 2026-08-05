@@ -1,0 +1,493 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQ from '../components/FAQ.astro';
+
+const faqItems = [
+  {
+    question: "O metrônomo online é grátis?",
+    answer: "Sim, totalmente grátis e sem instalação. Funciona direto no navegador, no computador ou no celular, usando o Web Audio API para um clique de timing preciso."
+  },
+  {
+    question: "O que é BPM no metrônomo?",
+    answer: "BPM significa 'batidas por minuto' (beats per minute) e define a velocidade do metrônomo. 60 BPM equivale a uma batida por segundo. Quanto maior o BPM, mais rápido o andamento. A maioria das músicas fica entre 70 e 140 BPM."
+  },
+  {
+    question: "Como usar o metrônomo para estudar guitarra?",
+    answer: "Comece devagar, num BPM em que você consiga tocar o trecho sem erros — mesmo que pareça lento. Toque no tempo do clique até ficar limpo, e só então aumente 5 a 10 BPM. A regra de ouro é: velocidade se constrói a partir da precisão, não o contrário."
+  },
+  {
+    question: "Para que serve o acento no tempo 1?",
+    answer: "O primeiro tempo de cada compasso recebe um clique mais agudo (o acento) para você sentir onde o compasso começa. Isso ajuda a manter a noção de compasso — 3/4 (valsa), 4/4 (a maioria do rock e pop) ou 6/8 — sem se perder."
+  },
+  {
+    question: "O que é o tap tempo?",
+    answer: "É uma forma de descobrir o BPM de uma música batendo no ritmo. Toque no botão 'Bater tempo' junto com a batida da música algumas vezes e o metrônomo calcula automaticamente o BPM correspondente."
+  },
+  {
+    question: "Qual a diferença entre andamentos como Andante e Allegro?",
+    answer: "São termos italianos que descrevem a velocidade: Largo (muito lento, ~50 BPM), Adagio (lento, ~70), Andante (caminhando, ~90), Moderato (~115), Allegro (rápido, ~140), Presto (muito rápido, ~185). O metrônomo mostra o termo correspondente ao BPM escolhido."
+  }
+];
+---
+
+<BaseLayout
+  title="Metrônomo Online Grátis — BPM, Compasso e Tap Tempo"
+  description="Metrônomo online grátis para estudar guitarra, violão e qualquer instrumento. Ajuste o BPM, escolha o compasso, use o tap tempo e o acento no tempo 1. Direto no navegador."
+  schema={{
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Metrônomo Online — Sonar Musical',
+    url: 'https://sonarmusical.com.br/metronomo/',
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'Web',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  }}
+>
+  <div class="metro-page">
+    <header class="metro-header">
+      <h1>Metrônomo Online</h1>
+      <p class="metro-subtitle">Timing preciso · Tap tempo · Grátis, sem instalação</p>
+    </header>
+
+    <div class="metro-card">
+      <!-- Visor de BPM -->
+      <div class="bpm-display">
+        <button class="bpm-step" data-step="-1" aria-label="Diminuir 1 BPM">−</button>
+        <div class="bpm-center">
+          <span id="bpm-value" class="bpm-value">100</span>
+          <span class="bpm-unit">BPM</span>
+          <span id="tempo-term" class="tempo-term">Moderato</span>
+        </div>
+        <button class="bpm-step" data-step="1" aria-label="Aumentar 1 BPM">+</button>
+      </div>
+
+      <!-- Slider -->
+      <input
+        id="bpm-slider"
+        type="range"
+        min="40"
+        max="240"
+        value="100"
+        step="1"
+        class="bpm-slider"
+        aria-label="Ajustar BPM"
+      />
+      <div class="bpm-ticks"><span>40</span><span>100</span><span>160</span><span>240</span></div>
+
+      <!-- Indicador visual de tempos -->
+      <div id="beat-dots" class="beat-dots" aria-hidden="true"></div>
+
+      <!-- Botão play -->
+      <button id="play-btn" class="play-btn" aria-pressed="false">
+        <svg class="icon-play" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="icon-stop" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+        <span id="play-label">Iniciar</span>
+      </button>
+      <p class="metro-hint">Dica: pressione a barra de espaço para iniciar ou parar.</p>
+    </div>
+
+    <!-- Controles secundários -->
+    <div class="metro-controls">
+      <div class="control-block">
+        <span class="control-label">Compasso</span>
+        <div id="signature-row" class="signature-row">
+          <button class="sig-btn" data-beats="2">2/4</button>
+          <button class="sig-btn" data-beats="3">3/4</button>
+          <button class="sig-btn sig-btn--active" data-beats="4">4/4</button>
+          <button class="sig-btn" data-beats="6">6/8</button>
+        </div>
+      </div>
+      <div class="control-block">
+        <span class="control-label">Andamento</span>
+        <div class="preset-row">
+          <button class="preset-btn" data-bpm="60">60</button>
+          <button class="preset-btn" data-bpm="90">90</button>
+          <button class="preset-btn" data-bpm="120">120</button>
+          <button class="preset-btn" data-bpm="160">160</button>
+        </div>
+      </div>
+      <div class="control-block">
+        <span class="control-label">Descobrir o BPM</span>
+        <button id="tap-btn" class="tap-btn">Bater tempo</button>
+      </div>
+    </div>
+
+    <!-- Conteúdo de apoio (SEO + utilidade) -->
+    <section class="metro-article">
+      <h2>Como usar o metrônomo para estudar</h2>
+      <p>
+        O metrônomo é a ferramenta que separa quem toca no tempo de quem só toca as notas certas. A ideia é simples: você toca junto com o clique, e ele te obriga a manter uma velocidade constante — algo que o cérebro, sozinho, tende a acelerar nas partes fáceis e atrasar nas difíceis.
+      </p>
+      <p>
+        A regra de ouro para praticar com metrônomo é <strong>começar devagar</strong>. Escolha um BPM em que você consiga tocar o trecho sem nenhum erro, mesmo que pareça lento demais. Repita até ficar limpo e relaxado. Só então suba de 5 em 5 BPM. Velocidade é consequência da precisão — nunca o contrário. Se você erra ao acelerar, voltou rápido demais.
+      </p>
+      <p>
+        Antes de começar, garanta que o instrumento está afinado com o nosso <a href="/afinador/">afinador online</a> e, se estiver aprendendo, veja quanto tempo leva para <a href="/blog/quanto-tempo-aprender-guitarra/">evoluir na guitarra</a> com uma rotina de estudo bem montada. Para treinar teoria musical de forma leve, o <a href="/aprender/jogo/">jogo de teoria</a> é um bom complemento.
+      </p>
+    </section>
+
+    <FAQ items={faqItems} />
+  </div>
+</BaseLayout>
+
+<style>
+  .metro-page {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 3rem 1rem 5rem;
+  }
+  .metro-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .metro-header h1 {
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .metro-subtitle {
+    color: var(--color-muted);
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+  .metro-card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    padding: 2rem 1.75rem 1.75rem;
+    text-align: center;
+  }
+  .bpm-display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: 420px;
+    margin: 0 auto;
+  }
+  .bpm-step {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    background: var(--color-elevated);
+    color: var(--color-foreground);
+    font-size: 1.75rem;
+    line-height: 1;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+  }
+  .bpm-step:hover { border-color: var(--color-brand); background: var(--color-surface); }
+  .bpm-step:active { transform: scale(0.94); }
+  .bpm-center { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+  .bpm-value {
+    font-size: clamp(3.5rem, 14vw, 5rem);
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    font-variant-numeric: tabular-nums;
+  }
+  .bpm-unit {
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--color-muted);
+    margin-top: 0.35rem;
+  }
+  .tempo-term {
+    font-size: 0.95rem;
+    color: var(--color-brand);
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 0.5rem;
+  }
+  .bpm-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--color-elevated);
+    margin: 1.75rem 0 0.5rem;
+    cursor: pointer;
+  }
+  .bpm-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px; height: 24px;
+    border-radius: 50%;
+    background: var(--color-brand);
+    border: 3px solid var(--color-card);
+    box-shadow: 0 2px 8px rgba(230,57,70,0.4);
+    cursor: pointer;
+  }
+  .bpm-slider::-moz-range-thumb {
+    width: 24px; height: 24px; border: 3px solid var(--color-card);
+    border-radius: 50%; background: var(--color-brand); cursor: pointer;
+  }
+  .bpm-ticks {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    color: var(--color-subtle);
+    margin-bottom: 1.5rem;
+  }
+  .beat-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    min-height: 22px;
+    margin-bottom: 1.75rem;
+  }
+  .beat-dot {
+    width: 16px; height: 16px;
+    border-radius: 50%;
+    background: var(--color-elevated);
+    border: 1px solid var(--color-border);
+    transition: transform 0.06s ease-out, background 0.06s;
+  }
+  .beat-dot--on { background: var(--color-brand); transform: scale(1.35); }
+  .beat-dot--accent { border-color: var(--color-brand); }
+  .beat-dot--accent.beat-dot--on { background: #ff5b67; box-shadow: 0 0 14px rgba(230,57,70,0.6); }
+  .play-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.9rem 2.5rem;
+    border-radius: 999px;
+    border: none;
+    background: var(--color-brand);
+    color: #fff;
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(230,57,70,0.35);
+    transition: background 0.15s, transform 0.1s;
+  }
+  .play-btn:hover { background: var(--color-brand-dark); }
+  .play-btn:active { transform: translateY(1px); }
+  .icon-stop { display: none; }
+  .play-btn.is-playing .icon-play { display: none; }
+  .play-btn.is-playing .icon-stop { display: inline; }
+  .metro-hint { font-size: 0.8rem; color: var(--color-subtle); margin-top: 1rem; }
+  .metro-controls {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  .control-block {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 1.1rem 1.25rem;
+    text-align: center;
+  }
+  .control-label {
+    display: block;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--color-muted);
+    font-weight: 700;
+    margin-bottom: 0.85rem;
+  }
+  .signature-row, .preset-row { display: flex; gap: 0.4rem; justify-content: center; }
+  .sig-btn, .preset-btn {
+    flex: 1;
+    padding: 0.55rem 0;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-elevated);
+    color: var(--color-foreground);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s, color 0.15s;
+  }
+  .sig-btn:hover, .preset-btn:hover { border-color: var(--color-brand); }
+  .sig-btn--active { background: var(--color-brand); border-color: var(--color-brand); color: #fff; }
+  .tap-btn {
+    width: 100%;
+    padding: 0.7rem 0;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-elevated);
+    color: var(--color-foreground);
+    font-weight: 700;
+    cursor: pointer;
+    transition: border-color 0.15s, transform 0.08s;
+  }
+  .tap-btn:hover { border-color: var(--color-brand); }
+  .tap-btn:active { transform: scale(0.97); border-color: var(--color-brand); }
+  .metro-article {
+    margin-top: 3rem;
+  }
+  .metro-article h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
+  .metro-article p { line-height: 1.8; color: var(--color-muted); margin-bottom: 1.1rem; }
+  .metro-article a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 3px; }
+  .metro-article strong { color: var(--color-foreground); }
+</style>
+
+<script>
+  const bpmValue = document.getElementById('bpm-value')!;
+  const tempoTerm = document.getElementById('tempo-term')!;
+  const slider = document.getElementById('bpm-slider') as HTMLInputElement;
+  const playBtn = document.getElementById('play-btn')!;
+  const playLabel = document.getElementById('play-label')!;
+  const beatDots = document.getElementById('beat-dots')!;
+  const tapBtn = document.getElementById('tap-btn')!;
+
+  let bpm = 100;
+  let beatsPerMeasure = 4;
+  let isPlaying = false;
+
+  let audioCtx: AudioContext | null = null;
+  let currentBeat = 0;
+  let nextNoteTime = 0;
+  let schedulerTimer: number | null = null;
+  const notesInQueue: { beat: number; time: number }[] = [];
+  const LOOKAHEAD = 25; // ms
+  const SCHEDULE_AHEAD = 0.1; // s
+
+  function tempoName(v: number) {
+    if (v < 60) return 'Largo';
+    if (v < 76) return 'Adagio';
+    if (v < 108) return 'Andante';
+    if (v < 120) return 'Moderato';
+    if (v < 168) return 'Allegro';
+    if (v < 200) return 'Presto';
+    return 'Prestissimo';
+  }
+
+  function clampBpm(v: number) { return Math.max(40, Math.min(240, Math.round(v))); }
+
+  function setBpm(v: number) {
+    bpm = clampBpm(v);
+    bpmValue.textContent = String(bpm);
+    tempoTerm.textContent = tempoName(bpm);
+    slider.value = String(bpm);
+  }
+
+  function buildDots() {
+    beatDots.innerHTML = '';
+    for (let i = 0; i < beatsPerMeasure; i++) {
+      const d = document.createElement('span');
+      d.className = 'beat-dot' + (i === 0 ? ' beat-dot--accent' : '');
+      d.dataset.beat = String(i);
+      beatDots.appendChild(d);
+    }
+  }
+
+  function scheduleClick(beat: number, time: number) {
+    if (!audioCtx) return;
+    const osc = audioCtx.createOscillator();
+    const gain = audioCtx.createGain();
+    const accent = beat === 0;
+    osc.frequency.value = accent ? 1500 : 800;
+    gain.gain.setValueAtTime(accent ? 0.6 : 0.4, time);
+    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.05);
+    osc.connect(gain);
+    gain.connect(audioCtx.destination);
+    osc.start(time);
+    osc.stop(time + 0.05);
+    notesInQueue.push({ beat, time });
+  }
+
+  function scheduler() {
+    if (!audioCtx) return;
+    while (nextNoteTime < audioCtx.currentTime + SCHEDULE_AHEAD) {
+      scheduleClick(currentBeat, nextNoteTime);
+      nextNoteTime += 60.0 / bpm;
+      currentBeat = (currentBeat + 1) % beatsPerMeasure;
+    }
+    schedulerTimer = window.setTimeout(scheduler, LOOKAHEAD);
+  }
+
+  let lastDrawnBeat = -1;
+  function draw() {
+    if (!isPlaying || !audioCtx) return;
+    const now = audioCtx.currentTime;
+    while (notesInQueue.length && notesInQueue[0].time < now) {
+      lastDrawnBeat = notesInQueue[0].beat;
+      notesInQueue.shift();
+      const dots = beatDots.querySelectorAll('.beat-dot');
+      dots.forEach((d) => d.classList.remove('beat-dot--on'));
+      const active = dots[lastDrawnBeat];
+      if (active) {
+        active.classList.add('beat-dot--on');
+        setTimeout(() => active.classList.remove('beat-dot--on'), 90);
+      }
+    }
+    requestAnimationFrame(draw);
+  }
+
+  function start() {
+    if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    isPlaying = true;
+    currentBeat = 0;
+    nextNoteTime = audioCtx.currentTime + 0.06;
+    scheduler();
+    requestAnimationFrame(draw);
+    playBtn.classList.add('is-playing');
+    playLabel.textContent = 'Parar';
+    playBtn.setAttribute('aria-pressed', 'true');
+  }
+
+  function stop() {
+    isPlaying = false;
+    if (schedulerTimer !== null) { clearTimeout(schedulerTimer); schedulerTimer = null; }
+    notesInQueue.length = 0;
+    beatDots.querySelectorAll('.beat-dot').forEach((d) => d.classList.remove('beat-dot--on'));
+    playBtn.classList.remove('is-playing');
+    playLabel.textContent = 'Iniciar';
+    playBtn.setAttribute('aria-pressed', 'false');
+  }
+
+  function toggle() { isPlaying ? stop() : start(); }
+
+  // Eventos
+  playBtn.addEventListener('click', toggle);
+  slider.addEventListener('input', () => setBpm(Number(slider.value)));
+
+  document.querySelectorAll<HTMLElement>('.bpm-step').forEach((btn) => {
+    btn.addEventListener('click', () => setBpm(bpm + Number(btn.dataset.step)));
+  });
+  document.querySelectorAll<HTMLElement>('.preset-btn').forEach((btn) => {
+    btn.addEventListener('click', () => setBpm(Number(btn.dataset.bpm)));
+  });
+  document.querySelectorAll<HTMLElement>('.sig-btn').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.sig-btn').forEach((b) => b.classList.remove('sig-btn--active'));
+      btn.classList.add('sig-btn--active');
+      beatsPerMeasure = Number(btn.dataset.beats);
+      currentBeat = 0;
+      buildDots();
+    });
+  });
+
+  // Tap tempo
+  let taps: number[] = [];
+  tapBtn.addEventListener('click', () => {
+    const now = performance.now();
+    taps = taps.filter((t) => now - t < 2000);
+    taps.push(now);
+    if (taps.length >= 2) {
+      const intervals = [];
+      for (let i = 1; i < taps.length; i++) intervals.push(taps[i] - taps[i - 1]);
+      const avg = intervals.reduce((a, b) => a + b, 0) / intervals.length;
+      setBpm(60000 / avg);
+    }
+  });
+
+  // Barra de espaço
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Space' && !(e.target as HTMLElement).matches('input, textarea, button')) {
+      e.preventDefault();
+      toggle();
+    }
+  });
+
+  buildDots();
+  setBpm(100);
+</script>

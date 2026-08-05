@@ -1,0 +1,339 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQ from '../components/FAQ.astro';
+
+const faqItems = [
+  {
+    question: "O dicionário de acordes é grátis?",
+    answer: "Sim. Escolha a tônica (C, D, E...) e o tipo de acorde (maior, menor, sétima...) e o diagrama de digitação aparece na hora, com o áudio do acorde. Tudo grátis, direto no navegador, sem instalar nada."
+  },
+  {
+    question: "Como ler um diagrama de acorde de guitarra?",
+    answer: "As seis linhas verticais são as cordas (da mais grave à esquerda para a mais aguda à direita) e as linhas horizontais são os trastes. As bolinhas mostram onde apertar. Um 'O' acima da corda significa tocá-la solta; um 'X' significa não tocar aquela corda. Quando o acorde não começa no primeiro traste, o número à direita indica em qual casa a figura está."
+  },
+  {
+    question: "O que significa um acorde 'maior' ou 'menor'?",
+    answer: "É o caráter do acorde. O acorde maior soa alegre e resolvido; o menor soa mais triste ou melancólico. A diferença está em uma única nota (a terça), mas ela muda completamente a emoção do som. A maioria das músicas combina os dois."
+  },
+  {
+    question: "O que é um acorde com pestana (barre)?",
+    answer: "É quando um dedo (geralmente o indicador) pressiona várias cordas ao mesmo tempo numa mesma casa, formando uma 'pestana'. Acordes com pestana permitem tocar qualquer tônica movendo a mesma forma pelo braço, mas exigem mais força — são o passo seguinte depois dos acordes abertos."
+  },
+  {
+    question: "Qual a diferença entre os acordes abertos e os com pestana?",
+    answer: "Acordes abertos usam cordas soltas e ficam nas primeiras casas — são os primeiros que todo iniciante aprende (C, G, D, Em, Am). Os acordes com pestana não usam cordas soltas e podem ser deslizados pelo braço para formar qualquer tom, o que os torna essenciais para tocar em qualquer tonalidade."
+  },
+  {
+    question: "Preciso decorar todos os acordes?",
+    answer: "Não. Com cerca de 8 acordes abertos (C, G, D, E, A, Em, Am, Dm) você já toca centenas de músicas. As formas com pestana vêm depois e, como são móveis, você aprende poucas formas e as aplica a todas as tônicas. Este dicionário serve justamente para consultar na hora que precisar."
+  }
+];
+---
+
+<BaseLayout
+  title="Dicionário de Acordes de Guitarra e Violão — Grátis"
+  description="Dicionário visual de acordes de guitarra e violão. Escolha a tônica e o tipo (maior, menor, 7, m7, sus4) e veja o diagrama de digitação com o som do acorde. Grátis, no navegador."
+  schema={{
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Dicionário de Acordes — Sonar Musical',
+    url: 'https://sonarmusical.com.br/acordes/',
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'Web',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  }}
+>
+  <div class="chord-page">
+    <header class="chord-header">
+      <h1>Dicionário de Acordes</h1>
+      <p class="chord-subtitle">Guitarra e violão · Diagrama + som · Grátis</p>
+    </header>
+
+    <!-- Seleção de tônica -->
+    <div class="selector">
+      <span class="selector-label">Tônica</span>
+      <div id="root-row" class="chip-row"></div>
+    </div>
+
+    <!-- Seleção de tipo -->
+    <div class="selector">
+      <span class="selector-label">Tipo de acorde</span>
+      <div id="quality-row" class="chip-row"></div>
+    </div>
+
+    <!-- Resultado -->
+    <div class="chord-result">
+      <div class="chord-name" id="chord-name">C</div>
+      <div id="chord-diagram" class="chord-diagram"></div>
+      <button id="play-chord" class="play-chord-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        Ouvir o acorde
+      </button>
+      <p id="chord-note" class="chord-note"></p>
+    </div>
+
+    <!-- Conteúdo de apoio (SEO) -->
+    <section class="chord-article">
+      <h2>Como usar o dicionário de acordes</h2>
+      <p>
+        Escolha a <strong>tônica</strong> (a nota que dá nome ao acorde, como C ou G) e o <strong>tipo</strong> (maior, menor, com sétima…). O diagrama mostra exatamente onde colocar os dedos, e o botão de áudio toca o acorde para você conferir se está soando certo.
+      </p>
+      <p>
+        Se você está começando, comece pelos acordes abertos mais comuns — <strong>C, G, D, E, A, Em, Am e Dm</strong> — que aparecem em milhares de músicas. Só depois parta para as formas com pestana. E lembre: antes de qualquer coisa, deixe o instrumento afinado com o nosso <a href="/afinador/">afinador online</a>, porque um acorde certo numa guitarra desafinada continua soando errado.
+      </p>
+      <p>
+        Para treinar a troca entre acordes no tempo, use o nosso <a href="/metronomo/">metrônomo online</a>. E se quiser entender a lógica por trás das notas de cada acorde, o <a href="/blog/nome-das-cordas-da-guitarra/">guia das cordas da guitarra</a> e o <a href="/aprender/jogo/">jogo de teoria musical</a> ajudam a fixar.
+      </p>
+    </section>
+
+    <FAQ items={faqItems} />
+  </div>
+</BaseLayout>
+
+<style>
+  .chord-page { max-width: 640px; margin: 0 auto; padding: 3rem 1rem 5rem; }
+  .chord-header { text-align: center; margin-bottom: 2rem; }
+  .chord-header h1 { font-size: clamp(2rem, 5vw, 2.75rem); font-weight: 800; letter-spacing: -0.02em; }
+  .chord-subtitle { color: var(--color-muted); margin-top: 0.5rem; font-size: 0.95rem; }
+  .selector { margin-bottom: 1.5rem; }
+  .selector-label {
+    display: block; font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.12em;
+    color: var(--color-muted); font-weight: 700; margin-bottom: 0.75rem;
+  }
+  .chip-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .chip {
+    padding: 0.5rem 0.9rem; border-radius: 10px; border: 1px solid var(--color-border);
+    background: var(--color-elevated); color: var(--color-foreground); font-weight: 600;
+    font-size: 0.9rem; cursor: pointer; transition: border-color 0.15s, background 0.15s, color 0.15s;
+  }
+  .chip:hover { border-color: var(--color-brand); }
+  .chip--active { background: var(--color-brand); border-color: var(--color-brand); color: #fff; }
+  .chord-result {
+    background: var(--color-card); border: 1px solid var(--color-border); border-radius: 24px;
+    padding: 2rem; text-align: center; margin-top: 0.5rem;
+  }
+  .chord-name { font-size: 2rem; font-weight: 800; letter-spacing: -0.02em; margin-bottom: 1.25rem; }
+  .chord-diagram { display: flex; justify-content: center; min-height: 300px; }
+  .chord-diagram svg { max-width: 260px; height: auto; }
+  .play-chord-btn {
+    display: inline-flex; align-items: center; gap: 0.5rem; margin-top: 1.5rem;
+    padding: 0.75rem 1.75rem; border-radius: 999px; border: none;
+    background: var(--color-brand); color: #fff; font-weight: 700; font-size: 0.95rem; cursor: pointer;
+    box-shadow: 0 4px 14px rgba(230,57,70,0.32); transition: background 0.15s, transform 0.1s;
+  }
+  .play-chord-btn:hover { background: var(--color-brand-dark); }
+  .play-chord-btn:active { transform: translateY(1px); }
+  .chord-note { font-size: 0.85rem; color: var(--color-subtle); margin-top: 1rem; min-height: 1.2em; }
+  .chord-article { margin-top: 3rem; }
+  .chord-article h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
+  .chord-article p { line-height: 1.8; color: var(--color-muted); margin-bottom: 1.1rem; }
+  .chord-article a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 3px; }
+  .chord-article strong { color: var(--color-foreground); }
+</style>
+
+<script>
+  const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+  const OPEN_MIDI = [40, 45, 50, 55, 59, 64]; // cordas soltas E A D G B e (grave→agudo)
+
+  const QUALITIES = [
+    { key: 'maj', label: 'Maior', suffix: '' },
+    { key: 'm', label: 'Menor', suffix: 'm' },
+    { key: '7', label: '7 (dom)', suffix: '7' },
+    { key: 'm7', label: 'm7', suffix: 'm7' },
+    { key: 'maj7', label: 'Maj7', suffix: 'maj7' },
+    { key: 'sus4', label: 'sus4', suffix: 'sus4' },
+  ];
+
+  // Formas móveis (frets relativos ao traste da pestana; -1 = corda abafada). Ordem: E A D G B e
+  const E_SHAPE: Record<string, number[]> = {
+    maj: [0, 2, 2, 1, 0, 0], m: [0, 2, 2, 0, 0, 0], '7': [0, 2, 0, 1, 0, 0],
+    m7: [0, 2, 0, 0, 0, 0], sus4: [0, 2, 2, 2, 0, 0],
+  };
+  const A_SHAPE: Record<string, number[]> = {
+    maj: [-1, 0, 2, 2, 2, 0], m: [-1, 0, 2, 2, 1, 0], '7': [-1, 0, 2, 0, 2, 0],
+    m7: [-1, 0, 2, 0, 1, 0], maj7: [-1, 0, 2, 1, 2, 0], sus4: [-1, 0, 2, 2, 3, 0],
+  };
+
+  // Acordes abertos comuns (frets absolutos; -1 = X, 0 = solta). Ordem: E A D G B e
+  const OPEN: Record<string, number[]> = {
+    'C-maj': [-1, 3, 2, 0, 1, 0], 'C-7': [-1, 3, 2, 3, 1, 0], 'C-maj7': [-1, 3, 2, 0, 0, 0],
+    'D-maj': [-1, -1, 0, 2, 3, 2], 'D-m': [-1, -1, 0, 2, 3, 1], 'D-7': [-1, -1, 0, 2, 1, 2],
+    'D-maj7': [-1, -1, 0, 2, 2, 2], 'D-sus4': [-1, -1, 0, 2, 3, 3],
+    'E-maj': [0, 2, 2, 1, 0, 0], 'E-m': [0, 2, 2, 0, 0, 0], 'E-7': [0, 2, 0, 1, 0, 0],
+    'E-m7': [0, 2, 0, 0, 0, 0], 'E-maj7': [0, 2, 1, 1, 0, 0],
+    'G-maj': [3, 2, 0, 0, 0, 3], 'G-7': [3, 2, 0, 0, 0, 1], 'G-maj7': [3, 2, 0, 0, 0, 2],
+    'A-maj': [-1, 0, 2, 2, 2, 0], 'A-m': [-1, 0, 2, 2, 1, 0], 'A-7': [-1, 0, 2, 0, 2, 0],
+    'A-m7': [-1, 0, 2, 0, 1, 0], 'A-maj7': [-1, 0, 2, 1, 2, 0], 'A-sus4': [-1, 0, 2, 2, 3, 0],
+    'B-7': [-1, 2, 1, 2, 0, 2],
+  };
+
+  type Shape = { frets: number[]; barreFret: number };
+
+  function buildShape(rootIdx: number, qual: string): Shape {
+    const key = NOTES[rootIdx] + '-' + qual;
+    if (OPEN[key]) {
+      const frets = OPEN[key];
+      // detecta pestana: menor fret > 0 repetido em 3+ cordas
+      return { frets, barreFret: detectBarre(frets) };
+    }
+    const rf6 = (rootIdx - 4 + 12) % 12; // tônica na 6ª corda (E)
+    const rf5 = (rootIdx - 9 + 12) % 12; // tônica na 5ª corda (A)
+    const eShape = E_SHAPE[qual];
+    const aShape = A_SHAPE[qual];
+    let barreFret: number, rel: number[];
+    if (eShape && (!aShape || rf6 <= rf5)) { barreFret = rf6; rel = eShape; }
+    else { barreFret = rf5; rel = aShape; }
+    const frets = rel.map((r) => (r < 0 ? -1 : r + barreFret));
+    return { frets, barreFret: barreFret > 0 ? barreFret : detectBarre(frets) };
+  }
+
+  function detectBarre(frets: number[]): number {
+    const positive = frets.filter((f) => f > 0);
+    if (!positive.length) return 0;
+    const min = Math.min(...positive);
+    const count = frets.filter((f) => f === min).length;
+    return count >= 3 && min > 0 ? min : 0;
+  }
+
+  function renderDiagram(frets: number[], barreFret: number): string {
+    const played = frets.filter((f) => f > 0);
+    const maxF = played.length ? Math.max(...played) : 1;
+    const minF = played.length ? Math.min(...played) : 1;
+    const base = maxF <= 5 ? 1 : minF;
+    const FRETS = 5;
+
+    const W = 220, H = 260;
+    const padX = 26, padTop = 44, padBottom = 24;
+    const gridW = W - padX * 2;
+    const gridH = H - padTop - padBottom;
+    const stringGap = gridW / 5;
+    const fretGap = gridH / FRETS;
+    const x = (s: number) => padX + s * stringGap;
+    const yFret = (f: number) => padTop + f * fretGap;
+
+    let svg = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Diagrama do acorde">`;
+
+    // nut (só na 1ª casa) ou número da casa base
+    if (base === 1) {
+      svg += `<rect x="${padX - 1}" y="${padTop - 6}" width="${gridW + 2}" height="6" rx="2" fill="var(--color-foreground)"/>`;
+    } else {
+      svg += `<text x="${padX - 12}" y="${padTop + fretGap * 0.7}" fill="var(--color-muted)" font-size="13" font-weight="700" text-anchor="end">${base}ª</text>`;
+    }
+
+    // trastes horizontais
+    for (let f = 0; f <= FRETS; f++) {
+      svg += `<line x1="${padX}" y1="${yFret(f)}" x2="${padX + gridW}" y2="${yFret(f)}" stroke="var(--color-border)" stroke-width="1.5"/>`;
+    }
+    // cordas verticais
+    for (let s = 0; s < 6; s++) {
+      svg += `<line x1="${x(s)}" y1="${padTop}" x2="${x(s)}" y2="${padTop + gridH}" stroke="var(--color-border)" stroke-width="1.5"/>`;
+    }
+
+    // pestana
+    if (barreFret > 0) {
+      const row = barreFret - base + 1;
+      if (row >= 1 && row <= FRETS) {
+        const strings = frets.map((f, i) => (f === barreFret ? i : -1)).filter((i) => i >= 0);
+        const x1 = x(Math.min(...strings)), x2 = x(Math.max(...strings));
+        const cy = yFret(row) - fretGap / 2;
+        svg += `<rect x="${x1 - 8}" y="${cy - 8}" width="${x2 - x1 + 16}" height="16" rx="8" fill="var(--color-brand)" opacity="0.9"/>`;
+      }
+    }
+
+    // marcadores O / X e bolinhas
+    for (let s = 0; s < 6; s++) {
+      const f = frets[s];
+      const cx = x(s);
+      if (f === -1) {
+        svg += `<text x="${cx}" y="${padTop - 14}" fill="var(--color-subtle)" font-size="15" font-weight="700" text-anchor="middle">×</text>`;
+      } else if (f === 0) {
+        svg += `<circle cx="${cx}" cy="${padTop - 19}" r="6" fill="none" stroke="var(--color-muted)" stroke-width="1.6"/>`;
+      } else {
+        const row = f - base + 1;
+        if (row >= 1 && row <= FRETS) {
+          const cy = yFret(row) - fretGap / 2;
+          svg += `<circle cx="${cx}" cy="${cy}" r="9" fill="var(--color-brand)"/>`;
+        }
+      }
+    }
+
+    svg += `</svg>`;
+    return svg;
+  }
+
+  // ── Áudio (Web Audio) ──
+  let audioCtx: AudioContext | null = null;
+  function playChord(frets: number[]) {
+    if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+    if (audioCtx.state === 'suspended') audioCtx.resume();
+    const now = audioCtx.currentTime;
+    let i = 0;
+    frets.forEach((f, s) => {
+      if (f < 0) return;
+      const midi = OPEN_MIDI[s] + f;
+      const freq = 440 * Math.pow(2, (midi - 69) / 12);
+      const t = now + i * 0.045; // strum
+      i++;
+      const osc = audioCtx!.createOscillator();
+      const gain = audioCtx!.createGain();
+      const filter = audioCtx!.createBiquadFilter();
+      osc.type = 'sawtooth';
+      osc.frequency.value = freq;
+      filter.type = 'lowpass';
+      filter.frequency.value = 2600;
+      gain.gain.setValueAtTime(0.0001, t);
+      gain.gain.exponentialRampToValueAtTime(0.18, t + 0.008);
+      gain.gain.exponentialRampToValueAtTime(0.0001, t + 1.4);
+      osc.connect(filter); filter.connect(gain); gain.connect(audioCtx!.destination);
+      osc.start(t); osc.stop(t + 1.5);
+    });
+  }
+
+  // ── Estado + UI ──
+  let rootIdx = 0;
+  let qualKey = 'maj';
+  let currentFrets: number[] = [];
+
+  const rootRow = document.getElementById('root-row')!;
+  const qualityRow = document.getElementById('quality-row')!;
+  const chordName = document.getElementById('chord-name')!;
+  const diagram = document.getElementById('chord-diagram')!;
+  const chordNote = document.getElementById('chord-note')!;
+  const playBtn = document.getElementById('play-chord')!;
+
+  NOTES.forEach((n, i) => {
+    const b = document.createElement('button');
+    b.className = 'chip' + (i === 0 ? ' chip--active' : '');
+    b.textContent = n;
+    b.dataset.root = String(i);
+    b.addEventListener('click', () => { rootIdx = i; markActive(rootRow, b); update(); });
+    rootRow.appendChild(b);
+  });
+
+  QUALITIES.forEach((q, i) => {
+    const b = document.createElement('button');
+    b.className = 'chip' + (i === 0 ? ' chip--active' : '');
+    b.textContent = q.label;
+    b.dataset.qual = q.key;
+    b.addEventListener('click', () => { qualKey = q.key; markActive(qualityRow, b); update(); });
+    qualityRow.appendChild(b);
+  });
+
+  function markActive(row: HTMLElement, active: HTMLElement) {
+    row.querySelectorAll('.chip').forEach((c) => c.classList.remove('chip--active'));
+    active.classList.add('chip--active');
+  }
+
+  function update() {
+    const qual = QUALITIES.find((q) => q.key === qualKey)!;
+    const shape = buildShape(rootIdx, qual.key);
+    currentFrets = shape.frets;
+    chordName.textContent = NOTES[rootIdx] + qual.suffix;
+    diagram.innerHTML = renderDiagram(shape.frets, shape.barreFret);
+    chordNote.textContent = shape.barreFret > 0 ? 'Acorde com pestana na ' + shape.barreFret + 'ª casa' : 'Acorde na região aberta';
+  }
+
+  playBtn.addEventListener('click', () => playChord(currentFrets));
+
+  update();
+</script>

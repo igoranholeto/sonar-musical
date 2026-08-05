@@ -51,6 +51,8 @@ Perfis com biografia, integrantes, equipamento usado e análise de discografia d
 ## Ferramentas
 
 - [Afinador Online Grátis](https://sonarmusical.com.br/afinador/): afinador de guitarra e violão via microfone, com suporte a Standard, Drop D, Open G, DADGAD e outras afinações.
+- [Metrônomo Online Grátis](https://sonarmusical.com.br/metronomo/): metrônomo no navegador com BPM ajustável, compassos (2/4, 3/4, 4/4, 6/8), acento no tempo 1 e tap tempo.
+- [Dicionário de Acordes](https://sonarmusical.com.br/acordes/): diagramas de digitação de acordes de guitarra e violão (maior, menor, 7, m7, maj7, sus4) com áudio do acorde.
 - [Tablaturas](https://sonarmusical.com.br/tablaturas/): tablaturas para download.
 - [Jogo de Teoria Musical](https://sonarmusical.com.br/aprender/jogo/): quiz interativo para aprender teoria musical.
 
