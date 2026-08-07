@@ -7,6 +7,10 @@ import { lastmodSerializer } from './src/utils/lastmod.mjs';
 
 export default defineConfig({
   site: 'https://sonarmusical.com.br',
+  // Padroniza a URL canônica com barra final (default do output de diretório do
+  // Astro). Consolida o sinal de SEO que o GSC mostrava dividido entre /rota e
+  // /rota/. A Netlify (Pretty URLs) faz o 301 da versão sem barra.
+  trailingSlash: 'always',
   integrations: [mdx(), sitemap({ serialize: lastmodSerializer() })],
   compressHTML: true,
   build: {
