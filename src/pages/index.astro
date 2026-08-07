@@ -5,6 +5,8 @@ import Hero from '../components/Hero.astro';
 import PostCard from '../components/PostCard.astro';
 import CategoryGrid from '../components/CategoryGrid.astro';
 import ExploreSection from '../components/ExploreSection.astro';
+import StatsStrip from '../components/StatsStrip.astro';
+import EquipmentFinder from '../components/EquipmentFinder.astro';
 import Newsletter from '../components/Newsletter.astro';
 
 const allPosts = await getCollection('blog');
@@ -48,6 +50,12 @@ const latestPosts = posts.slice(0, 6);
       </div>
     </section>
   )}
+
+  <!-- Números do site (count-up) -->
+  <StatsStrip />
+
+  <!-- Finder: qual equipamento é pra você? -->
+  <EquipmentFinder />
 
   <!-- Grid de categorias -->
   <CategoryGrid />
