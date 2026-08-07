@@ -20,6 +20,44 @@ const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
 const tagBg = generoSoft(genero);
 
+// Ponte comercial: guias de compra relevantes ao gênero da banda. Conecta as
+// páginas de equipamento (fundas) às páginas "melhor X" (comerciais).
+const GUIAS_POR_GENERO: Record<string, { href: string; label: string }[]> = {
+  Metal: [
+    { href: '/blog/melhor-guitarra-7-cordas-2026/', label: 'guitarras de 7 cordas para metal' },
+    { href: '/blog/melhor-pedaleira-de-guitarra-2026/', label: 'pedaleiras para tons pesados' },
+  ],
+  Blues: [
+    { href: '/blog/melhor-guitarra-para-blues/', label: 'melhores guitarras para blues' },
+    { href: '/blog/melhor-amplificador-valvulado-de-guitarra-2026/', label: 'amplificadores valvulados' },
+  ],
+  Rock: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'melhores amplificadores de guitarra' },
+    { href: '/blog/melhores-captadores-de-guitarra-2026/', label: 'captadores para moldar o timbre' },
+  ],
+  Pop: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'guitarras para começar' },
+  ],
+  Jazz: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-captadores-de-guitarra-2026/', label: 'captadores de timbre encorpado' },
+  ],
+  'R&B': [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'guitarras para começar' },
+  ],
+  Sertanejo: [
+    { href: '/blog/melhores-violoes-2026/', label: 'melhores violões' },
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+  ],
+  Nacional: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'guitarras para começar' },
+  ],
+};
+const guiasCompra = GUIAS_POR_GENERO[genero] ?? GUIAS_POR_GENERO.Rock;
+
 const bandaUrl = `https://sonarmusical.com.br/bandas/${banda.id}/`;
 const breadcrumbSchema = {
   '@context': 'https://schema.org',
@@ -235,6 +273,24 @@ const breadcrumbSchema = {
           </Fragment>
         );
       })}
+    </div>
+
+    <!-- Ponte comercial: guias de compra por gênero -->
+    <div class="mt-14 rounded-[22px] border border-border p-7" style="background:linear-gradient(135deg,#141414,#0d0d0d)">
+      <h2 class="text-xl font-extrabold tracking-tight">Quer chegar perto desse som?</h2>
+      <p class="text-[14.5px] text-[#a0a0a0] leading-relaxed mt-2 max-w-2xl">
+        Além das alternativas budget de cada integrante acima, estes guias comparam os modelos atuais que combinam com o timbre de {nome}:
+      </p>
+      <ul class="flex flex-wrap gap-3 mt-5">
+        {guiasCompra.map((g) => (
+          <li>
+            <a href={g.href} class="inline-flex items-center gap-2 text-[13.5px] font-semibold text-white bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-4 py-2.5 hover:border-brand/50 transition-colors">
+              {g.label}
+              <span class="text-brand" aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
   </div>
