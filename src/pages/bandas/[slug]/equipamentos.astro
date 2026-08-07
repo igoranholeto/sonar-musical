@@ -19,12 +19,63 @@ const { nome, genero, origem, ano, fotoCapa, fotoCapaAlt, fotoCapaPosition, inte
 const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
 const tagBg = generoSoft(genero);
+
+// Ponte comercial: guias de compra relevantes ao gênero da banda. Conecta as
+// páginas de equipamento (fundas) às páginas "melhor X" (comerciais).
+const GUIAS_POR_GENERO: Record<string, { href: string; label: string }[]> = {
+  Metal: [
+    { href: '/blog/melhor-guitarra-7-cordas-2026/', label: 'guitarras de 7 cordas para metal' },
+    { href: '/blog/melhor-pedaleira-de-guitarra-2026/', label: 'pedaleiras para tons pesados' },
+  ],
+  Blues: [
+    { href: '/blog/melhor-guitarra-para-blues/', label: 'melhores guitarras para blues' },
+    { href: '/blog/melhor-amplificador-valvulado-de-guitarra-2026/', label: 'amplificadores valvulados' },
+  ],
+  Rock: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'melhores amplificadores de guitarra' },
+    { href: '/blog/melhores-captadores-de-guitarra-2026/', label: 'captadores para moldar o timbre' },
+  ],
+  Pop: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'guitarras para começar' },
+  ],
+  Jazz: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-captadores-de-guitarra-2026/', label: 'captadores de timbre encorpado' },
+  ],
+  'R&B': [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'guitarras para começar' },
+  ],
+  Sertanejo: [
+    { href: '/blog/melhores-violoes-2026/', label: 'melhores violões' },
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+  ],
+  Nacional: [
+    { href: '/blog/melhor-amplificador-de-guitarra-2026/', label: 'amplificadores de guitarra' },
+    { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'guitarras para começar' },
+  ],
+};
+const guiasCompra = GUIAS_POR_GENERO[genero] ?? GUIAS_POR_GENERO.Rock;
+
+const bandaUrl = `https://sonarmusical.com.br/bandas/${banda.id}/`;
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
+    { '@type': 'ListItem', position: 2, name: 'Bandas', item: 'https://sonarmusical.com.br/bandas/' },
+    { '@type': 'ListItem', position: 3, name: nome, item: bandaUrl },
+    { '@type': 'ListItem', position: 4, name: 'Equipamentos', item: `${bandaUrl}equipamentos/` },
+  ],
+};
 ---
 
 <BaseLayout
   title={`${nome}: Equipamentos e Setup Completo da Banda`}
   description={`Que guitarra, amplificador e pedais cada integrante do ${nome} usa — e as alternativas mais baratas para chegar perto do mesmo som.`}
   image={fotoCapa}
+  schema={breadcrumbSchema}
 >
   <div class="theme-locked-dark">
   <!-- Banner -->
@@ -43,20 +94,15 @@ const tagBg = generoSoft(genero);
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.85) 76%,#0a0a0a)"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-9">
-      <div class="flex gap-2.5 flex-wrap">
-        <a
-          href="/bandas/"
-          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
-        >
-          ← Todas as bandas
-        </a>
-        <a
-          href={`/bandas/${banda.id}/`}
-          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
-        >
-          ← Perfil da banda
-        </a>
-      </div>
+      <nav aria-label="Navegação em breadcrumb" class="flex items-center gap-2 text-[13px] font-semibold text-white/85 flex-wrap">
+        <a href="/" class="hover:text-white transition-colors">Início</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <a href="/bandas/" class="hover:text-white transition-colors">Bandas</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <a href={`/bandas/${banda.id}/`} class="hover:text-white transition-colors">{nome}</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <span class="text-white/60" aria-current="page">Equipamentos</span>
+      </nav>
       <div class="mt-24">
         <span
           class="inline-flex text-[11.5px] font-bold uppercase tracking-wider px-2.5 py-1.5 rounded-md text-white"
@@ -168,7 +214,7 @@ const tagBg = generoSoft(genero);
                             <a
                               href={g.original.urlAfiliado}
                               target="_blank"
-                              rel="noopener noreferrer sponsored"
+                              rel="noopener noreferrer sponsored nofollow"
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
                             >
                               Conferir preços →
@@ -192,7 +238,7 @@ const tagBg = generoSoft(genero);
                             <a
                               href={g.low.urlAfiliado}
                               target="_blank"
-                              rel="noopener noreferrer sponsored"
+                              rel="noopener noreferrer sponsored nofollow"
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
                             >
                               Conferir preços →
@@ -227,6 +273,24 @@ const tagBg = generoSoft(genero);
           </Fragment>
         );
       })}
+    </div>
+
+    <!-- Ponte comercial: guias de compra por gênero -->
+    <div class="mt-14 rounded-[22px] border border-border p-7" style="background:linear-gradient(135deg,#141414,#0d0d0d)">
+      <h2 class="text-xl font-extrabold tracking-tight">Quer chegar perto desse som?</h2>
+      <p class="text-[14.5px] text-[#a0a0a0] leading-relaxed mt-2 max-w-2xl">
+        Além das alternativas budget de cada integrante acima, estes guias comparam os modelos atuais que combinam com o timbre de {nome}:
+      </p>
+      <ul class="flex flex-wrap gap-3 mt-5">
+        {guiasCompra.map((g) => (
+          <li>
+            <a href={g.href} class="inline-flex items-center gap-2 text-[13.5px] font-semibold text-white bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg px-4 py-2.5 hover:border-brand/50 transition-colors">
+              {g.label}
+              <span class="text-brand" aria-hidden="true">→</span>
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   </section>
   </div>

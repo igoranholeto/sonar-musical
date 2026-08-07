@@ -27,15 +27,48 @@ const albunsComLinks = albuns.map((album) => ({
   saibaMaisHref: `/bandas/${banda.id}/albuns/${slugify(album.nome)}/`,
 }));
 
-const schema = {
+// Tutorial "como tocar" nosso, quando existe uma música da banda coberta.
+// Cria a ponte banda → cluster de tutoriais (reforça as páginas prioritárias).
+const COMO_TOCAR: Record<string, { musica: string; href: string }> = {
+  'pink-floyd': { musica: 'Wish You Were Here', href: '/blog/como-tocar-wish-you-were-here-pink-floyd/' },
+  'metallica': { musica: 'Enter Sandman', href: '/blog/como-tocar-enter-sandman-metallica/' },
+  'legiao-urbana': { musica: 'Tempo Perdido', href: '/blog/como-tocar-tempo-perdido-legiao-urbana/' },
+  'chitaozinho-e-xororo': { musica: 'Evidências', href: '/blog/como-tocar-evidencias-chitaozinho-e-xororo/' },
+};
+const comoTocar = COMO_TOCAR[banda.id];
+
+const bandaUrl = `https://sonarmusical.com.br/bandas/${banda.id}/`;
+
+const musicGroupSchema = {
   '@context': 'https://schema.org',
   '@type': 'MusicGroup',
   name: nome,
+  url: bandaUrl,
   genre: genero,
   foundingDate: String(ano),
   ...(fotoCapa && { image: `https://sonarmusical.com.br${fotoCapa}` }),
   member: integrantes.map((m) => ({ '@type': 'Person', name: m.nome, roleName: m.funcao })),
+  ...(albuns.length > 0 && {
+    album: albuns.map((a) => ({
+      '@type': 'MusicAlbum',
+      name: a.nome,
+      url: `https://sonarmusical.com.br/bandas/${banda.id}/albuns/${slugify(a.nome)}/`,
+      ...(a.ano && { datePublished: String(a.ano) }),
+    })),
+  }),
 };
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
+    { '@type': 'ListItem', position: 2, name: 'Bandas', item: 'https://sonarmusical.com.br/bandas/' },
+    { '@type': 'ListItem', position: 3, name: nome, item: bandaUrl },
+  ],
+};
+
+const schema = [musicGroupSchema, breadcrumbSchema];
 ---
 
 <BaseLayout title={`${nome}: Equipamentos, Integrantes e Álbuns`} description={metaDescription(blurb)} image={fotoCapa} schema={schema}>
@@ -56,12 +89,13 @@ const schema = {
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.3),rgba(10,10,10,.82) 74%,#0a0a0a)"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-10">
-      <a
-        href="/bandas/"
-        class="inline-flex items-center text-[13.5px] font-semibold text-white bg-black/40 border border-white/30 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
-      >
-        ← Todas as bandas
-      </a>
+      <nav aria-label="Navegação em breadcrumb" class="flex items-center gap-2 text-[13px] font-semibold text-white/85">
+        <a href="/" class="hover:text-white transition-colors">Início</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <a href="/bandas/" class="hover:text-white transition-colors">Bandas</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <span class="text-white/60" aria-current="page">{nome}</span>
+      </nav>
       <div class="flex items-end gap-6 mt-32 flex-wrap">
         <div class="flex-1 min-w-64">
           <span
@@ -144,6 +178,27 @@ const schema = {
       </div>
     </div>
   </section>
+
+  <!-- Aprenda a tocar: ponte para o tutorial da banda -->
+  {comoTocar && (
+    <section class="max-w-6xl mx-auto px-4 pt-11">
+      <a
+        href={comoTocar.href}
+        class="group flex items-center gap-4 rounded-[22px] border border-border p-6 transition-colors hover:border-brand/50"
+        style="background:linear-gradient(135deg,#141414,#0d0d0d)"
+      >
+        <span class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 text-white" style={`background:${gradient}`} aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg>
+        </span>
+        <div class="flex-1 min-w-0">
+          <div class="text-[13px] font-semibold" style={`color:${accent}`}>Aprenda a tocar</div>
+          <div class="text-lg font-extrabold tracking-tight">Como tocar {comoTocar.musica}, de {nome}</div>
+          <p class="text-[13.5px] text-[#999] mt-0.5">Tom, acordes, técnica e o timbre da gravação — passo a passo.</p>
+        </div>
+        <span class="text-brand font-bold text-xl group-hover:translate-x-1 transition-transform" aria-hidden="true">→</span>
+      </a>
+    </section>
+  )}
 
   <!-- Discografia -->
   {albuns.length > 0 && (

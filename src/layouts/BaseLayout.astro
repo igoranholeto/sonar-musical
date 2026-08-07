@@ -47,6 +47,26 @@ const organizationSchema = {
     availableLanguage: 'Portuguese',
   },
 };
+
+// WebSite + SearchAction só na home (recomendação do Google). A busca em /busca/
+// já pré-preenche o campo a partir de ?q=, então o urlTemplate é funcional.
+const isHome = Astro.url.pathname === '/';
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Sonar Musical',
+  url: 'https://sonarmusical.com.br',
+  inLanguage: 'pt-BR',
+  publisher: { '@type': 'Organization', name: 'Sonar Musical' },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://sonarmusical.com.br/busca/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
 ---
 
 <!doctype html>
@@ -126,6 +146,9 @@ const organizationSchema = {
 
     <!-- Dados estruturados -->
     <script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+    {isHome && (
+      <script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+    )}
     {schema && (
       <script type="application/ld+json" set:html={JSON.stringify(schema)} />
     )}
