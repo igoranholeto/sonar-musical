@@ -19,12 +19,25 @@ const { nome, genero, origem, ano, fotoCapa, fotoCapaAlt, fotoCapaPosition, inte
 const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
 const tagBg = generoSoft(genero);
+
+const bandaUrl = `https://sonarmusical.com.br/bandas/${banda.id}/`;
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
+    { '@type': 'ListItem', position: 2, name: 'Bandas', item: 'https://sonarmusical.com.br/bandas/' },
+    { '@type': 'ListItem', position: 3, name: nome, item: bandaUrl },
+    { '@type': 'ListItem', position: 4, name: 'Equipamentos', item: `${bandaUrl}equipamentos/` },
+  ],
+};
 ---
 
 <BaseLayout
   title={`${nome}: Equipamentos e Setup Completo da Banda`}
   description={`Que guitarra, amplificador e pedais cada integrante do ${nome} usa — e as alternativas mais baratas para chegar perto do mesmo som.`}
   image={fotoCapa}
+  schema={breadcrumbSchema}
 >
   <div class="theme-locked-dark">
   <!-- Banner -->
@@ -43,20 +56,15 @@ const tagBg = generoSoft(genero);
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.35),rgba(10,10,10,.85) 76%,#0a0a0a)"></div>
     <div class="relative max-w-6xl mx-auto px-4 pt-7 pb-9">
-      <div class="flex gap-2.5 flex-wrap">
-        <a
-          href="/bandas/"
-          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
-        >
-          ← Todas as bandas
-        </a>
-        <a
-          href={`/bandas/${banda.id}/`}
-          class="inline-flex items-center text-[13px] font-semibold text-white bg-black/40 border border-white/28 rounded-full px-4 py-2 backdrop-blur-sm hover:bg-black/55 transition-colors"
-        >
-          ← Perfil da banda
-        </a>
-      </div>
+      <nav aria-label="Navegação em breadcrumb" class="flex items-center gap-2 text-[13px] font-semibold text-white/85 flex-wrap">
+        <a href="/" class="hover:text-white transition-colors">Início</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <a href="/bandas/" class="hover:text-white transition-colors">Bandas</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <a href={`/bandas/${banda.id}/`} class="hover:text-white transition-colors">{nome}</a>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <span class="text-white/60" aria-current="page">Equipamentos</span>
+      </nav>
       <div class="mt-24">
         <span
           class="inline-flex text-[11.5px] font-bold uppercase tracking-wider px-2.5 py-1.5 rounded-md text-white"
