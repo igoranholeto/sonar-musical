@@ -86,6 +86,14 @@ const avaliacaoLabel = avaliacao.toFixed(1);
 const badgeText = badge ?? 'Recomendação Sonar Musical';
 ---
 
+<!-- Divulgação de afiliado. O CSS exibe esta linha apenas no PRIMEIRO
+     AfiliadoCTA da página (regra .cta ~ .cta__disclosure), atendendo à
+     transparência exigida sem repetir o aviso em cada bloco nem editar 35 posts. -->
+<p class="cta__disclosure">
+  <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+  <span>Este artigo contém links de afiliado. Se você comprar por eles, podemos receber uma comissão sem custo extra para você — o que não influencia nossas análises.</span>
+</p>
+
 <div class="cta">
   <!-- Faixa topo com badge -->
   <div class="cta__stripe">
@@ -152,6 +160,31 @@ const badgeText = badge ?? 'Recomendação Sonar Musical';
 </div>
 
 <style>
+  /* ── Divulgação de afiliado ─────────────────────────────── */
+  .cta__disclosure {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    margin: 2.75rem 0 -1.5rem;
+    padding: 0.7rem 0.95rem;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.03);
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .cta__disclosure svg {
+    flex-shrink: 0;
+    margin-top: 0.15em;
+    opacity: 0.7;
+  }
+  /* Mostra o aviso só no PRIMEIRO CTA da página: qualquer .cta__disclosure
+     que venha depois de um .cta (ou seja, do 2º bloco em diante) fica oculto. */
+  .cta ~ .cta__disclosure {
+    display: none;
+  }
+
   /* ── Card container ─────────────────────────────────────── */
   .cta {
     margin: 2.75rem 0;
