@@ -1,73 +1,295 @@
 ---
 import { getCollection } from 'astro:content';
 import { TABLATURAS } from '../data/tablaturas';
+import { generoAccent, generoGradient, generoSoft } from '../utils/generos';
 
-const bandasCount = (await getCollection('bandas')).length;
+const bandasCol = await getCollection('bandas');
+const bandasCount = bandasCol.length;
 const tabsCount = TABLATURAS.length;
 
-const items = [
-  {
-    href: '/bandas/',
-    title: 'Bandas',
-    description: 'O equipamento por trás das lendas — quem toca o quê no palco.',
-    stat: `${bandasCount} bandas`,
-    icon: '<path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>',
-  },
-  {
-    href: '/tablaturas/',
-    title: 'Tablaturas',
-    description: 'Tablaturas de guitarra e violão em PDF, prontas pra tocar.',
-    stat: `${tabsCount} disponíveis`,
-    icon: '<path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z"/><path d="M15 2v5h5"/><path d="M9 13h6M9 17h6M9 9h2"/>',
-  },
-  {
-    href: '/aprender/jogo/',
-    title: 'Rock Star Quest',
-    description: 'Aprenda teoria musical enfrentando oponentes num RPG de pixel art.',
-    stat: 'Jogar agora',
-    icon: '<rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8" cy="8" r="1.3" fill="currentColor" stroke="none"/><circle cx="16" cy="8" r="1.3" fill="currentColor" stroke="none"/><circle cx="8" cy="16" r="1.3" fill="currentColor" stroke="none"/><circle cx="16" cy="16" r="1.3" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none"/>',
-  },
-];
+// Banda em destaque: sorteada a cada build (mantém a home viva entre deploys),
+// priorizando as que têm foto de capa.
+const comCapa = bandasCol.filter((b) => b.data.fotoCapa);
+const pool = comCapa.length > 0 ? comCapa : bandasCol;
+const destaque = pool[Math.floor(Math.random() * pool.length)];
+const d = destaque.data;
+const dAccent = generoAccent(d.genero);
+const dGradient = generoGradient(d.genero);
+const dSoft = generoSoft(d.genero);
+const dAlbuns = d.albuns?.length ?? 0;
 ---
 
 <section class="py-16 max-w-6xl mx-auto px-4">
-  <div class="mb-8">
-    <h2 class="text-2xl font-bold">Explore Mais</h2>
-    <p class="text-sm text-muted mt-1">Além das análises — o resto do universo Sonar Musical.</p>
+  <div class="flex items-end justify-between mb-8">
+    <div>
+      <h2 class="text-2xl font-bold">Explore Mais</h2>
+      <p class="text-sm text-muted mt-1">Além das análises — o resto do universo Sonar Musical.</p>
+    </div>
+    <a href="/bandas/" class="text-sm text-brand font-medium hover:underline underline-offset-2 whitespace-nowrap">
+      Ver bandas →
+    </a>
   </div>
 
-  <div class="grid sm:grid-cols-3 gap-4">
-    {items.map(({ href, title, description, stat, icon }, i) => (
-      <a
-        href={href}
-        class="explore-card reveal group relative flex flex-col p-6 rounded-2xl border border-border bg-card hover:border-brand/50 transition-colors duration-300 overflow-hidden"
-        style={`transition-delay:${i * 90}ms`}
-      >
-        <span class="pointer-events-none absolute -right-6 -top-6 w-28 h-28 rounded-full bg-brand/0 group-hover:bg-brand/10 blur-2xl transition-colors duration-500" aria-hidden="true"></span>
-
-        <span
-          class="explore-card__icon relative flex items-center justify-center w-11 h-11 rounded-xl bg-brand/10 text-brand mb-5 group-hover:bg-brand group-hover:text-white transition-all duration-300"
-          aria-hidden="true"
-        >
-          <svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={icon} />
-        </span>
-
-        <h3 class="font-bold text-lg mb-1.5 relative">{title}</h3>
-        <p class="text-sm text-muted leading-relaxed mb-5 relative">{description}</p>
-
-        <span class="mt-auto inline-flex items-center gap-1.5 text-sm font-semibold text-brand relative">
-          {stat}
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">
-            <line x1="5" y1="12" x2="19" y2="12" />
-            <polyline points="12 5 19 12 12 19" />
+  <div class="bento">
+    <!-- Banda em destaque (célula grande) -->
+    <a
+      href={`/bandas/${destaque.id}/`}
+      class="bento__cell bento__band reveal group"
+      style={`--accent:${dAccent}`}
+    >
+      {d.fotoCapa && (
+        <img
+          src={d.fotoCapa}
+          alt={d.fotoCapaAlt ?? d.nome}
+          class="bento__band-img"
+          loading="lazy"
+          decoding="async"
+        />
+      )}
+      <span class="bento__band-vinyl" style={`background:${dGradient}`} aria-hidden="true"></span>
+      <div class="bento__band-overlay"></div>
+      <div class="bento__band-content">
+        <span class="bento__tag" style={`background:${dSoft};color:${dAccent}`}>Banda em destaque · {d.genero}</span>
+        <h3 class="bento__band-nome">{d.nome}</h3>
+        <p class="bento__band-blurb">{d.blurb}</p>
+        <span class="bento__band-cta">
+          Ver o setup {dAlbuns > 0 ? `e ${dAlbuns} álbuns` : ''}
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
           </svg>
         </span>
-      </a>
-    ))}
+      </div>
+    </a>
+
+    <!-- Afinador (célula larga) -->
+    <a href="/afinador/" class="bento__cell bento__wide reveal group" style="transition-delay:80ms">
+      <span class="bento__icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M9 18V5l12-2v13" /><circle cx="6" cy="18" r="3" /><circle cx="18" cy="16" r="3" />
+        </svg>
+      </span>
+      <div class="bento__wave" aria-hidden="true">
+        {Array.from({ length: 9 }).map((_, i) => (
+          <span class="bento__wave-bar" style={`animation-delay:${(i * 0.1).toFixed(2)}s`}></span>
+        ))}
+      </div>
+      <h3 class="bento__cell-title">Afinador Online</h3>
+      <p class="bento__cell-desc">Afine guitarra ou violão pelo microfone, de graça, direto no navegador.</p>
+      <span class="bento__cell-cta">Afinar agora <span aria-hidden="true">→</span></span>
+    </a>
+
+    <!-- Rock Star Quest -->
+    <a href="/aprender/jogo/" class="bento__cell reveal group" style="transition-delay:160ms">
+      <span class="bento__icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="3" y="3" width="18" height="18" rx="3" /><circle cx="8" cy="8" r="1.3" fill="currentColor" stroke="none" /><circle cx="16" cy="8" r="1.3" fill="currentColor" stroke="none" /><circle cx="8" cy="16" r="1.3" fill="currentColor" stroke="none" /><circle cx="16" cy="16" r="1.3" fill="currentColor" stroke="none" /><circle cx="12" cy="12" r="1.3" fill="currentColor" stroke="none" />
+        </svg>
+      </span>
+      <h3 class="bento__cell-title">Rock Star Quest</h3>
+      <p class="bento__cell-desc">Teoria musical num RPG de pixel art.</p>
+      <span class="bento__cell-cta">Jogar <span aria-hidden="true">→</span></span>
+    </a>
+
+    <!-- Tablaturas -->
+    <a href="/tablaturas/" class="bento__cell reveal group" style="transition-delay:240ms">
+      <span class="bento__icon" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M6 2h9l5 5v13a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" /><path d="M15 2v5h5" /><path d="M9 13h6M9 17h6M9 9h2" />
+        </svg>
+      </span>
+      <h3 class="bento__cell-title">Tablaturas</h3>
+      <p class="bento__cell-desc">{tabsCount} tabs em PDF, prontas pra tocar.</p>
+      <span class="bento__cell-cta">Ver todas <span aria-hidden="true">→</span></span>
+    </a>
   </div>
 </section>
 
 <style>
+  .bento {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  @media (min-width: 640px) {
+    .bento {
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: minmax(150px, auto);
+    }
+    .bento__band {
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+    .bento__wide {
+      grid-column: span 2;
+    }
+  }
+
+  .bento__cell {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    overflow: hidden;
+    text-decoration: none;
+    transition: border-color 0.25s ease, transform 0.25s ease;
+  }
+  .bento__cell:hover {
+    border-color: color-mix(in srgb, var(--color-brand) 50%, var(--color-border));
+    transform: translateY(-3px);
+  }
+
+  .bento__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 0.75rem;
+    background: color-mix(in srgb, var(--color-brand) 12%, transparent);
+    color: var(--color-brand);
+    margin-bottom: 1rem;
+    transition: background 0.25s ease, color 0.25s ease;
+  }
+  .bento__cell:hover .bento__icon {
+    background: var(--color-brand);
+    color: #fff;
+  }
+  .bento__cell-title {
+    font-weight: 700;
+    font-size: 1.05rem;
+    margin-bottom: 0.35rem;
+    color: var(--color-foreground);
+  }
+  .bento__cell-desc {
+    font-size: 0.83rem;
+    color: var(--color-muted);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .bento__cell-cta {
+    margin-top: auto;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-brand);
+  }
+
+  /* Onda do afinador */
+  .bento__wave {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    height: 28px;
+    opacity: 0.5;
+  }
+  .bento__wave-bar {
+    width: 3px;
+    height: 40%;
+    border-radius: 999px;
+    background: var(--color-brand);
+    animation: bento-wave 1.3s ease-in-out infinite;
+  }
+  @keyframes bento-wave {
+    0%, 100% { height: 25%; }
+    50% { height: 100%; }
+  }
+
+  /* Célula de banda */
+  .bento__band {
+    min-height: 320px;
+    justify-content: flex-end;
+    color: #fff;
+  }
+  .bento__band-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  .bento__band:hover .bento__band-img {
+    transform: scale(1.05);
+  }
+  .bento__band-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(10, 10, 10, 0.15) 0%, rgba(10, 10, 10, 0.55) 55%, rgba(10, 10, 10, 0.92) 100%);
+  }
+  .bento__band-vinyl {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0.85;
+    transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+  .bento__band-vinyl::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: repeating-radial-gradient(circle, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.5) 1px, transparent 2px, transparent 5px);
+  }
+  .bento__band-vinyl::after {
+    content: '';
+    position: absolute;
+    inset: 42%;
+    border-radius: 50%;
+    background: #0a0a0a;
+    border: 3px solid rgba(255, 255, 255, 0.2);
+  }
+  .bento__band:hover .bento__band-vinyl {
+    transform: translate(-8px, 12px) rotate(40deg);
+  }
+  .bento__band-content {
+    position: relative;
+    z-index: 1;
+  }
+  .bento__tag {
+    display: inline-block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    margin-bottom: 0.7rem;
+  }
+  .bento__band-nome {
+    font-size: 1.9rem;
+    font-weight: 900;
+    line-height: 1.05;
+    letter-spacing: -0.02em;
+    margin-bottom: 0.5rem;
+  }
+  .bento__band-blurb {
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 0.9rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .bento__band-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  /* Reveal (mesmo padrão do resto da home) */
   .reveal {
     opacity: 0;
     transform: translateY(22px);
@@ -77,23 +299,17 @@ const items = [
     opacity: 1;
     transform: translateY(0);
   }
-  .explore-card:hover .explore-card__icon {
-    transform: scale(1.08) rotate(-4deg);
-  }
   @media (prefers-reduced-motion: reduce) {
-    .reveal {
-      opacity: 1;
-      transform: none;
-      transition: none;
-    }
-    .explore-card:hover .explore-card__icon {
-      transform: none;
-    }
+    .reveal { opacity: 1; transform: none; transition: none; }
+    .bento__wave-bar { animation: none; height: 55%; }
+    .bento__cell:hover { transform: none; }
+    .bento__band:hover .bento__band-img,
+    .bento__band:hover .bento__band-vinyl { transform: none; }
   }
 </style>
 
 <script>
-  const revealEls = document.querySelectorAll<HTMLElement>('.explore-card.reveal');
+  const revealEls = document.querySelectorAll<HTMLElement>('.bento .reveal');
   if ('IntersectionObserver' in window) {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -110,6 +326,5 @@ const items = [
   } else {
     revealEls.forEach((el) => el.classList.add('is-visible'));
   }
-  // Rede de segurança: garante que o conteúdo nunca fique preso invisível
   setTimeout(() => revealEls.forEach((el) => el.classList.add('is-visible')), 2500);
 </script>

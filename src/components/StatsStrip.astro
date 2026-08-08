@@ -1,0 +1,89 @@
+---
+import { getCollection } from 'astro:content';
+import { TABLATURAS } from '../data/tablaturas';
+
+// Os números REAIS ficam no HTML (SEO + no-JS). O count-up de 0→valor é só
+// enriquecimento: sem JS, ou com prefers-reduced-motion, mostra o valor final.
+const posts = await getCollection('blog');
+const bandas = await getCollection('bandas');
+const categorias = new Set(posts.map((p) => p.data.category)).size;
+
+const stats = [
+  { valor: posts.length, sufixo: '+', label: 'Análises publicadas' },
+  { valor: bandas.length, sufixo: '', label: 'Bandas mapeadas' },
+  { valor: TABLATURAS.length, sufixo: '', label: 'Tablaturas em PDF' },
+  { valor: categorias, sufixo: '', label: 'Categorias' },
+];
+---
+
+<section class="py-10 px-4" aria-label="Números do Sonar Musical">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+      {stats.map(({ valor, sufixo, label }) => (
+        <div class="text-center">
+          <div
+            class="stat-num text-3xl sm:text-4xl font-black tabular-nums"
+            data-count-to={valor}
+            data-suffix={sufixo}
+          >
+            {valor}{sufixo}
+          </div>
+          <div class="text-xs sm:text-sm text-muted mt-1">{label}</div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .stat-num {
+    background: linear-gradient(120deg, var(--color-brand), #ff5b67);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+</style>
+
+<script>
+  const nums = document.querySelectorAll<HTMLElement>('.stat-num[data-count-to]');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  const animate = (el: HTMLElement) => {
+    const target = Number(el.dataset.countTo || '0');
+    const suffix = el.dataset.suffix || '';
+    if (reduce || target <= 0) {
+      el.textContent = target + suffix;
+      return;
+    }
+    const duration = 1100;
+    const start = performance.now();
+    const step = (now: number) => {
+      const p = Math.min(1, (now - start) / duration);
+      // easeOutCubic
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = Math.round(target * eased) + suffix;
+      if (p < 1) requestAnimationFrame(step);
+      else el.textContent = target + suffix;
+    };
+    requestAnimationFrame(step);
+  };
+
+  if ('IntersectionObserver' in window && !reduce) {
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            animate(entry.target as HTMLElement);
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.4 }
+    );
+    nums.forEach((el) => obs.observe(el));
+    // Rede de segurança: nunca deixa o número preso num estado parcial
+    setTimeout(() => nums.forEach((el) => {
+      el.textContent = (el.dataset.countTo || '0') + (el.dataset.suffix || '');
+    }), 2500);
+  }
+</script>

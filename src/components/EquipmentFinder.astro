@@ -1,0 +1,251 @@
+---
+// Finder "Qual equipamento é pra você?" — árvore de decisão de 2 passos.
+// Progressive enhancement: TODAS as opções são <a> reais no HTML (crawláveis,
+// funcionam sem JS como lista de links). O JS apenas transforma num fluxo
+// passo-a-passo, escondendo os grupos e revelando conforme a escolha.
+interface Opcao {
+  label: string;
+  href: string;
+}
+interface Grupo {
+  id: string;
+  emoji: string;
+  titulo: string;
+  opcoes: Opcao[];
+}
+
+const grupos: Grupo[] = [
+  {
+    id: 'guitarra',
+    emoji: '🎸',
+    titulo: 'Guitarra elétrica',
+    opcoes: [
+      { label: 'Estou começando agora', href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/' },
+      { label: 'Já toco, quero evoluir', href: '/blog/guitarra-eletrica-profissional-guia-2026/' },
+      { label: 'É pra uma criança', href: '/blog/melhor-guitarra-eletrica-infantil/' },
+      { label: 'Quero tocar blues', href: '/blog/melhor-guitarra-para-blues/' },
+    ],
+  },
+  {
+    id: 'violao',
+    emoji: '🪕',
+    titulo: 'Violão',
+    opcoes: [
+      { label: 'Meu primeiro violão', href: '/blog/melhores-violoes-2026/' },
+      { label: 'Violão ou guitarra? Tô na dúvida', href: '/blog/violao-ou-guitarra-por-onde-comecar/' },
+    ],
+  },
+  {
+    id: 'amplificador',
+    emoji: '🔊',
+    titulo: 'Amplificador',
+    opcoes: [
+      { label: 'Pra praticar em casa', href: '/blog/melhor-mini-amplificador-de-guitarra-2026/' },
+      { label: 'Pra ensaio e palco', href: '/blog/melhor-amplificador-de-guitarra-2026/' },
+      { label: 'Valvulado, quero timbre top', href: '/blog/melhor-amplificador-valvulado-de-guitarra-2026/' },
+    ],
+  },
+  {
+    id: 'pedais',
+    emoji: '🎛️',
+    titulo: 'Pedais e efeitos',
+    opcoes: [
+      { label: 'Só quero distorção', href: '/blog/pedal-de-distorcao-para-guitarra/' },
+      { label: 'Vários efeitos numa caixa', href: '/blog/melhor-pedaleira-de-guitarra-2026/' },
+      { label: 'Montar um pedalboard', href: '/blog/como-montar-pedalboard/' },
+    ],
+  },
+  {
+    id: 'gravar',
+    emoji: '🎙️',
+    titulo: 'Gravar em casa',
+    opcoes: [
+      { label: 'Preciso de interface de áudio', href: '/blog/melhor-interface-de-audio-para-guitarra-2026/' },
+      { label: 'Quanto custa montar o setup?', href: '/blog/quanto-custa-montar-setup-de-guitarra/' },
+    ],
+  },
+];
+---
+
+<section class="py-12 px-4">
+  <div class="finder max-w-3xl mx-auto rounded-2xl border border-border bg-elevated p-7 sm:p-9">
+    <div class="text-center mb-7">
+      <span class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-brand mb-2">
+        <span class="w-1.5 h-1.5 bg-brand rounded-full" aria-hidden="true"></span>
+        Achado em segundos
+      </span>
+      <h2 class="text-2xl sm:text-3xl font-black">Qual equipamento é pra você?</h2>
+      <p class="text-sm text-muted mt-2">Responda e a gente te leva direto pro guia certo.</p>
+    </div>
+
+    <!-- Passo 1 -->
+    <div class="finder__step" data-step="1">
+      <p class="finder__pergunta">O que você procura?</p>
+      <div class="finder__opcoes">
+        {grupos.map((g) => (
+          <button type="button" class="finder__chip" data-open={g.id}>
+            <span aria-hidden="true">{g.emoji}</span> {g.titulo}
+          </button>
+        ))}
+      </div>
+    </div>
+
+    <!-- Passo 2 (um grupo por escolha; links reais) -->
+    {grupos.map((g) => (
+      <div class="finder__step finder__group" data-group={g.id}>
+        <button type="button" class="finder__back" data-back>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12" /><polyline points="12 19 5 12 12 5" />
+          </svg>
+          Voltar
+        </button>
+        <p class="finder__pergunta">
+          <span aria-hidden="true">{g.emoji}</span> {g.titulo} — qual é o seu caso?
+        </p>
+        <div class="finder__opcoes">
+          {g.opcoes.map((o) => (
+            <a href={o.href} class="finder__result">
+              {o.label}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <line x1="5" y1="12" x2="19" y2="12" /><polyline points="12 5 19 12 12 19" />
+              </svg>
+            </a>
+          ))}
+        </div>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .finder__pergunta {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--color-foreground);
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .finder__opcoes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.6rem;
+  }
+
+  .finder__chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.65rem 1.1rem;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  }
+  .finder__chip:hover {
+    border-color: var(--color-brand);
+    transform: translateY(-1px);
+  }
+
+  .finder__result {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.7rem 1.15rem;
+    border-radius: 12px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: border-color 0.15s ease, background 0.15s ease, transform 0.15s ease;
+  }
+  .finder__result:hover {
+    border-color: var(--color-brand);
+    background: color-mix(in srgb, var(--color-brand) 8%, var(--color-card));
+    transform: translateY(-1px);
+  }
+  .finder__result svg {
+    color: var(--color-brand);
+    transition: transform 0.15s ease;
+  }
+  .finder__result:hover svg {
+    transform: translateX(3px);
+  }
+
+  .finder__back {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: none;
+    border: none;
+    color: var(--color-muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 0.9rem;
+    padding: 0;
+    transition: color 0.15s ease;
+  }
+  .finder__back:hover {
+    color: var(--color-foreground);
+  }
+
+  /* Sem JS: os grupos do passo 2 ficam visíveis como listas de links, cada um
+     com um separador. O JS (abaixo) adiciona .finder--js e ativa o modo passo. */
+  .finder__group {
+    margin-top: 1.75rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .finder__group .finder__back {
+    display: none;
+  }
+
+  /* Modo JS: esconde os grupos e o botão voltar reaparece */
+  .finder--js .finder__group {
+    display: none;
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+  }
+  .finder--js .finder__group.is-active {
+    display: block;
+  }
+  .finder--js .finder__group .finder__back {
+    display: inline-flex;
+  }
+  .finder--js .finder__step[data-step='1'].is-hidden {
+    display: none;
+  }
+</style>
+
+<script>
+  const finder = document.querySelector<HTMLElement>('.finder');
+  if (finder) {
+    finder.classList.add('finder--js');
+    const step1 = finder.querySelector<HTMLElement>('.finder__step[data-step="1"]');
+    const groups = finder.querySelectorAll<HTMLElement>('.finder__group');
+
+    const showGroup = (id: string) => {
+      groups.forEach((g) => g.classList.toggle('is-active', g.dataset.group === id));
+      step1?.classList.add('is-hidden');
+    };
+    const reset = () => {
+      groups.forEach((g) => g.classList.remove('is-active'));
+      step1?.classList.remove('is-hidden');
+    };
+
+    finder.querySelectorAll<HTMLButtonElement>('[data-open]').forEach((btn) => {
+      btn.addEventListener('click', () => showGroup(btn.dataset.open!));
+    });
+    finder.querySelectorAll<HTMLButtonElement>('[data-back]').forEach((btn) => {
+      btn.addEventListener('click', reset);
+    });
+  }
+</script>
