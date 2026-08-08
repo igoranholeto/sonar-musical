@@ -5,6 +5,10 @@ import Hero from '../components/Hero.astro';
 import PostCard from '../components/PostCard.astro';
 import CategoryGrid from '../components/CategoryGrid.astro';
 import ExploreSection from '../components/ExploreSection.astro';
+import StatsStrip from '../components/StatsStrip.astro';
+import EquipmentFinder from '../components/EquipmentFinder.astro';
+import ComparadorRapido from '../components/ComparadorRapido.astro';
+import BandSpotlight from '../components/BandSpotlight.astro';
 import Newsletter from '../components/Newsletter.astro';
 
 const allPosts = await getCollection('blog');
@@ -49,11 +53,23 @@ const latestPosts = posts.slice(0, 6);
     </section>
   )}
 
+  <!-- Números do site (count-up) -->
+  <StatsStrip />
+
+  <!-- Finder: qual equipamento é pra você? -->
+  <EquipmentFinder />
+
+  <!-- Comparador rápido: confrontos X vs Y -->
+  <ComparadorRapido />
+
   <!-- Grid de categorias -->
   <CategoryGrid />
 
   <!-- Explorar mais (bandas, tablaturas, jogo) -->
   <ExploreSection />
+
+  <!-- Spotlight de bandas -->
+  <BandSpotlight />
 
   <!-- Artigos mais recentes -->
   <section class="py-16 max-w-6xl mx-auto px-4">
