@@ -26,3 +26,6 @@ pnpm-debug.log*
 # Temporários de geração de capas
 covers-src/_montage.png
 covers-src/_alts.json
+covers-src/_photo_*.png
+covers-src/_photo_*.jpg
+covers-src/_photo_all.jpg
