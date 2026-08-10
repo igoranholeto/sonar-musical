@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# Temporários de geração de capas
+covers-src/_montage.png
+covers-src/_alts.json
