@@ -247,6 +247,7 @@ const POSTS = [
   { slug: 'melhor-guitarra-para-blues', kicker: 'GUITARRAS · 2026', l1: 'GUITARRA', l2: 'PRA BLUES', motif: 'guitar', opt: { body: '#1c3f6e', guard: '#e9e4da' } },
   { slug: 'fender-vs-gibson-qual-escolher', kicker: 'COMPARATIVO', l1: 'FENDER vs', l2: 'GIBSON', motif: 'guitarLP', opt: { body: '#7a1f12', guard: '#241a10' } },
   { slug: 'quanto-custa-uma-guitarra-eletrica', kicker: 'GUIA DE COMPRA', l1: 'QUANTO', l2: 'CUSTA?', sub: 'guitarra elétrica · preços 2026', motif: 'guitar', opt: { body: '#2a8a6a', guard: '#e9e4da' } },
+  { slug: 'quanto-custa-ser-guitarrista-no-brasil', kicker: 'GUIA · CUSTOS · 2026', l1: 'CUSTO DE SER', l2: 'GUITARRISTA', motif: 'guitar', opt: { body: '#1c1c22', guard: '#c9a45a' } },
   { slug: 'quantas-cordas-tem-uma-guitarra', kicker: 'TÉCNICA', l1: 'QUANTAS', l2: 'CORDAS?', motif: 'guitar', opt: { body: '#7a1fa0', guard: '#e9e4da' } },
   { slug: 'quem-inventou-a-guitarra-eletrica', kicker: 'HISTÓRIA', l1: 'QUEM', l2: 'INVENTOU?', sub: 'a guitarra elétrica', motif: 'guitar', opt: { body: '#8a5a2a', guard: '#efe9dd' } },
   { slug: 'squier-classic-vibe-60s-stratocaster-review', kicker: 'REVIEW', l1: 'SQUIER', l2: 'CLASSIC VIBE', motif: 'guitar', opt: { body: '#3a6ea5', guard: '#f0ece2' } },
