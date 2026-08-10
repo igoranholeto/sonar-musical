@@ -286,6 +286,11 @@ const POSTS = [
 
   { slug: 'como-afinar-guitarra-guia-completo', kicker: 'TUTORIAL', l1: 'COMO', l2: 'AFINAR', motif: 'tuner' },
   { slug: 'como-fazer-manutencao-guitarra-em-casa', kicker: 'TUTORIAL', l1: 'MANUTENÇÃO', l2: 'EM CASA', sub: 'o que você mesmo faz', motif: 'tools' },
+  { slug: 'problemas-comuns-na-guitarra', kicker: 'TUTORIAL', l1: 'PROBLEMAS', l2: 'COMUNS', sub: 'e como resolver', motif: 'tools' },
+  { slug: 'fret-buzz-traste-zerando', kicker: 'TUTORIAL', l1: 'FRET BUZZ', l2: 'TRASTE ZERANDO', motif: 'fretboard' },
+  { slug: 'guitarra-chiando-ruido', kicker: 'TUTORIAL', l1: 'GUITARRA', l2: 'CHIANDO', sub: 'como eliminar o ruído', motif: 'pickups' },
+  { slug: 'guitarra-desafinando', kicker: 'TUTORIAL', l1: 'GUITARRA', l2: 'DESAFINANDO', motif: 'tuner' },
+  { slug: 'como-abaixar-a-acao-da-guitarra', kicker: 'TUTORIAL', l1: 'ABAIXAR', l2: 'A AÇÃO', sub: 'da guitarra', motif: 'strings' },
 
   { slug: 'como-tocar-enter-sandman-metallica', kicker: 'COMO TOCAR', l1: 'ENTER', l2: 'SANDMAN', sub: 'Metallica', motif: 'tab' },
   { slug: 'como-tocar-evidencias-chitaozinho-e-xororo', kicker: 'COMO TOCAR', l1: 'TOCAR', l2: 'EVIDÊNCIAS', sub: 'Chitãozinho & Xororó', motif: 'tab' },
