@@ -281,6 +281,7 @@ const POSTS = [
   { slug: 'escala-pentatonica-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'ESCALA', l2: 'PENTATÔNICA', motif: 'fretboard' },
   { slug: 'quanto-tempo-aprender-guitarra', kicker: 'INICIANTES', l1: 'QUANTO', l2: 'TEMPO?', sub: 'para aprender guitarra', motif: 'fretboard' },
   { slug: 'como-ler-cifra-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'COMO LER', l2: 'CIFRA', motif: 'tab' },
+  { slug: 'melhores-musicas-para-aprender-guitarra', kicker: 'INICIANTES', l1: 'MÚSICAS', l2: 'PARA TOCAR', sub: 'por nível e gênero', motif: 'tab' },
 
   { slug: 'como-afinar-guitarra-guia-completo', kicker: 'TUTORIAL', l1: 'COMO', l2: 'AFINAR', motif: 'tuner' },
   { slug: 'como-fazer-manutencao-guitarra-em-casa', kicker: 'TUTORIAL', l1: 'MANUTENÇÃO', l2: 'EM CASA', sub: 'o que você mesmo faz', motif: 'tools' },
