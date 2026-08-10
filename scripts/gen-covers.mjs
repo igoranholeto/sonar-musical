@@ -324,7 +324,7 @@ for (const p of list) {
   await sharp(Buffer.from(svg), { density: 150 }).resize(1200, 675).png({ compressionLevel: 9 }).toFile(file);
   const kb = Math.round(fs.statSync(file).size / 1024);
   const cap = `${p.l1} ${p.l2 || ''}`.trim().toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
-  results.push({ slug: p.slug, motif: p.motif, kb, alt: `${cap} — ilustração de ${motifLabel[p.motif]}, capa do Sonar Musical` });
+  results.push({ slug: p.slug, motif: p.motif, kb, kicker: p.kicker, l1: p.l1, l2: p.l2 || '', alt: `${cap} — ilustração de ${motifLabel[p.motif]}, capa do Sonar Musical` });
   console.log(`✓ ${p.slug}.png (${p.motif}, ${kb}KB)`);
 }
 
@@ -340,4 +340,5 @@ if (process.argv.includes('--montage')) {
 
 // exporta alts para uso no update de frontmatter
 fs.writeFileSync('covers-src/_alts.json', JSON.stringify(Object.fromEntries(results.map((r) => [r.slug, r.alt])), null, 2));
+fs.writeFileSync('covers-src/_covers.json', JSON.stringify(Object.fromEntries(results.map((r) => [r.slug, { kicker: r.kicker, l1: r.l1, l2: r.l2, motif: r.motif }])), null, 2));
 console.log(`\n${results.length} capas geradas.`);
