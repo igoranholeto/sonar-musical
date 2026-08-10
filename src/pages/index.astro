@@ -8,7 +8,6 @@ import ExploreSection from '../components/ExploreSection.astro';
 import StatsStrip from '../components/StatsStrip.astro';
 import EquipmentFinder from '../components/EquipmentFinder.astro';
 import ComparadorRapido from '../components/ComparadorRapido.astro';
-import BandSpotlight from '../components/BandSpotlight.astro';
 import Newsletter from '../components/Newsletter.astro';
 
 const allPosts = await getCollection('blog');
@@ -67,9 +66,6 @@ const latestPosts = posts.slice(0, 6);
 
   <!-- Explorar mais (bandas, tablaturas, jogo) -->
   <ExploreSection />
-
-  <!-- Spotlight de bandas -->
-  <BandSpotlight />
 
   <!-- Artigos mais recentes -->
   <section class="py-16 max-w-6xl mx-auto px-4">
