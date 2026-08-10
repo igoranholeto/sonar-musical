@@ -1,0 +1,243 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+// Quiz de recomendação. Progressive enhancement: sem JS, mostra a lista de
+// todos os guias (crawlável). Com JS, vira um fluxo de 3 perguntas que termina
+// numa recomendação com link para o guia certo. Sem link de afiliado inventado —
+// roteia sempre para conteúdo real do site.
+const perguntas = [
+  {
+    q: 'Qual é o seu nível?',
+    opts: [
+      { v: 'iniciante', label: 'Estou começando' },
+      { v: 'intermediario', label: 'Já toco há um tempo' },
+      { v: 'avancado', label: 'Toco bem, há anos' },
+    ],
+  },
+  {
+    q: 'Que som você quer tirar?',
+    opts: [
+      { v: 'rock', label: '🤘 Rock e metal' },
+      { v: 'blues', label: '🎷 Blues e jazz' },
+      { v: 'pop', label: '🎤 Pop, MPB e sertanejo' },
+      { v: 'tudo', label: '🎛️ Um pouco de tudo' },
+    ],
+  },
+  {
+    q: 'Qual é o seu orçamento?',
+    opts: [
+      { v: 'baixo', label: 'Até R$ 1.500' },
+      { v: 'medio', label: 'R$ 1.500 a 4.000' },
+      { v: 'alto', label: 'Acima de R$ 4.000' },
+    ],
+  },
+];
+
+// Todos os guias (fallback sem JS + base das recomendações)
+const guias = [
+  { href: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/', label: 'Melhores guitarras para iniciantes' },
+  { href: '/blog/guitarra-com-amplificador-kit-iniciante/', label: 'Kits de guitarra com amplificador' },
+  { href: '/blog/melhor-guitarra-para-blues/', label: 'Melhor guitarra para blues' },
+  { href: '/blog/guitarra-stratocaster-guia-completo/', label: 'Guia da Stratocaster' },
+  { href: '/blog/guitarra-les-paul-guia-completo/', label: 'Guia da Les Paul' },
+  { href: '/blog/tipos-de-guitarra-eletrica/', label: 'Tipos de guitarra elétrica' },
+  { href: '/blog/melhor-guitarra-7-cordas-2026/', label: 'Melhor guitarra de 7 cordas' },
+  { href: '/blog/guitarra-eletrica-profissional-guia-2026/', label: 'Guitarras profissionais' },
+  { href: '/blog/quanto-custa-uma-guitarra-eletrica/', label: 'Quanto custa uma guitarra' },
+];
+---
+
+<BaseLayout
+  title="Qual Guitarra é pra Você? Quiz de Recomendação"
+  description="Responda 3 perguntas e descubra qual tipo de guitarra elétrica combina com o seu nível, estilo e orçamento — com o guia certo para escolher a sua."
+>
+  <section class="qg">
+    <div class="qg__head">
+      <span class="qg__kicker"><span class="qg__dot" aria-hidden="true"></span> Achado em 3 perguntas</span>
+      <h1>Qual guitarra é pra você?</h1>
+      <p class="qg__sub">Responda rápido e a gente te leva direto pro guia certo pro seu perfil.</p>
+    </div>
+
+    <div id="quiz" class="qg__card">
+      <!-- Progresso (só com JS) -->
+      <div class="qg__progress" aria-hidden="true">
+        {perguntas.map((_, i) => <span class="qg__pip" data-pip={i}></span>)}
+      </div>
+
+      <!-- Perguntas -->
+      {perguntas.map((p, i) => (
+        <div class="qg__step" data-step={i}>
+          <p class="qg__q">{p.q}</p>
+          <div class="qg__opts">
+            {p.opts.map((o) => (
+              <button type="button" class="qg__opt" data-q={i} data-v={o.v}>{o.label}</button>
+            ))}
+          </div>
+          {i > 0 && (
+            <button type="button" class="qg__back" data-back>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              Voltar
+            </button>
+          )}
+        </div>
+      ))}
+
+      <!-- Resultado -->
+      <div id="qg-result" class="qg__result" hidden>
+        <span class="qg__result-tag">Nossa recomendação</span>
+        <h2 id="qg-result-title"></h2>
+        <p id="qg-result-text"></p>
+        <a id="qg-result-cta" class="qg__cta" href="#">Ver o guia completo →</a>
+        <div id="qg-result-extra" class="qg__extra"></div>
+        <button type="button" class="qg__restart" data-restart>↺ Refazer o quiz</button>
+      </div>
+
+      <!-- Fallback sem JS: lista de guias -->
+      <div class="qg__fallback">
+        <p class="qg__q">Escolha por onde começar:</p>
+        <ul class="qg__list">
+          {guias.map((g) => (
+            <li><a href={g.href}>{g.label}</a></li>
+          ))}
+        </ul>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .qg { max-width: 44rem; margin: 0 auto; padding: 4rem 1rem 5rem; }
+  .qg__head { text-align: center; margin-bottom: 2rem; }
+  .qg__kicker { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand); }
+  .qg__dot { width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand); }
+  .qg h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 800; margin: 0.5rem 0 0.4rem; }
+  .qg__sub { color: var(--color-muted); }
+  .qg__card { background: var(--color-elevated); border: 1px solid var(--color-border); border-radius: 20px; padding: 2rem 1.75rem; }
+
+  .qg__progress { display: flex; gap: 0.4rem; justify-content: center; margin-bottom: 1.75rem; }
+  .qg__pip { width: 34px; height: 5px; border-radius: 999px; background: var(--color-border); transition: background 0.2s; }
+  .qg__pip.is-done { background: var(--color-brand); }
+
+  .qg__q { text-align: center; font-size: 1.05rem; font-weight: 700; margin-bottom: 1.25rem; }
+  .qg__opts { display: flex; flex-direction: column; gap: 0.6rem; max-width: 22rem; margin: 0 auto; }
+  .qg__opt { padding: 0.85rem 1.2rem; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 0.95rem; font-weight: 600; cursor: pointer; transition: border-color 0.15s, background 0.15s, transform 0.15s; text-align: left; }
+  .qg__opt:hover { border-color: var(--color-brand); transform: translateY(-1px); background: color-mix(in srgb, var(--color-brand) 7%, var(--color-card)); }
+
+  .qg__back { display: inline-flex; align-items: center; gap: 0.3rem; margin: 1.25rem auto 0; background: none; border: none; color: var(--color-muted); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+  .qg__back:hover { color: var(--color-foreground); }
+
+  .qg__result-tag { display: inline-block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand); margin-bottom: 0.5rem; }
+  .qg__result h2 { font-size: 1.5rem; font-weight: 800; margin: 0 0 0.6rem; }
+  .qg__result p { color: var(--color-muted); line-height: 1.6; margin-bottom: 1.25rem; }
+  .qg__cta { display: inline-block; padding: 0.8rem 1.4rem; border-radius: 12px; background: var(--color-brand); color: #fff; font-weight: 700; text-decoration: none; transition: background 0.15s, transform 0.15s; }
+  .qg__cta:hover { background: var(--color-brand-dark); transform: translateY(-1px); }
+  .qg__extra { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 1.25rem; }
+  .qg__extra a { font-size: 0.82rem; font-weight: 600; color: var(--color-foreground); border: 1px solid var(--color-border); border-radius: 999px; padding: 0.4rem 0.9rem; text-decoration: none; transition: border-color 0.15s; }
+  .qg__extra a:hover { border-color: var(--color-brand); }
+  .qg__restart { display: block; margin: 1.5rem auto 0; background: none; border: none; color: var(--color-subtle); font-size: 0.82rem; font-weight: 600; cursor: pointer; }
+  .qg__restart:hover { color: var(--color-foreground); }
+
+  .qg__list { list-style: none; padding: 0; margin: 0; display: grid; gap: 0.5rem; max-width: 26rem; margin: 0 auto; }
+  .qg__list a { display: block; padding: 0.7rem 1rem; border-radius: 10px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+  .qg__list a:hover { border-color: var(--color-brand); }
+
+  /* Com JS: esconde fallback e mostra 1 passo por vez */
+  .qg--js .qg__fallback { display: none; }
+  .qg--js .qg__step { display: none; }
+  .qg--js .qg__step.is-active { display: block; }
+  /* Sem JS: esconde progresso, resultado e botões voltar */
+  .qg:not(.qg--js-root) .qg__progress { display: none; }
+  .qg__step .qg__back { display: none; }
+  .qg--js .qg__step.is-active .qg__back { display: inline-flex; }
+</style>
+
+<script>
+  const quiz = document.getElementById('quiz');
+  if (quiz) {
+    document.querySelector('.qg')?.classList.add('qg--js-root');
+    quiz.classList.add('qg--js');
+    const steps = Array.from(quiz.querySelectorAll<HTMLElement>('.qg__step'));
+    const pips = Array.from(quiz.querySelectorAll<HTMLElement>('.qg__pip'));
+    const result = document.getElementById('qg-result')!;
+    const answers: Record<number, string> = {};
+    let current = 0;
+
+    const show = (i: number) => {
+      steps.forEach((s, idx) => s.classList.toggle('is-active', idx === i));
+      pips.forEach((p, idx) => p.classList.toggle('is-done', idx <= i));
+      result.hidden = true;
+      current = i;
+    };
+
+    const GUIAS = {
+      iniciantes: '/blog/melhores-guitarras-eletricas-para-iniciantes-2026/',
+      kit: '/blog/guitarra-com-amplificador-kit-iniciante/',
+      blues: '/blog/melhor-guitarra-para-blues/',
+      strato: '/blog/guitarra-stratocaster-guia-completo/',
+      lespaul: '/blog/guitarra-les-paul-guia-completo/',
+      tipos: '/blog/tipos-de-guitarra-eletrica/',
+      sete: '/blog/melhor-guitarra-7-cordas-2026/',
+      pro: '/blog/guitarra-eletrica-profissional-guia-2026/',
+      fendergibson: '/blog/fender-vs-gibson-qual-escolher/',
+    };
+    const L: Record<string, string> = {
+      iniciantes: 'Melhores guitarras para iniciantes', kit: 'Kits com amplificador', blues: 'Guia: guitarra para blues',
+      strato: 'Guia da Stratocaster', lespaul: 'Guia da Les Paul', tipos: 'Tipos de guitarra', sete: 'Guitarra de 7 cordas',
+      pro: 'Guitarras profissionais', fendergibson: 'Fender vs Gibson',
+    };
+
+    function recommend(nivel: string, estilo: string, orc: string) {
+      const orcTxt = orc === 'baixo' ? ' dentro de um orçamento de entrada' : orc === 'alto' ? ', e com orçamento você pode ir direto num modelo topo' : '';
+      if (nivel === 'iniciante') {
+        if (orc === 'baixo')
+          return { key: 'kit', title: 'Um kit de guitarra + amplificador', text: 'Para começar gastando pouco, um kit que já vem com amplificador e acessórios é o caminho mais eficiente — você sai tocando sem surpresas de custo.', extra: ['iniciantes', 'strato'] };
+        return { key: 'iniciantes', title: 'Uma boa guitarra de entrada', text: `Comece por uma guitarra de iniciante bem regulada${orcTxt}. Ela cobre qualquer estilo enquanto você descobre o seu.`, extra: ['strato', 'kit'] };
+      }
+      if (estilo === 'rock') {
+        if (orc === 'alto') return { key: 'lespaul', title: 'Uma Les Paul (ou humbuckers)', text: 'Rock e metal pedem humbuckers: graves apretados e peso na distorção. A Les Paul é a referência; se preferir mais versátil, veja uma Superstrat.', extra: ['pro', 'sete'] };
+        return { key: 'tipos', title: 'Uma Superstrat / HSS', text: 'Para rock e metal com bom custo, uma Superstrat (HSS, com humbucker na ponte) entrega peso e versatilidade. Se for metal pesado com afinações graves, considere 7 cordas.', extra: ['sete', 'strato'] };
+      }
+      if (estilo === 'blues') return { key: 'blues', title: 'Uma guitarra para blues', text: 'Blues e jazz pedem dinâmica e um timbre expressivo. Stratocaster (single coils) ou uma semi-hollow são os caminhos clássicos.', extra: ['strato', 'lespaul'] };
+      if (estilo === 'pop') return { key: 'strato', title: 'Uma Stratocaster', text: 'Para pop, MPB e sertanejo, a Stratocaster é imbatível em versatilidade: brilhante, leve e serve do limpo ao levemente distorcido.', extra: ['tipos', 'iniciantes'] };
+      return { key: 'tipos', title: 'Explore os formatos', text: 'Se você toca de tudo, vale entender os tipos de guitarra antes de decidir. A Stratocaster é a mais versátil para quem não quer se limitar.', extra: ['strato', 'fendergibson'] };
+    }
+
+    const finish = () => {
+      const r = recommend(answers[0], answers[1], answers[2]);
+      (document.getElementById('qg-result-title') as HTMLElement).textContent = r.title;
+      (document.getElementById('qg-result-text') as HTMLElement).textContent = r.text;
+      const cta = document.getElementById('qg-result-cta') as HTMLAnchorElement;
+      cta.href = (GUIAS as Record<string, string>)[r.key];
+      const extra = document.getElementById('qg-result-extra')!;
+      extra.innerHTML = '';
+      r.extra.forEach((k) => {
+        const a = document.createElement('a');
+        a.href = (GUIAS as Record<string, string>)[k];
+        a.textContent = L[k];
+        extra.appendChild(a);
+      });
+      steps.forEach((s) => s.classList.remove('is-active'));
+      pips.forEach((p) => p.classList.add('is-done'));
+      result.hidden = false;
+    };
+
+    quiz.querySelectorAll<HTMLButtonElement>('.qg__opt').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const qi = Number(btn.dataset.q);
+        answers[qi] = btn.dataset.v!;
+        if (qi < steps.length - 1) show(qi + 1);
+        else finish();
+      });
+    });
+    quiz.querySelectorAll<HTMLButtonElement>('[data-back]').forEach((btn) => {
+      btn.addEventListener('click', () => show(Math.max(0, current - 1)));
+    });
+    quiz.querySelector<HTMLButtonElement>('[data-restart]')?.addEventListener('click', () => {
+      Object.keys(answers).forEach((k) => delete answers[Number(k)]);
+      pips.forEach((p) => p.classList.remove('is-done'));
+      show(0);
+    });
+
+    show(0);
+  }
+</script>
