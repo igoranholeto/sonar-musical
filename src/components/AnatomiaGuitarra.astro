@@ -1,0 +1,138 @@
+---
+// Diagrama interativo da anatomia da guitarra elétrica. Progressive enhancement:
+// sem JS, é um diagrama numerado + legenda numerada (crawlável e completo). Com
+// JS, passar o mouse / clicar numa peça destaca a peça na guitarra e vice-versa.
+interface Parte {
+  n: number;
+  nome: string;
+  desc: string;
+  x: number; // coords no espaço local da guitarra (dentro do grupo transformado)
+  y: number;
+  href?: string;
+}
+
+const partes: Parte[] = [
+  { n: 1, nome: 'Corpo', desc: 'A madeira que dá o corpo do som e sustenta tudo. O formato e a madeira influenciam o timbre e o peso.', x: -118, y: 44, href: '/blog/tipos-de-guitarra-eletrica/' },
+  { n: 2, nome: 'Escudo (pickguard)', desc: 'A placa que protege o corpo dos arranhões da palheta e, em muitas guitarras, sustenta os captadores e a eletrônica.', x: -70, y: -52 },
+  { n: 3, nome: 'Captadores', desc: 'Transformam a vibração das cordas em sinal elétrico. Definem o timbre mais que qualquer outra peça.', x: -50, y: 2, href: '/blog/melhores-captadores-de-guitarra-2026/' },
+  { n: 4, nome: 'Ponte', desc: 'Fixa as cordas no corpo e define a altura (ação) e a oitavação. Pode ser fixa ou com tremolo (alavanca).', x: 34, y: 2 },
+  { n: 5, nome: 'Knobs e jack', desc: 'Os potenciômetros de volume e tom e a chave seletora controlam o som; o jack é a saída para o cabo.', x: -74, y: 56, href: '/blog/guitarra-chiando-ruido/' },
+  { n: 6, nome: 'Braço', desc: 'Onde a mão pressiona as cordas. Por dentro corre o tensor (truss rod), que ajusta a curvatura.', x: 300, y: 2, href: '/blog/fret-buzz-traste-zerando/' },
+  { n: 7, nome: 'Trastes', desc: 'As barras de metal que dividem o braço em casas. Definem a nota de cada posição; gastos, causam trastejamento.', x: 220, y: 2, href: '/blog/fret-buzz-traste-zerando/' },
+  { n: 8, nome: 'Pestana (nut)', desc: 'A peça na ponta do braço onde as cordas passam antes das tarraxas. Se prende a corda, causa desafinação.', x: 446, y: 2, href: '/blog/guitarra-desafinando/' },
+  { n: 9, nome: 'Tarraxas', desc: 'Ajustam a tensão de cada corda para afinar. Tarraxas frouxas fazem a guitarra sair de tom.', x: 490, y: -16, href: '/blog/guitarra-desafinando/' },
+  { n: 10, nome: 'Cordas', desc: 'Seis (ou mais) cordas de aço que vibram e produzem o som. O calibre muda o timbre e a tensão.', x: 150, y: -14, href: '/blog/nome-das-cordas-da-guitarra/' },
+];
+---
+
+<figure class="anat" aria-label="Diagrama interativo da anatomia da guitarra elétrica">
+  <div class="anat__stage">
+    <svg viewBox="0 0 1000 360" class="anat__svg" role="img" aria-label="Partes da guitarra elétrica numeradas">
+      <g transform="translate(235,180) scale(1.15)">
+        <!-- guitarra (horizontal) -->
+        <rect x="120" y="-18" width="326" height="36" rx="4" fill="#232025" stroke="#e9e4da" stroke-opacity="0.4" stroke-width="1.2"/>
+        <g stroke="#54505a" stroke-width="1.8"><line x1="170" y1="-18" x2="170" y2="18"/><line x1="214" y1="-18" x2="214" y2="18"/><line x1="258" y1="-18" x2="258" y2="18"/><line x1="302" y1="-18" x2="302" y2="18"/><line x1="346" y1="-18" x2="346" y2="18"/><line x1="390" y1="-18" x2="390" y2="18"/></g>
+        <path d="M446,-21 L512,-29 Q528,-25 528,-11 L524,17 Q516,27 496,23 L446,19 Z" fill="#1b181d"/>
+        <g fill="#e9e4da"><circle cx="466" cy="-15" r="3.6"/><circle cx="488" cy="-18" r="3.6"/><circle cx="510" cy="-21" r="3.6"/><circle cx="466" cy="13" r="3.6"/><circle cx="488" cy="14" r="3.6"/><circle cx="510" cy="11" r="3.6"/></g>
+        <path d="M-58,-112 C22,-114 44,-74 98,-68 C122,-64 132,-42 132,-18 L132,18 C132,42 122,64 98,68 C44,74 22,114 -58,112 C-132,110 -156,52 -156,0 C-156,-52 -132,-110 -58,-112 Z" fill="#b5202d"/>
+        <path d="M-64,-74 C-4,-82 34,-42 44,8 C50,44 22,72 -30,74 C-104,77 -132,26 -122,-24 C-116,-54 -104,-68 -64,-74 Z" fill="#e9e4da" opacity="0.92"/>
+        <g fill="#1a1418"><rect x="-24" y="-34" width="12" height="46" rx="3" transform="rotate(-16 -18 -11)"/><rect x="-52" y="-22" width="12" height="46" rx="3" transform="rotate(-16 -46 1)"/><rect x="-80" y="-10" width="12" height="46" rx="3" transform="rotate(-16 -74 13)"/></g>
+        <rect x="22" y="-30" width="20" height="60" rx="3" fill="#3a343d" transform="rotate(-16 32 0)"/>
+        <g fill="#1a1418"><circle cx="-96" cy="44" r="8"/><circle cx="-72" cy="54" r="8"/><circle cx="-48" cy="64" r="8"/></g>
+        <g stroke="#6f6b60" stroke-width="1.3" opacity="0.85"><line x1="30" y1="-13" x2="446" y2="-13"/><line x1="30" y1="-8" x2="446" y2="-8"/><line x1="30" y1="-3" x2="446" y2="-3"/><line x1="30" y1="2" x2="446" y2="2"/><line x1="30" y1="7" x2="446" y2="7"/><line x1="30" y1="12" x2="446" y2="12"/></g>
+
+        <!-- marcadores -->
+        {partes.map((p) => (
+          <g class="anat__pin" data-part={p.n} tabindex="0" role="button" aria-label={p.nome}>
+            <circle cx={p.x} cy={p.y} r="15" class="anat__pin-bg"/>
+            <text x={p.x} y={p.y + 5} text-anchor="middle" class="anat__pin-num">{p.n}</text>
+          </g>
+        ))}
+      </g>
+    </svg>
+
+    <!-- painel de info (preenchido pelo JS) -->
+    <div id="anat-info" class="anat__info" aria-live="polite">
+      <p class="anat__info-hint">Passe o mouse ou toque numa peça numerada para saber o que é.</p>
+    </div>
+  </div>
+
+  <!-- legenda numerada (fallback completo sem JS) -->
+  <ol class="anat__legend">
+    {partes.map((p) => (
+      <li class="anat__item" data-part={p.n}>
+        <span class="anat__badge">{p.n}</span>
+        <span><strong>{p.nome}.</strong> {p.desc} {p.href && <a href={p.href}>Saiba mais →</a>}</span>
+      </li>
+    ))}
+  </ol>
+</figure>
+
+<style>
+  .anat { margin: 2rem 0; }
+  .anat__stage { display: grid; gap: 1rem; }
+  @media (min-width: 820px) { .anat__stage { grid-template-columns: 1.5fr 1fr; align-items: center; } }
+  .anat__svg { width: 100%; height: auto; background: var(--color-card); border: 1px solid var(--color-border); border-radius: 14px; }
+
+  .anat__pin { cursor: pointer; }
+  .anat__pin-bg { fill: var(--color-brand); stroke: #fff; stroke-width: 2; transition: r 0.15s ease; }
+  .anat__pin-num { fill: #fff; font-size: 15px; font-weight: 800; font-family: Helvetica, Arial, sans-serif; pointer-events: none; }
+  .anat__pin.is-active .anat__pin-bg { r: 20; filter: drop-shadow(0 0 6px var(--color-brand)); }
+  .anat__pin:focus-visible { outline: none; }
+  .anat__pin:focus-visible .anat__pin-bg { r: 20; }
+
+  .anat__info { background: var(--color-elevated); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.1rem 1.25rem; min-height: 8rem; display: flex; flex-direction: column; justify-content: center; }
+  .anat__info-hint { color: var(--color-subtle); font-size: 0.9rem; margin: 0; }
+  .anat__info-title { display: flex; align-items: center; gap: 0.5rem; font-weight: 800; font-size: 1.1rem; margin: 0 0 0.4rem; color: var(--color-foreground); }
+  .anat__info-title span { display: inline-flex; align-items: center; justify-content: center; width: 1.5rem; height: 1.5rem; border-radius: 999px; background: var(--color-brand); color: #fff; font-size: 0.8rem; }
+  .anat__info-desc { color: var(--color-muted); font-size: 0.92rem; line-height: 1.55; margin: 0; }
+  .anat__info-desc a { color: var(--color-brand); font-weight: 600; }
+
+  .anat__legend { list-style: none; margin: 1.25rem 0 0; padding: 0; display: grid; gap: 0.5rem; }
+  @media (min-width: 640px) { .anat__legend { grid-template-columns: 1fr 1fr; } }
+  .anat__item { display: flex; gap: 0.6rem; font-size: 0.88rem; color: var(--color-muted); line-height: 1.5; padding: 0.5rem 0.6rem; border-radius: 10px; border: 1px solid transparent; transition: border-color 0.15s, background 0.15s; }
+  .anat__item.is-active { border-color: var(--color-brand); background: color-mix(in srgb, var(--color-brand) 8%, transparent); }
+  .anat__item strong { color: var(--color-foreground); }
+  .anat__item a { color: var(--color-brand); font-weight: 600; white-space: nowrap; }
+  .anat__badge { flex-shrink: 0; width: 1.4rem; height: 1.4rem; border-radius: 999px; background: var(--color-brand); color: #fff; font-size: 0.78rem; font-weight: 800; display: inline-flex; align-items: center; justify-content: center; }
+</style>
+
+<script>
+  const fig = document.currentScript?.previousElementSibling as HTMLElement | null;
+  const root = fig && fig.classList.contains('anat') ? fig : document.querySelector('.anat');
+  if (root) {
+    const pins = Array.from(root.querySelectorAll<SVGElement>('.anat__pin'));
+    const items = Array.from(root.querySelectorAll<HTMLElement>('.anat__item'));
+    const info = root.querySelector<HTMLElement>('#anat-info')!;
+
+    const data: Record<string, { nome: string; desc: string; href?: string }> = {};
+    items.forEach((li) => {
+      const n = li.dataset.part!;
+      const strong = li.querySelector('strong')?.textContent?.replace(/\.$/, '') || '';
+      const a = li.querySelector('a');
+      const desc = (li.querySelector('span:last-child')?.textContent || '').replace(strong + '.', '').replace('Saiba mais →', '').trim();
+      data[n] = { nome: strong, desc, href: a?.getAttribute('href') || undefined };
+    });
+
+    const setActive = (n: string | null) => {
+      pins.forEach((p) => p.classList.toggle('is-active', p.dataset.part === n));
+      items.forEach((li) => li.classList.toggle('is-active', li.dataset.part === n));
+      if (n && data[n]) {
+        const d = data[n];
+        info.innerHTML = `<p class="anat__info-title"><span>${n}</span>${d.nome}</p><p class="anat__info-desc">${d.desc}${d.href ? ` <a href="${d.href}">Saiba mais →</a>` : ''}</p>`;
+      }
+    };
+
+    pins.forEach((p) => {
+      const n = () => p.dataset.part!;
+      p.addEventListener('mouseenter', () => setActive(n()));
+      p.addEventListener('focus', () => setActive(n()));
+      p.addEventListener('click', () => setActive(n()));
+      p.addEventListener('keydown', (e) => { if ((e as KeyboardEvent).key === 'Enter' || (e as KeyboardEvent).key === ' ') { e.preventDefault(); setActive(n()); } });
+    });
+    items.forEach((li) => {
+      li.addEventListener('mouseenter', () => setActive(li.dataset.part!));
+      li.addEventListener('click', () => setActive(li.dataset.part!));
+    });
+  }
+</script>
