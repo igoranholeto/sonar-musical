@@ -1,0 +1,36 @@
+<svg viewBox="0 0 980 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Fórmula da escala maior: tom, tom, semitom, tom, tom, tom, semitom">
+ <rect width="980" height="320" rx="16" fill="#111214" stroke="#2a2a30" stroke-width="1.5"/>
+ <text x="40" y="46" font-family="Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#e63946">ESCALA MAIOR — a fórmula</text>
+ <text x="40" y="72" font-family="Helvetica,Arial,sans-serif" font-size="14" fill="#9a958d">T = tom (2 casas) · S = semitom (1 casa). Vale para qualquer tônica.</text>
+ <line x1="124" y1="160" x2="168" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="129" y="102" width="34" height="26" rx="6" fill="#1f6b52"/>
+  <text x="146" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">T</text>
+  <text x="146" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">tom</text><line x1="236" y1="160" x2="280" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="241" y="102" width="34" height="26" rx="6" fill="#1f6b52"/>
+  <text x="258" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">T</text>
+  <text x="258" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">tom</text><line x1="348" y1="160" x2="392" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="353" y="102" width="34" height="26" rx="6" fill="#6b3a1f"/>
+  <text x="370" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">S</text>
+  <text x="370" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">semitom</text><line x1="460" y1="160" x2="504" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="465" y="102" width="34" height="26" rx="6" fill="#1f6b52"/>
+  <text x="482" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">T</text>
+  <text x="482" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">tom</text><line x1="572" y1="160" x2="616" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="577" y="102" width="34" height="26" rx="6" fill="#1f6b52"/>
+  <text x="594" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">T</text>
+  <text x="594" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">tom</text><line x1="684" y1="160" x2="728" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="689" y="102" width="34" height="26" rx="6" fill="#1f6b52"/>
+  <text x="706" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">T</text>
+  <text x="706" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">tom</text><line x1="796" y1="160" x2="840" y2="160" stroke="#4a4652" stroke-width="2"/>
+  <rect x="801" y="102" width="34" height="26" rx="6" fill="#6b3a1f"/>
+  <text x="818" y="121" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">S</text>
+  <text x="818" y="212" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="12" fill="#9a958d">semitom</text><circle cx="90" cy="160" r="34" fill="#e63946" stroke="#e63946" stroke-width="2"/>
+  <text x="90" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">C</text><circle cx="202" cy="160" r="34" fill="#26222a" stroke="#3a3a42" stroke-width="2"/>
+  <text x="202" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">D</text><circle cx="314" cy="160" r="34" fill="#26222a" stroke="#3a3a42" stroke-width="2"/>
+  <text x="314" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">E</text><circle cx="426" cy="160" r="34" fill="#26222a" stroke="#3a3a42" stroke-width="2"/>
+  <text x="426" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">F</text><circle cx="538" cy="160" r="34" fill="#26222a" stroke="#3a3a42" stroke-width="2"/>
+  <text x="538" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">G</text><circle cx="650" cy="160" r="34" fill="#26222a" stroke="#3a3a42" stroke-width="2"/>
+  <text x="650" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">A</text><circle cx="762" cy="160" r="34" fill="#26222a" stroke="#3a3a42" stroke-width="2"/>
+  <text x="762" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">B</text><circle cx="874" cy="160" r="34" fill="#e63946" stroke="#e63946" stroke-width="2"/>
+  <text x="874" y="168" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="26" font-weight="800" fill="#fff">C</text>
+ <text x="490" y="296" text-anchor="middle" font-family="Helvetica,Arial,sans-serif" font-size="16" font-weight="700" fill="#c9c4bd">T · T · S · T · T · T · S</text>
+</svg>
