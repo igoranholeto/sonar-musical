@@ -285,6 +285,7 @@ const POSTS = [
   { slug: 'melhores-musicas-para-aprender-guitarra', kicker: 'INICIANTES', l1: 'MÚSICAS', l2: 'PARA TOCAR', sub: 'por nível e gênero', motif: 'tab' },
 
   { slug: 'como-afinar-guitarra-guia-completo', kicker: 'TUTORIAL', l1: 'COMO', l2: 'AFINAR', motif: 'tuner' },
+  { slug: 'afinacoes-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'AFINAÇÕES', l2: 'DE GUITARRA', sub: 'Standard · Drop D · Open G', motif: 'strings' },
   { slug: 'como-fazer-manutencao-guitarra-em-casa', kicker: 'TUTORIAL', l1: 'MANUTENÇÃO', l2: 'EM CASA', sub: 'o que você mesmo faz', motif: 'tools' },
   { slug: 'problemas-comuns-na-guitarra', kicker: 'TUTORIAL', l1: 'PROBLEMAS', l2: 'COMUNS', sub: 'e como resolver', motif: 'tools' },
   { slug: 'fret-buzz-traste-zerando', kicker: 'TUTORIAL', l1: 'FRET BUZZ', l2: 'TRASTE ZERANDO', motif: 'fretboard' },
