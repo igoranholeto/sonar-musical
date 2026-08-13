@@ -1,0 +1,155 @@
+---
+// Glossário de guitarra: renderiza os termos agrupados por letra, com busca
+// interativa, E injeta schema DefinedTermSet + DefinedTerm (um por termo).
+// Progressive enhancement: sem JS, o glossário inteiro fica visível e crawlável.
+const SITE = 'https://sonarmusical.com.br';
+const PAGE = `${SITE}/blog/glossario-de-guitarra/`;
+
+interface Termo { t: string; d: string; href?: string }
+
+const TERMOS: Termo[] = [
+  { t: 'Ação (action)', d: 'A altura das cordas em relação ao braço. Ação baixa é confortável mas pode trastejar; alta cansa a mão.', href: '/blog/como-abaixar-a-acao-da-guitarra/' },
+  { t: 'Afinação', d: 'A sequência de notas em que as cordas soltas são ajustadas — a padrão é E A D G B E.', href: '/blog/afinacoes-de-guitarra/' },
+  { t: 'Alnico', d: 'Liga metálica (alumínio, níquel, cobalto) usada nos ímãs de captadores. Alnico II é mais suave; Alnico V, mais agressivo.', href: '/blog/melhores-captadores-de-guitarra-2026/' },
+  { t: 'Bend', d: 'Técnica de empurrar a corda lateralmente para elevar a nota, criando expressividade — marca do blues e do rock.' },
+  { t: 'Braço (neck)', d: 'A peça longa onde se pressionam as cordas; por dentro corre o tensor.', href: '/blog/partes-da-guitarra-eletrica/' },
+  { t: 'Bobina (coil)', d: 'O fio enrolado que forma o captador. Single coil tem uma; humbucker, duas.' },
+  { t: 'Campo harmônico', d: 'O conjunto dos sete acordes que nascem de uma escala e combinam naturalmente num tom.', href: '/blog/teoria-musical-para-guitarra/' },
+  { t: 'Captador (pickup)', d: 'A bobina com ímãs que transforma a vibração das cordas em sinal elétrico. Define o timbre.', href: '/blog/melhores-captadores-de-guitarra-2026/' },
+  { t: 'Casa (fret)', d: 'O espaço entre dois trastes; pressionar a corda numa casa produz uma nota específica.' },
+  { t: 'Cifra', d: 'Sistema de notação que representa acordes por letras (A a G) acima da letra da música.', href: '/blog/como-ler-cifra-de-guitarra/' },
+  { t: 'Coil split', d: 'Recurso que divide um humbucker para usar só uma bobina, aproximando o timbre de um single coil.' },
+  { t: 'Corpo', d: 'A madeira que sustenta ponte, captadores e eletrônica; influencia timbre, peso e equilíbrio.', href: '/blog/tipos-de-guitarra-eletrica/' },
+  { t: 'Distorção', d: 'Efeito que satura o sinal, criando o timbre sujo e sustentado do rock e do metal.', href: '/blog/pedal-de-distorcao-para-guitarra/' },
+  { t: 'Drop D', d: 'Afinação em que só a 6ª corda desce de E para D, permitindo power chords com um dedo.', href: '/blog/afinacoes-de-guitarra/' },
+  { t: 'Escala (musical)', d: 'Sequência de notas definida por uma fórmula de tons e semitons; define a "cor" da música.', href: '/blog/teoria-musical-para-guitarra/' },
+  { t: 'Escudo (pickguard)', d: 'Placa que protege o corpo da palheta e, em muitas guitarras, sustenta a eletrônica.', href: '/blog/partes-da-guitarra-eletrica/' },
+  { t: 'Feedback (microfonia)', d: 'O apito agudo que surge quando o som do amplificador realimenta os captadores.' },
+  { t: 'Fingerstyle', d: 'Técnica de tocar com os dedos da mão direita em vez de palheta, dedilhando várias cordas.' },
+  { t: 'Fret buzz', d: 'O zumbido metálico quando a corda encosta indevidamente nos trastes.', href: '/blog/fret-buzz-traste-zerando/' },
+  { t: 'Ganho (gain)', d: 'A quantidade de saturação aplicada ao sinal; mais ganho, mais distorção.' },
+  { t: 'Hammer-on', d: 'Técnica de soar uma nota "martelando" o dedo na casa, sem palhetar de novo.' },
+  { t: 'Headstock (cabeça)', d: 'A ponta do braço onde ficam as tarraxas e, logo abaixo, a pestana.', href: '/blog/partes-da-guitarra-eletrica/' },
+  { t: 'Humbucker', d: 'Captador de bobina dupla que cancela ruído e entrega timbre encorpado, ideal para distorção.', href: '/blog/melhores-captadores-de-guitarra-2026/' },
+  { t: 'Jack', d: 'A saída onde se conecta o cabo da guitarra ao amplificador.', href: '/blog/guitarra-chiando-ruido/' },
+  { t: 'Legato', d: 'Tocar notas de forma ligada e fluida, usando hammer-ons e pull-offs em vez de palhetar cada uma.' },
+  { t: 'Luthier', d: 'O profissional que constrói, regula e conserta instrumentos de corda.' },
+  { t: 'Marcadores (inlays)', d: 'As marcas no braço (bolinhas ou blocos) que indicam casas de referência, como 3, 5, 7, 9 e 12.', href: '/blog/partes-da-guitarra-eletrica/' },
+  { t: 'Noiseless', d: 'Captadores single coil projetados para eliminar o ruído característico, mantendo o timbre brilhante.' },
+  { t: 'Oitavação (intonação)', d: 'O ajuste da ponte que garante que a guitarra fique afinada também nas casas altas.', href: '/blog/guitarra-desafinando/' },
+  { t: 'Palhetada alternada', d: 'Técnica de mão direita que alterna palhetadas para baixo e para cima, aumentando a velocidade.' },
+  { t: 'Palm mute', d: 'Abafar levemente as cordas com a lateral da palma perto da ponte, criando um som encurtado e percussivo.' },
+  { t: 'Pedal', d: 'Aparelho que modifica o som da guitarra (distorção, delay, reverb, etc.) na cadeia de sinal.', href: '/blog/pedais-e-pedaleiras-guia-completo/' },
+  { t: 'Pentatônica', d: 'Escala de cinco notas, a base da maioria dos solos de rock e blues.', href: '/blog/escala-pentatonica-de-guitarra/' },
+  { t: 'Pestana (nut)', d: 'A peça no topo do braço com rasuras por onde as cordas passam antes das tarraxas.', href: '/blog/partes-da-guitarra-eletrica/' },
+  { t: 'Ponte (bridge)', d: 'Peça no corpo que fixa as cordas e regula a ação e a oitavação; pode ter tremolo.', href: '/blog/partes-da-guitarra-eletrica/' },
+  { t: 'Power chord', d: 'Acorde de duas ou três notas (tônica e quinta), base do rock e do metal com distorção.' },
+  { t: 'Pull-off', d: 'O oposto do hammer-on: soar uma nota "puxando" o dedo para fora da corda.' },
+  { t: 'Relief (curvatura)', d: 'A leve concavidade do braço, ajustada pelo tensor, necessária para evitar trastejamento.', href: '/blog/fret-buzz-traste-zerando/' },
+  { t: 'Reverb', d: 'Efeito que simula a reverberação de um ambiente, dando profundidade e espaço ao som.' },
+  { t: 'Riff', d: 'Uma frase musical curta e repetida, geralmente a "assinatura" de uma música.' },
+  { t: 'Setup (regulagem)', d: 'O conjunto de ajustes (tensor, ação, oitavação) que deixa a guitarra confortável e afinada.', href: '/blog/como-fazer-manutencao-guitarra-em-casa/' },
+  { t: 'Single coil', d: 'Captador de bobina única, de timbre brilhante e transparente, porém com algum ruído.', href: '/blog/captacoes-guitarra-passivas-vs-ativas/' },
+  { t: 'Slide', d: 'Tubo (de metal ou vidro) usado no dedo para deslizar sobre as cordas; também a técnica de deslizar entre notas.' },
+  { t: 'Sustain', d: 'O tempo que uma nota continua soando após ser tocada.' },
+  { t: 'Sweep picking', d: 'Técnica avançada de "varrer" a palheta por várias cordas em um movimento, comum em solos de arpejo.' },
+  { t: 'Tablatura (tab)', d: 'Notação que mostra em qual corda e casa tocar cada nota — ideal para riffs e solos.', href: '/tablaturas/' },
+  { t: 'Tapping', d: 'Técnica de tocar notas batendo os dedos diretamente nas casas, com as duas mãos no braço.' },
+  { t: 'Tarraxa', d: 'A engrenagem na cabeça que estica ou afrouxa a corda para afinar.', href: '/blog/guitarra-desafinando/' },
+  { t: 'Tensor (truss rod)', d: 'Barra metálica ajustável dentro do braço que controla a curvatura (relief).', href: '/blog/fret-buzz-traste-zerando/' },
+  { t: 'Timbre', d: 'A "cor" ou caráter do som — o que faz uma guitarra soar diferente de outra.' },
+  { t: 'Trastes', d: 'As barras de metal no braço que dividem a escala em casas e definem as notas.', href: '/blog/fret-buzz-traste-zerando/' },
+  { t: 'Tremolo (alavanca)', d: 'A alavanca ligada à ponte que altera a tensão das cordas para efeitos de vibrato e mergulho.' },
+  { t: 'Válvula (valvulado)', d: 'Amplificador que usa válvulas termiônicas, valorizado pela dinâmica e saturação musical.', href: '/blog/amplificador-valvulado-ou-transistor/' },
+  { t: 'Vibrato', d: 'Oscilação sutil e repetida da nota para dar expressividade, feita com o dedo ou com a alavanca.' },
+  { t: 'Wah-wah', d: 'Pedal que varre um filtro, criando o timbre vocal característico ("uau") acionado com o pé.' },
+];
+
+const slug = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+const letras = [...new Set(TERMOS.map((x) => x.t[0].toUpperCase()))].sort();
+const porLetra = letras.map((L) => ({ L, itens: TERMOS.filter((x) => x.t[0].toUpperCase() === L) }));
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'DefinedTermSet',
+  '@id': `${PAGE}#glossario`,
+  name: 'Glossário de Guitarra',
+  description: 'Dicionário de termos de guitarra, do básico ao técnico.',
+  url: PAGE,
+  hasDefinedTerm: TERMOS.map((x) => ({
+    '@type': 'DefinedTerm',
+    name: x.t.replace(/\s*\(.*\)/, ''),
+    description: x.d,
+    url: `${PAGE}#${slug(x.t)}`,
+    inDefinedTermSet: `${PAGE}#glossario`,
+  })),
+};
+---
+
+<div class="glo">
+  <div class="glo__bar">
+    <input type="search" id="glo-search" class="glo__search" placeholder="Buscar termo... (ex.: humbucker, sustain)" aria-label="Buscar termo no glossário" />
+    <nav class="glo__az" aria-label="Índice alfabético">
+      {porLetra.map(({ L }) => <a href={`#glo-${L}`}>{L}</a>)}
+    </nav>
+  </div>
+
+  <div id="glo-empty" class="glo__empty" hidden>Nenhum termo encontrado.</div>
+
+  {porLetra.map(({ L, itens }) => (
+    <section class="glo__grupo" data-letra={L}>
+      <h3 id={`glo-${L}`} class="glo__letra">{L}</h3>
+      <dl class="glo__lista">
+        {itens.map((x) => (
+          <div class="glo__termo" data-term={x.t.toLowerCase()}>
+            <dt id={slug(x.t)}>{x.t}</dt>
+            <dd>{x.d} {x.href && <a href={x.href}>Saiba mais →</a>}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+  ))}
+</div>
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />
+
+<style>
+  .glo { margin: 2rem 0; }
+  .glo__bar { position: sticky; top: 4rem; z-index: 10; background: var(--color-surface); padding: 0.6rem 0; display: flex; flex-direction: column; gap: 0.6rem; border-bottom: 1px solid var(--color-border); margin-bottom: 1.25rem; }
+  .glo__search { width: 100%; padding: 0.7rem 1rem; border-radius: 10px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 0.95rem; }
+  .glo__search:focus { outline: none; border-color: var(--color-brand); }
+  .glo__az { display: flex; flex-wrap: wrap; gap: 0.15rem; }
+  .glo__az a { display: inline-flex; align-items: center; justify-content: center; min-width: 1.7rem; height: 1.7rem; border-radius: 6px; font-size: 0.8rem; font-weight: 700; color: var(--color-muted); text-decoration: none; border: 1px solid var(--color-border); }
+  .glo__az a:hover { color: #fff; background: var(--color-brand); border-color: var(--color-brand); }
+
+  .glo__letra { font-size: 1.5rem; font-weight: 800; color: var(--color-brand); border-bottom: 2px solid var(--color-border); padding-bottom: 0.3rem; margin: 1.5rem 0 0.75rem; scroll-margin-top: 9rem; }
+  .glo__lista { margin: 0; }
+  .glo__termo { padding: 0.6rem 0; border-bottom: 1px solid var(--color-border); }
+  .glo__termo dt { font-weight: 800; color: var(--color-foreground); scroll-margin-top: 9rem; }
+  .glo__termo dd { margin: 0.2rem 0 0; color: var(--color-muted); line-height: 1.55; font-size: 0.94rem; }
+  .glo__termo dd a { color: var(--color-brand); font-weight: 600; white-space: nowrap; }
+  .glo__empty { color: var(--color-muted); padding: 1rem 0; }
+</style>
+
+<script>
+  const search = document.getElementById('glo-search') as HTMLInputElement | null;
+  if (search) {
+    const termos = Array.from(document.querySelectorAll<HTMLElement>('.glo__termo'));
+    const grupos = Array.from(document.querySelectorAll<HTMLElement>('.glo__grupo'));
+    const empty = document.getElementById('glo-empty')!;
+    search.addEventListener('input', () => {
+      const q = search.value.toLowerCase().trim();
+      let visible = 0;
+      termos.forEach((t) => {
+        const match = !q || (t.dataset.term || '').includes(q) || (t.textContent || '').toLowerCase().includes(q);
+        t.style.display = match ? '' : 'none';
+        if (match) visible++;
+      });
+      grupos.forEach((g) => {
+        const anyVisible = Array.from(g.querySelectorAll<HTMLElement>('.glo__termo')).some((t) => t.style.display !== 'none');
+        g.style.display = anyVisible ? '' : 'none';
+      });
+      empty.hidden = visible > 0;
+    });
+  }
+</script>
