@@ -288,6 +288,7 @@ const POSTS = [
   { slug: 'afinacoes-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'AFINAÇÕES', l2: 'DE GUITARRA', sub: 'Standard · Drop D · Open G', motif: 'strings' },
   { slug: 'partes-da-guitarra-eletrica', kicker: 'TÉCNICA E TEORIA', l1: 'PARTES DA', l2: 'GUITARRA', sub: 'anatomia peça por peça', motif: 'guitar', opt: { body: '#b5202d' } },
   { slug: 'teoria-musical-para-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TEORIA', l2: 'MUSICAL', sub: 'escalas · acordes · tonalidades', motif: 'fretboard' },
+  { slug: 'glossario-de-guitarra', kicker: 'REFERÊNCIA · A a Z', l1: 'GLOSSÁRIO', l2: 'DA GUITARRA', sub: 'todos os termos explicados', motif: 'guitar', opt: { body: '#101014', guard: '#c9a45a' } },
   { slug: 'como-fazer-manutencao-guitarra-em-casa', kicker: 'TUTORIAL', l1: 'MANUTENÇÃO', l2: 'EM CASA', sub: 'o que você mesmo faz', motif: 'tools' },
   { slug: 'problemas-comuns-na-guitarra', kicker: 'TUTORIAL', l1: 'PROBLEMAS', l2: 'COMUNS', sub: 'e como resolver', motif: 'tools' },
   { slug: 'fret-buzz-traste-zerando', kicker: 'TUTORIAL', l1: 'FRET BUZZ', l2: 'TRASTE ZERANDO', motif: 'fretboard' },
