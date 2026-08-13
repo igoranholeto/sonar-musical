@@ -1,0 +1,132 @@
+---
+// Braço interativo: escolha uma tônica e uma escala e as notas acendem no
+// braço da guitarra. Progressive enhancement — sem JS, mostra o braço com as
+// casas e uma legenda estática; o JS acende as notas conforme a seleção.
+const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+// Cordas de cima (mizinha, aguda) para baixo (grossa, grave): e B G D A E
+const OPENS = [4, 11, 7, 2, 9, 4];
+const FRETS = 12;
+const nutX = 56, dx = 62, y0 = 42, dy = 40;
+const scales = ['Maior', 'Menor', 'Pent. maior', 'Pent. menor', 'Blues'];
+const inlays = [3, 5, 7, 9];
+---
+
+<figure class="fb" aria-label="Braço de guitarra interativo para visualizar escalas">
+  <div class="fb__controls">
+    <div class="fb__group" role="group" aria-label="Tônica">
+      <span class="fb__label">Tônica</span>
+      <div class="fb__btns">
+        {NOTES.map((n, i) => (
+          <button type="button" class="fb__note" data-tonic={i} aria-pressed={i === 0 ? 'true' : 'false'}>{n}</button>
+        ))}
+      </div>
+    </div>
+    <div class="fb__group" role="group" aria-label="Escala">
+      <span class="fb__label">Escala</span>
+      <div class="fb__btns">
+        {scales.map((s, i) => (
+          <button type="button" class="fb__scale" data-scale={s} aria-pressed={i === 0 ? 'true' : 'false'}>{s}</button>
+        ))}
+      </div>
+    </div>
+  </div>
+
+  <div class="fb__stage">
+    <svg viewBox="0 0 852 264" class="fb__svg" role="img" aria-label="Braço da guitarra">
+      <!-- escala do braço -->
+      <rect x={nutX} y={y0 - 14} width={FRETS * dx} height={5 * dy + 28} rx="4" fill="#1b120b"/>
+      <rect x={nutX - 8} y={y0 - 16} width="8" height={5 * dy + 32} rx="2" fill="#d8d3c6"/>
+      <!-- trastes -->
+      {Array.from({ length: FRETS }, (_, f) => (
+        <line x1={nutX + (f + 1) * dx} y1={y0 - 14} x2={nutX + (f + 1) * dx} y2={y0 + 5 * dy + 14} stroke="#4a3a28" stroke-width="2"/>
+      ))}
+      <!-- marcadores -->
+      {inlays.map((f) => (
+        <circle cx={nutX + (f - 0.5) * dx} cy={y0 + 2 * dy} r="6" fill="#e9e4da" opacity="0.28"/>
+      ))}
+      <circle cx={nutX + 11.5 * dx} cy={y0 + dy} r="6" fill="#e9e4da" opacity="0.28"/>
+      <circle cx={nutX + 11.5 * dx} cy={y0 + 3 * dy} r="6" fill="#e9e4da" opacity="0.28"/>
+      <!-- cordas -->
+      {OPENS.map((_, s) => (
+        <line x1={nutX} y1={y0 + s * dy} x2={nutX + FRETS * dx} y2={y0 + s * dy} stroke="#8a8577" stroke-width={1 + s * 0.4} opacity="0.8"/>
+      ))}
+      <!-- números das casas -->
+      {[3, 5, 7, 9, 12].map((f) => (
+        <text x={nutX + (f - 0.5) * dx} y={y0 + 5 * dy + 30} text-anchor="middle" font-size="12" fill="#9a958d" font-family="Helvetica,Arial,sans-serif">{f}</text>
+      ))}
+      <!-- notas (todas renderizadas; o JS mostra as da escala) -->
+      {OPENS.map((open, s) =>
+        Array.from({ length: FRETS + 1 }, (_, f) => {
+          const note = (open + f) % 12;
+          const cx = f === 0 ? nutX - 26 : nutX + (f - 0.5) * dx;
+          const cy = y0 + s * dy;
+          return (
+            <g class="fb__dot" data-note={note} data-open={f === 0 ? 'true' : 'false'} transform={`translate(${cx},${cy})`}>
+              <circle r="13" class="fb__dot-bg"/>
+              <text text-anchor="middle" y="4" class="fb__dot-txt">{NOTES[note]}</text>
+            </g>
+          );
+        })
+      )}
+    </svg>
+  </div>
+  <p class="fb__hint"><span class="fb__key fb__key--root"></span> tônica &nbsp; <span class="fb__key fb__key--note"></span> nota da escala</p>
+</figure>
+
+<style>
+  .fb { margin: 2rem 0; }
+  .fb__controls { display: flex; flex-wrap: wrap; gap: 1.25rem 2rem; margin-bottom: 1.1rem; }
+  .fb__label { display: block; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.07em; color: var(--color-subtle); margin-bottom: 0.4rem; }
+  .fb__btns { display: flex; flex-wrap: wrap; gap: 0.3rem; }
+  .fb__note, .fb__scale { padding: 0.35rem 0.6rem; border-radius: 8px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 0.82rem; font-weight: 600; cursor: pointer; transition: border-color 0.12s, background 0.12s; }
+  .fb__note { min-width: 2.1rem; }
+  .fb__note:hover, .fb__scale:hover { border-color: var(--color-brand); }
+  .fb__note[aria-pressed='true'], .fb__scale[aria-pressed='true'] { background: var(--color-brand); color: #fff; border-color: var(--color-brand); }
+
+  .fb__stage { overflow-x: auto; }
+  .fb__svg { width: 100%; min-width: 620px; height: auto; background: var(--color-card); border: 1px solid var(--color-border); border-radius: 14px; }
+  .fb__dot { opacity: 0; transition: opacity 0.12s; pointer-events: none; }
+  .fb__dot.is-in { opacity: 1; }
+  .fb__dot-bg { fill: #3a3a42; }
+  .fb__dot.is-root .fb__dot-bg { fill: var(--color-brand); }
+  .fb__dot-txt { fill: #fff; font-size: 12px; font-weight: 700; font-family: Helvetica, Arial, sans-serif; }
+
+  .fb__hint { margin-top: 0.7rem; font-size: 0.82rem; color: var(--color-muted); display: flex; align-items: center; gap: 0.3rem; }
+  .fb__key { display: inline-block; width: 14px; height: 14px; border-radius: 999px; vertical-align: middle; }
+  .fb__key--root { background: var(--color-brand); }
+  .fb__key--note { background: #3a3a42; margin-left: 0.6rem; }
+</style>
+
+<script>
+  const fig = document.querySelector('.fb');
+  if (fig) {
+    const SCALES: Record<string, number[]> = {
+      'Maior': [0, 2, 4, 5, 7, 9, 11],
+      'Menor': [0, 2, 3, 5, 7, 8, 10],
+      'Pent. maior': [0, 2, 4, 7, 9],
+      'Pent. menor': [0, 3, 5, 7, 10],
+      'Blues': [0, 3, 5, 6, 7, 10],
+    };
+    const dots = Array.from(fig.querySelectorAll<SVGElement>('.fb__dot'));
+    const tonicBtns = Array.from(fig.querySelectorAll<HTMLButtonElement>('.fb__note'));
+    const scaleBtns = Array.from(fig.querySelectorAll<HTMLButtonElement>('.fb__scale'));
+    let tonic = 0;
+    let scale = 'Maior';
+
+    const render = () => {
+      const set = new Set(SCALES[scale].map((i) => (tonic + i) % 12));
+      dots.forEach((d) => {
+        const note = Number(d.dataset.note);
+        const inScale = set.has(note);
+        d.classList.toggle('is-in', inScale);
+        d.classList.toggle('is-root', inScale && note === tonic);
+      });
+    };
+    const press = (btns: HTMLButtonElement[], active: HTMLButtonElement) =>
+      btns.forEach((b) => b.setAttribute('aria-pressed', String(b === active)));
+
+    tonicBtns.forEach((b) => b.addEventListener('click', () => { tonic = Number(b.dataset.tonic); press(tonicBtns, b); render(); }));
+    scaleBtns.forEach((b) => b.addEventListener('click', () => { scale = b.dataset.scale!; press(scaleBtns, b); render(); }));
+    render();
+  }
+</script>
