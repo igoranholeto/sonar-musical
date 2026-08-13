@@ -1,0 +1,98 @@
+---
+// Círculo das quintas interativo. Clique numa tonalidade e veja a armadura de
+// clave (sustenidos/bemóis) e a tonalidade relativa menor. Progressive
+// enhancement: sem JS, as 12 tonalidades + a legenda ficam visíveis.
+interface Key { t: string; sigShort: string; sig: string; rel: string; }
+const KEYS: Key[] = [
+  { t: 'C', sigShort: '—', sig: 'sem sustenidos nem bemóis', rel: 'Lá menor (Am)' },
+  { t: 'G', sigShort: '1♯', sig: '1 sustenido (Fá#)', rel: 'Mi menor (Em)' },
+  { t: 'D', sigShort: '2♯', sig: '2 sustenidos', rel: 'Si menor (Bm)' },
+  { t: 'A', sigShort: '3♯', sig: '3 sustenidos', rel: 'Fá# menor (F#m)' },
+  { t: 'E', sigShort: '4♯', sig: '4 sustenidos', rel: 'Dó# menor (C#m)' },
+  { t: 'B', sigShort: '5♯', sig: '5 sustenidos', rel: 'Sol# menor (G#m)' },
+  { t: 'F#', sigShort: '6♯', sig: '6 sustenidos', rel: 'Ré# menor (D#m)' },
+  { t: 'Db', sigShort: '5♭', sig: '5 bemóis', rel: 'Si♭ menor (Bbm)' },
+  { t: 'Ab', sigShort: '4♭', sig: '4 bemóis', rel: 'Fá menor (Fm)' },
+  { t: 'Eb', sigShort: '3♭', sig: '3 bemóis', rel: 'Dó menor (Cm)' },
+  { t: 'Bb', sigShort: '2♭', sig: '2 bemóis', rel: 'Sol menor (Gm)' },
+  { t: 'F', sigShort: '1♭', sig: '1 bemol (Si♭)', rel: 'Ré menor (Dm)' },
+];
+const cx = 170, cy = 170, R = 130;
+const pos = KEYS.map((_, i) => {
+  const a = (-90 + i * 30) * (Math.PI / 180);
+  return { x: cx + R * Math.cos(a), y: cy + R * Math.sin(a) };
+});
+---
+
+<figure class="cq" aria-label="Círculo das quintas interativo">
+  <div class="cq__stage">
+    <svg viewBox="0 0 340 340" class="cq__svg" role="img" aria-label="Círculo das quintas">
+      <circle cx={cx} cy={cy} r={R} fill="none" stroke="var(--color-border)" stroke-width="1.5"/>
+      {KEYS.map((k, i) => (
+        <g class="cq__key" data-i={i} transform={`translate(${pos[i].x},${pos[i].y})`} tabindex="0" role="button" aria-label={k.t}>
+          <circle r="27" class="cq__key-bg"/>
+          <text text-anchor="middle" y="-2" class="cq__key-t">{k.t}</text>
+          <text text-anchor="middle" y="13" class="cq__key-s">{k.sigShort}</text>
+        </g>
+      ))}
+    </svg>
+    <div id="cq-info" class="cq__info" aria-live="polite">
+      <p class="cq__hint">Clique numa tonalidade maior para ver a armadura e a relativa menor.</p>
+    </div>
+  </div>
+</figure>
+
+<style>
+  .cq { margin: 2rem 0; }
+  .cq__stage { display: grid; gap: 1rem; align-items: center; }
+  @media (min-width: 720px) { .cq__stage { grid-template-columns: 340px 1fr; } }
+  .cq__svg { width: 100%; max-width: 340px; height: auto; margin: 0 auto; background: var(--color-card); border: 1px solid var(--color-border); border-radius: 14px; }
+  .cq__key { cursor: pointer; }
+  .cq__key-bg { fill: var(--color-elevated); stroke: var(--color-border); stroke-width: 1.5; transition: fill 0.12s, stroke 0.12s; }
+  .cq__key:hover .cq__key-bg { stroke: var(--color-brand); }
+  .cq__key.is-active .cq__key-bg { fill: var(--color-brand); stroke: var(--color-brand); }
+  .cq__key-t { font-size: 17px; font-weight: 800; fill: var(--color-foreground); font-family: Helvetica, Arial, sans-serif; }
+  .cq__key-s { font-size: 10px; fill: var(--color-muted); font-family: Helvetica, Arial, sans-serif; }
+  .cq__key.is-active .cq__key-t, .cq__key.is-active .cq__key-s { fill: #fff; }
+  .cq__key:focus-visible .cq__key-bg { stroke: var(--color-brand); stroke-width: 2.5; }
+
+  .cq__info { background: var(--color-elevated); border: 1px solid var(--color-border); border-radius: 12px; padding: 1.1rem 1.25rem; min-height: 7rem; display: flex; flex-direction: column; justify-content: center; }
+  .cq__hint { color: var(--color-subtle); font-size: 0.9rem; margin: 0; }
+  .cq__info-title { font-size: 1.3rem; font-weight: 800; margin: 0 0 0.6rem; color: var(--color-foreground); }
+  .cq__info dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 0.3rem 0.8rem; font-size: 0.92rem; }
+  .cq__info dt { color: var(--color-subtle); font-weight: 600; }
+  .cq__info dd { margin: 0; color: var(--color-foreground); }
+</style>
+
+<script>
+  const fig = document.querySelector('.cq');
+  if (fig) {
+    const KEYS = [
+      { t: 'Dó (C)', sig: 'sem sustenidos nem bemóis', rel: 'Lá menor (Am)' },
+      { t: 'Sol (G)', sig: '1 sustenido (Fá#)', rel: 'Mi menor (Em)' },
+      { t: 'Ré (D)', sig: '2 sustenidos (Fá#, Dó#)', rel: 'Si menor (Bm)' },
+      { t: 'Lá (A)', sig: '3 sustenidos', rel: 'Fá# menor (F#m)' },
+      { t: 'Mi (E)', sig: '4 sustenidos', rel: 'Dó# menor (C#m)' },
+      { t: 'Si (B)', sig: '5 sustenidos', rel: 'Sol# menor (G#m)' },
+      { t: 'Fá# (F#)', sig: '6 sustenidos', rel: 'Ré# menor (D#m)' },
+      { t: 'Ré♭ (Db)', sig: '5 bemóis', rel: 'Si♭ menor (Bbm)' },
+      { t: 'Lá♭ (Ab)', sig: '4 bemóis', rel: 'Fá menor (Fm)' },
+      { t: 'Mi♭ (Eb)', sig: '3 bemóis', rel: 'Dó menor (Cm)' },
+      { t: 'Si♭ (Bb)', sig: '2 bemóis', rel: 'Sol menor (Gm)' },
+      { t: 'Fá (F)', sig: '1 bemol (Si♭)', rel: 'Ré menor (Dm)' },
+    ];
+    const keys = Array.from(fig.querySelectorAll<SVGElement>('.cq__key'));
+    const info = fig.querySelector<HTMLElement>('#cq-info')!;
+    const select = (i: number) => {
+      keys.forEach((k) => k.classList.toggle('is-active', Number(k.dataset.i) === i));
+      const k = KEYS[i];
+      info.innerHTML = `<p class="cq__info-title">Tom de ${k.t} maior</p><dl><dt>Armadura</dt><dd>${k.sig}</dd><dt>Relativa menor</dt><dd>${k.rel}</dd></dl>`;
+    };
+    keys.forEach((k) => {
+      const i = Number(k.dataset.i);
+      k.addEventListener('click', () => select(i));
+      k.addEventListener('keydown', (e) => { const ev = e as KeyboardEvent; if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(i); } });
+    });
+    select(0);
+  }
+</script>

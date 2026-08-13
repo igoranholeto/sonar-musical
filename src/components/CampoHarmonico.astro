@@ -1,0 +1,81 @@
+---
+// Campo harmônico interativo: escolha um tom maior e veja os 7 acordes da
+// tonalidade, com os graus (I ii iii IV V vi vii°). Progressive enhancement:
+// sem JS, mostra o campo de Dó maior por padrão (renderizado no servidor).
+const GRAUS = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'];
+const KEYS = [
+  { t: 'C', ch: ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'B°'] },
+  { t: 'G', ch: ['G', 'Am', 'Bm', 'C', 'D', 'Em', 'F#°'] },
+  { t: 'D', ch: ['D', 'Em', 'F#m', 'G', 'A', 'Bm', 'C#°'] },
+  { t: 'A', ch: ['A', 'Bm', 'C#m', 'D', 'E', 'F#m', 'G#°'] },
+  { t: 'E', ch: ['E', 'F#m', 'G#m', 'A', 'B', 'C#m', 'D#°'] },
+  { t: 'B', ch: ['B', 'C#m', 'D#m', 'E', 'F#', 'G#m', 'A#°'] },
+  { t: 'F#', ch: ['F#', 'G#m', 'A#m', 'B', 'C#', 'D#m', 'E#°'] },
+  { t: 'Db', ch: ['Db', 'Ebm', 'Fm', 'Gb', 'Ab', 'Bbm', 'C°'] },
+  { t: 'Ab', ch: ['Ab', 'Bbm', 'Cm', 'Db', 'Eb', 'Fm', 'G°'] },
+  { t: 'Eb', ch: ['Eb', 'Fm', 'Gm', 'Ab', 'Bb', 'Cm', 'D°'] },
+  { t: 'Bb', ch: ['Bb', 'Cm', 'Dm', 'Eb', 'F', 'Gm', 'A°'] },
+  { t: 'F', ch: ['F', 'Gm', 'Am', 'Bb', 'C', 'Dm', 'E°'] },
+];
+---
+
+<figure class="ch" aria-label="Campo harmônico interativo">
+  <div class="ch__btns" role="group" aria-label="Tom">
+    {KEYS.map((k, i) => (
+      <button type="button" class="ch__key" data-i={i} aria-pressed={i === 0 ? 'true' : 'false'}>{k.t}</button>
+    ))}
+  </div>
+  <div class="ch__grid" id="ch-grid">
+    {KEYS[0].ch.map((c, i) => (
+      <div class="ch__card">
+        <span class="ch__grau">{GRAUS[i]}</span>
+        <span class="ch__acorde">{c}</span>
+      </div>
+    ))}
+  </div>
+  <p class="ch__cap">Os <strong>7 acordes</strong> do tom selecionado. Progressões populares saem daí — como <strong>I–V–vi–IV</strong>.</p>
+</figure>
+
+<style>
+  .ch { margin: 2rem 0; }
+  .ch__btns { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 1rem; }
+  .ch__key { min-width: 2.4rem; padding: 0.4rem 0.6rem; border-radius: 8px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: border-color 0.12s, background 0.12s; }
+  .ch__key:hover { border-color: var(--color-brand); }
+  .ch__key[aria-pressed='true'] { background: var(--color-brand); color: #fff; border-color: var(--color-brand); }
+
+  .ch__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; }
+  @media (max-width: 560px) { .ch__grid { grid-template-columns: repeat(4, 1fr); } }
+  .ch__card { display: flex; flex-direction: column; align-items: center; gap: 0.35rem; padding: 0.9rem 0.4rem; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-card); }
+  .ch__grau { font-size: 0.7rem; font-weight: 700; color: var(--color-brand); text-transform: uppercase; letter-spacing: 0.03em; }
+  .ch__acorde { font-size: 1.15rem; font-weight: 800; color: var(--color-foreground); }
+  .ch__cap { margin-top: 0.9rem; font-size: 0.85rem; color: var(--color-muted); }
+  .ch__cap strong { color: var(--color-foreground); }
+</style>
+
+<script>
+  const fig = document.querySelector('.ch');
+  if (fig) {
+    const GRAUS = ['I', 'ii', 'iii', 'IV', 'V', 'vi', 'vii°'];
+    const KEYS = [
+      ['C', 'Dm', 'Em', 'F', 'G', 'Am', 'B°'],
+      ['G', 'Am', 'Bm', 'C', 'D', 'Em', 'F#°'],
+      ['D', 'Em', 'F#m', 'G', 'A', 'Bm', 'C#°'],
+      ['A', 'Bm', 'C#m', 'D', 'E', 'F#m', 'G#°'],
+      ['E', 'F#m', 'G#m', 'A', 'B', 'C#m', 'D#°'],
+      ['B', 'C#m', 'D#m', 'E', 'F#', 'G#m', 'A#°'],
+      ['F#', 'G#m', 'A#m', 'B', 'C#', 'D#m', 'E#°'],
+      ['Db', 'Ebm', 'Fm', 'Gb', 'Ab', 'Bbm', 'C°'],
+      ['Ab', 'Bbm', 'Cm', 'Db', 'Eb', 'Fm', 'G°'],
+      ['Eb', 'Fm', 'Gm', 'Ab', 'Bb', 'Cm', 'D°'],
+      ['Bb', 'Cm', 'Dm', 'Eb', 'F', 'Gm', 'A°'],
+      ['F', 'Gm', 'Am', 'Bb', 'C', 'Dm', 'E°'],
+    ];
+    const grid = fig.querySelector<HTMLElement>('#ch-grid')!;
+    const btns = Array.from(fig.querySelectorAll<HTMLButtonElement>('.ch__key'));
+    const select = (i: number) => {
+      btns.forEach((b) => b.setAttribute('aria-pressed', String(Number(b.dataset.i) === i)));
+      grid.innerHTML = KEYS[i].map((c, d) => `<div class="ch__card"><span class="ch__grau">${GRAUS[d]}</span><span class="ch__acorde">${c}</span></div>`).join('');
+    };
+    btns.forEach((b) => b.addEventListener('click', () => select(Number(b.dataset.i))));
+  }
+</script>
