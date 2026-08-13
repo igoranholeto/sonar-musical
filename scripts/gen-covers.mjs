@@ -286,6 +286,7 @@ const POSTS = [
 
   { slug: 'como-afinar-guitarra-guia-completo', kicker: 'TUTORIAL', l1: 'COMO', l2: 'AFINAR', motif: 'tuner' },
   { slug: 'afinacoes-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'AFINAÇÕES', l2: 'DE GUITARRA', sub: 'Standard · Drop D · Open G', motif: 'strings' },
+  { slug: 'partes-da-guitarra-eletrica', kicker: 'TÉCNICA E TEORIA', l1: 'PARTES DA', l2: 'GUITARRA', sub: 'anatomia peça por peça', motif: 'guitar', opt: { body: '#b5202d' } },
   { slug: 'como-fazer-manutencao-guitarra-em-casa', kicker: 'TUTORIAL', l1: 'MANUTENÇÃO', l2: 'EM CASA', sub: 'o que você mesmo faz', motif: 'tools' },
   { slug: 'problemas-comuns-na-guitarra', kicker: 'TUTORIAL', l1: 'PROBLEMAS', l2: 'COMUNS', sub: 'e como resolver', motif: 'tools' },
   { slug: 'fret-buzz-traste-zerando', kicker: 'TUTORIAL', l1: 'FRET BUZZ', l2: 'TRASTE ZERANDO', motif: 'fretboard' },
