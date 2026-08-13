@@ -183,7 +183,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     </div>
 
     <!-- Título -->
-    <h1 class="text-3xl sm:text-4xl font-bold leading-tight mb-4">{title}</h1>
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-[1.1] mb-4">{title}</h1>
 
     <!-- Metadados -->
     <div class="flex flex-wrap items-center gap-4 text-sm text-muted mb-8 pb-8 border-b border-border">
@@ -204,7 +204,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
 
     <!-- Imagem de capa -->
     {image && (
-      <figure class="mb-10 rounded-xl overflow-hidden">
+      <figure class="mb-10 rounded-2xl overflow-hidden border border-border shadow-xl shadow-black/20">
         <img
           src={unsplashSrc(image, 900)}
           srcset={`${unsplashSrc(image, 900)} 1x, ${unsplashSrc(image, 1600)} 2x`}
@@ -298,10 +298,28 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
 
   <style>
     .prose-post :global(h2) {
-      font-size: 1.5rem;
-      font-weight: 700;
-      margin-top: 2.5rem;
+      position: relative;
+      font-size: 1.6rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      margin-top: 2.75rem;
       margin-bottom: 1rem;
+      padding-left: 0.9rem;
+      color: var(--color-foreground);
+    }
+    .prose-post :global(h2)::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.16em;
+      bottom: 0.16em;
+      width: 4px;
+      border-radius: 3px;
+      background: linear-gradient(var(--color-brand), var(--color-brand-dark));
+    }
+    .prose-post :global(p:first-of-type) {
+      font-size: 1.15rem;
+      line-height: 1.7;
       color: var(--color-foreground);
     }
     .prose-post :global(h3) {
@@ -323,14 +341,31 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       color: var(--color-muted);
     }
     .prose-post :global(li) {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.55rem;
       line-height: 1.7;
     }
+    .prose-post :global(ul) {
+      list-style: none;
+    }
     .prose-post :global(ul li) {
-      list-style-type: disc;
+      position: relative;
+    }
+    .prose-post :global(ul li)::before {
+      content: '';
+      position: absolute;
+      left: -1.1rem;
+      top: 0.62em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--color-brand);
     }
     .prose-post :global(ol li) {
       list-style-type: decimal;
+    }
+    .prose-post :global(ol li)::marker {
+      color: var(--color-brand);
+      font-weight: 700;
     }
     .prose-post :global(strong) {
       color: var(--color-foreground);
@@ -345,11 +380,15 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       color: #ff5b67;
     }
     .prose-post :global(blockquote) {
-      border-left: 3px solid #e63946;
-      padding-left: 1rem;
-      margin: 1.5rem 0;
-      color: var(--color-muted);
-      font-style: italic;
+      border-left: 4px solid var(--color-brand);
+      background: color-mix(in srgb, var(--color-brand) 6%, var(--color-elevated));
+      padding: 1rem 1.25rem;
+      border-radius: 0 12px 12px 0;
+      margin: 1.75rem 0;
+      color: var(--color-foreground);
+    }
+    .prose-post :global(blockquote p:last-child) {
+      margin-bottom: 0;
     }
     .prose-post :global(code) {
       background: var(--color-elevated);
@@ -367,15 +406,18 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       max-width: 100%;
       overflow-x: auto;
       border-collapse: collapse;
-      margin: 1.5rem 0;
+      margin: 1.75rem 0;
       font-size: 0.95rem;
+      border: 1px solid var(--color-border);
+      border-radius: 12px;
       -webkit-overflow-scrolling: touch;
     }
     .prose-post :global(th) {
-      background: var(--color-elevated);
+      background: color-mix(in srgb, var(--color-brand) 9%, var(--color-elevated));
       padding: 0.75rem 1rem;
       text-align: left;
-      font-weight: 600;
+      font-weight: 700;
+      color: var(--color-foreground);
       border-bottom: 1px solid var(--color-border);
     }
     .prose-post :global(td) {
@@ -387,8 +429,11 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       background: var(--color-elevated);
     }
     .prose-post :global(hr) {
-      border-color: var(--color-border);
-      margin: 2rem 0;
+      border: none;
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--color-border) 15%, var(--color-brand) 50%, var(--color-border) 85%, transparent);
+      opacity: 0.65;
+      margin: 2.75rem 0;
     }
     /* Compensa o header fixo (h-16) ao pular para uma âncora do índice */
     .prose-post :global(h2),
