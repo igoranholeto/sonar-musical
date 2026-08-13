@@ -252,6 +252,11 @@ const POSTS = [
   { slug: 'quem-inventou-a-guitarra-eletrica', kicker: 'HISTÓRIA', l1: 'QUEM', l2: 'INVENTOU?', sub: 'a guitarra elétrica', motif: 'guitar', opt: { body: '#8a5a2a', guard: '#efe9dd' } },
   { slug: 'squier-classic-vibe-60s-stratocaster-review', kicker: 'REVIEW', l1: 'SQUIER', l2: 'CLASSIC VIBE', motif: 'guitar', opt: { body: '#3a6ea5', guard: '#f0ece2' } },
   { slug: 'guitarra-com-amplificador-kit-iniciante', kicker: 'GUIA DE COMPRA', l1: 'KIT', l2: 'INICIANTE', sub: 'guitarra + amplificador', motif: 'guitar', opt: { body: '#b5202d' } },
+  { slug: 'melhores-marcas-de-guitarra-nacionais', kicker: 'GUIA DE COMPRA', l1: 'MARCAS', l2: 'NACIONAIS', sub: 'Tagima · Giannini · Strinberg', motif: 'guitar', opt: { body: '#1c7a3a', guard: '#e9e4da' } },
+  { slug: 'guitarra-tagima-e-boa', kicker: 'GUIA · MARCAS', l1: 'TAGIMA', l2: 'É BOA?', motif: 'guitar', opt: { body: '#101014', guard: '#c9a45a' } },
+  { slug: 'guitarra-giannini-vale-a-pena', kicker: 'GUIA · MARCAS', l1: 'GIANNINI', l2: 'VALE A PENA?', motif: 'guitar', opt: { body: '#8a3b12', guard: '#efe9dd' } },
+  { slug: 'guitarras-nacionais-baratas', kicker: 'GUIA DE COMPRA', l1: 'NACIONAIS', l2: 'BARATAS', sub: 'Strinberg · Michael · SX', motif: 'guitar', opt: { body: '#e0642a', guard: '#f0ece2' } },
+  { slug: 'tagima-vs-squier', kicker: 'COMPARATIVO', l1: 'TAGIMA vs', l2: 'SQUIER', motif: 'guitar', opt: { body: '#2f6db0', guard: '#f0ece2' } },
 
   { slug: 'amplificador-de-guitarra-guia-completo', kicker: 'AMPLIFICADORES', l1: 'AMPLIFICADOR', l2: 'DE GUITARRA', motif: 'amp' },
   { slug: 'amplificador-valvulado-ou-transistor', kicker: 'AMPLIFICADORES', l1: 'VALVULADO', l2: 'ou TRANSISTOR', motif: 'amp' },
