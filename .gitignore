@@ -29,3 +29,6 @@ covers-src/_alts.json
 covers-src/_photo_*.png
 covers-src/_photo_*.jpg
 covers-src/_photo_all.jpg
+
+# Pins do Pinterest (gerados, não fazem parte do site)
+pins/
