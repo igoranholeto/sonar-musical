@@ -334,6 +334,11 @@ function buildSVG(p) {
 </svg>`;
 }
 
+export { DEFS, wordmark, M, POSTS, motifLabel };
+
+// Só executa a geração quando rodado direto (não quando importado por gen-pins).
+const isMain = process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('/scripts/gen-covers.mjs');
+if (isMain) {
 const only = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : null;
 const list = only ? POSTS.filter((p) => p.slug === only) : POSTS;
 const results = [];
@@ -361,3 +366,4 @@ if (process.argv.includes('--montage')) {
 fs.writeFileSync('covers-src/_alts.json', JSON.stringify(Object.fromEntries(results.map((r) => [r.slug, r.alt])), null, 2));
 fs.writeFileSync('covers-src/_covers.json', JSON.stringify(Object.fromEntries(results.map((r) => [r.slug, { kicker: r.kicker, l1: r.l1, l2: r.l2, motif: r.motif }])), null, 2));
 console.log(`\n${results.length} capas geradas.`);
+}
