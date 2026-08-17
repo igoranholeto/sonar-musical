@@ -308,6 +308,9 @@ const POSTS = [
 
   { slug: 'melhores-violoes-2026', kicker: 'VIOLÕES · 2026', l1: 'MELHORES', l2: 'VIOLÕES', motif: 'acoustic' },
   { slug: 'violao-ou-guitarra-por-onde-comecar', kicker: 'INICIANTES', l1: 'VIOLÃO ou', l2: 'GUITARRA?', motif: 'acoustic' },
+  { slug: 'como-tocar-violao-para-iniciantes', kicker: 'INICIANTES', l1: 'COMO TOCAR', l2: 'VIOLÃO', sub: 'guia do zero', motif: 'acoustic' },
+  { slug: 'tecnicas-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TÉCNICAS', l2: 'DE GUITARRA', sub: 'bend · vibrato · palm mute', motif: 'fretboard' },
+  { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },
 ];
 
 // ---------- render ----------
