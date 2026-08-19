@@ -1,15 +1,67 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+
+const faq = [
+  {
+    question: 'Como afinar o violão online pelo microfone?',
+    answer: 'Selecione "Violão" e a afinação desejada, clique em "Ativar Microfone" e permita o acesso. Toque uma corda por vez: o afinador detecta a nota automaticamente e mostra se ela está grave (aperte a cravelha) ou aguda (afrouxe). Quando a agulha fica no centro e verde, a corda está afinada. Não precisa instalar nada — funciona direto no navegador do celular ou do computador.',
+  },
+  {
+    question: 'Este afinador de violão e guitarra é grátis?',
+    answer: 'Sim, é 100% gratuito e sem limites de uso. Você não precisa criar conta, baixar aplicativo nem pagar nada. O afinador funciona online, direto no navegador, usando o microfone do seu aparelho.',
+  },
+  {
+    question: 'É melhor que o afinador do Google?',
+    answer: 'O afinador do Google é ótimo para uma afinação padrão rápida, mas mostra apenas a nota. O nosso afinador é feito para músicos: traz afinações prontas para violão e guitarra (Standard, Drop D, Drop C, Open G/D/E, DADGAD, meio e um tom abaixo), mostra o desvio exato em cents, a direção do ajuste e destaca qual corda você está afinando.',
+  },
+  {
+    question: 'Preciso instalar algum aplicativo ou dar permissão?',
+    answer: 'Não é preciso instalar nada. Só é necessário permitir o acesso ao microfone quando o navegador pedir — o áudio é processado localmente, no seu próprio aparelho, e nada é gravado ou enviado para servidores.',
+  },
+  {
+    question: 'O afinador funciona no celular?',
+    answer: 'Sim. Funciona em celulares Android e iPhone, tablets e computadores, em navegadores como Chrome, Safari, Firefox e Edge. Basta abrir a página, permitir o microfone e tocar as cordas.',
+  },
+  {
+    question: 'Qual a afinação padrão do violão e da guitarra?',
+    answer: 'A afinação padrão das duas é E-A-D-G-B-E (Mi, Lá, Ré, Sol, Si, Mi), da sexta corda (mais grave) para a primeira (mais aguda). É a afinação "Standard (E)" que já vem selecionada. A partir dela você pode escolher variações como Drop D ou meio tom abaixo no menu de afinações.',
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Afinador Online de Guitarra e Violão — Sonar Musical',
+    url: 'https://sonarmusical.com.br/afinador/',
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'Web',
+    browserRequirements: 'Requer microfone e navegador com suporte a JavaScript',
+    inLanguage: 'pt-BR',
+    description: 'Afinador cromático online e gratuito para violão e guitarra, com detecção automática pelo microfone e afinações prontas (Standard, Drop D, Open G, DADGAD e mais).',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  },
+];
 ---
 
 <BaseLayout
-  title="Afinador Online Grátis — Guitarra e Violão"
-  description="Afine sua guitarra ou violão online e de graça. Suporte a afinações Standard, Drop D, Open G, DADGAD e muito mais. Funciona direto no navegador."
+  title="Afinador Online de Violão e Guitarra — Grátis"
+  description="Afinador de violão e guitarra online e grátis, pelo microfone. Detecção automática de notas e afinações prontas: Standard, Drop D, Open G, DADGAD e mais. Sem instalar nada."
+  schema={schema}
 >
   <section class="tuner-page">
     <div class="tuner-header">
-      <h1>Afinador Online</h1>
-      <p class="tuner-subtitle">Microfone · Detecção automática · Gratuito</p>
+      <h1>Afinador Online de Violão e Guitarra</h1>
+      <p class="tuner-subtitle">Microfone · Detecção automática · Grátis</p>
     </div>
 
     <!-- Seleção de instrumento -->
@@ -142,6 +194,66 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         <p class="info-card__text">Guitarra: Standard E, Drop D, Drop C, Open G/D/E, DADGAD, Half/Full Step Down.</p>
         <p class="info-card__text">Violão: Standard, Drop D, Open G/D, Nashville, DADGAD.</p>
       </div>
+    </div>
+
+    <!-- Conteúdo SEO ─────────────────────────────────────────── -->
+    <div class="tuner-content">
+      <h2>Afinador de violão e guitarra grátis, direto no navegador</h2>
+      <p>
+        Este é um <strong>afinador online</strong> gratuito que funciona pelo microfone do seu
+        celular ou computador — sem instalar aplicativo e sem criar conta. Ele serve tanto como
+        <strong>afinador de violão</strong> quanto como <strong>afinador de guitarra</strong>: basta
+        escolher o instrumento, tocar uma corda por vez e seguir a agulha até o centro. A detecção é
+        automática, então você não precisa apertar nada a cada corda.
+      </p>
+
+      <h2>Como afinar o violão ou a guitarra pelo microfone</h2>
+      <ol>
+        <li>Escolha <strong>Violão</strong> ou <strong>Guitarra</strong> no topo.</li>
+        <li>Selecione a afinação (a padrão é <em>Standard E</em>: E-A-D-G-B-E).</li>
+        <li>Clique em <strong>Ativar Microfone</strong> e permita o acesso.</li>
+        <li>Toque uma corda solta. A nota aparece e a agulha mostra o desvio.</li>
+        <li>Agulha à esquerda = grave (aperte a cravelha); à direita = aguda (afrouxe).</li>
+        <li>Quando ficar verde e no centro, a corda está afinada. Repita nas seis.</li>
+      </ol>
+      <p>
+        Se você está começando, vale entender o básico antes: veja o
+        <a href="/blog/nome-das-cordas-da-guitarra/">nome das cordas da guitarra</a> e o guia de
+        <a href="/blog/como-afinar-guitarra-guia-completo/">como afinar a guitarra</a> passo a passo.
+      </p>
+
+      <h2>Afinações disponíveis</h2>
+      <p>
+        Além da afinação padrão, o afinador traz as variações mais usadas — ótimas para rock, blues e
+        metal: <strong>Drop D</strong>, <strong>Drop C</strong>, <strong>Open G</strong>,
+        <strong>Open D</strong>, <strong>Open E</strong>, <strong>DADGAD</strong> e afinações
+        <strong>meio tom</strong> e <strong>um tom abaixo</strong>. Conheça cada uma no guia de
+        <a href="/blog/afinacoes-de-guitarra/">afinações de guitarra</a>. Cordas velhas dificultam a
+        afinação e a mantêm instável — se a sua não segura o tom, talvez seja hora de trocar: veja as
+        <a href="/blog/melhores-cordas-de-guitarra-2026/">melhores cordas de guitarra</a> e a diferença
+        entre <a href="/blog/cordas-de-guitarra-009-ou-010/">calibres 009 e 010</a>.
+      </p>
+
+      <h2>É melhor que o afinador do Google?</h2>
+      <p>
+        O <em>afinador do Google</em> resolve uma afinação padrão rápida, mas mostra só a nota. Este
+        afinador é feito para músicos: traz afinações prontas para violão e guitarra, mostra o desvio
+        exato em <em>cents</em>, indica a direção do ajuste e destaca qual corda você está afinando —
+        tudo de graça e sem instalar nada. Precisa de um metrônomo para treinar o ritmo? Use também o
+        nosso <a href="/metronomo/">metrônomo online</a> e o
+        <a href="/acordes/">dicionário de acordes</a>.
+      </p>
+
+      <!-- FAQ ──────────────────────────────────────────────────── -->
+      <section class="tuner-faq" aria-label="Perguntas frequentes">
+        <h2>Perguntas frequentes</h2>
+        {faq.map((f) => (
+          <details class="tuner-faq__item">
+            <summary>{f.question}</summary>
+            <p>{f.answer}</p>
+          </details>
+        ))}
+      </section>
     </div>
   </section>
 </BaseLayout>
@@ -576,6 +688,96 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     .info-section .info-card:first-child {
       grid-column: 1 / -1;
     }
+  }
+
+  /* ── Conteúdo SEO ────────────────────────────────────────── */
+  .tuner-content {
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--color-border);
+  }
+
+  .tuner-content h2 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    margin: 2rem 0 0.75rem;
+    color: var(--color-foreground);
+  }
+
+  .tuner-content h2:first-child { margin-top: 0; }
+
+  .tuner-content p {
+    font-size: 0.92rem;
+    line-height: 1.7;
+    color: var(--color-muted);
+    margin: 0 0 1rem;
+  }
+
+  .tuner-content ol {
+    margin: 0 0 1rem;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .tuner-content ol li {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: var(--color-muted);
+  }
+
+  .tuner-content a {
+    color: var(--color-brand);
+    text-decoration: none;
+  }
+
+  .tuner-content a:hover { text-decoration: underline; }
+
+  /* ── FAQ ─────────────────────────────────────────────────── */
+  .tuner-faq { margin-top: 2.5rem; }
+
+  .tuner-faq__item {
+    border: 1px solid var(--color-border);
+    border-radius: 0.75rem;
+    padding: 0.9rem 1.1rem;
+    margin-bottom: 0.6rem;
+    background: var(--color-card);
+  }
+
+  .tuner-faq__item summary {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--color-foreground);
+    cursor: pointer;
+    list-style: none;
+    position: relative;
+    padding-right: 1.5rem;
+  }
+
+  .tuner-faq__item summary::-webkit-details-marker { display: none; }
+
+  .tuner-faq__item summary::after {
+    content: '+';
+    position: absolute;
+    right: 0;
+    top: -0.1rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color-brand);
+    transition: transform 0.2s;
+  }
+
+  .tuner-faq__item[open] summary::after {
+    transform: rotate(45deg);
+  }
+
+  .tuner-faq__item p {
+    font-size: 0.86rem;
+    line-height: 1.65;
+    color: var(--color-muted);
+    margin: 0.75rem 0 0;
   }
 </style>
 
