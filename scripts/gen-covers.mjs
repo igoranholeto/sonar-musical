@@ -257,6 +257,11 @@ const POSTS = [
   { slug: 'guitarra-giannini-vale-a-pena', kicker: 'GUIA · MARCAS', l1: 'GIANNINI', l2: 'VALE A PENA?', motif: 'guitar', opt: { body: '#8a3b12', guard: '#efe9dd' } },
   { slug: 'guitarras-nacionais-baratas', kicker: 'GUIA DE COMPRA', l1: 'NACIONAIS', l2: 'BARATAS', sub: 'Strinberg · Michael · SX', motif: 'guitar', opt: { body: '#e0642a', guard: '#f0ece2' } },
   { slug: 'tagima-vs-squier', kicker: 'COMPARATIVO', l1: 'TAGIMA vs', l2: 'SQUIER', motif: 'guitar', opt: { body: '#2f6db0', guard: '#f0ece2' } },
+  { slug: 'guitarra-telecaster-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'TELE', l2: 'CASTER', motif: 'guitar', opt: { body: '#caa042', guard: '#1a1418' } },
+  { slug: 'guitarra-ibanez-guia-completo', kicker: 'GUITARRAS · MARCA', l1: 'GUITARRA', l2: 'IBANEZ', motif: 'guitar', opt: { body: '#155e75', guard: '#d8d3c6' } },
+  { slug: 'guitarra-sg-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'GUITARRA', l2: 'SG', motif: 'guitarLP', opt: { body: '#a01f2d', guard: '#241a10' } },
+  { slug: 'guitarra-semi-acustica-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'SEMI', l2: 'ACÚSTICA', motif: 'guitarLP', opt: { body: '#8a5a2a', guard: '#241a10' } },
+  { slug: 'guitarra-jackson-guia-completo', kicker: 'GUITARRAS · MARCA', l1: 'GUITARRA', l2: 'JACKSON', motif: 'guitar', opt: { body: '#161018', guard: '#c8c3b8' } },
 
   { slug: 'amplificador-de-guitarra-guia-completo', kicker: 'AMPLIFICADORES', l1: 'AMPLIFICADOR', l2: 'DE GUITARRA', motif: 'amp' },
   { slug: 'amplificador-valvulado-ou-transistor', kicker: 'AMPLIFICADORES', l1: 'VALVULADO', l2: 'ou TRANSISTOR', motif: 'amp' },
@@ -334,6 +339,11 @@ function buildSVG(p) {
 </svg>`;
 }
 
+export { DEFS, wordmark, M, POSTS, motifLabel };
+
+// Só executa a geração quando rodado direto (não quando importado por gen-pins).
+const isMain = process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('/scripts/gen-covers.mjs');
+if (isMain) {
 const only = process.argv[2] && !process.argv[2].startsWith('--') ? process.argv[2] : null;
 const list = only ? POSTS.filter((p) => p.slug === only) : POSTS;
 const results = [];
@@ -361,3 +371,4 @@ if (process.argv.includes('--montage')) {
 fs.writeFileSync('covers-src/_alts.json', JSON.stringify(Object.fromEntries(results.map((r) => [r.slug, r.alt])), null, 2));
 fs.writeFileSync('covers-src/_covers.json', JSON.stringify(Object.fromEntries(results.map((r) => [r.slug, { kicker: r.kicker, l1: r.l1, l2: r.l2, motif: r.motif }])), null, 2));
 console.log(`\n${results.length} capas geradas.`);
+}
