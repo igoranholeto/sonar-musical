@@ -32,3 +32,5 @@ covers-src/_photo_all.jpg
 
 # Pins do Pinterest (gerados, não fazem parte do site)
 pins/
+covers-src/photos/
+covers-src/_photo_montage.png

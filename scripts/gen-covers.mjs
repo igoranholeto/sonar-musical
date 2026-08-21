@@ -342,7 +342,7 @@ function buildSVG(p) {
 </svg>`;
 }
 
-export { DEFS, wordmark, M, POSTS, motifLabel };
+export { DEFS, wordmark, textBlock, M, POSTS, motifLabel };
 
 // Só executa a geração quando rodado direto (não quando importado por gen-pins).
 const isMain = process.argv[1] && process.argv[1].replace(/\\/g, '/').endsWith('/scripts/gen-covers.mjs');
