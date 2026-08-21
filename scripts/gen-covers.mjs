@@ -262,6 +262,9 @@ const POSTS = [
   { slug: 'guitarra-sg-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'GUITARRA', l2: 'SG', motif: 'guitarLP', opt: { body: '#a01f2d', guard: '#241a10' } },
   { slug: 'guitarra-semi-acustica-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'SEMI', l2: 'ACÚSTICA', motif: 'guitarLP', opt: { body: '#8a5a2a', guard: '#241a10' } },
   { slug: 'guitarra-jackson-guia-completo', kicker: 'GUITARRAS · MARCA', l1: 'GUITARRA', l2: 'JACKSON', motif: 'guitar', opt: { body: '#161018', guard: '#c8c3b8' } },
+  { slug: 'guitarra-strinberg-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'STRINBERG', motif: 'guitar', opt: { body: '#5a3a8a', guard: '#e9e4da' } },
+  { slug: 'guitarra-flying-v-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'FLYING', l2: 'V', motif: 'guitar', opt: { body: '#161018', guard: '#c8323e' } },
+  { slug: 'guitarra-yamaha-guia-completo', kicker: 'GUITARRAS · MARCA', l1: 'GUITARRA', l2: 'YAMAHA', motif: 'guitar', opt: { body: '#0e6b6b', guard: '#e9e4da' } },
 
   { slug: 'amplificador-de-guitarra-guia-completo', kicker: 'AMPLIFICADORES', l1: 'AMPLIFICADOR', l2: 'DE GUITARRA', motif: 'amp' },
   { slug: 'amplificador-valvulado-ou-transistor', kicker: 'AMPLIFICADORES', l1: 'VALVULADO', l2: 'ou TRANSISTOR', motif: 'amp' },
