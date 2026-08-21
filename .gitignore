@@ -29,3 +29,7 @@ covers-src/_alts.json
 covers-src/_photo_*.png
 covers-src/_photo_*.jpg
 covers-src/_photo_all.jpg
+
+# Pins do Pinterest e fotos-fonte das capas (gerados/baixados, não fazem parte do site)
+pins/
+covers-src/photos/

@@ -266,3 +266,143 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
     fonteUrl: 'https://commons.wikimedia.org/wiki/File:Miles_Davis_1987.png',
   },
 ];
+
+/**
+ * Fotos de guitarras usadas como recorte nas capas dos artigos (no lugar da
+ * ilustração vetorial). Todas do Wikimedia Commons, sob Creative Commons, com
+ * fundo removido/recortado para composição — a atribuição é exigida pela licença.
+ */
+export interface CreditoCapa {
+  /** O que a foto retrata e onde é usada. */
+  descricao: string;
+  autor: string;
+  autorUrl?: string;
+  licenca: string;
+  licencaUrl?: string;
+  fonteUrl: string;
+}
+
+export const CREDITOS_CAPAS: CreditoCapa[] = [
+  {
+    descricao: "Fender Stratocaster (guia da Strinberg e outras)",
+    autor: "Auge=mit",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Stratocaster_Relic_FCS_AvR.png",
+  },
+  {
+    descricao: "Fender Telecaster American Vintage 1952 (guia da Telecaster)",
+    autor: "Massimo Barbieri",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Telecaster_American_Vintage_1952_transparent.png",
+  },
+  {
+    descricao: "Gibson ES-335 (guia da guitarra semiacústica)",
+    autor: "Auge=mit",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson_ES_335_64_GCS_AvR.png",
+  },
+  {
+    descricao: "Gibson Flying V Classic White (guia da Flying V)",
+    autor: "Monika Fischer",
+    licenca: "CC BY-SA 2.5",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/2.5/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson_Flying_V_Classic_White_noBG.png",
+  },
+  {
+    descricao: "Yamaha Pacifica 112VCX (guia da Yamaha)",
+    autor: "muzyczny.pl",
+    autorUrl: "http://muzyczny.pl",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gitara_elektryczna_Pacifica_112-VCX_firmy_Yamaha.jpg",
+  },
+  {
+    descricao: "Gibson Moderne (glossário da guitarra)",
+    autor: "Guitarpimp",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Guitarpimp",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson-Moderne-Heritage_noBG.jpg",
+  },
+  {
+    descricao: "Epiphone Casino (guia da Giannini)",
+    autor: "Maxo",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Maxo",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Epiphone_Casino_VT_noBG.jpg",
+  },
+  {
+    descricao: "Fender Jazzmaster (guia da Tagima)",
+    autor: "Dirk-X · recorte de Auge=mit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Jazzmaster_red_noBG.jpg",
+  },
+  {
+    descricao: "Fender Jag-Stang (guia das nacionais baratas)",
+    autor: "Quentin Thiel · recorte de Auge=mit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Jag-Stang_Sonic_Blue_noBG.png",
+  },
+  {
+    descricao: "Fender Starcaster (guia das marcas nacionais)",
+    autor: "Tasmer",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Tasmer",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Starcaster_noBG.png",
+  },
+  {
+    descricao: "Gibson Les Paul 59 (guia de presentes)",
+    autor: "Auge=mit",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:GIBSON_Les_Paul_59_Collectors_Choice_CC4_SANDY_No_010_AvR.png",
+  },
+  {
+    descricao: "Ibanez Artist (partes da guitarra)",
+    autor: "NSX-Racer",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:NSX-Racer",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Ibanez_Artist_noBG.png",
+  },
+  {
+    descricao: "Gibson Explorer (quanto custa ser guitarrista)",
+    autor: "Guitarpimp",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Guitarpimp",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson-Explorer_noBG.png",
+  },
+  {
+    descricao: "Gibson ES-350T de Chuck Berry (quem inventou a guitarra)",
+    autor: "Smithsonian (CC0)",
+    licenca: "CC0",
+    licencaUrl: "https://creativecommons.org/publicdomain/zero/1.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson_ES_350T_Chuck_Berry_noBG.png",
+  },
+  {
+    descricao: "Fender Jaguar (Tagima vs Squier)",
+    autor: "badgreeb fattkatt · recorte de Auge=mit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Jaguar_3_tone_burst_noBG.png",
+  },
+  {
+    descricao: "Ibanez Artcore AS73G (guia da Ibanez)",
+    autor: "Auge=mit",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Ibanez_AS73G_PBM_noBG.png",
+  },
+];
