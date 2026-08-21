@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CREDITOS_FOTOS } from '../data/creditos';
+import { CREDITOS_FOTOS, CREDITOS_CAPAS } from '../data/creditos';
 
 // Agrupa os créditos por banda, preservando a ordem de entrada.
 const grupos = CREDITOS_FOTOS.reduce((acc, foto) => {
@@ -67,6 +67,37 @@ const creditosSchema = {
         </section>
       ))}
     </div>
+
+    <section class="mt-14 pt-8 border-t border-border" aria-labelledby="capas-guitarra">
+      <h2 id="capas-guitarra" class="text-xl font-extrabold tracking-tight mb-4">Fotos de guitarra nas capas</h2>
+      <p class="text-sm text-muted leading-relaxed mb-4">
+        Algumas capas de artigos usam uma foto de guitarra recortada (fundo removido) no lugar da
+        ilustração, também do <a href="https://commons.wikimedia.org/" target="_blank" rel="noopener noreferrer" class="text-brand hover:underline underline-offset-2">Wikimedia Commons</a>, sob Creative Commons:
+      </p>
+      <ul class="space-y-3">
+        {CREDITOS_CAPAS.map((foto) => (
+          <li class="bg-card border border-border rounded-xl p-4 text-sm leading-relaxed">
+            <div class="font-semibold text-foreground">{foto.descricao}</div>
+            <div class="text-muted mt-1">
+              Foto de{' '}
+              {foto.autorUrl ? (
+                <a href={foto.autorUrl} target="_blank" rel="noopener noreferrer" class="text-brand hover:underline underline-offset-2">{foto.autor}</a>
+              ) : (
+                <span class="text-foreground">{foto.autor}</span>
+              )}
+              {' · '}
+              {foto.licencaUrl ? (
+                <a href={foto.licencaUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">{foto.licenca}</a>
+              ) : (
+                <span>{foto.licenca}</span>
+              )}
+              {' · '}
+              <a href={foto.fonteUrl} target="_blank" rel="noopener noreferrer" class="hover:underline underline-offset-2">fonte</a>
+            </div>
+          </li>
+        ))}
+      </ul>
+    </section>
 
     <section class="mt-14 pt-8 border-t border-border" aria-labelledby="outras-fontes">
       <h2 id="outras-fontes" class="text-xl font-extrabold tracking-tight mb-4">Outras fontes de imagem</h2>
