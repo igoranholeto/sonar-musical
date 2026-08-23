@@ -114,7 +114,7 @@ const schema = [albumSchema, breadcrumbSchema];
           >
             {genero} · Álbum
           </span>
-          <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(30px,5.5vw,58px)">{nome === nomeBanda ? `${nome} (Álbum${ano ? ` de ${ano}` : ''})` : nome}</h1>
+          <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(30px,5.5vw,58px)">{nome === nomeBanda ? `${nome} (Álbum${ano ? ` de ${ano}` : ''})` : `${nome} — ${nomeBanda}`}</h1>
           <div class="text-[15px] text-white/80 font-medium mt-2.5">
             {nomeBanda} {ano && <>· {ano}</>}
           </div>

@@ -405,4 +405,27 @@ export const CREDITOS_CAPAS: CreditoCapa[] = [
     licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
     fonteUrl: "https://commons.wikimedia.org/wiki/File:Ibanez_AS73G_PBM_noBG.png",
   },
+  {
+    descricao: "Fender Stratocaster sunburst de 1958 (guia da Fender)",
+    autor: "Lightburst",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Lightburst",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:1958_Fender_Stratocaster.jpg",
+  },
+  {
+    descricao: "B.C. Rich Warlock (guia da guitarra Warlock)",
+    autor: "Phil Burton",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:BC_Rich_Warlock_Guitar.JPG",
+  },
+  {
+    descricao: "Captador Schaller na boca de um violão (guia do captador para violão)",
+    autor: "Wosch21149",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Wosch21149",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Schaller-Pickup.jpg",
+  },
 ];
