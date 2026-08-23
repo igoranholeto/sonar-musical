@@ -83,6 +83,12 @@
     "l2": "CUSTA?",
     "motif": "guitar"
   },
+  "quanto-custa-ser-guitarrista-no-brasil": {
+    "kicker": "GUIA · CUSTOS · 2026",
+    "l1": "CUSTO DE SER",
+    "l2": "GUITARRISTA",
+    "motif": "guitar"
+  },
   "quantas-cordas-tem-uma-guitarra": {
     "kicker": "TÉCNICA",
     "l1": "QUANTAS",
@@ -105,6 +111,84 @@
     "kicker": "GUIA DE COMPRA",
     "l1": "KIT",
     "l2": "INICIANTE",
+    "motif": "guitar"
+  },
+  "melhores-marcas-de-guitarra-nacionais": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "MARCAS",
+    "l2": "NACIONAIS",
+    "motif": "guitar"
+  },
+  "guitarra-tagima-e-boa": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "TAGIMA",
+    "l2": "É BOA?",
+    "motif": "guitar"
+  },
+  "guitarra-giannini-vale-a-pena": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "GIANNINI",
+    "l2": "VALE A PENA?",
+    "motif": "guitar"
+  },
+  "guitarras-nacionais-baratas": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "NACIONAIS",
+    "l2": "BARATAS",
+    "motif": "guitar"
+  },
+  "tagima-vs-squier": {
+    "kicker": "COMPARATIVO",
+    "l1": "TAGIMA vs",
+    "l2": "SQUIER",
+    "motif": "guitar"
+  },
+  "guitarra-telecaster-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "TELE",
+    "l2": "CASTER",
+    "motif": "guitar"
+  },
+  "guitarra-ibanez-guia-completo": {
+    "kicker": "GUITARRAS · MARCA",
+    "l1": "GUITARRA",
+    "l2": "IBANEZ",
+    "motif": "guitar"
+  },
+  "guitarra-sg-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "GUITARRA",
+    "l2": "SG",
+    "motif": "guitarLP"
+  },
+  "guitarra-semi-acustica-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "SEMI",
+    "l2": "ACÚSTICA",
+    "motif": "guitarLP"
+  },
+  "guitarra-jackson-guia-completo": {
+    "kicker": "GUITARRAS · MARCA",
+    "l1": "GUITARRA",
+    "l2": "JACKSON",
+    "motif": "guitar"
+  },
+  "guitarra-strinberg-guia-completo": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "GUITARRA",
+    "l2": "STRINBERG",
+    "motif": "guitar"
+  },
+  "guitarra-flying-v-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "FLYING",
+    "l2": "V",
+    "motif": "guitar"
+  },
+  "guitarra-yamaha-guia-completo": {
+    "kicker": "GUITARRAS · MARCA",
+    "l1": "GUITARRA",
+    "l2": "YAMAHA",
     "motif": "guitar"
   },
   "amplificador-de-guitarra-guia-completo": {
@@ -251,17 +335,77 @@
     "l2": "CIFRA",
     "motif": "tab"
   },
+  "melhores-musicas-para-aprender-guitarra": {
+    "kicker": "INICIANTES",
+    "l1": "MÚSICAS",
+    "l2": "PARA TOCAR",
+    "motif": "tab"
+  },
   "como-afinar-guitarra-guia-completo": {
     "kicker": "TUTORIAL",
     "l1": "COMO",
     "l2": "AFINAR",
     "motif": "tuner"
   },
+  "afinacoes-de-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "AFINAÇÕES",
+    "l2": "DE GUITARRA",
+    "motif": "strings"
+  },
+  "partes-da-guitarra-eletrica": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "PARTES DA",
+    "l2": "GUITARRA",
+    "motif": "guitar"
+  },
+  "teoria-musical-para-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "TEORIA",
+    "l2": "MUSICAL",
+    "motif": "fretboard"
+  },
+  "glossario-de-guitarra": {
+    "kicker": "REFERÊNCIA · A a Z",
+    "l1": "GLOSSÁRIO",
+    "l2": "DA GUITARRA",
+    "motif": "guitar"
+  },
   "como-fazer-manutencao-guitarra-em-casa": {
     "kicker": "TUTORIAL",
     "l1": "MANUTENÇÃO",
     "l2": "EM CASA",
     "motif": "tools"
+  },
+  "problemas-comuns-na-guitarra": {
+    "kicker": "TUTORIAL",
+    "l1": "PROBLEMAS",
+    "l2": "COMUNS",
+    "motif": "tools"
+  },
+  "fret-buzz-traste-zerando": {
+    "kicker": "TUTORIAL",
+    "l1": "FRET BUZZ",
+    "l2": "TRASTE ZERANDO",
+    "motif": "fretboard"
+  },
+  "guitarra-chiando-ruido": {
+    "kicker": "TUTORIAL",
+    "l1": "GUITARRA",
+    "l2": "CHIANDO",
+    "motif": "pickups"
+  },
+  "guitarra-desafinando": {
+    "kicker": "TUTORIAL",
+    "l1": "GUITARRA",
+    "l2": "DESAFINANDO",
+    "motif": "tuner"
+  },
+  "como-abaixar-a-acao-da-guitarra": {
+    "kicker": "TUTORIAL",
+    "l1": "ABAIXAR",
+    "l2": "A AÇÃO",
+    "motif": "strings"
   },
   "como-tocar-enter-sandman-metallica": {
     "kicker": "COMO TOCAR",
@@ -298,5 +442,23 @@
     "l1": "VIOLÃO ou",
     "l2": "GUITARRA?",
     "motif": "acoustic"
+  },
+  "como-tocar-violao-para-iniciantes": {
+    "kicker": "INICIANTES",
+    "l1": "COMO TOCAR",
+    "l2": "VIOLÃO",
+    "motif": "acoustic"
+  },
+  "tecnicas-de-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "TÉCNICAS",
+    "l2": "DE GUITARRA",
+    "motif": "fretboard"
+  },
+  "melhores-presentes-para-guitarristas": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "PRESENTES",
+    "l2": "P/ GUITARRISTAS",
+    "motif": "guitar"
   }
 }
