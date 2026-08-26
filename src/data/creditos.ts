@@ -428,4 +428,26 @@ export const CREDITOS_CAPAS: CreditoCapa[] = [
     licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
     fonteUrl: "https://commons.wikimedia.org/wiki/File:Schaller-Pickup.jpg",
   },
+  {
+    descricao: "Guitarras Gibson Les Paul na parede de uma loja (guia da Gibson)",
+    autor: "Pierre Prégardien",
+    licenca: "CC0",
+    licencaUrl: "https://creativecommons.org/publicdomain/zero/1.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson_Les_Paul_guitars_at_guitar_shop_(2012-07-20_15.30.54_by_Pierre_Pr%C3%A9gardien_@pixnio).jpg",
+  },
+  {
+    descricao: "Conectores P10 de um cabo de guitarra (guia do cabo de guitarra)",
+    autor: "Claude-Étienne Armingaud (Claudé)",
+    licenca: "CC BY-SA 3.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/3.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Guitar_Jack.JPG",
+  },
+  {
+    descricao: "Guitarrista tocando um solo no braço da guitarra (guia de solos de guitarra)",
+    autor: "Mostafameraji",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Mostafameraji",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Lead_guitarists.jpg",
+  },
 ];
