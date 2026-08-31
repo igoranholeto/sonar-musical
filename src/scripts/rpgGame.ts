@@ -72,7 +72,7 @@ interface LeaderboardEntry {
 
 const HEARTS_MAX = 3;
 // Tempo de resposta começa em QUESTION_TIME_START e cai QUESTION_TIME_STEP
-// segundos a cada resposta, até o piso QUESTION_TIME_MIN — fica mais apertado
+// segundos a cada resposta, até o piso QUESTION_TIME_MIN, fica mais apertado
 // aos poucos ao longo da corrida, sem depender de uma dificuldade escolhida.
 const QUESTION_TIME_START = 20;
 const QUESTION_TIME_MIN = 7;
@@ -871,7 +871,7 @@ export function initRpgGame() {
           return;
         }
         if (enemy?.isBoss) {
-          // O boss só cai com 3 acertos — errar não faz ele ir embora.
+          // O boss só cai com 3 acertos, errar não faz ele ir embora.
           setTimeout(() => renderQuestion(), 300);
         } else {
           // Inimigo comum: errou, ele escapa e o próximo oponente aparece.
@@ -995,7 +995,7 @@ export function initRpgGame() {
     leaderboardList.innerHTML = '';
     const entries = await fetchLeaderboard();
     if (entries === null) {
-      submitStatus.textContent = 'Ranking global indisponível neste ambiente agora — mas sua pontuação ficou registrada aqui na tela.';
+      submitStatus.textContent = 'Ranking global indisponível neste ambiente agora, mas sua pontuação ficou registrada aqui na tela.';
     } else {
       submitStatus.textContent = '';
       renderLeaderboard(entries);

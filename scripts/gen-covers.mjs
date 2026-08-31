@@ -96,7 +96,7 @@ M.guitarLP = ({ body = '#c9a03a', guard = '#241a10' } = {}) => `
     <g stroke="#6f6b60" stroke-width="1.2" opacity="0.8"><line x1="30" y1="-11" x2="448" y2="-11"/><line x1="30" y1="-6" x2="448" y2="-6"/><line x1="30" y1="-1" x2="448" y2="-1"/><line x1="30" y1="4" x2="448" y2="4"/><line x1="30" y1="9" x2="448" y2="9"/></g>
   </g>`;
 
-// VIOLÃO (acústico) — corpo em figura-8 (dois bojos sobrepostos)
+// VIOLÃO (acústico), corpo em figura-8 (dois bojos sobrepostos)
 M.acoustic = () => `
   <g transform="translate(900,350) rotate(-22) scale(0.98)">
     <rect x="120" y="-13" width="320" height="26" rx="4" fill="#3a2a18"/>
@@ -318,7 +318,10 @@ const POSTS = [
   { slug: 'violao-ou-guitarra-por-onde-comecar', kicker: 'INICIANTES', l1: 'VIOLÃO ou', l2: 'GUITARRA?', motif: 'acoustic' },
   { slug: 'como-tocar-violao-para-iniciantes', kicker: 'INICIANTES', l1: 'COMO TOCAR', l2: 'VIOLÃO', sub: 'guia do zero', motif: 'acoustic' },
   { slug: 'tecnicas-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TÉCNICAS', l2: 'DE GUITARRA', sub: 'bend · vibrato · palm mute', motif: 'fretboard' },
-  { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },
+  { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },
+  { slug: 'pedaleira-zoom-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'ZOOM', sub: 'G1X Four · G3n · G6', motif: 'pedal', opt: { tone: '#1f5a8a' } },
+  { slug: 'pedaleira-boss-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'BOSS', sub: 'GT-1 · ME-90 · GT-1000', motif: 'pedal', opt: { tone: '#7a1520' } },
+  { slug: 'curso-de-guitarra-como-aprender', kicker: 'INICIANTES', l1: 'CURSO DE', l2: 'GUITARRA', sub: 'como aprender do zero', motif: 'fretboard' },
 ];
 
 // ---------- render ----------
@@ -356,7 +359,7 @@ for (const p of list) {
   await sharp(Buffer.from(svg), { density: 150 }).resize(1200, 675).png({ compressionLevel: 9 }).toFile(file);
   const kb = Math.round(fs.statSync(file).size / 1024);
   const cap = `${p.l1} ${p.l2 || ''}`.trim().toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
-  results.push({ slug: p.slug, motif: p.motif, kb, kicker: p.kicker, l1: p.l1, l2: p.l2 || '', alt: `${cap} — ilustração de ${motifLabel[p.motif]}, capa do Sonar Musical` });
+  results.push({ slug: p.slug, motif: p.motif, kb, kicker: p.kicker, l1: p.l1, l2: p.l2 || '', alt: `${cap}, ilustração de ${motifLabel[p.motif]}, capa do Sonar Musical` });
   console.log(`✓ ${p.slug}.png (${p.motif}, ${kb}KB)`);
 }
 

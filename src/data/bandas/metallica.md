@@ -161,7 +161,7 @@ albuns:
       - tema: Vício e controle mental
         explicacao: A faixa-título "Master of Puppets" narra o vício em cocaína pela
           perspectiva da própria droga, que assume o papel de titereiro
-          controlando quem seria o usuário — um dos retratos mais diretos que a
+          controlando quem seria o usuário, um dos retratos mais diretos que a
           banda já fez sobre dependência química.
       - tema: Institucionalização psiquiátrica injusta
         explicacao: A faixa "Welcome Home (Sanitarium)" se inspira no livro "One Flew
@@ -257,7 +257,7 @@ albuns:
       - tema: Guerra e trauma físico
         explicacao: A faixa "One" narra a história de um soldado que perde braços,
           pernas e sentidos após pisar em uma mina, preso à própria consciência
-          sem conseguir se comunicar — inspirada no livro "Johnny Got His Gun",
+          sem conseguir se comunicar, inspirada no livro "Johnny Got His Gun",
           de Dalton Trumbo. A faixa ganhou o primeiro videoclipe da banda e se
           tornou um hino antiguerra.
       - tema: Perseguição e exclusão social
@@ -308,7 +308,7 @@ albuns:
           da carreira da banda até ali. Ironicamente, perdeu o primeiro Grammy
           de Melhor Performance de Hard Rock/Metal da história para "Crest of a
           Knave", do Jethro Tull, uma derrota considerada uma das maiores zebras
-          da premiação — o Metallica passou a estampar a frase "Grammy Award
+          da premiação, o Metallica passou a estampar a frase "Grammy Award
           LOSERS" em lançamentos seguintes, em tom de ironia.
     scoresCriticos:
       - fonte: Metal Forces
@@ -342,7 +342,7 @@ albuns:
           misturando o imaginário infantil com um clima de terror.
       - tema: Conflito interno e resistência
         explicacao: As faixas "Sad But True" e "The Unforgiven" exploram a luta contra
-          forças opressoras — a primeira dá voz a um lado sombrio e manipulador
+          forças opressoras, a primeira dá voz a um lado sombrio e manipulador
           da própria mente, enquanto a segunda usa imagens de faroeste para
           falar de um homem incapaz de se libertar das próprias amarras
           emocionais.

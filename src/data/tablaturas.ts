@@ -10,17 +10,17 @@ export interface Tablatura {
   dificuldade: 'Fácil' | 'Intermediário' | 'Avançado';
   genero?: string;
   preview: string;
-  /** PDF hospedado por nós — usado quando não há `fonteExterna`. */
+  /** PDF hospedado por nós, usado quando não há `fonteExterna`. */
   pdf?: string;
   /**
    * Quando a tablatura não é nossa (ex: transcrição licenciada de terceiros),
    * linkamos para a versão GRATUITA na fonte original em vez de hospedar uma cópia.
-   * Nunca aponte para versões pagas/PRO — sempre confirme que é a versão free antes de adicionar aqui.
+   * Nunca aponte para versões pagas/PRO, sempre confirme que é a versão free antes de adicionar aqui.
    */
   fonteExterna?: FonteExterna;
   /**
    * Guia "como tocar" nosso, quando existe: explica tom, progressão, técnica e
-   * timbre — o que os sites de cifra não cobrem. A cifra em si fica na fonte externa.
+   * timbre, o que os sites de cifra não cobrem. A cifra em si fica na fonte externa.
    */
   guiaUrl?: string;
 }

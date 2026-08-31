@@ -73,7 +73,7 @@ const breadcrumbSchema = {
 
 <BaseLayout
   title={`${nome}: Equipamentos e Setup Completo da Banda`}
-  description={`Que guitarra, amplificador e pedais cada integrante do ${nome} usa — e as alternativas mais baratas para chegar perto do mesmo som.`}
+  description={`Que guitarra, amplificador e pedais cada integrante do ${nome} usa, e as alternativas mais baratas para chegar perto do mesmo som.`}
   image={fotoCapa}
   schema={breadcrumbSchema}
 >
@@ -112,7 +112,7 @@ const breadcrumbSchema = {
         </span>
         <h1 class="font-black tracking-tight leading-[0.95] mt-3" style="font-size:clamp(38px,7vw,72px)">Equipamentos de {nome}</h1>
         <p class="text-[15px] text-white/82 max-w-lg leading-relaxed mt-2.5">
-          Toque em um integrante para virar o card e ver o estilo — o setup completo (original × low cost) aparece logo abaixo.
+          Toque em um integrante para virar o card e ver o estilo, o setup completo (original × low cost) aparece logo abaixo.
         </p>
       </div>
     </div>
@@ -147,7 +147,7 @@ const breadcrumbSchema = {
               role={clickable ? 'button' : undefined}
               tabindex={clickable ? 0 : undefined}
               aria-pressed={clickable ? 'false' : undefined}
-              aria-label={clickable ? `${membro.nome} — toque para ver o estilo e o setup` : undefined}
+              aria-label={clickable ? `${membro.nome}, toque para ver o estilo e o setup` : undefined}
             >
               <div class="member-flip__front" style={`--front-border:#242424;background:#131313`}>
                 <div class="relative h-[214px]" style={`background:${gradient}`}>

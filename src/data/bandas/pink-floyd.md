@@ -130,7 +130,7 @@ albuns:
       - tema: Dinheiro e ganância
         explicacao: A faixa "Money" critica o consumismo e a obsessão pelo dinheiro logo
           na introdução, com efeitos de caixa registradora e moedas caindo
-          montados em compasso 7/4 — um dos ritmos mais incomuns já usados em
+          montados em compasso 7/4, um dos ritmos mais incomuns já usados em
           uma canção de sucesso no rock.
       - tema: Loucura e saúde mental
         explicacao: O álbum nasceu em parte da preocupação da banda com o estado mental
@@ -141,11 +141,11 @@ albuns:
       - tema: Conflito e violência
         explicacao: A faixa "Us and Them" nasceu de esboços instrumentais compostos por
           Richard Wright para o filme "Zabriskie Point" e ganhou letra de Roger
-          Waters sobre a futilidade da guerra — um tema pessoal para ele, já que
+          Waters sobre a futilidade da guerra, um tema pessoal para ele, já que
           seu pai morreu em combate na Segunda Guerra Mundial quando Waters
           tinha só 5 meses de vida.
       - tema: Ciclo contínuo da vida
-        explicacao: O álbum não tem pausas entre as faixas — tudo é costurado por
+        explicacao: O álbum não tem pausas entre as faixas, tudo é costurado por
           efeitos sonoros e transições contínuas, abrindo e fechando com uma
           batida de coração. A estrutura simula um ciclo completo, do nascimento
           à morte, reforçando a ideia de que o disco deve ser ouvido como uma
@@ -162,14 +162,14 @@ albuns:
         streams: 458 milhões
       - nome: Brain Damage
         streams: 267 milhões
-    videoTitulo: "Pink Floyd: The Dark Side of the Moon — Música e Filosofia (A
+    videoTitulo: "Pink Floyd: The Dark Side of the Moon, Música e Filosofia (A
       Nômade Cósmica)"
     spotifyUrl: https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv
     secoesAnalise:
       - titulo: Gravação e produção
         texto: The Dark Side of the Moon foi gravado em cerca de 60 dias, divididos
           entre junho de 1972 e fevereiro de 1973, nos estúdios da EMI em
-          Londres — o mesmo complexo hoje conhecido como Abbey Road. A banda
+          Londres, o mesmo complexo hoje conhecido como Abbey Road. A banda
           contou com o engenheiro Alan Parsons, que já havia trabalhado em
           "Abbey Road" e "Let It Be", dos Beatles, e explorou recursos avançados
           para a época, como os gravadores multipista Studer A80 de 16 canais,
@@ -181,7 +181,7 @@ albuns:
         texto: A capa, com o prisma refratando luz branca em um espectro de cores, foi
           criada pelo designer George Hardie a partir de uma referência da dupla
           de design Hipgnosis. A ideia era simples e gráfica o bastante para não
-          competir com a música — e acabou se tornando um dos símbolos mais
+          competir com a música, e acabou se tornando um dos símbolos mais
           reconhecíveis da história do rock, estampado até hoje em camisetas,
           pôsteres e memorabilia sem precisar do nome da banda ou do álbum ao
           lado.
@@ -189,7 +189,7 @@ albuns:
         texto: Poucos discos tiveram uma permanência tão longa nas paradas quanto este.
           Ele passou 741 semanas consecutivas na Billboard 200 entre 1973 e 1988
           e, somando períodos não consecutivos, segue aparecendo na lista até
-          hoje — um recorde que nenhum outro álbum da história chegou perto de
+          hoje, um recorde que nenhum outro álbum da história chegou perto de
           igualar.
     scoresCriticos:
       - fonte: AllMusic
@@ -233,8 +233,7 @@ albuns:
       - tema: Alienação e distância emocional
         explicacao: Apesar do sucesso comercial após "The Dark Side of the Moon", a
           banda vivia um momento de desgaste interno, e o álbum reflete essa
-          sensação de estar fisicamente presente mas emocionalmente ausente —
-          condensada na própria faixa-título, que fala de duas almas perdidas
+          sensação de estar fisicamente presente mas emocionalmente ausente, condensada na própria faixa-título, que fala de duas almas perdidas
           nadando em um aquário, ano após ano.
       - tema: Vazio pós-sucesso
         explicacao: Depois do estrondoso sucesso de "The Dark Side of the Moon", a banda
@@ -265,7 +264,7 @@ albuns:
           a regravar boa parte da faixa.
       - titulo: A visita de Syd Barrett
         texto: Durante a mixagem final do disco, Syd Barrett apareceu sem avisar no
-          estúdio, de cabeça raspada e bastante acima do peso — tão diferente
+          estúdio, de cabeça raspada e bastante acima do peso, tão diferente
           que ninguém o reconheceu de imediato. O encontro emocionou
           profundamente a banda e reforça, na visão de fãs e biógrafos, o peso
           real por trás da letra de "Shine On You Crazy Diamond".
@@ -303,7 +302,7 @@ albuns:
       - tema: Alegoria orwelliana das classes sociais
         explicacao: Inspirado em "A Revolução dos Bichos", de George Orwell, o álbum
           divide a sociedade britânica dos anos 1970 em três categorias
-          representadas por animais — cães predadores, porcos déspotas e ovelhas
+          representadas por animais, cães predadores, porcos déspotas e ovelhas
           alienadas. Diferente da novela original, que mirava o stalinismo,
           Roger Waters volta a crítica para o capitalismo e o sistema
           corporativo da época.
@@ -317,7 +316,7 @@ albuns:
           específicas da Inglaterra da época, incluindo uma crítica direta à
           moralista Mary Whitehouse, retratada com desprezo como símbolo da
           hipocrisia da classe dirigente.
-      - tema: Ovelhas e a massa alienada — só que rebelde
+      - tema: Ovelhas e a massa alienada, só que rebelde
         explicacao: A faixa "Sheep" descreve a maioria passiva e manipulada da
           sociedade, mas inverte a fábula de Orwell ao mostrar as ovelhas
           finalmente se revoltando e destruindo seus opressores, um desfecho
@@ -347,7 +346,7 @@ albuns:
           próprio que a banda havia acabado de construir em Londres, entre abril
           de 1976 e o início de 1977, com Brian Humphries novamente no controle
           técnico. Roger Waters assumiu quase sozinho a composição das faixas, e
-          Richard Wright teve participação mínima — foi o primeiro disco do Pink
+          Richard Wright teve participação mínima, foi o primeiro disco do Pink
           Floyd sem nenhum crédito de composição do tecladista.
       - titulo: O porco que fugiu de Battersea
         texto: A capa, com um porco inflável de 12 metros batizado de "Algie" flutuando
@@ -364,7 +363,7 @@ albuns:
           "Animals" surpreendeu pela sonoridade mais crua e agressiva, com
           guitarras ásperas e letras raivosas, o que levou parte da crítica a
           descrevê-lo, retrospectivamente, como o disco mais "punk" que o Pink
-          Floyd já gravou — mesmo sem qualquer relação direta com o movimento.
+          Floyd já gravou, mesmo sem qualquer relação direta com o movimento.
     scoresCriticos:
       - fonte: AllMusic
         nota: 4
@@ -414,7 +413,7 @@ albuns:
       - tema: Isolamento total e colapso mental
         explicacao: Faixas como "Comfortably Numb" e "Hey You" descrevem o estado final
           de Pink, completamente isolado atrás do muro que construiu,
-          entorpecido e incapaz de se comunicar com o mundo — um estado que
+          entorpecido e incapaz de se comunicar com o mundo, um estado que
           Waters modelou tanto em si mesmo quanto no colega Syd Barrett.
     capa: /images/albuns/pink-floyd-the-wall.jpg
     musicasPopulares:
@@ -439,7 +438,7 @@ albuns:
           banda, e Richard Wright chegou a ser demitido no meio do processo por
           conta da baixa participação criativa, seguindo apenas como músico
           contratado durante a turnê. A pressa na produção também foi motivada
-          por um problema financeiro sério — a banda havia perdido dinheiro em
+          por um problema financeiro sério, a banda havia perdido dinheiro em
           um investimento fiscal malsucedido e precisava lançar um disco de
           sucesso rapidamente.
       - titulo: Do disco ao cinema
@@ -448,10 +447,10 @@ albuns:
           papel de Pink e as icônicas animações do cartunista Gerald Scarfe. O
           filme reforçou ainda mais o caráter visual e teatral da obra, hoje um
           dos discos duplos mais vendidos da história, com mais de 30 milhões de
-          cópias — atrás apenas de "The Dark Side of the Moon" na discografia do
+          cópias, atrás apenas de "The Dark Side of the Moon" na discografia do
           Pink Floyd.
       - titulo: Recepção dividida, legado consagrado
-        texto: Na época do lançamento, a crítica ficou dividida — a Rolling Stone
+        texto: Na época do lançamento, a crítica ficou dividida, a Rolling Stone
           elogiou a raiva lírica implacável do disco, enquanto Robert Christgau
           o descartou como uma epopeia boba sobre as tribulações de uma estrela
           de rock. Décadas depois, porém, "The Wall" é reconhecido como uma das

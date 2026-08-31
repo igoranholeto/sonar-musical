@@ -1,12 +1,12 @@
 # Sonar Musical
 
-> Sonar Musical é um blog brasileiro (pt-BR) de análises honestas e guias de compra sobre equipamentos musicais — guitarras, violões, amplificadores, pedais, captadores e acessórios. Todo o conteúdo é escrito e testado por um guitarrista real, sem textos patrocinados disfarçados de review.
+> Sonar Musical é um blog brasileiro (pt-BR) de análises honestas e guias de compra sobre equipamentos musicais, guitarras, violões, amplificadores, pedais, captadores e acessórios. Todo o conteúdo é escrito e testado por um guitarrista real, sem textos patrocinados disfarçados de review.
 
 Site: https://sonarmusical.com.br
 Idioma: Português (Brasil)
 Contato: oi@sonarmusical.com.br
 Instagram: @sonar_musical (https://www.instagram.com/sonar_musical)
-Autor principal: Igor Silva Anholeto — guitarrista, fundador e responsável por todas as análises publicadas no site (https://sonarmusical.com.br/autor/igor-anholeto/).
+Autor principal: Igor Silva Anholeto, guitarrista, fundador e responsável por todas as análises publicadas no site (https://sonarmusical.com.br/autor/igor-anholeto/).
 
 Padrões editoriais: análises não são pagas para serem positivas; produtos recebidos para teste são declarados explicitamente; recomendações se baseiam em testes reais, não em comissão de afiliado; análises são atualizadas quando os produtos mudam. Detalhes em /about.
 
@@ -21,13 +21,13 @@ Padrões editoriais: análises não são pagas para serem positivas; produtos re
 - [Melhor Pedaleira de Guitarra em 2026](https://sonarmusical.com.br/blog/melhor-pedaleira-de-guitarra-2026/): comparativo das 5 principais pedaleiras do mercado.
 - [Melhor Interface de Áudio para Guitarra em 2026](https://sonarmusical.com.br/blog/melhor-interface-de-audio-para-guitarra-2026/): 5 melhores interfaces de áudio para gravar guitarra em casa.
 - [Melhores Cordas de Guitarra em 2026](https://sonarmusical.com.br/blog/melhores-cordas-de-guitarra-2026/): quais cordas escolher para cada estilo e orçamento.
-- [Fender vs Gibson: Qual Escolher?](https://sonarmusical.com.br/blog/fender-vs-gibson-qual-escolher/): comparação entre Stratocaster e Les Paul — som, tocabilidade e preço.
+- [Fender vs Gibson: Qual Escolher?](https://sonarmusical.com.br/blog/fender-vs-gibson-qual-escolher/): comparação entre Stratocaster e Les Paul, som, tocabilidade e preço.
 - [Violão ou Guitarra: Por Onde Começar?](https://sonarmusical.com.br/blog/violao-ou-guitarra-por-onde-comecar/): prós e contras de cada instrumento para quem está decidindo por onde começar.
 
 ## Reviews de Produtos
 
 - [Fender Blues Junior IV: Ainda o Rei dos Amplificadores de Prática?](https://sonarmusical.com.br/blog/review-fender-blues-junior-iv/): teste completo do amplificador valvulado Fender Blues Junior IV.
-- [Review: Squier Classic Vibe '60s Stratocaster](https://sonarmusical.com.br/blog/squier-classic-vibe-60s-stratocaster-review/): análise da Squier Classic Vibe 60s Stratocaster — vale os R$ 2.500?
+- [Review: Squier Classic Vibe '60s Stratocaster](https://sonarmusical.com.br/blog/squier-classic-vibe-60s-stratocaster-review/): análise da Squier Classic Vibe 60s Stratocaster, vale os R$ 2.500?
 
 ## Manutenção e Técnica
 

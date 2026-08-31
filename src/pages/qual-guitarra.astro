@@ -3,8 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 // Quiz de recomendação. Progressive enhancement: sem JS, mostra a lista de
 // todos os guias (crawlável). Com JS, vira um fluxo de 3 perguntas que termina
-// numa recomendação com link para o guia certo. Sem link de afiliado inventado —
-// roteia sempre para conteúdo real do site.
+// numa recomendação com link para o guia certo. Sem link de afiliado inventado, // roteia sempre para conteúdo real do site.
 const perguntas = [
   {
     q: 'Qual é o seu nível?',
@@ -49,7 +48,7 @@ const guias = [
 
 <BaseLayout
   title="Qual Guitarra é pra Você? Quiz de Recomendação"
-  description="Responda 3 perguntas e descubra qual tipo de guitarra elétrica combina com o seu nível, estilo e orçamento — com o guia certo para escolher a sua."
+  description="Responda 3 perguntas e descubra qual tipo de guitarra elétrica combina com o seu nível, estilo e orçamento, com o guia certo para escolher a sua."
 >
   <section class="qg">
     <div class="qg__head">
@@ -190,7 +189,7 @@ const guias = [
       const orcTxt = orc === 'baixo' ? ' dentro de um orçamento de entrada' : orc === 'alto' ? ', e com orçamento você pode ir direto num modelo topo' : '';
       if (nivel === 'iniciante') {
         if (orc === 'baixo')
-          return { key: 'kit', title: 'Um kit de guitarra + amplificador', text: 'Para começar gastando pouco, um kit que já vem com amplificador e acessórios é o caminho mais eficiente — você sai tocando sem surpresas de custo.', extra: ['iniciantes', 'strato'] };
+          return { key: 'kit', title: 'Um kit de guitarra + amplificador', text: 'Para começar gastando pouco, um kit que já vem com amplificador e acessórios é o caminho mais eficiente, você sai tocando sem surpresas de custo.', extra: ['iniciantes', 'strato'] };
         return { key: 'iniciantes', title: 'Uma boa guitarra de entrada', text: `Comece por uma guitarra de iniciante bem regulada${orcTxt}. Ela cobre qualquer estilo enquanto você descobre o seu.`, extra: ['strato', 'kit'] };
       }
       if (estilo === 'rock') {

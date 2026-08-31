@@ -216,8 +216,8 @@ albuns:
           jovem pobre que abandona os estudos para trabalhar e sustentar a
           família, num retrato comovente de sacrifício e desamparo social.
       - tema: A vida como fenômeno físico
-        explicacao: A faixa "O Pulso" enumera doenças e mazelas — "o pulso ainda
-          pulsa" — para afirmar, por contraste, a insistência da vida em seguir
+        explicacao: A faixa "O Pulso" enumera doenças e mazelas, "o pulso ainda
+          pulsa", para afirmar, por contraste, a insistência da vida em seguir
           batendo apesar de tudo.
       - tema: Desigualdade e miséria social
         explicacao: A faixa "Miséria" encara de frente a pobreza brasileira,

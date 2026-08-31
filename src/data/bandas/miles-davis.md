@@ -47,7 +47,7 @@ integrantes:
   - foto: /images/john-coltrane-sonar.webp
     fotoAlt: john coltrane sonar
     pontos:
-      - Improvisação em "sheets of sound" — cascatas rápidas de notas.
+      - Improvisação em "sheets of sound", cascatas rápidas de notas.
       - Exploração harmônica intensa dentro do modal.
     inspiracoes: Lester Young, Johnny Hodges
     anos: 1955–1957 · 1958–1960
@@ -55,7 +55,7 @@ integrantes:
     status: Saxofonista
     resumo: John Coltrane integrou o quinteto e depois o sexteto de Miles Davis,
       período em que já desenvolvia seu estilo de improvisação em "sheets of
-      sound" — cascatas rápidas de notas — e explorava harmonias densas dentro
+      sound", cascatas rápidas de notas, e explorava harmonias densas dentro
       do jazz modal.
     nome: John Coltrane
     setup:
@@ -135,8 +135,8 @@ albuns:
       - tema: Encontro de gerações e estilos
         explicacao: A química entre Miles Davis, John Coltrane, Cannonball Adderley,
           Bill Evans, Paul Chambers e Jimmy Cobb reúne personalidades musicais
-          distintas — do lirismo impressionista de Evans às cascatas harmônicas
-          de Coltrane — em um mesmo projeto coeso.
+          distintas, do lirismo impressionista de Evans às cascatas harmônicas
+          de Coltrane, em um mesmo projeto coeso.
       - tema: Improviso quase sem ensaio
         explicacao: Miles Davis apresentou aos músicos apenas esboços de escalas e
           melodias pouco antes das sessões, sem partituras completas. O
@@ -162,7 +162,7 @@ albuns:
           chegou ao estúdio sem partituras completas, apenas com esboços de
           escalas e linhas melódicas, e pediu que os músicos improvisassem quase
           sem ensaio prévio. Apesar da lenda de que tudo saiu de primeira,
-          apenas "Flamenco Sketches" foi finalizada em uma única tomada — as
+          apenas "Flamenco Sketches" foi finalizada em uma única tomada, as
           demais faixas exigiram mais de uma tentativa, ainda que poucas.
       - titulo: A virada do jazz modal
         texto: Ao substituir progressões de acordes densas por escalas fixas, Kind of
@@ -214,8 +214,7 @@ albuns:
       - tema: Parceria criativa entre Miles Davis e Gil Evans
         explicacao: Este foi o terceiro projeto de Davis com o arranjador Gil Evans, que
           assinou orquestrações elaboradas para metais e percussão. Evans
-          afirmou que a dupla não pretendia inicialmente fazer um álbum espanhol
-          — o projeto cresceu a partir do interesse de Miles Davis pelo
+          afirmou que a dupla não pretendia inicialmente fazer um álbum espanhol, o projeto cresceu a partir do interesse de Miles Davis pelo
           Concierto de Aranjuez.
       - tema: Melancolia e drama orquestral
         explicacao: Em vez de um combo enxuto, o disco usa uma orquestra para envolver o
@@ -238,7 +237,7 @@ albuns:
       - titulo: Gravação e parceria com Gil Evans
         texto: As sessões aconteceram entre novembro de 1959 e março de 1960, também no
           Columbia's 30th Street Studio, com Teo Macero estreando como produtor
-          de um álbum de Miles Davis — parceria que se estenderia por boa parte
+          de um álbum de Miles Davis, parceria que se estenderia por boa parte
           da carreira do trompetista. O projeto nasceu quando Miles ouviu a
           única gravação disponível do Concierto de Aranjuez e pediu a Gil Evans
           que o arranjasse, processo que acabou puxando a dupla para explorar
@@ -289,7 +288,7 @@ albuns:
         explicacao: O produtor Teo Macero editou intensamente as fitas gravadas,
           cortando e recolando trechos para criar estruturas que não existiam na
           performance original. A faixa-título tem 15 edições e "Pharaoh's
-          Dance" chega a 19 — só "Miles Runs the Voodoo Down" ficou praticamente
+          Dance" chega a 19, só "Miles Runs the Voodoo Down" ficou praticamente
           intacta.
       - tema: Improviso coletivo e textura densa
         explicacao: A gravação reuniu dois baixistas, múltiplos bateristas e vários
@@ -319,7 +318,7 @@ albuns:
           vivo em estúdio, sem overdubs. Depois, o produtor Teo Macero passou
           semanas montando o material com loops, cortes e colagens de fita,
           transformando as improvisações em estruturas musicais que não existiam
-          durante a gravação original — uma abordagem que tratava o estúdio como
+          durante a gravação original, uma abordagem que tratava o estúdio como
           um instrumento a mais.
       - titulo: A virada elétrica
         texto: Ao trocar o combo acústico por piano elétrico, guitarra e uma seção

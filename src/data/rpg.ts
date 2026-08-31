@@ -44,7 +44,7 @@ export const HAIR_COLORS = ['#1a1a1a', '#5b3a29', '#d4a017', '#b3402c', '#4169e1
 // ───────────────────────── Sprites (Universal LPC Spritesheet) ─────────────────────────
 // Créditos: Universal LPC Spritesheet Character Generator
 // https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator
-// Licença CC-BY-SA 3.0 / GPL 3.0 — ver public/images/rpg/sprites/LICENSE.txt
+// Licença CC-BY-SA 3.0 / GPL 3.0, ver public/images/rpg/sprites/LICENSE.txt
 
 const SPRITE_BASE = '/images/rpg/sprites';
 
@@ -193,7 +193,7 @@ export function pickRandom<T>(arr: readonly T[]): T {
   return arr[Math.floor(Math.random() * arr.length)];
 }
 
-/** Hash simples e determinístico — mesmo nome sempre gera a mesma aparência do inimigo. */
+/** Hash simples e determinístico, mesmo nome sempre gera a mesma aparência do inimigo. */
 export function seededPick<T>(arr: readonly T[], seed: string): T {
   let hash = 0;
   for (let i = 0; i < seed.length; i++) {

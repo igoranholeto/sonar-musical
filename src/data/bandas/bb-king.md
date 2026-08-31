@@ -17,11 +17,11 @@ integrantes:
     resumo: B.B. King foi guitarrista, vocalista e um dos maiores nomes da
       história do blues. Batizava todas as suas guitarras de "Lucille" e
       ficou conhecido por um vibrato rápido de pulso e por escolher cada
-      nota com precisão em vez de tocar escalas corridas — um estilo
+      nota com precisão em vez de tocar escalas corridas, um estilo
       imitado por gerações de guitarristas de blues e rock.
     pontos:
       - Vibrato rápido de pulso, apelidado de "butterfly".
-      - Notas escolhidas com precisão — cada bend conta uma frase.
+      - Notas escolhidas com precisão, cada bend conta uma frase.
     setup:
       - tipo: Guitarra
         original:

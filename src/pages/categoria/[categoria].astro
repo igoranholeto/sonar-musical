@@ -47,7 +47,7 @@ const breadcrumbSchema = {
 };
 ---
 
-<BaseLayout title={`${category} — Análises e Guias`} description={intro} schema={breadcrumbSchema}>
+<BaseLayout title={`${category}, Análises e Guias`} description={intro} schema={breadcrumbSchema}>
   <div class="max-w-6xl mx-auto px-4 py-16">
     <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
       <a href="/" class="hover:text-foreground transition-colors">Início</a>
@@ -79,7 +79,7 @@ const breadcrumbSchema = {
         ))}
       </div>
     ) : (
-      <p class="text-muted">Ainda não publicamos artigos nesta categoria — volte em breve.</p>
+      <p class="text-muted">Ainda não publicamos artigos nesta categoria, volte em breve.</p>
     )}
   </div>
 </BaseLayout>

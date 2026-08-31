@@ -41,7 +41,7 @@ integrantes:
           nome: Shure SM7B
           preco: ~R$ 6.000
           obs: Mesmo modelo usado pela equipe do Weeknd nas gravações da
-            trilogia de mixtapes "Trilogy" — dinâmico, rejeita ruído de
+            trilogia de mixtapes "Trilogy", dinâmico, rejeita ruído de
             ambiente e é um clássico de home studio.
 albuns:
   - nome: House of Balloons
@@ -49,7 +49,7 @@ albuns:
     capa: /images/albuns/the-weeknd-house-of-balloons.jpg
     capaAlt: Capa do álbum House of Balloons, de The Weeknd
     descricao: Mixtape de estreia, lançada de graça pela internet, que
-      apresentou ao mundo o R&B sombrio e enevoado de Abel Tesfaye — festas
+      apresentou ao mundo o R&B sombrio e enevoado de Abel Tesfaye, festas
       sem alegria, vício e vazio emocional sobre produção fria e
       atmosférica.
     temas:
@@ -61,7 +61,7 @@ albuns:
       - tema: Vergonha e vício escondidos
         explicacao: Ao contrário de discos que glorificam o excesso, Abel
           trata o abuso de substâncias como algo a esconder de quem está ao
-          seu redor — retratado em "The Morning" e na ressaca física e
+          seu redor, retratado em "The Morning" e na ressaca física e
           emocional de "Coming Down".
       - tema: Sedução manipuladora
         explicacao: As faixas "Wicked Games" e "What You Need" tratam
@@ -108,14 +108,14 @@ albuns:
         texto: Por causa de samples não liberados, House of Balloons só
           chegou oficialmente às plataformas de streaming dez anos depois
           de seu lançamento original, numa versão remasterizada
-          disponibilizada em 2021 — até lá, a mixtape circulava apenas
+          disponibilizada em 2021, até lá, a mixtape circulava apenas
           como download gratuito e por vias não oficiais.
   - nome: Beauty Behind the Madness
     ano: 2015
     capa: /images/albuns/the-weeknd-beauty-behind-the-madness.jpg
     capaAlt: Capa do álbum Beauty Behind the Madness, de The Weeknd
     descricao: Segundo álbum de estúdio e o grande divisor de águas da
-      carreira — levou Abel Tesfaye do underground ao topo das paradas, com
+      carreira, levou Abel Tesfaye do underground ao topo das paradas, com
       dois hits número 1 na Billboard Hot 100.
     spotifyUrl: https://open.spotify.com/album/36yJ6fcaSCVsK1tybnNizj
     temas:
@@ -131,7 +131,7 @@ albuns:
           mainstream do artista.
       - tema: Relacionamentos tóxicos e o ciclo de volta
         explicacao: A faixa "The Hills" narra madrugadas de excesso e a
-          incapacidade de se comprometer com alguém — o refrão "I only
+          incapacidade de se comprometer com alguém, o refrão "I only
           call you when it's half past five" resume a lógica de um
           relacionamento por conveniência.
       - tema: Vulnerabilidade emocional atrás da fachada hedonista
@@ -168,8 +168,8 @@ albuns:
           sonora do filme "Cinquenta Tons de Cinza".
       - titulo: Impacto e legado
         texto: Beauty Behind the Madness foi o álbum mais streamado de
-          2015 no Spotify e rendeu ao Weeknd seu primeiro Grammy — Melhor
-          Performance de R&B, por "Earned It" —, em 2016. O disco marca a
+          2015 no Spotify e rendeu ao Weeknd seu primeiro Grammy, Melhor
+          Performance de R&B, por "Earned It", em 2016. O disco marca a
           consolidação definitiva da virada do artista para o mainstream
           pop.
       - titulo: Curiosidade
@@ -182,7 +182,7 @@ albuns:
     capa: /images/albuns/the-weeknd-starboy.jpg
     capaAlt: Capa do álbum Starboy, de The Weeknd
     descricao: Terceiro álbum de estúdio, que une R&B a synth-pop e new
-      wave em parceria com o Daft Punk — tornou-se um dos discos mais
+      wave em parceria com o Daft Punk, tornou-se um dos discos mais
       streamados da história do Spotify.
     spotifyUrl: https://open.spotify.com/album/2ODvWsOgouMbaA5xf0RkJe
     temas:
@@ -240,7 +240,7 @@ albuns:
       - titulo: Curiosidade
         texto: No clipe de "Starboy", Abel Tesfaye aparece destruindo
           símbolos de sua própria imagem anterior, incluindo réplicas do
-          penteado icônico da era das mixtapes — uma declaração visual de
+          penteado icônico da era das mixtapes, uma declaração visual de
           reinvenção que acompanhou a virada sonora do disco.
   - nome: After Hours
     ano: 2020
@@ -312,7 +312,7 @@ albuns:
       - titulo: Curiosidade
         texto: O Weeknd criticou publicamente a Recording Academy depois
           de After Hours ficar de fora das principais categorias do
-          Grammy de 2021, apesar do sucesso comercial e de crítica — um
+          Grammy de 2021, apesar do sucesso comercial e de crítica, um
           episódio que teria contribuído para mudanças posteriores nas
           regras de votação da premiação.
   - nome: Dawn FM
@@ -326,7 +326,7 @@ albuns:
     temas:
       - tema: Purgatório como conceito sonoro
         explicacao: O próprio Weeknd descreveu o disco como o momento
-          entre a morte e a luz no fim do túnel — como estar preso no
+          entre a morte e a luz no fim do túnel, como estar preso no
           trânsito ouvindo uma estação de rádio até alcançar o destino
           final.
       - tema: Narração como guia espiritual
@@ -370,8 +370,8 @@ albuns:
     secoesAnalise:
       - titulo: Gravação e produção
         texto: Gravado majoritariamente durante a pandemia, o disco foi
-          produzido com Max Martin, Oneohtrix Point Never — também
-          responsável pelos interlúdios de rádio — e Swedish House Mafia,
+          produzido com Max Martin, Oneohtrix Point Never, também
+          responsável pelos interlúdios de rádio, e Swedish House Mafia,
           sendo lançado em 7 de janeiro de 2022.
       - titulo: Impacto e legado
         texto: Dawn FM recebeu aclamação quase unânime da crítica e é
@@ -381,6 +381,6 @@ albuns:
       - titulo: Curiosidade
         texto: O ator Jim Carrey não apenas narra trechos do álbum como
           também é creditado como coautor de parte da letra de "Every
-          Angel Is Terrifying" — uma colaboração pouco usual entre astro
+          Angel Is Terrifying", uma colaboração pouco usual entre astro
           pop e ator de Hollywood.
 ---

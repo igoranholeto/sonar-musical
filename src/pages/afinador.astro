@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 const faq = [
   {
     question: 'Como afinar o violão online pelo microfone?',
-    answer: 'Selecione "Violão" e a afinação desejada, clique em "Ativar Microfone" e permita o acesso. Toque uma corda por vez: o afinador detecta a nota automaticamente e mostra se ela está grave (aperte a cravelha) ou aguda (afrouxe). Quando a agulha fica no centro e verde, a corda está afinada. Não precisa instalar nada — funciona direto no navegador do celular ou do computador.',
+    answer: 'Selecione "Violão" e a afinação desejada, clique em "Ativar Microfone" e permita o acesso. Toque uma corda por vez: o afinador detecta a nota automaticamente e mostra se ela está grave (aperte a cravelha) ou aguda (afrouxe). Quando a agulha fica no centro e verde, a corda está afinada. Não precisa instalar nada, funciona direto no navegador do celular ou do computador.',
   },
   {
     question: 'Este afinador de violão e guitarra é grátis?',
@@ -16,7 +16,7 @@ const faq = [
   },
   {
     question: 'Preciso instalar algum aplicativo ou dar permissão?',
-    answer: 'Não é preciso instalar nada. Só é necessário permitir o acesso ao microfone quando o navegador pedir — o áudio é processado localmente, no seu próprio aparelho, e nada é gravado ou enviado para servidores.',
+    answer: 'Não é preciso instalar nada. Só é necessário permitir o acesso ao microfone quando o navegador pedir, o áudio é processado localmente, no seu próprio aparelho, e nada é gravado ou enviado para servidores.',
   },
   {
     question: 'O afinador funciona no celular?',
@@ -32,7 +32,7 @@ const schema = [
   {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'Afinador Online de Guitarra e Violão — Sonar Musical',
+    name: 'Afinador Online de Guitarra e Violão, Sonar Musical',
     url: 'https://sonarmusical.com.br/afinador/',
     applicationCategory: 'MultimediaApplication',
     operatingSystem: 'Web',
@@ -54,8 +54,8 @@ const schema = [
 ---
 
 <BaseLayout
-  title="Afinador Online de Violão e Guitarra — Grátis"
-  description="Afinador de violão e guitarra online e grátis, pelo microfone. Detecção automática de notas e afinações prontas: Standard, Drop D, Open G, DADGAD e mais. Sem instalar nada."
+  title="Afinador Online de Violão e Guitarra, Grátis"
+  description="Afinador de violão e guitarra online e grátis, pelo microfone. Detecção automática de notas e afinações prontas: Standard, Drop D, Open G e mais."
   schema={schema}
 >
   <section class="tuner-page">
@@ -86,7 +86,7 @@ const schema = [
       <!-- Nota detectada -->
       <div class="note-block">
         <div class="note-row">
-          <span id="note-name" class="note-name">—</span>
+          <span id="note-name" class="note-name">–</span>
           <sup id="note-octave" class="note-octave"></sup>
         </div>
         <div id="cents-pill" class="cents-pill cents-pill--idle">· · ·</div>
@@ -126,7 +126,7 @@ const schema = [
 
       <!-- Frequência -->
       <div class="freq-row">
-        <span id="freq-display" class="freq-display">— Hz</span>
+        <span id="freq-display" class="freq-display">– Hz</span>
       </div>
     </div>
 
@@ -150,7 +150,7 @@ const schema = [
       <p id="mic-status" class="mic-status"></p>
     </div>
 
-    <!-- Info / SEO — layout em cards -->
+    <!-- Info / SEO, layout em cards -->
     <div class="info-section">
       <div class="info-card">
         <div class="info-card__icon">
@@ -163,9 +163,9 @@ const schema = [
         <h2 class="info-card__title">Como usar</h2>
         <p class="info-card__text">Clique em <strong>Ativar Microfone</strong>, permita o acesso e toque uma corda. A agulha no centro significa corda afinada.</p>
         <ul class="info-card__tips">
-          <li><span class="tip-dot tip-dot--green"></span>Verde — afinado</li>
-          <li><span class="tip-dot tip-dot--yellow"></span>Amarelo — ajuste pequeno</li>
-          <li><span class="tip-dot tip-dot--red"></span>Vermelho — muito desafinado</li>
+          <li><span class="tip-dot tip-dot--green"></span>Verde, afinado</li>
+          <li><span class="tip-dot tip-dot--yellow"></span>Amarelo, ajuste pequeno</li>
+          <li><span class="tip-dot tip-dot--red"></span>Vermelho, muito desafinado</li>
         </ul>
       </div>
 
@@ -177,7 +177,7 @@ const schema = [
           </svg>
         </div>
         <h2 class="info-card__title">Lendo a agulha</h2>
-        <p class="info-card__text">Agulha para a <strong>esquerda</strong>: nota baixa — aperte a cravelha. Agulha para a <strong>direita</strong>: nota alta — afrouxe.</p>
+        <p class="info-card__text">Agulha para a <strong>esquerda</strong>: nota baixa, aperte a cravelha. Agulha para a <strong>direita</strong>: nota alta, afrouxe.</p>
         <p class="info-card__text">O número em <em>cents</em> mostra o desvio exato. ±8 cents ou menos é considerado afinado.</p>
       </div>
 
@@ -201,7 +201,7 @@ const schema = [
       <h2>Afinador de violão e guitarra grátis, direto no navegador</h2>
       <p>
         Este é um <strong>afinador online</strong> gratuito que funciona pelo microfone do seu
-        celular ou computador — sem instalar aplicativo e sem criar conta. Ele serve tanto como
+        celular ou computador, sem instalar aplicativo e sem criar conta. Ele serve tanto como
         <strong>afinador de violão</strong> quanto como <strong>afinador de guitarra</strong>: basta
         escolher o instrumento, tocar uma corda por vez e seguir a agulha até o centro. A detecção é
         automática, então você não precisa apertar nada a cada corda.
@@ -224,12 +224,12 @@ const schema = [
 
       <h2>Afinações disponíveis</h2>
       <p>
-        Além da afinação padrão, o afinador traz as variações mais usadas — ótimas para rock, blues e
+        Além da afinação padrão, o afinador traz as variações mais usadas, ótimas para rock, blues e
         metal: <strong>Drop D</strong>, <strong>Drop C</strong>, <strong>Open G</strong>,
         <strong>Open D</strong>, <strong>Open E</strong>, <strong>DADGAD</strong> e afinações
         <strong>meio tom</strong> e <strong>um tom abaixo</strong>. Conheça cada uma no guia de
         <a href="/blog/afinacoes-de-guitarra/">afinações de guitarra</a>. Cordas velhas dificultam a
-        afinação e a mantêm instável — se a sua não segura o tom, talvez seja hora de trocar: veja as
+        afinação e a mantêm instável, se a sua não segura o tom, talvez seja hora de trocar: veja as
         <a href="/blog/melhores-cordas-de-guitarra-2026/">melhores cordas de guitarra</a> e a diferença
         entre <a href="/blog/cordas-de-guitarra-009-ou-010/">calibres 009 e 010</a>.
       </p>
@@ -238,8 +238,7 @@ const schema = [
       <p>
         O <em>afinador do Google</em> resolve uma afinação padrão rápida, mas mostra só a nota. Este
         afinador é feito para músicos: traz afinações prontas para violão e guitarra, mostra o desvio
-        exato em <em>cents</em>, indica a direção do ajuste e destaca qual corda você está afinando —
-        tudo de graça e sem instalar nada. Precisa de um metrônomo para treinar o ritmo? Use também o
+        exato em <em>cents</em>, indica a direção do ajuste e destaca qual corda você está afinando, tudo de graça e sem instalar nada. Precisa de um metrônomo para treinar o ritmo? Use também o
         nosso <a href="/metronomo/">metrônomo online</a> e o
         <a href="/acordes/">dicionário de acordes</a>.
       </p>
@@ -864,7 +863,7 @@ function renderTunings() {
   TUNINGS[instrument].forEach((t, i) => {
     const opt = document.createElement('option');
     opt.value = String(i);
-    opt.textContent = `${t.label} — ${t.strings.join(' ')}`;
+    opt.textContent = `${t.label}, ${t.strings.join(' ')}`;
     if (i === currentTuningIdx) opt.selected = true;
     tuningSelect.appendChild(opt);
   });
@@ -910,12 +909,12 @@ renderStrings();
 
 // ─── Reset ────────────────────────────────────────────────────────────────────
 function resetDisplay() {
-  noteName.textContent = '—';
+  noteName.textContent = '–';
   noteName.style.color = '';
   noteOctave.textContent = '';
   setCentsPill(null);
   setDirectionHint(0);
-  freqDisplay.textContent = '— Hz';
+  freqDisplay.textContent = '– Hz';
   setNeedle(0, true);
   setInTune(false);
   tunerDisplay.classList.remove('holding-state');
@@ -952,11 +951,11 @@ function setDirectionHint(cents: number) {
   if (cents < 0) {
     // nota baixa demais → precisa apertar → sobe o tom
     directionHint.className = `direction-hint ${isVeryOff ? 'direction-hint--red-low' : 'direction-hint--low'}`;
-    directionHint.innerHTML = `<span>↑</span> Nota grave — aperte a cravelha`;
+    directionHint.innerHTML = `<span>↑</span> Nota grave, aperte a cravelha`;
   } else {
     // nota alta demais → precisa soltar → desce o tom
     directionHint.className = `direction-hint ${isVeryOff ? 'direction-hint--red-high' : 'direction-hint--high'}`;
-    directionHint.innerHTML = `<span>↓</span> Nota aguda — solte a cravelha`;
+    directionHint.innerHTML = `<span>↓</span> Nota aguda, solte a cravelha`;
   }
 }
 
@@ -1021,7 +1020,7 @@ function playTuneSound(ctx: AudioContext) {
 }
 
 // ─── McLeod Pitch Method (MPM / NSDF) ────────────────────────────────────────
-// Mais confiável que autocorrelação simples — menos erros de oitava em cordas
+// Mais confiável que autocorrelação simples, menos erros de oitava em cordas
 function detectFrequency(buf: Float32Array, sampleRate: number): number {
   const N = buf.length;
   const W = Math.floor(N / 2);
@@ -1040,7 +1039,7 @@ function detectFrequency(buf: Float32Array, sampleRate: number): number {
   let sumX0 = 0;
   for (let i = 0; i < W; i++) sumX0 += buf[i] * buf[i];
 
-  // Σ x(i+tau)² com janela deslizante — atualização O(1) por passo
+  // Σ x(i+tau)² com janela deslizante, atualização O(1) por passo
   let sumXt = 0;
   for (let i = lagMin; i < lagMin + W && i < N; i++) sumXt += buf[i] * buf[i];
 
@@ -1082,7 +1081,7 @@ function detectFrequency(buf: Float32Array, sampleRate: number): number {
   const globalMax = peaks.reduce((m, p) => Math.max(m, p.nsdf), 0);
   if (globalMax < 0.35) return -1;
 
-  // Primeiro pico >= K * globalMax (K=0.86 do McLeod) — evita erros de oitava
+  // Primeiro pico >= K * globalMax (K=0.86 do McLeod), evita erros de oitava
   const K = 0.86;
   let best = peaks[0];
   for (const p of peaks) {
@@ -1161,7 +1160,7 @@ function analysisLoop() {
     // Avança a agulha em direção ao alvo suavizado
     setNeedle(smoothedCents);
 
-    // Pill, cor e hint derivam de visualCents() — sempre em sync com a agulha
+    // Pill, cor e hint derivam de visualCents(), sempre em sync com a agulha
     const vc = visualCents();
     const absVc = Math.abs(vc);
     setCentsPill(vc);
@@ -1198,23 +1197,23 @@ function analysisLoop() {
 
     renderStrings(closestIdx, isInTune ? closestIdx : -1);
   } else {
-    // Decaimento rápido para centro — evita agulha parada fora do centro após soltar a corda
+    // Decaimento rápido para centro, evita agulha parada fora do centro após soltar a corda
     smoothedCents += (0 - smoothedCents) * 0.12;
     setNeedle(smoothedCents);
 
     if (Date.now() < holdUntil) {
       tunerDisplay.classList.add('holding-state');
-      // Durante hold: pill idle — não mostrar cents defasados
+      // Durante hold: pill idle, não mostrar cents defasados
       setCentsPill(null);
       setDirectionHint(0);
     } else {
       if (Math.abs(smoothedCents) < 1) smoothedCents = 0;
-      noteName.textContent = '—';
+      noteName.textContent = '–';
       noteName.style.color = '';
       noteOctave.textContent = '';
       setCentsPill(null);
       setDirectionHint(0);
-      freqDisplay.textContent = '— Hz';
+      freqDisplay.textContent = '– Hz';
       tunerDisplay.classList.remove('holding-state');
       needle.setAttribute('stroke', '#e63946');
       needlePivot.setAttribute('fill', '#e63946');
@@ -1228,7 +1227,7 @@ function analysisLoop() {
   rafId = requestAnimationFrame(analysisLoop);
 }
 
-// ─── Microfone — com fix de iOS/Safari ───────────────────────────────────────
+// ─── Microfone, com fix de iOS/Safari ───────────────────────────────────────
 micBtn.addEventListener('click', async () => {
   if (isListening) {
     stopListening();

@@ -71,7 +71,7 @@ albuns:
       - tema: Medo de se entregar ao amor
         explicacao: A faixa "Evidências" fala abertamente sobre o medo de expor o
           coração, como no verso "eu tenho medo de te dar meu coração e
-          confessar que estou em tuas mãos" — a vulnerabilidade emocional é o
+          confessar que estou em tuas mãos", a vulnerabilidade emocional é o
           motor de toda a letra.
       - tema: Orgulho versus sinceridade
         explicacao: O refrão "chega de mentiras, de negar o meu desejo" marca o instante
@@ -85,7 +85,7 @@ albuns:
         explicacao: A canção "Evidências" foi rejeitada por gravadoras e passou
           despercebida na voz de Leonardo Sullivan em 1989 antes de virar um
           fenômeno com Chitãozinho & Xororó, sendo depois regravada por dezenas
-          de duplas — prova da força do sertanejo romântico como patrimônio
+          de duplas, prova da força do sertanejo romântico como patrimônio
           popular.
     musicasPopulares:
       - nome: Evidências
@@ -97,8 +97,7 @@ albuns:
           gravada sem repercussão por Leonardo Sullivan, em 1989, depois de
           recusada por uma gravadora que considerou a composição fraca demais
           para investir. A faixa só ganhou força quando José Augusto, um dos
-          autores, enviou uma fita cassete com dez músicas para a dupla —
-          "Evidências" era a primeira faixa, e Xororó conta que ficaram
+          autores, enviou uma fita cassete com dez músicas para a dupla, "Evidências" era a primeira faixa, e Xororó conta que ficaram
           impactados na hora e decidiram gravá-la sem pensar duas vezes.
       - titulo: O hino mais cantado do país
         texto: Composta por Paulo Sérgio Valle e José Augusto, dupla responsável por
@@ -125,7 +124,7 @@ albuns:
       nos anos 90.
     temas:
       - tema: Traição revelada por uma evidência física
-        explicacao: A faixa-título nasceu de um episódio real — o compositor Darci Rossi
+        explicacao: A faixa-título nasceu de um episódio real, o compositor Darci Rossi
           encontrou um fio de cabelo estranho no paletó e transformou o achado
           em uma narrativa de traição amorosa, com o objeto insignificante
           virando prova irrefutável do caso.
@@ -140,7 +139,7 @@ albuns:
       - tema: Amores passageiros e saudade da estrada
         explicacao: A faixa "60 Dias Apaixonado" narra o romance breve de um viajante
           durante uma estadia em Aparecida do Taboado, cidade real que emprestou
-          nome à história, terminando em bebida e lamento pela separação — um
+          nome à história, terminando em bebida e lamento pela separação, um
           retrato clássico da vida errante dos artistas sertanejos.
       - tema: Vida simples do interior
         explicacao: Faixas como "Fogão de Lenha" reforçam a estética de raiz do disco,

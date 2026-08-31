@@ -20,7 +20,7 @@ collections:
       - { label: Descrição / Meta Description, name: description, widget: text, hint: "Ideal: entre 140 e 160 caracteres." }
       - { label: Rascunho (não publicar), name: draft, widget: boolean, default: false }
       - { label: Data de publicação, name: pubDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false }
-      - { label: Data de atualização, name: updatedDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Preencha quando atualizar o conteúdo — sinaliza ao Google que o post é fresco." }
+      - { label: Data de atualização, name: updatedDate, widget: datetime, format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: false, hint: "Preencha quando atualizar o conteúdo, sinaliza ao Google que o post é fresco." }
       - { label: Autor, name: author, widget: string, default: "Sonar Musical" }
 
       # ── Classificação ────────────────────────────────────────
@@ -75,7 +75,7 @@ collections:
         step: 0.5
         required: false
         hint: "Usado apenas em posts do tipo Review."
-      - { label: Nome do produto avaliado, name: reviewedName, widget: string, required: false, hint: "Só em Review. Nome limpo do produto (ex.: Fender Blues Junior IV) — vai para o dado estruturado. Sem isso, o Google recebe o título do post como nome do produto." }
+      - { label: Nome do produto avaliado, name: reviewedName, widget: string, required: false, hint: "Só em Review. Nome limpo do produto (ex.: Fender Blues Junior IV), vai para o dado estruturado. Sem isso, o Google recebe o título do post como nome do produto." }
       - { label: Pontos positivos, name: pros, widget: list, required: false, field: { label: Ponto positivo, name: item, widget: string } }
       - { label: Pontos negativos, name: cons, widget: list, required: false, field: { label: Ponto negativo, name: item, widget: string } }
 
@@ -122,7 +122,7 @@ collections:
       - label: Integrantes
         name: integrantes
         widget: list
-        summary: "{{fields.nome}} — {{fields.funcao}}"
+        summary: "{{fields.nome}}, {{fields.funcao}}"
         fields:
           - { label: Nome, name: nome, widget: string }
           - { label: Função, name: funcao, widget: string, hint: "Ex: Guitarra, Baixo, Vocal" }
@@ -177,13 +177,13 @@ collections:
             hint: "Cada um vira um botão clicável na página, que revela a explicação ao lado."
             fields:
               - { label: Tema, name: tema, widget: string, hint: "Ex: Tempo e mortalidade" }
-              - { label: Explicação, name: explicacao, widget: text, hint: "Por que esse tema aparece no álbum — cite a faixa ou contexto." }
+              - { label: Explicação, name: explicacao, widget: text, hint: "Por que esse tema aparece no álbum, cite a faixa ou contexto." }
           - label: Notas da crítica e do Sonar Musical
             name: scoresCriticos
             widget: list
             required: false
             summary: "{{fields.fonte}}: {{fields.nota}}/{{fields.notaMax}}"
-            hint: "Inclua também uma linha com fonte \"Sonar Musical\" para a nota da casa — ela aparece na mesma lista."
+            hint: "Inclua também uma linha com fonte \"Sonar Musical\" para a nota da casa, ela aparece na mesma lista."
             fields:
               - { label: "Fonte (ex: AllMusic, Pitchfork, Sonar Musical)", name: fonte, widget: string }
               - { label: Nota, name: nota, widget: number }
@@ -192,7 +192,7 @@ collections:
             name: musicasPopulares
             widget: list
             required: false
-            summary: "{{fields.nome}} — {{fields.streams}}"
+            summary: "{{fields.nome}}, {{fields.streams}}"
             fields:
               - { label: Nome da música, name: nome, widget: string }
               - { label: Streams (aproximado), name: streams, widget: string, hint: "Ex: 657 milhões. Dado aproximado, muda com o tempo." }
