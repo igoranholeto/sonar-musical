@@ -226,7 +226,6 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
     bandaSlug: 'bruno-mars',
     bandaNome: 'Bruno Mars',
     autor: 'slgckgc',
-    autorUrl: 'https://www.flickr.com/people/slgckgc/',
     licenca: 'CC BY 4.0',
     licencaUrl: 'https://creativecommons.org/licenses/by/4.0/deed.pt',
     fonteUrl: 'https://commons.wikimedia.org/wiki/File:BrunoMars24KMagicWorldTourLive_(cropped).jpg',
