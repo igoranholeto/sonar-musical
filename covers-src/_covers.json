@@ -3,6 +3,444 @@
     "kicker": "INICIANTES",
     "l1": "CURSO DE",
     "l2": "GUITARRA",
+    "motif": "guitar"
+  },
+  "guitarra-8-cordas-guia-completo": {
+    "kicker": "GUITARRAS",
+    "l1": "GUITARRA",
+    "l2": "8 CORDAS",
+    "motif": "guitar"
+  },
+  "guitarra-de-12-cordas-guia-completo": {
+    "kicker": "GUITARRAS",
+    "l1": "GUITARRA",
+    "l2": "12 CORDAS",
+    "motif": "guitar"
+  },
+  "melhor-guitarra-7-cordas-2026": {
+    "kicker": "GUITARRAS · 2026",
+    "l1": "GUITARRA",
+    "l2": "7 CORDAS",
+    "motif": "guitar"
+  },
+  "guitarra-eletrica-profissional-guia-2026": {
+    "kicker": "GUITARRAS · 2026",
+    "l1": "GUITARRA",
+    "l2": "PRO",
+    "motif": "guitar"
+  },
+  "guitarra-eletrica-usada-o-que-verificar": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "GUITARRA",
+    "l2": "USADA",
+    "motif": "guitar"
+  },
+  "melhores-guitarras-eletricas-para-iniciantes-2026": {
+    "kicker": "GUIA · 2026",
+    "l1": "GUITARRAS",
+    "l2": "INICIANTE",
+    "motif": "guitar"
+  },
+  "melhor-guitarra-eletrica-infantil": {
+    "kicker": "GUIA · 2026",
+    "l1": "GUITARRA",
+    "l2": "INFANTIL",
+    "motif": "guitar"
+  },
+  "melhor-guitarra-para-blues": {
+    "kicker": "GUITARRAS · 2026",
+    "l1": "GUITARRA",
+    "l2": "PRA BLUES",
+    "motif": "guitar"
+  },
+  "fender-vs-gibson-qual-escolher": {
+    "kicker": "COMPARATIVO",
+    "l1": "FENDER vs",
+    "l2": "GIBSON",
+    "motif": "guitarLP"
+  },
+  "quanto-custa-uma-guitarra-eletrica": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "QUANTO",
+    "l2": "CUSTA?",
+    "motif": "guitar"
+  },
+  "quanto-custa-ser-guitarrista-no-brasil": {
+    "kicker": "GUIA · CUSTOS · 2026",
+    "l1": "CUSTO DE SER",
+    "l2": "GUITARRISTA",
+    "motif": "guitar"
+  },
+  "quantas-cordas-tem-uma-guitarra": {
+    "kicker": "TÉCNICA",
+    "l1": "QUANTAS",
+    "l2": "CORDAS?",
+    "motif": "guitar"
+  },
+  "quem-inventou-a-guitarra-eletrica": {
+    "kicker": "HISTÓRIA",
+    "l1": "QUEM",
+    "l2": "INVENTOU?",
+    "motif": "guitar"
+  },
+  "squier-classic-vibe-60s-stratocaster-review": {
+    "kicker": "REVIEW",
+    "l1": "SQUIER",
+    "l2": "CLASSIC VIBE",
+    "motif": "guitar"
+  },
+  "guitarra-com-amplificador-kit-iniciante": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "KIT",
+    "l2": "INICIANTE",
+    "motif": "guitar"
+  },
+  "melhores-marcas-de-guitarra-nacionais": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "MARCAS",
+    "l2": "NACIONAIS",
+    "motif": "guitar"
+  },
+  "guitarra-tagima-e-boa": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "TAGIMA",
+    "l2": "É BOA?",
+    "motif": "guitar"
+  },
+  "guitarra-giannini-vale-a-pena": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "GIANNINI",
+    "l2": "VALE A PENA?",
+    "motif": "guitar"
+  },
+  "guitarras-nacionais-baratas": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "NACIONAIS",
+    "l2": "BARATAS",
+    "motif": "guitar"
+  },
+  "tagima-vs-squier": {
+    "kicker": "COMPARATIVO",
+    "l1": "TAGIMA vs",
+    "l2": "SQUIER",
+    "motif": "guitar"
+  },
+  "guitarra-telecaster-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "TELE",
+    "l2": "CASTER",
+    "motif": "guitar"
+  },
+  "guitarra-ibanez-guia-completo": {
+    "kicker": "GUITARRAS · MARCA",
+    "l1": "GUITARRA",
+    "l2": "IBANEZ",
+    "motif": "guitar"
+  },
+  "guitarra-sg-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "GUITARRA",
+    "l2": "SG",
+    "motif": "guitarLP"
+  },
+  "guitarra-semi-acustica-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "SEMI",
+    "l2": "ACÚSTICA",
+    "motif": "guitarLP"
+  },
+  "guitarra-jackson-guia-completo": {
+    "kicker": "GUITARRAS · MARCA",
+    "l1": "GUITARRA",
+    "l2": "JACKSON",
+    "motif": "guitar"
+  },
+  "guitarra-strinberg-guia-completo": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "GUITARRA",
+    "l2": "STRINBERG",
+    "motif": "guitar"
+  },
+  "guitarra-flying-v-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "FLYING",
+    "l2": "V",
+    "motif": "guitar"
+  },
+  "guitarra-yamaha-guia-completo": {
+    "kicker": "GUITARRAS · MARCA",
+    "l1": "GUITARRA",
+    "l2": "YAMAHA",
+    "motif": "guitar"
+  },
+  "amplificador-de-guitarra-guia-completo": {
+    "kicker": "AMPLIFICADORES",
+    "l1": "AMPLIFICADOR",
+    "l2": "DE GUITARRA",
+    "motif": "amp"
+  },
+  "amplificador-valvulado-ou-transistor": {
+    "kicker": "AMPLIFICADORES",
+    "l1": "VALVULADO",
+    "l2": "ou TRANSISTOR",
+    "motif": "amp"
+  },
+  "melhor-amplificador-de-guitarra-2026": {
+    "kicker": "AMPS · 2026",
+    "l1": "MELHOR",
+    "l2": "AMPLIFICADOR",
+    "motif": "amp"
+  },
+  "melhor-amplificador-valvulado-de-guitarra-2026": {
+    "kicker": "AMPS · 2026",
+    "l1": "MELHOR",
+    "l2": "VALVULADO",
+    "motif": "amp"
+  },
+  "melhor-mini-amplificador-de-guitarra-2026": {
+    "kicker": "AMPS · 2026",
+    "l1": "MINI",
+    "l2": "AMPLIFICADOR",
+    "motif": "amp"
+  },
+  "review-fender-blues-junior-iv": {
+    "kicker": "REVIEW",
+    "l1": "BLUES",
+    "l2": "JUNIOR IV",
+    "motif": "amp"
+  },
+  "5-pedais-boss-essenciais-para-guitarristas": {
+    "kicker": "PEDAIS",
+    "l1": "5 PEDAIS",
+    "l2": "ESSENCIAIS",
+    "motif": "pedal"
+  },
+  "como-montar-pedalboard": {
+    "kicker": "PEDAIS · TUTORIAL",
+    "l1": "MONTAR",
+    "l2": "PEDALBOARD",
+    "motif": "pedal"
+  },
+  "pedais-e-pedaleiras-guia-completo": {
+    "kicker": "PEDAIS · GUIA",
+    "l1": "PEDAIS E",
+    "l2": "PEDALEIRAS",
+    "motif": "pedal"
+  },
+  "pedal-de-distorcao-para-guitarra": {
+    "kicker": "PEDAIS",
+    "l1": "PEDAL DE",
+    "l2": "DISTORÇÃO",
+    "motif": "pedal"
+  },
+  "melhor-pedaleira-de-guitarra-2026": {
+    "kicker": "PEDAIS · 2026",
+    "l1": "MELHOR",
+    "l2": "PEDALEIRA",
+    "motif": "pedal"
+  },
+  "melhores-captadores-de-guitarra-2026": {
+    "kicker": "ACESSÓRIOS · 2026",
+    "l1": "MELHORES",
+    "l2": "CAPTADORES",
+    "motif": "pickups"
+  },
+  "captacoes-guitarra-passivas-vs-ativas": {
+    "kicker": "TÉCNICA",
+    "l1": "PASSIVO",
+    "l2": "ou ATIVO",
+    "motif": "pickups"
+  },
+  "melhores-cordas-de-guitarra-2026": {
+    "kicker": "ACESSÓRIOS · 2026",
+    "l1": "MELHORES",
+    "l2": "CORDAS",
+    "motif": "strings"
+  },
+  "cordas-de-guitarra-009-ou-010": {
+    "kicker": "ACESSÓRIOS",
+    "l1": "009",
+    "l2": "ou 010?",
+    "motif": "strings"
+  },
+  "como-trocar-as-cordas-da-guitarra": {
+    "kicker": "TUTORIAL",
+    "l1": "TROCAR",
+    "l2": "AS CORDAS",
+    "motif": "strings"
+  },
+  "nome-das-cordas-da-guitarra": {
+    "kicker": "TÉCNICA",
+    "l1": "NOME DAS",
+    "l2": "CORDAS",
+    "motif": "strings"
+  },
+  "melhor-interface-de-audio-para-guitarra-2026": {
+    "kicker": "HOME STUDIO · 2026",
+    "l1": "MELHOR",
+    "l2": "INTERFACE",
+    "motif": "interface"
+  },
+  "como-gravar-guitarra-no-computador": {
+    "kicker": "HOME STUDIO",
+    "l1": "GRAVAR",
+    "l2": "NO PC",
+    "motif": "interface"
+  },
+  "quanto-custa-montar-setup-de-guitarra": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "MONTAR",
+    "l2": "O SETUP",
+    "motif": "interface"
+  },
+  "acordes-de-guitarra-para-iniciantes": {
+    "kicker": "INICIANTES",
+    "l1": "ACORDES",
+    "l2": "INICIANTE",
     "motif": "fretboard"
+  },
+  "escala-pentatonica-de-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "ESCALA",
+    "l2": "PENTATÔNICA",
+    "motif": "fretboard"
+  },
+  "quanto-tempo-aprender-guitarra": {
+    "kicker": "INICIANTES",
+    "l1": "QUANTO",
+    "l2": "TEMPO?",
+    "motif": "fretboard"
+  },
+  "como-ler-cifra-de-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "COMO LER",
+    "l2": "CIFRA",
+    "motif": "tab"
+  },
+  "melhores-musicas-para-aprender-guitarra": {
+    "kicker": "INICIANTES",
+    "l1": "MÚSICAS",
+    "l2": "PARA TOCAR",
+    "motif": "tab"
+  },
+  "como-afinar-guitarra-guia-completo": {
+    "kicker": "TUTORIAL",
+    "l1": "COMO",
+    "l2": "AFINAR",
+    "motif": "tuner"
+  },
+  "afinacoes-de-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "AFINAÇÕES",
+    "l2": "DE GUITARRA",
+    "motif": "strings"
+  },
+  "partes-da-guitarra-eletrica": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "PARTES DA",
+    "l2": "GUITARRA",
+    "motif": "guitar"
+  },
+  "teoria-musical-para-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "TEORIA",
+    "l2": "MUSICAL",
+    "motif": "fretboard"
+  },
+  "glossario-de-guitarra": {
+    "kicker": "REFERÊNCIA · A a Z",
+    "l1": "GLOSSÁRIO",
+    "l2": "DA GUITARRA",
+    "motif": "guitar"
+  },
+  "como-fazer-manutencao-guitarra-em-casa": {
+    "kicker": "TUTORIAL",
+    "l1": "MANUTENÇÃO",
+    "l2": "EM CASA",
+    "motif": "tools"
+  },
+  "problemas-comuns-na-guitarra": {
+    "kicker": "TUTORIAL",
+    "l1": "PROBLEMAS",
+    "l2": "COMUNS",
+    "motif": "tools"
+  },
+  "fret-buzz-traste-zerando": {
+    "kicker": "TUTORIAL",
+    "l1": "FRET BUZZ",
+    "l2": "TRASTE ZERANDO",
+    "motif": "fretboard"
+  },
+  "guitarra-chiando-ruido": {
+    "kicker": "TUTORIAL",
+    "l1": "GUITARRA",
+    "l2": "CHIANDO",
+    "motif": "pickups"
+  },
+  "guitarra-desafinando": {
+    "kicker": "TUTORIAL",
+    "l1": "GUITARRA",
+    "l2": "DESAFINANDO",
+    "motif": "tuner"
+  },
+  "como-abaixar-a-acao-da-guitarra": {
+    "kicker": "TUTORIAL",
+    "l1": "ABAIXAR",
+    "l2": "A AÇÃO",
+    "motif": "strings"
+  },
+  "como-tocar-enter-sandman-metallica": {
+    "kicker": "COMO TOCAR",
+    "l1": "ENTER",
+    "l2": "SANDMAN",
+    "motif": "tab"
+  },
+  "como-tocar-evidencias-chitaozinho-e-xororo": {
+    "kicker": "COMO TOCAR",
+    "l1": "TOCAR",
+    "l2": "EVIDÊNCIAS",
+    "motif": "tab"
+  },
+  "como-tocar-tempo-perdido-legiao-urbana": {
+    "kicker": "COMO TOCAR",
+    "l1": "TEMPO",
+    "l2": "PERDIDO",
+    "motif": "tab"
+  },
+  "como-tocar-wish-you-were-here-pink-floyd": {
+    "kicker": "COMO TOCAR",
+    "l1": "WISH YOU",
+    "l2": "WERE HERE",
+    "motif": "tab"
+  },
+  "melhores-violoes-2026": {
+    "kicker": "VIOLÕES · 2026",
+    "l1": "MELHORES",
+    "l2": "VIOLÕES",
+    "motif": "acoustic"
+  },
+  "violao-ou-guitarra-por-onde-comecar": {
+    "kicker": "INICIANTES",
+    "l1": "VIOLÃO ou",
+    "l2": "GUITARRA?",
+    "motif": "acoustic"
+  },
+  "como-tocar-violao-para-iniciantes": {
+    "kicker": "INICIANTES",
+    "l1": "COMO TOCAR",
+    "l2": "VIOLÃO",
+    "motif": "acoustic"
+  },
+  "tecnicas-de-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "TÉCNICAS",
+    "l2": "DE GUITARRA",
+    "motif": "fretboard"
+  },
+  "melhores-presentes-para-guitarristas": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "PRESENTES",
+    "l2": "P/ GUITARRISTAS",
+    "motif": "guitar"
   }
 }
