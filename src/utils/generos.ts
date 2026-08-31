@@ -41,7 +41,7 @@ export function slugify(texto: string): string {
 
 // Meta descriptions acima de ~155 caracteres são truncadas na SERP do Google;
 // corta na última palavra inteira que cabe no limite.
-export function metaDescription(texto: string, limite = 155): string {
+export function metaDescription(texto: string, limite = 145): string {
   if (texto.length <= limite) return texto;
   const cortado = texto.slice(0, limite - 1);
   return `${cortado.slice(0, cortado.lastIndexOf(' '))}…`;
