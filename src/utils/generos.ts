@@ -1,7 +1,7 @@
 export const GENEROS = ['Rock', 'Metal', 'Blues', 'Pop', 'Jazz', 'R&B', 'Sertanejo', 'Nacional'] as const;
 export type Genero = (typeof GENEROS)[number];
 
-// Matiz OKLCH por gênero — replica o mapeamento do design handoff das Bandas.
+// Matiz OKLCH por gênero, replica o mapeamento do design handoff das Bandas.
 const HUES: Record<Genero, number> = {
   Rock: 25,
   Metal: 288,

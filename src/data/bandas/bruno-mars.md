@@ -82,7 +82,7 @@ albuns:
       - tema: Otimismo romântico
         explicacao: A faixa "Just the Way You Are" celebra o amor de forma
           direta e despreocupada, exaltando a parceira sem cobranças ou
-          drama — um contraponto ao lado mais sofrido do disco.
+          drama, um contraponto ao lado mais sofrido do disco.
       - tema: Dor e términos de relacionamento
         explicacao: A faixa "Grenade" fala sobre um amor não correspondido
           em tom quase dramático, enquanto "Talking to the Moon" trata da
@@ -99,7 +99,7 @@ albuns:
           disco.
       - tema: Fusão de sonoridades retrô
         explicacao: O próprio título do álbum já indica a mistura de
-          referências — "Doo-Wops" remete aos grupos vocais dos anos 1950 e
+          referências, "Doo-Wops" remete aos grupos vocais dos anos 1950 e
           "Hooligans" à atitude mais urbana e contemporânea, combinação que
           aparece em faixas como "Liquor Store Blues", com participação de
           Damian Marley.
@@ -140,12 +140,12 @@ albuns:
           Lawrence e Ari Levine, com produções adicionais de Needlz, Supa
           Dups e Jeff Bhasker. A mixagem ficou a cargo de Manny Marroquin
           nos Larrabee Studios, em setembro de 2010, num processo
-          comprimido — o prazo original de seis meses acabou reduzido a
+          comprimido, o prazo original de seis meses acabou reduzido a
           apenas um mês antes do lançamento.
       - titulo: Recepção e sucesso comercial
         texto: Doo-Wops & Hooligans estreou na 3ª posição da Billboard 200
           com 55 mil cópias vendidas na primeira semana, mas seguiu vendendo
-          por anos — já soma mais de 15 milhões de cópias globalmente e
+          por anos, já soma mais de 15 milhões de cópias globalmente e
           recebeu certificação 9x Platina nos Estados Unidos. O disco chegou
           a acumular 750 semanas na Billboard 200 até outubro de 2025,
           tornando-se o álbum de estreia com mais tempo de permanência na
@@ -217,9 +217,8 @@ albuns:
         streams: "289 milhões"
     secoesAnalise:
       - titulo: Gravação e produção
-        texto: O segundo álbum foi gravado em quatro estúdios diferentes —
-          Larrabee Sound e Levcon Studios, em Los Angeles e Hollywood, além
-          de Daptone Studios e Avatar Studios, em Nova York — reunindo
+        texto: O segundo álbum foi gravado em quatro estúdios diferentes, Larrabee Sound e Levcon Studios, em Los Angeles e Hollywood, além
+          de Daptone Studios e Avatar Studios, em Nova York, reunindo
           produtores como Mark Ronson, Jeff Bhasker, Emile Haynie, Diplo e
           Supa Dups ao lado dos fiéis The Smeezingtons. Bruno Mars disse na
           época que queria soar "exatamente o oposto" do que se esperava de
@@ -303,8 +302,8 @@ albuns:
       - titulo: Gravação e produção
         texto: 24K Magic foi gravado no Glenwood Place Studios, em Burbank,
           entre o fim de 2015 e setembro de 2016, com produção de Shampoo
-          Press & Curl — a dupla formada por Philip Lawrence e Christopher
-          Brody Brown —, além de The Stereotypes, Emile Haynie e Jeff
+          Press & Curl, a dupla formada por Philip Lawrence e Christopher
+          Brody Brown, além de The Stereotypes, Emile Haynie e Jeff
           Bhasker. A mixagem ficou com Serban Ghenea e a masterização com
           Tom Coyne, veteranos experientes em produções pop de grande
           escala.

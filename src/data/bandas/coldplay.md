@@ -138,7 +138,7 @@ albuns:
     temas:
       - tema: Ansiedade e medo existencial
         explicacao: A faixa "Don't Panic" abre o álbum com um lema que
-          quase virou mantra da banda — manter a calma diante do caos e da
+          quase virou mantra da banda, manter a calma diante do caos e da
           insegurança da virada do milênio. A letra nasceu de conversas
           informais do grupo sobre ansiedade e a sensação de que tudo pode
           desmoronar a qualquer momento.
@@ -288,21 +288,20 @@ albuns:
           2001 e julho de 2002, dividido entre o Mayfair Studios e o AIR
           Studios, em Londres, e o Parr Street, em Liverpool, novamente sob
           produção de Ken Nelson ao lado da própria banda. O processo foi
-          tenso — em junho de 2002, às vésperas do prazo de entrega, o
+          tenso, em junho de 2002, às vésperas do prazo de entrega, o
           grupo considerou o material fraco demais e decidiu adiar o
           lançamento até ficar satisfeito com o resultado, remexendo até
           "Clocks", faixa originalmente reservada para o terceiro álbum.
       - titulo: Impacto e legado
-        texto: O disco rendeu três Grammys à banda — Melhor Álbum
+        texto: O disco rendeu três Grammys à banda, Melhor Álbum
           Alternativo, Melhor Performance de Rock por "In My Place" e
-          Gravação do Ano por "Clocks" — além do Brit Award de Álbum
+          Gravação do Ano por "Clocks", além do Brit Award de Álbum
           Britânico do Ano. Vendeu mais de 17 milhões de cópias no mundo,
           chegou ao topo das paradas em 12 países e hoje ocupa a posição
           324 na lista dos 500 Maiores Álbuns de Todos os Tempos, da
           revista Rolling Stone.
       - titulo: Curiosidade
-        texto: A faixa "Clocks" quase não existiu como single da banda —
-          ela havia sido escrita de olho no terceiro álbum do Coldplay, mas
+        texto: A faixa "Clocks" quase não existiu como single da banda, ela havia sido escrita de olho no terceiro álbum do Coldplay, mas
           acabou remanejada de última hora para salvar A Rush of Blood to
           the Head, que a própria banda temia não estar bom o suficiente.
           A canção se tornaria uma das mais premiadas de toda a carreira do
@@ -377,8 +376,8 @@ albuns:
           2008, passando pelo estúdio The Bakery, em Londres, o Magic
           Shop, em Nova York, e até duas igrejas em Barcelona. Brian Eno
           assumiu a produção ao lado de Markus Dravs, Jon Hopkins e Rik
-          Simpson com uma regra clara — cada faixa deveria soar diferente
-          das demais — o que empurrou a banda para fora da zona de conforto
+          Simpson com uma regra clara, cada faixa deveria soar diferente
+          das demais, o que empurrou a banda para fora da zona de conforto
           e resultou num disco mais orquestral, com o violinista Davide
           Rossi presente em seis faixas.
       - titulo: Impacto e legado
@@ -388,7 +387,7 @@ albuns:
           o Grammy de Melhor Álbum de Rock em 2009. Até 2011, já somava
           mais de 10 milhões de cópias vendidas ao redor do mundo.
       - titulo: Curiosidade
-        texto: A faixa-título rendeu um processo judicial — o guitarrista
+        texto: A faixa-título rendeu um processo judicial, o guitarrista
           Joe Satriani acusou o Coldplay de plagiar sua composição
           instrumental "If I Could Fly" de 2004. O caso foi encerrado sem
           decisão de mérito em 2009, com cada lado arcando com os próprios
@@ -420,7 +419,7 @@ albuns:
           gerações e fronteiras.
       - tema: Energia coletiva e espiritualidade
         explicacao: A faixa "Everglow" fala sobre carregar consigo a
-          energia de alguém que já não está mais por perto — tema que
+          energia de alguém que já não está mais por perto, tema que
           ganha uma camada extra de significado por trazer vocais de apoio
           não creditados da atriz Gwyneth Paltrow, que ajudou a escrever um
           dos versos da música.

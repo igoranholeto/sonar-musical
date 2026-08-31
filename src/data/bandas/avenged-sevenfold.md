@@ -160,7 +160,7 @@ integrantes:
     anos: 2015 – hoje
     inspiracoes: Punk rock, hardcore, Bad Religion
     resumo: Brooks Wackerman é o baterista do Avenged Sevenfold desde 2015,
-      quando assumiu o posto após a saída de Arin Ilejay — que havia sucedido
+      quando assumiu o posto após a saída de Arin Ilejay, que havia sucedido
       brevemente Mike Portnoy nas turnês e gravações seguintes à morte do
       baterista fundador, Jimmy "The Rev" Sullivan, em 2009. Antes de entrar
       pro A7X, Wackerman já tinha um currículo extenso, com passagens pela
@@ -201,11 +201,11 @@ albuns:
         explicacao: A faixa "Beast and the Harlot" usa a imagem apocalíptica
           da Besta de sete cabeças e da mulher sentada sobre ela, do livro
           bíblico de Apocalipse, pra descrever uma sociedade tomada pela
-          corrupção — o próprio título do álbum vem de um verso dessa
+          corrupção, o próprio título do álbum vem de um verso dessa
           música.
       - tema: Vício, excesso e a inspiração de Hunter S. Thompson
         explicacao: A faixa "Bat Country" nasceu do livro "Medo e Delírio em Las
-          Vegas", de Hunter S. Thompson — o título vem do trecho em que o
+          Vegas", de Hunter S. Thompson, o título vem do trecho em que o
           protagonista, em surto alucinógeno, grita que aquilo ali é "terra
           de morcegos" durante uma viagem de carro a Las Vegas. A letra foi
           fechada pouco antes do suicídio do próprio Thompson, em fevereiro
@@ -222,7 +222,7 @@ albuns:
           fisicamente presente.
       - tema: Uma cidade dourada e corrompida
         explicacao: A faixa-título fecha o disco descrevendo uma cidade
-          brilhante construída em ouro, bem distante da inocência — um
+          brilhante construída em ouro, bem distante da inocência, um
           retrato apocalíptico que amarra o conceito solto do álbum em
           torno da corrupção e do pecado.
     scoresCriticos:
@@ -254,7 +254,7 @@ albuns:
         texto: Gravado no início de 2005 e lançado em 6 de junho daquele
           ano pela Warner Bros./Hopeless Records, City of Evil marcou a
           virada sonora da banda rumo a um heavy metal mais tradicional,
-          com forte pegada da NWOBHM — a mixagem ficou a cargo de Andy
+          com forte pegada da NWOBHM, a mixagem ficou a cargo de Andy
           Wallace. M. Shadows passou meses treinando com um vocal coach que
           já havia trabalhado com Axl Rose e Chris Cornell, pra abandonar
           de vez os vocais guturais dos dois primeiros discos.
@@ -269,7 +269,7 @@ albuns:
       - titulo: Curiosidade
         texto: City of Evil foi o primeiro disco da banda sem nenhum vocal
           gutural do estilo metalcore que marcava "Sounding the Seventh
-          Trumpet" (2001) e "Waking the Fallen" (2003) — uma mudança que
+          Trumpet" (2001) e "Waking the Fallen" (2003), uma mudança que
           dividiu parte da base de fãs mais antiga, mas abriu caminho pro
           sucesso comercial que viria a seguir.
   - nome: Avenged Sevenfold
@@ -277,14 +277,14 @@ albuns:
     capa: /images/albuns/avenged-sevenfold-avenged-sevenfold.jpg
     capaAlt: Capa do álbum Avenged Sevenfold, de Avenged Sevenfold
     descricao: Quarto álbum, autoproduzido pela primeira vez e também
-      conhecido como "the White Album" por causa da capa minimalista — um
+      conhecido como "the White Album" por causa da capa minimalista, um
       som mais aberto e melódico, e o último disco gravado com o baterista
       fundador Jimmy "The Rev" Sullivan.
     temas:
       - tema: Saudade e distância durante a turnê
         explicacao: A faixa "Dear God" nasceu de uma brincadeira no estúdio, em Big
           Bear, quando Synyster Gates e The Rev especulavam sobre como seria
-          fácil compor um hit country-pop — a faixa que resultou disso virou
+          fácil compor um hit country-pop, a faixa que resultou disso virou
           uma carta sincera de M. Shadows sobre a distância da esposa
           enquanto a banda estava em turnê.
       - tema: Negação e autodestruição num relacionamento
@@ -294,7 +294,7 @@ albuns:
       - tema: Horror gótico e vingança do além
         explicacao: A faixa "A Little Piece of Heaven" narra, em tom quase teatral e
           com arranjos orquestrais escritos pelo próprio The Rev, a história
-          de um homem que mata a namorada por medo de ser rejeitado — e
+          de um homem que mata a namorada por medo de ser rejeitado, e
           depois é assombrado e morto por ela, ressuscitada.
       - tema: Arrependimentos e o que fica pra trás
         explicacao: A faixa "Afterlife" usa a metáfora de cair na vida após a morte e
@@ -340,7 +340,7 @@ albuns:
           arranjos orquestrais de "A Little Piece of Heaven", mostrando uma
           versatilidade que ia muito além da bateria.
       - titulo: Recepção dividida
-        texto: A crítica ficou dividida — o Metacritic registrou uma média
+        texto: A crítica ficou dividida, o Metacritic registrou uma média
           de 56/100, entre elogios ao ineditismo sonoro e críticas por
           falta de coesão entre os estilos das faixas. Ainda assim, o disco
           foi um sucesso comercial, estreando na 4ª posição da Billboard
@@ -351,13 +351,12 @@ albuns:
     capaAlt: Capa do álbum Nightmare, de Avenged Sevenfold
     descricao: Quinto álbum, gravado após a morte do baterista fundador
       Jimmy "The Rev" Sullivan, com Mike Portnoy (Dream Theater) nas
-      baquetas — um disco de luto que também guarda as últimas composições e
+      baquetas, um disco de luto que também guarda as últimas composições e
       vocais do próprio Rev.
     temas:
       - tema: Punição e as consequências dos próprios atos
         explicacao: A faixa-título é narrada pela perspectiva de alguém já
-          condenado ao inferno, que zomba de quem cometeu os mesmos erros —
-          segundo M. Shadows, foi a única letra do disco que não precisou
+          condenado ao inferno, que zomba de quem cometeu os mesmos erros, segundo M. Shadows, foi a única letra do disco que não precisou
           ser adaptada após a morte de Sullivan, porque ele amava tanto o
           texto original que a banda preferiu manter intacto.
       - tema: Luto e homenagem a um amigo perdido
@@ -371,13 +370,13 @@ albuns:
           holofotes.
       - tema: Colapso emocional e sensação de aprisionamento
         explicacao: A faixa "Buried Alive" usa a imagem de ser enterrado vivo pra
-          descrever um estado de paralisia emocional — a música já estava
+          descrever um estado de paralisia emocional, a música já estava
           pronta antes da morte de The Rev, que chegou a gravar uma demo
           cantando a letra original.
       - tema: Últimas palavras e aceitação da própria morte
         explicacao: A faixa "Fiction" foi a última música que The Rev escreveu,
           entregue à banda no Natal de 2009 sob o título provisório
-          "Death" — a faixa final do disco carrega seus próprios vocais,
+          "Death", a faixa final do disco carrega seus próprios vocais,
           gravados como uma espécie de despedida.
     scoresCriticos:
       - fonte: Metacritic
@@ -404,7 +403,7 @@ albuns:
       - titulo: A morte de The Rev e a decisão de continuar
         texto: Em 28 de dezembro de 2009, pouco depois de a banda terminar
           as demos do álbum, o baterista Jimmy "The Rev" Sullivan foi
-          encontrado morto em casa, aos 28 anos — a autópsia posterior
+          encontrado morto em casa, aos 28 anos, a autópsia posterior
           apontou overdose acidental por uma combinação de álcool e
           remédios controlados. O grupo chegou a cogitar o fim da banda,
           mas decidiu seguir em frente depois do incentivo dos próprios
@@ -418,9 +417,9 @@ albuns:
           composição rítmica e das ideias originais partiu do próprio
           Sullivan, creditado em várias faixas.
       - titulo: Recepção e sucesso comercial
-        texto: Nightmare estreou na 1ª posição da Billboard 200 — a
+        texto: Nightmare estreou na 1ª posição da Billboard 200, a
           primeira vez que o Avenged Sevenfold chegava ao topo da parada
-          americana — e recebeu certificação de Platina pela RIAA, além de
+          americana, e recebeu certificação de Platina pela RIAA, além de
           Ouro no Reino Unido e na Nova Zelândia.
   - nome: Hail to the King
     ano: 2013
@@ -428,19 +427,18 @@ albuns:
     capaAlt: Capa do álbum Hail to the King, de Avenged Sevenfold
     descricao: Sexto álbum, com um som propositalmente mais direto e
       "clássico", inspirado abertamente em Black Sabbath, Iron Maiden,
-      Metallica e Guns N' Roses — o disco que consolidou a banda como
+      Metallica e Guns N' Roses, o disco que consolidou a banda como
       headliner de festivais.
     temas:
       - tema: A sedução do mal como figura protetora
         explicacao: A faixa "Shepherd of Fire", de abertura do álbum, é cantada da
           perspectiva do próprio demônio, que se apresenta como um guia
-          simpático às dores humanas enquanto oferece promessas enganosas —
-          a banda construiu a introdução da faixa como se o ouvinte
+          simpático às dores humanas enquanto oferece promessas enganosas, a banda construiu a introdução da faixa como se o ouvinte
           estivesse literalmente entrando no inferno, com sinos e fogo na
           ambientação sonora.
       - tema: Obediência cega a reis e líderes
         explicacao: A faixa-título narra, na superfície, a história de um
-          rei tirano que extermina quem não jura lealdade a ele — mas M.
+          rei tirano que extermina quem não jura lealdade a ele, mas M.
           Shadows explicou que a letra é, na verdade, uma pergunta sobre
           por que a sociedade sempre precisa seguir reis, presidentes e
           papas em vez de pensar por conta própria.
@@ -450,7 +448,7 @@ albuns:
           com os próprios defeitos, segundo M. Shadows.
       - tema: Um requiem ao contrário
         explicacao: A faixa "Requiem" inverte a lógica das preces sacras
-          tradicionais — em vez de pedir salvação a um deus bondoso, a
+          tradicionais, em vez de pedir salvação a um deus bondoso, a
           letra invoca o senhor das trevas pra ressuscitar o inferno,
           misturando súplica e desejo de destruição em versos cantados em
           latim.
@@ -485,7 +483,7 @@ albuns:
           "cortou perto demais" o som do Black Album do Metallica em
           algumas faixas.
       - titulo: Recepção crítica dividida
-        texto: O disco recebeu uma resposta mista da crítica — o Metacritic
+        texto: O disco recebeu uma resposta mista da crítica, o Metacritic
           registrou média de 70/100, entre quem elogiou o resgate de uma
           sonoridade mais clássica e crua (o jornal The Guardian chamou o
           resultado de "tão vital quanto as bandas que o inspiraram") e

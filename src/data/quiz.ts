@@ -44,7 +44,7 @@ export const QUIZ_QUESTIONS: Record<'Iniciante' | 'Intermediário' | 'Avançado'
     {
       question: 'O que é BPM?',
       options: [
-        'Beats por minuto — mede o andamento da música',
+        'Beats por minuto, mede o andamento da música',
         'Um tipo de acorde',
         'A quantidade de cordas de um instrumento',
         'Um efeito de pedal',
@@ -84,7 +84,7 @@ export const QUIZ_QUESTIONS: Record<'Iniciante' | 'Intermediário' | 'Avançado'
         'O final obrigatório de toda música',
       ],
       correctIndex: 0,
-      hint: 'É o oposto de tocar uma nota — representa a ausência de som.',
+      hint: 'É o oposto de tocar uma nota, representa a ausência de som.',
     },
     {
       question: 'Em um compasso 4/4, quantos tempos (batidas) há em cada compasso?',
@@ -155,7 +155,7 @@ export const QUIZ_QUESTIONS: Record<'Iniciante' | 'Intermediário' | 'Avançado'
         'Tríade diminuta + sétima diminuta',
       ],
       correctIndex: 0,
-      hint: 'Dominantes têm uma tensão característica que pede resolução — a sétima é menor.',
+      hint: 'Dominantes têm uma tensão característica que pede resolução, a sétima é menor.',
     },
     {
       question: 'Qual é o relativo menor de Dó maior?',
@@ -219,7 +219,7 @@ export const QUIZ_QUESTIONS: Record<'Iniciante' | 'Intermediário' | 'Avançado'
         'Terça menor, quinta diminuta, sétima maior',
       ],
       correctIndex: 0,
-      hint: 'O "b5" já entrega que a quinta é diminuta — falta decidir a terça e a sétima.',
+      hint: 'O "b5" já entrega que a quinta é diminuta, falta decidir a terça e a sétima.',
     },
     {
       question: 'Quantos modos gregos existem, derivados da escala maior?',
@@ -253,7 +253,7 @@ export const QUIZ_QUESTIONS: Record<'Iniciante' | 'Intermediário' | 'Avançado'
         'Sétima maior',
       ],
       correctIndex: 0,
-      hint: 'É exatamente a metade de uma oitava — por isso soa tão instável.',
+      hint: 'É exatamente a metade de uma oitava, por isso soa tão instável.',
     },
     {
       question: 'O que diferencia a escala menor harmônica da escala menor natural?',

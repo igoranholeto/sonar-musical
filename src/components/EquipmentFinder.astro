@@ -1,5 +1,5 @@
 ---
-// Finder "Qual equipamento é pra você?" — árvore de decisão de 2 passos.
+// Finder "Qual equipamento é pra você?", árvore de decisão de 2 passos.
 // Progressive enhancement: TODAS as opções são <a> reais no HTML (crawláveis,
 // funcionam sem JS como lista de links). O JS apenas transforma num fluxo
 // passo-a-passo, escondendo os grupos e revelando conforme a escolha.
@@ -101,7 +101,7 @@ const grupos: Grupo[] = [
           Voltar
         </button>
         <p class="finder__pergunta">
-          <span aria-hidden="true">{g.emoji}</span> {g.titulo} — qual é o seu caso?
+          <span aria-hidden="true">{g.emoji}</span> {g.titulo}, qual é o seu caso?
         </p>
         <div class="finder__opcoes">
           {g.opcoes.map((o) => (

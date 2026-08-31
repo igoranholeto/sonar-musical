@@ -6,13 +6,13 @@ ano: 1975
 blurb: Guitarras gêmeas galopantes sobre o baixo dedilhado de Steve Harris.
   NWOBHM em estado puro.
 fotoCapa: /images/iron-maiden-madrid-2016-sonar.webp
-fotoCapaAlt: Iron Maiden ao vivo em Madri, 2016 — baixista e três guitarristas no palco com cenário maia
+fotoCapaAlt: Iron Maiden ao vivo em Madri, 2016, baixista e três guitarristas no palco com cenário maia
 fotoCapaPosition: 40
 integrantes:
   - foto: /images/steve-harris-sonar-integrante.webp
     fotoAlt: steve harris baixista
     pontos:
-      - Palhetada com os dedos em galope — o motor rítmico do Maiden.
+      - Palhetada com os dedos em galope, o motor rítmico do Maiden.
       - Linhas de baixo melódicas que soam quase como uma segunda guitarra.
     inspiracoes: UFO, Deep Purple, Genesis
     anos: 1975 – hoje
@@ -21,7 +21,7 @@ integrantes:
     resumo: Steve Harris é o baixista, fundador e principal compositor do Iron
       Maiden, banda que criou em Londres em 1975. Além de assinar ou coassinar
       clássicos como "The Trooper", "Run to the Hills" e "Fear of the Dark", é
-      conhecido pelo estilo de baixo agressivo e melódico — tocado com a técnica
+      conhecido pelo estilo de baixo agressivo e melódico, tocado com a técnica
       de "galope" que se tornou marca registrada do heavy metal. Líder e
       visionário do grupo, Harris é o único membro presente em todas as
       formações da banda desde sua criação.
@@ -50,7 +50,7 @@ integrantes:
   - foto: /images/bruce-dickinson-iron-maiden-sonar.webp
     fotoAlt: Brucen DIckinson Vocalista
     pontos:
-      - Alcance operático e vibrato potente — a "Air Raid Siren".
+      - Alcance operático e vibrato potente, a "Air Raid Siren".
       - Presença teatral que conduz o show do começo ao fim.
     inspiracoes: Ian Gillan, Arthur Brown
     anos: 1981–1993 · 1999 – hoje
@@ -60,8 +60,8 @@ integrantes:
       pausa entre 1993 e 1999 para se dedicar à carreira solo. Sua voz
       operística de amplo alcance e presença de palco marcante ajudaram a
       definir álbuns clássicos como "The Number of the Beast" e "Powerslave".
-      Fora dos palcos, é piloto de avião comercial licenciado — já pilotou o
-      Boeing 747 "Ed Force One" da própria banda — e recebeu doutorado honorário
+      Fora dos palcos, é piloto de avião comercial licenciado, já pilotou o
+      Boeing 747 "Ed Force One" da própria banda, e recebeu doutorado honorário
       em música pela Queen Mary University of London.
     nome: Bruce Dickinson
     setup:
@@ -88,7 +88,7 @@ integrantes:
   - foto: /images/dave-murray-sunburst-sonar.webp
     fotoAlt: Dave Murray Guitarrista
     pontos:
-      - Legato fluido e vibrato suave — solos "líquidos".
+      - Legato fluido e vibrato suave, solos "líquidos".
       - "Strat com captação quente: sustain sem perder o brilho."
     inspiracoes: Jimi Hendrix, Ritchie Blackmore
     anos: 1976 – hoje
@@ -96,8 +96,8 @@ integrantes:
     status: Guitarrista
     resumo: Dave Murray é guitarrista do Iron Maiden desde os primórdios da banda,
       sendo o segundo integrante com mais tempo de casa depois de Steve Harris.
-      Conhecido por um estilo solo fluido baseado em técnica legato — inspirado
-      em Jimi Hendrix —, formou ao lado de Adrian Smith uma das duplas de
+      Conhecido por um estilo solo fluido baseado em técnica legato, inspirado
+      em Jimi Hendrix, formou ao lado de Adrian Smith uma das duplas de
       guitarra mais influentes do heavy metal, com harmonias e solos que
       moldaram o gênero a partir dos anos 80.
     nome: Dave Murray
@@ -125,7 +125,7 @@ integrantes:
   - foto: /images/adrian-smith-iron-maiden-sonar.webp
     fotoAlt: Adrian Smith Guitarrista
     pontos:
-      - Fraseado melódico e preciso — solos que "cantam".
+      - Fraseado melódico e preciso, solos que "cantam".
       - Veia de composição forte por trás dos riffs.
     inspiracoes: Pat Travers, Michael Schenker
     anos: 1980–1990 · 1999 – hoje
@@ -161,7 +161,7 @@ integrantes:
   - foto: /images/janick-gers-iron-maiden-sonar.webp
     fotoAlt: Janick Gers Kick Pose
     pontos:
-      - Estilo enérgico e imprevisível — muito movimento de palco.
+      - Estilo enérgico e imprevisível, muito movimento de palco.
       - Ataque agressivo que soma peso ao trio de guitarras.
     inspiracoes: Ritchie Blackmore, Paul Kossoff
     anos: 1990 – hoje
@@ -170,7 +170,7 @@ integrantes:
     resumo: Janick Gers integra o Iron Maiden desde 1990, completando o trio de
       guitarras ao lado de Dave Murray e Adrian Smith. Seu estilo é descrito
       como mais áspero, agressivo e cheio de energia cênica, contrastando com o
-      som mais suave de Murray e o tom rítmico de Smith — uma combinação que deu
+      som mais suave de Murray e o tom rítmico de Smith, uma combinação que deu
       à banda sua textura sonora característica nos anos seguintes.
     nome: Janick Gers
     setup:
@@ -206,8 +206,8 @@ integrantes:
       sonoridade da banda por mais de quatro décadas. Em dezembro de 2024, após
       se recuperar de um AVC sofrido em 2023, anunciou o afastamento das turnês,
       permanecendo como membro da "família Iron Maiden" e dedicando-se a
-      projetos pessoais. Desde então, Simon Dawson — baterista de longa data do
-      projeto paralelo British Lion, de Steve Harris — assumiu as apresentações
+      projetos pessoais. Desde então, Simon Dawson, baterista de longa data do
+      projeto paralelo British Lion, de Steve Harris, assumiu as apresentações
       ao vivo da banda.
     nome: Nicko McBrain
     setup:
@@ -291,7 +291,7 @@ albuns:
       - titulo: Gravação e produção
         texto: O álbum foi gravado em cerca de cinco semanas nos Battery Studios, em Londres, no fim de 1981, sob a produção de Martin Birch. Foi o primeiro disco da banda com Bruce Dickinson nos vocais, e boa parte do material já vinha sendo testado ao vivo em shows dos meses anteriores, o que ajudou a dar coesão ao repertório final.
       - titulo: A capa e a controvérsia
-        texto: A arte de Derek Riggs mostra o mascote Eddie manipulando um Satanás como marionete, enquanto é ele próprio controlado por cordas — uma imagem sobre ambiguidade moral que acabou gerando protestos de grupos religiosos nos Estados Unidos, incluindo queimas públicas de discos e boicotes a shows da turnê.
+        texto: A arte de Derek Riggs mostra o mascote Eddie manipulando um Satanás como marionete, enquanto é ele próprio controlado por cordas, uma imagem sobre ambiguidade moral que acabou gerando protestos de grupos religiosos nos Estados Unidos, incluindo queimas públicas de discos e boicotes a shows da turnê.
       - titulo: Legado
         texto: Este foi o primeiro álbum do Iron Maiden a chegar ao topo das paradas britânicas e já vendeu mais de 20 milhões de cópias no mundo. Décadas depois, "The Number of the Beast" segue aparecendo em listas como um dos discos mais essenciais da história do heavy metal.
   - nome: Powerslave
@@ -360,7 +360,7 @@ albuns:
     spotifyUrl: https://open.spotify.com/album/4MA3tRypbMVe0pBppCGbmV
     temas:
       - tema: Clarividência e dons sobrenaturais
-        explicacao: O conceito do álbum nasceu depois que Steve Harris leu o romance "Seventh Son", de Orson Scott Card, sobre a lenda folclórica do sétimo filho de um sétimo filho, que nasceria com poderes como clarividência — ideia que dá nome à faixa-título.
+        explicacao: O conceito do álbum nasceu depois que Steve Harris leu o romance "Seventh Son", de Orson Scott Card, sobre a lenda folclórica do sétimo filho de um sétimo filho, que nasceria com poderes como clarividência, ideia que dá nome à faixa-título.
       - tema: Luta entre o bem e o mal
         explicacao: Harris descreveu o disco como uma reflexão sobre "céu e inferno, bem e mal", tema reforçado estruturalmente pela dupla de faixas acústicas que abre e fecha o álbum, "Moonchild" e "Only the Good Die Young".
       - tema: Sonhos e premonição
@@ -403,7 +403,7 @@ albuns:
     videoTitulo: "IRON MAIDEN - SEVENTH SON OF A SEVENTH SON - A História do Álbum (Vida Vitrola)"
     secoesAnalise:
       - titulo: Gravação em Munique
-        texto: O álbum foi gravado entre fevereiro e março de 1988 nos Musicland Studios, em Munique, na Alemanha Ocidental, na última colaboração da banda com o produtor Martin Birch. Foi também o primeiro disco do Iron Maiden a usar teclados de forma dedicada, ainda que nenhum músico tenha sido contratado para a função — os próprios integrantes tocaram as partes no estúdio.
+        texto: O álbum foi gravado entre fevereiro e março de 1988 nos Musicland Studios, em Munique, na Alemanha Ocidental, na última colaboração da banda com o produtor Martin Birch. Foi também o primeiro disco do Iron Maiden a usar teclados de forma dedicada, ainda que nenhum músico tenha sido contratado para a função, os próprios integrantes tocaram as partes no estúdio.
       - titulo: O lado mais progressivo do Maiden
         texto: Com composições mais longas, melódicas e um conceito ainda que parcial amarrando as faixas, o disco marcou uma guinada em direção ao rock progressivo, se afastando da pegada mais direta de álbuns anteriores. Bruce Dickinson chegou a admitir depois que era "só metade de um álbum conceitual", já que a narrativa não se sustenta de forma totalmente coesa entre as faixas.
       - titulo: Legado
@@ -421,7 +421,7 @@ albuns:
       - tema: Reencontro e reconstrução
         explicacao: O álbum marca o retorno de Bruce Dickinson e Adrian Smith à banda, e faixas como "The Nomad" carregam anos de desenvolvimento que remontam à era do álbum "Virtual XI", de 1998, refletindo essa longa jornada até a volta ao Iron Maiden.
       - tema: Luto e memória familiar
-        explicacao: A faixa "Blood Brothers" foi escrita por Steve Harris como uma homenagem ao pai, já falecido, tratando de laços de sangue e da passagem do tempo entre gerações — e mais tarde passou a ser dedicada em shows a outras perdas, como a do baterista Ronnie James Dio.
+        explicacao: A faixa "Blood Brothers" foi escrita por Steve Harris como uma homenagem ao pai, já falecido, tratando de laços de sangue e da passagem do tempo entre gerações, e mais tarde passou a ser dedicada em shows a outras perdas, como a do baterista Ronnie James Dio.
       - tema: Guerra e mercenarismo
         explicacao: A faixa "The Mercenary" explora a figura do combatente que luta por dinheiro em vez de convicção, levantando questões morais sobre a guerra vista como negócio.
       - tema: Isolamento e incerteza existencial

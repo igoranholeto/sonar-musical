@@ -35,7 +35,7 @@ integrantes:
       - Persona muda a cada ciclo de álbum, mantendo a identidade real do
         intérprete sob máscara mesmo após a revelação pública de 2017.
     setup: []
-  - nome: Nameless Ghoul — Guitarra
+  - nome: Nameless Ghoul, Guitarra
     funcao: Guitarra
     foto: /images/ghost-ghoul-guitarra-sonar.jpg
     fotoAlt: Nameless Ghoul do Ghost mascarado tocando ao vivo sob chuva de confete
@@ -43,7 +43,7 @@ integrantes:
     status: Instrumentista anônimo
     inspiracoes: Ritchie Blackmore, Uli Jon Roth, Angus Young
     resumo: Como em toda a banda, os guitarristas do Ghost se apresentam como
-      "Nameless Ghouls" — mascarados e sem crédito individual oficial, parte
+      "Nameless Ghouls", mascarados e sem crédito individual oficial, parte
       do conceito de anonimato coletivo que sustenta a mitologia da banda
       desde o início. Nas guitarras, a assinatura sonora é um tom british
       vintage, entre riffs pesados de hard rock 70s e melodias quase pop nos
@@ -72,12 +72,12 @@ integrantes:
           nome: Boss Katana 100 MkII
           preco: ~R$ 2.400
           obs: Aproxima a saturação britânica escura sem custo de valvulado.
-  - nome: Nameless Ghoul — Baixo
+  - nome: Nameless Ghoul, Baixo
     funcao: Baixo / Teclado
     anos: 2008 – hoje (função rotativa)
     status: Instrumentista anônimo
     inspiracoes: Geezer Butler, Roger Glover
-    resumo: O baixo do Ghost segue a lógica do restante da banda — groove
+    resumo: O baixo do Ghost segue a lógica do restante da banda, groove
       simples e melódico, quase sempre dobrando a linha da guitarra base para
       reforçar o peso dos refrões. O mesmo Ghoul frequentemente acumula
       funções de teclado e sintetizador em estúdio, responsável pelas camadas
@@ -105,13 +105,13 @@ integrantes:
           nome: Behringer Model D
           preco: ~R$ 1.800
           obs: Clone fiel do circuito Moog subtrativo por bem menos.
-  - nome: Nameless Ghoul — Bateria
+  - nome: Nameless Ghoul, Bateria
     funcao: Bateria
     anos: 2008 – hoje (função rotativa)
     status: Instrumentista anônimo
     inspiracoes: Ian Paice, Bill Ward
     resumo: A bateria do Ghost soma influência de hard rock clássico com
-      pontualidade quase pop — poucos fills desnecessários, groove que serve
+      pontualidade quase pop, poucos fills desnecessários, groove que serve
       à canção. O Ghoul que ocupa a posição atualmente também atua em
       Paramore e AWOLNATION fora do universo Ghost, mantendo a lógica de
       anonimato apenas dentro da própria banda.
@@ -134,7 +134,7 @@ albuns:
     ano: 2010
     capa: /images/albuns/ghost-opus-eponymous.jpg
     capaAlt: Capa do álbum Opus Eponymous, de Ghost
-    descricao: Álbum de estreia que definiu o conceito do Ghost — heavy metal
+    descricao: Álbum de estreia que definiu o conceito do Ghost, heavy metal
       melódico e teatral com imaginário satânico explícito, produzido com
       estética propositalmente vintage.
     spotifyUrl: https://open.spotify.com/album/7xusHmkJUWt1XqPrM3pC9U
@@ -215,11 +215,10 @@ albuns:
       - tema: Ausência de Deus
         explicacao: O conceito central do disco é uma paisagem urbana
           distópica em que Deus está ausente, deixando um vazio existencial
-          que empurra as pessoas à ambição desesperada e à autodestruição —
-          tema mais presente em faixas como "Deus in Absentia".
+          que empurra as pessoas à ambição desesperada e à autodestruição, tema mais presente em faixas como "Deus in Absentia".
       - tema: Manipulação religiosa
-        explicacao: A faixa "Cirice" — vencedora do Grammy de Melhor
-          Performance de Metal em 2016 — trata da manipulação psicológica
+        explicacao: A faixa "Cirice", vencedora do Grammy de Melhor
+          Performance de Metal em 2016, trata da manipulação psicológica
           exercida em nome da fé, com uma estrutura que nasceu de um
           instrumental sombrio de nove minutos sem refrão antes de virar
           canção.
@@ -258,8 +257,8 @@ albuns:
         streams: 30 milhões
     secoesAnalise:
       - titulo: Gravação e produção
-        texto: Meliora foi produzido por Klas Åhlund — conhecido por trabalhos
-          com Robyn e Katy Perry — e mixado por Andy Wallace, veterano de
+        texto: Meliora foi produzido por Klas Åhlund, conhecido por trabalhos
+          com Robyn e Katy Perry, e mixado por Andy Wallace, veterano de
           discos como "Nevermind" e "Reign in Blood". Essa dupla incomum para
           uma banda de metal explica o salto de polimento sonoro do disco,
           que passou a soar muito mais próximo do rock de arena do que da
@@ -287,7 +286,7 @@ albuns:
         explicacao: Tobias Forge concebeu o disco inteiro em torno da Peste
           Negra, que dizimou cerca de um terço da população europeia na Idade
           Média, usando-a como metáfora para qualquer catástrofe que se
-          espalha rápido demais para ser contida — seja uma doença, uma
+          espalha rápido demais para ser contida, seja uma doença, uma
           ideia ou um pânico coletivo.
       - tema: Contágio e pânico
         explicacao: A faixa "Rats" trata dessa propagação descontrolada de
@@ -297,7 +296,7 @@ albuns:
       - tema: Celebração diante da morte iminente
         explicacao: A faixa "Dance Macabre" retrata uma festa noturna eufórica de
           pessoas que sabem que vão morrer e por isso vivem de forma
-          excessiva — uma leitura pop e dançante do tema medieval da "dança
+          excessiva, uma leitura pop e dançante do tema medieval da "dança
           da morte".
       - tema: Fé abalada em tempos de crise
         explicacao: O disco também explora como catástrofes históricas como a
@@ -334,15 +333,15 @@ albuns:
         streams: 33 milhões
     secoesAnalise:
       - titulo: Gravação e produção
-        texto: Prequelle marcou a estreia de Cardinal Copia — anunciado como
-          novo frontman da banda em abril de 2018 — e trouxe uma produção
+        texto: Prequelle marcou a estreia de Cardinal Copia, anunciado como
+          novo frontman da banda em abril de 2018, e trouxe uma produção
           ainda mais voltada ao rock de arena, incorporando saxofone na faixa
           "Miasma" e arranjos mais próximos do pop rock oitentista do que do
           metal tradicional.
       - titulo: Sucesso de crítica e disco do ano
         texto: O álbum foi eleito disco do ano de 2018 por publicações como
           Revolver e Metal Hammer, e "Rats" recebeu indicação ao Grammy de
-          Melhor Canção de Rock — a segunda indicação consecutiva da banda ao
+          Melhor Canção de Rock, a segunda indicação consecutiva da banda ao
           prêmio, depois da vitória de "Cirice" em 2016.
       - titulo: Legado
         texto: Prequelle é hoje considerado por boa parte da crítica o ponto
@@ -361,7 +360,7 @@ albuns:
       - tema: Mortalidade e reconciliação
         explicacao: O álbum lida abertamente com temas de mortalidade,
           culpa, fé e fracasso, descrito pela própria banda como uma
-          reflexão sobre esperança, autoengano, amor e arrependimento — o
+          reflexão sobre esperança, autoengano, amor e arrependimento, o
           disco mais pessoal do catálogo do Ghost até aqui.
       - tema: Amor como possessão
         explicacao: O single de trabalho "Satanized" usa a linguagem de

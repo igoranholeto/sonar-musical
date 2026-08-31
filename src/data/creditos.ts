@@ -11,7 +11,7 @@ export interface CreditoFoto {
   /** Nome curto da licença (ex: "CC BY-SA 4.0"). */
   licenca: string;
   /** URL do texto da licença (deed do Creative Commons). Ausente em licenças
-   *  de atribuição sem deed público — nesses casos os termos estão na fonte. */
+   *  de atribuição sem deed público, nesses casos os termos estão na fonte. */
   licencaUrl?: string;
   /** Página do arquivo original no Wikimedia Commons. */
   fonteUrl: string;
@@ -20,7 +20,7 @@ export interface CreditoFoto {
 /**
  * Fotos de artistas/bandas sob licença Creative Commons, que exigem atribuição.
  * Todas vêm do Wikimedia Commons. Ao adicionar novas, sempre preencher autor,
- * licença e fonte — e linkar o autor apenas se ele tiver página pública real.
+ * licença e fonte, e linkar o autor apenas se ele tiver página pública real.
  */
 export const CREDITOS_FOTOS: CreditoFoto[] = [
   // Ghost
@@ -270,7 +270,7 @@ export const CREDITOS_FOTOS: CreditoFoto[] = [
 /**
  * Fotos de guitarras usadas como recorte nas capas dos artigos (no lugar da
  * ilustração vetorial). Todas do Wikimedia Commons, sob Creative Commons, com
- * fundo removido/recortado para composição — a atribuição é exigida pela licença.
+ * fundo removido/recortado para composição, a atribuição é exigida pela licença.
  */
 export interface CreditoCapa {
   /** O que a foto retrata e onde é usada. */
