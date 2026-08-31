@@ -77,10 +77,12 @@ async function build(slug, photo) {
   left = Math.max(0, Math.min(left, 1200 - gm.width));
   top = Math.max(0, Math.min(top, 675 - gm.height));
 
-  const out = path.join(OUT, `${slug}.png`);
-  await sharp(base).composite([{ input: g, left, top }]).png({ compressionLevel: 9 }).toFile(out);
+  // Saída JPG: as capas com foto são fotográficas, então JPG fica bem menor que PNG
+  // (mantém as capas abaixo de 100kB para performance/SEO). Fundo é opaco, sem transparência.
+  const out = path.join(OUT, `${slug}.jpg`);
+  await sharp(base).composite([{ input: g, left, top }]).jpeg({ quality: 82, mozjpeg: true }).toFile(out);
   const kb = Math.round(fs.statSync(out).size / 1024);
-  console.log(`✓ ${slug}.png  (foto: ${photo}, ${kb}KB)`);
+  console.log(`✓ ${slug}.jpg  (foto: ${photo}, ${kb}KB)`);
 }
 
 const results = [];
