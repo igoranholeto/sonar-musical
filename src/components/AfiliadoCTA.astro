@@ -17,6 +17,8 @@ const {
   descricao,
   url,
   preco,
+  imagem,
+  imagemAlt,
   avaliacao = 4.5,
   destaques,
   badge,
@@ -104,6 +106,11 @@ const badgeText = badge ?? 'Recomendação Sonar Musical';
   </div>
 
   <div class="cta__body">
+    {imagem && (
+      <div class="cta__thumb">
+        <img src={imagem} alt={imagemAlt || produto} width="120" height="120" loading="lazy" decoding="async" />
+      </div>
+    )}
     <!-- Coluna principal: nome, avaliação, descrição, bullets -->
     <div class="cta__main">
       <div class="cta__header">
@@ -134,7 +141,7 @@ const badgeText = badge ?? 'Recomendação Sonar Musical';
       {preco && (
         <div class="cta__preco-bloco">
           <span class="cta__preco-label">A partir de</span>
-          <span class="cta__preco">{preco}</span>
+          <span class="cta__preco">{preco.replace(/^\s*a partir de\s*/i, '')}</span>
         </div>
       )}
 
@@ -232,6 +239,29 @@ const badgeText = badge ?? 'Recomendação Sonar Musical';
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: 0;
+  }
+
+  /* Quando há foto do produto, abre uma coluna à esquerda */
+  .cta__body:has(.cta__thumb) {
+    grid-template-columns: 148px 1fr 200px;
+  }
+
+  /* ── Foto do produto (recortada, sem fundo) ─────────────── */
+  .cta__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.25rem 0.75rem;
+    border-right: 1px solid rgba(255, 255, 255, 0.06);
+    background: radial-gradient(circle at 50% 45%, rgba(230, 57, 70, 0.1), transparent 70%);
+  }
+
+  .cta__thumb img {
+    width: 100%;
+    height: auto;
+    max-height: 130px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
   }
 
   /* ── Coluna principal ───────────────────────────────────── */
@@ -427,8 +457,19 @@ const badgeText = badge ?? 'Recomendação Sonar Musical';
 
   /* ── Mobile ─────────────────────────────────────────────── */
   @media (max-width: 600px) {
-    .cta__body {
+    .cta__body,
+    .cta__body:has(.cta__thumb) {
       grid-template-columns: 1fr;
+    }
+
+    .cta__thumb {
+      border-right: none;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      padding: 1rem;
+    }
+
+    .cta__thumb img {
+      max-height: 110px;
     }
 
     .cta__main {
