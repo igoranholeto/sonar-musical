@@ -30,11 +30,31 @@ async function main() {
 
   const { data, info } = await sharp(input).ensureAlpha().raw().toBuffer({ resolveWithObject: true });
   const { width, height, channels } = info;
-  for (let i = 0; i < data.length; i += channels) {
-    const r = data[i], g = data[i + 1], b = data[i + 2];
+  const N = width * height;
+
+  // Só remove o branco CONECTADO À BORDA (o fundo), via flood-fill.
+  // Branco interno (telas, logos, botões claros) é preservado.
+  const isWhite = (idx) => {
+    const p = idx * channels;
+    const r = data[p], g = data[p + 1], b = data[p + 2];
     const mn = Math.min(r, g, b), mx = Math.max(r, g, b);
-    if (mn > 238 && (mx - mn) < 12) data[i + 3] = 0;          // branco puro → transparente
-    else if (mn > 222 && (mx - mn) < 20) data[i + 3] = 110;   // borda suave
+    return mn > 228 && (mx - mn) < 24;
+  };
+  const visited = new Uint8Array(N);
+  const stack = [];
+  for (let x = 0; x < width; x++) { stack.push(x, (height - 1) * width + x); }
+  for (let y = 0; y < height; y++) { stack.push(y * width, y * width + width - 1); }
+  while (stack.length) {
+    const idx = stack.pop();
+    if (idx < 0 || idx >= N || visited[idx]) continue;
+    visited[idx] = 1;
+    if (!isWhite(idx)) continue;          // chegou na borda do produto → para
+    data[idx * channels + 3] = 0;         // fundo → transparente
+    const x = idx % width, y = (idx - x) / width;
+    if (x > 0) stack.push(idx - 1);
+    if (x < width - 1) stack.push(idx + 1);
+    if (y > 0) stack.push(idx - width);
+    if (y < height - 1) stack.push(idx + width);
   }
 
   // WebP com transparência: bem menor que PNG para fotos recortadas (~20-40kB).
