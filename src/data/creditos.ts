@@ -391,14 +391,6 @@ export const CREDITOS_CAPAS: CreditoCapa[] = [
     fonteUrl: "https://commons.wikimedia.org/wiki/File:Gibson_ES_355_59_GCS_AvR.png",
   },
   {
-    descricao: "Epiphone Les Paul Standard 1960 (guia da Seizi)",
-    autor: "muzyczny.pl",
-    autorUrl: "http://muzyczny.pl",
-    licenca: "CC BY-SA 4.0",
-    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
-    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gitara_elektryczna_Les_Paul_Standard_1960_HS_Limited_Edition_firmy_Epiphone.jpg",
-  },
-  {
     descricao: "Peavey Generation EXP Telecaster (guia da Memphis)",
     autor: "Auge=mit",
     autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
