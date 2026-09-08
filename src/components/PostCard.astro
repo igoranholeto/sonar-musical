@@ -1,7 +1,7 @@
 ---
 import Rating from './Rating.astro';
 import { slugifyCategory } from '../utils/slug';
-import { unsplashSrc } from '../utils/image';
+import { cardImg } from '../utils/image';
 
 interface Props {
   title: string;
@@ -40,8 +40,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   <a href={`/blog/${slug}/`} class="block overflow-hidden aspect-video bg-elevated relative" tabindex="-1" aria-hidden="true">
     {image ? (
       <img
-        src={unsplashSrc(image, 400)}
-        srcset={`${unsplashSrc(image, 400)} 1x, ${unsplashSrc(image, 800)} 2x`}
+        src={cardImg(image)}
         alt={imageAlt ?? title}
         width="400"
         height="225"

@@ -14,7 +14,10 @@ export default defineConfig({
   integrations: [mdx(), sitemap({ serialize: lastmodSerializer() })],
   compressHTML: true,
   build: {
-    inlineStylesheets: 'auto',
+    // Inline de todo o CSS: elimina as requisições de CSS que bloqueiam a
+    // renderização (o PageSpeed apontava ~690ms no mobile). O CSS do site é
+    // pequeno (~14KB), então embutir compensa o custo de não cachear entre páginas.
+    inlineStylesheets: 'always',
   },
   vite: {
     plugins: [tailwindcss()],
