@@ -1,7 +1,25 @@
 {
-  "curso-de-guitarra-como-aprender": {
-    "kicker": "INICIANTES",
-    "l1": "CURSO DE",
+  "guitarra-eletrica-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "GUITARRA",
+    "l2": "ELÉTRICA",
+    "motif": "guitar"
+  },
+  "guitarra-stratocaster-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "STRATO",
+    "l2": "CASTER",
+    "motif": "guitar"
+  },
+  "guitarra-les-paul-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "LES",
+    "l2": "PAUL",
+    "motif": "guitarLP"
+  },
+  "tipos-de-guitarra-eletrica": {
+    "kicker": "GUITARRAS",
+    "l1": "TIPOS DE",
     "l2": "GUITARRA",
     "motif": "guitar"
   },
@@ -173,6 +191,36 @@
     "l2": "YAMAHA",
     "motif": "guitar"
   },
+  "guitarra-explorer-guia-completo": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "GUITARRA",
+    "l2": "EXPLORER",
+    "motif": "guitar"
+  },
+  "guitarra-seizi-guia-completo": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "GUITARRA",
+    "l2": "SEIZI",
+    "motif": "guitar"
+  },
+  "guitarra-memphis-guia-completo": {
+    "kicker": "GUIA · MARCAS",
+    "l1": "GUITARRA",
+    "l2": "MEMPHIS",
+    "motif": "guitar"
+  },
+  "vale-a-pena-importar-guitarra": {
+    "kicker": "GUIAS DE COMPRA",
+    "l1": "IMPORTAR",
+    "l2": "GUITARRA?",
+    "motif": "guitar"
+  },
+  "onde-comprar-guitarra-no-brasil": {
+    "kicker": "GUIAS DE COMPRA",
+    "l1": "ONDE COMPRAR",
+    "l2": "GUITARRA",
+    "motif": "guitar"
+  },
   "amplificador-de-guitarra-guia-completo": {
     "kicker": "AMPLIFICADORES",
     "l1": "AMPLIFICADOR",
@@ -213,6 +261,12 @@
     "kicker": "PEDAIS",
     "l1": "5 PEDAIS",
     "l2": "ESSENCIAIS",
+    "motif": "pedal"
+  },
+  "pedaleira-vs-plugin": {
+    "kicker": "PEDAIS · GUIA",
+    "l1": "PEDALEIRA",
+    "l2": "vs PLUGIN",
     "motif": "pedal"
   },
   "como-montar-pedalboard": {
@@ -442,5 +496,23 @@
     "l1": "PRESENTES",
     "l2": "P/ GUITARRISTAS",
     "motif": "guitar"
+  },
+  "pedaleira-zoom-guia-completo": {
+    "kicker": "PEDAIS · GUIA",
+    "l1": "PEDALEIRA",
+    "l2": "ZOOM",
+    "motif": "pedal"
+  },
+  "pedaleira-boss-guia-completo": {
+    "kicker": "PEDAIS · GUIA",
+    "l1": "PEDALEIRA",
+    "l2": "BOSS",
+    "motif": "pedal"
+  },
+  "curso-de-guitarra-como-aprender": {
+    "kicker": "INICIANTES",
+    "l1": "CURSO DE",
+    "l2": "GUITARRA",
+    "motif": "fretboard"
   }
 }

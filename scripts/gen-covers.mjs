@@ -268,6 +268,8 @@ const POSTS = [
   { slug: 'guitarra-explorer-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'GUITARRA', l2: 'EXPLORER', motif: 'guitar', opt: { body: '#161018', guard: '#c8c3b8' } },
   { slug: 'guitarra-seizi-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'SEIZI', motif: 'guitar', opt: { body: '#1c1c22', guard: '#c9a45a' } },
   { slug: 'guitarra-memphis-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'MEMPHIS', motif: 'guitar', opt: { body: '#3a2a12', guard: '#e9e4da' } },
+  { slug: 'vale-a-pena-importar-guitarra', kicker: 'GUIAS DE COMPRA', l1: 'IMPORTAR', l2: 'GUITARRA?', motif: 'guitar' },
+  { slug: 'onde-comprar-guitarra-no-brasil', kicker: 'GUIAS DE COMPRA', l1: 'ONDE COMPRAR', l2: 'GUITARRA', motif: 'guitar' },
 
   { slug: 'amplificador-de-guitarra-guia-completo', kicker: 'AMPLIFICADORES', l1: 'AMPLIFICADOR', l2: 'DE GUITARRA', motif: 'amp' },
   { slug: 'amplificador-valvulado-ou-transistor', kicker: 'AMPLIFICADORES', l1: 'VALVULADO', l2: 'ou TRANSISTOR', motif: 'amp' },
@@ -277,6 +279,7 @@ const POSTS = [
   { slug: 'review-fender-blues-junior-iv', kicker: 'REVIEW', l1: 'BLUES', l2: 'JUNIOR IV', motif: 'amp', opt: { tone: '#1c1a12' } },
 
   { slug: '5-pedais-boss-essenciais-para-guitarristas', kicker: 'PEDAIS', l1: '5 PEDAIS', l2: 'ESSENCIAIS', motif: 'pedal', opt: { tone: '#1f3a6e' } },
+  { slug: 'pedaleira-vs-plugin', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'vs PLUGIN', motif: 'pedal', opt: { tone: '#241a3a' } },
   { slug: 'como-montar-pedalboard', kicker: 'PEDAIS · TUTORIAL', l1: 'MONTAR', l2: 'PEDALBOARD', motif: 'pedal', opt: { tone: '#2a2a30' } },
   { slug: 'pedais-e-pedaleiras-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDAIS E', l2: 'PEDALEIRAS', motif: 'pedal', opt: { tone: '#0e6b52' } },
   { slug: 'pedal-de-distorcao-para-guitarra', kicker: 'PEDAIS', l1: 'PEDAL DE', l2: 'DISTORÇÃO', motif: 'pedal', opt: { tone: '#c62432' } },
