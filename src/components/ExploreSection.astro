@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import { TABLATURAS } from '../data/tablaturas';
 import { generoAccent, generoGradient, generoSoft } from '../utils/generos';
+import { cardImg } from '../utils/image';
 
 const bandasCol = await getCollection('bandas');
 const bandasCount = bandasCol.length;
@@ -39,7 +40,7 @@ const dAlbuns = d.albuns?.length ?? 0;
     >
       {d.fotoCapa && (
         <img
-          src={d.fotoCapa}
+          src={cardImg(d.fotoCapa)}
           alt={d.fotoCapaAlt ?? d.nome}
           class="bento__band-img"
           width="880"
