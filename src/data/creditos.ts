@@ -283,6 +283,22 @@ export interface CreditoCapa {
 
 export const CREDITOS_CAPAS: CreditoCapa[] = [
   {
+    descricao: "Epiphone Les Paul Standard 1960 (post: vale a pena importar guitarra?)",
+    autor: "muzyczny.pl",
+    autorUrl: "http://muzyczny.pl",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Gitara_elektryczna_Les_Paul_Standard_1960_HS_Limited_Edition_firmy_Epiphone.jpg",
+  },
+  {
+    descricao: "Fender Coronado II 1967 (post: onde comprar guitarra no Brasil)",
+    autor: "Auge=mit",
+    autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
+    licenca: "CC BY-SA 4.0",
+    licencaUrl: "https://creativecommons.org/licenses/by-sa/4.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Coronado_II_1967_noBG.jpg",
+  },
+  {
     descricao: "Fender Stratocaster (guia da Strinberg e outras)",
     autor: "Auge=mit",
     autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",

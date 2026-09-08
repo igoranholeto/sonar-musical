@@ -42,6 +42,8 @@ const MAP = {
   'guitarra-memphis-guia-completo': 'peavey_tele',
   'quem-inventou-a-guitarra-eletrica': 'es350t',
   'tagima-vs-squier': 'jaguar',
+  'vale-a-pena-importar-guitarra': 'lp1960',
+  'onde-comprar-guitarra-no-brasil': 'coronado',
   // guitarra-sg e guitarra-jackson: sem foto CC livre — mantêm a ilustração.
 };
 

@@ -1,0 +1,334 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQ from '../components/FAQ.astro';
+
+const faqItems = [
+  {
+    question: "O gerador de escalas é grátis?",
+    answer: "Sim. Escolha a tônica (C, D, E...) e a escala (maior, menor, pentatônica, blues...) e as notas acendem na hora no braço da guitarra, com o nome de cada nota e o áudio da escala. Tudo grátis, direto no navegador, sem instalar nada."
+  },
+  {
+    question: "Como usar o braço de guitarra para achar as notas de uma escala?",
+    answer: "Escolha a tônica (a nota que dá nome e caráter à escala) e o tipo de escala. As bolinhas em vermelho são a tônica e as escuras são as demais notas da escala, mostradas em todas as posições do braço. Você pode partir de qualquer tônica vermelha e tocar subindo pelas casas seguindo apenas as notas acesas."
+  },
+  {
+    question: "Qual a diferença entre escala maior e menor?",
+    answer: "É o caráter do som. A escala maior soa alegre, brilhante e resolvida; a menor soa mais triste, tensa ou melancólica. A diferença está na distância entre as notas (nos intervalos de terça, sexta e sétima). A maior parte das músicas ocidentais nasce de uma dessas duas escalas ou de suas variações."
+  },
+  {
+    question: "Qual escala usar para improvisar e fazer solos?",
+    answer: "Para começar a improvisar, a pentatônica menor é a mais indicada: tem só cinco notas, é fácil de memorizar e soa bem em rock, blues e pop. A escala de blues (pentatônica menor mais a 'blue note') dá aquele timbre característico do blues. Depois, a escala maior e a menor natural abrem mais possibilidades melódicas."
+  },
+  {
+    question: "O que é uma escala pentatônica?",
+    answer: "É uma escala de cinco notas (penta = cinco). A pentatônica maior e a menor são as escalas mais usadas em solos porque eliminam as notas mais 'perigosas', então quase tudo o que você toca dentro delas soa bem. Por isso são o ponto de partida ideal para quem está aprendendo a improvisar na guitarra."
+  },
+  {
+    question: "Preciso decorar todas as escalas?",
+    answer: "Não. Comece pela pentatônica menor e pela escala maior. Como as formas no braço são móveis, você aprende poucos desenhos e os desliza para qualquer tônica. Este gerador serve justamente para consultar na hora, visualizar a forma e treinar até que ela fique na memória dos dedos."
+  }
+];
+
+// Notas e escalas renderizadas no servidor (evita CLS ao aparecerem só via JS)
+const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+// Cordas de cima (aguda) para baixo (grave) na tela: e B G D A E
+const OPENS = [4, 11, 7, 2, 9, 4];
+const FRETS = 12;
+const nutX = 56, dx = 62, y0 = 42, dy = 40;
+const inlays = [3, 5, 7, 9];
+
+const SCALES = [
+  { key: 'Maior', label: 'Maior (Jônia)' },
+  { key: 'Menor', label: 'Menor natural' },
+  { key: 'Pent. maior', label: 'Pentatônica maior' },
+  { key: 'Pent. menor', label: 'Pentatônica menor' },
+  { key: 'Blues', label: 'Blues' },
+  { key: 'Menor harmônica', label: 'Menor harmônica' },
+  { key: 'Dórica', label: 'Dórica' },
+  { key: 'Mixolídia', label: 'Mixolídia' },
+];
+---
+
+<BaseLayout
+  title="Gerador de Escalas para Guitarra, Grátis (Braço Interativo)"
+  description="Gerador de escalas de guitarra grátis. Escolha a tônica e a escala (maior, menor, pentatônica, blues) e veja as notas acenderem no braço, com o áudio da escala."
+  schema={{
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Gerador de Escalas para Guitarra, Sonar Musical',
+    url: 'https://sonarmusical.com.br/gerador-de-escalas/',
+    applicationCategory: 'EducationalApplication',
+    operatingSystem: 'Web',
+    description: 'Ferramenta interativa que mostra as notas de qualquer escala no braço da guitarra, com áudio.',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  }}
+>
+  <div class="scale-page">
+    <header class="scale-header">
+      <h1>Gerador de Escalas para Guitarra</h1>
+      <p class="scale-subtitle">Escolha a tônica e a escala · Notas no braço + som · Grátis</p>
+    </header>
+
+    <div class="selector">
+      <span class="selector-label">Tônica</span>
+      <div id="tonic-row" class="tonic-grid">
+        {NOTES.map((n, i) => (
+          <button type="button" class={`box${i === 0 ? ' box--active' : ''}`} data-tonic={i}>{n}</button>
+        ))}
+      </div>
+    </div>
+
+    <div class="selector">
+      <span class="selector-label">Escala</span>
+      <div id="scale-row" class="scale-grid">
+        {SCALES.map((s, i) => (
+          <button type="button" class={`box${i === 0 ? ' box--active' : ''}`} data-scale={s.key}>{s.label}</button>
+        ))}
+      </div>
+    </div>
+
+    <div class="scale-result">
+      <div class="scale-top">
+        <span class="scale-name" id="scale-name">Dó Maior</span>
+        <button id="play-scale" class="play-scale-btn" aria-label="Ouvir a escala">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+          Ouvir
+        </button>
+      </div>
+
+      <div class="fb__stage">
+        <svg viewBox="0 0 852 264" class="fb__svg" role="img" aria-label="Braço da guitarra com as notas da escala">
+          <rect x={nutX} y={y0 - 14} width={FRETS * dx} height={5 * dy + 28} rx="4" fill="#1b120b"/>
+          <rect x={nutX - 8} y={y0 - 16} width="8" height={5 * dy + 32} rx="2" fill="#d8d3c6"/>
+          {Array.from({ length: FRETS }, (_, f) => (
+            <line x1={nutX + (f + 1) * dx} y1={y0 - 14} x2={nutX + (f + 1) * dx} y2={y0 + 5 * dy + 14} stroke="#4a3a28" stroke-width="2"/>
+          ))}
+          {inlays.map((f) => (
+            <circle cx={nutX + (f - 0.5) * dx} cy={y0 + 2 * dy} r="6" fill="#e9e4da" opacity="0.28"/>
+          ))}
+          <circle cx={nutX + 11.5 * dx} cy={y0 + dy} r="6" fill="#e9e4da" opacity="0.28"/>
+          <circle cx={nutX + 11.5 * dx} cy={y0 + 3 * dy} r="6" fill="#e9e4da" opacity="0.28"/>
+          {OPENS.map((_, s) => (
+            <line x1={nutX} y1={y0 + s * dy} x2={nutX + FRETS * dx} y2={y0 + s * dy} stroke="#8a8577" stroke-width={1 + s * 0.4} opacity="0.8"/>
+          ))}
+          {[3, 5, 7, 9, 12].map((f) => (
+            <text x={nutX + (f - 0.5) * dx} y={y0 + 5 * dy + 30} text-anchor="middle" font-size="12" fill="#9a958d" font-family="Helvetica,Arial,sans-serif">{f}</text>
+          ))}
+          {OPENS.map((open, s) =>
+            Array.from({ length: FRETS + 1 }, (_, f) => {
+              const note = (open + f) % 12;
+              const cx = f === 0 ? nutX - 26 : nutX + (f - 0.5) * dx;
+              const cy = y0 + s * dy;
+              return (
+                <g class="fb__dot" data-note={note} data-string={s} data-fret={f} transform={`translate(${cx},${cy})`}>
+                  <circle r="13" class="fb__dot-bg"/>
+                  <text text-anchor="middle" y="4" class="fb__dot-txt">{NOTES[note]}</text>
+                </g>
+              );
+            })
+          )}
+        </svg>
+      </div>
+
+      <p class="scale-notes" id="scale-notes"></p>
+      <p class="fb__hint"><span class="fb__key fb__key--root"></span> tônica <span class="fb__key fb__key--note"></span> nota da escala</p>
+    </div>
+
+    <section class="scale-article">
+      <h2>Como usar o gerador de escalas</h2>
+      <p>
+        Escolha a <strong>tônica</strong> (a nota que dá nome à escala, como Dó ou Sol) e o <strong>tipo de escala</strong> (maior, menor, pentatônica…). As notas da escala acendem em todas as posições do braço: as bolinhas <strong>vermelhas</strong> são a tônica e as escuras são as demais notas. O botão de áudio toca a escala subindo, com som de corda dedilhada, para você fixar o desenho no ouvido.
+      </p>
+      <p>
+        Se você está começando a improvisar, comece pela <strong>pentatônica menor</strong>: são só cinco notas, fáceis de decorar, e quase tudo o que você tocar dentro dela soa bem. Depois avance para a escala maior, a menor natural e a de blues. Antes de tudo, deixe o instrumento afinado com o nosso <a href="/afinador/">afinador online</a>, porque uma escala tocada numa guitarra desafinada soa errado, e treine o tempo dos solos com o <a href="/metronomo/">metrônomo online</a>.
+      </p>
+      <p>
+        Para entender a lógica por trás das notas, veja o guia de <a href="/blog/teoria-musical-para-guitarra/">teoria musical para guitarra</a> e o <a href="/blog/nome-das-cordas-da-guitarra/">nome das cordas da guitarra</a>. Quando quiser sair da escala e formar acordes, use o nosso <a href="/acordes/">dicionário de acordes</a>. E se ainda está escolhendo o instrumento, comece pelas <a href="/blog/melhores-guitarras-eletricas-para-iniciantes-2026/">melhores guitarras para iniciantes</a>.
+      </p>
+
+      <h2>Escalas mais usadas na guitarra</h2>
+      <ul class="scale-list">
+        <li><strong>Pentatônica menor:</strong> a rainha do rock e do blues, cinco notas, base de quase todo solo iniciante.</li>
+        <li><strong>Pentatônica maior:</strong> som mais alegre e country/pop, a mesma forma da menor, três casas atrás.</li>
+        <li><strong>Blues:</strong> a pentatônica menor mais a "blue note", timbre inconfundível do blues.</li>
+        <li><strong>Maior (jônia):</strong> a escala fundamental, base da harmonia ocidental, som brilhante.</li>
+        <li><strong>Menor natural:</strong> som triste e tenso, muito usada em rock, metal e baladas.</li>
+        <li><strong>Menor harmônica:</strong> menor com a sétima elevada, aquele clima "exótico" e dramático.</li>
+        <li><strong>Dórica e mixolídia:</strong> modos que dão cor a jazz, funk e rock, entre o maior e o menor.</li>
+      </ul>
+    </section>
+
+    <FAQ items={faqItems} />
+  </div>
+</BaseLayout>
+
+<style>
+  .scale-page { max-width: 720px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  .scale-header { text-align: center; margin-bottom: 1.75rem; }
+  .scale-header h1 { font-size: clamp(1.75rem, 4.5vw, 2.25rem); font-weight: 800; letter-spacing: -0.02em; }
+  .scale-subtitle { color: var(--color-muted); margin-top: 0.4rem; font-size: 0.88rem; }
+  .selector { margin-bottom: 1.25rem; }
+  .selector-label {
+    display: block; font-size: 0.68rem; text-transform: uppercase; letter-spacing: 0.1em;
+    color: var(--color-muted); font-weight: 700; margin-bottom: 0.6rem;
+  }
+  .tonic-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 0.4rem; }
+  @media (min-width: 560px) { .tonic-grid { grid-template-columns: repeat(12, 1fr); } }
+  .scale-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.4rem; }
+  @media (min-width: 560px) { .scale-grid { grid-template-columns: repeat(4, 1fr); } }
+  .box {
+    min-height: 44px; display: flex; align-items: center; justify-content: center;
+    padding: 0.4rem 0.3rem; border-radius: 11px; border: 1px solid var(--color-border);
+    background: var(--color-elevated); color: var(--color-foreground);
+    font-weight: 700; font-size: 0.9rem; cursor: pointer; text-align: center;
+    transition: border-color 0.12s, background 0.12s, color 0.12s, transform 0.06s;
+  }
+  .box:hover { border-color: var(--color-brand); }
+  .box:active { transform: scale(0.95); }
+  .box--active {
+    background: var(--color-brand); border-color: var(--color-brand); color: #fff;
+    box-shadow: 0 3px 10px rgba(230,57,70,0.3);
+  }
+  .scale-grid .box { font-size: 0.78rem; font-weight: 600; }
+  .scale-result {
+    background: var(--color-card); border: 1px solid var(--color-border); border-radius: 20px;
+    padding: 1.5rem; margin-top: 0.25rem;
+  }
+  .scale-top { display: flex; align-items: center; justify-content: center; gap: 1rem; margin-bottom: 1.25rem; }
+  .scale-name { font-size: 1.5rem; font-weight: 800; letter-spacing: -0.02em; }
+  .play-scale-btn {
+    display: inline-flex; align-items: center; gap: 0.4rem;
+    padding: 0.5rem 1.1rem; border-radius: 999px; border: none;
+    background: var(--color-brand); color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+    box-shadow: 0 3px 10px rgba(230,57,70,0.28); transition: background 0.15s, transform 0.1s;
+  }
+  .play-scale-btn:hover { background: var(--color-brand-dark); }
+  .play-scale-btn:active { transform: translateY(1px); }
+
+  .fb__stage { overflow-x: auto; }
+  .fb__svg { width: 100%; min-width: 620px; height: auto; }
+  .fb__dot { opacity: 0; transition: opacity 0.12s; pointer-events: none; }
+  .fb__dot.is-in { opacity: 1; }
+  .fb__dot-bg { fill: #3a3a42; }
+  .fb__dot.is-root .fb__dot-bg { fill: var(--color-brand); }
+  .fb__dot.is-playing .fb__dot-bg { fill: #f5b301; }
+  .fb__dot-txt { fill: #fff; font-size: 12px; font-weight: 700; font-family: Helvetica, Arial, sans-serif; }
+
+  .scale-notes { margin-top: 1rem; text-align: center; font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; color: var(--color-foreground); min-height: 1.4em; }
+  .fb__hint { margin-top: 0.6rem; font-size: 0.82rem; color: var(--color-muted); display: flex; align-items: center; justify-content: center; gap: 0.35rem; }
+  .fb__key { display: inline-block; width: 14px; height: 14px; border-radius: 999px; vertical-align: middle; }
+  .fb__key--root { background: var(--color-brand); }
+  .fb__key--note { background: #3a3a42; margin-left: 0.6rem; }
+
+  .scale-article { margin-top: 2.5rem; }
+  .scale-article h2 { font-size: 1.35rem; font-weight: 700; margin: 2rem 0 1rem; }
+  .scale-article p { line-height: 1.8; color: var(--color-muted); margin-bottom: 1.1rem; }
+  .scale-article a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 3px; }
+  .scale-article strong { color: var(--color-foreground); }
+  .scale-list { list-style: none; padding: 0; margin: 0; }
+  .scale-list li { line-height: 1.7; color: var(--color-muted); margin-bottom: 0.7rem; padding-left: 1.1rem; position: relative; }
+  .scale-list li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand); }
+  .scale-list strong { color: var(--color-foreground); }
+</style>
+
+<script>
+  const NOTES = ['C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B'];
+  const NOTES_PT: Record<string, string> = {
+    'C': 'Dó', 'C#': 'Dó#', 'D': 'Ré', 'D#': 'Ré#', 'E': 'Mi', 'F': 'Fá',
+    'F#': 'Fá#', 'G': 'Sol', 'G#': 'Sol#', 'A': 'Lá', 'A#': 'Lá#', 'B': 'Si',
+  };
+  // MIDI das cordas soltas por índice de corda na tela (0 = e aguda ... 5 = E grave)
+  const OPEN_MIDI = [64, 59, 55, 50, 45, 40];
+
+  const SCALES: Record<string, { intervals: number[]; nome: string }> = {
+    'Maior': { intervals: [0, 2, 4, 5, 7, 9, 11], nome: 'Maior' },
+    'Menor': { intervals: [0, 2, 3, 5, 7, 8, 10], nome: 'menor' },
+    'Pent. maior': { intervals: [0, 2, 4, 7, 9], nome: 'pentatônica maior' },
+    'Pent. menor': { intervals: [0, 3, 5, 7, 10], nome: 'pentatônica menor' },
+    'Blues': { intervals: [0, 3, 5, 6, 7, 10], nome: 'blues' },
+    'Menor harmônica': { intervals: [0, 2, 3, 5, 7, 8, 11], nome: 'menor harmônica' },
+    'Dórica': { intervals: [0, 2, 3, 5, 7, 9, 10], nome: 'dórica' },
+    'Mixolídia': { intervals: [0, 2, 4, 5, 7, 9, 10], nome: 'mixolídia' },
+  };
+
+  const page = document.querySelector('.scale-page');
+  if (page) {
+    const dots = Array.from(page.querySelectorAll<SVGGElement>('.fb__dot'));
+    const tonicBtns = Array.from(page.querySelectorAll<HTMLButtonElement>('#tonic-row .box'));
+    const scaleBtns = Array.from(page.querySelectorAll<HTMLButtonElement>('#scale-row .box'));
+    const nameEl = page.querySelector('#scale-name')!;
+    const notesEl = page.querySelector('#scale-notes')!;
+    const playBtn = page.querySelector<HTMLButtonElement>('#play-scale')!;
+
+    let tonic = 0;
+    let scaleKey = 'Maior';
+
+    const render = () => {
+      const scale = SCALES[scaleKey];
+      const set = new Set(scale.intervals.map((i) => (tonic + i) % 12));
+      dots.forEach((d) => {
+        const note = Number(d.dataset.note);
+        const inScale = set.has(note);
+        d.classList.toggle('is-in', inScale);
+        d.classList.toggle('is-root', inScale && note === tonic);
+      });
+      nameEl.textContent = NOTES_PT[NOTES[tonic]] + ' ' + scale.nome;
+      const seq = scale.intervals.map((i) => NOTES[(tonic + i) % 12]);
+      notesEl.textContent = seq.join('  ·  ');
+    };
+
+    const markActive = (btns: HTMLButtonElement[], active: HTMLButtonElement) =>
+      btns.forEach((b) => b.classList.toggle('box--active', b === active));
+
+    tonicBtns.forEach((b) => b.addEventListener('click', () => {
+      tonic = Number(b.dataset.tonic); markActive(tonicBtns, b); render();
+    }));
+    scaleBtns.forEach((b) => b.addEventListener('click', () => {
+      scaleKey = b.dataset.scale!; markActive(scaleBtns, b); render();
+    }));
+
+    // ── Áudio: síntese Karplus-Strong (corda dedilhada), toca a escala subindo ──
+    let audioCtx: AudioContext | null = null;
+    const pluck = (freq: number, when: number, vol: number) => {
+      if (!audioCtx) return;
+      const sr = audioCtx.sampleRate;
+      const N = Math.max(2, Math.round(sr / freq));
+      const len = Math.floor(sr * 1.6);
+      const buffer = audioCtx.createBuffer(1, len, sr);
+      const data = buffer.getChannelData(0);
+      const noise = new Float32Array(N);
+      for (let i = 0; i < N; i++) noise[i] = Math.random() * 2 - 1;
+      const damping = 0.995;
+      for (let i = 0; i < len; i++) {
+        data[i] = i < N ? noise[i] : damping * 0.5 * (data[i - N] + data[i - N + 1]);
+      }
+      const src = audioCtx.createBufferSource();
+      src.buffer = buffer;
+      const lp = audioCtx.createBiquadFilter();
+      lp.type = 'lowpass'; lp.frequency.value = 3600;
+      const g = audioCtx.createGain();
+      g.gain.setValueAtTime(vol, when);
+      g.gain.exponentialRampToValueAtTime(0.0001, when + 1.5);
+      src.connect(lp); lp.connect(g); g.connect(audioCtx.destination);
+      src.start(when); src.stop(when + 1.6);
+    };
+
+    playBtn.addEventListener('click', () => {
+      if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
+      if (audioCtx.state === 'suspended') audioCtx.resume();
+      const scale = SCALES[scaleKey];
+      // Sobe uma oitava (tônica -> tônica), a partir de C3 (MIDI 48) + tônica
+      const baseMidi = 48 + tonic;
+      const seq = [...scale.intervals, 12];
+      const step = 0.28;
+      const now = audioCtx.currentTime + 0.05;
+      seq.forEach((iv, i) => {
+        const midi = baseMidi + iv;
+        const freq = 440 * Math.pow(2, (midi - 69) / 12);
+        pluck(freq, now + i * step, 0.2);
+      });
+    });
+
+    render();
+  }
+</script>
