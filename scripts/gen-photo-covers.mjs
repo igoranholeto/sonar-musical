@@ -14,6 +14,7 @@ const PHOTOS = 'covers-src/photos';
 const DEF = { angle: -22, targetH: 600, cx: 935, cy: 350 };
 const P = {
   lespaul:       { angle: -16, targetH: 280, cx: 1010, cy: 345 }, // horizontal: menor e à direita p/ não invadir o texto
+  flyingv:       { angle: -16, targetH: 300, cx: 1010, cy: 350 }, // V âmbar horizontal
   flyingv_white: { angle: -20, targetH: 600, cx: 930, cy: 350 },
   jagstang:      { angle: -22, targetH: 590, cx: 935, cy: 350 },
   lp59:          { angle: -20, targetH: 600, cx: 930, cy: 350 },
@@ -35,7 +36,10 @@ const MAP = {
   'melhores-marcas-de-guitarra-nacionais': 'starcaster',
   'melhores-presentes-para-guitarristas': 'lp59',
   'partes-da-guitarra-eletrica': 'ibanez_artist',
-  'quanto-custa-ser-guitarrista-no-brasil': 'explorer',
+  'quanto-custa-ser-guitarrista-no-brasil': 'es355',
+  'guitarra-explorer-guia-completo': 'explorer',
+  'guitarra-seizi-guia-completo': 'lp1960',
+  'guitarra-memphis-guia-completo': 'peavey_tele',
   'quem-inventou-a-guitarra-eletrica': 'es350t',
   'tagima-vs-squier': 'jaguar',
   // guitarra-sg e guitarra-jackson: sem foto CC livre — mantêm a ilustração.

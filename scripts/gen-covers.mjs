@@ -265,6 +265,9 @@ const POSTS = [
   { slug: 'guitarra-strinberg-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'STRINBERG', motif: 'guitar', opt: { body: '#5a3a8a', guard: '#e9e4da' } },
   { slug: 'guitarra-flying-v-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'FLYING', l2: 'V', motif: 'guitar', opt: { body: '#161018', guard: '#c8323e' } },
   { slug: 'guitarra-yamaha-guia-completo', kicker: 'GUITARRAS · MARCA', l1: 'GUITARRA', l2: 'YAMAHA', motif: 'guitar', opt: { body: '#0e6b6b', guard: '#e9e4da' } },
+  { slug: 'guitarra-explorer-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'GUITARRA', l2: 'EXPLORER', motif: 'guitar', opt: { body: '#161018', guard: '#c8c3b8' } },
+  { slug: 'guitarra-seizi-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'SEIZI', motif: 'guitar', opt: { body: '#1c1c22', guard: '#c9a45a' } },
+  { slug: 'guitarra-memphis-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'MEMPHIS', motif: 'guitar', opt: { body: '#3a2a12', guard: '#e9e4da' } },
 
   { slug: 'amplificador-de-guitarra-guia-completo', kicker: 'AMPLIFICADORES', l1: 'AMPLIFICADOR', l2: 'DE GUITARRA', motif: 'amp' },
   { slug: 'amplificador-valvulado-ou-transistor', kicker: 'AMPLIFICADORES', l1: 'VALVULADO', l2: 'ou TRANSISTOR', motif: 'amp' },
@@ -318,7 +321,7 @@ const POSTS = [
   { slug: 'violao-ou-guitarra-por-onde-comecar', kicker: 'INICIANTES', l1: 'VIOLÃO ou', l2: 'GUITARRA?', motif: 'acoustic' },
   { slug: 'como-tocar-violao-para-iniciantes', kicker: 'INICIANTES', l1: 'COMO TOCAR', l2: 'VIOLÃO', sub: 'guia do zero', motif: 'acoustic' },
   { slug: 'tecnicas-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TÉCNICAS', l2: 'DE GUITARRA', sub: 'bend · vibrato · palm mute', motif: 'fretboard' },
-  { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },
+  { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },
   { slug: 'pedaleira-zoom-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'ZOOM', sub: 'G1X Four · G3n · G6', motif: 'pedal', opt: { tone: '#1f5a8a' } },
   { slug: 'pedaleira-boss-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'BOSS', sub: 'GT-1 · ME-90 · GT-1000', motif: 'pedal', opt: { tone: '#7a1520' } },
   { slug: 'curso-de-guitarra-como-aprender', kicker: 'INICIANTES', l1: 'CURSO DE', l2: 'GUITARRA', sub: 'como aprender do zero', motif: 'fretboard' },
