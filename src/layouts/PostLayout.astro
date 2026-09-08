@@ -297,7 +297,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   </div>
 
   <style>
-    .prose-post :global(h2) {
+    .prose-post :global(h2:not([class])) {
       position: relative;
       font-size: 1.6rem;
       font-weight: 800;
@@ -307,7 +307,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       padding-left: 0.9rem;
       color: var(--color-foreground);
     }
-    .prose-post :global(h2)::before {
+    .prose-post :global(h2:not([class]))::before {
       content: '';
       position: absolute;
       left: 0;
@@ -402,7 +402,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
        de produto usam o componente <ComparativoProdutos> (vira cards no mobile). */
     .prose-post :global(table:not([class])) {
       display: block;
-      width: 100%;
+      width: max-content;
       max-width: 100%;
       overflow-x: auto;
       border-collapse: collapse;

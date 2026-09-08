@@ -38,7 +38,7 @@ const MAP = {
   'partes-da-guitarra-eletrica': 'ibanez_artist',
   'quanto-custa-ser-guitarrista-no-brasil': 'es355',
   'guitarra-explorer-guia-completo': 'explorer',
-  'guitarra-seizi-guia-completo': 'lp1960',
+  'guitarra-seizi-guia-completo': 'seizi',
   'guitarra-memphis-guia-completo': 'peavey_tele',
   'quem-inventou-a-guitarra-eletrica': 'es350t',
   'tagima-vs-squier': 'jaguar',
