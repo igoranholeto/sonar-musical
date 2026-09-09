@@ -287,6 +287,7 @@ const POSTS = [
 
   { slug: 'melhores-captadores-de-guitarra-2026', kicker: 'ACESSÓRIOS · 2026', l1: 'MELHORES', l2: 'CAPTADORES', sub: 'single coil · humbucker · P90', motif: 'pickups' },
   { slug: 'captacoes-guitarra-passivas-vs-ativas', kicker: 'TÉCNICA', l1: 'PASSIVO', l2: 'ou ATIVO', sub: 'captadores de guitarra', motif: 'pickups' },
+  { slug: 'single-coil-vs-humbucker', kicker: 'TÉCNICA', l1: 'SINGLE COIL', l2: 'vs HUMBUCKER', sub: 'qual captador escolher', motif: 'pickups' },
 
   { slug: 'melhores-cordas-de-guitarra-2026', kicker: 'ACESSÓRIOS · 2026', l1: 'MELHORES', l2: 'CORDAS', motif: 'strings' },
   { slug: 'cordas-de-guitarra-009-ou-010', kicker: 'ACESSÓRIOS', l1: '009', l2: 'ou 010?', sub: 'calibre de cordas', motif: 'strings' },
