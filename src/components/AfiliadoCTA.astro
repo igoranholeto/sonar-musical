@@ -35,7 +35,7 @@ const MARCAS = [
 
 const marca = MARCAS.find(m => produto.toLowerCase().startsWith(m.toLowerCase())) ?? null;
 
-// Cores de marca para o chip
+// Cores de marca para o chip (bg + texto)
 const marcaCores: Record<string, { bg: string; text: string }> = {
   'Fender':            { bg: '#1a1a2e', text: '#6ea8d8' },
   'Squier':            { bg: '#1a1a2e', text: '#6ea8d8' },
@@ -66,436 +66,210 @@ const marcaCores: Record<string, { bg: string; text: string }> = {
   'Zoom':              { bg: '#001420', text: '#4499cc' },
 };
 
-const chipStyle = marca && marcaCores[marca]
-  ? `background:${marcaCores[marca].bg};color:${marcaCores[marca].text};border-color:${marcaCores[marca].text}22;`
-  : `background:rgba(255,255,255,0.06);color:#999;border-color:rgba(255,255,255,0.1);`;
+// Aplica a cor da marca no chip via CSS custom properties no elemento raiz
+const cardStyle = marca && marcaCores[marca]
+  ? `--afi-chip-bg:${marcaCores[marca].bg};--afi-chip-fg:${marcaCores[marca].text};`
+  : '';
 
-// Estrelas
-function renderStars(val: number) {
-  const full = Math.floor(val);
-  const half = val % 1 >= 0.5;
-  let out = '';
-  for (let i = 1; i <= 5; i++) {
-    if (i <= full) out += '<span class="star star--full">★</span>';
-    else if (i === full + 1 && half) out += '<span class="star star--half">★</span>';
-    else out += '<span class="star star--empty">★</span>';
-  }
-  return out;
-}
-const stars = renderStars(avaliacao);
 const avaliacaoLabel = avaliacao.toFixed(1);
+const pct = Math.round((avaliacao / 5) * 1000) / 10; // preenchimento das estrelas (%)
 
-const badgeText = badge ?? 'Recomendação Sonar Musical';
+const badgeText = badge ?? 'Recomendação Sonar';
+
+// Destaques condensados numa linha; a descrição é o fallback quando não há destaques
+const specsLine = destaques && destaques.length > 0 ? destaques.slice(0, 3).join(' · ') : null;
+const showDesc = !specsLine && descricao;
+
+// Preço sem o prefixo "A partir de" (o rótulo já é exibido acima)
+const precoValor = preco ? preco.replace(/^\s*a partir de\s*/i, '') : null;
 ---
 
 <!-- Divulgação de afiliado. O CSS exibe esta linha apenas no PRIMEIRO
-     AfiliadoCTA da página (regra .cta ~ .cta__disclosure), atendendo à
-     transparência exigida sem repetir o aviso em cada bloco nem editar 35 posts. -->
-<p class="cta__disclosure">
+     AfiliadoCTA da página (regra .afi ~ .afi-disclosure), atendendo à
+     transparência exigida sem repetir o aviso em cada bloco nem editar os posts. -->
+<p class="afi-disclosure">
   <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
   <span>Este artigo contém links de afiliado. Se você comprar por eles, podemos receber uma comissão sem custo extra para você, o que não influencia nossas análises.</span>
 </p>
 
-<div class="cta">
-  <!-- Faixa topo com badge -->
-  <div class="cta__stripe">
-    <svg class="cta__stripe-star" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
-    </svg>
-    <span>{badgeText}</span>
-  </div>
-
-  <div class="cta__body">
+<article class="afi" style={cardStyle}>
+  <div class="afi__main">
     {imagem && (
-      <div class="cta__thumb">
-        <img src={imagem} alt={imagemAlt || produto} width="120" height="120" loading="lazy" decoding="async" />
+      <div class="afi__media">
+        <img class="afi__img" src={imagem} alt={imagemAlt || produto} width="84" height="84" loading="lazy" decoding="async" />
+        <div class="afi__shadow" aria-hidden="true"></div>
       </div>
     )}
-    <!-- Coluna principal: nome, avaliação, descrição, bullets -->
-    <div class="cta__main">
-      <div class="cta__header">
-        {marca && (
-          <span class="cta__brand" style={chipStyle}>{marca}</span>
-        )}
-        <h3 class="cta__nome">{produto}</h3>
+
+    <div class="afi__body">
+      <div class="afi__meta">
+        <span class="afi__badge">{badgeText}</span>
+        {marca && <span class="afi__sep" aria-hidden="true"></span>}
+        {marca && <span class="afi__chip">{marca}</span>}
       </div>
 
-      <div class="cta__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
-        <span class="cta__stars" set:html={stars} />
-        <span class="cta__rating-num">{avaliacaoLabel}</span>
-        <span class="cta__rating-sep">·</span>
-        <span class="cta__rating-label">Avaliação Redação</span>
+      <h3 class="afi__title">{produto}</h3>
+
+      <div class="afi__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
+        <span class="afi__stars" aria-hidden="true">★★★★★<span style={`--pct:${pct}%`}>★★★★★</span></span>
+        <span class="afi__rating-text">{avaliacaoLabel} · Avaliação da redação</span>
       </div>
 
-      {descricao && <p class="cta__descricao">{descricao}</p>}
-
-      {destaques && destaques.length > 0 && (
-        <ul class="cta__bullets">
-          {destaques.slice(0, 3).map(d => <li>{d}</li>)}
-        </ul>
-      )}
-    </div>
-
-    <!-- Coluna lateral: preço + botão + trust -->
-    <div class="cta__sidebar">
-      {preco && (
-        <div class="cta__preco-bloco">
-          <span class="cta__preco-label">A partir de</span>
-          <span class="cta__preco">{preco.replace(/^\s*a partir de\s*/i, '')}</span>
-        </div>
-      )}
-
-      <a href={url} target="_blank" rel="noopener noreferrer sponsored nofollow" class="cta__btn">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
-          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
-        </svg>
-        Ver Melhor Preço
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-          <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-        </svg>
-      </a>
-
-      <p class="cta__trust">
-        <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-        </svg>
-        Compra segura · Melhor preço verificado
-      </p>
+      {specsLine && <div class="afi__specs">{specsLine}</div>}
+      {showDesc && <p class="afi__desc">{descricao}</p>}
     </div>
   </div>
-</div>
+
+  <div class="afi__action">
+    {precoValor && (
+      <div class="afi__price-group">
+        <span class="afi__price-label">A partir de</span>
+        <span class="afi__price">{precoValor}</span>
+      </div>
+    )}
+
+    <a class="afi__btn" href={url} target="_blank" rel="noopener noreferrer sponsored nofollow">
+      Ver melhor preço
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+
+    <span class="afi__trust">Compra segura · nova aba</span>
+  </div>
+</article>
 
 <style>
+  /* Os seletores dos filhos são prefixados com .afi de propósito: o card vive
+     dentro de .prose-post, cujos seletores globais (h3, p, img, a...) têm mais
+     especificidade que uma classe simples com o escopo do Astro. O prefixo .afi
+     garante que o layout do card sempre vença o estilo do corpo do artigo. */
+
   /* ── Divulgação de afiliado ─────────────────────────────── */
-  .cta__disclosure {
-    display: flex;
-    align-items: flex-start;
-    gap: 0.5rem;
-    margin: 2.75rem 0 -1.5rem;
-    padding: 0.7rem 0.95rem;
-    border: 1px solid rgba(255, 255, 255, 0.08);
-    border-radius: 10px;
-    background: rgba(255, 255, 255, 0.03);
-    font-size: 0.75rem;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .cta__disclosure svg {
-    flex-shrink: 0;
-    margin-top: 0.15em;
-    opacity: 0.7;
-  }
-  /* Mostra o aviso só no PRIMEIRO CTA da página: qualquer .cta__disclosure
-     que venha depois de um .cta (ou seja, do 2º bloco em diante) fica oculto. */
-  .cta ~ .cta__disclosure {
-    display: none;
-  }
-
-  /* ── Card container ─────────────────────────────────────── */
-  .cta {
-    margin: 2.75rem 0;
-    border-radius: 12px;
-    overflow: hidden;
-    background: #111214;
-    border: 1px solid rgba(255, 255, 255, 0.07);
-    box-shadow:
-      0 1px 2px rgba(0, 0, 0, 0.4),
-      0 4px 20px rgba(0, 0, 0, 0.3);
-    transition: box-shadow 0.22s ease, transform 0.22s ease;
-  }
-
-  .cta:hover {
-    box-shadow:
-      0 2px 4px rgba(0, 0, 0, 0.4),
-      0 8px 32px rgba(0, 0, 0, 0.35),
-      0 0 0 1px rgba(230, 57, 70, 0.18);
-    transform: translateY(-2px);
-  }
-
-  /* ── Faixa superior ─────────────────────────────────────── */
-  .cta__stripe {
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.45rem 1.5rem;
-    background: linear-gradient(90deg, #c0202d 0%, #e63946 60%, #c0202d 100%);
-    color: #fff;
-    font-size: 0.68rem;
-    font-weight: 800;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-  }
-
-  .cta__stripe-star {
-    width: 11px;
-    height: 11px;
-    flex-shrink: 0;
-    opacity: 0.9;
-  }
-
-  /* ── Layout interno ─────────────────────────────────────── */
-  .cta__body {
-    display: grid;
-    grid-template-columns: 1fr 200px;
-    gap: 0;
-  }
-
-  /* Quando há foto do produto, abre uma coluna à esquerda */
-  .cta__body:has(.cta__thumb) {
-    grid-template-columns: 148px 1fr 200px;
-  }
-
-  /* ── Foto do produto (recortada, sem fundo) ─────────────── */
-  .cta__thumb {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1.25rem 0.75rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.06);
-    background: radial-gradient(circle at 50% 45%, rgba(230, 57, 70, 0.1), transparent 70%);
-  }
-
-  .cta__thumb img {
-    width: 100%;
-    height: auto;
-    max-height: 130px;
-    object-fit: contain;
-    filter: drop-shadow(0 6px 14px rgba(0, 0, 0, 0.45));
-  }
-
-  /* ── Coluna principal ───────────────────────────────────── */
-  .cta__main {
-    padding: 1.5rem 1.75rem 1.5rem 1.5rem;
-    border-right: 1px solid rgba(255, 255, 255, 0.06);
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-  }
-
-  .cta__header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.35rem;
-  }
-
-  /* Chip de marca */
-  .cta__brand {
-    display: inline-block;
-    align-self: flex-start;
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    padding: 0.2rem 0.55rem;
-    border-radius: 4px;
-    border: 1px solid transparent;
-    line-height: 1;
-  }
-
-  /* Nome do produto */
-  .cta__nome {
-    font-size: 1.05rem;
-    font-weight: 800;
-    color: #f0f0f0;
-    margin: 0;
-    line-height: 1.3;
-    letter-spacing: -0.02em;
-  }
-
-  /* Avaliação */
-  .cta__rating {
-    display: flex;
-    align-items: center;
-    gap: 0.35rem;
-    flex-wrap: wrap;
-  }
-
-  .cta__stars {
-    display: flex;
-    gap: 1px;
-    line-height: 1;
-  }
-
-  .star            { font-size: 0.85rem; }
-  .star--full      { color: #facc15; }
-  .star--half      { color: #facc15; opacity: 0.55; }
-  .star--empty     { color: rgba(255,255,255,0.12); }
-
-  .cta__rating-num {
-    font-size: 0.78rem;
-    font-weight: 700;
-    color: #facc15;
-  }
-
-  .cta__rating-sep {
-    color: rgba(255,255,255,0.2);
-    font-size: 0.7rem;
-  }
-
-  .cta__rating-label {
-    font-size: 0.7rem;
-    color: rgba(255,255,255,0.35);
-    font-weight: 400;
-  }
-
-  /* Descrição */
-  .cta__descricao {
-    font-size: 0.855rem;
-    color: rgba(255,255,255,0.55);
-    margin: 0;
-    line-height: 1.55;
-  }
-
-  /* Bullets */
-  .cta__bullets {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 0.3rem;
-  }
-
-  .cta__bullets li {
-    font-size: 0.815rem;
-    color: rgba(255,255,255,0.65);
-    line-height: 1.45;
-    display: flex;
-    align-items: baseline;
-    gap: 0.45rem;
-  }
-
-  .cta__bullets li::before {
-    content: '✓';
-    color: #22c55e;
-    font-weight: 800;
-    font-size: 0.72rem;
-    flex-shrink: 0;
-    margin-top: 0.05em;
-  }
-
-  /* ── Sidebar: preço + botão + trust ────────────────────── */
-  .cta__sidebar {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.8rem;
-    padding: 1.5rem 1.25rem;
-    background: rgba(255,255,255,0.02);
-  }
-
-  .cta__preco-bloco {
-    text-align: center;
-  }
-
-  .cta__preco-label {
-    display: block;
-    font-size: 0.65rem;
-    color: rgba(255,255,255,0.3);
-    text-transform: uppercase;
-    letter-spacing: 0.07em;
-    font-weight: 600;
-    margin-bottom: 0.2rem;
-  }
-
-  .cta__preco {
-    display: block;
-    font-size: 1.35rem;
-    font-weight: 900;
-    color: #4ade80;
-    letter-spacing: -0.025em;
-    line-height: 1.1;
-  }
-
-  /* Botão CTA */
-  .cta__btn {
+  .afi-disclosure {
     display: flex !important;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
     gap: 0.45rem;
-    width: 100%;
-    padding: 0.8rem 1rem;
-    border-radius: 8px;
-    background: #e63946;
-    color: #fff !important;
-    font-size: 0.84rem;
-    font-weight: 800;
-    text-decoration: none !important;
-    white-space: nowrap;
-    letter-spacing: 0.01em;
-    transition: background 0.18s, box-shadow 0.18s, transform 0.15s;
-    box-shadow: 0 2px 10px rgba(230, 57, 70, 0.35);
+    margin: 2.75rem 0 -1.25rem !important;
+    font-size: 11px !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.3) !important;
   }
+  .afi-disclosure svg { flex-shrink: 0; margin-top: 0.15em; opacity: 0.7; }
+  /* Mostra o aviso só no PRIMEIRO card da página: qualquer .afi-disclosure
+     que venha depois de um .afi (2º bloco em diante) fica oculto. */
+  .afi ~ .afi-disclosure { display: none !important; }
 
-  .cta__btn:hover {
-    background: #d02f3c;
-    box-shadow: 0 4px 16px rgba(230, 57, 70, 0.5);
-    transform: translateY(-1px);
-    text-decoration: none !important;
-    color: #fff !important;
-  }
+  /* ── Card ───────────────────────────────────────────────── */
+  .afi {
+    --afi-brand: #e63946;
+    --afi-brand-hover: #d02f3c;
+    --afi-brand-active: #b8202d;
+    --afi-bg: #111214;
+    --afi-border: rgba(255, 255, 255, 0.07);
+    --afi-price: #4ade80;
+    --afi-star: #facc15;
+    --afi-star-empty: rgba(255, 255, 255, 0.12);
+    /* chip de marca (sobrescrito por marca via style inline) */
+    --afi-chip-bg: rgba(255, 255, 255, 0.06);
+    --afi-chip-fg: rgba(255, 255, 255, 0.7);
 
-  .cta__btn:active {
-    transform: translateY(0);
-    background: #b8202d;
-  }
-
-  /* Trust text */
-  .cta__trust {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 0.3rem;
-    font-size: 0.67rem;
-    color: rgba(255,255,255,0.25);
-    margin: 0;
-    text-align: center;
+    gap: 20px;
+    margin: 2.75rem 0;
+    padding: 16px 20px;
+    background: var(--afi-bg);
+    border: 1px solid var(--afi-border);
+    border-left: 3px solid var(--afi-brand);
+    border-radius: 14px;
+    font-family: inherit;
+  }
+
+  /* ── Foto recortada (PNG/WebP transparente) ─────────────── */
+  .afi .afi__media { flex: 0 0 84px; display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .afi .afi__img { display: block; width: 84px; height: 84px; object-fit: contain; margin: 0; border-radius: 0; }
+  .afi .afi__shadow {
+    width: 70px; height: 10px; border-radius: 50%;
+    background: radial-gradient(50% 100% at 50% 0%, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0) 75%);
+  }
+
+  .afi .afi__body { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+
+  .afi .afi__meta { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .afi .afi__badge {
+    font-size: 9px; font-weight: 800; letter-spacing: 0.11em; text-transform: uppercase;
+    color: #ff6b76;
+  }
+  .afi .afi__sep { width: 1px; height: 10px; background: rgba(255, 255, 255, 0.15); }
+  .afi .afi__chip {
+    padding: 2px 7px; border-radius: 4px;
+    background: var(--afi-chip-bg); color: var(--afi-chip-fg);
+    font-size: 9px; font-weight: 800; letter-spacing: 0.09em; text-transform: uppercase;
     line-height: 1.4;
   }
 
-  /* ── Mobile ─────────────────────────────────────────────── */
+  .afi .afi__title {
+    margin: 0; font-size: 21px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em;
+    color: #f5f5f5; text-wrap: pretty;
+  }
+
+  .afi .afi__rating { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+  .afi .afi__stars {
+    position: relative; display: inline-block; line-height: 1;
+    font-size: 12px; letter-spacing: 1px; color: var(--afi-star-empty);
+  }
+  .afi .afi__stars > span {
+    position: absolute; top: 0; left: 0; width: var(--pct, 100%);
+    overflow: hidden; white-space: nowrap; color: var(--afi-star);
+  }
+  .afi .afi__rating-text { font-size: 12px; color: rgba(255, 255, 255, 0.45); }
+
+  .afi .afi__specs { font-size: 12px; line-height: 1.5; color: rgba(255, 255, 255, 0.6); margin: 0; }
+  .afi .afi__desc { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(255, 255, 255, 0.55); }
+
+  /* ── Bloco de conversão (preço + botão) ─────────────────── */
+  .afi .afi__action { flex: 0 0 auto; display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+  .afi .afi__price-label {
+    font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.35);
+  }
+  .afi .afi__price {
+    font-size: 26px; font-weight: 900; letter-spacing: -0.03em; line-height: 1;
+    color: var(--afi-price);
+  }
+  .afi .afi__btn {
+    display: inline-flex; align-items: center; gap: 8px;
+    padding: 12px 18px; border-radius: 9px;
+    background: var(--afi-brand); color: #fff !important;
+    font-size: 14px; font-weight: 800; white-space: nowrap; text-decoration: none !important;
+    box-shadow: 0 8px 20px rgba(230, 57, 70, 0.28);
+    transition: background 0.15s ease, transform 0.15s ease;
+  }
+  .afi .afi__btn:hover { background: var(--afi-brand-hover); color: #fff !important; text-decoration: none !important; }
+  .afi .afi__btn:active { background: var(--afi-brand-active); transform: translateY(1px); }
+  .afi .afi__btn:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+  .afi .afi__btn svg { width: 15px; height: 15px; flex: 0 0 auto; }
+  .afi .afi__trust { font-size: 10px; color: rgba(255, 255, 255, 0.3); }
+
+  /* ── Mobile: empilhado ──────────────────────────────────── */
   @media (max-width: 600px) {
-    .cta__body,
-    .cta__body:has(.cta__thumb) {
-      grid-template-columns: 1fr;
+    .afi { flex-direction: column; align-items: stretch; gap: 14px; padding: 16px; }
+    .afi .afi__main { display: flex; align-items: center; gap: 14px; }
+    .afi .afi__media { flex: 0 0 76px; }
+    .afi .afi__img { width: 76px; height: 76px; }
+    .afi .afi__shadow { width: 64px; height: 9px; }
+    .afi .afi__title { font-size: 19px; }
+    .afi .afi__action {
+      flex-direction: row; align-items: center; justify-content: space-between; gap: 12px;
+      padding-top: 12px; border-top: 1px solid var(--afi-border);
     }
-
-    .cta__thumb {
-      border-right: none;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-      padding: 1rem;
-    }
-
-    .cta__thumb img {
-      max-height: 110px;
-    }
-
-    .cta__main {
-      padding: 1.25rem 1.25rem 1rem;
-      border-right: none;
-      border-bottom: 1px solid rgba(255,255,255,0.06);
-    }
-
-    .cta__sidebar {
-      padding: 1rem 1.25rem 1.25rem;
-      background: none;
-    }
-
-    .cta__preco-bloco {
-      display: flex;
-      align-items: baseline;
-      gap: 0.5rem;
-    }
-
-    .cta__preco-label {
-      display: inline;
-      margin-bottom: 0;
-    }
-
-    .cta__trust {
-      font-size: 0.66rem;
-    }
+    .afi .afi__price-group { display: flex; flex-direction: column; gap: 1px; }
+    .afi .afi__price { font-size: 24px; }
+    .afi .afi__btn { padding: 13px 18px; }
+    .afi .afi__trust { display: none; }
+  }
+  /* Desktop: o wrapper .afi__main é transparente ao layout flex do card */
+  @media (min-width: 601px) {
+    .afi .afi__main { display: contents; }
+    .afi .afi__price-group { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; }
   }
 </style>
