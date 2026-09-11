@@ -280,6 +280,7 @@ const POSTS = [
 
   { slug: '5-pedais-boss-essenciais-para-guitarristas', kicker: 'PEDAIS', l1: '5 PEDAIS', l2: 'ESSENCIAIS', motif: 'pedal', opt: { tone: '#1f3a6e' } },
   { slug: 'pedaleira-vs-plugin', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'vs PLUGIN', motif: 'pedal', opt: { tone: '#241a3a' } },
+  { slug: 'distorcao-overdrive-fuzz-diferenca', kicker: 'PEDAIS · GUIA', l1: 'DISTORÇÃO', l2: 'OVERDRIVE · FUZZ', motif: 'pedal', opt: { tone: '#2a1410' } },
   { slug: 'como-montar-pedalboard', kicker: 'PEDAIS · TUTORIAL', l1: 'MONTAR', l2: 'PEDALBOARD', motif: 'pedal', opt: { tone: '#2a2a30' } },
   { slug: 'pedais-e-pedaleiras-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDAIS E', l2: 'PEDALEIRAS', motif: 'pedal', opt: { tone: '#0e6b52' } },
   { slug: 'pedal-de-distorcao-para-guitarra', kicker: 'PEDAIS', l1: 'PEDAL DE', l2: 'DISTORÇÃO', motif: 'pedal', opt: { tone: '#c62432' } },
@@ -308,6 +309,7 @@ const POSTS = [
   { slug: 'afinacoes-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'AFINAÇÕES', l2: 'DE GUITARRA', sub: 'Standard · Drop D · Open G', motif: 'strings' },
   { slug: 'partes-da-guitarra-eletrica', kicker: 'TÉCNICA E TEORIA', l1: 'PARTES DA', l2: 'GUITARRA', sub: 'anatomia peça por peça', motif: 'guitar', opt: { body: '#b5202d' } },
   { slug: 'teoria-musical-para-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TEORIA', l2: 'MUSICAL', sub: 'escalas · acordes · tonalidades', motif: 'fretboard' },
+  { slug: 'como-tirar-musica-de-ouvido', kicker: 'TÉCNICA E TEORIA', l1: 'TIRAR MÚSICA', l2: 'DE OUVIDO', sub: 'tom · acordes · melodia', motif: 'fretboard' },
   { slug: 'glossario-de-guitarra', kicker: 'REFERÊNCIA · A a Z', l1: 'GLOSSÁRIO', l2: 'DA GUITARRA', sub: 'todos os termos explicados', motif: 'guitar', opt: { body: '#101014', guard: '#c9a45a' } },
   { slug: 'como-fazer-manutencao-guitarra-em-casa', kicker: 'TUTORIAL', l1: 'MANUTENÇÃO', l2: 'EM CASA', sub: 'o que você mesmo faz', motif: 'tools' },
   { slug: 'problemas-comuns-na-guitarra', kicker: 'TUTORIAL', l1: 'PROBLEMAS', l2: 'COMUNS', sub: 'e como resolver', motif: 'tools' },
@@ -323,6 +325,7 @@ const POSTS = [
 
   { slug: 'melhores-violoes-2026', kicker: 'VIOLÕES · 2026', l1: 'MELHORES', l2: 'VIOLÕES', motif: 'acoustic' },
   { slug: 'violao-ou-guitarra-por-onde-comecar', kicker: 'INICIANTES', l1: 'VIOLÃO ou', l2: 'GUITARRA?', motif: 'acoustic' },
+  { slug: 'guitarra-ou-baixo', kicker: 'INICIANTES', l1: 'GUITARRA', l2: 'ou BAIXO?', motif: 'guitar', opt: { body: '#12324a', guard: '#e9e4da' } },
   { slug: 'como-tocar-violao-para-iniciantes', kicker: 'INICIANTES', l1: 'COMO TOCAR', l2: 'VIOLÃO', sub: 'guia do zero', motif: 'acoustic' },
   { slug: 'tecnicas-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TÉCNICAS', l2: 'DE GUITARRA', sub: 'bend · vibrato · palm mute', motif: 'fretboard' },
   { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },

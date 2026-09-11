@@ -269,6 +269,12 @@
     "l2": "vs PLUGIN",
     "motif": "pedal"
   },
+  "distorcao-overdrive-fuzz-diferenca": {
+    "kicker": "PEDAIS · GUIA",
+    "l1": "DISTORÇÃO",
+    "l2": "OVERDRIVE · FUZZ",
+    "motif": "pedal"
+  },
   "como-montar-pedalboard": {
     "kicker": "PEDAIS · TUTORIAL",
     "l1": "MONTAR",
@@ -407,6 +413,12 @@
     "l2": "MUSICAL",
     "motif": "fretboard"
   },
+  "como-tirar-musica-de-ouvido": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "TIRAR MÚSICA",
+    "l2": "DE OUVIDO",
+    "motif": "fretboard"
+  },
   "glossario-de-guitarra": {
     "kicker": "REFERÊNCIA · A a Z",
     "l1": "GLOSSÁRIO",
@@ -484,6 +496,12 @@
     "l1": "VIOLÃO ou",
     "l2": "GUITARRA?",
     "motif": "acoustic"
+  },
+  "guitarra-ou-baixo": {
+    "kicker": "INICIANTES",
+    "l1": "GUITARRA",
+    "l2": "ou BAIXO?",
+    "motif": "guitar"
   },
   "como-tocar-violao-para-iniciantes": {
     "kicker": "INICIANTES",
