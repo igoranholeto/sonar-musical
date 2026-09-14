@@ -71,6 +71,12 @@
     "l2": "PRA BLUES",
     "motif": "guitar"
   },
+  "melhor-guitarra-para-metal": {
+    "kicker": "GUITARRAS · 2026",
+    "l1": "GUITARRA",
+    "l2": "PRA METAL",
+    "motif": "guitar"
+  },
   "fender-vs-gibson-qual-escolher": {
     "kicker": "COMPARATIVO",
     "l1": "FENDER vs",
@@ -275,6 +281,12 @@
     "l2": "OVERDRIVE · FUZZ",
     "motif": "pedal"
   },
+  "delay-vs-reverb": {
+    "kicker": "PEDAIS · GUIA",
+    "l1": "DELAY",
+    "l2": "vs REVERB",
+    "motif": "pedal"
+  },
   "como-montar-pedalboard": {
     "kicker": "PEDAIS · TUTORIAL",
     "l1": "MONTAR",
@@ -321,6 +333,12 @@
     "kicker": "ACESSÓRIOS · 2026",
     "l1": "MELHORES",
     "l2": "CORDAS",
+    "motif": "strings"
+  },
+  "tipos-de-palheta-de-guitarra": {
+    "kicker": "ACESSÓRIOS · GUIA",
+    "l1": "TIPOS DE",
+    "l2": "PALHETA",
     "motif": "strings"
   },
   "cordas-de-guitarra-009-ou-010": {
