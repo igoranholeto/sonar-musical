@@ -245,6 +245,7 @@ const POSTS = [
   { slug: 'melhores-guitarras-eletricas-para-iniciantes-2026', kicker: 'GUIA · 2026', l1: 'GUITARRAS', l2: 'INICIANTE', motif: 'guitar', opt: { body: '#c62432' } },
   { slug: 'melhor-guitarra-eletrica-infantil', kicker: 'GUIA · 2026', l1: 'GUITARRA', l2: 'INFANTIL', motif: 'guitar', opt: { body: '#e0642a', guard: '#f0ece2' } },
   { slug: 'melhor-guitarra-para-blues', kicker: 'GUITARRAS · 2026', l1: 'GUITARRA', l2: 'PRA BLUES', motif: 'guitar', opt: { body: '#1c3f6e', guard: '#e9e4da' } },
+  { slug: 'melhor-guitarra-para-metal', kicker: 'GUITARRAS · 2026', l1: 'GUITARRA', l2: 'PRA METAL', motif: 'guitar', opt: { body: '#141018', guard: '#c8323e' } },
   { slug: 'fender-vs-gibson-qual-escolher', kicker: 'COMPARATIVO', l1: 'FENDER vs', l2: 'GIBSON', motif: 'guitarLP', opt: { body: '#7a1f12', guard: '#241a10' } },
   { slug: 'quanto-custa-uma-guitarra-eletrica', kicker: 'GUIA DE COMPRA', l1: 'QUANTO', l2: 'CUSTA?', sub: 'guitarra elétrica · preços 2026', motif: 'guitar', opt: { body: '#2a8a6a', guard: '#e9e4da' } },
   { slug: 'quanto-custa-ser-guitarrista-no-brasil', kicker: 'GUIA · CUSTOS · 2026', l1: 'CUSTO DE SER', l2: 'GUITARRISTA', motif: 'guitar', opt: { body: '#1c1c22', guard: '#c9a45a' } },
@@ -281,6 +282,7 @@ const POSTS = [
   { slug: '5-pedais-boss-essenciais-para-guitarristas', kicker: 'PEDAIS', l1: '5 PEDAIS', l2: 'ESSENCIAIS', motif: 'pedal', opt: { tone: '#1f3a6e' } },
   { slug: 'pedaleira-vs-plugin', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'vs PLUGIN', motif: 'pedal', opt: { tone: '#241a3a' } },
   { slug: 'distorcao-overdrive-fuzz-diferenca', kicker: 'PEDAIS · GUIA', l1: 'DISTORÇÃO', l2: 'OVERDRIVE · FUZZ', motif: 'pedal', opt: { tone: '#2a1410' } },
+  { slug: 'delay-vs-reverb', kicker: 'PEDAIS · GUIA', l1: 'DELAY', l2: 'vs REVERB', motif: 'pedal', opt: { tone: '#123a3a' } },
   { slug: 'como-montar-pedalboard', kicker: 'PEDAIS · TUTORIAL', l1: 'MONTAR', l2: 'PEDALBOARD', motif: 'pedal', opt: { tone: '#2a2a30' } },
   { slug: 'pedais-e-pedaleiras-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDAIS E', l2: 'PEDALEIRAS', motif: 'pedal', opt: { tone: '#0e6b52' } },
   { slug: 'pedal-de-distorcao-para-guitarra', kicker: 'PEDAIS', l1: 'PEDAL DE', l2: 'DISTORÇÃO', motif: 'pedal', opt: { tone: '#c62432' } },
@@ -291,6 +293,7 @@ const POSTS = [
   { slug: 'single-coil-vs-humbucker', kicker: 'TÉCNICA', l1: 'SINGLE COIL', l2: 'vs HUMBUCKER', sub: 'qual captador escolher', motif: 'pickups' },
 
   { slug: 'melhores-cordas-de-guitarra-2026', kicker: 'ACESSÓRIOS · 2026', l1: 'MELHORES', l2: 'CORDAS', motif: 'strings' },
+  { slug: 'tipos-de-palheta-de-guitarra', kicker: 'ACESSÓRIOS · GUIA', l1: 'TIPOS DE', l2: 'PALHETA', sub: 'fina · média · grossa', motif: 'strings' },
   { slug: 'cordas-de-guitarra-009-ou-010', kicker: 'ACESSÓRIOS', l1: '009', l2: 'ou 010?', sub: 'calibre de cordas', motif: 'strings' },
   { slug: 'como-trocar-as-cordas-da-guitarra', kicker: 'TUTORIAL', l1: 'TROCAR', l2: 'AS CORDAS', motif: 'strings' },
   { slug: 'nome-das-cordas-da-guitarra', kicker: 'TÉCNICA', l1: 'NOME DAS', l2: 'CORDAS', sub: 'E A D G B E', motif: 'strings' },
