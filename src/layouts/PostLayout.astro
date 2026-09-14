@@ -5,6 +5,7 @@ import Rating from '../components/Rating.astro';
 import AuthorBio from '../components/AuthorBio.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
+import ShareButtons from '../components/ShareButtons.astro';
 import { slugifyCategory } from '../utils/slug';
 import { unsplashSrc } from '../utils/image';
 import { getAuthorByName } from '../data/authors';
@@ -269,6 +270,11 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     <!-- Conteúdo do post -->
     <div class="prose-post">
       <slot />
+    </div>
+
+    <!-- Compartilhar -->
+    <div class="mt-10 pt-8 border-t border-border">
+      <ShareButtons url={canonicalPostUrl} title={title} />
     </div>
 
     <!-- Tags -->
