@@ -336,6 +336,8 @@ const POSTS = [
   { slug: 'como-tocar-violao-para-iniciantes', kicker: 'INICIANTES', l1: 'COMO TOCAR', l2: 'VIOLÃO', sub: 'guia do zero', motif: 'acoustic' },
   { slug: 'tecnicas-de-guitarra', kicker: 'TÉCNICA E TEORIA', l1: 'TÉCNICAS', l2: 'DE GUITARRA', sub: 'bend · vibrato · palm mute', motif: 'fretboard' },
   { slug: 'melhores-presentes-para-guitarristas', kicker: 'GUIA DE COMPRA', l1: 'PRESENTES', l2: 'P/ GUITARRISTAS', motif: 'guitar', opt: { body: '#c62432' } },
+  { slug: 'presente-de-natal-para-guitarrista', kicker: 'GUIA DE COMPRA · NATAL', l1: 'PRESENTE DE', l2: 'NATAL', sub: 'para guitarrista, por bolso', motif: 'guitar', opt: { body: '#1a6b3a', guard: '#e9e4da' } },
+  { slug: 'presente-para-quem-esta-comecando-na-guitarra', kicker: 'GUIA DE COMPRA', l1: 'PRESENTE P/', l2: 'INICIANTE', sub: 'quem está começando', motif: 'guitar', opt: { body: '#c62432', guard: '#e9e4da' } },
   { slug: 'pedaleira-zoom-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'ZOOM', sub: 'G1X Four · G3n · G6', motif: 'pedal', opt: { tone: '#1f5a8a' } },
   { slug: 'pedaleira-boss-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'BOSS', sub: 'GT-1 · ME-90 · GT-1000', motif: 'pedal', opt: { tone: '#7a1520' } },
   { slug: 'curso-de-guitarra-como-aprender', kicker: 'INICIANTES', l1: 'CURSO DE', l2: 'GUITARRA', sub: 'como aprender do zero', motif: 'fretboard' },
