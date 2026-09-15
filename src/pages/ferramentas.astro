@@ -49,6 +49,12 @@ const ferramentas = [
   },
 ];
 
+const downloads = [
+  { href: '/downloads/acordes-essenciais-sonar-musical.pdf', nome: 'Acordes Essenciais (PDF)', desc: 'Os 8 primeiros acordes num diagrama pronto para imprimir.' },
+  { href: '/downloads/escala-pentatonica-sonar-musical.pdf', nome: 'Escala Pentatônica (PDF)', desc: 'A pentatônica menor no braço, a forma que abre os solos.' },
+  { href: '/downloads/mapa-de-notas-do-braco-sonar-musical.pdf', nome: 'Mapa de Notas do Braço (PDF)', desc: 'Todas as notas da guitarra, casas 0 a 12, para decorar o braço.' },
+];
+
 const faqItems = [
   {
     question: 'As ferramentas do Sonar Musical são grátis?',
@@ -116,16 +122,23 @@ const schema = [
       ))}
     </div>
 
-    <a href="/downloads/acordes-essenciais-sonar-musical.pdf" class="tools-download" download>
-      <span class="tools-download__icon" aria-hidden="true">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-      </span>
-      <span class="tools-download__text">
-        <strong>PDF grátis: Acordes Essenciais para Iniciantes</strong>
-        Os 8 primeiros acordes num diagrama pronto para imprimir e colar na parede.
-      </span>
-      <span class="tools-download__cta">Baixar PDF</span>
-    </a>
+    <section class="tools-downloads">
+      <h2 class="tools-downloads__title">📄 Downloads grátis para imprimir</h2>
+      <div class="tools-downloads__list">
+        {downloads.map((d) => (
+          <a href={d.href} class="tools-download" download>
+            <span class="tools-download__icon" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            </span>
+            <span class="tools-download__text">
+              <strong>{d.nome}</strong>
+              {d.desc}
+            </span>
+            <span class="tools-download__cta">Baixar</span>
+          </a>
+        ))}
+      </div>
+    </section>
 
     <section class="tools-article">
       <h2>Ferramentas de verdade, de graça</h2>
@@ -182,9 +195,14 @@ const schema = [
   .tool-card__desc { font-size: 0.9rem; line-height: 1.55; color: var(--color-muted); margin: 0; flex: 1; }
   .tool-card__cta { font-size: 0.9rem; font-weight: 700; color: var(--color-brand); margin-top: 0.35rem; }
 
+  .tools-downloads { margin-top: 2.5rem; }
+  .tools-downloads__title { font-size: 1.25rem; font-weight: 700; margin-bottom: 1rem; }
+  .tools-downloads__list { display: grid; grid-template-columns: 1fr; gap: 0.75rem; }
+  @media (min-width: 720px) { .tools-downloads__list { grid-template-columns: repeat(3, 1fr); } }
+
   .tools-download {
-    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
-    margin-top: 1.5rem; padding: 1.15rem 1.35rem; border-radius: 16px;
+    display: flex; align-items: center; gap: 0.85rem; flex-wrap: wrap;
+    padding: 1rem 1.1rem; border-radius: 14px;
     text-decoration: none; color: inherit;
     background: color-mix(in srgb, var(--color-brand) 10%, var(--color-card));
     border: 1px solid color-mix(in srgb, var(--color-brand) 35%, transparent);
