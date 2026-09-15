@@ -563,6 +563,18 @@
     "l2": "P/ GUITARRISTAS",
     "motif": "guitar"
   },
+  "presente-de-natal-para-guitarrista": {
+    "kicker": "GUIA DE COMPRA · NATAL",
+    "l1": "PRESENTE DE",
+    "l2": "NATAL",
+    "motif": "guitar"
+  },
+  "presente-para-quem-esta-comecando-na-guitarra": {
+    "kicker": "GUIA DE COMPRA",
+    "l1": "PRESENTE P/",
+    "l2": "INICIANTE",
+    "motif": "guitar"
+  },
   "pedaleira-zoom-guia-completo": {
     "kicker": "PEDAIS · GUIA",
     "l1": "PEDALEIRA",
