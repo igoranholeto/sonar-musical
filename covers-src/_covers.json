@@ -443,6 +443,24 @@
     "l2": "DE OUVIDO",
     "motif": "fretboard"
   },
+  "como-fazer-pestana-na-guitarra": {
+    "kicker": "INICIANTES",
+    "l1": "COMO FAZER",
+    "l2": "PESTANA",
+    "motif": "fretboard"
+  },
+  "como-fazer-bend-na-guitarra": {
+    "kicker": "TÉCNICA E TEORIA",
+    "l1": "COMO FAZER",
+    "l2": "BEND",
+    "motif": "fretboard"
+  },
+  "como-ler-tablatura-de-guitarra": {
+    "kicker": "INICIANTES",
+    "l1": "COMO LER",
+    "l2": "TABLATURA",
+    "motif": "tab"
+  },
   "glossario-de-guitarra": {
     "kicker": "REFERÊNCIA · A a Z",
     "l1": "GLOSSÁRIO",
