@@ -1,0 +1,180 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQ from '../components/FAQ.astro';
+
+const site = 'https://sonarmusical.com.br';
+
+const ferramentas = [
+  {
+    href: '/afinador/',
+    nome: 'Afinador Online',
+    desc: 'Afine guitarra e violão pelo microfone, com detecção automática de notas e afinações prontas (Standard, Drop D, Open G e mais).',
+    tag: 'Áudio',
+    icon: `<circle cx="12" cy="12" r="9"/><path d="M12 12l4-2.5"/><circle cx="12" cy="12" r="1.4" fill="currentColor" stroke="none"/><path d="M12 3v2M21 12h-2M12 21v-2M3 12h2"/>`,
+  },
+  {
+    href: '/metronomo/',
+    nome: 'Metrônomo Online',
+    desc: 'Treine seu tempo e a troca de acordes. Ajuste BPM, compasso e subdivisões, com tap tempo, direto no navegador.',
+    tag: 'Ritmo',
+    icon: `<path d="M9 3h6l3 18H6L9 3z"/><path d="M7.5 14h9"/><line x1="12" y1="14" x2="15" y2="6"/>`,
+  },
+  {
+    href: '/acordes/',
+    nome: 'Dicionário de Acordes',
+    desc: 'Escolha a tônica e o tipo (maior, menor, 7, m7, sus4) e veja o diagrama de digitação, com o som de cada acorde.',
+    tag: 'Acordes',
+    icon: `<rect x="4" y="3" width="16" height="18" rx="1.5"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="4" y1="9" x2="20" y2="9"/><line x1="4" y1="15" x2="20" y2="15"/><circle cx="9" cy="12" r="1.4" fill="currentColor" stroke="none"/><circle cx="15" cy="18" r="1.4" fill="currentColor" stroke="none"/>`,
+  },
+  {
+    href: '/gerador-de-escalas/',
+    nome: 'Gerador de Escalas',
+    desc: 'Escolha a tônica e a escala (maior, menor, pentatônica, blues) e veja as notas acenderem no braço da guitarra, com áudio.',
+    tag: 'Escalas',
+    icon: `<rect x="3" y="6" width="18" height="12" rx="1.5"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="3" y1="14" x2="21" y2="14"/><circle cx="8" cy="8" r="1.3" fill="currentColor" stroke="none"/><circle cx="13" cy="12" r="1.3" fill="currentColor" stroke="none"/><circle cx="17" cy="16" r="1.3" fill="currentColor" stroke="none"/>`,
+  },
+  {
+    href: '/qual-guitarra/',
+    nome: 'Qual Guitarra é pra Você?',
+    desc: 'Responda 3 perguntas e descubra qual tipo de guitarra elétrica combina com o seu nível, estilo e orçamento.',
+    tag: 'Quiz',
+    icon: `<path d="M9.1 9a3 3 0 1 1 5.8 1c0 2-3 2.5-3 4"/><line x1="12" y1="18" x2="12.01" y2="18"/><circle cx="12" cy="12" r="9.5"/>`,
+  },
+  {
+    href: '/tablaturas/',
+    nome: 'Tablaturas',
+    desc: 'Busque tablaturas de riffs clássicos por música ou artista, para abrir no navegador ou baixar em PDF.',
+    tag: 'Tabs',
+    icon: `<rect x="4" y="3" width="16" height="18" rx="2"/><line x1="8" y1="8" x2="16" y2="8"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/>`,
+  },
+];
+
+const faqItems = [
+  {
+    question: 'As ferramentas do Sonar Musical são grátis?',
+    answer: 'Sim, todas são 100% gratuitas e funcionam direto no navegador, sem instalar nada e sem criar conta. Afinador, metrônomo, dicionário de acordes, gerador de escalas, quiz e tablaturas: é só abrir e usar, no computador ou no celular.'
+  },
+  {
+    question: 'Preciso instalar algum aplicativo?',
+    answer: 'Não. Tudo roda no próprio navegador (Chrome, Safari, Firefox, Edge), no computador ou no celular. O afinador usa o microfone do aparelho, que pede sua permissão na hora, e nada é gravado nem enviado para lugar nenhum.'
+  },
+  {
+    question: 'As ferramentas funcionam no celular?',
+    answer: 'Funcionam. Todas são responsivas e feitas para tocar guitarra ou violão com o celular do lado: o afinador capta o som pelo microfone, o metrônomo marca o tempo e os diagramas de acordes e escalas se ajustam à tela. Basta abrir o link no navegador do celular.'
+  },
+  {
+    question: 'Servem para violão também, ou só guitarra?',
+    answer: 'Servem para os dois. O afinador tem afinações de guitarra e violão, o dicionário de acordes e o metrônomo valem para qualquer instrumento de cordas, e o gerador de escalas usa o braço da guitarra, que compartilha a mesma lógica de notas do violão.'
+  },
+];
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Ferramentas grátis para guitarra e violão',
+    url: `${site}/ferramentas/`,
+    description: 'Coleção de ferramentas gratuitas para guitarristas: afinador, metrônomo, dicionário de acordes, gerador de escalas, quiz e tablaturas.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    itemListElement: ferramentas.map((f, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: f.nome,
+      url: `${site}${f.href}`,
+    })),
+  },
+];
+---
+
+<BaseLayout
+  title="Ferramentas Grátis para Guitarra e Violão"
+  description="Reunimos as melhores ferramentas grátis para guitarristas: afinador online, metrônomo, dicionário de acordes, gerador de escalas, quiz e tablaturas. Sem instalar nada."
+  schema={schema}
+>
+  <div class="tools-page">
+    <header class="tools-header">
+      <h1>Ferramentas grátis para guitarra e violão</h1>
+      <p class="tools-subtitle">
+        Tudo o que você precisa para estudar e tocar, direto no navegador. Sem instalar nada, sem criar conta, no computador ou no celular.
+      </p>
+    </header>
+
+    <div class="tools-grid">
+      {ferramentas.map((f) => (
+        <a href={f.href} class="tool-card">
+          <span class="tool-card__icon" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" set:html={f.icon} />
+          </span>
+          <span class="tool-card__tag">{f.tag}</span>
+          <h2 class="tool-card__nome">{f.nome}</h2>
+          <p class="tool-card__desc">{f.desc}</p>
+          <span class="tool-card__cta">Abrir →</span>
+        </a>
+      ))}
+    </div>
+
+    <section class="tools-article">
+      <h2>Ferramentas de verdade, de graça</h2>
+      <p>
+        Estudar guitarra fica muito mais fácil com as ferramentas certas na mão. Por isso reunimos aqui as nossas, todas <strong>gratuitas e sem instalação</strong>: você abre o link e já começa a usar. O <a href="/afinador/">afinador</a> deixa o instrumento no ponto antes de tocar, o <a href="/metronomo/">metrônomo</a> firma o seu tempo, o <a href="/acordes/">dicionário de acordes</a> mostra a digitação de qualquer acorde e o <a href="/gerador-de-escalas/">gerador de escalas</a> acende as notas no braço para você estudar solos.
+      </p>
+      <p>
+        Não sabe por onde começar ou qual instrumento comprar? O <a href="/qual-guitarra/">quiz "Qual guitarra é pra você?"</a> recomenda o tipo certo em 3 perguntas, e as <a href="/tablaturas/">tablaturas</a> te dão riffs clássicos para praticar. Se estiver montando o setup, veja também as <a href="/blog/melhores-guitarras-eletricas-para-iniciantes-2026/">melhores guitarras para iniciantes</a> e o guia de <a href="/blog/teoria-musical-para-guitarra/">teoria musical para guitarra</a>.
+      </p>
+      <p class="tools-share-note">
+        Curtiu? Salva esta página nos favoritos e compartilha com quem está aprendendo, é a forma mais fácil de ter todas as ferramentas num lugar só.
+      </p>
+    </section>
+
+    <FAQ items={faqItems} />
+  </div>
+</BaseLayout>
+
+<style>
+  .tools-page { max-width: 960px; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+  .tools-header { text-align: center; margin-bottom: 2.5rem; }
+  .tools-header h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1.1; }
+  .tools-subtitle { color: var(--color-muted); margin: 0.9rem auto 0; font-size: 1rem; line-height: 1.6; max-width: 42rem; }
+
+  .tools-grid { display: grid; grid-template-columns: 1fr; gap: 1rem; }
+  @media (min-width: 560px) { .tools-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (min-width: 860px) { .tools-grid { grid-template-columns: repeat(3, 1fr); } }
+
+  .tool-card {
+    position: relative; display: flex; flex-direction: column; gap: 0.5rem;
+    padding: 1.5rem; border-radius: 16px;
+    background: var(--color-card); border: 1px solid var(--color-border);
+    text-decoration: none; color: inherit;
+    transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s;
+  }
+  .tool-card:hover {
+    border-color: color-mix(in srgb, var(--color-brand) 45%, transparent);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+  }
+  .tool-card__icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 3rem; height: 3rem; border-radius: 12px;
+    background: color-mix(in srgb, var(--color-brand) 14%, transparent);
+    color: var(--color-brand); margin-bottom: 0.25rem;
+  }
+  .tool-card__tag {
+    position: absolute; top: 1.5rem; right: 1.5rem;
+    font-size: 0.62rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--color-subtle); border: 1px solid var(--color-border); border-radius: 999px;
+    padding: 0.2rem 0.55rem;
+  }
+  .tool-card__nome { font-size: 1.12rem; font-weight: 800; letter-spacing: -0.01em; margin: 0; }
+  .tool-card__desc { font-size: 0.9rem; line-height: 1.55; color: var(--color-muted); margin: 0; flex: 1; }
+  .tool-card__cta { font-size: 0.9rem; font-weight: 700; color: var(--color-brand); margin-top: 0.35rem; }
+
+  .tools-article { margin-top: 3rem; max-width: 44rem; }
+  .tools-article h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
+  .tools-article p { line-height: 1.8; color: var(--color-muted); margin-bottom: 1.1rem; }
+  .tools-article a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 3px; }
+  .tools-article strong { color: var(--color-foreground); }
+  .tools-share-note { font-size: 0.92rem; color: var(--color-subtle); }
+</style>
