@@ -271,6 +271,7 @@ const POSTS = [
   { slug: 'guitarra-memphis-guia-completo', kicker: 'GUIA · MARCAS', l1: 'GUITARRA', l2: 'MEMPHIS', motif: 'guitar', opt: { body: '#3a2a12', guard: '#e9e4da' } },
   { slug: 'vale-a-pena-importar-guitarra', kicker: 'GUIAS DE COMPRA', l1: 'IMPORTAR', l2: 'GUITARRA?', motif: 'guitar' },
   { slug: 'onde-comprar-guitarra-no-brasil', kicker: 'GUIAS DE COMPRA', l1: 'ONDE COMPRAR', l2: 'GUITARRA', motif: 'guitar' },
+  { slug: 'precos-equipamento-guitarra-brasil-2026', kicker: 'GUIAS DE COMPRA · 2026', l1: 'PREÇOS', l2: 'DE EQUIPAMENTO', sub: 'guitarra · amp · pedal · cordas', motif: 'guitar', opt: { body: '#0e5c4a', guard: '#e9e4da' } },
 
   { slug: 'amplificador-de-guitarra-guia-completo', kicker: 'AMPLIFICADORES', l1: 'AMPLIFICADOR', l2: 'DE GUITARRA', motif: 'amp' },
   { slug: 'amplificador-valvulado-ou-transistor', kicker: 'AMPLIFICADORES', l1: 'VALVULADO', l2: 'ou TRANSISTOR', motif: 'amp' },
