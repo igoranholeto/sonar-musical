@@ -116,6 +116,17 @@ const schema = [
       ))}
     </div>
 
+    <a href="/downloads/acordes-essenciais-sonar-musical.pdf" class="tools-download" download>
+      <span class="tools-download__icon" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+      </span>
+      <span class="tools-download__text">
+        <strong>PDF grátis: Acordes Essenciais para Iniciantes</strong>
+        Os 8 primeiros acordes num diagrama pronto para imprimir e colar na parede.
+      </span>
+      <span class="tools-download__cta">Baixar PDF</span>
+    </a>
+
     <section class="tools-article">
       <h2>Ferramentas de verdade, de graça</h2>
       <p>
@@ -170,6 +181,27 @@ const schema = [
   .tool-card__nome { font-size: 1.12rem; font-weight: 800; letter-spacing: -0.01em; margin: 0; }
   .tool-card__desc { font-size: 0.9rem; line-height: 1.55; color: var(--color-muted); margin: 0; flex: 1; }
   .tool-card__cta { font-size: 0.9rem; font-weight: 700; color: var(--color-brand); margin-top: 0.35rem; }
+
+  .tools-download {
+    display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;
+    margin-top: 1.5rem; padding: 1.15rem 1.35rem; border-radius: 16px;
+    text-decoration: none; color: inherit;
+    background: color-mix(in srgb, var(--color-brand) 10%, var(--color-card));
+    border: 1px solid color-mix(in srgb, var(--color-brand) 35%, transparent);
+    transition: border-color 0.15s, transform 0.15s;
+  }
+  .tools-download:hover { border-color: var(--color-brand); transform: translateY(-2px); }
+  .tools-download__icon {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 3rem; height: 3rem; border-radius: 12px; flex-shrink: 0;
+    background: var(--color-brand); color: #fff;
+  }
+  .tools-download__text { display: flex; flex-direction: column; gap: 0.15rem; flex: 1; min-width: 12rem; font-size: 0.9rem; color: var(--color-muted); }
+  .tools-download__text strong { color: var(--color-foreground); font-size: 1rem; }
+  .tools-download__cta {
+    background: var(--color-brand); color: #fff; font-weight: 700; font-size: 0.9rem;
+    padding: 0.6rem 1.1rem; border-radius: 10px; white-space: nowrap;
+  }
 
   .tools-article { margin-top: 3rem; max-width: 44rem; }
   .tools-article h2 { font-size: 1.4rem; font-weight: 700; margin-bottom: 1rem; }
