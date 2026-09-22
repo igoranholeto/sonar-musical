@@ -14,7 +14,7 @@ const PHOTOS = 'covers-src/photos';
 const DEF = { angle: -22, targetH: 600, cx: 935, cy: 350 };
 const P = {
   lespaul:       { angle: -16, targetH: 280, cx: 1010, cy: 345 }, // horizontal: menor e à direita p/ não invadir o texto
-  strat_roadworn:{ angle: -13, targetH: 250, cx: 1120, cy: 250 }, // Strat horizontal (transparente), alto e à direita p/ não cobrir o título
+  strat_roadworn:{ angle: -12, targetH: 205, cx: 1200, cy: 205 }, // Strat horizontal (transparente): pequena, no topo à direita, longe do título
   flyingv:       { angle: -16, targetH: 300, cx: 1010, cy: 350 }, // V âmbar horizontal
   flyingv_white: { angle: -20, targetH: 600, cx: 930, cy: 350 },
   jagstang:      { angle: -22, targetH: 590, cx: 935, cy: 350 },
