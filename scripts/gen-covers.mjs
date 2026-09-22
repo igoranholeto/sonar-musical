@@ -244,6 +244,7 @@ const POSTS = [
   { slug: 'guitarra-eletrica-usada-o-que-verificar', kicker: 'GUIA DE COMPRA', l1: 'GUITARRA', l2: 'USADA', motif: 'guitar', opt: { body: '#8a6a2a', guard: '#e9e4da' } },
   { slug: 'melhores-guitarras-eletricas-para-iniciantes-2026', kicker: 'GUIA · 2026', l1: 'GUITARRAS', l2: 'INICIANTE', motif: 'guitar', opt: { body: '#c62432' } },
   { slug: 'melhor-guitarra-eletrica-infantil', kicker: 'GUIA · 2026', l1: 'GUITARRA', l2: 'INFANTIL', motif: 'guitar', opt: { body: '#e0642a', guard: '#f0ece2' } },
+  { slug: 'melhor-guitarra-ate-3000-reais', kicker: 'GUIAS DE COMPRA · 2026', l1: 'GUITARRA ATÉ', l2: 'R$ 3.000', sub: 'top 5 custo-benefício', motif: 'guitar', opt: { body: '#1c3f6e', guard: '#e9e4da' } },
   { slug: 'melhor-guitarra-para-blues', kicker: 'GUITARRAS · 2026', l1: 'GUITARRA', l2: 'PRA BLUES', motif: 'guitar', opt: { body: '#1c3f6e', guard: '#e9e4da' } },
   { slug: 'melhor-guitarra-para-metal', kicker: 'GUITARRAS · 2026', l1: 'GUITARRA', l2: 'PRA METAL', motif: 'guitar', opt: { body: '#141018', guard: '#c8323e' } },
   { slug: 'fender-vs-gibson-qual-escolher', kicker: 'COMPARATIVO', l1: 'FENDER vs', l2: 'GIBSON', motif: 'guitarLP', opt: { body: '#7a1f12', guard: '#241a10' } },
@@ -257,6 +258,7 @@ const POSTS = [
   { slug: 'guitarra-tagima-e-boa', kicker: 'GUIA · MARCAS', l1: 'TAGIMA', l2: 'É BOA?', motif: 'guitar', opt: { body: '#101014', guard: '#c9a45a' } },
   { slug: 'guitarra-giannini-vale-a-pena', kicker: 'GUIA · MARCAS', l1: 'GIANNINI', l2: 'VALE A PENA?', motif: 'guitar', opt: { body: '#8a3b12', guard: '#efe9dd' } },
   { slug: 'guitarras-nacionais-baratas', kicker: 'GUIA DE COMPRA', l1: 'NACIONAIS', l2: 'BARATAS', sub: 'Strinberg · Michael · SX', motif: 'guitar', opt: { body: '#e0642a', guard: '#f0ece2' } },
+  { slug: 'squier-vs-fender', kicker: 'GUITARRAS · GUIA', l1: 'SQUIER', l2: 'vs FENDER', motif: 'guitar', opt: { body: '#1a1a2e', guard: '#6ea8d8' } },
   { slug: 'tagima-vs-squier', kicker: 'COMPARATIVO', l1: 'TAGIMA vs', l2: 'SQUIER', motif: 'guitar', opt: { body: '#2f6db0', guard: '#f0ece2' } },
   { slug: 'guitarra-telecaster-guia-completo', kicker: 'GUITARRAS · GUIA', l1: 'TELE', l2: 'CASTER', motif: 'guitar', opt: { body: '#caa042', guard: '#1a1418' } },
   { slug: 'guitarra-ibanez-guia-completo', kicker: 'GUITARRAS · MARCA', l1: 'GUITARRA', l2: 'IBANEZ', motif: 'guitar', opt: { body: '#155e75', guard: '#d8d3c6' } },
@@ -286,6 +288,7 @@ const POSTS = [
   { slug: 'delay-vs-reverb', kicker: 'PEDAIS · GUIA', l1: 'DELAY', l2: 'vs REVERB', motif: 'pedal', opt: { tone: '#123a3a' } },
   { slug: 'como-montar-pedalboard', kicker: 'PEDAIS · TUTORIAL', l1: 'MONTAR', l2: 'PEDALBOARD', motif: 'pedal', opt: { tone: '#2a2a30' } },
   { slug: 'pedais-e-pedaleiras-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDAIS E', l2: 'PEDALEIRAS', motif: 'pedal', opt: { tone: '#0e6b52' } },
+  { slug: 'boss-ds-1-vale-a-pena', kicker: 'PEDAIS · REVIEW', l1: 'BOSS DS-1', l2: 'VALE A PENA?', motif: 'pedal', opt: { tone: '#c25a12' } },
   { slug: 'pedal-de-distorcao-para-guitarra', kicker: 'PEDAIS', l1: 'PEDAL DE', l2: 'DISTORÇÃO', motif: 'pedal', opt: { tone: '#c62432' } },
   { slug: 'melhor-pedaleira-de-guitarra-2026', kicker: 'PEDAIS · 2026', l1: 'MELHOR', l2: 'PEDALEIRA', motif: 'pedal', opt: { tone: '#101014' } },
 
