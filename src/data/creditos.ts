@@ -299,6 +299,14 @@ export const CREDITOS_CAPAS: CreditoCapa[] = [
     fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Coronado_II_1967_noBG.jpg",
   },
   {
+    descricao: "Fender Road Worn '50s Stratocaster (post: Squier vs Fender)",
+    autor: "jboylan67",
+    autorUrl: "https://www.flickr.com/photos/85661855@N00",
+    licenca: "CC BY 2.0",
+    licencaUrl: "https://creativecommons.org/licenses/by/2.0/deed.pt",
+    fonteUrl: "https://commons.wikimedia.org/wiki/File:Fender_Road_Worn_50s_relic_Stratocaster_(2009-01-17_08.54.55_by_irish10567)_transparency.png",
+  },
+  {
     descricao: "Fender Stratocaster (guia da Strinberg e outras)",
     autor: "Auge=mit",
     autorUrl: "https://commons.wikimedia.org/wiki/User:Auge%3Dmit",
