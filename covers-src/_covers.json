@@ -65,6 +65,12 @@
     "l2": "INFANTIL",
     "motif": "guitar"
   },
+  "melhor-guitarra-ate-3000-reais": {
+    "kicker": "GUIAS DE COMPRA · 2026",
+    "l1": "GUITARRA ATÉ",
+    "l2": "R$ 3.000",
+    "motif": "guitar"
+  },
   "melhor-guitarra-para-blues": {
     "kicker": "GUITARRAS · 2026",
     "l1": "GUITARRA",
@@ -141,6 +147,12 @@
     "kicker": "GUIA DE COMPRA",
     "l1": "NACIONAIS",
     "l2": "BARATAS",
+    "motif": "guitar"
+  },
+  "squier-vs-fender": {
+    "kicker": "GUITARRAS · GUIA",
+    "l1": "SQUIER",
+    "l2": "vs FENDER",
     "motif": "guitar"
   },
   "tagima-vs-squier": {
@@ -303,6 +315,12 @@
     "kicker": "PEDAIS · GUIA",
     "l1": "PEDAIS E",
     "l2": "PEDALEIRAS",
+    "motif": "pedal"
+  },
+  "boss-ds-1-vale-a-pena": {
+    "kicker": "PEDAIS · REVIEW",
+    "l1": "BOSS DS-1",
+    "l2": "VALE A PENA?",
     "motif": "pedal"
   },
   "pedal-de-distorcao-para-guitarra": {
