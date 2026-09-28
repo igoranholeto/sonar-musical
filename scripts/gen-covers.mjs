@@ -344,6 +344,9 @@ const POSTS = [
   { slug: 'pedaleira-zoom-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'ZOOM', sub: 'G1X Four · G3n · G6', motif: 'pedal', opt: { tone: '#1f5a8a' } },
   { slug: 'pedaleira-boss-guia-completo', kicker: 'PEDAIS · GUIA', l1: 'PEDALEIRA', l2: 'BOSS', sub: 'GT-1 · ME-90 · GT-1000', motif: 'pedal', opt: { tone: '#7a1520' } },
   { slug: 'curso-de-guitarra-como-aprender', kicker: 'INICIANTES', l1: 'CURSO DE', l2: 'GUITARRA', sub: 'como aprender do zero', motif: 'fretboard' },
+  { slug: 'melhor-guitarra-ate-5000-reais', kicker: 'GUIAS DE COMPRA · 2026', l1: 'GUITARRA ATÉ', l2: 'R$ 5.000', sub: 'as 5 melhores', motif: 'guitar', opt: { body: '#3a2c6e', guard: '#e9e4da' } },
+  { slug: 'boss-katana-vale-a-pena', kicker: 'AMPLIFICADORES · REVIEW', l1: 'BOSS KATANA', l2: 'VALE A PENA?', motif: 'amp', opt: { tone: '#8a1520' } },
+  { slug: 'epiphone-les-paul-vale-a-pena', kicker: 'GUITARRAS · REVIEW', l1: 'EPIPHONE', l2: 'LES PAUL', sub: 'vale a pena?', motif: 'guitarLP', opt: { body: '#c9a03a', guard: '#241a10' } },
 ];
 
 // ---------- render ----------
