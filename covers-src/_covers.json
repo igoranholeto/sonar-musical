@@ -610,5 +610,23 @@
     "l1": "CURSO DE",
     "l2": "GUITARRA",
     "motif": "fretboard"
+  },
+  "melhor-guitarra-ate-5000-reais": {
+    "kicker": "GUIAS DE COMPRA · 2026",
+    "l1": "GUITARRA ATÉ",
+    "l2": "R$ 5.000",
+    "motif": "guitar"
+  },
+  "boss-katana-vale-a-pena": {
+    "kicker": "AMPLIFICADORES · REVIEW",
+    "l1": "BOSS KATANA",
+    "l2": "VALE A PENA?",
+    "motif": "amp"
+  },
+  "epiphone-les-paul-vale-a-pena": {
+    "kicker": "GUITARRAS · REVIEW",
+    "l1": "EPIPHONE",
+    "l2": "LES PAUL",
+    "motif": "guitarLP"
   }
 }
