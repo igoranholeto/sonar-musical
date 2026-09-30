@@ -82,7 +82,50 @@ const showDesc = !specsLine && descricao;
 
 // Preço sem o prefixo "A partir de" (o rótulo já é exibido acima)
 const precoValor = preco ? preco.replace(/^\s*a partir de\s*/i, '') : null;
+
+// ── Schema Product + Review (avaliação editorial da redação) ──────────────
+// Objetivo: habilitar rich result de estrelas no Google. A review tem autor
+// Organization (Sonar Musical), que é o padrão permitido para avaliação da
+// própria publicação sobre um produto (não é auto-avaliação de negócio).
+function parsePreco(p?: string): string | null {
+  if (!p) return null;
+  let s = p.replace(/a partir de/i, '').replace(/r\$/i, '').replace(/[^0-9.,]/g, '');
+  if (!s) return null;
+  s = s.includes(',') ? s.replace(/\./g, '').replace(',', '.') : s.replace(/\./g, '');
+  const n = parseFloat(s);
+  return Number.isFinite(n) && n > 0 ? n.toFixed(2) : null;
+}
+const precoNum = parsePreco(preco);
+const siteBase = (Astro.site?.href || 'https://sonarmusical.com.br/').replace(/\/$/, '');
+const imagemAbs = imagem ? siteBase + imagem : null;
+
+const produtoSchema: Record<string, unknown> = {
+  '@context': 'https://schema.org',
+  '@type': 'Product',
+  name: produto,
+  ...(marca ? { brand: { '@type': 'Brand', name: marca } } : {}),
+  ...(imagemAbs ? { image: imagemAbs } : {}),
+  ...(descricao ? { description: descricao } : {}),
+  review: {
+    '@type': 'Review',
+    reviewRating: { '@type': 'Rating', ratingValue: Number(avaliacao.toFixed(1)), bestRating: 5, worstRating: 1 },
+    author: { '@type': 'Organization', name: 'Sonar Musical' },
+  },
+  ...(precoNum
+    ? {
+        offers: {
+          '@type': 'Offer',
+          price: precoNum,
+          priceCurrency: 'BRL',
+          availability: 'https://schema.org/InStock',
+          url,
+        },
+      }
+    : {}),
+};
 ---
+
+<script type="application/ld+json" set:html={JSON.stringify(produtoSchema)} />
 
 <!-- Divulgação de afiliado. O CSS exibe esta linha apenas no PRIMEIRO
      AfiliadoCTA da página (regra .afi ~ .afi-disclosure), atendendo à
