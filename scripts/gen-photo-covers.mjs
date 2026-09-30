@@ -22,8 +22,11 @@ const P = {
 };
 const paramsFor = (photo) => ({ ...DEF, ...(P[photo] || {}) });
 
-// slug do post -> foto (cada capa uma guitarra DIFERENTE; foto certa por modelo onde possível)
-const MAP = {
+// DEPRECADO (2026-09-30): todas as capas de guitarra migraram para o estilo FULL-BLEED
+// (foto real de fundo inteiro + só o título) via scripts/gen-fullbleed-covers.mjs.
+// MAP esvaziado para este script não sobrescrever as capas full-bleed .jpg.
+const MAP = {};
+const _MAP_LEGADO = {
   'guitarra-telecaster-guia-completo': 'tele',
   'guitarra-ibanez-guia-completo': 'ibanez_semi',
   'guitarra-semi-acustica-guia-completo': 'es335',

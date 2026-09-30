@@ -5,6 +5,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
+import { POSTS } from './gen-covers.mjs';
 
 const OUT = 'public/images/blog';
 const CACHE = 'covers-src/photos-fb';
@@ -22,6 +23,59 @@ const MAP = {
   'como-tocar-smoke-on-the-water':  { kicker: 'TUTORIAL · RIFF', l1: 'SMOKE ON', l2: 'THE WATER', q: 'electric guitar closeup' },
   'como-tocar-seven-nation-army':   { kicker: 'TUTORIAL · RIFF', l1: 'SEVEN', l2: 'NATION ARMY', q: 'red electric guitar' },
   'como-tocar-power-chord':         { kicker: 'TUTORIAL · TÉCNICA', l1: 'POWER', l2: 'CHORD', q: 'Gibson SG electric guitar', prefer: /SG|Gibson/i },
+};
+
+// Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
+// prefer = regex que reordena candidatos por título p/ acertar o modelo certo.
+const GUIT = {
+  'guitarra-eletrica-guia-completo':               { q: 'electric guitar sunburst' },
+  'guitarra-stratocaster-guia-completo':           { q: 'Fender Stratocaster guitar', prefer: /stratocaster/i },
+  'guitarra-les-paul-guia-completo':               { q: 'Gibson Les Paul guitar', prefer: /les paul/i },
+  'guitarra-telecaster-guia-completo':             { q: 'Fender Telecaster guitar', prefer: /telecaster/i },
+  'guitarra-sg-guia-completo':                     { q: 'Gibson SG guitar', prefer: /\bSG\b/i },
+  'guitarra-flying-v-guia-completo':               { q: 'Flying V guitar', prefer: /flying/i },
+  'guitarra-explorer-guia-completo':               { q: 'Gibson Explorer guitar', prefer: /explorer/i },
+  'guitarra-ibanez-guia-completo':                 { q: 'Ibanez electric guitar', prefer: /ibanez/i },
+  'guitarra-jackson-guia-completo':                { q: 'Jackson electric guitar', prefer: /jackson/i },
+  'guitarra-yamaha-guia-completo':                 { q: 'Yamaha Pacifica guitar', prefer: /yamaha|pacifica|revstar/i },
+  'guitarra-semi-acustica-guia-completo':          { q: 'Gibson ES-335 semi-hollow guitar', prefer: /es.?335|semi|hollow|casino|dot/i },
+  'guitarra-8-cordas-guia-completo':               { q: '8 string electric guitar', prefer: /8|eight|multiscale/i },
+  'guitarra-de-12-cordas-guia-completo':           { q: '12 string electric guitar', prefer: /12|twelve/i },
+  'guitarra-strinberg-guia-completo':              { q: 'stratocaster style electric guitar black', avoid: /bass|amp|logo/i },
+  'guitarra-tagima-e-boa':                         { q: 'Tagima guitar Brazil', prefer: /tagima/i },
+  'guitarra-giannini-vale-a-pena':                 { q: 'electric guitar single cut sunburst', avoid: /bass|amp|logo/i },
+  'guitarra-seizi-guia-completo':                  { q: 'cherry electric guitar body', avoid: /bass|amp|booth|namm|logo|playmate|woman|girl/i },
+  'guitarra-memphis-guia-completo':                { q: 'Tagima Memphis guitar', prefer: /memphis/i },
+  'guitarras-nacionais-baratas':                   { q: 'affordable electric guitar' },
+  'melhores-marcas-de-guitarra-nacionais':         { q: 'wall of electric guitars store', avoid: /bass|amp|logo|playmate|woman|girl|model|wylde|hendrix|clapton/i },
+  'tagima-vs-squier':                              { q: 'Squier Stratocaster guitar', prefer: /squier/i },
+  'squier-vs-fender':                              { q: 'Fender Stratocaster sunburst body', prefer: /fender|stratocaster|squier/i, avoid: /bass|amp|headstock|logo/i },
+  'squier-classic-vibe-60s-stratocaster-review':   { q: 'Squier Classic Vibe Stratocaster', prefer: /squier|classic vibe|stratocaster/i },
+  'tipos-de-guitarra-eletrica':                    { q: 'electric guitars collection wall' },
+  'partes-da-guitarra-eletrica':                   { q: 'electric guitar body detail' },
+  'glossario-de-guitarra':                         { q: 'electric guitar headstock detail' },
+  'quem-inventou-a-guitarra-eletrica':             { q: 'vintage Fender Telecaster 1950s', prefer: /telecaster|stratocaster|fender|gibson|vintage/i, avoid: /amp|vox|bass|logo/i },
+  'quantas-cordas-tem-uma-guitarra':               { q: 'electric guitar strings headstock', avoid: /amp|bass|tuner|logo/i },
+  'guitarra-ou-baixo':                             { q: 'electric guitar and bass guitar', prefer: /bass/i },
+  'guitarra-com-amplificador-kit-iniciante':       { q: 'electric guitar leaning on amplifier', prefer: /guitar/i, avoid: /amplifier head|tube amplifier|amp head/i },
+  'guitarra-eletrica-usada-o-que-verificar':       { q: 'used electric guitar' },
+  'guitarra-eletrica-profissional-guia-2026':      { q: 'professional electric guitar stage' },
+  'melhor-guitarra-para-metal':                    { q: 'ESP guitar metal black', prefer: /esp|ltd|schecter|jackson|bc rich|pointed|explorer/i, avoid: /bass|amp|logo/i },
+  'melhor-guitarra-para-blues':                    { q: 'blues electric guitar stratocaster' },
+  'melhor-guitarra-7-cordas-2026':                 { q: 'seven string electric guitar Ibanez', prefer: /(7|seven).*(string|guitar)|ibanez rg|schecter/i, avoid: /bass|amp|logo/i },
+  'melhor-guitarra-ate-3000-reais':                { q: 'electric guitar sunburst studio' },
+  'melhor-guitarra-ate-5000-reais':                { q: 'electric guitar red' },
+  'melhor-guitarra-eletrica-infantil':             { q: 'small electric guitar' },
+  'melhores-guitarras-eletricas-para-iniciantes-2026': { q: 'electric guitar red body', prefer: /guitar/i, avoid: /band|singer|vocal|microphone|bass|logo/i },
+  'quanto-custa-uma-guitarra-eletrica':            { q: 'electric guitar shop' },
+  'quanto-custa-ser-guitarrista-no-brasil':        { q: 'guitarist playing electric guitar', prefer: /guitar/i, avoid: /vocal|singer|microphone|drum/i },
+  'precos-equipamento-guitarra-brasil-2026':       { q: 'guitar amplifier pedals rig', prefer: /guitar|pedal|amp/i, avoid: /logo/i },
+  'vale-a-pena-importar-guitarra':                 { q: 'electric guitar flight case', prefer: /guitar/i, avoid: /card|logo|sign/i },
+  'onde-comprar-guitarra-no-brasil':               { q: 'guitar store electric guitars' },
+  'melhores-presentes-para-guitarristas':          { q: 'electric guitar gift' },
+  'presente-de-natal-para-guitarrista':            { q: 'electric guitar accessories', prefer: /guitar/i, avoid: /bass|logo/i },
+  'presente-para-quem-esta-comecando-na-guitarra': { q: 'electric guitar on stand', prefer: /guitar/i, avoid: /bass|logo|band|singer/i },
+  'epiphone-les-paul-vale-a-pena':                 { q: 'Epiphone Les Paul guitar', prefer: /epiphone/i },
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -46,9 +100,17 @@ const overlay = ({ kicker, l1, l2 }) => {
 const FREE = /(cc[\s-]?by|cc[\s-]?by[\s-]?sa|cc0|public domain|pd|pdm|no restrictions|attribution)/i;
 const NONFREE = /(fair use|non[\s-]?free|copyright|all rights)/i;
 
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 async function searchCommons(q) {
   const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent('filetype:bitmap ' + q)}&gsrnamespace=6&gsrlimit=25&prop=imageinfo&iiprop=url|extmetadata|mime|size&iiurlwidth=1600`;
-  const res = await fetch(url, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0 (contato via site)' } });
+  let res;
+  for (let attempt = 0; attempt < 5; attempt++) {
+    res = await fetch(url, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0 (contato via site sonarmusical.com.br)' } });
+    if (res.ok) break;
+    if (res.status === 429 || res.status === 503) { await sleep(3000 * (attempt + 1)); continue; }
+    throw new Error('commons search ' + res.status);
+  }
   if (!res.ok) throw new Error('commons search ' + res.status);
   const j = await res.json();
   const pages = j?.query?.pages ? Object.values(j.query.pages) : [];
@@ -61,9 +123,11 @@ async function searchCommons(q) {
     const licBlob = `${lic} ${usage}`;
     if (NONFREE.test(licBlob) || !FREE.test(licBlob)) continue;
     if (!/image\/(jpeg|png)/.test(ii.mime || '')) continue;
+    if (/logo|company logo|\bsign\b|signage|poster|diagram|sticker|banner|nameplate|wordmark/i.test(p.title)) continue;
     if ((ii.width || 0) < 1000) continue;
-    if ((ii.width || 0) < (ii.height || 1) * 1.15) continue; // preferir paisagem p/ full-bleed
+    const landscape = (ii.width || 0) >= (ii.height || 1) * 1.15;
     out.push({
+      landscape,
       title: p.title,
       thumburl: ii.thumburl || ii.url,
       url: ii.url,
@@ -74,21 +138,42 @@ async function searchCommons(q) {
       descUrl: ii.descriptionshorturl || ii.descriptionurl || `https://commons.wikimedia.org/wiki/${encodeURIComponent(p.title)}`,
     });
   }
+  out.sort((a, b) => (b.landscape ? 1 : 0) - (a.landscape ? 1 : 0));
   return out;
 }
 
-// slugs passados como argumentos (não-flag) => regenerar só esses
+// monta a lista de trabalho: MAP explícito + GUIT (texto vindo do POSTS de gen-covers)
+const WORK = { ...MAP };
+for (const [slug, g] of Object.entries(GUIT)) {
+  const p = POSTS.find((x) => x.slug === slug);
+  if (!p) { console.log('! slug fora do POSTS de gen-covers: ' + slug); continue; }
+  WORK[slug] = { kicker: p.kicker, l1: p.l1, l2: p.l2, q: g.q, prefer: g.prefer };
+}
+
+// args: slugs específicos, ou --guitars p/ rodar só o conjunto GUIT
+const flags = process.argv.slice(2).filter((a) => a.startsWith('--'));
 const onlySlugs = process.argv.slice(2).filter((a) => !a.startsWith('--'));
+const guitarsOnly = flags.includes('--guitars');
 const prevAttrib = fs.existsSync('covers-src/_fullbleed_attrib.json') ? JSON.parse(fs.readFileSync('covers-src/_fullbleed_attrib.json', 'utf8')) : {};
 
+// dedup: nenhuma foto repetida entre capas (inclui as já atribuídas antes)
+const usedTitles = new Set(Object.values(prevAttrib).map((a) => a.title));
+
 const results = [], attrib = { ...prevAttrib };
-for (const [slug, cfg] of Object.entries(MAP)) {
+const force = flags.includes('--force');
+for (const [slug, cfg] of Object.entries(WORK)) {
   if (onlySlugs.length && !onlySlugs.includes(slug)) continue;
+  if (guitarsOnly && !GUIT[slug]) continue;
+  // pula as já feitas (a menos que --force ou slug explícito)
+  if (!force && !onlySlugs.length && attrib[slug] && fs.existsSync(path.join(OUT, slug + '.jpg'))) { continue; }
   try {
+    await sleep(1500); // respeita o rate limit do Commons
     const cands = await searchCommons(cfg.q);
     if (!cands.length) { console.log(`! sem candidato CC p/ ${slug} (q="${cfg.q}")`); continue; }
-    if (cfg.prefer) cands.sort((a, b) => (cfg.prefer.test(b.title) ? 1 : 0) - (cfg.prefer.test(a.title) ? 1 : 0));
-    const pick = cands[0];
+    if (cfg.prefer) cands.sort((a, b) => ((cfg.prefer.test(b.title) ? 1 : 0) - (cfg.prefer.test(a.title) ? 1 : 0)) || ((b.landscape ? 1 : 0) - (a.landscape ? 1 : 0)));
+    const ok = (c) => !usedTitles.has(c.title) && !(cfg.avoid && cfg.avoid.test(c.title));
+    const pick = cands.find(ok) || cands.find((c) => !usedTitles.has(c.title)) || cands[0];
+    usedTitles.add(pick.title);
     // baixa a versão 1600px
     const img = await fetch(pick.thumburl, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0' } });
     const buf = Buffer.from(await img.arrayBuffer());
