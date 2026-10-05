@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { generoAccent, generoGradient, generoSoft, iniciais, metaDescription, slugify } from '../../../utils/generos';
 import Lightbox from '../../../components/Lightbox.astro';
+import { breadcrumb } from '../../../utils/schema';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -39,34 +40,41 @@ const comoTocar = COMO_TOCAR[banda.id];
 
 const bandaUrl = `https://sonarmusical.com.br/bandas/${banda.id}/`;
 
+// roleName não existe em Person: a função de cada integrante vai num OrganizationRole
+// que envolve a Person (padrão schema.org para papel com qualificador).
+// "Nacional" é recorte editorial do site, não gênero musical, então não vira genre.
 const musicGroupSchema = {
   '@context': 'https://schema.org',
   '@type': 'MusicGroup',
+  '@id': `${bandaUrl}#musicgroup`,
   name: nome,
   url: bandaUrl,
-  genre: genero,
+  description: blurb,
+  ...(genero !== 'Nacional' && { genre: genero }),
   foundingDate: String(ano),
+  foundingLocation: { '@type': 'Place', name: origem },
   ...(fotoCapa && { image: `https://sonarmusical.com.br${fotoCapa}` }),
-  member: integrantes.map((m) => ({ '@type': 'Person', name: m.nome, roleName: m.funcao })),
+  member: integrantes.map((m) => ({
+    '@type': 'OrganizationRole',
+    roleName: m.funcao,
+    member: { '@type': 'Person', name: m.nome },
+  })),
   ...(albuns.length > 0 && {
     album: albuns.map((a) => ({
       '@type': 'MusicAlbum',
+      '@id': `${bandaUrl}albuns/${slugify(a.nome)}/#album`,
       name: a.nome,
-      url: `https://sonarmusical.com.br/bandas/${banda.id}/albuns/${slugify(a.nome)}/`,
+      url: `${bandaUrl}albuns/${slugify(a.nome)}/`,
       ...(a.ano && { datePublished: String(a.ano) }),
     })),
   }),
 };
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
-    { '@type': 'ListItem', position: 2, name: 'Bandas', item: 'https://sonarmusical.com.br/bandas/' },
-    { '@type': 'ListItem', position: 3, name: nome, item: bandaUrl },
-  ],
-};
+const breadcrumbSchema = breadcrumb([
+  { name: 'Início', path: '/' },
+  { name: 'Bandas', path: '/bandas/' },
+  { name: nome, path: bandaUrl },
+]);
 
 const schema = [musicGroupSchema, breadcrumbSchema];
 ---

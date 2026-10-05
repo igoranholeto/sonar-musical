@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../../layouts/BaseLayout.astro';
 import { generoAccent, generoGradient, generoSoft, metaDescription, slugify } from '../../../../utils/generos';
 import Lightbox from '../../../../components/Lightbox.astro';
+import { breadcrumb } from '../../../../utils/schema';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -45,26 +46,34 @@ const maxStreamValue = musicasPopulares.length
 const bandaUrl = `https://sonarmusical.com.br/bandas/${banda.id}/`;
 const albumUrl = `${bandaUrl}albuns/${slugify(nome)}/`;
 
+// spotifyUrl só vira sameAs quando é o link real do álbum (o fallback é uma busca).
+// musicasPopulares são faixas do álbum exibidas na página, então entram como track.
 const albumSchema = {
   '@context': 'https://schema.org',
   '@type': 'MusicAlbum',
+  '@id': `${albumUrl}#album`,
   name: nome,
   url: albumUrl,
-  byArtist: { '@type': 'MusicGroup', name: nomeBanda, url: bandaUrl },
+  description: descricao,
+  byArtist: { '@type': 'MusicGroup', '@id': `${bandaUrl}#musicgroup`, name: nomeBanda, url: bandaUrl },
   ...(ano && { datePublished: String(ano) }),
   ...(capa && { image: `https://sonarmusical.com.br${capa}` }),
+  ...(spotifyUrl && { sameAs: spotifyUrl }),
+  ...(musicasPopulares.length > 0 && {
+    track: musicasPopulares.map((m) => ({
+      '@type': 'MusicRecording',
+      name: m.nome,
+      byArtist: { '@id': `${bandaUrl}#musicgroup` },
+    })),
+  }),
 };
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
-    { '@type': 'ListItem', position: 2, name: 'Bandas', item: 'https://sonarmusical.com.br/bandas/' },
-    { '@type': 'ListItem', position: 3, name: nomeBanda, item: bandaUrl },
-    { '@type': 'ListItem', position: 4, name: nome, item: albumUrl },
-  ],
-};
+const breadcrumbSchema = breadcrumb([
+  { name: 'Início', path: '/' },
+  { name: 'Bandas', path: '/bandas/' },
+  { name: nomeBanda, path: bandaUrl },
+  { name: nome, path: albumUrl },
+]);
 
 const schema = [albumSchema, breadcrumbSchema];
 ---

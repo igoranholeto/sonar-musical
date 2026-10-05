@@ -2,13 +2,32 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import TabCard from '../../components/TabCard.astro';
 import { TABLATURAS } from '../../data/tablaturas';
+import { breadcrumb, collectionPage } from '../../utils/schema';
 
 const tabs = [...TABLATURAS].sort((a, b) => a.titulo.localeCompare(b.titulo));
+
+// Só entram na lista as tablaturas com destino no nosso domínio (guia ou PDF próprio);
+// as que apontam só para a fonte externa ficam de fora do ItemList.
+const schema = [
+  collectionPage({
+    path: '/tablaturas/',
+    name: 'Tablaturas de Guitarra',
+    description: 'Tablaturas de guitarra e violão por música ou artista, com guias de como tocar.',
+    items: tabs
+      .filter((t) => t.guiaUrl || t.pdf)
+      .map((t) => ({ name: `${t.titulo}, ${t.artista}`, path: (t.guiaUrl ?? t.pdf)! })),
+  }),
+  breadcrumb([
+    { name: 'Início', path: '/' },
+    { name: 'Tablaturas', path: '/tablaturas/' },
+  ]),
+];
 ---
 
 <BaseLayout
   title="Tablaturas de Guitarra: Riffs Clássicos para Aprender"
   description="Busque tablaturas de guitarra e violão em PDF por música ou artista, abra no navegador ou baixe grátis."
+  schema={schema}
 >
   <section class="max-w-6xl mx-auto px-4 py-16">
     <div class="mb-10 text-center">

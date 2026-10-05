@@ -1,4 +1,6 @@
 ---
+import { ORG_ID, absUrl, detectMarca, organizationRef, personRef, productId } from '../utils/schema';
+
 interface Props {
   produto: string;
   descricao?: string;
@@ -19,21 +21,13 @@ const {
   preco,
   imagem,
   imagemAlt,
-  avaliacao = 4.5,
+  avaliacao,
   destaques,
   badge,
 } = Astro.props;
 
 // Detecta a marca a partir do nome do produto
-const MARCAS = [
-  'Fender', 'Gibson', 'Ibanez', 'Marshall', 'Yamaha', 'Boss', 'Epiphone',
-  'Squier', 'PRS', 'Schecter', 'ESP', 'Focusrite', 'Universal Audio', 'SSL',
-  'Audient', 'Native Instruments', 'Ernie Ball', "D'Addario", 'Elixir', 'GHS',
-  'Taylor', 'Martin', 'Line 6', 'Neural DSP', 'Zoom', 'Blackstar', 'Orange',
-  'Suhr', 'Shure', 'Seymour Duncan', 'DiMarzio', 'Dunlop', 'MXR', 'Electro-Harmonix',
-];
-
-const marca = MARCAS.find(m => produto.toLowerCase().startsWith(m.toLowerCase())) ?? null;
+const marca = detectMarca(produto);
 
 // Cores de marca para o chip (bg + texto)
 const marcaCores: Record<string, { bg: string; text: string }> = {
@@ -71,8 +65,10 @@ const cardStyle = marca && marcaCores[marca]
   ? `--afi-chip-bg:${marcaCores[marca].bg};--afi-chip-fg:${marcaCores[marca].text};`
   : '';
 
-const avaliacaoLabel = avaliacao.toFixed(1);
-const pct = Math.round((avaliacao / 5) * 1000) / 10; // preenchimento das estrelas (%)
+// Sem nota explícita não exibe estrelas nem emite Review: nota padrão seria uma
+// avaliação que a redação não deu.
+const avaliacaoLabel = avaliacao != null ? avaliacao.toFixed(1) : null;
+const pct = avaliacao != null ? Math.round((avaliacao / 5) * 1000) / 10 : 0; // preenchimento das estrelas (%)
 
 const badgeText = badge ?? 'Recomendação Sonar';
 
@@ -83,10 +79,12 @@ const showDesc = !specsLine && descricao;
 // Preço sem o prefixo "A partir de" (o rótulo já é exibido acima)
 const precoValor = preco ? preco.replace(/^\s*a partir de\s*/i, '') : null;
 
-// ── Schema Product + Review (avaliação editorial da redação) ──────────────
-// Objetivo: habilitar rich result de estrelas no Google. A review tem autor
-// Organization (Sonar Musical), que é o padrão permitido para avaliação da
-// própria publicação sobre um produto (não é auto-avaliação de negócio).
+// ── Schema Product + Review + Offer (avaliação editorial da redação) ─────
+// Objetivo: habilitar rich result de estrelas no Google. A review é assinada pelo
+// autor do post (Astro.locals.post, preenchido em blog/[slug].astro) e cai para a
+// Organization fora de posts. O @id por página+produto deixa o Google fundir este nó
+// com o Product do PostLayout quando o post é review do mesmo item; nesse caso a
+// review já está lá e aqui só entra a offer.
 function parsePreco(p?: string): string | null {
   if (!p) return null;
   let s = p.replace(/a partir de/i, '').replace(/r\$/i, '').replace(/[^0-9.,]/g, '');
@@ -96,36 +94,53 @@ function parsePreco(p?: string): string | null {
   return Number.isFinite(n) && n > 0 ? n.toFixed(2) : null;
 }
 const precoNum = parsePreco(preco);
-const siteBase = (Astro.site?.href || 'https://sonarmusical.com.br/').replace(/\/$/, '');
-const imagemAbs = imagem ? siteBase + imagem : null;
+const imagemAbs = imagem ? absUrl(imagem) : null;
 
-const produtoSchema: Record<string, unknown> = {
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: produto,
-  ...(marca ? { brand: { '@type': 'Brand', name: marca } } : {}),
-  ...(imagemAbs ? { image: imagemAbs } : {}),
-  ...(descricao ? { description: descricao } : {}),
-  review: {
-    '@type': 'Review',
-    reviewRating: { '@type': 'Rating', ratingValue: Number(avaliacao.toFixed(1)), bestRating: 5, worstRating: 1 },
-    author: { '@type': 'Organization', name: 'Sonar Musical' },
-  },
-  ...(precoNum
+const post = Astro.locals.post;
+const pageUrl = post?.url ?? new URL(Astro.url.pathname, Astro.site).href;
+const id = productId(pageUrl, produto);
+const reviewNoPost = post?.reviewedProductId === id;
+
+const review =
+  avaliacao != null && !reviewNoPost
     ? {
-        offers: {
-          '@type': 'Offer',
-          price: precoNum,
-          priceCurrency: 'BRL',
-          availability: 'https://schema.org/InStock',
-          url,
-        },
+        '@type': 'Review',
+        reviewRating: { '@type': 'Rating', ratingValue: Number(avaliacao.toFixed(1)), bestRating: 5, worstRating: 1 },
+        author: post?.author ? personRef(post.author) : organizationRef,
+        publisher: { '@id': ORG_ID },
+        ...(post && { datePublished: post.pubDate.toISOString() }),
       }
-    : {}),
-};
+    : null;
+
+const offer = precoNum
+  ? {
+      '@type': 'Offer',
+      price: precoNum,
+      priceCurrency: 'BRL',
+      availability: 'https://schema.org/InStock',
+      url,
+    }
+  : null;
+
+// Product exige review, offers ou aggregateRating; sem nenhum dos dois, nada é emitido.
+// No caso do produto revisado no próprio post o nó do PostLayout já carrega a review.
+const produtoSchema: Record<string, unknown> | null =
+  review || offer || reviewNoPost
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        '@id': id,
+        name: produto,
+        ...(marca ? { brand: { '@type': 'Brand', name: marca } } : {}),
+        ...(imagemAbs ? { image: imagemAbs } : {}),
+        ...(descricao ? { description: descricao } : {}),
+        ...(review ? { review } : {}),
+        ...(offer ? { offers: offer } : {}),
+      }
+    : null;
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(produtoSchema)} />
+{produtoSchema && <script type="application/ld+json" set:html={JSON.stringify(produtoSchema)} />}
 
 <!-- Divulgação de afiliado. O CSS exibe esta linha apenas no PRIMEIRO
      AfiliadoCTA da página (regra .afi ~ .afi-disclosure), atendendo à
@@ -153,10 +168,12 @@ const produtoSchema: Record<string, unknown> = {
 
       <h3 class="afi__title">{produto}</h3>
 
-      <div class="afi__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
-        <span class="afi__stars" aria-hidden="true">★★★★★<span style={`--pct:${pct}%`}>★★★★★</span></span>
-        <span class="afi__rating-text">{avaliacaoLabel} · Avaliação da redação</span>
-      </div>
+      {avaliacaoLabel && (
+        <div class="afi__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
+          <span class="afi__stars" aria-hidden="true">★★★★★<span style={`--pct:${pct}%`}>★★★★★</span></span>
+          <span class="afi__rating-text">{avaliacaoLabel} · Avaliação da redação</span>
+        </div>
+      )}
 
       {specsLine && <div class="afi__specs">{specsLine}</div>}
       {showDesc && <p class="afi__desc">{descricao}</p>}

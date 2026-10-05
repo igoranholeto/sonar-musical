@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BandaCard from '../../components/BandaCard.astro';
 import { GENEROS, generoAccent, generoSoft, slugify } from '../../utils/generos';
+import { breadcrumb, collectionPage } from '../../utils/schema';
 
 const allBandas = await getCollection('bandas');
 const bandas = allBandas
@@ -40,12 +41,26 @@ const bandasComAlbuns = bandas
     })),
   }));
 
+const schema = [
+  collectionPage({
+    path: '/bandas/',
+    name: 'Bandas e Artistas',
+    description: 'Equipamentos, integrantes e álbuns de bandas e artistas, com opções acessíveis para chegar perto do timbre.',
+    items: bandas.map((b) => ({ name: b.data.nome, path: `/bandas/${b.id}/` })),
+  }),
+  breadcrumb([
+    { name: 'Início', path: '/' },
+    { name: 'Bandas', path: '/bandas/' },
+  ]),
+];
+
 const totalAlbuns = bandasComAlbuns.reduce((soma, b) => soma + b.albuns.length, 0);
 ---
 
 <BaseLayout
   title="Bandas e Artistas: Equipamentos, Integrantes e Álbuns"
   description="O equipamento por trás das lendas, quem toca o quê no palco, e como chegar perto daquele som sem quebrar o cofre."
+  schema={schema}
 >
   <!-- Hero -->
   <section class="max-w-6xl mx-auto px-4 pt-16 pb-6">
