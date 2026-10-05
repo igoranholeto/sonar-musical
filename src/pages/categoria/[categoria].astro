@@ -4,6 +4,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import { BLOG_CATEGORIES } from '../../content.config';
 import { slugifyCategory } from '../../utils/slug';
+import { breadcrumb, collectionPage } from '../../utils/schema';
 
 export async function getStaticPaths() {
   return BLOG_CATEGORIES.map((category) => ({
@@ -36,18 +37,22 @@ const intro = intros[category];
 
 const canonicalPath = `/categoria/${slugifyCategory(category)}/`;
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
-    { '@type': 'ListItem', position: 2, name: 'Análises', item: 'https://sonarmusical.com.br/blog' },
-    { '@type': 'ListItem', position: 3, name: category, item: `https://sonarmusical.com.br${canonicalPath}` },
-  ],
-};
+const schema = [
+  collectionPage({
+    path: canonicalPath,
+    name: `${category}, Análises e Guias`,
+    description: intro,
+    items: posts.map((p) => ({ name: p.data.title, path: `/blog/${p.id}/` })),
+  }),
+  breadcrumb([
+    { name: 'Início', path: '/' },
+    { name: 'Análises', path: '/blog/' },
+    { name: category, path: canonicalPath },
+  ]),
+];
 ---
 
-<BaseLayout title={`${category}, Análises e Guias`} description={intro} schema={breadcrumbSchema}>
+<BaseLayout title={`${category}, Análises e Guias`} description={intro} schema={schema}>
   <div class="max-w-6xl mx-auto px-4 py-16">
     <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
       <a href="/" class="hover:text-foreground transition-colors">Início</a>

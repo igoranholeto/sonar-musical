@@ -3,9 +3,23 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import { normalizeSearch } from '../../utils/slug';
+import { breadcrumb, collectionPage } from '../../utils/schema';
 
 const allPosts = await getCollection('blog');
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
+
+const schema = [
+  collectionPage({
+    path: '/blog/',
+    name: 'Análises e Artigos',
+    description: 'Todas as análises, comparativos, guias de compra e tutoriais do Sonar Musical.',
+    items: posts.map((p) => ({ name: p.data.title, path: `/blog/${p.id}/` })),
+  }),
+  breadcrumb([
+    { name: 'Início', path: '/' },
+    { name: 'Blog', path: '/blog/' },
+  ]),
+];
 
 const categories = ['Todas', ...Array.from(new Set(allPosts.map((p) => p.data.category)))];
 ---
@@ -13,6 +27,7 @@ const categories = ['Todas', ...Array.from(new Set(allPosts.map((p) => p.data.ca
 <BaseLayout
   title="Análises e Artigos"
   description="Navegue por todas as análises de guitarras, amplificadores, pedais e acessórios do Sonar Musical. Guias de compra e dicas para todos os níveis."
+  schema={schema}
 >
   <div class="max-w-6xl mx-auto px-4 py-16">
     <!-- Cabeçalho da página -->

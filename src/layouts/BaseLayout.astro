@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import { ORG_ID, WEBSITE_ID, organizationRef } from '../utils/schema';
 
 interface Props {
   title: string;
@@ -33,10 +34,7 @@ const fullTitle =
 
 const organizationSchema = {
   '@context': 'https://schema.org',
-  '@type': 'Organization',
-  name: 'Sonar Musical',
-  url: 'https://sonarmusical.com.br',
-  logo: 'https://sonarmusical.com.br/favicon.svg',
+  ...organizationRef,
   description: 'Blog de análises honestas e guias de compra sobre equipamentos musicais, guitarras, amplificadores, pedais e mais.',
   email: 'oi@sonarmusical.com.br',
   sameAs: ['https://www.instagram.com/sonar_musical', 'https://www.pinterest.com/sonarmusical/'],
@@ -54,10 +52,11 @@ const isHome = Astro.url.pathname === '/';
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
+  '@id': WEBSITE_ID,
   name: 'Sonar Musical',
   url: 'https://sonarmusical.com.br',
   inLanguage: 'pt-BR',
-  publisher: { '@type': 'Organization', name: 'Sonar Musical' },
+  publisher: { '@id': ORG_ID },
   potentialAction: {
     '@type': 'SearchAction',
     target: {

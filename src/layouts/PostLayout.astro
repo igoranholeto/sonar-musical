@@ -9,6 +9,15 @@ import ShareButtons from '../components/ShareButtons.astro';
 import { slugifyCategory } from '../utils/slug';
 import { unsplashSrc } from '../utils/image';
 import { getAuthorByName } from '../data/authors';
+import {
+  ORG_ID,
+  WEBSITE_ID,
+  breadcrumb,
+  detectMarca,
+  organizationRef,
+  personRef,
+  productId,
+} from '../utils/schema';
 
 interface Props {
   title: string;
@@ -67,51 +76,57 @@ const absoluteImage = image
 const canonicalPostUrl = new URL(Astro.url.pathname, Astro.site).href;
 
 const authorRecord = getAuthorByName(author);
-const authorSchema = authorRecord
-  ? {
-      '@type': 'Person',
-      name: authorRecord.name,
-      url: `https://sonarmusical.com.br/autor/${authorRecord.slug}/`,
-      image: `https://sonarmusical.com.br${authorRecord.photo}`,
-      ...(authorRecord.sameAs.length > 0 && { sameAs: authorRecord.sameAs }),
-    }
-  : { '@type': 'Organization', name: author };
+const authorSchema = authorRecord ? personRef(authorRecord) : organizationRef;
+const categoryPath = `/categoria/${slugifyCategory(category)}/`;
 
 const articleSchema = {
   '@context': 'https://schema.org',
   '@type': 'Article',
+  '@id': `${canonicalPostUrl}#article`,
   headline: title,
   description,
   inLanguage: 'pt-BR',
   mainEntityOfPage: { '@type': 'WebPage', '@id': canonicalPostUrl },
+  isPartOf: { '@id': WEBSITE_ID },
   author: authorSchema,
   datePublished: pubDate.toISOString(),
   // O Google usa dateModified para decidir o quão atual é o conteúdo. Sem o campo
   // ele assume a data de publicação; explicitar o fallback deixa o sinal consistente.
   dateModified: (updatedDate ?? pubDate).toISOString(),
-  publisher: {
-    '@type': 'Organization',
-    name: 'Sonar Musical',
-    url: 'https://sonarmusical.com.br',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://sonarmusical.com.br/favicon.svg',
-    },
-  },
+  publisher: organizationRef,
+  articleSection: category,
+  ...(tags.length > 0 && { keywords: tags.join(', ') }),
   ...(absoluteImage && { image: absoluteImage }),
 };
+
+// Prós e contras visíveis no post viram positiveNotes/negativeNotes: o Google mostra
+// esse resumo no snippet de reviews editoriais de produto único.
+const notes = (items?: string[]) =>
+  items && items.length > 0
+    ? {
+        '@type': 'ItemList',
+        itemListElement: items.map((name, i) => ({ '@type': 'ListItem', position: i + 1, name })),
+      }
+    : undefined;
+const positiveNotes = notes(pros);
+const negativeNotes = notes(cons);
 
 // Post de review de produto único (tem rating): emite um nó Product SEPARADO com o
 // review aninhado. O Google exige que todo Product tenha offers, review ou
 // aggregateRating, aninhar o review aqui satisfaz isso e valida o snippet de produto.
 // (Antes era um Review com itemReviewed: Product "vazio", que o GSC reprovava com
 // "Especifique offers, review ou aggregateRating".) reviewedName dá o nome limpo do
-// produto, sem o "Vale a Pena?/Review" do título do post.
+// produto, sem o "Vale a Pena?/Review" do título do post. O @id é o mesmo que o
+// AfiliadoCTA do produto gera, então o Google funde os dois (review aqui, offer lá).
+const reviewedProductName = reviewedName ?? title;
+const reviewedMarca = detectMarca(reviewedProductName);
 const productSchema = rating
   ? {
       '@context': 'https://schema.org',
       '@type': 'Product',
-      name: reviewedName ?? title,
+      '@id': productId(canonicalPostUrl, reviewedProductName),
+      name: reviewedProductName,
+      ...(reviewedMarca && { brand: { '@type': 'Brand', name: reviewedMarca } }),
       ...(absoluteImage && { image: absoluteImage }),
       review: {
         '@type': 'Review',
@@ -122,20 +137,20 @@ const productSchema = rating
           worstRating: 1,
         },
         author: authorSchema,
+        publisher: { '@id': ORG_ID },
         datePublished: pubDate.toISOString(),
+        ...(positiveNotes && { positiveNotes }),
+        ...(negativeNotes && { negativeNotes }),
       },
     }
   : null;
 
-const breadcrumbSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'BreadcrumbList',
-  itemListElement: [
-    { '@type': 'ListItem', position: 1, name: 'Início', item: 'https://sonarmusical.com.br/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://sonarmusical.com.br/blog/' },
-    { '@type': 'ListItem', position: 3, name: title, item: canonicalPostUrl },
-  ],
-};
+const breadcrumbSchema = breadcrumb([
+  { name: 'Início', path: '/' },
+  { name: 'Blog', path: '/blog/' },
+  { name: category, path: categoryPath },
+  { name: title, path: canonicalPostUrl },
+]);
 
 const pageSchema = [articleSchema, ...(productSchema ? [productSchema] : []), breadcrumbSchema];
 
@@ -164,10 +179,12 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   <div class="mx-auto max-w-6xl px-4 py-16 xl:flex xl:gap-10 xl:justify-center">
   <article class="w-full max-w-3xl min-w-0" data-pagefind-body>
     <!-- Breadcrumb -->
-    <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
+    <nav aria-label="Navegação em breadcrumb" class="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted">
       <a href="/" class="hover:text-foreground transition-colors">Início</a>
       <span aria-hidden="true">/</span>
       <a href="/blog/" class="hover:text-foreground transition-colors">Blog</a>
+      <span aria-hidden="true">/</span>
+      <a href={categoryPath} class="hover:text-foreground transition-colors">{category}</a>
       <span aria-hidden="true">/</span>
       <span class="text-foreground" aria-current="page">{title}</span>
     </nav>
