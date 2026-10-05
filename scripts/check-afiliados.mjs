@@ -41,27 +41,34 @@ for (const f of fs.readdirSync('src/data/bandas').filter((f) => /\.mdx?$/.test(f
   });
 }
 
+// URL final + título do produto em destaque (og:title da página social), para conferir se
+// o link leva ao MESMO produto do CTA (já houve link "Pacifica 112V" abrindo outra Pacifica).
 async function destino(url) {
   for (let tentativa = 0; tentativa < 3; tentativa++) {
     try {
       const r = await fetch(url, { redirect: 'follow', headers: { 'User-Agent': UA } });
-      return r.url;
+      const html = await r.text();
+      const titulo = html.match(/<meta property="og:title" content="([^"]*)"/)?.[1] ?? '';
+      return { fim: r.url, titulo };
     } catch {
       await new Promise((ok) => setTimeout(ok, 1500));
     }
   }
-  return '';
+  return { fim: '', titulo: '' };
 }
 
 const resultado = [];
 for (const [url, l] of links) {
-  const fim = await destino(url);
+  const { fim, titulo } = await destino(url);
   const status = fim.includes('/lists') ? 'LISTA' : fim.includes('ref=') ? 'OK' : 'VERIFICAR';
-  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), onde: [...l.onde] });
+  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ml: status === 'OK' ? titulo : '', onde: [...l.onde] });
 }
 
 const quebrados = resultado.filter((r) => r.status !== 'OK');
 const mostrar = process.argv.includes('--all') ? resultado : quebrados;
-for (const r of mostrar) console.log(`${r.status}\t${r.url}\t${r.produtos}\t${r.onde.join(', ')}`);
+for (const r of mostrar) {
+  const ml = r.ml ? `\tML: ${r.ml}` : '';
+  console.log(`${r.status}\t${r.url}\t${r.produtos}${ml}\t${r.onde.join(', ')}`);
+}
 console.log(`\n${resultado.length} links verificados: ${resultado.length - quebrados.length} OK, ${quebrados.length} quebrados ou a verificar.`);
 fs.writeFileSync('covers-src/_afiliados-check.json', JSON.stringify(resultado, null, 2));
