@@ -7,7 +7,7 @@ import TableOfContents from '../components/TableOfContents.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
 import ShareButtons from '../components/ShareButtons.astro';
 import { slugifyCategory } from '../utils/slug';
-import { unsplashSrc } from '../utils/image';
+import { cardImg, unsplashSrc } from '../utils/image';
 import { getAuthorByName } from '../data/authors';
 import {
   ORG_ID,
@@ -76,6 +76,16 @@ const absoluteImage = image
   : undefined;
 
 const canonicalPostUrl = new URL(Astro.url.pathname, Astro.site).href;
+
+// Capa (LCP do post): capas locais usam o WebP de 800px dos cards no mobile e o
+// original de 1200px só em tela larga/retina. Antes ia sempre o JPG de 1200px
+// (LCP mobile ~3,4 s no Lighthouse). Unsplash segue redimensionado via URL.
+const isLocalCover = !!image && !/^https?:\/\//.test(image);
+const heroSrc = isLocalCover ? cardImg(image) : unsplashSrc(image, 900);
+const heroSrcset = isLocalCover
+  ? `${cardImg(image)} 800w, ${image} 1200w`
+  : `${unsplashSrc(image, 900)} 900w, ${unsplashSrc(image, 1600)} 1600w`;
+const heroSizes = '(max-width: 800px) 100vw, 768px';
 
 const authorRecord = getAuthorByName(author);
 const authorSchema = authorRecord ? personRef(authorRecord) : organizationRef;
@@ -226,8 +236,9 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     {image && (
       <figure class="mb-10 rounded-2xl overflow-hidden border border-border shadow-xl shadow-black/20">
         <img
-          src={unsplashSrc(image, 900)}
-          srcset={`${unsplashSrc(image, 900)} 1x, ${unsplashSrc(image, 1600)} 2x`}
+          src={heroSrc}
+          srcset={heroSrcset}
+          sizes={heroSizes}
           alt={imageAlt ?? title}
           width="768"
           height="432"

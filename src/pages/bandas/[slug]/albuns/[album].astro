@@ -34,6 +34,13 @@ const { nome: nomeBanda, genero } = banda.data;
 const equipReady = banda.data.integrantes.some((m) => m.setup.length > 0);
 const { nome, ano, descricao, capa, capaAlt, spotifyUrl, temas, scoresCriticos, musicasPopulares, videoYoutubeId, videoTitulo, secoesAnalise } = album;
 
+// Fundo do banner usa a miniatura de 32px (scripts/gen-album-blur.mjs): com o blur de
+// 38px fica idêntica, pesa ~1 KB e não vira o elemento de LCP (a capa grande virava,
+// com LCP de ~10 s no mobile).
+const capaBlur = capa?.startsWith('/images/albuns/')
+  ? capa.replace('/images/albuns/', '/images/albuns/blur/').replace(/\.\w+$/, '.webp')
+  : capa;
+
 const accent = generoAccent(genero);
 const gradient = generoGradient(genero);
 const tagBg = generoSoft(genero);
@@ -86,10 +93,11 @@ const schema = [albumSchema, breadcrumbSchema];
 >
   <div class="theme-locked-dark">
   <!-- Banner com capa desfocada de fundo. É background CSS (não <img>) porque é só
-       decorativo: evita a mesma capa aparecer sem alt; a capa com alt é a do card abaixo. -->
+       decorativo: evita a mesma capa aparecer sem alt; a capa com alt é a do card abaixo.
+       Usa a miniatura de 32px (ver capaBlur). -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient}`}>
     {capa && (
-      <div class="absolute inset-0 bg-cover bg-center album-bg" style={`background-image:url('${capa}')`} aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-cover bg-center album-bg" style={`background-image:url('${capaBlur}')`} aria-hidden="true"></div>
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.92) 80%,#0a0a0a)"></div>
     <div class="relative max-w-5xl mx-auto px-4 pt-7 pb-10">
@@ -215,14 +223,21 @@ const schema = [albumSchema, breadcrumbSchema];
           </span>
           <h2 class="text-2xl font-extrabold tracking-tight">Assista: uma análise do álbum</h2>
         </div>
+        <!-- Facade: miniatura + play; o player do YouTube (~1 MB de JS) só carrega no clique.
+             O iframe direto derrubava o LCP mobile da página para ~8 s. -->
         <div class="video-embed rounded-2xl overflow-hidden border border-border">
-          <iframe
-            src={`https://www.youtube.com/embed/${videoYoutubeId}`}
-            title={videoTitulo ?? `Análise de ${nome}`}
-            loading="lazy"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen
-          ></iframe>
+          <button
+            type="button"
+            class="yt-facade"
+            data-yt={videoYoutubeId}
+            data-title={videoTitulo ?? `Análise de ${nome}`}
+            aria-label={`Reproduzir vídeo: ${videoTitulo ?? `Análise de ${nome}`}`}
+          >
+            <img src={`https://i.ytimg.com/vi/${videoYoutubeId}/hqdefault.jpg`} alt="" width="480" height="360" loading="lazy" decoding="async" />
+            <span class="yt-play" aria-hidden="true">
+              <svg width="68" height="48" viewBox="0 0 68 48"><path d="M66.5 7.7a8.5 8.5 0 0 0-6-6C55.2.3 34 .3 34 .3s-21.2 0-26.5 1.4a8.5 8.5 0 0 0-6 6C.1 13 .1 24 .1 24s0 11 1.4 16.3a8.5 8.5 0 0 0 6 6C12.8 47.7 34 47.7 34 47.7s21.2 0 26.5-1.4a8.5 8.5 0 0 0 6-6C67.9 35 67.9 24 67.9 24s0-11-1.4-16.3Z" fill="#f00"/><path d="M45 24 27 14v20" fill="#fff"/></svg>
+            </span>
+          </button>
         </div>
         {videoTitulo && <div class="text-[13px] text-[#888] mt-3">{videoTitulo}</div>}
       </section>
@@ -333,6 +348,19 @@ const schema = [albumSchema, breadcrumbSchema];
   <Lightbox />
 </BaseLayout>
 
+<script>
+  document.querySelectorAll<HTMLButtonElement>('.yt-facade').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const iframe = document.createElement('iframe');
+      iframe.src = `https://www.youtube-nocookie.com/embed/${btn.dataset.yt}?autoplay=1`;
+      iframe.title = btn.dataset.title ?? '';
+      iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+      iframe.allowFullscreen = true;
+      btn.replaceWith(iframe);
+    });
+  });
+</script>
+
 <style>
   .album-bg {
     filter: blur(38px) brightness(0.75) saturate(1.2);
@@ -357,12 +385,35 @@ const schema = [albumSchema, breadcrumbSchema];
     padding-top: 56.25%;
     background: #000;
   }
-  .video-embed iframe {
+  .video-embed iframe,
+  .yt-facade {
     position: absolute;
     inset: 0;
     width: 100%;
     height: 100%;
     border: 0;
+  }
+  .yt-facade {
+    padding: 0;
+    cursor: pointer;
+    background: #000;
+  }
+  .yt-facade img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .yt-play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.9;
+    transition: opacity 0.2s;
+  }
+  .yt-facade:hover .yt-play,
+  .yt-facade:focus-visible .yt-play {
+    opacity: 1;
   }
   .tema-details summary {
     list-style: none;
