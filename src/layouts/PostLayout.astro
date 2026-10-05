@@ -58,12 +58,14 @@ const tocHeadings = headings.filter((h) => h.depth === 2 || h.depth === 3);
 const hasToc = tocHeadings.length >= 3;
 
 const formattedDate = pubDate.toLocaleDateString('pt-BR', {
+  timeZone: 'UTC',
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 });
 
 const formattedUpdated = updatedDate?.toLocaleDateString('pt-BR', {
+  timeZone: 'UTC',
   year: 'numeric',
   month: 'long',
   day: 'numeric',

@@ -85,10 +85,11 @@ const schema = [albumSchema, breadcrumbSchema];
   schema={schema}
 >
   <div class="theme-locked-dark">
-  <!-- Banner com capa desfocada de fundo -->
+  <!-- Banner com capa desfocada de fundo. É background CSS (não <img>) porque é só
+       decorativo: evita a mesma capa aparecer sem alt; a capa com alt é a do card abaixo. -->
   <div class="relative overflow-hidden border-b border-border" style={`background:${gradient}`}>
     {capa && (
-      <img src={capa} alt="" width="1200" height="420" class="absolute inset-0 w-full h-full object-cover album-bg" aria-hidden="true" />
+      <div class="absolute inset-0 bg-cover bg-center album-bg" style={`background-image:url('${capa}')`} aria-hidden="true"></div>
     )}
     <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(10,10,10,.55),rgba(10,10,10,.92) 80%,#0a0a0a)"></div>
     <div class="relative max-w-5xl mx-auto px-4 pt-7 pb-10">

@@ -28,12 +28,14 @@ const intros: Record<(typeof BLOG_CATEGORIES)[number], string> = {
   'Guias de Compra': 'Guias completos para escolher o equipamento certo, com comparativos por faixa de preço e uso.',
   'Dicas para Iniciantes': 'Conteúdo pensado para quem está começando: primeiros passos, erros comuns e como montar seu primeiro setup.',
   'Home Studio': 'Interfaces de áudio, microfones, monitores de referência e tudo que você precisa para gravar em casa.',
-  Reviews: 'Análises detalhadas de equipamentos, com prós, contras e nossa avaliação final.',
+  Reviews: 'Análises detalhadas de equipamentos, com prós, contras e nossa avaliação final. Cada review explica como o equipamento soa, para quem ele faz sentido, onde ele falha e quais alternativas valem a pena comparar antes de comprar, sempre com a nota da redação e links para os guias relacionados.',
   Tutoriais: 'Passo a passo de manutenção, configuração e uso de equipamentos musicais.',
   'Técnica e Teoria': 'Conteúdo sobre técnica de execução e teoria musical aplicada à guitarra e ao violão.',
-  Violões: 'Análises e guias de compra de violões acústicos e eletroacústicos para todos os níveis.',
+  Violões: 'Análises e guias de compra de violões acústicos e eletroacústicos para todos os níveis. Aqui você encontra o que muda entre violão de aço e de nylon, folk e clássico, como escolher o primeiro violão, captadores, amplificação e os modelos com melhor custo-benefício no Brasil.',
 };
 const intro = intros[category];
+// Intro longa vira texto da página; a meta description fica só com a primeira frase (≤155).
+const metaDesc = intro.length > 155 ? intro.slice(0, intro.indexOf('.') + 1) : intro;
 
 const canonicalPath = `/categoria/${slugifyCategory(category)}/`;
 
@@ -52,7 +54,7 @@ const schema = [
 ];
 ---
 
-<BaseLayout title={`${category}, Análises e Guias`} description={intro} schema={schema}>
+<BaseLayout title={`${category}, Análises e Guias`} description={metaDesc} schema={schema}>
   <div class="max-w-6xl mx-auto px-4 py-16">
     <nav aria-label="Navegação em breadcrumb" class="mb-8 flex items-center gap-2 text-sm text-muted">
       <a href="/" class="hover:text-foreground transition-colors">Início</a>
