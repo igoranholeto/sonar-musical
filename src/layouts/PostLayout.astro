@@ -117,7 +117,7 @@ const negativeNotes = notes(cons);
 // (Antes era um Review com itemReviewed: Product "vazio", que o GSC reprovava com
 // "Especifique offers, review ou aggregateRating".) reviewedName dá o nome limpo do
 // produto, sem o "Vale a Pena?/Review" do título do post. O @id é o mesmo que o
-// AfiliadoCTA do produto gera, então o Google funde os dois (review aqui, offer lá).
+// AfiliadoCTA do produto gera; o CTA vê o mesmo id em Astro.locals e não repete o nó.
 const reviewedProductName = reviewedName ?? title;
 const reviewedMarca = detectMarca(reviewedProductName);
 const productSchema = rating

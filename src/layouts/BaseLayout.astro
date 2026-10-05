@@ -46,8 +46,9 @@ const organizationSchema = {
   },
 };
 
-// WebSite + SearchAction só na home (recomendação do Google). A busca em /busca/
-// já pré-preenche o campo a partir de ?q=, então o urlTemplate é funcional.
+// WebSite só na home (recomendação do Google). Sem SearchAction: o sitelinks search
+// box foi aposentado pelo Google e o urlTemplate fazia o crawler rastrear
+// /busca/?q={search_term_string}, que aparecia como não indexada no Search Console.
 const isHome = Astro.url.pathname === '/';
 const websiteSchema = {
   '@context': 'https://schema.org',
@@ -57,14 +58,6 @@ const websiteSchema = {
   url: 'https://sonarmusical.com.br',
   inLanguage: 'pt-BR',
   publisher: { '@id': ORG_ID },
-  potentialAction: {
-    '@type': 'SearchAction',
-    target: {
-      '@type': 'EntryPoint',
-      urlTemplate: 'https://sonarmusical.com.br/busca/?q={search_term_string}',
-    },
-    'query-input': 'required name=search_term_string',
-  },
 };
 ---
 
