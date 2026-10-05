@@ -23,6 +23,17 @@ const MAP = {
   'como-tocar-smoke-on-the-water':  { kicker: 'TUTORIAL · RIFF', l1: 'SMOKE ON', l2: 'THE WATER', q: 'electric guitar closeup' },
   'como-tocar-seven-nation-army':   { kicker: 'TUTORIAL · RIFF', l1: 'SEVEN', l2: 'NATION ARMY', q: 'red electric guitar' },
   'como-tocar-power-chord':         { kicker: 'TUTORIAL · TÉCNICA', l1: 'POWER', l2: 'CHORD', q: 'Gibson SG electric guitar', prefer: /SG|Gibson/i },
+  // Lote 2026-10-05
+  'como-fazer-setup-na-guitarra':   { kicker: 'TUTORIAL · MANUTENÇÃO', l1: 'SETUP DE', l2: 'GUITARRA', q: 'luthier guitar repair workbench', prefer: /guitar|luthier/i, avoid: /violin|cello|bass|logo/i },
+  'guitarra-para-montar':           { kicker: 'GUITARRAS · DIY', l1: 'GUITARRA', l2: 'PARA MONTAR', q: 'guitar luthier workshop', prefer: /guitar|body/i, avoid: /bass|logo|violin|speed|artwork/i },
+  'notas-no-braco-da-guitarra':     { kicker: 'TÉCNICA E TEORIA', l1: 'NOTAS NO', l2: 'BRAÇO', q: 'guitar fingerboard', prefer: /fret|fingerboard|neck|griffbrett/i, avoid: /bass|logo|violin/i },
+  'melhor-pedal-de-overdrive':      { kicker: 'PEDAIS · 2026', l1: 'PEDAL DE', l2: 'OVERDRIVE', q: 'Ibanez Tube Screamer overdrive pedal', prefer: /tube screamer|overdrive|ts.?9|ts.?808|blues driver/i, avoid: /logo/i },
+  'pedal-wah-wah':                  { kicker: 'PEDAIS · GUIA', l1: 'PEDAL', l2: 'WAH-WAH', q: 'Dunlop Cry Baby wah pedal', prefer: /wah|cry ?baby/i, avoid: /logo/i },
+  'capotraste':                     { kicker: 'ACESSÓRIOS · GUIA', l1: 'CAPO', l2: 'TRASTE', q: 'guitar capo', prefer: /capo/i, avoid: /logo|cape|capo di|town|island/i },
+  'amplificador-para-violao':       { kicker: 'AMPLIFICADORES · 2026', l1: 'AMP PARA', l2: 'VIOLÃO', q: 'acoustic guitar on stage microphone', prefer: /acoustic/i, avoid: /bass|logo|violin/i },
+  'guitarra-canhota':               { kicker: 'GUITARRAS · GUIA', l1: 'GUITARRA', l2: 'CANHOTA', q: 'left-handed electric guitar', prefer: /left/i, avoid: /bass|logo/i },
+  'como-tocar-come-as-you-are-nirvana': { kicker: 'TUTORIAL · RIFF', l1: 'COME AS', l2: 'YOU ARE', q: 'Fender Jaguar guitar', prefer: /jaguar|mustang|jag-stang/i, avoid: /car|automobile|bass|logo/i },
+  'como-tocar-guitarra-com-fone':   { kicker: 'TUTORIAL · EM CASA', l1: 'GUITARRA', l2: 'COM FONE', q: 'headphones electric guitar', prefer: /headphone/i, avoid: /bass|logo|dj/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
