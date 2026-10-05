@@ -72,7 +72,7 @@ const breadcrumbSchema = {
 ---
 
 <BaseLayout
-  title={`${nome}: Equipamentos e Setup Completo da Banda`}
+  title={nome.length > 16 ? `${nome}: Equipamentos e Setup Completo` : `${nome}: Equipamentos e Setup Completo da Banda`}
   description={`Que guitarra, amplificador e pedais cada integrante do ${nome} usa, e as alternativas mais baratas para chegar perto do mesmo som.`}
   image={fotoCapa}
   schema={breadcrumbSchema}

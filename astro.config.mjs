@@ -11,7 +11,11 @@ export default defineConfig({
   // Astro). Consolida o sinal de SEO que o GSC mostrava dividido entre /rota e
   // /rota/. A Netlify (Pretty URLs) faz o 301 da versão sem barra.
   trailingSlash: 'always',
-  integrations: [mdx(), sitemap({ serialize: lastmodSerializer() })],
+  integrations: [mdx(), sitemap({
+    serialize: lastmodSerializer(),
+    // Busca interna é noindex: não entra no sitemap.
+    filter: (page) => !page.includes('/busca/'),
+  })],
   compressHTML: true,
   build: {
     // Inline de todo o CSS: elimina as requisições de CSS que bloqueiam a
