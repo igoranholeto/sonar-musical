@@ -34,19 +34,23 @@ integrantes:
       - tipo: Microfone
         original:
           nome: Audio-Technica AE6100
-          preco: ~R$ 2.500
+          preco: ~R$ 1.599
+          urlAfiliado: https://meli.la/1aQZbAz
         low:
           nome: Shure SM58
-          preco: ~R$ 900
+          preco: ~R$ 1.153
           obs: Dinâmico robusto e testado em palco por uma fração do preço.
+          urlAfiliado: https://meli.la/2QjvtJz
       - tipo: Monitoração
         original:
           nome: In-ear Shure PSM 300
-          preco: ~R$ 5.500
+          preco: ~R$ 7.324
+          urlAfiliado: https://meli.la/2GC7ZMh
         low:
           nome: Behringer Powerplay In-ear
-          preco: ~R$ 900
+          preco: ~R$ 846
           obs: Retorno limpo pra acompanhar a troca de registro vocal.
+          urlAfiliado: https://meli.la/1MKws86
   - nome: Synyster Gates
     funcao: Guitarra solo
     foto: /images/synyster-gates-sonar.jpg
@@ -70,19 +74,25 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Schecter Synyster Gates Custom-S
-          preco: ~R$ 9.500
+          preco: ~R$ 22.988
+          urlAfiliado: https://meli.la/2vaiH4J
         low:
           nome: Schecter C-1 FR-S Apocalypse
-          preco: ~R$ 4.200
+          preco: ~R$ 3.419
           obs: Captação ativa e trastes extra jumbo parecidos por menos.
+          similar: "Schecter C-1 FR"
+          urlAfiliado: https://meli.la/1hgzp97
       - tipo: Amplificação
         original:
           nome: Schecter Hellwin Stage 100 (signature)
-          preco: ~R$ 18.000
+          preco: ~R$ 10.319
+          similar: "Marshall DSL100HR"
+          urlAfiliado: https://meli.la/18FR3FP
         low:
           nome: Boss Katana 100 MkII
-          preco: ~R$ 2.400
+          preco: ~R$ 5.490
           obs: Canais de alto ganho versáteis pros solos mais técnicos.
+          urlAfiliado: https://meli.la/1rW4Xdf
   - nome: Zacky Vengeance
     funcao: Guitarra base
     foto: /images/zacky-vengeance-sonar.jpg
@@ -105,19 +115,25 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Schecter Zacky Vengeance ZV-H6LLYW66D
-          preco: ~R$ 9.000
+          preco: ~R$ 17.572
+          similar: "Schecter Hellraiser C-1"
+          urlAfiliado: https://meli.la/1nqAhA8
         low:
           nome: Schecter Omen Extreme-6
-          preco: ~R$ 3.200
+          preco: ~R$ 7.531
           obs: Corpo parecido com humbuckers quentes pro riff pesado.
+          urlAfiliado: https://meli.la/1EQC6xm
       - tipo: Amplificação
         original:
           nome: Jet City 100HDM
-          preco: ~R$ 8.500
+          preco: ~R$ 10.319
+          similar: "Marshall DSL100HR"
+          urlAfiliado: https://meli.la/18FR3FP
         low:
           nome: Boss Katana 100 MkII
-          preco: ~R$ 2.400
+          preco: ~R$ 5.490
           obs: Ganho encorpado à meia potência, como Zacky usa ao vivo.
+          urlAfiliado: https://meli.la/1rW4Xdf
   - nome: Johnny Christ
     funcao: Baixo
     foto: /images/johnny-christ-sonar.jpg
@@ -139,19 +155,25 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Schecter Johnny Christ Signature
-          preco: ~R$ 7.500
+          preco: ~R$ 18.190
+          urlAfiliado: https://meli.la/2dPhECg
         low:
           nome: Squier Classic Vibe Jazz Bass
-          preco: ~R$ 3.200
+          preco: ~R$ 4.731
           obs: Base pro tom agressivo com captações ativas por menos.
+          urlAfiliado: https://meli.la/1nGhk8Y
       - tipo: Amplificação
         original:
           nome: Gallien-Krueger 2001RB
-          preco: ~R$ 12.000
+          preco: ~R$ 17.390
+          similar: "Gallien-Krueger Fusion 500S"
+          urlAfiliado: https://meli.la/331xZWc
         low:
           nome: Ampeg BA-115
-          preco: ~R$ 3.500
+          preco: ~R$ 11.676
           obs: Combo compacto com grave definido.
+          similar: "Ampeg Rocket Bass RB-115"
+          urlAfiliado: https://meli.la/2bjY7RU
   - nome: Brooks Wackerman
     funcao: Bateria
     foto: /images/brooks-wackerman-sonar.jpg
@@ -175,19 +197,25 @@ integrantes:
       - tipo: Bateria
         original:
           nome: DW Collector's Series (Santa Monica maple)
-          preco: ~R$ 40.000
+          preco: ~R$ 32.900
+          similar: "DW Design Series"
+          urlAfiliado: https://meli.la/2pEpHX2
         low:
           nome: Pearl Export EXX
-          preco: ~R$ 6.500
+          preco: ~R$ 7.368
           obs: Kit versátil com boa projeção pra ensaio e palco.
+          urlAfiliado: https://meli.la/1iX6FXT
       - tipo: Pratos
         original:
           nome: Zildjian A Custom / K Custom
-          preco: ~R$ 10.000
+          preco: ~R$ 3.847
+          urlAfiliado: https://meli.la/1f8mhZF
         low:
           nome: Zildjian ZBT
-          preco: ~R$ 2.800
+          preco: ~R$ 3.557
           obs: Entrada na linha Zildjian com bom brilho.
+          similar: "Zildjian I Family (kit de pratos)"
+          urlAfiliado: https://meli.la/1veU34S
 albuns:
   - nome: City of Evil
     ano: 2005

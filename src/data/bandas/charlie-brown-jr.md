@@ -32,19 +32,23 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Stratocaster (American)
-          preco: ~R$ 12.000
+          preco: ~R$ 17.624
+          urlAfiliado: https://meli.la/1cqEFgJ
         low:
           nome: Squier Classic Vibe Stratocaster
-          preco: ~R$ 3.200
+          preco: ~R$ 4.591
           obs: "Timbre de single-coil brilhante por uma fração do preço."
+          urlAfiliado: https://meli.la/2Zao8tQ
       - tipo: Guitarra
         original:
           nome: Gibson Les Paul Standard
-          preco: ~R$ 18.000
+          preco: ~R$ 31.271
+          urlAfiliado: https://meli.la/2iWtCWH
         low:
           nome: Epiphone Les Paul Standard
-          preco: ~R$ 3.500
+          preco: ~R$ 10.348
           obs: "Humbucker encorpado para as levadas mais pesadas."
+          urlAfiliado: https://meli.la/2SVg4Aq
   - nome: Thiago Castanho
     funcao: Guitarra
     anos: 1992–2001 · 2005–2013
@@ -68,19 +72,25 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Music Man StingRay 5
-          preco: ~R$ 22.000
+          preco: ~R$ 13.890
+          similar: "Sterling StingRay Ray35 (5 cordas)"
+          urlAfiliado: https://meli.la/2w5DTEK
         low:
           nome: Sterling by Music Man SUB Ray5
-          preco: ~R$ 4.500
+          preco: ~R$ 6.573
           obs: "Mesma pegada de StingRay de 5 cordas por muito menos."
+          similar: "Sterling StingRay Ray5"
+          urlAfiliado: https://meli.la/14u7qfk
       - tipo: Baixo
         original:
           nome: Fender Precision Bass
-          preco: ~R$ 9.000
+          preco: ~R$ 8.810
+          urlAfiliado: https://meli.la/1SPbQ2o
         low:
           nome: Squier Affinity P-Bass
-          preco: ~R$ 1.900
+          preco: ~R$ 3.353
           obs: "Tom clássico e encorpado de P-Bass para o groove."
+          urlAfiliado: https://meli.la/16ALw1L
   - nome: Renato Pelado
     funcao: Bateria
     anos: 1992–2005

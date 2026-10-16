@@ -36,13 +36,16 @@ integrantes:
       - tipo: Microfone de estúdio
         original:
           nome: Neumann U67 (vintage/reissue)
-          preco: ~R$ 45.000
+          preco: ~R$ 11.999
+          similar: "Neumann TLM 103"
+          urlAfiliado: https://meli.la/2eKynSt
         low:
           nome: Shure SM7B
-          preco: ~R$ 6.000
+          preco: ~R$ 2.838
           obs: Mesmo modelo usado pela equipe do Weeknd nas gravações da
             trilogia de mixtapes "Trilogy", dinâmico, rejeita ruído de
             ambiente e é um clássico de home studio.
+          urlAfiliado: https://meli.la/1v2xxHb
 albuns:
   - nome: House of Balloons
     ano: 2011

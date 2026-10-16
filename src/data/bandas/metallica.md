@@ -29,21 +29,24 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: ESP Snakebyte James Hetfield
-          preco: ~R$ 25.000
-          urlAfiliado: https://meli.la/31FcdYC
+          preco: ~R$ 11.186
+          similar: "ESP LTD EC-1000 (EMG)"
+          urlAfiliado: https://meli.la/2pXyQ1A
         low:
           nome: LTD Snakebyte (Signature Series)
-          preco: ~R$ 6.500
+          preco: ~R$ 1.969
           obs: Mesma forma icônica com captação ativa por menos.
-          urlAfiliado: https://meli.la/1NjEMj3
+          similar: "Strinberg EXS480 (formato Explorer)"
+          urlAfiliado: https://meli.la/1YD6BEW
       - tipo: Amplificação
         original:
           nome: Mesa Boogie Dual Rectifier
-          preco: ~R$ 20.000
+          preco: ~R$ 21.790
+          similar: "Mesa Boogie Single Rectifier"
           urlAfiliado: https://meli.la/2VqC1Jm
         low:
           nome: Boss Katana 100 MkII
-          preco: ~R$ 2.400
+          preco: ~R$ 5.490
           obs: Canais de alto ganho versáteis pro peso do thrash.
           urlAfiliado: https://meli.la/1rW4Xdf
   - foto: /images/kirk-hammett-integrante-sonar.webp
@@ -65,13 +68,15 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: ESP KH-2 Kirk Hammett Signature
-          preco: ~R$ 18.000
-          urlAfiliado: https://meli.la/21dH9a8
+          preco: ~R$ 13.859
+          similar: "ESP LTD KH-602"
+          urlAfiliado: https://meli.la/2cYxyCV
         low:
           nome: LTD KH-202
-          preco: ~R$ 3.800
+          preco: ~R$ 2.220
           obs: Formato e captações ativas parecidos com o original.
-          urlAfiliado: https://meli.la/2cYxyCV
+          similar: "Jackson JS22 Dinky"
+          urlAfiliado: https://meli.la/2HQ7JPQ
       - tipo: Pedais
         original:
           nome: Dunlop KH95 Kirk Hammett Cry Baby Wah
@@ -100,13 +105,14 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender Robert Trujillo Jazz Bass Signature
-          preco: ~R$ 14.000
-          urlAfiliado: https://meli.la/28cEw4h
+          preco: ~R$ 8.350
+          similar: "Fender Player II Jazz Bass"
+          urlAfiliado: https://meli.la/2CVuRH2
         low:
           nome: Squier Classic Vibe Jazz Bass
-          preco: ~R$ 3.200
+          preco: ~R$ 4.731
           obs: Tom clássico de Jazz Bass por uma fração do preço.
-          urlAfiliado: https://meli.la/1u1Tu8f
+          urlAfiliado: https://meli.la/1nGhk8Y
       - tipo: Amplificação
         original:
           nome: Ampeg SVT Classic
@@ -114,8 +120,9 @@ integrantes:
           urlAfiliado: https://meli.la/1RijRhe
         low:
           nome: Ampeg BA-115
-          preco: ~R$ 3.500
+          preco: ~R$ 11.676
           obs: Combo compacto com o tom grave característico Ampeg.
+          similar: "Ampeg Rocket Bass RB-115"
           urlAfiliado: https://meli.la/2bjY7RU
   - foto: /images/lars-ulrich-integrante-sonar.jpg
     fotoAlt: lars integrante metallica
@@ -139,19 +146,20 @@ integrantes:
           urlAfiliado: https://meli.la/1tVitRG
         low:
           nome: Pearl Export EXX
-          preco: ~R$ 6.500
+          preco: ~R$ 7.368
           obs: Kit versátil com boa projeção para ensaio e palco.
-          urlAfiliado: https://meli.la/2NPjfp2
+          urlAfiliado: https://meli.la/1iX6FXT
       - tipo: Pratos
         original:
           nome: Zildjian K Custom
-          preco: ~R$ 10.000
-          urlAfiliado: https://meli.la/2bPLQYu
+          preco: ~R$ 3.847
+          urlAfiliado: https://meli.la/1f8mhZF
         low:
           nome: Zildjian ZBT
-          preco: ~R$ 2.800
-          urlAfiliado: https://meli.la/34mvdYJ
+          preco: ~R$ 3.557
           obs: Entrada na linha Zildjian com bom brilho.
+          similar: "Zildjian I Family (kit de pratos)"
+          urlAfiliado: https://meli.la/1veU34S
 albuns:
   - ano: 1986
     videoYoutubeId: Dr15iUxVi5Y

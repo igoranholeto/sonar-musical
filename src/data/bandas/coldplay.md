@@ -27,7 +27,8 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Telecaster Custom
-          preco: ~R$ 10.000
+          preco: ~R$ 10.732
+          similar: "Fender Player Telecaster"
           urlAfiliado: https://meli.la/2G1Lhpy
         low:
           nome: Squier Classic Vibe Telecaster
@@ -37,8 +38,9 @@ integrantes:
       - tipo: Pedais
         original:
           nome: TC Electronic Nova Delay
-          preco: ~R$ 2.500
-          urlAfiliado: https://meli.la/2FR48AL
+          preco: ~R$ 2.699
+          similar: "TC Electronic Flashback 2"
+          urlAfiliado: https://meli.la/1dKZLds
         low:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500
@@ -62,7 +64,8 @@ integrantes:
       - tipo: Piano
         original:
           nome: Yamaha CP80 (piano elétrico de palco)
-          preco: ~R$ 25.000
+          preco: ~R$ 20.499
+          similar: "Yamaha CP88"
           urlAfiliado: https://meli.la/1EXczq4
         low:
           nome: Yamaha P-125
@@ -72,13 +75,15 @@ integrantes:
       - tipo: Violão
         original:
           nome: Martin Custom Acoustic
-          preco: ~R$ 20.000
-          urlAfiliado: https://meli.la/2NaegMk
+          preco: ~R$ 30.420
+          similar: "Martin D-16E"
+          urlAfiliado: https://meli.la/1PQMPPZ
         low:
           nome: Yamaha FG800
-          preco: ~R$ 1.900
+          preco: ~R$ 2.055
           obs: Boa projeção e afinação estável pra começar.
-          urlAfiliado: https://meli.la/32BHVVY
+          similar: "Yamaha F310"
+          urlAfiliado: https://meli.la/1hZ7Vcm
   - foto: /images/guy-berryman-sonar.webp
     fotoAlt: guy berryman baixista
     pontos:
@@ -96,8 +101,8 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Music Man StingRay
-          preco: ~R$ 12.000
-          urlAfiliado: https://meli.la/2w5DTEK
+          preco: ~R$ 42.000
+          urlAfiliado: https://meli.la/1czahvU
         low:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500
@@ -120,8 +125,9 @@ integrantes:
       - tipo: Bateria
         original:
           nome: DW Collector's Series
-          preco: ~R$ 28.000
-          urlAfiliado: https://meli.la/2rHzT7c
+          preco: ~R$ 32.900
+          similar: "DW Design Series"
+          urlAfiliado: https://meli.la/2pEpHX2
         low:
           nome: Pearl Roadshow
           preco: ~R$ 4.500

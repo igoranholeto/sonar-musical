@@ -69,19 +69,25 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Telecaster (American)
-          preco: ~R$ 14.000
+          preco: ~R$ 18.999
+          urlAfiliado: https://meli.la/2yM3YVd
         low:
           nome: Squier Classic Vibe Telecaster
-          preco: ~R$ 3.200
+          preco: ~R$ 4.987
           obs: Mesmo brilho estalado da Tele por uma fração do preço.
+          urlAfiliado: https://meli.la/1RSa8Jg
       - tipo: Violão
         original:
           nome: Martin 0-18
-          preco: ~R$ 18.000
+          preco: ~R$ 11.199
+          similar: "Martin 000-10E"
+          urlAfiliado: https://meli.la/1m7zf5V
         low:
           nome: Yamaha FG800
-          preco: ~R$ 2.200
+          preco: ~R$ 2.055
           obs: Violão folk de tampo maciço, ótimo para as versões acústicas.
+          similar: "Yamaha F310"
+          urlAfiliado: https://meli.la/1hZ7Vcm
   - nome: Marcelo Fromer
     funcao: Guitarra base
     anos: 1982–2001

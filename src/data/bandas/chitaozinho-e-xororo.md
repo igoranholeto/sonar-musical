@@ -49,12 +49,14 @@ integrantes:
       - tipo: Violão
         original:
           nome: Giannini Craviola
-          preco: ~R$ 5.000
+          preco: ~R$ 659
+          similar: "Giannini Performance GSF-1D"
+          urlAfiliado: https://meli.la/1uXeLXQ
         low:
           nome: Giannini GN15
-          preco: ~R$ 900
+          preco: ~R$ 790
           obs: Boa projeção para o dedilhado sertanejo.
-          urlAfiliado: https://www.musitechinstrumentos.com.br/Produto_11798,361/Cordas/Violao/Violao-Nylon/Violao-Giannini-GN-15-BK-Preto-Estudante-Nylon.html
+          urlAfiliado: https://meli.la/1zHdTuA
   - nome: Banda de apoio
     funcao: Sanfona / Baixo
     pontos:

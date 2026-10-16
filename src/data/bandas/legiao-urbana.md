@@ -27,12 +27,14 @@ integrantes:
       - tipo: Violão
         original:
           nome: Giannini Craviola
-          preco: ~R$ 5.000
+          preco: ~R$ 659
+          similar: "Giannini Performance GSF-1D"
+          urlAfiliado: https://meli.la/1uXeLXQ
         low:
           nome: Giannini GN15
-          preco: ~R$ 900
+          preco: ~R$ 790
           obs: Boa opção pra dedilhado e batida simples.
-          urlAfiliado: https://www.musitechinstrumentos.com.br/Produto_11798,361/Cordas/Violao/Violao-Nylon/Violao-Giannini-GN-15-BK-Preto-Estudante-Nylon.html
+          urlAfiliado: https://meli.la/1zHdTuA
   - foto: /images/dado-villa-lobos-integrante-sonar.webp
     fotoAlt: dado villa lobos
     pontos:
@@ -55,19 +57,20 @@ integrantes:
           urlAfiliado: https://meli.la/1PAkAN3
         low:
           nome: Epiphone Les Paul Standard
-          preco: ~R$ 3.500
+          preco: ~R$ 10.348
           obs: Timbre encorpado de humbucker por menos.
-          urlAfiliado: https://meli.la/2cJWYZp
+          urlAfiliado: https://meli.la/2SVg4Aq
       - tipo: Pedais
         original:
           nome: Boss CE-2 Chorus (vintage)
-          preco: ~R$ 1.800
-          urlAfiliado: https://meli.la/1nYSgfM
-        low:
-          nome: Boss CE-2W Chorus
-          preco: ~R$ 1.400
-          obs: Reedição fiel do chorus clássico.
+          preco: ~R$ 1.705
+          similar: "Boss CE-2W Waza Craft (reedição)"
           urlAfiliado: https://meli.la/1iXnVQE
+        low:
+          nome: Boss CE-5 Chorus Ensemble
+          preco: ~R$ 990
+          obs: Chorus Boss atual, mais barato e com mais ajustes de timbre.
+          urlAfiliado: https://meli.la/1sTYmgw
   - nome: Renato Rocha
     funcao: Baixo
     anos: 1982–1992
@@ -79,11 +82,11 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender Precision Bass
-          preco: ~R$ 9.000
-          urlAfiliado: https://meli.la/33TZgz6
+          preco: ~R$ 8.810
+          urlAfiliado: https://meli.la/1SPbQ2o
         low:
           nome: Squier Affinity P-Bass
-          preco: ~R$ 1.900
+          preco: ~R$ 3.353
           obs: Tom clássico de P-Bass por menos.
           urlAfiliado: https://meli.la/16ALw1L
     foto: /images/renato-rocha-integrante-sonar.webp
@@ -99,7 +102,7 @@ integrantes:
       - tipo: Bateria
         original:
           nome: Pearl Export (kit da época)
-          preco: ~R$ 8.000
+          preco: ~R$ 7.368
           urlAfiliado: https://meli.la/1iX6FXT
         low:
           nome: Pearl Roadshow

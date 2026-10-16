@@ -58,20 +58,27 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Gibson RD Artist (vintage, final dos anos 1970)
-          preco: ~R$ 28.000
+          preco: ~R$ 24.623
+          similar: "Gibson Firebird Platypus"
+          urlAfiliado: https://meli.la/1f8ejWe
         low:
           nome: Hagstrom Fantomen (signature Ghost)
-          preco: ~R$ 4.800
+          preco: ~R$ 8.389
           obs: Guitarra desenvolvida oficialmente em parceria com a banda,
             com captadores ativos e visual gótico próprio.
+          similar: "Epiphone Firebird"
+          urlAfiliado: https://meli.la/2k4qtS5
       - tipo: Amplificação
         original:
           nome: Orange Rockerverb MKIII (cabeçote)
-          preco: ~R$ 14.000
+          preco: ~R$ 14.988
+          similar: "Orange Rocker 30"
+          urlAfiliado: https://meli.la/18yPsJk
         low:
           nome: Boss Katana 100 MkII
-          preco: ~R$ 2.400
+          preco: ~R$ 5.490
           obs: Aproxima a saturação britânica escura sem custo de valvulado.
+          urlAfiliado: https://meli.la/1rW4Xdf
   - nome: Nameless Ghoul, Baixo
     funcao: Baixo / Teclado
     anos: 2008 – hoje (função rotativa)
@@ -92,19 +99,26 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender American Special Precision Bass
-          preco: ~R$ 7.500
+          preco: ~R$ 8.810
+          similar: "Fender Player II Precision Bass"
+          urlAfiliado: https://meli.la/1SPbQ2o
         low:
           nome: Squier Classic Vibe '60s Precision Bass
-          preco: ~R$ 3.200
+          preco: ~R$ 4.793
           obs: Tom clássico de P-Bass por uma fração do preço.
+          urlAfiliado: https://meli.la/2ncchpi
       - tipo: Teclado
         original:
           nome: Moog Little Phatty
-          preco: ~R$ 9.000
+          preco: ~R$ 8.190
+          similar: "Moog Messenger"
+          urlAfiliado: https://meli.la/2wjnFDQ
         low:
           nome: Behringer Model D
-          preco: ~R$ 1.800
+          preco: ~R$ 2.770
           obs: Clone fiel do circuito Moog subtrativo por bem menos.
+          similar: "Behringer Model 15"
+          urlAfiliado: https://meli.la/25dknBu
   - nome: Nameless Ghoul, Bateria
     funcao: Bateria
     anos: 2008 – hoje (função rotativa)
@@ -124,11 +138,13 @@ integrantes:
       - tipo: Bateria
         original:
           nome: Tama Starclassic (casco birch/bubinga)
-          preco: ~R$ 32.000
+          preco: ~R$ 21.998
+          urlAfiliado: https://meli.la/2VQgGdY
         low:
           nome: Pearl Export EXX
-          preco: ~R$ 6.500
+          preco: ~R$ 7.368
           obs: Projeção e graves firmes para ensaio e palco.
+          urlAfiliado: https://meli.la/1iX6FXT
 albuns:
   - nome: Opus Eponymous
     ano: 2010

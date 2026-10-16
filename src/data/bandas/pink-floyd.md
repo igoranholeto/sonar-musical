@@ -28,16 +28,20 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Stratocaster "The Black Strat"
-          preco: ~R$ 30.000
+          preco: ~R$ 17.624
+          similar: "Fender American Professional II Stratocaster"
+          urlAfiliado: https://meli.la/1cqEFgJ
         low:
           nome: Squier Classic Vibe 60s Stratocaster
-          preco: ~R$ 3.000
+          preco: ~R$ 4.591
           obs: Base single-coil parecida para explorar o delay.
           urlAfiliado: https://meli.la/2Zao8tQ
       - tipo: Pedais
         original:
           nome: Binson Echorec (delay vintage)
-          preco: ~R$ 20.000
+          preco: ~R$ 1.797
+          similar: "Catalinbread Echorec (pedal)"
+          urlAfiliado: https://meli.la/27Mf2Tw
         low:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500
@@ -59,11 +63,11 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender Precision Bass
-          preco: ~R$ 10.000
-          urlAfiliado: https://meli.la/33TZgz6
+          preco: ~R$ 8.810
+          urlAfiliado: https://meli.la/1SPbQ2o
         low:
           nome: Squier Affinity P-Bass
-          preco: ~R$ 1.900
+          preco: ~R$ 3.353
           obs: Tom clássico de P-Bass para linhas melódicas simples.
           urlAfiliado: https://meli.la/16ALw1L
   - foto: /images/richard-sonar.webp
@@ -83,13 +87,15 @@ integrantes:
       - tipo: Teclado
         original:
           nome: Hammond Organ + EMS Synthi A
-          preco: ~R$ 25.000
+          preco: ~R$ 149.863
+          similar: "Hammond B-3P Mk2 (órgão digital)"
           urlAfiliado: https://meli.la/1tMTanT
         low:
           nome: Yamaha PSR-E373 (teclado arranjador)
-          preco: ~R$ 1.800
+          preco: ~R$ 1.605
           obs: Sons de órgão e pads para recriar a atmosfera.
-          urlAfiliado: https://meli.la/1xHobX8
+          similar: "Yamaha PSR-E383"
+          urlAfiliado: https://meli.la/1cXS2By
   - foto: /images/nick-mason-pink-floyd.webp
     fotoAlt: nick mason pink floyd
     pontos:
@@ -108,13 +114,14 @@ integrantes:
       - tipo: Bateria
         original:
           nome: Ludwig Vistalite (kit translúcido icônico)
-          preco: ~R$ 25.000
+          preco: ~R$ 9.580
+          similar: "Bateria acrílica CS Drums"
           urlAfiliado: https://meli.la/1tbZthn
         low:
           nome: Pearl Export EXX
-          preco: ~R$ 6.500
-          urlAfiliado: https://meli.la/2NPjfp2
+          preco: ~R$ 7.368
           obs: Kit versátil pra explorar a levada minimalista.
+          urlAfiliado: https://meli.la/1iX6FXT
 albuns:
   - ano: 1973
     videoYoutubeId: _ZzB8IpcPp0

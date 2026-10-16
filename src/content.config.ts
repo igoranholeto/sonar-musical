@@ -41,6 +41,9 @@ const equipamentoItem = z.object({
   nome: z.string(),
   preco: z.string().optional(),
   urlAfiliado: z.string().optional(),
+  // Quando o modelo original não é vendido novo no Brasil, o link aponta para um
+  // similar à venda aqui; este campo guarda o nome dele e a página mostra a etiqueta.
+  similar: z.string().optional(),
 });
 
 const bandas = defineCollection({
