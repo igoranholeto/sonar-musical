@@ -1,10 +1,11 @@
 ---
+import { isPublished } from '../utils/posts';
 import { getCollection } from 'astro:content';
 import { TABLATURAS } from '../data/tablaturas';
 
 // Os números REAIS ficam no HTML (SEO + no-JS). O count-up de 0→valor é só
 // enriquecimento: sem JS, ou com prefers-reduced-motion, mostra o valor final.
-const posts = await getCollection('blog');
+const posts = await getCollection('blog', isPublished);
 const bandas = await getCollection('bandas');
 const categorias = new Set(posts.map((p) => p.data.category)).size;
 

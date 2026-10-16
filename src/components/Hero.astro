@@ -1,4 +1,5 @@
 ---
+import { isPublished } from '../utils/posts';
 import { getCollection } from 'astro:content';
 
 interface Props {
@@ -6,7 +7,7 @@ interface Props {
 }
 const { postsCount } = Astro.props;
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', isPublished);
 const categoriesCount = new Set(allPosts.map((p) => p.data.category)).size;
 
 const bars = Array.from({ length: 28 }, (_, i) => {

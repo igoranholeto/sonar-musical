@@ -1,4 +1,5 @@
 ---
+import { isPublished } from '../utils/posts';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Hero from '../components/Hero.astro';
@@ -10,7 +11,7 @@ import EquipmentFinder from '../components/EquipmentFinder.astro';
 import ComparadorRapido from '../components/ComparadorRapido.astro';
 import Newsletter from '../components/Newsletter.astro';
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', isPublished);
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 const featuredPosts = posts.filter((p) => p.data.featured).slice(0, 3);
 const latestPosts = posts.slice(0, 6);

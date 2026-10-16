@@ -1,11 +1,12 @@
 ---
+import { isPublished } from '../../utils/posts';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
 import { normalizeSearch } from '../../utils/slug';
 import { breadcrumb, collectionPage } from '../../utils/schema';
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', isPublished);
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const schema = [
