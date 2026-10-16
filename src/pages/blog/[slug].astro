@@ -1,4 +1,5 @@
 ---
+import { isPublished } from '../../utils/posts';
 import { getCollection, render } from 'astro:content';
 import PostLayout from '../../layouts/PostLayout.astro';
 import PostCard from '../../components/PostCard.astro';
@@ -7,7 +8,7 @@ import { getAuthorByName } from '../../data/authors';
 import { productId } from '../../utils/schema';
 
 export async function getStaticPaths() {
-  const posts = await getCollection('blog');
+  const posts = await getCollection('blog', isPublished);
   return posts.map((post) => ({
     params: { slug: post.id },
     props: { post },
@@ -30,7 +31,7 @@ Astro.locals.post = {
 };
 
 // Posts recomendados: score por tags em comum + recência, sem restrição de categoria
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', isPublished);
 const postTags = new Set(post.data.tags ?? []);
 
 const related = allPosts

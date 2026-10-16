@@ -1,8 +1,9 @@
 ---
+import { isPublished } from '../utils/posts';
 import { getCollection } from 'astro:content';
 import { slugifyCategory } from '../utils/slug';
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', isPublished);
 const countByCategory = new Map<string, number>();
 for (const post of allPosts) {
   countByCategory.set(post.data.category, (countByCategory.get(post.data.category) ?? 0) + 1);

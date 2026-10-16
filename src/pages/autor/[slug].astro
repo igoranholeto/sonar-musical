@@ -1,4 +1,5 @@
 ---
+import { isPublished } from '../../utils/posts';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import PostCard from '../../components/PostCard.astro';
@@ -14,7 +15,7 @@ export async function getStaticPaths() {
 
 const { author } = Astro.props;
 
-const allPosts = await getCollection('blog');
+const allPosts = await getCollection('blog', isPublished);
 const posts = allPosts
   .filter((p) => p.data.author === author.name)
   .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
