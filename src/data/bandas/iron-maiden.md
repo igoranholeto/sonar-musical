@@ -30,17 +30,19 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender Steve Harris Precision Bass
-          preco: ~R$ 12.000
-          urlAfiliado: https://meli.la/1sEcgZ2
+          preco: ~R$ 8.810
+          similar: "Fender Player II Precision Bass"
+          urlAfiliado: https://meli.la/1SPbQ2o
         low:
           nome: Squier Affinity P-Bass
-          preco: ~R$ 1.900
+          preco: ~R$ 3.353
           obs: Palhetada galopante clássica por menos.
           urlAfiliado: https://meli.la/16ALw1L
       - tipo: Amplificação
         original:
           nome: Marshall JMP (cabeçote)
-          preco: ~R$ 9.000
+          preco: ~R$ 7.995
+          similar: "Marshall Origin 20H"
           urlAfiliado: https://meli.la/2zarDmT
         low:
           nome: Hartke HD75 Combo
@@ -72,17 +74,19 @@ integrantes:
           urlAfiliado: https://meli.la/2xbTDKZ
         low:
           nome: Behringer XM8500
-          preco: ~R$ 180
+          preco: ~R$ 475
           obs: Dinâmico cardioide pra vocal potente.
-          urlAfiliado: https://meli.la/1tbeAkQ
+          similar: "Behringer XM1800S (kit com 3)"
+          urlAfiliado: https://meli.la/2iP1ua5
       - tipo: Monitoração
         original:
           nome: In-ear Shure PSM 900
-          preco: ~R$ 6.000
-          urlAfiliado: https://meli.la/1pAkMk1
+          preco: ~R$ 7.324
+          similar: "Shure PSM 300"
+          urlAfiliado: https://meli.la/2GC7ZMh
         low:
           nome: Behringer Powerplay In-ear
-          preco: ~R$ 900
+          preco: ~R$ 846
           obs: Retorno limpo no palco.
           urlAfiliado: https://meli.la/1MKws86
   - foto: /images/dave-murray-sunburst-sonar.webp
@@ -105,8 +109,9 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Dave Murray Stratocaster (HSS)
-          preco: ~R$ 15.000
-          urlAfiliado: https://meli.la/2Xg1eEv
+          preco: ~R$ 9.899
+          similar: "Fender Player II Stratocaster HSS"
+          urlAfiliado: https://meli.la/1vTFCYH
         low:
           nome: Squier Bullet Strat HSS
           preco: ~R$ 1.600
@@ -115,11 +120,12 @@ integrantes:
       - tipo: Amplificação
         original:
           nome: Marshall JCM800
-          preco: ~R$ 12.000
-          urlAfiliado: https://meli.la/2KrRFjV
+          preco: ~R$ 8.090
+          similar: "Marshall Studio Classic SC20H (JCM800 de 20 W)"
+          urlAfiliado: https://meli.la/1HKdZ8N
         low:
           nome: Boss Katana 100 MkII
-          preco: ~R$ 2.400
+          preco: ~R$ 5.490
           obs: Ganho British apertado.
           urlAfiliado: https://meli.la/1rW4Xdf
   - foto: /images/adrian-smith-iron-maiden-sonar.webp
@@ -141,21 +147,23 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Jackson Adrian Smith SDX
-          preco: ~R$ 8.000
-          urlAfiliado: https://meli.la/1kpuMbd
+          preco: ~R$ 5.227
+          urlAfiliado: https://meli.la/2cnoxwM
         low:
           nome: Harley Benton Fusion-II HH
-          preco: ~R$ 2.500
+          preco: ~R$ 2.220
           obs: Humbucker quente na ponte.
-          urlAfiliado: https://meli.la/1ketVDQ
+          similar: "Jackson JS22 Dinky"
+          urlAfiliado: https://meli.la/2HQ7JPQ
       - tipo: Amplificação
         original:
           nome: Marshall JCM800
-          preco: ~R$ 13.000
-          urlAfiliado: https://meli.la/2KrRFjV
+          preco: ~R$ 8.090
+          similar: "Marshall Studio Classic SC20H (JCM800 de 20 W)"
+          urlAfiliado: https://meli.la/1HKdZ8N
         low:
           nome: Boss Katana 100 MkII
-          preco: ~R$ 2.400
+          preco: ~R$ 5.490
           obs: Crunch clássico.
           urlAfiliado: https://meli.la/1rW4Xdf
   - foto: /images/janick-gers-iron-maiden-sonar.webp
@@ -177,20 +185,23 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Janick Gers Stratocaster
-          preco: ~R$ 9.000
-          urlAfiliado: https://meli.la/1p3nLLp
+          preco: ~R$ 8.365
+          similar: "Fender Player II Stratocaster"
+          urlAfiliado: https://meli.la/1qKuTTu
         low:
           nome: Squier Classic Vibe 60s Strat
-          preco: ~R$ 3.100
+          preco: ~R$ 4.591
           obs: Single-coils cortantes.
+          urlAfiliado: https://meli.la/2Zao8tQ
       - tipo: Amplificação
         original:
           nome: Marshall JMP
-          preco: ~R$ 12.000
+          preco: ~R$ 7.995
+          similar: "Marshall Origin 20H"
           urlAfiliado: https://meli.la/2zarDmT
         low:
           nome: Boss Katana 50
-          preco: ~R$ 1.700
+          preco: ~R$ 4.127
           obs: Overdrive dinâmico.
           urlAfiliado: https://meli.la/2E6pEqu
   - foto: /images/nicko-mcbrain-sonar.webp
@@ -214,22 +225,24 @@ integrantes:
       - tipo: Bateria
         original:
           nome: Premier (kit signature)
-          preco: ~R$ 30.000
+          preco: ~R$ 21.998
+          similar: "Tama Starclassic Walnut/Birch"
+          urlAfiliado: https://meli.la/2VQgGdY
         low:
           nome: Pearl Export EXX
-          preco: ~R$ 6.500
+          preco: ~R$ 7.368
           obs: Kit versátil de palco.
-          urlAfiliado: https://meli.la/2NPjfp2
+          urlAfiliado: https://meli.la/1iX6FXT
       - tipo: Pratos
         original:
           nome: Paiste Signature
-          preco: ~R$ 12.000
-          urlAfiliado: https://meli.la/1n4tkQ8
+          preco: ~R$ 5.450
+          urlAfiliado: https://meli.la/17icn9E
         low:
           nome: Paiste PST7
-          preco: ~R$ 3.500
+          preco: ~R$ 5.590
           obs: Brilho e projeção.
-          urlAfiliado: https://meli.la/2AST1yX
+          urlAfiliado: https://meli.la/1M7hAz2
 albuns:
   - nome: The Number of the Beast
     ano: 1982

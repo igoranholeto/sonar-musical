@@ -31,7 +31,7 @@ integrantes:
           urlAfiliado: https://meli.la/1TPmWGF
         low:
           nome: Squier Classic Vibe 60s Stratocaster
-          preco: ~R$ 3.000
+          preco: ~R$ 4.591
           obs: Timbre single-coil vintage por uma fração do preço.
           urlAfiliado: https://meli.la/2Zao8tQ
       - tipo: Microfone
@@ -41,7 +41,7 @@ integrantes:
           urlAfiliado: https://meli.la/2kvn2eF
         low:
           nome: Shure SM58
-          preco: ~R$ 800
+          preco: ~R$ 1.153
           obs: Captação vocal clássica e confiável no palco.
           urlAfiliado: https://meli.la/2QjvtJz
   - nome: The Hooligans
@@ -63,8 +63,8 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Music Man StingRay
-          preco: ~R$ 12.000
-          urlAfiliado: https://meli.la/2w5DTEK
+          preco: ~R$ 42.000
+          urlAfiliado: https://meli.la/1czahvU
         low:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500

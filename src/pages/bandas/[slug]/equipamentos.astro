@@ -207,9 +207,16 @@ const breadcrumbSchema = {
                         <div class="p-4" style="border-left:3px solid #e63946;background:linear-gradient(90deg,rgba(230,57,70,.09),transparent 62%)">
                           <div class="flex items-center gap-2.5">
                             <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-white bg-brand px-2.5 py-0.5 rounded">Original</span>
-                            {g.original.preco && <span class="text-[12.5px] text-[#b0b0b0] font-semibold">{g.original.preco}</span>}
+                            {g.original.preco && !g.original.similar && <span class="text-[12.5px] text-[#b0b0b0] font-semibold">{g.original.preco}</span>}
                           </div>
                           <div class="text-base font-bold mt-2.5">{g.original.nome}</div>
+                          {g.original.similar && (
+                            <div class="mt-2 text-[12px] text-[#b0b0b0] leading-snug">
+                              <span class="inline-flex text-[10px] font-extrabold uppercase tracking-wider text-[#f4c95d] border border-[#f4c95d]/40 bg-[#f4c95d]/10 px-2 py-0.5 rounded mr-1.5 align-middle">Não vendido no Brasil</span>
+                              Similar à venda aqui: <strong class="text-[#e0e0e0] font-semibold">{g.original.similar}</strong>
+                              {g.original.preco && <span class="whitespace-nowrap"> · {g.original.preco}</span>}
+                            </div>
+                          )}
                           {g.original.urlAfiliado ? (
                             <a
                               href={g.original.urlAfiliado}
@@ -217,23 +224,26 @@ const breadcrumbSchema = {
                               rel="noopener noreferrer sponsored nofollow"
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
                             >
-                              Conferir preços →
+                              {g.original.similar ? 'Ver o similar →' : 'Conferir preços →'}
                             </a>
-                          ) : (
-                            <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-white/50 bg-white/5 rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
-                              Conferir preços →
-                            </span>
-                          )}
+                          ) : null}
                         </div>
                       )}
                       {g.low && (
                         <div class="p-4 bg-[#0d0d0d]" style="border-left:3px solid #333">
                           <div class="flex items-center gap-2.5">
                             <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-[#d0d0d0] bg-[#2a2a2a] px-2.5 py-0.5 rounded">Low cost</span>
-                            {g.low.preco && <span class="text-[12.5px] font-bold" style="color:oklch(0.78 0.13 155)">{g.low.preco}</span>}
+                            {g.low.preco && !g.low.similar && <span class="text-[12.5px] font-bold" style="color:oklch(0.78 0.13 155)">{g.low.preco}</span>}
                           </div>
                           <div class="text-[15.5px] font-bold mt-2.5">{g.low.nome}</div>
                           {g.low.obs && <div class="text-[12.5px] text-[#888] mt-1">{g.low.obs}</div>}
+                          {g.low.similar && (
+                            <div class="mt-2 text-[12px] text-[#999] leading-snug">
+                              <span class="inline-flex text-[10px] font-extrabold uppercase tracking-wider text-[#f4c95d] border border-[#f4c95d]/40 bg-[#f4c95d]/10 px-2 py-0.5 rounded mr-1.5 align-middle">Não vendido no Brasil</span>
+                              Similar à venda aqui: <strong class="text-[#d0d0d0] font-semibold">{g.low.similar}</strong>
+                              {g.low.preco && <span class="whitespace-nowrap"> · {g.low.preco}</span>}
+                            </div>
+                          )}
                           {g.low.urlAfiliado ? (
                             <a
                               href={g.low.urlAfiliado}
@@ -241,13 +251,9 @@ const breadcrumbSchema = {
                               rel="noopener noreferrer sponsored nofollow"
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
                             >
-                              Conferir preços →
+                              {g.low.similar ? 'Ver o similar →' : 'Conferir preços →'}
                             </a>
-                          ) : (
-                            <span class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#666] border border-[#2a2a2a] rounded-lg px-4 py-2.5" title="Link de afiliado em breve">
-                              Conferir preços →
-                            </span>
-                          )}
+                          ) : null}
                         </div>
                       )}
                     </div>

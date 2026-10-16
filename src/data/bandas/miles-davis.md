@@ -28,7 +28,9 @@ integrantes:
       - tipo: Trompete
         original:
           nome: Martin Committee (trompete vintage)
-          preco: ~R$ 15.000
+          preco: ~R$ 11.699
+          similar: "Yamaha YTR-4335 G2"
+          urlAfiliado: https://meli.la/1gYG17i
         low:
           nome: Yamaha YTR-2330
           preco: ~R$ 3.500
@@ -37,11 +39,12 @@ integrantes:
       - tipo: Surdina
         original:
           nome: Harmon Mute (sem haste)
-          preco: ~R$ 800
-          urlAfiliado: https://meli.la/26CNb9r
+          preco: ~R$ 479
+          similar: "Torelli TA138 (Harmon de cobre)"
+          urlAfiliado: https://meli.la/2aNNFzN
         low:
           nome: Harmon Mute genérica
-          preco: ~R$ 250
+          preco: ~R$ 203
           obs: Mesmo efeito abafado e nasal.
           urlAfiliado: https://meli.la/24vBVw7
   - foto: /images/john-coltrane-sonar.webp
@@ -62,13 +65,14 @@ integrantes:
       - tipo: Saxofone tenor
         original:
           nome: Selmer Mark VI
-          preco: ~R$ 30.000
-          urlAfiliado: https://www.mercadolivre.com.br/saxofone-selmer-mark-vl/up/MLBU3872694577
+          preco: ~R$ 26.982
+          similar: "Yamaha YTS-62"
+          urlAfiliado: https://meli.la/1qpR2Xe
         low:
           nome: Yamaha YTS-280
-          preco: ~R$ 6.000
+          preco: ~R$ 16.954
           obs: Sax estudante com boa afinação e resposta.
-          urlAfiliado: https://meli.la/1eiaPcy
+          urlAfiliado: https://meli.la/2gtXpcN
   - foto: /images/bill-evans-sonar.webp
     fotoAlt: bill evans integrante
     pontos:
@@ -86,7 +90,9 @@ integrantes:
       - tipo: Piano
         original:
           nome: Steinway & Sons Grand Piano
-          preco: ~R$ 150.000
+          preco: ~R$ 95.000
+          similar: "Kayserburg GH160C (piano de cauda)"
+          urlAfiliado: https://meli.la/2xiikQp
         low:
           nome: Yamaha P-125 (piano digital)
           preco: ~R$ 4.000
@@ -112,8 +118,8 @@ integrantes:
           nome: Contrabaixo acústico artesanal (luthier)
           preco: ~R$ 20.000
         low:
-          nome: Baixo acústico Michael ABX
-          preco: ~R$ 5.000
+          nome: Contrabaixo acústico Michael VBM30
+          preco: ~R$ 6.428
           obs: Entrada acessível para walking bass em estúdio.
           urlAfiliado: https://meli.la/1oJcg6X
 albuns:

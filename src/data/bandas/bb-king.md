@@ -26,8 +26,9 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Gibson ES-355 "Lucille" (Signature)
-          preco: ~R$ 25.000
-          urlAfiliado: https://www.ludimusic.com/br/guitarras-hollowbody/gibson-1959-es355-reissue-vos-ebony
+          preco: ~R$ 41.989
+          similar: "Gibson ES-335 Figured"
+          urlAfiliado: https://meli.la/1zLSWp8
         low:
           nome: Epiphone ES-335
           preco: ~R$ 6.000
@@ -36,13 +37,14 @@ integrantes:
       - tipo: Amplificação
         original:
           nome: Fender Twin Reverb
-          preco: ~R$ 15.000
-          urlAfiliado: https://meli.la/155eUws
+          preco: ~R$ 26.900
+          urlAfiliado: https://meli.la/29P4vMf
         low:
           nome: Fender Champion 40
-          preco: ~R$ 2.500
+          preco: ~R$ 2.970
           obs: Limpo brilhante clássico Fender por menos.
-          urlAfiliado: https://meli.la/1cv8RQv
+          similar: "Fender Champion II 50"
+          urlAfiliado: https://meli.la/2FkXf9i
   - nome: Sonny Freeman
     funcao: Bateria
     foto: /images/sonny-freeman-bbking-sonar.webp
