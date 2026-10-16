@@ -33,6 +33,17 @@ const MAP = {
   'amplificador-para-violao':       { kicker: 'AMPLIFICADORES · 2026', l1: 'AMP PARA', l2: 'VIOLÃO', q: 'acoustic guitar on stage microphone', prefer: /acoustic/i, avoid: /bass|logo|violin/i },
   'guitarra-canhota':               { kicker: 'GUITARRAS · GUIA', l1: 'GUITARRA', l2: 'CANHOTA', q: 'left-handed electric guitar', prefer: /left/i, avoid: /bass|logo/i },
   'como-tocar-come-as-you-are-nirvana': { kicker: 'TUTORIAL · RIFF', l1: 'COME AS', l2: 'YOU ARE', q: 'Fender Jaguar guitar', prefer: /jaguar|mustang|jag-stang/i, avoid: /car|automobile|bass|logo/i },
+  // Lote 2026-10-16
+  'melhor-guitarra-ate-1000-reais': { kicker: 'GUIAS DE COMPRA · 2026', l1: 'GUITARRA', l2: 'ATÉ R$ 1.000', q: 'stratocaster style electric guitar', prefer: /guitar|strat/i, avoid: /bass|logo|amp/i },
+  'melhor-guitarra-ate-2000-reais': { kicker: 'GUIAS DE COMPRA · 2026', l1: 'GUITARRA', l2: 'ATÉ R$ 2.000', q: 'electric guitar on stage sunburst', prefer: /guitar/i, avoid: /bass|logo|amp/i },
+  'melhor-pedaleira-custo-beneficio': { kicker: 'PEDAIS · 2026', l1: 'PEDALEIRA', l2: 'CUSTO-BENEFÍCIO', q: 'guitar multi-effects processor', prefer: /multi|effect|processor|pedal/i, avoid: /logo/i },
+  'pedais-de-guitarra-baratos':     { kicker: 'PEDAIS · GUIA', l1: 'PEDAIS', l2: 'BARATOS', q: 'effects pedals guitar floor', prefer: /pedal|stomp/i, avoid: /logo|car|bicycle|piano|organ/i },
+  'melhor-violao-para-iniciante':   { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO PARA', l2: 'INICIANTE', q: 'acoustic guitar steel string', prefer: /acoustic/i, avoid: /bass|logo|electric/i },
+  'violao-nylon-ou-aco':            { kicker: 'VIOLÕES · GUIA', l1: 'NYLON', l2: 'OU AÇO?', q: 'classical guitar nylon strings', prefer: /classical|nylon|spanish/i, avoid: /bass|logo|electric/i },
+  'guitarra-condor-e-boa':          { kicker: 'GUITARRAS · MARCAS', l1: 'CONDOR', l2: 'É BOA?', q: 'red stratocaster electric guitar', prefer: /guitar|strat/i, avoid: /bass|logo|amp/i },
+  'guitarra-waldman-e-boa':         { kicker: 'GUITARRAS · MARCAS', l1: 'WALDMAN', l2: 'É BOA?', q: 'electric guitar locking tremolo black', prefer: /guitar/i, avoid: /bass|logo|amp|diagram|hint|svg|png|farsi|persian/i },
+  'melhor-baixo-para-iniciante':    { kicker: 'BAIXO · 2026', l1: 'BAIXO PARA', l2: 'INICIANTE', q: 'Fender Precision Bass guitar', prefer: /precision|bass/i, avoid: /logo|fish|amp|player|concert|stage/i },
+  'melhor-pedal-de-delay':          { kicker: 'PEDAIS · 2026', l1: 'PEDAL DE', l2: 'DELAY', q: 'delay pedal guitar effect', prefer: /delay|echo/i, avoid: /logo/i },
   'como-tocar-guitarra-com-fone':   { kicker: 'TUTORIAL · EM CASA', l1: 'GUITARRA', l2: 'COM FONE', q: 'headphones electric guitar', prefer: /headphone/i, avoid: /bass|logo|dj/i },
 };
 
