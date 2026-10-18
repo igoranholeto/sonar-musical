@@ -45,6 +45,17 @@ const MAP = {
   'melhor-baixo-para-iniciante':    { kicker: 'BAIXO · 2026', l1: 'BAIXO PARA', l2: 'INICIANTE', q: 'Fender Precision Bass guitar', prefer: /precision|bass/i, avoid: /logo|fish|amp|player|concert|stage/i },
   'melhor-pedal-de-delay':          { kicker: 'PEDAIS · 2026', l1: 'PEDAL DE', l2: 'DELAY', q: 'delay pedal guitar effect', prefer: /delay|echo/i, avoid: /logo/i },
   'como-tocar-guitarra-com-fone':   { kicker: 'TUTORIAL · EM CASA', l1: 'GUITARRA', l2: 'COM FONE', q: 'headphones electric guitar', prefer: /headphone/i, avoid: /bass|logo|dj/i },
+  // Lote 2026-10-17
+  'jazz-bass-vs-precision-bass':    { kicker: 'BAIXO · COMPARATIVO', l1: 'JAZZ BASS', l2: 'vs PRECISION', q: 'Fender Jazz Bass guitar', prefer: /jazz.?bass/i, avoid: /logo|player|concert|stage|amp|live/i },
+  'baixo-ativo-ou-passivo':         { kicker: 'BAIXO · GUIA', l1: 'BAIXO ATIVO', l2: 'OU PASSIVO?', q: 'five string bass guitar', prefer: /bass/i, avoid: /logo|player|concert|stage|live|fish/i },
+  'baixo-4-ou-5-cordas':            { kicker: 'BAIXO · GUIA', l1: 'BAIXO 4 OU', l2: '5 CORDAS?', q: 'five string bass', prefer: /Five Strings Bass Guitar Head/i },
+  'melhor-amplificador-para-baixo': { kicker: 'AMPLIFICADORES · 2026', l1: 'AMP PARA', l2: 'BAIXO', q: 'bass amplifier combo', prefer: /bass/i, avoid: /logo|fish|car|stereo|hifi/i },
+  'cordas-de-baixo':                { kicker: 'BAIXO · ACESSÓRIOS', l1: 'CORDAS DE', l2: 'BAIXO', q: 'bass guitar strings', prefer: /Neck of Five Strings Bass Guitar/i },
+  'melhor-pedal-de-reverb':         { kicker: 'PEDAIS · 2026', l1: 'PEDAL DE', l2: 'REVERB', q: 'reverb pedal guitar effect', prefer: /reverb/i, avoid: /logo/i },
+  'melhor-pedal-compressor':        { kicker: 'PEDAIS · 2026', l1: 'PEDAL', l2: 'COMPRESSOR', q: 'compressor pedal', prefer: /Boss CS-3 Compression/i },
+  'melhor-pedal-looper':            { kicker: 'PEDAIS · 2026', l1: 'PEDAL', l2: 'LOOPER', q: 'loop station pedal guitar', prefer: /loop/i, avoid: /logo/i },
+  'fonte-para-pedal':               { kicker: 'PEDAIS · ACESSÓRIOS', l1: 'FONTE PARA', l2: 'PEDAL', q: 'guitar pedalboard effects', prefer: /pedalboard|pedal board|pedals/i, avoid: /logo|bicycle|car|piano|organ/i },
+  'melhor-pedal-de-chorus':         { kicker: 'PEDAIS · 2026', l1: 'PEDAL DE', l2: 'CHORUS', q: 'Electro-Harmonix SmallClone chorus', prefer: /SmallClone/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
