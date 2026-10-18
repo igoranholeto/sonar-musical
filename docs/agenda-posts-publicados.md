@@ -6,3 +6,15 @@ URLs de cada lote, para enviar ao Google Search Console ("Inspeção de URL" > "
 ## 17/10/2026
 - https://sonarmusical.com.br/blog/slug/
 -->
+
+## 17/10/2026
+- https://sonarmusical.com.br/blog/jazz-bass-vs-precision-bass/
+- https://sonarmusical.com.br/blog/baixo-ativo-ou-passivo/
+- https://sonarmusical.com.br/blog/baixo-4-ou-5-cordas/
+- https://sonarmusical.com.br/blog/melhor-amplificador-para-baixo/
+- https://sonarmusical.com.br/blog/cordas-de-baixo/
+- https://sonarmusical.com.br/blog/melhor-pedal-de-reverb/
+- https://sonarmusical.com.br/blog/melhor-pedal-compressor/
+- https://sonarmusical.com.br/blog/melhor-pedal-looper/
+- https://sonarmusical.com.br/blog/fonte-para-pedal/
+- https://sonarmusical.com.br/blog/melhor-pedal-de-chorus/
