@@ -56,6 +56,17 @@ const MAP = {
   'melhor-pedal-looper':            { kicker: 'PEDAIS · 2026', l1: 'PEDAL', l2: 'LOOPER', q: 'loop station pedal guitar', prefer: /loop/i, avoid: /logo/i },
   'fonte-para-pedal':               { kicker: 'PEDAIS · ACESSÓRIOS', l1: 'FONTE PARA', l2: 'PEDAL', q: 'guitar pedalboard effects', prefer: /pedalboard|pedal board|pedals/i, avoid: /logo|bicycle|car|piano|organ/i },
   'melhor-pedal-de-chorus':         { kicker: 'PEDAIS · 2026', l1: 'PEDAL DE', l2: 'CHORUS', q: 'Electro-Harmonix SmallClone chorus', prefer: /SmallClone/i },
+  // Lote 2026-10-22
+  'escala-maior-guitarra':          { kicker: 'TÉCNICA E TEORIA', l1: 'ESCALA', l2: 'MAIOR', q: 'guitar fretboard', prefer: /Neck and Fretboard of an Old Guitar/i },
+  'campo-harmonico-guitarra':       { kicker: 'TÉCNICA E TEORIA', l1: 'CAMPO', l2: 'HARMÔNICO', q: 'barre chord guitar', prefer: /barre/i },
+  'modos-gregos-guitarra':          { kicker: 'TÉCNICA E TEORIA', l1: 'MODOS', l2: 'GREGOS', q: 'guitarist guitar solo concert', prefer: /guitar/i, avoid: /bass|logo|violin/i },
+  'arpejos-na-guitarra':            { kicker: 'TÉCNICA E TEORIA', l1: 'ARPEJOS NA', l2: 'GUITARRA', q: 'guitar fretboard', prefer: /File:Guitar fretboard closeup/i },
+  'palm-mute-guitarra':             { kicker: 'TÉCNICA · MÃO DIREITA', l1: 'PALM', l2: 'MUTE', q: 'James Hetfield Metallica guitar', prefer: /Hetfield with Metallica -- 7 October 2004/i },
+  'tapping-guitarra':               { kicker: 'TÉCNICA E TEORIA', l1: 'TAPPING NA', l2: 'GUITARRA', q: 'guitar tapping', prefer: /tapping|tap/i, avoid: /bass|logo|beer|water|stick/i },
+  'vibrato-na-guitarra':            { kicker: 'TÉCNICA E TEORIA', l1: 'VIBRATO NA', l2: 'GUITARRA', q: 'man playing guitar sitting', prefer: /Alvin Madison/i },
+  'slide-na-guitarra':              { kicker: 'TÉCNICA · 2026', l1: 'SLIDE NA', l2: 'GUITARRA', q: 'slide guitar bottleneck', prefer: /slide|bottleneck/i, avoid: /logo|lap steel|dobro|playground|water/i },
+  'acordes-com-setima':             { kicker: 'TÉCNICA E TEORIA', l1: 'ACORDES COM', l2: 'SÉTIMA', q: 'acoustic guitar chord hand', prefer: /chord|hand/i, avoid: /bass|logo|violin|ukulele|diagram|chart/i },
+  'quanto-tempo-praticar-guitarra-por-dia': { kicker: 'DICAS PARA INICIANTES', l1: 'QUANTO', l2: 'PRATICAR?', q: 'man playing guitar sitting', prefer: /Man-person-sitting-playing/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
