@@ -18,3 +18,15 @@ URLs de cada lote, para enviar ao Google Search Console ("Inspeção de URL" > "
 - https://sonarmusical.com.br/blog/melhor-pedal-looper/
 - https://sonarmusical.com.br/blog/fonte-para-pedal/
 - https://sonarmusical.com.br/blog/melhor-pedal-de-chorus/
+
+## 22/10/2026
+- https://sonarmusical.com.br/blog/escala-maior-guitarra/
+- https://sonarmusical.com.br/blog/campo-harmonico-guitarra/
+- https://sonarmusical.com.br/blog/modos-gregos-guitarra/
+- https://sonarmusical.com.br/blog/arpejos-na-guitarra/
+- https://sonarmusical.com.br/blog/palm-mute-guitarra/
+- https://sonarmusical.com.br/blog/tapping-guitarra/
+- https://sonarmusical.com.br/blog/vibrato-na-guitarra/
+- https://sonarmusical.com.br/blog/slide-na-guitarra/
+- https://sonarmusical.com.br/blog/acordes-com-setima/
+- https://sonarmusical.com.br/blog/quanto-tempo-praticar-guitarra-por-dia/
