@@ -1,0 +1,40 @@
+# Toda segunda-feira confere se os links meli.la ainda abrem o produto. Quando algum
+# anúncio saiu do ar (link cai na vitrine genérica), abre ou atualiza uma issue com a lista.
+name: Links do Mercado Livre
+
+on:
+  schedule:
+    - cron: '0 12 * * 1' # segunda, 9h em Brasília
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  checar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Checar links
+        id: check
+        run: |
+          set +e
+          node scripts/check-afiliados.mjs --md relatorio.md
+          echo "quebrados=$?" >> "$GITHUB_OUTPUT"
+          cat relatorio.md >> "$GITHUB_STEP_SUMMARY"
+      - name: Abrir ou atualizar issue
+        if: steps.check.outputs.quebrados != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          titulo="Links do Mercado Livre fora do ar"
+          num=$(gh issue list --state open --search "$titulo in:title" --json number --jq '.[0].number')
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file relatorio.md
+          else
+            gh issue create --title "$titulo" --body-file relatorio.md
+          fi

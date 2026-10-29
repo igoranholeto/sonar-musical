@@ -1,0 +1,15 @@
+{
+  "nome": "Zoom G6",
+  "meli": "https://meli.la/2ERENSS",
+  "preco": 2250,
+  "precoEm": "2026-10-29",
+  "categoria": "pedaleira",
+  "imagem": "/images/produtos/zoom-g6.webp",
+  "imagemAlt": "Pedaleira Zoom G6",
+  "historico": [
+    {
+      "data": "2026-10-29",
+      "preco": 2250
+    }
+  ]
+}

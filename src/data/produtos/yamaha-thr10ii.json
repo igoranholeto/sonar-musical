@@ -1,0 +1,17 @@
+{
+  "nome": "Yamaha THR10II",
+  "meli": "https://meli.la/1NW1q4C",
+  "preco": 2900,
+  "precoEm": "2026-10-05",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-08-03",
+      "preco": 2900
+    },
+    {
+      "data": "2026-10-05",
+      "preco": 2900
+    }
+  ]
+}

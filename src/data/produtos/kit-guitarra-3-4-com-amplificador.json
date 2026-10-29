@@ -1,0 +1,15 @@
+{
+  "nome": "Kit Guitarra 3/4 com Amplificador",
+  "meli": "https://meli.la/2ddHpi9",
+  "preco": 1399,
+  "precoEm": "2026-08-07",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/kit-guitarra-3-4-com-amplificador.webp",
+  "imagemAlt": "Kit Guitarra 3/4 com Amplificador",
+  "historico": [
+    {
+      "data": "2026-08-07",
+      "preco": 1399
+    }
+  ]
+}

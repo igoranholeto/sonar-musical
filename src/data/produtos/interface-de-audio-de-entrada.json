@@ -1,0 +1,15 @@
+{
+  "nome": "Interface de Áudio de Entrada",
+  "meli": "https://meli.la/1A2vT7U",
+  "preco": 221,
+  "precoEm": "2026-08-08",
+  "categoria": "interface",
+  "imagem": "/images/produtos/interface-de-audio-de-entrada.webp",
+  "imagemAlt": "Interface de Áudio de Entrada",
+  "historico": [
+    {
+      "data": "2026-08-08",
+      "preco": 221
+    }
+  ]
+}

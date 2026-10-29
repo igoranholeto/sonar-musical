@@ -1,0 +1,15 @@
+{
+  "nome": "LR Baggs Anthem",
+  "meli": "https://meli.la/1byF14V",
+  "preco": 3485,
+  "precoEm": "2026-08-23",
+  "categoria": "acessorio",
+  "imagem": "/images/produtos/lr-baggs-anthem.webp",
+  "imagemAlt": "LR Baggs Anthem",
+  "historico": [
+    {
+      "data": "2026-08-23",
+      "preco": 3485
+    }
+  ]
+}

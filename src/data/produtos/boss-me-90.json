@@ -1,0 +1,15 @@
+{
+  "nome": "Boss ME-90",
+  "meli": "https://meli.la/2tKSt9M",
+  "preco": 4321,
+  "precoEm": "2026-10-29",
+  "categoria": "pedaleira",
+  "imagem": "/images/produtos/boss-me-90.webp",
+  "imagemAlt": "Pedaleira Boss ME-90",
+  "historico": [
+    {
+      "data": "2026-10-29",
+      "preco": 4321
+    }
+  ]
+}

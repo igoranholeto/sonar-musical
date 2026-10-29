@@ -1,0 +1,19 @@
+{
+  "nome": "Ibanez GIO GRG121DX",
+  "meli": "https://meli.la/1A8fwN1",
+  "preco": 2790,
+  "precoEm": "2026-09-21",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/ibanez-gio-grg121dx.webp",
+  "imagemAlt": "Ibanez GIO GRG121DX",
+  "historico": [
+    {
+      "data": "2026-08-18",
+      "preco": 2790
+    },
+    {
+      "data": "2026-09-21",
+      "preco": 2790
+    }
+  ]
+}

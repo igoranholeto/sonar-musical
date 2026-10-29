@@ -206,7 +206,7 @@ const breadcrumbSchema = {
                       {g.original && (
                         <div class="p-4" style="border-left:3px solid #e63946;background:linear-gradient(90deg,rgba(230,57,70,.09),transparent 62%)">
                           <div class="flex items-center gap-2.5">
-                            <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-white bg-brand px-2.5 py-0.5 rounded">Original</span>
+                            <span class="text-[10.5px] font-extrabold uppercase tracking-wider text-white bg-brand-fill px-2.5 py-0.5 rounded">Original</span>
                             {g.original.preco && !g.original.similar && <span class="text-[12.5px] text-[#b0b0b0] font-semibold">{g.original.preco}</span>}
                           </div>
                           <div class="text-base font-bold mt-2.5">{g.original.nome}</div>
@@ -222,7 +222,9 @@ const breadcrumbSchema = {
                               href={g.original.urlAfiliado}
                               target="_blank"
                               rel="noopener noreferrer sponsored nofollow"
-                              class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
+                              data-produto={g.original.similar ?? g.original.nome}
+                              data-bloco="equipamento-banda"
+                              class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand-fill rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
                             >
                               {g.original.similar ? 'Ver o similar →' : 'Conferir preços →'}
                             </a>
@@ -249,6 +251,8 @@ const breadcrumbSchema = {
                               href={g.low.urlAfiliado}
                               target="_blank"
                               rel="noopener noreferrer sponsored nofollow"
+                              data-produto={g.low.similar ?? g.low.nome}
+                              data-bloco="equipamento-banda-low"
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
                             >
                               {g.low.similar ? 'Ver o similar →' : 'Conferir preços →'}

@@ -1,0 +1,19 @@
+{
+  "nome": "Ibanez GRGM21 miKro",
+  "meli": "https://meli.la/2TNNKk7",
+  "preco": 1599,
+  "precoEm": "2026-08-07",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/ibanez-grgm21-mikro.webp",
+  "imagemAlt": "Ibanez GRGM21 miKro",
+  "historico": [
+    {
+      "data": "2026-08-04",
+      "preco": 1400
+    },
+    {
+      "data": "2026-08-07",
+      "preco": 1599
+    }
+  ]
+}

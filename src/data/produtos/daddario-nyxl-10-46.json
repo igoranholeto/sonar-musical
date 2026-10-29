@@ -1,0 +1,19 @@
+{
+  "nome": "D'Addario NYXL 10–46",
+  "meli": "https://meli.la/2a2ckXP",
+  "preco": 104,
+  "precoEm": "2026-08-03",
+  "categoria": "cordas",
+  "imagem": "/images/produtos/daddario-nyxl-10-46.webp",
+  "imagemAlt": "D'Addario NYXL 10–46",
+  "historico": [
+    {
+      "data": "2026-06-25",
+      "preco": 104
+    },
+    {
+      "data": "2026-08-03",
+      "preco": 104
+    }
+  ]
+}

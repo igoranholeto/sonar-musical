@@ -54,6 +54,12 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# Fontes servidas pelo próprio site. O nome do arquivo muda se a fonte mudar.
+[[headers]]
+  for = "/fonts/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
 # Cache moderado para HTML
 [[headers]]
   for = "/*.html"

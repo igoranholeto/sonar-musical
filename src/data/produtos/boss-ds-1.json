@@ -1,0 +1,21 @@
+{
+  "nome": "Boss DS-1",
+  "meli": "https://meli.la/1b1fgdS",
+  "preco": 625,
+  "precoEm": "2026-09-21",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-02-05",
+      "preco": 625
+    },
+    {
+      "data": "2026-07-20",
+      "preco": 625
+    },
+    {
+      "data": "2026-09-21",
+      "preco": 625
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "nome": "Boss Katana 50 Gen 3",
+  "meli": "https://meli.la/2E6pEqu",
+  "preco": 4127,
+  "precoEm": "2026-09-28",
+  "categoria": "amplificador",
+  "imagem": "/images/produtos/boss-katana-50-mkii.webp",
+  "imagemAlt": "Boss Katana 50 Gen 3",
+  "historico": [
+    {
+      "data": "2026-06-20",
+      "preco": 4127
+    },
+    {
+      "data": "2026-07-20",
+      "preco": 4127
+    },
+    {
+      "data": "2026-09-28",
+      "preco": 4127
+    }
+  ]
+}

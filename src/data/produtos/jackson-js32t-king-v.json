@@ -1,0 +1,19 @@
+{
+  "nome": "Jackson JS32T King V",
+  "meli": "https://meli.la/1AwZcwA",
+  "preco": 4126,
+  "precoEm": "2026-10-29",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/jackson-flying-v-metal.webp",
+  "imagemAlt": "Jackson Flying V (metal)",
+  "historico": [
+    {
+      "data": "2026-08-21",
+      "preco": 4126
+    },
+    {
+      "data": "2026-10-29",
+      "preco": 4126
+    }
+  ]
+}

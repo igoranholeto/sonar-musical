@@ -189,7 +189,7 @@ const SCALES = [
   .box:hover { border-color: var(--color-brand); }
   .box:active { transform: scale(0.95); }
   .box--active {
-    background: var(--color-brand); border-color: var(--color-brand); color: #fff;
+    background: var(--color-brand-fill); border-color: var(--color-brand); color: #fff;
     box-shadow: 0 3px 10px rgba(230,57,70,0.3);
   }
   .scale-grid .box { font-size: 0.78rem; font-weight: 600; }
@@ -202,7 +202,7 @@ const SCALES = [
   .play-scale-btn {
     display: inline-flex; align-items: center; gap: 0.4rem;
     padding: 0.5rem 1.1rem; border-radius: 999px; border: none;
-    background: var(--color-brand); color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer;
+    background: var(--color-brand-fill); color: #fff; font-weight: 700; font-size: 0.85rem; cursor: pointer;
     box-shadow: 0 3px 10px rgba(230,57,70,0.28); transition: background 0.15s, transform 0.1s;
   }
   .play-scale-btn:hover { background: var(--color-brand-dark); }
@@ -220,7 +220,7 @@ const SCALES = [
   .scale-notes { margin-top: 1rem; text-align: center; font-size: 1rem; font-weight: 700; letter-spacing: 0.04em; color: var(--color-foreground); min-height: 1.4em; }
   .fb__hint { margin-top: 0.6rem; font-size: 0.82rem; color: var(--color-muted); display: flex; align-items: center; justify-content: center; gap: 0.35rem; }
   .fb__key { display: inline-block; width: 14px; height: 14px; border-radius: 999px; vertical-align: middle; }
-  .fb__key--root { background: var(--color-brand); }
+  .fb__key--root { background: var(--color-brand-fill); }
   .fb__key--note { background: #3a3a42; margin-left: 0.6rem; }
 
   .scale-article { margin-top: 2.5rem; }
@@ -230,7 +230,7 @@ const SCALES = [
   .scale-article strong { color: var(--color-foreground); }
   .scale-list { list-style: none; padding: 0; margin: 0; }
   .scale-list li { line-height: 1.7; color: var(--color-muted); margin-bottom: 0.7rem; padding-left: 1.1rem; position: relative; }
-  .scale-list li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand); }
+  .scale-list li::before { content: ''; position: absolute; left: 0; top: 0.65em; width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand-fill); }
   .scale-list strong { color: var(--color-foreground); }
 </style>
 

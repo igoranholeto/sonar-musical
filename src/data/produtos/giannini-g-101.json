@@ -1,0 +1,17 @@
+{
+  "nome": "Giannini G-101",
+  "meli": "https://meli.la/2LSkG4A",
+  "preco": 760,
+  "precoEm": "2026-10-29",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-10-16",
+      "preco": 947
+    },
+    {
+      "data": "2026-10-29",
+      "preco": 760
+    }
+  ]
+}

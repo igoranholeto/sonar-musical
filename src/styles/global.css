@@ -3,7 +3,11 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --color-brand: #e63946;
+  /* brand = texto e destaques (escurecido para passar 4,5:1 sobre branco);
+     brand-fill = fundo de botão/selo com texto branco (4,9:1). No escuro o texto
+     vermelho clareia (ver .dark), mas o preenchimento continua o mesmo. */
+  --color-brand: #d32f3c;
+  --color-brand-fill: #d32f3c;
   --color-brand-dark: #b5202d;
   --color-surface: #ffffff;
   --color-elevated: #f4f4f5;
@@ -17,6 +21,7 @@
 }
 
 .dark {
+  --color-brand: #ef4b57;
   --color-surface: #0a0a0a;
   --color-elevated: #111111;
   --color-card: #1a1a1a;
@@ -29,6 +34,7 @@
 /* Seções "modo show" (bandas, álbuns, equipamentos), sempre escuras, com identidade
    visual própria, independente do toggle de tema claro/escuro do site. */
 .theme-locked-dark {
+  --color-brand: #ef4b57;
   --color-surface: #0a0a0a;
   --color-elevated: #111111;
   --color-card: #1a1a1a;

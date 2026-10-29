@@ -1,0 +1,23 @@
+{
+  "nome": "Squier Bullet Stratocaster",
+  "meli": "https://meli.la/1FbjijB",
+  "preco": 1400,
+  "precoEm": "2026-08-04",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/squier-bullet-stratocaster.webp",
+  "imagemAlt": "Squier Bullet Stratocaster",
+  "historico": [
+    {
+      "data": "2026-02-18",
+      "preco": 1600
+    },
+    {
+      "data": "2026-08-04",
+      "preco": 1400
+    },
+    {
+      "data": "2026-08-04",
+      "preco": 2364
+    }
+  ]
+}

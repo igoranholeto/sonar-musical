@@ -1,0 +1,17 @@
+{
+  "nome": "Gibson Les Paul Studio",
+  "meli": "https://meli.la/1PAkAN3",
+  "preco": 14000,
+  "precoEm": "2026-09-28",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-08-23",
+      "preco": 10347
+    },
+    {
+      "data": "2026-09-28",
+      "preco": 14000
+    }
+  ]
+}

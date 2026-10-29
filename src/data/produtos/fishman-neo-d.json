@@ -1,0 +1,15 @@
+{
+  "nome": "Fishman Neo-D",
+  "meli": "https://meli.la/2ppQR4n",
+  "preco": 653.81,
+  "precoEm": "2026-08-23",
+  "categoria": "acessorio",
+  "imagem": "/images/produtos/fishman-neo-d.webp",
+  "imagemAlt": "Fishman Neo-D",
+  "historico": [
+    {
+      "data": "2026-08-23",
+      "preco": 653.81
+    }
+  ]
+}

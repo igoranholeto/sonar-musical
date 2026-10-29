@@ -1,0 +1,15 @@
+{
+  "nome": "Line 6 Helix LT",
+  "meli": "https://meli.la/1iqeaKL",
+  "preco": 9272,
+  "precoEm": "2026-10-29",
+  "categoria": "pedaleira",
+  "imagem": "/images/produtos/line-6-helix-lt.webp",
+  "imagemAlt": "Pedaleira Line 6 Helix LT",
+  "historico": [
+    {
+      "data": "2026-10-29",
+      "preco": 9272
+    }
+  ]
+}

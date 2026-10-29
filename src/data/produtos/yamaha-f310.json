@@ -1,0 +1,21 @@
+{
+  "nome": "Yamaha F310",
+  "meli": "https://meli.la/1hZ7Vcm",
+  "preco": 2055,
+  "precoEm": "2026-10-16",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-02-18",
+      "preco": 2055
+    },
+    {
+      "data": "2026-07-06",
+      "preco": 2055
+    },
+    {
+      "data": "2026-10-16",
+      "preco": 2055
+    }
+  ]
+}

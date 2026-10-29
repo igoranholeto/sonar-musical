@@ -1,0 +1,23 @@
+{
+  "nome": "Squier Classic Vibe '60s Stratocaster",
+  "meli": "https://meli.la/2Zao8tQ",
+  "preco": 2800,
+  "precoEm": "2026-08-04",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/squier-classic-vibe-60s-stratocaster.webp",
+  "imagemAlt": "Squier Classic Vibe '60s Stratocaster",
+  "historico": [
+    {
+      "data": "2026-07-06",
+      "preco": 2200
+    },
+    {
+      "data": "2026-07-20",
+      "preco": 4600
+    },
+    {
+      "data": "2026-08-04",
+      "preco": 2800
+    }
+  ]
+}
