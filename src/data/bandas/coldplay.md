@@ -101,8 +101,9 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Music Man StingRay
-          preco: ~R$ 42.000
-          urlAfiliado: https://meli.la/1czahvU
+          preco: ~R$ 7.300
+          similar: "Sterling StingRay Classic"
+          urlAfiliado: https://meli.la/1WHrmwL
         low:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500

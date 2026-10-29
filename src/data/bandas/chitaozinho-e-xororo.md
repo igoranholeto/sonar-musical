@@ -25,8 +25,9 @@ integrantes:
       - tipo: Viola caipira
         original:
           nome: Rozini Viola Caipira Artesanal
-          preco: ~R$ 4.500
-          urlAfiliado: https://meli.la/2y3EqyZ
+          preco: ~R$ 1.850
+          similar: "Rozini RV155 Ativa"
+          urlAfiliado: https://meli.la/1HLNdNu
         low:
           nome: Rozini Viola Caipira Estudante
           preco: ~R$ 1.200
