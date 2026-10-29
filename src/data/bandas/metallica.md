@@ -105,9 +105,9 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender Robert Trujillo Jazz Bass Signature
-          preco: ~R$ 8.350
+          preco: ~R$ 8.299
           similar: "Fender Player II Jazz Bass"
-          urlAfiliado: https://meli.la/2CVuRH2
+          urlAfiliado: https://meli.la/15crRzG
         low:
           nome: Squier Classic Vibe Jazz Bass
           preco: ~R$ 4.731

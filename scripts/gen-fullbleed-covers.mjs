@@ -67,6 +67,17 @@ const MAP = {
   'slide-na-guitarra':              { kicker: 'TÉCNICA · 2026', l1: 'SLIDE NA', l2: 'GUITARRA', q: 'slide guitar bottleneck', prefer: /slide|bottleneck/i, avoid: /logo|lap steel|dobro|playground|water/i },
   'acordes-com-setima':             { kicker: 'TÉCNICA E TEORIA', l1: 'ACORDES COM', l2: 'SÉTIMA', q: 'acoustic guitar chord hand', prefer: /chord|hand/i, avoid: /bass|logo|violin|ukulele|diagram|chart/i },
   'quanto-tempo-praticar-guitarra-por-dia': { kicker: 'DICAS PARA INICIANTES', l1: 'QUANTO', l2: 'PRATICAR?', q: 'man playing guitar sitting', prefer: /Man-person-sitting-playing/i },
+  // Lote 2026-10-29 (pautas top 3)
+  'amplificador-meteoro-e-bom':     { kicker: 'AMPLIFICADORES · MARCAS', l1: 'METEORO', l2: 'É BOM?', q: 'combo amplifier guitar', prefer: /Guitar Amplifier Details/i },
+  'amplificador-borne-e-bom':       { kicker: 'AMPLIFICADORES · MARCAS', l1: 'BORNE', l2: 'É BOM?', q: 'guitar amp knobs', prefer: /A close view of a vintage guitar amplifier/i },
+  'fender-frontman-10g-e-bom':      { kicker: 'AMPLIFICADORES · REVIEW', l1: 'FRONTMAN', l2: '10G É BOM?', q: 'Fender Frontman amplifier', prefer: /frontman|fender/i, avoid: /bass|logo|car/i },
+  'nux-mg-300-e-boa':               { kicker: 'PEDAIS · REVIEW', l1: 'NUX MG-300', l2: 'É BOA?', q: 'guitarist playing live stage', prefer: /DFC 5450 Solo guitarist/i },
+  'valeton-gp-200-vale-a-pena':     { kicker: 'PEDAIS · REVIEW', l1: 'VALETON', l2: 'GP-200', q: 'guitar effects pedalboard stage', prefer: /pedal|effect|processor/i, avoid: /logo|car|bicycle|piano|organ/i },
+  'violao-tagima-e-bom':            { kicker: 'VIOLÕES · MARCAS', l1: 'VIOLÃO', l2: 'TAGIMA', q: 'acoustic electric guitar cutaway', prefer: /cutaway|acoustic/i, avoid: /bass|logo|ukulele|violin|cello/i },
+  'violao-giannini-e-bom':          { kicker: 'VIOLÕES · MARCAS', l1: 'VIOLÃO', l2: 'GIANNINI', q: 'acoustic guitar steel string dreadnought', prefer: /acoustic|dreadnought|giannini/i, avoid: /bass|logo|ukulele|violin|cello|electric/i },
+  'violao-yamaha-f310-e-bom':       { kicker: 'VIOLÕES · REVIEW', l1: 'YAMAHA', l2: 'F310', q: 'folk acoustic guitar', prefer: /acoustic|folk/i, avoid: /bass|logo|ukulele|violin|cello|electric|label|martin|taylor|gibson|ibanez/i },
+  'tagima-tg-510-e-boa':            { kicker: 'GUITARRAS · REVIEW', l1: 'TAGIMA', l2: 'TG-510', q: 'black stratocaster electric guitar', prefer: /strat/i, avoid: /bass|logo|amp/i },
+  'melhor-corda-para-violao':       { kicker: 'ACESSÓRIOS · 2026', l1: 'CORDAS DE', l2: 'VIOLÃO', q: 'acoustic guitar strings close up', prefer: /string/i, avoid: /bass|logo|violin|cello|harp|piano|electric/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

@@ -38,9 +38,9 @@ integrantes:
           urlAfiliado: https://meli.la/1aQZbAz
         low:
           nome: Shure SM58
-          preco: ~R$ 1.153
+          preco: ~R$ 829
           obs: Dinâmico robusto e testado em palco por uma fração do preço.
-          urlAfiliado: https://meli.la/2QjvtJz
+          urlAfiliado: https://meli.la/1u1GNrd
       - tipo: Monitoração
         original:
           nome: In-ear Shure PSM 300
@@ -78,10 +78,10 @@ integrantes:
           urlAfiliado: https://meli.la/2vaiH4J
         low:
           nome: Schecter C-1 FR-S Apocalypse
-          preco: ~R$ 3.419
+          preco: ~R$ 2.220
           obs: Captação ativa e trastes extra jumbo parecidos por menos.
-          similar: "Schecter C-1 FR"
-          urlAfiliado: https://meli.la/1hgzp97
+          similar: "Jackson JS22 Dinky"
+          urlAfiliado: https://meli.la/2HQ7JPQ
       - tipo: Amplificação
         original:
           nome: Schecter Hellwin Stage 100 (signature)

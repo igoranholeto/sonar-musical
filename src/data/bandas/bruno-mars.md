@@ -27,8 +27,8 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Stratocaster Custom Shop
-          preco: ~R$ 18.000
-          urlAfiliado: https://meli.la/1TPmWGF
+          preco: ~R$ 42.791
+          urlAfiliado: https://meli.la/1EK8XbQ
         low:
           nome: Squier Classic Vibe 60s Stratocaster
           preco: ~R$ 4.591
@@ -41,9 +41,9 @@ integrantes:
           urlAfiliado: https://meli.la/2kvn2eF
         low:
           nome: Shure SM58
-          preco: ~R$ 1.153
+          preco: ~R$ 829
           obs: Captação vocal clássica e confiável no palco.
-          urlAfiliado: https://meli.la/2QjvtJz
+          urlAfiliado: https://meli.la/1u1GNrd
   - nome: The Hooligans
     funcao: Teclas / Sopros
     foto: /images/the-hooligans-brunomars-sonar.webp
@@ -63,8 +63,9 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Music Man StingRay
-          preco: ~R$ 42.000
-          urlAfiliado: https://meli.la/1czahvU
+          preco: ~R$ 7.300
+          similar: "Sterling StingRay Classic"
+          urlAfiliado: https://meli.la/1WHrmwL
         low:
           nome: Sterling by Music Man StingRay Ray4
           preco: ~R$ 3.500

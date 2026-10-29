@@ -70,9 +70,10 @@ integrantes:
           urlAfiliado: https://meli.la/1qpR2Xe
         low:
           nome: Yamaha YTS-280
-          preco: ~R$ 16.954
+          preco: ~R$ 15.950
           obs: Sax estudante com boa afinação e resposta.
-          urlAfiliado: https://meli.la/2gtXpcN
+          similar: "Yamaha YTS-480"
+          urlAfiliado: https://meli.la/13Wo5Dd
   - foto: /images/bill-evans-sonar.webp
     fotoAlt: bill evans integrante
     pontos:
