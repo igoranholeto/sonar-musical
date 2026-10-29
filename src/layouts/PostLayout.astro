@@ -409,7 +409,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       font-weight: 600;
     }
     .prose-post :global(a:not(.afiliado-cta__btn)) {
-      color: #e63946;
+      color: var(--color-brand);
       text-decoration: underline;
       text-underline-offset: 3px;
     }
@@ -432,7 +432,7 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       padding: 0.15em 0.4em;
       border-radius: 4px;
       font-size: 0.875em;
-      color: #e63946;
+      color: var(--color-brand);
     }
     /* Tabelas markdown: rolam na horizontal dentro do próprio bloco em telas
        estreitas, em vez de estourar o layout da página. As tabelas comparativas
