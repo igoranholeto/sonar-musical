@@ -168,24 +168,24 @@ const SUBDIVISIONS_UI = [
   }
   .bpm-slider::-webkit-slider-thumb {
     -webkit-appearance: none; width: 22px; height: 22px; border-radius: 50%;
-    background: var(--color-brand); border: 3px solid var(--color-card);
+    background: var(--color-brand-fill); border: 3px solid var(--color-card);
     box-shadow: 0 2px 8px rgba(230,57,70,0.4); cursor: pointer;
   }
   .bpm-slider::-moz-range-thumb {
     width: 22px; height: 22px; border: 3px solid var(--color-card);
-    border-radius: 50%; background: var(--color-brand); cursor: pointer;
+    border-radius: 50%; background: var(--color-brand-fill); cursor: pointer;
   }
   .beat-dots { display: flex; justify-content: center; gap: 0.6rem; min-height: 18px; margin-bottom: 1.25rem; }
   .beat-dot {
     width: 13px; height: 13px; border-radius: 50%; background: var(--color-elevated);
     border: 1px solid var(--color-border); transition: transform 0.06s ease-out, background 0.06s;
   }
-  .beat-dot--on { background: var(--color-brand); transform: scale(1.35); }
+  .beat-dot--on { background: var(--color-brand-fill); transform: scale(1.35); }
   .beat-dot--accent { border-color: var(--color-brand); }
   .beat-dot--accent.beat-dot--on { background: #ff5b67; box-shadow: 0 0 12px rgba(230,57,70,0.6); }
   .play-btn {
     display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.75rem 2.25rem;
-    border-radius: 999px; border: none; background: var(--color-brand); color: #fff;
+    border-radius: 999px; border: none; background: var(--color-brand-fill); color: #fff;
     font-size: 1rem; font-weight: 700; cursor: pointer; box-shadow: 0 4px 14px rgba(230,57,70,0.32);
     transition: background 0.15s, transform 0.1s;
   }
@@ -214,7 +214,7 @@ const SUBDIVISIONS_UI = [
     transition: border-color 0.15s, background 0.15s, color 0.15s;
   }
   .mini-btn:hover { border-color: var(--color-brand); }
-  .mini-btn--active { background: var(--color-brand); border-color: var(--color-brand); color: #fff; }
+  .mini-btn--active { background: var(--color-brand-fill); border-color: var(--color-brand); color: #fff; }
   .mini-btn small { display: block; font-size: 0.62rem; opacity: 0.7; font-weight: 500; }
   .tap-btn {
     width: 100%; padding: 0.65rem 0; border-radius: 9px; border: 1px solid var(--color-border);
@@ -333,6 +333,7 @@ const SUBDIVISIONS_UI = [
   }
 
   function start() {
+    (window as any).gtag?.('event', 'tool_use', { ferramenta: 'metronomo', acao: 'tocar' });
     if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
     if (audioCtx.state === 'suspended') audioCtx.resume();
     isPlaying = true;

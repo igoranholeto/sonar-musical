@@ -1,0 +1,21 @@
+{
+  "nome": "Strinberg LPS230 (kit)",
+  "meli": "https://meli.la/2K4mHPH",
+  "preco": 1900,
+  "precoEm": "2026-10-29",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-08-21",
+      "preco": 900
+    },
+    {
+      "data": "2026-09-28",
+      "preco": 900
+    },
+    {
+      "data": "2026-10-29",
+      "preco": 1900
+    }
+  ]
+}

@@ -41,7 +41,7 @@ const KEYS = [
   .ch__btns { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-bottom: 1rem; }
   .ch__key { min-width: 2.4rem; padding: 0.4rem 0.6rem; border-radius: 8px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 0.85rem; font-weight: 700; cursor: pointer; transition: border-color 0.12s, background 0.12s; }
   .ch__key:hover { border-color: var(--color-brand); }
-  .ch__key[aria-pressed='true'] { background: var(--color-brand); color: #fff; border-color: var(--color-brand); }
+  .ch__key[aria-pressed='true'] { background: var(--color-brand-fill); color: #fff; border-color: var(--color-brand); }
 
   .ch__grid { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.5rem; }
   @media (max-width: 560px) { .ch__grid { grid-template-columns: repeat(4, 1fr); } }

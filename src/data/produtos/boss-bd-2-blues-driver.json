@@ -1,0 +1,21 @@
+{
+  "nome": "Boss BD-2 Blues Driver",
+  "meli": "https://meli.la/1fxW6H1",
+  "preco": 1048,
+  "precoEm": "2026-10-05",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-02-05",
+      "preco": 1048
+    },
+    {
+      "data": "2026-09-21",
+      "preco": 1048
+    },
+    {
+      "data": "2026-10-05",
+      "preco": 1048
+    }
+  ]
+}

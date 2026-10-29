@@ -59,7 +59,7 @@ const filename = pdf ? pdf.split('/').pop() : undefined;
           href={fonteExterna.url}
           target="_blank"
           rel="noopener noreferrer"
-          class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark transition-colors"
+          class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-brand-fill text-white hover:bg-brand-dark transition-colors"
         >
           Ver no {fonteExterna.nome} ↗
         </a>
@@ -76,7 +76,7 @@ const filename = pdf ? pdf.split('/').pop() : undefined;
           <a
             href={pdf}
             download={filename}
-            class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-brand text-white hover:bg-brand-dark transition-colors"
+            class="flex-1 text-center text-xs font-semibold px-3 py-2 rounded-lg bg-brand-fill text-white hover:bg-brand-dark transition-colors"
           >
             Download
           </a>

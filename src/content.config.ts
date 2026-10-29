@@ -35,7 +35,27 @@ const blog = defineCollection({
   }),
 });
 
-const GENEROS_BANDA = ['Rock', 'Metal', 'Blues', 'Pop', 'Jazz', 'R&B', 'Sertanejo', 'Nacional'] as const;
+// Catálogo de produtos com link de afiliado: um JSON por produto. Os posts citam o
+// produto por id (<AfiliadoCTA id="..." />) e o nome, o link meli.la, o preço e a foto
+// saem daqui. Para atualizar um preço, muda-se um arquivo só.
+export const CATEGORIAS_PRODUTO = ['guitarra', 'violao', 'pedal', 'pedaleira', 'amplificador', 'cordas', 'interface', 'acessorio'] as const;
+
+const produtos = defineCollection({
+  loader: glob({ pattern: '**/*.json', base: './src/data/produtos' }),
+  schema: z.object({
+    nome: z.string(),
+    meli: z.string().url(),
+    preco: z.number().positive(),
+    // Data em que o preço foi conferido no Mercado Livre.
+    precoEm: z.coerce.date(),
+    historico: z.array(z.object({ data: z.coerce.date(), preco: z.number().positive() })).default([]),
+    categoria: z.enum(CATEGORIAS_PRODUTO).optional(),
+    imagem: z.string().optional(),
+    imagemAlt: z.string().optional(),
+  }),
+});
+
+const GENEROS_BANDA =['Rock', 'Metal', 'Blues', 'Pop', 'Jazz', 'R&B', 'Sertanejo', 'Nacional'] as const;
 
 const equipamentoItem = z.object({
   nome: z.string(),
@@ -117,4 +137,4 @@ const bandas = defineCollection({
   }),
 });
 
-export const collections = { blog, bandas };
+export const collections = { blog, bandas, produtos };

@@ -1,0 +1,19 @@
+{
+  "nome": "GHS Boomers 9–42",
+  "meli": "https://meli.la/2JMpTKw",
+  "preco": 78,
+  "precoEm": "2026-08-03",
+  "categoria": "cordas",
+  "imagem": "/images/produtos/ghs-boomers-9-42.webp",
+  "imagemAlt": "GHS Boomers 9–42",
+  "historico": [
+    {
+      "data": "2026-06-25",
+      "preco": 78
+    },
+    {
+      "data": "2026-08-03",
+      "preco": 78
+    }
+  ]
+}

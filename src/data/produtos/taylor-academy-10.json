@@ -1,0 +1,13 @@
+{
+  "nome": "Taylor Academy 10",
+  "meli": "https://meli.la/1KCRiSV",
+  "preco": 2000,
+  "precoEm": "2026-07-06",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-07-06",
+      "preco": 2000
+    }
+  ]
+}

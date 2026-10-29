@@ -1,0 +1,29 @@
+{
+  "nome": "Fender Player II Stratocaster",
+  "meli": "https://meli.la/1qKuTTu",
+  "preco": 8365,
+  "precoEm": "2026-09-30",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-07-06",
+      "preco": 8365
+    },
+    {
+      "data": "2026-08-04",
+      "preco": 8365
+    },
+    {
+      "data": "2026-08-23",
+      "preco": 8365
+    },
+    {
+      "data": "2026-09-21",
+      "preco": 8365
+    },
+    {
+      "data": "2026-09-30",
+      "preco": 8365
+    }
+  ]
+}

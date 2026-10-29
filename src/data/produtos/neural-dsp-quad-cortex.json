@@ -1,0 +1,15 @@
+{
+  "nome": "Neural DSP Quad Cortex",
+  "meli": "https://meli.la/1BZTpWJ",
+  "preco": 14500,
+  "precoEm": "2026-10-29",
+  "categoria": "pedaleira",
+  "imagem": "/images/produtos/neural-dsp-quad-cortex.webp",
+  "imagemAlt": "Pedaleira Neural DSP Quad Cortex",
+  "historico": [
+    {
+      "data": "2026-10-29",
+      "preco": 14500
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "nome": "Epiphone ES-335 (antiga Dot)",
+  "meli": "https://meli.la/1ckVH6v",
+  "preco": 9418,
+  "precoEm": "2026-09-30",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/epiphone-dot.webp",
+  "imagemAlt": "Epiphone Dot semi-hollow",
+  "historico": [
+    {
+      "data": "2026-08-18",
+      "preco": 9418
+    },
+    {
+      "data": "2026-09-30",
+      "preco": 9418
+    }
+  ]
+}

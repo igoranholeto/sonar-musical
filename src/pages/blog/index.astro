@@ -64,7 +64,7 @@ const categories = ['Todas', ...Array.from(new Set(allPosts.map((p) => p.data.ca
           data-category={cat}
           class={`category-btn px-4 py-2 rounded-full text-sm font-medium border transition-all ${
             cat === 'Todas'
-              ? 'bg-brand border-brand text-white'
+              ? 'bg-brand-fill border-brand text-white'
               : 'bg-transparent border-border text-muted hover:text-foreground hover:border-foreground/20'
           }`}
           aria-pressed={cat === 'Todas' ? 'true' : 'false'}
@@ -137,7 +137,7 @@ const categories = ['Todas', ...Array.from(new Set(allPosts.map((p) => p.data.ca
 
     buttons.forEach((btn) => {
       const active = btn.dataset.category === activeCategory;
-      btn.classList.toggle('bg-brand', active);
+      btn.classList.toggle('bg-brand-fill', active);
       btn.classList.toggle('border-brand', active);
       btn.classList.toggle('text-white', active);
       btn.classList.toggle('text-muted', !active);

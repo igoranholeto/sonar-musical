@@ -1,0 +1,27 @@
+{
+  "nome": "Fender Blues Junior IV",
+  "meli": "https://meli.la/2GyrobK",
+  "preco": 6422,
+  "precoEm": "2026-08-04",
+  "categoria": "amplificador",
+  "imagem": "/images/produtos/fender-blues-junior-iv.webp",
+  "imagemAlt": "Fender Blues Junior IV",
+  "historico": [
+    {
+      "data": "2026-01-22",
+      "preco": 6422
+    },
+    {
+      "data": "2026-06-20",
+      "preco": 6422
+    },
+    {
+      "data": "2026-07-20",
+      "preco": 6422
+    },
+    {
+      "data": "2026-08-04",
+      "preco": 6422
+    }
+  ]
+}

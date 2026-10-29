@@ -1,0 +1,17 @@
+{
+  "nome": "Positive Grid Spark Mini",
+  "meli": "https://meli.la/1uSgktL",
+  "preco": 1600,
+  "precoEm": "2026-10-05",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-08-03",
+      "preco": 1600
+    },
+    {
+      "data": "2026-10-05",
+      "preco": 1600
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "nome": "Jackson JS32 Rhoads",
+  "meli": "https://meli.la/1J4N4QW",
+  "preco": 4285,
+  "precoEm": "2026-09-30",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-08-18",
+      "preco": 4285
+    },
+    {
+      "data": "2026-09-28",
+      "preco": 4285
+    },
+    {
+      "data": "2026-09-30",
+      "preco": 4285
+    }
+  ]
+}

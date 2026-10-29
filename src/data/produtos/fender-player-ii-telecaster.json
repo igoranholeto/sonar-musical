@@ -1,0 +1,21 @@
+{
+  "nome": "Fender Player II Telecaster",
+  "meli": "https://meli.la/2HKeQg5",
+  "preco": 9765,
+  "precoEm": "2026-09-30",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-08-18",
+      "preco": 9765
+    },
+    {
+      "data": "2026-08-23",
+      "preco": 9765
+    },
+    {
+      "data": "2026-09-30",
+      "preco": 9765
+    }
+  ]
+}

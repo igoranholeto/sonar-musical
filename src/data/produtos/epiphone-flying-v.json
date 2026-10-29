@@ -1,0 +1,15 @@
+{
+  "nome": "Epiphone Flying V",
+  "meli": "https://meli.la/1nPxaem",
+  "preco": 10180,
+  "precoEm": "2026-08-21",
+  "categoria": "guitarra",
+  "imagem": "/images/produtos/epiphone-flying-v.webp",
+  "imagemAlt": "Epiphone Flying V",
+  "historico": [
+    {
+      "data": "2026-08-21",
+      "preco": 10180
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "Strinberg STS100 (Stratocaster)",
+  "meli": "https://meli.la/1bpU2h9",
+  "preco": 749,
+  "precoEm": "2026-10-16",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-08-21",
+      "preco": 749
+    },
+    {
+      "data": "2026-10-16",
+      "preco": 749
+    }
+  ]
+}

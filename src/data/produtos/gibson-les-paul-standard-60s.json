@@ -1,0 +1,17 @@
+{
+  "nome": "Gibson Les Paul Standard '60s",
+  "meli": "https://meli.la/2iWtCWH",
+  "preco": 31271,
+  "precoEm": "2026-10-29",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-07-06",
+      "preco": 31271
+    },
+    {
+      "data": "2026-10-29",
+      "preco": 31271
+    }
+  ]
+}

@@ -37,7 +37,7 @@ const bars = Array.from({ length: 28 }, (_, i) => {
   <div class="absolute inset-x-0 bottom-0 h-24 flex items-end justify-center gap-[3px] opacity-[0.12] pointer-events-none" aria-hidden="true">
     {bars.map((bar) => (
       <span
-        class="eq-bar w-[3px] rounded-full bg-brand"
+        class="eq-bar w-[3px] rounded-full bg-brand-fill"
         style={`height:${bar.height}%; animation-delay:${bar.delay}s;`}
       ></span>
     ))}
@@ -46,7 +46,7 @@ const bars = Array.from({ length: 28 }, (_, i) => {
   <div class="relative max-w-6xl mx-auto px-4 text-center">
     <!-- Badge -->
     <div class="hero-in inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-brand/30 bg-brand/10 text-brand text-xs font-semibold uppercase tracking-wider mb-7" style="animation-delay:0ms">
-      <span class="w-1.5 h-1.5 bg-brand rounded-full animate-pulse" aria-hidden="true"></span>
+      <span class="w-1.5 h-1.5 bg-brand-fill rounded-full animate-pulse" aria-hidden="true"></span>
       {postsCount} análises publicadas
     </div>
 
@@ -65,7 +65,7 @@ const bars = Array.from({ length: 28 }, (_, i) => {
     <div class="hero-in flex flex-col sm:flex-row gap-4 justify-center mb-10" style="animation-delay:270ms">
       <a
         href="/blog/"
-        class="px-7 py-3.5 bg-brand text-white font-semibold rounded-xl hover:bg-brand-dark hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30 transition-all duration-200 shadow-lg shadow-brand/25"
+        class="px-7 py-3.5 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark hover:-translate-y-0.5 hover:shadow-xl hover:shadow-brand/30 transition-all duration-200 shadow-lg shadow-brand/25"
       >
         Ver Todas as Análises
       </a>
