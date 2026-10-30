@@ -56,6 +56,7 @@ export const MARCAS = [
   'Audient', 'Native Instruments', 'Ernie Ball', "D'Addario", 'Elixir', 'GHS',
   'Taylor', 'Martin', 'Line 6', 'Neural DSP', 'Zoom', 'Blackstar', 'Orange',
   'Suhr', 'Shure', 'Seymour Duncan', 'DiMarzio', 'Dunlop', 'MXR', 'Electro-Harmonix',
+  'Takamine', 'Shelby', 'Malibu', 'Terra',
   'Meteoro', 'Borne', 'Nux', 'Valeton', 'Tagima', 'Giannini', 'Strinberg', 'Condor',
   'Waldman', 'Jackson', 'Vox', 'Augustine', 'Rozini', 'Behringer', 'Positive Grid',
 ];

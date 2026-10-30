@@ -77,6 +77,17 @@ const MAP = {
   'violao-giannini-e-bom':          { kicker: 'VIOLÕES · MARCAS', l1: 'VIOLÃO', l2: 'GIANNINI', q: 'acoustic guitar steel string dreadnought', prefer: /acoustic|dreadnought|giannini/i, avoid: /bass|logo|ukulele|violin|cello|electric/i },
   'violao-yamaha-f310-e-bom':       { kicker: 'VIOLÕES · REVIEW', l1: 'YAMAHA', l2: 'F310', q: 'folk acoustic guitar', prefer: /acoustic|folk/i, avoid: /bass|logo|ukulele|violin|cello|electric|label|martin|taylor|gibson|ibanez/i },
   'tagima-tg-510-e-boa':            { kicker: 'GUITARRAS · REVIEW', l1: 'TAGIMA', l2: 'TG-510', q: 'black stratocaster electric guitar', prefer: /strat/i, avoid: /bass|logo|amp/i },
+  // Lote 2026-10-30 (pautas top 3)
+  'melhor-cavaquinho-para-iniciante': { kicker: 'CAVAQUINHO · 2026', l1: 'CAVAQUINHO', l2: 'INICIANTE', q: 'cavaquinho', prefer: /cavaquinho/i, avoid: /logo|ukulele|map/i },
+  'melhor-ukulele-para-iniciante':  { kicker: 'UKULELE · 2026', l1: 'UKULELE', l2: 'INICIANTE', q: 'ukulele instrument', prefer: /ukulele/i, avoid: /logo|festival|orchestra|band|map/i },
+  'melhor-violao-ate-1000-reais':   { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 1.000', q: 'acoustic guitar', prefer: /acoustic guitar/i, avoid: /rig|danelectro|marshall|bass|logo|ukulele|violin|cello|electric|label|museum|signed|player|concert|festival/i },
+  'melhor-violao-para-igreja':      { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO PARA', l2: 'IGREJA', q: 'acoustic guitar church worship', prefer: /church|worship|acoustic/i, avoid: /logo|organ|piano|violin|cello|building/i },
+  'melhor-violao-eletroacustico-custo-beneficio': { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'ELETROACÚSTICO', q: 'acoustic-electric guitar', prefer: /acoustic.electric|electro.acoustic/i, avoid: /hotel|bass|logo|ukulele|violin|cello|label|museum|signed|taylor|martin|gibson|yamaha|fender/i },
+  'tamanho-de-violao-para-crianca': { kicker: 'VIOLÕES · GUIA', l1: 'TAMANHO', l2: 'POR IDADE', q: 'child playing acoustic guitar', prefer: /child|kid|boy|girl/i, avoid: /logo|violin|cello|piano/i },
+  'violao-strinberg-e-bom':         { kicker: 'VIOLÕES · MARCAS', l1: 'VIOLÃO', l2: 'STRINBERG', q: 'steel string acoustic guitar', prefer: /acoustic|steel/i, avoid: /bass|logo|ukulele|violin|cello|martin|taylor|gibson|yamaha|fender|label|museum|signed/i },
+  'strinberg-sts100-e-boa':         { kicker: 'GUITARRAS · REVIEW', l1: 'STRINBERG', l2: 'STS100', q: 'black stratocaster electric guitar', prefer: /Modified Fender Squier Stratocaster/i, avoid: /bass|logo|amp|hello kitty|museum|signed|hendrix|clapton|exhibit|gilmour|dylan|newport/i },
+  'yamaha-c40-e-bom':               { kicker: 'VIOLÕES · REVIEW', l1: 'YAMAHA', l2: 'C40', q: 'classical guitar nylon strings', prefer: /classical guitar/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser/i },
+  'squier-affinity-vale-a-pena':    { kicker: 'GUITARRAS · REVIEW', l1: 'SQUIER', l2: 'AFFINITY', q: 'squier stratocaster guitar', prefer: /squier|strat/i, avoid: /bass|logo|amp|custom shop/i },
   'melhor-corda-para-violao':       { kicker: 'ACESSÓRIOS · 2026', l1: 'CORDAS DE', l2: 'VIOLÃO', q: 'acoustic guitar strings close up', prefer: /string/i, avoid: /bass|logo|violin|cello|harp|piano|electric/i },
 };
 
