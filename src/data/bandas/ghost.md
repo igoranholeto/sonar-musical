@@ -115,10 +115,10 @@ integrantes:
           urlAfiliado: https://meli.la/2wjnFDQ
         low:
           nome: Behringer Model D
-          preco: ~R$ 2.770
+          preco: ~R$ 8.942
           obs: Clone fiel do circuito Moog subtrativo por bem menos.
-          similar: "Behringer Model 15"
-          urlAfiliado: https://meli.la/25dknBu
+          similar: "Behringer Poly D"
+          urlAfiliado: https://meli.la/2LKLLCq
   - nome: Nameless Ghoul, Bateria
     funcao: Bateria
     anos: 2008 – hoje (função rotativa)

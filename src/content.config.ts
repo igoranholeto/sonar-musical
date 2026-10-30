@@ -38,7 +38,7 @@ const blog = defineCollection({
 // Catálogo de produtos com link de afiliado: um JSON por produto. Os posts citam o
 // produto por id (<AfiliadoCTA id="..." />) e o nome, o link meli.la, o preço e a foto
 // saem daqui. Para atualizar um preço, muda-se um arquivo só.
-export const CATEGORIAS_PRODUTO = ['guitarra', 'violao', 'pedal', 'pedaleira', 'amplificador', 'cordas', 'interface', 'acessorio'] as const;
+export const CATEGORIAS_PRODUTO = ['guitarra', 'violao', 'cavaquinho', 'ukulele', 'pedal', 'pedaleira', 'amplificador', 'cordas', 'interface', 'acessorio'] as const;
 
 const produtos = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/data/produtos' }),

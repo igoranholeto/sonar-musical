@@ -1,0 +1,13 @@
+{
+  "nome": "Giannini NR 1/2",
+  "meli": "https://meli.la/2PZjmiF",
+  "preco": 440,
+  "precoEm": "2026-10-30",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-10-30",
+      "preco": 440
+    }
+  ]
+}
