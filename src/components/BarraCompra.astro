@@ -1,0 +1,125 @@
+---
+// Barra fixa de compra no celular: aparece quando as escolhas do topo (TopEscolhas)
+// saem da tela e mantém a melhor escolha a um toque. Pode ser fechada, e a escolha de
+// fechar vale para a sessão inteira. Sem TopEscolhas na página, não aparece.
+import { getEntry } from 'astro:content';
+import { formatPreco } from '../utils/preco';
+
+interface Props {
+  id: string;
+  rotulo: string;
+}
+
+const { id, rotulo } = Astro.props;
+const entry = await getEntry('produtos', id);
+if (!entry) throw new Error(`BarraCompra: o produto "${id}" não existe em src/data/produtos/`);
+const p = entry.data;
+const preco = formatPreco(p.preco).replace(/^A partir de /, '');
+---
+
+<div class="barra" data-barra-compra hidden>
+  <div class="barra__txt">
+    <b>{p.nome}</b>
+    <span>{rotulo} · {preco}</span>
+  </div>
+  <a class="barra__btn" href={p.meli} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={p.nome} data-bloco="barra-fixa">
+    Ver preço
+  </a>
+  <button class="barra__fechar" type="button" aria-label="Fechar a barra de compra">×</button>
+</div>
+
+<script>
+  const barra = document.querySelector<HTMLElement>('[data-barra-compra]');
+  const topo = document.querySelector('[data-top-escolhas]');
+  if (barra && topo && 'IntersectionObserver' in window) {
+    const celular = window.matchMedia('(max-width: 767px)');
+    let fechada = false;
+    try { fechada = sessionStorage.getItem('barra-compra-fechada') === '1'; } catch {}
+    let passou = false;
+    const atualizar = () => {
+      const mostrar = passou && celular.matches && !fechada;
+      barra.hidden = !mostrar;
+      document.body.classList.toggle('tem-barra-compra', mostrar);
+    };
+    new IntersectionObserver(([e]) => {
+      passou = !e.isIntersecting && e.boundingClientRect.top < 0;
+      atualizar();
+    }).observe(topo);
+    celular.addEventListener('change', atualizar);
+    barra.querySelector('.barra__fechar')?.addEventListener('click', () => {
+      fechada = true;
+      try { sessionStorage.setItem('barra-compra-fechada', '1'); } catch {}
+      atualizar();
+    });
+  }
+</script>
+
+<style>
+  .barra {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 40;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    padding: 0.6rem max(0.75rem, env(safe-area-inset-right)) calc(0.6rem + env(safe-area-inset-bottom)) max(0.75rem, env(safe-area-inset-left));
+    background: var(--color-card);
+    border-top: 1px solid var(--color-border);
+    box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
+  }
+  .barra__txt {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+  }
+  .barra__txt b {
+    font-size: 0.9rem;
+    color: var(--color-foreground);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .barra__txt span {
+    font-size: 0.75rem;
+    color: var(--color-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  /* A barra fica dentro do texto do post: os !important vencem o estilo de link do texto. */
+  .barra .barra__btn {
+    flex: none;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    padding: 0 1rem;
+    border-radius: 8px;
+    background: var(--color-brand-fill);
+    color: #fff !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none !important;
+  }
+  .barra .barra__btn:hover { background: var(--color-brand-dark); }
+  .barra__fechar {
+    flex: none;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: var(--color-muted);
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+  }
+  .barra__fechar:focus-visible, .barra__btn:focus-visible { outline: 2px solid var(--color-foreground); outline-offset: 2px; }
+  /* O botão de voltar ao topo sobe para não ficar embaixo da barra. */
+  :global(body.tem-barra-compra .back-to-top) {
+    bottom: calc(5rem + env(safe-area-inset-bottom));
+  }
+</style>

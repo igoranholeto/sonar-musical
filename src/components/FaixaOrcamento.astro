@@ -1,0 +1,54 @@
+---
+// Atalhos por faixa de preço: botões que levam direto à seção do post.
+interface Props {
+  itens: { rotulo: string; href: string }[];
+  titulo?: string;
+}
+const { itens, titulo = 'Ir direto para' } = Astro.props;
+---
+
+<nav class="faixas" aria-label={titulo} data-pagefind-ignore>
+  <span class="faixas__titulo">{titulo}</span>
+  <ul class="faixas__lista">
+    {itens.map((i) => (
+      <li><a href={i.href}>{i.rotulo}</a></li>
+    ))}
+  </ul>
+</nav>
+
+<style>
+  .faixas { margin: 0 0 2rem; }
+  .faixas .faixas__titulo {
+    display: block;
+    margin-bottom: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .faixas .faixas__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .faixas .faixas__lista li { margin: 0; padding: 0; }
+  .faixas .faixas__lista li::before { content: none; }
+  .faixas .faixas__lista a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    padding: 0 0.9rem;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: var(--color-card);
+    color: var(--color-foreground) !important;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none !important;
+  }
+  .faixas .faixas__lista a:hover { border-color: var(--color-brand); }
+</style>

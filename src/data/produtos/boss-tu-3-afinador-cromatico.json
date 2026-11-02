@@ -1,8 +1,8 @@
 {
   "nome": "Boss TU-3 Afinador Cromático",
   "meli": "https://meli.la/16dunp6",
-  "preco": 168,
-  "precoEm": "2026-10-05",
+  "preco": 179,
+  "precoEm": "2026-11-02",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-10-05",
       "preco": 168
+    },
+    {
+      "data": "2026-11-02",
+      "preco": 179
     }
   ]
 }

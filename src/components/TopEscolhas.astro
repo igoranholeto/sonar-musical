@@ -1,0 +1,180 @@
+---
+// Guia de decisão: as escolhas do post logo no topo, com preço, nota dos compradores
+// e botão, para quem chega pelo celular decidir sem rolar a página inteira.
+// Os dados vêm do catálogo (src/data/produtos); o rótulo diz para quem é cada escolha.
+import { getEntry } from 'astro:content';
+import { formatPreco } from '../utils/preco';
+
+interface Item {
+  id: string;
+  /** Para quem é a escolha, ex.: "Melhor até R$ 1.000". */
+  rotulo: string;
+}
+interface Props {
+  itens: Item[];
+  /** Uma frase de veredito, aceita <strong>. */
+  veredito?: string;
+  titulo?: string;
+}
+
+const { itens, veredito, titulo = 'Nossas escolhas' } = Astro.props;
+
+const escolhas = await Promise.all(
+  itens.map(async (item) => {
+    const entry = await getEntry('produtos', item.id);
+    if (!entry) throw new Error(`TopEscolhas: o produto "${item.id}" não existe em src/data/produtos/`);
+    return { ...item, p: entry.data };
+  }),
+);
+
+const conferidoEm = new Date(Math.min(...escolhas.map((e) => e.p.precoEm.getTime())));
+const dataTexto = conferidoEm.toLocaleDateString('pt-BR', { timeZone: 'UTC', day: '2-digit', month: '2-digit', year: 'numeric' });
+const preco = (n: number) => formatPreco(n).replace(/^A partir de /, '');
+const nota = (n: number) => n.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const qtd = (n: number) => `${n.toLocaleString('pt-BR')} ${n === 1 ? 'avaliação' : 'avaliações'}`;
+---
+
+<section class="top" data-top-escolhas data-pagefind-ignore>
+  <p class="top__titulo">{titulo}</p>
+  {veredito && <p class="top__veredito" set:html={veredito} />}
+
+  <ul class="top__lista">
+    {escolhas.map(({ rotulo, p }) => (
+      <li class="top__item">
+        <div class="top__info">
+          <span class="top__rotulo">{rotulo}</span>
+          <span class="top__nome">{p.nome}</span>
+          {p.nota != null && (
+            <span class="top__nota" aria-label={`Nota ${nota(p.nota)} de 5 no Mercado Livre${p.avaliacoes ? `, ${qtd(p.avaliacoes)}` : ''}`}>
+              <span aria-hidden="true"><span class="top__estrela">★</span> {nota(p.nota)}</span>
+              {p.avaliacoes != null && <span class="top__qtd" aria-hidden="true">({qtd(p.avaliacoes)})</span>}
+            </span>
+          )}
+        </div>
+        <div class="top__acao">
+          <span class="top__preco">{preco(p.preco)}</span>
+          <a class="top__btn" href={p.meli} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={p.nome} data-bloco="topo">
+            Ver preço no Mercado Livre
+          </a>
+        </div>
+      </li>
+    ))}
+  </ul>
+
+  <p class="top__selo">
+    Preços e notas conferidos no Mercado Livre em {dataTexto}. Links de afiliado: podemos receber comissão, sem custo extra para você.
+    <a href="/como-avaliamos/">Como avaliamos</a>
+  </p>
+</section>
+
+<style>
+  .top {
+    margin: 0 0 2.5rem;
+    padding: 1rem;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    background: var(--color-card);
+  }
+  .top .top__titulo {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--color-muted);
+  }
+  .top .top__veredito {
+    margin: 0 0 0.85rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--color-foreground);
+  }
+  .top .top__lista {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+  }
+  .top .top__item {
+    margin: 0;
+    padding: 0.75rem 0.85rem;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    background: var(--color-surface);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem 1rem;
+  }
+  .top .top__item::before { content: none; }
+  .top__info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    min-width: 0;
+    flex: 1 1 14rem;
+  }
+  .top__rotulo {
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-brand);
+  }
+  .top__nome {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: var(--color-foreground);
+  }
+  .top__nota {
+    font-size: 0.8rem;
+    color: var(--color-foreground);
+  }
+  .top__estrela { color: #f5b301; }
+  .top__qtd { color: var(--color-muted); margin-left: 0.25rem; }
+  .top__acao {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+  }
+  .top__preco {
+    font-weight: 800;
+    font-size: 1.1rem;
+    font-variant-numeric: tabular-nums;
+    color: var(--color-foreground);
+    white-space: nowrap;
+  }
+  .top .top__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 44px;
+    padding: 0.55rem 0.9rem;
+    border-radius: 8px;
+    background: var(--color-brand-fill);
+    color: #fff !important;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-decoration: none !important;
+    text-align: center;
+  }
+  .top .top__btn:hover { background: var(--color-brand-dark); }
+  .top .top__btn:focus-visible { outline: 2px solid var(--color-foreground); outline-offset: 2px; }
+  .top .top__selo {
+    margin: 0.85rem 0 0;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: var(--color-muted);
+  }
+  .top .top__selo a { color: var(--color-brand); }
+  @media (max-width: 480px) {
+    .top__acao { justify-content: space-between; width: 100%; }
+    .top .top__btn { flex: 1; }
+  }
+</style>

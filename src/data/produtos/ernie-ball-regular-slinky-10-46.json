@@ -1,8 +1,8 @@
 {
   "nome": "Ernie Ball Regular Slinky 10-46",
-  "meli": "https://meli.la/1SoYw2C",
-  "preco": 60,
-  "precoEm": "2026-10-05",
+  "meli": "https://meli.la/19yw1RA",
+  "preco": 61,
+  "precoEm": "2026-11-02",
   "categoria": "cordas",
   "imagem": "/images/produtos/ernie-ball-regular-slinky-10-46.webp",
   "imagemAlt": "Ernie Ball Regular Slinky 10–46",
@@ -26,6 +26,12 @@
     {
       "data": "2026-10-05",
       "preco": 60
+    },
+    {
+      "data": "2026-11-02",
+      "preco": 61
     }
-  ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 218
 }

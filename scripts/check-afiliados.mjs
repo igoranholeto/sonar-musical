@@ -1,7 +1,8 @@
 // Verifica para onde cada link de afiliado meli.la do site leva de fato.
 // O Mercado Livre manda o link curto para a página social do afiliado com o produto em
-// destaque (URL com ref=). Quando o anúncio é pausado ou encerrado, o mesmo link cai na
-// página genérica de listas (/social/<id>/lists), e o leitor não encontra o produto.
+// destaque (URL com ref=). Quando o anúncio é encerrado, o mesmo link cai na página genérica
+// de listas (/social/<id>/lists), e o leitor não encontra o produto. Quando é só pausado, a
+// página abre normalmente, mas o primeiro card (o produto do link) traz "Anúncio pausado".
 // Uso: node scripts/check-afiliados.mjs   (lista só os quebrados; --all mostra todos)
 //      --md arquivo.md grava um relatório em Markdown (usado pelo GitHub Actions)
 import fs from 'node:fs';
@@ -64,19 +65,22 @@ async function destino(url) {
       const r = await fetch(url, { redirect: 'follow', headers: { 'User-Agent': UA } });
       const html = await r.text();
       const titulo = html.match(/<meta property="og:title" content="([^"]*)"/)?.[1] ?? '';
-      return { fim: r.url, titulo };
+      // O aviso de pausa só conta no primeiro card; os seguintes são outros produtos da lista.
+      const [c1, c2 = html.length] = [...html.matchAll(/class="poly-card[ "]/g)].map((m) => m.index);
+      const pausado = c1 != null && html.slice(c1, c2).includes('Anúncio pausado');
+      return { fim: r.url, titulo, pausado };
     } catch {
       await new Promise((ok) => setTimeout(ok, 1500));
     }
   }
-  return { fim: '', titulo: '' };
+  return { fim: '', titulo: '', pausado: false };
 }
 
 const resultado = [];
 for (const [url, l] of links) {
-  const { fim, titulo } = await destino(url);
-  const status = fim.includes('/lists') ? 'LISTA' : fim.includes('ref=') ? 'OK' : 'VERIFICAR';
-  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ids: [...l.ids], ml: status === 'OK' ? titulo : '', fim, onde: [...l.onde] });
+  const { fim, titulo, pausado } = await destino(url);
+  const status = fim.includes('/lists') ? 'LISTA' : !fim.includes('ref=') ? 'VERIFICAR' : pausado ? 'PAUSADO' : 'OK';
+  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ids: [...l.ids], ml: status === 'OK' || status === 'PAUSADO' ? titulo : '', fim, onde: [...l.onde] });
 }
 
 const quebrados = resultado.filter((r) => r.status !== 'OK');
@@ -98,11 +102,11 @@ if (mdIdx > 0) {
   const md = [
     `${resultado.length} links verificados: ${resultado.length - quebrados.length} OK, ${quebrados.length} quebrados ou a verificar.`,
     '',
-    'LISTA = o anúncio saiu do ar e o link cai na vitrine genérica. VERIFICAR = o ML não respondeu como esperado (pode ser bloqueio temporário).',
+    'LISTA = o anúncio saiu do ar e o link cai na vitrine genérica. PAUSADO = o link abre o produto, mas o anúncio está pausado e não dá para comprar. VERIFICAR = o ML não respondeu como esperado (pode ser bloqueio temporário).',
     'Para corrigir: gerar um link novo no painel de afiliados e trocar `meli` (e o preço) no arquivo do produto.',
     '',
     ...linhas,
   ].join('\n');
   fs.writeFileSync(process.argv[mdIdx + 1], md + '\n');
 }
-process.exitCode = quebrados.some((r) => r.status === 'LISTA') ? 1 : 0;
+process.exitCode = quebrados.some((r) => r.status === 'LISTA' || r.status === 'PAUSADO') ? 1 : 0;

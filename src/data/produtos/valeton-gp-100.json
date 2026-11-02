@@ -2,12 +2,18 @@
   "nome": "Valeton GP-100",
   "meli": "https://meli.la/2AZ6NLV",
   "preco": 970,
-  "precoEm": "2026-10-29",
+  "precoEm": "2026-11-02",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 970
+    },
+    {
+      "data": "2026-11-02",
+      "preco": 970
     }
-  ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 568
 }

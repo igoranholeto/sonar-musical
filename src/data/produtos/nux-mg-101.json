@@ -1,13 +1,19 @@
 {
   "nome": "Nux MG-101",
   "meli": "https://meli.la/2zbrUvn",
-  "preco": 722,
-  "precoEm": "2026-10-29",
+  "preco": 722.59,
+  "precoEm": "2026-11-02",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 722
+    },
+    {
+      "data": "2026-11-02",
+      "preco": 722.59
     }
-  ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 306
 }
