@@ -29,6 +29,9 @@ covers-src/_alts.json
 covers-src/_photo_*.png
 covers-src/_photo_*.jpg
 covers-src/_photo_all.jpg
+# Relatório, montagens e comparações das fotos de produto (scripts/fotos-produtos.mjs)
+covers-src/_fotos-produtos*
+covers-src/_antes-depois.png
 
 # Pins do Pinterest e fotos-fonte das capas (gerados/baixados, não fazem parte do site)
 pins/

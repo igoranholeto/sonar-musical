@@ -1,9 +1,13 @@
-// Foto recortada para os produtos do catálogo que ainda não têm imagem.
+// Foto recortada dos produtos do catálogo (critério do recorte em scripts/lib/recorte.mjs).
 // A foto é a do próprio anúncio do link de afiliado (og:image da página do meli.la), que o
 // afiliado pode usar; nenhuma imagem de fora do Mercado Livre entra aqui.
 // Uso:
-//   node scripts/fotos-produtos.mjs [--ids a,b] [--limiar 205]
-//                                                 baixa, recorta e grava public/images/produtos/<id>.webp,
+//   node scripts/fotos-produtos.mjs [--ids a,b | --todos] [--inteira a,b] [--sem-buracos a,b] [--baixar]
+//                                                 sem --ids/--todos: só os produtos sem imagem;
+//                                                 --inteira: esses vão sem recorte (com o fundo branco);
+//                                                 --sem-buracos: só sai o fundo de fora (somam às listas abaixo);
+//                                                 --baixar: baixa a foto de novo em vez de usar o cache;
+//                                                 baixa a foto grande (até 1200 px), recorta e grava public/images/produtos/<id>.webp,
 //                                                 com relatório em covers-src/_fotos-produtos.json
 //                                                 e montagens covers-src/_fotos-produtos-N.png para conferir
 //   node scripts/fotos-produtos.mjs --aplicar [--pular a,b]
@@ -29,8 +33,10 @@ if (process.argv.includes('--aplicar')) {
   for (const r of JSON.parse(fs.readFileSync(REL, 'utf8'))) {
     if (!r.arquivo || pular.has(r.id)) continue;
     const j = ler(r.id);
-    j.imagem = `/${r.arquivo.replace(/^public\//, '')}`;
-    j.imagemAlt = j.nome;
+    const imagem = `/${r.arquivo.replace(/^public\//, '')}`;
+    // Mantém o texto alternativo já escrito quando a foto continua no mesmo arquivo.
+    if (j.imagem !== imagem || !j.imagemAlt) j.imagemAlt = j.nome;
+    j.imagem = imagem;
     fs.writeFileSync(path.join(CAT, `${r.id}.json`), JSON.stringify(j, null, 2) + '\n');
     n++;
   }
@@ -42,28 +48,71 @@ const so = arg('--ids');
 const ids = fs.readdirSync(CAT)
   .filter((f) => f.endsWith('.json'))
   .map((f) => f.replace(/\.json$/, ''))
-  .filter((id) => (so ? so.includes(id) : !ler(id).imagem));
+  .filter((id) => (so ? so.includes(id) : process.argv.includes('--todos') || !ler(id).imagem));
 
-const limiar = Number(arg('--limiar')?.[0] ?? 228);
+// Exceções conferidas de olho na montagem; o critério do recorte está em scripts/lib/recorte.mjs.
+// Produto que o recorte não separa bem do fundo: vai inteiro, com o fundo branco.
+const INTEIRAS = [
+  'boss-tu-3-afinador-cromatico',      // pedal branco em fundo cinza-claro: o fundo come o pedal
+  'guitarra-infantil-com-microfone',   // fundo com notas musicais desenhadas
+];
+// Branco impresso ou brilho que passa no critério de buraco: fica (só sai o fundo de fora).
+const SEM_BURACOS = [
+  'giannini-genw-nylon',          // fita branca do rótulo Canário
+  'joyo-atmosphere-r-14',         // brilho dos knobs cromados
+  'joyo-zip-amp-r-04',            // brilho dos knobs cromados
+];
+// Foto com reflexo do produto no chão: fica só a parte de cima, até essa fração da altura.
+const ATE_ALTURA = {
+  'kokko-fcp2-compressor': 0.79,
+};
+const inteiras = new Set([...INTEIRAS, ...(arg('--inteira') ?? [])]);
+const semBuracos = new Set([...SEM_BURACOS, ...(arg('--sem-buracos') ?? [])]);
+// A og:image vem na prévia (-P, ~250 px); a versão -F tem até 1200 px e dá um contorno preciso.
+const grande = (u) => u.replace(/-[A-Z]\.(webp|jpe?g|png)$/i, '-F.$1');
+async function baixar(u) {
+  const r = await fetch(u, { headers: { 'User-Agent': UA } });
+  if (!r.ok) throw new Error(`foto ${r.status}`);
+  return Buffer.from(await r.arrayBuffer());
+}
+// A foto original fica guardada em covers-src/photos/ml/ (fora do git) para refazer o recorte
+// sem baixar de novo; --baixar força baixar outra vez (link ou foto do anúncio mudou).
+const CACHE = 'covers-src/photos/ml';
+fs.mkdirSync(CACHE, { recursive: true });
 const relatorio = [];
 for (const id of ids) {
   const p = ler(id);
   const r = { id, nome: p.nome };
   try {
-    const html = await (await fetch(p.meli, { headers: { 'User-Agent': UA } })).text();
-    r.titulo = html.match(/<meta property="og:title" content="([^"]*)"/)?.[1];
-    r.foto = html.match(/<meta property="og:image" content="([^"]*)"/)?.[1];
-    if (!r.foto) throw new Error('página sem og:image');
-    const img = Buffer.from(await (await fetch(r.foto, { headers: { 'User-Agent': UA } })).arrayBuffer());
+    const cache = path.join(CACHE, `${id}.img`);
+    const antigo = fs.existsSync(REL) ? JSON.parse(fs.readFileSync(REL, 'utf8')).find((x) => x.id === id && x.meli === p.meli) : null;
+    if (antigo && fs.existsSync(cache) && !process.argv.includes('--baixar')) {
+      Object.assign(r, { titulo: antigo.titulo, foto: antigo.foto });
+    } else {
+      const html = await (await fetch(p.meli, { headers: { 'User-Agent': UA } })).text();
+      r.titulo = html.match(/<meta property="og:title" content="([^"]*)"/)?.[1];
+      r.foto = html.match(/<meta property="og:image" content="([^"]*)"/)?.[1];
+      if (!r.foto) throw new Error('página sem og:image');
+      fs.writeFileSync(cache, await baixar(grande(r.foto)).catch(() => baixar(r.foto)));
+    }
+    r.meli = p.meli;
+    let img = fs.readFileSync(cache);
+    if (ATE_ALTURA[id]) {
+      const { width, height } = await sharp(img).metadata();
+      img = await sharp(img).extract({ left: 0, top: 0, width, height: Math.round(height * ATE_ALTURA[id]) }).toBuffer();
+    }
     const arquivo = `${OUT}/${id}.webp`;
-    const { fundoBranco } = await recortar(img, arquivo, 256, { limiar });
+    const { modo, fundoBranco, buracos } = await recortar(img, arquivo, 256, { inteira: inteiras.has(id), buracos: !semBuracos.has(id) });
+    r.modo = modo;
+    r.buracos = buracos;
+    if (inteiras.has(id)) r.inteira = true;
     r.arquivo = arquivo.replace(/\\/g, '/').replace(/^/, 'public/').replace(/^public\/public\//, 'public/');
     r.fundoBranco = Math.round(fundoBranco * 100) / 100;
   } catch (e) {
     r.erro = e.message;
   }
   relatorio.push(r);
-  console.log(`${r.erro ? 'ERRO ' + r.erro : `fundo ${r.fundoBranco}`}\t${id}`);
+  console.log(`${r.erro ? 'ERRO ' + r.erro : `${r.modo} fundo ${r.fundoBranco} buracos ${r.buracos}`}\t${id}`);
 }
 // Com --ids, o relatório anterior é mantido e só esses produtos são trocados nele.
 const anterior = so && fs.existsSync(REL) ? JSON.parse(fs.readFileSync(REL, 'utf8')).filter((r) => !so.includes(r.id)) : [];
@@ -82,7 +131,7 @@ for (let g = 0; g * POR < ok.length; g++) {
     const nome = `${g * POR + i + 1}. ${r.id}`.slice(0, 24).replace(/&/g, '&amp;');
     camadas.push({ input: Buffer.from(`<svg width="${L}" height="18"><text x="4" y="13" font-size="10" font-family="sans-serif" fill="#ccc">${nome}</text></svg>`), left: x, top: y + L - 4 });
   }
-  await sharp({ create: { width: COL * L, height: linhas * (L + 18), channels: 3, background: '#161616' } })
+  await sharp({ create: { width: COL * L, height: linhas * (L + 18), channels: 3, background: '#1c1c1c' } })
     .composite(camadas)
     .png()
     .toFile(`covers-src/_fotos-produtos-${g + 1}.png`);
