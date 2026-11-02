@@ -1,21 +1,17 @@
 {
   "nome": "Boss TU-3 Afinador Cromático",
-  "meli": "https://meli.la/16dunp6",
-  "preco": 179,
+  "meli": "https://meli.la/2Bemi9x",
+  "preco": 901,
   "precoEm": "2026-11-02",
   "categoria": "pedal",
   "historico": [
     {
-      "data": "2026-02-05",
-      "preco": 168
-    },
-    {
-      "data": "2026-10-05",
-      "preco": 168
-    },
-    {
       "data": "2026-11-02",
-      "preco": 179
+      "preco": 901
     }
-  ]
+  ],
+  "nota": 5,
+  "avaliacoes": 98,
+  "imagem": "/images/produtos/boss-tu-3-afinador-cromatico.webp",
+  "imagemAlt": "Boss TU-3 Afinador Cromático"
 }

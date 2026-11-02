@@ -13,5 +13,7 @@
       "data": "2026-09-28",
       "preco": 14000
     }
-  ]
+  ],
+  "imagem": "/images/produtos/gibson-les-paul-studio.webp",
+  "imagemAlt": "Gibson Les Paul Studio"
 }
