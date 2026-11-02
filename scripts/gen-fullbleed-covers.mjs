@@ -77,6 +77,17 @@ const MAP = {
   'violao-giannini-e-bom':          { kicker: 'VIOLÕES · MARCAS', l1: 'VIOLÃO', l2: 'GIANNINI', q: 'acoustic guitar steel string dreadnought', prefer: /acoustic|dreadnought|giannini/i, avoid: /bass|logo|ukulele|violin|cello|electric/i },
   'violao-yamaha-f310-e-bom':       { kicker: 'VIOLÕES · REVIEW', l1: 'YAMAHA', l2: 'F310', q: 'folk acoustic guitar', prefer: /acoustic|folk/i, avoid: /bass|logo|ukulele|violin|cello|electric|label|martin|taylor|gibson|ibanez/i },
   'tagima-tg-510-e-boa':            { kicker: 'GUITARRAS · REVIEW', l1: 'TAGIMA', l2: 'TG-510', q: 'black stratocaster electric guitar', prefer: /strat/i, avoid: /bass|logo|amp/i },
+  // Lote 2026-11-02 (pautas top 3)
+  'tagima-tg-530-e-boa':            { kicker: 'GUITARRAS · REVIEW', l1: 'TAGIMA', l2: 'TG-530', q: 'stratocaster guitar body pickguard', prefer: /strat|pickguard/i, avoid: /bass|logo|amp|fender|squier|gibson|les paul|dylan|museum|signed|hendrix|clapton|exhibit|hello kitty|orfeus|jazzmaster|SJM|tele/i },
+  'boss-katana-mini-e-bom':         { kicker: 'AMPLIFICADORES · REVIEW', l1: 'KATANA', l2: 'MINI', q: 'guitar amplifier combo', prefer: /practice|small|mini|combo/i, avoid: /bass|logo|marshall|fender|vox|orange|museum|stack|mesa|peavey/i },
+  'tagima-tw-55-e-boa':             { kicker: 'GUITARRAS · REVIEW', l1: 'TAGIMA', l2: 'TW-55', q: 'telecaster style electric guitar', prefer: /tele/i, avoid: /bass|logo|amp|fender|squier|museum|signed|exhibit|keith|springsteen/i },
+  'melhor-violao-ate-2000-reais':   { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 2.000', q: 'acoustic guitar wooden', prefer: /acoustic guitar/i, avoid: /rig|bass|logo|ukulele|violin|cello|electric|label|museum|signed|player|concert|martin|taylor|gibson/i },
+  'melhor-violao-infantil':         { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'INFANTIL', q: 'little girl playing guitar', prefer: /little|child|girl|boy|kid/i, avoid: /logo|violin|cello|piano|ukulele|kid rock|soldier|army|DVIDS|alicia rea/i },
+  'yamaha-pacifica-012-e-boa':      { kicker: 'GUITARRAS · REVIEW', l1: 'YAMAHA', l2: 'PACIFICA', q: 'yamaha pacifica guitar', prefer: /pacifica/i, avoid: /bass|logo|museum|signed/i },
+  'nux-mg-400-e-boa':               { kicker: 'PEDAIS · REVIEW', l1: 'NUX', l2: 'MG-400', q: 'guitar pedalboard', prefer: /pedalboard|pedal board|effects/i, avoid: /logo|car|bicycle|piano|organ|boss|line 6|zoom|tc electronic|rear panel|nova system|museum|deacon|singer|vocal/i },
+  'melhor-violao-ate-500-reais':    { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 500', q: 'guitarra clasica', prefer: /guitar/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser|strings attachment|flamenco dancer/i },
+  'squier-bullet-vale-a-pena':      { kicker: 'GUITARRAS · REVIEW', l1: 'SQUIER', l2: 'BULLET', q: 'squier bullet stratocaster', prefer: /bullet|squier/i, avoid: /bass|logo|amp|silver series|hello kitty/i },
+  'takamine-gd11mce-e-bom':         { kicker: 'VIOLÕES · REVIEW', l1: 'TAKAMINE', l2: 'GD11MCE', q: 'takamine acoustic guitar', prefer: /takamine/i, avoid: /logo|museum|signed|bass/i },
   // Lote 2026-10-30 (pautas top 3)
   'melhor-cavaquinho-para-iniciante': { kicker: 'CAVAQUINHO · 2026', l1: 'CAVAQUINHO', l2: 'INICIANTE', q: 'cavaquinho', prefer: /cavaquinho/i, avoid: /logo|ukulele|map/i },
   'melhor-ukulele-para-iniciante':  { kicker: 'UKULELE · 2026', l1: 'UKULELE', l2: 'INICIANTE', q: 'ukulele instrument', prefer: /ukulele/i, avoid: /logo|festival|orchestra|band|map/i },
@@ -238,7 +249,10 @@ for (const [slug, cfg] of Object.entries(WORK)) {
     if (!cands.length) { console.log(`! sem candidato CC p/ ${slug} (q="${cfg.q}")`); continue; }
     if (cfg.prefer) cands.sort((a, b) => ((cfg.prefer.test(b.title) ? 1 : 0) - (cfg.prefer.test(a.title) ? 1 : 0)) || ((b.landscape ? 1 : 0) - (a.landscape ? 1 : 0)));
     const ok = (c) => !usedTitles.has(c.title) && !(cfg.avoid && cfg.avoid.test(c.title));
-    const pick = cands.find(ok) || cands.find((c) => !usedTitles.has(c.title)) || cands[0];
+    // Sem fallback para candidatos barrados pelo avoid: antes, quando nada passava, a
+    // capa saía com a foto evitada (ex.: guitarra Fender de museu num post de outra marca).
+    const pick = cands.find(ok);
+    if (!pick) { console.log(`! todos os candidatos barrados p/ ${slug} (q="${cfg.q}"): ajuste q/avoid`); continue; }
     usedTitles.add(pick.title);
     // baixa a versão 1600px
     const img = await fetch(pick.thumburl, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0' } });

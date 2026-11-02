@@ -1,8 +1,8 @@
 {
-  "nome": "Blackstar Fly 3 Bluetooth",
+  "nome": "Blackstar Fly 3",
   "meli": "https://meli.la/1yPaLJd",
-  "preco": 1035,
-  "precoEm": "2026-10-05",
+  "preco": 724,
+  "precoEm": "2026-11-02",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-10-05",
       "preco": 1035
+    },
+    {
+      "data": "2026-11-02",
+      "preco": 724
     }
   ]
 }
