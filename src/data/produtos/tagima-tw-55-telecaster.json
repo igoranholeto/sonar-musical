@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TW-55 (Telecaster)",
   "meli": "https://meli.la/1qTMXz2",
-  "preco": 998,
-  "precoEm": "2026-10-16",
+  "preco": 905,
+  "precoEm": "2026-11-02",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-10-16",
       "preco": 998
+    },
+    {
+      "data": "2026-11-02",
+      "preco": 905
     }
   ]
 }
