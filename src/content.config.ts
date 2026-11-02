@@ -32,6 +32,8 @@ const blog = defineCollection({
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
     author: z.string().default('Sonar Musical'),
+    // 'decisao' = guia de decisão: escolhas com preço no topo e capa fora do topo no celular.
+    formato: z.enum(['decisao']).optional(),
   }),
 });
 
@@ -52,6 +54,9 @@ const produtos = defineCollection({
     categoria: z.enum(CATEGORIAS_PRODUTO).optional(),
     imagem: z.string().optional(),
     imagemAlt: z.string().optional(),
+    // Nota e número de avaliações dos compradores no Mercado Livre, na data de precoEm.
+    nota: z.number().min(0).max(5).optional(),
+    avaliacoes: z.number().int().nonnegative().optional(),
   }),
 });
 

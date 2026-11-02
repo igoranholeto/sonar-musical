@@ -33,6 +33,7 @@ interface Props {
   cons?: string[];
   tags?: string[];
   author?: string;
+  formato?: 'decisao';
   headings?: MarkdownHeading[];
 }
 
@@ -50,6 +51,7 @@ const {
   cons,
   tags = [],
   author = 'Sonar Musical',
+  formato,
   headings = [],
 } = Astro.props;
 
@@ -188,7 +190,8 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
 >
   <ReadingProgress />
 
-  <div class="mx-auto max-w-6xl px-4 py-16 xl:flex xl:gap-10 xl:justify-center">
+  <!-- No guia de decisão, menos respiro no topo do celular para as escolhas aparecerem na primeira tela. -->
+  <div class:list={['mx-auto max-w-6xl px-4 xl:flex xl:gap-10 xl:justify-center', formato === 'decisao' ? 'pt-6 pb-16 md:py-16' : 'py-16']}>
   <article class="w-full max-w-3xl min-w-0" data-pagefind-body>
     <!-- Breadcrumb -->
     <nav aria-label="Navegação em breadcrumb" class="mb-8 flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-muted">
@@ -232,9 +235,14 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
       )}
     </div>
 
-    <!-- Imagem de capa -->
+    <!-- Imagem de capa. No guia de decisão, ela sai do topo no celular: a primeira tela fica para as
+         escolhas, e o <source> com um GIF vazio evita que o celular baixe a foto escondida. -->
     {image && (
-      <figure class="mb-10 rounded-2xl overflow-hidden border border-border shadow-xl shadow-black/20">
+      <figure class:list={['mb-10 rounded-2xl overflow-hidden border border-border shadow-xl shadow-black/20', { 'hidden md:block': formato === 'decisao' }]}>
+        <picture>
+        {formato === 'decisao' && (
+          <source media="(max-width: 767px)" srcset="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" />
+        )}
         <img
           src={heroSrc}
           srcset={heroSrcset}
@@ -247,12 +255,14 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
           fetchpriority="high"
           decoding="sync"
         />
+        </picture>
       </figure>
     )}
 
     <!-- Índice colapsável (mobile/tablet). Fechado por padrão: no celular o índice
-         aberto empurrava a resposta e o primeiro botão de compra várias telas para baixo. -->
-    {hasToc && (
+         aberto empurrava a resposta e o primeiro botão de compra várias telas para baixo.
+         O guia de decisão não tem: as escolhas e os atalhos por faixa fazem esse papel. -->
+    {hasToc && formato !== 'decisao' && (
       <details class="xl:hidden mb-10 rounded-xl border border-border bg-card px-5 py-4" data-pagefind-ignore>
         <summary class="toc-summary cursor-pointer list-none flex items-center justify-between gap-4 text-sm font-semibold marker:content-none">
           <span>Neste artigo</span>

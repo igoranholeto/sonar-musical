@@ -1,0 +1,112 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Como avaliamos os equipamentos',
+  url: 'https://sonarmusical.com.br/como-avaliamos/',
+  inLanguage: 'pt-BR',
+  description: 'O método do Sonar Musical: de onde vêm preços, notas e recomendações, o que significa a nota da redação e como funcionam os links de afiliado.',
+  isPartOf: { '@type': 'WebSite', name: 'Sonar Musical', url: 'https://sonarmusical.com.br' },
+};
+
+const fontes = [
+  {
+    titulo: 'Ficha do fabricante',
+    texto: 'Madeiras, captadores, potência, recursos e medidas vêm da especificação oficial e da ficha do anúncio. Quando as duas não batem, dizemos isso no texto.',
+  },
+  {
+    titulo: 'Avaliações de quem comprou',
+    texto: 'Usamos a nota e o número de avaliações no Mercado Livre e o resumo do que os compradores relatam. Uma nota alta com poucas avaliações vale menos, e avisamos quando a amostra é pequena.',
+  },
+  {
+    titulo: 'Preço do dia',
+    texto: 'O preço é consultado no dia em que o texto é escrito ou atualizado, e a data aparece no post. Preço muda toda semana, então o valor no botão pode ser diferente do texto.',
+  },
+  {
+    titulo: 'Garantia e assistência no Brasil',
+    texto: 'Marca com assistência e histórico no Brasil pesa a favor, principalmente em instrumento barato, em que a troca por defeito importa.',
+  },
+];
+
+const nota = [
+  'Custo-benefício: o que o produto entrega pelo preço do dia, comparado aos rivais da mesma faixa.',
+  'Histórico: nota e volume de avaliações de compradores. Centenas de avaliações dão mais segurança do que poucas.',
+  'Recursos e construção: o que vem de fábrica e o que vai exigir troca ou regulagem.',
+  'Para quem serve: um produto ótimo para estudar em casa pode ser ruim para palco, e a nota considera o uso indicado no texto.',
+];
+---
+
+<BaseLayout
+  title="Como Avaliamos os Equipamentos | Sonar Musical"
+  description="O método do Sonar Musical: de onde vêm preços, notas e recomendações, o que significa a nota da redação e como funcionam os links de afiliado."
+  schema={schema}
+>
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <header class="mb-12">
+      <p class="text-xs font-bold uppercase tracking-widest text-muted mb-3">Transparência</p>
+      <h1 class="text-4xl font-black mb-4">Como avaliamos os equipamentos</h1>
+      <p class="text-muted text-lg leading-relaxed">
+        Nossas análises não vêm de teste em mãos. Elas reúnem a ficha do fabricante, as avaliações de quem comprou e o preço do dia, e terminam em um veredito claro, incluindo para quem o produto não é indicado. Quando um texto vier de teste em mãos, isso estará escrito nele.
+      </p>
+    </header>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-5">De onde vêm as informações</h2>
+      <div class="grid sm:grid-cols-2 gap-4">
+        {fontes.map((f) => (
+          <div class="p-5 bg-card border border-border rounded-xl">
+            <h3 class="font-semibold mb-2">{f.titulo}</h3>
+            <p class="text-sm text-muted leading-relaxed">{f.texto}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-4">O que significa a nota da redação</h2>
+      <p class="text-foreground/80 leading-relaxed mb-4">
+        A nota de 1 a 5 que aparece nos posts é da redação, não dos compradores. Ela resume quatro critérios:
+      </p>
+      <ul class="space-y-3">
+        {nota.map((item) => (
+          <li class="flex items-start gap-3 text-foreground/80 text-sm leading-relaxed">
+            <span class="text-brand mt-0.5 font-bold" aria-hidden="true">✓</span>
+            {item}
+          </li>
+        ))}
+      </ul>
+      <p class="text-foreground/80 leading-relaxed mt-4">
+        A nota dos compradores aparece separada, com o número de avaliações ao lado, sempre que ela existe.
+      </p>
+    </section>
+
+    <section class="mb-12 p-8 bg-elevated border border-border rounded-2xl">
+      <h2 class="text-xl font-bold mb-4">Links de afiliado</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        Os botões de compra levam ao Mercado Livre por links de afiliado. Se você comprar por eles, podemos receber uma comissão, sem custo extra para você. Nenhuma marca paga para aparecer, e a comissão não muda a ordem nem a nota. Só colocamos botão quando existe um anúncio real do mesmo produto à venda; se o anúncio sai do ar, o botão é trocado ou removido.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-4">Imagens</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        As fotos de capa vêm do Wikimedia Commons, com licença livre, e os autores estão listados na página de <a href="/creditos/" class="text-brand underline underline-offset-2">créditos de imagem</a>. Uma capa ilustra o tema do post e nem sempre mostra o produto analisado.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-xl font-bold mb-4">Correções</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        Encontrou um preço desatualizado, um link que não abre o produto certo ou uma informação errada? Fale com a gente pela página de <a href="/contact/" class="text-brand underline underline-offset-2">contato</a>. Corrigimos e atualizamos a data do post.
+      </p>
+    </section>
+
+    <div class="text-center">
+      <a href="/about/" class="inline-block px-8 py-3.5 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors">
+        Conheça o Sonar Musical
+      </a>
+    </div>
+  </div>
+</BaseLayout>
