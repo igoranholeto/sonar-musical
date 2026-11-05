@@ -1,0 +1,17 @@
+{
+  "nome": "Fender CD-140SCE",
+  "meli": "https://meli.la/2DPwdHU",
+  "preco": 2896,
+  "precoEm": "2026-11-05",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 2896
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 137,
+  "imagemAlt": "Fender CD-140SCE",
+  "imagem": "/images/produtos/fender-cd-140sce.webp"
+}

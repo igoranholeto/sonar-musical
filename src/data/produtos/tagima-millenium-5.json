@@ -1,15 +1,21 @@
 {
   "nome": "Tagima Millenium 5",
   "meli": "https://meli.la/1uBUo3Q",
-  "preco": 1657,
-  "precoEm": "2026-10-17",
+  "preco": 1643,
+  "precoEm": "2026-11-05",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 1657
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1643
     }
   ],
-  "imagem": "/images/produtos/tagima-millenium-5.webp",
-  "imagemAlt": "Tagima Millenium 5"
+  "nota": 4.8,
+  "avaliacoes": 186,
+  "imagemAlt": "Tagima Millenium 5",
+  "imagem": "/images/produtos/tagima-millenium-5.webp"
 }

@@ -1,0 +1,17 @@
+{
+  "nome": "Tagima TW-73",
+  "meli": "https://meli.la/2YeT67f",
+  "preco": 1303,
+  "precoEm": "2026-11-05",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 1303
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 166,
+  "imagemAlt": "Tagima TW-73",
+  "imagem": "/images/produtos/tagima-tw-73.webp"
+}

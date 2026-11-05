@@ -1,0 +1,17 @@
+{
+  "nome": "Yamaha TRBX174",
+  "meli": "https://meli.la/1J3ai3j",
+  "preco": 1791,
+  "precoEm": "2026-11-05",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 1791
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 120,
+  "imagemAlt": "Yamaha TRBX174",
+  "imagem": "/images/produtos/yamaha-trbx174.webp"
+}

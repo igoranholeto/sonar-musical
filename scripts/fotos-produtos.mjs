@@ -62,9 +62,11 @@ const SEM_BURACOS = [
   'joyo-atmosphere-r-14',         // brilho dos knobs cromados
   'joyo-zip-amp-r-04',            // brilho dos knobs cromados
 ];
-// Foto com reflexo do produto no chão: fica só a parte de cima, até essa fração da altura.
-const ATE_ALTURA = {
-  'kokko-fcp2-compressor': 0.79,
+// Foto com sobra que o recorte não tira (reflexo no chão, marca nos cantos): fica só a caixa
+// [esquerda, topo, largura, altura] em frações da foto.
+const CORTE = {
+  'kokko-fcp2-compressor': [0, 0, 1, 0.79],   // reflexo do pedal no chão
+  'yamaha-trbx174': [0.1, 0, 0.8, 1],         // traços azuis nos cantos da foto
 };
 const inteiras = new Set([...INTEIRAS, ...(arg('--inteira') ?? [])]);
 const semBuracos = new Set([...SEM_BURACOS, ...(arg('--sem-buracos') ?? [])]);
@@ -97,9 +99,10 @@ for (const id of ids) {
     }
     r.meli = p.meli;
     let img = fs.readFileSync(cache);
-    if (ATE_ALTURA[id]) {
+    if (CORTE[id]) {
       const { width, height } = await sharp(img).metadata();
-      img = await sharp(img).extract({ left: 0, top: 0, width, height: Math.round(height * ATE_ALTURA[id]) }).toBuffer();
+      const [l, t, w, h] = CORTE[id];
+      img = await sharp(img).extract({ left: Math.round(width * l), top: Math.round(height * t), width: Math.round(width * w), height: Math.round(height * h) }).toBuffer();
     }
     const arquivo = `${OUT}/${id}.webp`;
     const { modo, fundoBranco, buracos } = await recortar(img, arquivo, 256, { inteira: inteiras.has(id), buracos: !semBuracos.has(id) });

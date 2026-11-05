@@ -1,0 +1,15 @@
+{
+  "nome": "Taylor Academy 10e",
+  "meli": "https://meli.la/1pQHs9H",
+  "preco": 7900,
+  "precoEm": "2026-11-05",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 7900
+    }
+  ],
+  "imagemAlt": "Taylor Academy 10e",
+  "imagem": "/images/produtos/taylor-academy-10e.webp"
+}

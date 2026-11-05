@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GD11MCE",
   "meli": "https://meli.la/2SPmQqw",
-  "preco": 2499,
-  "precoEm": "2026-11-02",
+  "preco": 2278,
+  "precoEm": "2026-11-05",
   "categoria": "violao",
   "historico": [
     {
@@ -12,8 +12,14 @@
     {
       "data": "2026-11-02",
       "preco": 2499
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 2278
     }
   ],
-  "imagem": "/images/produtos/takamine-gd11mce.webp",
-  "imagemAlt": "Takamine GD11MCE"
+  "nota": 4.9,
+  "avaliacoes": 723,
+  "imagemAlt": "Takamine GD11MCE",
+  "imagem": "/images/produtos/takamine-gd11mce.webp"
 }
