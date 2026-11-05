@@ -192,14 +192,18 @@ const dAlbuns = d.albuns?.length ?? 0;
   }
   .bento__wave-bar {
     width: 3px;
-    height: 40%;
+    height: 100%;
     border-radius: 999px;
     background: var(--color-brand-fill);
+    transform-origin: center;
+    transform: scaleY(0.55);
+    /* Anima transform (compositor), não height: height recalculava o layout da
+       página a cada frame, o que pesava no TBT da home. */
     animation: bento-wave 1.3s ease-in-out infinite;
   }
   @keyframes bento-wave {
-    0%, 100% { height: 25%; }
-    50% { height: 100%; }
+    0%, 100% { transform: scaleY(0.25); }
+    50% { transform: scaleY(1); }
   }
 
   /* Célula de banda */
@@ -304,7 +308,7 @@ const dAlbuns = d.albuns?.length ?? 0;
   }
   @media (prefers-reduced-motion: reduce) {
     .reveal { opacity: 1; transform: none; transition: none; }
-    .bento__wave-bar { animation: none; height: 55%; }
+    .bento__wave-bar { animation: none; transform: scaleY(0.55); }
     .bento__cell:hover { transform: none; }
     .bento__band:hover .bento__band-img,
     .bento__band:hover .bento__band-vinyl { transform: none; }

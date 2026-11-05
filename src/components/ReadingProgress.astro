@@ -37,10 +37,12 @@
   .reading-progress__bar {
     display: block;
     height: 100%;
-    width: 0;
+    width: 100%;
     background: var(--color-brand-fill);
     transform-origin: left;
-    transition: width 0.1s linear;
+    transform: scaleX(0);
+    /* Só transform: roda no compositor, sem recalcular layout a cada rolagem. */
+    transition: transform 0.1s linear;
   }
 
   .back-to-top {
@@ -93,7 +95,7 @@
       const scrollTop = window.scrollY;
       const docHeight = document.documentElement.scrollHeight - window.innerHeight;
       const pct = docHeight > 0 ? Math.min(100, (scrollTop / docHeight) * 100) : 0;
-      bar.style.width = pct + '%';
+      bar.style.transform = 'scaleX(' + pct / 100 + ')';
       progress.setAttribute('aria-valuenow', String(Math.round(pct)));
       backBtn.classList.toggle('is-visible', scrollTop > 600);
       ticking = false;
@@ -108,7 +110,9 @@
 
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', onScroll, { passive: true });
-    update();
+    // Sem update() imediato: ler scrollHeight aqui forçava o layout da página
+    // inteira dentro do script (centenas de ms no celular). A barra começa em 0
+    // e a primeira rolagem (inclusive a restauração de posição) já atualiza.
 
     backBtn.addEventListener('click', () => {
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;

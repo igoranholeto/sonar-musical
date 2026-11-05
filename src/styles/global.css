@@ -60,8 +60,10 @@
 }
 
 @layer base {
+  /* Sem scroll-behavior: smooth. Os posts usam content-visibility: auto, e a
+     rolagem suave até uma âncora errava o destino (os blocos no caminho mudam de
+     altura enquanto ela anda). O salto direto cai certo no título. */
   html {
-    scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -79,6 +81,11 @@
 }
 
 @layer utilities {
+  /* Bloco abaixo da dobra: layout e pintura só quando chega perto da tela. */
+  .cv-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 640px;
+  }
   .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
