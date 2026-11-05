@@ -1,8 +1,8 @@
 {
   "nome": "Captador magnético Malagoli",
-  "meli": "https://meli.la/2VbJLBh",
-  "preco": 152,
-  "precoEm": "2026-08-23",
+  "meli": "https://meli.la/15zG7tJ",
+  "preco": 159,
+  "precoEm": "2026-11-05",
   "categoria": "acessorio",
   "imagem": "/images/produtos/captador-magnetico-malagoli.webp",
   "imagemAlt": "Captador magnético Malagoli",
@@ -10,6 +10,10 @@
     {
       "data": "2026-08-23",
       "preco": 152
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 159
     }
   ]
 }

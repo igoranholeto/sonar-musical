@@ -1,8 +1,8 @@
 {
   "nome": "Fender Player II Stratocaster",
-  "meli": "https://meli.la/1qKuTTu",
-  "preco": 8365,
-  "precoEm": "2026-09-30",
+  "meli": "https://meli.la/1fxUt7H",
+  "preco": 9230,
+  "precoEm": "2026-11-05",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,8 +24,14 @@
     {
       "data": "2026-09-30",
       "preco": 8365
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 9230
     }
   ],
   "imagem": "/images/produtos/fender-player-ii-stratocaster.webp",
-  "imagemAlt": "Fender Player II Stratocaster"
+  "imagemAlt": "Fender Player II Stratocaster",
+  "nota": 4.9,
+  "avaliacoes": 71
 }

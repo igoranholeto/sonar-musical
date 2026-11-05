@@ -131,9 +131,9 @@ integrantes:
           urlAfiliado: https://meli.la/2pEpHX2
         low:
           nome: Pearl Roadshow
-          preco: ~R$ 4.500
+          preco: ~R$ 5.566
           obs: Kit completo de entrada com bom acabamento.
-          urlAfiliado: https://meli.la/2LdGptf
+          urlAfiliado: https://meli.la/14RB3E1
 albuns:
   - nome: Parachutes
     ano: 2000

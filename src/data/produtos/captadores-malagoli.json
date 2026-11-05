@@ -1,15 +1,21 @@
 {
   "nome": "Captadores Malagoli",
-  "meli": "https://meli.la/1R6NUQC",
-  "preco": 670,
-  "precoEm": "2026-08-03",
+  "meli": "https://meli.la/1fCXvJ7",
+  "preco": 682,
+  "precoEm": "2026-11-05",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-08-03",
       "preco": 670
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 682
     }
   ],
   "imagem": "/images/produtos/captadores-malagoli.webp",
-  "imagemAlt": "Captadores Malagoli"
+  "imagemAlt": "Captadores Malagoli",
+  "nota": 4.9,
+  "avaliacoes": 380
 }

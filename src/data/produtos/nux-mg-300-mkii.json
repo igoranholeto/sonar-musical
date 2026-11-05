@@ -1,15 +1,21 @@
 {
   "nome": "Nux MG-300 MkII",
-  "meli": "https://meli.la/1XjnUkh",
-  "preco": 1650,
-  "precoEm": "2026-10-29",
+  "meli": "https://meli.la/2crqygd",
+  "preco": 1537,
+  "precoEm": "2026-11-05",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1650
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1537
     }
   ],
   "imagem": "/images/produtos/nux-mg-300-mkii.webp",
-  "imagemAlt": "Nux MG-300 MkII"
+  "imagemAlt": "Nux MG-300 MkII",
+  "nota": 4.8,
+  "avaliacoes": 358
 }

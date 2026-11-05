@@ -1,13 +1,17 @@
 {
   "nome": "Tagima OG-33 Cacau Santos",
-  "meli": "https://meli.la/2zRnnzk",
-  "preco": 989,
-  "precoEm": "2026-11-02",
+  "meli": "https://meli.la/2qHWyjR",
+  "preco": 1299,
+  "precoEm": "2026-11-05",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-02",
       "preco": 989
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1299
     }
   ],
   "imagem": "/images/produtos/tagima-og-33-cacau-santos.webp",
