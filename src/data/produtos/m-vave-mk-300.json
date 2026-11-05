@@ -1,13 +1,17 @@
 {
   "nome": "M-Vave MK-300",
   "meli": "https://meli.la/2wQnrfH",
-  "preco": 914,
-  "precoEm": "2026-10-16",
+  "preco": 921,
+  "precoEm": "2026-11-05",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-16",
       "preco": 914
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 921
     }
   ],
   "imagem": "/images/produtos/m-vave-mk-300.webp",

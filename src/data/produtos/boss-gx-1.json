@@ -1,13 +1,17 @@
 {
   "nome": "Boss GX-1",
   "meli": "https://meli.la/1m7SiF9",
-  "preco": 1951,
-  "precoEm": "2026-10-16",
+  "preco": 1339,
+  "precoEm": "2026-11-05",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-16",
       "preco": 1951
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1339
     }
   ],
   "imagem": "/images/produtos/boss-gx-1.webp",

@@ -1,8 +1,8 @@
 {
   "nome": "Squier Mini Stratocaster",
   "meli": "https://meli.la/2kLTE6s",
-  "preco": 2251,
-  "precoEm": "2026-08-07",
+  "preco": 2365,
+  "precoEm": "2026-11-05",
   "categoria": "guitarra",
   "imagem": "/images/produtos/squier-mini-stratocaster.webp",
   "imagemAlt": "Squier Mini Stratocaster",
@@ -14,6 +14,10 @@
     {
       "data": "2026-08-07",
       "preco": 2251
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 2365
     }
   ]
 }

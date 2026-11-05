@@ -1,8 +1,8 @@
 {
   "nome": "Fender Frontman 10G",
   "meli": "https://meli.la/1ddXKx6",
-  "preco": 1953,
-  "precoEm": "2026-08-04",
+  "preco": 1799,
+  "precoEm": "2026-11-05",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-08-04",
       "preco": 1953
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1799
     }
   ],
   "imagem": "/images/produtos/fender-frontman-10g-2.webp",
