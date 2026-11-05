@@ -1,0 +1,106 @@
+---
+// Afinadores por instrumento (/afinador/cavaquinho/, /ukulele/, /viola-caipira/,
+// /bandolim/). Mesma ferramenta do /afinador/, com o instrumento já selecionado,
+// as afinações dele e um texto próprio. O de guitarra e violão continua em /afinador/.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Afinador from '../../components/Afinador.astro';
+import { AFINADORES, type Pagina } from '../../data/afinadores';
+
+export function getStaticPaths() {
+  return AFINADORES.map((p) => ({ params: { instrumento: p.slug }, props: { p } }));
+}
+
+const { p } = Astro.props as { p: Pagina };
+const url = `https://sonarmusical.com.br/afinador/${p.slug}/`;
+const outros = AFINADORES.filter((o) => o.slug !== p.slug);
+
+const schema = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: `${p.h1}, Sonar Musical`,
+    url,
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'Web',
+    browserRequirements: 'Requer microfone e navegador com suporte a JavaScript',
+    inLanguage: 'pt-BR',
+    description: p.description,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: p.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.question,
+      acceptedAnswer: { '@type': 'Answer', text: f.answer },
+    })),
+  },
+];
+---
+
+<BaseLayout title={p.title} description={p.description} schema={schema}>
+  <section class="tuner-page">
+    <div class="tuner-header">
+      <h1>{p.h1}</h1>
+      <p class="tuner-subtitle">{p.subtitulo}</p>
+    </div>
+
+    <Afinador instrumentos={[p.instrumento]} />
+
+    <div class="info-section">
+      <div class="info-card">
+        <h2 class="info-card__title">Como usar</h2>
+        <p class="info-card__text">Clique em <strong>Ativar Microfone</strong>, permita o acesso e toque uma corda. A agulha no centro significa corda afinada.</p>
+        <ul class="info-card__tips">
+          <li><span class="tip-dot tip-dot--green"></span>Verde, afinado</li>
+          <li><span class="tip-dot tip-dot--yellow"></span>Amarelo, ajuste pequeno</li>
+          <li><span class="tip-dot tip-dot--red"></span>Vermelho, muito desafinado</li>
+        </ul>
+      </div>
+      <div class="info-card">
+        <h2 class="info-card__title">Lendo a agulha</h2>
+        <p class="info-card__text">Agulha para a <strong>esquerda</strong>: nota baixa, aperte. Agulha para a <strong>direita</strong>: nota alta, afrouxe.</p>
+        <p class="info-card__text">O número em <em>cents</em> mostra o desvio exato. ±8 cents ou menos é considerado afinado.</p>
+      </div>
+      <div class="info-card">
+        <h2 class="info-card__title">Afinações</h2>
+        <p class="info-card__text" set:html={p.afinacoesResumo} />
+      </div>
+    </div>
+
+    <div class="tuner-content">
+      <h2>Afinador de {p.nome} grátis, direto no navegador</h2>
+      <p set:html={p.intro} />
+
+      <h2>Como afinar {p.artigo} {p.nome} pelo microfone</h2>
+      <ol>
+        {p.passos.map((s) => <li set:html={s} />)}
+      </ol>
+
+      {p.secoes.map((s) => (
+        <Fragment>
+          <h2>{s.titulo}</h2>
+          <Fragment set:html={s.html} />
+        </Fragment>
+      ))}
+
+      <h2>Outros afinadores</h2>
+      <p>
+        Também temos o <a href="/afinador/">afinador de violão e guitarra</a>{outros.map((o, i) => (
+          <Fragment>{i === outros.length - 1 ? ' e o ' : ', o '}<a href={`/afinador/${o.slug}/`}>afinador de {o.nome}</a></Fragment>
+        ))}. Para treinar o ritmo, use o <a href="/metronomo/">metrônomo online</a>.
+      </p>
+
+      <section class="tuner-faq" aria-label="Perguntas frequentes">
+        <h2>Perguntas frequentes</h2>
+        {p.faq.map((f) => (
+          <details class="tuner-faq__item">
+            <summary>{f.question}</summary>
+            <p>{f.answer}</p>
+          </details>
+        ))}
+      </section>
+    </div>
+  </section>
+</BaseLayout>
