@@ -1,0 +1,17 @@
+{
+  "nome": "Taylor 114ce",
+  "meli": "https://meli.la/1gUCNec",
+  "preco": 10270,
+  "precoEm": "2026-11-05",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 10270
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 2,
+  "imagemAlt": "Taylor 114ce",
+  "imagem": "/images/produtos/taylor-114ce.webp"
+}

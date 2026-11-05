@@ -1,0 +1,17 @@
+{
+  "nome": "Yamaha APX600",
+  "meli": "https://meli.la/2v5UBhC",
+  "preco": 2210,
+  "precoEm": "2026-11-05",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 2210
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 496,
+  "imagemAlt": "Yamaha APX600",
+  "imagem": "/images/produtos/yamaha-apx600.webp"
+}

@@ -1,0 +1,17 @@
+{
+  "nome": "Tagima TJB-4",
+  "meli": "https://meli.la/2ZdvuHE",
+  "preco": 1720,
+  "precoEm": "2026-11-05",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 1720
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 61,
+  "imagemAlt": "Tagima TJB-4",
+  "imagem": "/images/produtos/tagima-tjb-4.webp"
+}

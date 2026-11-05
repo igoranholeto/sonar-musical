@@ -1,0 +1,17 @@
+{
+  "nome": "Bandolim Wave WMA-20",
+  "meli": "https://meli.la/2JVYuPs",
+  "preco": 699,
+  "precoEm": "2026-11-05",
+  "categoria": "bandolim",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 699
+    }
+  ],
+  "nota": 4.5,
+  "avaliacoes": 11,
+  "imagemAlt": "Bandolim Wave WMA-20",
+  "imagem": "/images/produtos/wave-wma-20.webp"
+}

@@ -2,14 +2,18 @@
   "nome": "Taylor 214ce",
   "meli": "https://meli.la/2ZcEDHz",
   "preco": 13579,
-  "precoEm": "2026-07-06",
+  "precoEm": "2026-11-05",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-07-06",
       "preco": 13579
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 13579
     }
   ],
-  "imagem": "/images/produtos/taylor-214ce.webp",
-  "imagemAlt": "Taylor 214ce"
+  "imagemAlt": "Taylor 214ce",
+  "imagem": "/images/produtos/taylor-214ce.webp"
 }

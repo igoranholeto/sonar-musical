@@ -1,0 +1,17 @@
+{
+  "nome": "Tagima XB-21",
+  "meli": "https://meli.la/2FcBjEN",
+  "preco": 1071,
+  "precoEm": "2026-11-05",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 1071
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 83,
+  "imagemAlt": "Tagima XB-21",
+  "imagem": "/images/produtos/tagima-xb-21.webp"
+}

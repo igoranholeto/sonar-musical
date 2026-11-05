@@ -1,0 +1,15 @@
+{
+  "nome": "Taylor Baby Taylor BT1",
+  "meli": "https://meli.la/2PZSDct",
+  "preco": 4110,
+  "precoEm": "2026-11-05",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-05",
+      "preco": 4110
+    }
+  ],
+  "imagemAlt": "Taylor Baby Taylor BT1",
+  "imagem": "/images/produtos/taylor-bt1.webp"
+}

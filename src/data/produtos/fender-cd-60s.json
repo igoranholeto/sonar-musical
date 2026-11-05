@@ -1,15 +1,19 @@
 {
   "nome": "Fender CD-60S",
   "meli": "https://meli.la/257H32N",
-  "preco": 3390,
-  "precoEm": "2026-07-06",
+  "preco": 2054,
+  "precoEm": "2026-11-05",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-07-06",
       "preco": 3390
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 2054
     }
   ],
-  "imagem": "/images/produtos/fender-cd-60s.webp",
-  "imagemAlt": "Fender CD-60S"
+  "imagemAlt": "Fender CD-60S",
+  "imagem": "/images/produtos/fender-cd-60s.webp"
 }
