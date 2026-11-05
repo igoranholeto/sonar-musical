@@ -90,6 +90,10 @@
 
   if (progress && bar && backBtn) {
     let ticking = false;
+    // Profundidade de leitura no GA4: scroll_depth com percent 50 e 90, uma vez
+    // cada por página. Mede quantos leitores chegam ao meio e ao fim do texto.
+    const MARCOS = [50, 90];
+    const enviados = new Set<number>();
 
     const update = () => {
       const scrollTop = window.scrollY;
@@ -98,6 +102,12 @@
       bar.style.transform = 'scaleX(' + pct / 100 + ')';
       progress.setAttribute('aria-valuenow', String(Math.round(pct)));
       backBtn.classList.toggle('is-visible', scrollTop > 600);
+      for (const m of MARCOS) {
+        if (pct >= m && !enviados.has(m)) {
+          enviados.add(m);
+          (window as any).gtag?.('event', 'scroll_depth', { percent: m });
+        }
+      }
       ticking = false;
     };
 
