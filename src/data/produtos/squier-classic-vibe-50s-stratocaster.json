@@ -1,8 +1,8 @@
 {
   "nome": "Squier Classic Vibe '50s Stratocaster",
   "meli": "https://meli.la/2ip8E7V",
-  "preco": 4599,
-  "precoEm": "2026-09-21",
+  "preco": 5782,
+  "precoEm": "2026-11-05",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-09-21",
       "preco": 4599
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 5782
     }
   ],
   "imagem": "/images/produtos/squier-classic-vibe-50s-stratocaster.webp",

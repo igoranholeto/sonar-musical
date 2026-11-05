@@ -1,13 +1,17 @@
 {
   "nome": "Valeton GP-200LT",
   "meli": "https://meli.la/1Q9MB2D",
-  "preco": 1583,
-  "precoEm": "2026-10-29",
+  "preco": 1685,
+  "precoEm": "2026-11-05",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1583
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1685
     }
   ],
   "imagem": "/images/produtos/valeton-gp-200lt.webp",

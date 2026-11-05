@@ -1,7 +1,9 @@
 ---
 title: "Melhor Pedaleira Custo-Benefício (2026): da Mais Barata à Completa"
-description: "Pedaleira custo-benefício em 2026: M-Vave Tank-G, Mooer GE150, M-Vave MK-300, Boss GX-1 e Valeton GP-200, com preço real e para quem cada uma serve."
+description: "Pedaleira custo-benefício em 2026: M-Vave Tank-G, Valeton GP-100, Boss GX-1, Mooer GE150 e Valeton GP-200, com preço real e para quem cada uma serve."
 pubDate: 2026-10-16
+updatedDate: 2026-11-05
+formato: "decisao"
 category: "Pedais"
 image: "/images/blog/melhor-pedaleira-custo-beneficio.jpg"
 imageAlt: "Pedaleira multiefeitos para guitarra em cima do palco"
@@ -14,11 +16,33 @@ import FAQ from '../../components/FAQ.astro';
 import QuickAnswer from '../../components/QuickAnswer.astro';
 import ComparativoProdutos from '../../components/ComparativoProdutos.astro';
 import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
+import TopEscolhas from '../../components/TopEscolhas.astro';
+import FaixaOrcamento from '../../components/FaixaOrcamento.astro';
+import BarraCompra from '../../components/BarraCompra.astro';
+
+<TopEscolhas
+  veredito="Para a maioria, a <strong>Valeton GP-100</strong>: pedal de expressão, looper e nota 4,9 com mais de 500 avaliações, abaixo de R$ 1.000."
+  itens={[
+    { id: "valeton-gp-100", rotulo: "Melhor custo-benefício" },
+    { id: "m-vave-tank-g", rotulo: "Mais barata, de bolso" },
+    { id: "boss-gx-1", rotulo: "Marca consagrada" },
+  ]}
+/>
+
+<FaixaOrcamento itens={[
+  { rotulo: "Até R$ 500", href: "#m-vave-tank-g-a-mais-barata-que-ainda-soa-bem" },
+  { rotulo: "Até R$ 1.000", href: "#valeton-gp-100-o-melhor-custo-benefício-geral" },
+  { rotulo: "Até R$ 1.500", href: "#boss-gx-1-a-escolha-de-quem-quer-marca-consagrada" },
+  { rotulo: "Até R$ 2.600", href: "#valeton-gp-200-a-mais-completa-antes-do-premium" },
+  { rotulo: "Guitarra e baixo", href: "#m-vave-mk-300-para-guitarra-e-baixo" },
+]} />
+
+> 🛒 **Comprando na Black Friday (27/11) ou para o Natal?** Os preços desta página foram conferidos no Mercado Livre em 05/11/2026. Compare no dia e confira o prazo de entrega no anúncio.
 
 Pedaleira é o jeito mais barato de ter dezenas de timbres de amplificador e efeitos num só equipamento. E a boa notícia de 2026 é que as opções de entrada evoluíram muito: hoje uma pedaleira de menos de R$ 1.000 tem simulação de amplificador, looper, bateria eletrônica e saída de fone. Este guia separa as pedaleiras com melhor custo-benefício por faixa de preço, do modelo de bolso mais barato ao mais completo antes de entrar no território premium.
 
 <QuickAnswer>
-A **pedaleira com melhor custo-benefício** depende do orçamento: até **R$ 500**, a **M-Vave Tank-G** é compacta, tem bateria interna e é a mais vendida; até **R$ 1.000**, a **Mooer GE150** traz pedal de expressão, looper e muitos timbres, e a **M-Vave MK-300** serve para guitarra e baixo; perto de **R$ 2.000**, a **Boss GX-1** tem os timbres e a robustez da Boss, e a **Valeton GP-200** é a mais completa da lista. Para estudar em casa com fone, qualquer uma resolve.
+A **pedaleira com melhor custo-benefício** depende do orçamento: até **R$ 500**, a **M-Vave Tank-G** é compacta, tem bateria interna e é a mais vendida; até **R$ 1.000**, a **Valeton GP-100** traz pedal de expressão, looper e nota 4,9 de compradores, e a **M-Vave MK-300** serve para guitarra e baixo; até **R$ 1.500**, a **Boss GX-1** tem os timbres e a robustez da Boss, e a **Mooer GE150** é a alternativa com pedal de expressão; perto de **R$ 2.500**, a **Valeton GP-200** é a mais completa da lista. Para estudar em casa com fone, qualquer uma resolve.
 </QuickAnswer>
 
 ## Comparativo rápido
@@ -27,14 +51,15 @@ A **pedaleira com melhor custo-benefício** depende do orçamento: até **R$ 500
   colunas={["Pedaleira", "Faixa", "Destaque", "Preço no ML"]}
   linhas={[
     { celulas: ["M-Vave Tank-G", "Até R$ 500", "Compacta, bateria interna", "R$ 409"], badge: "Mais barata" },
-    { celulas: ["M-Vave MK-300", "Até R$ 1.000", "Guitarra e baixo", "R$ 914"] },
-    { celulas: ["Mooer GE150", "Até R$ 1.000", "Pedal de expressão, looper", "R$ 949"], destaque: true, badge: "Melhor custo-benefício" },
-    { celulas: ["Boss GX-1", "Até R$ 2.000", "Timbres e robustez Boss", "R$ 1.951"] },
-    { celulas: ["Valeton GP-200", "Até R$ 2.300", "A mais completa da lista", "R$ 2.229"] },
+    { celulas: ["Valeton GP-100", "Até R$ 1.000", "Pedal de expressão, looper", "R$ 970"], destaque: true, badge: "Melhor custo-benefício" },
+    { celulas: ["M-Vave MK-300", "Até R$ 1.000", "Guitarra e baixo", "R$ 921"] },
+    { celulas: ["Boss GX-1", "Até R$ 1.500", "Timbres e robustez Boss", "R$ 1.339"] },
+    { celulas: ["Mooer GE150", "Até R$ 1.500", "Pedal de expressão, looper", "R$ 1.484"] },
+    { celulas: ["Valeton GP-200", "Até R$ 2.600", "A mais completa da lista", "R$ 2.527"] },
   ]}
 />
 
-Preços do Mercado Livre na data deste guia; eles mudam com frequência.
+Preços conferidos no Mercado Livre em 05/11/2026. Eles mudam com frequência, então confira o valor na hora de comprar.
 
 ## O que uma pedaleira de entrada precisa ter
 
@@ -58,21 +83,32 @@ A **Tank-G** virou fenômeno de vendas porque cabe na palma da mão, tem bateria
   destaques={["Compacta, cabe na mochila", "Bateria interna recarregável", "Mais de 5 mil vendidas no Mercado Livre"]}
 />
 
-### Mooer GE150, o melhor custo-benefício geral
+### Valeton GP-100, o melhor custo-benefício geral
 
-A **GE150** é a pedaleira que mais entrega por real nesta lista: tem **pedal de expressão** embutido (wah e volume), looper, ritmos de bateria e uma boa coleção de amplificadores e efeitos, num formato de mesa fácil de usar. Para quem quer uma pedaleira completa de verdade sem passar de R$ 1.000, é a primeira a considerar.
+A **GP-100** é a pedaleira que mais entrega por real nesta lista: **pedal de expressão** embutido, looper, ritmos de bateria e uma boa coleção de amplificadores e efeitos, abaixo de R$ 1.000. Tem nota **4,9 com 568 avaliações** no Mercado Livre, e os compradores destacam robustez, variedade de efeitos e facilidade de uso. A comparação com as irmãs maiores está em [Valeton GP-200 vale a pena?](/blog/valeton-gp-200-vale-a-pena/).
+
+<AfiliadoCTA
+  id="valeton-gp-100"
+  descricao="Pedaleira com pedal de expressão, looper e ritmos de bateria, a mais completa até R$ 1.000"
+  badge="Melhor custo-benefício"
+  destaques={["Pedal de expressão embutido para wah e volume", "Looper e ritmos de bateria para estudar", "Nota 4,9 com mais de 500 avaliações"]}
+/>
+
+### Mooer GE150, pedal de expressão num formato simples
+
+A **GE150** tem **pedal de expressão** embutido (wah e volume), looper, ritmos de bateria e uma boa coleção de amplificadores e efeitos, num formato de mesa fácil de usar. Já foi a mais barata com esse pacote, mas em 05/11/2026 custava R$ 1.484 no Mercado Livre, acima da GP-100. Vale se aparecer em promoção perto de R$ 1.000.
 
 <AfiliadoCTA
   id="mooer-ge150"
-  descricao="Pedaleira com pedal de expressão, looper e ritmos de bateria, a mais completa até R$ 1.000"
+  descricao="Pedaleira com pedal de expressão, looper e ritmos de bateria num formato de mesa simples"
   avaliacao={4.5}
-  badge="Melhor custo-benefício"
+  badge="Alternativa"
   destaques={["Pedal de expressão embutido para wah e volume", "Looper e ritmos de bateria para estudar", "Mais de mil vendidas no Mercado Livre"]}
 />
 
 ### M-Vave MK-300, para guitarra e baixo
 
-A **MK-300** é uma pedaleira de mesa da M-Vave pensada para **guitarra e baixo**, o que faz sentido para quem toca os dois instrumentos ou divide o equipamento com alguém. Fica na mesma faixa de preço da GE150.
+A **MK-300** é uma pedaleira de mesa da M-Vave pensada para **guitarra e baixo**, o que faz sentido para quem toca os dois instrumentos ou divide o equipamento com alguém. Fica na mesma faixa de preço da GP-100.
 
 <AfiliadoCTA
   id="m-vave-mk-300"
@@ -84,7 +120,7 @@ A **MK-300** é uma pedaleira de mesa da M-Vave pensada para **guitarra e baixo*
 
 ### Boss GX-1, a escolha de quem quer marca consagrada
 
-A **GX-1** é a pedaleira de entrada da Boss, com a robustez e os timbres de amplificador que fizeram a fama da marca. Custa o dobro das opções chinesas, mas entrega construção mais sólida e um ecossistema de edição maduro. Para quem pretende tocar ao vivo, faz diferença. Conheça a linha no [guia de pedaleiras Boss](/blog/pedaleira-boss-guia-completo/).
+A **GX-1** é a pedaleira de entrada da Boss, com a robustez e os timbres de amplificador que fizeram a fama da marca. Custa mais que as opções chinesas de entrada, mas entrega construção mais sólida e um ecossistema de edição maduro. Para quem pretende tocar ao vivo, faz diferença. Conheça a linha no [guia de pedaleiras Boss](/blog/pedaleira-boss-guia-completo/).
 
 <AfiliadoCTA
   id="boss-gx-1"
@@ -109,7 +145,7 @@ A **GP-200** é a mais completa desta lista: tela, pedal de expressão, muitos e
 ## Como escolher
 
 - **Só quero estudar em casa, gastando pouco:** M-Vave Tank-G.
-- **Quero uma pedaleira completa até R$ 1.000:** Mooer GE150.
+- **Quero uma pedaleira completa até R$ 1.000:** Valeton GP-100.
 - **Toco guitarra e baixo:** M-Vave MK-300.
 - **Vou tocar ao vivo e quero robustez:** Boss GX-1.
 - **Quero o máximo de recursos sem ir ao premium:** Valeton GP-200.
@@ -118,10 +154,12 @@ Ainda em dúvida entre pedaleira e pedais avulsos? Veja [pedaleira ou plugin](/b
 
 Para uma das pedaleiras mais completas da faixa, leia [Nux MG-400 é boa?](/blog/nux-mg-400-e-boa/).
 
+<BarraCompra id="valeton-gp-100" rotulo="Melhor pedaleira custo-benefício" />
+
 <FAQ items={[
   {
     question: "Qual a melhor pedaleira custo-benefício em 2026?",
-    answer: "Até R$ 1.000, a Mooer GE150 é a mais completa, com pedal de expressão, looper e ritmos de bateria. Se o orçamento é menor, a M-Vave Tank-G custa cerca de R$ 400. Perto de R$ 2.000, a Boss GX-1 e a Valeton GP-200 são as melhores opções."
+    answer: "Até R$ 1.000, a Valeton GP-100 é a mais completa, com pedal de expressão, looper e ritmos de bateria. Se o orçamento é menor, a M-Vave Tank-G custa cerca de R$ 400. Até R$ 1.500, a Boss GX-1 é a escolha de marca consagrada, e perto de R$ 2.500 a Valeton GP-200 é a mais completa."
   },
   {
     question: "Qual a pedaleira mais barata que presta?",

@@ -1,8 +1,8 @@
 {
   "nome": "Blackstar Fly 3",
   "meli": "https://meli.la/1yPaLJd",
-  "preco": 724,
-  "precoEm": "2026-11-02",
+  "preco": 779,
+  "precoEm": "2026-11-05",
   "categoria": "amplificador",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-02",
       "preco": 724
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 779
     }
   ],
   "imagem": "/images/produtos/blackstar-fly-3-bluetooth.webp",

@@ -2,7 +2,7 @@
   "nome": "Borne Vorax 630 Studio",
   "meli": "https://meli.la/1Rf7wTv",
   "preco": 764,
-  "precoEm": "2026-10-29",
+  "precoEm": "2026-11-05",
   "categoria": "amplificador",
   "historico": [
     {
@@ -11,6 +11,10 @@
     },
     {
       "data": "2026-10-29",
+      "preco": 764
+    },
+    {
+      "data": "2026-11-05",
       "preco": 764
     }
   ],

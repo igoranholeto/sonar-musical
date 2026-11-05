@@ -1,8 +1,8 @@
 {
   "nome": "Boss Katana Mini",
   "meli": "https://meli.la/31wZdZ4",
-  "preco": 1199,
-  "precoEm": "2026-10-29",
+  "preco": 1331,
+  "precoEm": "2026-11-05",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-10-29",
       "preco": 1199
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 1331
     }
   ],
   "imagem": "/images/produtos/boss-katana-mini.webp",

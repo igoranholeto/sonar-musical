@@ -1,8 +1,8 @@
 {
   "nome": "Guitarra Infantil com Microfone",
   "meli": "https://meli.la/1M7SdQP",
-  "preco": 95,
-  "precoEm": "2026-08-07",
+  "preco": 79,
+  "precoEm": "2026-11-05",
   "categoria": "acessorio",
   "imagem": "/images/produtos/guitarra-infantil-com-microfone.webp",
   "imagemAlt": "Guitarra Infantil com Microfone",
@@ -10,6 +10,10 @@
     {
       "data": "2026-08-07",
       "preco": 95
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 79
     }
   ]
 }
