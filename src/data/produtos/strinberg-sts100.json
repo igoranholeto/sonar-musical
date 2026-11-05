@@ -1,15 +1,21 @@
 {
   "nome": "Strinberg STS100",
-  "meli": "https://meli.la/1JXMHtT",
-  "preco": 730,
-  "precoEm": "2026-10-30",
+  "meli": "https://meli.la/2iXzRWa",
+  "preco": 749,
+  "precoEm": "2026-11-05",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 730
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 749
     }
   ],
   "imagem": "/images/produtos/strinberg-sts100.webp",
-  "imagemAlt": "Strinberg STS100"
+  "imagemAlt": "Strinberg STS100",
+  "nota": 4.8,
+  "avaliacoes": 290
 }

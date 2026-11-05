@@ -29,9 +29,9 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: ESP Snakebyte James Hetfield
-          preco: ~R$ 11.186
-          similar: "ESP LTD EC-1000 (EMG)"
-          urlAfiliado: https://meli.la/2pXyQ1A
+          preco: ~R$ 11.865
+          similar: "ESP LTD EC-1000 (captadores ativos Fishman)"
+          urlAfiliado: https://meli.la/2LeCSgC
         low:
           nome: LTD Snakebyte (Signature Series)
           preco: ~R$ 1.969

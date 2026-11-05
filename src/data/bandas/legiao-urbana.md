@@ -106,9 +106,9 @@ integrantes:
           urlAfiliado: https://meli.la/1iX6FXT
         low:
           nome: Pearl Roadshow
-          preco: ~R$ 4.500
+          preco: ~R$ 5.566
           obs: Kit de entrada com boa projeção para ensaio.
-          urlAfiliado: https://meli.la/2LdGptf
+          urlAfiliado: https://meli.la/14RB3E1
     foto: /images/marcelo-bonfa-integrante-sonar.webp
     fotoAlt: marcelo bonfa legiao
 albuns:

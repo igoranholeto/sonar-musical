@@ -1,15 +1,21 @@
 {
   "nome": "Strinberg Diamond DD5SC",
-  "meli": "https://meli.la/2eYEgWP",
-  "preco": 2561,
-  "precoEm": "2026-10-30",
+  "meli": "https://meli.la/2kQgPBU",
+  "preco": 2899,
+  "precoEm": "2026-11-05",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 2561
+    },
+    {
+      "data": "2026-11-05",
+      "preco": 2899
     }
   ],
   "imagem": "/images/produtos/strinberg-dd5sc-diamond.webp",
-  "imagemAlt": "Strinberg Diamond DD5SC"
+  "imagemAlt": "Strinberg Diamond DD5SC",
+  "nota": 4.9,
+  "avaliacoes": 33
 }

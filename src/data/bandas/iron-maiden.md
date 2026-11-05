@@ -185,9 +185,9 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Janick Gers Stratocaster
-          preco: ~R$ 8.365
+          preco: ~R$ 9.230
           similar: "Fender Player II Stratocaster"
-          urlAfiliado: https://meli.la/1qKuTTu
+          urlAfiliado: https://meli.la/1fxUt7H
         low:
           nome: Squier Classic Vibe 60s Strat
           preco: ~R$ 4.591
