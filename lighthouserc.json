@@ -1,0 +1,29 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "./dist",
+      "url": [
+        "http://localhost/",
+        "http://localhost/blog/melhor-pedaleira-de-guitarra-2026/",
+        "http://localhost/blog/melhor-guitarra-eletrica-infantil/",
+        "http://localhost/afinador/"
+      ],
+      "numberOfRuns": 3,
+      "settings": {
+        "onlyCategories": ["performance"],
+        "blockedUrlPatterns": ["*googletagmanager.com*", "*google-analytics.com*"]
+      }
+    },
+    "assert": {
+      "assertions": {
+        "largest-contentful-paint": ["error", { "maxNumericValue": 2500, "aggregationMethod": "median-run" }],
+        "total-blocking-time": ["error", { "maxNumericValue": 200, "aggregationMethod": "median-run" }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.1, "aggregationMethod": "median-run" }]
+      }
+    },
+    "upload": {
+      "target": "filesystem",
+      "outputDir": "./lhci-relatorios"
+    }
+  }
+}
