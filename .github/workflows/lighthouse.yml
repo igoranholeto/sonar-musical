@@ -1,0 +1,33 @@
+# Lighthouse mobile (simulado, como o PageSpeed) em 4 páginas-modelo do build.
+# Falha se a mediana de 3 rodadas passar de LCP 2,5 s, TBT 200 ms ou CLS 0,1.
+# O deploy da Netlify não depende dele; o commit só fica vermelho. Os relatórios
+# ficam como artefato da execução (aba Actions), não são publicados em lugar nenhum.
+name: Lighthouse
+
+on:
+  push:
+    branches: [master]
+    paths-ignore:
+      - 'docs/**'
+      - '**.md'
+  pull_request:
+
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - run: npx --yes @lhci/cli@0.14.0 autorun
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: lighthouse
+          path: lhci-relatorios
+          retention-days: 14

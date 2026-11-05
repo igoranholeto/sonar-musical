@@ -36,3 +36,7 @@ covers-src/_antes-depois.png
 # Pins do Pinterest e fotos-fonte das capas (gerados/baixados, não fazem parte do site)
 pins/
 covers-src/photos/
+
+# Lighthouse CI
+.lighthouseci/
+lhci-relatorios/
