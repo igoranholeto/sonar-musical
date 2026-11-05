@@ -344,6 +344,14 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
   </div>
 
   <style>
+    /* Do 10º bloco em diante o navegador só faz layout e pintura quando o bloco
+       chega perto da tela. Em post longo, o primeiro layout da página inteira
+       custava centenas de ms no celular e era a maior fatia do TBT. A barra de
+       compra (position: fixed) fica de fora, porque a contenção quebraria o fixed. */
+    .prose-post > :global(:nth-child(n+10):not(.barra):not(.lightbox)) {
+      content-visibility: auto;
+      contain-intrinsic-size: auto 280px;
+    }
     .prose-post :global(h2:not([class])) {
       position: relative;
       font-size: 1.6rem;

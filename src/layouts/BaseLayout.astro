@@ -168,8 +168,8 @@ const websiteSchema = {
     <meta name="lomadee" content="2324685" />
 
     <!-- Google Analytics. A fila (dataLayer) e a config existem desde o início, então
-         nenhum evento se perde; só o script do Google é baixado depois do load, para
-         não competir com o LCP. -->
+         nenhum evento se perde; só o script do Google é baixado depois (ver loadGA),
+         para não pesar no LCP nem no TBT. -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() { window.dataLayer.push(arguments); }
@@ -177,17 +177,30 @@ const websiteSchema = {
       gtag('js', new Date());
       gtag('config', 'G-WZDXX7MLBD', { send_page_view: true });
 
+      // O gtag.js custa ~400 ms de thread principal num celular médio. Ele só é
+      // baixado na primeira interação (toque, rolagem, tecla, mouse) ou depois de
+      // 6 s parado na página, o que vier primeiro. Como a fila acima já existe,
+      // page_view e cliques feitos antes disso são enviados quando ele chega.
+      var gaCarregado = false;
+      var GATILHOS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
       function loadGA() {
+        if (gaCarregado) return;
+        gaCarregado = true;
+        GATILHOS.forEach(function (ev) { window.removeEventListener(ev, loadGA, true); });
         var s = document.createElement('script');
         s.async = true;
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WZDXX7MLBD';
         document.head.appendChild(s);
       }
-      if (document.readyState === 'complete') {
-        setTimeout(loadGA, 1000);
-      } else {
-        window.addEventListener('load', function() { setTimeout(loadGA, 1000); });
-      }
+      GATILHOS.forEach(function (ev) { window.addEventListener(ev, loadGA, { capture: true, passive: true, once: true }); });
+      function gaPorTempo() { setTimeout(loadGA, 6000); }
+      if (document.readyState === 'complete') gaPorTempo();
+      else window.addEventListener('load', gaPorTempo);
+      // Saindo da página antes de qualquer gatilho (aba fechada, link externo):
+      // carrega na hora para o page_view não se perder.
+      document.addEventListener('visibilitychange', function () {
+        if (document.visibilityState === 'hidden') loadGA();
+      });
 
       // Clique em link de afiliado (Mercado Livre): evento affiliate_click com o
       // produto, o bloco de onde veio (cta, equipamento-banda, texto) e a posição do
