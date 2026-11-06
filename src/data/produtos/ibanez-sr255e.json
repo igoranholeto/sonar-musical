@@ -1,0 +1,15 @@
+{
+  "nome": "Ibanez SR255E (5 cordas)",
+  "meli": "https://meli.la/2rTktKS",
+  "preco": 2809,
+  "precoEm": "2026-11-06",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-06",
+      "preco": 2809
+    }
+  ],
+  "imagemAlt": "Ibanez SR255E (5 cordas)",
+  "imagem": "/images/produtos/ibanez-sr255e.webp"
+}

@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha F310 (tobacco brown sunburst)",
   "meli": "https://meli.la/2JFHDGN",
-  "preco": 1827,
-  "precoEm": "2026-10-29",
+  "preco": 1681,
+  "precoEm": "2026-11-06",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1827
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 1681
     }
   ],
   "imagem": "/images/produtos/yamaha-f310-tobacco-brown-sunburst.webp",

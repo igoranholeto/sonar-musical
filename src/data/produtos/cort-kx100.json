@@ -1,0 +1,17 @@
+{
+  "nome": "Cort KX100",
+  "meli": "https://meli.la/1DwtDTf",
+  "preco": 2025,
+  "precoEm": "2026-11-06",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-06",
+      "preco": 2025
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 47,
+  "imagemAlt": "Cort KX100",
+  "imagem": "/images/produtos/cort-kx100.webp"
+}

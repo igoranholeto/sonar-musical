@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GD11MCE",
   "meli": "https://meli.la/2SPmQqw",
-  "preco": 2278,
-  "precoEm": "2026-11-05",
+  "preco": 2399,
+  "precoEm": "2026-11-06",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-05",
       "preco": 2278
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 2399
     }
   ],
   "nota": 4.9,

@@ -84,8 +84,8 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender Precision Bass
-          preco: ~R$ 8.810
-          urlAfiliado: https://meli.la/1SPbQ2o
+          preco: ~R$ 5.487
+          urlAfiliado: https://meli.la/1tQYsn8
         low:
           nome: Squier Affinity P-Bass
           preco: ~R$ 3.353

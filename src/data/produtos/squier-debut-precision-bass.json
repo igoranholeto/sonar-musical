@@ -1,0 +1,17 @@
+{
+  "nome": "Squier Debut Precision Bass",
+  "meli": "https://meli.la/2MydWZD",
+  "preco": 1626,
+  "precoEm": "2026-11-06",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-06",
+      "preco": 1626
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 186,
+  "imagemAlt": "Squier Debut Precision Bass",
+  "imagem": "/images/produtos/squier-debut-precision-bass.webp"
+}

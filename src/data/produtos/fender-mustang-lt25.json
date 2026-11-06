@@ -1,0 +1,17 @@
+{
+  "nome": "Fender Mustang LT25",
+  "meli": "https://meli.la/1wpUYJZ",
+  "preco": 2299,
+  "precoEm": "2026-11-06",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-06",
+      "preco": 2299
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 447,
+  "imagemAlt": "Fender Mustang LT25",
+  "imagem": "/images/produtos/fender-mustang-lt25.webp"
+}

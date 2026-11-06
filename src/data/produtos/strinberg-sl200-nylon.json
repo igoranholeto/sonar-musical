@@ -1,13 +1,17 @@
 {
   "nome": "Strinberg SL200 Nylon",
   "meli": "https://meli.la/1Tqi9m5",
-  "preco": 1075,
-  "precoEm": "2026-10-30",
+  "preco": 970,
+  "precoEm": "2026-11-06",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 1075
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 970
     }
   ],
   "imagem": "/images/produtos/strinberg-sl200-nylon.webp",
