@@ -2,7 +2,7 @@
   "nome": "Fender Mustang GTX50",
   "meli": "https://meli.la/1FpbGiK",
   "preco": 3320,
-  "precoEm": "2026-11-05",
+  "precoEm": "2026-11-06",
   "categoria": "amplificador",
   "imagem": "/images/produtos/fender-mustang-gtx50.webp",
   "imagemAlt": "Fender Mustang GTX50",
@@ -13,6 +13,10 @@
     },
     {
       "data": "2026-11-05",
+      "preco": 3320
+    },
+    {
+      "data": "2026-11-06",
       "preco": 3320
     }
   ]

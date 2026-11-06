@@ -1,15 +1,21 @@
 {
   "nome": "Ernie Ball Cobalt 10–46",
-  "meli": "https://meli.la/1YbxQhF",
-  "preco": 127,
-  "precoEm": "2026-06-25",
+  "meli": "https://meli.la/1RihyWc",
+  "preco": 134,
+  "precoEm": "2026-11-06",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-06-25",
       "preco": 127
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 134
     }
   ],
   "imagem": "/images/produtos/ernie-ball-cobalt-10-46.webp",
-  "imagemAlt": "Ernie Ball Cobalt 10–46"
+  "imagemAlt": "Ernie Ball Cobalt 10–46",
+  "nota": 4.7,
+  "avaliacoes": 417
 }

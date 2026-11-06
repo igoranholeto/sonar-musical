@@ -111,6 +111,17 @@ const MAP = {
   'yamaha-c40-e-bom':               { kicker: 'VIOLÕES · REVIEW', l1: 'YAMAHA', l2: 'C40', q: 'classical guitar nylon strings', prefer: /classical guitar/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser/i },
   'squier-affinity-vale-a-pena':    { kicker: 'GUITARRAS · REVIEW', l1: 'SQUIER', l2: 'AFFINITY', q: 'squier stratocaster guitar', prefer: /squier|strat/i, avoid: /bass|logo|amp|custom shop/i },
   'melhor-corda-para-violao':       { kicker: 'ACESSÓRIOS · 2026', l1: 'CORDAS DE', l2: 'VIOLÃO', q: 'acoustic guitar strings close up', prefer: /string/i, avoid: /bass|logo|violin|cello|harp|piano|electric/i },
+  // Lote 2026-11-06 (pautas top 3)
+  'melhor-baixo-5-cordas':          { kicker: 'BAIXO · 2026', l1: 'BAIXO', l2: '5 CORDAS', q: '5-string bass guitar', prefer: /Squier Precision Special 5-string/i, avoid: /logo|player|concert|stage|live|fish|museum|signed|festival|band|wild|common|fridays|pavilion|amp/i },
+  'melhor-violao-folk':             { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'FOLK', q: 'steel-string acoustic guitar', prefer: /aw 75 rsb complete/i, avoid: /HMS|ship|battleship|navy|bass|logo|ukulele|violin|cello|electric|label|museum|signed|player|concert|festival|martin|taylor|gibson/i },
+  'melhor-violao-classico':         { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'CLÁSSICO', q: 'classical guitar nylon', prefer: /classical guitar|nylon/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser|festival|orchestra|dancer/i },
+  'melhor-capa-para-violao':        { kicker: 'ACESSÓRIOS · 2026', l1: 'CAPA PARA', l2: 'VIOLÃO', q: 'guitar gig bag', prefer: /gig.?bag|case/i, avoid: /logo|bass|violin|cello|museum|drum|airport|luggage/i },
+  'violao-crafter-e-bom':           { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'CRAFTER', q: 'crafter acoustic guitar', prefer: /crafter/i, avoid: /logo|museum|signed|bass|concert|festival|electric|minecraft|craft fair/i },
+  'baixo-fender-e-bom':             { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'FENDER', q: 'Fender Precision Bass', prefer: /precision|jazz.?bass/i, avoid: /logo|museum|signed|concert|festival|player|live|stage|amp|exhibit/i },
+  'amplificador-fender-e-bom':      { kicker: 'AMPLIFICADORES · REVIEW', l1: 'AMP', l2: 'FENDER', q: 'Fender amplifier', prefer: /fender (deluxe|twin|blues|champ|bassman|princeton|frontman|mustang|hot rod|super)/i, avoid: /logo|museum|signed|bass|concert|festival|stage|car|automobile|marshall|epiphone|compound recordings/i },
+  'violao-rozini-e-bom':            { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'ROZINI', q: 'nylon string guitar', prefer: /classical|nylon/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser|festival/i },
+  'guitarra-cort-e-boa':            { kicker: 'GUITARRAS · REVIEW', l1: 'GUITARRA', l2: 'CORT', q: 'Cort electric guitar', prefer: /cort/i, avoid: /logo|museum|signed|bass|concert|festival|court|cortex|amp/i },
+  'spark-mini-e-bom':               { kicker: 'AMPLIFICADORES · REVIEW', l1: 'SPARK', l2: 'MINI', q: 'guitar amplifier', prefer: /Marathon mini guitar amplifier/i, avoid: /bass|logo|marshall|vox|orange|museum|stack|mesa|peavey|boss|katana|concert|stage|festival|fender/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
@@ -270,7 +281,7 @@ for (const [slug, cfg] of Object.entries(WORK)) {
     const buf = Buffer.from(await img.arrayBuffer());
     const cachePath = path.join(CACHE, slug + '.img');
     fs.writeFileSync(cachePath, buf);
-    const base = await sharp(buf).resize(1200, 675, { fit: 'cover', position: 'attention' }).toBuffer();
+    const base = await sharp(buf, { failOn: 'none' }).resize(1200, 675, { fit: 'cover', position: 'attention' }).toBuffer();
     const out = path.join(OUT, slug + '.jpg');
     await sharp(base).composite([{ input: overlay(cfg) }]).jpeg({ quality: 82, mozjpeg: true }).toFile(out);
     try { fs.unlinkSync(path.join(OUT, slug + '.png')); } catch {}

@@ -1,13 +1,17 @@
 {
   "nome": "Squier Affinity Jazz Bass",
   "meli": "https://meli.la/1J96m3f",
-  "preco": 2999,
-  "precoEm": "2026-10-17",
+  "preco": 2938,
+  "precoEm": "2026-11-06",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 2999
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 2938
     }
   ],
   "imagem": "/images/produtos/squier-affinity-jazz-bass.webp",

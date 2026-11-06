@@ -1,13 +1,17 @@
 {
   "nome": "Michael Go Play VM15NY",
   "meli": "https://meli.la/2gu2NW5",
-  "preco": 434,
-  "precoEm": "2026-11-05",
+  "preco": 435,
+  "precoEm": "2026-11-06",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 434
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 435
     }
   ],
   "nota": 4.7,

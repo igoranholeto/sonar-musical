@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha TRBX305 (5 cordas)",
   "meli": "https://meli.la/1VP7Jac",
-  "preco": 3059,
-  "precoEm": "2026-11-05",
+  "preco": 3049,
+  "precoEm": "2026-11-06",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 3059
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 3049
     }
   ],
   "nota": 4.9,

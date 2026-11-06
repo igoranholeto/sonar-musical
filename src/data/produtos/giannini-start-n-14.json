@@ -2,7 +2,7 @@
   "nome": "Giannini Start N-14",
   "meli": "https://meli.la/2qJ4A17",
   "preco": 480,
-  "precoEm": "2026-11-05",
+  "precoEm": "2026-11-06",
   "categoria": "violao",
   "historico": [
     {
@@ -11,6 +11,10 @@
     },
     {
       "data": "2026-11-05",
+      "preco": 480
+    },
+    {
+      "data": "2026-11-06",
       "preco": 480
     }
   ],

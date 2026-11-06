@@ -99,9 +99,9 @@ integrantes:
       - tipo: Baixo
         original:
           nome: Fender American Special Precision Bass
-          preco: ~R$ 8.810
-          similar: "Fender Player II Precision Bass"
-          urlAfiliado: https://meli.la/1SPbQ2o
+          preco: ~R$ 5.487
+          similar: "Fender Standard Precision Bass"
+          urlAfiliado: https://meli.la/1tQYsn8
         low:
           nome: Squier Classic Vibe '60s Precision Bass
           preco: ~R$ 4.793

@@ -2,7 +2,7 @@
   "nome": "Positive Grid Spark Mini",
   "meli": "https://meli.la/1uSgktL",
   "preco": 2712,
-  "precoEm": "2026-11-05",
+  "precoEm": "2026-11-06",
   "categoria": "amplificador",
   "historico": [
     {
@@ -16,8 +16,14 @@
     {
       "data": "2026-11-05",
       "preco": 2712
+    },
+    {
+      "data": "2026-11-06",
+      "preco": 2712
     }
   ],
   "imagem": "/images/produtos/positive-grid-spark-mini.webp",
-  "imagemAlt": "Positive Grid Spark Mini"
+  "imagemAlt": "Positive Grid Spark Mini",
+  "nota": 4.9,
+  "avaliacoes": 8
 }

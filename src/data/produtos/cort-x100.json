@@ -1,0 +1,17 @@
+{
+  "nome": "Cort X100",
+  "meli": "https://meli.la/1KxRnsB",
+  "preco": 1787,
+  "precoEm": "2026-11-06",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-06",
+      "preco": 1787
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 473,
+  "imagemAlt": "Cort X100",
+  "imagem": "/images/produtos/cort-x100.webp"
+}
