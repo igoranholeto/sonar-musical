@@ -12,7 +12,7 @@ const HOST = 'sonarmusical.com.br';
 const args = process.argv.slice(2);
 const doSitemap = async () => {
   const xml = await (await fetch(`https://${HOST}/sitemap-0.xml`)).text();
-  return [...xml.matchAll(/<loc>([^<]+)</loc>/g)].map((m) => m[1]);
+  return [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
 };
 const urls = args.includes('--sitemap')
   ? await doSitemap()
