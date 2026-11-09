@@ -3,7 +3,8 @@
 // - "testamos", "testei", "nossos testes": o autor não tem os equipamentos;
 // - AfiliadoCTA sem link meli.la ou com id que não existe no catálogo;
 // - produto do catálogo com link fora do meli.la ou sem preço;
-// - capa com foto (covers-src/_fullbleed_attrib.json) sem crédito em src/data/creditos.ts.
+// - capa com foto (covers-src/_fullbleed_attrib.json) sem crédito em src/data/creditos.ts;
+// - título > 70 ou description > 160 caracteres; capa local sem a miniatura WebP do card.
 // Uso: node scripts/lint-conteudo.mjs
 import fs from 'node:fs';
 import path from 'node:path';
@@ -30,6 +31,18 @@ for (const [dir, ext] of [['src/data/blog', /\.mdx?$/], ['src/data/bandas', /\.m
     const t = ler(p);
     for (const m of t.matchAll(/—/g)) err(`${p}:${linhaDe(t, m.index)}`, 'travessão (—)');
     if (dir.endsWith('blog')) {
+      // Limites do Ahrefs (Site Audit): título > 70 e meta description > 160 caracteres.
+      const titulo = t.match(/^title:\s*"(.*)"\s*$/m)?.[1] ?? '';
+      const desc = t.match(/^description:\s*"(.*)"\s*$/m)?.[1] ?? '';
+      if (titulo.length > 70) err(p, `título com ${titulo.length} caracteres (máx. 70)`);
+      if (desc.length > 160) err(p, `description com ${desc.length} caracteres (máx. 160)`);
+      // Capa local precisa existir e ter a miniatura WebP (node scripts/gen-card-thumbs.mjs).
+      const capa = t.match(/^image:\s*"(\/images\/blog\/[^"]+)"\s*$/m)?.[1];
+      if (capa) {
+        if (!fs.existsSync(`public${capa}`)) err(p, `capa não encontrada: public${capa}`);
+        const card = `public/images/blog/cards/${path.basename(capa).replace(/\.(png|jpe?g|webp)$/i, '.webp')}`;
+        if (!fs.existsSync(card)) err(p, `miniatura do card não gerada: ${card} (rode node scripts/gen-card-thumbs.mjs)`);
+      }
       for (const m of t.matchAll(TESTE)) err(`${p}:${linhaDe(t, m.index)}`, `"${m[0]}" (o autor não testa os equipamentos)`);
       for (const m of t.matchAll(/<AfiliadoCTA\b[\s\S]*?\/>/g)) {
         const bloco = m[0];
