@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQ from '../components/FAQ.astro';
 
 // Quiz de recomendação. Progressive enhancement: sem JS, mostra a lista de
 // todos os guias (crawlável). Com JS, vira um fluxo de 3 perguntas que termina
@@ -44,11 +45,46 @@ const guias = [
   { href: '/blog/guitarra-eletrica-profissional-guia-2026/', label: 'Guitarras profissionais' },
   { href: '/blog/quanto-custa-uma-guitarra-eletrica/', label: 'Quanto custa uma guitarra' },
 ];
+
+// Dúvidas que aparecem antes do quiz. Visíveis na página e marcadas como FAQPage
+// pelo componente FAQ (o Ahrefs acusou a página de perguntas sem o schema).
+const faq = [
+  {
+    question: 'Qual guitarra comprar para começar?',
+    answer: 'Para quem está começando, uma guitarra de corpo maciço estilo Stratocaster é a escolha mais versátil: braço confortável, três captadores e som que serve para rock, pop e blues. Veja os modelos em <a href="/blog/melhores-guitarras-eletricas-para-iniciantes-2026/">melhores guitarras para iniciantes</a>.',
+  },
+  {
+    question: 'Quanto gastar na primeira guitarra?',
+    answer: 'Entre R$ 1.000 e R$ 1.500 já se compra uma guitarra que afina direito e não desanima o aluno. Abaixo disso, o kit com amplificador costuma ser o melhor custo. Os valores por faixa estão em <a href="/blog/quanto-custa-uma-guitarra-eletrica/">quanto custa uma guitarra elétrica</a>.',
+  },
+  {
+    question: 'Stratocaster ou Les Paul: qual escolher?',
+    answer: 'A Stratocaster é mais leve, tem som mais brilhante e serve para quase todos os estilos. A Les Paul tem som mais encorpado, sustain longo e é mais pesada, ótima para rock pesado. A comparação completa está em <a href="/blog/les-paul-vs-stratocaster/">Les Paul vs Stratocaster</a>.',
+  },
+  {
+    question: 'Preciso comprar amplificador junto com a guitarra?',
+    answer: 'Sim. A guitarra elétrica quase não tem som sem amplificador. Para estudar em casa, um amplificador de 10 a 20 W ou um mini amplificador de fone resolve. Os kits de guitarra com amplificador saem mais baratos que comprar separado: veja em <a href="/blog/guitarra-com-amplificador-kit-iniciante/">kits de guitarra com amplificador</a>.',
+  },
+  {
+    question: 'Qual guitarra é melhor para rock e metal?',
+    answer: 'Para metal, procure captadores humbucker de alta saída, braço fino e ponte fixa ou Floyd Rose. Para rock clássico, Les Paul e Stratocaster com humbucker na ponte dão conta. A lista de modelos está em <a href="/blog/melhor-guitarra-para-metal/">melhor guitarra para metal</a>.',
+  },
+];
 ---
 
 <BaseLayout
   title="Qual Guitarra é pra Você? Quiz de Recomendação"
   description="Responda 3 perguntas e descubra qual tipo de guitarra elétrica combina com o seu nível, estilo e orçamento, com o guia certo para escolher a sua."
+  schema={{
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: 'Quiz Qual Guitarra é pra Você?, Sonar Musical',
+    url: 'https://sonarmusical.com.br/qual-guitarra/',
+    applicationCategory: 'ReferenceApplication',
+    operatingSystem: 'Web',
+    inLanguage: 'pt-BR',
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  }}
 >
   <section class="qg">
     <div class="qg__head">
@@ -101,6 +137,8 @@ const guias = [
         </ul>
       </div>
     </div>
+
+    <FAQ items={faq} />
   </section>
 </BaseLayout>
 

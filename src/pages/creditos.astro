@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { CREDITOS_FOTOS, CREDITOS_CAPAS } from '../data/creditos';
+import { WEBSITE_ID, ORG_ID } from '../utils/schema';
 
 // Agrupa os créditos por banda, preservando a ordem de entrada.
 const grupos = CREDITOS_FOTOS.reduce((acc, foto) => {
@@ -10,12 +11,33 @@ const grupos = CREDITOS_FOTOS.reduce((acc, foto) => {
 
 const bandas = Object.values(grupos);
 
+// Cada foto creditada vira um ImageObject com autor, licença e origem (Commons).
+const todosCreditos = [...CREDITOS_FOTOS, ...CREDITOS_CAPAS];
 const creditosSchema = {
   '@context': 'https://schema.org',
-  '@type': 'WebPage',
+  '@type': 'CollectionPage',
+  '@id': 'https://sonarmusical.com.br/creditos/#webpage',
   name: 'Créditos de Imagem, Sonar Musical',
   url: 'https://sonarmusical.com.br/creditos/',
   inLanguage: 'pt-BR',
+  isPartOf: { '@id': WEBSITE_ID },
+  publisher: { '@id': ORG_ID },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: todosCreditos.length,
+    itemListElement: todosCreditos.map((c, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      item: {
+        '@type': 'ImageObject',
+        name: c.descricao,
+        creditText: c.autor,
+        creator: { '@type': 'Person', name: c.autor, ...(c.autorUrl ? { url: c.autorUrl } : {}) },
+        ...(c.licencaUrl ? { license: c.licencaUrl } : {}),
+        isBasedOn: c.fonteUrl,
+      },
+    })),
+  },
 };
 ---
 

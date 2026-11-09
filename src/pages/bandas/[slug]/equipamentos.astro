@@ -2,6 +2,7 @@
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { generoAccent, generoGradient, generoSoft, iniciais } from '../../../utils/generos';
+import { WEBSITE_ID, ORG_ID } from '../../../utils/schema';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -69,13 +70,33 @@ const breadcrumbSchema = {
     { '@type': 'ListItem', position: 4, name: 'Equipamentos', item: `${bandaUrl}equipamentos/` },
   ],
 };
+
+// Lista dos equipamentos originais da página (sem link de afiliado nem Offer no schema).
+const equipItens = integrantes.flatMap((m) =>
+  m.setup.flatMap((s) => (s.original ? [{ nome: s.original.nome, desc: `${s.tipo} de ${m.nome}` }] : []))
+);
+const colecaoSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  '@id': `${bandaUrl}equipamentos/#webpage`,
+  url: `${bandaUrl}equipamentos/`,
+  name: `Equipamentos de ${nome}`,
+  inLanguage: 'pt-BR',
+  isPartOf: { '@id': WEBSITE_ID },
+  publisher: { '@id': ORG_ID },
+  mainEntity: {
+    '@type': 'ItemList',
+    numberOfItems: equipItens.length,
+    itemListElement: equipItens.map((e, i) => ({ '@type': 'ListItem', position: i + 1, name: e.nome, description: e.desc })),
+  },
+};
 ---
 
 <BaseLayout
   title={nome.length > 16 ? `${nome}: Equipamentos e Setup Completo` : `${nome}: Equipamentos e Setup Completo da Banda`}
   description={`Que guitarra, amplificador e pedais cada integrante do ${nome} usa, e as alternativas mais baratas para chegar perto do mesmo som.`}
   image={fotoCapa}
-  schema={breadcrumbSchema}
+  schema={[breadcrumbSchema, colecaoSchema]}
 >
   <div class="theme-locked-dark">
   <!-- Banner -->
