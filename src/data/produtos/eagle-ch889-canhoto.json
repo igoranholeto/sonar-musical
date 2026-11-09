@@ -1,0 +1,17 @@
+{
+  "nome": "Eagle CH 889 Canhoto",
+  "meli": "https://meli.la/2nCckxp",
+  "preco": 1990,
+  "precoEm": "2026-11-09",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 1990
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 26,
+  "imagemAlt": "Eagle CH 889 Canhoto",
+  "imagem": "/images/produtos/eagle-ch889-canhoto.webp"
+}

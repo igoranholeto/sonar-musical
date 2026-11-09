@@ -1,0 +1,15 @@
+{
+  "nome": "Ibanez SR300E",
+  "meli": "https://meli.la/11CZ3tD",
+  "preco": 3909,
+  "precoEm": "2026-11-09",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 3909
+    }
+  ],
+  "imagemAlt": "Ibanez SR300E",
+  "imagem": "/images/produtos/ibanez-sr300e.webp"
+}

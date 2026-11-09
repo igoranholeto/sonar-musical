@@ -1,0 +1,15 @@
+{
+  "nome": "Memphis MD-18 Folk Eletroacústico",
+  "meli": "https://meli.la/138jb8U",
+  "preco": 865,
+  "precoEm": "2026-11-09",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 865
+    }
+  ],
+  "imagemAlt": "Memphis MD-18 Folk Eletroacústico",
+  "imagem": "/images/produtos/memphis-md-18.webp"
+}

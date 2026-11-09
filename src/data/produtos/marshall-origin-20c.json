@@ -1,13 +1,17 @@
 {
   "nome": "Marshall Origin 20C",
   "meli": "https://meli.la/1xbgVgk",
-  "preco": 5500,
-  "precoEm": "2026-08-04",
+  "preco": 4797,
+  "precoEm": "2026-11-09",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-08-04",
       "preco": 5500
+    },
+    {
+      "data": "2026-11-09",
+      "preco": 4797
     }
   ],
   "imagem": "/images/produtos/marshall-origin-20c.webp",

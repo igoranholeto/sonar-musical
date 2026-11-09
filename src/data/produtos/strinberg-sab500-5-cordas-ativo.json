@@ -2,7 +2,7 @@
   "nome": "Strinberg SAB500 5 cordas ativo",
   "meli": "https://meli.la/2WG3HkY",
   "preco": 1276,
-  "precoEm": "2026-11-06",
+  "precoEm": "2026-11-09",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,8 +12,14 @@
     {
       "data": "2026-11-06",
       "preco": 1276
+    },
+    {
+      "data": "2026-11-09",
+      "preco": 1276
     }
   ],
   "imagem": "/images/produtos/strinberg-sab500-5-cordas-ativo.webp",
-  "imagemAlt": "Strinberg SAB500 5 cordas ativo"
+  "imagemAlt": "Strinberg SAB500 5 cordas ativo",
+  "nota": 4.8,
+  "avaliacoes": 99
 }

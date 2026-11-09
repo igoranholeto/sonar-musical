@@ -1,0 +1,15 @@
+{
+  "nome": "Michael GM217N Stratocaster",
+  "meli": "https://meli.la/16pmA8C",
+  "preco": 890,
+  "precoEm": "2026-11-09",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 890
+    }
+  ],
+  "imagemAlt": "Michael GM217N Stratocaster",
+  "imagem": "/images/produtos/michael-gm217n.webp"
+}

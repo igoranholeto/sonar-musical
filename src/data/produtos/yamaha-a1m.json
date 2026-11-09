@@ -1,0 +1,17 @@
+{
+  "nome": "Yamaha A1M",
+  "meli": "https://meli.la/1owcRQt",
+  "preco": 4148,
+  "precoEm": "2026-11-09",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 4148
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 2,
+  "imagemAlt": "Yamaha A1M",
+  "imagem": "/images/produtos/yamaha-a1m.webp"
+}

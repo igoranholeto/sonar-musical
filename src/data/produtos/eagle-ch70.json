@@ -1,0 +1,15 @@
+{
+  "nome": "Eagle CH70 Mini Jumbo",
+  "meli": "https://meli.la/2pZA7wY",
+  "preco": 1349,
+  "precoEm": "2026-11-09",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 1349
+    }
+  ],
+  "imagemAlt": "Eagle CH70 Mini Jumbo",
+  "imagem": "/images/produtos/eagle-ch70.webp"
+}

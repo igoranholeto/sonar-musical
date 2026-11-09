@@ -1,0 +1,17 @@
+{
+  "nome": "Memphis Denver Nylon",
+  "meli": "https://meli.la/28x3KLa",
+  "preco": 415,
+  "precoEm": "2026-11-09",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 415
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 1023,
+  "imagemAlt": "Memphis Denver Nylon",
+  "imagem": "/images/produtos/memphis-denver.webp"
+}

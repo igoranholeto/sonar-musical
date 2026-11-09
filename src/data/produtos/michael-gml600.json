@@ -1,0 +1,15 @@
+{
+  "nome": "Michael GML600 Les Paul",
+  "meli": "https://meli.la/1S4QjoE",
+  "preco": 1848,
+  "precoEm": "2026-11-09",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 1848
+    }
+  ],
+  "imagemAlt": "Michael GML600 Les Paul",
+  "imagem": "/images/produtos/michael-gml600.webp"
+}
