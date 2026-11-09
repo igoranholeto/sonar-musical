@@ -116,8 +116,8 @@ integrantes:
       - tipo: Amplificação
         original:
           nome: Ampeg SVT Classic
-          preco: ~R$ 15.000
-          urlAfiliado: https://meli.la/1RijRhe
+          preco: ~R$ 32.919
+          urlAfiliado: https://meli.la/14Ed6y2
         low:
           nome: Ampeg BA-115
           preco: ~R$ 11.676

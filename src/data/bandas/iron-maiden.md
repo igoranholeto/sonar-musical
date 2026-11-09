@@ -109,9 +109,8 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Fender Dave Murray Stratocaster (HSS)
-          preco: ~R$ 9.899
-          similar: "Fender Player II Stratocaster HSS"
-          urlAfiliado: https://meli.la/1vTFCYH
+          preco: ~R$ 17.997
+          urlAfiliado: https://meli.la/2kQrkFQ
         low:
           nome: Squier Bullet Strat HSS
           preco: ~R$ 1.600

@@ -74,8 +74,8 @@ integrantes:
       - tipo: Guitarra
         original:
           nome: Schecter Synyster Gates Custom-S
-          preco: ~R$ 22.988
-          urlAfiliado: https://meli.la/2vaiH4J
+          preco: ~R$ 22.298
+          urlAfiliado: https://meli.la/2CjhDoZ
         low:
           nome: Schecter C-1 FR-S Apocalypse
           preco: ~R$ 2.220
@@ -122,7 +122,7 @@ integrantes:
           nome: Schecter Omen Extreme-6
           preco: ~R$ 7.531
           obs: Corpo parecido com humbuckers quentes pro riff pesado.
-          urlAfiliado: https://meli.la/1EQC6xm
+          urlAfiliado: https://meli.la/2wRyXdi
       - tipo: Amplificação
         original:
           nome: Jet City 100HDM
