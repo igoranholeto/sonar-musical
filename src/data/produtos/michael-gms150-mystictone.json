@@ -1,0 +1,17 @@
+{
+  "nome": "Michael Mystictone GMS150",
+  "meli": "https://meli.la/1oYqfqr",
+  "preco": 1543,
+  "precoEm": "2026-11-09",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 1543
+    }
+  ],
+  "nota": 4,
+  "avaliacoes": 2,
+  "imagemAlt": "Michael Mystictone GMS150",
+  "imagem": "/images/produtos/michael-gms150-mystictone.webp"
+}

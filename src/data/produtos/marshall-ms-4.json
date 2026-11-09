@@ -1,0 +1,17 @@
+{
+  "nome": "Marshall MS-4 Micro Stack",
+  "meli": "https://meli.la/1dbRVV8",
+  "preco": 555,
+  "precoEm": "2026-11-09",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 555
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "imagemAlt": "Marshall MS-4 Micro Stack",
+  "imagem": "/images/produtos/marshall-ms-4.webp"
+}

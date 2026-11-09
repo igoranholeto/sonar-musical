@@ -1,0 +1,15 @@
+{
+  "nome": "Michael Raze GMR500 Headless",
+  "meli": "https://meli.la/273zKiT",
+  "preco": 3279,
+  "precoEm": "2026-11-09",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 3279
+    }
+  ],
+  "imagemAlt": "Michael Raze GMR500 Headless",
+  "imagem": "/images/produtos/michael-raze-gmr500.webp"
+}

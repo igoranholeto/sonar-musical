@@ -121,6 +121,17 @@ const MAP = {
   'amplificador-fender-e-bom':      { kicker: 'AMPLIFICADORES · REVIEW', l1: 'AMP', l2: 'FENDER', q: 'Fender amplifier', prefer: /fender (deluxe|twin|blues|champ|bassman|princeton|frontman|mustang|hot rod|super)/i, avoid: /logo|museum|signed|bass|concert|festival|stage|car|automobile|marshall|epiphone|compound recordings/i },
   'violao-rozini-e-bom':            { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'ROZINI', q: 'nylon string guitar', prefer: /classical|nylon/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser|festival/i },
   'guitarra-cort-e-boa':            { kicker: 'GUITARRAS · REVIEW', l1: 'GUITARRA', l2: 'CORT', q: 'Cort electric guitar', prefer: /cort/i, avoid: /logo|museum|signed|bass|concert|festival|court|cortex|amp/i },
+  // Lote 2026-11-09 (pautas top 3)
+  'melhor-violao-profissional':     { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'PROFISSIONAL', q: 'Rizzolo jumbo', prefer: /Rizzolo-jumbo-1/i },
+  'melhor-suporte-para-violao':     { kicker: 'ACESSÓRIOS · 2026', l1: 'SUPORTE', l2: 'PARA VIOLÃO', q: 'Interior of a Guitar and Ukulele Shop', prefer: /Interior of a Guitar and Ukulele Shop/i },
+  'melhor-violao-canhoto':          { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'CANHOTO', q: 'Taniguchi Gakki lefty guitars', prefer: /Taniguchi Gakki lefty/i },
+  'melhor-violao-12-cordas':        { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: '12 CORDAS', q: 'Framus 12-string acoustic guitar bridge tailpiece', prefer: /Framus 12-string acoustic guitar - bridge tailpiece/i },
+  'violao-eagle-e-bom':             { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'EAGLE', q: 'Madeira A25ASH Acoustic Guitar soundhole', prefer: /A25ASH Acoustic Guitar - soundhole/i },
+  'guitarra-michael-e-boa':         { kicker: 'GUITARRAS · REVIEW', l1: 'GUITARRA', l2: 'MICHAEL', q: 'Isonez Stratocaster Type electric guitar', prefer: /Isonez Stratocaster Type electric guitar Body and Pickups/i },
+  'amplificador-marshall-e-bom':    { kicker: 'AMPLIFICADORES · REVIEW', l1: 'AMP', l2: 'MARSHALL', q: 'MarshallStack Slayer', prefer: /MarshallStack Slayer/i },
+  'violao-memphis-e-bom':           { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'MEMPHIS', q: 'It is Time for Music', prefer: /It is Time for Music/i },
+  'baixo-strinberg-e-bom':          { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'STRINBERG', q: 'MataoArtistBass Black 2 tone', prefer: /MataoArtistBass Black 2 tone-rear 2/i },
+  'baixo-ibanez-e-bom':             { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'IBANEZ', q: 'Ibanez SR Bass SRC6', prefer: /Ibanez SR Bass and Ibanez SRC6/i },
   'spark-mini-e-bom':               { kicker: 'AMPLIFICADORES · REVIEW', l1: 'SPARK', l2: 'MINI', q: 'guitar amplifier', prefer: /Marathon mini guitar amplifier/i, avoid: /bass|logo|marshall|vox|orange|museum|stack|mesa|peavey|boss|katana|concert|stage|festival|fender/i },
 };
 

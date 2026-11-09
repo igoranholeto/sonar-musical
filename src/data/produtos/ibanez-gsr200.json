@@ -1,0 +1,17 @@
+{
+  "nome": "Ibanez GSR200",
+  "meli": "https://meli.la/2dpzzo2",
+  "preco": 2254,
+  "precoEm": "2026-11-09",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 2254
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 109,
+  "imagemAlt": "Ibanez GSR200",
+  "imagem": "/images/produtos/ibanez-gsr200.webp"
+}

@@ -2,11 +2,15 @@
   "nome": "Crafter DE-7 (tampo maciço)",
   "meli": "https://meli.la/1vuXxMD",
   "preco": 3330,
-  "precoEm": "2026-11-06",
+  "precoEm": "2026-11-09",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-06",
+      "preco": 3330
+    },
+    {
+      "data": "2026-11-09",
       "preco": 3330
     }
   ],

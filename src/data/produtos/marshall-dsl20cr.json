@@ -2,7 +2,7 @@
   "nome": "Marshall DSL20CR",
   "meli": "https://meli.la/2sGWZoz",
   "preco": 6200,
-  "precoEm": "2026-11-05",
+  "precoEm": "2026-11-09",
   "categoria": "amplificador",
   "imagem": "/images/produtos/marshall-dsl20cr.webp",
   "imagemAlt": "Marshall DSL20CR",
@@ -17,6 +17,10 @@
     },
     {
       "data": "2026-11-05",
+      "preco": 6200
+    },
+    {
+      "data": "2026-11-09",
       "preco": 6200
     }
   ]

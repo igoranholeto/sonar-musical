@@ -1,0 +1,17 @@
+{
+  "nome": "Ibanez Talman TMB100",
+  "meli": "https://meli.la/2uXiXN4",
+  "preco": 3006,
+  "precoEm": "2026-11-09",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 3006
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 10,
+  "imagemAlt": "Ibanez Talman TMB100",
+  "imagem": "/images/produtos/ibanez-tmb100.webp"
+}

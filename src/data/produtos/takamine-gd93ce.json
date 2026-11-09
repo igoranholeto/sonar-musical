@@ -1,13 +1,17 @@
 {
   "nome": "Takamine GD93CE",
   "meli": "https://meli.la/1tMPDdj",
-  "preco": 4455,
-  "precoEm": "2026-11-05",
+  "preco": 4649,
+  "precoEm": "2026-11-09",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 4455
+    },
+    {
+      "data": "2026-11-09",
+      "preco": 4649
     }
   ],
   "nota": 4.8,

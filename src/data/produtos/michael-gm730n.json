@@ -1,0 +1,17 @@
+{
+  "nome": "Michael GM730N Les Paul",
+  "meli": "https://meli.la/1R94wch",
+  "preco": 1422,
+  "precoEm": "2026-11-09",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 1422
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 82,
+  "imagemAlt": "Michael GM730N Les Paul",
+  "imagem": "/images/produtos/michael-gm730n.webp"
+}

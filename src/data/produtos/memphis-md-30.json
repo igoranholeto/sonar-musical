@@ -1,0 +1,15 @@
+{
+  "nome": "Memphis MD-30 EQ Folk",
+  "meli": "https://meli.la/2c7jgeE",
+  "preco": 1226,
+  "precoEm": "2026-11-09",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-09",
+      "preco": 1226
+    }
+  ],
+  "imagemAlt": "Memphis MD-30 EQ Folk",
+  "imagem": "/images/produtos/memphis-md-30.webp"
+}
