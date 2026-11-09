@@ -1,13 +1,17 @@
 {
   "nome": "Kit Violão Giannini Eletroacústico (nylon)",
-  "meli": "https://meli.la/12bzSdF",
-  "preco": 594,
-  "precoEm": "2026-10-16",
+  "meli": "https://meli.la/19CAMn6",
+  "preco": 617,
+  "precoEm": "2026-11-09",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-16",
       "preco": 594
+    },
+    {
+      "data": "2026-11-09",
+      "preco": 617
     }
   ],
   "imagem": "/images/produtos/kit-violao-giannini-eletroacustico-nylon.webp",

@@ -1,15 +1,21 @@
 {
   "nome": "Strinberg SF200C",
-  "meli": "https://meli.la/1miGzqf",
-  "preco": 1070,
-  "precoEm": "2026-10-30",
+  "meli": "https://meli.la/1tvMQLt",
+  "preco": 786,
+  "precoEm": "2026-11-09",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 1070
+    },
+    {
+      "data": "2026-11-09",
+      "preco": 786
     }
   ],
   "imagem": "/images/produtos/strinberg-sf200c.webp",
-  "imagemAlt": "Strinberg SF200C"
+  "imagemAlt": "Strinberg SF200C",
+  "nota": 4.8,
+  "avaliacoes": 418
 }

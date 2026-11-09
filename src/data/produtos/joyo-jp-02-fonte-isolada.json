@@ -1,13 +1,17 @@
 {
   "nome": "Joyo JP-02 fonte isolada",
-  "meli": "https://meli.la/2wPhXDy",
-  "preco": 399,
-  "precoEm": "2026-10-17",
+  "meli": "https://meli.la/181oMb2",
+  "preco": 307,
+  "precoEm": "2026-11-09",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 399
+    },
+    {
+      "data": "2026-11-09",
+      "preco": 307
     }
   ],
   "imagem": "/images/produtos/joyo-jp-02-fonte-isolada.webp",
