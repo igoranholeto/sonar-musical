@@ -2,7 +2,7 @@
   "nome": "Waldman ST-211",
   "meli": "https://meli.la/2QpgbFx",
   "preco": 899,
-  "precoEm": "2026-11-05",
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -11,6 +11,10 @@
     },
     {
       "data": "2026-11-05",
+      "preco": 899
+    },
+    {
+      "data": "2026-11-10",
       "preco": 899
     }
   ],

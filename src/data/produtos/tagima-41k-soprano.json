@@ -1,13 +1,17 @@
 {
   "nome": "Tagima 41K Soprano",
   "meli": "https://meli.la/1EesvH7",
-  "preco": 539,
-  "precoEm": "2026-10-30",
+  "preco": 523,
+  "precoEm": "2026-11-10",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 539
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 523
     }
   ],
   "imagem": "/images/produtos/tagima-41k-soprano.webp",

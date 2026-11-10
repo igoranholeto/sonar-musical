@@ -1,0 +1,17 @@
+{
+  "nome": "Michael VNM49",
+  "meli": "https://meli.la/19WCT1a",
+  "preco": 1295,
+  "precoEm": "2026-11-10",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 1295
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 12,
+  "imagemAlt": "Michael VNM49",
+  "imagem": "/images/produtos/michael-vnm49.webp"
+}

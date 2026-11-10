@@ -1,0 +1,17 @@
+{
+  "nome": "Alesis Nitro Max",
+  "meli": "https://meli.la/2djSEbe",
+  "preco": 4707,
+  "precoEm": "2026-11-10",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 4707
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 333,
+  "imagemAlt": "Alesis Nitro Max",
+  "imagem": "/images/produtos/alesis-nitro-max.webp"
+}

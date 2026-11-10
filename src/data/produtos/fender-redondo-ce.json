@@ -1,13 +1,17 @@
 {
   "nome": "Fender California Redondo-CE",
   "meli": "https://meli.la/2FaZB7B",
-  "preco": 1401,
-  "precoEm": "2026-11-05",
+  "preco": 1502,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 1401
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1502
     }
   ],
   "nota": 4.8,

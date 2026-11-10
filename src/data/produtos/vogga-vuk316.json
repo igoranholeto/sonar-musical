@@ -1,0 +1,15 @@
+{
+  "nome": "Vogga VUK316 Concert",
+  "meli": "https://meli.la/2CWPqz5",
+  "preco": 280,
+  "precoEm": "2026-11-10",
+  "categoria": "ukulele",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 280
+    }
+  ],
+  "imagemAlt": "Vogga VUK316 Concert",
+  "imagem": "/images/produtos/vogga-vuk316.webp"
+}

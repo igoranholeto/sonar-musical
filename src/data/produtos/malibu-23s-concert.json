@@ -1,15 +1,21 @@
 {
   "nome": "Malibu 23S Concert",
   "meli": "https://meli.la/1TVWiaA",
-  "preco": 218,
-  "precoEm": "2026-10-30",
+  "preco": 214,
+  "precoEm": "2026-11-10",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 218
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 214
     }
   ],
   "imagem": "/images/produtos/malibu-23s-concert.webp",
-  "imagemAlt": "Malibu 23S Concert"
+  "imagemAlt": "Malibu 23S Concert",
+  "nota": 4.9,
+  "avaliacoes": 1028
 }

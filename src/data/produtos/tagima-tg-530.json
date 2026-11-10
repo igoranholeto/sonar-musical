@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-530",
   "meli": "https://meli.la/2WxhG4W",
-  "preco": 919,
-  "precoEm": "2026-11-02",
+  "preco": 864,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-02",
       "preco": 919
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 864
     }
   ],
   "nota": 4.9,

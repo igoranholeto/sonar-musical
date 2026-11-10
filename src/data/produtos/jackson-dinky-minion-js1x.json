@@ -1,13 +1,17 @@
 {
   "nome": "Jackson Dinky Minion JS1X",
   "meli": "https://meli.la/1xH9h7j",
-  "preco": 1899,
-  "precoEm": "2026-11-06",
+  "preco": 2436,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 1899
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2436
     }
   ],
   "nota": 4.9,

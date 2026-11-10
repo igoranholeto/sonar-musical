@@ -1,0 +1,15 @@
+{
+  "nome": "Kala KA-15S Soprano",
+  "meli": "https://meli.la/18kvzUx",
+  "preco": 580,
+  "precoEm": "2026-11-10",
+  "categoria": "ukulele",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 580
+    }
+  ],
+  "imagemAlt": "Kala KA-15S Soprano",
+  "imagem": "/images/produtos/kala-ka-15s.webp"
+}
