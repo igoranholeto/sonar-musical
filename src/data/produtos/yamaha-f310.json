@@ -1,7 +1,7 @@
 {
-  "nome": "Yamaha F310",
-  "meli": "https://meli.la/1hZ7Vcm",
-  "preco": 2055,
+  "nome": "Yamaha F310P",
+  "meli": "https://meli.la/2ckifXh",
+  "preco": 1799,
   "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
@@ -20,8 +20,14 @@
     {
       "data": "2026-11-05",
       "preco": 2055
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1799
     }
   ],
-  "imagemAlt": "Yamaha F310",
-  "imagem": "/images/produtos/yamaha-f310.webp"
+  "imagemAlt": "Yamaha F310P",
+  "imagem": "/images/produtos/yamaha-f310.webp",
+  "nota": 4.8,
+  "avaliacoes": 52
 }

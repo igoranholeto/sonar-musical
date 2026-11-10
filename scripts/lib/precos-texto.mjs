@@ -89,7 +89,8 @@ const PRECO_DATADO = /(em )(\d{2}\/\d{2}\/\d{4})(:\s*)$/;
 // Valor que identifica o produto sozinho (não é número redondo nem preço pequeno genérico).
 const distintivo = (v) => v >= 100 && v % 50 !== 0;
 
-export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = false, hoje = hojeISO() } = {}) {
+// antigos: { id: [preços] } que já não estão no historico (o mesmo dia sobrescreve a entrada).
+export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = false, hoje = hojeISO(), antigos = {} } = {}) {
   const cat = lerCatalogo();
   const filtro = ids ? new Set(ids) : null;
   const relatorio = { fixos: [], trocas: [], ambiguos: [], faltando: [], datas: [], arquivos: [] };
@@ -105,8 +106,11 @@ export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = fal
     // Valores (atuais e antigos) de cada produto do post, para achar ambiguidade.
     const valoresDe = new Map(citados.map((id) => {
       const p = cat.get(id);
-      return [id, new Set([p.preco, ...(p.historico ?? []).map((h) => h.preco)].filter((v) => v > 0).map(Math.round))];
+      return [id, new Set([p.preco, ...(p.historico ?? []).map((h) => h.preco), ...(antigos[id] ?? [])].filter((v) => v > 0).map(Math.round))];
     }));
+
+    const termosCache = new Map();
+    const termosDe = (o) => termosCache.get(o) ?? termosCache.set(o, termos(o, cat.get(o))).get(o);
 
     const slug = f.replace(/\.mdx$/, '');
     let mudou = false;
@@ -144,6 +148,12 @@ export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = fal
             return l;
           }
           if (!citaProduto && !distintivo(v)) return l;
+          // Linha que nomeia outro produto do post e não este: o valor era erro de texto
+          // daquela linha (já houve Epiphone com o preço da Squier). Fica para revisão.
+          if (!citaProduto && citados.some((o) => o !== id && termosDe(o).some((t) => l.toLowerCase().includes(t.toLowerCase())))) {
+            relatorio.ambiguos.push(`${slug}:${i + 1} ${velho} de ${id} está numa linha de outro produto (atual ${novo})`);
+            return l;
+          }
           let datado = false;
           let n = l.replace(re, (m, pos) => {
             const antes = l.slice(0, pos);

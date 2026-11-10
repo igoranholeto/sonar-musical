@@ -24,6 +24,7 @@ const porUrl = new Map();
 for (const f of arquivos) porUrl.set(JSON.parse(fs.readFileSync(path.join(CAT, f), 'utf8')).meli, f.replace(/\.json$/, ''));
 
 const atualizados = [];
+const antigos = {};
 for (const [chave, { p, u }] of Object.entries(MAP)) {
   const id = chave.startsWith('http') ? porUrl.get(chave) : chave;
   const arq = id && path.join(CAT, `${id}.json`);
@@ -34,6 +35,7 @@ for (const [chave, { p, u }] of Object.entries(MAP)) {
   const prod = JSON.parse(fs.readFileSync(arq, 'utf8'));
   const preco = num(p);
   if (!Number.isFinite(preco) || preco <= 0) throw new Error(`preço inválido para ${chave}: ${p}`);
+  antigos[id] = [prod.preco];
   prod.preco = preco;
   prod.precoEm = hoje;
   prod.historico = [...(prod.historico ?? []).filter((h) => h.data !== hoje), { data: hoje, preco }];
@@ -47,5 +49,5 @@ console.log(`\n${atualizados.length}/${Object.keys(MAP).length} produtos atualiz
 
 // Preços citados no texto, nas tabelas e no FAQ.
 if (atualizados.length) {
-  imprimirRelatorio(sincronizarPrecosTexto({ ids: atualizados, aplicar: true, hoje }), true);
+  imprimirRelatorio(sincronizarPrecosTexto({ ids: atualizados, aplicar: true, hoje, antigos }), true);
 }
