@@ -1,8 +1,8 @@
 {
   "nome": "Fender American Professional II Stratocaster",
   "meli": "https://meli.la/1cqEFgJ",
-  "preco": 17624,
-  "precoEm": "2026-10-29",
+  "preco": 15220,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-10-29",
       "preco": 17624
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 15220
     }
   ],
   "imagem": "/images/produtos/fender-american-professional-ii-stratocaster.webp",

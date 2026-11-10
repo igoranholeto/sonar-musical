@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Tank-G",
   "meli": "https://meli.la/1tNza3C",
-  "preco": 409,
-  "precoEm": "2026-11-05",
+  "preco": 385,
+  "precoEm": "2026-11-10",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-05",
       "preco": 409
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 385
     }
   ],
   "imagem": "/images/produtos/m-vave-tank-g.webp",

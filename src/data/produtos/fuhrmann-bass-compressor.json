@@ -1,13 +1,17 @@
 {
   "nome": "Fuhrmann Bass Compressor",
   "meli": "https://meli.la/2PkLAz1",
-  "preco": 303,
-  "precoEm": "2026-10-17",
+  "preco": 330,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 303
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 330
     }
   ],
   "imagem": "/images/produtos/fuhrmann-bass-compressor.webp",

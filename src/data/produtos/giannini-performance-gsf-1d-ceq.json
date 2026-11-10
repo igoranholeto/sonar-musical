@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Performance GSF-1D CEQ",
   "meli": "https://meli.la/1uXeLXQ",
-  "preco": 650,
-  "precoEm": "2026-11-06",
+  "preco": 684,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-06",
       "preco": 650
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 684
     }
   ],
   "imagem": "/images/produtos/giannini-performance-gsf-1d-ceq.webp",

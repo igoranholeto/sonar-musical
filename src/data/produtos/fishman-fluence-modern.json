@@ -1,13 +1,17 @@
 {
   "nome": "Fishman Fluence Modern",
   "meli": "https://meli.la/1MuwRoj",
-  "preco": 3200,
-  "precoEm": "2026-08-03",
+  "preco": 4666,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-08-03",
       "preco": 3200
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 4666
     }
   ],
   "imagem": "/images/produtos/fishman-fluence-modern.webp",

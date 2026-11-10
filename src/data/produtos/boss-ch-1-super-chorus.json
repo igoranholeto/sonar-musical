@@ -1,13 +1,17 @@
 {
   "nome": "Boss CH-1 Super Chorus",
   "meli": "https://meli.la/2HAFJKC",
-  "preco": 945,
-  "precoEm": "2026-10-17",
+  "preco": 793,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 945
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 793
     }
   ],
   "imagem": "/images/produtos/boss-ch-1-super-chorus.webp",

@@ -1,13 +1,17 @@
 {
   "nome": "Joyo Atmosphere R-14",
   "meli": "https://meli.la/27R6tDo",
-  "preco": 581,
-  "precoEm": "2026-10-17",
+  "preco": 494,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 581
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 494
     }
   ],
   "imagem": "/images/produtos/joyo-atmosphere-r-14.webp",

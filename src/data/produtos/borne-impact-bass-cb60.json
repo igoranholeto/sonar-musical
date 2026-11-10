@@ -1,13 +1,17 @@
 {
   "nome": "Borne Impact Bass CB60",
   "meli": "https://meli.la/1mSe91W",
-  "preco": 493,
-  "precoEm": "2026-10-17",
+  "preco": 849,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 493
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 849
     }
   ],
   "imagem": "/images/produtos/borne-impact-bass-cb60.webp",

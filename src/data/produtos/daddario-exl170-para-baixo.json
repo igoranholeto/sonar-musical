@@ -1,13 +1,17 @@
 {
   "nome": "D'Addario EXL170 para baixo",
   "meli": "https://meli.la/1Sec15T",
-  "preco": 160,
-  "precoEm": "2026-10-17",
+  "preco": 155,
+  "precoEm": "2026-11-10",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 160
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 155
     }
   ],
   "imagem": "/images/produtos/daddario-exl170-para-baixo.webp",

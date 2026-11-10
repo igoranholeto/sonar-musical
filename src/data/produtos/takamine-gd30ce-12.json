@@ -1,13 +1,17 @@
 {
   "nome": "Takamine GD30CE-12",
   "meli": "https://meli.la/2uErbs5",
-  "preco": 3912,
-  "precoEm": "2026-11-09",
+  "preco": 3745,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 3912
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 3745
     }
   ],
   "nota": 4.9,

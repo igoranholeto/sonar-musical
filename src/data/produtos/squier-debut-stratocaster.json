@@ -1,13 +1,17 @@
 {
   "nome": "Squier Debut Stratocaster",
   "meli": "https://meli.la/2QfDgoY",
-  "preco": 1271,
-  "precoEm": "2026-11-02",
+  "preco": 1552,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-02",
       "preco": 1271
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1552
     }
   ],
   "imagem": "/images/produtos/squier-debut-stratocaster.webp",

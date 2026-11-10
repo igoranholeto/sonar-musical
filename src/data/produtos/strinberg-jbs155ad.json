@@ -1,13 +1,17 @@
 {
   "nome": "Strinberg JBS155AD 5 cordas",
   "meli": "https://meli.la/2FF1pmj",
-  "preco": 2029,
-  "precoEm": "2026-11-09",
+  "preco": 2200,
+  "precoEm": "2026-11-10",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 2029
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2200
     }
   ],
   "nota": 4.8,

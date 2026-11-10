@@ -1,8 +1,8 @@
 {
   "nome": "Mooer GE150",
   "meli": "https://meli.la/2DSqumj",
-  "preco": 1484,
-  "precoEm": "2026-11-05",
+  "preco": 943,
+  "precoEm": "2026-11-10",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-05",
       "preco": 1484
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 943
     }
   ],
   "imagem": "/images/produtos/mooer-ge150.webp",

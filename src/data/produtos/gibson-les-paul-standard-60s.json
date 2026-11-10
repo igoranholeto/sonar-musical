@@ -1,8 +1,8 @@
 {
   "nome": "Gibson Les Paul Standard '60s",
   "meli": "https://meli.la/2iWtCWH",
-  "preco": 31271,
-  "precoEm": "2026-10-29",
+  "preco": 28464,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-10-29",
       "preco": 31271
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 28464
     }
   ],
   "imagem": "/images/produtos/gibson-les-paul-standard-60s.webp",

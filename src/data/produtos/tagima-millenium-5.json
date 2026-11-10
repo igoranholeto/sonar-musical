@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Millenium 5",
   "meli": "https://meli.la/1uBUo3Q",
-  "preco": 1610,
-  "precoEm": "2026-11-06",
+  "preco": 1499,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-06",
       "preco": 1610
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1499
     }
   ],
   "nota": 4.8,

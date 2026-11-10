@@ -5,8 +5,11 @@
 // página abre normalmente, mas o primeiro card (o produto do link) traz "Anúncio pausado".
 // Uso: node scripts/check-afiliados.mjs   (lista só os quebrados; --all mostra todos)
 //      --md arquivo.md grava um relatório em Markdown (usado pelo GitHub Actions)
+//      --atualizar-precos grava no catálogo o preço que o ML mostra hoje em cada link OK
+//        (og:title) e corrige os preços antigos no texto dos posts (lib/precos-texto.mjs)
 import fs from 'node:fs';
 import path from 'node:path';
+import { sincronizarPrecosTexto, imprimirRelatorio, hojeISO, fmtPreco } from './lib/precos-texto.mjs';
 
 const UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128 Safari/537.36';
 const links = new Map(); // url -> { produtos:Set, onde:Set, ids:Set }
@@ -92,6 +95,33 @@ for (const r of mostrar) {
 console.log(`\n${resultado.length} links verificados: ${resultado.length - quebrados.length} OK, ${quebrados.length} quebrados ou a verificar.`);
 fs.mkdirSync('covers-src', { recursive: true });
 fs.writeFileSync('covers-src/_afiliados-check.json', JSON.stringify(resultado, null, 2));
+
+// Preço do dia: o og:title termina em " - R$ 1.234" ou " - R$ 1.234,56".
+if (process.argv.includes('--atualizar-precos')) {
+  const hoje = hojeISO();
+  const conferidos = [];
+  let mudaram = 0;
+  for (const r of resultado) {
+    const m = r.status === 'OK' && r.ml.match(/R\$\s*([\d.]+)(?:,(\d{1,2}))?\s*$/);
+    if (!m) continue;
+    const preco = Math.round(Number(`${m[1].replace(/\./g, '')}.${m[2] ?? '0'}`));
+    for (const id of r.ids) {
+      const prod = catalogo.get(id);
+      if (!prod || !(preco > 0)) continue;
+      conferidos.push(id);
+      if (Math.round(prod.preco) !== preco) {
+        console.log(`preço\t${id}: ${fmtPreco(prod.preco)} -> ${fmtPreco(preco)}`);
+        prod.historico = [...(prod.historico ?? []).filter((h) => h.data !== hoje), { data: hoje, preco }];
+        prod.preco = preco;
+        mudaram++;
+      }
+      prod.precoEm = hoje;
+      fs.writeFileSync(path.join(CAT, `${id}.json`), JSON.stringify(prod, null, 2) + '\n');
+    }
+  }
+  console.log(`\n${conferidos.length} preços conferidos, ${mudaram} mudaram.\n`);
+  imprimirRelatorio(sincronizarPrecosTexto({ ids: conferidos, aplicar: true, hoje }), true);
+}
 
 const mdIdx = process.argv.indexOf('--md');
 if (mdIdx > 0) {

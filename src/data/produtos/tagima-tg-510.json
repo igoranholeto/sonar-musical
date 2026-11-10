@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-510",
   "meli": "https://meli.la/2okmTrf",
-  "preco": 949,
-  "precoEm": "2026-11-05",
+  "preco": 890,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-05",
       "preco": 949
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 890
     }
   ],
   "imagem": "/images/produtos/tagima-tg-510.webp",

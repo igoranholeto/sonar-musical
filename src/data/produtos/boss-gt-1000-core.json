@@ -1,8 +1,8 @@
 {
   "nome": "Boss GT-1000 Core",
   "meli": "https://meli.la/1DjtHob",
-  "preco": 4630,
-  "precoEm": "2026-10-29",
+  "preco": 5061,
+  "precoEm": "2026-11-10",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/boss-gt-1000-core.webp",
   "imagemAlt": "Boss GT-1000 Core",
@@ -10,6 +10,10 @@
     {
       "data": "2026-10-29",
       "preco": 4630
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 5061
     }
   ]
 }

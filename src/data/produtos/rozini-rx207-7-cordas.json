@@ -1,13 +1,17 @@
 {
   "nome": "Rozini Estudante RX207 (7 cordas)",
   "meli": "https://meli.la/2r4QS8w",
-  "preco": 1252,
-  "precoEm": "2026-11-06",
+  "preco": 1165,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 1252
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1165
     }
   ],
   "nota": 4.9,

@@ -1,13 +1,17 @@
 {
   "nome": "Giannini Performance J12 DLX 12 cordas",
   "meli": "https://meli.la/2nkegmr",
-  "preco": 1857,
-  "precoEm": "2026-11-09",
+  "preco": 1886,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 1857
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1886
     }
   ],
   "nota": 4.9,

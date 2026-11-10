@@ -1,8 +1,8 @@
 {
   "nome": "Valeton GP-50",
   "meli": "https://meli.la/2r1fxwv",
-  "preco": 802,
-  "precoEm": "2026-11-05",
+  "preco": 776,
+  "precoEm": "2026-11-10",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-05",
       "preco": 802
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 776
     }
   ],
   "imagem": "/images/produtos/valeton-gp-50.webp",

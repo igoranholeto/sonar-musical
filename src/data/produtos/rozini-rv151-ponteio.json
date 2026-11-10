@@ -1,13 +1,17 @@
 {
   "nome": "Viola Caipira Rozini Ponteio RV151 (acústica)",
   "meli": "https://meli.la/2au4cQk",
-  "preco": 1066,
-  "precoEm": "2026-11-05",
+  "preco": 1071,
+  "precoEm": "2026-11-10",
   "categoria": "viola",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 1066
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1071
     }
   ],
   "nota": 5,

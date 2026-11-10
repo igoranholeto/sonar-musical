@@ -1,13 +1,17 @@
 {
   "nome": "Capa para violão AVS (simples)",
   "meli": "https://meli.la/2B2TfDA",
-  "preco": 50,
-  "precoEm": "2026-11-06",
+  "preco": 48,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 50
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 48
     }
   ],
   "nota": 4.7,

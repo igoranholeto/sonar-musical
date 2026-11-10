@@ -1,8 +1,8 @@
 {
   "nome": "Cabo Santo Angelo Ninja P10 (3 m)",
   "meli": "https://meli.la/2RMQYWF",
-  "preco": 64,
-  "precoEm": "2026-11-02",
+  "preco": 65,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-02",
       "preco": 64
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 65
     }
   ],
   "nota": 4.9,

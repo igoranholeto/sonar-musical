@@ -1,13 +1,17 @@
 {
   "nome": "Strinberg Soul SSC60 Nylon",
   "meli": "https://meli.la/2ey3dNL",
-  "preco": 1592,
-  "precoEm": "2026-10-30",
+  "preco": 2009,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 1592
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2009
     }
   ],
   "imagem": "/images/produtos/strinberg-ssc60-soul.webp",

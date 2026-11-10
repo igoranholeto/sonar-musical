@@ -1,13 +1,17 @@
 {
   "nome": "Mosky ISO-10 fonte isolada",
   "meli": "https://meli.la/2cJQAxQ",
-  "preco": 245,
-  "precoEm": "2026-10-17",
+  "preco": 262,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 245
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 262
     }
   ],
   "imagem": "/images/produtos/mosky-iso-10-fonte-isolada.webp",

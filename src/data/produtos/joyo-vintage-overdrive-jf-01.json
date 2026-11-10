@@ -1,8 +1,8 @@
 {
   "nome": "Joyo Vintage Overdrive JF-01",
   "meli": "https://meli.la/1Y3kQzW",
-  "preco": 228.59,
-  "precoEm": "2026-11-02",
+  "preco": 249,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-02",
       "preco": 228.59
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 249
     }
   ],
   "nota": 4.7,

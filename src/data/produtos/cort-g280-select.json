@@ -1,13 +1,17 @@
 {
   "nome": "Cort G280 Select",
   "meli": "https://meli.la/2XiAL8e",
-  "preco": 3756,
-  "precoEm": "2026-11-06",
+  "preco": 4039,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 3756
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 4039
     }
   ],
   "nota": 4.9,

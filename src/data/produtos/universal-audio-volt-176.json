@@ -1,13 +1,17 @@
 {
   "nome": "Universal Audio Volt 176",
   "meli": "https://meli.la/2sE1TKs",
-  "preco": 1200,
-  "precoEm": "2026-07-06",
+  "preco": 2010,
+  "precoEm": "2026-11-10",
   "categoria": "interface",
   "historico": [
     {
       "data": "2026-07-06",
       "preco": 1200
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2010
     }
   ],
   "imagem": "/images/produtos/universal-audio-volt-176.webp",

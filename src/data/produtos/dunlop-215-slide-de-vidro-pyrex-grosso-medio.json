@@ -1,13 +1,17 @@
 {
   "nome": "Dunlop 215 Slide de Vidro Pyrex Grosso Médio",
   "meli": "https://meli.la/1N56f4G",
-  "preco": 147,
-  "precoEm": "2026-10-22",
+  "preco": 148,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-10-22",
       "preco": 147
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 148
     }
   ],
   "imagem": "/images/produtos/dunlop-215-slide-de-vidro-pyrex-grosso-medio.webp",

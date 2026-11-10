@@ -1,13 +1,17 @@
 {
   "nome": "D'Addario Chromes ECB81 flatwound",
   "meli": "https://meli.la/1mWwdKB",
-  "preco": 499,
-  "precoEm": "2026-10-17",
+  "preco": 445,
+  "precoEm": "2026-11-10",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 499
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 445
     }
   ],
   "imagem": "/images/produtos/daddario-chromes-ecb81-flatwound.webp",

@@ -1,8 +1,8 @@
 {
   "nome": "Boss DD-3T Digital Delay",
   "meli": "https://meli.la/1B8UwmT",
-  "preco": 1350,
-  "precoEm": "2026-10-16",
+  "preco": 1329,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-10-16",
       "preco": 1350
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1329
     }
   ],
   "imagem": "/images/produtos/boss-dd-3t-digital-delay.webp",

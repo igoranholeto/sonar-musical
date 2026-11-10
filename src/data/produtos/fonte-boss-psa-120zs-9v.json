@@ -1,13 +1,17 @@
 {
   "nome": "Fonte Boss PSA-120ZS 9V",
   "meli": "https://meli.la/1hHEhFL",
-  "preco": 253,
-  "precoEm": "2026-10-17",
+  "preco": 250,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 253
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 250
     }
   ],
   "imagem": "/images/produtos/fonte-boss-psa-120zs-9v.webp",

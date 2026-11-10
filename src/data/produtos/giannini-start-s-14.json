@@ -1,13 +1,17 @@
 {
   "nome": "Giannini Start S-14",
   "meli": "https://meli.la/1r5izbe",
-  "preco": 496,
-  "precoEm": "2026-10-29",
+  "preco": 497,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 496
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 497
     }
   ],
   "imagem": "/images/produtos/giannini-start-s-14.webp",

@@ -1,13 +1,17 @@
 {
   "nome": "M-Vave Looper Pro",
   "meli": "https://meli.la/2Zvpsf9",
-  "preco": 207,
-  "precoEm": "2026-10-17",
+  "preco": 184,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 207
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 184
     }
   ],
   "imagem": "/images/produtos/m-vave-looper-pro.webp",

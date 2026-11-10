@@ -1,13 +1,17 @@
 {
   "nome": "Fuhrmann Compressor CM10",
   "meli": "https://meli.la/2UiNeN9",
-  "preco": 331,
-  "precoEm": "2026-10-17",
+  "preco": 298,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 331
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 298
     }
   ],
   "imagem": "/images/produtos/fuhrmann-compressor-cm10.webp",

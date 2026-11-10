@@ -1,8 +1,8 @@
 {
   "nome": "Fender Rumble 25",
   "meli": "https://meli.la/1nJYMCV",
-  "preco": 1758,
-  "precoEm": "2026-11-06",
+  "preco": 1789,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-06",
       "preco": 1758
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1789
     }
   ],
   "imagem": "/images/produtos/fender-rumble-25.webp",

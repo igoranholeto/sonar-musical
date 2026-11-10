@@ -1,13 +1,17 @@
 {
   "nome": "Strinberg SC200C LH Nylon Canhoto",
   "meli": "https://meli.la/2qeph4J",
-  "preco": 1018,
-  "precoEm": "2026-11-09",
+  "preco": 967,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 1018
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 967
     }
   ],
   "nota": 5,
