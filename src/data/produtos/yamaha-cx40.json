@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha CX40 (nylon eletroacústico)",
   "meli": "https://meli.la/2cwQGU4",
-  "preco": 1073,
-  "precoEm": "2026-11-06",
+  "preco": 1003,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-06",
       "preco": 1073
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1003
     }
   ],
   "nota": 4.7,

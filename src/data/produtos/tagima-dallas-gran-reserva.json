@@ -1,13 +1,17 @@
 {
   "nome": "Tagima Dallas Gran Reserva",
   "meli": "https://meli.la/1tMZC9n",
-  "preco": 1073,
-  "precoEm": "2026-10-29",
+  "preco": 927,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1073
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 927
     }
   ],
   "imagem": "/images/produtos/tagima-dallas-gran-reserva.webp",

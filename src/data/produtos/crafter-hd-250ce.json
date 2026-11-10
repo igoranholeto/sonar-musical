@@ -2,11 +2,15 @@
   "nome": "Crafter HD-250CE",
   "meli": "https://meli.la/1adyUUa",
   "preco": 2263,
-  "precoEm": "2026-11-06",
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-06",
+      "preco": 2263
+    },
+    {
+      "data": "2026-11-10",
       "preco": 2263
     }
   ],

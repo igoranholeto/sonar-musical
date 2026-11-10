@@ -133,6 +133,17 @@ const MAP = {
   'baixo-strinberg-e-bom':          { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'STRINBERG', q: 'MataoArtistBass Black 2 tone', prefer: /MataoArtistBass Black 2 tone-rear 2/i },
   'baixo-ibanez-e-bom':             { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'IBANEZ', q: 'Ibanez SR Bass SRC6', prefer: /Ibanez SR Bass and Ibanez SRC6/i },
   'spark-mini-e-bom':               { kicker: 'AMPLIFICADORES · REVIEW', l1: 'SPARK', l2: 'MINI', q: 'guitar amplifier', prefer: /Marathon mini guitar amplifier/i, avoid: /bass|logo|marshall|vox|orange|museum|stack|mesa|peavey|boss|katana|concert|stage|festival|fender/i },
+  // Lote 2026-11-10 (pautas top 3)
+  'melhores-marcas-de-violao':      { kicker: 'VIOLÕES · 2026', l1: 'MARCAS DE', l2: 'VIOLÃO', q: 'Acoustic guitars in store 20180625', prefer: /Acoustic guitars in store 20180625/i },
+  'melhor-teclado-para-iniciantes': { kicker: 'TECLADOS · 2026', l1: 'TECLADO', l2: 'INICIANTE', q: 'Casio CTK-496 keyboard', prefer: /Casio CTK-496 keyboard/i },
+  'violao-barato-e-bom':            { kicker: 'VIOLÕES · 2026', l1: 'VIOLÃO', l2: 'BARATO E BOM', q: 'Classical-guitar.JPG', prefer: /^File:Classical-guitar\.JPG$/i },
+  'melhor-violino-para-iniciantes': { kicker: 'VIOLINOS · 2026', l1: 'VIOLINO', l2: 'INICIANTE', q: 'Suzuki Violin No.580 f-hole', prefer: /Suzuki Violin No.580 4-4 .1982. f-hole/i },
+  'melhor-bateria-eletronica-custo-beneficio': { kicker: 'BATERIAS · 2026', l1: 'BATERIA', l2: 'ELETRÔNICA', q: 'Roland V-Drums 2915493510', prefer: /Roland V-Drums \(2915493510\)/i },
+  'melhor-afinador-de-violao':      { kicker: 'ACESSÓRIOS · 2026', l1: 'AFINADOR', l2: 'DE VIOLÃO', q: 'Guitar-tuner-standard-and-clip-on', prefer: /Guitar-tuner-standard-and-clip-on/i },
+  'melhores-marcas-de-guitarra':    { kicker: 'GUITARRAS · 2026', l1: 'MARCAS DE', l2: 'GUITARRA', q: 'Hanks Guitar Shop 27 Denmark Street', prefer: /Hanks Guitar Shop, 27 Denmark Street WC2 - 2015-03-10 14\.55\.33/i },
+  'melhores-marcas-de-ukulele':     { kicker: 'UKULELES · 2026', l1: 'MARCAS DE', l2: 'UKULELE', q: 'Ukeleles-2016-0512', prefer: /Ukeleles-2016-0512/i },
+  'violao-vogga-e-bom':             { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'VOGGA', q: 'Guitare et partitions', prefer: /Guitare et partitions/i },
+  'melhores-marcas-de-teclado-musical': { kicker: 'TECLADOS · 2026', l1: 'MARCAS DE', l2: 'TECLADO', q: 'KORG M3 KORG Triton Radias', prefer: /KORG M3, KORG Triton/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

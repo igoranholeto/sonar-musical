@@ -1,0 +1,17 @@
+{
+  "nome": "Vivace Mozart MO44",
+  "meli": "https://meli.la/1HbMNJA",
+  "preco": 365,
+  "precoEm": "2026-11-10",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 365
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 550,
+  "imagemAlt": "Vivace Mozart MO44",
+  "imagem": "/images/produtos/vivace-mozart-mo44.webp"
+}

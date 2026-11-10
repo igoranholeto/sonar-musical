@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Stratocaster",
   "meli": "https://meli.la/26ELWyG",
-  "preco": 2699,
-  "precoEm": "2026-09-21",
+  "preco": 2906,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-09-21",
       "preco": 2699
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2906
     }
   ],
   "imagem": "/images/produtos/squier-affinity-stratocaster.webp",

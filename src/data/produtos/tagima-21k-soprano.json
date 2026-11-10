@@ -2,14 +2,20 @@
   "nome": "Tagima 21K Soprano",
   "meli": "https://meli.la/1i4iEHj",
   "preco": 309,
-  "precoEm": "2026-10-30",
+  "precoEm": "2026-11-10",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 309
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 309
     }
   ],
   "imagem": "/images/produtos/tagima-21k-soprano.webp",
-  "imagemAlt": "Tagima 21K Soprano"
+  "imagemAlt": "Tagima 21K Soprano",
+  "nota": 4.7,
+  "avaliacoes": 81
 }

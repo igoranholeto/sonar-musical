@@ -1,8 +1,8 @@
 {
   "nome": "Gibson Les Paul Studio",
   "meli": "https://meli.la/1PAkAN3",
-  "preco": 14000,
-  "precoEm": "2026-09-28",
+  "preco": 26709,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-09-28",
       "preco": 14000
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 26709
     }
   ],
   "imagem": "/images/produtos/gibson-les-paul-studio.webp",

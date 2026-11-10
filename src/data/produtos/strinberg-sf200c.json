@@ -2,7 +2,7 @@
   "nome": "Strinberg SF200C",
   "meli": "https://meli.la/1tvMQLt",
   "preco": 786,
-  "precoEm": "2026-11-09",
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
@@ -11,6 +11,10 @@
     },
     {
       "data": "2026-11-09",
+      "preco": 786
+    },
+    {
+      "data": "2026-11-10",
       "preco": 786
     }
   ],

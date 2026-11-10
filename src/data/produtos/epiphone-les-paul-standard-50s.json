@@ -1,8 +1,8 @@
 {
   "nome": "Epiphone Les Paul Standard 50s",
   "meli": "https://meli.la/2SVg4Aq",
-  "preco": 10348,
-  "precoEm": "2026-10-29",
+  "preco": 8323,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "imagem": "/images/produtos/epiphone-les-paul-standard-50s.webp",
   "imagemAlt": "Epiphone Les Paul Standard 50s",
@@ -26,6 +26,10 @@
     {
       "data": "2026-10-29",
       "preco": 10348
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 8323
     }
   ]
 }

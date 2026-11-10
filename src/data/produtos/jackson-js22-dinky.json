@@ -1,8 +1,8 @@
 {
   "nome": "Jackson JS22 Dinky",
   "meli": "https://meli.la/2HQ7JPQ",
-  "preco": 1979,
-  "precoEm": "2026-11-05",
+  "preco": 1891,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-05",
       "preco": 1979
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1891
     }
   ],
   "imagem": "/images/produtos/jackson-js22-dinky.webp",

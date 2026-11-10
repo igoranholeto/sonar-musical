@@ -1,15 +1,21 @@
 {
   "nome": "Shelby SU23M Concert",
   "meli": "https://meli.la/2NEMgJj",
-  "preco": 229,
-  "precoEm": "2026-10-30",
+  "preco": 246,
+  "precoEm": "2026-11-10",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 229
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 246
     }
   ],
   "imagem": "/images/produtos/shelby-su23m-concert.webp",
-  "imagemAlt": "Shelby SU23M Concert"
+  "imagemAlt": "Shelby SU23M Concert",
+  "nota": 4.9,
+  "avaliacoes": 630
 }

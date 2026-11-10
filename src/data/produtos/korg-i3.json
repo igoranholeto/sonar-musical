@@ -1,0 +1,17 @@
+{
+  "nome": "Korg i3",
+  "meli": "https://meli.la/166XnYt",
+  "preco": 4199,
+  "precoEm": "2026-11-10",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 4199
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 13,
+  "imagemAlt": "Korg i3",
+  "imagem": "/images/produtos/korg-i3.webp"
+}

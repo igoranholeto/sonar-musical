@@ -1,0 +1,17 @@
+{
+  "nome": "Casio CT-X800",
+  "meli": "https://meli.la/2JKdz2s",
+  "preco": 1400,
+  "precoEm": "2026-11-10",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 1400
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 704,
+  "imagemAlt": "Casio CT-X800",
+  "imagem": "/images/produtos/casio-ct-x800.webp"
+}

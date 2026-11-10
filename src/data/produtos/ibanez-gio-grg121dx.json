@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GIO GRG121DX",
   "meli": "https://meli.la/1A8fwN1",
-  "preco": 2164,
-  "precoEm": "2026-11-05",
+  "preco": 2307,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "imagem": "/images/produtos/ibanez-gio-grg121dx.webp",
   "imagemAlt": "Ibanez GIO GRG121DX",
@@ -18,6 +18,10 @@
     {
       "data": "2026-11-05",
       "preco": 2164
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2307
     }
   ]
 }

@@ -2,11 +2,15 @@
   "nome": "Rozini Estudante RX201 (nylon)",
   "meli": "https://meli.la/1ChAjmR",
   "preco": 901,
-  "precoEm": "2026-11-06",
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-06",
+      "preco": 901
+    },
+    {
+      "data": "2026-11-10",
       "preco": 901
     }
   ],

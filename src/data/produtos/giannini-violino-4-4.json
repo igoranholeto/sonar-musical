@@ -1,0 +1,17 @@
+{
+  "nome": "Giannini Violino Acústico 4/4",
+  "meli": "https://meli.la/1jZ9wxz",
+  "preco": 513,
+  "precoEm": "2026-11-10",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 513
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 72,
+  "imagemAlt": "Giannini Violino Acústico 4/4",
+  "imagem": "/images/produtos/giannini-violino-4-4.webp"
+}

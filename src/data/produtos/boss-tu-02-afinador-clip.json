@@ -1,8 +1,8 @@
 {
   "nome": "Boss TU-02 Afinador Clip",
   "meli": "https://meli.la/16vSK3m",
-  "preco": 92,
-  "precoEm": "2026-11-02",
+  "preco": 93,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "nota": 4.8,
   "avaliacoes": 1292,
@@ -10,6 +10,10 @@
     {
       "data": "2026-11-02",
       "preco": 92
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 93
     }
   ],
   "imagem": "/images/produtos/boss-tu-02-afinador-clip.webp",

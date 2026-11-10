@@ -1,0 +1,17 @@
+{
+  "nome": "Michael VNM40",
+  "meli": "https://meli.la/1hbEbat",
+  "preco": 760,
+  "precoEm": "2026-11-10",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-10",
+      "preco": 760
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 103,
+  "imagemAlt": "Michael VNM40",
+  "imagem": "/images/produtos/michael-vnm40.webp"
+}
