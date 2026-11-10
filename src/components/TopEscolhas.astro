@@ -4,6 +4,7 @@
 // Os dados vêm do catálogo (src/data/produtos); o rótulo diz para quem é cada escolha.
 import { getEntry } from 'astro:content';
 import { formatPreco } from '../utils/preco';
+import { valorComissao } from '../utils/comissao';
 
 interface Item {
   id: string;
@@ -53,7 +54,7 @@ const qtd = (n: number) => `${n.toLocaleString('pt-BR')} ${n === 1 ? 'avaliaçã
         </div>
         <div class="top__acao">
           <span class="top__preco">{preco(p.preco)}</span>
-          <a class="top__btn" href={p.meli} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={p.nome} data-bloco="topo">
+          <a class="top__btn" href={p.meli} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={p.nome} data-bloco="topo" data-valor={valorComissao(p.preco, p.categoria)}>
             Ver preço no Mercado Livre
           </a>
         </div>

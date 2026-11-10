@@ -3,6 +3,7 @@ import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { generoAccent, generoGradient, generoSoft, iniciais } from '../../../utils/generos';
 import { WEBSITE_ID, ORG_ID } from '../../../utils/schema';
+import { precoDeTexto, valorComissao } from '../../../utils/comissao';
 
 export async function getStaticPaths() {
   const bandas = await getCollection('bandas');
@@ -245,6 +246,7 @@ const colecaoSchema = {
                               rel="noopener noreferrer sponsored nofollow"
                               data-produto={g.original.similar ?? g.original.nome}
                               data-bloco="equipamento-banda"
+                              data-valor={valorComissao(precoDeTexto(g.original.preco))}
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-white bg-brand-fill rounded-lg px-4 py-2.5 hover:bg-brand-dark transition-colors"
                             >
                               {g.original.similar ? 'Ver o similar →' : 'Conferir preços →'}
@@ -274,6 +276,7 @@ const colecaoSchema = {
                               rel="noopener noreferrer sponsored nofollow"
                               data-produto={g.low.similar ?? g.low.nome}
                               data-bloco="equipamento-banda-low"
+                              data-valor={valorComissao(precoDeTexto(g.low.preco))}
                               class="inline-flex mt-3.5 text-[12.5px] font-bold text-[#d0d0d0] border border-[#3a3a3a] rounded-lg px-4 py-2.5 hover:border-white/40 transition-colors"
                             >
                               {g.low.similar ? 'Ver o similar →' : 'Conferir preços →'}

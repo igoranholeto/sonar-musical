@@ -40,3 +40,6 @@ covers-src/photos/
 # Lighthouse CI
 .lighthouseci/
 lhci-relatorios/
+
+# Dados de venda do afiliado (pedidos, comissões): o repositório é público.
+privado/

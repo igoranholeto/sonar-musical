@@ -4,6 +4,7 @@
 // fechar vale para a sessão inteira. Sem TopEscolhas na página, não aparece.
 import { getEntry } from 'astro:content';
 import { formatPreco } from '../utils/preco';
+import { valorComissao } from '../utils/comissao';
 
 interface Props {
   id: string;
@@ -22,7 +23,7 @@ const preco = formatPreco(p.preco).replace(/^A partir de /, '');
     <b>{p.nome}</b>
     <span>{rotulo} · {preco}</span>
   </div>
-  <a class="barra__btn" href={p.meli} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={p.nome} data-bloco="barra-fixa">
+  <a class="barra__btn" href={p.meli} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={p.nome} data-bloco="barra-fixa" data-valor={valorComissao(p.preco, p.categoria)}>
     Ver preço
   </a>
   <button class="barra__fechar" type="button" aria-label="Fechar a barra de compra">×</button>
