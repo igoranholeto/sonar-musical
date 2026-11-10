@@ -1,7 +1,7 @@
 {
-  "nome": "Taylor Academy 10",
-  "meli": "https://meli.la/1KCRiSV",
-  "preco": 6052,
+  "nome": "Taylor Academy 10e",
+  "meli": "https://meli.la/1pQHs9H",
+  "preco": 7900,
   "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
@@ -11,9 +11,9 @@
     },
     {
       "data": "2026-11-10",
-      "preco": 6052
+      "preco": 7900
     }
   ],
   "imagem": "/images/produtos/taylor-academy-10.webp",
-  "imagemAlt": "Taylor Academy 10"
+  "imagemAlt": "Violão Taylor Academy 10e com a bag"
 }

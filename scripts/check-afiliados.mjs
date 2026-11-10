@@ -100,6 +100,7 @@ fs.writeFileSync('covers-src/_afiliados-check.json', JSON.stringify(resultado, n
 if (process.argv.includes('--atualizar-precos')) {
   const hoje = hojeISO();
   const conferidos = [];
+  const antigos = {};
   let mudaram = 0;
   for (const r of resultado) {
     const m = r.status === 'OK' && r.ml.match(/R\$\s*([\d.]+)(?:,(\d{1,2}))?\s*$/);
@@ -111,6 +112,7 @@ if (process.argv.includes('--atualizar-precos')) {
       conferidos.push(id);
       if (Math.round(prod.preco) !== preco) {
         console.log(`preço\t${id}: ${fmtPreco(prod.preco)} -> ${fmtPreco(preco)}`);
+        antigos[id] = [prod.preco];
         prod.historico = [...(prod.historico ?? []).filter((h) => h.data !== hoje), { data: hoje, preco }];
         prod.preco = preco;
         mudaram++;
@@ -120,7 +122,7 @@ if (process.argv.includes('--atualizar-precos')) {
     }
   }
   console.log(`\n${conferidos.length} preços conferidos, ${mudaram} mudaram.\n`);
-  imprimirRelatorio(sincronizarPrecosTexto({ ids: conferidos, aplicar: true, hoje }), true);
+  imprimirRelatorio(sincronizarPrecosTexto({ ids: conferidos, aplicar: true, hoje, antigos }), true);
 }
 
 const mdIdx = process.argv.indexOf('--md');
