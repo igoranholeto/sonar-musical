@@ -196,7 +196,24 @@ const websiteSchema = {
         s.src = 'https://www.googletagmanager.com/gtag/js?id=G-WZDXX7MLBD';
         document.head.appendChild(s);
       }
+
+      // Microsoft Clarity (gravações e mapas de calor): o snippet oficial, só que
+      // carregado apenas quando a pessoa interage (toque, rolagem, tecla, mouse). Sem
+      // o atalho de 6 s do GA: o Lighthouse/PSI nunca interage, então o Clarity não
+      // entra na nota. Mesmas travas do GA (domínio real, sem robô).
+      var clarityCarregado = gaCarregado;
+      function loadClarity() {
+        if (clarityCarregado) return;
+        clarityCarregado = true;
+        var w = window as any;
+        w.clarity = w.clarity || function () { (w.clarity.q = w.clarity.q || []).push(arguments); };
+        var c = document.createElement('script');
+        c.async = true;
+        c.src = 'https://www.clarity.ms/tag/ym1km7tneq';
+        document.head.appendChild(c);
+      }
       GATILHOS.forEach(function (ev) { window.addEventListener(ev, loadGA, { capture: true, passive: true, once: true }); });
+      GATILHOS.forEach(function (ev) { window.addEventListener(ev, loadClarity, { capture: true, passive: true, once: true }); });
       function gaPorTempo() { setTimeout(loadGA, 6000); }
       if (document.readyState === 'complete') gaPorTempo();
       else window.addEventListener('load', gaPorTempo);
