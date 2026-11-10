@@ -202,22 +202,51 @@ const websiteSchema = {
         if (document.visibilityState === 'hidden') loadGA();
       });
 
+      // IDs do GA lidos dos cookies: visitante (_ga) e sessão (_ga_<id>, formatos
+      // GS1 e GS2). Vão no affiliate_click para a venda do ML voltar ao GA na mesma
+      // sessão do clique (scripts/ml-vendas-ga.mjs).
+      function idsGA() {
+        var c = '; ' + document.cookie;
+        var ga = c.split('; _ga=')[1];
+        var ses = c.split('; _ga_WZDXX7MLBD=')[1];
+        var cid = ga ? ga.split(';')[0].split('.').slice(2).join('.') : '';
+        var m = ses ? ses.split(';')[0].match(/^GS2\.\d+\.s(\d+)|^GS1\.\d+\.(\d+)/) : null;
+        return { cid: cid, sid: m ? m[1] || m[2] : '' };
+      }
+
       // Clique em link de afiliado (Mercado Livre): evento affiliate_click com o
       // produto, o bloco de onde veio (cta, equipamento-banda, texto) e a posição do
-      // link na página, para saber quais páginas e botões geram clique.
+      // link na página, para saber quais páginas e botões geram clique. O value é a
+      // comissão estimada do clique (data-valor, gerado no build a partir do preço):
+      // aparece no GA como valor do evento, separado da receita de vendas.
       var AFILIADO = 'a[href*="meli.la"], a[href*="mercadolivre.com"]';
       document.addEventListener('click', function (e) {
         var alvo = e.target instanceof Element ? e.target.closest(AFILIADO) : null;
         if (!(alvo instanceof HTMLAnchorElement)) return;
         var links = Array.prototype.slice.call(document.querySelectorAll(AFILIADO));
-        gtag('event', 'affiliate_click', {
+        var params: Record<string, unknown> = {
           produto: alvo.dataset.produto || (alvo.textContent || '').trim().slice(0, 100),
           bloco: alvo.dataset.bloco || 'texto',
           posicao: links.indexOf(alvo) + 1,
           total_links: links.length,
           link_url: alvo.href,
           transport_type: 'beacon',
-        });
+        };
+        var valor = parseFloat(alvo.dataset.valor || '');
+        if (valor > 0) { params.value = valor; params.currency = 'BRL'; }
+        var enviado = false;
+        function enviar() {
+          if (enviado) return;
+          enviado = true;
+          var ids = idsGA();
+          if (ids.cid) params.id_visitante = ids.cid;
+          if (ids.sid) params.id_sessao = ids.sid;
+          gtag('event', 'affiliate_click', params);
+        }
+        // Clique antes do gtag.js chegar (ele é carregado sob demanda): os cookies
+        // ainda não existem, então espera o gtag responder, com teto de 3 s.
+        if (idsGA().cid) enviar();
+        else { gtag('get', 'G-WZDXX7MLBD', 'client_id', enviar); setTimeout(enviar, 3000); }
       }, true);
     </script>
   </head>

@@ -2,6 +2,7 @@
 import { getEntry } from 'astro:content';
 import { ORG_ID, absUrl, detectMarca, organizationRef, personRef, productId } from '../utils/schema';
 import { formatPreco } from '../utils/preco';
+import { precoDeTexto, valorComissao } from '../utils/comissao';
 
 interface Props {
   /** id do produto em src/data/produtos (nome, link, preço e foto saem de lá). */
@@ -34,6 +35,11 @@ const imagemAlt = Astro.props.imagemAlt ?? cat?.imagemAlt;
 if (!produto || !url) {
   throw new Error('AfiliadoCTA: informe id= (catálogo) ou produto= e url=');
 }
+// Comissão estimada do clique (GA, affiliate_click.value): preço do post ou do catálogo.
+const valor = valorComissao(
+  (Astro.props.preco ? precoDeTexto(Astro.props.preco) : undefined) ?? cat?.preco,
+  cat?.categoria,
+);
 
 // Detecta a marca a partir do nome do produto
 const marca = detectMarca(produto);
@@ -179,7 +185,7 @@ const produtoSchema: Record<string, unknown> | null =
       </div>
     )}
 
-    <a class="afi__btn" href={url} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={produto} data-bloco="cta">
+    <a class="afi__btn" href={url} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={produto} data-bloco="cta" data-valor={valor}>
       Ver melhor preço
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
