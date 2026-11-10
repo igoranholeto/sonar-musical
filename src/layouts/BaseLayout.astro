@@ -181,7 +181,11 @@ const websiteSchema = {
       // baixado na primeira interação (toque, rolagem, tecla, mouse) ou depois de
       // 6 s parado na página, o que vier primeiro. Como a fila acima já existe,
       // page_view e cliques feitos antes disso são enviados quando ele chega.
-      var gaCarregado = false;
+      // Só mede o domínio de produção e só navegador de gente: o Lighthouse CI (GitHub
+      // Actions, servidores nos EUA) e os testes locais rodam o build em localhost e
+      // apareciam no GA como ~75 "usuários" dos EUA por mês, com 0 s de engajamento.
+      // navigator.webdriver é true em navegador automatizado (headless, robôs).
+      var gaCarregado = location.hostname !== 'sonarmusical.com.br' || navigator.webdriver === true;
       var GATILHOS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'mousemove'];
       function loadGA() {
         if (gaCarregado) return;
