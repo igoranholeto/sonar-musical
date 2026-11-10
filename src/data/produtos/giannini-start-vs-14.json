@@ -1,13 +1,17 @@
 {
   "nome": "Viola Caipira Giannini Start VS-14",
   "meli": "https://meli.la/15ERjjQ",
-  "preco": 422,
-  "precoEm": "2026-11-05",
+  "preco": 401,
+  "precoEm": "2026-11-10",
   "categoria": "viola",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 422
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 401
     }
   ],
   "nota": 4.7,

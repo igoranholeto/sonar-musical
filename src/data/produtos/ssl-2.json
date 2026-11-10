@@ -1,13 +1,17 @@
 {
   "nome": "SSL 2+",
   "meli": "https://meli.la/12Gis3d",
-  "preco": 1200,
-  "precoEm": "2026-07-06",
+  "preco": 2294,
+  "precoEm": "2026-11-10",
   "categoria": "interface",
   "historico": [
     {
       "data": "2026-07-06",
       "preco": 1200
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2294
     }
   ],
   "imagem": "/images/produtos/ssl-2.webp",

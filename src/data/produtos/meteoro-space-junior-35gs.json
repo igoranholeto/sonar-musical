@@ -1,13 +1,17 @@
 {
   "nome": "Meteoro Space Junior 35GS",
   "meli": "https://meli.la/2RqXrTp",
-  "preco": 462,
-  "precoEm": "2026-10-29",
+  "preco": 476,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 462
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 476
     }
   ],
   "imagem": "/images/produtos/meteoro-space-junior-35gs.webp",

@@ -1,13 +1,17 @@
 {
   "nome": "Bandolim Marquês BND-100",
   "meli": "https://meli.la/2F237Rf",
-  "preco": 787,
-  "precoEm": "2026-11-05",
+  "preco": 700,
+  "precoEm": "2026-11-10",
   "categoria": "bandolim",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 787
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 700
     }
   ],
   "nota": 5,

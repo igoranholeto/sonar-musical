@@ -1,8 +1,8 @@
 {
   "nome": "Borne Strike G30",
   "meli": "https://meli.la/27cRqGN",
-  "preco": 440,
-  "precoEm": "2026-11-02",
+  "preco": 418,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-02",
       "preco": 440
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 418
     }
   ],
   "nota": 4.7,

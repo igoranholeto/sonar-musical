@@ -1,13 +1,17 @@
 {
   "nome": "Marshall MG15GR",
   "meli": "https://meli.la/2j1vFqX",
-  "preco": 1458,
-  "precoEm": "2026-11-09",
+  "preco": 1461,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 1458
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1461
     }
   ],
   "imagemAlt": "Marshall MG15GR",

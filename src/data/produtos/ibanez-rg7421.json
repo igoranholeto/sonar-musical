@@ -1,13 +1,17 @@
 {
   "nome": "Ibanez RG7421",
   "meli": "https://meli.la/1ihDDTi",
-  "preco": 2200,
-  "precoEm": "2026-06-26",
+  "preco": 4712,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-06-26",
       "preco": 2200
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 4712
     }
   ],
   "imagem": "/images/produtos/ibanez-rg7421.webp",

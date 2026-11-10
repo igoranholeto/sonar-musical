@@ -1,13 +1,17 @@
 {
   "nome": "Fuhrmann Chorus Cycle CO10",
   "meli": "https://meli.la/2Ei8mLk",
-  "preco": 296,
-  "precoEm": "2026-10-17",
+  "preco": 375,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 296
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 375
     }
   ],
   "imagem": "/images/produtos/fuhrmann-chorus-cycle-co10.webp",

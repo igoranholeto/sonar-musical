@@ -1,13 +1,17 @@
 {
   "nome": "Squier Sonic Stratocaster",
   "meli": "https://meli.la/1Lc6ewB",
-  "preco": 2070,
-  "precoEm": "2026-11-02",
+  "preco": 1745,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-02",
       "preco": 2070
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1745
     }
   ],
   "imagem": "/images/produtos/squier-sonic-stratocaster.webp",

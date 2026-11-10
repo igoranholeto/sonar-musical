@@ -1,13 +1,17 @@
 {
   "nome": "Borne Vorax 1050 Studio",
   "meli": "https://meli.la/1A8zXGY",
-  "preco": 1099,
-  "precoEm": "2026-10-29",
+  "preco": 1195,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1099
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1195
     }
   ],
   "imagem": "/images/produtos/borne-vorax-1050-studio.webp",

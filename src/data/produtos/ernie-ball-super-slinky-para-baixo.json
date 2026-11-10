@@ -1,13 +1,17 @@
 {
   "nome": "Ernie Ball Super Slinky para baixo",
   "meli": "https://meli.la/2vJinaE",
-  "preco": 206,
-  "precoEm": "2026-10-17",
+  "preco": 220,
+  "precoEm": "2026-11-10",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 206
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 220
     }
   ],
   "imagem": "/images/produtos/ernie-ball-super-slinky-para-baixo.webp",

@@ -1,13 +1,17 @@
 {
   "nome": "Augustine Classic Blue",
   "meli": "https://meli.la/21WnC5f",
-  "preco": 132,
-  "precoEm": "2026-10-29",
+  "preco": 130,
+  "precoEm": "2026-11-10",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 132
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 130
     }
   ],
   "imagem": "/images/produtos/augustine-classic-blue.webp",

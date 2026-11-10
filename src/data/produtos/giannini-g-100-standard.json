@@ -1,8 +1,8 @@
 {
   "nome": "Giannini G-100 Standard",
   "meli": "https://meli.la/1aHCHpi",
-  "preco": 676,
-  "precoEm": "2026-11-05",
+  "preco": 652,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-05",
       "preco": 676
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 652
     }
   ],
   "imagem": "/images/produtos/giannini-g-100-standard.webp",

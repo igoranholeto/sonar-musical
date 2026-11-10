@@ -1,13 +1,17 @@
 {
   "nome": "Seymour Duncan Hot Rodded Set (JB + Jazz)",
   "meli": "https://meli.la/1qf7XzG",
-  "preco": 1376,
-  "precoEm": "2026-08-03",
+  "preco": 1543,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-08-03",
       "preco": 1376
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1543
     }
   ],
   "imagem": "/images/produtos/seymour-duncan-hot-rodded-set-jb-jazz.webp",

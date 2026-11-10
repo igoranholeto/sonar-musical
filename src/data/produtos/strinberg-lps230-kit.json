@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg LPS230 (kit)",
   "meli": "https://meli.la/2K4mHPH",
-  "preco": 1900,
-  "precoEm": "2026-10-29",
+  "preco": 2390,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-10-29",
       "preco": 1900
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2390
     }
   ],
   "imagem": "/images/produtos/strinberg-lps230-kit.webp",

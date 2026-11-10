@@ -1,13 +1,17 @@
 {
   "nome": "Marshall MG10G",
   "meli": "https://meli.la/2UMJ2uW",
-  "preco": 909,
-  "precoEm": "2026-11-09",
+  "preco": 920,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 909
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 920
     }
   ],
   "imagemAlt": "Marshall MG10G",

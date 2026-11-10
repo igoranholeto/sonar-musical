@@ -1,13 +1,17 @@
 {
   "nome": "Joyo JF-10 Dynamic Compressor",
   "meli": "https://meli.la/11fbXCH",
-  "preco": 163,
-  "precoEm": "2026-10-17",
+  "preco": 179,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-17",
       "preco": 163
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 179
     }
   ],
   "imagem": "/images/produtos/joyo-jf-10-dynamic-compressor.webp",

@@ -1,13 +1,17 @@
 {
   "nome": "Giannini N6 3/4",
   "meli": "https://meli.la/2raUkhE",
-  "preco": 364,
-  "precoEm": "2026-10-30",
+  "preco": 332,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 364
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 332
     }
   ],
   "imagem": "/images/produtos/giannini-n6-3-4.webp",

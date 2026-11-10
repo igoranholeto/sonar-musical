@@ -1,13 +1,17 @@
 {
   "nome": "Native Instruments Komplete Audio 2",
   "meli": "https://meli.la/1ySCHRB",
-  "preco": 700,
-  "precoEm": "2026-07-06",
+  "preco": 1796,
+  "precoEm": "2026-11-10",
   "categoria": "interface",
   "historico": [
     {
       "data": "2026-07-06",
       "preco": 700
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1796
     }
   ],
   "imagem": "/images/produtos/native-instruments-komplete-audio-2.webp",

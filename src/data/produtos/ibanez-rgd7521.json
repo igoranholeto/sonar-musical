@@ -1,13 +1,17 @@
 {
   "nome": "Ibanez RGD7521",
   "meli": "https://meli.la/2i2JAjF",
-  "preco": 5500,
-  "precoEm": "2026-06-26",
+  "preco": 9399,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-06-26",
       "preco": 5500
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 9399
     }
   ],
   "imagem": "/images/produtos/ibanez-rgd7521.webp",

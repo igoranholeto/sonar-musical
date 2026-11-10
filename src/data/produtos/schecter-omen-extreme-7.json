@@ -1,13 +1,17 @@
 {
   "nome": "Schecter Omen Extreme-7",
   "meli": "https://meli.la/2XqbP8r",
-  "preco": 6423,
-  "precoEm": "2026-09-30",
+  "preco": 8029,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-09-30",
       "preco": 6423
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 8029
     }
   ],
   "imagem": "/images/produtos/schecter-omen-extreme-7.webp",

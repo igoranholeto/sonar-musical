@@ -1,13 +1,17 @@
 {
   "nome": "D'Addario EJ16 Phosphor Bronze .012",
   "meli": "https://meli.la/1UhPcEy",
-  "preco": 63,
-  "precoEm": "2026-10-29",
+  "preco": 72,
+  "precoEm": "2026-11-10",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 63
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 72
     }
   ],
   "imagem": "/images/produtos/daddario-ej16-phosphor-bronze-012.webp",

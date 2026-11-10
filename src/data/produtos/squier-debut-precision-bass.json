@@ -1,13 +1,17 @@
 {
   "nome": "Squier Debut Precision Bass",
   "meli": "https://meli.la/2MydWZD",
-  "preco": 1626,
-  "precoEm": "2026-11-06",
+  "preco": 1527,
+  "precoEm": "2026-11-10",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 1626
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1527
     }
   ],
   "nota": 4.9,

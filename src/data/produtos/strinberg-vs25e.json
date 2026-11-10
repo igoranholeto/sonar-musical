@@ -1,13 +1,17 @@
 {
   "nome": "Viola Caipira Strinberg VS25E",
   "meli": "https://meli.la/2ZySxV2",
-  "preco": 916,
-  "precoEm": "2026-11-05",
+  "preco": 895,
+  "precoEm": "2026-11-10",
   "categoria": "viola",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 916
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 895
     }
   ],
   "nota": 4.9,

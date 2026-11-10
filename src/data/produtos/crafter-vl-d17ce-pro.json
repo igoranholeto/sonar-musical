@@ -1,13 +1,17 @@
 {
   "nome": "Crafter VL D-17CE Pro",
   "meli": "https://meli.la/1XFmnqF",
-  "preco": 4039,
-  "precoEm": "2026-11-06",
+  "preco": 4401,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 4039
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 4401
     }
   ],
   "nota": 5,

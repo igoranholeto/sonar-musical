@@ -1,8 +1,8 @@
 {
   "nome": "Waldman GTE-300 (Telecaster)",
   "meli": "https://meli.la/1d5mAeN",
-  "preco": 994,
-  "precoEm": "2026-11-05",
+  "preco": 1010,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-05",
       "preco": 994
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1010
     }
   ],
   "imagem": "/images/produtos/waldman-gte-300-telecaster.webp",

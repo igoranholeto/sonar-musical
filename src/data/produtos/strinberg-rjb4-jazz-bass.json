@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg RJB4 (Jazz Bass)",
   "meli": "https://meli.la/113naBP",
-  "preco": 1131,
-  "precoEm": "2026-10-17",
+  "preco": 1070,
+  "precoEm": "2026-11-10",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-10-17",
       "preco": 1131
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1070
     }
   ],
   "imagem": "/images/produtos/strinberg-rjb4-jazz-bass.webp",

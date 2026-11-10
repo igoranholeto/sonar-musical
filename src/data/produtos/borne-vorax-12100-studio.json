@@ -1,13 +1,17 @@
 {
   "nome": "Borne Vorax 12100 Studio",
   "meli": "https://meli.la/341kuhx",
-  "preco": 1777,
-  "precoEm": "2026-10-29",
+  "preco": 2189,
+  "precoEm": "2026-11-10",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1777
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 2189
     }
   ],
   "imagem": "/images/produtos/borne-vorax-12100-studio.webp",

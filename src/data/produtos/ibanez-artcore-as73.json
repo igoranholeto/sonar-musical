@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez Artcore AS73",
   "meli": "https://meli.la/1h1eAiZ",
-  "preco": 5549,
-  "precoEm": "2026-09-30",
+  "preco": 4681,
+  "precoEm": "2026-11-10",
   "categoria": "guitarra",
   "imagem": "/images/produtos/ibanez-artcore-as73.webp",
   "imagemAlt": "Ibanez Artcore AS73 semi-hollow",
@@ -14,6 +14,10 @@
     {
       "data": "2026-09-30",
       "preco": 5549
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 4681
     }
   ]
 }

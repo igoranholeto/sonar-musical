@@ -1,13 +1,17 @@
 {
   "nome": "Nux MG-30 Versatile Modeler",
   "meli": "https://meli.la/1KQuW4c",
-  "preco": 1852,
-  "precoEm": "2026-10-29",
+  "preco": 1847,
+  "precoEm": "2026-11-10",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1852
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1847
     }
   ],
   "imagem": "/images/produtos/nux-mg-30-versatile-modeler.webp",

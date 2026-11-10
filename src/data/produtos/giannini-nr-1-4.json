@@ -1,13 +1,17 @@
 {
   "nome": "Giannini Start NR 1/4",
   "meli": "https://meli.la/2eXPNX2",
-  "preco": 319,
-  "precoEm": "2026-10-30",
+  "preco": 349,
+  "precoEm": "2026-11-10",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 319
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 349
     }
   ],
   "imagem": "/images/produtos/giannini-nr-1-4.webp",

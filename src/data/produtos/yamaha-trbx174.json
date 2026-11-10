@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha TRBX174",
   "meli": "https://meli.la/1J3ai3j",
-  "preco": 1791,
-  "precoEm": "2026-11-05",
+  "preco": 1849,
+  "precoEm": "2026-11-10",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 1791
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 1849
     }
   ],
   "nota": 4.9,

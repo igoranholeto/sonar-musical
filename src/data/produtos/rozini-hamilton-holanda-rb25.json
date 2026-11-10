@@ -1,13 +1,17 @@
 {
   "nome": "Bandolim Rozini Hamilton Holanda RB25 (10 cordas)",
   "meli": "https://meli.la/1DBnzWw",
-  "preco": 3021,
-  "precoEm": "2026-11-05",
+  "preco": 3107,
+  "precoEm": "2026-11-10",
   "categoria": "bandolim",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 3021
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 3107
     }
   ],
   "nota": 5,

@@ -1,13 +1,17 @@
 {
   "nome": "Terra TCV01",
   "meli": "https://meli.la/25yqmpa",
-  "preco": 688,
-  "precoEm": "2026-10-30",
+  "preco": 633,
+  "precoEm": "2026-11-10",
   "categoria": "cavaquinho",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 688
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 633
     }
   ],
   "imagem": "/images/produtos/terra-tcv01.webp",

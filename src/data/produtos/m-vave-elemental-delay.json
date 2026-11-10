@@ -1,13 +1,17 @@
 {
   "nome": "M-Vave Elemental Delay",
   "meli": "https://meli.la/1a6gmzC",
-  "preco": 168,
-  "precoEm": "2026-10-16",
+  "preco": 162,
+  "precoEm": "2026-11-10",
   "categoria": "pedal",
   "historico": [
     {
       "data": "2026-10-16",
       "preco": 168
+    },
+    {
+      "data": "2026-11-10",
+      "preco": 162
     }
   ],
   "imagem": "/images/produtos/m-vave-elemental-delay.webp",
