@@ -1,0 +1,15 @@
+{
+  "nome": "Rolim Orquestra Profissional 4/4 Envelhecido",
+  "meli": "https://meli.la/2aJTHSz",
+  "preco": 3297.03,
+  "precoEm": "2026-11-11",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3297.03
+    }
+  ],
+  "imagemAlt": "Rolim Orquestra Profissional 4/4 Envelhecido",
+  "imagem": "/images/produtos/rolim-orquestra-envelhecido.webp"
+}
