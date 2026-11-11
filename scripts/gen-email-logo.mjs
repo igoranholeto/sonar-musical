@@ -17,15 +17,21 @@ mkdirSync(`${OUT}/guias`, { recursive: true });
 const FONTE = "'Helvetica Neue',Helvetica,Arial,sans-serif";
 const VERMELHO = '#e63946';
 
-// Mesmo ícone do cabeçalho do site (nota musical dentro do quadrado vermelho).
+// Colcheia dupla em formas cheias (cabeças ovais inclinadas, hastes retas e barra),
+// sem traço de ponta redonda, que deixava um calombo na junção haste/cabeça.
+// Mesma nota do avatar do oi@ (perfil Google).
+export const NOTA = (cor) => `
+  <ellipse cx="6.6" cy="18.2" rx="3.4" ry="2.55" transform="rotate(-22 6.6 18.2)" fill="${cor}"/>
+  <ellipse cx="17.6" cy="16.2" rx="3.4" ry="2.55" transform="rotate(-22 17.6 16.2)" fill="${cor}"/>
+  <rect x="8.75" y="5.6" width="1.75" height="12.3" fill="${cor}"/>
+  <rect x="19.75" y="3.6" width="1.75" height="12.3" fill="${cor}"/>
+  <polygon points="8.75,4.6 21.5,2.4 21.5,5.4 8.75,7.6" fill="${cor}"/>`;
+
+// Nota musical dentro do quadrado vermelho, como no cabeçalho do site.
 const icone = (x, y, s) => `
   <g transform="translate(${x},${y}) scale(${s})">
     <rect width="34" height="34" rx="9" fill="${VERMELHO}"/>
-    <g transform="translate(6,6) scale(0.92)" fill="none" stroke="#fff" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-      <path d="M9 18V5l12-2v13"/>
-      <circle cx="6" cy="18" r="3" fill="#fff" stroke="none"/>
-      <circle cx="18" cy="16" r="3" fill="#fff" stroke="none"/>
-    </g>
+    <g transform="translate(17,17) scale(1.05) translate(-12.35,-11.6)">${NOTA('#fff')}</g>
   </g>`;
 
 const cabecalho = `<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240">
