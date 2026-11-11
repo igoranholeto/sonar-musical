@@ -14,7 +14,7 @@ export default defineConfig({
   integrations: [mdx(), sitemap({
     serialize: lastmodSerializer(),
     // Busca interna é noindex: não entra no sitemap.
-    filter: (page) => !page.includes('/busca/') && !page.includes('/contato-enviado/'),
+    filter: (page) => !page.includes('/busca/') && !page.includes('/contato-enviado/') && !page.includes('/newsletter/'),
   })],
   compressHTML: true,
   build: {
