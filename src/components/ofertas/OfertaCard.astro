@@ -1,0 +1,246 @@
+---
+// Card de produto da vitrine de ofertas (/black-friday/). Mostra o preço de hoje, o
+// riscado, a etiqueta de desconto, a última mudança de preço que registramos e, quando
+// o anúncio saiu do ar, deixa isso claro e aponta um produto parecido disponível.
+import { fmtData, reais, type Oferta } from '../../utils/ofertas';
+
+interface Props {
+  oferta: Oferta;
+  alternativa?: Oferta;
+  /** Primeiros cards da página: imagem sem lazy-load. */
+  prioridade?: boolean;
+}
+
+const { oferta: o, alternativa: alt, prioridade = false } = Astro.props;
+const href = `/produto/${o.id}/`;
+const disponivel = o.status === 'ativo';
+const rotuloStatus = o.status === 'pausado' ? 'Esgotado' : 'Anúncio encerrado';
+const notaFmt = o.nota?.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const v = o.variacao;
+const pctTxt = (p: number) => (p === 0 ? '' : ` (${p}%)`);
+// No celular o card mostra só o essencial e UMA vantagem, a mais forte que o produto tem:
+// menor preço que registramos > queda recente > economia sobre o riscado > frete > parcelas.
+// As outras ganham .of__mais e somem abaixo de 520px.
+const vantagem = !disponivel
+  ? null
+  : o.menorRegistrado
+    ? 'selo'
+    : v && v.reais > 0
+      ? 'var'
+      : o.desconto
+        ? 'eco'
+        : o.freteGratis
+          ? 'frete'
+          : o.parcelas
+            ? 'parcelas'
+            : null;
+const mais = (...k: string[]) => (vantagem && k.includes(vantagem) ? '' : 'of__mais');
+---
+
+<article
+  class:list={['of', { 'of--off': !disponivel }]}
+  data-cat={o.categoria ?? ''}
+  data-preco={o.preco}
+  data-desc={disponivel ? o.desconto?.pct ?? 0 : -1}
+  data-aval={o.avaliacoes ?? 0}
+  data-nota={o.nota ?? 0}
+  data-rec={o.posts.length}
+  data-disp={disponivel ? '1' : '0'}
+  data-nome={o.nome.toLowerCase()}
+>
+  <a class="of__foto" href={href} tabindex="-1" aria-hidden="true">
+    {o.imagem ? (
+      <img src={o.imagem} alt="" width="200" height="180" loading={prioridade ? 'eager' : 'lazy'} decoding="async" />
+    ) : (
+      <span class="of__semfoto">{o.categoriaNome}</span>
+    )}
+    {disponivel && o.desconto && <span class="of__tag">-{o.desconto.pct}%</span>}
+    {!disponivel && <span class="of__tag of__tag--off">{rotuloStatus}</span>}
+  </a>
+
+  <div class="of__corpo">
+    <p class="of__cat of__mais">{o.categoriaNome}{o.marca ? ` · ${o.marca}` : ''}</p>
+    <h3 class="of__nome"><a href={href}>{o.nome}</a></h3>
+    {notaFmt && (
+      <p class="of__nota" title="Nota dos compradores no Mercado Livre">
+        <span aria-hidden="true">★</span> {notaFmt}
+        {o.avaliacoes ? <span class="of__aval">({o.avaliacoes.toLocaleString('pt-BR')} avaliações)</span> : null}
+      </p>
+    )}
+
+    {disponivel ? (
+      <>
+        <div class="of__precos">
+          {o.desconto && (
+            <s class="of__antes" title={o.desconto.fonte === 'anuncio' ? 'Preço riscado no anúncio' : `Preço que registramos antes da queda`}>
+              {reais(o.desconto.de)}
+            </s>
+          )}
+          <strong class="of__preco">{reais(o.preco)}</strong>
+        </div>
+        {o.desconto && <p class:list={['of__eco', mais('eco')]}>Economia de {reais(o.desconto.reais)}</p>}
+        {v && (
+          <p class:list={['of__var', v.reais > 0 ? 'of__var--baixou' : 'of__var--subiu', mais('var')]}>
+            {v.reais > 0
+              ? `▼ Baixou ${reais(v.reais)}${pctTxt(v.pct)} em ${fmtData(v.em)}`
+              : `▲ Subiu ${reais(-v.reais)}${pctTxt(-v.pct)} em ${fmtData(v.em)}`}
+          </p>
+        )}
+        {o.menorRegistrado && <p class:list={['of__selo', mais('selo')]}>Menor preço que registramos</p>}
+        {(o.parcelas || o.freteGratis) && (
+          <p class:list={['of__extra', mais('frete', 'parcelas')]}>
+            {o.parcelas && <span class={mais('parcelas') || undefined}>{o.parcelas}</span>}
+            {o.freteGratis && <span class:list={['of__frete', mais('frete')]}>Frete grátis</span>}
+          </p>
+        )}
+        <a
+          class="of__btn"
+          href={o.meli}
+          target="_blank"
+          rel="noopener noreferrer sponsored nofollow"
+          data-produto={o.nome}
+          data-bloco="black-friday"
+          data-valor={o.valorClique}
+        >
+          Ver no Mercado Livre
+        </a>
+      </>
+    ) : (
+      <>
+        <p class="of__status">
+          {o.status === 'pausado' ? 'Anúncio pausado, sem estoque' : 'O anúncio saiu do ar'}
+          {o.statusDesde ? `${o.status === 'pausado' ? ' desde' : ' em'} ${fmtData(o.statusDesde)}` : ''}. Último preço: {reais(o.preco)}.
+        </p>
+        {alt && (
+          <a class="of__alt" href={`/produto/${alt.id}/`}>
+            <span>Parecido e disponível</span>
+            <strong>{alt.nome}</strong>
+            <span class="of__alt-preco">{reais(alt.preco)}{alt.desconto ? ` (-${alt.desconto.pct}%)` : ''}</span>
+          </a>
+        )}
+      </>
+    )}
+  </div>
+</article>
+
+<style is:global>
+  /* Global (classes com prefixo próprio): evita o atributo data-astro-cid em cada
+     elemento dos ~380 cards, que pesava no HTML da vitrine. */
+  .of {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    overflow: hidden;
+    content-visibility: auto;
+    contain-intrinsic-size: auto 470px;
+  }
+  .of[hidden] { display: none; }
+  .of--off .of__foto img { filter: grayscale(1); opacity: 0.55; }
+
+  .of__foto {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 10 / 8;
+    background: #fff;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .of__foto img { position: absolute; inset: 7% 11%; width: 78%; height: 86%; object-fit: contain; }
+  .of__semfoto { color: #737373; font-size: 13px; }
+  .of__tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 4px 8px;
+    border-radius: 7px;
+    background: var(--color-brand-fill);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+  }
+  .of__tag--off { background: #3f3f46; font-weight: 700; font-size: 12px; }
+
+  .of__corpo { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px 14px; flex: 1; }
+  .of__cat { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-subtle); }
+  .of__nome { font-size: 15px; font-weight: 700; line-height: 1.3; }
+  .of__nome a { color: var(--color-foreground); text-decoration: none; }
+  .of__nome a:hover { color: var(--color-brand); text-decoration: underline; }
+  .of__nota { font-size: 13px; font-weight: 600; color: var(--color-foreground); }
+  .of__nota > span:first-child { color: #f59e0b; }
+  .of__aval { font-weight: 400; color: var(--color-muted); margin-left: 2px; }
+
+  .of__precos { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; margin-top: 4px; }
+  .of__antes { font-size: 13px; color: var(--color-muted); }
+  .of__preco { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+  .of__eco { font-size: 13px; font-weight: 700; color: #15803d; }
+  .of__var { font-size: 12px; font-weight: 600; }
+  .of__var--baixou { color: #15803d; }
+  .of__var--subiu { color: var(--color-muted); }
+  .dark .of__eco,
+  .dark .of__var--baixou { color: #4ade80; }
+  .of__selo {
+    align-self: flex-start;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 7px;
+    border-radius: 6px;
+    background: rgba(21, 128, 61, 0.1);
+    color: #15803d;
+  }
+  .dark .of__selo { color: #4ade80; background: rgba(74, 222, 128, 0.12); }
+  .of__extra { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 12px; color: var(--color-muted); }
+  .of__frete { color: #15803d; font-weight: 600; }
+  .dark .of__frete { color: #4ade80; }
+
+  .of__btn {
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    padding: 10px 12px;
+    border-radius: 9px;
+    background: var(--color-brand-fill);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: background 0.15s ease;
+  }
+  .of__btn:hover { background: var(--color-brand-dark); color: #fff; }
+
+  .of__status { font-size: 13px; color: var(--color-muted); margin-top: 4px; }
+  .of__alt {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    border-radius: 9px;
+    border: 1px dashed var(--color-border);
+    background: var(--color-elevated);
+    text-decoration: none;
+    color: var(--color-foreground);
+    font-size: 13px;
+  }
+  .of__alt span:first-child { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-brand); }
+  .of__alt strong { font-weight: 700; line-height: 1.3; }
+  .of__alt-preco { font-weight: 700; }
+  .of__alt:hover strong { text-decoration: underline; }
+
+  /* Celular (2 colunas estreitas): só foto, nome, nota, preço, uma vantagem e o botão. */
+  @media (max-width: 520px) {
+    .of { contain-intrinsic-size: auto 330px; }
+    .of__mais,
+    .of__aval { display: none; }
+    .of__corpo { gap: 4px; padding: 10px 10px 12px; }
+    .of__nome { font-size: 14px; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+    .of__precos { margin-top: 2px; gap: 0 6px; }
+    .of__antes { font-size: 12px; }
+    .of__preco { font-size: 19px; }
+    .of__eco, .of__var, .of__extra { font-size: 12px; }
+    .of__btn { margin-top: auto; padding: 9px 6px; font-size: 13px; }
+    .of__status { font-size: 12px; }
+  }
+</style>

@@ -40,7 +40,7 @@ const blog = defineCollection({
 // Catálogo de produtos com link de afiliado: um JSON por produto. Os posts citam o
 // produto por id (<AfiliadoCTA id="..." />) e o nome, o link meli.la, o preço e a foto
 // saem daqui. Para atualizar um preço, muda-se um arquivo só.
-export const CATEGORIAS_PRODUTO = ['guitarra', 'violao', 'cavaquinho', 'ukulele', 'pedal', 'pedaleira', 'amplificador', 'cordas', 'interface', 'acessorio', 'baixo', 'viola', 'bandolim', 'teclado', 'violino', 'bateria'] as const;
+export const CATEGORIAS_PRODUTO = ['guitarra', 'violao', 'cavaquinho', 'ukulele', 'pedal', 'pedaleira', 'amplificador', 'cordas', 'interface', 'acessorio', 'baixo', 'viola', 'bandolim', 'teclado', 'violino', 'bateria', 'percussao', 'sopro', 'microfone', 'fone', 'estudio', 'controlador'] as const;
 
 const produtos = defineCollection({
   loader: glob({ pattern: '**/*.json', base: './src/data/produtos' }),
@@ -57,6 +57,22 @@ const produtos = defineCollection({
     // Nota e número de avaliações dos compradores no Mercado Livre, na data de precoEm.
     nota: z.number().min(0).max(5).optional(),
     avaliacoes: z.number().int().nonnegative().optional(),
+    // Situação do anúncio na última checagem (scripts/check-afiliados.mjs --atualizar-precos).
+    // antes/off = preço riscado e "% OFF" que o próprio anúncio exibe; desde = data em que
+    // a situação mudou; catalogo = página do produto no ML, só para coletar a ficha técnica.
+    anuncio: z
+      .object({
+        status: z.enum(['ativo', 'pausado', 'encerrado']),
+        desde: z.coerce.date(),
+        antes: z.number().positive().optional(),
+        off: z.number().int().positive().optional(),
+        parcelas: z.string().optional(),
+        freteGratis: z.boolean().optional(),
+        catalogo: z.string().url().optional(),
+      })
+      .optional(),
+    // Ficha técnica (pares rótulo/valor) copiada da página do produto no ML.
+    ficha: z.array(z.tuple([z.string(), z.string()])).optional(),
   }),
 });
 

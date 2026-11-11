@@ -1,0 +1,27 @@
+---
+import BlackFridayPagina from '../../components/ofertas/BlackFridayPagina.astro';
+import { carregarOfertas } from '../../utils/ofertas';
+import { categoriasComPagina, guiasDoGrupo, textosCategoria } from '../../utils/ofertas-paginas';
+
+export async function getStaticPaths() {
+  const todas = await carregarOfertas();
+  return categoriasComPagina(todas).map((categoria) => ({ params: { categoria } }));
+}
+
+const { categoria } = Astro.params as { categoria: string };
+const todas = await carregarOfertas();
+const daCategoria = [...todas.values()].filter((o) => o.categoria === categoria);
+const t = textosCategoria(categoria, daCategoria);
+---
+
+<BlackFridayPagina
+  todas={todas}
+  categoria={categoria}
+  comPagina={categoriasComPagina(todas)}
+  titulo={t.titulo}
+  descricao={t.descricao}
+  h1={t.h1}
+  intro={t.intro}
+  faq={t.faq}
+  guias={guiasDoGrupo(daCategoria)}
+/>

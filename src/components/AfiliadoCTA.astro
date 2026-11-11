@@ -3,6 +3,7 @@ import { getEntry } from 'astro:content';
 import { ORG_ID, absUrl, detectMarca, organizationRef, personRef, productId } from '../utils/schema';
 import { formatPreco } from '../utils/preco';
 import { precoDeTexto, valorComissao } from '../utils/comissao';
+import { carregarOfertas, fmtData, reais } from '../utils/ofertas';
 
 interface Props {
   /** id do produto em src/data/produtos (nome, link, preço e foto saem de lá). */
@@ -40,6 +41,14 @@ const valor = valorComissao(
   (Astro.props.preco ? precoDeTexto(Astro.props.preco) : undefined) ?? cat?.preco,
   cat?.categoria,
 );
+
+// Selo de oferta: quando o anúncio do catálogo está com desconto (preço riscado ou queda
+// que registramos), o card ganha uma linha que leva à ficha com o histórico de preço.
+// Em novembro o rótulo é "Black Friday". Fica de fora quando o post sobrescreve o preço.
+const oferta = catalogoId && !Astro.props.preco ? (await carregarOfertas()).get(catalogoId) : undefined;
+const desconto = oferta?.status === 'ativo' ? oferta.desconto : undefined;
+const agora = new Date();
+const rotuloOferta = agora >= new Date('2026-11-01T00:00:00-03:00') && agora < new Date('2026-12-02T00:00:00-03:00') ? 'Black Friday' : 'Em oferta';
 
 // Detecta a marca a partir do nome do produto
 const marca = detectMarca(produto);
@@ -87,8 +96,10 @@ const pct = avaliacao != null ? Math.round((avaliacao / 5) * 1000) / 10 : 0; // 
 
 const badgeText = badge ?? 'Recomendação Sonar';
 
-// Destaques condensados numa linha; a descrição é o fallback quando não há destaques
-const specsLine = destaques && destaques.length > 0 ? destaques.slice(0, 3).join(' · ') : null;
+// Destaques condensados numa linha; a descrição é o fallback quando não há destaques.
+// No celular só o primeiro destaque aparece (os outros têm .afi__spec-mais).
+const specs = destaques && destaques.length > 0 ? destaques.slice(0, 3) : null;
+const specsLine = specs ? specs.join(' · ') : null;
 const showDesc = !specsLine && descricao;
 
 // Preço sem o prefixo "A partir de" (o rótulo já é exibido acima)
@@ -168,12 +179,26 @@ const produtoSchema: Record<string, unknown> | null =
       {avaliacaoLabel && (
         <div class="afi__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
           <span class="afi__stars" aria-hidden="true">★★★★★<span style={`--pct:${pct}%`}>★★★★★</span></span>
-          <span class="afi__rating-text">{avaliacaoLabel} · Avaliação da redação</span>
+          <span class="afi__rating-text">{avaliacaoLabel}<span class="afi__rating-sufixo"> · Avaliação da redação</span></span>
         </div>
       )}
 
-      {specsLine && <div class="afi__specs">{specsLine}</div>}
+      {specs && (
+        <div class="afi__specs">
+          {specs.map((d, i) => (i === 0 ? <span>{d}</span> : <span class="afi__spec-mais"> · {d}</span>))}
+        </div>
+      )}
       {showDesc && <p class="afi__desc">{descricao}</p>}
+      {desconto && oferta && (
+        <a class="afi__bf" href={`/produto/${oferta.id}/`}>
+          <span class="afi__bf-tag">{rotuloOferta} -{desconto.pct}%</span>
+          <span class="afi__bf-txt">
+            de <s>{reais(desconto.de)}</s> por <b>{reais(oferta.preco)}</b>
+            {desconto.fonte === 'historico' && oferta.variacao ? <span class="afi__bf-link">{` desde ${fmtData(oferta.variacao.em)}`}</span> : ''}
+            <span class="afi__bf-link"> · ver histórico de preço</span>
+          </span>
+        </a>
+      )}
     </div>
   </div>
 
@@ -280,6 +305,19 @@ const produtoSchema: Record<string, unknown> | null =
   }
   .afi .afi__rating-text { font-size: 12px; color: rgba(255, 255, 255, 0.45); }
 
+  .afi .afi__bf {
+    display: inline-flex; flex-wrap: wrap; align-items: center; gap: 4px 8px;
+    margin-top: 4px; font-size: 12px; line-height: 1.4;
+    color: rgba(255, 255, 255, 0.75) !important; text-decoration: none !important;
+  }
+  .afi .afi__bf-tag {
+    padding: 2px 7px; border-radius: 5px; background: #fde047; color: #111 !important;
+    font-size: 11px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase;
+  }
+  .afi .afi__bf s { color: rgba(255, 255, 255, 0.45); }
+  .afi .afi__bf b { color: var(--afi-price); }
+  .afi .afi__bf-link { color: rgba(255, 255, 255, 0.5); }
+  .afi .afi__bf:hover .afi__bf-link { color: #fff; text-decoration: underline; }
   .afi .afi__specs { font-size: 12px; line-height: 1.5; color: rgba(255, 255, 255, 0.6); margin: 0; }
   .afi .afi__desc { margin: 0; font-size: 13px; line-height: 1.55; color: rgba(255, 255, 255, 0.55); }
 
@@ -323,6 +361,12 @@ const produtoSchema: Record<string, unknown> | null =
     .afi .afi__price { font-size: 24px; }
     .afi .afi__btn { padding: 13px 18px; }
     .afi .afi__trust { display: none; }
+    /* Celular: um destaque só, nota sem o rótulo e a linha de oferta sem o complemento. */
+    .afi .afi__spec-mais,
+    .afi .afi__bf-link,
+    .afi .afi__rating-sufixo { display: none; }
+    .afi .afi__body { gap: 4px; }
+    .afi .afi__desc { display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
   }
   /* Desktop: o wrapper .afi__main é transparente ao layout flex do card */
   @media (min-width: 601px) {

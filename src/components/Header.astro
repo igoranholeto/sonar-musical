@@ -121,6 +121,14 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
         </div>
       </li>
 
+      <!-- Black Friday: botão com borda de luz girando para chamar a atenção -->
+      <li class="mx-1">
+        <a href="/black-friday/" class:list={['bf-btn', { 'is-on': currentPath.startsWith('/black-friday') || currentPath.startsWith('/produto/') }]} aria-current={currentPath.startsWith('/black-friday') ? 'page' : undefined}>
+          <svg class="bf-btn__ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.6 3.2-1 5.1-2.6 6.9C7.8 10.7 6 12.6 6 15.5A6 6 0 0 0 18 15.5c0-2.3-1-4.1-2.2-5.4-.3 1.6-1.1 2.7-2.3 3.2.4-3.6-.4-7.6-1.5-11.3z"/></svg>
+          <span>Black Friday</span>
+        </a>
+      </li>
+
       <!-- Ferramentas com dropdown -->
       <li class="relative" id="ferramentas-menu-item">
         <button
@@ -177,6 +185,11 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
     </ul>
 
     <div class="flex items-center gap-2">
+      <!-- Black Friday no celular/tablet (o menu desktop some abaixo de lg) -->
+      <a href="/black-friday/" class="bf-btn bf-btn--compacto lg:hidden" aria-label="Ofertas da Black Friday">
+        <svg class="bf-btn__ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.6 3.2-1 5.1-2.6 6.9C7.8 10.7 6 12.6 6 15.5A6 6 0 0 0 18 15.5c0-2.3-1-4.1-2.2-5.4-.3 1.6-1.1 2.7-2.3 3.2.4-3.6-.4-7.6-1.5-11.3z"/></svg>
+        <span>BF</span>
+      </a>
       <!-- Busca -->
       <a
         href="/busca/"
@@ -263,6 +276,13 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
           }`}
         >
           Início
+        </a>
+      </li>
+
+      <li>
+        <a href="/black-friday/" class="bf-btn bf-btn--linha">
+          <svg class="bf-btn__ico" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2c.6 3.2-1 5.1-2.6 6.9C7.8 10.7 6 12.6 6 15.5A6 6 0 0 0 18 15.5c0-2.3-1-4.1-2.2-5.4-.3 1.6-1.1 2.7-2.3 3.2.4-3.6-.4-7.6-1.5-11.3z"/></svg>
+          <span>Black Friday: ofertas de hoje</span>
         </a>
       </li>
 
@@ -362,6 +382,65 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
     </ul>
   </div>
 </header>
+
+<style is:global>
+  /* Botão da Black Friday no menu: fundo escuro, chama amarela e borda de luz girando. */
+  @property --bf-ang {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+  .bf-btn {
+    position: relative;
+    isolation: isolate;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 13px;
+    border-radius: 999px;
+    background: #141416;
+    color: #fff !important;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    text-decoration: none !important;
+    box-shadow: 0 0 18px rgba(230, 57, 70, 0.35);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .bf-btn::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    z-index: -1;
+    border-radius: inherit;
+    padding: 2px;
+    background: conic-gradient(from var(--bf-ang), #e63946, #fde047, #f97316, #e63946);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: bf-gira 2.6s linear infinite;
+  }
+  .bf-btn:hover,
+  .bf-btn.is-on { transform: translateY(-1px); box-shadow: 0 0 26px rgba(253, 224, 71, 0.4); }
+  .bf-btn__ico { color: #fde047; animation: bf-chama 1.4s ease-in-out infinite alternate; transform-origin: 50% 90%; }
+  .bf-btn--compacto { padding: 6px 10px; font-size: 12px; }
+  /* O CSS global ganha das utilidades do Tailwind (lg:hidden), então o sumiço no desktop fica aqui. */
+  @media (min-width: 1024px) { .bf-btn--compacto { display: none; } }
+  /* Celular estreito: só a chama, para não encostar no logo. */
+  @media (max-width: 420px) {
+    .bf-btn--compacto { padding: 6px; }
+    .bf-btn--compacto span { display: none; }
+    nav > div:has(> .bf-btn--compacto) { gap: 2px; }
+  }
+  .bf-btn--linha { display: flex; justify-content: center; margin: 4px 0; padding: 10px 14px; font-size: 14px; }
+  @keyframes bf-gira { to { --bf-ang: 360deg; } }
+  @keyframes bf-chama { from { transform: scale(0.9) rotate(-6deg); } to { transform: scale(1.12) rotate(5deg); } }
+  @media (prefers-reduced-motion: reduce) {
+    .bf-btn::before,
+    .bf-btn__ico { animation: none; }
+  }
+</style>
 
 <script>
   const btn = document.getElementById('mobile-menu-btn')!;

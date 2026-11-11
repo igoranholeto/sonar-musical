@@ -1,0 +1,19 @@
+---
+import BlackFridayPagina from '../../components/ofertas/BlackFridayPagina.astro';
+import { carregarOfertas } from '../../utils/ofertas';
+import { categoriasComPagina, faqGeral, guiasDoGrupo } from '../../utils/ofertas-paginas';
+
+const todas = await carregarOfertas();
+const n = todas.size;
+---
+
+<BlackFridayPagina
+  todas={todas}
+  comPagina={categoriasComPagina(todas)}
+  titulo="Black Friday 2026 de Instrumentos Musicais: Ofertas"
+  descricao={`${n} instrumentos e equipamentos com preço de hoje no Mercado Livre, preço riscado, % de desconto e histórico de preço. Guitarra, violão, teclado e mais.`}
+  h1="Black Friday de instrumentos musicais: as ofertas de hoje"
+  intro={`${n.toLocaleString('pt-BR')} instrumentos e equipamentos, dos que indicamos nos nossos guias aos mais vendidos e bem avaliados do Mercado Livre, com o preço de hoje no Mercado Livre, quanto custavam, a porcentagem de desconto e cada mudança de preço que registramos. Filtre por instrumento e ordene por preço, desconto, avaliações ou nota.`}
+  faq={faqGeral(todas)}
+  guias={guiasDoGrupo([...todas.values()], 8)}
+/>

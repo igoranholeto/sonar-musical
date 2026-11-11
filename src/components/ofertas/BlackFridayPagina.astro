@@ -1,0 +1,232 @@
+---
+// Corpo comum de /black-friday/ e /black-friday/<categoria>/: cabeçalho com os números
+// do dia, aviso de como ler os descontos, vitrine filtrável, links por instrumento,
+// metodologia e perguntas frequentes.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FAQ from '../FAQ.astro';
+import OfertasVitrine from './OfertasVitrine.astro';
+import BfPlacar from './BfPlacar.astro';
+import { breadcrumb, collectionPage } from '../../utils/schema';
+import {
+  NOMES_CATEGORIA,
+  ORDEM_CATEGORIAS,
+  fichaIndexavel,
+  fmtData,
+  fmtDataAno,
+  ordemPadrao,
+  reais,
+  type Oferta,
+} from '../../utils/ofertas';
+
+interface Props {
+  todas: Map<string, Oferta>;
+  categoria?: string;
+  comPagina: string[];
+  titulo: string;
+  descricao: string;
+  h1: string;
+  intro: string;
+  faq: { question: string; answer: string }[];
+  guias: { slug: string; titulo: string }[];
+}
+
+const { todas, categoria, comPagina, titulo, descricao, h1, intro, faq, guias } = Astro.props;
+const ofertas = [...todas.values()].filter((o) => !categoria || o.categoria === categoria).sort(ordemPadrao);
+const ativos = ofertas.filter((o) => o.status === 'ativo');
+const comDesconto = ativos.filter((o) => o.desconto);
+const conferidoEm = new Date(Math.max(...ofertas.map((o) => o.precoEm.valueOf())));
+// Quedas recentes: última mudança foi para baixo e aconteceu nos últimos 7 dias.
+const JANELA = 7 * 86400000;
+const baixaram = ativos.filter((o) => o.variacao && o.variacao.reais > 0 && conferidoEm.valueOf() - o.variacao.em.valueOf() <= JANELA);
+// Maior queda recente que NÓS registramos (o "% OFF" do anúncio pode ser inflado).
+const maiorQueda = baixaram.reduce((m, o) => Math.max(m, o.variacao!.pct), 0);
+const indisponiveis = ofertas.length - ativos.length;
+
+// Maiores quedas que registramos (queda de verdade no nosso histórico, não o riscado do anúncio).
+const quedas = baixaram
+  .filter((o) => o.variacao!.pct >= 3)
+  .sort((a, b) => b.variacao!.pct - a.variacao!.pct)
+  .slice(0, 6);
+
+const path = categoria ? `/black-friday/${categoria}/` : '/black-friday/';
+const migalhas = [
+  { name: 'Início', path: '/' },
+  { name: 'Black Friday', path: '/black-friday/' },
+  ...(categoria ? [{ name: NOMES_CATEGORIA[categoria].plural, path }] : []),
+];
+const schema = [
+  collectionPage({
+    path,
+    name: h1,
+    description: descricao,
+    items: ofertas.filter(fichaIndexavel).slice(0, 100).map((o) => ({ name: o.nome, path: `/produto/${o.id}/` })),
+  }),
+  breadcrumb(migalhas),
+];
+---
+
+<BaseLayout title={titulo} description={descricao} schema={schema} image="/images/og/black-friday.jpg">
+  <div class="bf">
+    <nav class="bf__migalhas" aria-label="Você está em">
+      {migalhas.map((m, i) => (i < migalhas.length - 1 ? <><a href={m.path}>{m.name}</a><span aria-hidden="true">/</span></> : <span>{m.name}</span>))}
+    </nav>
+
+    <header class="bf__topo">
+      <p class="bf__sobre">Black Friday 2026 · sexta, 27 de novembro</p>
+      <h1>{h1}</h1>
+      <p class="bf__intro" set:html={intro} />
+      <BfPlacar
+        itens={[
+          { valor: ofertas.length, rotulo: 'produtos no radar' },
+          { valor: comDesconto.length, rotulo: 'com desconto hoje', destaque: true },
+          ...(baixaram.length > 0 ? [{ valor: baixaram.length, rotulo: 'baixaram nos últimos 7 dias' }] : []),
+          ...(maiorQueda > 0 ? [{ valor: maiorQueda, prefixo: '-', sufixo: '%', rotulo: 'maior queda que registramos', destaque: true }] : []),
+        ]}
+      />
+      <p class="bf__data">
+        Preços conferidos no Mercado Livre em {fmtDataAno(conferidoEm)}. A página é atualizada quando os anúncios mudam.
+        {indisponiveis > 0 && ` ${indisponiveis} ${indisponiveis === 1 ? 'produto está esgotado ou fora do ar' : 'produtos estão esgotados ou fora do ar'} e aparece${indisponiveis === 1 ? '' : 'm'} no fim da lista.`}
+      </p>
+    </header>
+
+    <aside class="bf__aviso">
+      <strong>Como ler os descontos.</strong>
+      O preço riscado e a etiqueta de porcentagem são os que o próprio anúncio mostra. Nem sempre o produto foi
+      vendido por esse valor, então cada card também traz a última mudança de preço que nós registramos
+      (“Baixou R$ 120 em 10/11”) e o selo <em>Menor preço que registramos</em> quando é o caso. Anúncio que
+      saiu do ar aparece no fim, marcado, com um produto parecido que está disponível.
+    </aside>
+
+    {quedas.length >= 3 && (
+      <section class="bf__quedas" aria-labelledby="quedas">
+        <h2 id="quedas">Maiores quedas de preço que registramos</h2>
+        <ol>
+          {quedas.map((o) => (
+            <li>
+              <a href={`/produto/${o.id}/`}>{o.nome}</a>
+              <span>
+                <s>{reais(o.variacao!.de)}</s> {reais(o.preco)} <b>-{o.variacao!.pct}%</b> em {fmtData(o.variacao!.em)}
+              </span>
+            </li>
+          ))}
+        </ol>
+      </section>
+    )}
+
+    <OfertasVitrine ofertas={ofertas} todas={todas} categoriaFixa={categoria} comPagina={comPagina} />
+
+    <p class="bf__afiliado">
+      Os botões levam ao Mercado Livre por link de afiliado: se você comprar, o Sonar Musical recebe uma comissão,
+      sem custo extra para você. Preço, estoque e frete podem mudar a qualquer momento; o que vale é o que aparece no anúncio.
+    </p>
+
+    {!categoria && (
+      <section class="bf__secao" aria-labelledby="por-instrumento">
+        <h2 id="por-instrumento">Black Friday por instrumento</h2>
+        <div class="bf__cats">
+          {ORDEM_CATEGORIAS.filter((c) => comPagina.includes(c)).map((c) => {
+            const lista = ofertas.filter((o) => o.categoria === c && o.status === 'ativo');
+            const menor = lista.reduce((m, o) => Math.min(m, o.preco), Infinity);
+            return (
+              <a href={`/black-friday/${c}/`} class="bf__cat">
+                <strong>{NOMES_CATEGORIA[c].plural}</strong>
+                <span>{lista.length} ofertas{Number.isFinite(menor) ? `, a partir de ${reais(menor)}` : ''}</span>
+              </a>
+            );
+          })}
+        </div>
+      </section>
+    )}
+
+    {guias.length > 0 && (
+      <section class="bf__secao" aria-labelledby="guias">
+        <h2 id="guias">{categoria ? 'Guias para escolher antes de comprar' : 'Antes de comprar, leia o guia'}</h2>
+        <ul class="bf__guias">
+          {guias.map((g) => <li><a href={`/blog/${g.slug}/`}>{g.titulo}</a></li>)}
+        </ul>
+      </section>
+    )}
+
+    <section class="bf__secao bf__metodo" aria-labelledby="metodo">
+      <h2 id="metodo">Como montamos esta página</h2>
+      <p>
+        A lista junta os produtos que indicamos nos guias do Sonar Musical e outros modelos que acompanhamos por estarem
+        entre os mais vendidos e mais bem avaliados de cada categoria no Mercado Livre. Um robô abre o link de cada um no Mercado Livre e anota o preço à vista, o preço riscado, a
+        porcentagem de desconto, as parcelas sem juros, o frete grátis e se o anúncio continua no ar. Quando o preço
+        muda, a mudança entra no histórico do produto, e é esse histórico que aparece nos avisos de “Baixou” e “Subiu”.
+      </p>
+      <p>
+        Não vendemos nada e não recebemos para colocar produto nesta lista. A nota e o número de avaliações são dos
+        compradores no Mercado Livre. Clique no nome de qualquer produto para ver a ficha técnica, o histórico de preço, o que os
+        nossos guias dizem sobre ele (quando aparece em algum) e as perguntas mais comuns.
+      </p>
+    </section>
+
+    <FAQ items={faq} />
+  </div>
+</BaseLayout>
+
+<style>
+  .bf { max-width: 1180px; margin: 0 auto; padding: 20px 16px 64px; }
+  .bf__migalhas { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; color: var(--color-subtle); }
+  .bf__migalhas a { color: var(--color-muted); text-decoration: none; }
+  .bf__migalhas a:hover { color: var(--color-brand); }
+
+  .bf__topo { margin: 18px 0 16px; }
+  .bf__sobre { font-size: 12px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand); }
+  .bf__topo h1 { margin: 8px 0 10px; font-size: clamp(28px, 4.6vw, 44px); line-height: 1.08; font-weight: 900; letter-spacing: -0.02em; max-width: 22ch; }
+  .bf__intro { max-width: 70ch; color: var(--color-muted); font-size: 16px; line-height: 1.6; }
+  .bf__intro :global(a) { color: var(--color-brand); }
+  .bf__data { font-size: 12px; color: var(--color-subtle); }
+
+  .bf__aviso {
+    margin: 0 0 18px;
+    padding: 12px 14px;
+    border-left: 3px solid var(--color-brand);
+    background: var(--color-elevated);
+    border-radius: 0 10px 10px 0;
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--color-muted);
+  }
+  .bf__aviso strong { color: var(--color-foreground); }
+
+  .bf__quedas { margin: 0 0 18px; }
+  .bf__quedas h2, .bf__secao h2 { font-size: 20px; font-weight: 800; margin-bottom: 10px; }
+  .bf__quedas ol { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 8px; padding: 0; list-style: none; counter-reset: q; }
+  .bf__quedas li {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    font-size: 13px;
+  }
+  .bf__quedas a { font-weight: 700; color: var(--color-foreground); text-decoration: none; }
+  .bf__quedas a:hover { color: var(--color-brand); }
+  .bf__quedas span { color: var(--color-muted); }
+  .bf__quedas b { color: #15803d; }
+  :global(.dark) .bf__quedas b { color: #4ade80; }
+
+  .bf__afiliado { margin: 20px 0 0; font-size: 12px; color: var(--color-subtle); line-height: 1.5; max-width: 80ch; }
+  .bf__secao { margin-top: 40px; }
+  .bf__cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 8px; }
+  .bf__cat {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    text-decoration: none;
+    color: var(--color-foreground);
+  }
+  .bf__cat span { font-size: 13px; color: var(--color-muted); }
+  .bf__cat:hover { border-color: var(--color-brand); }
+  .bf__guias { display: grid; gap: 6px; padding-left: 18px; }
+  .bf__guias a { color: var(--color-brand); }
+  .bf__metodo p { max-width: 75ch; color: var(--color-muted); line-height: 1.65; margin-bottom: 10px; }
+</style>
