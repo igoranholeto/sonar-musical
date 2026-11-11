@@ -1,0 +1,121 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const descricao =
+  'Quais dados o Sonar Musical coleta (newsletter, contato e estatísticas de visita), para quê, com quem ficam e como pedir para ver ou apagar os seus.';
+
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Política de Privacidade',
+  url: 'https://sonarmusical.com.br/privacidade/',
+  inLanguage: 'pt-BR',
+  description: descricao,
+  dateModified: '2026-11-11',
+  isPartOf: { '@type': 'WebSite', name: 'Sonar Musical', url: 'https://sonarmusical.com.br' },
+};
+
+const direitos = [
+  'Confirmar se temos dados seus e receber uma cópia deles.',
+  'Corrigir dados incompletos ou desatualizados.',
+  'Pedir que apaguemos seus dados ou cancelar a newsletter a qualquer momento.',
+  'Saber com quais empresas os dados são compartilhados (estão listadas nesta página).',
+  'Revogar um consentimento que você deu, como o da newsletter.',
+];
+
+const link = 'text-brand underline underline-offset-2';
+---
+
+<BaseLayout title="Política de Privacidade" description={descricao} schema={schema}>
+  <div class="max-w-3xl mx-auto px-4 py-16">
+    <header class="mb-12">
+      <p class="text-xs font-bold uppercase tracking-widest text-muted mb-3">Transparência</p>
+      <h1 class="text-4xl font-black mb-4">Política de Privacidade</h1>
+      <p class="text-muted text-lg leading-relaxed">
+        Esta página explica quais dados o Sonar Musical coleta, para quê, onde eles ficam e como você pode pedir para ver ou apagar os seus, conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).
+      </p>
+      <p class="text-sm text-muted mt-3">Atualizada em 11 de novembro de 2026.</p>
+    </header>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Quem é o responsável</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        O Sonar Musical (sonarmusical.com.br) é mantido por Igor Silva Anholeto, responsável pelo tratamento dos dados descritos aqui. Qualquer pedido sobre seus dados pode ser feito pelo e-mail <a href="mailto:oi@sonarmusical.com.br" class={link}>oi@sonarmusical.com.br</a>.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Newsletter (Alerta de preço)</h2>
+      <p class="text-foreground/80 leading-relaxed mb-3">
+        Se você se inscrever, guardamos o <strong>seu e-mail</strong> para mandar os alertas de queda de preço e os resumos de Black Friday e Natal. A inscrição só vale depois que você clica no link de confirmação que chega no seu e-mail.
+      </p>
+      <p class="text-foreground/80 leading-relaxed mb-3">
+        O cadastro passa pelo formulário do <strong>Netlify</strong> (que hospeda o site) e os envios são feitos pelo <strong>Brevo</strong>, serviço de e-mail. O Brevo registra se o e-mail foi aberto e quais links foram clicados, o que usamos só para saber quais conteúdos interessam.
+      </p>
+      <p class="text-foreground/80 leading-relaxed">
+        Todo e-mail tem um link para cancelar a inscrição. Depois de cancelar, você não recebe mais nada. Não vendemos nem emprestamos a lista para ninguém.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Formulário de contato</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        O formulário da página de <a href="/contact/" class={link}>contato</a> recebe nome, e-mail, assunto e mensagem. Esses dados ficam no Netlify e são usados apenas para responder você. Apagamos as mensagens quando não são mais necessárias.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Estatísticas de visita</h2>
+      <p class="text-foreground/80 leading-relaxed mb-3">
+        Usamos o <strong>Google Analytics</strong> e o <strong>Microsoft Clarity</strong> para entender como o site é usado: páginas visitadas, tempo de leitura, tipo de aparelho, região aproximada e cliques, incluindo cliques nos botões que levam ao Mercado Livre. O Clarity também gera gravações de navegação (rolagem, cliques e movimento do mouse) e mascara o que é digitado em campos de formulário.
+      </p>
+      <p class="text-foreground/80 leading-relaxed">
+        Essas ferramentas usam cookies e carregam alguns segundos depois que a página abre, ou quando você interage com ela. Os dados servem para melhorar os guias, sem identificar você pelo nome. Se preferir não ser contado, você pode bloquear esses cookies no navegador ou instalar o <a href="https://tools.google.com/dlpage/gaoptout" class={link} rel="noopener noreferrer" target="_blank">complemento de desativação do Google Analytics</a>.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Links para o Mercado Livre</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        Os botões de compra são links de afiliado. Ao clicar, você vai para o site do Mercado Livre, que tem a sua própria política de privacidade e usa cookies para saber que a visita veio do Sonar. Não recebemos seus dados de compra: o Mercado Livre nos informa apenas o total de vendas e comissões.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Vídeos, tema e jogo</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        Os vídeos do YouTube usam o modo de privacidade aprimorada, que só envia dados ao YouTube quando você dá play. A escolha entre tema claro e escuro e o progresso do jogo ficam salvos apenas no seu navegador. Se você colocar um nome no ranking do jogo, esse nome aparece publicamente na lista.
+      </p>
+    </section>
+
+    <section class="mb-10 p-8 bg-elevated border border-border rounded-2xl">
+      <h2 class="text-xl font-bold mb-4">Seus direitos</h2>
+      <p class="text-foreground/80 leading-relaxed mb-4">Pela LGPD, você pode pedir a qualquer momento para:</p>
+      <ul class="space-y-3 mb-4">
+        {direitos.map((item) => (
+          <li class="flex items-start gap-3 text-foreground/80 text-sm leading-relaxed">
+            <span class="text-brand mt-0.5 font-bold" aria-hidden="true">✓</span>
+            {item}
+          </li>
+        ))}
+      </ul>
+      <p class="text-foreground/80 leading-relaxed">
+        Escreva para <a href="mailto:oi@sonarmusical.com.br" class={link}>oi@sonarmusical.com.br</a>. Respondemos em até 15 dias. Você também pode reclamar à Autoridade Nacional de Proteção de Dados (ANPD).
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Onde os dados ficam</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        Netlify, Brevo, Google e Microsoft podem guardar dados em servidores fora do Brasil, com as proteções previstas nos contratos desses serviços. Mantemos os dados só enquanto servem à finalidade descrita aqui: a inscrição na newsletter até você cancelar, e as mensagens de contato até a conversa terminar.
+      </p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold mb-4">Mudanças nesta política</h2>
+      <p class="text-foreground/80 leading-relaxed">
+        Se algo mudar, como um serviço novo, esta página é atualizada e a data no topo muda junto.
+      </p>
+    </section>
+  </div>
+</BaseLayout>

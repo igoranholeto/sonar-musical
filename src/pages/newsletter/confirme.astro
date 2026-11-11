@@ -1,0 +1,23 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Confirme sua inscrição"
+  description="Enviamos um e-mail para confirmar sua inscrição nos alertas de preço do Sonar Musical."
+  noindex
+>
+  <div class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <h1 class="text-4xl font-black mb-4">Falta só um passo</h1>
+    <p class="text-muted text-lg mb-4">
+      Enviamos um e-mail com o assunto <strong class="text-foreground">"Confirme sua inscrição no Sonar Musical"</strong>. Clique no botão dele para entrar na lista.
+    </p>
+    <p class="text-muted mb-10">
+      Não chegou em alguns minutos? Olhe a caixa de spam ou a aba Promoções do Gmail.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="/blog/" class="px-6 py-3 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors">Ver os guias</a>
+      <a href="/" class="px-6 py-3 border border-border font-semibold rounded-xl hover:border-brand transition-colors">Voltar ao início</a>
+    </div>
+  </div>
+</BaseLayout>
