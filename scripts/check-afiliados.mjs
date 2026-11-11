@@ -70,20 +70,47 @@ async function destino(url) {
       const titulo = html.match(/<meta property="og:title" content="([^"]*)"/)?.[1] ?? '';
       // O aviso de pausa só conta no primeiro card; os seguintes são outros produtos da lista.
       const [c1, c2 = html.length] = [...html.matchAll(/class="poly-card[ "]/g)].map((m) => m.index);
-      const pausado = c1 != null && html.slice(c1, c2).includes('Anúncio pausado');
-      return { fim: r.url, titulo, pausado };
+      const card = c1 != null ? html.slice(c1, c2) : '';
+      const pausado = card.includes('Anúncio pausado');
+      return { fim: r.url, titulo, pausado, card: dadosDoCard(card) };
     } catch {
       await new Promise((ok) => setTimeout(ok, 1500));
     }
   }
-  return { fim: '', titulo: '', pausado: false };
+  return { fim: '', titulo: '', pausado: false, card: {} };
+}
+
+// O primeiro card da página social é o produto do link. Dele saem o preço riscado que o
+// anúncio exibe ("Antes: 999 reais"), o "48% OFF", as parcelas, o frete grátis e o link do
+// produto no catálogo do ML (/p/MLB...), usado só para coletar a ficha técnica.
+function dadosDoCard(card) {
+  if (!card) return {};
+  const reais = (rotulo) => {
+    const m = rotulo?.match(/([\d.]+) reais(?: com (\d+) centavos?)?/);
+    return m ? Math.round(Number(m[1].replace(/\./g, '')) + Number(m[2] ?? 0) / 100) : undefined;
+  };
+  const antes = reais(card.match(/andes-money-amount--previous[\s\S]*?aria-label="([^"]+)"/)?.[1]);
+  const off = Number(card.match(/(\d{1,2})% OFF/)?.[1]) || undefined;
+  const parcelas = card
+    .match(/poly-price__installments[^>]*>([\s\S]*?)<\/span>\s*<\/div>/)?.[1]
+    ?.replace(/<[^>]+>/g, '')
+    .replace(/&nbsp;|\s+/g, ' ')
+    .trim();
+  const href = card.match(/href="(https:\/\/[^"]+)"/)?.[1]?.split(/[?#]/)[0];
+  return {
+    antes,
+    off,
+    parcelas: parcelas && /^\d+x R\$/.test(parcelas) ? parcelas : undefined,
+    freteGratis: /frete grátis/i.test(card),
+    catalogo: href?.includes('mercadolivre.com.br') ? href : undefined,
+  };
 }
 
 const resultado = [];
 for (const [url, l] of links) {
-  const { fim, titulo, pausado } = await destino(url);
+  const { fim, titulo, pausado, card } = await destino(url);
   const status = fim.includes('/lists') ? 'LISTA' : !fim.includes('ref=') ? 'VERIFICAR' : pausado ? 'PAUSADO' : 'OK';
-  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ids: [...l.ids], ml: status === 'OK' || status === 'PAUSADO' ? titulo : '', fim, onde: [...l.onde] });
+  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ids: [...l.ids], ml: status === 'OK' || status === 'PAUSADO' ? titulo : '', card, fim, onde: [...l.onde] });
 }
 
 const quebrados = resultado.filter((r) => r.status !== 'OK');
@@ -103,21 +130,39 @@ if (process.argv.includes('--atualizar-precos')) {
   const antigos = {};
   let mudaram = 0;
   for (const r of resultado) {
+    // Situação do anúncio (páginas /black-friday/ e /produto/<id>/). VERIFICAR é falha
+    // passageira do ML, então não mexe no que já estava gravado.
+    const situacao = { OK: 'ativo', PAUSADO: 'pausado', LISTA: 'encerrado' }[r.status];
+    if (!situacao) continue;
     const m = r.status === 'OK' && r.ml.match(/R\$\s*([\d.]+)(?:,(\d{1,2}))?\s*$/);
-    if (!m) continue;
-    const preco = Math.round(Number(`${m[1].replace(/\./g, '')}.${m[2] ?? '0'}`));
+    const preco = m ? Math.round(Number(`${m[1].replace(/\./g, '')}.${m[2] ?? '0'}`)) : 0;
     for (const id of r.ids) {
       const prod = catalogo.get(id);
-      if (!prod || !(preco > 0)) continue;
-      conferidos.push(id);
-      if (Math.round(prod.preco) !== preco) {
-        console.log(`preço\t${id}: ${fmtPreco(prod.preco)} -> ${fmtPreco(preco)}`);
-        antigos[id] = [prod.preco];
-        prod.historico = [...(prod.historico ?? []).filter((h) => h.data !== hoje), { data: hoje, preco }];
-        prod.preco = preco;
-        mudaram++;
+      if (!prod) continue;
+      if (preco > 0) {
+        conferidos.push(id);
+        if (Math.round(prod.preco) !== preco) {
+          console.log(`preço\t${id}: ${fmtPreco(prod.preco)} -> ${fmtPreco(preco)}`);
+          antigos[id] = [prod.preco];
+          prod.historico = [...(prod.historico ?? []).filter((h) => h.data !== hoje), { data: hoje, preco }];
+          prod.preco = preco;
+          mudaram++;
+        }
+        prod.precoEm = hoje;
       }
-      prod.precoEm = hoje;
+      const anterior = prod.anuncio ?? {};
+      const c = situacao === 'ativo' ? r.card ?? {} : {};
+      const catalogoML = c.catalogo ?? anterior.catalogo;
+      prod.anuncio = {
+        status: situacao,
+        desde: anterior.status === situacao && anterior.desde ? anterior.desde : hoje,
+        // O riscado só vale se for maior que o preço de hoje (às vezes o card fica defasado).
+        ...(c.antes > Math.round(prod.preco) ? { antes: c.antes, off: c.off } : {}),
+        ...(c.parcelas ? { parcelas: c.parcelas } : {}),
+        ...(situacao === 'ativo' ? { freteGratis: Boolean(c.freteGratis) } : {}),
+        ...(catalogoML ? { catalogo: catalogoML } : {}),
+      };
+      if (situacao !== 'ativo' && anterior.status === 'ativo') console.log(`anúncio\t${id}: ${situacao}`);
       fs.writeFileSync(path.join(CAT, `${id}.json`), JSON.stringify(prod, null, 2) + '\n');
     }
   }

@@ -1,0 +1,262 @@
+---
+// Placar do topo da página de Black Friday: contagem regressiva para 27/11 e os números
+// do dia em cartões grandes, com contagem animada, borda girando e faixa correndo.
+// Com prefers-reduced-motion, tudo fica parado e os números já aparecem no valor final.
+interface Item {
+  valor: number;
+  rotulo: string;
+  prefixo?: string;
+  sufixo?: string;
+  destaque?: boolean;
+}
+interface Props {
+  itens: Item[];
+}
+const { itens } = Astro.props;
+const fmt = (n: number) => n.toLocaleString('pt-BR');
+const faixa = Array.from({ length: 8 }, () => 'BLACK FRIDAY 2026');
+---
+
+<div class="placar" data-placar>
+  <div class="placar__fundo" aria-hidden="true">
+    <span class="placar__bolha placar__bolha--a"></span>
+    <span class="placar__bolha placar__bolha--b"></span>
+    <span class="placar__bolha placar__bolha--c"></span>
+  </div>
+
+  <div class="placar__relogio" data-relogio>
+    <p class="placar__rel-tit" data-rel-tit>Faltam para a Black Friday</p>
+    <div class="placar__rel-num" role="timer" aria-live="off">
+      <span><b data-u="d">--</b><small>dias</small></span>
+      <span><b data-u="h">--</b><small>horas</small></span>
+      <span><b data-u="m">--</b><small>min</small></span>
+      <span><b data-u="s">--</b><small>seg</small></span>
+    </div>
+  </div>
+
+  <ul class="placar__grade">
+    {itens.map((it, i) => (
+      <li class:list={['placar__card', { 'placar__card--destaque': it.destaque }]} style={`--i:${i}`}>
+        <span class="placar__num">
+          {it.prefixo}<span data-conta={it.valor}>{fmt(it.valor)}</span>{it.sufixo}
+        </span>
+        <span class="placar__rot">{it.rotulo}</span>
+      </li>
+    ))}
+  </ul>
+
+  <div class="placar__faixa" aria-hidden="true">
+    <div class="placar__faixa-trilho">
+      {[...faixa, ...faixa].map((t) => <span>{t}<i>✦</i></span>)}
+    </div>
+  </div>
+</div>
+
+<script>
+  // Black Friday: sexta, 27/11/2026, 00h de Brasília. Vai até o fim da Cyber Monday (30/11).
+  const INICIO = new Date('2026-11-27T00:00:00-03:00').valueOf();
+  const FIM = new Date('2026-12-01T00:00:00-03:00').valueOf();
+  const parado = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  for (const raiz of document.querySelectorAll<HTMLElement>('[data-placar]')) {
+    // Contagem animada dos números (de 0 até o valor, desacelerando no fim).
+    if (!parado) {
+      const alvos = [...raiz.querySelectorAll<HTMLElement>('[data-conta]')];
+      const t0 = performance.now();
+      const DUR = 1600;
+      const passo = (t: number) => {
+        const p = Math.min(1, (t - t0) / DUR);
+        const e = 1 - Math.pow(2, -10 * p);
+        for (const el of alvos) el.textContent = Math.round(Number(el.dataset.conta) * (p >= 1 ? 1 : e)).toLocaleString('pt-BR');
+        if (p < 1) requestAnimationFrame(passo);
+      };
+      requestAnimationFrame(passo);
+    }
+
+    // Relógio da contagem regressiva.
+    const tit = raiz.querySelector<HTMLElement>('[data-rel-tit]')!;
+    const caixa = raiz.querySelector<HTMLElement>('[data-relogio]')!;
+    const u = (k: string) => raiz.querySelector<HTMLElement>(`[data-u="${k}"]`)!;
+    const dois = (n: number) => String(n).padStart(2, '0');
+    const tic = () => {
+      const agora = Date.now();
+      if (agora >= FIM) {
+        caixa.hidden = true;
+        return;
+      }
+      const alvo = agora < INICIO ? INICIO : FIM;
+      tit.textContent = agora < INICIO ? 'Faltam para a Black Friday' : 'A Black Friday está rolando. Termina em';
+      caixa.classList.toggle('is-ao-vivo', agora >= INICIO);
+      let s = Math.max(0, Math.floor((alvo - agora) / 1000));
+      const d = Math.floor(s / 86400); s -= d * 86400;
+      const h = Math.floor(s / 3600); s -= h * 3600;
+      const m = Math.floor(s / 60); s -= m * 60;
+      const valores: Record<string, string> = { d: dois(d), h: dois(h), m: dois(m), s: dois(s) };
+      for (const k of Object.keys(valores)) {
+        const el = u(k);
+        if (el.textContent !== valores[k]) {
+          el.textContent = valores[k];
+          if (!parado) {
+            el.classList.remove('vira');
+            void el.offsetWidth;
+            el.classList.add('vira');
+          }
+        }
+      }
+    };
+    tic();
+    setInterval(tic, 1000);
+  }
+</script>
+
+<style>
+  @property --ang {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+  }
+
+  .placar {
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+    margin: 18px 0 14px;
+    padding: 22px 18px 0;
+    border-radius: 20px;
+    background: #0b0b0d;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  /* Bolhas de luz se movendo no fundo. */
+  .placar__fundo { position: absolute; inset: 0; z-index: -1; overflow: hidden; }
+  .placar__fundo::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+    background-size: 28px 28px;
+    mask-image: radial-gradient(ellipse at 50% 30%, #000 30%, transparent 75%);
+  }
+  .placar__bolha { position: absolute; width: 340px; height: 340px; border-radius: 50%; filter: blur(70px); opacity: 0.55; }
+  .placar__bolha--a { background: #e63946; top: -140px; left: -80px; animation: flutua-a 9s ease-in-out infinite alternate; }
+  .placar__bolha--b { background: #f59e0b; bottom: -180px; right: -60px; animation: flutua-b 11s ease-in-out infinite alternate; opacity: 0.4; }
+  .placar__bolha--c { background: #7c3aed; top: 20%; left: 45%; width: 240px; height: 240px; animation: flutua-c 13s ease-in-out infinite alternate; opacity: 0.3; }
+  @keyframes flutua-a { to { transform: translate(220px, 90px) scale(1.2); } }
+  @keyframes flutua-b { to { transform: translate(-260px, -60px) scale(1.15); } }
+  @keyframes flutua-c { to { transform: translate(-200px, 40px) scale(0.85); } }
+
+  /* Contagem regressiva */
+  .placar__relogio { text-align: center; }
+  .placar__rel-tit { font-size: 12px; font-weight: 800; letter-spacing: 0.14em; text-transform: uppercase; color: #fca5a5; }
+  .placar__relogio.is-ao-vivo .placar__rel-tit { color: #fde047; animation: pisca 1.2s steps(2) infinite; }
+  @keyframes pisca { 50% { opacity: 0.45; } }
+  .placar__rel-num { display: flex; justify-content: center; gap: 10px; margin-top: 8px; }
+  .placar__rel-num span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 64px;
+    padding: 8px 6px 6px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(6px);
+  }
+  .placar__rel-num b { display: block; font-size: 30px; font-weight: 900; line-height: 1; font-variant-numeric: tabular-nums; }
+  .placar__rel-num small { margin-top: 4px; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: rgba(255, 255, 255, 0.55); }
+  .placar__rel-num b.vira { animation: vira 0.45s cubic-bezier(0.2, 0.9, 0.3, 1.4); }
+  @keyframes vira {
+    from { transform: translateY(-60%) rotateX(80deg); opacity: 0; filter: blur(2px); }
+    to { transform: none; opacity: 1; filter: none; }
+  }
+
+  /* Cartões dos números */
+  .placar__grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    margin: 20px 0 18px;
+    padding: 0;
+    list-style: none;
+  }
+  .placar__card {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 16px 14px 14px;
+    border-radius: 16px;
+    background: rgba(17, 17, 20, 0.82);
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+    animation: entra 0.7s cubic-bezier(0.2, 0.9, 0.3, 1.2) forwards;
+    animation-delay: calc(var(--i) * 110ms + 150ms);
+  }
+  /* Borda de luz girando em volta do cartão. */
+  .placar__card::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    z-index: -1;
+    border-radius: inherit;
+    padding: 1.5px;
+    background: conic-gradient(from var(--ang), transparent 0 55%, #e63946 70%, #fde047 82%, transparent 95%);
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    animation: gira 3.2s linear infinite;
+    animation-delay: calc(var(--i) * -0.8s);
+  }
+  @keyframes gira { to { --ang: 360deg; } }
+  @keyframes entra { to { opacity: 1; transform: none; } }
+  .placar__num {
+    font-size: clamp(34px, 5vw, 52px);
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    font-variant-numeric: tabular-nums;
+    background: linear-gradient(100deg, #fff 20%, #fecaca 45%, #fff 60%);
+    background-size: 250% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: brilho 3.5s linear infinite;
+  }
+  .placar__card--destaque .placar__num {
+    background-image: linear-gradient(100deg, #fde047 20%, #fff 45%, #f97316 60%, #fde047 80%);
+  }
+  @keyframes brilho { from { background-position: 100% 0; } to { background-position: -150% 0; } }
+  .placar__rot { font-size: 13px; font-weight: 600; color: rgba(255, 255, 255, 0.7); }
+
+  /* Faixa correndo no rodapé do placar */
+  .placar__faixa {
+    margin: 0 -18px;
+    padding: 9px 0;
+    background: #e63946;
+    transform: rotate(-1.2deg) scale(1.03);
+    transform-origin: center;
+    overflow: hidden;
+  }
+  .placar__faixa-trilho { display: flex; width: max-content; animation: corre 26s linear infinite; }
+  .placar__faixa span { display: inline-flex; align-items: center; gap: 14px; padding-right: 14px; font-size: 13px; font-weight: 900; letter-spacing: 0.18em; white-space: nowrap; }
+  .placar__faixa i { font-style: normal; color: #fde047; }
+  @keyframes corre { to { transform: translateX(-50%); } }
+
+  @media (max-width: 520px) {
+    .placar { padding: 18px 12px 0; }
+    .placar__rel-num { gap: 6px; }
+    .placar__rel-num span { min-width: 56px; }
+    .placar__rel-num b { font-size: 24px; }
+    .placar__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+    .placar__faixa { margin: 0 -12px; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .placar *,
+    .placar *::before { animation: none !important; }
+    .placar__card { opacity: 1; transform: none; }
+  }
+</style>

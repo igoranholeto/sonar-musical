@@ -1,0 +1,383 @@
+---
+// Ficha de um produto do catálogo: preço de hoje no Mercado Livre, preço riscado e
+// desconto, cada mudança de preço que registramos (gráfico + tabela), situação do anúncio
+// (com alternativa quando saiu do ar), o que os guias dizem dele, ficha técnica e FAQ.
+// Só entra no Google o produto citado em algum guia (o resto teria pouco conteúdo próprio).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import FAQ from '../../components/FAQ.astro';
+import OfertaCard from '../../components/ofertas/OfertaCard.astro';
+import GraficoPreco from '../../components/ofertas/GraficoPreco.astro';
+import { breadcrumb, absUrl } from '../../utils/schema';
+import {
+  NOMES_CATEGORIA,
+  carregarOfertas,
+  distancia,
+  fichaIndexavel,
+  linhasDaFicha,
+  fmtData,
+  fmtDataAno,
+  reais,
+  type Oferta,
+} from '../../utils/ofertas';
+import { categoriasComPagina } from '../../utils/ofertas-paginas';
+
+export async function getStaticPaths() {
+  const todas = await carregarOfertas();
+  return [...todas.keys()].map((id) => ({ params: { id } }));
+}
+
+const { id } = Astro.params as { id: string };
+const todas = await carregarOfertas();
+const o = todas.get(id)!;
+const alt = o.alternativa ? todas.get(o.alternativa) : undefined;
+const disponivel = o.status === 'ativo';
+const comPagina = categoriasComPagina(todas);
+const catNome = o.categoria ? NOMES_CATEGORIA[o.categoria] : undefined;
+const notaFmt = o.nota?.toLocaleString('pt-BR', { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const linhasFicha = linhasDaFicha(o);
+const pctTxt = (p: number) => (p === 0 ? 'menos de 1%' : `${p}%`);
+
+// Parecidos: mesma categoria, anúncio ativo, mesmo tipo e preço mais próximo.
+const parecidos = [...todas.values()]
+  .filter((c) => c.id !== o.id && c.categoria && c.categoria === o.categoria && c.status === 'ativo' && c.id !== alt?.id)
+  .sort((a, b) => distancia(o, a) - distancia(o, b))
+  .slice(0, 4);
+
+// Mudanças de preço, da mais nova para a mais antiga.
+const mudancas = o.historico
+  .map((h, i) => ({ ...h, anterior: i > 0 ? o.historico[i - 1].preco : undefined }))
+  .filter((h) => h.anterior === undefined || h.anterior !== h.preco)
+  .reverse();
+
+// Título: nome + gancho, só quando cabe nos ~60 caracteres da SERP.
+const ganchos = [': Preço Hoje e Histórico', ': Preço Hoje', ''];
+const titulo = ganchos.map((g) => `${o.nome}${g}`).find((t) => t.length <= 60) ?? o.nome;
+const descricao = disponivel
+  ? `${o.nome} por ${reais(o.preco)} no Mercado Livre (conferido em ${fmtData(o.precoEm)})${o.desconto ? `, ${o.desconto.pct}% abaixo do preço riscado` : ''}. Histórico de preço, o que os guias dizem e perguntas frequentes.`
+  : `${o.nome}: o anúncio que acompanhamos ${o.status === 'pausado' ? 'está sem estoque' : 'saiu do ar'}. Último preço ${reais(o.preco)}, histórico e uma alternativa parecida disponível.`;
+
+const post = o.posts[0];
+// Guias que repetem o mesmo texto do CTA viram só um link ("Também aparece em").
+const assinatura = (g: (typeof o.posts)[number]) => `${g.descricao ?? ''}|${g.destaques.join('|')}`;
+const vistos = new Set<string>();
+const guiasCompletos = o.posts.filter((g) => {
+  const a = assinatura(g);
+  if (vistos.has(a)) return false;
+  vistos.add(a);
+  return true;
+});
+const guiasSoLink = o.posts.filter((g) => !guiasCompletos.includes(g));
+const faq = [
+  {
+    question: `Qual o preço de ${o.nome} hoje?`,
+    answer: disponivel
+      ? `Na última checagem, em ${fmtDataAno(o.precoEm)}, ${o.nome} custava ${reais(o.preco)} à vista no Mercado Livre${o.parcelas ? `, ou ${o.parcelas}` : ''}${o.freteGratis ? ', com frete grátis' : ''}. O preço pode mudar a qualquer momento; o que vale é o do anúncio na hora da compra.`
+      : `O último preço que registramos foi ${reais(o.preco)}, em ${fmtDataAno(o.precoEm)}. Hoje o anúncio que acompanhamos ${o.status === 'pausado' ? 'está pausado, sem estoque' : 'saiu do ar'}${alt ? `; uma opção parecida e disponível é ${alt.nome}, por ${reais(alt.preco)}` : ''}.`,
+  },
+  disponivel && {
+    question: `${o.nome} está em promoção?`,
+    answer: o.antes
+      ? `O anúncio mostra ${o.desconto!.pct}% de desconto: de ${reais(o.antes)} por ${reais(o.preco)}. ${o.menorRegistrado ? `É também o menor preço que registramos desde ${fmtDataAno(o.acompanhadoDesde)}.` : o.menor.preco < o.preco ? `Mas já registramos preço menor: ${reais(o.menor.preco)} em ${fmtDataAno(o.menor.em)}.` : 'O preço riscado é definido pelo vendedor; compare com o histórico desta página.'}`
+      : o.variacao && o.variacao.reais > 0
+        ? `O anúncio não mostra preço riscado, mas o preço baixou ${reais(o.variacao.reais)} (${pctTxt(o.variacao.pct)}) em ${fmtDataAno(o.variacao.em)}, de ${reais(o.variacao.de)} para ${reais(o.preco)}.`
+        : `Na última checagem o anúncio não mostrava desconto. O menor preço que registramos foi ${reais(o.menor.preco)}, em ${fmtDataAno(o.menor.em)}.`,
+  },
+  {
+    question: `Qual foi o menor preço de ${o.nome}?`,
+    answer: `O menor preço que registramos foi ${reais(o.menor.preco)}, em ${fmtDataAno(o.menor.em)}. Acompanhamos este anúncio desde ${fmtDataAno(o.acompanhadoDesde)}${o.maior.preco > o.menor.preco ? `, e o mais alto no período foi ${reais(o.maior.preco)}` : ', e o preço não mudou nesse período'}.`,
+  },
+  o.ficha.length >= 3 && {
+    question: `Quais as especificações de ${o.nome}?`,
+    answer: `Pela ficha do produto no Mercado Livre: ${linhasFicha
+      .filter(([k]) => !/^(marca|tipo|modelo)$/i.test(k))
+      .slice(0, 6)
+      .map(([k, v]) => `${k.toLowerCase()}: ${v}`)
+      .join('; ')}. A tabela completa está na ficha técnica desta página.`,
+  },
+  post && {
+    question: `Vale a pena comprar ${o.nome}?`,
+    answer: `${post.descricao ? `${post.descricao.replace(/\.?$/, '.')} ` : ''}Ele aparece em ${o.posts.length === 1 ? 'um guia' : `${o.posts.length} guias`} do Sonar Musical, como “${post.titulo}”${post.badge ? `, com o destaque “${post.badge}”` : ''}. A ficha abaixo traz o que cada guia diz sobre ele.`,
+  },
+  notaFmt && {
+    question: `Qual a nota de ${o.nome} no Mercado Livre?`,
+    answer: `Os compradores do Mercado Livre dão nota ${notaFmt} de 5${o.avaliacoes ? `, em ${o.avaliacoes.toLocaleString('pt-BR')} avaliações` : ''}.`,
+  },
+].filter(Boolean) as { question: string; answer: string }[];
+
+const migalhas = [
+  { name: 'Início', path: '/' },
+  { name: 'Black Friday', path: '/black-friday/' },
+  ...(o.categoria && comPagina.includes(o.categoria) ? [{ name: catNome!.plural, path: `/black-friday/${o.categoria}/` }] : []),
+  { name: o.nome, path: `/produto/${o.id}/` },
+];
+// Sem Product/Offer: o site não vende (regra do schema do Sonar) e a nota é do ML.
+const schema = [
+  breadcrumb(migalhas),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebPage',
+    '@id': `${absUrl(`/produto/${o.id}/`)}#webpage`,
+    url: absUrl(`/produto/${o.id}/`),
+    name: titulo,
+    description: descricao,
+    inLanguage: 'pt-BR',
+    dateModified: o.precoEm.toISOString().slice(0, 10),
+    ...(o.imagem && { primaryImageOfPage: absUrl(o.imagem) }),
+  },
+];
+---
+
+<BaseLayout title={titulo} description={descricao} schema={schema} image={o.imagem} noindex={!fichaIndexavel(o)}>
+  <div class="pr">
+    <nav class="pr__migalhas" aria-label="Você está em">
+      {migalhas.map((m, i) => (i < migalhas.length - 1 ? <><a href={m.path}>{m.name}</a><span aria-hidden="true">/</span></> : <span>{m.name}</span>))}
+    </nav>
+
+    <section class="pr__topo">
+      <div class:list={['pr__foto', { 'pr__foto--off': !disponivel }]}>
+        {o.imagem && <img src={o.imagem} alt={o.imagemAlt} width="360" height="324" loading="eager" fetchpriority="high" />}
+        {disponivel && o.desconto && <span class="pr__tag">-{o.desconto.pct}%</span>}
+      </div>
+
+      <div class="pr__info">
+        <p class="pr__cat">{catNome?.singular ?? 'Equipamento'}{o.marca ? ` · ${o.marca}` : ''}</p>
+        <h1>{o.nome}</h1>
+        {notaFmt && (
+          <p class="pr__nota">
+            <span aria-hidden="true">★</span> {notaFmt} <span>de 5{o.avaliacoes ? `, ${o.avaliacoes.toLocaleString('pt-BR')} avaliações no Mercado Livre` : ' no Mercado Livre'}</span>
+          </p>
+        )}
+
+        {disponivel ? (
+          <div class="pr__caixa">
+            <div class="pr__precos">
+              {o.desconto && <s>{reais(o.desconto.de)}</s>}
+              <strong>{reais(o.preco)}</strong>
+              {o.desconto && <span class="pr__pct">-{o.desconto.pct}%</span>}
+            </div>
+            {o.desconto && (
+              <p class="pr__eco">
+                Economia de {reais(o.desconto.reais)}
+                <span>{o.desconto.fonte === 'anuncio' ? ' sobre o preço riscado do anúncio' : ` sobre o preço que registramos antes (${fmtData(o.variacao!.em)})`}</span>
+              </p>
+            )}
+            {(o.parcelas || o.freteGratis) && (
+              <p class="pr__extra">
+                {o.parcelas && <span>{o.parcelas}</span>}
+                {o.freteGratis && <span class="pr__frete">Frete grátis</span>}
+              </p>
+            )}
+            <a
+              class="pr__btn"
+              href={o.meli}
+              target="_blank"
+              rel="noopener noreferrer sponsored nofollow"
+              data-produto={o.nome}
+              data-bloco="ficha-produto"
+              data-valor={o.valorClique}
+            >
+              Ver no Mercado Livre
+            </a>
+            <p class="pr__conferido">Preço conferido em {fmtDataAno(o.precoEm)}. Link de afiliado: se você comprar, o Sonar recebe uma comissão, sem custo extra.</p>
+          </div>
+        ) : (
+          <div class="pr__caixa pr__caixa--off">
+            <p class="pr__off-tit">{o.status === 'pausado' ? 'Esgotado' : 'Anúncio encerrado'}</p>
+            <p>
+              {o.status === 'pausado' ? 'O anúncio que acompanhamos está pausado, sem estoque' : 'O anúncio que acompanhamos saiu do ar'}
+              {o.statusDesde ? `${o.status === 'pausado' ? ' desde' : ' em'} ${fmtDataAno(o.statusDesde)}` : ''}. O último preço que vimos foi {reais(o.preco)}.
+              Quando encontrarmos um anúncio novo do mesmo modelo, esta ficha volta a mostrar o preço.
+            </p>
+            {alt && (
+              <a class="pr__alt" href={`/produto/${alt.id}/`}>
+                <span>Parecido e disponível</span>
+                <strong>{alt.nome}</strong>
+                <span class="pr__alt-preco">{reais(alt.preco)}{alt.desconto ? ` (-${alt.desconto.pct}%)` : ''}</span>
+              </a>
+            )}
+          </div>
+        )}
+
+        {disponivel && o.variacao && (
+          <p class:list={['pr__mudou', o.variacao.reais > 0 ? 'pr__mudou--baixou' : 'pr__mudou--subiu']}>
+            {o.variacao.reais > 0
+              ? <>O preço <strong>baixou {reais(o.variacao.reais)} ({pctTxt(o.variacao.pct)})</strong> em {fmtDataAno(o.variacao.em)}: era {reais(o.variacao.de)}.</>
+              : <>O preço <strong>subiu {reais(-o.variacao.reais)} ({pctTxt(-o.variacao.pct)})</strong> em {fmtDataAno(o.variacao.em)}: era {reais(o.variacao.de)}.</>}
+            {o.menorRegistrado && ' É o menor preço que registramos.'}
+          </p>
+        )}
+      </div>
+    </section>
+
+    <section class="pr__secao" aria-labelledby="historico">
+      <h2 id="historico">Histórico de preço</h2>
+      {o.historico.length > 1 ? (
+        <>
+          <GraficoPreco pontos={o.historico} ate={o.precoEm} />
+          <table class="pr__tabela">
+            <thead><tr><th>Data</th><th>Preço</th><th>Mudança</th></tr></thead>
+            <tbody>
+              {mudancas.map((m) => (
+                <tr>
+                  <td>{fmtDataAno(m.data)}</td>
+                  <td>{reais(m.preco)}</td>
+                  <td class:list={{ 'pr__baixou': m.anterior && m.preco < m.anterior }}>
+                    {m.anterior === undefined
+                      ? 'Início do acompanhamento'
+                      : m.preco < m.anterior
+                        ? `▼ ${reais(m.anterior - m.preco)} (${pctTxt(Math.round(((m.anterior - m.preco) / m.anterior) * 100))})`
+                        : `▲ ${reais(m.preco - m.anterior)} (${pctTxt(Math.round(((m.preco - m.anterior) / m.anterior) * 100))})`}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </>
+      ) : (
+        <p class="pr__texto">Acompanhamos este anúncio desde {fmtDataAno(o.acompanhadoDesde)} e o preço ainda não mudou: {reais(o.preco)}. Cada mudança vai aparecer aqui, com a data e a diferença.</p>
+      )}
+      <p class="pr__nota-hist">Menor preço registrado: <strong>{reais(o.menor.preco)}</strong> ({fmtDataAno(o.menor.em)}). Maior: <strong>{reais(o.maior.preco)}</strong> ({fmtDataAno(o.maior.em)}).</p>
+    </section>
+
+    {o.posts.length > 0 && (
+      <section class="pr__secao" aria-labelledby="guias">
+        <h2 id="guias">O que os nossos guias dizem</h2>
+        <div class="pr__guias">
+          {guiasCompletos.map((p) => (
+            <article class="pr__guia">
+              {p.badge && <span class="pr__badge">{p.badge}</span>}
+              {p.descricao && <p>{p.descricao.replace(/\.?$/, '.')}</p>}
+              {p.destaques.length > 0 && <ul>{p.destaques.map((d) => <li>{d}</li>)}</ul>}
+              <a href={`/blog/${p.slug}/`}>Leia no guia: {p.titulo} →</a>
+            </article>
+          ))}
+        </div>
+        {guiasSoLink.length > 0 && (
+          <p class="pr__tambem">
+            Também aparece em: {guiasSoLink.map((g, i) => <>{i > 0 && ', '}<a href={`/blog/${g.slug}/`}>{g.titulo}</a></>)}.
+          </p>
+        )}
+      </section>
+    )}
+
+    {(linhasFicha.length > 0 || notaFmt) && (
+      <section class="pr__secao" aria-labelledby="ficha">
+        <h2 id="ficha">Ficha técnica</h2>
+        <table class="pr__tabela pr__tabela--ficha">
+          <tbody>
+            {linhasFicha.map(([k, v]) => <tr><th scope="row">{k}</th><td>{v}</td></tr>)}
+            {notaFmt && <tr><th scope="row">Nota no Mercado Livre</th><td>{notaFmt} de 5{o.avaliacoes ? ` (${o.avaliacoes.toLocaleString('pt-BR')} avaliações)` : ''}</td></tr>}
+          </tbody>
+        </table>
+        {o.ficha.length > 0 && <p class="pr__nota-hist">Dados da página do produto no Mercado Livre. Confira no anúncio antes de comprar.</p>}
+      </section>
+    )}
+
+    <FAQ items={faq} />
+
+    {parecidos.length > 0 && (
+      <section class="pr__secao" aria-labelledby="parecidos">
+        <h2 id="parecidos">Outras opções{catNome ? ` de ${catNome.singular.toLowerCase()}` : ''} nessa faixa de preço</h2>
+        <div class="pr__grade">
+          {parecidos.map((p) => <OfertaCard oferta={p} />)}
+        </div>
+        {o.categoria && comPagina.includes(o.categoria) && (
+          <a class="pr__todas" href={`/black-friday/${o.categoria}/`}>Ver todas as ofertas de {catNome!.plural.toLowerCase()} →</a>
+        )}
+      </section>
+    )}
+  </div>
+</BaseLayout>
+
+<style>
+  .pr { max-width: 1080px; margin: 0 auto; padding: 20px 16px 64px; }
+  .pr__migalhas { display: flex; flex-wrap: wrap; gap: 6px; font-size: 13px; color: var(--color-subtle); }
+  .pr__migalhas a { color: var(--color-muted); text-decoration: none; }
+  .pr__migalhas a:hover { color: var(--color-brand); }
+
+  /* A foto do ML tem ~250 px: a caixa não passa muito disso para não ficar borrada. */
+  .pr__topo { display: grid; grid-template-columns: minmax(0, 340px) minmax(0, 1fr); gap: 32px; margin-top: 18px; align-items: start; }
+  @media (max-width: 760px) {
+    .pr__topo { grid-template-columns: 1fr; gap: 16px; }
+    .pr__foto { aspect-ratio: auto; height: 240px; }
+  }
+  .pr__foto {
+    position: relative;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 10 / 9;
+    border-radius: 16px;
+    background: #fff;
+    border: 1px solid var(--color-border);
+  }
+  .pr__foto img { position: absolute; inset: 10%; width: 80%; height: 80%; object-fit: contain; }
+  .pr__foto--off img { filter: grayscale(1); opacity: 0.55; }
+  .pr__tag { position: absolute; top: 14px; left: 14px; padding: 5px 10px; border-radius: 8px; background: var(--color-brand-fill); color: #fff; font-weight: 800; }
+
+  .pr__cat { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-subtle); }
+  .pr__info h1 { margin: 6px 0 8px; font-size: clamp(24px, 3.6vw, 34px); line-height: 1.15; font-weight: 900; letter-spacing: -0.01em; }
+  .pr__nota { font-weight: 700; }
+  .pr__nota > span:first-child { color: #f59e0b; }
+  .pr__nota > span:last-child { font-weight: 400; color: var(--color-muted); font-size: 14px; }
+
+  .pr__caixa { margin-top: 16px; padding: 16px; border-radius: 14px; border: 1px solid var(--color-border); background: var(--color-card); }
+  .pr__precos { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; }
+  .pr__precos s { color: var(--color-muted); }
+  .pr__precos strong { font-size: 34px; font-weight: 900; letter-spacing: -0.02em; }
+  .pr__pct { padding: 3px 8px; border-radius: 7px; background: var(--color-brand-fill); color: #fff; font-weight: 800; font-size: 14px; }
+  .pr__eco { margin-top: 4px; font-weight: 700; color: #15803d; }
+  .pr__eco span { font-weight: 400; color: var(--color-muted); font-size: 13px; }
+  :global(.dark) .pr__eco { color: #4ade80; }
+  .pr__extra { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 6px; font-size: 14px; color: var(--color-muted); }
+  .pr__frete { color: #15803d; font-weight: 600; }
+  :global(.dark) .pr__frete { color: #4ade80; }
+  .pr__btn {
+    display: block;
+    margin-top: 14px;
+    padding: 14px 18px;
+    border-radius: 10px;
+    background: var(--color-brand-fill);
+    color: #fff;
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+  }
+  .pr__btn:hover { background: var(--color-brand-dark); color: #fff; }
+  .pr__conferido { margin-top: 8px; font-size: 12px; color: var(--color-subtle); }
+  .pr__caixa--off { border-style: dashed; }
+  .pr__caixa--off p { color: var(--color-muted); font-size: 14px; line-height: 1.55; }
+  .pr__off-tit { font-weight: 800; color: var(--color-foreground) !important; font-size: 16px !important; margin-bottom: 4px; }
+  .pr__alt { display: flex; flex-direction: column; gap: 2px; margin-top: 12px; padding: 12px 14px; border-radius: 10px; background: var(--color-elevated); border: 1px solid var(--color-border); text-decoration: none; color: var(--color-foreground); }
+  .pr__alt span:first-child { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-brand); }
+  .pr__alt:hover strong { text-decoration: underline; }
+  .pr__alt-preco { font-weight: 700; }
+
+  .pr__mudou { margin-top: 12px; padding: 10px 12px; border-radius: 10px; font-size: 14px; line-height: 1.5; background: var(--color-elevated); color: var(--color-muted); }
+  .pr__mudou--baixou { background: rgba(21, 128, 61, 0.1); color: var(--color-foreground); }
+  .pr__mudou--baixou strong { color: #15803d; }
+  :global(.dark) .pr__mudou--baixou strong { color: #4ade80; }
+
+  .pr__secao { margin-top: 40px; }
+  .pr__secao h2 { font-size: 21px; font-weight: 800; margin-bottom: 12px; }
+  .pr__texto { color: var(--color-muted); line-height: 1.6; max-width: 70ch; }
+  .pr__tabela { width: 100%; max-width: 640px; border-collapse: collapse; margin-top: 12px; font-size: 14px; }
+  .pr__tabela th, .pr__tabela td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--color-border); }
+  .pr__tabela thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-subtle); }
+  .pr__tabela--ficha th { width: 42%; font-weight: 600; color: var(--color-muted); }
+  .pr__baixou { color: #15803d; font-weight: 600; }
+  :global(.dark) .pr__baixou { color: #4ade80; }
+  .pr__nota-hist { margin-top: 10px; font-size: 13px; color: var(--color-subtle); }
+
+  .pr__guias { display: grid; gap: 12px; }
+  .pr__guia { padding: 14px 16px; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-card); }
+  .pr__badge { display: inline-block; margin-bottom: 6px; padding: 3px 8px; border-radius: 6px; background: var(--color-elevated); font-size: 12px; font-weight: 700; color: var(--color-brand); }
+  .pr__guia p { line-height: 1.6; }
+  .pr__guia ul { margin: 8px 0; padding-left: 18px; list-style: disc; color: var(--color-muted); font-size: 14px; line-height: 1.6; }
+  .pr__guia a { font-weight: 700; color: var(--color-brand); font-size: 14px; }
+
+  .pr__tambem { margin-top: 12px; font-size: 14px; color: var(--color-muted); line-height: 1.6; }
+  .pr__tambem a { color: var(--color-brand); }
+  .pr__grade { display: grid; grid-template-columns: repeat(auto-fill, minmax(210px, 1fr)); gap: 14px; }
+  @media (max-width: 520px) { .pr__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; } }
+  .pr__todas { display: inline-block; margin-top: 14px; font-weight: 700; color: var(--color-brand); }
+</style>

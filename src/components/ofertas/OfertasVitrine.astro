@@ -1,0 +1,269 @@
+---
+// Vitrine filtrável das ofertas: categoria, faixa de preço, busca por nome, "só com
+// desconto" e ordenação (desconto, preço, avaliações, nota, indicações dos guias).
+// Sem JavaScript, todos os cards aparecem na ordem padrão; com ele, o filtro roda no
+// navegador e a URL guarda o estado (?categoria=guitarra&ordem=menor-preco).
+import OfertaCard from './OfertaCard.astro';
+import { NOMES_CATEGORIA, ORDEM_CATEGORIAS, type Oferta } from '../../utils/ofertas';
+
+interface Props {
+  ofertas: Oferta[];
+  todas: Map<string, Oferta>;
+  /** Página de uma categoria só: os chips viram links para as outras categorias. */
+  categoriaFixa?: string;
+  /** Categorias com página própria em /black-friday/<categoria>/. */
+  comPagina: string[];
+}
+
+const { ofertas, todas, categoriaFixa, comPagina } = Astro.props;
+const contagem = new Map<string, number>();
+for (const o of ofertas) if (o.categoria) contagem.set(o.categoria, (contagem.get(o.categoria) ?? 0) + 1);
+const categorias = ORDEM_CATEGORIAS.filter((c) => contagem.has(c));
+const contagemGeral = new Map<string, number>();
+for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, (contagemGeral.get(o.categoria) ?? 0) + 1);
+---
+
+<section class="vit" data-vitrine aria-label="Ofertas">
+  <div class="vit__barra">
+    {categoriaFixa ? (
+      <nav class="vit__chips" aria-label="Ofertas por instrumento">
+        <a class="vit__chip" href="/black-friday/">Todas</a>
+        {ORDEM_CATEGORIAS.filter((c) => comPagina.includes(c)).map((c) => (
+          <a class:list={['vit__chip', { 'is-on': c === categoriaFixa }]} href={`/black-friday/${c}/`} aria-current={c === categoriaFixa ? 'page' : undefined}>
+            {NOMES_CATEGORIA[c].plural}
+          </a>
+        ))}
+      </nav>
+    ) : (
+      <div class="vit__chips" role="group" aria-label="Filtrar por tipo de produto">
+        <button type="button" class="vit__chip is-on" data-cat="" aria-pressed="true">Todos <span>{ofertas.length}</span></button>
+        {categorias.map((c) => (
+          <button type="button" class="vit__chip" data-cat={c} aria-pressed="false">
+            {NOMES_CATEGORIA[c].plural} <span>{contagem.get(c)}</span>
+          </button>
+        ))}
+      </div>
+    )}
+
+    <div class="vit__controles">
+      <label class="vit__campo vit__campo--busca">
+        <span class="sr-only">Buscar produto</span>
+        <input type="search" data-busca placeholder="Buscar por nome ou marca" autocomplete="off" />
+      </label>
+      <label class="vit__campo">
+        <span>Preço</span>
+        <select data-faixa>
+          <option value="">Qualquer</option>
+          <option value="0-300">Até R$ 300</option>
+          <option value="300-1000">R$ 300 a R$ 1.000</option>
+          <option value="1000-3000">R$ 1.000 a R$ 3.000</option>
+          <option value="3000-">Acima de R$ 3.000</option>
+        </select>
+      </label>
+      <label class="vit__campo">
+        <span>Ordenar</span>
+        <select data-ordem>
+          <option value="destaque">Em destaque</option>
+          <option value="desconto">Maior desconto</option>
+          <option value="menor-preco">Menor preço</option>
+          <option value="maior-preco">Maior preço</option>
+          <option value="avaliacoes">Mais avaliados</option>
+          <option value="nota">Melhor nota</option>
+          <option value="indicados">Mais indicados nos guias</option>
+        </select>
+      </label>
+      <label class="vit__check">
+        <input type="checkbox" data-so-desconto />
+        <span>Só com desconto</span>
+      </label>
+    </div>
+    <p class="vit__total" data-total aria-live="polite">{ofertas.length} produtos</p>
+  </div>
+
+  <div class="vit__grade" data-grade>
+    {ofertas.map((o, i) => (
+      <OfertaCard oferta={o} alternativa={o.alternativa ? todas.get(o.alternativa) : undefined} prioridade={i < 4} />
+    ))}
+  </div>
+  <p class="vit__vazio" data-vazio hidden>Nenhum produto com esses filtros. Tente outra faixa de preço ou limpe a busca.</p>
+  <button type="button" class="vit__mais" data-mais hidden>Mostrar mais</button>
+</section>
+
+<script>
+  const POR_PAGINA = 36;
+
+  for (const raiz of document.querySelectorAll<HTMLElement>('[data-vitrine]')) {
+    const grade = raiz.querySelector<HTMLElement>('[data-grade]')!;
+    const cards = [...grade.querySelectorAll<HTMLElement>('.of')];
+    const chips = [...raiz.querySelectorAll<HTMLButtonElement>('button[data-cat]')];
+    const busca = raiz.querySelector<HTMLInputElement>('[data-busca]')!;
+    const faixa = raiz.querySelector<HTMLSelectElement>('[data-faixa]')!;
+    const ordem = raiz.querySelector<HTMLSelectElement>('[data-ordem]')!;
+    const soDesconto = raiz.querySelector<HTMLInputElement>('[data-so-desconto]')!;
+    const total = raiz.querySelector<HTMLElement>('[data-total]')!;
+    const vazio = raiz.querySelector<HTMLElement>('[data-vazio]')!;
+    const mais = raiz.querySelector<HTMLButtonElement>('[data-mais]')!;
+    const num = (el: HTMLElement, k: string) => Number(el.dataset[k] ?? 0);
+    const sem = (s: string) => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+
+    let categoria = '';
+    let limite = POR_PAGINA;
+
+    // Estado inicial a partir da URL (links compartilhados e vindos de outras páginas).
+    const params = new URLSearchParams(location.search);
+    if (params.get('categoria') && chips.some((c) => c.dataset.cat === params.get('categoria'))) categoria = params.get('categoria')!;
+    if (params.get('ordem') && [...ordem.options].some((o) => o.value === params.get('ordem'))) ordem.value = params.get('ordem')!;
+    if (params.get('preco') && [...faixa.options].some((o) => o.value === params.get('preco'))) faixa.value = params.get('preco')!;
+    if (params.get('q')) busca.value = params.get('q')!;
+    if (params.get('desconto') === '1') soDesconto.checked = true;
+
+    // "Em destaque": com desconto primeiro; entre eles, os mais indicados nos guias.
+    const comDesc = (el: HTMLElement) => Number(num(el, 'desc') > 0);
+    const comparar: Record<string, (a: HTMLElement, b: HTMLElement) => number> = {
+      destaque: (a, b) =>
+        comDesc(b) - comDesc(a) || num(b, 'rec') - num(a, 'rec') || num(b, 'desc') - num(a, 'desc') || num(b, 'aval') - num(a, 'aval'),
+      desconto: (a, b) => num(b, 'desc') - num(a, 'desc') || num(b, 'aval') - num(a, 'aval'),
+      'menor-preco': (a, b) => num(a, 'preco') - num(b, 'preco'),
+      'maior-preco': (a, b) => num(b, 'preco') - num(a, 'preco'),
+      avaliacoes: (a, b) => num(b, 'aval') - num(a, 'aval') || num(b, 'nota') - num(a, 'nota'),
+      nota: (a, b) => num(b, 'nota') - num(a, 'nota') || num(b, 'aval') - num(a, 'aval'),
+      indicados: (a, b) => num(b, 'rec') - num(a, 'rec') || num(b, 'aval') - num(a, 'aval'),
+    };
+
+    function atualizarURL() {
+      const p = new URLSearchParams();
+      if (categoria) p.set('categoria', categoria);
+      if (ordem.value !== 'destaque') p.set('ordem', ordem.value);
+      if (faixa.value) p.set('preco', faixa.value);
+      if (busca.value.trim()) p.set('q', busca.value.trim());
+      if (soDesconto.checked) p.set('desconto', '1');
+      const qs = p.toString();
+      history.replaceState(null, '', qs ? `?${qs}` : location.pathname);
+    }
+
+    function aplicar() {
+      const [min, max] = faixa.value ? faixa.value.split('-').map((v) => (v ? Number(v) : Infinity)) : [0, Infinity];
+      const termo = sem(busca.value.trim());
+      const visiveis = cards.filter((c) => {
+        if (categoria && c.dataset.cat !== categoria) return false;
+        const preco = num(c, 'preco');
+        if (preco < min || preco > max) return false;
+        if (soDesconto.checked && num(c, 'desc') <= 0) return false;
+        if (termo && !sem(c.dataset.nome ?? '').includes(termo)) return false;
+        return true;
+      });
+      // Esgotados e encerrados sempre no fim, em qualquer ordenação.
+      visiveis.sort((a, b) => num(b, 'disp') - num(a, 'disp') || comparar[ordem.value](a, b));
+      const mostrar = new Set(visiveis.slice(0, limite));
+      for (const c of cards) c.hidden = !mostrar.has(c);
+      grade.append(...visiveis, ...cards.filter((c) => !visiveis.includes(c)));
+      total.textContent = `${visiveis.length} ${visiveis.length === 1 ? 'produto' : 'produtos'}`;
+      vazio.hidden = visiveis.length > 0;
+      const restantes = visiveis.length - mostrar.size;
+      mais.hidden = restantes <= 0;
+      mais.textContent = `Mostrar mais ${Math.min(restantes, POR_PAGINA)} de ${restantes}`;
+      for (const ch of chips) {
+        const on = ch.dataset.cat === categoria;
+        ch.classList.toggle('is-on', on);
+        ch.setAttribute('aria-pressed', String(on));
+      }
+    }
+
+    const reiniciar = () => {
+      limite = POR_PAGINA;
+      aplicar();
+      atualizarURL();
+    };
+    for (const ch of chips) ch.addEventListener('click', () => { categoria = ch.dataset.cat ?? ''; reiniciar(); });
+    let espera: number | undefined;
+    busca.addEventListener('input', () => { clearTimeout(espera); espera = window.setTimeout(reiniciar, 180); });
+    faixa.addEventListener('change', reiniciar);
+    ordem.addEventListener('change', reiniciar);
+    soDesconto.addEventListener('change', reiniciar);
+    mais.addEventListener('click', () => { limite += POR_PAGINA; aplicar(); });
+    aplicar();
+  }
+</script>
+
+<style is:global>
+  /* Global (classes com prefixo próprio): evita o atributo data-astro-cid em cada
+     elemento dos ~380 cards, que pesava no HTML da vitrine. */
+  .vit__barra {
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px 0;
+    margin-bottom: 8px;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .vit__chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+  .vit__chips::-webkit-scrollbar { display: none; }
+  .vit__chip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .vit__chip span { font-weight: 500; color: var(--color-subtle); font-size: 12px; }
+  .vit__chip:hover { border-color: var(--color-brand); }
+  .vit__chip.is-on { background: var(--color-foreground); color: var(--color-surface); border-color: var(--color-foreground); }
+  .vit__chip.is-on span { color: inherit; opacity: 0.7; }
+
+  .vit__controles { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
+  .vit__campo { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-muted); }
+  .vit__campo select,
+  .vit__campo input {
+    height: 36px;
+    padding: 0 10px;
+    border-radius: 8px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-size: 14px;
+  }
+  .vit__campo--busca { flex: 1 1 220px; }
+  .vit__campo--busca input { width: 100%; }
+  .vit__check { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; cursor: pointer; }
+  .vit__check input { width: 16px; height: 16px; accent-color: var(--color-brand-fill); }
+  .vit__total { font-size: 12px; color: var(--color-subtle); }
+
+  .vit__grade {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+  }
+  /* No desktop a barra de filtros gruda logo abaixo do cabeçalho do site (h-16 + borda). */
+  @media (min-width: 900px) {
+    .vit__barra { position: sticky; top: 65px; }
+  }
+  @media (max-width: 520px) {
+    .vit__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+    .vit__campo--busca { flex-basis: 100%; }
+  }
+  .vit__vazio { margin: 24px 0; text-align: center; color: var(--color-muted); }
+  .vit__mais {
+    display: block;
+    margin: 24px auto 0;
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .vit__mais:hover { border-color: var(--color-brand); }
+</style>
