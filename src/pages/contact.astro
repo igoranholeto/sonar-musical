@@ -39,12 +39,19 @@ const contactSchema = {
 
     <!-- Formulário de contato -->
     <form
+      name="contato"
       class="space-y-5 mb-16"
       aria-label="Formulário de contato"
-      action="#"
+      action="/contato-enviado/"
       method="post"
-      novalidate
+      data-netlify="true"
+      netlify-honeypot="bot-field"
     >
+      <!-- Netlify Forms: identifica o formulário no envio e captura bots no campo escondido -->
+      <input type="hidden" name="form-name" value="contato" />
+      <p class="hidden" aria-hidden="true">
+        <label>Não preencha este campo: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+      </p>
       <div class="grid sm:grid-cols-2 gap-5">
         <div>
           <label for="name" class="block text-sm font-medium mb-2">Nome</label>
