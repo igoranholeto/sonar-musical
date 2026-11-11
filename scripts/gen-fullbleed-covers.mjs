@@ -144,6 +144,17 @@ const MAP = {
   'melhores-marcas-de-ukulele':     { kicker: 'UKULELES · 2026', l1: 'MARCAS DE', l2: 'UKULELE', q: 'Ukeleles-2016-0512', prefer: /Ukeleles-2016-0512/i },
   'violao-vogga-e-bom':             { kicker: 'VIOLÕES · REVIEW', l1: 'VIOLÃO', l2: 'VOGGA', q: 'Guitare et partitions', prefer: /Guitare et partitions/i },
   'melhores-marcas-de-teclado-musical': { kicker: 'TECLADOS · 2026', l1: 'MARCAS DE', l2: 'TECLADO', q: 'KORG M3 KORG Triton Radias', prefer: /KORG M3, KORG Triton/i },
+  // Lote 2026-11-11 (kw research)
+  'acordes-de-violao-para-iniciantes': { kicker: 'VIOLÃO · INICIANTES', l1: 'ACORDES DE', l2: 'VIOLÃO', q: 'Eko Rio Bravo 12 old western acoustic guitar details', prefer: /old western acoustic guitar details/i },
+  'musicas-faceis-para-violao-iniciante': { kicker: 'VIOLÃO · INICIANTES', l1: 'MÚSICAS', l2: 'FÁCEIS', q: 'man sits comfortably on a sofa playing his acoustic guitar', prefer: /sits comfortably on a sofa/i },
+  'melhores-marcas-de-violino':     { kicker: 'VIOLINOS · 2026', l1: 'MARCAS DE', l2: 'VIOLINO', q: 'A luthier at work on a violin', prefer: /A luthier at work on a violin 01/i },
+  'escalas-no-violao-para-iniciantes': { kicker: 'VIOLÃO · INICIANTES', l1: 'ESCALAS', l2: 'NO VIOLÃO', q: 'A guitar fret board', prefer: /^File:A guitar fret board.JPG$/i },
+  'preco-de-violino':               { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'VIOLINO', q: 'What is in your violin case', prefer: /What's in your violin case/i },
+  'melhor-teclado-infantil':        { kicker: 'TECLADOS · 2026', l1: 'TECLADO', l2: 'INFANTIL', q: 'Casio ML-1 Magical Light keyboard', prefer: /Casio ML-1 Magical Light/i },
+  'como-afinar-violao':             { kicker: 'VIOLÃO · INICIANTES', l1: 'COMO AFINAR', l2: 'O VIOLÃO', q: 'Eko Rio Bravo 12 senior Man tuning Acoustic guitar', prefer: /senior Man tuning Acoustic guitar/i },
+  'preco-de-ukulele':               { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'UKULELE', q: 'Soprano ukulele from China laminated mahogany wood', prefer: /^File:Soprano ukulele from China, made of laminated mahogany wood.jpg$/i },
+  'preco-de-cavaquinho':            { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'CAVAQUINHO', q: 'Cavaquinho minhoto', prefer: /^File:Cavaquinho minhoto.jpg$/i },
+  'preco-de-violao':                { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'VIOLÃO', q: 'Rows of acoustic guitars displayed for sale inside a music shop', prefer: /Rows of acoustic guitars displayed/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

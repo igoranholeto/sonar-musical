@@ -1,0 +1,17 @@
+{
+  "nome": "Eagle EV744 4/4 (violino elétrico)",
+  "meli": "https://meli.la/26jVWKw",
+  "preco": 1815,
+  "precoEm": "2026-11-11",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1815
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 5,
+  "imagemAlt": "Eagle EV744 4/4 (violino elétrico)",
+  "imagem": "/images/produtos/eagle-ev744-eletrico.webp"
+}
