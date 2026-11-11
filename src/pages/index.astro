@@ -10,6 +10,7 @@ import StatsStrip from '../components/StatsStrip.astro';
 import EquipmentFinder from '../components/EquipmentFinder.astro';
 import ComparadorRapido from '../components/ComparadorRapido.astro';
 import Newsletter from '../components/Newsletter.astro';
+import BlackFridayLinks from '../components/ofertas/BlackFridayLinks.astro';
 
 const allPosts = await getCollection('blog', isPublished);
 const posts = allPosts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -24,6 +25,9 @@ const latestPosts = posts.slice(0, 6);
   description="Análises honestas, guias de compra e dicas sobre guitarras, amplificadores, pedais e mais. Encontre o equipamento certo sem enrolação."
 >
   <Hero postsCount={posts.length} />
+
+  <!-- Black Friday: link para a página geral e as páginas por categoria -->
+  <BlackFridayLinks variante="home" />
 
   <!-- Posts em destaque -->
   {featuredPosts.length > 0 && (
