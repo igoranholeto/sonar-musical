@@ -1,8 +1,8 @@
 {
   "nome": "Michael GM385N Telecaster",
   "meli": "https://meli.la/1PqBwA4",
-  "preco": 1056,
-  "precoEm": "2026-11-10",
+  "preco": 1049,
+  "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1056
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1049
     }
   ],
   "nota": 4.6,

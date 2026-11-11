@@ -1,8 +1,8 @@
 {
   "nome": "Giannini CS-14N",
   "meli": "https://meli.la/17vYaQu",
-  "preco": 355,
-  "precoEm": "2026-11-10",
+  "preco": 326,
+  "precoEm": "2026-11-11",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 355
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 326
     }
   ],
   "imagem": "/images/produtos/giannini-cs-14n.webp",

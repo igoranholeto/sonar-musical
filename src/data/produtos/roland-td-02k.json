@@ -1,13 +1,17 @@
 {
   "nome": "Roland TD-02K",
   "meli": "https://meli.la/1HxzC94",
-  "preco": 2787,
-  "precoEm": "2026-11-10",
+  "preco": 2734,
+  "precoEm": "2026-11-11",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 2787
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2734
     }
   ],
   "nota": 4.9,

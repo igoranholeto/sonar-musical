@@ -1,8 +1,8 @@
 {
   "nome": "Boss DS-1",
   "meli": "https://meli.la/1b1fgdS",
-  "preco": 650,
-  "precoEm": "2026-11-10",
+  "preco": 526,
+  "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-10",
       "preco": 650
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 526
     }
   ],
   "imagem": "/images/produtos/boss-ds-1.webp",

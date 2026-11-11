@@ -1,8 +1,8 @@
 {
   "nome": "Rozini Estudante RC09",
   "meli": "https://meli.la/265d9Hv",
-  "preco": 808,
-  "precoEm": "2026-11-10",
+  "preco": 768,
+  "precoEm": "2026-11-11",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 808
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 768
     }
   ],
   "imagem": "/images/produtos/rozini-estudante-rc09.webp",

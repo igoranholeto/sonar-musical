@@ -1,8 +1,8 @@
 {
   "nome": "Giannini NR 1/2",
   "meli": "https://meli.la/2PZjmiF",
-  "preco": 479,
-  "precoEm": "2026-11-10",
+  "preco": 441,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 479
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 441
     }
   ],
   "imagem": "/images/produtos/giannini-nr-1-2.webp",

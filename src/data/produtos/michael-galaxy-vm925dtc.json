@@ -1,8 +1,8 @@
 {
   "nome": "Michael Galaxy VM925DTC",
   "meli": "https://meli.la/1nyvxY2",
-  "preco": 1142,
-  "precoEm": "2026-11-10",
+  "preco": 1185,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 1142
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1185
     }
   ],
   "nota": 4.8,

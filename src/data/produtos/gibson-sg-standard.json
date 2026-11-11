@@ -1,8 +1,8 @@
 {
   "nome": "Gibson SG Standard",
   "meli": "https://meli.la/2Jdi8bf",
-  "preco": 21276,
-  "precoEm": "2026-11-10",
+  "preco": 21258,
+  "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 21276
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 21258
     }
   ],
   "imagem": "/images/produtos/gibson-sg-standard.webp",

@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Mini Universe Reverb",
   "meli": "https://meli.la/1a7MGfg",
-  "preco": 171,
-  "precoEm": "2026-11-10",
+  "preco": 165,
+  "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 171
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 165
     }
   ],
   "imagem": "/images/produtos/m-vave-mini-universe-reverb.webp",

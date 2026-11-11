@@ -1,8 +1,8 @@
 {
   "nome": "Kokko Mini Overdrive FOD3",
   "meli": "https://meli.la/2p3YVqe",
-  "preco": 211,
-  "precoEm": "2026-11-10",
+  "preco": 216,
+  "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 211
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 216
     }
   ],
   "imagem": "/images/produtos/kokko-mini-overdrive-fod3.webp",

@@ -1,8 +1,8 @@
 {
   "nome": "Elixir Optiweb 10–46",
   "meli": "https://meli.la/1ggdyxw",
-  "preco": 148,
-  "precoEm": "2026-11-10",
+  "preco": 129,
+  "precoEm": "2026-11-11",
   "categoria": "cordas",
   "imagem": "/images/produtos/elixir-optiweb-10-46.webp",
   "imagemAlt": "Elixir Optiweb 10–46",
@@ -18,6 +18,10 @@
     {
       "data": "2026-11-10",
       "preco": 148
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 129
     }
   ]
 }

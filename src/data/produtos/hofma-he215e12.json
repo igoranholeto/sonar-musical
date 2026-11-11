@@ -1,13 +1,17 @@
 {
   "nome": "Hofma HE215E12 12 cordas",
   "meli": "https://meli.la/1aURjX3",
-  "preco": 1279,
-  "precoEm": "2026-11-10",
+  "preco": 1209,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 1279
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1209
     }
   ],
   "nota": 4.9,

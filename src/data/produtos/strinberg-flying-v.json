@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg Flying V",
   "meli": "https://meli.la/19e2JNw",
-  "preco": 2049,
-  "precoEm": "2026-11-10",
+  "preco": 2079,
+  "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "imagem": "/images/produtos/strinberg-flying-v.webp",
   "imagemAlt": "Strinberg Flying V",
@@ -18,6 +18,10 @@
     {
       "data": "2026-11-10",
       "preco": 2049
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2079
     }
   ]
 }

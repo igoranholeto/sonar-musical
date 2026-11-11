@@ -1,13 +1,17 @@
 {
   "nome": "DiMarzio Super Distortion DP100",
   "meli": "https://meli.la/1PzL49U",
-  "preco": 1195,
-  "precoEm": "2026-11-10",
+  "preco": 1295,
+  "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-08-03",
       "preco": 1195
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1295
     }
   ],
   "imagem": "/images/produtos/dimarzio-super-distortion-dp100.webp",

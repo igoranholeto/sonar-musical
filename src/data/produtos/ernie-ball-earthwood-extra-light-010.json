@@ -1,8 +1,8 @@
 {
   "nome": "Ernie Ball Earthwood Extra Light .010",
   "meli": "https://meli.la/2VtxjWs",
-  "preco": 60,
-  "precoEm": "2026-11-10",
+  "preco": 58,
+  "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 60
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 58
     }
   ],
   "imagem": "/images/produtos/ernie-ball-earthwood-extra-light-010.webp",

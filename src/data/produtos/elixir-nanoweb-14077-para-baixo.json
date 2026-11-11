@@ -1,8 +1,8 @@
 {
   "nome": "Elixir Nanoweb 14077 para baixo",
   "meli": "https://meli.la/2DoJSgv",
-  "preco": 419,
-  "precoEm": "2026-11-10",
+  "preco": 446,
+  "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 419
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 446
     }
   ]
 }

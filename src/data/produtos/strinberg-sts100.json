@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg STS100",
   "meli": "https://meli.la/2iXzRWa",
-  "preco": 795,
-  "precoEm": "2026-11-10",
+  "preco": 801,
+  "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 795
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 801
     }
   ],
   "imagem": "/images/produtos/strinberg-sts100.webp",

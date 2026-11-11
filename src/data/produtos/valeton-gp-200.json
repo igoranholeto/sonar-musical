@@ -1,8 +1,8 @@
 {
   "nome": "Valeton GP-200",
   "meli": "https://meli.la/32VUAui",
-  "preco": 2149,
-  "precoEm": "2026-11-10",
+  "preco": 2131,
+  "precoEm": "2026-11-11",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-10",
       "preco": 2149
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2131
     }
   ],
   "nota": 4.9,

@@ -1,8 +1,8 @@
 {
   "nome": "Boss RC-5 Loop Station",
   "meli": "https://meli.la/2JVe6uG",
-  "preco": 1787,
-  "precoEm": "2026-11-10",
+  "preco": 1755,
+  "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1787
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1755
     }
   ],
   "imagem": "/images/produtos/boss-rc-5-loop-station.webp",

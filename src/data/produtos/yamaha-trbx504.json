@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha TRBX504",
   "meli": "https://meli.la/2KASsc4",
-  "preco": 4304,
-  "precoEm": "2026-11-10",
+  "preco": 4437,
+  "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 4304
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 4437
     }
   ],
   "nota": 4.9,

@@ -1,13 +1,17 @@
 {
   "nome": "Semi case Spring SP-FK (folk)",
   "meli": "https://meli.la/2naqnZQ",
-  "preco": 392,
-  "precoEm": "2026-11-10",
+  "preco": 372,
+  "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 392
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 372
     }
   ],
   "nota": 4.8,

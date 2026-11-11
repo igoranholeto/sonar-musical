@@ -1,8 +1,8 @@
 {
   "nome": "Marshall MG30GFX",
   "meli": "https://meli.la/2u4uu33",
-  "preco": 2436,
-  "precoEm": "2026-11-10",
+  "preco": 2502,
+  "precoEm": "2026-11-11",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 2436
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2502
     }
   ],
   "imagemAlt": "Marshall MG30GFX",

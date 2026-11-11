@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg PBS40",
   "meli": "https://meli.la/1P5NQFk",
-  "preco": 949,
-  "precoEm": "2026-11-10",
+  "preco": 1057,
+  "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-10",
       "preco": 949
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1057
     }
   ],
   "imagem": "/images/produtos/strinberg-pbs40.webp",

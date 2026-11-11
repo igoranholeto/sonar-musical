@@ -1,13 +1,17 @@
 {
   "nome": "Meteoro Space 50",
   "meli": "https://meli.la/2AWwphC",
-  "preco": 1362,
-  "precoEm": "2026-11-10",
+  "preco": 1899,
+  "precoEm": "2026-11-11",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1362
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1899
     }
   ],
   "imagem": "/images/produtos/meteoro-space-50.webp",

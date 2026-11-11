@@ -1,8 +1,8 @@
 {
   "nome": "Elixir 80/20 Bronze Custom Light .011",
   "meli": "https://meli.la/2VGdkmg",
-  "preco": 158,
-  "precoEm": "2026-11-10",
+  "preco": 159,
+  "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 158
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 159
     }
   ],
   "imagem": "/images/produtos/elixir-80-20-bronze-custom-light-011.webp",

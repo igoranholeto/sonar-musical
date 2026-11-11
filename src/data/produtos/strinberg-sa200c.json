@@ -1,13 +1,17 @@
 {
   "nome": "Strinberg SA200C",
   "meli": "https://meli.la/1bqLD4Z",
-  "preco": 869,
-  "precoEm": "2026-11-10",
+  "preco": 824,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-30",
       "preco": 869
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 824
     }
   ],
   "imagem": "/images/produtos/strinberg-sa200c.webp",
