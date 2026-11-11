@@ -6,7 +6,8 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import FAQ from '../FAQ.astro';
 import OfertasVitrine from './OfertasVitrine.astro';
 import BfPlacar from './BfPlacar.astro';
-import { breadcrumb, collectionPage } from '../../utils/schema';
+import { ORG_ID, WEBSITE_ID, absUrl, breadcrumb, collectionPage } from '../../utils/schema';
+import { CSV_HISTORICO, CSV_RESUMO } from '../../utils/ofertas-csv';
 import {
   NOMES_CATEGORIA,
   ORDEM_CATEGORIAS,
@@ -54,14 +55,62 @@ const migalhas = [
   { name: 'Black Friday', path: '/black-friday/' },
   ...(categoria ? [{ name: NOMES_CATEGORIA[categoria].plural, path }] : []),
 ];
+const pageUrl = absUrl(path);
+const datasetId = `${absUrl('/black-friday/')}#dataset`;
+const inicio = new Date(Math.min(...ofertas.map((o) => o.acompanhadoDesde.valueOf())));
+const isoDia = (d: Date) => d.toISOString().slice(0, 10);
+const brl = { '@type': 'PropertyValue', unitText: 'BRL' };
+// Dataset só na página geral: o histórico de preço é dado nosso (coleta diária), então
+// pode ir para o Google Dataset Search. Sem Offer/Product/Event de propósito: não somos
+// o vendedor, e o Google não aceita promoção marcada como evento.
+const dataset = !categoria && {
+  '@context': 'https://schema.org',
+  '@type': 'Dataset',
+  '@id': datasetId,
+  name: 'Histórico de preços de instrumentos musicais no Mercado Livre (Black Friday 2026)',
+  description: `Preço à vista, preço riscado do anúncio, porcentagem de desconto, menor e maior preço registrados e histórico diário de preço de ${ofertas.length} instrumentos musicais e equipamentos de áudio vendidos no Mercado Livre Brasil, coletados automaticamente pelo Sonar Musical desde ${fmtDataAno(inicio)}. Cada mudança de preço vira um ponto no histórico.`,
+  url: pageUrl,
+  keywords: ['Black Friday', 'preços', 'histórico de preços', 'instrumentos musicais', 'Mercado Livre', 'guitarra', 'violão', 'teclado'],
+  inLanguage: 'pt-BR',
+  isAccessibleForFree: true,
+  license: 'https://creativecommons.org/licenses/by/4.0/',
+  creator: { '@id': ORG_ID },
+  publisher: { '@id': ORG_ID },
+  dateModified: conferidoEm.toISOString(),
+  temporalCoverage: `${isoDia(inicio)}/${isoDia(conferidoEm)}`,
+  spatialCoverage: { '@type': 'Place', name: 'Brasil' },
+  measurementTechnique: 'Coleta automática do preço exibido no anúncio de cada produto no Mercado Livre; cada mudança de preço é registrada com a data.',
+  variableMeasured: [
+    { ...brl, name: 'Preço atual à vista' },
+    { ...brl, name: 'Preço riscado exibido no anúncio' },
+    { '@type': 'PropertyValue', name: 'Desconto exibido no anúncio', unitText: 'percentual' },
+    { ...brl, name: 'Menor preço registrado' },
+    { ...brl, name: 'Maior preço registrado' },
+  ],
+  distribution: [
+    { '@type': 'DataDownload', name: 'Resumo de preço por produto', encodingFormat: 'text/csv', contentUrl: absUrl(CSV_RESUMO) },
+    { '@type': 'DataDownload', name: 'Histórico de preço (um registro por mudança)', encodingFormat: 'text/csv', contentUrl: absUrl(CSV_HISTORICO) },
+  ],
+};
 const schema = [
   collectionPage({
     path,
     name: h1,
     description: descricao,
     items: ofertas.filter(fichaIndexavel).slice(0, 100).map((o) => ({ name: o.nome, path: `/produto/${o.id}/` })),
+    extra: {
+      about: [
+        { '@type': 'Thing', name: 'Black Friday', sameAs: ['https://pt.wikipedia.org/wiki/Black_Friday', 'https://en.wikipedia.org/wiki/Black_Friday_(shopping)'] },
+        ...(categoria ? [{ '@type': 'Thing', name: NOMES_CATEGORIA[categoria].plural }] : []),
+      ],
+      dateModified: conferidoEm.toISOString(),
+      primaryImageOfPage: { '@type': 'ImageObject', url: absUrl('/images/og/black-friday.jpg'), width: 1200, height: 630 },
+      significantLink: comPagina.filter((c) => c !== categoria).map((c) => absUrl(`/black-friday/${c}/`)),
+      ...(dataset ? { hasPart: { '@id': datasetId } } : { isPartOf: [{ '@id': WEBSITE_ID }, { '@id': `${absUrl('/black-friday/')}#webpage` }] }),
+    },
   }),
   breadcrumb(migalhas),
+  ...(dataset ? [dataset] : []),
 ];
 ---
 
@@ -160,6 +209,12 @@ const schema = [
         compradores no Mercado Livre. Clique no nome de qualquer produto para ver a ficha técnica, o histórico de preço, o que os
         nossos guias dizem sobre ele (quando aparece em algum) e as perguntas mais comuns.
       </p>
+      {!categoria && (
+        <p>
+          Os dados são abertos (licença CC BY 4.0): baixe o <a href={CSV_RESUMO} download>resumo de preço de cada produto (CSV)</a> e o
+          <a href={CSV_HISTORICO} download>histórico completo de preços (CSV)</a>, atualizados junto com esta página.
+        </p>
+      )}
     </section>
 
     <FAQ items={faq} />

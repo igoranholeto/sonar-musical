@@ -84,6 +84,8 @@ export function collectionPage(opts: {
   name: string;
   description: string;
   items: { name: string; path: string }[];
+  /** Propriedades extras do CollectionPage (about, dateModified, significantLink...). */
+  extra?: Record<string, unknown>;
 }) {
   const url = absUrl(opts.path);
   return {
@@ -96,6 +98,7 @@ export function collectionPage(opts: {
     inLanguage: 'pt-BR',
     isPartOf: { '@id': WEBSITE_ID },
     publisher: { '@id': ORG_ID },
+    ...opts.extra,
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: opts.items.length,

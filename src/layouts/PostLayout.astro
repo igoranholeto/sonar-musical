@@ -6,6 +6,7 @@ import AuthorBio from '../components/AuthorBio.astro';
 import TableOfContents from '../components/TableOfContents.astro';
 import ReadingProgress from '../components/ReadingProgress.astro';
 import ShareButtons from '../components/ShareButtons.astro';
+import BlackFridayLinks from '../components/ofertas/BlackFridayLinks.astro';
 import { slugifyCategory } from '../utils/slug';
 import { cardImg, unsplashSrc } from '../utils/image';
 import { getAuthorByName } from '../data/authors';
@@ -312,6 +313,9 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     <div class="prose-post">
       <slot />
     </div>
+
+    <!-- Links para a Black Friday (categorias dos produtos citados no artigo) -->
+    <BlackFridayLinks slug={Astro.url.pathname.split('/').filter(Boolean).at(-1)} />
 
     <!-- Compartilhar -->
     <div class="mt-10 pt-8 border-t border-border">

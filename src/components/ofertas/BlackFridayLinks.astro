@@ -1,0 +1,153 @@
+---
+// Links internos para /black-friday/ e as páginas por categoria. Duas variantes:
+// "post" (caixa no fim de cada artigo, com as categorias dos produtos que o artigo cita)
+// e "home" (seção da página inicial com todas as categorias).
+import { carregarOfertas, NOMES_CATEGORIA } from '../../utils/ofertas';
+import { categoriasComPagina } from '../../utils/ofertas-paginas';
+
+interface Props {
+  variante?: 'post' | 'home';
+  /** Slug do artigo (variante "post"). */
+  slug?: string;
+}
+
+const { variante = 'post', slug } = Astro.props;
+const todas = await carregarOfertas();
+const comPagina = categoriasComPagina(todas);
+const lista = [...todas.values()];
+const total = lista.length.toLocaleString('pt-BR');
+const comDesconto = lista.filter((o) => o.status === 'ativo' && o.desconto).length.toLocaleString('pt-BR');
+const plural = (c: string) => NOMES_CATEGORIA[c]?.plural ?? c;
+
+// Artigo sem produto do catálogo: a categoria sai do próprio slug.
+const PELO_SLUG: [RegExp, string][] = [
+  [/pedaleira/, 'pedaleira'],
+  [/pedal/, 'pedal'],
+  [/violao|violoes/, 'violao'],
+  [/guitarra|stratocaster|telecaster|les-paul|captador/, 'guitarra'],
+  [/baixo/, 'baixo'],
+  [/amplificador|amp-/, 'amplificador'],
+  [/teclado|piano/, 'teclado'],
+  [/bateria/, 'bateria'],
+  [/ukulele/, 'ukulele'],
+  [/cavaquinho/, 'cavaquinho'],
+  [/violino/, 'violino'],
+  [/interface/, 'interface'],
+  [/microfone/, 'microfone'],
+  [/fone/, 'fone'],
+  [/corda/, 'cordas'],
+  [/afinador|palheta|capotraste|suporte|capa-|correia|cabo/, 'acessorio'],
+];
+
+let cats: string[] = [];
+let texto = '';
+if (variante === 'post') {
+  const doPost = slug ? lista.filter((o) => o.posts.some((p) => p.slug === slug)) : [];
+  const cont = new Map<string, number>();
+  for (const o of doPost) if (o.categoria && comPagina.includes(o.categoria)) cont.set(o.categoria, (cont.get(o.categoria) ?? 0) + 1);
+  cats = [...cont.entries()].sort((a, b) => b[1] - a[1]).slice(0, 3).map(([c]) => c);
+  if (!cats.length && slug) cats = PELO_SLUG.filter(([re, c]) => re.test(slug) && comPagina.includes(c)).map(([, c]) => c).slice(0, 2);
+  const n = doPost.length;
+  const desc = doPost.filter((o) => o.status === 'ativo' && o.desconto).length;
+  texto =
+    n === 0
+      ? `Estamos acompanhando o preço de ${total} instrumentos e equipamentos no Mercado Livre, com o preço riscado, o % de desconto e o histórico de cada um.`
+      : n === 1
+        ? `${desc ? 'O produto deste guia está com desconto hoje.' : 'Acompanhamos o preço do produto deste guia.'} Veja o preço riscado, o % de desconto e o histórico de preço junto com outros ${total} produtos.`
+        : `${desc === 1 ? '1 produto citado neste guia está com desconto hoje.' : desc ? `${desc} produtos citados neste guia estão com desconto hoje.` : 'Acompanhamos o preço dos produtos citados neste guia.'} Veja o preço riscado, o % de desconto e o histórico de preço de cada um.`;
+}
+---
+
+{variante === 'post' ? (
+  <aside class="bfl" aria-label="Black Friday 2026">
+    <p class="bfl__tag">Black Friday 2026</p>
+    <p class="bfl__txt">{texto}</p>
+    <ul class="bfl__links">
+      {cats.map((c) => (
+        <li><a href={`/black-friday/${c}/`}>Ofertas de {plural(c).toLowerCase()} na Black Friday</a></li>
+      ))}
+      <li><a href="/black-friday/">Todas as ofertas de instrumentos musicais na Black Friday</a></li>
+    </ul>
+  </aside>
+) : (
+  <section class="bfh max-w-6xl mx-auto px-4" aria-labelledby="bfh-titulo">
+    <div class="bfh__box">
+      <div class="bfh__topo">
+        <div>
+          <p class="bfl__tag">Sexta, 27 de novembro</p>
+          <h2 id="bfh-titulo" class="bfh__titulo">Black Friday de instrumentos musicais</h2>
+          <p class="bfh__txt">{total} produtos acompanhados, {comDesconto} com desconto hoje. Preço riscado, % de desconto e histórico de preço de cada um.</p>
+        </div>
+        <a href="/black-friday/" class="bfh__cta">Ver as ofertas</a>
+      </div>
+      <ul class="bfh__cats">
+        {comPagina.map((c) => (
+          <li><a href={`/black-friday/${c}/`}>{plural(c)}</a></li>
+        ))}
+      </ul>
+    </div>
+  </section>
+)}
+
+<style>
+  .bfl {
+    margin-top: 2.5rem;
+    padding: 1.1rem 1.25rem;
+    border: 1px solid var(--color-border, #2a2a2e);
+    border-left: 4px solid #e63946;
+    border-radius: 0.75rem;
+    background: linear-gradient(100deg, rgba(230, 57, 70, 0.09), rgba(245, 158, 11, 0.05) 60%, transparent);
+  }
+  .bfl__tag {
+    margin: 0 0 0.35rem;
+    font-size: 0.72rem;
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #e63946;
+  }
+  .bfl__txt { margin: 0 0 0.6rem; font-size: 0.95rem; line-height: 1.55; }
+  .bfl__links { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.3rem; }
+  .bfl__links a, .bfh__cats a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; text-decoration-color: rgba(230, 57, 70, 0.5); }
+  .bfl__links a:hover { text-decoration-color: #e63946; }
+
+  .bfh { padding-top: 2.5rem; }
+  .bfh__box {
+    padding: 1.5rem;
+    border-radius: 1rem;
+    color: #f4f4f5;
+    background:
+      radial-gradient(circle at 12% 0%, rgba(230, 57, 70, 0.45), transparent 55%),
+      radial-gradient(circle at 95% 100%, rgba(245, 158, 11, 0.3), transparent 50%),
+      #0b0b0d;
+  }
+  .bfh__topo { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 1rem; }
+  .bfh .bfl__tag { color: #fca5a5; }
+  .bfh__titulo { margin: 0 0 0.35rem; font-size: clamp(1.35rem, 3vw, 1.9rem); font-weight: 900; line-height: 1.15; }
+  .bfh__txt { margin: 0; color: #d4d4d8; font-size: 0.95rem; max-width: 46rem; }
+  .bfh__cta {
+    flex-shrink: 0;
+    padding: 0.65rem 1.2rem;
+    border-radius: 999px;
+    background: #e63946;
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.92rem;
+  }
+  .bfh__cta:hover { background: #d62f3c; }
+  .bfh__cats { margin: 1.1rem 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 0.4rem; }
+  .bfh__cats a {
+    display: inline-block;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    color: #f4f4f5;
+    font-size: 0.8rem;
+    text-decoration: none;
+  }
+  .bfh__cats a:hover { border-color: #fde047; color: #fde047; }
+  @media (max-width: 520px) {
+    .bfh__box { padding: 1.1rem; }
+    .bfh__cta { width: 100%; text-align: center; }
+  }
+</style>
