@@ -41,9 +41,9 @@ integrantes:
           urlAfiliado: https://meli.la/2kvn2eF
         low:
           nome: Shure SM58
-          preco: ~R$ 829
+          preco: ~R$ 907
           obs: Captação vocal clássica e confiável no palco.
-          urlAfiliado: https://meli.la/1u1GNrd
+          urlAfiliado: https://meli.la/1Hc7CqW
   - nome: The Hooligans
     funcao: Teclas / Sopros
     foto: /images/the-hooligans-brunomars-sonar.webp

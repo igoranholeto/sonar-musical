@@ -95,10 +95,10 @@ integrantes:
           similar: "Kayserburg GH160C (piano de cauda)"
           urlAfiliado: https://meli.la/2xiikQp
         low:
-          nome: Yamaha P-125 (piano digital)
-          preco: ~R$ 4.000
+          nome: Yamaha P-145 (piano digital)
+          preco: ~R$ 2.944
           obs: Toque leve com sons de piano acústico convincentes.
-          urlAfiliado: https://meli.la/2ESeLVm
+          urlAfiliado: https://meli.la/1LskgJN
   - foto: /images/paulchambers_sq.webp
     fotoAlt: paul chambers
     pontos:

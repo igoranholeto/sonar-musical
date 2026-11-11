@@ -1,8 +1,8 @@
 {
   "nome": "Memphis AC-39 Nylon",
-  "meli": "https://meli.la/2DfiLTD",
-  "preco": 535,
-  "precoEm": "2026-11-10",
+  "meli": "https://meli.la/1PiYpLo",
+  "preco": 443.65,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -12,10 +12,14 @@
     {
       "data": "2026-11-10",
       "preco": 535
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 443.65
     }
   ],
-  "nota": 4,
-  "avaliacoes": 1,
+  "nota": 4.7,
+  "avaliacoes": 295,
   "imagemAlt": "Memphis AC-39 Nylon",
   "imagem": "/images/produtos/memphis-ac-39.webp"
 }
