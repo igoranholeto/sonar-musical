@@ -1,7 +1,7 @@
 {
   "nome": "Fender CD-60SCE-12",
   "meli": "https://meli.la/1fbMkwW",
-  "preco": 2839,
+  "preco": 2669,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -15,11 +15,82 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2839
+      "preco": 2669
     }
   ],
-  "nota": 4.8,
-  "avaliacoes": 816,
+  "nota": 4.9,
+  "avaliacoes": 913,
   "imagemAlt": "Fender CD-60SCE-12",
-  "imagem": "/images/produtos/fender-cd-60sce-12.webp"
+  "imagem": "/images/produtos/fender-cd-60sce-12.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3505,
+    "off": 23,
+    "parcelas": "12x R$256,54",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-fender-classic-design-cd-60sce-12-para-destros-natural-nogueira-brilhante/p/MLB15698797"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Nogueira"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "12"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Pré-amplificador, Volume"
+    ],
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Classic Design"
+    ],
+    [
+      "Modelo",
+      "CD-60SCE 12"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

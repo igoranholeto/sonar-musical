@@ -1,7 +1,7 @@
 {
   "nome": "Yamaha P-145 (piano digital)",
   "meli": "https://meli.la/1LskgJN",
-  "preco": 2944,
+  "preco": 3099,
   "precoEm": "2026-11-11",
   "categoria": "teclado",
   "historico": [
@@ -11,11 +11,86 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2944
+      "preco": 3099
     }
   ],
   "nota": 4.9,
   "avaliacoes": 99,
   "imagemAlt": "Yamaha P-145 (piano digital)",
-  "imagem": "/images/produtos/yamaha-p-145.webp"
+  "imagem": "/images/produtos/yamaha-p-145.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 6100,
+    "off": 49,
+    "parcelas": "12x R$297,95",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-yamaha-p-145bt-bluetooth-c-fonte-p145bt-cor-preto/p/MLB52688693"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "P Series"
+    ],
+    [
+      "Modelo",
+      "P-145BT"
+    ],
+    [
+      "Tipo de alimentação",
+      "Elétrica"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento",
+      "Preto/Fosco"
+    ],
+    [
+      "Altura",
+      "12,9 cm"
+    ],
+    [
+      "Largura",
+      "132,6 cm"
+    ],
+    [
+      "Profundidade",
+      "26,8 cm"
+    ],
+    [
+      "Peso",
+      "11,1 kg"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo graduada"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "10"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "portátil, teclas sensíveis, bluetooth, pedal"
+    ]
+  ]
 }

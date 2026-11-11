@@ -19,5 +19,72 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-rjb4-jazz-bass.webp",
-  "imagemAlt": "Strinberg RJB4 (Jazz Bass)"
+  "imagemAlt": "Strinberg RJB4 (Jazz Bass)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$107 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-eletrico-strinberg-rjb-4-jazz-4-cordas-preto/p/MLB58694598"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "iniciantes estudo versátil"
+    ],
+    [
+      "Modelo",
+      "RJB 4"
+    ],
+    [
+      "Tipo de baixo",
+      "Contrabaixo elétrico, passivo, 4 cordas, estilo Jazz Bass"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Maple bolt-on (parafusado)"
+    ],
+    [
+      "Tipo de ponte",
+      "Ponte padrão (standard), possivelmente com saddles ajustáveis"
+    ],
+    [
+      "Tipo de captadores",
+      "Dois captadores Jazz Bass (JB) passivos"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 3
 }

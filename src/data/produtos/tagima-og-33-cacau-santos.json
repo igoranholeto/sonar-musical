@@ -19,5 +19,60 @@
     }
   ],
   "imagem": "/images/produtos/tagima-og-33-cacau-santos.webp",
-  "imagemAlt": "Tagima OG-33 Cacau Santos"
+  "imagemAlt": "Tagima OG-33 Cacau Santos",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1299,
+    "off": 3,
+    "parcelas": "10x R$126 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-cacau-santos-folk-non-cutaway-og-33/up/MLBU5470455111"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Okoume"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Grand Auditorium"
+    ],
+    [
+      "Material do tampo",
+      "Okoume"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "OG-33"
+    ],
+    [
+      "Modelo",
+      "OG-33 Cacau Santos"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

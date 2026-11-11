@@ -19,5 +19,52 @@
     }
   ],
   "imagem": "/images/produtos/waldman-gte-300-telecaster.webp",
-  "imagemAlt": "Waldman GTE-300 (Telecaster)"
+  "imagemAlt": "Waldman GTE-300 (Telecaster)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$98,13",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-telecaster-waldman-gte-300-6-cordas-preta-eletrica/p/MLB27495836"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Waldman"
+    ],
+    [
+      "Linha",
+      "Telecaster"
+    ],
+    [
+      "Modelo",
+      "GTE-300"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "480 mm"
+    ]
+  ],
+  "nota": 4.5,
+  "avaliacoes": 8
 }

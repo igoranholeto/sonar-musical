@@ -11,5 +11,80 @@
     }
   ],
   "imagemAlt": "Eagle CH70 Mini Jumbo",
-  "imagem": "/images/produtos/eagle-ch70.webp"
+  "imagem": "/images/produtos/eagle-ch70.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1803,
+    "off": 25,
+    "parcelas": "10x R$134,99 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eagle-ch70-yb-mini-jumbo-eletroacustico-com-bag/p/MLB80690170"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Laurel"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Mini Jumbo"
+    ],
+    [
+      "Material do tampo",
+      "Bordo flameado"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Louro"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bag Eagle Deluxe"
+    ],
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Linha",
+      "Pro Series"
+    ],
+    [
+      "Modelo",
+      "CH70"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

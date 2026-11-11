@@ -1,7 +1,7 @@
 {
   "nome": "Giannini Start SF-14",
   "meli": "https://meli.la/1DYuM6Y",
-  "preco": 550,
+  "preco": 538,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -15,9 +15,77 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 550
+      "preco": 538
     }
   ],
   "imagem": "/images/produtos/giannini-start-sf-14.webp",
-  "imagemAlt": "Giannini Start SF-14"
+  "imagemAlt": "Giannini Start SF-14",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 747,
+    "off": 27,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-sf-14-flat-aco-preto/p/MLB21402668"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Start"
+    ],
+    [
+      "Modelo",
+      "SF-14"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Giannini"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Equalizador, Pré-amplificador"
+    ],
+    [
+      "Acessórios incluídos",
+      "chave de regulagem"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Flat"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 107
 }

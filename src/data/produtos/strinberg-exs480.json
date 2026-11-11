@@ -11,5 +11,60 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-exs480.webp",
-  "imagemAlt": "Strinberg EXS480"
+  "imagemAlt": "Strinberg EXS480",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$189,25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-strinberg-explorer-exs480-preta-com-bag-estofado/up/MLBU4127937976"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Explorer"
+    ],
+    [
+      "Modelo",
+      "EXS480"
+    ],
+    [
+      "Forma do corpo",
+      "Explorer"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Preto"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "648 mm"
+    ]
+  ],
+  "nota": 4,
+  "avaliacoes": 1
 }

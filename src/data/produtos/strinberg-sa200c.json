@@ -15,5 +15,78 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-sa200c.webp",
-  "imagemAlt": "Strinberg SA200C"
+  "imagemAlt": "Strinberg SA200C",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1299,
+    "off": 36,
+    "parcelas": "12x R$79,68",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sa200c-black-cordas-metal-fosco/p/MLB15561686"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Figueira-benjamim"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack, XLR"
+    ],
+    [
+      "Tipo de ressonador",
+      "Cone único biscoito"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Strinberg"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Louro-indiano"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Pré-amplificador"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo, Bag"
+    ],
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Black"
+    ],
+    [
+      "Modelo",
+      "SA200C"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 479
 }

@@ -15,5 +15,66 @@
       "data": "2026-11-11",
       "preco": 9927
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$992,78 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-flying-v-black-black/p/MLB36855397"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Linha",
+      "2020"
+    ],
+    [
+      "Modelo",
+      "Flying V"
+    ],
+    [
+      "Forma do corpo",
+      "Flying V"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Ebony"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Figueira-benjamim"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ]
   ]
 }

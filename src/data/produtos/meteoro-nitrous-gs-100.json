@@ -15,5 +15,76 @@
     }
   ],
   "imagem": "/images/produtos/meteoro-nitrous-gs-100.webp",
-  "imagemAlt": "Meteoro Nitrous GS 100"
+  "imagemAlt": "Meteoro Nitrous GS 100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$289,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-nitrous-gs-100-transistor-para-guitarra-de-100w-cor-preto/p/MLB6074947"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "Nitrous"
+    ],
+    [
+      "Modelo",
+      "nitrous gs 100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "17 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "63 cm x 32 cm x 55 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "100 W"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 133
 }

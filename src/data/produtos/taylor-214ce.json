@@ -19,5 +19,80 @@
     }
   ],
   "imagemAlt": "Taylor 214ce",
-  "imagem": "/images/produtos/taylor-214ce.webp"
+  "imagem": "/images/produtos/taylor-214ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$1.357 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-taylor-214ce-grand-auditorium-aco-c-pre-amplificador/p/MLB15109469"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Taylor"
+    ],
+    [
+      "Linha",
+      "200"
+    ],
+    [
+      "Modelo",
+      "214ce"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Acetinado"
+    ],
+    [
+      "Forma do corpo",
+      "Grand Auditorium"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Pau-rosa"
+    ],
+    [
+      "Materiais dos laterais",
+      "Pau-rosa"
+    ],
+    [
+      "Tamanho do corpo",
+      "20 \""
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 9
 }

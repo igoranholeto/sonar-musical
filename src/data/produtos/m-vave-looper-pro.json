@@ -15,5 +15,70 @@
     }
   ],
   "imagem": "/images/produtos/m-vave-looper-pro.webp",
-  "imagemAlt": "M-Vave Looper Pro"
+  "imagemAlt": "M-Vave Looper Pro",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 260,
+    "off": 29,
+    "parcelas": "12x R$18,21",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-m-vave-looper-pro-para-guitarra-com-9-loops-e-afinador-integrado/p/MLB40868406"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "Looper Pro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "9 cm x 4 cm x 4.95 cm"
+    ],
+    [
+      "Peso",
+      "200 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Afinador, Looper"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Tipo de tela",
+      "LED colorida"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 207
 }

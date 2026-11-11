@@ -1,0 +1,88 @@
+{
+  "nome": "Yamaha CK61",
+  "meli": "https://meli.la/12Sw2E6",
+  "preco": 7646,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 7646
+    }
+  ],
+  "imagemAlt": "Yamaha CK61",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 8351,
+    "off": 8,
+    "parcelas": "10x R$764,64 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-ck61-61-teclas-stage-keyboard-bluetooth/p/MLB28959370"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Stage"
+    ],
+    [
+      "Modelo",
+      "CK61"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Quantidade de ritmos",
+      "128"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fonte"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "MIDI [ENTR.]/[SAÍDA]"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Saída para fones de ouvido, USB"
+    ],
+    [
+      "Altura",
+      "11 cm"
+    ],
+    [
+      "Largura",
+      "91 cm"
+    ],
+    [
+      "Profundidade",
+      "29,1 cm"
+    ],
+    [
+      "Peso",
+      "5,6 kg"
+    ],
+    [
+      "Recursos",
+      "interface midi, metrónomo, resposta ao toque"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 47,
+  "imagem": "/images/produtos/yamaha-ck61.webp"
+}

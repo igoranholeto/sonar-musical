@@ -1,0 +1,76 @@
+{
+  "nome": "Casio CDP-S160 (piano digital)",
+  "meli": "https://meli.la/2eFXPQ9",
+  "preco": 2858,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2858
+    }
+  ],
+  "imagemAlt": "Casio CDP-S160 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3829,
+    "off": 25,
+    "parcelas": "12x R$274,74",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-cdp-s160-de-88-teclas-com-suporte-pedal-e-midi-preto/p/MLB27369214"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "CDP"
+    ],
+    [
+      "Modelo",
+      "cdp-s160"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "88"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "10"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte ou pilhas"
+    ],
+    [
+      "Acessórios incluídos",
+      "Pedal, Porta partituras e suporte x"
+    ],
+    [
+      "Itens inclusos",
+      "pedais"
+    ],
+    [
+      "Recursos",
+      "interface midi"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 74,
+  "imagem": "/images/produtos/casio-cdp-s160-piano-digital.webp"
+}

@@ -17,5 +17,48 @@
   "nota": 5,
   "avaliacoes": 4,
   "imagemAlt": "Bandolim Marquês BND-100",
-  "imagem": "/images/produtos/marques-bnd-100.webp"
+  "imagem": "/images/produtos/marques-bnd-100.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 827,
+    "off": 15,
+    "parcelas": "10x R$69,96 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bandolim-marques-estudante-natural-fosco-acusticobnd-100nsac/p/MLB26590911"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Marquês"
+    ],
+    [
+      "Código do fabricante",
+      "BND-100NSAC"
+    ],
+    [
+      "Material do braço",
+      "Mogno"
+    ],
+    [
+      "Material do corpo",
+      "Mogno"
+    ],
+    [
+      "Forma do corpo",
+      "A-Style"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "8"
+    ]
+  ]
 }

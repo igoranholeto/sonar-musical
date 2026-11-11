@@ -1,0 +1,88 @@
+{
+  "nome": "Ibanez AZES40 (HSS)",
+  "meli": "https://meli.la/1vKhkKj",
+  "preco": 3565,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3565
+    }
+  ],
+  "imagemAlt": "Ibanez AZES40 (HSS)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4629,
+    "off": 23,
+    "parcelas": "10x R$356,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-ibanez-azes-hss-de-6-cordas-purist-blue/p/MLB24133372"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "AZES"
+    ],
+    [
+      "Modelo",
+      "AZES40PRB"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Purist Blue (PRB)"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Poblar"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "635 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Chave seletora de captadores",
+      "5 posições"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 4,
+  "imagem": "/images/produtos/ibanez-azes40.webp"
+}

@@ -1,7 +1,7 @@
 {
   "nome": "Seymour Duncan SH-4 JB",
   "meli": "https://meli.la/1UCR5DZ",
-  "preco": 972,
+  "preco": 966,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -12,8 +12,29 @@
     {
       "data": "2026-11-10",
       "preco": 972
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 966
     }
   ],
   "imagem": "/images/produtos/seymour-duncan-sh-4-jb.webp",
-  "imagemAlt": "Seymour Duncan SH-4 JB"
+  "imagemAlt": "Seymour Duncan SH-4 JB",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$93,81",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/seymour-duncan-sh-4-jb-bridge-humbucker-niquel-cromado-mod/p/MLB2086401281"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Seymour Duncan"
+    ],
+    [
+      "Modelo",
+      "SSH-4 NCOV"
+    ]
+  ]
 }

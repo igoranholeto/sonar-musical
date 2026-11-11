@@ -11,5 +11,56 @@
     }
   ],
   "imagemAlt": "Fender Player II Jazz Bass",
-  "imagem": "/images/produtos/fender-player-ii-jazz-bass.webp"
+  "imagem": "/images/produtos/fender-player-ii-jazz-bass.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$916,10 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-4-cordas-fender-player-ii-jazz-bass-polar-white/up/MLBU2923391289"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Modelo",
+      "Player Ii Jazz Bass"
+    ],
+    [
+      "Tipo de baixo",
+      "4 cordas elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Tipo de captadores",
+      "Player Series Alnico 5 Single-Coil Jazz Bass®"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Ativo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

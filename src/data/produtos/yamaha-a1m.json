@@ -13,5 +13,76 @@
   "nota": 5,
   "avaliacoes": 2,
   "imagemAlt": "Yamaha A1M",
-  "imagem": "/images/produtos/yamaha-a1m.webp"
+  "imagem": "/images/produtos/yamaha-a1m.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4799,
+    "off": 13,
+    "parcelas": "12x R$398,79",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-eletrico-yamaha-a1m-dreadnought-para-destros-vintage-natural/p/MLB14203233"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "A"
+    ],
+    [
+      "Modelo",
+      "A1M"
+    ],
+    [
+      "Cor",
+      "Vintage natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

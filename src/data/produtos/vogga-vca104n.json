@@ -11,7 +11,69 @@
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 531,
+  "avaliacoes": 541,
   "imagemAlt": "Vogga VCA104N (38\", nylon)",
-  "imagem": "/images/produtos/vogga-vca104n.webp"
+  "imagem": "/images/produtos/vogga-vca104n.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 372,
+    "off": 25,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-vogga-vca104n-38-nylon-preto-78-envernizado/p/MLB22331445"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "7/8"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Marca",
+      "Vogga"
+    ],
+    [
+      "Linha",
+      "VCA"
+    ],
+    [
+      "Modelo",
+      "VCA104N"
+    ]
+  ]
 }

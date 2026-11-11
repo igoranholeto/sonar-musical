@@ -19,5 +19,78 @@
     }
   ],
   "imagem": "/images/produtos/tagima-juninho-afram.webp",
-  "imagemAlt": "Tagima Juninho Afram"
+  "imagemAlt": "Tagima Juninho Afram",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1400,
+    "off": 28,
+    "parcelas": "12x R$96,78",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-juninho-afram-fosco-folk-cutaway-eq-acustica-aco/p/MLB44281318"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Techwood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Tipos de controle",
+      "Volume, Equalizador, Afinador"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Gran Reserva"
+    ],
+    [
+      "Modelo",
+      "Juninho Afram"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Gran Reserva"
+    ],
+    [
+      "Material do tampo",
+      "Sapele"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 385
 }

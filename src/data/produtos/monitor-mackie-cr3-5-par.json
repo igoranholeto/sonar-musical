@@ -1,0 +1,84 @@
+{
+  "nome": "Monitor Mackie CR3.5 (par)",
+  "meli": "https://meli.la/2VT2AJX",
+  "preco": 883,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 883
+    }
+  ],
+  "imagemAlt": "Monitor Mackie CR3.5 (par)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1290,
+    "off": 31,
+    "parcelas": "10x R$88,27 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/monitor-de-audio-cr35-par-mackie/p/MLB46187367"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mackie"
+    ],
+    [
+      "Modelo",
+      "CR3.5"
+    ],
+    [
+      "Quantidade de monitores",
+      "2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "TRS, RCA, 3.5 mm"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Woofer, Tweeter"
+    ],
+    [
+      "Potência",
+      "50 W"
+    ],
+    [
+      "Resposta em frequência",
+      "70 Hz - 20 Hz"
+    ],
+    [
+      "Altura",
+      "20,5 cm"
+    ],
+    [
+      "Largura",
+      "14 cm"
+    ],
+    [
+      "Profundidade",
+      "18 cm"
+    ],
+    [
+      "Peso",
+      "3,7 kg"
+    ],
+    [
+      "Recursos",
+      "near-field"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 47,
+  "imagem": "/images/produtos/monitor-mackie-cr3-5-par.webp"
+}

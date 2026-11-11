@@ -23,5 +23,70 @@
       "data": "2026-11-10",
       "preco": 2232
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$214,61",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-squier-bullet-stratocaster-ht-sunburst/up/MLBU1969142949"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender Squier"
+    ],
+    [
+      "Linha",
+      "Bullet"
+    ],
+    [
+      "Código do fabricante",
+      "037-1001-532"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Louro indiano"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ]
   ]
 }

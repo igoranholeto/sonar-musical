@@ -13,5 +13,54 @@
   "nota": 4.8,
   "avaliacoes": 103,
   "imagemAlt": "Michael VNM40",
-  "imagem": "/images/produtos/michael-vnm40.webp"
+  "imagem": "/images/produtos/michael-vnm40.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$73,48",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-michael-44-vnm40-completo-com-estojo-arco-e-breu-cor-natural/p/MLB34698564"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "VNM40"
+    ],
+    [
+      "Cor",
+      "Verniz Translúcido Avermelhado"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz Translúcido Avermelhado"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Tampo Sólido em Spruce"
+    ],
+    [
+      "Acessórios incluídos",
+      "1 arco de crina animal • Acompanha case térmico com higrômetro, breu e"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

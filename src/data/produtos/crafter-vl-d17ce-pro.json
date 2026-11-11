@@ -21,5 +21,80 @@
   "nota": 5,
   "avaliacoes": 9,
   "imagemAlt": "Crafter VL D-17CE Pro",
-  "imagem": "/images/produtos/crafter-vl-d17ce-pro.webp"
+  "imagem": "/images/produtos/crafter-vl-d17ce-pro.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 6999,
+    "off": 42,
+    "parcelas": "12x R$390,14",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-folk-cutway-aco-crafter-vl-d-17ce-pro-com-bag-vl-pro/p/MLB35778478"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Marca",
+      "Crafter"
+    ],
+    [
+      "Linha",
+      "VL Pro"
+    ],
+    [
+      "Modelo",
+      "VL D-17CE"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilho"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

@@ -13,5 +13,70 @@
   "nota": 4.8,
   "avaliacoes": 18,
   "imagemAlt": "Strinberg JBS55 5 cordas",
-  "imagem": "/images/produtos/strinberg-jbs55.webp"
+  "imagem": "/images/produtos/strinberg-jbs55.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$143,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-strinberg-jbs55na-natural-5-cordas-passivo-eletrico/p/MLB38893749"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Jazz Bass"
+    ],
+    [
+      "Modelo",
+      "JBS-55"
+    ],
+    [
+      "Tipo de baixo",
+      "PASSIVO"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Bege"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Jazz"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Configuração dos captadores",
+      "SS"
+    ]
+  ]
 }

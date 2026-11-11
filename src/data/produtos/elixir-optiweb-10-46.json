@@ -23,5 +23,45 @@
       "data": "2026-11-11",
       "preco": 129
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 218,
+    "off": 40,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-elixir-cordas-010-light-optiweb-guitarra/up/MLBU1411576526"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Elixir"
+    ],
+    [
+      "Modelo",
+      "19052"
+    ],
+    [
+      "Instrumento recomendado",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      ".010 .013 .017 .026 .036 .046"
+    ],
+    [
+      "Materiais",
+      "Aço"
+    ],
+    [
+      "Tensão",
+      "Light"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 414
 }

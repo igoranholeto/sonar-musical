@@ -15,5 +15,74 @@
     }
   ],
   "imagem": "/images/produtos/native-instruments-komplete-audio-2.webp",
-  "imagemAlt": "Native Instruments Komplete Audio 2"
+  "imagemAlt": "Native Instruments Komplete Audio 2",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$179,60 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-native-instruments-komplete-audio-2-fl/up/MLBU1093586089"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Native Instruments"
+    ],
+    [
+      "Modelo",
+      "placa som usb gravacao producao musical estudio"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Tipos de conexões",
+      "1 USB 2.0, 1 jack L/R 6.3 mm out, 1 phone jack 6.3 mm, 2 combo XLR/jac"
+    ],
+    [
+      "Software compatível",
+      "Live lite 10"
+    ],
+    [
+      "Latência",
+      "0 ms"
+    ],
+    [
+      "Altura",
+      "5,2 cm"
+    ],
+    [
+      "Largura",
+      "14 cm"
+    ],
+    [
+      "Profundidade",
+      "11,2 cm"
+    ],
+    [
+      "Peso",
+      "360 g"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma"
+    ]
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "nome": "Giannini GENW Nylon",
   "meli": "https://meli.la/24Mkbd4",
-  "preco": 19,
+  "preco": 18,
   "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
@@ -12,8 +12,58 @@
     {
       "data": "2026-11-10",
       "preco": 19
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 18
     }
   ],
   "imagem": "/images/produtos/giannini-genw-nylon.webp",
-  "imagemAlt": "Giannini GENW Nylon"
+  "imagemAlt": "Giannini GENW Nylon",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-giannini-genw-5921-para-violao-nylon-com-6-cordas/p/MLB53807263"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Nylon"
+    ],
+    [
+      "Modelo",
+      "GENW 5921"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão Nylon"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "0.028, 0.030, 0.032, 0.040, 0.043"
+    ],
+    [
+      "Materiais",
+      "Náilon"
+    ],
+    [
+      "Notas",
+      "Calibres de 0.028 a 0.043, Náilon, 06 cordas"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 8439
 }

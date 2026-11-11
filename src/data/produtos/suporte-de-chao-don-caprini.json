@@ -1,0 +1,63 @@
+{
+  "nome": "Suporte de chão Don Caprini",
+  "meli": "https://meli.la/1o3S9EF",
+  "preco": 49,
+  "precoEm": "2026-11-11",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 49
+    }
+  ],
+  "imagemAlt": "Suporte de chão Don Caprini",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 79,
+    "off": 37,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-de-chao-dobravel-don-caprini-para-violao-guitarra-e-baixo-universal-e-portatil/p/MLB67662721"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Don Caprini"
+    ],
+    [
+      "Modelo",
+      "Suporte Chão Dobrável Violão"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "39 cm x 28 cm x 30 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De piso"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Material",
+      "Ferro, borracha, plastico"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "1"
+    ],
+    [
+      "Peso máximo suportado",
+      "10 kg"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 478,
+  "imagem": "/images/produtos/suporte-de-chao-don-caprini.webp"
+}

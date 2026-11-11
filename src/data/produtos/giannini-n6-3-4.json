@@ -1,7 +1,7 @@
 {
   "nome": "Giannini N6 3/4",
   "meli": "https://meli.la/2raUkhE",
-  "preco": 332,
+  "preco": 350,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -12,8 +12,51 @@
     {
       "data": "2026-11-10",
       "preco": 332
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 350
     }
   ],
   "imagem": "/images/produtos/giannini-n6-3-4.webp",
-  "imagemAlt": "Giannini N6 3/4"
+  "imagemAlt": "Giannini N6 3/4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 384,
+    "off": 8,
+    "parcelas": "6x R$58,33 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-infantil-giannini-n6-36-nylon-acustico-34-preto/up/MLBU5732112542"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "N.6"
+    ],
+    [
+      "Modelo",
+      "N.6 (36\") Infantil violão infantil, violão giannini, violão nylon infa"
+    ],
+    [
+      "Forma do corpo",
+      "Clássico"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Linden"
+    ]
+  ]
 }

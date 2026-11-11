@@ -23,5 +23,76 @@
     }
   ],
   "imagem": "/images/produtos/valeton-gp-50.webp",
-  "imagemAlt": "Valeton GP-50"
+  "imagemAlt": "Valeton GP-50",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$78,71",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-valeton-gp50-ir-loader-nam-multiefeitos-preto/p/MLB65366468"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Valeton"
+    ],
+    [
+      "Modelo",
+      "GP50"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "19.8 cm x 13.4 cm x 2.8 cm"
+    ],
+    [
+      "Peso",
+      "800 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "100"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica, Baixo, Guitarra acústica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Chorus, Flanger, Tremolo"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Local do material, USB"
+    ],
+    [
+      "Tipo de pilha",
+      "Nao contém"
+    ],
+    [
+      "Tipo de tela",
+      "LED"
+    ],
+    [
+      "Frequência de amostragem",
+      "44,1 kHz"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 177
 }

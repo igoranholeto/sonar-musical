@@ -1,0 +1,74 @@
+{
+  "nome": "Audio-Technica AT2020",
+  "meli": "https://meli.la/1xUBS2M",
+  "preco": 820,
+  "precoEm": "2026-11-11",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 820
+    }
+  ],
+  "imagemAlt": "Audio-Technica AT2020",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$79,28",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-condensador-preto-audio-technica-at2020/p/MLB57768998"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Audio-Technica"
+    ],
+    [
+      "Linha",
+      "serie 20"
+    ],
+    [
+      "Modelo",
+      "AT2020"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Tipo de alimentação",
+      "Interface de áudio"
+    ],
+    [
+      "Formatos de microfone",
+      "Estúdio"
+    ],
+    [
+      "Tipos de microfone",
+      "Condensador"
+    ],
+    [
+      "Padrões polares",
+      "Cardioide"
+    ],
+    [
+      "Quantidade de microfones",
+      "1"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "Para streaming, Para podcast, Para músicos, Locutores"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa, Suporte de montagem com rosca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 2707,
+  "imagem": "/images/produtos/audio-technica-at2020.webp"
+}

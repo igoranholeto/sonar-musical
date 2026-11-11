@@ -13,5 +13,48 @@
   "nota": 4.7,
   "avaliacoes": 18,
   "imagemAlt": "Donner DED-70 (completa, com banco e fone)",
-  "imagem": "/images/produtos/donner-ded-70.webp"
+  "imagem": "/images/produtos/donner-ded-70.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3279,
+    "off": 45,
+    "parcelas": "10x R$179,17 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-ded70-mesh-completa-c-banco-fone-donner-preto/p/MLB47917343"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Donner"
+    ],
+    [
+      "Modelo",
+      "DED-70"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Funções do módulo de som",
+      "Metrônomo, Gravação"
+    ],
+    [
+      "Tipo de alimentação",
+      "Bateria/Corrente doméstica"
+    ],
+    [
+      "Tipos de conexões",
+      "MIDI, USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato de condução, prato de ataque, chimbal, pedais, baquetas, módulo de som, banqueta"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ]
 }

@@ -15,5 +15,30 @@
     }
   ],
   "imagem": "/images/produtos/condor-gx40.webp",
-  "imagemAlt": "Condor GX40"
+  "imagemAlt": "Condor GX40",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$169,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-condor-gx40f-szbl-strato-estilizada/p/MLB36854148"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Condor"
+    ],
+    [
+      "Modelo",
+      "GX40FSZBL"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

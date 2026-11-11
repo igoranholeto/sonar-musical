@@ -1,0 +1,88 @@
+{
+  "nome": "Cavaquinho Giannini Performance Plus CS-34",
+  "meli": "https://meli.la/31kKN5a",
+  "preco": 386,
+  "precoEm": "2026-11-11",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 386
+    }
+  ],
+  "imagemAlt": "Cavaquinho Giannini Performance Plus CS-34",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1000,
+    "off": 61,
+    "parcelas": "12x R$37,76",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-giannini-performance-plus-sapele-spruce-capa/p/MLB60839409"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "Performance Plus CS-34 SLS"
+    ],
+    [
+      "Cor",
+      "Natural acetinado"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz fosco"
+    ],
+    [
+      "Materiais do corpo",
+      "Sapele"
+    ],
+    [
+      "Material do braço",
+      "Okoumé"
+    ],
+    [
+      "Material do diapasão",
+      "Laurel Maciço"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Laurel maciço"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa"
+    ],
+    [
+      "Altura",
+      "8 cm"
+    ],
+    [
+      "Largura",
+      "25 cm"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 35,
+  "imagem": "/images/produtos/giannini-performance-plus.webp"
+}

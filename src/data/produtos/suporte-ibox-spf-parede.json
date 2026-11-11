@@ -11,7 +11,53 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 6298,
+  "avaliacoes": 6310,
   "imagemAlt": "Suporte de Parede Ibox SPF",
-  "imagem": "/images/produtos/suporte-ibox-spf-parede.webp"
+  "imagem": "/images/produtos/suporte-ibox-spf-parede.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 25,
+    "off": 6,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ibox-spf-suporte-de-parede-para-violao-guitarra-baixo-ukulele-gancho-cor-preto/p/MLB27048507"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibox"
+    ],
+    [
+      "Modelo",
+      "SPF"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "5 cm x 13.5 cm x 9 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De parede"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Bandolim, Banjo, Cavaquinho, Guitarra, Ukulele, Viola, Violino,"
+    ],
+    [
+      "Material",
+      "Apoio Emborrachado"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "1"
+    ],
+    [
+      "Peso máximo suportado",
+      "12 kg"
+    ]
+  ]
 }

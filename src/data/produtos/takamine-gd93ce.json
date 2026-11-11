@@ -23,7 +23,74 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 81,
+  "avaliacoes": 83,
   "imagemAlt": "Takamine GD93CE",
-  "imagem": "/images/produtos/takamine-gd93ce.webp"
+  "imagem": "/images/produtos/takamine-gd93ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 7499,
+    "off": 40,
+    "parcelas": "12x R$428,20",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-takamine-gd93ce-n-tk-40d-g-series-folk-eletroacustico-natural-gloss-com-cutaway/p/MLB15304557"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Takamine"
+    ],
+    [
+      "Linha",
+      "G Series"
+    ],
+    [
+      "Modelo",
+      "GD93CE N"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Folk com Cutaway"
+    ],
+    [
+      "Materiais do fundo",
+      "Black walnut laminado, Figured Maple Laminado"
+    ],
+    [
+      "Materiais dos laterais",
+      "Black walnut laminado"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Comprimento da escala",
+      "642 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

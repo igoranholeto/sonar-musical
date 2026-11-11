@@ -27,5 +27,69 @@
       "data": "2026-11-11",
       "preco": 2323
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2599,
+    "off": 10,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-ibanez-grg121dx-bkf-rg-gio-black/p/MLB17469494"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "RG GIO"
+    ],
+    [
+      "Modelo",
+      "GRG121DX"
+    ],
+    [
+      "Forma do corpo",
+      "Soloist"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black flat"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Solid body"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 683
 }

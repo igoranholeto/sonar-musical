@@ -9,5 +9,27 @@
       "data": "2026-10-22",
       "preco": 30
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 36,
+    "off": 17,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/slide-de-metal-aco-inox-acessorio-para-guitarra-e-violao/up/MLBU747421880"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ljferramentas"
+    ],
+    [
+      "Modelo",
+      "X"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 923,
+  "imagemAlt": "Slide de Metal Aço Inox para Guitarra e Violão",
+  "imagem": "/images/produtos/slide-de-metal-aco-inox-para-guitarra-e-violao.webp"
 }

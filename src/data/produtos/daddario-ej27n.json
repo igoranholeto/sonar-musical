@@ -19,5 +19,51 @@
     }
   ],
   "imagem": "/images/produtos/daddario-ej27n.webp",
-  "imagemAlt": "D'Addario EJ27N"
+  "imagemAlt": "D'Addario EJ27N",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-classico-daddario-ej27n-de-nailon-importado/p/MLB21868235"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Modelo",
+      "EJ27N"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão clássico"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "0.71, 0.81, 1.02, 0.74, 0.89, 1.09"
+    ],
+    [
+      "Materiais",
+      "Náilon"
+    ],
+    [
+      "Tensão",
+      "Normal"
+    ],
+    [
+      "Notas",
+      "E B G D A E"
+    ],
+    [
+      "Escala",
+      "1:10"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 5335
 }

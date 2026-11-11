@@ -17,5 +17,80 @@
   "nota": 4.8,
   "avaliacoes": 27,
   "imagemAlt": "Crafter DE-7 (tampo maciço)",
-  "imagem": "/images/produtos/crafter-de-7.webp"
+  "imagem": "/images/produtos/crafter-de-7.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3701,
+    "off": 10,
+    "parcelas": "10x R$333,09 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-crafter-folk-de-7-cutaway-eletrico-solido-cedro-cor-natural/p/MLB22871443"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilho"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Cedro maciço"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Marca",
+      "Crafter"
+    ],
+    [
+      "Linha",
+      "Standard"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

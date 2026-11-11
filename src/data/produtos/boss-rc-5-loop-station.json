@@ -19,5 +19,72 @@
     }
   ],
   "imagem": "/images/produtos/boss-rc-5-loop-station.webp",
-  "imagemAlt": "Boss RC-5 Loop Station"
+  "imagemAlt": "Boss RC-5 Loop Station",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$175,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-loop-station-rc-5-vermelho/p/MLB17756468"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Loop Station"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.6 cm"
+    ],
+    [
+      "Peso",
+      "450 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "2"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Looper, Reverb"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm mono, MIDI, USB-B"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 163
 }

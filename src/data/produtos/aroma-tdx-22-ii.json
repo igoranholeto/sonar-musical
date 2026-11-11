@@ -1,0 +1,64 @@
+{
+  "nome": "Aroma TDX-22 II",
+  "meli": "https://meli.la/1JqRWQX",
+  "preco": 3179,
+  "precoEm": "2026-11-11",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3179
+    }
+  ],
+  "imagemAlt": "Aroma TDX-22 II",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4499,
+    "off": 29,
+    "parcelas": "10x R$318 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-22-ii-completa-com-banco-e-fones-de-ouvido/p/MLB56459342"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Aroma"
+    ],
+    [
+      "Modelo",
+      "TDX-22 II"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "10"
+    ],
+    [
+      "Quantidade de sons",
+      "20"
+    ],
+    [
+      "Funções do módulo de som",
+      "Bluetooth"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte bivolt"
+    ],
+    [
+      "Tipos de conexões",
+      "USB, MIDI"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato splash, prato de condução, prato de ataque, surdo, chimbal, pedais, baquetas, módulo de som, banqueta"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 76,
+  "imagem": "/images/produtos/aroma-tdx-22-ii.webp"
+}

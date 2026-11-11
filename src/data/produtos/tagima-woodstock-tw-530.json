@@ -1,0 +1,88 @@
+{
+  "nome": "Tagima Woodstock TW-530",
+  "meli": "https://meli.la/1b3E3cB",
+  "preco": 848,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 848
+    }
+  ],
+  "imagemAlt": "Tagima Woodstock TW-530",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1186,
+    "off": 28,
+    "parcelas": "12x R$82",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-tagima-tw530-woodstock-tw-530-strato-cor-black-material-do-diapasao-bordo-orientacao-da-mao-destro/p/MLB25332585"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TG-530"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1712,
+  "imagem": "/images/produtos/tagima-woodstock-tw-530.webp"
+}

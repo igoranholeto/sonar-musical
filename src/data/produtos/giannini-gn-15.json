@@ -11,5 +11,58 @@
     }
   ],
   "imagem": "/images/produtos/giannini-gn-15.webp",
-  "imagemAlt": "Giannini GN-15"
+  "imagemAlt": "Giannini GN-15",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$79 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-giannini-nylon-acustico-estudo-gn-15-preto-gn15/p/MLB27548383"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Estudo"
+    ],
+    [
+      "Modelo",
+      "GN15BK10"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Materiais do braço",
+      "Pau-rosa"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ]
+  ]
 }

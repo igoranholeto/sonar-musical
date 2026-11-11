@@ -17,5 +17,54 @@
   "imagem": "/images/produtos/tagima-21k-soprano.webp",
   "imagemAlt": "Tagima 21K Soprano",
   "nota": 4.7,
-  "avaliacoes": 81
+  "avaliacoes": 81,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$30,23",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-acustico-soprano-tagima-21k-madeira-mahogany-fosco/p/MLB34832747"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Hawaii"
+    ],
+    [
+      "Modelo",
+      "21K"
+    ],
+    [
+      "Cor",
+      "Natural mahogany satin"
+    ],
+    [
+      "Tamanho",
+      "Soprano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Materiais",
+      "Madeira"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ]
+  ]
 }

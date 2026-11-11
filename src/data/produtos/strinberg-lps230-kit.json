@@ -23,5 +23,75 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-lps230-kit.webp",
-  "imagemAlt": "Strinberg LPS230 (kit)"
+  "imagemAlt": "Strinberg LPS230 (kit)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": false,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-3785601883-kit-guitarra-strinberg-les-paul-lps230-acessorios-cubo-cor-black-material-do-diapaso-pau-rosa-orientaco-da-mo-destro-_JM"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "LPS Series"
+    ],
+    [
+      "Modelo",
+      "LPS230"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 77
 }

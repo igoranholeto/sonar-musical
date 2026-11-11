@@ -19,5 +19,78 @@
     }
   ],
   "imagem": "/images/produtos/nux-mg-30-versatile-modeler.webp",
-  "imagemAlt": "Nux MG-30 Versatile Modeler"
+  "imagemAlt": "Nux MG-30 Versatile Modeler",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2528,
+    "off": 31,
+    "parcelas": "10x R$172,85 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-nux-versatile-modeler-mg-30-preto/p/MLB18586450"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "NUX"
+    ],
+    [
+      "Modelo",
+      "Versatile Modeler"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "16.6 cm x 31.3 cm x 5.4 cm"
+    ],
+    [
+      "Peso",
+      "1,5 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "11"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 3.5 mm, Jack 6.3 mm, USB-C"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 674
 }

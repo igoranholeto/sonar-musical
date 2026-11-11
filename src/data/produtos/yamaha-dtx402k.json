@@ -11,5 +11,54 @@
     }
   ],
   "imagemAlt": "Yamaha DTX402K",
-  "imagem": "/images/produtos/yamaha-dtx402k.webp"
+  "imagem": "/images/produtos/yamaha-dtx402k.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5719,
+    "off": 25,
+    "parcelas": "10x R$428,93 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-digital-yamaha-dtx-402k-para-iniciantes-original-nf/up/MLBU4068716189"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "DTX402K"
+    ],
+    [
+      "Quantidade de corpos",
+      "9"
+    ],
+    [
+      "Quantidade de sons",
+      "415"
+    ],
+    [
+      "Funções do módulo de som",
+      "Gravação, Metrônomo"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Tipos de conexões",
+      "USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato splash, prato de condução, prato de ataque, surdo, chimbal, pedais, módulo de som"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

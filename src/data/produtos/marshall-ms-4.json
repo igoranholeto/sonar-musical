@@ -13,5 +13,58 @@
   "nota": 5,
   "avaliacoes": 1,
   "imagemAlt": "Marshall MS-4 Micro Stack",
-  "imagem": "/images/produtos/marshall-ms-4.webp"
+  "imagem": "/images/produtos/marshall-ms-4.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$53,67",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-mini-combo-duplo-stack-marshall-ms-4/up/MLBU5174577503"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Marshall"
+    ],
+    [
+      "Modelo",
+      "micro stack caixa cubo amp"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "555 g"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "11 cm x 25 cm x 6 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Mini Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria 9V, Fonte 9v"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "1 W"
+    ]
+  ]
 }

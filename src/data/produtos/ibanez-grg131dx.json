@@ -1,0 +1,84 @@
+{
+  "nome": "Ibanez GRG131DX",
+  "meli": "https://meli.la/1zQ7dkQ",
+  "preco": 2098,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2098
+    }
+  ],
+  "imagemAlt": "Ibanez GRG131DX",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4999,
+    "off": 58,
+    "parcelas": "10x R$209,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rg-gio-grg131dx-de-choupo-black-flat-com-diapasao-de-amaranto/p/MLB17469489"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "RG GIO"
+    ],
+    [
+      "Modelo",
+      "GRG131DX"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black flat"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "5 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Jumbo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 180,
+  "imagem": "/images/produtos/ibanez-grg131dx.webp"
+}

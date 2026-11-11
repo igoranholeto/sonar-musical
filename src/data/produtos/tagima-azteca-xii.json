@@ -13,5 +13,72 @@
   "nota": 4.5,
   "avaliacoes": 8,
   "imagemAlt": "Tagima Azteca XII 12 cordas",
-  "imagem": "/images/produtos/tagima-azteca-xii.webp"
+  "imagem": "/images/produtos/tagima-azteca-xii.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 969,
+    "off": 7,
+    "parcelas": "12x R$87,48",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-12c-non-cutaway-eq-aco-azteca-xii-nc-bks-tagima/p/MLB76047838"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Código do fabricante",
+      "AZTECAXIINCBKS"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Materiais do fundo",
+      "Agathis"
+    ],
+    [
+      "Materiais dos laterais",
+      "Agathis"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Quantidade de cordas",
+      "12"
+    ],
+    [
+      "Marca das cordas",
+      "Tagima"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Purpleheart"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Materiais do braço",
+      "Okoumé"
+    ]
+  ]
 }

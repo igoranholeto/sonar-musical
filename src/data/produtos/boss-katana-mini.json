@@ -27,5 +27,72 @@
     }
   ],
   "imagem": "/images/produtos/boss-katana-mini.webp",
-  "imagemAlt": "Boss Katana Mini"
+  "imagemAlt": "Boss Katana Mini",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$133,10 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-para-guitarra-katana-mini-boss-cor-preto/p/MLB26038511"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Linha",
+      "Katana"
+    ],
+    [
+      "Modelo",
+      "Mini"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "1,2 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "23 cm x 11.6 cm x 18.1 cm"
+    ],
+    [
+      "Resposta mínima em frequência - Resposta máxima em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack 1/4\""
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "7 W"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 187
 }

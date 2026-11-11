@@ -15,5 +15,61 @@
     }
   ],
   "imagem": "/images/produtos/m-vave-elemental-delay.webp",
-  "imagemAlt": "M-Vave Elemental Delay"
+  "imagemAlt": "M-Vave Elemental Delay",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 200,
+    "off": 19,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-delay-m-vave-elemental-9-tipos-true-bypass-violeta-escuro/p/MLB51448738"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "Elemental"
+    ],
+    [
+      "Cor",
+      "Violeta-escuro"
+    ],
+    [
+      "Peso",
+      "230 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "9"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra acústica, Guitarra elétrica, Violão eletroacústico"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Delay"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Recursos",
+      "vocal, luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 552
 }

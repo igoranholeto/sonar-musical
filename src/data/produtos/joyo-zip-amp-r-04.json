@@ -1,7 +1,7 @@
 {
   "nome": "Joyo Zip Amp R-04",
   "meli": "https://meli.la/1i15UTE",
-  "preco": 279,
+  "preco": 277,
   "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
@@ -12,8 +12,61 @@
     {
       "data": "2026-11-10",
       "preco": 279
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 277
     }
   ],
   "imagem": "/images/produtos/joyo-zip-amp-r-04.webp",
-  "imagemAlt": "Joyo Zip Amp R-04"
+  "imagemAlt": "Joyo Zip Amp R-04",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 338,
+    "off": 18,
+    "parcelas": "12x R$27,13",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/joyo-r-04-zip-amp-pedal-overdrive-compressao-guitarra/p/MLB2031025882"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Joyo"
+    ],
+    [
+      "Modelo",
+      "R-04"
+    ],
+    [
+      "Cor",
+      "Laranja"
+    ],
+    [
+      "Quantidade de efeitos",
+      "65"
+    ],
+    [
+      "Tensão de operação",
+      "9V - 18V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Electric guitar,Bass guitar"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "- Boost,Chorus,Compressor,Delay,Flanger,Oh, Harmony,Oh,Overdrive,Rever"
+    ],
+    [
+      "Tipos de alimentação",
+      "Battery/Household Current/Battery"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

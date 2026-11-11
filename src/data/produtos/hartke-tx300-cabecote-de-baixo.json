@@ -1,0 +1,84 @@
+{
+  "nome": "Hartke TX300 (cabeçote de baixo)",
+  "meli": "https://meli.la/16BkZzo",
+  "preco": 3412,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3412
+    }
+  ],
+  "imagemAlt": "Hartke TX300 (cabeçote de baixo)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3849,
+    "off": 11,
+    "parcelas": "10x R$341,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cabecote-baixo-hartke-tx300-valvulado-300w-rms-20hz-20khz-preto/p/MLB20963401"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Hartke"
+    ],
+    [
+      "Modelo",
+      "TX300"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "3,2 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "31 cm x 22 cm x 7 cm"
+    ],
+    [
+      "Resposta mínima em frequência - Resposta máxima em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "XLR balanceado"
+    ],
+    [
+      "Tipo de amplificador",
+      "Cabeça"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Valvular"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "300 W"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 4,
+  "imagem": "/images/produtos/hartke-tx300-cabecote-de-baixo.webp"
+}

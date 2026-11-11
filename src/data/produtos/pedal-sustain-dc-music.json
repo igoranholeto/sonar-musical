@@ -1,0 +1,63 @@
+{
+  "nome": "Pedal sustain DC Music",
+  "meli": "https://meli.la/2oihmYS",
+  "preco": 38,
+  "precoEm": "2026-11-11",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 38
+    }
+  ],
+  "imagemAlt": "Pedal sustain DC Music",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 78,
+    "off": 51,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-sustain-teclado-universal-para-casio-yamaha-roland-smart-piano-marca-dc-music/p/MLB51986542"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dc Music"
+    ],
+    [
+      "Modelo",
+      "Pedal Sustain"
+    ],
+    [
+      "Funções do pedal",
+      "Sustain, pedal para teclado, Pedal sustain, pedal sustain para teclado"
+    ],
+    [
+      "Tipo de conector",
+      "P10"
+    ],
+    [
+      "Quantidade de pedais",
+      "1"
+    ],
+    [
+      "Comprimento do cabo",
+      "1,5 m"
+    ],
+    [
+      "Material dos pedais",
+      "plastico e aluminio"
+    ],
+    [
+      "Material do corpo",
+      "Plástico"
+    ],
+    [
+      "Recursos",
+      "troca de polaridade"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 3092,
+  "imagem": "/images/produtos/pedal-sustain-dc-music.webp"
+}

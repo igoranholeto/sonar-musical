@@ -13,5 +13,76 @@
   "nota": 4.8,
   "avaliacoes": 23,
   "imagemAlt": "Yamaha APX700II LH Canhoto",
-  "imagem": "/images/produtos/yamaha-apx700ii-lh.webp"
+  "imagem": "/images/produtos/yamaha-apx700ii-lh.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4654,
+    "off": 17,
+    "parcelas": "12x R$369,19",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-yamaha-apx700ii-lh-canhoto-natural/p/MLB24027717"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Canhoto"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Pré-amplificador"
+    ],
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "APX"
+    ],
+    [
+      "Modelo",
+      "APX700II"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

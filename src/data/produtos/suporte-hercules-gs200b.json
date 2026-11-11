@@ -11,7 +11,54 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 189,
+  "avaliacoes": 193,
   "imagemAlt": "Suporte Hercules GS200B",
-  "imagem": "/images/produtos/suporte-hercules-gs200b.webp"
+  "imagem": "/images/produtos/suporte-hercules-gs200b.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 496,
+    "off": 76,
+    "parcelas": "4x R$29,75 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-profissional-para-guitarra-c-expack-hercules-gs200b-cor-preto/p/MLB27048334"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Hércules"
+    ],
+    [
+      "Modelo",
+      "GS200B"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "14 cm x 26 cm x 12 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De piso"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "1"
+    ],
+    [
+      "Peso máximo suportado",
+      "10 kg"
+    ]
+  ]
 }

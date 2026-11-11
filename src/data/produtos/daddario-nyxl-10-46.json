@@ -25,5 +25,51 @@
     }
   ],
   "nota": 4.6,
-  "avaliacoes": 14
+  "avaliacoes": 14,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 138,
+    "off": 13,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-para-guitarra-10-46-daddario-nyxl1046/up/MLBU2311008458"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Linha",
+      "NYXL"
+    ],
+    [
+      "Modelo",
+      "NYXL1046"
+    ],
+    [
+      "Instrumento recomendado",
+      "Guitarra elétrica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "0.010, 0.013, 0.017, 0.026, 0.03, 0.046"
+    ],
+    [
+      "Materiais",
+      "AÇO-NÍQUEL"
+    ],
+    [
+      "Tensão",
+      "Leve"
+    ],
+    [
+      "Notas",
+      "E B G D A E"
+    ]
+  ]
 }

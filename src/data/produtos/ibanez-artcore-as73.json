@@ -23,5 +23,72 @@
       "data": "2026-11-11",
       "preco": 5398
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$539,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-as-artcore-as73-de-tilia-transparent-cherry-red-com-diapasao-de-nogueira/p/MLB17488555"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "AS Artcore"
+    ],
+    [
+      "Modelo",
+      "AS73"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Transparent cherry red"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Nogueira"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "627,38 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Medium Jumbo"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Tune-o-matic"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 18
 }

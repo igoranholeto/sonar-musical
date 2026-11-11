@@ -15,5 +15,72 @@
     }
   ],
   "imagem": "/images/produtos/schecter-omen-extreme-7.webp",
-  "imagemAlt": "Schecter Omen Extreme-7"
+  "imagemAlt": "Schecter Omen Extreme-7",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$771,79",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-schecter-omen-extreme-7-mogno-7-cordas-preto/p/MLB17844044"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Schecter"
+    ],
+    [
+      "Linha",
+      "Omen"
+    ],
+    [
+      "Modelo",
+      "Omen Extreme-7"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "See-thru black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "7"
+    ],
+    [
+      "Comprimento da escala",
+      "673,1 mm"
+    ],
+    [
+      "Material do tampo",
+      "Ácer acolchoado"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

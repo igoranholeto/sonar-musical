@@ -13,5 +13,80 @@
   "nota": 4.9,
   "avaliacoes": 447,
   "imagemAlt": "Casio LK-S250 (61 teclas iluminadas)",
-  "imagem": "/images/produtos/casio-lk-s250.webp"
+  "imagem": "/images/produtos/casio-lk-s250.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2295,
+    "off": 52,
+    "parcelas": "12x R$106,01",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-key-lighting-lk-lk-s250-preto/p/MLB16109755"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Key Lighting LK"
+    ],
+    [
+      "Modelo",
+      "LK-S250"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "48"
+    ],
+    [
+      "Quantidade de ritmos",
+      "77"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Pilha"
+    ],
+    [
+      "Tipo de pilha",
+      "AA"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Fonte sonora",
+      "PCM"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Nível 1"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Saída para fones de ouvido, Pedal, USB, Alimentação externa"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "interface midi, ranhura para cartão de memória, metrónomo, gravador, resposta ao toque"
+    ]
+  ]
 }

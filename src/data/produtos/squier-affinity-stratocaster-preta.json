@@ -1,7 +1,7 @@
 {
   "nome": "Squier Affinity Stratocaster",
   "meli": "https://meli.la/2Khw91P",
-  "preco": 2406,
+  "preco": 2750,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
@@ -19,9 +19,80 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2406
+      "preco": 2750
     }
   ],
   "imagem": "/images/produtos/squier-affinity-stratocaster-preta.webp",
-  "imagemAlt": "Squier Affinity Stratocaster"
+  "imagemAlt": "Squier Affinity Stratocaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$275,01 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-squier-by-fender-affinity-series-stratocaster-de-choupo-black-brilhante-com-diapasao-de-bordo/p/MLB17756114"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier by Fender"
+    ],
+    [
+      "Linha",
+      "Affinity Series"
+    ],
+    [
+      "Modelo",
+      "Stratocaster"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 261
 }

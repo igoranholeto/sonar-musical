@@ -1,0 +1,88 @@
+{
+  "nome": "Tagima T-640 HSS",
+  "meli": "https://meli.la/11EEjy9",
+  "preco": 1686,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1686
+    }
+  ],
+  "imagemAlt": "Tagima T-640 HSS",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2599,
+    "off": 35,
+    "parcelas": "12x R$162,05",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-tagima-t-640-hss-roasted-maple-olympic-white/p/MLB42812251"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Classic"
+    ],
+    [
+      "Modelo",
+      "Stratocaster"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Amieiro"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo torrado"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Amieiro"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 127,
+  "imagem": "/images/produtos/tagima-t-640-hss.webp"
+}

@@ -15,5 +15,78 @@
     }
   ],
   "imagem": "/images/produtos/nux-mg-300.webp",
-  "imagemAlt": "Nux MG-300"
+  "imagemAlt": "Nux MG-300",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1598,
+    "off": 6,
+    "parcelas": "10x R$150 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-nux-mg-300-preto/p/MLB17366238"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "NUX"
+    ],
+    [
+      "Linha",
+      "MG"
+    ],
+    [
+      "Modelo",
+      "MG-300"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "16 cm x 23 cm x 5.8 cm"
+    ],
+    [
+      "Peso",
+      "754 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "50"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 955
 }

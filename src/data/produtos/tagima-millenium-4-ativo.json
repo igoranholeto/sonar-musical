@@ -21,5 +21,76 @@
   "nota": 4.9,
   "avaliacoes": 189,
   "imagemAlt": "Tagima Millenium 4 (ativo)",
-  "imagem": "/images/produtos/tagima-millenium-4-ativo.webp"
+  "imagem": "/images/produtos/tagima-millenium-4-ativo.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1699,
+    "off": 10,
+    "parcelas": "10x R$152,91 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-4-cordas-tagima-ativo-iniciante-eletrico-mill4/up/MLBU4022713015"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Código do fabricante",
+      "MCS000MILL4"
+    ],
+    [
+      "Tipo de baixo",
+      "Contrabaixo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto (BK)"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "12 cm"
+    ],
+    [
+      "Largura do corpo",
+      "32 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "118 cm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de ponte",
+      "Standard high-mass"
+    ],
+    [
+      "Tipo de captadores",
+      "Jazz"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

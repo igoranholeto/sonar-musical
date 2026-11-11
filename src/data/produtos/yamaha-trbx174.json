@@ -19,7 +19,72 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 120,
+  "avaliacoes": 127,
   "imagemAlt": "Yamaha TRBX174",
-  "imagem": "/images/produtos/yamaha-trbx174.webp"
+  "imagem": "/images/produtos/yamaha-trbx174.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$181,56",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-de-4-cordas-yamaha-trbx-174-screwed-maple/p/MLB22764774"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "TRBX"
+    ],
+    [
+      "Modelo",
+      "TRBX174"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ],
+    [
+      "Acabamento do corpo",
+      "Laqueado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Amieiro"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Jazz"
+    ]
+  ]
 }

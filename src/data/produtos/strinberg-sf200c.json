@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg SF200C",
   "meli": "https://meli.la/1tvMQLt",
-  "preco": 786,
+  "preco": 799,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -16,10 +16,85 @@
     {
       "data": "2026-11-10",
       "preco": 786
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 799
     }
   ],
   "imagem": "/images/produtos/strinberg-sf200c.webp",
   "imagemAlt": "Strinberg SF200C",
   "nota": 4.8,
-  "avaliacoes": 418
+  "avaliacoes": 420,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1399,
+    "off": 42,
+    "parcelas": "12x R$77,26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sf200c-mahogany-satin-6-cordas-sapele-black-series/p/MLB15533736"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Black Series"
+    ],
+    [
+      "Modelo",
+      "SF200C"
+    ],
+    [
+      "Cor",
+      "Mahogany satin"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Super Flat com Cutaway"
+    ],
+    [
+      "Material do tampo",
+      "Sapele Laminado"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

@@ -12,8 +12,80 @@
     {
       "data": "2026-11-06",
       "preco": 1681
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1681
     }
   ],
   "imagem": "/images/produtos/yamaha-f310-tobacco-brown-sunburst.webp",
-  "imagemAlt": "Yamaha F310 (tobacco brown sunburst)"
+  "imagemAlt": "Yamaha F310 (tobacco brown sunburst)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1827,
+    "off": 8,
+    "freteGratis": false,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-yamaha-f310-para-destros-tobacco-brown-sunburst-brilhante/p/MLB13968523"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "F/FX"
+    ],
+    [
+      "Modelo",
+      "F310"
+    ],
+    [
+      "Cor",
+      "Tobacco brown sunburst"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Western"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "634 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 226
 }

@@ -15,5 +15,76 @@
     }
   ],
   "imagem": "/images/produtos/borne-vorax-12100-studio.webp",
-  "imagemAlt": "Borne Vorax 12100 Studio"
+  "imagemAlt": "Borne Vorax 12100 Studio",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$218,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-borne-vorax-12100-para-guitarra-100w-com-reverb/p/MLB24059017"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Borne"
+    ],
+    [
+      "Linha",
+      "Vorax"
+    ],
+    [
+      "Modelo",
+      "12100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "14,5 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "47 cm x 27.5 cm x 57 cm"
+    ],
+    [
+      "Resposta mínima em frequência - Resposta máxima em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Conectores de entrada",
+      "RCA"
+    ],
+    [
+      "Conectores de saída",
+      "XLR balanceado"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 45
 }

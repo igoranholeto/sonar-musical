@@ -1,0 +1,88 @@
+{
+  "nome": "Giannini GB100 Jazz Bass",
+  "meli": "https://meli.la/2YtfaDs",
+  "preco": 840,
+  "precoEm": "2026-11-11",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 840
+    }
+  ],
+  "imagemAlt": "Giannini GB100 Jazz Bass",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1649,
+    "off": 49,
+    "parcelas": "12x R$81,23",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-giannini-gb100-jazz-bass-4-cordas-preto-tortoise/p/MLB23013100"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "GB"
+    ],
+    [
+      "Modelo",
+      "GB100 BK/WH"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "10 cm"
+    ],
+    [
+      "Largura do corpo",
+      "40 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "130 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "255 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 356,
+  "imagem": "/images/produtos/giannini-gb100-jazz-bass.webp"
+}

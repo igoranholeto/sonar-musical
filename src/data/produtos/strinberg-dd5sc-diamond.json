@@ -17,5 +17,78 @@
   "imagem": "/images/produtos/strinberg-dd5sc-diamond.webp",
   "imagemAlt": "Strinberg Diamond DD5SC",
   "nota": 4.9,
-  "avaliacoes": 33
+  "avaliacoes": 34,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$289,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-strinberg-dd5sc-cb-cherry-burst-diamond-aco-c-case-cor-laranja-escuro-orientacao-da-mao-destro/p/MLB52496416"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Diamond"
+    ],
+    [
+      "Modelo",
+      "DD5SC RT SMS"
+    ],
+    [
+      "Cor",
+      "Laranja-escuro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Spruce Sólido"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

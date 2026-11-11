@@ -23,5 +23,80 @@
     }
   ],
   "imagem": "/images/produtos/fender-american-professional-ii-stratocaster.webp",
-  "imagemAlt": "Fender American Professional II Stratocaster"
+  "imagemAlt": "Fender American Professional II Stratocaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 18749,
+    "off": 18,
+    "parcelas": "12x R$1.462",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-american-professional-ii-stratocaster-rw-ann/p/MLB42166852"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "American Professional II"
+    ],
+    [
+      "Modelo",
+      "Stratocaster"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Chave seletora de captadores",
+      "5 posições"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

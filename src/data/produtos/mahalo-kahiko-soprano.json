@@ -1,0 +1,83 @@
+{
+  "nome": "Mahalo Kahiko Soprano",
+  "meli": "https://meli.la/1TmZrbr",
+  "preco": 122,
+  "precoEm": "2026-11-11",
+  "categoria": "ukulele",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 122
+    }
+  ],
+  "imagemAlt": "Mahalo Kahiko Soprano",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 157,
+    "off": 22,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-soprano-mahalo-serie-kahiko-marrom-natural-com-capa/p/MLB28110825"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mahalo"
+    ],
+    [
+      "Linha",
+      "Kahiko"
+    ],
+    [
+      "Modelo",
+      "MK1 trb"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho",
+      "Soprano"
+    ],
+    [
+      "Orientação da mão",
+      "Ambidestro"
+    ],
+    [
+      "Comprimento",
+      "51 cm"
+    ],
+    [
+      "Materiais",
+      "Sengon"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bag"
+    ],
+    [
+      "Quantidade de trastes",
+      "12"
+    ],
+    [
+      "Comprimento do diapasão",
+      "34,6 cm"
+    ],
+    [
+      "Itens inclusos",
+      "estojo, acessórios"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 122,
+  "imagem": "/images/produtos/mahalo-kahiko-soprano.webp"
+}

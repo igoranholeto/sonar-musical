@@ -17,5 +17,50 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 16
+  "avaliacoes": 16,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$249,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/captador-violao-lr-baggs-anthem-tru-mic-piezo-e-microfone-preto/p/MLB41739806"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "LR Baggs"
+    ],
+    [
+      "Linha",
+      "Anthem"
+    ],
+    [
+      "Modelo",
+      "Anthem Tru mic"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "Acústico, Guitarra elétrica"
+    ],
+    [
+      "Número de cordas compatíveis",
+      "6"
+    ],
+    [
+      "Tipos de captadores",
+      "Piezo e Microfone"
+    ],
+    [
+      "Tipo de equalização",
+      "Ativo"
+    ],
+    [
+      "Tipo de montagem",
+      "Adesivo"
+    ]
+  ]
 }

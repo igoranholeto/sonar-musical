@@ -15,5 +15,21 @@
     }
   ],
   "imagem": "/images/produtos/daddario-pwgs-ss-slide-de-vidro-pequeno.webp",
-  "imagemAlt": "D'Addario PWGS-SS Slide de Vidro Pequeno"
+  "imagemAlt": "D'Addario PWGS-SS Slide de Vidro Pequeno",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/slide-de-vidro-pequeno-d-addario-pwgs-ss/up/MLBU2197315266"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario Acessórios"
+    ],
+    [
+      "Modelo",
+      "PWGS-SS"
+    ]
+  ]
 }

@@ -12,10 +12,68 @@
     {
       "data": "2026-11-10",
       "preco": 401
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 401
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 228,
+  "avaliacoes": 229,
   "imagemAlt": "Viola Caipira Giannini Start VS-14",
-  "imagem": "/images/produtos/giannini-start-vs-14.webp"
+  "imagem": "/images/produtos/giannini-start-vs-14.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 581,
+    "off": 30,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/viola-caipira-giannini-start-vs-14-com-10-cordas-preta/p/MLB73442115"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "Start VS-14"
+    ],
+    [
+      "Tipo de viola",
+      "Caipira"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento",
+      "Verniz"
+    ],
+    [
+      "Quantidade de cordas",
+      "10"
+    ],
+    [
+      "Altura do corpo",
+      "101 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "95 cm"
+    ],
+    [
+      "Largura do corpo",
+      "33,4 cm"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

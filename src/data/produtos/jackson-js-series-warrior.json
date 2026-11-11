@@ -11,5 +11,74 @@
     }
   ],
   "imagem": "/images/produtos/jackson-js-series-warrior.webp",
-  "imagemAlt": "Jackson JS Series Warrior"
+  "imagemAlt": "Jackson JS Series Warrior",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$599,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-jackson-js-series-warrior-2910146572-black-with/up/MLBU1738698939"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Jackson"
+    ],
+    [
+      "Linha",
+      "JS Series"
+    ],
+    [
+      "Código do fabricante",
+      "2910146572"
+    ],
+    [
+      "Forma do corpo",
+      "Warrior"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Gloss black with white bevels"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

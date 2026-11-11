@@ -1,0 +1,88 @@
+{
+  "nome": "M-Vave SMK-37 Pro",
+  "meli": "https://meli.la/1pEL1io",
+  "preco": 512,
+  "precoEm": "2026-11-11",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 512
+    }
+  ],
+  "imagemAlt": "M-Vave SMK-37 Pro",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 700,
+    "off": 26,
+    "parcelas": "10x R$51,21 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/controlador-midi-m-vave-smk-37-pro-com-almofada-de-bateria/p/MLB64904247"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "SMK-37 PRO"
+    ],
+    [
+      "Cor",
+      "SMK-37 PRO Black"
+    ],
+    [
+      "Quantidade de teclas",
+      "37"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "Teclado controlador MIDI"
+    ],
+    [
+      "Quantidade de pads",
+      "16"
+    ],
+    [
+      "Quantidade de faders",
+      "4"
+    ],
+    [
+      "Quantidade de botões",
+      "8"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Tipo de aftertouch",
+      "Capacitive touch-stripes pitch bend & modulation control"
+    ],
+    [
+      "Software incluídos",
+      "Não inclui software, compatível com softwares DAW do mercado"
+    ],
+    [
+      "Dispositivos compatíveis",
+      "PC, iPad, iPhone, Computador Windows, notebook macOS, celular e tablet"
+    ],
+    [
+      "Sistemas operacionais compatíveis",
+      "Windows 10 ou superior, macOS, Android, iOS / iPadOS"
+    ],
+    [
+      "Quantidade de terminais de entrada/saída",
+      "2"
+    ],
+    [
+      "Recursos",
+      "roda de pitch e modulação, botões de mudança de oitava, botões daw, modo sequenciador, sensibilidade, teclas sensíveis, retroiluminação, arpejador"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 909,
+  "imagem": "/images/produtos/m-vave-smk-37-pro.webp"
+}

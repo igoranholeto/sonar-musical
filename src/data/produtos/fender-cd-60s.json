@@ -21,5 +21,70 @@
   "imagemAlt": "Fender CD-60S",
   "imagem": "/images/produtos/fender-cd-60s.webp",
   "nota": 4.8,
-  "avaliacoes": 482
+  "avaliacoes": 501,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$192,40 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-fender-classic-design-cd-60s-para-destros-natural-nogueira-brilhante/p/MLB14788528"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Nogueira"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Acessórios incluídos",
+      "Correia"
+    ],
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Classic Design"
+    ],
+    [
+      "Modelo",
+      "CD-60S"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ]
+  ]
 }

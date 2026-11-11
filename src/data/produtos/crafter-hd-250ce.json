@@ -17,5 +17,68 @@
   "nota": 5,
   "avaliacoes": 2,
   "imagemAlt": "Crafter HD-250CE",
-  "imagem": "/images/produtos/crafter-hd-250ce.webp"
+  "imagem": "/images/produtos/crafter-hd-250ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2829,
+    "off": 20,
+    "parcelas": "10x R$226,38 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-crafter-hd-250ce-aco-folk-cutaway-equalizador-natural/up/MLBU3450775050"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Crafter"
+    ],
+    [
+      "Linha",
+      "Silver"
+    ],
+    [
+      "Modelo",
+      "HD-250E/N"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Spruce"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ]
+  ]
 }

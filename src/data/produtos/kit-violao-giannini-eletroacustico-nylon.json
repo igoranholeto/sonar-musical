@@ -15,5 +15,63 @@
     }
   ],
   "imagem": "/images/produtos/kit-violao-giannini-eletroacustico-nylon.webp",
-  "imagemAlt": "Kit Violão Giannini Eletroacústico (nylon)"
+  "imagemAlt": "Kit Violão Giannini Eletroacústico (nylon)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 999,
+    "off": 38,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletrico-giannini-nf14-nylon-acessorios-completo/up/MLBU4163545197"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Bordo escurecido"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Flat"
+    ],
+    [
+      "Material do tampo",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "99cm"
+    ],
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Start"
+    ],
+    [
+      "Modelo",
+      "NF14KIT"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

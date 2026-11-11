@@ -1,7 +1,7 @@
 {
   "nome": "Squier Affinity Precision Bass PJ",
   "meli": "https://meli.la/16ALw1L",
-  "preco": 3977,
+  "preco": 3990,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -19,9 +19,76 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 3977
+      "preco": 3990
     }
   ],
   "imagem": "/images/produtos/squier-affinity-precision-bass-pj.webp",
-  "imagemAlt": "Squier Affinity Precision Bass PJ"
+  "imagemAlt": "Squier Affinity Precision Bass PJ",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$399 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-fender-squier-affinity-precision-bass-pj-mn-bp-branco/p/MLB23203720"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier"
+    ],
+    [
+      "Linha",
+      "Precision"
+    ],
+    [
+      "Modelo",
+      "Precision Bass"
+    ],
+    [
+      "Tipo de baixo",
+      "Precision Bass"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Acabamento do corpo",
+      "Laqueado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "864 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Amieiro"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Eletrico"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 90
 }

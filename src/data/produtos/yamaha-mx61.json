@@ -1,0 +1,82 @@
+{
+  "nome": "Yamaha MX61",
+  "meli": "https://meli.la/2SiqXJm",
+  "preco": 4199,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 4199
+    }
+  ],
+  "imagemAlt": "Yamaha MX61",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$403,59",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-61-teclas-yamaha-sintetizador-mx61-cor-preto/p/MLB46405111"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "MX"
+    ],
+    [
+      "Modelo",
+      "MX61BK"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "21 cm"
+    ],
+    [
+      "Largura",
+      "114 cm"
+    ],
+    [
+      "Profundidade",
+      "29,9 cm"
+    ],
+    [
+      "Peso",
+      "4,8 kg"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "128"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Windows, macOS e iOS"
+    ],
+    [
+      "Recursos",
+      "interface midi"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 220,
+  "imagem": "/images/produtos/yamaha-mx61.webp"
+}

@@ -1,0 +1,88 @@
+{
+  "nome": "Malibu Abacaxi 23SP",
+  "meli": "https://meli.la/24ughBK",
+  "preco": 250,
+  "precoEm": "2026-11-11",
+  "categoria": "ukulele",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 250
+    }
+  ],
+  "imagemAlt": "Malibu Abacaxi 23SP",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 275,
+    "off": 9,
+    "parcelas": "6x R$41,68 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-acustico-malibu-abacaxi-23sp-sapele-concerto-c-capa-cor-marrom/p/MLB50913111"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Malibu"
+    ],
+    [
+      "Modelo",
+      "23S P"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho",
+      "Concerto"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Altura",
+      "7 cm"
+    ],
+    [
+      "Comprimento",
+      "60 cm"
+    ],
+    [
+      "Largura",
+      "20 cm"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Materiais",
+      "Madeira sapele"
+    ],
+    [
+      "Acabamento",
+      "Natural fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa"
+    ],
+    [
+      "Quantidade de trastes",
+      "18"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 373,
+  "imagem": "/images/produtos/malibu-abacaxi-23sp.webp"
+}

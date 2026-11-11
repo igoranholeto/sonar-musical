@@ -19,5 +19,78 @@
     }
   ],
   "imagem": "/images/produtos/boss-dd-3t-digital-delay.webp",
-  "imagemAlt": "Boss DD-3T Digital Delay"
+  "imagemAlt": "Boss DD-3T Digital Delay",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1477,
+    "off": 10,
+    "parcelas": "10x R$132,98 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-boss-dd-3t-delay-digital-para-guitarra-branco/p/MLB18055126"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Linha",
+      "Pedal boss dd-3t para guitarra"
+    ],
+    [
+      "Modelo",
+      "Pedal boss dd-3t para guitarra"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "420 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Delay"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 62
 }

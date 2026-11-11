@@ -1,7 +1,7 @@
 {
   "nome": "Elixir Nanoweb 14077 para baixo",
   "meli": "https://meli.la/2DoJSgv",
-  "preco": 446,
+  "preco": 242,
   "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
@@ -15,7 +15,46 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 446
+      "preco": 242
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 299,
+    "off": 19,
+    "parcelas": "12x R$23,91",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-p-baixo-4c-elixir-nanoweb-045-medium-14077/p/MLB22412335"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Elixir"
+    ],
+    [
+      "Modelo",
+      "14077"
+    ],
+    [
+      "Instrumento recomendado",
+      "BAIXO"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Materiais",
+      "Aço niquelado"
+    ],
+    [
+      "Tensão",
+      "Média"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 116,
+  "imagemAlt": "Elixir Nanoweb 14077 para baixo",
+  "imagem": "/images/produtos/elixir-nanoweb-14077-para-baixo.webp"
 }

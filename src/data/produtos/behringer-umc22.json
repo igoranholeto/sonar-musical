@@ -1,0 +1,88 @@
+{
+  "nome": "Behringer UMC22",
+  "meli": "https://meli.la/1KmfpdD",
+  "preco": 520,
+  "precoEm": "2026-11-11",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 520
+    }
+  ],
+  "imagemAlt": "Behringer UMC22",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 579,
+    "off": 10,
+    "parcelas": "10x R$52 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-behringer-u-phoria-umc22-midas-usb/p/MLB21805119"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "U-Phoria"
+    ],
+    [
+      "Modelo",
+      "UMC22"
+    ],
+    [
+      "Geração",
+      "1ª geração"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Altura",
+      "4,64 cm"
+    ],
+    [
+      "Largura",
+      "16,3 cm"
+    ],
+    [
+      "Profundidade",
+      "12,5 cm"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "48 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma, compatível com midi"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1797,
+  "imagem": "/images/produtos/behringer-umc22.webp"
+}

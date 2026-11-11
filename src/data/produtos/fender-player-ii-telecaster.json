@@ -19,5 +19,44 @@
     }
   ],
   "imagem": "/images/produtos/fender-player-ii-telecaster.webp",
-  "imagemAlt": "Fender Player II Telecaster"
+  "imagemAlt": "Fender Player II Telecaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 10279,
+    "off": 5,
+    "parcelas": "10x R$976,58 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-player-ii-telecaster-mn-0140552529-mocha/up/MLBU3068213740"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Modelo",
+      "Stratocaster"
+    ],
+    [
+      "Forma do corpo",
+      "Telecaster"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Construção do braço",
+      "Bolt-on"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Ashtray"
+    ],
+    [
+      "Tipo de ponte",
+      "Fixo"
+    ]
+  ]
 }

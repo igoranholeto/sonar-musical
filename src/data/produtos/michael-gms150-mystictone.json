@@ -13,5 +13,72 @@
   "nota": 4,
   "avaliacoes": 2,
   "imagemAlt": "Michael Mystictone GMS150",
-  "imagem": "/images/produtos/michael-gms150-mystictone.webp"
+  "imagem": "/images/produtos/michael-gms150-mystictone.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1677,
+    "off": 8,
+    "parcelas": "10x R$154,31 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-michael-mystictone-gms150-sub-ssh-al-destro-sunburst-roasted-maple/p/MLB75235371"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "GMS"
+    ],
+    [
+      "Modelo",
+      "GMS150"
+    ],
+    [
+      "Forma do corpo",
+      "Superstrato"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Poplar"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo torrado"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

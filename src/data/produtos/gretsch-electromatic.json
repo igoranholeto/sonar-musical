@@ -19,5 +19,78 @@
       "data": "2026-11-10",
       "preco": 7016
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 7425,
+    "off": 5,
+    "parcelas": "12x R$674,39",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-gretsch-electromatic-g5622t-center-block-de-bordo-orange-stain-brilhante-com-diapasao-de-laurel/p/MLB18029645"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Gretsch"
+    ],
+    [
+      "Linha",
+      "Electromatic"
+    ],
+    [
+      "Modelo",
+      "G5622T"
+    ],
+    [
+      "Forma do corpo",
+      "Center Block"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Orange stain"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Bordo"
+    ],
+    [
+      "Material do diapasão",
+      "Laurel"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "624,84 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 3.7,
+  "avaliacoes": 7
 }

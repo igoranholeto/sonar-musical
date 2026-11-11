@@ -5,7 +5,7 @@
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "nota": 4.8,
-  "avaliacoes": 5581,
+  "avaliacoes": 5792,
   "historico": [
     {
       "data": "2026-11-02",
@@ -13,5 +13,47 @@
     }
   ],
   "imagem": "/images/produtos/capotraste-bracadeira.webp",
-  "imagemAlt": "Capotraste Braçadeira para Violão e Guitarra"
+  "imagemAlt": "Capotraste Braçadeira para Violão e Guitarra",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 27,
+    "off": 22,
+    "freteGratis": true,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-1854287207-capotraste-bracadeira-guitarra-e-violo-aco-e-nylon-preto-_JM"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Don Caprini"
+    ],
+    [
+      "Tipo de capotraste",
+      "Metal"
+    ],
+    [
+      "Material",
+      "Alumínio"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Cavaco, Guitarra acústica, Guitarra elétrica, Violão"
+    ],
+    [
+      "Altura",
+      "8 cm"
+    ],
+    [
+      "Largura",
+      "7 cm"
+    ],
+    [
+      "Comprimento",
+      "8 cm"
+    ],
+    [
+      "Peso",
+      "100 g"
+    ]
+  ]
 }

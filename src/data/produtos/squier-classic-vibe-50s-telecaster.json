@@ -23,5 +23,74 @@
     }
   ],
   "imagem": "/images/produtos/squier-classic-vibe-50s-telecaster.webp",
-  "imagemAlt": "Squier Classic Vibe '50s Telecaster"
+  "imagemAlt": "Squier Classic Vibe '50s Telecaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5052,
+    "off": 7,
+    "parcelas": "10x R$469,86 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-squier-classic-vibe-50s-telecaster-mn-butter/up/MLBU1979095748"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier"
+    ],
+    [
+      "Linha",
+      "Classic Vibe"
+    ],
+    [
+      "Modelo",
+      "Telecaster"
+    ],
+    [
+      "Forma do corpo",
+      "Telecaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Butterscotch blonde"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Pinheiro"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Pinho"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

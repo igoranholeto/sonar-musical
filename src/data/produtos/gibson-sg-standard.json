@@ -19,5 +19,22 @@
     }
   ],
   "imagem": "/images/produtos/gibson-sg-standard.webp",
-  "imagemAlt": "Gibson SG Standard"
+  "imagemAlt": "Gibson SG Standard",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$2.125 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-gibson-sg-standard-classic-white/up/MLBU3911725558"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Gibson"
+    ],
+    [
+      "Modelo",
+      "SG Standard"
+    ]
+  ]
 }

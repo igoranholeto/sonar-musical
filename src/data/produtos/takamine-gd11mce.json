@@ -27,7 +27,74 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 723,
+  "avaliacoes": 814,
   "imagemAlt": "Takamine GD11MCE",
-  "imagem": "/images/produtos/takamine-gd11mce.webp"
+  "imagem": "/images/produtos/takamine-gd11mce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2748,
+    "off": 16,
+    "parcelas": "12x R$221,60",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-takamine-gd11mce-mgs-tp-4t-g-series-folk-eletroacustico-mahogany-satin-fosco/p/MLB14037749"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Laurel"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "1"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Louro"
+    ],
+    [
+      "Tipos de controle",
+      "Volume, Grave, Médio, Agudos, Afinador, Check bateria"
+    ],
+    [
+      "Acessórios incluídos",
+      "Guia do usuário"
+    ],
+    [
+      "Marca",
+      "Takamine"
+    ],
+    [
+      "Linha",
+      "G Series"
+    ],
+    [
+      "Código do fabricante",
+      "GD11MCEMGS"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

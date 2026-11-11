@@ -11,5 +11,74 @@
     }
   ],
   "imagemAlt": "Memphis MD-18 Folk Eletroacústico",
-  "imagem": "/images/produtos/memphis-md-18.webp"
+  "imagem": "/images/produtos/memphis-md-18.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$83,69",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-memphis-md-18-md18-natural/p/MLB27550827"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Memphis"
+    ],
+    [
+      "Código do fabricante",
+      "MD18NATURALTAG"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Tilo"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Linden"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "43 mm"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

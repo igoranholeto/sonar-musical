@@ -15,5 +15,72 @@
     }
   ],
   "imagemAlt": "Michael GML600 Les Paul",
-  "imagem": "/images/produtos/michael-gml600.webp"
+  "imagem": "/images/produtos/michael-gml600.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1946,
+    "off": 10,
+    "parcelas": "10x R$175,14 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-profissional-les-paul-michael-gml600-cherry-burst/p/MLB78433708"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "GML600"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Construção do braço",
+      "Bolt-on"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Tune-o-matic"
+    ],
+    [
+      "Tipo de ponte",
+      "Fixo"
+    ],
+    [
+      "Tipos de controle",
+      "Tone, Volume"
+    ],
+    [
+      "Tipos de captadores",
+      "Humbucker"
+    ]
+  ]
 }

@@ -11,5 +11,38 @@
     }
   ],
   "imagem": "/images/produtos/suhr-classic-s.webp",
-  "imagemAlt": "Suhr Classic S"
+  "imagemAlt": "Suhr Classic S",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$3.490 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-suhr-classic-s-01-cls-0027-indigo-metallic/up/MLBU5210977798"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Suhr"
+    ],
+    [
+      "Linha",
+      "Classic S"
+    ],
+    [
+      "Modelo",
+      "01-cls-0027"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

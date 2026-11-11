@@ -5,7 +5,7 @@
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "nota": 5,
-  "avaliacoes": 5,
+  "avaliacoes": 7,
   "historico": [
     {
       "data": "2026-11-02",
@@ -19,5 +19,45 @@
       "data": "2026-11-10",
       "preco": 47
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 69,
+    "off": 31,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-6-palhetas-dunlop-com-porta-palhetas-gibson-flying-v/up/MLBU5249782499"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dunlop"
+    ],
+    [
+      "Modelo",
+      "Kit 6 Palhetas Dunlop + Porta Palhetas Gibson Flying V"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tamanho",
+      "Médio"
+    ],
+    [
+      "Espessura",
+      "varias"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de palhetas",
+      "6"
+    ]
+  ],
+  "imagemAlt": "Kit 6 Palhetas Dunlop com Porta-Palhetas",
+  "imagem": "/images/produtos/dunlop-kit-6-palhetas.webp"
 }

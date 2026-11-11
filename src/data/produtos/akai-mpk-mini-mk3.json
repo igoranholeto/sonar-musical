@@ -1,0 +1,83 @@
+{
+  "nome": "Akai MPK Mini MK3",
+  "meli": "https://meli.la/16Gd8oe",
+  "preco": 522,
+  "precoEm": "2026-11-11",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 522
+    }
+  ],
+  "imagemAlt": "Akai MPK Mini MK3",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 750,
+    "off": 30,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/controlador-midi-akai-mpk-mini-mk3-c-25-teclas-e-8-pads-para-producao-musical/p/MLB22305134"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Akai Professional"
+    ],
+    [
+      "Modelo",
+      "MPK MINI MK3"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de teclas",
+      "25"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "Teclado"
+    ],
+    [
+      "Quantidade de pads",
+      "8"
+    ],
+    [
+      "Quantidade de botões",
+      "8"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Tipo de aftertouch",
+      "Polifônico"
+    ],
+    [
+      "Software incluídos",
+      "MPC Beats"
+    ],
+    [
+      "Dispositivos compatíveis",
+      "Mac, iOS, Windows"
+    ],
+    [
+      "Sistemas operacionais compatíveis",
+      "Windows, Mac, macOS, iOS"
+    ],
+    [
+      "Quantidade de terminais de entrada/saída",
+      "2"
+    ],
+    [
+      "Recursos",
+      "roda de pitch e modulação, botões de mudança de oitava, botões daw, modo sequenciador, sensibilidade, teclas sensíveis, retroiluminação, arpejador"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 629,
+  "imagem": "/images/produtos/akai-mpk-mini-mk3.webp"
+}

@@ -1,0 +1,84 @@
+{
+  "nome": "Tagima Woodstock TW-65",
+  "meli": "https://meli.la/1fGJ7WK",
+  "preco": 1286,
+  "precoEm": "2026-11-11",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1286
+    }
+  ],
+  "imagemAlt": "Tagima Woodstock TW-65",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1570,
+    "off": 18,
+    "parcelas": "10x R$128,60 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-tagima-woodstock-tw-65-branco-vintage-4-cordas-2-captadores/p/MLB22939674"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Woodstock"
+    ],
+    [
+      "Modelo",
+      "TW-65"
+    ],
+    [
+      "Tipo de baixo",
+      "Baixo elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Acabamento do corpo",
+      "Laqueado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "5 cm"
+    ],
+    [
+      "Largura do corpo",
+      "40 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "90 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "340 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 297,
+  "imagem": "/images/produtos/tagima-woodstock-tw-65.webp"
+}

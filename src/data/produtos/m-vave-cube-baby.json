@@ -1,0 +1,88 @@
+{
+  "nome": "M-Vave Cube Baby",
+  "meli": "https://meli.la/2ErWC9c",
+  "preco": 231,
+  "precoEm": "2026-11-11",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 231
+    }
+  ],
+  "imagemAlt": "M-Vave Cube Baby",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 259,
+    "off": 11,
+    "parcelas": "6x R$38,42 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-m-vave-cube-baby-preto-multifuncional-guitarra-eletrica/p/MLB19464828"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Linha",
+      "Pedal de efeito multifuncional"
+    ],
+    [
+      "Modelo",
+      "Cube Baby"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "6.1 cm x 16.2 cm x 2.3 cm"
+    ],
+    [
+      "Peso",
+      "260 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "21"
+    ],
+    [
+      "Tensão de operação",
+      "5V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria, USB"
+    ],
+    [
+      "Tipo de tela",
+      "LED"
+    ],
+    [
+      "Itens inclusos",
+      "bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora, bluetooth"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 3413,
+  "imagem": "/images/produtos/m-vave-cube-baby.webp"
+}

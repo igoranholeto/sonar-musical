@@ -15,5 +15,72 @@
     }
   ],
   "imagem": "/images/produtos/ibanez-rg7421.webp",
-  "imagemAlt": "Ibanez RG7421"
+  "imagemAlt": "Ibanez RG7421",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 6544,
+    "off": 28,
+    "parcelas": "10x R$471,24 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-7-cordas-super-strato-ibanez-rg7421-wnf-walnut-flat/up/MLBU3046290020"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "RG Standard"
+    ],
+    [
+      "Modelo",
+      "RG7421"
+    ],
+    [
+      "Forma do corpo",
+      "Super Strato"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Meranti"
+    ],
+    [
+      "Material do diapasão",
+      "Jatobá"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "3 peças de Maple"
+    ],
+    [
+      "Quantidade de cordas",
+      "7"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "5 posições"
+    ],
+    [
+      "Forma do braço",
+      "Wizard II-7"
+    ]
+  ]
 }

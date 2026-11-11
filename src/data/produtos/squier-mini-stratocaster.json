@@ -19,5 +19,64 @@
       "data": "2026-11-05",
       "preco": 2365
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2489,
+    "off": 5,
+    "parcelas": "10x R$236,53 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-squier-mini-stratocaster-mn-wpg-0370122526-c/up/MLBU5086510857"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier"
+    ],
+    [
+      "Modelo",
+      "MINI STRATOCASTER"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "577,85 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Forma do braço",
+      "C"
+    ],
+    [
+      "Construção do braço",
+      "Bolt-on"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Synch tremolo"
+    ],
+    [
+      "Tipo de ponte",
+      "Tremolo"
+    ],
+    [
+      "Tipos de captadores",
+      "Simples"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
   ]
 }

@@ -1,0 +1,88 @@
+{
+  "nome": "Tagima TG-580",
+  "meli": "https://meli.la/2tRrGiR",
+  "preco": 1079,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1079
+    }
+  ],
+  "imagemAlt": "Tagima TG-580",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1199,
+    "off": 10,
+    "parcelas": "12x R$104,79",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-tagima-2s-1-h-roasted-maple-escudo-awh-tg-580-ow/p/MLB60294817"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TG-580 OW"
+    ],
+    [
+      "Forma do corpo",
+      "Superstrato"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Poplar"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo torrado"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo torrado"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 5,
+  "imagem": "/images/produtos/tagima-tg-580.webp"
+}

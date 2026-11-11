@@ -15,7 +15,36 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 27,
+  "avaliacoes": 28,
   "imagemAlt": "Viola Caipira Strinberg VS25E",
-  "imagem": "/images/produtos/strinberg-vs25e.webp"
+  "imagem": "/images/produtos/strinberg-vs25e.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$86,55",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/viola-caipira-eletroacustica-strinberg-vs25e-mahogany/p/MLB32185499"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "VS25E MGS"
+    ],
+    [
+      "Tipo de viola",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "10"
+    ]
+  ]
 }

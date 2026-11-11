@@ -15,5 +15,46 @@
     }
   ],
   "imagem": "/images/produtos/fishman-fluence-modern.webp",
-  "imagemAlt": "Fishman Fluence Modern"
+  "imagemAlt": "Fishman Fluence Modern",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$466,63 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/set-pickup-fishman-prf-m36-sb2-fluence-6c-modern-3-premium/up/MLBU3962510061"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fishman"
+    ],
+    [
+      "Linha",
+      "Fluence Modern 3"
+    ],
+    [
+      "Código do fabricante",
+      "PRF-M36-SB2"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Número de cordas compatíveis",
+      "6"
+    ],
+    [
+      "Tipos de captadores",
+      "Humbucker"
+    ],
+    [
+      "Recursos",
+      "set de captadores"
+    ]
+  ]
 }

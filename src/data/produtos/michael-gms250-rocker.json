@@ -13,5 +13,76 @@
   "nota": 4.7,
   "avaliacoes": 52,
   "imagemAlt": "Michael Rocker GMS250 (com efeitos)",
-  "imagem": "/images/produtos/michael-gms250-rocker.webp"
+  "imagem": "/images/produtos/michael-gms250-rocker.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1018,
+    "off": 14,
+    "parcelas": "12x R$84,11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strato-cefeito-michael-rocker-gms250-sunburst-black/p/MLB28599032"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "GMS250"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "SUBURST BLACK"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "BASSWOOD"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhoso"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo canadense"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "635 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Chave seletora de captadores",
+      "Chave de 5 posições"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

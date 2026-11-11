@@ -1,0 +1,86 @@
+{
+  "nome": "Behringer UM2",
+  "meli": "https://meli.la/2QkAmHU",
+  "preco": 420,
+  "precoEm": "2026-11-11",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 420
+    }
+  ],
+  "imagemAlt": "Behringer UM2",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$40,61",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-behringer-u-phoria-um2-preta/p/MLB21643134"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "U-Phoria"
+    ],
+    [
+      "Modelo",
+      "UM2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "48 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "16 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Tipos de conexões",
+      "1 combo XLR/TRS 6.3 mm in, 1 phone jack 6.3 mm, 1 USB-B 1.1, 1 line RC"
+    ],
+    [
+      "Software compatível",
+      "Pro tools, Live, Cubase"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fio USB"
+    ],
+    [
+      "Latência",
+      "0 ms"
+    ],
+    [
+      "Altura",
+      "4,64 cm"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 3342,
+  "imagem": "/images/produtos/behringer-um2.webp"
+}

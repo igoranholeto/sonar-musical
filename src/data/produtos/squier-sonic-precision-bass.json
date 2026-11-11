@@ -11,7 +11,74 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 172,
+  "avaliacoes": 173,
   "imagemAlt": "Squier Sonic Precision Bass",
-  "imagem": "/images/produtos/squier-sonic-precision-bass.webp"
+  "imagem": "/images/produtos/squier-sonic-precision-bass.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2679,
+    "off": 20,
+    "parcelas": "12x R$203,44",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-fender-squier-sonic-precision-bass-black-03739/p/MLB26598909"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Sonic"
+    ],
+    [
+      "Código do fabricante",
+      "0373902526"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "4 cm"
+    ],
+    [
+      "Largura do corpo",
+      "34 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "132 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ]
+  ]
 }

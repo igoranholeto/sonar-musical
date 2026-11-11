@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg PBS40",
   "meli": "https://meli.la/1P5NQFk",
-  "preco": 1057,
+  "preco": 1027,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -23,11 +23,76 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 1057
+      "preco": 1027
     }
   ],
   "imagem": "/images/produtos/strinberg-pbs40.webp",
   "imagemAlt": "Strinberg PBS40",
   "nota": 4.9,
-  "avaliacoes": 304
+  "avaliacoes": 324,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$102,72 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-eletrico-strinberg-pbs40-preto-4-cordas-captadores-1pb-1jb-passivo/p/MLB24815481"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "PBS-40"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Basswood Sólido"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira tecnológica"
+    ],
+    [
+      "Tipo de ponte",
+      "Padrão"
+    ],
+    [
+      "Tipo de captadores",
+      "1PB, 1JB"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ]
 }

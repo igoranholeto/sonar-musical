@@ -13,5 +13,70 @@
   "nota": 4.8,
   "avaliacoes": 237,
   "imagemAlt": "Casio Casiotone SA-50 (32 mini teclas)",
-  "imagem": "/images/produtos/casio-sa-50.webp"
+  "imagem": "/images/produtos/casio-sa-50.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$39,08",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-infantil-casio-32-mini-teclas-portatil-sa-50/p/MLB23450870"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Mini"
+    ],
+    [
+      "Modelo",
+      "SA-50"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Quantidade de chaves",
+      "32"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de ritmos",
+      "50"
+    ],
+    [
+      "Tipos de alimentação",
+      "Alimentação de CA, Pilha"
+    ],
+    [
+      "Tipo de pilha",
+      "AA"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Fonte sonora",
+      "PCM"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Acompanhamento automático",
+      "Nota simples 1"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Alimentação externa, Saída auxiliar, Fones de ouvido"
+    ]
+  ]
 }

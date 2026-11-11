@@ -1,0 +1,80 @@
+{
+  "nome": "Epiphone 1959 Les Paul Standard",
+  "meli": "https://meli.la/1BMjEvC",
+  "preco": 12901,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 12901
+    }
+  ],
+  "imagemAlt": "Epiphone 1959 Les Paul Standard",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$1.240",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-1959-les-paul-standard-reissue-sunburst/p/MLB64203509"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Modelo",
+      "Les Paul"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Maple AAA"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "imagem": "/images/produtos/epiphone-1959-les-paul-standard.webp"
+}

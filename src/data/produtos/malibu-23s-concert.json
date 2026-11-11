@@ -21,5 +21,71 @@
   "imagem": "/images/produtos/malibu-23s-concert.webp",
   "imagemAlt": "Malibu 23S Concert",
   "nota": 4.9,
-  "avaliacoes": 1028
+  "avaliacoes": 1032,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 261,
+    "off": 25,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-malibu-concert-23-sapele-natural-com-bag/p/MLB28089960"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Malibu"
+    ],
+    [
+      "Linha",
+      "Ukulele Acústico"
+    ],
+    [
+      "Modelo",
+      "23 S"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho",
+      "Concerto"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Altura",
+      "11 cm"
+    ],
+    [
+      "Comprimento",
+      "65 cm"
+    ],
+    [
+      "Largura",
+      "23 cm"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Acabamento",
+      "Natural fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ]
 }

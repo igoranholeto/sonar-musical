@@ -17,5 +17,68 @@
   "nota": 4.6,
   "avaliacoes": 77,
   "imagemAlt": "Rozini Estudante RX201 (nylon)",
-  "imagem": "/images/produtos/rozini-rx201-estudante.webp"
+  "imagem": "/images/produtos/rozini-rx201-estudante.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1161,
+    "off": 22,
+    "parcelas": "10x R$90,10 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-rozini-estudante-classico-acustico-fosco/p/MLB16068617"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Purple heart"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Modelo",
+      "RX201.AC.N.F"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Marfim"
+    ]
+  ]
 }

@@ -11,7 +11,54 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 539,
+  "avaliacoes": 545,
   "imagemAlt": "Suporte Bertô 5 Instrumentos",
-  "imagem": "/images/produtos/suporte-berto-5-instrumentos.webp"
+  "imagem": "/images/produtos/suporte-berto-5-instrumentos.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 300,
+    "off": 38,
+    "parcelas": "12x R$18,36",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-chao-berto-para-5-instrumentos-violao-guitarra-baixo-preto/p/MLB39368526"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Bertô"
+    ],
+    [
+      "Modelo",
+      "Suporte chão 5 instrumentos"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "30 cm x 75 cm x 70 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De piso"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Guitarra, Viola"
+    ],
+    [
+      "Material",
+      "Ferro"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "5"
+    ],
+    [
+      "Peso máximo suportado",
+      "25 kg"
+    ]
+  ]
 }

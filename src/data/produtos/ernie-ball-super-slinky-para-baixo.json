@@ -15,5 +15,38 @@
     }
   ],
   "imagem": "/images/produtos/ernie-ball-super-slinky-para-baixo.webp",
-  "imagemAlt": "Ernie Ball Super Slinky para baixo"
+  "imagemAlt": "Ernie Ball Super Slinky para baixo",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 258,
+    "off": 14,
+    "parcelas": "12x R$21,83",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-ernie-ball-baixo-4-cordas-super-slink-045/up/MLBU1405596607"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ernie Ball"
+    ],
+    [
+      "Linha",
+      "Super Slinky"
+    ],
+    [
+      "Modelo",
+      "P02834"
+    ],
+    [
+      "Instrumento recomendado",
+      "Baixo"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 98
 }

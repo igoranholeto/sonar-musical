@@ -13,5 +13,56 @@
   "nota": 5,
   "avaliacoes": 1,
   "imagemAlt": "Bandolim Rozini Estudante RB21 Eletrificado",
-  "imagem": "/images/produtos/rozini-rb21-eletrico.webp"
+  "imagem": "/images/produtos/rozini-rb21-eletrico.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1556,
+    "off": 8,
+    "parcelas": "12x R$137,88",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bandolim-rozini-estudante-eletrificado-verniz-fosco-imbuia/p/MLB27359631"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Modelo",
+      "RB21ELFI"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Material do braço",
+      "Cedro"
+    ],
+    [
+      "Material do corpo",
+      "Marfim"
+    ],
+    [
+      "Forma do corpo",
+      "Auditorium"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "8"
+    ],
+    [
+      "Recursos",
+      "elétrico"
+    ]
+  ]
 }

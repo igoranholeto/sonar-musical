@@ -13,5 +13,54 @@
   "nota": 5,
   "avaliacoes": 5,
   "imagemAlt": "Eagle EV744 4/4 (violino elétrico)",
-  "imagem": "/images/produtos/eagle-ev744-eletrico.webp"
+  "imagem": "/images/produtos/eagle-ev744-eletrico.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$181,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-eagle-ev744-44-eletrico/p/MLB28399777"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Modelo",
+      "EV744 4/4"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilho"
+    ],
+    [
+      "Tipo de violino",
+      "Elétrico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Abeto, Bordo"
+    ],
+    [
+      "Acessórios incluídos",
+      "Breu"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

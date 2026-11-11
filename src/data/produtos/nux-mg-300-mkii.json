@@ -17,5 +17,54 @@
   "imagem": "/images/produtos/nux-mg-300-mkii.webp",
   "imagemAlt": "Nux MG-300 MkII",
   "nota": 4.8,
-  "avaliacoes": 358
+  "avaliacoes": 358,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$147,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-multiefeitos-caracteristica-de-guitarra-eletrica-nux-mg-300-mkii/p/MLB72990044"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "NUX"
+    ],
+    [
+      "Modelo",
+      "Mg300MkII"
+    ],
+    [
+      "Cor",
+      "[None]"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ]
 }

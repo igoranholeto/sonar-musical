@@ -15,5 +15,80 @@
       "data": "2026-11-10",
       "preco": 15150
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$1.515 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-neural-dsp-quad-cortex-para-guitarra-e-baixo-multi-efeitos-touch/p/MLB19583707"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Neural DSP"
+    ],
+    [
+      "Linha",
+      "Quad Cortex"
+    ],
+    [
+      "Modelo",
+      "Quad Cortex"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "29 cm x 19 cm x 4.9 cm"
+    ],
+    [
+      "Peso",
+      "1,95 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "240"
+    ],
+    [
+      "Tensão de operação",
+      "12V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica, Microfone"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "TFT LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "2 XRL, 4 jack 6.3 mm, MIDI, USB-B"
+    ],
+    [
+      "Itens inclusos",
+      "fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "vocal, luz indicadora, tela touch"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 24
 }

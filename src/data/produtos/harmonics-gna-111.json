@@ -8,10 +8,80 @@
     {
       "data": "2026-11-10",
       "preco": 303
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 303
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 856,
+  "avaliacoes": 832,
   "imagemAlt": "Harmonics GNA-111",
-  "imagem": "/images/produtos/harmonics-gna-111.webp"
+  "imagem": "/images/produtos/harmonics-gna-111.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 600,
+    "off": 49,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-harmonics-gna-111-acustico-sunburst-6-cordas-madeira/p/MLB16041604"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "ABS"
+    ],
+    [
+      "Marca",
+      "Harmonics"
+    ],
+    [
+      "Linha",
+      "Acústico Clássico"
+    ],
+    [
+      "Modelo",
+      "GNA-111"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Tilo"
+    ]
+  ]
 }

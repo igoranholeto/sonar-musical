@@ -11,7 +11,70 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 30,
+  "avaliacoes": 31,
   "imagemAlt": "Memphis AD-39 Nylon",
-  "imagem": "/images/produtos/memphis-ad-39.webp"
+  "imagem": "/images/produtos/memphis-ad-39.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1000,
+    "off": 56,
+    "parcelas": "12x R$41,77",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-nylon-tagima-memphis-ad-39-6-cordas-acustico-natural/p/MLB42060321"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Techwood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Tagima"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Chhlik"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Memphis"
+    ],
+    [
+      "Modelo",
+      "AD-39"
+    ],
+    [
+      "Cor",
+      "Amarelo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ]
+  ]
 }

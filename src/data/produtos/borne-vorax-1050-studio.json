@@ -15,5 +15,66 @@
     }
   ],
   "imagem": "/images/produtos/borne-vorax-1050-studio.webp",
-  "imagemAlt": "Borne Vorax 1050 Studio"
+  "imagemAlt": "Borne Vorax 1050 Studio",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1516,
+    "off": 21,
+    "parcelas": "12x R$116,04",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-vorax-1050-studio-borne-preto-50w/p/MLB36602227"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Borne"
+    ],
+    [
+      "Linha",
+      "Vorax"
+    ],
+    [
+      "Código do fabricante",
+      "VORAX10502022"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "9,5 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "46.5 cm x 26 cm x 42 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "9V"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "50 W"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 10
 }

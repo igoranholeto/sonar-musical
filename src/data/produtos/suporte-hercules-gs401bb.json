@@ -11,7 +11,52 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 167,
+  "avaliacoes": 155,
   "imagemAlt": "Suporte Hercules GS401BB",
-  "imagem": "/images/produtos/suporte-hercules-gs401bb.webp"
+  "imagem": "/images/produtos/suporte-hercules-gs401bb.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "6x R$44,83 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-para-violao-acustico-hercules-gs401bb-dobravel-preto/p/MLB27113983"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Hércules"
+    ],
+    [
+      "Modelo",
+      "GS401BB"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "31 cm x 28 cm x 23 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De piso"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "1"
+    ],
+    [
+      "Peso máximo suportado",
+      "4 kg"
+    ]
+  ]
 }

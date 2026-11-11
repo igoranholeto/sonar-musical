@@ -1,7 +1,7 @@
 {
   "nome": "Ibanez Mikro GSRM20",
   "meli": "https://meli.la/2FmwLuh",
-  "preco": 2102,
+  "preco": 2091,
   "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
@@ -15,9 +15,70 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2102
+      "preco": 2091
     }
   ],
   "imagemAlt": "Ibanez Mikro GSRM20",
-  "imagem": "/images/produtos/ibanez-gsrm20-mikro.webp"
+  "imagem": "/images/produtos/ibanez-gsrm20-mikro.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$209,16 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bass-guitar-ibanez-gsrm20bwnf-mikro-walnut-flat-poplar-body/p/MLB2069233273"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "Mikro"
+    ],
+    [
+      "Código do fabricante",
+      "GSRM20BWNF"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "28,6 \""
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Tipo de captadores",
+      "Magnético"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fio"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

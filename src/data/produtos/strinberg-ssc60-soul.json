@@ -15,5 +15,56 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-ssc60-soul.webp",
-  "imagemAlt": "Strinberg Soul SSC60 Nylon"
+  "imagemAlt": "Strinberg Soul SSC60 Nylon",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$200,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-strinberg-soul-ssc60-mgs-nylon-marrom/p/MLB77301543"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "Ssc60"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Forma do corpo",
+      "Violão clássico (corpo tipo dreadnought não informado)"
+    ],
+    [
+      "Tamanho do corpo",
+      "MGS"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Madeira"
+    ],
+    [
+      "Materiais do braço",
+      "madeira"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 6
 }

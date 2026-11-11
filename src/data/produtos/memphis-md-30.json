@@ -11,5 +11,46 @@
     }
   ],
   "imagemAlt": "Memphis MD-30 EQ Folk",
-  "imagem": "/images/produtos/memphis-md-30.webp"
+  "imagem": "/images/produtos/memphis-md-30.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$122,60 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-aco-memphis-md-30-eq-folk-natural-fosco/up/MLBU3959042577"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Memphis by Tagima"
+    ],
+    [
+      "Modelo",
+      "md-30 eletroacustico"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Spruce"
+    ]
+  ]
 }

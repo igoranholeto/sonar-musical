@@ -15,5 +15,78 @@
     }
   ],
   "imagem": "/images/produtos/tagima-dallas-gran-reserva.webp",
-  "imagemAlt": "Tagima Dallas Gran Reserva"
+  "imagemAlt": "Tagima Dallas Gran Reserva",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1253,
+    "off": 26,
+    "parcelas": "12x R$90,01",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-dallas-gran-reserva-mogno-6-cordas-eletroacustico/p/MLB53421511"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Tipos de controle",
+      "Equalizador, Pré-amplificador, Volume"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Tagima Dallas GR"
+    ],
+    [
+      "Modelo",
+      "Tagima Dallas GR Sapele"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Acabamento do corpo",
+      "Lâmina Mahogany"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Mogno"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 25
 }

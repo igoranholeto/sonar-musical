@@ -21,5 +21,74 @@
   "imagem": "/images/produtos/strinberg-sab500-5-cordas-ativo.webp",
   "imagemAlt": "Strinberg SAB500 5 cordas ativo",
   "nota": 4.8,
-  "avaliacoes": 99
+  "avaliacoes": 100,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$123,87",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-5-cordas-strinberg-sab500-twr-ativo/p/MLB22907991"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "SAB500"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Bordô"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Profundidade do corpo",
+      "5 cm"
+    ],
+    [
+      "Largura do corpo",
+      "40 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "110 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "8.650 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "BASSWOOD"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de ponte",
+      "Standard"
+    ],
+    [
+      "Tipo de captadores",
+      "JB"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

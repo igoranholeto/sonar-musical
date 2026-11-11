@@ -11,5 +11,72 @@
     }
   ],
   "imagem": "/images/produtos/epiphone-sg-standard.webp",
-  "imagemAlt": "Epiphone SG Standard"
+  "imagemAlt": "Epiphone SG Standard",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$595,40",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-epiphone-inspired-by-gibson-sg-standard-mogno-ebony/p/MLB17462945"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Linha",
+      "Inspired by Gibson"
+    ],
+    [
+      "Modelo",
+      "SG Standard"
+    ],
+    [
+      "Forma do corpo",
+      "SG"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Ebony"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Figueira-benjamim"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 25
 }

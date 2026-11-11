@@ -1,0 +1,86 @@
+{
+  "nome": "Yamaha P-225 (piano digital)",
+  "meli": "https://meli.la/12ojaqr",
+  "preco": 4495,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 4495
+    }
+  ],
+  "imagemAlt": "Yamaha P-225 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$449,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-yamaha-p-225b-88-teclas-preto/p/MLB28270257"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Piano Digital"
+    ],
+    [
+      "Modelo",
+      "p255b"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte bivolt"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo graduada"
+    ],
+    [
+      "Polifonia máxima",
+      "192"
+    ],
+    [
+      "Quantidade de ritmos",
+      "24"
+    ],
+    [
+      "Quantidade de canções",
+      "71"
+    ],
+    [
+      "Efeitos",
+      "Reverberação"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Altura",
+      "13 cm"
+    ],
+    [
+      "Largura",
+      "133 cm"
+    ],
+    [
+      "Profundidade",
+      "28 cm"
+    ],
+    [
+      "Recursos",
+      "portátil, teclas sensíveis, bluetooth, display led"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 229,
+  "imagem": "/images/produtos/yamaha-p-225-piano-digital.webp"
+}

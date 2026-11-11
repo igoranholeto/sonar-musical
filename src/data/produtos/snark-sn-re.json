@@ -1,17 +1,66 @@
 {
   "nome": "Snark SN-RE (recarregável)",
   "meli": "https://meli.la/2HZq83u",
-  "preco": 209,
+  "preco": 220,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 209
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 220
     }
   ],
   "nota": 4.7,
   "avaliacoes": 72,
   "imagemAlt": "Snark SN-RE (recarregável)",
-  "imagem": "/images/produtos/snark-sn-re.webp"
+  "imagem": "/images/produtos/snark-sn-re.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "6x R$36,65 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/afinador-cromatico-recarregavel-snark-clip-on-360-instrumentos/p/MLB29262919"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Snark"
+    ],
+    [
+      "Modelo",
+      "SN-RE"
+    ],
+    [
+      "Tipo de alimentação",
+      "Pilha"
+    ],
+    [
+      "Tipo de afinador",
+      "Cromático"
+    ],
+    [
+      "Formato do afinador",
+      "Pinça"
+    ],
+    [
+      "Usos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Ukelele, Contrabaixo"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "415 Hz - 466 Hz"
+    ],
+    [
+      "Recursos",
+      "cromático, tela"
+    ]
+  ]
 }

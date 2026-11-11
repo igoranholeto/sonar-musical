@@ -1,0 +1,83 @@
+{
+  "nome": "Mesa digital Soundcraft Ui16",
+  "meli": "https://meli.la/29bs7sx",
+  "preco": 2374,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2374
+    }
+  ],
+  "imagemAlt": "Mesa digital Soundcraft Ui16",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2525,
+    "off": 6,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mesa-digital-soundcraft-ui16/p/MLB15938381"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Soundcraft"
+    ],
+    [
+      "Linha",
+      "Ui"
+    ],
+    [
+      "Modelo",
+      "Ui16"
+    ],
+    [
+      "Consumo energético",
+      "25 W"
+    ],
+    [
+      "Tipo de console",
+      "Digital"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Reverb, Delay, Chorus"
+    ],
+    [
+      "Conectores",
+      "8 combo XLR/ jack"
+    ],
+    [
+      "Quantidade de canais",
+      "16"
+    ],
+    [
+      "Conectividade",
+      "Wi-Fi"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Quantidade de buses",
+      "6"
+    ],
+    [
+      "Quantidade de efeitos",
+      "6"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma, efeitos, equalizador, software incluído"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1353,
+  "imagem": "/images/produtos/mesa-digital-soundcraft-ui16.webp"
+}

@@ -15,5 +15,78 @@
     }
   ],
   "imagem": "/images/produtos/taylor-academy-10.webp",
-  "imagemAlt": "Violão Taylor Academy 10e com a bag"
+  "imagemAlt": "Violão Taylor Academy 10e com a bag",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$790 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-taylor-academy-10-e-eletroacustico-cbag-cor-natural-orientacao-da-mao-destro/p/MLB41179928"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Elixir"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Ébano"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Equalizador, Volume"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa"
+    ],
+    [
+      "Marca",
+      "Taylor"
+    ],
+    [
+      "Linha",
+      "Academy"
+    ],
+    [
+      "Modelo",
+      "Academy 10e"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "tamanho mini"
+    ]
+  ]
 }

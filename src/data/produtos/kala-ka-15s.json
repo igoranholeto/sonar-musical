@@ -1,15 +1,82 @@
 {
   "nome": "Kala KA-15S Soprano",
   "meli": "https://meli.la/18kvzUx",
-  "preco": 588,
+  "preco": 585,
   "precoEm": "2026-11-11",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 588
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 585
     }
   ],
   "imagemAlt": "Kala KA-15S Soprano",
-  "imagem": "/images/produtos/kala-ka-15s.webp"
+  "imagem": "/images/produtos/kala-ka-15s.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 603,
+    "off": 3,
+    "parcelas": "12x R$56,54",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kala-ka-15s-mogno-soprano-ukulele-ukulele-soprano-classico/p/MLB2115823571"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Kala"
+    ],
+    [
+      "Modelo",
+      "KA-15S"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tamanho",
+      "Soprano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Altura",
+      "58,4 cm"
+    ],
+    [
+      "Comprimento",
+      "10,16 cm"
+    ],
+    [
+      "Largura",
+      "22,86 cm"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Materiais",
+      "Mogno,Jacarandá"
+    ],
+    [
+      "Acabamento",
+      "Acetinado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Quantidade de trastes",
+      "12"
+    ]
+  ]
 }

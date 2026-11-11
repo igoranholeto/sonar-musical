@@ -1,7 +1,7 @@
 {
   "nome": "Marshall MG30GFX",
   "meli": "https://meli.la/2u4uu33",
-  "preco": 2502,
+  "preco": 2489,
   "precoEm": "2026-11-11",
   "categoria": "amplificador",
   "historico": [
@@ -15,9 +15,30 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2502
+      "preco": 2489
     }
   ],
   "imagemAlt": "Marshall MG30GFX",
-  "imagem": "/images/produtos/marshall-mg30gfx.webp"
+  "imagem": "/images/produtos/marshall-mg30gfx.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$248,95 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplifier-marshall-m-mg30gfx-u-30w-1x10-gold-fx/p/MLB2088965147"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Marshall"
+    ],
+    [
+      "Modelo",
+      "MG30GFX"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Suportes e cabides para instrumentos de corda"
+    ]
+  ]
 }

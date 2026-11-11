@@ -1,0 +1,84 @@
+{
+  "nome": "Kokko KG-10 (Bluetooth)",
+  "meli": "https://meli.la/1vZdghH",
+  "preco": 175,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 175
+    }
+  ],
+  "imagemAlt": "Kokko KG-10 (Bluetooth)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 230,
+    "off": 23,
+    "parcelas": "12x R$17,27",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mini-amplificador-guitarra-bluetooth-kokko-kg-10-10w-portatil/p/MLB53276548"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Kokko"
+    ],
+    [
+      "Modelo",
+      "Kg-10"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "477 g"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "15 cm x 6.5 cm x 10 cm"
+    ],
+    [
+      "Resposta mínima em frequência - Resposta máxima em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Conectores de entrada",
+      "Conector de alto-falante, Jack"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Voltagem da bateria",
+      "3.7V"
+    ],
+    [
+      "Tipo de pilha",
+      "Íon de lítio"
+    ],
+    [
+      "Tipo de amplificador",
+      "Mini Amplificador"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 937,
+  "imagem": "/images/produtos/kokko-kg-10-bluetooth.webp"
+}

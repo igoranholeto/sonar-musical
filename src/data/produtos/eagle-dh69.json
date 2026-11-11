@@ -13,5 +13,54 @@
   "nota": 4.6,
   "avaliacoes": 19,
   "imagemAlt": "Eagle DH69 Clássico com Capa",
-  "imagem": "/images/produtos/eagle-dh69.webp"
+  "imagem": "/images/produtos/eagle-dh69.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$125 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eagle-dh69-classico-nylon-mogno-pro-series-capa-cor-vintage-orientacao-da-mao-destro/p/MLB34143415"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Linha",
+      "DH"
+    ],
+    [
+      "Modelo",
+      "DH 69"
+    ],
+    [
+      "Cor",
+      "Vintage"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

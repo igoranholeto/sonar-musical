@@ -15,5 +15,44 @@
     }
   ],
   "imagemAlt": "Alesis Turbo Max",
-  "imagem": "/images/produtos/alesis-turbo-max.webp"
+  "imagem": "/images/produtos/alesis-turbo-max.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3880,
+    "off": 39,
+    "parcelas": "12x R$225,52",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-alesis-turbo-max/up/MLBU3870949288"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Alesis"
+    ],
+    [
+      "Modelo",
+      "Turbo Max"
+    ],
+    [
+      "Quantidade de corpos",
+      "7"
+    ],
+    [
+      "Quantidade de sons",
+      "32"
+    ],
+    [
+      "Tipo de alimentação",
+      "9V"
+    ],
+    [
+      "Tipos de conexões",
+      "Bluetooth"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato de condução, prato de ataque, surdo, pedais, baquetas, módulo de som"
+    ]
+  ]
 }

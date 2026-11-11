@@ -1,7 +1,7 @@
 {
   "nome": "Yamaha C40MII",
   "meli": "https://meli.la/1zqj8zZ",
-  "preco": 854,
+  "preco": 959,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -19,9 +19,72 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 854
+      "preco": 959
     }
   ],
   "imagemAlt": "Yamaha C40MII",
-  "imagem": "/images/produtos/yamaha-c40mii.webp"
+  "imagem": "/images/produtos/yamaha-c40mii.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$95,87 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-c40mii-44-nailon-natural-fosco/p/MLB16062884"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "C"
+    ],
+    [
+      "Modelo",
+      "C40MII"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 317
 }

@@ -11,5 +11,28 @@
     }
   ],
   "imagemAlt": "Ibanez SR300E",
-  "imagem": "/images/produtos/ibanez-sr300e.webp"
+  "imagem": "/images/produtos/ibanez-sr300e.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5212,
+    "off": 25,
+    "parcelas": "10x R$390,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-4-cordas-ibanez-sr300e-mgb-midnight-gray-burst/up/MLBU1138540056"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "SR"
+    ],
+    [
+      "Modelo",
+      "SR300E MGB"
+    ]
+  ]
 }

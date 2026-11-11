@@ -1,0 +1,52 @@
+{
+  "nome": "Cajon Wittler Custom Pro elétrico",
+  "meli": "https://meli.la/314RtVW",
+  "preco": 340,
+  "precoEm": "2026-11-11",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 340
+    }
+  ],
+  "imagemAlt": "Cajon Wittler Custom Pro elétrico",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 471,
+    "off": 27,
+    "parcelas": "12x R$33,26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cajon-profissional-wittler-drums-custom-pro-eletrico-com-esteira-e-tampo-marfim/p/MLB75175572"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Wittler Drums"
+    ],
+    [
+      "Modelo",
+      "Custom Pro Inclinado Elétrico"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Largura x Comprimento",
+      "51 cm x 33 cm x 36 cm"
+    ],
+    [
+      "Material do tampo",
+      "COMPENSADO MARFIM 4MM"
+    ],
+    [
+      "Recursos",
+      "esteira"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 7,
+  "imagem": "/images/produtos/cajon-wittler-custom-pro-eletrico.webp"
+}

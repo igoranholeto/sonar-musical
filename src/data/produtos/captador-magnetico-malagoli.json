@@ -15,5 +15,49 @@
       "data": "2026-11-05",
       "preco": 159
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/captador-magnetico-malagoli-para-violao-encaixe-viola-cavaco/up/MLBU3156502204"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Malagoli"
+    ],
+    [
+      "Modelo",
+      "Captador malagoli 2A"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "Guitarra de aço"
+    ],
+    [
+      "Número de cordas compatíveis",
+      "6"
+    ],
+    [
+      "Tipos de captadores",
+      "Magnético"
+    ],
+    [
+      "Posições dos captadores",
+      "Boca do instrumento"
+    ],
+    [
+      "Tipo de equalização",
+      "Passivo"
+    ],
+    [
+      "Tipo de montagem",
+      "Parafusos"
+    ],
+    [
+      "Compatibilidade de cordas",
+      "6 cordas"
+    ]
   ]
 }

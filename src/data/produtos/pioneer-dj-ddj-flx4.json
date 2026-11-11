@@ -1,0 +1,83 @@
+{
+  "nome": "Pioneer DJ DDJ-FLX4",
+  "meli": "https://meli.la/1BXLgUy",
+  "preco": 2759,
+  "precoEm": "2026-11-11",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2759
+    }
+  ],
+  "imagemAlt": "Pioneer DJ DDJ-FLX4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4099,
+    "off": 32,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/controlador-pioneer-dj-ddj-flx4-preto/p/MLB22023879"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Pioneer DJ"
+    ],
+    [
+      "Linha",
+      "Controlador"
+    ],
+    [
+      "Modelo",
+      "DDJ-FLX4"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Conectores de entrada",
+      "RCA"
+    ],
+    [
+      "Conectores de saída",
+      "RCA"
+    ],
+    [
+      "Software incluídos",
+      "rekordbox, Serato DJ Lite"
+    ],
+    [
+      "Voltagem da bateria",
+      "127/220V"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Nomes dos sistemas operacionais",
+      "Windows 10, iOS, Android"
+    ],
+    [
+      "Memória RAM requerida",
+      "8 GB"
+    ],
+    [
+      "Quantidade de decks",
+      "2"
+    ],
+    [
+      "Recursos",
+      "comunicação usb-midi, crossfader, botões de hot cue e play, controles fx, tecla sync, tecla shift, interface de áudio integrada, bluetooth"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 4399,
+  "imagem": "/images/produtos/pioneer-dj-ddj-flx4.webp"
+}

@@ -11,5 +11,76 @@
     }
   ],
   "nota": 5,
-  "avaliacoes": 7
+  "avaliacoes": 7,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1350,
+    "off": 26,
+    "parcelas": "10x R$99,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-gran-reserva-kansas-folk-cutaway-dkmop/p/MLB68437504"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Techwood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Open Pore"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Sapele"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Gran Reserva DKMOP Folk"
+    ],
+    [
+      "Modelo",
+      "Folk Cutaway"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Purpleheart"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

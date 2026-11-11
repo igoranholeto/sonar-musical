@@ -21,5 +21,72 @@
   "nota": 4.9,
   "avaliacoes": 52,
   "imagemAlt": "Strinberg SAB66 6 cordas",
-  "imagem": "/images/produtos/strinberg-sab66.webp"
+  "imagem": "/images/produtos/strinberg-sab66.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3299,
+    "off": 49,
+    "parcelas": "12x R$158,78",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-6-cordas-strinberg-sab66-ativo-humbucker-hh-freixo-fosco/p/MLB24132879"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "SAB66 DW"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Profundidade do corpo",
+      "3 cm"
+    ],
+    [
+      "Largura do corpo",
+      "30 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "50 cm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Freixo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Humbucker"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Ativo"
+    ]
+  ]
 }

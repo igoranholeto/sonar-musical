@@ -1,17 +1,84 @@
 {
   "nome": "Hofma HVE241 4/4 (by Eagle)",
   "meli": "https://meli.la/1bKUv7W",
-  "preco": 597.9,
+  "preco": 597,
   "precoEm": "2026-11-11",
   "categoria": "violino",
   "historico": [
     {
       "data": "2026-11-11",
-      "preco": 597.9
+      "preco": 597
     }
   ],
   "nota": 4.9,
   "avaliacoes": 49,
   "imagemAlt": "Hofma HVE241 4/4 (by Eagle)",
-  "imagem": "/images/produtos/hofma-hve241.webp"
+  "imagem": "/images/produtos/hofma-hve241.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1199,
+    "off": 50,
+    "parcelas": "10x R$59,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-44-acustico-hofma-hve241-envernizado-c-case-e-arco/p/MLB34242847"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Hofma"
+    ],
+    [
+      "Modelo",
+      "HVE241"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Comprimento",
+      "80 cm"
+    ],
+    [
+      "Largura",
+      "26 cm"
+    ],
+    [
+      "Altura",
+      "14 cm"
+    ],
+    [
+      "Peso",
+      "520 g"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Bordo"
+    ],
+    [
+      "Acessórios incluídos",
+      "Arco, Breu, Estojo Térmico Extra Luxo"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

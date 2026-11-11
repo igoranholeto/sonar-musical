@@ -1,0 +1,86 @@
+{
+  "nome": "Giannini NF-14 Start Flat (nylon)",
+  "meli": "https://meli.la/26g6Hoj",
+  "preco": 600,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 600
+    }
+  ],
+  "imagemAlt": "Giannini NF-14 Start Flat (nylon)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$59,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-giannini-nf-14-start-flat-nailon-44/p/MLB16041597"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Bordo escurecido"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Giannini"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Bordo"
+    ],
+    [
+      "Materiais do braço",
+      "Linden"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Marca",
+      "SOUNDBLUE"
+    ],
+    [
+      "Linha",
+      "Start"
+    ],
+    [
+      "Modelo",
+      "KIT NF-14 CEQ"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2583,
+  "imagem": "/images/produtos/giannini-nf-14-start-flat-nylon.webp"
+}

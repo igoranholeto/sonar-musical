@@ -19,5 +19,49 @@
     }
   ],
   "imagem": "/images/produtos/ernie-ball-earthwood-extra-light-010.webp",
-  "imagemAlt": "Ernie Ball Earthwood Extra Light .010"
+  "imagemAlt": "Ernie Ball Earthwood Extra Light .010",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 78,
+    "off": 25,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-aco-010-ernie-ball-earthwood-extra-leve/p/MLB70109117"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ernie Ball"
+    ],
+    [
+      "Linha",
+      "2006"
+    ],
+    [
+      "Modelo",
+      "Earthwood"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "010"
+    ],
+    [
+      "Materiais",
+      "Aço"
+    ],
+    [
+      "Tensão",
+      "Extra leve"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 98
 }

@@ -1,0 +1,50 @@
+{
+  "nome": "Audio-Technica ATH-M20x",
+  "meli": "https://meli.la/344kPDu",
+  "preco": 750,
+  "precoEm": "2026-11-11",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 750
+    }
+  ],
+  "imagemAlt": "Audio-Technica ATH-M20x",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$72,53",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fones-de-ouvido-audio-technica-ath-m20x-professional-studio-cor-preto/p/MLB37993311"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Audio-Technica"
+    ],
+    [
+      "Linha",
+      "AUD ATHM20X"
+    ],
+    [
+      "Modelo",
+      "AUD ATHM20X"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ],
+    [
+      "Recursos",
+      "cabo desmontável"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 59,
+  "imagem": "/images/produtos/audio-technica-ath-m20x.webp"
+}

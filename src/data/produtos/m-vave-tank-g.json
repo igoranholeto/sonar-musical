@@ -1,7 +1,7 @@
 {
   "nome": "M-Vave Tank-G",
   "meli": "https://meli.la/1tNza3C",
-  "preco": 385,
+  "preco": 409,
   "precoEm": "2026-11-11",
   "categoria": "pedaleira",
   "historico": [
@@ -16,8 +16,89 @@
     {
       "data": "2026-11-10",
       "preco": 385
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 409
     }
   ],
   "imagem": "/images/produtos/m-vave-tank-g.webp",
-  "imagemAlt": "M-Vave Tank-G"
+  "imagemAlt": "M-Vave Tank-G",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 470,
+    "off": 13,
+    "parcelas": "12x R$39,54",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-guitarra-multi-efeitos-effects-pedal-guitarra-m-vave-tank-g/p/MLB66054835"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "LAICAI"
+    ],
+    [
+      "Modelo",
+      "Tank-G"
+    ],
+    [
+      "Cor",
+      "Verde"
+    ],
+    [
+      "Largura x Altura",
+      "3.5 cm x 0.18 cm"
+    ],
+    [
+      "Peso",
+      "245 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "28"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Delay, EQ, Preamplificador, Reverb"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria, USB"
+    ],
+    [
+      "Tipo de tela",
+      "LED"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack mono"
+    ],
+    [
+      "Tipos de conector de saída",
+      "XLR, Jack mono"
+    ],
+    [
+      "Itens inclusos",
+      "bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora, bluetooth"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1281
 }

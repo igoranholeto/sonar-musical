@@ -1,0 +1,67 @@
+{
+  "nome": "Kit 50 palhetas Alice",
+  "meli": "https://meli.la/2sYGuyQ",
+  "preco": 28,
+  "precoEm": "2026-11-11",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 28
+    }
+  ],
+  "imagemAlt": "Kit 50 palhetas Alice",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 30,
+    "off": 5,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-50-palhetas-alice-guitarra-violao-baixo-abs-espessuras-diversas/p/MLB28643692"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Alice"
+    ],
+    [
+      "Modelo",
+      "Rvn 01"
+    ],
+    [
+      "Cor",
+      "Sortimento"
+    ],
+    [
+      "Espessura",
+      "0.58 mm, 0.71 mm, 0.81 mm, 0.96 mm, 1.2 mm, 1.5 mm"
+    ],
+    [
+      "Material da palheta",
+      "Celuloide"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Guitarra"
+    ],
+    [
+      "Artista relacionado",
+      "Não possui"
+    ],
+    [
+      "Quantidade de palhetas",
+      "50"
+    ],
+    [
+      "Acessórios incluídos",
+      "Caixa"
+    ],
+    [
+      "Recursos",
+      "set"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 5566,
+  "imagem": "/images/produtos/kit-50-palhetas-alice.webp"
+}

@@ -1,0 +1,90 @@
+{
+  "nome": "Yamaha SLG200N Silent",
+  "meli": "https://meli.la/2fgtjBR",
+  "preco": 5170,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 5170
+    }
+  ],
+  "imagemAlt": "Yamaha SLG200N Silent",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$517 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-slg200n-para-destros-tobacco-brown-sunburst-mogno/p/MLB16044415"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Mogno"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "SLG200"
+    ],
+    [
+      "Modelo",
+      "SLG200N"
+    ],
+    [
+      "Cor",
+      "Tobacco brown sunburst"
+    ],
+    [
+      "Forma do corpo",
+      "Silent"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 148,
+  "imagem": "/images/produtos/yamaha-slg200n-silent.webp"
+}

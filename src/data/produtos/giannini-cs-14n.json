@@ -19,5 +19,73 @@
     }
   ],
   "imagem": "/images/produtos/giannini-cs-14n.webp",
-  "imagemAlt": "Giannini CS-14N"
+  "imagemAlt": "Giannini CS-14N",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 499,
+    "off": 34,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-giannini-cavaco-cs-14n-cor-natural/p/MLB25274030"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "CS-14 N"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Materiais do corpo",
+      "Madeira"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Material do braço",
+      "madeira"
+    ],
+    [
+      "Material do diapasão",
+      "Sabina massiça"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Bordo"
+    ],
+    [
+      "Altura",
+      "7,5 cm"
+    ],
+    [
+      "Largura",
+      "23,9 cm"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 457
 }

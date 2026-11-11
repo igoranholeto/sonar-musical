@@ -17,5 +17,56 @@
   "nota": 4.9,
   "avaliacoes": 93,
   "imagemAlt": "Roland TD-02K",
-  "imagem": "/images/produtos/roland-td-02k.webp"
+  "imagem": "/images/produtos/roland-td-02k.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4369,
+    "off": 37,
+    "parcelas": "12x R$262,78",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-compacta-roland-td-02k-td02k/p/MLB27903155"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Roland"
+    ],
+    [
+      "Modelo",
+      "Td-02k"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "9"
+    ],
+    [
+      "Quantidade de sons",
+      "15"
+    ],
+    [
+      "Funções do módulo de som",
+      "El modo Coach, ue incluye diferentes subdivisiones rítmicas, opciones"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato splash, prato de condução, prato de ataque, surdo, chimbal, pedais, módulo de som"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ]
 }

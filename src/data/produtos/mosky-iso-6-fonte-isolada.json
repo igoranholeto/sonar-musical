@@ -1,7 +1,7 @@
 {
   "nome": "Mosky ISO-6 fonte isolada",
   "meli": "https://meli.la/2JjMmsu",
-  "preco": 221,
+  "preco": 219,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -12,8 +12,73 @@
     {
       "data": "2026-11-10",
       "preco": 221
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 219
     }
   ],
   "imagem": "/images/produtos/mosky-iso-6-fonte-isolada.webp",
-  "imagemAlt": "Mosky ISO-6 fonte isolada"
+  "imagemAlt": "Mosky ISO-6 fonte isolada",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 323,
+    "off": 32,
+    "parcelas": "12x R$21,72",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-de-pedal-isolada-profissional-mosky-iso-6-us-plug/p/MLB2031502646"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mosky"
+    ],
+    [
+      "Modelo",
+      "ISO-6"
+    ],
+    [
+      "Tipo de alimentação",
+      "Battery"
+    ],
+    [
+      "Voltagem",
+      "9V"
+    ],
+    [
+      "Material",
+      "Metal"
+    ],
+    [
+      "Tensões de saída",
+      "9V"
+    ],
+    [
+      "Quantidade de pedais",
+      "6"
+    ],
+    [
+      "Comprimento",
+      "14 cm"
+    ],
+    [
+      "Largura",
+      "10 cm"
+    ],
+    [
+      "Altura",
+      "4 cm"
+    ],
+    [
+      "Peso",
+      "320 g"
+    ],
+    [
+      "Recursos",
+      "indicador led"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 10
 }

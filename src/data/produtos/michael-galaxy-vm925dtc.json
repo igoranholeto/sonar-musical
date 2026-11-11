@@ -1,7 +1,7 @@
 {
   "nome": "Michael Galaxy VM925DTC",
   "meli": "https://meli.la/1nyvxY2",
-  "preco": 1185,
+  "preco": 1202,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -19,11 +19,76 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 1185
+      "preco": 1202
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 842,
+  "avaliacoes": 802,
   "imagemAlt": "Michael Galaxy VM925DTC",
-  "imagem": "/images/produtos/michael-galaxy-vm925dtc.webp"
+  "imagem": "/images/produtos/michael-galaxy-vm925dtc.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$116,72",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-michael-galaxy-vm925dtc-folk-sunburst-acetinado-para-destros/p/MLB15245617"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "Galaxy"
+    ],
+    [
+      "Modelo",
+      "VM925DTC"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Acabamento do corpo",
+      "Acetinado"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Tipos de controle",
+      "Equalizador, Pré-amplificador, Volume"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

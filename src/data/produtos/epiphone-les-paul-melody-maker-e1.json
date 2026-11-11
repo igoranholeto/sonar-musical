@@ -1,0 +1,82 @@
+{
+  "nome": "Epiphone Les Paul Melody Maker E1",
+  "meli": "https://meli.la/1queqsd",
+  "preco": 1728,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1728
+    }
+  ],
+  "imagemAlt": "Epiphone Les Paul Melody Maker E1",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$172,87 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-epiphone-les-paul-melody-maker-e1-azul-pacific-com-captadores-ceramic/p/MLB17460465"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Linha",
+      "Les Paul"
+    ],
+    [
+      "Modelo",
+      "Melody Maker E1"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Pacific blue"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 157,
+  "imagem": "/images/produtos/epiphone-les-paul-melody-maker-e1.webp"
+}

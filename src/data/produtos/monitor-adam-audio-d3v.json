@@ -1,0 +1,82 @@
+{
+  "nome": "Monitor Adam Audio D3V",
+  "meli": "https://meli.la/2xRrYeH",
+  "preco": 3028,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3028
+    }
+  ],
+  "imagemAlt": "Monitor Adam Audio D3V",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$291,04",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-adam-audio-d3v-black/p/MLB45840293"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Adam Audio"
+    ],
+    [
+      "Modelo",
+      "D3V BLACK"
+    ],
+    [
+      "Quantidade de monitores",
+      "2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "P10, USB"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Sim"
+    ],
+    [
+      "Potência",
+      "60 W"
+    ],
+    [
+      "Resposta em frequência",
+      "35 Hz - 50 kHz"
+    ],
+    [
+      "Altura",
+      "24 cm"
+    ],
+    [
+      "Largura",
+      "11 cm"
+    ],
+    [
+      "Profundidade",
+      "15 cm"
+    ],
+    [
+      "Peso",
+      "3,5 kg"
+    ],
+    [
+      "Recursos",
+      "near-field"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 29,
+  "imagem": "/images/produtos/monitor-adam-audio-d3v.webp"
+}

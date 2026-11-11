@@ -11,5 +11,72 @@
     }
   ],
   "imagem": "/images/produtos/epiphone-extura-prophecy.webp",
-  "imagemAlt": "Epiphone Extura Prophecy"
+  "imagemAlt": "Epiphone Extura Prophecy",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 15636,
+    "off": 7,
+    "parcelas": "10x R$1.438 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-extura-prophecy-black-aged-gloss/up/MLBU5239463999"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Modelo",
+      "EXTURA PROPHECY"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "627,89 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Jumbo"
+    ],
+    [
+      "Forma do braço",
+      "Asymmetrical slim taper"
+    ],
+    [
+      "Construção do braço",
+      "Glued in"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "LockTone Tune-O-Matic"
+    ],
+    [
+      "Tipo de ponte",
+      "Fixo"
+    ],
+    [
+      "Tipos de controle",
+      "Chave seletora de captadores, Tone, Volume"
+    ]
+  ]
 }

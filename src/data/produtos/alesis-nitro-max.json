@@ -11,7 +11,58 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 333,
+  "avaliacoes": 334,
   "imagemAlt": "Alesis Nitro Max",
-  "imagem": "/images/produtos/alesis-nitro-max.webp"
+  "imagem": "/images/produtos/alesis-nitro-max.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5923,
+    "off": 20,
+    "parcelas": "10x R$470,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-alesis-nitro-max-preta/p/MLB47926788"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Alesis"
+    ],
+    [
+      "Código do fabricante",
+      "NITROMAXKITXUS"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "8"
+    ],
+    [
+      "Quantidade de sons",
+      "440"
+    ],
+    [
+      "Funções do módulo de som",
+      "Metrônomo"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato de condução, prato de ataque, surdo, chimbal, pedais, baquetas, módulo de som"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ]
 }

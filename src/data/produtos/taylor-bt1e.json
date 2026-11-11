@@ -17,5 +17,78 @@
   "nota": 4.6,
   "avaliacoes": 11,
   "imagem": "/images/produtos/taylor-bt1e.webp",
-  "imagemAlt": "Taylor Baby Taylor BT1e"
+  "imagemAlt": "Taylor Baby Taylor BT1e",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$645,81",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-taylor-bt1e-baby-aco-eletroacustico-destro/p/MLB15113758"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Taylor"
+    ],
+    [
+      "Linha",
+      "Baby Taylor"
+    ],
+    [
+      "Modelo",
+      "BT1e"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "3/4"
+    ],
+    [
+      "Materiais do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "577,85 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "tamanho mini"
+    ]
+  ]
 }

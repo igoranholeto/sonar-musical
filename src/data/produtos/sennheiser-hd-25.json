@@ -1,0 +1,78 @@
+{
+  "nome": "Sennheiser HD 25",
+  "meli": "https://meli.la/2rWm2j1",
+  "preco": 2199,
+  "precoEm": "2026-11-11",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2199
+    }
+  ],
+  "imagemAlt": "Sennheiser HD 25",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$211,46",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-profissional-sennheiser-preto-hd-25-monitoramento-dj-broadcast-com-cabo-removivel-mq550/p/MLB69255883"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Sennheiser"
+    ],
+    [
+      "Modelo",
+      "MQ550"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Unidade de diafragma",
+      "4 cm"
+    ],
+    [
+      "Resposta em frequência",
+      "16 Hz - 22 Hz"
+    ],
+    [
+      "Sensibilidade",
+      "120 dB"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ],
+    [
+      "Tipos de conectores",
+      "Jack"
+    ],
+    [
+      "Comprimento do cabo",
+      "1,5 m"
+    ],
+    [
+      "Usos adequados",
+      "Profissional"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador jack 3.5 mm"
+    ],
+    [
+      "Funções do controle",
+      "Controle de volume"
+    ],
+    [
+      "Recursos",
+      "microfone flexível, cabo desmontável"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 43,
+  "imagem": "/images/produtos/sennheiser-hd-25.webp"
+}

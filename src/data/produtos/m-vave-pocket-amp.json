@@ -1,0 +1,92 @@
+{
+  "nome": "M-Vave Pocket Amp",
+  "meli": "https://meli.la/1Wno42r",
+  "preco": 254,
+  "precoEm": "2026-11-11",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 254
+    }
+  ],
+  "imagemAlt": "M-Vave Pocket Amp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 320,
+    "off": 20,
+    "parcelas": "12x R$24,81",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-multiefeito-m-vave-pocket-amp-para-baixo-de-guitarra/p/MLB61396203"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "Pocket amp"
+    ],
+    [
+      "Cor",
+      "Cinza-escuro"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "10 cm x 7 cm x 4 cm"
+    ],
+    [
+      "Peso",
+      "300 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "60"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra, Baixo"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi efeito"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria/Corrente doméstica"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Itens inclusos",
+      "bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 204,
+  "imagem": "/images/produtos/m-vave-pocket-amp.webp"
+}

@@ -1,0 +1,82 @@
+{
+  "nome": "Shelby SU21M Soprano",
+  "meli": "https://meli.la/1wRrT5M",
+  "preco": 212,
+  "precoEm": "2026-11-11",
+  "categoria": "ukulele",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 212
+    }
+  ],
+  "imagemAlt": "Shelby SU21M Soprano",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$20,99",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-shelby-soprano-su21m-natural-fosco-by-eagle-cor-marrom/p/MLB27975348"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shelby"
+    ],
+    [
+      "Modelo",
+      "SU21M"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho",
+      "Soprano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Altura",
+      "6,7 cm"
+    ],
+    [
+      "Comprimento",
+      "53,5 cm"
+    ],
+    [
+      "Largura",
+      "17,6 cm"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Materiais",
+      "Mogno"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Acessórios incluídos",
+      "Não identificado"
+    ],
+    [
+      "Quantidade de trastes",
+      "12"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 541,
+  "imagem": "/images/produtos/shelby-su21m-soprano.webp"
+}

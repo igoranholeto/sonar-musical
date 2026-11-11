@@ -11,7 +11,66 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 299,
+  "avaliacoes": 251,
   "imagemAlt": "Giannini GUK-23 Concert",
-  "imagem": "/images/produtos/giannini-guk-23.webp"
+  "imagem": "/images/produtos/giannini-guk-23.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 493,
+    "off": 25,
+    "parcelas": "7x R$52,71 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-concert-giannini-guk-23-acustico-nylon-com-bag-cor-walnut-satin/p/MLB36293035"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "UKS"
+    ],
+    [
+      "Modelo",
+      "Guk-23"
+    ],
+    [
+      "Cor",
+      "Walnut Satin"
+    ],
+    [
+      "Tamanho",
+      "Concerto"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Materiais",
+      "Bag nylon"
+    ],
+    [
+      "Acabamento",
+      "Verniz fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bag nylon"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ]
 }

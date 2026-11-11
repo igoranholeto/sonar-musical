@@ -21,5 +21,56 @@
   "imagem": "/images/produtos/captadores-malagoli.webp",
   "imagemAlt": "Captadores Malagoli",
   "nota": 4.9,
-  "avaliacoes": 380
+  "avaliacoes": 400,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 799,
+    "off": 17,
+    "parcelas": "12x R$63,92",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-captadores-malagoli-custom-59-braco-84-ponte-brancos/p/MLB35948630"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Malagoli"
+    ],
+    [
+      "Modelo",
+      "Custom 59 / Custom 84"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "Les Paul, Ibanez, sg"
+    ],
+    [
+      "Número de cordas compatíveis",
+      "6"
+    ],
+    [
+      "Tipos de captadores",
+      "Humbucker"
+    ],
+    [
+      "Posições dos captadores",
+      "Pescoço, Ponte"
+    ],
+    [
+      "Tipo de equalização",
+      "Passivo"
+    ],
+    [
+      "Tipo de montagem",
+      "Parafusado no corpo da guitarra"
+    ],
+    [
+      "Recursos",
+      "set de captadores"
+    ]
+  ]
 }

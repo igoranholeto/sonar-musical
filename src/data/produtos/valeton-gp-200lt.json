@@ -1,7 +1,7 @@
 {
   "nome": "Valeton GP-200LT",
   "meli": "https://meli.la/1Q9MB2D",
-  "preco": 1450,
+  "preco": 1484,
   "precoEm": "2026-11-11",
   "categoria": "pedaleira",
   "historico": [
@@ -16,8 +16,85 @@
     {
       "data": "2026-11-10",
       "preco": 1450
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1484
     }
   ],
   "imagem": "/images/produtos/valeton-gp-200lt.webp",
-  "imagemAlt": "Valeton GP-200LT"
+  "imagemAlt": "Valeton GP-200LT",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1899,
+    "off": 21,
+    "parcelas": "12x R$144,06",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-valeton-gp-200lt-multi-efeitos-usb-c-portatil-preta-240-efeitos/p/MLB54207131"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Valeton"
+    ],
+    [
+      "Linha",
+      "GP"
+    ],
+    [
+      "Modelo",
+      "GP-200LT"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "25.3 cm x 16.5 cm x 5.6 cm"
+    ],
+    [
+      "Quantidade de efeitos",
+      "240"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra, Baixo, amplificadores acústicos"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "dinâmica, Distorção, frequência, Modulação, Delay, Reverberação"
+    ],
+    [
+      "Tipo de tela",
+      "TFT LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "2 Jack 6.3 mm TRS, 2 jack 6.3 mm, Jack 3.5 mm TRS, MIDI, USB-C"
+    ],
+    [
+      "Frequência de amostragem",
+      "44,1 kHz"
+    ],
+    [
+      "Itens inclusos",
+      "fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 289
 }

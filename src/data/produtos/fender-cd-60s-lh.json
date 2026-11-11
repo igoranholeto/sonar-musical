@@ -1,7 +1,7 @@
 {
   "nome": "Fender CD-60S Canhoto",
   "meli": "https://meli.la/1AZtupz",
-  "preco": 1937,
+  "preco": 1955,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -15,11 +15,76 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 1937
+      "preco": 1955
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 482,
+  "avaliacoes": 501,
   "imagemAlt": "Fender CD-60S Canhoto",
-  "imagem": "/images/produtos/fender-cd-60s-lh.webp"
+  "imagem": "/images/produtos/fender-cd-60s-lh.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$195,52 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-fender-classic-design-cd-60s-para-canhotos-natural-nogueira-brilhante/p/MLB14073504"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Nogueira"
+    ],
+    [
+      "Orientação da mão",
+      "Canhoto"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Acessórios incluídos",
+      "Correia"
+    ],
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Classic Design"
+    ],
+    [
+      "Modelo",
+      "CD-60S"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ]
+  ]
 }

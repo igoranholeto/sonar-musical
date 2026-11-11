@@ -15,7 +15,76 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 146,
+  "avaliacoes": 157,
   "imagemAlt": "Strinberg JBS155AD 5 cordas",
-  "imagem": "/images/produtos/strinberg-jbs155ad.webp"
+  "imagem": "/images/produtos/strinberg-jbs155ad.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$220 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-strinberg-jbs155ad-5-cordas-acabamento-do-corpo-brilhante-cor-preto-orientacao-da-mao-destro/p/MLB46664087"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "JBS"
+    ],
+    [
+      "Modelo",
+      "JBS155AD"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Basswood Sólido"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo torrado"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Roasted maple"
+    ],
+    [
+      "Tipo de captadores",
+      "Jazz"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Ativo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

@@ -19,5 +19,70 @@
     }
   ],
   "imagem": "/images/produtos/waldman-st-211.webp",
-  "imagemAlt": "Waldman ST-211"
+  "imagemAlt": "Waldman ST-211",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$89,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-waldman-st-211-retro-british-basswood-2023/p/MLB35271942"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Waldman"
+    ],
+    [
+      "Linha",
+      "Street"
+    ],
+    [
+      "Modelo",
+      "ST-211"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Retro British"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Retro British"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

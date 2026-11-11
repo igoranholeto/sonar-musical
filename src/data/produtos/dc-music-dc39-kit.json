@@ -1,0 +1,80 @@
+{
+  "nome": "DC Music DC39 (kit)",
+  "meli": "https://meli.la/16JTH8g",
+  "preco": 309,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 309
+    }
+  ],
+  "imagemAlt": "DC Music DC39 (kit)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 329,
+    "off": 6,
+    "parcelas": "6x R$51,54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-iniciante-dc-music-dc39-completo-c-capa-e-capotraste/p/MLB65979901"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Bétula"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "DC Music"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Mogno"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa"
+    ],
+    [
+      "Marca",
+      "Don Caprini"
+    ],
+    [
+      "Linha",
+      "Iniciantes"
+    ],
+    [
+      "Modelo",
+      "DC39NT"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 75,
+  "imagem": "/images/produtos/dc-music-dc39-kit.webp"
+}

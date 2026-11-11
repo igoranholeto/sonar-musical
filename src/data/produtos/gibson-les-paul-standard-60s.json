@@ -19,5 +19,70 @@
     }
   ],
   "imagem": "/images/produtos/gibson-les-paul-standard-60s.webp",
-  "imagemAlt": "Gibson Les Paul Standard '60s"
+  "imagemAlt": "Gibson Les Paul Standard '60s",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$2.735",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-gibson-les-paul-standard-60s-bourbon-burst/p/MLB27311912"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Gibson"
+    ],
+    [
+      "Linha",
+      "Standard"
+    ],
+    [
+      "Modelo",
+      "Les Paul Standard 60s"
+    ],
+    [
+      "Forma do corpo",
+      "Jumbo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Bourbon burst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Rosewood"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Maple AA"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ]
 }

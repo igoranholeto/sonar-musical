@@ -31,5 +31,74 @@
     }
   ],
   "imagem": "/images/produtos/tagima-tw-55-telecaster.webp",
-  "imagemAlt": "Tagima TW-55 (Telecaster)"
+  "imagemAlt": "Tagima TW-55 (Telecaster)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1249,
+    "off": 23,
+    "parcelas": "10x R$95,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tw-55-serie-tw-destra-preta-com-braco-de-bordo/p/MLB29609687"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TW-55"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Forma do braço",
+      "C"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 7
 }

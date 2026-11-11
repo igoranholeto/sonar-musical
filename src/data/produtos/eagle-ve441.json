@@ -1,7 +1,7 @@
 {
   "nome": "Eagle VE441",
   "meli": "https://meli.la/2gvvKc8",
-  "preco": 939,
+  "preco": 891,
   "precoEm": "2026-11-11",
   "categoria": "violino",
   "historico": [
@@ -11,11 +11,62 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 939
+      "preco": 891
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 437,
+  "avaliacoes": 499,
   "imagemAlt": "Eagle VE441",
-  "imagem": "/images/produtos/eagle-ve441.webp"
+  "imagem": "/images/produtos/eagle-ve441.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1047,
+    "off": 15,
+    "parcelas": "12x R$86,14",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-eagle-44-ve441-case-breu-e-arco-cor-marrom-claro/p/MLB28051694"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Modelo",
+      "VE 441"
+    ],
+    [
+      "Cor",
+      "Marrom-claro"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Abeto, Bordo"
+    ],
+    [
+      "Acessórios incluídos",
+      "Breu, Estojo, Arco"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

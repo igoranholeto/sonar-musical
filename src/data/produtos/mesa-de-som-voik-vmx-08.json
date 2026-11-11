@@ -1,0 +1,84 @@
+{
+  "nome": "Mesa de som Voik VMX-08",
+  "meli": "https://meli.la/2HDCSNH",
+  "preco": 315,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 315
+    }
+  ],
+  "imagemAlt": "Mesa de som Voik VMX-08",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 854,
+    "off": 63,
+    "parcelas": "6x R$52,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-8-canais-voik-vmx-08-usb-bluetooth-99-efeitos-interface-de-audio-live-streaming-48v-phantom-power-hi-z-processamento-digital-bivolt-110v220v/p/MLB64644781"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Linha",
+      "VMX"
+    ],
+    [
+      "Modelo",
+      "VMX-08"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Consumo energético",
+      "5 W"
+    ],
+    [
+      "Tipo de console",
+      "Analógica"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria/Corrente doméstica/Energia industrial"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Reverb, Delay"
+    ],
+    [
+      "Conectores",
+      "Auxiliar, RCA, USB"
+    ],
+    [
+      "Quantidade de canais",
+      "8"
+    ],
+    [
+      "Conectividade",
+      "Bluetooth"
+    ],
+    [
+      "Quantidade de efeitos",
+      "99"
+    ],
+    [
+      "Quantidade de canais estéreos",
+      "2"
+    ],
+    [
+      "Recursos",
+      "efeitos, equalizador"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 189,
+  "imagem": "/images/produtos/mesa-de-som-voik-vmx-08.webp"
+}

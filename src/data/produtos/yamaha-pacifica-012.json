@@ -1,7 +1,7 @@
 {
   "nome": "Yamaha Pacifica 012",
   "meli": "https://meli.la/17iAf1U",
-  "preco": 1884,
+  "preco": 1694,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
@@ -31,11 +31,80 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 1884
+      "preco": 1694
     }
   ],
   "imagem": "/images/produtos/yamaha-pacifica-012.webp",
   "imagemAlt": "Yamaha Pacifica 012",
   "nota": 5,
-  "avaliacoes": 24
+  "avaliacoes": 24,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1783,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-pacifica-yamaha-pac012100-series-branca-eletrica-cor-white-orientacao-da-mao-destro/p/MLB32088934"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Pacifica"
+    ],
+    [
+      "Modelo",
+      "PAC012"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "White"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "27,94 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

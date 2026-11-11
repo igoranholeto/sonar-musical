@@ -1,0 +1,84 @@
+{
+  "nome": "Ibanez PS60 Iceman",
+  "meli": "https://meli.la/2TetjDm",
+  "preco": 3103,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3103
+    }
+  ],
+  "imagemAlt": "Ibanez PS60 Iceman",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5132,
+    "off": 39,
+    "parcelas": "10x R$310,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-ps-series-ps60-iceman-de-choupo-2018-black-com-diapasao-de-amaranto/p/MLB17774400"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "PS Series"
+    ],
+    [
+      "Modelo",
+      "PS60"
+    ],
+    [
+      "Forma do corpo",
+      "Iceman"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "627,38 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 27,
+  "imagem": "/images/produtos/ibanez-ps60-iceman.webp"
+}

@@ -15,5 +15,22 @@
     }
   ],
   "imagem": "/images/produtos/dunlop-215-slide-de-vidro-pyrex-grosso-medio.webp",
-  "imagemAlt": "Dunlop 215 Slide de Vidro Pyrex Grosso Médio"
+  "imagemAlt": "Dunlop 215 Slide de Vidro Pyrex Grosso Médio",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "4x R$36,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/slide-vidro-pyrex-grosso-medio-215-si-dunlop/up/MLBU5227818427"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dunlop"
+    ],
+    [
+      "Modelo",
+      "3580"
+    ]
+  ]
 }

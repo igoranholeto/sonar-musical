@@ -1,0 +1,75 @@
+{
+  "nome": "Pandeiro Izzo 10\"",
+  "meli": "https://meli.la/1fwfkGA",
+  "preco": 56,
+  "precoEm": "2026-11-11",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 56
+    }
+  ],
+  "imagemAlt": "Pandeiro Izzo 10\"",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 65,
+    "off": 12,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pandeiro-profissional-izzo-de-abs-com-pele-sintetica-preta-10/p/MLB26408339"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Izzo"
+    ],
+    [
+      "Modelo",
+      "6480"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de platinelas",
+      "6"
+    ],
+    [
+      "Forma",
+      "Redonda"
+    ],
+    [
+      "Desenho",
+      "Liso"
+    ],
+    [
+      "Material do corpo",
+      "ABS"
+    ],
+    [
+      "Material do remendo",
+      "Sintético"
+    ],
+    [
+      "Altura",
+      "4 cm"
+    ],
+    [
+      "Largura",
+      "25 cm"
+    ],
+    [
+      "Comprimento",
+      "25 cm"
+    ],
+    [
+      "Peso",
+      "700 g"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 11057,
+  "imagem": "/images/produtos/pandeiro-izzo-10.webp"
+}

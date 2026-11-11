@@ -33,5 +33,47 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 218
+  "avaliacoes": 249,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 79,
+    "off": 22,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-ernie-ball-guitarra-regular-slink-010/up/MLBU1404990252"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ernie Ball"
+    ],
+    [
+      "Linha",
+      "Guitar"
+    ],
+    [
+      "Modelo",
+      "Regular Slinky"
+    ],
+    [
+      "Instrumento recomendado",
+      "Guitarra elétrica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      ".010/.046"
+    ],
+    [
+      "Materiais",
+      "Nickel"
+    ],
+    [
+      "Tensão",
+      "Regular"
+    ]
+  ]
 }

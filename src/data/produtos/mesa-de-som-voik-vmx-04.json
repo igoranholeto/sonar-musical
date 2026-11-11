@@ -1,0 +1,68 @@
+{
+  "nome": "Mesa de som Voik VMX-04",
+  "meli": "https://meli.la/15yb8ZA",
+  "preco": 195,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 195
+    }
+  ],
+  "imagemAlt": "Mesa de som Voik VMX-04",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 446,
+    "off": 56,
+    "parcelas": "12x R$19,27",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-4-canais-voik-vmx-04-usb-bluetooth-efeitos-delay-e-repeat-interface-de-audio-live-streaming-48v-phantom-power-hi-z-processamento-digital-bivolt-110v220v/p/MLB63509372"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Modelo",
+      "VMX-04"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Tipo de console",
+      "Analógica"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Reverb/Delay"
+    ],
+    [
+      "Conectores",
+      "Bluetooth, Entradas de microfone e linha, USB"
+    ],
+    [
+      "Quantidade de canais",
+      "4"
+    ],
+    [
+      "Conectividade",
+      "Bluetooth/USB"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma, efeitos"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 301,
+  "imagem": "/images/produtos/mesa-de-som-voik-vmx-04.webp"
+}

@@ -1,0 +1,84 @@
+{
+  "nome": "M-Vave SMK-25",
+  "meli": "https://meli.la/1kxebkh",
+  "preco": 270,
+  "precoEm": "2026-11-11",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 270
+    }
+  ],
+  "imagemAlt": "M-Vave SMK-25",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 430,
+    "off": 37,
+    "parcelas": "12x R$26,38",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-midi-m-vave-smk-25-25-teclas-8-pads-bluetooth/p/MLB37833065"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "SMK-25"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de teclas",
+      "25"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "USB Keyboard"
+    ],
+    [
+      "Quantidade de pads",
+      "8"
+    ],
+    [
+      "Quantidade de botões",
+      "8"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Tipo de aftertouch",
+      "Capacitive touch-stripes pitch bend & modulation control"
+    ],
+    [
+      "Dispositivos compatíveis",
+      "Celular, Computador, Tablet"
+    ],
+    [
+      "Sistemas operacionais compatíveis",
+      "Android, macOS, Windows, iOS"
+    ],
+    [
+      "Quantidade de terminais de entrada/saída",
+      "1"
+    ],
+    [
+      "Peças incluídas",
+      "Cabo de dados, Manual de instruções"
+    ],
+    [
+      "Recursos",
+      "roda de pitch e modulação, botões de mudança de oitava, botões daw, modo sequenciador, sensibilidade, teclas sensíveis, aftertouch, retroiluminação, arpejador"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1845,
+  "imagem": "/images/produtos/m-vave-smk-25.webp"
+}

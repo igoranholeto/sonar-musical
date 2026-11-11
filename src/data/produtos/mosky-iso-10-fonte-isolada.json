@@ -1,7 +1,7 @@
 {
   "nome": "Mosky ISO-10 fonte isolada",
   "meli": "https://meli.la/2cJQAxQ",
-  "preco": 262,
+  "preco": 261,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -12,8 +12,37 @@
     {
       "data": "2026-11-10",
       "preco": 262
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 261
     }
   ],
   "imagem": "/images/produtos/mosky-iso-10-fonte-isolada.webp",
-  "imagemAlt": "Mosky ISO-10 fonte isolada"
+  "imagemAlt": "Mosky ISO-10 fonte isolada",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 305,
+    "off": 14,
+    "parcelas": "6x R$43,48 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/w-fonte-de-alimentacao-isolada-10-saidas-para-pedais-de/p/MLB2058793559"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Generic"
+    ],
+    [
+      "Modelo",
+      "ISO-10"
+    ],
+    [
+      "Tipo de alimentação",
+      "Bateria/Corrente doméstica"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 62
 }

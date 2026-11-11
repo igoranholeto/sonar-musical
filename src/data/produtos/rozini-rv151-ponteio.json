@@ -17,5 +17,40 @@
   "nota": 5,
   "avaliacoes": 2,
   "imagemAlt": "Viola Caipira Rozini Ponteio RV151 (acústica)",
-  "imagem": "/images/produtos/rozini-rv151-ponteio.webp"
+  "imagem": "/images/produtos/rozini-rv151-ponteio.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1420,
+    "off": 24,
+    "parcelas": "10x R$107,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/viola-caipira-ponteio-natural-rv151acn-rozini/p/MLB34372268"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Modelo",
+      "Rv151acn"
+    ],
+    [
+      "Tipo de viola",
+      "Viola Caipira"
+    ],
+    [
+      "Quantidade de cordas",
+      "10"
+    ],
+    [
+      "Comprimento do corpo",
+      "97 cm"
+    ],
+    [
+      "Largura do corpo",
+      "7,8 cm"
+    ]
+  ]
 }

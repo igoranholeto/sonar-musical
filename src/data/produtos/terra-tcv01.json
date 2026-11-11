@@ -1,7 +1,7 @@
 {
   "nome": "Terra TCV01",
   "meli": "https://meli.la/25yqmpa",
-  "preco": 633,
+  "preco": 689,
   "precoEm": "2026-11-11",
   "categoria": "cavaquinho",
   "historico": [
@@ -12,8 +12,29 @@
     {
       "data": "2026-11-10",
       "preco": 633
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 689
     }
   ],
   "imagem": "/images/produtos/terra-tcv01.webp",
-  "imagemAlt": "Terra TCV01"
+  "imagemAlt": "Terra TCV01",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$68,85 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-terra-acustico-fosco-tcv01-mh-cavaco-com-capa/up/MLBU2334391588"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Código do fabricante",
+      "TCV01MH2023"
+    ]
+  ]
 }

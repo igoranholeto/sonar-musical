@@ -1,17 +1,90 @@
 {
   "nome": "Yamaha NTX1 Nylon",
   "meli": "https://meli.la/1FQ5xyY",
-  "preco": 3181,
+  "preco": 3164,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 3181
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 3164
     }
   ],
   "nota": 4.8,
   "avaliacoes": 91,
   "imagemAlt": "Yamaha NTX1 Nylon",
-  "imagem": "/images/produtos/yamaha-ntx1.webp"
+  "imagem": "/images/produtos/yamaha-ntx1.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$304,15",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-nx-ntx1-para-destros-natural-brilhante/p/MLB16050548"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "NX"
+    ],
+    [
+      "Modelo",
+      "NTX1"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Forma APX"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Yamaha"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Equalizador"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

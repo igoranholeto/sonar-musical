@@ -11,5 +11,80 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-sd201hcr.webp",
-  "imagemAlt": "Strinberg SD201HCR"
+  "imagemAlt": "Strinberg SD201HCR",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$111,54",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sd201hcr-destro-6-cordas-mahogany-satin/p/MLB19463605"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Figueira-benjamim"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Equalizador, Pré-amplificador, Volume"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bolsa"
+    ],
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "SD201HCR"
+    ],
+    [
+      "Cor",
+      "Mahogany satin"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 960
 }

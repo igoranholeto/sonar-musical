@@ -1,0 +1,82 @@
+{
+  "nome": "Monitor Edifier MR4",
+  "meli": "https://meli.la/17ujjMD",
+  "preco": 1052,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1052
+    }
+  ],
+  "imagemAlt": "Monitor Edifier MR4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$105,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/edifier-caixa-monitor-referencia-ativo-mr4-42-watts-estudio-cor-branco/p/MLB24457722"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Edifier"
+    ],
+    [
+      "Linha",
+      "MR"
+    ],
+    [
+      "Modelo",
+      "MR4"
+    ],
+    [
+      "Quantidade de monitores",
+      "2"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Altura",
+      "23 cm"
+    ],
+    [
+      "Largura",
+      "15 cm"
+    ],
+    [
+      "Profundidade",
+      "20 cm"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "TRS, RCA, P2"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Tweeter, Woofer"
+    ],
+    [
+      "Potência",
+      "42 W"
+    ],
+    [
+      "Resposta em frequência",
+      "60 Hz - 20 kHz"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manual de instruciones cable RCA-RCA"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2021,
+  "imagem": "/images/produtos/monitor-edifier-mr4.webp"
+}

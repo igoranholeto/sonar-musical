@@ -13,5 +13,56 @@
   "nota": 5,
   "avaliacoes": 10,
   "imagemAlt": "Ibanez Talman TMB100",
-  "imagem": "/images/produtos/ibanez-tmb100.webp"
+  "imagem": "/images/produtos/ibanez-tmb100.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3499,
+    "off": 14,
+    "parcelas": "12x R$289,01",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-4-cordas-ibanez-talman-bass-tmb100-preto/p/MLB25070380"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "SR"
+    ],
+    [
+      "Modelo",
+      "TMB100"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ]
+  ]
 }

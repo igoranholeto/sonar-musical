@@ -1,0 +1,78 @@
+{
+  "nome": "Strinberg GSS400 (SG)",
+  "meli": "https://meli.la/1hsoTYC",
+  "preco": 1163,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1163
+    }
+  ],
+  "imagemAlt": "Strinberg GSS400 (SG)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$112,90",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-strinberg-gss400-bk-sg-double-cut-hh-preta-corpo-em-poplar-braco-okoume-escala-purple-heart-ponte-tune-o-matic-22-trastes/p/MLB67576429"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "SG"
+    ],
+    [
+      "Modelo",
+      "GSS400"
+    ],
+    [
+      "Forma do corpo",
+      "Double-Cutaway"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Purple heart"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Okoume"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Poplar Sólido"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 13,
+  "imagem": "/images/produtos/strinberg-gss400-sg.webp"
+}

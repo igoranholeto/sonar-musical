@@ -17,5 +17,68 @@
   "nota": 4.9,
   "avaliacoes": 37,
   "imagemAlt": "Hofma HE215E12 12 cordas",
-  "imagem": "/images/produtos/hofma-he215e12.webp"
+  "imagem": "/images/produtos/hofma-he215e12.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1999,
+    "off": 39,
+    "parcelas": "10x R$120,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-folk-hofma-he215e12-dreadnought-eletroacustico-12-cordas-piezo-audisys/p/MLB15247574"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Hofma"
+    ],
+    [
+      "Linha",
+      "Legacy Series"
+    ],
+    [
+      "Modelo",
+      "HE 215E12"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Tipos de controle",
+      "Tone, Volume, Equalizador, Pré-amplificador"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ]
+  ]
 }

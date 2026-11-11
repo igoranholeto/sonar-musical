@@ -1,0 +1,88 @@
+{
+  "nome": "Yamaha P-45 (piano digital)",
+  "meli": "https://meli.la/2Xg85kN",
+  "preco": 2089,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2089
+    }
+  ],
+  "imagemAlt": "Yamaha P-45 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4499,
+    "off": 53,
+    "parcelas": "12x R$200,79",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-p-45-preto-yamaha-p45-com-fonte/p/MLB26918237"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Piano Digital"
+    ],
+    [
+      "Modelo",
+      "P-45"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento",
+      "Preto/Fosco"
+    ],
+    [
+      "Altura",
+      "132,6 cm"
+    ],
+    [
+      "Largura",
+      "15,4 cm"
+    ],
+    [
+      "Profundidade",
+      "29,5 cm"
+    ],
+    [
+      "Peso",
+      "11,5 kg"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo graduada"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "portátil, teclas sensíveis, display led, pedal"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1053,
+  "imagem": "/images/produtos/yamaha-p-45-piano-digital.webp"
+}

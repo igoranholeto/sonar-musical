@@ -13,5 +13,64 @@
   "nota": 4.9,
   "avaliacoes": 12,
   "imagemAlt": "Michael VNM49",
-  "imagem": "/images/produtos/michael-vnm49.webp"
+  "imagem": "/images/produtos/michael-vnm49.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1860,
+    "off": 30,
+    "parcelas": "12x R$125,72",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-acustico-michael-vnm49-44-spruce-ebano-estojo-arcos/p/MLB35093824"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "VNM49"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Comprimento",
+      "30 cm"
+    ],
+    [
+      "Largura",
+      "70 cm"
+    ],
+    [
+      "Altura",
+      "30 cm"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Blackwood"
+    ],
+    [
+      "Materiais do corpo",
+      "Spruce Maciço, Bordo, Maple Flamed"
+    ],
+    [
+      "Acessórios incluídos",
+      "Estojo térmico luxo com higrômetro, Breu, 2x Arcos de crina animal"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

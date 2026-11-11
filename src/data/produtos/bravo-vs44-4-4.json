@@ -1,0 +1,84 @@
+{
+  "nome": "Violino Bravo VS44 4/4",
+  "meli": "https://meli.la/1opwGt3",
+  "preco": 371,
+  "precoEm": "2026-11-11",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 371
+    }
+  ],
+  "imagemAlt": "Violino Bravo VS44 4/4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 613,
+    "off": 39,
+    "parcelas": "7x R$53 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-44-bravo-music-vs44-estudante-iniciante-com-estojo-arco-breu-tamanho-adulto-cor-vintage-satin-fosco/p/MLB52744234"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Bravo Music"
+    ],
+    [
+      "Modelo",
+      "VS44"
+    ],
+    [
+      "Cor",
+      "VS - Vintage Satin"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Comprimento",
+      "60 cm"
+    ],
+    [
+      "Largura",
+      "20 cm"
+    ],
+    [
+      "Altura",
+      "9 cm"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Materiais do corpo",
+      "Madeira"
+    ],
+    [
+      "Acessórios incluídos",
+      "Breu"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ],
+  "nota": 4.5,
+  "avaliacoes": 76,
+  "imagem": "/images/produtos/bravo-vs44-4-4.webp"
+}

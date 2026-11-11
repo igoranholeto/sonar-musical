@@ -1,7 +1,7 @@
 {
   "nome": "Semi case Spring SP-FK (folk)",
   "meli": "https://meli.la/2naqnZQ",
-  "preco": 372,
+  "preco": 392,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -11,11 +11,70 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 372
+      "preco": 392
     }
   ],
   "nota": 4.8,
   "avaliacoes": 105,
   "imagemAlt": "Semi case Spring SP-FK (folk)",
-  "imagem": "/images/produtos/semi-case-spring-sp-fk.webp"
+  "imagem": "/images/produtos/semi-case-spring-sp-fk.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 426,
+    "off": 8,
+    "parcelas": "7x R$56 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/semi-case-para-violao-folk-spring-sp-fk-preto/p/MLB64696498"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Spring"
+    ],
+    [
+      "Modelo",
+      "SP-FK"
+    ],
+    [
+      "Tipo de estrutura",
+      "Semirrígido"
+    ],
+    [
+      "Tipo de violão",
+      "Folk"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "2 kg"
+    ],
+    [
+      "Tipo de produto",
+      "Estojo"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do interior",
+      "Espuma"
+    ],
+    [
+      "Material do exterior",
+      "Poliéster"
+    ],
+    [
+      "Comprimento interior",
+      "105 cm"
+    ],
+    [
+      "Recursos",
+      "bolsos, almofadado"
+    ]
+  ]
 }

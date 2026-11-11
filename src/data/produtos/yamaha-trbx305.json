@@ -19,7 +19,74 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 486,
+  "avaliacoes": 487,
   "imagemAlt": "Yamaha TRBX305 (5 cordas)",
-  "imagem": "/images/produtos/yamaha-trbx305.webp"
+  "imagem": "/images/produtos/yamaha-trbx305.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3260,
+    "off": 15,
+    "parcelas": "12x R$266,34",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-yamaha-de-5-cordas-active-black-trbx305-bl-msi-body-finish-poliuretano-brilhante-orientacao-mao-direita/p/MLB24779530"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "linha TRBX300"
+    ],
+    [
+      "Modelo",
+      "TRBX305"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss polyurethane"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Maple/Mogno"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Humbucker"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ]
+  ]
 }

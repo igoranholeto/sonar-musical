@@ -18,8 +18,75 @@
       "preco": 418
     }
   ],
-  "nota": 4.7,
-  "avaliacoes": 2247,
+  "nota": 5,
+  "avaliacoes": 4,
   "imagem": "/images/produtos/borne-strike-g30.webp",
-  "imagemAlt": "Borne Strike G30"
+  "imagemAlt": "Borne Strike G30",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 440,
+    "off": 5,
+    "parcelas": "12x R$40,42",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-cubo-strike-g30-borne-para-guitarra-15w-preto/up/MLBU3478326317"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Borne"
+    ],
+    [
+      "Linha",
+      "Strike"
+    ],
+    [
+      "Modelo",
+      "G30"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "3 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "29 cm x 17.5 cm x 30 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "P10"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "15 W"
+    ]
+  ]
 }

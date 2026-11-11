@@ -1,0 +1,76 @@
+{
+  "nome": "Shure SV100",
+  "meli": "https://meli.la/1tydZZj",
+  "preco": 185,
+  "precoEm": "2026-11-11",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 185
+    }
+  ],
+  "imagemAlt": "Shure SV100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 249,
+    "off": 25,
+    "parcelas": "6x R$30,83 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-shure-sv100/p/MLB22441900"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shure"
+    ],
+    [
+      "Linha",
+      "SV"
+    ],
+    [
+      "Modelo",
+      "SV100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Comprimento do cabo",
+      "4,5 m"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "Para instrumentos, Karaokê, Ensaios"
+    ],
+    [
+      "Tipos de conexões",
+      "Com fio"
+    ],
+    [
+      "Conectores de saída",
+      "XLR"
+    ],
+    [
+      "Conectores de entrada",
+      "XLR"
+    ],
+    [
+      "Formatos de microfone",
+      "De mão"
+    ],
+    [
+      "Tipos de microfone",
+      "Dinâmico"
+    ],
+    [
+      "Padrões polares",
+      "Cardioide"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 10502,
+  "imagem": "/images/produtos/shure-sv100.webp"
+}

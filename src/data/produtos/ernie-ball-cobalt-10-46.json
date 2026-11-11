@@ -1,7 +1,7 @@
 {
   "nome": "Ernie Ball Cobalt 10–46",
   "meli": "https://meli.la/1RihyWc",
-  "preco": 134,
+  "preco": 141,
   "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
@@ -12,10 +12,63 @@
     {
       "data": "2026-11-06",
       "preco": 134
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 141
     }
   ],
   "imagem": "/images/produtos/ernie-ball-cobalt-10-46.webp",
   "imagemAlt": "Ernie Ball Cobalt 10–46",
   "nota": 4.7,
-  "avaliacoes": 417
+  "avaliacoes": 417,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "4x R$35,36 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/corda-ernie-ball-010-regular-slinky-cobalt-para-guitarra/p/MLB21392299"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ernie Ball"
+    ],
+    [
+      "Linha",
+      "Cobalt"
+    ],
+    [
+      "Modelo",
+      "2721"
+    ],
+    [
+      "Instrumento recomendado",
+      "Guitarra elétrica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "10-46"
+    ],
+    [
+      "Materiais",
+      "Cobalto"
+    ],
+    [
+      "Tensão",
+      "Média"
+    ],
+    [
+      "Notas",
+      "Mi"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ]
 }

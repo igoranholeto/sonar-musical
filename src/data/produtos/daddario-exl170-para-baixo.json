@@ -15,5 +15,57 @@
     }
   ],
   "imagem": "/images/produtos/daddario-exl170-para-baixo.webp",
-  "imagemAlt": "D'Addario EXL170 para baixo"
+  "imagemAlt": "D'Addario EXL170 para baixo",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 169,
+    "off": 8,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-daddario-baixo-4-cordas-exl170-045-original/up/MLBU3701098360"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Linha",
+      "Daddario"
+    ],
+    [
+      "Modelo",
+      "EXL170"
+    ],
+    [
+      "Instrumento recomendado",
+      "Baixo eléctrico"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Calibres",
+      "0.45, 0.65, 0.80, 100"
+    ],
+    [
+      "Materiais",
+      "Nickel"
+    ],
+    [
+      "Tensão",
+      "Extra Light"
+    ],
+    [
+      "Notas",
+      "La, Mi, Re, Sol"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 6
 }

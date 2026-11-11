@@ -19,5 +19,73 @@
     }
   ],
   "imagem": "/images/produtos/m-vave-mini-universe-reverb.webp",
-  "imagemAlt": "M-Vave Mini Universe Reverb"
+  "imagemAlt": "M-Vave Mini Universe Reverb",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 206,
+    "off": 19,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-m-vave-mini-universe-reverb-com-9-tipos-para-guitarra/p/MLB35715871"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Linha",
+      "Reverb"
+    ],
+    [
+      "Modelo",
+      "Mini Universe"
+    ],
+    [
+      "Cor",
+      "Azul-celeste"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "9.5 cm x 4.5 cm x 4 cm"
+    ],
+    [
+      "Peso",
+      "230 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "9"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Delay"
+    ],
+    [
+      "Tipos de alimentação",
+      "9V"
+    ],
+    [
+      "Tipo de pilha",
+      "Nao possui"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2798
 }

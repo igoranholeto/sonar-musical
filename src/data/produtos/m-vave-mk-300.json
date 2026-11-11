@@ -19,5 +19,62 @@
     }
   ],
   "imagem": "/images/produtos/m-vave-mk-300.webp",
-  "imagemAlt": "M-Vave MK-300"
+  "imagemAlt": "M-Vave MK-300",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1399,
+    "off": 39,
+    "parcelas": "12x R$82",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-multi-efeitos-para-guitarra-e-baixo-m-vave-mk-300-preto/p/MLB75412181"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "MK-300"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de efeitos",
+      "320"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Distorção"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria"
+    ],
+    [
+      "Frequência de amostragem",
+      "44,1 kHz"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 922
 }

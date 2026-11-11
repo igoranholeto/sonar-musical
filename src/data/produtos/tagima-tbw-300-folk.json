@@ -1,0 +1,84 @@
+{
+  "nome": "Tagima TBW-300 Folk",
+  "meli": "https://meli.la/2wLY4WT",
+  "preco": 851,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 851
+    }
+  ],
+  "imagemAlt": "Tagima TBW-300 Folk",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 990,
+    "off": 14,
+    "parcelas": "10x R$85,10 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-aco-folk-half-cutaway-eq-okume-op-tbw-300-bk/p/MLB49694257"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Techwood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "P10 e XLR balanceada"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Volume, Equalizador, Afinador"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "BLACK WOOD"
+    ],
+    [
+      "Modelo",
+      "TBW-300"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 118,
+  "imagem": "/images/produtos/tagima-tbw-300-folk.webp"
+}

@@ -1,0 +1,74 @@
+{
+  "nome": "Yamaha PSR-E583",
+  "meli": "https://meli.la/1fGHxN4",
+  "preco": 3149,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3149
+    }
+  ],
+  "imagemAlt": "Yamaha PSR-E583",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$302,67",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-psr-e583-61-teclas/p/MLB65443649"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "PSRE583"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "345"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria/Corrente doméstica"
+    ],
+    [
+      "Acessórios incluídos",
+      "Porta-partitura, Fonte de Alimentação Bivolt PA-300C"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "interface midi, resposta ao toque"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 138,
+  "imagem": "/images/produtos/yamaha-psr-e583.webp"
+}

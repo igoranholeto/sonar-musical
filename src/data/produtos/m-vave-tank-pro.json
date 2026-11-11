@@ -1,0 +1,60 @@
+{
+  "nome": "M-Vave Tank Pro",
+  "meli": "https://meli.la/2ET7Ajw",
+  "preco": 609,
+  "precoEm": "2026-11-11",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 609
+    }
+  ],
+  "imagemAlt": "M-Vave Tank Pro",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 700,
+    "off": 13,
+    "parcelas": "12x R$58,89",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-m-vave-tank-pro-multi-effects-pedal-de-guitarra-preto/p/MLB81119020"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "TANK PRO"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "29 cm x 13 cm x 8 cm"
+    ],
+    [
+      "Peso",
+      "1,03 kg"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 10,
+  "imagem": "/images/produtos/m-vave-tank-pro.webp"
+}

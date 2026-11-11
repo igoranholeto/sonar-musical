@@ -15,5 +15,70 @@
     }
   ],
   "imagem": "/images/produtos/squier-sonic-stratocaster.webp",
-  "imagemAlt": "Squier Sonic Stratocaster"
+  "imagemAlt": "Squier Sonic Stratocaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2054,
+    "off": 15,
+    "parcelas": "12x R$167,81",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-squier-sonic-strat-preta-destro-black-madeira-de-bordo/p/MLB25343104"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier by Fender"
+    ],
+    [
+      "Modelo",
+      "SQUIER SONIC STRATOCASTER"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 95
 }

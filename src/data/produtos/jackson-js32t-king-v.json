@@ -15,5 +15,52 @@
       "data": "2026-10-29",
       "preco": 4126
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4437,
+    "off": 7,
+    "parcelas": "10x R$412,66 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-jackson-js32t-king-v-amaranth-fingerboard-29101355/p/MLB48603856"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Jackson"
+    ],
+    [
+      "Código do fabricante",
+      "2910135539"
+    ],
+    [
+      "Forma do corpo",
+      "Flying V"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Tipos de captadores",
+      "Humbucker"
+    ]
   ]
 }
