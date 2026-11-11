@@ -11,5 +11,34 @@
     }
   ],
   "imagem": "/images/produtos/condor-ctx50.webp",
-  "imagemAlt": "Condor CTX50"
+  "imagemAlt": "Condor CTX50",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$259,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-condor-ctx50-natural/p/MLB36957888"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Condor"
+    ],
+    [
+      "Linha",
+      "6"
+    ],
+    [
+      "Modelo",
+      "CTX50NA"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

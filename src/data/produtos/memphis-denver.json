@@ -15,7 +15,74 @@
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 1023,
+  "avaliacoes": 1028,
   "imagemAlt": "Memphis Denver Nylon",
-  "imagem": "/images/produtos/memphis-denver.webp"
+  "imagem": "/images/produtos/memphis-denver.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 526,
+    "off": 21,
+    "parcelas": "12x R$40,13",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-tagima-memphis-denver-natural-satin-fosco-diestro/p/MLB26068681"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Denver NTS Memphis"
+    ],
+    [
+      "Modelo",
+      "Denver"
+    ],
+    [
+      "Cor",
+      "Natural satin"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "SPRUCE LAMINADO"
+    ],
+    [
+      "Tamanho do corpo",
+      "38 \""
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Materiais do braço",
+      "Linden"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ]
+  ]
 }

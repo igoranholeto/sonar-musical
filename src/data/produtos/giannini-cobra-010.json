@@ -11,5 +11,51 @@
     }
   ],
   "imagem": "/images/produtos/giannini-cobra-010.webp",
-  "imagemAlt": "Giannini Cobra .010"
+  "imagemAlt": "Giannini Cobra .010",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-giannini-cobra-010-p-violao-aco-geefle/up/MLBU3171568271"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "GEEFLE"
+    ],
+    [
+      "Instrumento recomendado",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "0.10 - 0.50"
+    ],
+    [
+      "Materiais",
+      "Aço"
+    ],
+    [
+      "Tensão",
+      "N|A"
+    ],
+    [
+      "Notas",
+      "Mi la re sol si mi"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 41
 }

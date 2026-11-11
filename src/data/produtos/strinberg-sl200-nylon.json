@@ -23,5 +23,74 @@
     }
   ],
   "imagem": "/images/produtos/strinberg-sl200-nylon.webp",
-  "imagemAlt": "Strinberg SL200 Nylon"
+  "imagemAlt": "Strinberg SL200 Nylon",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$92,19",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-artistico-nylon-strinberg-sl200-mgs-fosco/up/MLBU3862302145"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Black"
+    ],
+    [
+      "Modelo",
+      "SL200C"
+    ],
+    [
+      "Cor",
+      "Mahogany"
+    ],
+    [
+      "Acabamento do corpo",
+      "Acetinado"
+    ],
+    [
+      "Forma do corpo",
+      "Flat"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "655 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

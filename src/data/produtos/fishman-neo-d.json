@@ -15,5 +15,54 @@
       "data": "2026-11-10",
       "preco": 556
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 654,
+    "off": 15,
+    "parcelas": "12x R$53,74",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/captador-violao-fishman-pro-neo-d-01-passive-single-coil/up/MLBU1486467698"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fishman"
+    ],
+    [
+      "Linha",
+      "Neo-D"
+    ],
+    [
+      "Modelo",
+      "PRONEOD01"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "VIOLAO"
+    ],
+    [
+      "Número de cordas compatíveis",
+      "6"
+    ],
+    [
+      "Tipos de captadores",
+      "Magnético"
+    ],
+    [
+      "Posições dos captadores",
+      "Próximo ao Cavalete, Corpo do Instrumento"
+    ],
+    [
+      "Tipo de equalização",
+      "Passivo"
+    ],
+    [
+      "Tipo de montagem",
+      "Rosca"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 3
 }

@@ -13,5 +13,48 @@
   "nota": 5,
   "avaliacoes": 4,
   "imagemAlt": "Positive Grid Spark GO",
-  "imagem": "/images/produtos/positive-grid-spark-go.webp"
+  "imagem": "/images/produtos/positive-grid-spark-go.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2299,
+    "off": 7,
+    "parcelas": "10x R$211,85 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-positive-grid-spark-go-bluetooth-5w-para-guitarra-preto/p/MLB45024117"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Positive Grid"
+    ],
+    [
+      "Modelo",
+      "Spark GO"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Potência de saída RMS",
+      "5 W"
+    ],
+    [
+      "Largura x Altura x Profundidade",
+      "12.5 cm x 8.5 cm x 4.5 cm"
+    ],
+    [
+      "Peso",
+      "346 g"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Recursos",
+      "usb, tela, garantia"
+    ]
+  ]
 }

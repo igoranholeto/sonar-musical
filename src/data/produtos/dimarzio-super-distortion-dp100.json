@@ -15,5 +15,44 @@
     }
   ],
   "imagem": "/images/produtos/dimarzio-super-distortion-dp100.webp",
-  "imagemAlt": "DiMarzio Super Distortion DP100"
+  "imagemAlt": "DiMarzio Super Distortion DP100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$129,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/dimarzio-dp100-super-distortion-std-spaced-black-usa/up/MLBU1971735278"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "DiMarzio"
+    ],
+    [
+      "Linha",
+      "SUPERDISTORTION"
+    ],
+    [
+      "Modelo",
+      "DP100 Super Distortion"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "Stratocaster"
+    ],
+    [
+      "Tipos de captadores",
+      "Humbucker"
+    ],
+    [
+      "Posições dos captadores",
+      "Braço, Ponte"
+    ],
+    [
+      "Tipo de equalização",
+      "Passivo"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 2
 }

@@ -23,5 +23,74 @@
     }
   ],
   "imagemAlt": "Giannini Start N-14",
-  "imagem": "/images/produtos/giannini-start-n-14.webp"
+  "imagem": "/images/produtos/giannini-start-n-14.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 643,
+    "off": 20,
+    "parcelas": "10x R$51,45 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-giannini-acustico-nylon-estudo-n-14-natural/p/MLB37006505"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Sabina massiça"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Materiais do fundo",
+      "Basswood"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Estudo"
+    ],
+    [
+      "Modelo",
+      "N-14"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Sabina maciço"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 23
 }

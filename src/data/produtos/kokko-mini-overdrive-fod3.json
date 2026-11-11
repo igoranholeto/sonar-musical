@@ -1,7 +1,7 @@
 {
   "nome": "Kokko Mini Overdrive FOD3",
   "meli": "https://meli.la/2p3YVqe",
-  "preco": 216,
+  "preco": 222,
   "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
@@ -15,9 +15,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 216
+      "preco": 222
     }
   ],
   "imagem": "/images/produtos/kokko-mini-overdrive-fod3.webp",
-  "imagemAlt": "Kokko Mini Overdrive FOD3"
+  "imagemAlt": "Kokko Mini Overdrive FOD3",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 247,
+    "off": 9,
+    "parcelas": "6x R$37 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeitos-kokko-mini-overdrive-fod3-verde-para-guitarra-e-baixo/p/MLB17374679"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Kokko"
+    ],
+    [
+      "Modelo",
+      "Mini Overdrive"
+    ],
+    [
+      "Cor",
+      "Verde"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "5.1 cm x 9.4 cm x 5.3 cm"
+    ],
+    [
+      "Peso",
+      "177 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Overdrive"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 370
 }

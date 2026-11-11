@@ -15,5 +15,74 @@
     }
   ],
   "imagem": "/images/produtos/datrel-bas-100.webp",
-  "imagemAlt": "Datrel BAS-100"
+  "imagemAlt": "Datrel BAS-100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1499,
+    "off": 32,
+    "parcelas": "12x R$98,95",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-baixo-datrel-bas-100-100w-woofer-10-aluminio/p/MLB36239580"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Datrel"
+    ],
+    [
+      "Linha",
+      "Bas"
+    ],
+    [
+      "Modelo",
+      "BAS-100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "14 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "33 cm x 40 cm x 45.5 cm"
+    ],
+    [
+      "Resposta mínima em frequência",
+      "20 Hz"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "Headphone, XLR balanceado"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contrabaixo"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 165
 }

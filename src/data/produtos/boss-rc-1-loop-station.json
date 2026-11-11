@@ -15,5 +15,72 @@
     }
   ],
   "imagem": "/images/produtos/boss-rc-1-loop-station.webp",
-  "imagemAlt": "Boss RC-1 Loop Station"
+  "imagemAlt": "Boss RC-1 Loop Station",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$98,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-loop-station-rc-1-vermelho/p/MLB17473309"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Loop Station"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "430 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica, Sintetizador"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Looper"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CA, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm, Jack 6.3 mm mono"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm, Jack 6.3 mm mono"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 98
 }

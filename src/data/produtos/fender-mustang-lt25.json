@@ -11,7 +11,72 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 447,
+  "avaliacoes": 449,
   "imagemAlt": "Fender Mustang LT25",
-  "imagem": "/images/produtos/fender-mustang-lt25.webp"
+  "imagem": "/images/produtos/fender-mustang-lt25.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$229,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-fender-combo-mustang-lt-25-231-1100-000-cor-preto-voltagem/p/MLB24088503"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Mustang"
+    ],
+    [
+      "Modelo",
+      "LT25"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "9 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "36.8 cm x 21.1 cm x 33.2 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack 1/4\""
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "25 W"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ]
 }

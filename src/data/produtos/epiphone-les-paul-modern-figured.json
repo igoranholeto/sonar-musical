@@ -1,0 +1,72 @@
+{
+  "nome": "Epiphone Les Paul Modern Figured",
+  "meli": "https://meli.la/1bN3c6q",
+  "preco": 11094,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 11094
+    }
+  ],
+  "imagemAlt": "Epiphone Les Paul Modern Figured",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 11437,
+    "off": 2,
+    "parcelas": "10x R$1.109 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-les-paul-modern-figured-6-cordas-amarelo/p/MLB37232471"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Linha",
+      "MODERN FIGURED"
+    ],
+    [
+      "Modelo",
+      "Les Paul Junior Special"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Amarelo"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Acabamento do corpo",
+      "AAA Flame Maple (Figured)"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "imagem": "/images/produtos/epiphone-les-paul-modern-figured.webp"
+}

@@ -1,0 +1,74 @@
+{
+  "nome": "AKG K52",
+  "meli": "https://meli.la/2u9CmB8",
+  "preco": 243,
+  "precoEm": "2026-11-11",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 243
+    }
+  ],
+  "imagemAlt": "AKG K52",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "6x R$40,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-akg-blackshark-k52-preto/p/MLB6344408"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "AKG"
+    ],
+    [
+      "Linha",
+      "Blackshark"
+    ],
+    [
+      "Modelo",
+      "K52"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de pares",
+      "1"
+    ],
+    [
+      "Unidade de diafragma",
+      "4 cm"
+    ],
+    [
+      "Impedância",
+      "32 Ω"
+    ],
+    [
+      "Resposta em frequência",
+      "18 Hz - 20000 Hz"
+    ],
+    [
+      "Sensibilidade",
+      "110 dB"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ],
+    [
+      "Tipos de conectores",
+      "Jack 3.5 mm"
+    ],
+    [
+      "Comprimento do cabo",
+      "2,5 m"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 3237,
+  "imagem": "/images/produtos/akg-k52.webp"
+}

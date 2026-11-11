@@ -1,0 +1,87 @@
+{
+  "nome": "Joyo MOMIX CAB",
+  "meli": "https://meli.la/1UCwaKj",
+  "preco": 108,
+  "precoEm": "2026-11-11",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 108
+    }
+  ],
+  "imagemAlt": "Joyo MOMIX CAB",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 197,
+    "off": 45,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-joyo-momix-cab-celularpc-preto-p-gravacao-e-streaming/p/MLB36626675"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Joyo"
+    ],
+    [
+      "Linha",
+      "Interface de Áudio"
+    ],
+    [
+      "Modelo",
+      "MOMIX CAB"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de entradas",
+      "1"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "48 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "16 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB-C"
+    ],
+    [
+      "Tipos de conexões",
+      "Jack 3.5 mm, USB-C, Jack 6.35mm"
+    ],
+    [
+      "Software compatível",
+      "GarageBand, Pro tools, Reaper, Tonebridge"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador, Fio"
+    ],
+    [
+      "Altura",
+      "2 cm"
+    ],
+    [
+      "Largura",
+      "2,9 cm"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1358,
+  "imagem": "/images/produtos/joyo-momix-cab.webp"
+}

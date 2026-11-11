@@ -1,0 +1,84 @@
+{
+  "nome": "Strinberg LPS230",
+  "meli": "https://meli.la/32TCNFG",
+  "preco": 1139,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1139
+    }
+  ],
+  "imagemAlt": "Strinberg LPS230",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1499,
+    "off": 24,
+    "parcelas": "12x R$110,59",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strinberg-lps230-les-paul-tilia-sunburst-pau-rosa-22-trastes/p/MLB17460874"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "LPS Series"
+    ],
+    [
+      "Modelo",
+      "LPS230"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 598,
+  "imagem": "/images/produtos/strinberg-lps230.webp"
+}

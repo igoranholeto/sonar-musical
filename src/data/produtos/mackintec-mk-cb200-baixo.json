@@ -1,0 +1,80 @@
+{
+  "nome": "Mackintec MK-CB200 (baixo)",
+  "meli": "https://meli.la/1uACdTF",
+  "preco": 441,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 441
+    }
+  ],
+  "imagemAlt": "Mackintec MK-CB200 (baixo)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 600,
+    "off": 26,
+    "parcelas": "12x R$42,61",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-cubo-contrabaixo-mackintec-mk-cb200-25w-rms-preto/p/MLB79680084"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mackintec"
+    ],
+    [
+      "Modelo",
+      "MK-CB200"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "5 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "35 cm x 20 cm x 33 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "25 W"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 4,
+  "imagem": "/images/produtos/mackintec-mk-cb200-baixo.webp"
+}

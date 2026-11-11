@@ -1,0 +1,88 @@
+{
+  "nome": "Tagima TG-520",
+  "meli": "https://meli.la/1ZNumdY",
+  "preco": 834,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 834
+    }
+  ],
+  "imagemAlt": "Tagima TG-520",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1349,
+    "off": 38,
+    "parcelas": "12x R$80,65",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-stratocaster-tw-series-tg-520-vermelha-22-trastes/p/MLB17473264"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TG-520"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Candy apple"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira técnica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Metálico"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 988,
+  "imagem": "/images/produtos/tagima-tg-520.webp"
+}

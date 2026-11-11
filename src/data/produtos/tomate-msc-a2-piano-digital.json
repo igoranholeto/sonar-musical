@@ -1,0 +1,92 @@
+{
+  "nome": "Tomate MSC-A2 (piano digital)",
+  "meli": "https://meli.la/1CVCdsr",
+  "preco": 1190,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1190
+    }
+  ],
+  "imagemAlt": "Tomate MSC-A2 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1499,
+    "off": 20,
+    "parcelas": "12x R$115,52",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-tomate-msc-a2-de-88-teclas-sensiveis-marrom-com-movel-e-pedal/p/MLB63558268"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tomate"
+    ],
+    [
+      "Modelo",
+      "MSC-A2"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Acabamento",
+      "Madeira"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Altura",
+      "73 cm"
+    ],
+    [
+      "Profundidade",
+      "24 cm"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de molas"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "128"
+    ],
+    [
+      "Quantidade de canções",
+      "80"
+    ],
+    [
+      "Efeitos",
+      "Reverberação"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "teclas sensíveis, display led, pedal"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 176,
+  "imagem": "/images/produtos/tomate-msc-a2-piano-digital.webp"
+}

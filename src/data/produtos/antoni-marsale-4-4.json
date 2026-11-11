@@ -1,0 +1,72 @@
+{
+  "nome": "Violino Antoni Marsale 4/4",
+  "meli": "https://meli.la/2rzEHWn",
+  "preco": 1228,
+  "precoEm": "2026-11-11",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1228
+    }
+  ],
+  "imagemAlt": "Violino Antoni Marsale 4/4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1899,
+    "off": 35,
+    "parcelas": "12x R$119,30",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-44-antoni-marsale-profissional-ajustado-luthier/p/MLB44011589"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Antoni Marsale"
+    ],
+    [
+      "Modelo",
+      "Série HV320"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Peso",
+      "530 g"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Bordo"
+    ],
+    [
+      "Acessórios incluídos",
+      "Arco, Breu, Estojo, Micro Afinadores"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 67,
+  "imagem": "/images/produtos/antoni-marsale-4-4.webp"
+}

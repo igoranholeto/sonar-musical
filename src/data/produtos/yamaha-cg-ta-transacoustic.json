@@ -1,0 +1,83 @@
+{
+  "nome": "Yamaha CG-TA TransAcoustic",
+  "meli": "https://meli.la/2e8UAmj",
+  "preco": 3758,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3758
+    }
+  ],
+  "imagemAlt": "Yamaha CG-TA TransAcoustic",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5198,
+    "off": 27,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-transacoustic-cg-ta-para-destros-natural-brilhante/p/MLB16041600"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "TransAcoustic"
+    ],
+    [
+      "Modelo",
+      "CG-TA"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "CG"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Ovangkol"
+    ],
+    [
+      "Materiais dos laterais",
+      "Ovangkol"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 81,
+  "imagem": "/images/produtos/yamaha-cg-ta-transacoustic.webp"
+}

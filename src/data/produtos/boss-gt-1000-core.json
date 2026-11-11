@@ -1,7 +1,7 @@
 {
   "nome": "Boss GT-1000 Core",
   "meli": "https://meli.la/1DjtHob",
-  "preco": 5061,
+  "preco": 5034,
   "precoEm": "2026-11-11",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/boss-gt-1000-core.webp",
@@ -14,6 +14,71 @@
     {
       "data": "2026-11-10",
       "preco": 5061
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 5034
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$503,45 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/boss-gt-1000core-multi-effects-processor-guitar/p/MLB2058854609"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "17.3 cm x 13.5 cm x 6.5 cm"
+    ],
+    [
+      "Peso",
+      "920 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "140"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efectos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm mono,MIDI,USB micro-B"
+    ],
+    [
+      "Itens inclusos",
+      "fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
   ]
 }

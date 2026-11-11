@@ -1,0 +1,91 @@
+{
+  "nome": "MXT M-T1280",
+  "meli": "https://meli.la/1TFyWWp",
+  "preco": 288,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 288
+    }
+  ],
+  "imagemAlt": "MXT M-T1280",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 303,
+    "off": 5,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-mxt-m-t1280-61-teclas-com-300-ritmos-e-metronomo/p/MLB22517218"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "MXT"
+    ],
+    [
+      "Linha",
+      "Iniciantes"
+    ],
+    [
+      "Modelo",
+      "M-T1280"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "8"
+    ],
+    [
+      "Quantidade de ritmos",
+      "300"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo"
+    ],
+    [
+      "Fonte sonora",
+      "AHL"
+    ],
+    [
+      "Função sampling",
+      "Normal"
+    ],
+    [
+      "Acompanhamento automático",
+      "Nota simples 1"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Entrada para microfone, Saída para fones de ouvido, USB"
+    ],
+    [
+      "Adaptador AC",
+      "Bivolt"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "metrónomo, gravador"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1196,
+  "imagem": "/images/produtos/mxt-m-t1280.webp"
+}

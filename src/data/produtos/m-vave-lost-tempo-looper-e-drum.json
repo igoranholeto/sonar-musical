@@ -15,5 +15,76 @@
     }
   ],
   "imagem": "/images/produtos/m-vave-lost-tempo-looper-e-drum.webp",
-  "imagemAlt": "M-Vave Lost Tempo Looper e Drum"
+  "imagemAlt": "M-Vave Lost Tempo Looper e Drum",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$38,11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-m-vave-looper-e-drum-lost-tempo-30-baterias-11-min-guitarra/p/MLB35725637"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "LOST TEMPO"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "10 cm x 1.8 cm x 6.4 cm"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Looper"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Tipo de tela",
+      "LED"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 910
 }

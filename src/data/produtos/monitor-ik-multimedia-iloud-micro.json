@@ -1,0 +1,88 @@
+{
+  "nome": "Monitor IK Multimedia iLoud Micro",
+  "meli": "https://meli.la/2swr56J",
+  "preco": 2941,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2941
+    }
+  ],
+  "imagemAlt": "Monitor IK Multimedia iLoud Micro",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3096,
+    "off": 5,
+    "parcelas": "10x R$294,16 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-ik-multimedia-iloud-micro-bluetooth/p/MLB26717163"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "IK Multimedia"
+    ],
+    [
+      "Linha",
+      "iLoud"
+    ],
+    [
+      "Código do fabricante",
+      "IP-ILOUD-MM-IN"
+    ],
+    [
+      "Quantidade de monitores",
+      "2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "18 cm"
+    ],
+    [
+      "Largura",
+      "9 cm"
+    ],
+    [
+      "Profundidade",
+      "13,5 cm"
+    ],
+    [
+      "Peso",
+      "920 g"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "interfaces de áudio, Computadores, controladores e outros equipamentos"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Woofer 3', Twitter3/4"
+    ],
+    [
+      "Potência",
+      "50 W"
+    ],
+    [
+      "Resposta em frequência",
+      "55 Hz a 20 kHz"
+    ],
+    [
+      "Recursos",
+      "bluetooth, near-field"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 21,
+  "imagem": "/images/produtos/monitor-ik-multimedia-iloud-micro.webp"
+}

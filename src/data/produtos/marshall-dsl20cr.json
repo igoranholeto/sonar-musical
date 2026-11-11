@@ -23,5 +23,76 @@
       "data": "2026-11-09",
       "preco": 6200
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$595,92",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/combo-para-guitarra-marshall-dsl-20cr-valvulado/p/MLB26666758"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Marshall"
+    ],
+    [
+      "Modelo",
+      "DSL20CR"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "16,3 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "50 cm x 25 cm x 42 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack 1/4\", Jack 3.5 mm"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Valvular"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "20 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 2
 }

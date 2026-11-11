@@ -1,0 +1,84 @@
+{
+  "nome": "Giannini GB200A",
+  "meli": "https://meli.la/1zHRWmn",
+  "preco": 991,
+  "precoEm": "2026-11-11",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 991
+    }
+  ],
+  "imagemAlt": "Giannini GB200A",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1800,
+    "off": 44,
+    "parcelas": "12x R$96,20",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-giannini-gb200a-ativo-de-4-cordas-transparent-blue/p/MLB24045634"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Código do fabricante",
+      "GB200ATBL2023"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Transparent blue"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "8 cm"
+    ],
+    [
+      "Largura do corpo",
+      "40 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "107 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "863,85 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Maple com tensor"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Bordo"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 343,
+  "imagem": "/images/produtos/giannini-gb200a.webp"
+}

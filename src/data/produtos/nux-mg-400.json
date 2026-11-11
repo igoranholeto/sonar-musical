@@ -11,7 +11,82 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 520,
+  "avaliacoes": 523,
   "imagem": "/images/produtos/nux-mg-400.webp",
-  "imagemAlt": "Nux MG-400"
+  "imagemAlt": "Nux MG-400",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1379,
+    "off": 15,
+    "parcelas": "12x R$113,82",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-nux-mg-400-preto/p/MLB19794621"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "NUX"
+    ],
+    [
+      "Modelo",
+      "MG-400"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "16 cm x 28.9 cm x 7.1 cm"
+    ],
+    [
+      "Peso",
+      "920 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "524"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica, Microfone"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 3.5 mm, Jack 6.3 mm, USB-C"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 3.5 mm, Jack L-mono/R 6.3 mm"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "vocal, luz indicadora"
+    ]
+  ]
 }

@@ -15,5 +15,38 @@
       "data": "2026-11-05",
       "preco": 2899
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$289,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fender-squier-bullet-guitarra-strato-novo-mostruario/up/MLBU1113091891"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier"
+    ],
+    [
+      "Linha",
+      "BULLET Series"
+    ],
+    [
+      "Modelo",
+      "Stratocaster"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
   ]
 }

@@ -13,5 +13,78 @@
   "nota": 4.8,
   "avaliacoes": 81,
   "imagemAlt": "Yamaha PSR-F52 (kit com suporte)",
-  "imagem": "/images/produtos/yamaha-psr-f52.webp"
+  "imagem": "/images/produtos/yamaha-psr-f52.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$95,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-teclado-61-teclas-psr-f52-yamaha-com-suporte-em-x-cor-preto/p/MLB33419060"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "PSR"
+    ],
+    [
+      "Modelo",
+      "KIT PSR-F52 + X2"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "92 cm"
+    ],
+    [
+      "Largura",
+      "7,3 cm"
+    ],
+    [
+      "Profundidade",
+      "26,6 cm"
+    ],
+    [
+      "Peso",
+      "2,8 kg"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de ritmos",
+      "158"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Bateria"
+    ],
+    [
+      "Acessórios incluídos",
+      "Apoio Partitura, Manual do proprietário, Suporte X2"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "interface midi, metrónomo"
+    ]
+  ]
 }

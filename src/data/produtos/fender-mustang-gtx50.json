@@ -1,7 +1,7 @@
 {
   "nome": "Fender Mustang GTX50",
   "meli": "https://meli.la/1FpbGiK",
-  "preco": 3392,
+  "preco": 3374,
   "precoEm": "2026-11-11",
   "categoria": "amplificador",
   "imagem": "/images/produtos/fender-mustang-gtx50.webp",
@@ -22,6 +22,45 @@
     {
       "data": "2026-11-10",
       "preco": 3392
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 3374
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4218,
+    "off": 19,
+    "parcelas": "12x R$324,36",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fender-mustang-gtx50-guitar-amplifier/p/MLB2097252488"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Modelo",
+      "Mustang GTX50"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Peso",
+      "10,7 kg"
+    ],
+    [
+      "Largura x Altura",
+      "58 cm x 34 cm"
+    ]
   ]
 }

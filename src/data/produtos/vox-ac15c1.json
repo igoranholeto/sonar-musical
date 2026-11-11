@@ -11,5 +11,32 @@
     }
   ],
   "imagem": "/images/produtos/vox-ac15c1.webp",
-  "imagemAlt": "Vox AC15C1"
+  "imagemAlt": "Vox AC15C1",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$683,24",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/combo-vox-ac15c1/up/MLBU3483463803"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "VOX"
+    ],
+    [
+      "Modelo",
+      "AC15C1"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Multi-propósito"
+    ],
+    [
+      "Largura x Altura",
+      "73 cm x 56 cm"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

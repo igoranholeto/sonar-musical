@@ -1,7 +1,7 @@
 {
   "nome": "Boss ME-90",
   "meli": "https://meli.la/2tKSt9M",
-  "preco": 3399,
+  "preco": 3203,
   "precoEm": "2026-11-11",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/boss-me-90.webp",
@@ -14,6 +14,83 @@
     {
       "data": "2026-11-10",
       "preco": 3399
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 3203
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4654,
+    "off": 31,
+    "parcelas": "12x R$307,86",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/boss-me-90-pedaleira-multiefeitos-para-guitarra-me-90/p/MLB27796166"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "ME-90"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de efeitos",
+      "60"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra, Baixo"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Pilha, Adaptador"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack"
+    ],
+    [
+      "Frequência de amostragem",
+      "48 kHz"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora, bluetooth"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 246
 }

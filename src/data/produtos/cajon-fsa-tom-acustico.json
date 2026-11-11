@@ -1,0 +1,56 @@
+{
+  "nome": "Cajon FSA Tom+ acústico",
+  "meli": "https://meli.la/1n8Pqbj",
+  "preco": 229,
+  "precoEm": "2026-11-11",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 229
+    }
+  ],
+  "imagemAlt": "Cajon FSA Tom+ acústico",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 299,
+    "off": 23,
+    "parcelas": "12x R$22,67",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-tom-profissional-acustico/p/MLB37411086"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "FSA"
+    ],
+    [
+      "Modelo",
+      "Cajon tom cajons acustico"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Largura x Comprimento",
+      "40 cm x 26 cm x 28 cm"
+    ],
+    [
+      "Material do corpo",
+      "MDF"
+    ],
+    [
+      "Material do tampo",
+      "Sumaúma de 4mm"
+    ],
+    [
+      "Recursos",
+      "esteira"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 634,
+  "imagem": "/images/produtos/cajon-fsa-tom-acustico.webp"
+}

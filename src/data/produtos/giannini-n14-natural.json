@@ -11,7 +11,68 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 4063,
+  "avaliacoes": 4772,
   "imagemAlt": "Giannini Start N-14 (nylon)",
-  "imagem": "/images/produtos/giannini-n14-natural.webp"
+  "imagem": "/images/produtos/giannini-n14-natural.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$38,68",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-giannini-n-14-natural-tampo-sabina-verniz-brilhante-com-cordas-de-nylon/p/MLB16038230"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Sabina sólida"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Conectores de saída",
+      "P10"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Giannini"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Sabina"
+    ],
+    [
+      "Acessórios incluídos",
+      "Alça"
+    ],
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Start"
+    ],
+    [
+      "Modelo",
+      "N-14"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ]
+  ]
 }

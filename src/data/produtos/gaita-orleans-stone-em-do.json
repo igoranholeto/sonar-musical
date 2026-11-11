@@ -1,0 +1,67 @@
+{
+  "nome": "Gaita Orleans Stone em Dó",
+  "meli": "https://meli.la/1kQ93jX",
+  "preco": 43,
+  "precoEm": "2026-11-11",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 43
+    }
+  ],
+  "imagemAlt": "Gaita Orleans Stone em Dó",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 73,
+    "off": 40,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/gaita-boca-harmonica-orleans-stone-diatonica-c-do-10-furos/p/MLB32026218"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Orleans"
+    ],
+    [
+      "Modelo",
+      "STONE-C"
+    ],
+    [
+      "Tom",
+      "C"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de gaita de boca",
+      "Diatônica"
+    ],
+    [
+      "Material",
+      "Metal"
+    ],
+    [
+      "Quantidade de furos",
+      "10"
+    ],
+    [
+      "Quantidade de oitavas",
+      "3"
+    ],
+    [
+      "Quantidade de tons",
+      "20"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 3936,
+  "imagem": "/images/produtos/gaita-orleans-stone-em-do.webp"
+}

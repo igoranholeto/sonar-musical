@@ -23,5 +23,72 @@
     }
   ],
   "imagem": "/images/produtos/yamaha-thr10ii.webp",
-  "imagemAlt": "Yamaha THR10II"
+  "imagemAlt": "Yamaha THR10II",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$290,69",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-yamaha-guitarra-violao-baixo-bluetooth-thr10-ii/p/MLB46425466"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "THR10"
+    ],
+    [
+      "Cor",
+      "Dourado"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Largura x Altura",
+      "37 cm x 19 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Híbrido"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Bateria"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "10 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 43
 }

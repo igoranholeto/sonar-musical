@@ -1,0 +1,88 @@
+{
+  "nome": "Kit Cavaquinho DC Music",
+  "meli": "https://meli.la/1WgzjEs",
+  "preco": 308,
+  "precoEm": "2026-11-11",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 308
+    }
+  ],
+  "imagemAlt": "Kit Cavaquinho DC Music",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 500,
+    "off": 38,
+    "parcelas": "12x R$30,13",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-cavaquinho-acustico-dc-music-natural-estudante-iniciante-com-afinador-digital-e-palheta-para-samba-pagode-chorinho/p/MLB69621064"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dc Music"
+    ],
+    [
+      "Modelo",
+      "Cavaquinho Acústico"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Material do tampo",
+      "Tilo"
+    ],
+    [
+      "Material do braço",
+      "spruce"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Acessórios incluídos",
+      "Afinador, Palhetas"
+    ],
+    [
+      "Altura",
+      "10 cm"
+    ],
+    [
+      "Largura",
+      "28 cm"
+    ],
+    [
+      "Comprimento",
+      "61 cm"
+    ],
+    [
+      "Peso",
+      "670 g"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 186,
+  "imagem": "/images/produtos/kit-cavaquinho-dc-music.webp"
+}

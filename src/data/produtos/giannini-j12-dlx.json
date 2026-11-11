@@ -21,5 +21,76 @@
   "nota": 4.9,
   "avaliacoes": 17,
   "imagemAlt": "Giannini Performance J12 DLX 12 cordas",
-  "imagem": "/images/produtos/giannini-j12-dlx.webp"
+  "imagem": "/images/produtos/giannini-j12-dlx.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2418,
+    "off": 23,
+    "parcelas": "12x R$178,50",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-aco-eletroacustico-12-cordas-giannini-performance-deluxe-j12-dlx/p/MLB44196014"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Performance"
+    ],
+    [
+      "Modelo",
+      "J12 Dlx Eq"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Jumbo"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Tamanho do corpo",
+      "109 cm"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bag"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "12"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ]
+  ]
 }

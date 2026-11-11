@@ -1,0 +1,78 @@
+{
+  "nome": "Tagima Sixmart",
+  "meli": "https://meli.la/2hp8125",
+  "preco": 1100,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1100
+    }
+  ],
+  "imagemAlt": "Tagima Sixmart",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$110 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-tagima-sixmart-com-efeitos-cor-metallic-deep-silver-orientacao-da-mao-destro/p/MLB52063129"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Sixmart"
+    ],
+    [
+      "Código do fabricante",
+      "MCS000SIXMARTKIT"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Metallic Deep Silver"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 985,
+  "imagem": "/images/produtos/tagima-sixmart.webp"
+}

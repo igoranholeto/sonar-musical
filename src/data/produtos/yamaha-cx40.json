@@ -18,8 +18,73 @@
       "preco": 1003
     }
   ],
-  "nota": 4.7,
-  "avaliacoes": 459,
+  "nota": 4.8,
+  "avaliacoes": 461,
   "imagemAlt": "Yamaha CX40 (nylon eletroacústico)",
-  "imagem": "/images/produtos/yamaha-cx40.webp"
+  "imagem": "/images/produtos/yamaha-cx40.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$100,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-cx40-para-destros-natural-pau-rosa-brilhante/p/MLB16046655"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Yamaha"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Pré-amplificador, Volume, Tone"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manuais"
+    ],
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "C"
+    ],
+    [
+      "Modelo",
+      "CX40"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ]
+  ]
 }

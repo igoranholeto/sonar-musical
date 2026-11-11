@@ -19,5 +19,68 @@
     }
   ],
   "imagem": "/images/produtos/fender-frontman-10g.webp",
-  "imagemAlt": "Fender Frontman 10G"
+  "imagemAlt": "Fender Frontman 10G",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1140,
+    "off": 17,
+    "parcelas": "10x R$93,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-para-guitarra-frontman-10g-120v-bra-fender/p/MLB79815259"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Frontman"
+    ],
+    [
+      "Modelo",
+      "Frontman 10G 120V Bra"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "3,8 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "26 cm x 14.6 cm x 27.94 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "120v"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "10 W"
+    ]
+  ]
 }

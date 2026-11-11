@@ -19,5 +19,82 @@
     }
   ],
   "imagem": "/images/produtos/mooer-ge150.webp",
-  "imagemAlt": "Mooer GE150"
+  "imagemAlt": "Mooer GE150",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1484,
+    "off": 36,
+    "parcelas": "12x R$91,59",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-mooer-ge150-para-guitarra-com-multi-efeitos-e-pedal-de-expressao/p/MLB17756477"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mooer"
+    ],
+    [
+      "Linha",
+      "GE"
+    ],
+    [
+      "Modelo",
+      "GE150"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "23 cm x 15.6 cm x 3.3 cm"
+    ],
+    [
+      "Peso",
+      "1 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "151"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 3.5 mm stereo, Jack 6.3 mm mono, Micro-USB, USB-B"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 428
 }

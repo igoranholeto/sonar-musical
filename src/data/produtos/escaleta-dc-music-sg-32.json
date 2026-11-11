@@ -1,0 +1,55 @@
+{
+  "nome": "Escaleta DC Music SG-32",
+  "meli": "https://meli.la/2JU9rcB",
+  "preco": 69,
+  "precoEm": "2026-11-11",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 69
+    }
+  ],
+  "imagemAlt": "Escaleta DC Music SG-32",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 179,
+    "off": 61,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/escaleta-melodica-32-teclas-sg-32-preta-com-capa-e-acessorios-dc-music/p/MLB66759522"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Don Caprini"
+    ],
+    [
+      "Modelo",
+      "Escaleta 32 Teclas"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Comprimento",
+      "37 cm"
+    ],
+    [
+      "Materiais",
+      "Acrílico, Plástico"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bico, Bolça, Mangueira"
+    ],
+    [
+      "Quantidade de teclas",
+      "32"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 248,
+  "imagem": "/images/produtos/escaleta-dc-music-sg-32.webp"
+}

@@ -21,5 +21,70 @@
   "nota": 4.6,
   "avaliacoes": 105,
   "imagemAlt": "Michael GM385N Telecaster",
-  "imagem": "/images/produtos/michael-gm385n.webp"
+  "imagem": "/images/produtos/michael-gm385n.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$104,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-michael-telecaster-gm385n-6-cordas-tilia-preto/p/MLB17488705"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "TL Michael Slide"
+    ],
+    [
+      "Modelo",
+      "GM385N"
+    ],
+    [
+      "Forma do corpo",
+      "Telecaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Metallic black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ]
+  ]
 }

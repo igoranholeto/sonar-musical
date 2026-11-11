@@ -1,0 +1,82 @@
+{
+  "nome": "Yamaha FGX800C",
+  "meli": "https://meli.la/1tFKmtk",
+  "preco": 3270,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3270
+    }
+  ],
+  "imagemAlt": "Yamaha FGX800C",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$327 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-fgx800c-para-destros-sand-burst-brilhante/p/MLB14040271"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "FGX/FX"
+    ],
+    [
+      "Modelo",
+      "FGX800C"
+    ],
+    [
+      "Cor",
+      "Sand burst"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 31,
+  "imagem": "/images/produtos/yamaha-fgx800c.webp"
+}

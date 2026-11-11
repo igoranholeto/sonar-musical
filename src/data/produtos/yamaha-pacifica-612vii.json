@@ -15,5 +15,48 @@
     }
   ],
   "imagem": "/images/produtos/yamaha-pacifica-612vii.webp",
-  "imagemAlt": "Yamaha Pacifica 612VII"
+  "imagemAlt": "Yamaha Pacifica 612VII",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$647 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-pacifica-612vii-flame-maple-black/p/MLB22765631"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "PAC600"
+    ],
+    [
+      "Modelo",
+      "Pacifica 612VII"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

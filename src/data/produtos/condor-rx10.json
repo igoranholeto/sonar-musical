@@ -15,5 +15,70 @@
     }
   ],
   "imagem": "/images/produtos/condor-rx10.webp",
-  "imagemAlt": "Condor RX10"
+  "imagemAlt": "Condor RX10",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$84,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-condor-strato-rx10-gdn-dourada-metalica/up/MLBU3841011274"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Condor"
+    ],
+    [
+      "Linha",
+      "Katana"
+    ],
+    [
+      "Código do fabricante",
+      "RX10GDNKIT"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Dourado-escuro"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "648 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Hardtail"
+    ]
+  ]
 }

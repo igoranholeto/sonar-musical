@@ -13,5 +13,60 @@
   "nota": 4.8,
   "avaliacoes": 305,
   "imagemAlt": "Ibanez GSR205 5 cordas",
-  "imagem": "/images/produtos/ibanez-gsr205.webp"
+  "imagem": "/images/produtos/ibanez-gsr205.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 5837,
+    "off": 59,
+    "parcelas": "12x R$230,02",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-ibanez-5-cordas-gsr-205b/p/MLB26113260"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "GIO"
+    ],
+    [
+      "Modelo",
+      "GSR205B"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Okoume"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ]
+  ]
 }

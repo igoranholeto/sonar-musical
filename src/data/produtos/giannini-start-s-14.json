@@ -15,5 +15,74 @@
     }
   ],
   "imagem": "/images/produtos/giannini-start-s-14.webp",
-  "imagemAlt": "Giannini Start S-14"
+  "imagemAlt": "Giannini Start S-14",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 621,
+    "off": 20,
+    "parcelas": "9x R$55,21 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-aco-giannini-s-14-start-estudo-cor-preto-orientacao-da-mao-destro/p/MLB70068568"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "Giannini S-14 N"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Marfim"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Giannini"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 212
 }

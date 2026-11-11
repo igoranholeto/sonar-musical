@@ -13,5 +13,71 @@
   "nota": 4.8,
   "avaliacoes": 54,
   "imagemAlt": "Korg PitchClip 2 (PC-2)",
-  "imagem": "/images/produtos/korg-pitchclip-2.webp"
+  "imagem": "/images/produtos/korg-pitchclip-2.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 130,
+    "off": 9,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/afinador-korg-clipe-cromatico-guitarra-baixo-pitchclip2-pc-2/p/MLB73817276"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Korg"
+    ],
+    [
+      "Modelo",
+      "Pitchclip2+ Pc-2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de alimentação",
+      "Pilha"
+    ],
+    [
+      "Tipo de afinador",
+      "Cromático"
+    ],
+    [
+      "Formato do afinador",
+      "Pinça"
+    ],
+    [
+      "Usos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "27.5 Hz - 4186 Hz"
+    ],
+    [
+      "Comprimento",
+      "5,2 cm"
+    ],
+    [
+      "Largura",
+      "2,4 cm"
+    ],
+    [
+      "Altura",
+      "3,4 cm"
+    ],
+    [
+      "Peso",
+      "17 g"
+    ],
+    [
+      "Recursos",
+      "cromático, tela"
+    ]
+  ]
 }

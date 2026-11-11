@@ -11,5 +11,70 @@
     }
   ],
   "imagem": "/images/produtos/meteoro-nitrous-drive-15.webp",
-  "imagemAlt": "Meteoro Nitrous Drive 15"
+  "imagemAlt": "Meteoro Nitrous Drive 15",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 927,
+    "off": 3,
+    "parcelas": "10x R$89,92 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-nitrous-drive-15-transistor-para-guitarra-de-15w-cor-preto/p/MLB15142860"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "Nitrous"
+    ],
+    [
+      "Modelo",
+      "Drive 15"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "6,4 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "34 cm x 22 cm x 37 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "15 W"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 158
 }

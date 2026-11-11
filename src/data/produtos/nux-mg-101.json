@@ -15,7 +15,56 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 306,
+  "avaliacoes": 316,
   "imagem": "/images/produtos/nux-mg-101.webp",
-  "imagemAlt": "Nux MG-101"
+  "imagemAlt": "Nux MG-101",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$72,26 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-nux-mg-101-para-guitarra-512-efeitos-cor-preta-com-pedal-de-expressao/p/MLB40672582"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "NUX"
+    ],
+    [
+      "Modelo",
+      "MG-101"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de efeitos",
+      "72"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Afinador, Amps, Compressor, Delay, Distorção, Equalizer"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão"
+    ]
+  ]
 }

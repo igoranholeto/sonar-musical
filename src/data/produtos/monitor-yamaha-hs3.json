@@ -1,0 +1,86 @@
+{
+  "nome": "Monitor Yamaha HS3",
+  "meli": "https://meli.la/1eSefw6",
+  "preco": 1495,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1495
+    }
+  ],
+  "imagemAlt": "Monitor Yamaha HS3",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$149,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-ativo-52w-rms-preto-yamaha-hs3b/p/MLB29193467"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "HS"
+    ],
+    [
+      "Modelo",
+      "HS3B"
+    ],
+    [
+      "Quantidade de monitores",
+      "2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "22 cm"
+    ],
+    [
+      "Largura",
+      "13 cm"
+    ],
+    [
+      "Profundidade",
+      "18 cm"
+    ],
+    [
+      "Peso",
+      "2,8 kg"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "TRS, XLR"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Woofer"
+    ],
+    [
+      "Potência",
+      "26 W"
+    ],
+    [
+      "Resposta em frequência",
+      "70 Hz - 22 kHz"
+    ],
+    [
+      "Recursos",
+      "near-field"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 309,
+  "imagem": "/images/produtos/monitor-yamaha-hs3.webp"
+}

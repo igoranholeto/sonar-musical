@@ -1,0 +1,75 @@
+{
+  "nome": "Pandeirola meia-lua DC Music",
+  "meli": "https://meli.la/2uXfRB7",
+  "preco": 31,
+  "precoEm": "2026-11-11",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 31
+    }
+  ],
+  "imagemAlt": "Pandeirola meia-lua DC Music",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 49,
+    "off": 36,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pandeiro-meia-lua-pandeirola-pandeiro-profissional-preto-diversos-marca-dc-music/p/MLB49090876"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dc Music"
+    ],
+    [
+      "Modelo",
+      "DC-Pml001"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de platinelas",
+      "16"
+    ],
+    [
+      "Forma",
+      "Meia Lua"
+    ],
+    [
+      "Desenho",
+      "Liso"
+    ],
+    [
+      "Material do corpo",
+      "Plástico"
+    ],
+    [
+      "Material do remendo",
+      "Sintético"
+    ],
+    [
+      "Altura",
+      "18 cm"
+    ],
+    [
+      "Largura",
+      "5 cm"
+    ],
+    [
+      "Comprimento",
+      "22 cm"
+    ],
+    [
+      "Diâmetro",
+      "25 cm"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1936,
+  "imagem": "/images/produtos/pandeirola-meia-lua-dc-music.webp"
+}

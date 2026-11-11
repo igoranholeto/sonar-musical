@@ -1,7 +1,7 @@
 {
   "nome": "Joyo Atmosphere R-14",
   "meli": "https://meli.la/27R6tDo",
-  "preco": 494,
+  "preco": 560,
   "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
@@ -12,8 +12,79 @@
     {
       "data": "2026-11-10",
       "preco": 494
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 560
     }
   ],
   "imagem": "/images/produtos/joyo-atmosphere-r-14.webp",
-  "imagemAlt": "Joyo Atmosphere R-14"
+  "imagemAlt": "Joyo Atmosphere R-14",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$54,15",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-reverb-digital-joyo-atmosphere-r-14-9-efeitos-preto/p/MLB17756464"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Joyo"
+    ],
+    [
+      "Linha",
+      "Revolution"
+    ],
+    [
+      "Modelo",
+      "Atmosphere"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "10.9 cm x 6.7 cm x 4.8 cm"
+    ],
+    [
+      "Peso",
+      "248 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "9"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Reverb"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 207
 }

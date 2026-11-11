@@ -19,7 +19,68 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 159,
+  "avaliacoes": 157,
   "imagemAlt": "Takamine GD20CE",
-  "imagem": "/images/produtos/takamine-gd20ce.webp"
+  "imagem": "/images/produtos/takamine-gd20ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$326,70",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-takamine-g-series-gd20ce-ns-gd20ce-ns-para-destros-natural-ovangkol-acetinado/p/MLB15097909"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Ovangkol"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "P10"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Ovangkol"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Pré-amplificador"
+    ],
+    [
+      "Marca",
+      "Takamine"
+    ],
+    [
+      "Linha",
+      "G Series"
+    ],
+    [
+      "Modelo",
+      "GD20CE NS"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

@@ -1,0 +1,80 @@
+{
+  "nome": "Shure SM58",
+  "meli": "https://meli.la/1u1GNrd",
+  "preco": 1349,
+  "precoEm": "2026-11-11",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1349
+    }
+  ],
+  "imagemAlt": "Shure SM58",
+  "anuncio": {
+    "status": "pausado",
+    "desde": "2026-11-11",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB24243005"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shure"
+    ],
+    [
+      "Linha",
+      "SM"
+    ],
+    [
+      "Modelo",
+      "SM58-LC"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Comprimento do cabo",
+      "10 cm"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "Para apresentações, Para vozes, Para gravações"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "50 Hz - 15 kHz"
+    ],
+    [
+      "Acessórios incluídos",
+      "1 adaptador de soporte,Estuche"
+    ],
+    [
+      "Altura",
+      "8,6 cm"
+    ],
+    [
+      "Peso",
+      "630 g"
+    ],
+    [
+      "Formatos de microfone",
+      "De mão"
+    ],
+    [
+      "Tipos de microfone",
+      "Dinâmico"
+    ],
+    [
+      "Padrões polares",
+      "cardiode"
+    ],
+    [
+      "Quantidade de microfones",
+      "1"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 2589,
+  "imagem": "/images/produtos/shure-sm58.webp"
+}

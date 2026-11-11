@@ -15,5 +15,74 @@
     }
   ],
   "imagem": "/images/produtos/fuhrmann-bass-compressor.webp",
-  "imagemAlt": "Fuhrmann Bass Compressor"
+  "imagemAlt": "Fuhrmann Bass Compressor",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 442,
+    "off": 25,
+    "parcelas": "12x R$32,28",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeitos-bass-compressor-fuhrmann/p/MLB17511222"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fuhrmann"
+    ],
+    [
+      "Linha",
+      "Bass Compressor"
+    ],
+    [
+      "Modelo",
+      "Bass Compressor"
+    ],
+    [
+      "Cor",
+      "Azul-claro"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7 cm x 11 cm x 6 cm"
+    ],
+    [
+      "Peso",
+      "350 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Compressor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Fonte 9V"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 776
 }

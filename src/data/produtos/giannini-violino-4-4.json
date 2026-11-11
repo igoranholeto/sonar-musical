@@ -13,5 +13,58 @@
   "nota": 4.8,
   "avaliacoes": 72,
   "imagemAlt": "Giannini Violino Acústico 4/4",
-  "imagem": "/images/produtos/giannini-violino-4-4.webp"
+  "imagem": "/images/produtos/giannini-violino-4-4.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$51,25 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-giannini-acustico-44-natural-verniz-brilhante-com-estojo/p/MLB51859191"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "GVL4/4"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Comprimento",
+      "60 cm"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Pinho Abeto, Bordo"
+    ],
+    [
+      "Acessórios incluídos",
+      "Breu, Case térmico especial triangular"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

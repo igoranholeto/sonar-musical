@@ -8,8 +8,84 @@
     {
       "data": "2026-11-06",
       "preco": 72
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 72
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 1057
+  "avaliacoes": 1134,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 130,
+    "off": 44,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/capa-para-violao-don-caprini-acolchoada-com-alca-mochila-e-bolso-frontal-para-folk-e-classico-ate-41/p/MLB69190266"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Don Caprini"
+    ],
+    [
+      "Modelo",
+      "Capa Case Bag Estojo Violão"
+    ],
+    [
+      "Tipo de estrutura",
+      "Flexível"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "750 g"
+    ],
+    [
+      "Tipo de produto",
+      "Capa"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do exterior",
+      "Poliestireno"
+    ],
+    [
+      "Comprimento interior",
+      "105 cm"
+    ],
+    [
+      "Largura interior",
+      "40 cm"
+    ],
+    [
+      "Altura interior",
+      "12 cm"
+    ],
+    [
+      "Comprimento exterior",
+      "106 cm"
+    ],
+    [
+      "Largura exterior",
+      "41 cm"
+    ],
+    [
+      "Recursos",
+      "bolsos, almofadado, impermeável"
+    ]
+  ],
+  "imagemAlt": "Capa acolchoada Don Caprini",
+  "imagem": "/images/produtos/capa-violao-don-caprini.webp"
 }

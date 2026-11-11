@@ -1,0 +1,78 @@
+{
+  "nome": "Fender Standard Telecaster",
+  "meli": "https://meli.la/2Tpd1Nf",
+  "preco": 6313,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 6313
+    }
+  ],
+  "imagemAlt": "Fender Standard Telecaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$631,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-standard-telecaster-e-mn-bpg-btb-amarela/p/MLB47298027"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Standard"
+    ],
+    [
+      "Modelo",
+      "Telecaster"
+    ],
+    [
+      "Forma do corpo",
+      "Telecaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Butterscotch blonde"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 10,
+  "imagem": "/images/produtos/fender-standard-telecaster.webp"
+}

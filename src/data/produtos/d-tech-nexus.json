@@ -1,0 +1,67 @@
+{
+  "nome": "D-Tech Nexus",
+  "meli": "https://meli.la/2dd8xXx",
+  "preco": 2457,
+  "precoEm": "2026-11-11",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2457
+    }
+  ],
+  "imagemAlt": "D-Tech Nexus",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3499,
+    "off": 29,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-d-tech-nexus-caixa-e-tons-mesh-dual-zone-cor-preto/p/MLB53361024"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dtech"
+    ],
+    [
+      "Modelo",
+      "Nexus"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "8"
+    ],
+    [
+      "Quantidade de sons",
+      "240"
+    ],
+    [
+      "Funções do módulo de som",
+      "Com 240 vozes, 12 presets de fábrica, 5 personalizáveis e 30 músicas d"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte bivolt"
+    ],
+    [
+      "Tipos de conexões",
+      "Entrada para Fone de Ouvido P2, Line Out P10, Interface USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato splash, prato de condução, prato de ataque, surdo, chimbal, pedais, baquetas, módulo de som"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 88,
+  "imagem": "/images/produtos/d-tech-nexus.webp"
+}

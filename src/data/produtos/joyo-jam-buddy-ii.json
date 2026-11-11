@@ -1,0 +1,70 @@
+{
+  "nome": "Joyo Jam Buddy II",
+  "meli": "https://meli.la/2MoW2M8",
+  "preco": 534,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 534
+    }
+  ],
+  "imagemAlt": "Joyo Jam Buddy II",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$53,39 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/joyo-jam-buddy-ii-amplificador-guitarra-3-canais-c/p/MLB2111013047"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Generic"
+    ],
+    [
+      "Modelo",
+      "JAM BUDDY"
+    ],
+    [
+      "Peso",
+      "138,6 g"
+    ],
+    [
+      "Largura x Profundidade",
+      "6 cm x 4.2 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "10 W"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 2,
+  "imagem": "/images/produtos/joyo-jam-buddy-ii.webp"
+}

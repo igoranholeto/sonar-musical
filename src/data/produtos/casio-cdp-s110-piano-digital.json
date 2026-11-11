@@ -1,0 +1,88 @@
+{
+  "nome": "Casio CDP-S110 (piano digital)",
+  "meli": "https://meli.la/19fjPPH",
+  "preco": 2190,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2190
+    }
+  ],
+  "imagemAlt": "Casio CDP-S110 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3199,
+    "off": 31,
+    "parcelas": "10x R$219 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-cdp-s110-88-teclas-com-pedal-e-fonte-voltagem-pilha/p/MLB23883267"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Modelo",
+      "S110BK"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "1"
+    ],
+    [
+      "Quantidade de canções",
+      "2"
+    ],
+    [
+      "Efeitos",
+      "Reverberação"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "P10, P2, USB"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manual do proprietário, Suporte Base partitura"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Altura",
+      "46 cm"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "portátil, teclas sensíveis, pedal"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 241,
+  "imagem": "/images/produtos/casio-cdp-s110-piano-digital.webp"
+}

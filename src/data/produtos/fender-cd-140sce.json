@@ -15,7 +15,82 @@
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 137,
+  "avaliacoes": 138,
   "imagemAlt": "Fender CD-140SCE",
-  "imagem": "/images/produtos/fender-cd-140sce.webp"
+  "imagem": "/images/produtos/fender-cd-140sce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4469,
+    "off": 37,
+    "parcelas": "12x R$269,99",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-fender-classic-design-cd-140sce-all-mahogany-para-destros-nogueira-brilhante/p/MLB17438238"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Nogueira"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Nogueira"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Equalizador, Pré-amplificador, Volume"
+    ],
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Classic Design"
+    ],
+    [
+      "Modelo",
+      "CD-140SCE All-Mahogany"
+    ],
+    [
+      "Cor",
+      "Mahogany"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Mogno"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

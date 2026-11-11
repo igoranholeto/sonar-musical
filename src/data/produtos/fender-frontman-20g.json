@@ -15,5 +15,66 @@
     }
   ],
   "imagem": "/images/produtos/fender-frontman-20g.webp",
-  "imagemAlt": "Fender Frontman 20G"
+  "imagemAlt": "Fender Frontman 20G",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$124,05",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-para-guitarra-frontman-20g-120v-bra-fender/p/MLB79420857"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Frontman"
+    ],
+    [
+      "Modelo",
+      "Frontman 20G 120V Bra"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "6,8 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "33.65 cm x 18.1 cm x 31.5 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "120v"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "20 W"
+    ]
+  ]
 }

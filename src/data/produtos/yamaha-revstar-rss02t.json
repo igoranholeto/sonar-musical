@@ -1,0 +1,88 @@
+{
+  "nome": "Yamaha Revstar RSS02T",
+  "meli": "https://meli.la/1gYwDr4",
+  "preco": 6174,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 6174
+    }
+  ],
+  "imagemAlt": "Yamaha Revstar RSS02T",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 6499,
+    "off": 5,
+    "parcelas": "12x R$593,43",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-revstar-standard-rss02t-chambered-de-mogno-hot-merlot-poliuretano-brilhante-com-diapasao-de-pau-rosa/p/MLB22522683"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Revstar Standard"
+    ],
+    [
+      "Modelo",
+      "RSS02T"
+    ],
+    [
+      "Forma do corpo",
+      "Chambered"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Hot merlot"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 26,
+  "imagem": "/images/produtos/yamaha-revstar-rss02t.webp"
+}

@@ -15,5 +15,56 @@
     }
   ],
   "imagem": "/images/produtos/daddario-exl220-para-baixo.webp",
-  "imagemAlt": "D'Addario EXL220 para baixo"
+  "imagemAlt": "D'Addario EXL220 para baixo",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$16,77",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-daddario-para-contrabaixo-4-cordas-exl220/p/MLB21325946"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Linha",
+      "EXL"
+    ],
+    [
+      "Modelo",
+      "EXL220"
+    ],
+    [
+      "Instrumento recomendado",
+      "BAJO, BASS"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Calibres",
+      ".040, .060, .075, .095"
+    ],
+    [
+      "Materiais",
+      "Nickel"
+    ],
+    [
+      "Tensão",
+      "Normal"
+    ],
+    [
+      "Notas",
+      "Inclui as 4 cordas"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 88
 }

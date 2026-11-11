@@ -1,0 +1,88 @@
+{
+  "nome": "Monitor Yamaha HS8",
+  "meli": "https://meli.la/2Buu8ui",
+  "preco": 2647,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2647
+    }
+  ],
+  "imagemAlt": "Monitor Yamaha HS8",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4089,
+    "off": 35,
+    "parcelas": "12x R$254,42",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/yamaha-hs-hs8-monitor-de-referencia-para-estudio-cor-preto/p/MLB22641288"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "HS Series"
+    ],
+    [
+      "Modelo",
+      "Hs8"
+    ],
+    [
+      "Quantidade de monitores",
+      "1"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "39 cm"
+    ],
+    [
+      "Largura",
+      "25 cm"
+    ],
+    [
+      "Profundidade",
+      "33,5 cm"
+    ],
+    [
+      "Peso",
+      "10,2 kg"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "Xlr e trs"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Tweeter"
+    ],
+    [
+      "Potência",
+      "120 W"
+    ],
+    [
+      "Resposta em frequência",
+      "38 Hz - 30 kHz"
+    ],
+    [
+      "Recursos",
+      "near-field"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 121,
+  "imagem": "/images/produtos/monitor-yamaha-hs8.webp"
+}

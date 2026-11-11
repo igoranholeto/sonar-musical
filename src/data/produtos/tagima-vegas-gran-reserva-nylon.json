@@ -11,5 +11,78 @@
     }
   ],
   "imagem": "/images/produtos/tagima-vegas-gran-reserva-nylon.webp",
-  "imagemAlt": "Tagima Vegas Gran Reserva Nylon"
+  "imagemAlt": "Tagima Vegas Gran Reserva Nylon",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1300,
+    "off": 28,
+    "parcelas": "12x R$90,86",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-nylon-gran-reserva-vegas-dkmop-eq-natural/p/MLB58685663"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Techwood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material da ponte",
+      "Purpleheart"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Gran Reserva"
+    ],
+    [
+      "Modelo",
+      "Grand auditorium cutaway nylon"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poro aberto"
+    ],
+    [
+      "Forma do corpo",
+      "classical grand auditorium."
+    ],
+    [
+      "Material do tampo",
+      "Sapele"
+    ],
+    [
+      "Materiais do braço",
+      "Okoumé"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ],
+  "nota": 3.7,
+  "avaliacoes": 3
 }

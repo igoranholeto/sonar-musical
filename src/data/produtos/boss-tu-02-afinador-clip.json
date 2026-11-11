@@ -4,8 +4,8 @@
   "preco": 93,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
-  "nota": 4.8,
-  "avaliacoes": 1292,
+  "nota": 4.9,
+  "avaliacoes": 1322,
   "historico": [
     {
       "data": "2026-11-02",
@@ -17,5 +17,59 @@
     }
   ],
   "imagem": "/images/produtos/boss-tu-02-afinador-clip.webp",
-  "imagemAlt": "Boss TU-02 Afinador Clip"
+  "imagemAlt": "Boss TU-02 Afinador Clip",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 129,
+    "off": 27,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/afinador-clip-cromatico-boss-tu-02-baixo-guitarra-violao/up/MLBU608429789"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Afinador Digital Boss Roland para Guitarra, Ukulele, Violão, Baixo, C"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de alimentação",
+      "Bateria"
+    ],
+    [
+      "Formato do afinador",
+      "Pinça"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contrabaixo, Guitarra, Ukulele, Violino, Violão, viola caipira"
+    ],
+    [
+      "Comprimento",
+      "10 cm"
+    ],
+    [
+      "Largura",
+      "10 cm"
+    ],
+    [
+      "Altura",
+      "10 cm"
+    ],
+    [
+      "Peso",
+      "300 g"
+    ],
+    [
+      "Recursos",
+      "cromático, tela"
+    ]
+  ]
 }

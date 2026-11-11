@@ -1,0 +1,84 @@
+{
+  "nome": "Behringer UCA222",
+  "meli": "https://meli.la/2M6nzPp",
+  "preco": 218,
+  "precoEm": "2026-11-11",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 218
+    }
+  ],
+  "imagemAlt": "Behringer UCA222",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 265,
+    "off": 17,
+    "parcelas": "6x R$36,33 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-usb-uca222-behringer-vermelho/p/MLB66529409"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "U-Control"
+    ],
+    [
+      "Modelo",
+      "UCA222"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "48 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "16 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Tipos de conexões",
+      "1 RCA L/R in, 1 RCA L/R out, 1 SPDIF óptico out, 1 USB-A 1.1, 1 phone"
+    ],
+    [
+      "Software compatível",
+      "Audacity"
+    ],
+    [
+      "Latência",
+      "0 ms"
+    ],
+    [
+      "Altura",
+      "2,2 cm"
+    ],
+    [
+      "Largura",
+      "6 cm"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 597,
+  "imagem": "/images/produtos/behringer-uca222.webp"
+}

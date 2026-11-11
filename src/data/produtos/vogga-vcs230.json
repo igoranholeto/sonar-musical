@@ -11,5 +11,52 @@
     }
   ],
   "imagemAlt": "Vogga VCS230 (aço, eletroacústico)",
-  "imagem": "/images/produtos/vogga-vcs230.webp"
+  "imagem": "/images/produtos/vogga-vcs230.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 915,
+    "off": 22,
+    "parcelas": "10x R$70,51 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-aco-vogga-vcs230-eletroacustico-cutaway-com-afinado/up/MLBU4104164674"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Vogga"
+    ],
+    [
+      "Linha",
+      "SOLENE"
+    ],
+    [
+      "Modelo",
+      "VCS230"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Cutaway"
+    ],
+    [
+      "Material do tampo",
+      "Spruce"
+    ],
+    [
+      "Recursos",
+      "ressonador, corte"
+    ]
+  ]
 }

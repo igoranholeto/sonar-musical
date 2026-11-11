@@ -15,5 +15,74 @@
     }
   ],
   "imagem": "/images/produtos/tagima-memphis-mg30-kit.webp",
-  "imagemAlt": "Tagima Memphis MG30 Kit"
+  "imagemAlt": "Tagima Memphis MG30 Kit",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2498,
+    "off": 48,
+    "parcelas": "12x R$126,11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-memphis-mg-30-sunburst-acetinado-p-destros-c-amplificador-30w/p/MLB66397080"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "SOUNDBLUE"
+    ],
+    [
+      "Linha",
+      "Memphis"
+    ],
+    [
+      "Modelo",
+      "MG-30"
+    ],
+    [
+      "Forma do corpo",
+      "Strato"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "BASSWOOD"
+    ],
+    [
+      "Material do diapasão",
+      "Tília"
+    ],
+    [
+      "Acabamento do corpo",
+      "Acetinado"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "16.451,58 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 5
 }

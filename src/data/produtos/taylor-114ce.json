@@ -17,5 +17,78 @@
   "nota": 5,
   "avaliacoes": 2,
   "imagemAlt": "Taylor 114ce",
-  "imagem": "/images/produtos/taylor-114ce.webp"
+  "imagem": "/images/produtos/taylor-114ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$1.027 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-taylor-114ce-verniz-forma-grand-auditorium-cordas-aco/p/MLB15109449"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Taylor"
+    ],
+    [
+      "Linha",
+      "100"
+    ],
+    [
+      "Modelo",
+      "114ce"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Elixir"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Ébano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Forma do corpo",
+      "Grand Auditorium"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Nogueira"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

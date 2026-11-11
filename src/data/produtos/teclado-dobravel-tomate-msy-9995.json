@@ -1,0 +1,66 @@
+{
+  "nome": "Teclado dobrável Tomate MSY-9995",
+  "meli": "https://meli.la/1Du2cD3",
+  "preco": 234,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 234
+    }
+  ],
+  "imagemAlt": "Teclado dobrável Tomate MSY-9995",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$23,16",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-eletronico-dobravel-tomate-msy-9995-de-61-teclas-para-iniciante/p/MLB61269445"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tomate"
+    ],
+    [
+      "Linha",
+      "Teclado Eletrônico"
+    ],
+    [
+      "Modelo",
+      "MSY-9995"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "8"
+    ],
+    [
+      "Quantidade de ritmos",
+      "200"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria interna recarregável e USB Tipo-C (5V – 1A)"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 278,
+  "imagem": "/images/produtos/teclado-dobravel-tomate-msy-9995.webp"
+}

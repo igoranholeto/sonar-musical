@@ -15,7 +15,78 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 473,
+  "avaliacoes": 474,
   "imagemAlt": "Cort X100",
-  "imagem": "/images/produtos/cort-x100.webp"
+  "imagem": "/images/produtos/cort-x100.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1999,
+    "off": 10,
+    "parcelas": "12x R$171,76",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-cort-x-series-x100-meranti-poro-aberto-diapasao-jatoba/p/MLB17473492"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Cort"
+    ],
+    [
+      "Linha",
+      "X Series"
+    ],
+    [
+      "Modelo",
+      "X100"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black cherry"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Meranti"
+    ],
+    [
+      "Material do diapasão",
+      "Jatobá"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poro aberto"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Meranti"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

@@ -11,5 +11,52 @@
     }
   ],
   "imagemAlt": "Eagle EMN880C Nylon Tampo Sólido",
-  "imagem": "/images/produtos/eagle-emn880c.webp"
+  "imagem": "/images/produtos/eagle-emn880c.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2899,
+    "off": 17,
+    "parcelas": "10x R$239,99 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eagle-emn880c-nt-nylon-eletroacustico-tampo-solido-natural-brilhante-com-bag/p/MLB80767248"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Linha",
+      "Master Series"
+    ],
+    [
+      "Modelo",
+      "EMN880C NT"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Recursos",
+      "eletroacústica, corte"
+    ]
+  ]
 }

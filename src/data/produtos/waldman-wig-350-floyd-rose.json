@@ -15,5 +15,46 @@
     }
   ],
   "imagem": "/images/produtos/waldman-wig-350-floyd-rose.webp",
-  "imagemAlt": "Waldman WIG-350 (Floyd Rose)"
+  "imagemAlt": "Waldman WIG-350 (Floyd Rose)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$225 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-waldman-wig350-bk/up/MLBU4323523104"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Waldman"
+    ],
+    [
+      "Linha",
+      "Premium Mastery"
+    ],
+    [
+      "Modelo",
+      "Wig350"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Poplar"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "maple"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

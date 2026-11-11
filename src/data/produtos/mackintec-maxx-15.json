@@ -1,0 +1,84 @@
+{
+  "nome": "Mackintec Maxx 15",
+  "meli": "https://meli.la/2hc3vcv",
+  "preco": 345,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 345
+    }
+  ],
+  "imagemAlt": "Mackintec Maxx 15",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 420,
+    "off": 17,
+    "parcelas": "12x R$33,74",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-combo-transistor-mackintec-maxx-15w-guitarra-preto-p10/p/MLB15141874"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mackintec"
+    ],
+    [
+      "Linha",
+      "Maxx"
+    ],
+    [
+      "Modelo",
+      "15 Color"
+    ],
+    [
+      "Cor",
+      "Estampado"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "4 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "33 cm x 20 cm x 35 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "P10"
+    ],
+    [
+      "Conectores de saída",
+      "P10"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 4115,
+  "imagem": "/images/produtos/mackintec-maxx-15.webp"
+}

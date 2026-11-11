@@ -15,5 +15,73 @@
     }
   ],
   "imagem": "/images/produtos/boss-rv-6-reverb.webp",
-  "imagemAlt": "Boss RV-6 Reverb"
+  "imagemAlt": "Boss RV-6 Reverb",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1599,
+    "off": 5,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-reverb-rv-6-cinza-escuro/p/MLB23231611"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Reverb"
+    ],
+    [
+      "Cor",
+      "Cinza-escuro"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "450 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "8"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Reverb"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 182
 }

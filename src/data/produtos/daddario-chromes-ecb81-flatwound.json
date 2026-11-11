@@ -15,5 +15,42 @@
     }
   ],
   "imagem": "/images/produtos/daddario-chromes-ecb81-flatwound.webp",
-  "imagemAlt": "D'Addario Chromes ECB81 flatwound"
+  "imagemAlt": "D'Addario Chromes ECB81 flatwound",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$43,03",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-baixo-4c-045-daddario-xl-chromes-ecb81/p/MLB26148827"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Linha",
+      "XL Chromes"
+    ],
+    [
+      "Modelo",
+      "ECB81"
+    ],
+    [
+      "Instrumento recomendado",
+      "Baixo"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Materiais",
+      "Aço"
+    ],
+    [
+      "Tensão",
+      "045"
+    ]
+  ]
 }

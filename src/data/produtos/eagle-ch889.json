@@ -13,5 +13,76 @@
   "nota": 5,
   "avaliacoes": 26,
   "imagemAlt": "Eagle CH 889 Dreadnought",
-  "imagem": "/images/produtos/eagle-ch889.webp"
+  "imagem": "/images/produtos/eagle-ch889.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1795,
+    "off": 9,
+    "parcelas": "12x R$156,96",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-eagle-classic-ch-889-para-destros-natural-bordo-envernizado/p/MLB15305243"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Jacarandá"
+    ],
+    [
+      "Acessórios incluídos",
+      "Alça"
+    ],
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Linha",
+      "Classic"
+    ],
+    [
+      "Modelo",
+      "CH 889"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

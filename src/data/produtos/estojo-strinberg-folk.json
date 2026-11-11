@@ -17,5 +17,74 @@
   "nota": 5,
   "avaliacoes": 24,
   "imagemAlt": "Estojo rígido Strinberg (folk)",
-  "imagem": "/images/produtos/estojo-strinberg-folk.webp"
+  "imagem": "/images/produtos/estojo-strinberg-folk.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$69,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/estojo-rigido-strinberg-aveludado-para-violao-folk-takamine-gd30-gd71-gd93/p/MLB27557014"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "WSD"
+    ],
+    [
+      "Tipo de estrutura",
+      "Plywood"
+    ],
+    [
+      "Tipo de violão",
+      "Violão Folk"
+    ],
+    [
+      "Peso",
+      "4 kg"
+    ],
+    [
+      "Tipo de produto",
+      "Estojo"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do interior",
+      "Aveludado"
+    ],
+    [
+      "Material do exterior",
+      "Couro sintético"
+    ],
+    [
+      "Comprimento interior",
+      "108 cm"
+    ],
+    [
+      "Largura interior",
+      "40 cm"
+    ],
+    [
+      "Altura interior",
+      "14 cm"
+    ],
+    [
+      "Comprimento exterior",
+      "112,5 cm"
+    ],
+    [
+      "Largura exterior",
+      "46,2 cm"
+    ],
+    [
+      "Recursos",
+      "bolsos, almofadado, impermeável"
+    ]
+  ]
 }

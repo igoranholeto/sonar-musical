@@ -15,5 +15,44 @@
     }
   ],
   "imagem": "/images/produtos/fonte-boss-psa-120zs-9v.webp",
-  "imagemAlt": "Fonte Boss PSA-120ZS 9V"
+  "imagemAlt": "Fonte Boss PSA-120ZS 9V",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$24,74",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-pedal-boss-psa-120zs/p/MLB20224436"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Psa 120zs"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Itens inclusos",
+      "fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 47
 }

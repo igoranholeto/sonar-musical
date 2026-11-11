@@ -11,5 +11,74 @@
     }
   ],
   "imagemAlt": "Michael GM217N Stratocaster",
-  "imagem": "/images/produtos/michael-gm217n.webp"
+  "imagem": "/images/produtos/michael-gm217n.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$89 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-michael-gm217n-stratocaster-vintage-sunburst/p/MLB24068750"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "GM217N"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Cor",
+      "Vintage sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Basswood"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Chave seletora de captadores",
+      "5 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Medium Jumbo"
+    ],
+    [
+      "Construção do braço",
+      "Bolt-on"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Synch tremolo"
+    ],
+    [
+      "Tipo de ponte",
+      "Tremolo"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

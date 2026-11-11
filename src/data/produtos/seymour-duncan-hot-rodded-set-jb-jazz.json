@@ -1,7 +1,7 @@
 {
   "nome": "Seymour Duncan Hot Rodded Set (JB + Jazz)",
   "meli": "https://meli.la/1qf7XzG",
-  "preco": 1543,
+  "preco": 1535,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -12,8 +12,57 @@
     {
       "data": "2026-11-10",
       "preco": 1543
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1535
     }
   ],
   "imagem": "/images/produtos/seymour-duncan-hot-rodded-set-jb-jazz.webp",
-  "imagemAlt": "Seymour Duncan Hot Rodded Set (JB + Jazz)"
+  "imagemAlt": "Seymour Duncan Hot Rodded Set (JB + Jazz)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$153,54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/electric-guitar-pickups-seymour-duncan-jb-and-jazz-set/p/MLB2070379203"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Seymour Duncan"
+    ],
+    [
+      "Modelo",
+      "JB and Jazz Set"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Tipos de instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tipo de equalização",
+      "Passivo"
+    ],
+    [
+      "Tipo de montagem",
+      "Parafusos"
+    ],
+    [
+      "Compatibilidade de cordas",
+      "6 cordas"
+    ],
+    [
+      "Recursos",
+      "set de captadores"
+    ]
+  ]
 }

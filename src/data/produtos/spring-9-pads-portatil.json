@@ -1,0 +1,68 @@
+{
+  "nome": "Bateria eletrônica Spring 9 pads (portátil)",
+  "meli": "https://meli.la/2BkLNMR",
+  "preco": 300,
+  "precoEm": "2026-11-11",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 300
+    }
+  ],
+  "imagemAlt": "Bateria eletrônica Spring 9 pads (portátil)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 380,
+    "off": 20,
+    "parcelas": "12x R$29,35",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-spring-9-pads-usb-midi-portatil-completa-preta/p/MLB26387879"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Spring"
+    ],
+    [
+      "Modelo",
+      "Spring 9 Pads"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "9"
+    ],
+    [
+      "Quantidade de sons",
+      "7"
+    ],
+    [
+      "Funções do módulo de som",
+      "Acompanhamentos"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato splash, prato de condução, prato de ataque, surdo, chimbal, pedais, baquetas, módulo de som"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 85,
+  "imagem": "/images/produtos/spring-9-pads-portatil.webp"
+}

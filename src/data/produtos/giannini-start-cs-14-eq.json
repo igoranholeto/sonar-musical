@@ -1,7 +1,7 @@
 {
   "nome": "Giannini Start CS-14 EQ",
   "meli": "https://meli.la/1mohE9g",
-  "preco": 436,
+  "preco": 410,
   "precoEm": "2026-11-11",
   "categoria": "cavaquinho",
   "historico": [
@@ -15,9 +15,81 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 436
+      "preco": 410
     }
   ],
   "imagem": "/images/produtos/giannini-start-cs-14-eq.webp",
-  "imagemAlt": "Giannini Start CS-14 EQ"
+  "imagemAlt": "Giannini Start CS-14 EQ",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 670,
+    "off": 38,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-giannini-eletroacustico-start-cs-14-ep-nat-fosco/p/MLB24633559"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "CS-14 ep"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Eletroacústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Materiais do corpo",
+      "Tília"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Material do braço",
+      "Linden"
+    ],
+    [
+      "Material do diapasão",
+      "Sabina massiça"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Bordo"
+    ],
+    [
+      "Altura",
+      "7,5 cm"
+    ],
+    [
+      "Largura",
+      "23,9 cm"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 826
 }

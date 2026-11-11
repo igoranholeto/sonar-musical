@@ -1,0 +1,71 @@
+{
+  "nome": "Banco de bateria Don Caprini TR25",
+  "meli": "https://meli.la/1Bbe759",
+  "preco": 145,
+  "precoEm": "2026-11-11",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 145
+    }
+  ],
+  "imagemAlt": "Banco de bateria Don Caprini TR25",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 267,
+    "off": 45,
+    "parcelas": "4x R$36,25 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banco-de-bateria-don-caprini-tr25-cinza-escuro-3-pes-altura-ajustavel-60cm/p/MLB63081372"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Don Caprini"
+    ],
+    [
+      "Linha",
+      "Premium Profissional"
+    ],
+    [
+      "Modelo",
+      "Banco de bateria Dc Music"
+    ],
+    [
+      "Cor",
+      "Cinza-escuro"
+    ],
+    [
+      "Diâmetro",
+      "28,2 cm"
+    ],
+    [
+      "Tipo de banco",
+      "Banco"
+    ],
+    [
+      "Material do assento",
+      "Couro sintético"
+    ],
+    [
+      "Quantidade de pés",
+      "3"
+    ],
+    [
+      "Altura mínima - Altura máxima",
+      "45 cm - 60 cm"
+    ],
+    [
+      "Peso máximo suportado",
+      "90 kg"
+    ],
+    [
+      "Recursos",
+      "altura ajustável, pernas duplas"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 459
+}

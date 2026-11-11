@@ -11,7 +11,70 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 550,
+  "avaliacoes": 551,
   "imagemAlt": "Vivace Mozart MO44",
-  "imagem": "/images/produtos/vivace-mozart-mo44.webp"
+  "imagem": "/images/produtos/vivace-mozart-mo44.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 585,
+    "off": 37,
+    "parcelas": "7x R$52,14 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-vivace-mozart-mo44-44-com-case-luxo/p/MLB24633525"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Vivace"
+    ],
+    [
+      "Modelo",
+      "Mo44"
+    ],
+    [
+      "Cor",
+      "Envernizado"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Comprimento",
+      "58 cm"
+    ],
+    [
+      "Largura",
+      "21 cm"
+    ],
+    [
+      "Altura",
+      "4 cm"
+    ],
+    [
+      "Peso",
+      "450 g"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira dura"
+    ],
+    [
+      "Materiais do corpo",
+      "Bordo, Spruce"
+    ],
+    [
+      "Acessórios incluídos",
+      "Estojo, Breu"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

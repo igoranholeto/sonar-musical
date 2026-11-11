@@ -21,5 +21,76 @@
   "nota": 4.9,
   "avaliacoes": 69,
   "imagemAlt": "Takamine GD30CE-12",
-  "imagem": "/images/produtos/takamine-gd30ce-12.webp"
+  "imagem": "/images/produtos/takamine-gd30ce-12.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4768,
+    "off": 23,
+    "parcelas": "12x R$349,24",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-takamine-gd30ce-12-cordas-natural-tp4td/p/MLB41812927"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Takamine"
+    ],
+    [
+      "Linha",
+      "G"
+    ],
+    [
+      "Modelo",
+      "GD30CE-12"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "12"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

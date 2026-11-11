@@ -1,7 +1,7 @@
 {
   "nome": "Elixir 80/20 Bronze Custom Light .011",
   "meli": "https://meli.la/2VGdkmg",
-  "preco": 159,
+  "preco": 79,
   "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
@@ -15,9 +15,60 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 159
+      "preco": 79
     }
   ],
   "imagem": "/images/produtos/elixir-80-20-bronze-custom-light-011.webp",
-  "imagemAlt": "Elixir 80/20 Bronze Custom Light .011"
+  "imagemAlt": "Elixir 80/20 Bronze Custom Light .011",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "3x R$26,33 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-pviolao-elixir-011-bronze-custom-light/p/MLB21431960"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Elixir"
+    ],
+    [
+      "Linha",
+      "NANOWEB"
+    ],
+    [
+      "Modelo",
+      "11027"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão acústico"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      ".011, Encordoamentos de .015, .022, .032, .042, .052"
+    ],
+    [
+      "Materiais",
+      "Bronze"
+    ],
+    [
+      "Tensão",
+      "Alta"
+    ],
+    [
+      "Notas",
+      "A5, B2, D4, E1, E6, G3"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 457
 }

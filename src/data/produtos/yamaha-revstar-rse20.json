@@ -1,0 +1,46 @@
+{
+  "nome": "Yamaha Revstar RSE20",
+  "meli": "https://meli.la/1h7ptcv",
+  "preco": 3927,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 3927
+    }
+  ],
+  "imagemAlt": "Yamaha Revstar RSE20",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$392,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-revstar-yamaha-rse20-vw-6c-branco-mogno-chambered-cor-vintage-white-orientacao-da-mao-destro/p/MLB20695289"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Revstar"
+    ],
+    [
+      "Modelo",
+      "RSE20"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Tipo de ponte",
+      "Fixo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 12,
+  "imagem": "/images/produtos/yamaha-revstar-rse20.webp"
+}

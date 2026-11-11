@@ -17,5 +17,72 @@
   "nota": 5,
   "avaliacoes": 1,
   "imagemAlt": "Michael VMF400 (kit eletroacústico folk)",
-  "imagem": "/images/produtos/michael-vmf400.webp"
+  "imagem": "/images/produtos/michael-vmf400.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1067,
+    "off": 22,
+    "parcelas": "10x R$82,66 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletroacustico-folk-michael-vmf400-completo-sitka/p/MLB75040469"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Blackwood"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Sitka"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Acessórios incluídos",
+      "capa impermeável, Capo-traste, cabo P10"
+    ],
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "Folk"
+    ],
+    [
+      "Modelo",
+      "Vmf400"
+    ],
+    [
+      "Cor",
+      "Sitka"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

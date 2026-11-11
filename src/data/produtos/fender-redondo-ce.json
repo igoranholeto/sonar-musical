@@ -19,7 +19,72 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 674,
+  "avaliacoes": 684,
   "imagemAlt": "Fender California Redondo-CE",
-  "imagem": "/images/produtos/fender-redondo-ce.webp"
+  "imagem": "/images/produtos/fender-redondo-ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$155,74",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-fender-california-debut-redondo-ce-0974010521-natural/p/MLB50744772"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Nogueira"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Nogueira"
+    ],
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "California Debut"
+    ],
+    [
+      "Modelo",
+      "California Debut Redondo CE"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Auditorium"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

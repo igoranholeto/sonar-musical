@@ -13,5 +13,78 @@
   "nota": 5,
   "avaliacoes": 1,
   "imagemAlt": "Taylor GS Mini-e Mahogany",
-  "imagem": "/images/produtos/taylor-gs-mini-e-mogno.webp"
+  "imagem": "/images/produtos/taylor-gs-mini-e-mogno.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$807,09",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-taylor-gs-mini-e-mogno-aco-com-capa/p/MLB15041438"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Taylor"
+    ],
+    [
+      "Linha",
+      "GS"
+    ],
+    [
+      "Modelo",
+      "GS Mini-e Mahogany"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Forma do corpo",
+      "Grand Symphony"
+    ],
+    [
+      "Material do tampo",
+      "Mogno"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Materiais do braço",
+      "Sapele"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "596,9 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ],
+    [
+      "Recursos",
+      "tamanho mini"
+    ]
+  ]
 }

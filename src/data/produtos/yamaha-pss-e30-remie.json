@@ -1,17 +1,86 @@
 {
   "nome": "Yamaha PSS-E30 Remie (37 mini teclas)",
   "meli": "https://meli.la/1wicLAb",
-  "preco": 552,
+  "preco": 600,
   "precoEm": "2026-11-11",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
-      "preco": 552
+      "preco": 600
     }
   ],
   "nota": 5,
   "avaliacoes": 2,
   "imagemAlt": "Yamaha PSS-E30 Remie (37 mini teclas)",
-  "imagem": "/images/produtos/yamaha-pss-e30-remie.webp"
+  "imagem": "/images/produtos/yamaha-pss-e30-remie.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$58,02",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mini-teclado-musical-yamaha-remie-pss-e30-portatil-37-teclas/p/MLB25164790"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "Yamaha PSS-E30 Remie"
+    ],
+    [
+      "Cor",
+      "Cinza"
+    ],
+    [
+      "Quantidade de chaves",
+      "54"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de ritmos",
+      "114"
+    ],
+    [
+      "Tipos de alimentação",
+      "Pilha"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fio USB, Manual"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "USB"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "1"
+    ],
+    [
+      "Quantidade de canções",
+      "20"
+    ],
+    [
+      "Quantidade de baterias",
+      "6"
+    ],
+    [
+      "Controle de sintonia",
+      "453 Hz"
+    ],
+    [
+      "Altura",
+      "50,6 cm"
+    ],
+    [
+      "Recursos",
+      "ranhura para cartão de memória, metrónomo"
+    ]
+  ]
 }

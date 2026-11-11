@@ -15,5 +15,68 @@
     }
   ],
   "imagem": "/images/produtos/meteoro-space-junior-35bs.webp",
-  "imagemAlt": "Meteoro Space Júnior 35BS"
+  "imagemAlt": "Meteoro Space Júnior 35BS",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$59,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-contra-baixo-meteoro-space-junior-35bs-35w-cor-preto/p/MLB19861462"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Modelo",
+      "space Júnior 35bs"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "6 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "31.5 cm x 23 cm x 35 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contra-baixo"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "35 W"
+    ],
+    [
+      "Classe",
+      "Transistor"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2161
 }

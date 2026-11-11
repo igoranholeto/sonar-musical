@@ -15,5 +15,65 @@
       "data": "2026-11-05",
       "preco": 79
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 198,
+    "off": 60,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-e-microfone-infantil-instrumento-brinquedo-musical-cor-azul/p/MLB41517901"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "ATENTU"
+    ],
+    [
+      "Modelo",
+      "Kit Musical Guitarra"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ],
+    [
+      "Tipo de guitarra",
+      "Elétrica"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Tipo de pilhas",
+      "AA"
+    ],
+    [
+      "Quantidade de pilhas",
+      "3"
+    ],
+    [
+      "Idade mínima recomendada - Idade máxima recomendada",
+      "3 anos - 5 anos"
+    ],
+    [
+      "Idade recomendada",
+      "5-7 anos"
+    ],
+    [
+      "Comprimento x Largura x Altura",
+      "19 cm x 5.5 cm x 48 cm"
+    ],
+    [
+      "Peso",
+      "378 g"
+    ],
+    [
+      "Recursos",
+      "som, luzes, microfone, correia ajustável"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 4270
 }

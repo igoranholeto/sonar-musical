@@ -1,0 +1,48 @@
+{
+  "nome": "Audio-Technica ATH-M50x",
+  "meli": "https://meli.la/1Fw8KnS",
+  "preco": 1344,
+  "precoEm": "2026-11-11",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1344
+    }
+  ],
+  "imagemAlt": "Audio-Technica ATH-M50x",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2800,
+    "off": 52,
+    "parcelas": "12x R$130,47",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-audio-technica-ath-m50x-profissional-preto/p/MLB40459511"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Audio-Technica"
+    ],
+    [
+      "Linha",
+      "Auricular"
+    ],
+    [
+      "Modelo",
+      "ATHM50X"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 13,
+  "imagem": "/images/produtos/audio-technica-ath-m50x.webp"
+}

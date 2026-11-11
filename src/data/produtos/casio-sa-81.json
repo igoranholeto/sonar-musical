@@ -13,5 +13,72 @@
   "nota": 4.9,
   "avaliacoes": 159,
   "imagemAlt": "Casio Casiotone SA-81 (44 mini teclas)",
-  "imagem": "/images/produtos/casio-sa-81.webp"
+  "imagem": "/images/produtos/casio-sa-81.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 735,
+    "off": 23,
+    "parcelas": "10x R$55,99 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-infantil-casiotone-sa-81-com-44-teclas-casio-cor-preto/p/MLB25164785"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Casiotone"
+    ],
+    [
+      "Modelo",
+      "SA-81"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "5,7 cm"
+    ],
+    [
+      "Largura",
+      "60,4 cm"
+    ],
+    [
+      "Profundidade",
+      "21,1 cm"
+    ],
+    [
+      "Peso",
+      "1,4 kg"
+    ],
+    [
+      "Quantidade de chaves",
+      "44"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de ritmos",
+      "50"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte não incluída, Pilha"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manual"
+    ]
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "nome": "Takamine GC1CE (nylon)",
   "meli": "https://meli.la/1XwNZJ7",
-  "preco": 2599,
+  "preco": 2397,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -19,11 +19,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2599
+      "preco": 2397
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 274,
+  "avaliacoes": 273,
   "imagemAlt": "Takamine GC1CE (nylon)",
-  "imagem": "/images/produtos/takamine-gc1ce.webp"
+  "imagem": "/images/produtos/takamine-gc1ce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3799,
+    "off": 36,
+    "parcelas": "12x R$230,39",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-takamine-g-series-gc1ce-n-gc1ce-n-para-destros-natural-ebano-brilhante/p/MLB16044324"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Conectores de saída",
+      "1 x 1/4\" saída jack"
+    ],
+    [
+      "Tipo de ressonador",
+      "Acústico"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Acessórios incluídos",
+      "Guia do usuário"
+    ],
+    [
+      "Marca",
+      "Takamine"
+    ],
+    [
+      "Linha",
+      "G Series"
+    ],
+    [
+      "Modelo",
+      "GC1CE N"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

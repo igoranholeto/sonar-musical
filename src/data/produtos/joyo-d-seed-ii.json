@@ -15,5 +15,78 @@
     }
   ],
   "imagem": "/images/produtos/joyo-d-seed-ii.webp",
-  "imagemAlt": "Joyo D-Seed II"
+  "imagemAlt": "Joyo D-Seed II",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 516,
+    "off": 15,
+    "parcelas": "8x R$54,83 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-delay-looper-joyo-d-seed-ii-branco-para-guitarra-eletrica/p/MLB17460599"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Joyo"
+    ],
+    [
+      "Linha",
+      "D-Seed"
+    ],
+    [
+      "Modelo",
+      "D-Seed II"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "10.5 cm x 10.5 cm x 4.6 cm"
+    ],
+    [
+      "Peso",
+      "555 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "8"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Delay, Looper"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm mono"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm mono"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 184
 }

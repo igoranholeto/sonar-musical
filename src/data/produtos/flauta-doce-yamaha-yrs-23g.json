@@ -1,0 +1,65 @@
+{
+  "nome": "Flauta doce Yamaha YRS-23G",
+  "meli": "https://meli.la/2AxX8nU",
+  "preco": 32,
+  "precoEm": "2026-11-11",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 32
+    }
+  ],
+  "imagemAlt": "Flauta doce Yamaha YRS-23G",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-doce-yamaha-soprano-germanica-yrs23g-cor-bege/p/MLB26237155"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "YRS23G"
+    ],
+    [
+      "Cor",
+      "Bege"
+    ],
+    [
+      "Tipo de flauta",
+      "Doce"
+    ],
+    [
+      "Material",
+      "Resina ABS"
+    ],
+    [
+      "Nível de habilidade",
+      "Iniciante"
+    ],
+    [
+      "Tipo de dedilhado",
+      "Germanica"
+    ],
+    [
+      "Afinação",
+      "Do"
+    ],
+    [
+      "Quantidade de peças",
+      "1"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 9912,
+  "imagem": "/images/produtos/flauta-doce-yamaha-yrs-23g.webp"
+}

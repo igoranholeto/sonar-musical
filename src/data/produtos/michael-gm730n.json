@@ -1,7 +1,7 @@
 {
   "nome": "Michael GM730N Les Paul",
   "meli": "https://meli.la/1R94wch",
-  "preco": 1373,
+  "preco": 1446,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
@@ -15,11 +15,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 1373
+      "preco": 1446
     }
   ],
   "nota": 4.8,
   "avaliacoes": 82,
   "imagemAlt": "Michael GM730N Les Paul",
-  "imagem": "/images/produtos/michael-gm730n.webp"
+  "imagem": "/images/produtos/michael-gm730n.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1939,
+    "off": 25,
+    "parcelas": "10x R$144,60 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-michael-gm730n-les-paul-dourada-humbucker-tilia/p/MLB17967588"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "Traditional"
+    ],
+    [
+      "Modelo",
+      "GM730N"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Gold"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Blackwood"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo canadense"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Jumbo"
+    ]
+  ]
 }

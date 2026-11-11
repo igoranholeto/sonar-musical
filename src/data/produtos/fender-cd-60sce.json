@@ -19,7 +19,70 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 225,
+  "avaliacoes": 236,
   "imagemAlt": "Fender CD-60SCE",
-  "imagem": "/images/produtos/fender-cd-60sce.webp"
+  "imagem": "/images/produtos/fender-cd-60sce.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2498,
+    "off": 16,
+    "parcelas": "12x R$201,62",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletroacustica-fender-cd-60sce-black-fishman/p/MLB52126833"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Classic Design"
+    ],
+    [
+      "Modelo",
+      "CD-60SCE BLACK"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Dreadnought"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

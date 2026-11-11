@@ -23,5 +23,72 @@
     }
   ],
   "imagemAlt": "Ibanez SR255E (5 cordas)",
-  "imagem": "/images/produtos/ibanez-sr255e.webp"
+  "imagem": "/images/produtos/ibanez-sr255e.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3732,
+    "off": 22,
+    "parcelas": "10x R$289,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-ibanez-sr255e-tkf-5-cordas-ativo-destro-5/p/MLB79684768"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "SR"
+    ],
+    [
+      "Código do fabricante",
+      "SR255E-TKF"
+    ],
+    [
+      "Tipo de baixo",
+      "Ativo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Cinza"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Okoume"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Humbucker"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Ativo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ]
+  ]
 }

@@ -15,7 +15,72 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 43,
+  "avaliacoes": 48,
   "imagemAlt": "Strinberg JBS40 Jazz Bass",
-  "imagem": "/images/produtos/strinberg-jbs40.webp"
+  "imagem": "/images/produtos/strinberg-jbs40.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$95,33",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-jazz-bass-strinberg-jbs40bk-4-cordas-passivo/p/MLB22939675"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "JBS40"
+    ],
+    [
+      "Modelo",
+      "JBS40 SB LH"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Precisão"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ]
+  ]
 }

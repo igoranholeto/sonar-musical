@@ -27,5 +27,73 @@
     }
   ],
   "imagem": "/images/produtos/boss-ds-1.webp",
-  "imagemAlt": "Boss DS-1"
+  "imagemAlt": "Boss DS-1",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 619,
+    "off": 15,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-distortion-ds-1/p/MLB17436041"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Distortion"
+    ],
+    [
+      "Cor",
+      "Laranja"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "400 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Distorção"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 858
 }

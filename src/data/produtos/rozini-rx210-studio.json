@@ -21,5 +21,70 @@
   "nota": 4.7,
   "avaliacoes": 47,
   "imagemAlt": "Rozini Studio RX210 (nylon)",
-  "imagem": "/images/produtos/rozini-rx210-studio.webp"
+  "imagem": "/images/produtos/rozini-rx210-studio.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$119,02",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-rozini-rx210acflp-para-destros-natural-pau-ferro-fosco/p/MLB16044339"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Pau Ferro"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau ferro"
+    ],
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Modelo",
+      "RX210.AC.F.LP"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Laminado"
+    ]
+  ]
 }

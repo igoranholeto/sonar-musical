@@ -1,7 +1,7 @@
 {
   "nome": "Tagima TG-510",
   "meli": "https://meli.la/1kRfMN7",
-  "preco": 891,
+  "preco": 967,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
@@ -12,8 +12,85 @@
     {
       "data": "2026-11-10",
       "preco": 891
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 967
     }
   ],
   "imagem": "/images/produtos/tagima-tg-510-2.webp",
-  "imagemAlt": "Tagima TG-510"
+  "imagemAlt": "Tagima TG-510",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1299,
+    "off": 25,
+    "parcelas": "10x R$96,67 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tw-series-tg-510-stratocaster-tilia-preta/p/MLB17453005"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TG-510"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira técnica"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1769
 }

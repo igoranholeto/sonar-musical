@@ -15,5 +15,73 @@
     }
   ],
   "imagem": "/images/produtos/meteoro-space-junior-35gs.webp",
-  "imagemAlt": "Meteoro Space Junior 35GS"
+  "imagemAlt": "Meteoro Space Junior 35GS",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 529,
+    "off": 10,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-combo-meteoro-space-junior-35gs-35-w-2-canais/p/MLB19971068"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "Space Jr."
+    ],
+    [
+      "Modelo",
+      "Space Junior 35GS"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "4,1 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "29 cm x 23 cm x 33 cm"
+    ],
+    [
+      "Conectores de saída",
+      "P10"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "35 W"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 4786
 }

@@ -19,7 +19,74 @@
     }
   ],
   "nota": 5,
-  "avaliacoes": 98,
+  "avaliacoes": 101,
   "imagem": "/images/produtos/boss-tu-3-afinador-cromatico.webp",
-  "imagemAlt": "Boss TU-3 Afinador Cromático"
+  "imagemAlt": "Boss TU-3 Afinador Cromático",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1186,
+    "off": 22,
+    "parcelas": "12x R$89,41",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-afinador-boss-tu-3-branco/p/MLB20813618"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "TU-3"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Largura x Altura",
+      "7.3 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "390 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra Elétrica de 7 Cordas, Baixo de 6 Cordas"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Cromático"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CA"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ]
 }

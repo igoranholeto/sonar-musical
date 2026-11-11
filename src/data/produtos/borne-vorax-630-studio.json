@@ -19,5 +19,72 @@
     }
   ],
   "imagem": "/images/produtos/borne-vorax-630-studio.webp",
-  "imagemAlt": "Borne Vorax 630 Studio"
+  "imagemAlt": "Borne Vorax 630 Studio",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$73,88",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-borne-vorax-630-studio-guitarra-30w-rms-preto-som-potente-compacto-estudo-ensaio-show-rock-pop-blues-versatil-resistente/p/MLB53378638"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "BORNE - oficial"
+    ],
+    [
+      "Linha",
+      "Vorax Reverb Integrado"
+    ],
+    [
+      "Modelo",
+      "Vorax215"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "5,8 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "45 cm x 40 cm x 25 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Canal Clean e Drive Preto"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Energia Elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "30 W"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

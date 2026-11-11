@@ -1,7 +1,7 @@
 {
   "nome": "Rozini Estudante RC09",
   "meli": "https://meli.la/265d9Hv",
-  "preco": 768,
+  "preco": 808,
   "precoEm": "2026-11-11",
   "categoria": "cavaquinho",
   "historico": [
@@ -15,9 +15,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 768
+      "preco": 808
     }
   ],
   "imagem": "/images/produtos/rozini-estudante-rc09.webp",
-  "imagemAlt": "Rozini Estudante RC09"
+  "imagemAlt": "Rozini Estudante RC09",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1083,
+    "off": 25,
+    "parcelas": "10x R$80,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-rozini-estudante-acustico-imbuia-com-escala-roxinho-rc09/p/MLB27878567"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Rozini Estudante"
+    ],
+    [
+      "Modelo",
+      "RC09"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Materiais do corpo",
+      "Marfim"
+    ],
+    [
+      "Material do tampo",
+      "Marfim"
+    ],
+    [
+      "Material do braço",
+      "Cedro"
+    ],
+    [
+      "Material do diapasão",
+      "Purple heart"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Madeira"
+    ],
+    [
+      "Altura",
+      "6,5 cm"
+    ],
+    [
+      "Largura",
+      "23 cm"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 13
 }

@@ -1,0 +1,82 @@
+{
+  "nome": "Strinberg SPS260",
+  "meli": "https://meli.la/2He4cUp",
+  "preco": 1399,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1399
+    }
+  ],
+  "imagemAlt": "Strinberg SPS260",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$139,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/strinberg-lps-series-sps260-les-paul/p/MLB17805303"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "LPS Series"
+    ],
+    [
+      "Modelo",
+      "LPS260"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Mahogany satin"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira técnica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 125,
+  "imagem": "/images/produtos/strinberg-sps260.webp"
+}

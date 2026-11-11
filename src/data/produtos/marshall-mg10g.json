@@ -1,7 +1,7 @@
 {
   "nome": "Marshall MG10G",
   "meli": "https://meli.la/2UMJ2uW",
-  "preco": 921,
+  "preco": 916,
   "precoEm": "2026-11-11",
   "categoria": "amplificador",
   "historico": [
@@ -15,9 +15,38 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 921
+      "preco": 916
     }
   ],
   "imagemAlt": "Marshall MG10G",
-  "imagem": "/images/produtos/marshall-mg10g.webp"
+  "imagem": "/images/produtos/marshall-mg10g.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$88,89",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-combo-guitarra-electrica-marshall-mg10g-10w-preto/p/MLB2097216282"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Marshall"
+    ],
+    [
+      "Modelo",
+      "M-MG10G-U"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "4,99 kg"
+    ],
+    [
+      "Largura x Altura",
+      "30 cm x 47 cm"
+    ]
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "nome": "Eagle CH800 Nylon Eletroacústico",
   "meli": "https://meli.la/1f2xTbr",
-  "preco": 1334,
+  "preco": 1383,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -12,10 +12,80 @@
     {
       "data": "2026-11-10",
       "preco": 1334
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1383
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 30,
+  "avaliacoes": 31,
   "imagemAlt": "Eagle CH800 Nylon Eletroacústico",
-  "imagem": "/images/produtos/eagle-ch800.webp"
+  "imagem": "/images/produtos/eagle-ch800.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1678,
+    "off": 17,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-eagle-ch800-stvg-nylon/p/MLB51243536"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Laurel"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz acetinado"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Modelo",
+      "CH 800"
+    ],
+    [
+      "Cor",
+      "Amarelo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ]
+  ]
 }

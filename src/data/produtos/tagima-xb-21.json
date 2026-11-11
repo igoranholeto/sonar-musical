@@ -15,7 +15,74 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 83,
+  "avaliacoes": 84,
   "imagemAlt": "Tagima XB-21",
-  "imagem": "/images/produtos/tagima-xb-21.webp"
+  "imagem": "/images/produtos/tagima-xb-21.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1500,
+    "off": 31,
+    "parcelas": "12x R$100,18",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-tagima-xb-21-passivo-de-4-cordas-metallic-deep-orange/p/MLB26525957"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Memphis"
+    ],
+    [
+      "Modelo",
+      "XB21 4 MDO-DF"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "MDO Metallic Deep"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "864 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Okoume"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de ponte",
+      "Preto padrão"
+    ],
+    [
+      "Tipo de captadores",
+      "1 Tagima P model"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ]
 }

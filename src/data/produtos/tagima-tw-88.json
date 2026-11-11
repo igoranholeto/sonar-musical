@@ -1,0 +1,80 @@
+{
+  "nome": "Tagima TW-88",
+  "meli": "https://meli.la/1cb5GEh",
+  "preco": 1376,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1376
+    }
+  ],
+  "imagemAlt": "Tagima TW-88",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1792,
+    "off": 23,
+    "parcelas": "12x R$133,58",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-tagima-telecaster-escala-escura-tw-88-olympic-white/p/MLB55907921"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TW-88"
+    ],
+    [
+      "Forma do corpo",
+      "Telecaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Creme"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "PORPLAR"
+    ],
+    [
+      "Material do diapasão",
+      "Techwood High Density"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Arce duro"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 10,
+  "imagem": "/images/produtos/tagima-tw-88.webp"
+}

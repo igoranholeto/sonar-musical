@@ -1,0 +1,80 @@
+{
+  "nome": "Datrel BS60E (baixo)",
+  "meli": "https://meli.la/2wyWybJ",
+  "preco": 635,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 635
+    }
+  ],
+  "imagemAlt": "Datrel BS60E (baixo)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 800,
+    "off": 20,
+    "parcelas": "12x R$61,40",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-datrel-para-contra-baixo-60w-8-bs60e-preto/p/MLB22243357"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Datrel"
+    ],
+    [
+      "Modelo",
+      "BAS-60E"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "7,8 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "32 cm x 20 cm x 35 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "P10"
+    ],
+    [
+      "Conectores de saída",
+      "P10"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bivolt, Cabo de energia"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contrabaixo"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "60 W"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 482,
+  "imagem": "/images/produtos/datrel-bs60e-baixo.webp"
+}

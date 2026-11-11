@@ -19,5 +19,72 @@
     }
   ],
   "imagem": "/images/produtos/tc-electronic-skysurfer-reverb.webp",
-  "imagemAlt": "TC Electronic Skysurfer Reverb"
+  "imagemAlt": "TC Electronic Skysurfer Reverb",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "9x R$53,11 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-reverb-tc-electronic-skysurfer-azul-celeste-para-guitarra/p/MLB17771192"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "TC Electronic"
+    ],
+    [
+      "Modelo",
+      "Skysurfer Reverb"
+    ],
+    [
+      "Cor",
+      "Azul-celeste"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.4 cm x 13.2 cm x 5.8 cm"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Reverb"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm TS"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm TS"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 158
 }

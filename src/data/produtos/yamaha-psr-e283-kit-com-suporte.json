@@ -1,0 +1,86 @@
+{
+  "nome": "Yamaha PSR-E283 (kit com suporte)",
+  "meli": "https://meli.la/15Lpnjb",
+  "preco": 1457,
+  "precoEm": "2026-11-11",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1457
+    }
+  ],
+  "imagemAlt": "Yamaha PSR-E283 (kit com suporte)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$145,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-teclado-yamaha-61-teclas-psr-e283-com-suporte-em-x-cor-preto/p/MLB37718742"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "PSR-E283"
+    ],
+    [
+      "Modelo",
+      "KIT PSR-E283 + X2"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "10,4 cm"
+    ],
+    [
+      "Largura",
+      "94 cm"
+    ],
+    [
+      "Profundidade",
+      "31,7 cm"
+    ],
+    [
+      "Peso",
+      "4 kg"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de ritmos",
+      "392"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Pilhas"
+    ],
+    [
+      "Acessórios incluídos",
+      "Estante X, Fonte PA-130B, Manual do proprietário, Porta partituras"
+    ],
+    [
+      "Recursos",
+      "metrónomo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 127,
+  "imagem": "/images/produtos/yamaha-psr-e283-kit-com-suporte.webp"
+}

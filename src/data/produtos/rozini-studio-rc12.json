@@ -15,5 +15,54 @@
     }
   ],
   "imagem": "/images/produtos/rozini-studio-rc12.webp",
-  "imagemAlt": "Rozini Studio RC12"
+  "imagemAlt": "Rozini Studio RC12",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1451,
+    "off": 24,
+    "parcelas": "10x R$109,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-rozini-studio-acustico-verniz-fosco-louro-preto-caixa-baixa-4-cordas-em-aco-braco-cedro-escala-purple-heart/p/MLB26729870"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Modelo",
+      "Rozini RC12 Studio Fosco"
+    ],
+    [
+      "Cor",
+      "Natural fosco"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Materiais do corpo",
+      "Spruce"
+    ],
+    [
+      "Material do tampo",
+      "MACIÇO"
+    ],
+    [
+      "Material do braço",
+      "Cedro"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 3
 }

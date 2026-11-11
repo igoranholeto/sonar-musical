@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg SC200C LH Nylon Canhoto",
   "meli": "https://meli.la/2qeph4J",
-  "preco": 949,
+  "preco": 999,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -15,11 +15,76 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 949
+      "preco": 999
     }
   ],
   "nota": 5,
   "avaliacoes": 6,
   "imagemAlt": "Strinberg SC200C LH Nylon Canhoto",
-  "imagem": "/images/produtos/strinberg-sc200c-lh.webp"
+  "imagem": "/images/produtos/strinberg-sc200c-lh.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$99,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-canhoto-strinberg-sc200c-lh-nylon-natural-fosco/p/MLB38389680"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Blackwood"
+    ],
+    [
+      "Orientação da mão",
+      "Canhoto"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Blackwood"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Comprimento da escala",
+      "460 mm"
+    ],
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Series Black"
+    ],
+    [
+      "Modelo",
+      "SC200C NS LH"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

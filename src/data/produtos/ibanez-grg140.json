@@ -1,0 +1,88 @@
+{
+  "nome": "Ibanez GRG140",
+  "meli": "https://meli.la/2rYVWnK",
+  "preco": 2241,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2241
+    }
+  ],
+  "imagemAlt": "Ibanez GRG140",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3050,
+    "off": 26,
+    "parcelas": "10x R$224,14 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rg-gio-grg140-soloist-de-okoume-sunburst-com-diapasao-de-amaranto/p/MLB17804269"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "RG GIO"
+    ],
+    [
+      "Modelo",
+      "GRG140"
+    ],
+    [
+      "Forma do corpo",
+      "Soloist"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Okoume"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Chave seletora de captadores",
+      "5 posições"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 84,
+  "imagem": "/images/produtos/ibanez-grg140.webp"
+}

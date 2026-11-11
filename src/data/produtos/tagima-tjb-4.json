@@ -1,7 +1,7 @@
 {
   "nome": "Tagima TJB-4",
   "meli": "https://meli.la/2ZdvuHE",
-  "preco": 1520,
+  "preco": 1438,
   "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
@@ -15,11 +15,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 1520
+      "preco": 1438
     }
   ],
   "nota": 5,
-  "avaliacoes": 61,
+  "avaliacoes": 72,
   "imagemAlt": "Tagima TJB-4",
-  "imagem": "/images/produtos/tagima-tjb-4.webp"
+  "imagem": "/images/produtos/tagima-tjb-4.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2216,
+    "off": 35,
+    "parcelas": "12x R$139,59",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-tagima-tjb4-s-4-cordas-jazz-bass-owh-cor-olympic-white-orientacao-da-mao-destro/p/MLB24874275"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Classic"
+    ],
+    [
+      "Modelo",
+      "TJB-4"
+    ],
+    [
+      "Tipo de baixo",
+      "PASSIVO"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Olympic white"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "1 cm"
+    ],
+    [
+      "Largura do corpo",
+      "1 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "AYOUS wood"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira"
+    ]
+  ]
 }

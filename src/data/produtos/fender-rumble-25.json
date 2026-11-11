@@ -19,5 +19,72 @@
     }
   ],
   "imagem": "/images/produtos/fender-rumble-25.webp",
-  "imagemAlt": "Fender Rumble 25"
+  "imagemAlt": "Fender Rumble 25",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$172,04",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-fender-rumble-series-25-para-baixo-de-25w-cor-pretoprata/p/MLB16026277"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Rumble Series"
+    ],
+    [
+      "Modelo",
+      "25"
+    ],
+    [
+      "Cor",
+      "Preto/Prata"
+    ],
+    [
+      "Peso",
+      "9,54 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "38.73 cm x 27.94 cm x 38.73 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack 1/8\", Jack 1/4\""
+    ],
+    [
+      "Conectores de saída",
+      "Jack 1/4\""
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "25 W"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 721
 }

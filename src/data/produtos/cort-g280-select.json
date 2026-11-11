@@ -17,5 +17,74 @@
   "nota": 4.9,
   "avaliacoes": 7,
   "imagemAlt": "Cort G280 Select",
-  "imagem": "/images/produtos/cort-g280-select.webp"
+  "imagem": "/images/produtos/cort-g280-select.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$388,22",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-cort-g280-select-6-cordas-ambar-stratocaster-tremolo/p/MLB20287575"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Cort"
+    ],
+    [
+      "Linha",
+      "Select"
+    ],
+    [
+      "Modelo",
+      "G280"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Âmbar"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Amieiro"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Arce duro"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo flameado"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

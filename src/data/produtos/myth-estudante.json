@@ -1,0 +1,84 @@
+{
+  "nome": "Cavaquinho Myth Estudante",
+  "meli": "https://meli.la/2TBioxZ",
+  "preco": 269,
+  "precoEm": "2026-11-11",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 269
+    }
+  ],
+  "imagemAlt": "Cavaquinho Myth Estudante",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 299,
+    "off": 10,
+    "parcelas": "6x R$44,85 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaco-cavaquinho-acustico-estudante-natural-cor-myth-zellmer/p/MLB46512865"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Myth"
+    ],
+    [
+      "Modelo",
+      "Iniciante"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Materiais do corpo",
+      "Tília"
+    ],
+    [
+      "Material do tampo",
+      "Tilo"
+    ],
+    [
+      "Material do braço",
+      "Okoumé"
+    ],
+    [
+      "Material do diapasão",
+      "Abeto"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Altura",
+      "10 cm"
+    ],
+    [
+      "Largura",
+      "28 cm"
+    ],
+    [
+      "Comprimento",
+      "61 cm"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 225,
+  "imagem": "/images/produtos/myth-estudante.webp"
+}

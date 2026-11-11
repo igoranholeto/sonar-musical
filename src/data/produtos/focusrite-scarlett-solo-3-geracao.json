@@ -23,5 +23,76 @@
     }
   ],
   "imagem": "/images/produtos/focusrite-scarlett-solo-3-geracao.webp",
-  "imagemAlt": "Focusrite Scarlett Solo (3ª geração)"
+  "imagemAlt": "Focusrite Scarlett Solo (3ª geração)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$114,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-focusrite-scarlett-solo-red-3-geracao/p/MLB19770634"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Focusrite"
+    ],
+    [
+      "Linha",
+      "Scarlett"
+    ],
+    [
+      "Modelo",
+      "Solo"
+    ],
+    [
+      "Geração",
+      "3ª geração"
+    ],
+    [
+      "Cor",
+      "Red"
+    ],
+    [
+      "Altura",
+      "4,35 cm"
+    ],
+    [
+      "Largura",
+      "14,35 cm"
+    ],
+    [
+      "Profundidade",
+      "9,58 cm"
+    ],
+    [
+      "Peso",
+      "320 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1100
 }

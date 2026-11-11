@@ -15,5 +15,76 @@
     }
   ],
   "imagem": "/images/produtos/kit-strinberg-rockwave-rgk50.webp",
-  "imagemAlt": "Kit Strinberg Rockwave RGK50"
+  "imagemAlt": "Kit Strinberg Rockwave RGK50",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$111,64",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-guitarra-strinberg-rockwave-rgk50-sunburst-stratocaster-amplificador/p/MLB36653464"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Rockwave"
+    ],
+    [
+      "Modelo",
+      "RGK50"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Chave seletora de captadores",
+      "Chave Seletora de 5 Posições"
+    ],
+    [
+      "Construção do braço",
+      "Bolt-On Neck (Junção Parafusada)"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 4
 }

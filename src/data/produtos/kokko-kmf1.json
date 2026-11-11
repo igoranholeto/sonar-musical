@@ -1,0 +1,92 @@
+{
+  "nome": "Kokko KMF1",
+  "meli": "https://meli.la/349EJ1o",
+  "preco": 347,
+  "precoEm": "2026-11-11",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 347
+    }
+  ],
+  "imagemAlt": "Kokko KMF1",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 540,
+    "off": 35,
+    "parcelas": "12x R$33,94",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-guitarra-kokko-kmf1-multiefeitos-59-efeitos-lcd-preto/p/MLB39387844"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Kokko"
+    ],
+    [
+      "Modelo",
+      "Kmf1"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "16.5 cm x 24.3 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "710 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "40"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Simulador de amplificador, Delay, Distorção, Dynamic, Overdrive, Rever"
+    ],
+    [
+      "Tipos de alimentação",
+      "5, Fonte"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 3.5 mm, Jack 6.3 mm, USB micro-B"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack stereo"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 851,
+  "imagem": "/images/produtos/kokko-kmf1.webp"
+}

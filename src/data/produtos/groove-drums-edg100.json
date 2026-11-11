@@ -1,0 +1,64 @@
+{
+  "nome": "Groove Drums EDG100",
+  "meli": "https://meli.la/2VVKqzv",
+  "preco": 1962,
+  "precoEm": "2026-11-11",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1962
+    }
+  ],
+  "imagemAlt": "Groove Drums EDG100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3559,
+    "off": 44,
+    "parcelas": "12x R$188,68",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-completa-groove-drums-edg100-midi-usb-7-pecas-4-pads-3-pratos-profissional-e-banco-e-fone-de-ouvido-cor-preto/p/MLB49121880"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Groove"
+    ],
+    [
+      "Modelo",
+      "Edg100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "7"
+    ],
+    [
+      "Quantidade de sons",
+      "15"
+    ],
+    [
+      "Funções do módulo de som",
+      "Volume, Drum group, Kit settings, Efeitos, Gravação, Demonstração de s"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "MIDI, P2, USB"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato de condução, prato de ataque, surdo, chimbal, pedais, baquetas, módulo de som, banqueta"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 177,
+  "imagem": "/images/produtos/groove-drums-edg100.webp"
+}

@@ -31,7 +31,76 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 881,
+  "avaliacoes": 944,
   "imagem": "/images/produtos/valeton-gp-200.webp",
-  "imagemAlt": "Valeton GP-200"
+  "imagemAlt": "Valeton GP-200",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$213,10 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-valeton-gp-200-multi-effects-processor-preto/p/MLB18956422"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Valeton"
+    ],
+    [
+      "Linha",
+      "GP"
+    ],
+    [
+      "Modelo",
+      "GP-200 Multi-Effects Processor"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "34.5 cm x 22 cm x 6.25 cm"
+    ],
+    [
+      "Peso",
+      "2,37 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "240"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica, Violão eletroacústico"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de pilha",
+      "fonte"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ]
 }

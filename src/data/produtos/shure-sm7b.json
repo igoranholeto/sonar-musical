@@ -1,0 +1,80 @@
+{
+  "nome": "Shure SM7B",
+  "meli": "https://meli.la/1v2xxHb",
+  "preco": 2079,
+  "precoEm": "2026-11-11",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2079
+    }
+  ],
+  "imagemAlt": "Shure SM7B",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3900,
+    "off": 46,
+    "parcelas": "10x R$207,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-dinamico-shure-sm7b-estudio-podcast-preto-som-profissional-isolamento-ruido-versatil/p/MLB15157110"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shure"
+    ],
+    [
+      "Linha",
+      "SM"
+    ],
+    [
+      "Modelo",
+      "SM7B"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "Para gravações, Para podcast, Para vozes, Para instrumentos, Para apre"
+    ],
+    [
+      "Tipos de conexões",
+      "Com fio"
+    ],
+    [
+      "Conectores de saída",
+      "XLR"
+    ],
+    [
+      "Conectores de entrada",
+      "XLR-3"
+    ],
+    [
+      "Tipo de alimentação",
+      "pré-amplificador"
+    ],
+    [
+      "Tipo de bateria",
+      "Não Utiliza Bateria"
+    ],
+    [
+      "Tipo de pilha",
+      "não utiliza"
+    ],
+    [
+      "Formatos de microfone",
+      "Estúdio"
+    ],
+    [
+      "Tipos de microfone",
+      "Padrão Polar Cardióide."
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 220,
+  "imagem": "/images/produtos/shure-sm7b.webp"
+}

@@ -1,0 +1,80 @@
+{
+  "nome": "Kit Violão Bravo AN100",
+  "meli": "https://meli.la/2Q4gTLw",
+  "preco": 326,
+  "precoEm": "2026-11-11",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 326
+    }
+  ],
+  "imagemAlt": "Kit Violão Bravo AN100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 479,
+    "off": 31,
+    "parcelas": "12x R$31,89",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-violao-acustico-bravo-an100-iniciante-capa-palheta-cor-blue-burst-orientacao-mao-destro/p/MLB35103946"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Padrão"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Madeira"
+    ],
+    [
+      "Quantidade de trastes",
+      "18"
+    ],
+    [
+      "Marca",
+      "Bravo Music"
+    ],
+    [
+      "Linha",
+      "AN"
+    ],
+    [
+      "Modelo",
+      "AN100"
+    ],
+    [
+      "Cor",
+      "Blue Burst - Capa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1478,
+  "imagem": "/images/produtos/kit-violao-bravo-an100.webp"
+}

@@ -23,5 +23,74 @@
     }
   ],
   "imagem": "/images/produtos/boss-bd-2-blues-driver.webp",
-  "imagemAlt": "Boss BD-2 Blues Driver"
+  "imagemAlt": "Boss BD-2 Blues Driver",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1159,
+    "off": 20,
+    "parcelas": "12x R$88,92",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-blues-driver-bd-2-azul/p/MLB18087447"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Blues Driver"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "360 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "2"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Distorção, Overdrive"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 184
 }

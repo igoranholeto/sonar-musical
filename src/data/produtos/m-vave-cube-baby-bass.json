@@ -1,0 +1,91 @@
+{
+  "nome": "M-Vave Cube Baby Bass",
+  "meli": "https://meli.la/2dyHCzh",
+  "preco": 148,
+  "precoEm": "2026-11-11",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 148
+    }
+  ],
+  "imagemAlt": "M-Vave Cube Baby Bass",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 236,
+    "off": 37,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-m-vave-cube-baby-bass-multi-efeitos-azul-para-baixo-eletrico/p/MLB19553722"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "Cube-Baby Bass"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "6.1 cm x 16.2 cm x 2.3 cm"
+    ],
+    [
+      "Peso",
+      "260 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "7"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria"
+    ],
+    [
+      "Tipo de tela",
+      "LED"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 3.5 mm, Jack 6.3 mm, 2 USB micro-B"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Itens inclusos",
+      "fonte de alimentação, bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2937,
+  "imagem": "/images/produtos/m-vave-cube-baby-bass.webp"
+}

@@ -1,0 +1,63 @@
+{
+  "nome": "Flauta doce Yamaha YRS-24B",
+  "meli": "https://meli.la/1S3xoNM",
+  "preco": 35,
+  "precoEm": "2026-11-11",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 35
+    }
+  ],
+  "imagemAlt": "Flauta doce Yamaha YRS-24B",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 58,
+    "off": 39,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-doce-yamaha-yrs-24b-barroca/p/MLB27978526"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha Flauta Doce"
+    ],
+    [
+      "Modelo",
+      "YRS-24B"
+    ],
+    [
+      "Cor",
+      "Bege"
+    ],
+    [
+      "Tipo de flauta",
+      "Doce"
+    ],
+    [
+      "Nível de habilidade",
+      "Iniciante"
+    ],
+    [
+      "Tipo de dedilhado",
+      "Barroca"
+    ],
+    [
+      "Afinação",
+      "Barroca"
+    ],
+    [
+      "Quantidade de peças",
+      "1"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 8989,
+  "imagem": "/images/produtos/flauta-doce-yamaha-yrs-24b.webp"
+}

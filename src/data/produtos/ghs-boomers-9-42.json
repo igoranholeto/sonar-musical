@@ -19,5 +19,41 @@
       "data": "2026-11-10",
       "preco": 79
     }
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-guitarra-ghs-gbxl/p/MLB42173736"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "GHS"
+    ],
+    [
+      "Linha",
+      "Boomers"
+    ],
+    [
+      "Modelo",
+      "GBXL"
+    ],
+    [
+      "Instrumento recomendado",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "09, 11, 16, 24, 32, 42"
+    ],
+    [
+      "Materiais",
+      "Metal"
+    ]
   ]
 }

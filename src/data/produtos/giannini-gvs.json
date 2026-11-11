@@ -13,5 +13,54 @@
   "nota": 5,
   "avaliacoes": 11,
   "imagemAlt": "Giannini GVS (tampo maciço)",
-  "imagem": "/images/produtos/giannini-gvs.webp"
+  "imagem": "/images/produtos/giannini-gvs.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$70,58",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-acustico-giannini-gvs-44-tampo-macico-ebano-brilhante-natural-com-case/p/MLB51861084"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "GVS 4/4"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Comprimento",
+      "60 cm"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Materiais do corpo",
+      "Pinho Abeto MAciço"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

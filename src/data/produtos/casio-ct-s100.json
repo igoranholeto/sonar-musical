@@ -13,5 +13,76 @@
   "nota": 4.9,
   "avaliacoes": 1503,
   "imagemAlt": "Casio Casiotone CT-S100",
-  "imagem": "/images/produtos/casio-ct-s100.webp"
+  "imagem": "/images/produtos/casio-ct-s100.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 950,
+    "off": 16,
+    "parcelas": "10x R$78,89 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-casiotone-ct-s100-61-teclas-preto/p/MLB16109682"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Casiotone"
+    ],
+    [
+      "Modelo",
+      "CT-S100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de ritmos",
+      "61"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Pilha"
+    ],
+    [
+      "Acessórios incluídos",
+      "Suporte para partitura manual"
+    ],
+    [
+      "Fonte sonora",
+      "AHL"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Mini conetor estéreo (3.5 mm) Micro B"
+    ],
+    [
+      "Adaptador AC",
+      "AD-E95100L"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Recursos",
+      "interface midi, metrónomo"
+    ]
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "nome": "SSL 2+",
   "meli": "https://meli.la/12Gis3d",
-  "preco": 2294,
+  "preco": 2318,
   "precoEm": "2026-11-11",
   "categoria": "interface",
   "historico": [
@@ -12,8 +12,89 @@
     {
       "data": "2026-11-10",
       "preco": 2294
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2318
     }
   ],
   "imagem": "/images/produtos/ssl-2.webp",
-  "imagemAlt": "SSL 2+"
+  "imagemAlt": "SSL 2+",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3967,
+    "off": 41,
+    "parcelas": "12x R$222,80",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-solid-state-logic-ssl-2-mkii-2x4-usb-cor-cinza-escuro/p/MLB42367455"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Solid State Logic"
+    ],
+    [
+      "Linha",
+      "Generación MK2"
+    ],
+    [
+      "Modelo",
+      "SSL2+ MK II"
+    ],
+    [
+      "Geração",
+      "MK2"
+    ],
+    [
+      "Cor",
+      "Cinza-escuro"
+    ],
+    [
+      "Altura",
+      "7 cm"
+    ],
+    [
+      "Largura",
+      "23,4 cm"
+    ],
+    [
+      "Profundidade",
+      "15,7 cm"
+    ],
+    [
+      "Peso",
+      "880 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "4"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "32 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma, compatível com midi"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 130
 }

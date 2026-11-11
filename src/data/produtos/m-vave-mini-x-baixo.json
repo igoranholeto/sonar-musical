@@ -1,0 +1,83 @@
+{
+  "nome": "M-Vave Mini-X (baixo)",
+  "meli": "https://meli.la/2dKjvDv",
+  "preco": 159,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 159
+    }
+  ],
+  "imagemAlt": "M-Vave Mini-X (baixo)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 230,
+    "off": 30,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/m-vave-combo-amplificador-valvular-para-baixo-mini-x-preto-5w/p/MLB47383297"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "MINI-X"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "10 cm x 4 cm x 20 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "stereo headphone output"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Valvular"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "5 W"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 377,
+  "imagem": "/images/produtos/m-vave-mini-x-baixo.webp"
+}

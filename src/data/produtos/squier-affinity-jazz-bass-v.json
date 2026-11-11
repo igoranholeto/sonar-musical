@@ -1,7 +1,7 @@
 {
   "nome": "Squier Affinity Jazz Bass V",
   "meli": "https://meli.la/2cRGbUY",
-  "preco": 3798,
+  "preco": 3641,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
@@ -19,9 +19,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 3798
+      "preco": 3641
     }
   ],
   "imagem": "/images/produtos/squier-affinity-jazz-bass-v.webp",
-  "imagemAlt": "Squier Affinity Jazz Bass V"
+  "imagemAlt": "Squier Affinity Jazz Bass V",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3832,
+    "off": 5,
+    "parcelas": "12x R$349,97",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-fender-squier-jazz-bass-v-affinity-5-cordas-sunburst/p/MLB59895551"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier by Fender"
+    ],
+    [
+      "Código do fabricante",
+      "0378651500"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Amieiro"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "laurel"
+    ],
+    [
+      "Tipo de captadores",
+      "Jazz"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 99
 }

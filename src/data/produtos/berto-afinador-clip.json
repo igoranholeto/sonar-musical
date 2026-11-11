@@ -10,8 +10,74 @@
       "preco": 26
     }
   ],
-  "nota": 4.5,
-  "avaliacoes": 494,
+  "nota": 4.6,
+  "avaliacoes": 440,
   "imagemAlt": "Afinador de clip Bertô",
-  "imagem": "/images/produtos/berto-afinador-clip.webp"
+  "imagem": "/images/produtos/berto-afinador-clip.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 40,
+    "off": 34,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/afinador-digital-cromatico-berto-pinca-clip-giratorio-360-display-lcd-para-violao-guitarra-ukulele-violino-cavaco-viola-caipira/p/MLB41927042"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Bertô"
+    ],
+    [
+      "Modelo",
+      "Afinador Digital Bertô"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de alimentação",
+      "Bateria"
+    ],
+    [
+      "Tipo de afinador",
+      "Cromático"
+    ],
+    [
+      "Formato do afinador",
+      "Pinça"
+    ],
+    [
+      "Usos recomendados",
+      "Guitarra, Violão"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Guitarra, Ukulele, Violino, Viola caipira"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "27.5 Hz - 4186 Hz"
+    ],
+    [
+      "Comprimento",
+      "10 cm"
+    ],
+    [
+      "Largura",
+      "10 cm"
+    ],
+    [
+      "Altura",
+      "10 cm"
+    ],
+    [
+      "Peso",
+      "0,3 g"
+    ],
+    [
+      "Recursos",
+      "cromático, tela"
+    ]
+  ]
 }

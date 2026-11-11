@@ -13,5 +13,70 @@
   "nota": 4.9,
   "avaliacoes": 21,
   "imagemAlt": "Yamaha FSX800C",
-  "imagem": "/images/produtos/yamaha-fsx800c.webp"
+  "imagem": "/images/produtos/yamaha-fsx800c.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$318,10 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-yamaha-fsx800c-concert-com-cutaway-ruby-red/p/MLB15261919"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "FG/FSX"
+    ],
+    [
+      "Modelo",
+      "FSX800C"
+    ],
+    [
+      "Cor",
+      "Ruby red"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Concert"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Recursos",
+      "tamanho mini, corte"
+    ]
+  ]
 }

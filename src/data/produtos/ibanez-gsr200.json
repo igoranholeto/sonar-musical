@@ -13,5 +13,72 @@
   "nota": 4.9,
   "avaliacoes": 109,
   "imagemAlt": "Ibanez GSR200",
-  "imagem": "/images/produtos/ibanez-gsr200.webp"
+  "imagem": "/images/produtos/ibanez-gsr200.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2799,
+    "off": 19,
+    "parcelas": "12x R$216,65",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-4-cordas-ibanez-eletrico-gsr-200-bk/p/MLB25808635"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "Gio Series"
+    ],
+    [
+      "Modelo",
+      "GSR200"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilho"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "5 cm"
+    ],
+    [
+      "Largura do corpo",
+      "30 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "112 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "630 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ]
+  ]
 }

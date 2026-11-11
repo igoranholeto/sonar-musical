@@ -19,7 +19,67 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 233,
+  "avaliacoes": 244,
   "imagem": "/images/produtos/cabo-santo-angelo-p10.webp",
-  "imagemAlt": "Cabo Santo Angelo Ninja P10 (3 m)"
+  "imagemAlt": "Cabo Santo Angelo Ninja P10 (3 m)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cabo-santo-angelo-ninja-textil-p10p10-l-305m10ft-azul-escuro/p/MLB59824179"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Santo Angelo"
+    ],
+    [
+      "Modelo",
+      "Ninja Textil"
+    ],
+    [
+      "Tipo de cabo e adaptador",
+      "Cabo"
+    ],
+    [
+      "Cor",
+      "Azul Escuro"
+    ],
+    [
+      "Comprimento do cabo",
+      "3,05 m"
+    ],
+    [
+      "Tipo de produto",
+      "Fio"
+    ],
+    [
+      "Diâmetro do cabo",
+      "6 mm"
+    ],
+    [
+      "Tamanho AWG",
+      "24"
+    ],
+    [
+      "Quantidade de conectores de entrada",
+      "1"
+    ],
+    [
+      "Quantidade de conectores de saída",
+      "1"
+    ],
+    [
+      "Conector de entrada",
+      "P10"
+    ],
+    [
+      "Conector de saída",
+      "P10L"
+    ],
+    [
+      "Gênero do conector de entrada",
+      "Macho"
+    ]
+  ]
 }

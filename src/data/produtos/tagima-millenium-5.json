@@ -23,7 +23,74 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 186,
+  "avaliacoes": 191,
   "imagemAlt": "Tagima Millenium 5",
-  "imagem": "/images/produtos/tagima-millenium-5.webp"
+  "imagem": "/images/produtos/tagima-millenium-5.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2700,
+    "off": 44,
+    "parcelas": "12x R$145,60",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-tagima-millenium-5-cordas-preto-soap-bar-hh-maple/p/MLB24099753"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Classis"
+    ],
+    [
+      "Modelo",
+      "Millenium 5"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "BASSWOOD"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Madeira"
+    ],
+    [
+      "Tipo de ponte",
+      "Cromado padrão"
+    ],
+    [
+      "Tipo de captadores",
+      "Tagima soap bar"
+    ]
+  ]
 }

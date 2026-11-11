@@ -10,8 +10,79 @@
       "preco": 1303
     }
   ],
-  "nota": 4.8,
-  "avaliacoes": 166,
+  "nota": 4.9,
+  "avaliacoes": 167,
   "imagemAlt": "Tagima TW-73",
-  "imagem": "/images/produtos/tagima-tw-73.webp"
+  "imagem": "/images/produtos/tagima-tw-73.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1629,
+    "off": 20,
+    "parcelas": "12x R$126,51",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-tagima-4-cordas-tw-73-tw73-mdsv-4c-passivo/p/MLB37782240"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Woodstock"
+    ],
+    [
+      "Código do fabricante",
+      "TW73SBMG10"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "TW-73 MDSV 4C"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "220 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Tipo de ponte",
+      "Vintage"
+    ],
+    [
+      "Tipo de captadores",
+      "Bobina simples"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

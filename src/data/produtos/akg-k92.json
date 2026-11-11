@@ -1,0 +1,78 @@
+{
+  "nome": "AKG K92",
+  "meli": "https://meli.la/2AvjgTR",
+  "preco": 378,
+  "precoEm": "2026-11-11",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 378
+    }
+  ],
+  "imagemAlt": "AKG K92",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "7x R$54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-akg-k92-matte-black/p/MLB9716495"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "AKG"
+    ],
+    [
+      "Modelo",
+      "K92"
+    ],
+    [
+      "Cor",
+      "Matte black"
+    ],
+    [
+      "Orientações do microfone",
+      "Direita"
+    ],
+    [
+      "Unidade de diafragma",
+      "4 cm"
+    ],
+    [
+      "Impedância",
+      "32 Ω"
+    ],
+    [
+      "Resposta em frequência",
+      "16 Hz - 22000 Hz"
+    ],
+    [
+      "Sensibilidade",
+      "113 dB"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ],
+    [
+      "Tipos de conectores",
+      "Jack 3.5 mm"
+    ],
+    [
+      "Comprimento do cabo",
+      "3 m"
+    ],
+    [
+      "Usos adequados",
+      "Profissional"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador jack 6.3 mm"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1800,
+  "imagem": "/images/produtos/akg-k92.webp"
+}

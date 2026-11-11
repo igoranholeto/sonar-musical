@@ -11,7 +11,54 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 233,
+  "avaliacoes": 234,
   "imagemAlt": "Voik VIBE-500 Nitro Core",
-  "imagem": "/images/produtos/voik-vibe-500.webp"
+  "imagem": "/images/produtos/voik-vibe-500.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3351,
+    "off": 49,
+    "parcelas": "12x R$161,96",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-voik-vibe-500-nitro-core-midi-usb-7-pecas-caixa-mesh-15-kits-silenciosa-completa-com-banco-fone-baqueta-para-iniciantes-e-drums-series-cor-preto-bivolt-110v220v/p/MLB47365552"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Modelo",
+      "VIBE-500"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "1"
+    ],
+    [
+      "Funções do módulo de som",
+      "Metrônomo, Gravação"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "MIDI, P10 e usb"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato splash, prato de condução, prato de ataque, surdo, chimbal, pedais, baquetas, módulo de som, banqueta"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ]
 }

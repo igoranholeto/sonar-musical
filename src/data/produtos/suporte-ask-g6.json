@@ -1,17 +1,67 @@
 {
   "nome": "Suporte ASK G6 Dobrável",
   "meli": "https://meli.la/2nh7tuj",
-  "preco": 43,
+  "preco": 45,
   "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 43
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 45
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 3082,
+  "avaliacoes": 3089,
   "imagemAlt": "Suporte ASK G6 Dobrável",
-  "imagem": "/images/produtos/suporte-ask-g6.webp"
+  "imagem": "/images/produtos/suporte-ask-g6.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 56,
+    "off": 19,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-violao-guitarra-baixo-ask-g6-dobravel-preto/p/MLB27048519"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "ASK"
+    ],
+    [
+      "Modelo",
+      "ASK G6"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "24 cm x 30 cm x 22 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De piso"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Guitarra, Viola"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "1"
+    ],
+    [
+      "Peso máximo suportado",
+      "5 kg"
+    ]
+  ]
 }

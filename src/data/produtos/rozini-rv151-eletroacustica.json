@@ -15,5 +15,72 @@
     }
   ],
   "imagemAlt": "Viola Caipira Rozini Ponteio RV151 Eletroacústica",
-  "imagem": "/images/produtos/rozini-rv151-eletroacustica.webp"
+  "imagem": "/images/produtos/rozini-rv151-eletroacustica.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1816,
+    "off": 5,
+    "parcelas": "12x R$165,89",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/viola-caipira-eletroacustica-rozini-ponteio-ativa-rv151-natural-fosca-com-equalizador-gc-2-e-afinador-bag-groover/p/MLB74869586"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "roxinho"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "10"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Materiais do braço",
+      "Cedro"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Linha",
+      "estudante"
+    ],
+    [
+      "Modelo",
+      "Ponteio RV151"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Cinturada"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ]
+  ]
 }

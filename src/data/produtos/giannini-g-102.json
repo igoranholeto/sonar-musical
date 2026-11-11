@@ -1,0 +1,84 @@
+{
+  "nome": "Giannini G-102",
+  "meli": "https://meli.la/1f2DJWp",
+  "preco": 706,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 706
+    }
+  ],
+  "imagemAlt": "Giannini G-102",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1039,
+    "off": 32,
+    "parcelas": "12x R$68,27",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-giannini-g-102-e-gita-cor-vermelho-material-do-diapasao-madeira-tecnica-orientacao-da-mao-destro/p/MLB69058041"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "G102"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira técnica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "648 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 724,
+  "imagem": "/images/produtos/giannini-g-102.webp"
+}

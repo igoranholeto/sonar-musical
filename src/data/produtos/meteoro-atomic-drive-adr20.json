@@ -11,5 +11,70 @@
     }
   ],
   "imagem": "/images/produtos/meteoro-atomic-drive-adr20.webp",
-  "imagemAlt": "Meteoro Atomic Drive ADR20"
+  "imagemAlt": "Meteoro Atomic Drive ADR20",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1228,
+    "off": 5,
+    "parcelas": "10x R$116,66 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-atomic-drive-adr-20w-rms-reverb/p/MLB35050342"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "AMPLIFICADOR"
+    ],
+    [
+      "Modelo",
+      "Drive 20 adr"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "8 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "37 cm x 23 cm x 38 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "20 W"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ],
+  "nota": 4.5,
+  "avaliacoes": 11
 }

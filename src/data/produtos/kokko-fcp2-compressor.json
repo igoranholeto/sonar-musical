@@ -15,5 +15,70 @@
     }
   ],
   "imagem": "/images/produtos/kokko-fcp2-compressor.webp",
-  "imagemAlt": "Kokko FCP2 Compressor"
+  "imagemAlt": "Kokko FCP2 Compressor",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 240,
+    "off": 9,
+    "parcelas": "12x R$21,38",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-kokko-compressor-fcp2-guitarra-baixo-mini/up/MLBU1089997919"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Kokko"
+    ],
+    [
+      "Modelo",
+      "Compressor"
+    ],
+    [
+      "Cor",
+      "Cinza-claro"
+    ],
+    [
+      "Peso",
+      "217 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Compressor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 60
 }

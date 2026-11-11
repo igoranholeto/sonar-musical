@@ -1,7 +1,7 @@
 {
   "nome": "Squier Classic Vibe Stratocaster",
   "meli": "https://meli.la/2Zao8tQ",
-  "preco": 4591,
+  "preco": 4456,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
@@ -27,9 +27,80 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 4591
+      "preco": 4456
     }
   ],
   "imagem": "/images/produtos/squier-classic-vibe-stratocaster.webp",
-  "imagemAlt": "Squier Classic Vibe Stratocaster"
+  "imagemAlt": "Squier Classic Vibe Stratocaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$428,33",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-squier-by-fender-classic-vibe-stratocaster-60s-de-nato-candy-apple-red-brilhante-com-diapasao-de-figueira-benjamim/p/MLB18509125"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier by Fender"
+    ],
+    [
+      "Linha",
+      "Classic Vibe"
+    ],
+    [
+      "Modelo",
+      "Stratocaster '60s"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Candy apple red"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Nato"
+    ],
+    [
+      "Material do diapasão",
+      "Figueira-benjamim"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 24
 }

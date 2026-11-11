@@ -1,0 +1,66 @@
+{
+  "nome": "Carlsbro Odery CLUB100",
+  "meli": "https://meli.la/1HYWuYe",
+  "preco": 2665,
+  "precoEm": "2026-11-11",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2665
+    }
+  ],
+  "imagemAlt": "Carlsbro Odery CLUB100",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$266,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-carlsbro-odery-club100-modulo-som-preto-5-corpos/p/MLB25601915"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Carlsbro - Odery"
+    ],
+    [
+      "Modelo",
+      "CLUB100 KIT BFB"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "5"
+    ],
+    [
+      "Quantidade de sons",
+      "108"
+    ],
+    [
+      "Funções do módulo de som",
+      "Display Digitron, 108 vozes de bateria de alta qualidade, 10 kits de b"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "Midi out, Entrada auxiliar, Saída de linha, Saída de fones de ouvido"
+    ],
+    [
+      "Itens inclusos",
+      "caixa, prato de condução, prato de ataque, chimbal, pedais, baquetas, módulo de som"
+    ],
+    [
+      "Recursos",
+      "portátil"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 7,
+  "imagem": "/images/produtos/carlsbro-odery-club100.webp"
+}

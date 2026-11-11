@@ -1,0 +1,84 @@
+{
+  "nome": "Mesa digital Soundcraft Ui24R",
+  "meli": "https://meli.la/1CMrQ6N",
+  "preco": 4862,
+  "precoEm": "2026-11-11",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 4862
+    }
+  ],
+  "imagemAlt": "Mesa digital Soundcraft Ui24R",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 8866,
+    "off": 45,
+    "parcelas": "10x R$486,23 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-digital-soundcraft-ui24r-24-canais-rack-profissional/p/MLB15846900"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Soundcraft"
+    ],
+    [
+      "Linha",
+      "Ui"
+    ],
+    [
+      "Modelo",
+      "Ui24R"
+    ],
+    [
+      "Consumo energético",
+      "65 W"
+    ],
+    [
+      "Tipo de console",
+      "Digital"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Reverb, Delay, Flanger, Eco, Filter"
+    ],
+    [
+      "Conectores",
+      "XLR, JACK, RCA"
+    ],
+    [
+      "Quantidade de canais",
+      "24"
+    ],
+    [
+      "Conectividade",
+      "Wi-Fi"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo de alimentação"
+    ],
+    [
+      "Quantidade de buses",
+      "8"
+    ],
+    [
+      "Recursos",
+      "efeitos, equalizador, software incluído"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1981,
+  "imagem": "/images/produtos/mesa-digital-soundcraft-ui24r.webp"
+}

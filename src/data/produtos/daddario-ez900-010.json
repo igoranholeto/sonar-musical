@@ -11,5 +11,57 @@
     }
   ],
   "imagem": "/images/produtos/daddario-ez900-010.webp",
-  "imagemAlt": "D'Addario EZ900 .010"
+  "imagemAlt": "D'Addario EZ900 .010",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 66,
+    "off": 23,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-aco-010-daddario-ez900-b-mizinha-extra/up/MLBU1472063865"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Linha",
+      "EZ"
+    ],
+    [
+      "Modelo",
+      "EZ900-B"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão Aço"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      "10 - 14 - 22 - 30 - 40 - 50"
+    ],
+    [
+      "Materiais",
+      "85/15 Bronze"
+    ],
+    [
+      "Tensão",
+      "Extra Light Gauge"
+    ],
+    [
+      "Notas",
+      "Mi - Si - Sol - Ré - La - Mi"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 14
 }

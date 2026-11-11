@@ -17,5 +17,70 @@
   "nota": 4.9,
   "avaliacoes": 25,
   "imagemAlt": "Yamaha TRBX504",
-  "imagem": "/images/produtos/yamaha-trbx504.webp"
+  "imagem": "/images/produtos/yamaha-trbx504.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$443,77 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-yamaha-trbx504-de-4-cordas-ativo-e-na-cor-brick-burst/p/MLB48598493"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "TRBX"
+    ],
+    [
+      "Modelo",
+      "TRBX504 TBL"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Brick burst"
+    ],
+    [
+      "Acabamento do corpo",
+      "Laqueado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Maple/Mahogany 5-Piece"
+    ],
+    [
+      "Tipo de ponte",
+      "Die-Cast"
+    ],
+    [
+      "Tipo de captadores",
+      "Humbucker"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Ativo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ]
 }

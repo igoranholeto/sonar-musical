@@ -1,0 +1,78 @@
+{
+  "nome": "Epiphone Les Paul Special TV Yellow",
+  "meli": "https://meli.la/2PabU7n",
+  "preco": 5963,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 5963
+    }
+  ],
+  "imagemAlt": "Epiphone Les Paul Special TV Yellow",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$596,39 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-les-paul-special-tv-yellow/p/MLB42647175"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Epiphone"
+    ],
+    [
+      "Linha",
+      "Original Collection"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Cor",
+      "Yellow"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Medium Jumbo"
+    ],
+    [
+      "Construção do braço",
+      "Set-in"
+    ],
+    [
+      "Classificação do tipo de ponte",
+      "Wraparound"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "imagem": "/images/produtos/epiphone-les-paul-special-tv-yellow.webp"
+}

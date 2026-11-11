@@ -19,7 +19,78 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 1763,
+  "avaliacoes": 1712,
   "imagem": "/images/produtos/tagima-tg-530.webp",
-  "imagemAlt": "Tagima TG-530"
+  "imagemAlt": "Tagima TG-530",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1218,
+    "off": 29,
+    "parcelas": "12x R$83,55",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tg-530-stratocaster-sunburst-3-captadores-tremolo/p/MLB17449694"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "TW Series"
+    ],
+    [
+      "Modelo",
+      "TG-530"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }

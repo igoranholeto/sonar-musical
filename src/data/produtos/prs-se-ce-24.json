@@ -15,5 +15,54 @@
     }
   ],
   "imagem": "/images/produtos/prs-se-ce-24.webp",
-  "imagemAlt": "PRS SE CE 24"
+  "imagemAlt": "PRS SE CE 24",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$898,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-prs-se-ce-24-standard-satin-charcoal-novo-original/up/MLBU3287332338"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "PRS"
+    ],
+    [
+      "Linha",
+      "SE"
+    ],
+    [
+      "Modelo",
+      "CHARCOAL"
+    ],
+    [
+      "Forma do corpo",
+      "Solidbody"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Charcoal"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Acabamento do corpo",
+      "Acetinado"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Pau-rosa"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

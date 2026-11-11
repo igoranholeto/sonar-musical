@@ -13,5 +13,74 @@
   "nota": 4.7,
   "avaliacoes": 13,
   "imagemAlt": "Korg i3",
-  "imagem": "/images/produtos/korg-i3.webp"
+  "imagem": "/images/produtos/korg-i3.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$419,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-workstation-korg-i3-mb-61-teclas-preto-lcd/p/MLB25164877"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Korg"
+    ],
+    [
+      "Modelo",
+      "Korg i3 MB"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Tipos de alimentação",
+      "Pilha"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Fonte sonora",
+      "N|A"
+    ],
+    [
+      "Função sampling",
+      "N|a"
+    ],
+    [
+      "Acompanhamento automático",
+      "Multi"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Pedal"
+    ],
+    [
+      "Adaptador AC",
+      "Adaptador AC (DC 12V,)"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "1"
+    ],
+    [
+      "Quantidade de tons",
+      "100"
+    ],
+    [
+      "Recursos",
+      "interface midi, gravador, resposta ao toque"
+    ]
+  ]
 }

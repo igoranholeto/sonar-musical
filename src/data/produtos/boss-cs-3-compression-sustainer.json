@@ -19,5 +19,74 @@
     }
   ],
   "imagem": "/images/produtos/boss-cs-3-compression-sustainer.webp",
-  "imagemAlt": "Boss CS-3 Compression Sustainer"
+  "imagemAlt": "Boss CS-3 Compression Sustainer",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1005,
+    "off": 22,
+    "parcelas": "12x R$75,33",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-compression-sustainer-cs-3-azul/p/MLB17436049"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "Compression Sustainer"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "380 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Compressor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 314
 }

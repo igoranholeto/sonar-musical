@@ -15,7 +15,74 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 186,
+  "avaliacoes": 184,
   "imagemAlt": "Squier Debut Precision Bass",
-  "imagem": "/images/produtos/squier-debut-precision-bass.webp"
+  "imagem": "/images/produtos/squier-debut-precision-bass.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2100,
+    "off": 27,
+    "parcelas": "12x R$146,84",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-fender-squier-debut-precision-bass-lrl-wpg-03/p/MLB37919974"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Debut"
+    ],
+    [
+      "Código do fabricante",
+      "379700503"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sombreado"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "laurel"
+    ],
+    [
+      "Tipo de ponte",
+      "Ajustável"
+    ],
+    [
+      "Tipo de captadores",
+      "Precisão"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ]
+  ]
 }

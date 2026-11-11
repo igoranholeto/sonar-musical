@@ -27,5 +27,78 @@
     }
   ],
   "imagem": "/images/produtos/giannini-g-101.webp",
-  "imagemAlt": "Giannini G-101"
+  "imagemAlt": "Giannini G-101",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1053,
+    "off": 32,
+    "parcelas": "12x R$68,56",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-giannini-g-101-standard-stratocaster-captadores-1h-2s/p/MLB29815601"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "strato"
+    ],
+    [
+      "Modelo",
+      "G101BK"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto/Branco"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira técnica"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1149
 }

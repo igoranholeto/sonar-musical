@@ -15,7 +15,77 @@
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 2721,
+  "avaliacoes": 2746,
   "imagemAlt": "Capa para violão AVS (simples)",
-  "imagem": "/images/produtos/capa-violao-avs-simples.webp"
+  "imagem": "/images/produtos/capa-violao-avs-simples.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 55,
+    "off": 12,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/capa-bag-para-violao-case-classico-folk-alca-dupla-brinde/up/MLBU1753858706"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "AVS BAGS"
+    ],
+    [
+      "Modelo",
+      "Capa Folk classico violao"
+    ],
+    [
+      "Tipo de estrutura",
+      "bag/capa"
+    ],
+    [
+      "Tipo de violão",
+      "Folk e Clássico"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "400 g"
+    ],
+    [
+      "Tipo de produto",
+      "Capa"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do interior",
+      "Lona Protetora"
+    ],
+    [
+      "Material do exterior",
+      "Nylon 600"
+    ],
+    [
+      "Comprimento interior",
+      "106 cm"
+    ],
+    [
+      "Largura interior",
+      "45 cm"
+    ],
+    [
+      "Altura interior",
+      "15 cm"
+    ],
+    [
+      "Comprimento exterior",
+      "106 cm"
+    ],
+    [
+      "Recursos",
+      "bolsos, impermeável"
+    ]
+  ]
 }

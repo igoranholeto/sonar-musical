@@ -15,5 +15,72 @@
     }
   ],
   "imagem": "/images/produtos/meteoro-space-50.webp",
-  "imagemAlt": "Meteoro Space 50"
+  "imagemAlt": "Meteoro Space 50",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$189,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-space-50-para-guitarra-de-50w-preto/p/MLB24754743"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "Space"
+    ],
+    [
+      "Modelo",
+      "Space 50"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "52 cm x 24.5 cm x 40 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "P10; jack p10"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "50 W"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 270
 }

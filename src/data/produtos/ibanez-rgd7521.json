@@ -15,5 +15,70 @@
     }
   ],
   "imagem": "/images/produtos/ibanez-rgd7521.webp",
-  "imagemAlt": "Ibanez RGD7521"
+  "imagemAlt": "Ibanez RGD7521",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$939,98 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rgd7521pb-dsf-de-7-cordas-azul-aco-com-escala-em-panga-panga/p/MLB62105381"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibanez"
+    ],
+    [
+      "Linha",
+      "RGD"
+    ],
+    [
+      "Código do fabricante",
+      "RGD7521PB-DSF"
+    ],
+    [
+      "Forma do corpo",
+      "Nyatoh com tampo Poplar Burl"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Deep Seafloor Fade"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Nyatoh"
+    ],
+    [
+      "Material do diapasão",
+      "Panga Panga"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "7"
+    ],
+    [
+      "Comprimento da escala",
+      "673 mm"
+    ],
+    [
+      "Material do tampo",
+      "POPLAR BURL"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ]
 }

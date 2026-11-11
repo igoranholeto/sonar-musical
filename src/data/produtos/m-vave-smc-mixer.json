@@ -1,0 +1,88 @@
+{
+  "nome": "M-Vave SMC-Mixer",
+  "meli": "https://meli.la/1oAQZew",
+  "preco": 218,
+  "precoEm": "2026-11-11",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 218
+    }
+  ],
+  "imagemAlt": "M-Vave SMC-Mixer",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 280,
+    "off": 22,
+    "parcelas": "12x R$21,57",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/console-mixagem-controller-midi-sem-fio-43-botoes-8-pads-smc-mixer/p/MLB52863472"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "VAVE6412"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "Controlador MIDI de Pad/Teclado"
+    ],
+    [
+      "Quantidade de pads",
+      "8"
+    ],
+    [
+      "Quantidade de faders",
+      "8"
+    ],
+    [
+      "Quantidade de botões",
+      "8"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Software incluídos",
+      "Midisuite"
+    ],
+    [
+      "Dispositivos compatíveis",
+      "Celular, Computador"
+    ],
+    [
+      "Sistemas operacionais compatíveis",
+      "iOS/Android, Mac, Windows"
+    ],
+    [
+      "Quantidade de terminais de entrada/saída",
+      "1"
+    ],
+    [
+      "Peças incluídas",
+      "Cabo de dados USB, Manual"
+    ],
+    [
+      "Comprimento",
+      "25,5 cm"
+    ],
+    [
+      "Recursos",
+      "botões daw, retroiluminação"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1037,
+  "imagem": "/images/produtos/m-vave-smc-mixer.webp"
+}

@@ -1,0 +1,88 @@
+{
+  "nome": "Fender Standard Stratocaster",
+  "meli": "https://meli.la/2uopBty",
+  "preco": 5462,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 5462
+    }
+  ],
+  "imagemAlt": "Fender Standard Stratocaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 6549,
+    "off": 16,
+    "parcelas": "10x R$546,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-fender-stratocaster-standard-sunburst-de-6-cordas/p/MLB47079290"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Código do fabricante",
+      "0379600506"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Laurel"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Álamo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Forma do braço",
+      "C"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 699,
+  "imagem": "/images/produtos/fender-standard-stratocaster.webp"
+}

@@ -11,7 +11,53 @@
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 1305,
+  "avaliacoes": 1239,
   "imagemAlt": "Suporte de Parede Ibox AGS (trava automática)",
-  "imagem": "/images/produtos/suporte-ibox-ags-parede.webp"
+  "imagem": "/images/produtos/suporte-ibox-ags-parede.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 70,
+    "off": 41,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-de-parede-para-violao-e-guitarra-trava-automatica-cor-preto/p/MLB27048344"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Ibox"
+    ],
+    [
+      "Modelo",
+      "AGS"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Comprimento x Largura",
+      "4.7 cm x 16.5 cm x 9.5 cm"
+    ],
+    [
+      "Tipo de produto",
+      "De parede"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo, Contrabaixo, Guitarra, Violino"
+    ],
+    [
+      "Material",
+      "Aço emborrachado"
+    ],
+    [
+      "Capacidade de instrumentos",
+      "1"
+    ],
+    [
+      "Peso máximo suportado",
+      "15 kg"
+    ]
+  ]
 }

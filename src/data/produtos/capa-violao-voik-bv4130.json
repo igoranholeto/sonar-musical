@@ -11,7 +11,66 @@
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 512,
+  "avaliacoes": 520,
   "imagemAlt": "Capa acolchoada Voik BV-4130",
-  "imagem": "/images/produtos/capa-violao-voik-bv4130.webp"
+  "imagem": "/images/produtos/capa-violao-voik-bv4130.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 313,
+    "off": 31,
+    "parcelas": "12x R$21,12",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/capa-bag-p-violao-case-folk-classico-alca-dupla-acolchoada-cor-preto/p/MLB45673874"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Modelo",
+      "BV-4130M"
+    ],
+    [
+      "Tipo de estrutura",
+      "Acolchoada"
+    ],
+    [
+      "Tipo de violão",
+      "Padrão"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de produto",
+      "Capa"
+    ],
+    [
+      "Comprimento interior",
+      "42 cm"
+    ],
+    [
+      "Largura interior",
+      "107 cm"
+    ],
+    [
+      "Comprimento exterior",
+      "110 cm"
+    ],
+    [
+      "Largura exterior",
+      "44 cm"
+    ],
+    [
+      "Altura exterior",
+      "15 cm"
+    ],
+    [
+      "Recursos",
+      "bolsos, almofadado, impermeável"
+    ]
+  ]
 }

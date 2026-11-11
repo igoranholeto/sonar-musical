@@ -1,7 +1,7 @@
 {
   "nome": "Fuhrmann Compressor CM10",
   "meli": "https://meli.la/2UiNeN9",
-  "preco": 298,
+  "preco": 294,
   "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
@@ -12,8 +12,72 @@
     {
       "data": "2026-11-10",
       "preco": 298
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 294
     }
   ],
   "imagem": "/images/produtos/fuhrmann-compressor-cm10.webp",
-  "imagemAlt": "Fuhrmann Compressor CM10"
+  "imagemAlt": "Fuhrmann Compressor CM10",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 394,
+    "off": 25,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-fuhrmann-compressor-cm10-azul-escuro/p/MLB17938281"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fuhrmann"
+    ],
+    [
+      "Modelo",
+      "Compressor"
+    ],
+    [
+      "Cor",
+      "Azul-escuro"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7 cm x 11 cm x 6 cm"
+    ],
+    [
+      "Peso",
+      "350 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Compressor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 310
 }

@@ -25,5 +25,72 @@
   "imagem": "/images/produtos/positive-grid-spark-mini.webp",
   "imagemAlt": "Positive Grid Spark Mini",
   "nota": 4.9,
-  "avaliacoes": 8
+  "avaliacoes": 8,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3289,
+    "off": 17,
+    "parcelas": "12x R$260,70",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-de-guitarra-portatil-bluetooth-positive-grid-spark-mini-10w-preto/p/MLB23529170"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Positive Grid"
+    ],
+    [
+      "Modelo",
+      "Spark MINI"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "2 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "15 cm x 15 cm x 20 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Portátil"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "10 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ]
 }

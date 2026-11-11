@@ -1,0 +1,82 @@
+{
+  "nome": "AKG K240 MKII",
+  "meli": "https://meli.la/2D3kif5",
+  "preco": 419,
+  "precoEm": "2026-11-11",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 419
+    }
+  ],
+  "imagemAlt": "AKG K240 MKII",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$40,49",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-akg-k240-mkii-preto/p/MLB6370537"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "AKG"
+    ],
+    [
+      "Modelo",
+      "K240 MKII"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de pares",
+      "1"
+    ],
+    [
+      "Unidade de diafragma",
+      "3 cm"
+    ],
+    [
+      "Impedância",
+      "55 Ω"
+    ],
+    [
+      "Resposta em frequência",
+      "15 Hz - 25000 Hz"
+    ],
+    [
+      "Sensibilidade",
+      "104 dB"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ],
+    [
+      "Tipos de conectores",
+      "Jack 3.5 mm"
+    ],
+    [
+      "Comprimento do cabo",
+      "3 m"
+    ],
+    [
+      "Usos adequados",
+      "Profissional"
+    ],
+    [
+      "Acessórios incluídos",
+      "Almofadas, Cabo jack 3.5 mm, Cabo auxiliar 3.5 mm, Adaptador jack 6.3"
+    ],
+    [
+      "Recursos",
+      "leitor de mp3, cabo desmontável"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1181,
+  "imagem": "/images/produtos/akg-k240-mkii.webp"
+}

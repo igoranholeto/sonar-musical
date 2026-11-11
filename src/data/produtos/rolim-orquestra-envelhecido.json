@@ -11,5 +11,68 @@
     }
   ],
   "imagemAlt": "Rolim Orquestra Profissional 4/4 Envelhecido",
-  "imagem": "/images/produtos/rolim-orquestra-envelhecido.webp"
+  "imagem": "/images/produtos/rolim-orquestra-envelhecido.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3399,
+    "off": 3,
+    "parcelas": "10x R$329,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-acustico-44-rolim-orquestra-profissional-envelhecido-com-arco-e-estojo/p/MLB51870860"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Rolim"
+    ],
+    [
+      "Modelo",
+      "Desconhecido"
+    ],
+    [
+      "Cor",
+      "Envelhecido"
+    ],
+    [
+      "Tamanho do violino",
+      "4/4"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Comprimento",
+      "20,8 cm"
+    ],
+    [
+      "Largura",
+      "13,5 cm"
+    ],
+    [
+      "Altura",
+      "59,5 cm"
+    ],
+    [
+      "Tipo de violino",
+      "Acústico"
+    ],
+    [
+      "Material do diapasão",
+      "Caviúna"
+    ],
+    [
+      "Materiais do corpo",
+      "Madeira"
+    ],
+    [
+      "Acessórios incluídos",
+      "Estojo, Arco de crina"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios, arco, estojo"
+    ]
+  ]
 }

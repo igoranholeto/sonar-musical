@@ -1,0 +1,82 @@
+{
+  "nome": "Vox Pathfinder Bass 10",
+  "meli": "https://meli.la/11janJN",
+  "preco": 1025,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1025
+    }
+  ],
+  "imagemAlt": "Vox Pathfinder Bass 10",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$102,60 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-caixa-amplificador-contra-baixo-vox-pathfinder-bass-10w-preto/p/MLB22997691"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "VOX"
+    ],
+    [
+      "Linha",
+      "Pathfinder"
+    ],
+    [
+      "Código do fabricante",
+      "PATHFINDERBASS10"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "5 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "41 cm x 19 cm x 30 cm"
+    ],
+    [
+      "Resposta mínima em frequência - Resposta máxima em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Tipo de amplificador",
+      "Transistor"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contrabaixo elétrico"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 14,
+  "imagem": "/images/produtos/vox-pathfinder-bass-10.webp"
+}

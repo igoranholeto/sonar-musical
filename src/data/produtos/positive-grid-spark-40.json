@@ -13,5 +13,64 @@
   "nota": 5,
   "avaliacoes": 2,
   "imagemAlt": "Positive Grid Spark 40",
-  "imagem": "/images/produtos/positive-grid-spark-40.webp"
+  "imagem": "/images/produtos/positive-grid-spark-40.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 4199,
+    "off": 17,
+    "parcelas": "10x R$345,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-positive-grid-spark-40-preto-original/up/MLBU3416468692"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Positive Grid"
+    ],
+    [
+      "Modelo",
+      "Amplificador Guitarra Positive Grid Spark 40 Cor Preto Original"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "5,2 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "38 cm x 19 cm x 18 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Amplificador de guitarra"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra elétrica"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "40 W"
+    ],
+    [
+      "Recursos",
+      "reverb"
+    ]
+  ]
 }

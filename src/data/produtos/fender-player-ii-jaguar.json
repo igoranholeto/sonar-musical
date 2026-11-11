@@ -1,0 +1,78 @@
+{
+  "nome": "Fender Player II Jaguar",
+  "meli": "https://meli.la/2Q1UC7A",
+  "preco": 8792,
+  "precoEm": "2026-11-11",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 8792
+    }
+  ],
+  "imagemAlt": "Fender Player II Jaguar",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$845,15",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-player-ii-jaguar-polar-white/p/MLB68586129"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "American Original"
+    ],
+    [
+      "Forma do corpo",
+      "330"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Construção do braço",
+      "Bolt-on"
+    ],
+    [
+      "Tipo de ponte",
+      "Tremolo"
+    ],
+    [
+      "Tipos de captadores",
+      "Simples"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "imagem": "/images/produtos/fender-player-ii-jaguar.webp"
+}

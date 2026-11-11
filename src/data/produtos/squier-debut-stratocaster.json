@@ -19,5 +19,76 @@
     }
   ],
   "imagem": "/images/produtos/squier-debut-stratocaster.webp",
-  "imagemAlt": "Squier Debut Stratocaster"
+  "imagemAlt": "Squier Debut Stratocaster",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$149,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-squier-debut-stratocaster-lr-cor-preto/p/MLB38228088"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Código do fabricante",
+      "0379600506"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss polyurethane"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "241,3 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 699
 }

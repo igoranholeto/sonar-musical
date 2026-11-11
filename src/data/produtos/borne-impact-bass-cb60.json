@@ -15,5 +15,72 @@
     }
   ],
   "imagem": "/images/produtos/borne-impact-bass-cb60.webp",
-  "imagemAlt": "Borne Impact Bass CB60"
+  "imagemAlt": "Borne Impact Bass CB60",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$84,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-borne-impact-bass-cb60-transistor-para-contrabaixo-de-20w-cor-preto/p/MLB6075014"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Borne"
+    ],
+    [
+      "Linha",
+      "Impact Bass"
+    ],
+    [
+      "Modelo",
+      "CB60"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "5,5 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "35 cm x 25 cm x 33 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "RCA"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contrabaixo"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "20 W"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 291
 }

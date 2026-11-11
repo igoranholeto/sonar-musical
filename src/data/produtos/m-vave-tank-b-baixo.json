@@ -1,0 +1,74 @@
+{
+  "nome": "M-Vave Tank-B (baixo)",
+  "meli": "https://meli.la/139pkti",
+  "preco": 450,
+  "precoEm": "2026-11-11",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 450
+    }
+  ],
+  "imagemAlt": "M-Vave Tank-B (baixo)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$43,52",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-tank-b-baixo-bass-m-vave-cuvave-pedaleira-efeito-som-cinza-escuro/p/MLB56411280"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Cuvave"
+    ],
+    [
+      "Modelo",
+      "Tank-B"
+    ],
+    [
+      "Cor",
+      "Cinza-escuro"
+    ],
+    [
+      "Quantidade de efeitos",
+      "36"
+    ],
+    [
+      "Tensão de operação",
+      "5V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Contrabaixo passivo"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Porta de ruído, Compressor, Preamplificador, EQ de 3 Bandas, Modulação"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria recarregável"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm"
+    ],
+    [
+      "Itens inclusos",
+      "fonte de alimentação, bateria"
+    ],
+    [
+      "Recursos",
+      "luz indicadora, bluetooth"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 3913,
+  "imagem": "/images/produtos/m-vave-tank-b-baixo.webp"
+}

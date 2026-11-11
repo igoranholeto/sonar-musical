@@ -19,5 +19,52 @@
     }
   ],
   "imagem": "/images/produtos/daddario-ej16-phosphor-bronze-012.webp",
-  "imagemAlt": "D'Addario EJ16 Phosphor Bronze .012"
+  "imagemAlt": "D'Addario EJ16 Phosphor Bronze .012",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 78,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-aco-012-daddario-phosphor-bronze-ej16/p/MLB21714846"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Linha",
+      "Daddario"
+    ],
+    [
+      "Modelo",
+      "EJ16-3D"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão AÇO"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Materiais",
+      "Phosphor bronze"
+    ],
+    [
+      "Tensão",
+      "Bitola leve"
+    ],
+    [
+      "Notas",
+      "E B G D A E"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 646
 }

@@ -11,5 +11,23 @@
     }
   ],
   "imagemAlt": "Slide de Vidro MP Paganini 22mm",
-  "imagem": "/images/produtos/slide-de-vidro-paganini-22mm.webp"
+  "imagem": "/images/produtos/slide-de-vidro-paganini-22mm.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/slide-vidro-guitarra-mp-paganini-diametro-22-mm/up/MLBU3567067110"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Paganini"
+    ],
+    [
+      "Modelo",
+      "psg322"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

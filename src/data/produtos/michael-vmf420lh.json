@@ -13,5 +13,76 @@
   "nota": 5,
   "avaliacoes": 4,
   "imagemAlt": "Michael VMF420LH Folk Canhoto",
-  "imagem": "/images/produtos/michael-vmf420lh.webp"
+  "imagem": "/images/produtos/michael-vmf420lh.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1540,
+    "off": 25,
+    "parcelas": "12x R$111,54",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-michael-vmf420lh-folk-canhoto-spruce-mahogany-6-cordas/p/MLB45218196"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "FREEBIRD"
+    ],
+    [
+      "Modelo",
+      "VMF420LH"
+    ],
+    [
+      "Cor",
+      "Bege"
+    ],
+    [
+      "Acabamento do corpo",
+      "Acetinado"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Tipos de controle",
+      "Volume, graves, médios, agudos, Presença"
+    ],
+    [
+      "Orientação da mão",
+      "Canhoto"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

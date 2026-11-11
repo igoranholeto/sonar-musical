@@ -1,7 +1,7 @@
 {
   "nome": "Vogga VCA103N (38\", nylon)",
   "meli": "https://meli.la/1PmVmF5",
-  "preco": 310,
+  "preco": 324,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -11,11 +11,76 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 310
+      "preco": 324
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 459,
+  "avaliacoes": 464,
   "imagemAlt": "Vogga VCA103N (38\", nylon)",
-  "imagem": "/images/produtos/vogga-vca103n.webp"
+  "imagem": "/images/produtos/vogga-vca103n.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "6x R$54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-vogga-vca103n-nylon-classico-38-natural/p/MLB22356073"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Vogga"
+    ],
+    [
+      "Linha",
+      "100N"
+    ],
+    [
+      "Modelo",
+      "VCA103N"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Tilo"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "7/8"
+    ],
+    [
+      "Acessórios incluídos",
+      "1x violão"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ]
+  ]
 }

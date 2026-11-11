@@ -21,5 +21,76 @@
   "imagem": "/images/produtos/giannini-performance-gsf-1d-ceq.webp",
   "imagemAlt": "Giannini Performance GSF-1D CEQ",
   "nota": 4.8,
-  "avaliacoes": 895
+  "avaliacoes": 902,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1000,
+    "off": 31,
+    "parcelas": "10x R$68,43 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-performance-gsf-1d-ceq-natural/p/MLB16023220"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Sabina solida"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Giannini"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Sabina"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Equalizador, Pré-amplificador"
+    ],
+    [
+      "Acessórios incluídos",
+      "Alça, Roldana"
+    ],
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Performance"
+    ],
+    [
+      "Modelo",
+      "GSF-1D CEQ"
+    ],
+    [
+      "Cor",
+      "Natural glossy"
+    ],
+    [
+      "Recursos",
+      "tamanho mini, corte"
+    ]
+  ]
 }

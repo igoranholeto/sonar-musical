@@ -19,5 +19,41 @@
     }
   ],
   "imagem": "/images/produtos/giannini-nr-1-2.webp",
-  "imagemAlt": "Giannini NR 1/2"
+  "imagemAlt": "Giannini NR 1/2",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 479,
+    "off": 8,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-infantil-giannini-12-nr-pkg-afinador-palhet/up/MLBU3165590009"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "NR"
+    ],
+    [
+      "Cor",
+      "Rosa"
+    ],
+    [
+      "Tipo de guitarra",
+      "Acústica"
+    ],
+    [
+      "Material",
+      "Madeira"
+    ],
+    [
+      "Idade máxima recomendada",
+      "7 anos"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

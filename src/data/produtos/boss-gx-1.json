@@ -16,8 +16,73 @@
     {
       "data": "2026-11-10",
       "preco": 1842
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1842
     }
   ],
   "imagem": "/images/produtos/boss-gx-1.webp",
-  "imagemAlt": "Boss GX-1"
+  "imagemAlt": "Boss GX-1",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2668,
+    "off": 30,
+    "parcelas": "10x R$184,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-de-efeitos-p-guitarra-boss-gx1-gx-1-multiefeitos-preto/p/MLB65287987"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "GX1"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "30.7 cm x 14.9 cm x 5.6 cm"
+    ],
+    [
+      "Peso",
+      "1,2 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "146"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Chorus, Delay, Distorção, EQ, Flanger, Overdrive, Phaser, Reverb"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte AC 9V, Pilhas"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 144
 }

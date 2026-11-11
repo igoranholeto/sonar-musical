@@ -19,7 +19,72 @@
     }
   ],
   "nota": 4.7,
-  "avaliacoes": 389,
+  "avaliacoes": 394,
   "imagemAlt": "Michael Go Play VM15NY",
-  "imagem": "/images/produtos/michael-go-play-vm15ny.webp"
+  "imagem": "/images/produtos/michael-go-play-vm15ny.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "7x R$56,71 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-michael-go-play-vm15ny-preto-cordas-nailon-44/p/MLB16060674"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Bordo"
+    ],
+    [
+      "Acessórios incluídos",
+      "Alça"
+    ],
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Linha",
+      "Go Play"
+    ],
+    [
+      "Modelo",
+      "VM15NY"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ]
+  ]
 }

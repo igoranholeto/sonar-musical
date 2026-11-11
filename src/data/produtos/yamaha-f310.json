@@ -29,5 +29,74 @@
   "imagemAlt": "Yamaha F310P",
   "imagem": "/images/produtos/yamaha-f310.webp",
   "nota": 4.8,
-  "avaliacoes": 52
+  "avaliacoes": 52,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$179,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-yamaha-f310p-para-destros-natural-brilhante/p/MLB16054858"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "F310P"
+    ],
+    [
+      "Modelo",
+      "F310P"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Western"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Tonewood"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tonewood"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Tonewood"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "634 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Itens inclusos",
+      "capa"
+    ]
+  ]
 }

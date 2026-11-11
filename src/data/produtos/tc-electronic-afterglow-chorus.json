@@ -19,5 +19,72 @@
     }
   ],
   "imagem": "/images/produtos/tc-electronic-afterglow-chorus.webp",
-  "imagemAlt": "TC Electronic Afterglow Chorus"
+  "imagemAlt": "TC Electronic Afterglow Chorus",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$39,12",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-chorus-tc-electronic-afterglow-analogo-para-guitarra-amarelo/p/MLB21789161"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "TC Electronic"
+    ],
+    [
+      "Modelo",
+      "Afterglow"
+    ],
+    [
+      "Cor",
+      "Amarelo"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.5 cm x 13.2 cm x 5.8 cm"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Chorus"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte"
+    ],
+    [
+      "Tipo de tela",
+      "LED"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm TS"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm TS"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 63
 }

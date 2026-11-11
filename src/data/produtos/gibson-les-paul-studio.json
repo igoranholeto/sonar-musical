@@ -19,5 +19,76 @@
     }
   ],
   "imagem": "/images/produtos/gibson-les-paul-studio.webp",
-  "imagemAlt": "Gibson Les Paul Studio"
+  "imagemAlt": "Gibson Les Paul Studio",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$1.678 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-5144177990-guitarra-gibson-les-paul-studio-_JM"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Gibson"
+    ],
+    [
+      "Linha",
+      "Modern"
+    ],
+    [
+      "Modelo",
+      "Les Paul Studio"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Mogno"
+    ],
+    [
+      "Acabamento do corpo",
+      "Laca de nitrocelulose brilhante"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Bordo"
+    ],
+    [
+      "Chave seletora de captadores",
+      "Seletor de 3 posições"
+    ],
+    [
+      "Tamanho de traste",
+      "Medium Jumbo"
+    ],
+    [
+      "Forma do braço",
+      "C"
+    ],
+    [
+      "Construção do braço",
+      "Set-in"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 2
 }

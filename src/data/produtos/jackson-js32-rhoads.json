@@ -19,5 +19,76 @@
     }
   ],
   "imagem": "/images/produtos/jackson-js32-rhoads.webp",
-  "imagemAlt": "Jackson JS32 Rhoads"
+  "imagemAlt": "Jackson JS32 Rhoads",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$411,86",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-jackson-js-series-rhoads-js32-de-choupo-ivory-brilhante-com-diapasao-de-amaranto/p/MLB17932227"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Jackson"
+    ],
+    [
+      "Linha",
+      "JS Series"
+    ],
+    [
+      "Modelo",
+      "Rhoads JS32"
+    ],
+    [
+      "Forma do corpo",
+      "Rhoads"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Ivory"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 67
 }

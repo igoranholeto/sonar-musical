@@ -11,5 +11,70 @@
     }
   ],
   "imagem": "/images/produtos/squier-affinity-telecaster-butterscotch.webp",
-  "imagemAlt": "Squier Affinity Telecaster Butterscotch"
+  "imagemAlt": "Squier Affinity Telecaster Butterscotch",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2955,
+    "off": 5,
+    "parcelas": "12x R$269,85",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-squier-by-fender-affinity-telecaster-mn-btb-amarela-destro-amarelo-madeira-de-bordo/p/MLB24105310"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier"
+    ],
+    [
+      "Linha",
+      "Affinity Series"
+    ],
+    [
+      "Modelo",
+      "Telecaster"
+    ],
+    [
+      "Forma do corpo",
+      "Telecaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Amarelo"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 189
 }

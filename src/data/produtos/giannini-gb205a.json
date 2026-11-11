@@ -1,17 +1,92 @@
 {
   "nome": "Giannini GB205A (5 cordas)",
   "meli": "https://meli.la/2AxzSYC",
-  "preco": 1181,
+  "preco": 1284,
   "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 1181
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1284
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 192,
+  "avaliacoes": 193,
   "imagemAlt": "Giannini GB205A (5 cordas)",
-  "imagem": "/images/produtos/giannini-gb205a.webp"
+  "imagem": "/images/produtos/giannini-gb205a.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3007,
+    "off": 57,
+    "parcelas": "10x R$128,42 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-5-cordas-ativo-giannini-gb205a-preto-verniz-brilhante/p/MLB28450172"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "GB"
+    ],
+    [
+      "Código do fabricante",
+      "GB205ABK2023"
+    ],
+    [
+      "Tipo de baixo",
+      "Ativo"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "5"
+    ],
+    [
+      "Profundidade do corpo",
+      "8 cm"
+    ],
+    [
+      "Largura do corpo",
+      "43 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "110 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "10 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ]
+  ]
 }

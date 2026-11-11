@@ -23,5 +23,40 @@
     }
   ],
   "imagem": "/images/produtos/yamaha-revstar-element.webp",
-  "imagemAlt": "Yamaha Revstar Element"
+  "imagemAlt": "Yamaha Revstar Element",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$399,85",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-yamaha-rse20-sb-revstar-swift-blue-destro-azul-destro-swift-blue/p/MLB70012690"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Revstar"
+    ],
+    [
+      "Modelo",
+      "RSE20"
+    ],
+    [
+      "Cor",
+      "Swift blue"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 5
 }

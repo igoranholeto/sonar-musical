@@ -1,0 +1,82 @@
+{
+  "nome": "Shure Beta 58A",
+  "meli": "https://meli.la/1so6tL7",
+  "preco": 869,
+  "precoEm": "2026-11-11",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 869
+    }
+  ],
+  "imagemAlt": "Shure Beta 58A",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$86,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-dinamico-shure-beta-58a-original-supercardioide-para-vocal/p/MLB29796928"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shure"
+    ],
+    [
+      "Linha",
+      "Shure Beta 58A"
+    ],
+    [
+      "Modelo",
+      "Shure Beta 58A"
+    ],
+    [
+      "Cor",
+      "Cinza-escuro"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "Estúdio, Vocal, Apresentações ao vivo"
+    ],
+    [
+      "Tipos de conexões",
+      "Com fio"
+    ],
+    [
+      "Conectores de saída",
+      "XLR"
+    ],
+    [
+      "Conectores de entrada",
+      "XLR-3"
+    ],
+    [
+      "Peso",
+      "278 g"
+    ],
+    [
+      "Formatos de microfone",
+      "De mão"
+    ],
+    [
+      "Tipos de microfone",
+      "Dinâmico"
+    ],
+    [
+      "Padrões polares",
+      "Cardioide"
+    ],
+    [
+      "Quantidade de microfones",
+      "1"
+    ],
+    [
+      "Sensibilidade",
+      "-51,5 dB"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 14,
+  "imagem": "/images/produtos/shure-beta-58a.webp"
+}

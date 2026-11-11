@@ -1,0 +1,67 @@
+{
+  "nome": "Baquetas Liverpool Nirvana 7A",
+  "meli": "https://meli.la/1ssDrin",
+  "preco": 22,
+  "precoEm": "2026-11-11",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 22
+    }
+  ],
+  "imagemAlt": "Baquetas Liverpool Nirvana 7A",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 23,
+    "off": 6,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baquetas-liverpool-eco-bio-nirvana-7a-p-madeira/p/MLB27406667"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Liverpool"
+    ],
+    [
+      "Linha",
+      "Nirvana Eco Bio"
+    ],
+    [
+      "Modelo",
+      "ECO BIO Nirvana"
+    ],
+    [
+      "Tipo de vara de percussão",
+      "Baqueta"
+    ],
+    [
+      "Tamanho",
+      "7A"
+    ],
+    [
+      "Material da ponta",
+      "Madeira"
+    ],
+    [
+      "Comprimento",
+      "40 cm"
+    ],
+    [
+      "Diâmetro",
+      "1,4 cm"
+    ],
+    [
+      "Peso",
+      "55 g"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Bateria"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1035,
+  "imagem": "/images/produtos/baquetas-liverpool-nirvana-7a.webp"
+}

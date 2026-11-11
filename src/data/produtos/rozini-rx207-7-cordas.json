@@ -15,5 +15,70 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 90
+  "avaliacoes": 104,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$113,09",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-rozini-estudante-classico-7-cordas-fosco-imbuia/p/MLB20711085"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Purple heart"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "7"
+    ],
+    [
+      "Marca das cordas",
+      "NIG"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Linha",
+      "estudante"
+    ],
+    [
+      "Modelo",
+      "RX207 AC.F.I"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Marfim"
+    ]
+  ]
 }

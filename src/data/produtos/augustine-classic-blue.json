@@ -1,7 +1,7 @@
 {
   "nome": "Augustine Classic Blue",
   "meli": "https://meli.la/21WnC5f",
-  "preco": 130,
+  "preco": 137,
   "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
@@ -12,8 +12,61 @@
     {
       "data": "2026-11-10",
       "preco": 130
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 137
     }
   ],
   "imagem": "/images/produtos/augustine-classic-blue.webp",
-  "imagemAlt": "Augustine Classic Blue"
+  "imagemAlt": "Augustine Classic Blue",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 177,
+    "off": 22,
+    "parcelas": "4x R$34,25 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-augustine-classic-blue-para-violao-nylon-tensao-mista/p/MLB21478823"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Augustine"
+    ],
+    [
+      "Linha",
+      "Classic Blue"
+    ],
+    [
+      "Modelo",
+      "Classic Blue"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão de náilon"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Calibres",
+      ".028\""
+    ],
+    [
+      "Materiais",
+      "Náilon"
+    ],
+    [
+      "Tensão",
+      "Média/Alta"
+    ],
+    [
+      "Notas",
+      "Performance alta, Resistência quebra após algumas horas de uso, Substi"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 243
 }

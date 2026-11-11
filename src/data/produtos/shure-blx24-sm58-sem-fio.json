@@ -1,0 +1,70 @@
+{
+  "nome": "Shure BLX24/SM58 (sem fio)",
+  "meli": "https://meli.la/31F2bRk",
+  "preco": 2893,
+  "precoEm": "2026-11-11",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 2893
+    }
+  ],
+  "imagemAlt": "Shure BLX24/SM58 (sem fio)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$289,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-shure-receptor-sem-fio-bastao-mao-blx24brsm58-m15-cor-preto/p/MLB35493478"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shure"
+    ],
+    [
+      "Linha",
+      "BLX"
+    ],
+    [
+      "Modelo",
+      "BLX24BR/SM58-M15"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de alimentação",
+      "Pilha"
+    ],
+    [
+      "Tipo de pilha",
+      "AA"
+    ],
+    [
+      "Formatos de microfone",
+      "De mão"
+    ],
+    [
+      "Tipos de microfone",
+      "Sem fio"
+    ],
+    [
+      "Padrões polares",
+      "Cardioide"
+    ],
+    [
+      "Quantidade de microfones",
+      "1"
+    ],
+    [
+      "Acessórios incluídos",
+      "Clipe"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 6,
+  "imagem": "/images/produtos/shure-blx24-sm58-sem-fio.webp"
+}

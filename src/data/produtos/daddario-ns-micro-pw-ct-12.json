@@ -13,5 +13,70 @@
   "nota": 4.9,
   "avaliacoes": 36,
   "imagemAlt": "D'Addario NS Micro PW-CT-12",
-  "imagem": "/images/produtos/daddario-ns-micro-pw-ct-12.webp"
+  "imagem": "/images/produtos/daddario-ns-micro-pw-ct-12.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$22,98",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/afinador-ns-micro-headstock-pw-ct-12-daddario/up/MLBU787423969"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Modelo",
+      "PW-CT-12"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de alimentação",
+      "Bateria (pilha botão)"
+    ],
+    [
+      "Tipo de afinador",
+      "Cromático"
+    ],
+    [
+      "Formato do afinador",
+      "Pinça"
+    ],
+    [
+      "Usos recomendados",
+      "Guitarra"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Violão; Guitarra; Baixo (headstock)"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "410 Hz - 480 Hz"
+    ],
+    [
+      "Comprimento",
+      "11,8 cm"
+    ],
+    [
+      "Largura",
+      "15,8 cm"
+    ],
+    [
+      "Altura",
+      "3,5 cm"
+    ],
+    [
+      "Peso",
+      "30 g"
+    ],
+    [
+      "Recursos",
+      "cromático, tela"
+    ]
+  ]
 }

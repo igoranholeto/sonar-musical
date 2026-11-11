@@ -13,5 +13,64 @@
   "nota": 4.9,
   "avaliacoes": 55,
   "imagemAlt": "Kalani KAL 200 CT Concert",
-  "imagem": "/images/produtos/kalani-kal-200-ct.webp"
+  "imagem": "/images/produtos/kalani-kal-200-ct.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 397,
+    "off": 7,
+    "parcelas": "12x R$35,79",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-kalani-concerto-24-kal-200-ct-acustico-sapele-tabaco-com-bag/p/MLB28069952"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Kalani"
+    ],
+    [
+      "Linha",
+      "KAL"
+    ],
+    [
+      "Modelo",
+      "KAL 200 CT"
+    ],
+    [
+      "Cor",
+      "Marrom-claro"
+    ],
+    [
+      "Tamanho",
+      "Concerto"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Comprimento",
+      "61 cm"
+    ],
+    [
+      "Tipo de ukulele",
+      "AcÃºstico"
+    ],
+    [
+      "Materiais",
+      "Tabaco Sapele, Okoumé, Blackwood"
+    ],
+    [
+      "Acabamento",
+      "Laqueado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ]
 }

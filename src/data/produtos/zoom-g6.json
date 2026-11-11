@@ -15,5 +15,80 @@
       "data": "2026-11-10",
       "preco": 2929
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$292,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/zoom-g6-pedaleira-para-guitarra-cor-preto/p/MLB18432849"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Zoom"
+    ],
+    [
+      "Modelo",
+      "G6"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "41.8 cm x 22.8 cm x 6.5 cm"
+    ],
+    [
+      "Peso",
+      "1,94 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "168"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Tipo de tela",
+      "TFT LCD"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack mono, Mini jack stereo, USB-B"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack mono, Jack stereo"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora, tela touch, bluetooth"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 97
 }

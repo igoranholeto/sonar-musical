@@ -13,5 +13,68 @@
   "nota": 4.5,
   "avaliacoes": 2,
   "imagemAlt": "Vogga VCS260 Audience (folk aço, eletroacústico)",
-  "imagem": "/images/produtos/vogga-vcs260.webp"
+  "imagem": "/images/produtos/vogga-vcs260.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1090,
+    "off": 38,
+    "parcelas": "10x R$67,40 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-vogga-vcs260-audience-folk-aco-vcs260-bk/p/MLB70619597"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Vogga"
+    ],
+    [
+      "Linha",
+      "Audi"
+    ],
+    [
+      "Modelo",
+      "Vcs260"
+    ],
+    [
+      "Cor",
+      "Vcs260 Bk"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Equalizador, Volume"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ]
 }

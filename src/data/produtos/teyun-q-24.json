@@ -1,0 +1,91 @@
+{
+  "nome": "Teyun Q-24",
+  "meli": "https://meli.la/13GCfyN",
+  "preco": 245,
+  "precoEm": "2026-11-11",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 245
+    }
+  ],
+  "imagemAlt": "Teyun Q-24",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 280,
+    "off": 12,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-teyun-q-24-24-bits-2-canais-com-phantom-power-usb-20/p/MLB35434613"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Teyun"
+    ],
+    [
+      "Linha",
+      "AudioBox USB"
+    ],
+    [
+      "Modelo",
+      "Q-24"
+    ],
+    [
+      "Geração",
+      "2ª geração"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "750 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "4"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Tipos de alimentação",
+      "Cabo USB 2.0"
+    ],
+    [
+      "Tipos de conexões",
+      "RCA, TRS (P10), XLR"
+    ],
+    [
+      "Software compatível",
+      "Android, Ios, Linux"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo USB 2.0, Interface de Áudio Teyun Q-24"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "alimentação fantasma"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1030,
+  "imagem": "/images/produtos/teyun-q-24.webp"
+}

@@ -11,7 +11,82 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 704,
+  "avaliacoes": 643,
   "imagemAlt": "Casio CT-X800",
-  "imagem": "/images/produtos/casio-ct-x800.webp"
+  "imagem": "/images/produtos/casio-ct-x800.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 1539,
+    "off": 9,
+    "parcelas": "10x R$140,05 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-ct-x-ct-x800-61-teclas-preto/p/MLB28114002"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "CT-X"
+    ],
+    [
+      "Modelo",
+      "CT-X800"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "48"
+    ],
+    [
+      "Quantidade de ritmos",
+      "195"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Pilha"
+    ],
+    [
+      "Acessórios incluídos",
+      "Suporte para partituras, Adaptador de corrente"
+    ],
+    [
+      "Tela",
+      "LED"
+    ],
+    [
+      "Fonte sonora",
+      "AHL"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Acompanhamento automático",
+      "Acorde de Casio"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Nível 1"
+    ],
+    [
+      "Itens inclusos",
+      "acessórios"
+    ],
+    [
+      "Recursos",
+      "interface midi, ranhura para cartão de memória, metrónomo, gravador, resposta ao toque"
+    ]
+  ]
 }

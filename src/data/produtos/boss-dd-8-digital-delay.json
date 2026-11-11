@@ -1,7 +1,7 @@
 {
   "nome": "Boss DD-8 Digital Delay",
   "meli": "https://meli.la/24wtScj",
-  "preco": 1525,
+  "preco": 1744,
   "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
@@ -12,8 +12,79 @@
     {
       "data": "2026-11-10",
       "preco": 1525
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1744
     }
   ],
   "imagem": "/images/produtos/boss-dd-8-digital-delay.webp",
-  "imagemAlt": "Boss DD-8 Digital Delay"
+  "imagemAlt": "Boss DD-8 Digital Delay",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$174,40 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-digital-delay-dd-8-creme/p/MLB17941169"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "DD-8 Digital Delay"
+    ],
+    [
+      "Cor",
+      "Creme"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.3 cm x 12.9 cm x 5.9 cm"
+    ],
+    [
+      "Peso",
+      "440 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Guitarra elétrica, Teclado"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo, Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Delay"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD, Pilha"
+    ],
+    [
+      "Tipos de conector de entrada",
+      "Jack 6.3 mm mono"
+    ],
+    [
+      "Tipos de conector de saída",
+      "Jack 6.3 mm mono"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 170
 }

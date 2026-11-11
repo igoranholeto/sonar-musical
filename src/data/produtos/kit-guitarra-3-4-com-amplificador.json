@@ -15,5 +15,36 @@
       "data": "2026-11-05",
       "preco": 1399
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$139,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-3335876255-kit-guitarra-iniciante-estudante-completo-kit-brinde-_JM"
+  },
+  "ficha": [
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Basswood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 3
 }

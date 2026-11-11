@@ -23,5 +23,74 @@
     }
   ],
   "imagem": "/images/produtos/jackson-js22-dinky.webp",
-  "imagemAlt": "Jackson JS22 Dinky"
+  "imagemAlt": "Jackson JS22 Dinky",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3000,
+    "off": 36,
+    "parcelas": "12x R$181,76",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-jackson-js-series-js22-dinky-de-choupo-2018-blue-brilhante-com-diapasao-de-amaranto/p/MLB17829408"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Jackson"
+    ],
+    [
+      "Linha",
+      "JS Series"
+    ],
+    [
+      "Modelo",
+      "JS22"
+    ],
+    [
+      "Forma do corpo",
+      "Dinky"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Blue"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "648 mm"
+    ],
+    [
+      "Material do tampo",
+      "Nyatoh"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1681
 }

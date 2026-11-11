@@ -19,5 +19,68 @@
     }
   ],
   "imagemAlt": "Yamaha C40II",
-  "imagem": "/images/produtos/yamaha-c40ii.webp"
+  "imagem": "/images/produtos/yamaha-c40ii.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$85,97",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-c40ii-c40-para-destros-natural-brilhante/p/MLB16068101"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "C"
+    ],
+    [
+      "Modelo",
+      "C40II"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Meranti"
+    ],
+    [
+      "Materiais dos laterais",
+      "Meranti"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manual"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 285
 }

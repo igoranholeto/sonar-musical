@@ -17,5 +17,68 @@
   "nota": 4.9,
   "avaliacoes": 36,
   "imagem": "/images/produtos/jackson-dinky-minion-js1x.webp",
-  "imagemAlt": "Jackson Dinky Minion JS1X"
+  "imagemAlt": "Jackson Dinky Minion JS1X",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2592,
+    "off": 6,
+    "parcelas": "10x R$243,67 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-jackson-js-series-dinky-minion-js1x-amaranth-finger/p/MLB62470092"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Jackson"
+    ],
+    [
+      "Linha",
+      "JS Series"
+    ],
+    [
+      "Modelo",
+      "Dinky Minion JS1X"
+    ],
+    [
+      "Forma do corpo",
+      "Dinky"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Violeta-escuro"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Material do diapasão",
+      "Amaranto"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "571,5 mm"
+    ],
+    [
+      "Material do tampo",
+      "Álamo"
+    ]
+  ]
 }

@@ -1,7 +1,7 @@
 {
   "nome": "Giannini Start NR 1/4",
   "meli": "https://meli.la/2eXPNX2",
-  "preco": 349,
+  "preco": 342,
   "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
@@ -12,8 +12,83 @@
     {
       "data": "2026-11-10",
       "preco": 349
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 342
     }
   ],
   "imagem": "/images/produtos/giannini-nr-1-4.webp",
-  "imagemAlt": "Giannini Start NR 1/4"
+  "imagemAlt": "Giannini Start NR 1/4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "6x R$57 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-infantil-giannini-start-nr-14-para-criancas-tilio-verniz/p/MLB16056547"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Start"
+    ],
+    [
+      "Modelo",
+      "NR"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Verniz brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Tilo"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Tília"
+    ],
+    [
+      "Tamanho do corpo",
+      "30 \""
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Comprimento da escala",
+      "484 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Recursos",
+      "tamanho mini, infantil"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 1325
 }

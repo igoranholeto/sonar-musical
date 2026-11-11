@@ -21,5 +21,71 @@
   "imagem": "/images/produtos/shelby-su23m-concert.webp",
   "imagemAlt": "Shelby SU23M Concert",
   "nota": 4.9,
-  "avaliacoes": 630
+  "avaliacoes": 650,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 259,
+    "off": 19,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/ukulele-shelby-su23m-concert-cor-marrom/p/MLB27938267"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Shelby"
+    ],
+    [
+      "Modelo",
+      "Su23M"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Tamanho",
+      "Concerto"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Altura",
+      "7 cm"
+    ],
+    [
+      "Comprimento",
+      "62 cm"
+    ],
+    [
+      "Largura",
+      "21 cm"
+    ],
+    [
+      "Tipo de ukulele",
+      "Acústico"
+    ],
+    [
+      "Materiais",
+      "Madeira"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Quantidade de trastes",
+      "15"
+    ],
+    [
+      "Comprimento do diapasão",
+      "26 cm"
+    ]
+  ]
 }

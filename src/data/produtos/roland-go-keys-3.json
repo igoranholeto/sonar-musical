@@ -13,5 +13,60 @@
   "nota": 4.9,
   "avaliacoes": 67,
   "imagemAlt": "Roland GO:KEYS 3",
-  "imagem": "/images/produtos/roland-go-keys-3.webp"
+  "imagem": "/images/produtos/roland-go-keys-3.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2999,
+    "off": 7,
+    "parcelas": "10x R$275,91 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-roland-gokeys-3-turquesa/p/MLB36724812"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Roland"
+    ],
+    [
+      "Código do fabricante",
+      "GOKEYS3-TQ"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Cor",
+      "Verde-claro"
+    ],
+    [
+      "Altura",
+      "8,7 cm"
+    ],
+    [
+      "Largura",
+      "95 cm"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "1"
+    ],
+    [
+      "Quantidade de ritmos",
+      "203"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte, Pilhas"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fonte"
+    ]
+  ]
 }

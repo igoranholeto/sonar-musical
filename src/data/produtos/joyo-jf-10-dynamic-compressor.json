@@ -1,7 +1,7 @@
 {
   "nome": "Joyo JF-10 Dynamic Compressor",
   "meli": "https://meli.la/11fbXCH",
-  "preco": 179,
+  "preco": 178,
   "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
@@ -12,8 +12,75 @@
     {
       "data": "2026-11-10",
       "preco": 179
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 178
     }
   ],
   "imagem": "/images/produtos/joyo-jf-10-dynamic-compressor.webp",
-  "imagemAlt": "Joyo JF-10 Dynamic Compressor"
+  "imagemAlt": "Joyo JF-10 Dynamic Compressor",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "5x R$35,69 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/joyo-jf-10-dynamic-compressor-guitarra-efeito-pedal-verdadei/p/MLB2023035288"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Generic"
+    ],
+    [
+      "Linha",
+      "Vintage"
+    ],
+    [
+      "Modelo",
+      "JOYO"
+    ],
+    [
+      "Voltagem",
+      "As described"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "7.2 cm x 12 cm x 5.5 cm"
+    ],
+    [
+      "Peso",
+      "290 g"
+    ],
+    [
+      "Quantidade de efeitos",
+      "1"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Bajo"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Análogo"
+    ],
+    [
+      "Tipos de efeitos",
+      "Compressor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fuente"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 4.5,
+  "avaliacoes": 19
 }

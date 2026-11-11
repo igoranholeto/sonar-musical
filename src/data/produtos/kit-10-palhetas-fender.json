@@ -1,0 +1,61 @@
+{
+  "nome": "Kit 10 palhetas Fender",
+  "meli": "https://meli.la/2zTJEGm",
+  "preco": 19,
+  "precoEm": "2026-11-11",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 19
+    }
+  ],
+  "imagemAlt": "Kit 10 palhetas Fender",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-com-10-palhetas-fender-071mm-para-violao-e-guitarra/p/MLB25191505"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Modelo",
+      "AM003"
+    ],
+    [
+      "Cor",
+      "Sortidas"
+    ],
+    [
+      "Espessura",
+      "0.71 mm"
+    ],
+    [
+      "Material da palheta",
+      "Celuloide"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Violão acústico, Baixo"
+    ],
+    [
+      "Quantidade de palhetas",
+      "10"
+    ],
+    [
+      "Acessórios incluídos",
+      "Caixa"
+    ],
+    [
+      "Recursos",
+      "set"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 5515,
+  "imagem": "/images/produtos/kit-10-palhetas-fender.webp"
+}

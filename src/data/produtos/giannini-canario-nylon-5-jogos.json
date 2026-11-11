@@ -1,0 +1,58 @@
+{
+  "nome": "Giannini Canário nylon (5 jogos)",
+  "meli": "https://meli.la/2eEXKEB",
+  "preco": 94,
+  "precoEm": "2026-11-11",
+  "categoria": "cordas",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 94
+    }
+  ],
+  "imagemAlt": "Giannini Canário nylon (5 jogos)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "3x R$31,17 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-nylon-medio-giannini-canario-5-jogos/p/MLB29382305"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Nylon"
+    ],
+    [
+      "Modelo",
+      "GENW 5921"
+    ],
+    [
+      "Instrumento recomendado",
+      "Violão Nylon"
+    ],
+    [
+      "Quantidade de cordas",
+      "30"
+    ],
+    [
+      "Calibres",
+      "0.028, 0.030, 0.032, 0.040, 0.043"
+    ],
+    [
+      "Materiais",
+      "Náilon"
+    ],
+    [
+      "Tensão",
+      "Média"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 8439,
+  "imagem": "/images/produtos/giannini-canario-nylon-5-jogos.webp"
+}

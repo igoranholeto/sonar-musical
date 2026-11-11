@@ -17,5 +17,9 @@
   "nota": 4.9,
   "avaliacoes": 496,
   "imagemAlt": "Yamaha APX600",
-  "imagem": "/images/produtos/yamaha-apx600.webp"
+  "imagem": "/images/produtos/yamaha-apx600.webp",
+  "anuncio": {
+    "status": "encerrado",
+    "desde": "2026-11-11"
+  }
 }

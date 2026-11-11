@@ -13,5 +13,74 @@
   "nota": 5,
   "avaliacoes": 26,
   "imagemAlt": "Eagle CH 889 Canhoto",
-  "imagem": "/images/produtos/eagle-ch889-canhoto.webp"
+  "imagem": "/images/produtos/eagle-ch889-canhoto.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$199 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-eagle-classic-ch-889-para-canhotos-natural-bordo-laqueado/p/MLB15305244"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Orientação da mão",
+      "Canhoto"
+    ],
+    [
+      "Tipo de violão",
+      "Acústica"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "D'Addario"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Jacarandá"
+    ],
+    [
+      "Acessórios incluídos",
+      "Alça"
+    ],
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Linha",
+      "Classic"
+    ],
+    [
+      "Modelo",
+      "CH 889"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Laqueado"
+    ],
+    [
+      "Recursos",
+      "corte"
+    ]
+  ]
 }

@@ -15,5 +15,74 @@
     }
   ],
   "imagem": "/images/produtos/squier-affinity-jazz-bass.webp",
-  "imagemAlt": "Squier Affinity Jazz Bass"
+  "imagemAlt": "Squier Affinity Jazz Bass",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 3799,
+    "off": 22,
+    "parcelas": "10x R$293,83 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-squier-affinity-jazz-bass-4-cordas-sunburst-destro-marrom-poliuretano-brilhante-4/p/MLB22814045"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Squier by Fender"
+    ],
+    [
+      "Linha",
+      "Affinity"
+    ],
+    [
+      "Modelo",
+      "Jazz Bass"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ],
+    [
+      "Acabamento do corpo",
+      "Poliuretano brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "5 cm"
+    ],
+    [
+      "Largura do corpo",
+      "30 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "45 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Amieiro"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 39
 }

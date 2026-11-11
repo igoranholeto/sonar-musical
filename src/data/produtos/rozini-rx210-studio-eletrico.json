@@ -17,5 +17,67 @@
   "nota": 4.7,
   "avaliacoes": 15,
   "imagemAlt": "Rozini Studio RX210 Eletroacústico (nylon)",
-  "imagem": "/images/produtos/rozini-rx210-studio-eletrico.webp"
+  "imagem": "/images/produtos/rozini-rx210-studio-eletrico.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 2176,
+    "off": 28,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-rozini-studio-classico-ativo-natural-louro-preto-com-eq-rozini-re-02/p/MLB37313778"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "roxinho"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Linha",
+      "IOLÃO STUDIO CLÁSSICO"
+    ],
+    [
+      "Modelo",
+      "RX210.RE2.N.LP"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ]
+  ]
 }

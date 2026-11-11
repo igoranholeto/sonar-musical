@@ -1,0 +1,82 @@
+{
+  "nome": "Meteoro Super Bass M750",
+  "meli": "https://meli.la/24iznPs",
+  "preco": 1478,
+  "precoEm": "2026-11-11",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 1478
+    }
+  ],
+  "imagemAlt": "Meteoro Super Bass M750",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$147,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-baixo-meteoro-super-bass-m750-75-watts/p/MLB20609668"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "SPACE JR SUPER BASS"
+    ],
+    [
+      "Modelo",
+      "SPACE JR SUPER BASS M750"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "10,1 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "34 cm x 34 cm x 45 cm"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "75 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ]
+  ],
+  "nota": 4.6,
+  "avaliacoes": 72,
+  "imagem": "/images/produtos/meteoro-super-bass-m750.webp"
+}

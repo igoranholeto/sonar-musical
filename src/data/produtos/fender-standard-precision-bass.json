@@ -19,7 +19,72 @@
     }
   ],
   "nota": 5,
-  "avaliacoes": 3,
+  "avaliacoes": 4,
   "imagemAlt": "Fender Standard Precision Bass",
-  "imagem": "/images/produtos/fender-standard-precision-bass.webp"
+  "imagem": "/images/produtos/fender-standard-precision-bass.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$575,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-fender-standard-precision-bass-mn-candy-cola-destro-vermelho-envernizado-4/p/MLB47464631"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Linha",
+      "Precision Bass Standard"
+    ],
+    [
+      "Código do fabricante",
+      "0266620571"
+    ],
+    [
+      "Tipo de baixo",
+      "Elétrico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Profundidade do corpo",
+      "11,17 cm"
+    ],
+    [
+      "Largura do corpo",
+      "43,18 cm"
+    ],
+    [
+      "Comprimento do corpo",
+      "119,38 cm"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Choupo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ]
+  ]
 }

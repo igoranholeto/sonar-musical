@@ -1,7 +1,7 @@
 {
   "nome": "Encordoamento Strinberg SB-45 para baixo",
   "meli": "https://meli.la/2fqXcaR",
-  "preco": 45,
+  "preco": 49,
   "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
@@ -11,9 +11,51 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 45
+      "preco": 49
     }
   ],
   "imagem": "/images/produtos/encordoamento-strinberg-sb-45-para-baixo.webp",
-  "imagemAlt": "Encordoamento Strinberg SB-45 para baixo"
+  "imagemAlt": "Encordoamento Strinberg SB-45 para baixo",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-strinberg-sb-45-contrabaixo-4-cordas-nickel-wound-045/p/MLB53905417"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "SB45"
+    ],
+    [
+      "Instrumento recomendado",
+      "Contrabaixo"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Materiais",
+      "Enrolado em níquel"
+    ],
+    [
+      "Tensão",
+      "045"
+    ],
+    [
+      "Notas",
+      "Electric bass, Encordoamento de níquel"
+    ],
+    [
+      "Escala",
+      "4:4"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2695
 }

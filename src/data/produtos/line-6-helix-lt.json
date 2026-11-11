@@ -1,7 +1,7 @@
 {
   "nome": "Line 6 Helix LT",
   "meli": "https://meli.la/1iqeaKL",
-  "preco": 8533,
+  "preco": 8447,
   "precoEm": "2026-11-11",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/line-6-helix-lt.webp",
@@ -18,6 +18,83 @@
     {
       "data": "2026-11-10",
       "preco": 8533
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 8447
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 11888,
+    "off": 28,
+    "parcelas": "12x R$811,90",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-line-6-helix-lt-helixlt-preto/p/MLB17430518"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Line 6"
+    ],
+    [
+      "Linha",
+      "Helix"
+    ],
+    [
+      "Modelo",
+      "Helix LT"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "53 cm x 30.1 cm x 9.2 cm"
+    ],
+    [
+      "Peso",
+      "5,4 kg"
+    ],
+    [
+      "Quantidade de efeitos",
+      "347"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CA"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Itens inclusos",
+      "pedal de expressão, fonte de alimentação"
+    ],
+    [
+      "Recursos",
+      "luz indicadora"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 36
 }

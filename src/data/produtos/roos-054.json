@@ -1,0 +1,80 @@
+{
+  "nome": "Cavaquinho Roos 054",
+  "meli": "https://meli.la/2REeUbp",
+  "preco": 257,
+  "precoEm": "2026-11-11",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-11",
+      "preco": 257
+    }
+  ],
+  "imagemAlt": "Cavaquinho Roos 054",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "antes": 298,
+    "off": 13,
+    "parcelas": "12x R$25,14",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-roos-054-preto-com-acabamento-fosco/p/MLB34489499"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Roos"
+    ],
+    [
+      "Modelo",
+      "#054"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Comprimento",
+      "75 cm"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Acústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Materiais do corpo",
+      "Mogno"
+    ],
+    [
+      "Material do tampo",
+      "Marupá"
+    ],
+    [
+      "Material do braço",
+      "Pinho"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Bordo"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 1376,
+  "imagem": "/images/produtos/roos-054.webp"
+}

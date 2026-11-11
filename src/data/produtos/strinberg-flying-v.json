@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg Flying V",
   "meli": "https://meli.la/19e2JNw",
-  "preco": 2079,
+  "preco": 2049,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "imagem": "/images/produtos/strinberg-flying-v.webp",
@@ -21,7 +21,78 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 2079
+      "preco": 2049
     }
-  ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "10x R$204,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-flyng-v-strinberg-fvs450-pw-pearl-white-passiva-bra-destro-unica/p/MLB68345933"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "Flying V"
+    ],
+    [
+      "Forma do corpo",
+      "Flying V"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "poplar sólido"
+    ],
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Madeira de bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "24"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Chave seletora de captadores",
+      "3 posições"
+    ],
+    [
+      "Itens inclusos",
+      "estojo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 7
 }

@@ -17,5 +17,46 @@
   "nota": 4.5,
   "avaliacoes": 11,
   "imagemAlt": "Bandolim Wave WMA-20",
-  "imagem": "/images/produtos/wave-wma-20.webp"
+  "imagem": "/images/produtos/wave-wma-20.webp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$63,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bandolim-acustico-wave-wma-20nt/up/MLBU2983870622"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Wave"
+    ],
+    [
+      "Modelo",
+      "WMA-20/NT"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Material do braço",
+      "Nato"
+    ],
+    [
+      "Material do corpo",
+      "Nato"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Quantidade de cordas",
+      "8"
+    ]
+  ]
 }

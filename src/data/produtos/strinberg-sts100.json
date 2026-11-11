@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg STS100",
   "meli": "https://meli.la/2iXzRWa",
-  "preco": 801,
+  "preco": 795,
   "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
@@ -19,11 +19,80 @@
     },
     {
       "data": "2026-11-11",
-      "preco": 801
+      "preco": 795
     }
   ],
   "imagem": "/images/produtos/strinberg-sts100.webp",
   "imagemAlt": "Strinberg STS100",
   "nota": 4.8,
-  "avaliacoes": 290
+  "avaliacoes": 291,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-11",
+    "parcelas": "12x R$76,85",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strinberg-sts100-stratocaster-tilia-cherry-burst/p/MLB17453032"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "STS Series"
+    ],
+    [
+      "Modelo",
+      "STS100"
+    ],
+    [
+      "Forma do corpo",
+      "Stratocaster"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Cherry burst"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood Sólido"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Recursos",
+      "alavanca"
+    ]
+  ]
 }
