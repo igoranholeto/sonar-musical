@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GC1CE (nylon)",
   "meli": "https://meli.la/1XwNZJ7",
-  "preco": 2477,
-  "precoEm": "2026-11-10",
+  "preco": 2599,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 2477
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2599
     }
   ],
   "nota": 4.8,

@@ -1,8 +1,8 @@
 {
   "nome": "Fender Standard Precision Bass",
   "meli": "https://meli.la/1tQYsn8",
-  "preco": 5723,
-  "precoEm": "2026-11-10",
+  "preco": 5752,
+  "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 5723
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 5752
     }
   ],
   "nota": 5,

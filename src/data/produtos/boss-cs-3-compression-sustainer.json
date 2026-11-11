@@ -1,8 +1,8 @@
 {
   "nome": "Boss CS-3 Compression Sustainer",
   "meli": "https://meli.la/2BMtYj4",
-  "preco": 863,
-  "precoEm": "2026-11-10",
+  "preco": 779,
+  "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 863
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 779
     }
   ],
   "imagem": "/images/produtos/boss-cs-3-compression-sustainer.webp",

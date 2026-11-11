@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha C40MII",
   "meli": "https://meli.la/1zqj8zZ",
-  "preco": 809,
-  "precoEm": "2026-11-10",
+  "preco": 854,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-06",
       "preco": 809
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 854
     }
   ],
   "imagemAlt": "Yamaha C40MII",

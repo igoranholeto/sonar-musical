@@ -1,8 +1,8 @@
 {
   "nome": "Michael GM730N Les Paul",
   "meli": "https://meli.la/1R94wch",
-  "preco": 1315,
-  "precoEm": "2026-11-10",
+  "preco": 1373,
+  "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1315
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1373
     }
   ],
   "nota": 4.8,

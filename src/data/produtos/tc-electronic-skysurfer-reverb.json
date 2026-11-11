@@ -1,8 +1,8 @@
 {
   "nome": "TC Electronic Skysurfer Reverb",
   "meli": "https://meli.la/2oEPbjR",
-  "preco": 457,
-  "precoEm": "2026-11-10",
+  "preco": 478,
+  "precoEm": "2026-11-11",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 457
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 478
     }
   ],
   "imagem": "/images/produtos/tc-electronic-skysurfer-reverb.webp",

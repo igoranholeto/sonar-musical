@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha Pacifica 012",
   "meli": "https://meli.la/17iAf1U",
-  "preco": 1910,
-  "precoEm": "2026-11-10",
+  "preco": 1884,
+  "precoEm": "2026-11-11",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1910
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1884
     }
   ],
   "nota": 5,

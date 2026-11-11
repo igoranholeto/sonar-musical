@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez Mikro GSRM20",
   "meli": "https://meli.la/2FmwLuh",
-  "preco": 2008,
-  "precoEm": "2026-11-10",
+  "preco": 2102,
+  "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 2008
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2102
     }
   ],
   "imagemAlt": "Ibanez Mikro GSRM20",

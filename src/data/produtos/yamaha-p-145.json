@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha P-145 (piano digital)",
   "meli": "https://meli.la/1LskgJN",
-  "preco": 3099,
-  "precoEm": "2026-11-10",
+  "preco": 2944,
+  "precoEm": "2026-11-11",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 3099
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2944
     }
   ],
   "nota": 4.9,

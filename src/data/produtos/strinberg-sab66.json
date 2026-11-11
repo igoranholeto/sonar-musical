@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SAB66 6 cordas",
   "meli": "https://meli.la/2qowcyV",
-  "preco": 1678,
-  "precoEm": "2026-11-10",
+  "preco": 1652,
+  "precoEm": "2026-11-11",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1678
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1652
     }
   ],
   "nota": 4.9,

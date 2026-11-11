@@ -1,13 +1,17 @@
 {
   "nome": "Vogga VCA103N (38\", nylon)",
   "meli": "https://meli.la/1PmVmF5",
-  "preco": 319,
-  "precoEm": "2026-11-10",
+  "preco": 310,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 319
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 310
     }
   ],
   "nota": 4.7,

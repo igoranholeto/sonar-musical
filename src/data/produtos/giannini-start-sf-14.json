@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start SF-14",
   "meli": "https://meli.la/1DYuM6Y",
-  "preco": 569,
-  "precoEm": "2026-11-10",
+  "preco": 550,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 569
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 550
     }
   ],
   "imagem": "/images/produtos/giannini-start-sf-14.webp",

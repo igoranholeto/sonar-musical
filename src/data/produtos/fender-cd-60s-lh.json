@@ -1,8 +1,8 @@
 {
   "nome": "Fender CD-60S Canhoto",
   "meli": "https://meli.la/1AZtupz",
-  "preco": 1851,
-  "precoEm": "2026-11-10",
+  "preco": 1937,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1851
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1937
     }
   ],
   "nota": 4.8,

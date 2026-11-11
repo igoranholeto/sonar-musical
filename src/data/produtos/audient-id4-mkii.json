@@ -1,8 +1,8 @@
 {
   "nome": "Audient iD4 MkII",
   "meli": "https://meli.la/1LRg4PJ",
-  "preco": 1455,
-  "precoEm": "2026-11-10",
+  "preco": 1417,
+  "precoEm": "2026-11-11",
   "categoria": "interface",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 1455
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1417
     }
   ],
   "imagem": "/images/produtos/audient-id4-mkii.webp",

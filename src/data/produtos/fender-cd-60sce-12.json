@@ -1,8 +1,8 @@
 {
   "nome": "Fender CD-60SCE-12",
   "meli": "https://meli.la/1fbMkwW",
-  "preco": 2696,
-  "precoEm": "2026-11-10",
+  "preco": 2839,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 2696
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2839
     }
   ],
   "nota": 4.8,

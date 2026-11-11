@@ -1,8 +1,8 @@
 {
   "nome": "D'Addario EJ27N",
   "meli": "https://meli.la/2GTDLjH",
-  "preco": 51,
-  "precoEm": "2026-11-10",
+  "preco": 50,
+  "precoEm": "2026-11-11",
   "categoria": "cordas",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-09",
       "preco": 51
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 50
     }
   ],
   "imagem": "/images/produtos/daddario-ej27n.webp",

@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Precision Bass PJ",
   "meli": "https://meli.la/16ALw1L",
-  "preco": 3950,
-  "precoEm": "2026-11-10",
+  "preco": 3977,
+  "precoEm": "2026-11-11",
   "categoria": "acessorio",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 3950
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 3977
     }
   ],
   "imagem": "/images/produtos/squier-affinity-precision-bass-pj.webp",

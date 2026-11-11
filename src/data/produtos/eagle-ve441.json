@@ -1,13 +1,17 @@
 {
   "nome": "Eagle VE441",
   "meli": "https://meli.la/2gvvKc8",
-  "preco": 903,
-  "precoEm": "2026-11-10",
+  "preco": 939,
+  "precoEm": "2026-11-11",
   "categoria": "violino",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 903
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 939
     }
   ],
   "nota": 4.9,

@@ -148,9 +148,12 @@ export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = fal
             return l;
           }
           if (!citaProduto && !distintivo(v)) return l;
-          // Linha que nomeia outro produto do post e não este: o valor era erro de texto
-          // daquela linha (já houve Epiphone com o preço da Squier). Fica para revisão.
-          if (!citaProduto && citados.some((o) => o !== id && termosDe(o).some((t) => l.toLowerCase().includes(t.toLowerCase())))) {
+          // Linha de tabela (uma linha = um produto) que nomeia outro produto do post e não
+          // este: o valor era erro daquela linha (já houve Epiphone com o preço da Squier).
+          // Fica para revisão. Em prosa não vale: o texto cita produtos por apelido curto
+          // ("Debut", "Afterglow") e a regra virava falso alarme.
+          const linhaTabela = /celulas:\s*\[/.test(l) || /^\s*\|/.test(l);
+          if (!citaProduto && linhaTabela && citados.some((o) => o !== id && termosDe(o).some((t) => l.toLowerCase().includes(t.toLowerCase())))) {
             relatorio.ambiguos.push(`${slug}:${i + 1} ${velho} de ${id} está numa linha de outro produto (atual ${novo})`);
             return l;
           }

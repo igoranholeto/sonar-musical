@@ -1,13 +1,17 @@
 {
   "nome": "Viola Caipira Rozini Ponteio RV151 Eletroacústica",
   "meli": "https://meli.la/2abRjEK",
-  "preco": 1709,
-  "precoEm": "2026-11-10",
+  "preco": 1725,
+  "precoEm": "2026-11-11",
   "categoria": "viola",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 1709
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1725
     }
   ],
   "imagemAlt": "Viola Caipira Rozini Ponteio RV151 Eletroacústica",

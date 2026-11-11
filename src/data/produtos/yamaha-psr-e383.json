@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha PSR-E383",
   "meli": "https://meli.la/2SUjrXC",
-  "preco": 1529,
-  "precoEm": "2026-11-10",
+  "preco": 1594,
+  "precoEm": "2026-11-11",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 1529
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 1594
     }
   ],
   "nota": 4.9,

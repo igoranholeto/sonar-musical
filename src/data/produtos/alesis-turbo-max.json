@@ -1,13 +1,17 @@
 {
   "nome": "Alesis Turbo Max",
   "meli": "https://meli.la/23W2hRv",
-  "preco": 2282,
-  "precoEm": "2026-11-10",
+  "preco": 2346,
+  "precoEm": "2026-11-11",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 2282
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 2346
     }
   ],
   "imagemAlt": "Alesis Turbo Max",

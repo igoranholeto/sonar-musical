@@ -1,13 +1,17 @@
 {
   "nome": "Giannini Start N-14 Canhoto",
   "meli": "https://meli.la/2yx4xEY",
-  "preco": 599,
-  "precoEm": "2026-11-10",
+  "preco": 580,
+  "precoEm": "2026-11-11",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 599
+    },
+    {
+      "data": "2026-11-11",
+      "preco": 580
     }
   ],
   "nota": 4.8,
