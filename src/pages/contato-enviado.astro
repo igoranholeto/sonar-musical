@@ -1,0 +1,20 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Mensagem enviada | Sonar Musical"
+  description="Recebemos sua mensagem. Respondemos pelo e-mail que você informou."
+  noindex
+>
+  <div class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <h1 class="text-4xl font-black mb-4">Mensagem enviada!</h1>
+    <p class="text-muted text-lg mb-10">
+      Obrigado por escrever. Lemos todas as mensagens e respondemos pelo e-mail que você informou, normalmente em poucos dias.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="/blog/" class="px-6 py-3 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors">Ver os guias</a>
+      <a href="/" class="px-6 py-3 border border-border font-semibold rounded-xl hover:border-brand transition-colors">Voltar ao início</a>
+    </div>
+  </div>
+</BaseLayout>
