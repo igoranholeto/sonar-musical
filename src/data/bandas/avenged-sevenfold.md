@@ -38,9 +38,9 @@ integrantes:
           urlAfiliado: https://meli.la/1aQZbAz
         low:
           nome: Shure SM58
-          preco: ~R$ 829
+          preco: ~R$ 907
           obs: Dinâmico robusto e testado em palco por uma fração do preço.
-          urlAfiliado: https://meli.la/1u1GNrd
+          urlAfiliado: https://meli.la/1Hc7CqW
       - tipo: Monitoração
         original:
           nome: In-ear Shure PSM 300

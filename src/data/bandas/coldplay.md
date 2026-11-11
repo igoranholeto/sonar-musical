@@ -68,10 +68,10 @@ integrantes:
           similar: "Yamaha CP88"
           urlAfiliado: https://meli.la/1EXczq4
         low:
-          nome: Yamaha P-125
-          preco: ~R$ 4.000
+          nome: Yamaha P-145
+          preco: ~R$ 2.944
           obs: Toque parecido em formato digital portátil.
-          urlAfiliado: https://meli.la/2ESeLVm
+          urlAfiliado: https://meli.la/1LskgJN
       - tipo: Violão
         original:
           nome: Martin Custom Acoustic
@@ -131,9 +131,9 @@ integrantes:
           urlAfiliado: https://meli.la/2pEpHX2
         low:
           nome: Pearl Roadshow
-          preco: ~R$ 5.566
+          preco: ~R$ 5.469
           obs: Kit completo de entrada com bom acabamento.
-          urlAfiliado: https://meli.la/14RB3E1
+          urlAfiliado: https://meli.la/11MM4fN
 albuns:
   - nome: Parachutes
     ano: 2000
