@@ -1,13 +1,17 @@
 {
   "nome": "Shure SM58",
-  "meli": "https://meli.la/1u1GNrd",
-  "preco": 1349,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/22cgL9z",
+  "preco": 959,
+  "precoEm": "2026-11-12",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1349
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 959
     }
   ],
   "imagemAlt": "Shure SM58",

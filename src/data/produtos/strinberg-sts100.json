@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg STS100",
   "meli": "https://meli.la/2iXzRWa",
-  "preco": 795,
-  "precoEm": "2026-11-11",
+  "preco": 749,
+  "precoEm": "2026-11-12",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-11",
       "preco": 795
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 749
     }
   ],
   "imagem": "/images/produtos/strinberg-sts100.webp",
@@ -29,7 +33,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$76,85",
+    "parcelas": "10x R$74,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strinberg-sts100-stratocaster-tilia-cherry-burst/p/MLB17453032"
   },

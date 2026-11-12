@@ -1,8 +1,8 @@
 {
   "nome": "Fender California Redondo-CE",
-  "meli": "https://meli.la/2FaZB7B",
-  "preco": 1620,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/2xDewfx",
+  "preco": 2074,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 1620
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 2074
     }
   ],
   "nota": 4.8,
@@ -23,10 +27,8 @@
   "imagemAlt": "Fender California Redondo-CE",
   "imagem": "/images/produtos/fender-redondo-ce.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$155,74",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/violao-fender-california-debut-redondo-ce-0974010521-natural/p/MLB50744772"
   },
   "ficha": [

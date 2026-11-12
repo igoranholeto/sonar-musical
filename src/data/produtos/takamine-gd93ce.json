@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GD93CE",
   "meli": "https://meli.la/1tMPDdj",
-  "preco": 4455,
-  "precoEm": "2026-11-11",
+  "preco": 4799,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-11",
       "preco": 4455
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 4799
     }
   ],
   "nota": 4.8,
@@ -29,9 +33,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 7499,
-    "off": 40,
-    "parcelas": "12x R$428,20",
+    "antes": 5499,
+    "off": 12,
+    "parcelas": "10x R$479,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-takamine-gd93ce-n-tk-40d-g-series-folk-eletroacustico-natural-gloss-com-cutaway/p/MLB15304557"
   },

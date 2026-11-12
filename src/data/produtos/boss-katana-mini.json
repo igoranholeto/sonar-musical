@@ -1,8 +1,8 @@
 {
   "nome": "Boss Katana Mini",
   "meli": "https://meli.la/31wZdZ4",
-  "preco": 1331,
-  "precoEm": "2026-11-11",
+  "preco": 1335,
+  "precoEm": "2026-11-12",
   "categoria": "amplificador",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-05",
       "preco": 1331
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1335
     }
   ],
   "imagem": "/images/produtos/boss-katana-mini.webp",
@@ -31,7 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$133,10 sem juros",
+    "parcelas": "12x R$129,65",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-para-guitarra-katana-mini-boss-cor-preto/p/MLB26038511"
   },

@@ -1,13 +1,17 @@
 {
   "nome": "Meteoro Nitrous Drive 15",
   "meli": "https://meli.la/2yvCmDd",
-  "preco": 899,
-  "precoEm": "2026-11-11",
+  "preco": 900,
+  "precoEm": "2026-11-12",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 899
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 900
     }
   ],
   "imagem": "/images/produtos/meteoro-nitrous-drive-15.webp",
@@ -15,9 +19,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 927,
-    "off": 3,
-    "parcelas": "10x R$89,92 sem juros",
+    "parcelas": "10x R$90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-nitrous-drive-15-transistor-para-guitarra-de-15w-cor-preto/p/MLB15142860"
   },

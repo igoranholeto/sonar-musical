@@ -1,22 +1,26 @@
 {
   "nome": "Groove Drums EDG100",
   "meli": "https://meli.la/2VVKqzv",
-  "preco": 1962,
-  "precoEm": "2026-11-11",
+  "preco": 1889,
+  "precoEm": "2026-11-12",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1962
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1889
     }
   ],
   "imagemAlt": "Groove Drums EDG100",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3559,
-    "off": 44,
-    "parcelas": "12x R$188,68",
+    "antes": 3737,
+    "off": 49,
+    "parcelas": "10x R$188,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-completa-groove-drums-edg100-midi-usb-7-pecas-4-pads-3-pratos-profissional-e-banco-e-fone-de-ouvido-cor-preto/p/MLB49121880"
   },

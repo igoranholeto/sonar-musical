@@ -1,8 +1,8 @@
 {
   "nome": "Semi case Spring SP-FK (folk)",
   "meli": "https://meli.la/2naqnZQ",
-  "preco": 392,
-  "precoEm": "2026-11-11",
+  "preco": 426,
+  "precoEm": "2026-11-12",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-11",
       "preco": 392
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 426
     }
   ],
   "nota": 4.8,
@@ -21,9 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 426,
-    "off": 8,
-    "parcelas": "7x R$56 sem juros",
+    "parcelas": "8x R$53,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/semi-case-para-violao-folk-spring-sp-fk-preto/p/MLB64696498"
   },

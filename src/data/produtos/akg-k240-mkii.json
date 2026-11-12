@@ -1,20 +1,24 @@
 {
   "nome": "AKG K240 MKII",
   "meli": "https://meli.la/2D3kif5",
-  "preco": 419,
-  "precoEm": "2026-11-11",
+  "preco": 413,
+  "precoEm": "2026-11-12",
   "categoria": "fone",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 419
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 413
     }
   ],
   "imagemAlt": "AKG K240 MKII",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$40,49",
+    "parcelas": "12x R$39,91",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-akg-k240-mkii-preto/p/MLB6370537"
   },

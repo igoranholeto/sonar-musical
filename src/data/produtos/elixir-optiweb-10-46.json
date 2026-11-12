@@ -1,8 +1,8 @@
 {
   "nome": "Elixir Optiweb 10–46",
   "meli": "https://meli.la/1ggdyxw",
-  "preco": 129,
-  "precoEm": "2026-11-11",
+  "preco": 148,
+  "precoEm": "2026-11-12",
   "categoria": "cordas",
   "imagem": "/images/produtos/elixir-optiweb-10-46.webp",
   "imagemAlt": "Elixir Optiweb 10–46",
@@ -22,13 +22,17 @@
     {
       "data": "2026-11-11",
       "preco": 129
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 148
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 218,
-    "off": 40,
+    "off": 32,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-elixir-cordas-010-light-optiweb-guitarra/up/MLBU1411576526"
   },

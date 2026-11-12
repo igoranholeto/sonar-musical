@@ -1,8 +1,8 @@
 {
   "nome": "Viola Caipira Rozini Ponteio RV151 Eletroacústica",
-  "meli": "https://meli.la/2abRjEK",
-  "preco": 1725,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/25FTafg",
+  "preco": 1595,
+  "precoEm": "2026-11-12",
   "categoria": "viola",
   "historico": [
     {
@@ -12,17 +12,17 @@
     {
       "data": "2026-11-11",
       "preco": 1725
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1595
     }
   ],
   "imagemAlt": "Viola Caipira Rozini Ponteio RV151 Eletroacústica",
   "imagem": "/images/produtos/rozini-rv151-eletroacustica.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 1816,
-    "off": 5,
-    "parcelas": "12x R$165,89",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/viola-caipira-eletroacustica-rozini-ponteio-ativa-rv151-natural-fosca-com-equalizador-gc-2-e-afinador-bag-groover/p/MLB74869586"
   },
   "ficha": [

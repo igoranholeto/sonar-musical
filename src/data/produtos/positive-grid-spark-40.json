@@ -1,13 +1,17 @@
 {
   "nome": "Positive Grid Spark 40",
-  "meli": "https://meli.la/18FE34j",
-  "preco": 3452,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/1mdc1mJ",
+  "preco": 4103,
+  "precoEm": "2026-11-12",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 3452
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 4103
     }
   ],
   "nota": 5,
@@ -15,12 +19,8 @@
   "imagemAlt": "Positive Grid Spark 40",
   "imagem": "/images/produtos/positive-grid-spark-40.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 4199,
-    "off": 17,
-    "parcelas": "10x R$345,20 sem juros",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-positive-grid-spark-40-preto-original/up/MLBU3416468692"
   },
   "ficha": [

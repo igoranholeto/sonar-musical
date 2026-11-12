@@ -1,8 +1,8 @@
 {
   "nome": "Giannini NR 1/2",
-  "meli": "https://meli.la/2PZjmiF",
-  "preco": 441,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/1e38Ga4",
+  "preco": 389,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
@@ -16,16 +16,17 @@
     {
       "data": "2026-11-11",
       "preco": 441
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 389
     }
   ],
   "imagem": "/images/produtos/giannini-nr-1-2.webp",
   "imagemAlt": "Giannini NR 1/2",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 479,
-    "off": 8,
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-infantil-giannini-12-nr-pkg-afinador-palhet/up/MLBU3165590009"
   },
   "ficha": [

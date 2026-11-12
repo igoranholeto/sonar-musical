@@ -1,13 +1,17 @@
 {
   "nome": "Rolim Orquestra Profissional 4/4 Envelhecido",
   "meli": "https://meli.la/2aJTHSz",
-  "preco": 3297.03,
-  "precoEm": "2026-11-11",
+  "preco": 3399,
+  "precoEm": "2026-11-12",
   "categoria": "violino",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 3297.03
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 3399
     }
   ],
   "imagemAlt": "Rolim Orquestra Profissional 4/4 Envelhecido",
@@ -15,9 +19,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3399,
-    "off": 3,
-    "parcelas": "10x R$329,70 sem juros",
+    "parcelas": "10x R$339,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-acustico-44-rolim-orquestra-profissional-envelhecido-com-arco-e-estojo/p/MLB51870860"
   },

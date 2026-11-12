@@ -1,8 +1,8 @@
 {
   "nome": "Viola Caipira Strinberg VS25E",
   "meli": "https://meli.la/2ZySxV2",
-  "preco": 895,
-  "precoEm": "2026-11-11",
+  "preco": 868,
+  "precoEm": "2026-11-12",
   "categoria": "viola",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 895
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 868
     }
   ],
   "nota": 4.9,
@@ -21,7 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$86,55",
+    "antes": 1090,
+    "off": 20,
+    "parcelas": "10x R$86,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/viola-caipira-eletroacustica-strinberg-vs25e-mahogany/p/MLB32185499"
   },

@@ -1,13 +1,17 @@
 {
   "nome": "M-Vave SMK-25",
   "meli": "https://meli.la/1kxebkh",
-  "preco": 270,
-  "precoEm": "2026-11-11",
+  "preco": 265,
+  "precoEm": "2026-11-12",
   "categoria": "controlador",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 270
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 265
     }
   ],
   "imagemAlt": "M-Vave SMK-25",
@@ -15,8 +19,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 430,
-    "off": 37,
-    "parcelas": "12x R$26,38",
+    "off": 38,
+    "parcelas": "12x R$25,92",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-midi-m-vave-smk-25-25-teclas-8-pads-bluetooth/p/MLB37833065"
   },

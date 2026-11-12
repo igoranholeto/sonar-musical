@@ -1,8 +1,8 @@
 {
   "nome": "Condor RX10",
-  "meli": "https://meli.la/2bwnti7",
-  "preco": 849,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/2x2JnGo",
+  "preco": 797,
+  "precoEm": "2026-11-12",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,15 +12,17 @@
     {
       "data": "2026-11-10",
       "preco": 849
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 797
     }
   ],
   "imagem": "/images/produtos/condor-rx10.webp",
   "imagemAlt": "Condor RX10",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$84,90 sem juros",
-    "freteGratis": true,
+    "status": "pausado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-condor-strato-rx10-gdn-dourada-metalica/up/MLBU3841011274"
   },
   "ficha": [
