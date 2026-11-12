@@ -1,8 +1,8 @@
 {
   "nome": "Kokko Mini Overdrive FOD3",
   "meli": "https://meli.la/2p3YVqe",
-  "preco": 222,
-  "precoEm": "2026-11-11",
+  "preco": 216,
+  "precoEm": "2026-11-12",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 222
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 216
     }
   ],
   "imagem": "/images/produtos/kokko-mini-overdrive-fod3.webp",
@@ -23,9 +27,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 247,
-    "off": 9,
-    "parcelas": "6x R$37 sem juros",
+    "antes": 240,
+    "off": 10,
+    "parcelas": "12x R$21,37",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeitos-kokko-mini-overdrive-fod3-verde-para-guitarra-e-baixo/p/MLB17374679"
   },

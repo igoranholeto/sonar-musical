@@ -1,13 +1,17 @@
 {
   "nome": "Banco de bateria Don Caprini TR25",
   "meli": "https://meli.la/1Bbe759",
-  "preco": 145,
-  "precoEm": "2026-11-11",
+  "preco": 155,
+  "precoEm": "2026-11-12",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 145
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 155
     }
   ],
   "imagemAlt": "Banco de bateria Don Caprini TR25",
@@ -15,8 +19,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 267,
-    "off": 45,
-    "parcelas": "4x R$36,25 sem juros",
+    "off": 41,
+    "parcelas": "5x R$31,01 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/banco-de-bateria-don-caprini-tr25-cinza-escuro-3-pes-altura-ajustavel-60cm/p/MLB63081372"
   },

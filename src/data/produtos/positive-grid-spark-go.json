@@ -1,13 +1,17 @@
 {
   "nome": "Positive Grid Spark GO",
   "meli": "https://meli.la/1fq2ZBt",
-  "preco": 2118,
-  "precoEm": "2026-11-11",
+  "preco": 2026,
+  "precoEm": "2026-11-12",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-06",
       "preco": 2118
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 2026
     }
   ],
   "nota": 5,
@@ -17,9 +21,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2299,
+    "antes": 2199,
     "off": 7,
-    "parcelas": "10x R$211,85 sem juros",
+    "parcelas": "12x R$194,77",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-positive-grid-spark-go-bluetooth-5w-para-guitarra-preto/p/MLB45024117"
   },

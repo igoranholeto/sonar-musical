@@ -1,20 +1,24 @@
 {
   "nome": "Yamaha PSR-E283 (kit com suporte)",
   "meli": "https://meli.la/15Lpnjb",
-  "preco": 1457,
-  "precoEm": "2026-11-11",
+  "preco": 1448,
+  "precoEm": "2026-11-12",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1457
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1448
     }
   ],
   "imagemAlt": "Yamaha PSR-E283 (kit com suporte)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$145,70 sem juros",
+    "parcelas": "10x R$144,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-teclado-yamaha-61-teclas-psr-e283-com-suporte-em-x-cor-preto/p/MLB37718742"
   },

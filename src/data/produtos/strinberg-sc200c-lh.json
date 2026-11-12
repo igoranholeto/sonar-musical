@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SC200C LH Nylon Canhoto",
   "meli": "https://meli.la/2qeph4J",
-  "preco": 999,
-  "precoEm": "2026-11-11",
+  "preco": 1159,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 999
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1159
     }
   ],
   "nota": 5,
@@ -25,7 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$99,90 sem juros",
+    "parcelas": "10x R$115,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-canhoto-strinberg-sc200c-lh-nylon-natural-fosco/p/MLB38389680"
   },

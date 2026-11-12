@@ -1,8 +1,8 @@
 {
   "nome": "D'Addario EJ16 Phosphor Bronze .012",
   "meli": "https://meli.la/1UhPcEy",
-  "preco": 74,
-  "precoEm": "2026-11-11",
+  "preco": 78,
+  "precoEm": "2026-11-12",
   "categoria": "cordas",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 74
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 78
     }
   ],
   "imagem": "/images/produtos/daddario-ej16-phosphor-bronze-012.webp",
@@ -23,7 +27,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 78,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-aco-012-daddario-phosphor-bronze-ej16/p/MLB21714846"
   },

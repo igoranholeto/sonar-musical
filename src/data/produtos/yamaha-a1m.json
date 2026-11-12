@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha A1M",
-  "meli": "https://meli.la/1owcRQt",
-  "preco": 4148,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/1TtG6Yo",
+  "preco": 4649,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 4148
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 4649
     }
   ],
   "nota": 5,
@@ -15,12 +19,8 @@
   "imagemAlt": "Yamaha A1M",
   "imagem": "/images/produtos/yamaha-a1m.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 4799,
-    "off": 13,
-    "parcelas": "12x R$398,79",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-eletrico-yamaha-a1m-dreadnought-para-destros-vintage-natural/p/MLB14203233"
   },
   "ficha": [

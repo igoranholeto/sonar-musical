@@ -1,13 +1,17 @@
 {
   "nome": "Casio Casiotone CT-S100",
   "meli": "https://meli.la/2rdoX1N",
-  "preco": 789,
-  "precoEm": "2026-11-11",
+  "preco": 741,
+  "precoEm": "2026-11-12",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 789
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 741
     }
   ],
   "nota": 4.9,
@@ -18,8 +22,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 950,
-    "off": 16,
-    "parcelas": "10x R$78,89 sem juros",
+    "off": 22,
+    "parcelas": "10x R$74,09 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-casiotone-ct-s100-61-teclas-preto/p/MLB16109682"
   },

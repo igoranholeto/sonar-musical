@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Elemental Delay",
   "meli": "https://meli.la/1a6gmzC",
-  "preco": 162,
-  "precoEm": "2026-11-11",
+  "preco": 168,
+  "precoEm": "2026-11-12",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 162
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 168
     }
   ],
   "imagem": "/images/produtos/m-vave-elemental-delay.webp",
@@ -20,7 +24,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 200,
-    "off": 19,
+    "off": 16,
+    "parcelas": "12x R$16,60",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-delay-m-vave-elemental-9-tipos-true-bypass-violeta-escuro/p/MLB51448738"
   },

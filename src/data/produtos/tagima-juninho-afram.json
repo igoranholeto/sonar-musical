@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Juninho Afram",
   "meli": "https://meli.la/1GbbMc9",
-  "preco": 997,
-  "precoEm": "2026-11-11",
+  "preco": 999,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 997
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 999
     }
   ],
   "imagem": "/images/produtos/tagima-juninho-afram.webp",
@@ -23,9 +27,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1400,
-    "off": 28,
-    "parcelas": "12x R$96,78",
+    "antes": 1990,
+    "off": 49,
+    "parcelas": "10x R$99,88 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-juninho-afram-fosco-folk-cutaway-eq-acustica-aco/p/MLB44281318"
   },

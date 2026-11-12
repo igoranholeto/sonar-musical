@@ -1,13 +1,17 @@
 {
   "nome": "Suporte de teclado X Don Caprini",
   "meli": "https://meli.la/1wyWuWE",
-  "preco": 105,
-  "precoEm": "2026-11-11",
+  "preco": 104,
+  "precoEm": "2026-11-12",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 105
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 104
     }
   ],
   "imagemAlt": "Suporte de teclado X Don Caprini",
@@ -16,7 +20,7 @@
     "desde": "2026-11-11",
     "antes": 199,
     "off": 47,
-    "parcelas": "4x R$26,25 sem juros",
+    "parcelas": "4x R$26 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-estante-pedestal-x-para-teclado-piano-duplo-musical-reforcado-don-caprini-ajustavel-dobravel-com-apoios-emborrachados-25-kg/p/MLB79783147"
   },

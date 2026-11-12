@@ -1,22 +1,24 @@
 {
   "nome": "Yamaha P-45 (piano digital)",
   "meli": "https://meli.la/2Xg85kN",
-  "preco": 2089,
-  "precoEm": "2026-11-11",
+  "preco": 2311,
+  "precoEm": "2026-11-12",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2089
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 2311
     }
   ],
   "imagemAlt": "Yamaha P-45 (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4499,
-    "off": 53,
-    "parcelas": "12x R$200,79",
+    "parcelas": "10x R$231,10 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-p-45-preto-yamaha-p45-com-fonte/p/MLB26918237"
   },

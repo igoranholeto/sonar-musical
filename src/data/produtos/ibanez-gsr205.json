@@ -1,13 +1,17 @@
 {
   "nome": "Ibanez GSR205 5 cordas",
   "meli": "https://meli.la/1skRJDy",
-  "preco": 2393,
-  "precoEm": "2026-11-11",
+  "preco": 2599,
+  "precoEm": "2026-11-12",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 2393
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 2599
     }
   ],
   "nota": 4.8,
@@ -18,8 +22,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 5837,
-    "off": 59,
-    "parcelas": "12x R$230,02",
+    "off": 55,
+    "parcelas": "12x R$249,81",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-ibanez-5-cordas-gsr-205b/p/MLB26113260"
   },

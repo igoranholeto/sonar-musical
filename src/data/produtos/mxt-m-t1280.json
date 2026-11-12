@@ -1,21 +1,24 @@
 {
   "nome": "MXT M-T1280",
   "meli": "https://meli.la/1TFyWWp",
-  "preco": 288,
-  "precoEm": "2026-11-11",
+  "preco": 369,
+  "precoEm": "2026-11-12",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 288
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 369
     }
   ],
   "imagemAlt": "MXT M-T1280",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 303,
-    "off": 5,
+    "parcelas": "12x R$36,10",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-mxt-m-t1280-61-teclas-com-300-ritmos-e-metronomo/p/MLB22517218"
   },

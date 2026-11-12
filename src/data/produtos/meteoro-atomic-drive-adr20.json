@@ -1,13 +1,17 @@
 {
   "nome": "Meteoro Atomic Drive ADR20",
   "meli": "https://meli.la/1dd3ANe",
-  "preco": 1166,
-  "precoEm": "2026-11-11",
+  "preco": 1228,
+  "precoEm": "2026-11-12",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1166
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1228
     }
   ],
   "imagem": "/images/produtos/meteoro-atomic-drive-adr20.webp",
@@ -15,9 +19,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1228,
-    "off": 5,
-    "parcelas": "10x R$116,66 sem juros",
+    "parcelas": "10x R$122,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-atomic-drive-adr-20w-rms-reverb/p/MLB35050342"
   },

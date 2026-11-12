@@ -1,22 +1,26 @@
 {
   "nome": "Yamaha Revstar RSS20",
   "meli": "https://meli.la/28fDHnU",
-  "preco": 5718,
-  "precoEm": "2026-11-11",
+  "preco": 5877,
+  "precoEm": "2026-11-12",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 5718
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 5877
     }
   ],
   "imagemAlt": "Yamaha Revstar RSS20",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 7598,
-    "off": 24,
-    "parcelas": "12x R$549,60",
+    "antes": 7899,
+    "off": 25,
+    "parcelas": "10x R$587,72 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-revstar-standard-rss20vw-de-bordomogno-de-camara-2022-vintage-white-poliuretano-brilhante-com-diapasao-de-pau-rosa/p/MLB21286311"
   },

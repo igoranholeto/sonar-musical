@@ -1,20 +1,24 @@
 {
   "nome": "Fender Standard Telecaster",
   "meli": "https://meli.la/2Tpd1Nf",
-  "preco": 6313,
-  "precoEm": "2026-11-11",
+  "preco": 6399,
+  "precoEm": "2026-11-12",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 6313
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 6399
     }
   ],
   "imagemAlt": "Fender Standard Telecaster",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$631,30 sem juros",
+    "parcelas": "10x R$639,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-standard-telecaster-e-mn-bpg-btb-amarela/p/MLB47298027"
   },

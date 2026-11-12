@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg JBS40 Jazz Bass",
   "meli": "https://meli.la/2PmSk7v",
-  "preco": 982,
-  "precoEm": "2026-11-11",
+  "preco": 1044,
+  "precoEm": "2026-11-12",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 982
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 1044
     }
   ],
   "nota": 4.8,
@@ -21,7 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$95,33",
+    "parcelas": "10x R$104,46 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-jazz-bass-strinberg-jbs40bk-4-cordas-passivo/p/MLB22939675"
   },

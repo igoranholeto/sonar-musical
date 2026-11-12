@@ -1,13 +1,17 @@
 {
   "nome": "Korg PitchClip 2 (PC-2)",
   "meli": "https://meli.la/1v5nbuE",
-  "preco": 118,
-  "precoEm": "2026-11-11",
+  "preco": 130,
+  "precoEm": "2026-11-12",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 118
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 130
     }
   ],
   "nota": 4.8,
@@ -17,8 +21,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 130,
-    "off": 9,
+    "parcelas": "4x R$32,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/afinador-korg-clipe-cromatico-guitarra-baixo-pitchclip2-pc-2/p/MLB73817276"
   },

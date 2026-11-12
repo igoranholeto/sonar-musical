@@ -1,8 +1,8 @@
 {
   "nome": "Memphis AC-39 Nylon",
-  "meli": "https://meli.la/1PiYpLo",
-  "preco": 443.65,
-  "precoEm": "2026-11-11",
+  "meli": "https://meli.la/2R7MGku",
+  "preco": 521,
+  "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 443.65
+    },
+    {
+      "data": "2026-11-12",
+      "preco": 521
     }
   ],
   "nota": 4.7,
@@ -23,12 +27,8 @@
   "imagemAlt": "Memphis AC-39 Nylon",
   "imagem": "/images/produtos/memphis-ac-39.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 535,
-    "off": 17,
-    "parcelas": "12x R$42,90",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-12",
     "catalogo": "https://www.mercadolivre.com.br/violao-tagima-memphis-ac-39-para-destros-cor-natural/p/MLB16056374"
   },
   "ficha": [
