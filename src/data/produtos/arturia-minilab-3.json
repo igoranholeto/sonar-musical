@@ -1,0 +1,144 @@
+{
+  "nome": "Arturia MiniLab 3",
+  "meli": "https://meli.la/28HgmGK",
+  "preco": 940,
+  "precoEm": "2026-11-12",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 940
+    }
+  ],
+  "imagemAlt": "Arturia MiniLab 3",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB22433021"
+  },
+  "nota": 4.9,
+  "avaliacoes": 630,
+  "imagem": "/images/produtos/arturia-minilab-3.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Arturia"
+    ],
+    [
+      "Modelo",
+      "MINILAB V3 BLACK"
+    ],
+    [
+      "Quantidade de teclas",
+      "25"
+    ],
+    [
+      "Modelo detalhado",
+      "Arturia Minilab 3 Black"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "Teclado"
+    ],
+    [
+      "Quantidade de pads",
+      "8"
+    ],
+    [
+      "Quantidade de faders",
+      "4"
+    ],
+    [
+      "Quantidade de botões",
+      "8"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Com roda de pitch e modulação",
+      "Sim"
+    ],
+    [
+      "Com botões de mudança de oitava",
+      "Sim"
+    ],
+    [
+      "Com botões DAW",
+      "Sim"
+    ],
+    [
+      "Com modo sequenciador",
+      "Sim"
+    ],
+    [
+      "Com sensibilidade",
+      "Sim"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ],
+    [
+      "Com aftertouch",
+      "Não"
+    ],
+    [
+      "Tipo de aftertouch",
+      "Não"
+    ],
+    [
+      "Com retroiluminação",
+      "Sim"
+    ],
+    [
+      "Com arpejador",
+      "Sim"
+    ],
+    [
+      "Software incluídos",
+      "Ableton Live Lite"
+    ],
+    [
+      "Dispositivos compatíveis",
+      "iPad"
+    ],
+    [
+      "Sistemas operacionais compatíveis",
+      "Android, Windows, iOS, macOS"
+    ],
+    [
+      "Quantidade de terminais de entrada/saída",
+      "3"
+    ],
+    [
+      "Peças incluídas",
+      "Cabo USB"
+    ],
+    [
+      "Peso das teclas",
+      "Sem peso"
+    ],
+    [
+      "Tipo de tela",
+      "LCD"
+    ],
+    [
+      "Comprimento",
+      "35 cm"
+    ],
+    [
+      "Largura",
+      "22 cm"
+    ],
+    [
+      "Altura",
+      "5 cm"
+    ],
+    [
+      "Peso",
+      "1,5 kg"
+    ]
+  ]
+}

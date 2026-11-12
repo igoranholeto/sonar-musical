@@ -1,0 +1,128 @@
+{
+  "nome": "Fone Samson SR850",
+  "meli": "https://meli.la/2ZuYRao",
+  "preco": 448,
+  "precoEm": "2026-11-12",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 448
+    }
+  ],
+  "imagemAlt": "Fone Samson SR850",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB24548844"
+  },
+  "nota": 4.8,
+  "avaliacoes": 394,
+  "imagem": "/images/produtos/samson-sr850.webp",
+  "ficha": [
+    [
+      "Fabricante",
+      "Samson"
+    ],
+    [
+      "Marca",
+      "Samson"
+    ],
+    [
+      "Linha",
+      "SR"
+    ],
+    [
+      "Modelo",
+      "SR850"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Modelo detalhado",
+      "SR850"
+    ],
+    [
+      "Com microfone",
+      "Não"
+    ],
+    [
+      "Com modo mãos livres",
+      "Não"
+    ],
+    [
+      "Unidade de diafragma",
+      "5 cm"
+    ],
+    [
+      "Resposta em frequência",
+      "10 Hz - 30000 Hz"
+    ],
+    [
+      "Sensibilidade",
+      "98 dB"
+    ],
+    [
+      "Com cancelamento de ruído",
+      "Sim"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "Formato do fone de ouvido",
+      "Over-ear"
+    ],
+    [
+      "É monaural",
+      "Não"
+    ],
+    [
+      "Com luz LED",
+      "Não"
+    ],
+    [
+      "É sem fio",
+      "Não"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "Com tecnologia TWS",
+      "Não"
+    ],
+    [
+      "Tipos de conectores",
+      "Mini jack"
+    ],
+    [
+      "Comprimento do cabo",
+      "2,5 m"
+    ],
+    [
+      "Com cabo desmontável",
+      "Não"
+    ],
+    [
+      "Usos adequados",
+      "Profissional, Entretenimento"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador"
+    ],
+    [
+      "Inclui estojo de carregamento",
+      "Não"
+    ],
+    [
+      "É resistente à água",
+      "Não"
+    ]
+  ]
+}

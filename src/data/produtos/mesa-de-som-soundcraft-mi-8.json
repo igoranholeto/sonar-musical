@@ -1,0 +1,100 @@
+{
+  "nome": "Mesa de som Soundcraft Mi-8",
+  "meli": "https://meli.la/2S6XhU1",
+  "preco": 940,
+  "precoEm": "2026-11-12",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 940
+    }
+  ],
+  "imagemAlt": "Mesa de som Soundcraft Mi-8",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB44642558"
+  },
+  "nota": 4.9,
+  "avaliacoes": 195,
+  "imagem": "/images/produtos/mesa-de-som-soundcraft-mi-8.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Soundcraft"
+    ],
+    [
+      "Linha",
+      "Mi Series"
+    ],
+    [
+      "Modelo",
+      "Mi-8"
+    ],
+    [
+      "Peso",
+      "4,5 kg"
+    ],
+    [
+      "Tipo de console",
+      "Analógica"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Não"
+    ],
+    [
+      "Com efeitos",
+      "Sim"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Reverb, Delay, Chorus"
+    ],
+    [
+      "Conectores",
+      "P10, USB, USB C, XLR"
+    ],
+    [
+      "Quantidade de canais",
+      "8"
+    ],
+    [
+      "Conectividade",
+      "Bluetooth"
+    ],
+    [
+      "Fabricante",
+      "Harman"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo de alimentação"
+    ],
+    [
+      "Com equalizador",
+      "Sim"
+    ],
+    [
+      "Quantidade de buses",
+      "2"
+    ],
+    [
+      "Quantidade de efeitos",
+      "2"
+    ],
+    [
+      "Quantidade de canais estéreos",
+      "2"
+    ]
+  ]
+}

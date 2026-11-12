@@ -1,0 +1,48 @@
+{
+  "nome": "Squier Classic Vibe '70s Jazz Bass",
+  "meli": "https://meli.la/279bekP",
+  "preco": 5197,
+  "precoEm": "2026-11-12",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 5197
+    }
+  ],
+  "imagemAlt": "Squier Classic Vibe '70s Jazz Bass",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB21747951"
+  },
+  "nota": 4.7,
+  "avaliacoes": 3,
+  "imagem": "/images/produtos/squier-cv-70s-jazz-bass.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Squier"
+    ],
+    [
+      "Linha",
+      "Classic Vibe"
+    ],
+    [
+      "Modelo",
+      "Classic Vibe"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ]
+  ]
+}

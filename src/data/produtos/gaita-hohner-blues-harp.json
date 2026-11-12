@@ -1,0 +1,60 @@
+{
+  "nome": "Gaita Hohner Blues Harp 532/20 (Dó)",
+  "meli": "https://meli.la/2ns3yNW",
+  "preco": 412,
+  "precoEm": "2026-11-12",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 412
+    }
+  ],
+  "imagemAlt": "Gaita Hohner Blues Harp 532/20 (Dó)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB28682110"
+  },
+  "nota": 4.8,
+  "avaliacoes": 71,
+  "imagem": "/images/produtos/gaita-hohner-blues-harp.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Hohner"
+    ],
+    [
+      "Modelo",
+      "Blues Harp - 532/20 Ms C"
+    ],
+    [
+      "Tipo de gaita de boca",
+      "Diatônica"
+    ],
+    [
+      "Material",
+      "Aço inoxidável/Latão/Madeira"
+    ],
+    [
+      "Quantidade de furos",
+      "10"
+    ],
+    [
+      "Quantidade de oitavas",
+      "3"
+    ],
+    [
+      "Quantidade de tons",
+      "20"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ],
+    [
+      "Origem",
+      "Alemanha"
+    ]
+  ]
+}

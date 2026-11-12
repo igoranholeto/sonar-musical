@@ -1,0 +1,128 @@
+{
+  "nome": "Microfone Rode NT1 Signature Series",
+  "meli": "https://meli.la/2U1UncE",
+  "preco": 1058,
+  "precoEm": "2026-11-12",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 1058
+    }
+  ],
+  "imagemAlt": "Microfone Rode NT1 Signature Series",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB35509833"
+  },
+  "nota": 4.8,
+  "avaliacoes": 98,
+  "imagem": "/images/produtos/rode-nt1-signature.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Rode"
+    ],
+    [
+      "Linha",
+      "NT"
+    ],
+    [
+      "Modelo",
+      "NT1 SIGNATURE"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "É gamer",
+      "Não"
+    ],
+    [
+      "Modelo detalhado",
+      "NT1 SIGNATURE"
+    ],
+    [
+      "Comprimento do cabo",
+      "6 m"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "PARA ESTÚDIO DE GRAVAÇÃO"
+    ],
+    [
+      "Com alto-falantes embutidos",
+      "Não"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Acessórios incluídos",
+      "SUPORTE ALMOFADADO, FILTRO ANTI-POP REMOVÍVEL, CABO XLR DE 6 M"
+    ],
+    [
+      "Altura",
+      "19 cm"
+    ],
+    [
+      "Peso",
+      "313 g"
+    ],
+    [
+      "Formatos de microfone",
+      "Para estúdio"
+    ],
+    [
+      "Tipos de microfone",
+      "Condensador"
+    ],
+    [
+      "Padrões polares",
+      "Cardioide"
+    ],
+    [
+      "Quantidade de microfones",
+      "1"
+    ],
+    [
+      "Com luz indicadora de funcionamento",
+      "Não"
+    ],
+    [
+      "Com luz LED",
+      "Não"
+    ],
+    [
+      "Sensibilidade",
+      "32 dB"
+    ],
+    [
+      "Materiais",
+      "Metal"
+    ],
+    [
+      "Tipos de conexões",
+      "Com fio"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "XLR"
+    ],
+    [
+      "Conectores de entrada",
+      "XLR"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente doméstica"
+    ]
+  ]
+}
