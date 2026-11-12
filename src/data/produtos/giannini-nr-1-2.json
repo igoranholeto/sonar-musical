@@ -25,9 +25,13 @@
   "imagem": "/images/produtos/giannini-nr-1-2.webp",
   "imagemAlt": "Giannini NR 1/2",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-infantil-giannini-12-nr-pkg-afinador-palhet/up/MLBU3165590009"
+    "antes": 650,
+    "off": 40,
+    "parcelas": "12x R$38,05",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-30-nylon-giannini-start-nr-n-natural/up/MLBU5296486099"
   },
   "ficha": [
     [
@@ -35,26 +39,52 @@
       "Giannini"
     ],
     [
+      "Linha",
+      "Start"
+    ],
+    [
       "Modelo",
       "NR"
     ],
     [
       "Cor",
-      "Rosa"
+      "Marrom"
     ],
     [
-      "Tipo de guitarra",
-      "Acústica"
+      "Orientação da mão",
+      "Destro"
     ],
     [
-      "Material",
-      "Madeira"
+      "É eletroacústica",
+      "Não"
     ],
     [
-      "Idade máxima recomendada",
-      "7 anos"
+      "Com corte",
+      "Não"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Tamanho do corpo",
+      "1/2"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material do tampo",
+      "Linden"
+    ],
+    [
+      "É infantil",
+      "Sim"
     ]
-  ],
-  "nota": 5,
-  "avaliacoes": 1
+  ]
 }

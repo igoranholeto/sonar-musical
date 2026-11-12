@@ -1,7 +1,7 @@
 {
   "nome": "Fender California Redondo-CE",
-  "meli": "https://meli.la/2xDewfx",
-  "preco": 2074,
+  "meli": "https://meli.la/1VKE5pd",
+  "preco": 1510,
   "precoEm": "2026-11-12",
   "categoria": "violao",
   "historico": [
@@ -19,17 +19,21 @@
     },
     {
       "data": "2026-11-12",
-      "preco": 2074
+      "preco": 1510
     }
   ],
   "nota": 4.8,
-  "avaliacoes": 684,
-  "imagemAlt": "Fender California Redondo-CE",
+  "avaliacoes": 699,
+  "imagemAlt": "Violão Fender California Debut Redondo-CE preto",
   "imagem": "/images/produtos/fender-redondo-ce.webp",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/violao-fender-california-debut-redondo-ce-0974010521-natural/p/MLB50744772"
+    "antes": 1590,
+    "off": 5,
+    "parcelas": "12x R$145,21",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-fender-california-debut-redondo-ce-0974010506-black/p/MLB50080097"
   },
   "ficha": [
     [
@@ -41,12 +45,32 @@
       "Destro"
     ],
     [
+      "É ressonador",
+      "Não"
+    ],
+    [
       "Tipo de violão",
       "Eletroacústica"
     ],
     [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
       "Conectores de saída",
       "Jack"
+    ],
+    [
+      "Com corte",
+      "Sim"
+    ],
+    [
+      "Inclui capa",
+      "Não"
     ],
     [
       "Quantidade de cordas",
@@ -74,19 +98,47 @@
     ],
     [
       "Cor",
-      "Natural"
+      "Preto"
     ],
     [
       "Acabamento do corpo",
-      "Poliuretano brilhante"
+      "Brilhante"
     ],
     [
       "Forma do corpo",
       "Auditorium"
     ],
     [
-      "Recursos",
-      "corte"
+      "Material do tampo",
+      "Spruce"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Com braço desmontável",
+      "Não"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "650,24 mm"
     ]
   ]
 }

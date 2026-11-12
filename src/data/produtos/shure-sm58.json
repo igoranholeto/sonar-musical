@@ -16,50 +16,54 @@
   ],
   "imagemAlt": "Shure SM58",
   "anuncio": {
-    "status": "pausado",
-    "desde": "2026-11-11",
-    "catalogo": "https://www.mercadolivre.com.br/p/MLB24243005"
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "antes": 1558,
+    "off": 38,
+    "parcelas": "10x R$95,99 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-shure-sm58-lc-dinamico-de-mao-com-fio-preto/up/MLBU4938663631"
   },
   "ficha": [
     [
       "Marca",
-      "Shure"
+      "VISON SPECIAL TISSUE"
     ],
     [
       "Linha",
-      "SM"
+      "shure"
     ],
     [
       "Modelo",
-      "SM58-LC"
+      "SHURE SM58 LC"
     ],
     [
       "Cor",
-      "Preto"
+      "Cinza-escuro/Prateado"
+    ],
+    [
+      "É gamer",
+      "Não"
     ],
     [
       "Comprimento do cabo",
       "10 cm"
     ],
     [
-      "Usos recomendados do microfone",
-      "Para apresentações, Para vozes, Para gravações"
+      "Com alto-falantes embutidos",
+      "Não"
     ],
     [
       "Frequência mínima - Frequência máxima",
       "50 Hz - 15 kHz"
     ],
     [
-      "Acessórios incluídos",
-      "1 adaptador de soporte,Estuche"
-    ],
-    [
       "Altura",
-      "8,6 cm"
+      "16,2 cm"
     ],
     [
       "Peso",
-      "630 g"
+      "330 g"
     ],
     [
       "Formatos de microfone",
@@ -71,14 +75,34 @@
     ],
     [
       "Padrões polares",
-      "cardiode"
+      "Cardioide"
     ],
     [
       "Quantidade de microfones",
       "1"
+    ],
+    [
+      "Materiais",
+      "Metal, Aço"
+    ],
+    [
+      "Tipos de conexões",
+      "Com fio"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "XLR"
+    ],
+    [
+      "Conectores de entrada",
+      "XLR-3"
     ]
   ],
-  "nota": 4.9,
-  "avaliacoes": 2589,
+  "nota": 5,
+  "avaliacoes": 1,
   "imagem": "/images/produtos/shure-sm58.webp"
 }

@@ -15,8 +15,12 @@
   "imagemAlt": "Cort KX100",
   "imagem": "/images/produtos/cort-kx100.webp",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
+    "antes": 3199,
+    "off": 36,
+    "parcelas": "12x R$194,67",
+    "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-cort-kx-series-kx100-iron-oxide-24-trastes/p/MLB18058307"
   },
   "ficha": [

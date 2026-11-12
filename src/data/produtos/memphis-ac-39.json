@@ -24,12 +24,16 @@
   ],
   "nota": 4.7,
   "avaliacoes": 295,
-  "imagemAlt": "Memphis AC-39 Nylon",
+  "imagemAlt": "Violão Memphis AC-39 nylon rosa",
   "imagem": "/images/produtos/memphis-ac-39.webp",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-memphis-ac-39-para-destros-cor-natural/p/MLB16056374"
+    "antes": 672,
+    "off": 22,
+    "parcelas": "12x R$50,43",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-memphis-ac-39-classico-6-cordas-nylon-rosa-verniz-brilhante/p/MLB16103534"
   },
   "ficha": [
     [
@@ -46,7 +50,7 @@
     ],
     [
       "Cor",
-      "Natural"
+      "Rosa"
     ],
     [
       "Acabamento do corpo",
@@ -73,6 +77,10 @@
       "4/4"
     ],
     [
+      "Com braço desmontável",
+      "Não"
+    ],
+    [
       "Materiais do braço",
       "Linden"
     ],
@@ -82,11 +90,51 @@
     ],
     [
       "Comprimento da escala",
-      "255 mm"
+      "647,7 mm"
     ],
     [
       "Orientação da mão",
       "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Clássica"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "Com corte",
+      "Não"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Tagima"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Chhlik"
     ]
   ]
 }

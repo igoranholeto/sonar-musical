@@ -17,14 +17,19 @@
   "imagem": "/images/produtos/giannini-cobra-010.webp",
   "imagemAlt": "Giannini Cobra .010",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/encordoamento-giannini-cobra-010-p-violao-aco-geefle/up/MLBU3171568271"
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-para-violao-aco-giannini-cobra-bronze-8515-geefle-010-050/p/MLB21419345"
   },
   "ficha": [
     [
       "Marca",
       "Giannini"
+    ],
+    [
+      "Linha",
+      "Cobra"
     ],
     [
       "Modelo",
@@ -44,21 +49,17 @@
     ],
     [
       "Materiais",
-      "Aço"
+      "Bronze"
     ],
     [
       "Tensão",
-      "N|A"
+      "010"
     ],
     [
       "Notas",
       "Mi la re sol si mi"
-    ],
-    [
-      "Escala",
-      "4:4"
     ]
   ],
-  "nota": 4.9,
-  "avaliacoes": 41
+  "nota": 4.8,
+  "avaliacoes": 7165
 }

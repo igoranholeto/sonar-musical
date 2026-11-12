@@ -19,11 +19,132 @@
     }
   ],
   "nota": 4.9,
-  "avaliacoes": 496,
+  "avaliacoes": 511,
   "imagemAlt": "Yamaha APX600",
   "imagem": "/images/produtos/yamaha-apx600.webp",
   "anuncio": {
-    "status": "encerrado",
-    "desde": "2026-11-11"
-  }
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "parcelas": "10x R$239,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-apx600-para-destros-old-violin-sunburst-pau-rosa-brilhante/p/MLB14034060"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Com corte",
+      "Sim"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Equalizador, Pré-amplificador, Volume"
+    ],
+    [
+      "Acessórios incluídos",
+      "Chave Allen"
+    ],
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "APX"
+    ],
+    [
+      "Modelo",
+      "APX600"
+    ],
+    [
+      "Cor",
+      "Old violin sunburst"
+    ],
+    [
+      "Modelo detalhado",
+      "APX600OVS"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Forma do corpo",
+      "Forma APX"
+    ],
+    [
+      "Material do tampo",
+      "Spruce"
+    ],
+    [
+      "Materiais do fundo",
+      "Madeiras sonoras de origem local"
+    ],
+    [
+      "Materiais dos laterais",
+      "Madeiras tonais de origem local"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Com braço desmontável",
+      "Não"
+    ],
+    [
+      "Materiais do braço",
+      "Madeiras tonais de origem local"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ],
+    [
+      "Comprimento da escala",
+      "634 mm"
+    ]
+  ]
 }
