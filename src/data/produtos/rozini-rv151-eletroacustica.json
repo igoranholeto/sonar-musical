@@ -21,66 +21,62 @@
   "imagemAlt": "Viola Caipira Rozini Ponteio RV151 Eletroacústica",
   "imagem": "/images/produtos/rozini-rv151-eletroacustica.webp",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/viola-caipira-eletroacustica-rozini-ponteio-ativa-rv151-natural-fosca-com-equalizador-gc-2-e-afinador-bag-groover/p/MLB74869586"
+    "parcelas": "10x R$159,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/viola-caipira-ponteio-rozini-eletrica-ativa-rv151-cordas/up/MLBU3285124419"
   },
   "ficha": [
     [
-      "Material do diapasão",
-      "roxinho"
+      "Marca",
+      "Rozini"
+    ],
+    [
+      "Modelo",
+      "RV151EG"
+    ],
+    [
+      "Tipo de viola",
+      "Viola caipira elétrica"
+    ],
+    [
+      "Cor",
+      "Natural"
     ],
     [
       "Orientação da mão",
       "Destro"
     ],
     [
-      "Tipo de violão",
-      "Eletroacústica"
-    ],
-    [
-      "Conectores de saída",
-      "Jack"
+      "Acabamento",
+      "Elétrica"
     ],
     [
       "Quantidade de cordas",
       "10"
     ],
     [
-      "Material das cordas",
-      "Aço"
+      "Altura do corpo",
+      "103 cm"
     ],
     [
-      "Materiais do braço",
-      "Cedro"
+      "Comprimento do corpo",
+      "13 cm"
     ],
     [
-      "Quantidade de trastes",
-      "20"
+      "Largura do corpo",
+      "46 cm"
     ],
     [
-      "Marca",
-      "Rozini"
+      "Peso do corpo",
+      "3,38 kg"
     ],
     [
-      "Linha",
-      "estudante"
-    ],
-    [
-      "Modelo",
-      "Ponteio RV151"
-    ],
-    [
-      "Acabamento do corpo",
-      "Fosco"
-    ],
-    [
-      "Forma do corpo",
-      "Cinturada"
-    ],
-    [
-      "Itens inclusos",
-      "capa"
+      "Inclui acessórios",
+      "Sim"
     ]
-  ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1
 }

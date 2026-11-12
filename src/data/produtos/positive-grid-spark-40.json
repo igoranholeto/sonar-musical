@@ -15,13 +15,17 @@
     }
   ],
   "nota": 5,
-  "avaliacoes": 2,
-  "imagemAlt": "Positive Grid Spark 40",
+  "avaliacoes": 7,
+  "imagemAlt": "Amplificador Positive Grid Spark 40 preto e marrom",
   "imagem": "/images/produtos/positive-grid-spark-40.webp",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-positive-grid-spark-40-preto-original/up/MLBU3416468692"
+    "antes": 4559,
+    "off": 10,
+    "parcelas": "12x R$394,38",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/combo-amplificador-positive-grid-spark-40w-pretomarrom-baixo-violao/p/MLB22947997"
   },
   "ficha": [
     [
@@ -30,15 +34,11 @@
     ],
     [
       "Modelo",
-      "Amplificador Guitarra Positive Grid Spark 40 Cor Preto Original"
+      "Spark"
     ],
     [
       "Cor",
-      "Preto"
-    ],
-    [
-      "Voltagem",
-      "127/220V"
+      "Preto/Marrom"
     ],
     [
       "Peso",
@@ -46,31 +46,51 @@
     ],
     [
       "Largura x Profundidade x Altura",
-      "38 cm x 19 cm x 18 cm"
+      "35 cm x 18 cm x 19 cm"
+    ],
+    [
+      "Resposta mínima em frequência - Resposta máxima em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack 1/4\""
+    ],
+    [
+      "Conectores de saída",
+      "3,5 mm Audífonos"
     ],
     [
       "Tipo de amplificador",
-      "Amplificador de guitarra"
+      "Combo"
     ],
     [
       "Tecnologia do amplificador",
       "Transistor"
     ],
     [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
       "Instrumentos recomendados",
-      "Guitarra elétrica"
+      "Guitarra, Baixo"
+    ],
+    [
+      "Com reverb",
+      "Sim"
     ],
     [
       "Quantidade de canais",
-      "1"
+      "4"
     ],
     [
       "Potência de saída (RMS)",
       "40 W"
     ],
     [
-      "Recursos",
-      "reverb"
+      "Classe",
+      "D"
     ]
   ]
 }
