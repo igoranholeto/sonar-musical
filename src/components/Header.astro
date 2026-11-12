@@ -192,8 +192,11 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
       </a>
       <!-- Busca -->
       <a
+        id="busca-btn"
         href="/busca/"
         aria-label="Buscar no site"
+        aria-controls="busca-pop"
+        aria-expanded="false"
         aria-current={currentPath.startsWith('/busca') ? 'page' : undefined}
         class={`p-2 rounded-lg transition-colors ${
           currentPath.startsWith('/busca')
@@ -258,6 +261,39 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
       </button>
     </div>
   </nav>
+
+  <!-- Painel de busca do menu: produtos (foto, nome e preço) e guias -->
+  <div id="busca-pop" class="busca-pop" hidden>
+    <div class="max-w-6xl mx-auto px-4 flex justify-end">
+      <div class="busca-pop__painel" role="dialog" aria-label="Buscar no site">
+        <form class="busca-pop__form" action="/busca/" method="get" role="search">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8" />
+            <line x1="21" y1="21" x2="16.65" y2="16.65" />
+          </svg>
+          <label for="busca-pop-input" class="sr-only">Buscar produtos e guias</label>
+          <input
+            id="busca-pop-input"
+            type="search"
+            name="q"
+            placeholder="Buscar produto, marca ou guia..."
+            autocomplete="off"
+            enterkeyhint="search"
+            aria-controls="busca-pop-res"
+          />
+          <button type="button" class="busca-pop__fechar" data-busca-fechar aria-label="Fechar busca">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+              <line x1="18" y1="6" x2="6" y2="18" />
+              <line x1="6" y1="6" x2="18" y2="18" />
+            </svg>
+          </button>
+        </form>
+        <div id="busca-pop-res" class="busca-pop__res" aria-live="polite">
+          <p class="bp-dica">Digite o nome de um produto, uma marca ou um assunto.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Menu mobile -->
   <div
@@ -525,4 +561,103 @@ const isFerramentasActive = ferramentas.some(({ href }) => currentPath.startsWit
 
   wireAccordion('mobile-analises-btn', 'mobile-analises-submenu', 'mobile-analises-icon');
   wireAccordion('mobile-ferramentas-btn', 'mobile-ferramentas-submenu', 'mobile-ferramentas-icon');
+</script>
+
+<script>
+  // Painel de busca do menu: abre no clique da lupa (sem JS, a lupa leva para /busca/).
+  import { buscarGuias, buscarProdutos, carregarPagefind, carregarProdutos, htmlGuias, htmlProdutos } from '../scripts/busca';
+
+  const lupa = document.getElementById('busca-btn') as HTMLAnchorElement | null;
+  const pop = document.getElementById('busca-pop');
+  const input = document.getElementById('busca-pop-input') as HTMLInputElement | null;
+  const res = document.getElementById('busca-pop-res');
+
+  if (lupa && pop && input && res) {
+    const DICA = res.innerHTML;
+    let seq = 0;
+    let timerGuias: ReturnType<typeof setTimeout> | undefined;
+
+    const abrir = () => {
+      pop.hidden = false;
+      lupa.setAttribute('aria-expanded', 'true');
+      input.focus();
+      input.select();
+      carregarProdutos();
+      carregarPagefind();
+    };
+    const fechar = (devolverFoco = false) => {
+      pop.hidden = true;
+      lupa.setAttribute('aria-expanded', 'false');
+      if (devolverFoco) lupa.focus();
+    };
+
+    const todos = (q: string) =>
+      `<a class="bp-todos" href="/busca/?q=${encodeURIComponent(q)}">Ver todos os resultados para “${q.replace(/[&<>"]/g, '')}” →</a>`;
+
+    const render = (q: string, prods: string, guias: string | null) => {
+      let h = '';
+      if (prods) h += `<p class="bp-sec">Produtos</p>${prods}`;
+      if (guias === null) h += '<p class="bp-sec">Guias e análises</p><p class="bp-dica">Buscando…</p>';
+      else if (guias) h += `<p class="bp-sec">Guias e análises</p>${guias}`;
+      if (!prods && guias === '') h = `<p class="bp-dica">Nada encontrado para “${q.replace(/[&<>"]/g, '')}”. Tente outra palavra.</p>`;
+      res.innerHTML = h + todos(q);
+    };
+
+    const atualizar = async () => {
+      const q = input.value.trim();
+      const minha = ++seq;
+      clearTimeout(timerGuias);
+      if (q.length < 2) {
+        res.innerHTML = DICA;
+        return;
+      }
+      const lista = buscarProdutos(await carregarProdutos(), q, 5);
+      if (minha !== seq) return;
+      const prods = lista.length ? htmlProdutos(lista) : '';
+      render(q, prods, null);
+      timerGuias = setTimeout(async () => {
+        const guias = await buscarGuias(q, 4);
+        if (minha !== seq) return;
+        render(q, prods, guias.length ? htmlGuias(guias) : '');
+      }, 150);
+    };
+
+    lupa.addEventListener('click', (e) => {
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      e.preventDefault();
+      if (pop.hidden) abrir();
+      else fechar();
+    });
+    input.addEventListener('input', atualizar);
+    pop.querySelector('[data-busca-fechar]')?.addEventListener('click', () => fechar(true));
+
+    // Setas navegam pelos resultados; Esc fecha; "/" abre de qualquer lugar.
+    pop.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        fechar(true);
+        return;
+      }
+      if (e.key !== 'ArrowDown' && e.key !== 'ArrowUp') return;
+      const links = [...res.querySelectorAll<HTMLAnchorElement>('a')];
+      if (!links.length) return;
+      e.preventDefault();
+      const i = links.indexOf(document.activeElement as HTMLAnchorElement);
+      if (e.key === 'ArrowDown') links[i < 0 ? 0 : Math.min(i + 1, links.length - 1)].focus();
+      else if (i <= 0) input.focus();
+      else links[i - 1].focus();
+    });
+    document.addEventListener('keydown', (e) => {
+      const alvo = e.target as HTMLElement;
+      const digitando = alvo.isContentEditable || /^(INPUT|TEXTAREA|SELECT)$/.test(alvo.tagName);
+      if (e.key === '/' && !digitando && pop.hidden) {
+        e.preventDefault();
+        abrir();
+      }
+    });
+    document.addEventListener('click', (e) => {
+      const t = e.target as Node;
+      if (!pop.hidden && !pop.contains(t) && !lupa.contains(t)) fechar();
+    });
+  }
 </script>
