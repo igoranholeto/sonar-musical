@@ -1,0 +1,72 @@
+{
+  "nome": "Gaita Hohner Big River 590/20 (Dó)",
+  "meli": "https://meli.la/1dbZAgF",
+  "preco": 315,
+  "precoEm": "2026-11-12",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 315
+    }
+  ],
+  "imagemAlt": "Gaita Hohner Big River 590/20 (Dó)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-4637969392"
+  },
+  "imagem": "/images/produtos/gaita-hohner-big-river.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Hohner"
+    ],
+    [
+      "Modelo",
+      "BIG RIVER - 590/20 C (DÓ)"
+    ],
+    [
+      "Tom",
+      "DÓ"
+    ],
+    [
+      "Cor",
+      "Prateado"
+    ],
+    [
+      "Modelo detalhado",
+      "Armónica Marine Band"
+    ],
+    [
+      "Tipo de gaita de boca",
+      "Diatônica"
+    ],
+    [
+      "Material",
+      "LatãoABS"
+    ],
+    [
+      "Quantidade de furos",
+      "10"
+    ],
+    [
+      "Quantidade de oitavas",
+      "3"
+    ],
+    [
+      "Quantidade de tons",
+      "20"
+    ],
+    [
+      "Inclui estojo",
+      "Não"
+    ],
+    [
+      "Origem",
+      "Alemanha"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 178
+}

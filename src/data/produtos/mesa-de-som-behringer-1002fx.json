@@ -1,0 +1,104 @@
+{
+  "nome": "Mesa de som Behringer Xenyx 1002FX",
+  "meli": "https://meli.la/2wCwcjf",
+  "preco": 1149,
+  "precoEm": "2026-11-12",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 1149
+    }
+  ],
+  "imagemAlt": "Mesa de som Behringer Xenyx 1002FX",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB15981964"
+  },
+  "nota": 4.7,
+  "avaliacoes": 60,
+  "imagem": "/images/produtos/mesa-de-som-behringer-1002fx.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "Xenyx"
+    ],
+    [
+      "Modelo",
+      "1002FX"
+    ],
+    [
+      "Consumo energético",
+      "30 W"
+    ],
+    [
+      "Tipo de console",
+      "Analógica"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Com efeitos",
+      "Sim"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Reverb, Chorus, Flanger, Delay, Pitch shifter"
+    ],
+    [
+      "Conectores",
+      "2 mic XLR in, 2 line jack 6.3 mm in, 4 line jack L-mono/R 6.3 mm in, 1 FX send jack 6.3 mm, 1 phone jack 6.3 mm, 1 main jack L/R 6.3 mm out, 1 monitor jack L/R 6.3 mm out, 1 track RCA L/R out, 1 track RCA L/R in"
+    ],
+    [
+      "Quantidade de canais",
+      "10"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo de alimentação"
+    ],
+    [
+      "Com equalizador",
+      "Sim"
+    ],
+    [
+      "Quantidade de buses",
+      "2"
+    ],
+    [
+      "Quantidade de efeitos",
+      "100"
+    ],
+    [
+      "Altura",
+      "4,7 cm"
+    ],
+    [
+      "Comprimento",
+      "18,9 cm"
+    ],
+    [
+      "Largura",
+      "22 cm"
+    ],
+    [
+      "Peso",
+      "1,6 kg"
+    ]
+  ]
+}

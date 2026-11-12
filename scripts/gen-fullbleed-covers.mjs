@@ -155,6 +155,17 @@ const MAP = {
   'preco-de-ukulele':               { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'UKULELE', q: 'Soprano ukulele from China laminated mahogany wood', prefer: /^File:Soprano ukulele from China, made of laminated mahogany wood.jpg$/i },
   'preco-de-cavaquinho':            { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'CAVAQUINHO', q: 'Cavaquinho minhoto', prefer: /^File:Cavaquinho minhoto.jpg$/i },
   'preco-de-violao':                { kicker: 'PREÇOS · 2026', l1: 'PREÇO DE', l2: 'VIOLÃO', q: 'Rows of acoustic guitars displayed for sale inside a music shop', prefer: /Rows of acoustic guitars displayed/i },
+  // Lote 2026-11-12 (SERP fraca)
+  'melhor-cajon':                   { kicker: 'PERCUSSÃO · 2026', l1: 'MELHOR', l2: 'CAJÓN', q: 'Drum cajon', prefer: /^File:Drum cajon.jpg$/i },
+  'melhor-microfone-condensador':   { kicker: 'HOME STUDIO · 2026', l1: 'MICROFONE', l2: 'CONDENSADOR', q: 'Condenser Microphone with Pop Filter and Reflection Filter', prefer: /Condenser Microphone with Pop Filter and Reflection Filter/i },
+  'melhor-controlador-midi':        { kicker: 'HOME STUDIO · 2026', l1: 'CONTROLADOR', l2: 'MIDI', q: 'Korg Taktile USB Controller Keyboard with PC 2014 NAMM Show', prefer: /Korg Taktile USB Controller Keyboard - with PC/i, avoid: /FEET/i },
+  'melhor-monitor-de-referencia':   { kicker: 'HOME STUDIO · 2026', l1: 'MONITOR DE', l2: 'REFERÊNCIA', q: "Tawalker's home studio gear 2007", prefer: /Tawalker's home studio gear/i },
+  'melhor-fone-para-estudio':       { kicker: 'HOME STUDIO · 2026', l1: 'FONE PARA', l2: 'ESTÚDIO', q: 'Cables Monitor headphones Downtown Recording', prefer: /Cables & Monitor headphones, Downtown Recording/i },
+  'melhor-flauta-doce':             { kicker: 'SOPRO · 2026', l1: 'FLAUTA', l2: 'DOCE', q: 'Yamaha Soprano Descant Recorder', prefer: /Yamaha Soprano (Descant) Recorder/i },
+  'melhor-mesa-de-som-pequena':     { kicker: 'ÁUDIO · 2026', l1: 'MESA DE SOM', l2: 'PEQUENA', q: 'MacBook with small mixer StockSnap', prefer: /MacBook with small mixer/i },
+  'baixo-squier-e-bom':             { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'SQUIER', q: 'Fender Squier Jazz Bass', prefer: /2-Fender-Suier-Jazz-Bass/i },
+  'diferenca-entre-baixo-e-contrabaixo': { kicker: 'BAIXOS · GUIA', l1: 'BAIXO OU', l2: 'CONTRABAIXO', q: 'Contrabass cellos Deutsches Museum', prefer: /Contrabass, cellos, Deutsches Museum/i },
+  'melhor-gaita-para-iniciante':    { kicker: 'SOPRO · 2026', l1: 'GAITA PARA', l2: 'INICIANTE', q: 'Blues Harp MS-Series Hohner', prefer: /Blues Harp, MS-Series, Hohner/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

@@ -1,0 +1,72 @@
+{
+  "nome": "Gaita Hering Easy Blues 4420C (Dó)",
+  "meli": "https://meli.la/1TaN7kz",
+  "preco": 114,
+  "precoEm": "2026-11-12",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 114
+    }
+  ],
+  "imagemAlt": "Gaita Hering Easy Blues 4420C (Dó)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB25735553"
+  },
+  "nota": 4.8,
+  "avaliacoes": 788,
+  "imagem": "/images/produtos/gaita-hering-easy-blues.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Hering"
+    ],
+    [
+      "Modelo",
+      "Easy Blues"
+    ],
+    [
+      "Tom",
+      "C"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Modelo detalhado",
+      "DO4420C"
+    ],
+    [
+      "Tipo de gaita de boca",
+      "Diatônica"
+    ],
+    [
+      "Material",
+      "Metal"
+    ],
+    [
+      "Quantidade de furos",
+      "10"
+    ],
+    [
+      "Quantidade de oitavas",
+      "2"
+    ],
+    [
+      "Quantidade de tons",
+      "20"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ],
+    [
+      "Origem",
+      "China"
+    ]
+  ]
+}

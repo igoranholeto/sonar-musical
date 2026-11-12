@@ -1,0 +1,116 @@
+{
+  "nome": "Mesa de som Yamaha MG10XU",
+  "meli": "https://meli.la/1SgZLSH",
+  "preco": 1678,
+  "precoEm": "2026-11-12",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 1678
+    }
+  ],
+  "imagemAlt": "Mesa de som Yamaha MG10XU",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB15954993"
+  },
+  "nota": 4.9,
+  "avaliacoes": 679,
+  "imagem": "/images/produtos/mesa-de-som-yamaha-mg10xu.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "MG"
+    ],
+    [
+      "Modelo",
+      "MG10XU"
+    ],
+    [
+      "Tipo de console",
+      "Analógica"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Com efeitos",
+      "Sim"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Rev hall, Rev room, Rev stage, Rev plate, Drum amb, Early ref, Gate rev, Single dly, Delay, Vocal echo, Karaoke, Phaser, Flanger, Chorus, Symphonic"
+    ],
+    [
+      "Conectores",
+      "4 combo XLR/jack 6.3 mm in, 1 footswitch jack 6.3 mm, 2 line jack L/R 6.3 mm in, 2 line RCA L/R in, 1 line jack L-mono/R 6.3 mm in, 1 FX send jack 6.3 mm, 1 stereo XLR L/R out, 1 stereo jack L/R 6.3 mm out, 1 monitor jack L/R 6.3 mm out, 1 phone jack 6.3 mm, 1 USB-B"
+    ],
+    [
+      "Quantidade de canais",
+      "10"
+    ],
+    [
+      "Conectividade",
+      "RCA, XLR, Plug"
+    ],
+    [
+      "Fabricante",
+      "Yamaha"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Acessórios incluídos",
+      "1 adaptador de CA, 1 manual, 1 informação de download de Cubase AI, 1 especificação técnica"
+    ],
+    [
+      "Com equalizador",
+      "Sim"
+    ],
+    [
+      "Com software incluído",
+      "Sim"
+    ],
+    [
+      "Quantidade de buses",
+      "1"
+    ],
+    [
+      "Quantidade de efeitos",
+      "24"
+    ],
+    [
+      "Resposta em frequência",
+      "20 Hz - 48000 Hz"
+    ],
+    [
+      "Altura",
+      "7,1 cm"
+    ],
+    [
+      "Comprimento",
+      "24,4 cm"
+    ],
+    [
+      "Largura",
+      "29,4 cm"
+    ],
+    [
+      "Peso",
+      "2,1 kg"
+    ]
+  ]
+}

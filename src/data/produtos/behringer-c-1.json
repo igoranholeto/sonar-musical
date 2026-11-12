@@ -1,0 +1,136 @@
+{
+  "nome": "Microfone Behringer C-1",
+  "meli": "https://meli.la/17nZZ35",
+  "preco": 559,
+  "precoEm": "2026-11-12",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 559
+    }
+  ],
+  "imagemAlt": "Microfone Behringer C-1",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB15155447"
+  },
+  "nota": 4.8,
+  "avaliacoes": 1125,
+  "imagem": "/images/produtos/behringer-c-1.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Modelo",
+      "C-1"
+    ],
+    [
+      "Cor",
+      "Dourado"
+    ],
+    [
+      "É gamer",
+      "Sim"
+    ],
+    [
+      "Modelo detalhado",
+      "C1"
+    ],
+    [
+      "Comprimento do cabo",
+      "1,2 m"
+    ],
+    [
+      "Usos recomendados do microfone",
+      "Para gravações, Para instrumentos, Para vozes, Para discursos"
+    ],
+    [
+      "Com alto-falantes embutidos",
+      "Não"
+    ],
+    [
+      "Tipos de conexões",
+      "Com fio"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "XLR"
+    ],
+    [
+      "Conectores de entrada",
+      "XLR"
+    ],
+    [
+      "Tipo de alimentação",
+      "Phantom"
+    ],
+    [
+      "Tipo de bateria",
+      "NA"
+    ],
+    [
+      "Tipo de pilha",
+      "NA"
+    ],
+    [
+      "Fabricante",
+      "Behringer"
+    ],
+    [
+      "Formatos de microfone",
+      "Estúdio"
+    ],
+    [
+      "Tipos de microfone",
+      "Condensador"
+    ],
+    [
+      "Padrões polares",
+      "Cardioide"
+    ],
+    [
+      "Quantidade de microfones",
+      "1"
+    ],
+    [
+      "Com luz indicadora de funcionamento",
+      "Sim"
+    ],
+    [
+      "Sensibilidade",
+      "-33 dB"
+    ],
+    [
+      "Impedância",
+      "100 Ω"
+    ],
+    [
+      "Materiais",
+      "Banhado a ouro, Bronze niquelado"
+    ],
+    [
+      "Frequência mínima",
+      "40 Hz"
+    ],
+    [
+      "Acessórios incluídos",
+      "1 suporte giratório"
+    ],
+    [
+      "Altura",
+      "16,9 cm"
+    ],
+    [
+      "Peso",
+      "420 g"
+    ]
+  ]
+}

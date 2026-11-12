@@ -1,0 +1,96 @@
+{
+  "nome": "Monitor Yamaha HS5 (par)",
+  "meli": "https://meli.la/12eoGqy",
+  "preco": 3574,
+  "precoEm": "2026-11-12",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 3574
+    }
+  ],
+  "imagemAlt": "Monitor Yamaha HS5 (par)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB22555723"
+  },
+  "nota": 5,
+  "avaliacoes": 338,
+  "imagem": "/images/produtos/monitor-yamaha-hs5-par.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "HS"
+    ],
+    [
+      "Modelo",
+      "HS5W"
+    ],
+    [
+      "Quantidade de monitores",
+      "2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "17 cm"
+    ],
+    [
+      "Largura",
+      "28,5 cm"
+    ],
+    [
+      "Profundidade",
+      "22,2 cm"
+    ],
+    [
+      "Peso",
+      "5,3 kg"
+    ],
+    [
+      "Tipo de sistema",
+      "Ativo"
+    ],
+    [
+      "Conectores de entrada",
+      "Xlr-p10"
+    ],
+    [
+      "Alto-falantes embutidos",
+      "Biamplificado frecuencias de 5\", tweeter domo de 1\", Biamplificado frecuencias de 5\" y tweeter domo de 1\""
+    ],
+    [
+      "Potência",
+      "70 W"
+    ],
+    [
+      "Resposta em frequência",
+      "54 Hz - 30 kHz"
+    ],
+    [
+      "Com tela LED",
+      "Não"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "É near-field",
+      "Sim"
+    ],
+    [
+      "Fabricante",
+      "Yamaha"
+    ]
+  ]
+}

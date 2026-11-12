@@ -1,0 +1,60 @@
+{
+  "nome": "Gaita Hohner Special 20 (Dó)",
+  "meli": "https://meli.la/2T5qoou",
+  "preco": 479,
+  "precoEm": "2026-11-12",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 479
+    }
+  ],
+  "imagemAlt": "Gaita Hohner Special 20 (Dó)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://www.mercadolivre.com.br/p/MLB28232494"
+  },
+  "nota": 4.9,
+  "avaliacoes": 255,
+  "imagem": "/images/produtos/gaita-hohner-special-20.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Hohner"
+    ],
+    [
+      "Modelo",
+      "Special 20 - 560/20 C (DÓ)"
+    ],
+    [
+      "Tipo de gaita de boca",
+      "Diatônica"
+    ],
+    [
+      "Material",
+      "Latão/Aço inoxidável/ABS"
+    ],
+    [
+      "Quantidade de furos",
+      "10"
+    ],
+    [
+      "Quantidade de oitavas",
+      "3"
+    ],
+    [
+      "Quantidade de tons",
+      "20"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ],
+    [
+      "Origem",
+      "Alemanha"
+    ]
+  ]
+}

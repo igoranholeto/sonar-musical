@@ -1,0 +1,64 @@
+{
+  "nome": "Flauta doce soprano Zaidans Tennessee",
+  "meli": "https://meli.la/2UVW1ZZ",
+  "preco": 28,
+  "precoEm": "2026-11-12",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 28
+    }
+  ],
+  "imagemAlt": "Flauta doce soprano Zaidans Tennessee",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-3542396295"
+  },
+  "imagem": "/images/produtos/flauta-doce-zaidans-tennessee.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Zaidans"
+    ],
+    [
+      "Modelo",
+      "Flauta Germânica"
+    ],
+    [
+      "Cor",
+      "Bege"
+    ],
+    [
+      "Tipo de flauta",
+      "Doce"
+    ],
+    [
+      "Material",
+      "ABS"
+    ],
+    [
+      "Nível de habilidade",
+      "Iniciante"
+    ],
+    [
+      "Tipo de dedilhado",
+      "Germânica"
+    ],
+    [
+      "Afinação",
+      "Do"
+    ],
+    [
+      "Quantidade de peças",
+      "3"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 3957
+}

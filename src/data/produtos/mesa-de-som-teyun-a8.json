@@ -1,0 +1,100 @@
+{
+  "nome": "Mesa de som digital Teyun A8",
+  "meli": "https://meli.la/2yRdREf",
+  "preco": 390,
+  "precoEm": "2026-11-12",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-12",
+      "preco": 390
+    }
+  ],
+  "imagemAlt": "Mesa de som digital Teyun A8",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-12",
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-3809746651"
+  },
+  "imagem": "/images/produtos/mesa-de-som-teyun-a8.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Teyun/VEDO"
+    ],
+    [
+      "Modelo",
+      "A8"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Tipo de console",
+      "Digital"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Com efeitos",
+      "Sim"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "música K, Produção de música em casa do usuário, webcast"
+    ],
+    [
+      "Conectores",
+      "Bluetooth, USB"
+    ],
+    [
+      "Quantidade de canais",
+      "8"
+    ],
+    [
+      "Conectividade",
+      "Bluetooth/USB"
+    ],
+    [
+      "Fabricante",
+      "Teyun"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manual, Fio USB"
+    ],
+    [
+      "Com equalizador",
+      "Sim"
+    ],
+    [
+      "Quantidade de efeitos",
+      "24"
+    ],
+    [
+      "Altura",
+      "5,4 cm"
+    ],
+    [
+      "Comprimento",
+      "28,6 cm"
+    ],
+    [
+      "Largura",
+      "28 cm"
+    ],
+    [
+      "Peso",
+      "1,41 kg"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 1870
+}
