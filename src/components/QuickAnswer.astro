@@ -1,19 +1,35 @@
 ---
+// Resposta direta do post, logo no topo.
+// `pergunta` é a pergunta principal que o post responde (ex.: "Qual o melhor cajón?"). Ela
+// vira um <h2> logo antes da resposta: título com a pergunta + parágrafo curto com a
+// resposta é o formato que o Google costuma puxar para o snippet em destaque. O <h2> tem
+// classe, então não herda o estilo dos H2 do post, e fica fora do índice (o TOC usa só as
+// headings do markdown).
 interface Props {
   label?: string;
+  pergunta?: string;
 }
 
-const { label = 'Resposta rápida' } = Astro.props;
+const { label = 'Resposta rápida', pergunta } = Astro.props;
 ---
 
 <div class="my-8 rounded-xl border-l-4 border-brand bg-elevated px-6 py-5 quick-answer">
   <p class="text-xs font-bold uppercase tracking-wider text-brand mb-2">{label}</p>
+  {pergunta && <h2 class="quick-answer__q">{pergunta}</h2>}
   <div class="text-[0.95rem] text-foreground leading-relaxed quick-answer__body">
     <slot />
   </div>
 </div>
 
 <style>
+  .quick-answer__q {
+    margin: 0 0 0.5rem;
+    font-size: 1.125rem;
+    line-height: 1.35;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    color: var(--color-foreground);
+  }
   .quick-answer__body :global(strong) {
     color: var(--color-brand);
   }

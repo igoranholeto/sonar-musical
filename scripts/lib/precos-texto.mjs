@@ -18,6 +18,7 @@
 // Uso pelos scripts: sincronizarPrecosTexto({ ids, aplicar }) devolve o relatório.
 import fs from 'node:fs';
 import path from 'node:path';
+import { marcarAtualizado, precosCitados } from './data-atualizacao.mjs';
 
 const CAT = 'src/data/produtos';
 const BLOG = 'src/data/blog';
@@ -209,7 +210,10 @@ export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = fal
 
     if (final !== original) {
       relatorio.arquivos.push(slug);
-      if (aplicar) fs.writeFileSync(file, final);
+      // Um preço citado mudou: o conteúdo mudou, e o "Atualizado em" do post acompanha.
+      // Só a data de consulta ou o preço fixo de um CTA, sem preço novo no texto, não conta.
+      const gravar = precosCitados(final) !== precosCitados(original) ? marcarAtualizado(final, hoje) : final;
+      if (aplicar) fs.writeFileSync(file, gravar);
     }
   }
   return relatorio;
