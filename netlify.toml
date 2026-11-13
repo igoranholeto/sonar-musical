@@ -83,6 +83,13 @@
   [headers.values]
     Cache-Control = "public, max-age=3600"
 
+# Prefetch privado do Chrome (busca do Google pré-carrega o post antes do clique).
+[[headers]]
+  for = "/.well-known/traffic-advice"
+  [headers.values]
+    Content-Type = "application/trafficadvice+json"
+    Cache-Control = "public, max-age=86400"
+
 [[headers]]
   for = "/rss.xml"
   [headers.values]
