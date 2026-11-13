@@ -21,30 +21,64 @@ for (const o of ofertas) if (o.categoria) contagem.set(o.categoria, (contagem.ge
 const categorias = ORDEM_CATEGORIAS.filter((c) => contagem.has(c));
 const contagemGeral = new Map<string, number>();
 for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, (contagemGeral.get(o.categoria) ?? 0) + 1);
+
+// Categorias agrupadas por família: no PC viram uma coluna lateral com títulos; no celular,
+// uma faixa de chips deslizável (os títulos somem e a ordem continua por família).
+const GRUPOS: [string, string[]][] = [
+  ['Cordas', ['guitarra', 'violao', 'baixo', 'ukulele', 'cavaquinho', 'viola', 'bandolim', 'violino']],
+  ['Amplificadores e efeitos', ['amplificador', 'pedal', 'pedaleira']],
+  ['Teclas', ['teclado', 'piano', 'controlador']],
+  ['Bateria, percussão e sopro', ['bateria', 'percussao', 'sopro']],
+  ['Gravação e áudio', ['interface', 'microfone', 'fone', 'estudio']],
+  ['Acessórios', ['cordas', 'acessorio']],
+];
+const disponiveis = categoriaFixa ? ORDEM_CATEGORIAS.filter((c) => comPagina.includes(c)) : categorias;
+const nGrupo = (c: string) => (categoriaFixa ? contagemGeral.get(c) : contagem.get(c)) ?? 0;
+const agrupados = GRUPOS.map(([nome, cats]) => ({ nome, cats: cats.filter((c) => disponiveis.includes(c)) }));
+const soltas = disponiveis.filter((c) => !GRUPOS.some(([, cats]) => cats.includes(c)));
+if (soltas.length) agrupados.push({ nome: 'Outros', cats: soltas });
+const grupos = agrupados.filter((g) => g.cats.length);
+const totalTodos = categoriaFixa ? todas.size : ofertas.length;
 ---
 
 <section class="vit" data-vitrine aria-label="Ofertas">
-  <div class="vit__barra">
+  <aside class="vit__lado" data-lado>
+    <p class="vit__lado-tit" aria-hidden="true">Categorias</p>
+    <button type="button" class="vit__seta vit__seta--esq" data-seta="-1" aria-label="Ver categorias anteriores" tabindex="-1" hidden>‹</button>
     {categoriaFixa ? (
-      <nav class="vit__chips" aria-label="Ofertas por instrumento">
-        <a class="vit__chip" href="/black-friday/">Todas</a>
-        {ORDEM_CATEGORIAS.filter((c) => comPagina.includes(c)).map((c) => (
-          <a class:list={['vit__chip', { 'is-on': c === categoriaFixa }]} href={`/black-friday/${c}/`} aria-current={c === categoriaFixa ? 'page' : undefined}>
-            {NOMES_CATEGORIA[c].plural}
-          </a>
+      <nav class="vit__cats" data-cats aria-label="Ofertas por instrumento">
+        <a class="vit__chip" href="/black-friday/"><span class="vit__chip-nome">Todas</span> <span class="vit__chip-n">{totalTodos}</span></a>
+        {grupos.map((g) => (
+          <div class="vit__grupo">
+            <p class="vit__grupo-tit">{g.nome}</p>
+            {g.cats.map((c) => (
+              <a class:list={['vit__chip', { 'is-on': c === categoriaFixa }]} href={`/black-friday/${c}/`} aria-current={c === categoriaFixa ? 'page' : undefined}>
+                <span class="vit__chip-nome">{NOMES_CATEGORIA[c].plural}</span> <span class="vit__chip-n">{nGrupo(c)}</span>
+              </a>
+            ))}
+          </div>
         ))}
       </nav>
     ) : (
-      <div class="vit__chips" role="group" aria-label="Filtrar por tipo de produto">
-        <button type="button" class="vit__chip is-on" data-cat="" aria-pressed="true">Todos <span>{ofertas.length}</span></button>
-        {categorias.map((c) => (
-          <button type="button" class="vit__chip" data-cat={c} aria-pressed="false">
-            {NOMES_CATEGORIA[c].plural} <span>{contagem.get(c)}</span>
-          </button>
+      <div class="vit__cats" data-cats role="group" aria-label="Filtrar por tipo de produto">
+        <button type="button" class="vit__chip is-on" data-cat="" aria-pressed="true"><span class="vit__chip-nome">Todos</span> <span class="vit__chip-n">{totalTodos}</span></button>
+        {grupos.map((g) => (
+          <div class="vit__grupo">
+            <p class="vit__grupo-tit">{g.nome}</p>
+            {g.cats.map((c) => (
+              <button type="button" class="vit__chip" data-cat={c} aria-pressed="false">
+                <span class="vit__chip-nome">{NOMES_CATEGORIA[c].plural}</span> <span class="vit__chip-n">{nGrupo(c)}</span>
+              </button>
+            ))}
+          </div>
         ))}
       </div>
     )}
+    <button type="button" class="vit__seta vit__seta--dir" data-seta="1" aria-label="Ver mais categorias" tabindex="-1" hidden>›</button>
+  </aside>
 
+  <div class="vit__main">
+  <div class="vit__barra" data-barra>
     <div class="vit__controles">
       <label class="vit__campo vit__campo--busca">
         <span class="sr-only">Buscar produto</span>
@@ -87,6 +121,7 @@ for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, 
   </div>
   <p class="vit__vazio" data-vazio hidden>Nenhum produto com esses filtros. Tente outra faixa de preço ou limpe a busca.</p>
   <button type="button" class="vit__mais" data-mais hidden>Mostrar mais</button>
+  </div>
 </section>
 
 <script>
@@ -174,7 +209,54 @@ for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, 
       aplicar();
       atualizarURL();
     };
-    for (const ch of chips) ch.addEventListener('click', () => { categoria = ch.dataset.cat ?? ''; reiniciar(); });
+    // Faixa de categorias: coluna lateral no PC (>= 1024px) e chips deslizáveis abaixo disso.
+    const cats = raiz.querySelector<HTMLElement>('[data-cats]')!;
+    const setas = [...raiz.querySelectorAll<HTMLButtonElement>('[data-seta]')];
+    const emFaixa = matchMedia('(max-width: 1023px)');
+
+    // Sombras nas bordas e setas (só com mouse) indicam que há mais categorias para os lados.
+    function bordas() {
+      const faixa = emFaixa.matches && cats.scrollWidth > cats.clientWidth + 2;
+      const esq = faixa && cats.scrollLeft > 4;
+      const dir = faixa && cats.scrollLeft + cats.clientWidth < cats.scrollWidth - 4;
+      cats.classList.toggle('fade-esq', esq);
+      cats.classList.toggle('fade-dir', dir);
+      setas[0].hidden = !esq;
+      setas[1].hidden = !dir;
+    }
+    function centralizarAtivo() {
+      const ativo = cats.querySelector<HTMLElement>('.is-on');
+      if (!emFaixa.matches || !ativo) return bordas();
+      cats.scrollLeft = ativo.offsetLeft - (cats.clientWidth - ativo.offsetWidth) / 2;
+      bordas();
+    }
+    cats.addEventListener('scroll', bordas, { passive: true });
+    emFaixa.addEventListener('change', centralizarAtivo);
+    addEventListener('resize', bordas, { passive: true });
+    for (const s of setas)
+      s.addEventListener('click', () => { cats.scrollLeft += Number(s.dataset.seta) * cats.clientWidth * 0.7; });
+    // Roda do mouse na faixa rola para os lados (sem precisar de Shift ou do botão do meio).
+    cats.addEventListener('wheel', (e) => {
+      if (!emFaixa.matches || Math.abs(e.deltaX) > Math.abs(e.deltaY) || cats.scrollWidth <= cats.clientWidth) return;
+      const antes = cats.scrollLeft;
+      cats.scrollLeft += e.deltaY;
+      if (cats.scrollLeft !== antes) e.preventDefault();
+    }, { passive: false });
+
+    // Trocou de categoria lá embaixo na lista: volta ao começo dos resultados.
+    // (Mede o topo da vitrine, não da barra: a barra e a faixa são sticky e ficam paradas.)
+    function irParaResultados() {
+      const topo = raiz.getBoundingClientRect().top;
+      if (topo < 65) window.scrollTo(0, window.scrollY + topo - 73);
+    }
+
+    for (const ch of chips)
+      ch.addEventListener('click', () => {
+        categoria = ch.dataset.cat ?? '';
+        reiniciar();
+        centralizarAtivo();
+        irParaResultados();
+      });
     let espera: number | undefined;
     busca.addEventListener('input', () => { clearTimeout(espera); espera = window.setTimeout(reiniciar, 180); });
     faixa.addEventListener('change', reiniciar);
@@ -182,14 +264,87 @@ for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, 
     soDesconto.addEventListener('change', reiniciar);
     mais.addEventListener('click', () => { limite += POR_PAGINA; aplicar(); });
     aplicar();
+    centralizarAtivo();
   }
 </script>
 
 <style is:global>
   /* Global (classes com prefixo próprio): evita o atributo data-astro-cid em cada
      elemento dos ~380 cards, que pesava no HTML da vitrine. */
+  /* ---------- Categorias ----------
+     Abaixo de 1024px: faixa de chips que gruda sob o cabeçalho do site e desliza para os
+     lados (sombras nas bordas mostram que tem mais; com mouse, setas e a roda funcionam).
+     A partir de 1024px: coluna lateral fixa, agrupada por família, sem rolagem lateral. */
+  .vit__lado {
+    position: sticky;
+    top: 65px;
+    z-index: 6;
+    margin: 0 -16px;
+    padding: 8px 0;
+    background: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+  }
+  .vit__lado-tit,
+  .vit__grupo-tit { display: none; }
+  .vit__grupo { display: contents; }
+  .vit__cats {
+    position: relative;
+    display: flex;
+    gap: 6px;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+    scrollbar-width: none;
+    padding: 2px 16px;
+    scroll-padding-inline: 16px;
+  }
+  .vit__cats::-webkit-scrollbar { display: none; }
+  .vit__cats.fade-dir { mask-image: linear-gradient(to right, #000 calc(100% - 56px), transparent); }
+  .vit__cats.fade-esq { mask-image: linear-gradient(to right, transparent, #000 56px); }
+  .vit__cats.fade-esq.fade-dir { mask-image: linear-gradient(to right, transparent, #000 56px, #000 calc(100% - 56px), transparent); }
+  .vit__chip {
+    flex: 0 0 auto;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 13px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .vit__chip-n { font-weight: 500; color: var(--color-subtle); font-size: 12px; font-variant-numeric: tabular-nums; }
+  .vit__chip:hover { border-color: var(--color-brand); }
+  .vit__chip:focus-visible { outline: 2px solid var(--color-brand); outline-offset: 2px; }
+  .vit__chip.is-on { background: var(--color-foreground); color: var(--color-surface); border-color: var(--color-foreground); }
+  .vit__chip.is-on .vit__chip-n { color: inherit; opacity: 0.7; }
+  .vit__seta {
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    border-radius: 999px;
+    border: 1px solid var(--color-border);
+    background: var(--color-card);
+    color: var(--color-foreground);
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 0.12);
+  }
+  .vit__seta--esq { left: 8px; }
+  .vit__seta--dir { right: 8px; }
+  .vit__seta:hover { border-color: var(--color-brand); }
+  @media (hover: none) { .vit__seta { display: none; } }
+
   .vit__barra {
-    z-index: 5;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -198,28 +353,60 @@ for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, 
     background: var(--color-surface);
     border-bottom: 1px solid var(--color-border);
   }
-  .vit__chips { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
-  .vit__chips::-webkit-scrollbar { display: none; }
-  .vit__chip {
-    flex: 0 0 auto;
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    padding: 7px 12px;
-    border-radius: 999px;
-    border: 1px solid var(--color-border);
-    background: var(--color-card);
-    color: var(--color-foreground);
-    font-size: 13px;
-    font-weight: 600;
-    text-decoration: none;
-    cursor: pointer;
-    white-space: nowrap;
+
+  @media (min-width: 1024px) {
+    .vit { display: grid; grid-template-columns: 224px minmax(0, 1fr); gap: 0 28px; align-items: start; }
+    .vit__lado {
+      top: 81px;
+      margin: 0;
+      padding: 0 4px 16px 0;
+      max-height: calc(100vh - 97px);
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+      scrollbar-color: transparent transparent;
+      background: none;
+      border: 0;
+    }
+    .vit__lado:hover { scrollbar-color: var(--color-border) transparent; }
+    .vit__seta { display: none !important; }
+    .vit__lado-tit {
+      display: block;
+      margin: 14px 0 8px 10px;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--color-foreground);
+    }
+    .vit__cats { flex-direction: column; gap: 1px; overflow: visible; padding: 0; mask-image: none !important; }
+    .vit__grupo { display: flex; flex-direction: column; gap: 1px; margin-top: 12px; }
+    .vit__grupo-tit {
+      display: block;
+      margin: 0 0 3px 10px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--color-subtle);
+    }
+    .vit__chip {
+      width: 100%;
+      justify-content: space-between;
+      padding: 7px 10px;
+      border: 0;
+      border-radius: 8px;
+      background: none;
+      font-size: 14px;
+      font-weight: 500;
+      white-space: normal;
+      text-align: left;
+    }
+    .vit__chip:hover { background: var(--color-elevated); }
+    .vit__chip.is-on { background: var(--color-foreground); color: var(--color-surface); font-weight: 700; }
+    /* A barra de busca/preço/ordem gruda logo abaixo do cabeçalho do site (h-16 + borda). */
+    .vit__barra { position: sticky; top: 65px; z-index: 5; }
   }
-  .vit__chip span { font-weight: 500; color: var(--color-subtle); font-size: 12px; }
-  .vit__chip:hover { border-color: var(--color-brand); }
-  .vit__chip.is-on { background: var(--color-foreground); color: var(--color-surface); border-color: var(--color-foreground); }
-  .vit__chip.is-on span { color: inherit; opacity: 0.7; }
 
   .vit__controles { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; }
   .vit__campo { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; color: var(--color-muted); }
@@ -244,10 +431,6 @@ for (const o of todas.values()) if (o.categoria) contagemGeral.set(o.categoria, 
     grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
     gap: 14px;
     margin-top: 14px;
-  }
-  /* No desktop a barra de filtros gruda logo abaixo do cabeçalho do site (h-16 + borda). */
-  @media (min-width: 900px) {
-    .vit__barra { position: sticky; top: 65px; }
   }
   @media (max-width: 520px) {
     .vit__grade { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
