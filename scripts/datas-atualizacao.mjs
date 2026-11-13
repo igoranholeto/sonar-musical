@@ -19,7 +19,9 @@ import { marcarAtualizado } from './lib/data-atualizacao.mjs';
 
 const BLOG = 'src/data/blog';
 const EXCLUIR = ['b59a057', 'b5eea8d', 'b6703ff', '8fb903b', '133fe78', '3d950f8'];
-const MSG_MECANICA = /travess[ãa]o|\bcapas?\b|covers/i;
+// Também mecânico: o commit de "rich results" (pergunta no QuickAnswer, resposta dividida
+// em 2 parágrafos, prós/contras do corpo movidos para o quadro do topo, sem conteúdo novo).
+const MSG_MECANICA = /travess[ãa]o|\bcapas?\b|covers|rich results/i;
 const CHAVES_FM = /^(title|description|pubDate|updatedDate|category|image|imageAlt|tags|featured|author|formato|rating|reviewedName|pros|cons):/;
 const MIN_LINHAS = 6;
 
