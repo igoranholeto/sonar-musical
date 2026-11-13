@@ -166,6 +166,17 @@ const MAP = {
   'baixo-squier-e-bom':             { kicker: 'BAIXOS · REVIEW', l1: 'BAIXO', l2: 'SQUIER', q: 'Fender Squier Jazz Bass', prefer: /2-Fender-Suier-Jazz-Bass/i },
   'diferenca-entre-baixo-e-contrabaixo': { kicker: 'BAIXOS · GUIA', l1: 'BAIXO OU', l2: 'CONTRABAIXO', q: 'Contrabass cellos Deutsches Museum', prefer: /Contrabass, cellos, Deutsches Museum/i },
   'melhor-gaita-para-iniciante':    { kicker: 'SOPRO · 2026', l1: 'GAITA PARA', l2: 'INICIANTE', q: 'Blues Harp MS-Series Hohner', prefer: /Blues Harp, MS-Series, Hohner/i },
+  // Lote 2026-11-13 (Black Friday + catálogo novo)
+  'melhor-piano-digital':           { kicker: 'TECLADOS · 2026', l1: 'MELHOR PIANO', l2: 'DIGITAL', q: 'Yamaha P-85 with sheet music', prefer: /Yamaha P-85 with sheet music/i },
+  'piano-digital-ou-teclado':       { kicker: 'TECLADOS · COMPARATIVO', l1: 'PIANO DIGITAL', l2: 'OU TECLADO?', q: 'Synths Pianos MUSICVOX Akihabara', prefer: /Synths & Pianos @ MUSICVOX/i },
+  'melhor-teclado-para-igreja':     { kicker: 'TECLADOS · 2026', l1: 'TECLADO PARA', l2: 'IGREJA', q: 'Keyboard Organ Gereja Sion', prefer: /Keyboard Organ Gereja Sion/i },
+  'melhor-bateria-acustica-para-iniciante': { kicker: 'BATERIA · PARA INICIANTES', l1: 'BATERIA', l2: 'ACÚSTICA', q: '5-piece drum kit with two crash cymbals', prefer: /5-piece drum kit with two crash cymbals/i },
+  'saxofone-trompete-ou-flauta-transversal': { kicker: 'SOPRO · PARA INICIANTES', l1: 'SAX, TROMPETE', l2: 'OU FLAUTA?', q: 'C.G. Conn Alto Saxophone 1923 other wind instruments Museum of Making Music', prefer: /C\.G\. Conn Alto Saxophone \(1923\)/i },
+  'behringer-umc22-vs-umc202hd':    { kicker: 'HOME STUDIO · COMPARATIVO', l1: 'UMC22 vs', l2: 'UMC202HD', q: 'home recording setup Kathabhidhana project Wiktionary', prefer: /Kathabhidhana/i },
+  'scarlett-2i2-4-geracao-vale-a-pena': { kicker: 'HOME STUDIO · REVIEW', l1: 'SCARLETT 2i2', l2: 'VALE A PENA?', q: 'Focusrite Scarlett 2i2 2i4 6i6 USB2.0 Audio Interfaces NAMM', prefer: /Focusrite Scarlett 2i2, 2i4, 6i6/i },
+  'melhor-cavaquinho-eletrico':     { kicker: 'CAVAQUINHO · 2026', l1: 'CAVAQUINHO', l2: 'ELÉTRICO', q: 'cavaquinho samba', prefer: /^File:2 cavaquinhos 2\.jpg$/i },
+  'bateria-eletronica-aroma-e-boa': { kicker: 'BATERIA · REVIEW', l1: 'BATERIA AROMA', l2: 'É BOA?', q: 'Electronic drum kit', prefer: /^File:Electronic drum kit\.jpg$/i },
+  'acessorios-para-piano-digital':  { kicker: 'TECLADOS · ACESSÓRIOS', l1: 'ACESSÓRIOS', l2: 'PIANO DIGITAL', q: 'Yamaha P80 Digital Piano sustain pedal', prefer: /Yamaha P80 Digital Piano - sustain pedal/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
