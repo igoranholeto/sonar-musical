@@ -1,7 +1,7 @@
 {
   "nome": "Solez SLG10GA .010",
   "meli": "https://meli.la/18utahD",
-  "preco": 45,
+  "preco": 40,
   "precoEm": "2026-11-13",
   "categoria": "cordas",
   "historico": [
@@ -15,13 +15,15 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 45
+      "preco": 40
     }
   ],
   "imagemAlt": "Solez SLG10GA .010",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 51,
+    "off": 21,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-guitarra-solez-010-dlp-gray-alloy-slg10ga-jogo-cordas-profissional-resistente-anti-oxidacao/p/MLB42155579"
   },

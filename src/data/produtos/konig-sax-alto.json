@@ -1,0 +1,67 @@
+{
+  "nome": "Sax Alto Konig (Mi bemol)",
+  "meli": "https://meli.la/1WT2K2z",
+  "preco": 1264,
+  "precoEm": "2026-11-13",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1264
+    }
+  ],
+  "imagemAlt": "Sax Alto Konig (Mi bemol)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 2484,
+    "off": 49,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/sax-alto-konig-eb-dourado-completo-com-estojo-boquilha/up/MLBU3019553509"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Konig"
+    ],
+    [
+      "Modelo",
+      "Saxofone Alto Dourado Laqueado"
+    ],
+    [
+      "Tipo de saxofone",
+      "Alto Eb"
+    ],
+    [
+      "Cor",
+      "Dourado"
+    ],
+    [
+      "Acabamento",
+      "Dourado"
+    ],
+    [
+      "Tipo de tudel",
+      "Curvo"
+    ],
+    [
+      "Material do saxofone",
+      "Latão"
+    ],
+    [
+      "Força das palhetas",
+      "1"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ],
+    [
+      "É kit",
+      "Não"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 616,
+  "imagem": "/images/produtos/konig-sax-alto.webp"
+}

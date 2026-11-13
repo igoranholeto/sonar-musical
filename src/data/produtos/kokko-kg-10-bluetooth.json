@@ -1,7 +1,7 @@
 {
   "nome": "Kokko KG-10 (Bluetooth)",
   "meli": "https://meli.la/1vZdghH",
-  "preco": 175,
+  "preco": 148,
   "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
@@ -15,16 +15,13 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 175
+      "preco": 148
     }
   ],
   "imagemAlt": "Kokko KG-10 (Bluetooth)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 230,
-    "off": 23,
-    "parcelas": "12x R$17,27",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mini-amplificador-guitarra-bluetooth-kokko-kg-10-10w-portatil/p/MLB53276548"
   },

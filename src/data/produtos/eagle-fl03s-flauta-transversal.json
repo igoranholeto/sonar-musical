@@ -1,0 +1,66 @@
+{
+  "nome": "Flauta Transversal Eagle FL03S",
+  "meli": "https://meli.la/1yHs1qg",
+  "preco": 1113,
+  "precoEm": "2026-11-13",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1113
+    }
+  ],
+  "imagemAlt": "Flauta Transversal Eagle FL03S",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$111,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-eagle-prata-fl03s-c-estojo-luxo/p/MLB36598081"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Modelo",
+      "FL 03S"
+    ],
+    [
+      "Cor",
+      "Prata"
+    ],
+    [
+      "Tipo de flauta",
+      "Transversal"
+    ],
+    [
+      "Material",
+      "Banhado a prata"
+    ],
+    [
+      "Nível de habilidade",
+      "Iniciante / Intermediário"
+    ],
+    [
+      "Tipo de dedilhado",
+      "Alemã"
+    ],
+    [
+      "Afinação",
+      "Do"
+    ],
+    [
+      "Quantidade de peças",
+      "1"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 452,
+  "imagem": "/images/produtos/eagle-fl03s-flauta-transversal.webp"
+}

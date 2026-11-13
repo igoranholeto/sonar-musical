@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha PSS-E30 Remie (37 mini teclas)",
   "meli": "https://meli.la/1wicLAb",
-  "preco": 600,
+  "preco": 522,
   "precoEm": "2026-11-13",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 600
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 522
     }
   ],
   "nota": 5,
@@ -17,7 +21,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$58,02",
+    "antes": 600,
+    "off": 12,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mini-teclado-musical-yamaha-remie-pss-e30-portatil-37-teclas/p/MLB25164790"
   },

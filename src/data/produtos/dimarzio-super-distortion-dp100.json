@@ -1,7 +1,7 @@
 {
   "nome": "DiMarzio Super Distortion DP100",
-  "meli": "https://meli.la/1PzL49U",
-  "preco": 1295,
+  "meli": "https://meli.la/2Wai1ZT",
+  "preco": 1195,
   "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
@@ -12,16 +12,20 @@
     {
       "data": "2026-11-11",
       "preco": 1295
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1195
     }
   ],
   "imagem": "/images/produtos/dimarzio-super-distortion-dp100.webp",
   "imagemAlt": "DiMarzio Super Distortion DP100",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$129,50 sem juros",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$116",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/dimarzio-dp100-super-distortion-std-spaced-black-usa/up/MLBU1971735278"
+    "catalogo": "https://www.mercadolivre.com.br/dimarzio-dp100-super-distortion-std-spaced-black-usa/up/MLBU5875451682"
   },
   "ficha": [
     [

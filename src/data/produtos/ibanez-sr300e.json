@@ -1,13 +1,17 @@
 {
   "nome": "Ibanez SR300E",
   "meli": "https://meli.la/11CZ3tD",
-  "preco": 3909,
+  "preco": 3824,
   "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 3909
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 3824
     }
   ],
   "imagemAlt": "Ibanez SR300E",
@@ -16,8 +20,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 5212,
-    "off": 25,
-    "parcelas": "10x R$390,97 sem juros",
+    "off": 26,
+    "parcelas": "10x R$382,47 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-4-cordas-ibanez-sr300e-mgb-midnight-gray-burst/up/MLBU1138540056"
   },

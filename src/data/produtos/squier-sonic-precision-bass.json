@@ -1,7 +1,7 @@
 {
   "nome": "Squier Sonic Precision Bass",
   "meli": "https://meli.la/2XRu9au",
-  "preco": 1966,
+  "preco": 2436,
   "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-12",
       "preco": 1966
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2436
     }
   ],
   "nota": 4.8,
@@ -21,9 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2679,
-    "off": 26,
-    "parcelas": "12x R$189,06",
+    "antes": 2565,
+    "off": 5,
+    "parcelas": "12x R$234,23",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-fender-squier-sonic-precision-bass-black-03739/p/MLB26598909"
   },

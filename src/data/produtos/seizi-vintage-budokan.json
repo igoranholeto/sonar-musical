@@ -1,0 +1,92 @@
+{
+  "nome": "Seizi Vintage Fun Budokan HSS",
+  "meli": "https://meli.la/1BxbY4e",
+  "preco": 1148,
+  "precoEm": "2026-11-13",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1148
+    }
+  ],
+  "imagemAlt": "Seizi Vintage Fun Budokan HSS",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1249,
+    "off": 8,
+    "parcelas": "10x R$114,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-seizi-vintage-fun-budokan-hss-destro-surf-green/p/MLB66086016"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Seizi"
+    ],
+    [
+      "Linha",
+      "Vintage"
+    ],
+    [
+      "Modelo",
+      "Fun Budokan HSS"
+    ],
+    [
+      "Ano de lançamento",
+      "2026"
+    ],
+    [
+      "Origem",
+      "China"
+    ],
+    [
+      "Forma do corpo",
+      "Superstrato"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Surf green"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Poplar"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Gloss"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo torrado"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "648 mm"
+    ],
+    [
+      "Com alavanca",
+      "Sim"
+    ],
+    [
+      "Quantidade de captadores",
+      "3"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 68,
+  "imagem": "/images/produtos/seizi-vintage-budokan.webp"
+}

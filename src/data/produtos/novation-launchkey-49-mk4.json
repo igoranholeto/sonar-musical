@@ -1,0 +1,90 @@
+{
+  "nome": "Novation Launchkey 49 MK4",
+  "meli": "https://meli.la/2qyei4L",
+  "preco": 2442,
+  "precoEm": "2026-11-13",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 2442
+    }
+  ],
+  "imagemAlt": "Novation Launchkey 49 MK4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$244,19 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-novation-launchkey-mk4-49-teclas-branco/p/MLB53223570"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Novation"
+    ],
+    [
+      "Modelo",
+      "MK4 Launchkey 49"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ],
+    [
+      "Quantidade de teclas",
+      "49"
+    ],
+    [
+      "Modelo detalhado",
+      "Launchkey 49 MK4 White"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "Teclado"
+    ],
+    [
+      "Quantidade de pads",
+      "16"
+    ],
+    [
+      "Quantidade de faders",
+      "9"
+    ],
+    [
+      "Quantidade de botões",
+      "8"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Com roda de pitch e modulação",
+      "Sim"
+    ],
+    [
+      "Com botões de mudança de oitava",
+      "Sim"
+    ],
+    [
+      "Com botões DAW",
+      "Sim"
+    ],
+    [
+      "Com modo sequenciador",
+      "Sim"
+    ],
+    [
+      "Com sensibilidade",
+      "Sim"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 336,
+  "imagem": "/images/produtos/novation-launchkey-49-mk4.webp"
+}

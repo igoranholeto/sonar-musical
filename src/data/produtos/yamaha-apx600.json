@@ -1,7 +1,7 @@
 {
   "nome": "Yamaha APX600",
   "meli": "https://meli.la/2fbEqiV",
-  "preco": 2399,
+  "preco": 2431,
   "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-12",
       "preco": 2399
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2431
     }
   ],
   "nota": 4.9,
@@ -25,9 +29,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "10x R$239,90 sem juros",
+    "parcelas": "10x R$243,12 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-apx600-para-destros-old-violin-sunburst-pau-rosa-brilhante/p/MLB14034060"
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-apx600-para-destros-old-violin-sunburst-pau-rosa/p/MLB14034060"
   },
   "ficha": [
     [

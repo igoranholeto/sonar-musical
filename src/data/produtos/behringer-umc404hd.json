@@ -1,0 +1,90 @@
+{
+  "nome": "Behringer U-Phoria UMC404HD",
+  "meli": "https://meli.la/18AHnMW",
+  "preco": 1422,
+  "precoEm": "2026-11-13",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1422
+    }
+  ],
+  "imagemAlt": "Behringer U-Phoria UMC404HD",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$142,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-behringer-u-phoria-umc404hd-2-geracao/p/MLB15396034"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "U-Phoria"
+    ],
+    [
+      "Modelo",
+      "UMC404HD"
+    ],
+    [
+      "Geração",
+      "2ª geração"
+    ],
+    [
+      "Quantidade de entradas",
+      "4"
+    ],
+    [
+      "Quantidade de saídas",
+      "4"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, USB"
+    ],
+    [
+      "Software compatível",
+      "Live Cubase Pro tools Logic pro"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fio USB"
+    ],
+    [
+      "É compatível com MIDI",
+      "Sim"
+    ],
+    [
+      "Latência",
+      "0 ms"
+    ],
+    [
+      "Altura",
+      "4,58 cm"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 644,
+  "imagem": "/images/produtos/behringer-umc404hd.webp"
+}

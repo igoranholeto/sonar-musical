@@ -1,0 +1,92 @@
+{
+  "nome": "Giannini Roadman Nylon",
+  "meli": "https://meli.la/1cmQHL4",
+  "preco": 1270,
+  "precoEm": "2026-11-13",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1270
+    }
+  ],
+  "imagemAlt": "Giannini Roadman Nylon",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1542,
+    "off": 17,
+    "parcelas": "12x R$123,28",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-roadman-nylon-mogno-pre-amplificador/p/MLB38406421"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "GRMN"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Modelo detalhado",
+      "GRMN N"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Okoume"
+    ],
+    [
+      "Materiais do fundo",
+      "Álamo"
+    ],
+    [
+      "Materiais dos laterais",
+      "Poplar"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Com braço desmontável",
+      "Não"
+    ],
+    [
+      "Materiais do braço",
+      "Okoumé"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 257,
+  "imagem": "/images/produtos/giannini-roadman-nylon.webp"
+}

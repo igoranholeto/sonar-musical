@@ -1,0 +1,90 @@
+{
+  "nome": "Piano Digital Tomate MSC-A3",
+  "meli": "https://meli.la/1L1XoAW",
+  "preco": 2262,
+  "precoEm": "2026-11-13",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 2262
+    }
+  ],
+  "imagemAlt": "Piano Digital Tomate MSC-A3",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$214,53",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-tomate-msc-a3-88-teclas-profissional-cpedal-triplo-preto/p/MLB69721382"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tomate"
+    ],
+    [
+      "Linha",
+      "88 Teclas"
+    ],
+    [
+      "Modelo",
+      "MSC-A3"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Altura",
+      "75 cm"
+    ],
+    [
+      "Largura",
+      "134 cm"
+    ],
+    [
+      "Profundidade",
+      "30,7 cm"
+    ],
+    [
+      "Peso",
+      "22 kg"
+    ],
+    [
+      "Modelo detalhado",
+      "MSC-A3"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Sensíveis"
+    ],
+    [
+      "Quantidade de ritmos",
+      "600"
+    ],
+    [
+      "Quantidade de canções",
+      "80"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 48,
+  "imagem": "/images/produtos/tomate-msc-a3-piano-digital.webp"
+}

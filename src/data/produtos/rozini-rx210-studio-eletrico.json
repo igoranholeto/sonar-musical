@@ -1,7 +1,7 @@
 {
   "nome": "Rozini Studio RX210 Eletroacústico (nylon)",
   "meli": "https://meli.la/2YvY8px",
-  "preco": 1687,
+  "preco": 1681,
   "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
@@ -15,7 +15,7 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 1687
+      "preco": 1681
     }
   ],
   "nota": 4.7,
@@ -25,9 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2176,
-    "off": 22,
-    "parcelas": "10x R$168,70 sem juros",
+    "antes": 2184,
+    "off": 23,
+    "parcelas": "10x R$168,19 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-rozini-studio-classico-ativo-natural-louro-preto-com-eq-rozini-re-02/p/MLB37313778"
   },

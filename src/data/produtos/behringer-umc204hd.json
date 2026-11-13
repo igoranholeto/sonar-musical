@@ -1,0 +1,90 @@
+{
+  "nome": "Behringer U-Phoria UMC204HD",
+  "meli": "https://meli.la/1NM4Rto",
+  "preco": 1057,
+  "precoEm": "2026-11-13",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1057
+    }
+  ],
+  "imagemAlt": "Behringer U-Phoria UMC204HD",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$105,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-u-phoria-umc204hd-cor-preta-behringer/p/MLB24474693"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "U-Phoria"
+    ],
+    [
+      "Modelo",
+      "UMC204HD"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "4"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Software compatível",
+      "Live, Cubase, Pro tools"
+    ],
+    [
+      "Acessórios incluídos",
+      "Fio USB"
+    ],
+    [
+      "É compatível com MIDI",
+      "Sim"
+    ],
+    [
+      "Latência",
+      "0 ms"
+    ],
+    [
+      "Altura",
+      "13 cm"
+    ],
+    [
+      "Largura",
+      "19 cm"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 725,
+  "imagem": "/images/produtos/behringer-umc204hd.webp"
+}

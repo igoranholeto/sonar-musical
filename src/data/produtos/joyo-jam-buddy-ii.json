@@ -1,7 +1,7 @@
 {
   "nome": "Joyo Jam Buddy II",
   "meli": "https://meli.la/2MoW2M8",
-  "preco": 540,
+  "preco": 542,
   "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
@@ -11,14 +11,14 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 540
+      "preco": 542
     }
   ],
   "imagemAlt": "Joyo Jam Buddy II",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$53,96 sem juros",
+    "parcelas": "10x R$54,15 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/joyo-jam-buddy-ii-amplificador-guitarra-3-canais-c/p/MLB2111013047"
   },

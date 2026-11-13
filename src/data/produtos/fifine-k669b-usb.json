@@ -1,22 +1,26 @@
 {
   "nome": "Fifine K669B (USB)",
   "meli": "https://meli.la/31EBP6H",
-  "preco": 195,
+  "preco": 192,
   "precoEm": "2026-11-13",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 195
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 192
     }
   ],
   "imagemAlt": "Fifine K669B (USB)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 230,
-    "off": 15,
-    "parcelas": "12x R$19,35",
+    "antes": 216,
+    "off": 10,
+    "parcelas": "6x R$32 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-condensador-fifine-k669b-usb-cardioide-preto-para-pc/p/MLB23016755"
   },

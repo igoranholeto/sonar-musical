@@ -1,0 +1,90 @@
+{
+  "nome": "Takamine GC6CE",
+  "meli": "https://meli.la/12KrJNw",
+  "preco": 3789,
+  "precoEm": "2026-11-13",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 3789
+    }
+  ],
+  "imagemAlt": "Takamine GC6CE",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$378,91 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-takamine-g-series-gc6ce-n-gc6ce-n-para-destros-preta-laurel/p/MLB16112056"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Laurel"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Com corte",
+      "Sim"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Tipos de controle",
+      "Equalizador, Afinador, Volume, Pré-amplificador"
+    ],
+    [
+      "Marca",
+      "Takamine"
+    ],
+    [
+      "Linha",
+      "G Series"
+    ],
+    [
+      "Modelo",
+      "GC6CE N"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 212,
+  "imagem": "/images/produtos/takamine-gc6ce.webp"
+}

@@ -1,0 +1,91 @@
+{
+  "nome": "Sonn SN-200F",
+  "meli": "https://meli.la/14QcmFg",
+  "preco": 1260,
+  "precoEm": "2026-11-13",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1260
+    }
+  ],
+  "imagemAlt": "Sonn SN-200F",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1400,
+    "off": 10,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-sonn-sn-200f-com-7-pads-usb-midi-e-modulo-digital/p/MLB75282750"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "SONN"
+    ],
+    [
+      "Modelo",
+      "SN-200F"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "1"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui prato splash",
+      "Não"
+    ],
+    [
+      "Inclui prato de condução",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Não"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui pedais",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ],
+    [
+      "É portátil",
+      "Sim"
+    ],
+    [
+      "Inclui módulo de som",
+      "Sim"
+    ],
+    [
+      "Quantidade de sons",
+      "30"
+    ],
+    [
+      "Funções do módulo de som",
+      "15 setups, 165 timbres, funçao metrônomo, programavel"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 18,
+  "imagem": "/images/produtos/sonn-sn-200f.webp"
+}

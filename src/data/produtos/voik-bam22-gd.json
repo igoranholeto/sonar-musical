@@ -1,0 +1,90 @@
+{
+  "nome": "Bateria Acústica Voik BAM22-GD",
+  "meli": "https://meli.la/2HQ3SdF",
+  "preco": 2174,
+  "precoEm": "2026-11-13",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 2174
+    }
+  ],
+  "imagemAlt": "Bateria Acústica Voik BAM22-GD",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$208,96",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-voik-bam22-gd-cor-gold-brilhante-bumbo-22-caixa-com-botao-de-ajuste-fino-na-vibracao-8-pecas-maquina-de-chimbal-completa-com-pratos-banco-e-baqueta-para-iniciantes-focus-series/p/MLB51536132"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Linha",
+      "Focus"
+    ],
+    [
+      "Modelo",
+      "BAM22-WN"
+    ],
+    [
+      "Cor",
+      "Gold Brilhante"
+    ],
+    [
+      "Acabamento",
+      "Fosco"
+    ],
+    [
+      "Peso",
+      "28 kg"
+    ],
+    [
+      "Quantidade de peças",
+      "5"
+    ],
+    [
+      "Materiais",
+      "Madeira: Poplar"
+    ],
+    [
+      "Idade",
+      "Adultos"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Sim"
+    ],
+    [
+      "Inclui prato splash",
+      "Não"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 233,
+  "imagem": "/images/produtos/voik-bam22-gd.webp"
+}

@@ -1,0 +1,76 @@
+{
+  "nome": "Estante Opus YP45 para piano digital",
+  "meli": "https://meli.la/1UVaD3D",
+  "preco": 459,
+  "precoEm": "2026-11-13",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 459
+    }
+  ],
+  "imagemAlt": "Estante Opus YP45 para piano digital",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 515,
+    "off": 10,
+    "parcelas": "9x R$51 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/estante-suporte-piano-digital-opus-yp45-yamaha-p35p45p115-cor-preto/p/MLB28086142"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Opus"
+    ],
+    [
+      "Modelo",
+      "OPUS YP45"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Material",
+      "Madeira"
+    ],
+    [
+      "Quantidade de longarinas",
+      "1"
+    ],
+    [
+      "Altura mínima",
+      "66 cm"
+    ],
+    [
+      "Altura máxima",
+      "66 cm"
+    ],
+    [
+      "Largura mínima",
+      "1,32 m"
+    ],
+    [
+      "Largura máxima",
+      "1,32 m"
+    ],
+    [
+      "Peso máximo suportado",
+      "40 kg"
+    ],
+    [
+      "É dobrável",
+      "Não"
+    ],
+    [
+      "É duplo",
+      "Não"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 126,
+  "imagem": "/images/produtos/estante-opus-yp45.webp"
+}

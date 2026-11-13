@@ -1,7 +1,7 @@
 {
   "nome": "Vogga VCA103N (38\", nylon)",
   "meli": "https://meli.la/1PmVmF5",
-  "preco": 312,
+  "preco": 313,
   "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
@@ -19,7 +19,7 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 312
+      "preco": 313
     }
   ],
   "nota": 4.7,
@@ -29,7 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 328,
+    "antes": 329,
     "off": 5,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-vogga-vca103n-nylon-classico-38-natural/p/MLB22356073"

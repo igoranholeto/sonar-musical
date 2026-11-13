@@ -1,0 +1,92 @@
+{
+  "nome": "Tagima Andes",
+  "meli": "https://meli.la/2NZnNYS",
+  "preco": 836,
+  "precoEm": "2026-11-13",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 836
+    }
+  ],
+  "imagemAlt": "Tagima Andes",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 907,
+    "off": 7,
+    "parcelas": "10x R$83,59 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-andes-vermelho-cor-candy-apple-satin-fosco-material-do-diapasao-okoume-orientacao-da-mao-destro/p/MLB26638441"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Okoume"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Com corte",
+      "Sim"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Com braço desmontável",
+      "Não"
+    ],
+    [
+      "Materiais do braço",
+      "Okume - Shape em C"
+    ],
+    [
+      "Tipos de controle",
+      "Tagima TEQ-8"
+    ],
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Latin America"
+    ],
+    [
+      "Modelo",
+      "TG-ANDESLPBS"
+    ],
+    [
+      "Cor",
+      "Candy Apple Satin"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1022,
+  "imagem": "/images/produtos/tagima-andes.webp"
+}
