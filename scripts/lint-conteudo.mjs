@@ -4,10 +4,14 @@
 // - AfiliadoCTA sem link meli.la ou com id que não existe no catálogo;
 // - produto do catálogo com link fora do meli.la ou sem preço;
 // - capa com foto (covers-src/_fullbleed_attrib.json) sem crédito em src/data/creditos.ts;
-// - título > 70 ou description > 160 caracteres; capa local sem a miniatura WebP do card.
+// - título > 70 ou description > 160 caracteres; capa local sem a miniatura WebP do card;
+// - nota do Sonar (avaliacao do CTA) diferente para o mesmo produto em posts diferentes, ou
+//   "Nossa nota" do texto diferente do rating do review (regra em lib/notas-redacao.mjs;
+//   a nota dos compradores do ML, no catálogo, é outra coisa e não entra aqui).
 // Uso: node scripts/lint-conteudo.mjs
 import fs from 'node:fs';
 import path from 'node:path';
+import { coletarNotas, divergencias } from './lib/notas-redacao.mjs';
 
 const erros = [];
 const err = (onde, msg) => erros.push(`${onde}: ${msg}`);
@@ -53,8 +57,18 @@ for (const [dir, ext] of [['src/data/blog', /\.mdx?$/], ['src/data/bandas', /\.m
         if (!id && !url) err(onde, 'AfiliadoCTA sem id= e sem url=');
         if (url && !/^https:\/\/meli\.la\//.test(url)) err(onde, `AfiliadoCTA com link fora do meli.la: ${url}`);
       }
+      // "Nossa nota: 4,5 de 5" no texto do review = rating do frontmatter.
+      const rating = t.match(/^rating:\s*([\d.]+)/m)?.[1];
+      for (const m of t.matchAll(/Nossa nota[^0-9\n]{0,40}?(\d),(\d) de 5/g)) {
+        if (rating && Number(`${m[1]}.${m[2]}`) !== Number(rating)) err(`${p}:${linhaDe(t, m.index)}`, `"Nossa nota" ${m[1]},${m[2]} diferente do rating ${rating}`);
+      }
     }
   }
+}
+
+// Uma nota do Sonar por produto em todo o site.
+for (const d of divergencias(coletarNotas())) {
+  err(`src/data/blog/${d.slug}.mdx:${d.linha}`, `nota do Sonar ${d.nota} para ${d.id}, que no site tem ${d.canonica} (rode node scripts/normalizar-notas.mjs --aplicar)`);
 }
 
 // Capas com foto do Commons precisam de crédito: a URL de origem da foto tem de estar
