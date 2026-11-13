@@ -1,0 +1,92 @@
+{
+  "nome": "Behringer U-Phoria UMC202HD",
+  "meli": "https://meli.la/2bHyo9d",
+  "preco": 911,
+  "precoEm": "2026-11-13",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 911
+    }
+  ],
+  "imagemAlt": "Behringer U-Phoria UMC202HD",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 996,
+    "off": 8,
+    "parcelas": "12x R$88,34",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-usb-behringer-u-phoria-umc202hd-cor-preta/p/MLB24547439"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "U-Phoria"
+    ],
+    [
+      "Modelo",
+      "UMC202HD"
+    ],
+    [
+      "Geração",
+      "1ª geração"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "4,64 cm"
+    ],
+    [
+      "Largura",
+      "17 cm"
+    ],
+    [
+      "Profundidade",
+      "12,5 cm"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB"
+    ],
+    [
+      "Tipos de conexões",
+      "USB Tipo-B 2.0, USB"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 782,
+  "imagem": "/images/produtos/behringer-umc202hd.webp"
+}

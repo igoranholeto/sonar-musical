@@ -1,0 +1,64 @@
+{
+  "nome": "Pedal de Bumbo Mapex Mars P600",
+  "meli": "https://meli.la/16AhRU8",
+  "preco": 658,
+  "precoEm": "2026-11-13",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 658
+    }
+  ],
+  "imagemAlt": "Pedal de Bumbo Mapex Mars P600",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 847,
+    "off": 22,
+    "parcelas": "10x R$65,76 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-bumbo-single-bass-corrente-dupla-mars-p600-mapex/p/MLB34212234"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Mapex"
+    ],
+    [
+      "Modelo",
+      "P600"
+    ],
+    [
+      "Altura x Largura",
+      "22 cm x 18 cm"
+    ],
+    [
+      "Tipo de pedal",
+      "Simples"
+    ],
+    [
+      "Sistema de tração",
+      "Corrente"
+    ],
+    [
+      "É pedal duplo",
+      "Não"
+    ],
+    [
+      "É pedal eletrônico",
+      "Não"
+    ],
+    [
+      "Inclui estojo",
+      "Não"
+    ],
+    [
+      "Peso",
+      "1 kg"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 268,
+  "imagem": "/images/produtos/mapex-mars-p600-pedal-bumbo.webp"
+}

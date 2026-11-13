@@ -1,0 +1,91 @@
+{
+  "nome": "Bateria Acústica Batuc BD22",
+  "meli": "https://meli.la/1P8Xz72",
+  "preco": 1999,
+  "precoEm": "2026-11-13",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1999
+    }
+  ],
+  "imagemAlt": "Bateria Acústica Batuc BD22",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 3799,
+    "off": 47,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-completa-batuc-bd22-iniciante-5-pecas-pratos-banco-pedal-bumbo-22-wine-red/p/MLB66912955"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Batuc"
+    ],
+    [
+      "Linha",
+      "Iniciante"
+    ],
+    [
+      "Modelo",
+      "BD22"
+    ],
+    [
+      "Cor",
+      "Vinho tinto"
+    ],
+    [
+      "Acabamento",
+      "Brilhante"
+    ],
+    [
+      "Peso",
+      "34 kg"
+    ],
+    [
+      "Quantidade de peças",
+      "5"
+    ],
+    [
+      "Materiais",
+      "Álamo"
+    ],
+    [
+      "Idade",
+      "Adultos"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Não"
+    ],
+    [
+      "Inclui prato splash",
+      "Não"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 98,
+  "imagem": "/images/produtos/batuc-bd22.webp"
+}

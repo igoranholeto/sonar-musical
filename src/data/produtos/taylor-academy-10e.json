@@ -1,13 +1,17 @@
 {
   "nome": "Taylor Academy 10e",
   "meli": "https://meli.la/1pQHs9H",
-  "preco": 7900,
+  "preco": 6000,
   "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-05",
       "preco": 7900
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 6000
     }
   ],
   "imagemAlt": "Taylor Academy 10e",
@@ -15,7 +19,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$790 sem juros",
+    "parcelas": "10x R$600 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-taylor-academy-10-e-eletroacustico-cbag-cor-natural-orientacao-da-mao-destro/p/MLB41179928"
   },

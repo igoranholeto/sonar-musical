@@ -1,0 +1,80 @@
+{
+  "nome": "Cavaquinho Strinberg CS25E",
+  "meli": "https://meli.la/2K9yTaU",
+  "preco": 603,
+  "precoEm": "2026-11-13",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 603
+    }
+  ],
+  "imagemAlt": "Cavaquinho Strinberg CS25E",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1099,
+    "off": 45,
+    "parcelas": "10x R$60,34 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-eletrico-strinberg-cs25e-4-cordas-acessorios/up/MLBU3939333966"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Modelo",
+      "CS25EN"
+    ],
+    [
+      "Cor",
+      "HoneySunburst"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Eletroacústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco ou Brilhante"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Acessórios"
+    ],
+    [
+      "Altura",
+      "11 cm"
+    ],
+    [
+      "Largura",
+      "27 cm"
+    ],
+    [
+      "Comprimento",
+      "62 cm"
+    ],
+    [
+      "Peso",
+      "700 g"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 34,
+  "imagem": "/images/produtos/strinberg-cs25e.webp"
+}

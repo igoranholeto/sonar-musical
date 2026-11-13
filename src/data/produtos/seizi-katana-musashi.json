@@ -1,0 +1,92 @@
+{
+  "nome": "Seizi Katana Musashi Fun HSS",
+  "meli": "https://meli.la/1VVfLKF",
+  "preco": 1079,
+  "precoEm": "2026-11-13",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1079
+    }
+  ],
+  "imagemAlt": "Seizi Katana Musashi Fun HSS",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1199,
+    "off": 9,
+    "parcelas": "12x R$104,84",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-seizi-katana-musashi-fun-hss-cor-light-silver-sparkle-material-do-diapasao-madeira-de-bordo-orientacao-da-mao-destro/p/MLB66312589"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Seizi"
+    ],
+    [
+      "Linha",
+      "Fun"
+    ],
+    [
+      "Modelo",
+      "Musashi HSS"
+    ],
+    [
+      "Ano de lançamento",
+      "2024"
+    ],
+    [
+      "Origem",
+      "China"
+    ],
+    [
+      "Forma do corpo",
+      "Super Strato"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Light Silver Sparkle"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Poplar"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Sparkle Gloss"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "648 mm"
+    ],
+    [
+      "Com alavanca",
+      "Sim"
+    ],
+    [
+      "Quantidade de trastes",
+      "22"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 320,
+  "imagem": "/images/produtos/seizi-katana-musashi.webp"
+}

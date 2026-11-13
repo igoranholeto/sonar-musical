@@ -1,0 +1,92 @@
+{
+  "nome": "Tagima Almach Les Paul",
+  "meli": "https://meli.la/2xc1zMG",
+  "preco": 1432,
+  "precoEm": "2026-11-13",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1432
+    }
+  ],
+  "imagemAlt": "Tagima Almach Les Paul",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 2499,
+    "off": 42,
+    "parcelas": "12x R$139,01",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-les-paul-tagima-almach-6-cordas-preto-fosco/p/MLB49694159"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "ALMACH"
+    ],
+    [
+      "Modelo",
+      "ALMACH-BKS-DF"
+    ],
+    [
+      "Ano de lançamento",
+      "2025"
+    ],
+    [
+      "Origem",
+      "China"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Black satin"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Techwood"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Com alavanca",
+      "Não"
+    ]
+  ],
+  "nota": 4.7,
+  "avaliacoes": 140,
+  "imagem": "/images/produtos/tagima-almach-les-paul.webp"
+}

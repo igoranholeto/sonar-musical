@@ -1,0 +1,92 @@
+{
+  "nome": "Cavaquinho Giannini Start CS-14 EP",
+  "meli": "https://meli.la/18jKQST",
+  "preco": 394,
+  "precoEm": "2026-11-13",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 394
+    }
+  ],
+  "imagemAlt": "Cavaquinho Giannini Start CS-14 EP",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 700,
+    "off": 43,
+    "parcelas": "12x R$38,56",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cavaquinho-giannini-eletrico-start-cs-14-ep-black/p/MLB24776613"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "CS-14 ep"
+    ],
+    [
+      "Cor",
+      "BK - Preto"
+    ],
+    [
+      "Tipo de cavaquinho",
+      "Eletroacústico"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Materiais do corpo",
+      "Tília"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Material do diapasão",
+      "Sabina massiça"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Bordo"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Altura",
+      "7,5 cm"
+    ],
+    [
+      "Largura",
+      "23,9 cm"
+    ],
+    [
+      "Comprimento",
+      "60 cm"
+    ],
+    [
+      "Peso",
+      "900 g"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 789,
+  "imagem": "/images/produtos/giannini-cs-14-ep.webp"
+}

@@ -1,7 +1,7 @@
 {
   "nome": "Giannini Start N-14 Canhoto",
-  "meli": "https://meli.la/2zCDvgo",
-  "preco": 560,
+  "meli": "https://meli.la/1ddCu6t",
+  "preco": 635,
   "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
@@ -15,24 +15,33 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 560
+      "preco": 635
     }
   ],
-  "nota": 4.8,
-  "avaliacoes": 4772,
-  "imagemAlt": "Giannini Start N-14 Canhoto",
+  "nota": 4.9,
+  "avaliacoes": 4081,
+  "imagemAlt": "Violão Giannini Start N-14 canhoto eletroacústico, cor natural",
   "imagem": "/images/produtos/giannini-n14-canhoto.webp",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$54,15",
+    "antes": 690,
+    "off": 8,
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/violao-canhoto-nylon-giannini-start-n-14-natural/p/MLB68061482"
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-giannini-canhoto-n14-capa-reforcada-cor-natural-material-do-diapasao-ebano/p/MLB74910680"
   },
   "ficha": [
     [
-      "Material do diapasão",
-      "Ébano"
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Linha",
+      "Start"
+    ],
+    [
+      "Modelo",
+      "N-14"
     ],
     [
       "Orientação da mão",
@@ -47,44 +56,44 @@
       "P10"
     ],
     [
-      "Quantidade de cordas",
-      "6"
-    ],
-    [
-      "Marca das cordas",
-      "Giannini"
-    ],
-    [
       "Material das cordas",
       "Náilon"
     ],
     [
-      "Material da ponte",
-      "Bordo maciço escurecido"
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Tília"
+    ],
+    [
+      "Materiais do braço",
+      "Mogno"
+    ],
+    [
+      "Material do diapasão",
+      "Ébano"
+    ],
+    [
+      "Comprimento da escala",
+      "650 mm"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Inclui capa",
+      "Sim"
     ],
     [
       "Acessórios incluídos",
       "Alça"
-    ],
-    [
-      "Marca",
-      "Giannini"
-    ],
-    [
-      "Linha",
-      "Start"
-    ],
-    [
-      "Modelo",
-      "N-14"
-    ],
-    [
-      "Cor",
-      "Black"
-    ],
-    [
-      "Itens inclusos",
-      "capa"
     ]
   ]
 }

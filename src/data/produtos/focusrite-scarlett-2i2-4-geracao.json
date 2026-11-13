@@ -1,0 +1,90 @@
+{
+  "nome": "Focusrite Scarlett 2i2 (4ª geração)",
+  "meli": "https://meli.la/33dt7Tz",
+  "preco": 1841,
+  "precoEm": "2026-11-13",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1841
+    }
+  ],
+  "imagemAlt": "Focusrite Scarlett 2i2 (4ª geração)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$184 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-focusrite-scarlett-2i2-usb-c-de-4-geracao-cor-vermelha/p/MLB27308270"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Focusrite"
+    ],
+    [
+      "Linha",
+      "Scarlett"
+    ],
+    [
+      "Modelo",
+      "Scarlett 2i2 4ta Gen"
+    ],
+    [
+      "Geração",
+      "4ª geração"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Altura",
+      "4,75 cm"
+    ],
+    [
+      "Largura",
+      "17,5 cm"
+    ],
+    [
+      "Profundidade",
+      "99 cm"
+    ],
+    [
+      "Peso",
+      "499 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "USB-C"
+    ],
+    [
+      "Tipos de conexões",
+      "Plug 1/4\", XLR, MIDI"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 812,
+  "imagem": "/images/produtos/focusrite-scarlett-2i2-4-geracao.webp"
+}

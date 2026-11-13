@@ -1,13 +1,17 @@
 {
   "nome": "D'Addario NS Micro PW-CT-12",
-  "meli": "https://meli.la/274Rqnf",
-  "preco": 232,
+  "meli": "https://meli.la/1dmfXgT",
+  "preco": 249,
   "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 232
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 249
     }
   ],
   "nota": 4.9,
@@ -16,10 +20,10 @@
   "imagem": "/images/produtos/daddario-ns-micro-pw-ct-12.webp",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$22,98",
+    "desde": "2026-11-13",
+    "parcelas": "6x R$41,53 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/afinador-ns-micro-headstock-pw-ct-12-daddario/up/MLBU787423969"
+    "catalogo": "https://www.mercadolivre.com.br/afinador-cromatico-daddario-digital-micro-headstock-pw-ct-12/up/MLBU2042113094"
   },
   "ficha": [
     [

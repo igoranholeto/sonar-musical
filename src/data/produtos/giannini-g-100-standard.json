@@ -1,7 +1,7 @@
 {
   "nome": "Giannini G-100 Standard",
   "meli": "https://meli.la/1aHCHpi",
-  "preco": 696,
+  "preco": 602,
   "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
@@ -23,7 +23,7 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 696
+      "preco": 602
     }
   ],
   "imagem": "/images/produtos/giannini-g-100-standard.webp",
@@ -31,9 +31,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1290,
-    "off": 46,
-    "parcelas": "10x R$69,60 sem juros",
+    "antes": 1199,
+    "off": 49,
+    "parcelas": "12x R$58,21",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-giannini-g-100-standard-choupo-preta-3-captadores-single-coil/p/MLB17460879"
   },

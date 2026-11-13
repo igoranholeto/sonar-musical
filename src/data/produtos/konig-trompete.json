@@ -1,0 +1,68 @@
+{
+  "nome": "Trompete Konig Si Bemol",
+  "meli": "https://meli.la/1M7fUF4",
+  "preco": 649,
+  "precoEm": "2026-11-13",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 649
+    }
+  ],
+  "imagemAlt": "Trompete Konig Si Bemol",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 899,
+    "off": 27,
+    "parcelas": "12x R$62,76",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/trompete-konig-laqueado-si-bemol/p/MLB68373080"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Konig"
+    ],
+    [
+      "Modelo",
+      "Trompete"
+    ],
+    [
+      "Cor",
+      "Laqueado"
+    ],
+    [
+      "Acabamento",
+      "Laqueado"
+    ],
+    [
+      "Modelo detalhado",
+      "Estudante"
+    ],
+    [
+      "Chave da trompete",
+      "Sib"
+    ],
+    [
+      "Material",
+      "Latão"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bocal, Case, Óleo lubrificante, Flanela, par de luvas"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 415,
+  "imagem": "/images/produtos/konig-trompete.webp"
+}

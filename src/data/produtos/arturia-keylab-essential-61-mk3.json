@@ -1,0 +1,90 @@
+{
+  "nome": "Arturia KeyLab Essential 61 MK3",
+  "meli": "https://meli.la/2oE45NE",
+  "preco": 2277,
+  "precoEm": "2026-11-13",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 2277
+    }
+  ],
+  "imagemAlt": "Arturia KeyLab Essential 61 MK3",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$218,86",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-arturia-keylab-essential-61-mk3-black/p/MLB26598496"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Arturia"
+    ],
+    [
+      "Modelo",
+      "Keylab Essential 61 MK3"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de teclas",
+      "61"
+    ],
+    [
+      "Modelo detalhado",
+      "Keylab 61 mk3"
+    ],
+    [
+      "Tipo de controlador MIDI",
+      "Teclado"
+    ],
+    [
+      "Quantidade de pads",
+      "8"
+    ],
+    [
+      "Quantidade de faders",
+      "9"
+    ],
+    [
+      "Quantidade de botões",
+      "9"
+    ],
+    [
+      "Quantidade de entradas de pedal",
+      "1"
+    ],
+    [
+      "Com roda de pitch e modulação",
+      "Sim"
+    ],
+    [
+      "Com botões de mudança de oitava",
+      "Não"
+    ],
+    [
+      "Com botões DAW",
+      "Não"
+    ],
+    [
+      "Com modo sequenciador",
+      "Não"
+    ],
+    [
+      "Com sensibilidade",
+      "Sim"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 946,
+  "imagem": "/images/produtos/arturia-keylab-essential-61-mk3.webp"
+}

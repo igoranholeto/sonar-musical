@@ -1,0 +1,92 @@
+{
+  "nome": "Casio Casiotone CT-S200",
+  "meli": "https://meli.la/27grj6r",
+  "preco": 699,
+  "precoEm": "2026-11-13",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 699
+    }
+  ],
+  "imagemAlt": "Casio Casiotone CT-S200",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 958,
+    "off": 24,
+    "parcelas": "10x R$72 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-casiotone-ct-s200-61-teclas-vermelho/p/MLB16107364"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Casiotone"
+    ],
+    [
+      "Modelo",
+      "CT-S200"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Modelo detalhado",
+      "CT-S200RD"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "48"
+    ],
+    [
+      "Quantidade de ritmos",
+      "77"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Suporte para partituras"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Nível 1"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Conector telefônico, Entrada de áudio, Pedal, USB"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 2595,
+  "imagem": "/images/produtos/casio-ct-s200.webp"
+}

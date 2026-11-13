@@ -1,0 +1,92 @@
+{
+  "nome": "Datrel Bass 200",
+  "meli": "https://meli.la/2bXTHGU",
+  "preco": 1103,
+  "precoEm": "2026-11-13",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1103
+    }
+  ],
+  "imagemAlt": "Datrel Bass 200",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 2499,
+    "off": 55,
+    "parcelas": "12x R$107,05",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-contrabaixo-datrel-bass-200-200w-12-pol-cor-preto/p/MLB36760536"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Datrel"
+    ],
+    [
+      "Modelo",
+      "BAS-200"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Peso",
+      "18 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "36.5 cm x 43 cm x 51.5 cm"
+    ],
+    [
+      "Conectores de saída",
+      "XLR balanceado"
+    ],
+    [
+      "Voltagem da bateria",
+      "127/220V"
+    ],
+    [
+      "Tipo de amplificador",
+      "Elétrico"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Contrabaixo"
+    ],
+    [
+      "Com reverb",
+      "Não"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "200 W"
+    ],
+    [
+      "Classe",
+      "Kick back"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 541,
+  "imagem": "/images/produtos/datrel-bass-200.webp"
+}

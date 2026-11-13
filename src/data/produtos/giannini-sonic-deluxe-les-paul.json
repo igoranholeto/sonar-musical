@@ -1,0 +1,92 @@
+{
+  "nome": "Giannini Sonic Deluxe Les Paul Gold Top",
+  "meli": "https://meli.la/1Uy73GY",
+  "preco": 1378,
+  "precoEm": "2026-11-13",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 1378
+    }
+  ],
+  "imagemAlt": "Giannini Sonic Deluxe Les Paul Gold Top",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1491,
+    "off": 7,
+    "parcelas": "10x R$137,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-giannini-sonic-deluxe-les-paul-gold-top-6-cordas/p/MLB62550254"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "Les Paul"
+    ],
+    [
+      "Forma do corpo",
+      "Les Paul"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Gold top"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Tília"
+    ],
+    [
+      "Material do diapasão",
+      "Madeira de bordo"
+    ],
+    [
+      "Acabamento do corpo",
+      "Brilhante"
+    ],
+    [
+      "Tipos de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Comprimento da escala",
+      "628,65 mm"
+    ],
+    [
+      "Material do tampo",
+      "Basswood"
+    ],
+    [
+      "Com alavanca",
+      "Não"
+    ],
+    [
+      "Com braço duplo",
+      "Não"
+    ],
+    [
+      "É mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 62,
+  "imagem": "/images/produtos/giannini-sonic-deluxe-les-paul.webp"
+}

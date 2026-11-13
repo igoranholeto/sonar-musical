@@ -1,0 +1,76 @@
+{
+  "nome": "Kit de Pratos Zeus Custom Set C (14, 16, 20)",
+  "meli": "https://meli.la/1fRWMKz",
+  "preco": 2036,
+  "precoEm": "2026-11-13",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 2036
+    }
+  ],
+  "imagemAlt": "Kit de Pratos Zeus Custom Set C (14, 16, 20)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 2835,
+    "off": 28,
+    "parcelas": "12x R$195,69",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-pratos-zeus-custom-set-c-141620-hihat-crash-ride-cbag/p/MLB26397174"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Zeus"
+    ],
+    [
+      "Linha",
+      "Custom"
+    ],
+    [
+      "Modelo",
+      "Set Custom C"
+    ],
+    [
+      "Tipo de prato",
+      "Bateria"
+    ],
+    [
+      "Cor",
+      "Dourado"
+    ],
+    [
+      "Formato de venda",
+      "Pack"
+    ],
+    [
+      "Quantidade de embalagens",
+      "4"
+    ],
+    [
+      "Acabamento",
+      "Natural"
+    ],
+    [
+      "Peso",
+      "Meio"
+    ],
+    [
+      "Tipo de liga",
+      "B20"
+    ],
+    [
+      "É prato de efeitos",
+      "Não"
+    ],
+    [
+      "Inclui suporte",
+      "Não"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 187,
+  "imagem": "/images/produtos/zeus-custom-set-c-pratos.webp"
+}

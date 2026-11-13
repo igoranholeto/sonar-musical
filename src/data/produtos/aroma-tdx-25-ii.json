@@ -1,0 +1,92 @@
+{
+  "nome": "Aroma TDX-25 II",
+  "meli": "https://meli.la/2z5gnyT",
+  "preco": 4649,
+  "precoEm": "2026-11-13",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 4649
+    }
+  ],
+  "imagemAlt": "Aroma TDX-25 II",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 6199,
+    "off": 25,
+    "parcelas": "10x R$464,93 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-25-ii-9-corpos-bluetooth-420-sons/p/MLB49042208"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Aroma"
+    ],
+    [
+      "Modelo",
+      "TDX-25 II"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "9"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui prato splash",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Sim"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui pedais",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ],
+    [
+      "É portátil",
+      "Não"
+    ],
+    [
+      "Inclui módulo de som",
+      "Sim"
+    ],
+    [
+      "Quantidade de sons",
+      "420"
+    ],
+    [
+      "Funções do módulo de som",
+      "Metrônomo"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 250,
+  "imagem": "/images/produtos/aroma-tdx-25-ii.webp"
+}

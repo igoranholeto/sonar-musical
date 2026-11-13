@@ -1,0 +1,62 @@
+{
+  "nome": "Pedal de Sustain Roland DP-10",
+  "meli": "https://meli.la/1RzwbDd",
+  "preco": 389,
+  "precoEm": "2026-11-13",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 389
+    }
+  ],
+  "imagemAlt": "Pedal de Sustain Roland DP-10",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "7x R$55,57 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-sustain-roland-dp10-1-ano-de/p/MLB27040494"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Roland"
+    ],
+    [
+      "Modelo",
+      "DP-10"
+    ],
+    [
+      "Funções do pedal",
+      "Sustain"
+    ],
+    [
+      "Tipo de conector",
+      "P10"
+    ],
+    [
+      "Quantidade de pedais",
+      "1"
+    ],
+    [
+      "Comprimento do cabo",
+      "2,2 m"
+    ],
+    [
+      "Com troca de polaridade",
+      "Não"
+    ],
+    [
+      "Material dos pedais",
+      "metal, plástico e borracha"
+    ],
+    [
+      "Material do corpo",
+      "Plástico"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 505,
+  "imagem": "/images/produtos/roland-dp-10.webp"
+}

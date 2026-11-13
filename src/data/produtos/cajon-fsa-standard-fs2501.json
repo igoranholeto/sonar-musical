@@ -1,0 +1,66 @@
+{
+  "nome": "Cajón FSA Standard FS2501 (elétrico)",
+  "meli": "https://meli.la/2hKP2xT",
+  "preco": 659,
+  "precoEm": "2026-11-13",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 659
+    }
+  ],
+  "imagemAlt": "Cajón FSA Standard FS2501 (elétrico)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$63,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cajon-eletrico-fsa-standard-fs2501-preto/p/MLB26329553"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "FSA"
+    ],
+    [
+      "Modelo",
+      "Fs 2501"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Largura x Comprimento",
+      "51 cm x 35 cm x 40 cm"
+    ],
+    [
+      "Material do corpo",
+      "Madeira Sumaúma"
+    ],
+    [
+      "Material do tampo",
+      "MADEIRA"
+    ],
+    [
+      "Com esteira",
+      "Sim"
+    ],
+    [
+      "Inclui estojo",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "É mini",
+      "Não"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 216,
+  "imagem": "/images/produtos/cajon-fsa-standard-fs2501.webp"
+}

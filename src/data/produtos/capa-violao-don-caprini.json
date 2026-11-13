@@ -1,7 +1,7 @@
 {
   "nome": "Capa acolchoada Don Caprini",
   "meli": "https://meli.la/1zLtwQ1",
-  "preco": 74,
+  "preco": 78,
   "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-12",
       "preco": 74
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 78
     }
   ],
   "nota": 4.7,
@@ -24,7 +28,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 130,
-    "off": 42,
+    "off": 39,
+    "parcelas": "3x R$26 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/capa-para-violao-don-caprini-acolchoada-com-alca-mochila-e-bolso-frontal-para-folk-e-classico-ate-41/p/MLB69190266"
   },

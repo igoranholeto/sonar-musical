@@ -1,13 +1,17 @@
 {
   "nome": "Cavaquinho Giannini Performance Plus CS-34",
   "meli": "https://meli.la/31kKN5a",
-  "preco": 386,
+  "preco": 426,
   "precoEm": "2026-11-13",
   "categoria": "cavaquinho",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 386
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 426
     }
   ],
   "imagemAlt": "Cavaquinho Giannini Performance Plus CS-34",
@@ -15,8 +19,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1000,
-    "off": 61,
-    "parcelas": "12x R$37,76",
+    "off": 57,
+    "parcelas": "8x R$53,23 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-giannini-performance-plus-sapele-spruce-capa/p/MLB60839409"
   },

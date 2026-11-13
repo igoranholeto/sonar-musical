@@ -1,0 +1,66 @@
+{
+  "nome": "Cajón FSA Gibão FGB6501",
+  "meli": "https://meli.la/1GJkGKb",
+  "preco": 919,
+  "precoEm": "2026-11-13",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 919
+    }
+  ],
+  "imagemAlt": "Cajón FSA Gibão FGB6501",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "10x R$91,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-fgb6501-gibao-preto/p/MLB52058099"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "FSA"
+    ],
+    [
+      "Modelo",
+      "Cajon fsa fgb6501 gibao preto"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura x Largura x Comprimento",
+      "55 cm x 35.5 cm x 49.5 cm"
+    ],
+    [
+      "Material do corpo",
+      "Sumaúma"
+    ],
+    [
+      "Material do tampo",
+      "Sumaúma"
+    ],
+    [
+      "Com esteira",
+      "Sim"
+    ],
+    [
+      "Inclui estojo",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "É mini",
+      "Não"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 189,
+  "imagem": "/images/produtos/cajon-fsa-gibao-fgb6501.webp"
+}

@@ -72,6 +72,7 @@ export const NOMES_CATEGORIA: Record<string, { singular: string; plural: string 
   pedal: { singular: 'Pedal', plural: 'Pedais' },
   pedaleira: { singular: 'Pedaleira', plural: 'Pedaleiras' },
   teclado: { singular: 'Teclado', plural: 'Teclados' },
+  piano: { singular: 'Piano digital', plural: 'Pianos digitais' },
   bateria: { singular: 'Bateria', plural: 'Baterias' },
   percussao: { singular: 'Instrumento de percussão', plural: 'Instrumentos de percussão' },
   ukulele: { singular: 'Ukulele', plural: 'Ukuleles' },

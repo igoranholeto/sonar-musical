@@ -1,0 +1,90 @@
+{
+  "nome": "Mixer Digital Behringer XR18 X Air",
+  "meli": "https://meli.la/2Q8VAzF",
+  "preco": 4866,
+  "precoEm": "2026-11-13",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 4866
+    }
+  ],
+  "imagemAlt": "Mixer Digital Behringer XR18 X Air",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$467,70",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mixer-behringer-xr18-x-air/p/MLB15915004"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Linha",
+      "X Air"
+    ],
+    [
+      "Modelo",
+      "XR18"
+    ],
+    [
+      "Consumo energético",
+      "30 W"
+    ],
+    [
+      "Tipo de console",
+      "Digital"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Com efeitos",
+      "Sim"
+    ],
+    [
+      "Quantidade de canais",
+      "18"
+    ],
+    [
+      "Conectividade",
+      "Wi-Fi"
+    ],
+    [
+      "Fabricante",
+      "Behringer"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Com equalizador",
+      "Sim"
+    ],
+    [
+      "Com software incluído",
+      "Sim"
+    ],
+    [
+      "Quantidade de buses",
+      "12"
+    ],
+    [
+      "Resposta em frequência",
+      "10 Hz - 22 kHz"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1390,
+  "imagem": "/images/produtos/behringer-xr18.webp"
+}

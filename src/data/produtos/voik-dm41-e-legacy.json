@@ -1,0 +1,92 @@
+{
+  "nome": "Voik DM41-E Legacy",
+  "meli": "https://meli.la/27N4tsA",
+  "preco": 581,
+  "precoEm": "2026-11-13",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-13",
+      "preco": 581
+    }
+  ],
+  "imagemAlt": "Voik DM41-E Legacy",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-13",
+    "antes": 1228,
+    "off": 52,
+    "parcelas": "12x R$56,16",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-voik-dm41-e-legacy-cor-mahogany-fosco-folk-cutaway-cordas-de-aco-captador-teq-5-com-afinador-origin-series-p-destros/p/MLB65417654"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Linha",
+      "Origin"
+    ],
+    [
+      "Modelo",
+      "DM41-E"
+    ],
+    [
+      "Cor",
+      "Mahogany"
+    ],
+    [
+      "Com corte",
+      "Não"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Material da ponte",
+      "Pau-rosa"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "Jack"
+    ],
+    [
+      "Forma do corpo",
+      "Folk"
+    ],
+    [
+      "Material do tampo",
+      "Sapele"
+    ],
+    [
+      "Materiais do fundo",
+      "Mogno"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 96,
+  "imagem": "/images/produtos/voik-dm41-e-legacy.webp"
+}

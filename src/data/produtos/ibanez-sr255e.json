@@ -1,7 +1,7 @@
 {
   "nome": "Ibanez SR255E (5 cordas)",
   "meli": "https://meli.la/2rTktKS",
-  "preco": 2895,
+  "preco": 3999,
   "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-11",
       "preco": 2895
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 3999
     }
   ],
   "imagemAlt": "Ibanez SR255E (5 cordas)",
@@ -27,9 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3732,
-    "off": 22,
-    "parcelas": "10x R$289,50 sem juros",
+    "parcelas": "10x R$399,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-ibanez-sr255e-tkf-5-cordas-ativo-destro-5/p/MLB79684768"
   },

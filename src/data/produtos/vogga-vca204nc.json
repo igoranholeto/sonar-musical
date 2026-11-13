@@ -1,21 +1,25 @@
 {
   "nome": "Vogga VCA204NC (nylon, cutaway)",
   "meli": "https://meli.la/12KHj3E",
-  "preco": 360,
+  "preco": 407,
   "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 360
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 407
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 522,
-    "off": 31,
-    "parcelas": "12x R$35,23",
+    "off": 22,
+    "parcelas": "12x R$39,32",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-nylon-acustico-cutway-preto-vogga-vca204ncbkacessori/up/MLBU3016451598"
   },

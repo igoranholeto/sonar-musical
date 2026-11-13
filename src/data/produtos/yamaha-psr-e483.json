@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha PSR-E483",
   "meli": "https://meli.la/2LDMT6M",
-  "preco": 2421,
-  "precoEm": "2026-11-12",
+  "preco": 2525,
+  "precoEm": "2026-11-13",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2421
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2525
     }
   ],
   "imagemAlt": "Yamaha PSR-E483",
@@ -15,8 +19,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 2981,
-    "off": 18,
-    "parcelas": "10x R$242,10 sem juros",
+    "off": 15,
+    "parcelas": "10x R$252,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-yamaha-psr-e483-arranjador-61-teclas-usb-preto/p/MLB64993691"
   },

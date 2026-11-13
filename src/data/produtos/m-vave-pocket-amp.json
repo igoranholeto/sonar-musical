@@ -1,7 +1,7 @@
 {
   "nome": "M-Vave Pocket Amp",
   "meli": "https://meli.la/1Wno42r",
-  "preco": 246,
+  "preco": 223,
   "precoEm": "2026-11-13",
   "categoria": "pedaleira",
   "historico": [
@@ -11,16 +11,15 @@
     },
     {
       "data": "2026-11-13",
-      "preco": 246
+      "preco": 223
     }
   ],
   "imagemAlt": "M-Vave Pocket Amp",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 300,
-    "off": 18,
-    "parcelas": "6x R$41 sem juros",
+    "antes": 320,
+    "off": 30,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-multiefeito-m-vave-pocket-amp-para-baixo-de-guitarra/p/MLB61396203"
   },

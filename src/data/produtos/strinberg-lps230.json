@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg LPS230",
   "meli": "https://meli.la/32TCNFG",
-  "preco": 1200,
+  "preco": 1139,
   "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
@@ -12,15 +12,19 @@
     {
       "data": "2026-11-12",
       "preco": 1200
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1139
     }
   ],
   "imagemAlt": "Strinberg LPS230",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1579,
+    "antes": 1499,
     "off": 24,
-    "parcelas": "10x R$120 sem juros",
+    "parcelas": "12x R$110,59",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strinberg-lps230-les-paul-tilia-sunburst-pau-rosa-22-trastes/p/MLB17460874"
   },

@@ -1,7 +1,7 @@
 {
   "nome": "Bandolim Marquês BND-100",
   "meli": "https://meli.la/2F237Rf",
-  "preco": 700,
+  "preco": 949,
   "precoEm": "2026-11-13",
   "categoria": "bandolim",
   "historico": [
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 700
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 949
     }
   ],
   "nota": 5,
@@ -21,9 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 827,
-    "off": 15,
-    "parcelas": "10x R$69,96 sem juros",
+    "parcelas": "10x R$94,88 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bandolim-marques-estudante-natural-fosco-acusticobnd-100nsac/p/MLB26590911"
   },
