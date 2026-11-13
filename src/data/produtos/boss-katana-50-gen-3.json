@@ -1,8 +1,8 @@
 {
   "nome": "Boss Katana 50 Gen 3",
   "meli": "https://meli.la/2E6pEqu",
-  "preco": 4127,
-  "precoEm": "2026-11-12",
+  "preco": 3469,
+  "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "imagem": "/images/produtos/boss-katana-50-gen-3.webp",
   "imagemAlt": "Boss Katana 50 Gen 3",
@@ -22,12 +22,18 @@
     {
       "data": "2026-11-05",
       "preco": 4127
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 3469
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$412,70 sem juros",
+    "antes": 4127,
+    "off": 15,
+    "parcelas": "10x R$347 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-boss-katana-ktn-50-3-guitarra/up/MLBU1099490744"
   },

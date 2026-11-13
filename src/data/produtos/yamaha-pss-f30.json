@@ -1,13 +1,17 @@
 {
   "nome": "Yamaha PSS-F30 (37 mini teclas)",
   "meli": "https://meli.la/1QmhSb6",
-  "preco": 513.13,
-  "precoEm": "2026-11-12",
+  "preco": 546,
+  "precoEm": "2026-11-13",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 513.13
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 546
     }
   ],
   "nota": 4.9,
@@ -17,9 +21,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 999,
-    "off": 48,
-    "parcelas": "12x R$49,62",
+    "parcelas": "10x R$54,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-preto-portatil-yamaha-pss-f30/p/MLB43953313"
   },

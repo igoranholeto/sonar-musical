@@ -2,7 +2,7 @@
   "nome": "Flauta doce contralto Yamaha YRA-28BIII",
   "meli": "https://meli.la/1VpGLD9",
   "preco": 219,
-  "precoEm": "2026-11-12",
+  "precoEm": "2026-11-13",
   "categoria": "sopro",
   "historico": [
     {
@@ -14,7 +14,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://produto.mercadolivre.com.br/MLB-7400744390"
+    "antes": 230,
+    "off": 5,
+    "parcelas": "12x R$21,64",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-doce-contralto-barroca-yamaha-yra-28biii-em-fa-de-resina-abs/p/MLB77178699"
   },
   "imagem": "/images/produtos/flauta-doce-yamaha-yra-28b.webp",
   "ficha": [

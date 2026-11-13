@@ -1,8 +1,8 @@
 {
   "nome": "Tagima 41K Soprano",
   "meli": "https://meli.la/1EesvH7",
-  "preco": 569,
-  "precoEm": "2026-11-12",
+  "preco": 523,
+  "precoEm": "2026-11-13",
   "categoria": "ukulele",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 569
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 523
     }
   ],
   "imagem": "/images/produtos/tagima-41k-soprano.webp",
@@ -24,6 +28,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 586,
+    "off": 10,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-soprano-tagima-acustico-41k-natural-fosco/up/MLBU4082680493"
   },

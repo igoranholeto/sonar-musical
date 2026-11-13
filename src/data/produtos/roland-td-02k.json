@@ -1,8 +1,8 @@
 {
   "nome": "Roland TD-02K",
   "meli": "https://meli.la/1HxzC94",
-  "preco": 2734,
-  "precoEm": "2026-11-12",
+  "preco": 2787,
+  "precoEm": "2026-11-13",
   "categoria": "bateria",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-11",
       "preco": 2734
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2787
     }
   ],
   "nota": 4.9,
@@ -21,9 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4369,
-    "off": 37,
-    "parcelas": "12x R$262,78",
+    "antes": 3097,
+    "off": 10,
+    "parcelas": "12x R$267,91",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-compacta-roland-td-02k-td02k/p/MLB27903155"
   },

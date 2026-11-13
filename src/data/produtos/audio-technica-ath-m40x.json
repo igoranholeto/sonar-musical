@@ -1,20 +1,26 @@
 {
   "nome": "Fone Audio-Technica ATH-M40x",
   "meli": "https://meli.la/31rDdRv",
-  "preco": 978,
-  "precoEm": "2026-11-12",
+  "preco": 934,
+  "precoEm": "2026-11-13",
   "categoria": "fone",
   "historico": [
     {
       "data": "2026-11-12",
       "preco": 978
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 934
     }
   ],
   "imagemAlt": "Fone Audio-Technica ATH-M40x",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/p/MLB6337847"
+    "parcelas": "12x R$90,67",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-audio-technica-m-series-ath-m40x-ath-m40x-preto/p/MLB6337847"
   },
   "nota": 4.9,
   "avaliacoes": 2950,

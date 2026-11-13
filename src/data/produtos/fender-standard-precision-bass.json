@@ -1,8 +1,8 @@
 {
   "nome": "Fender Standard Precision Bass",
   "meli": "https://meli.la/1tQYsn8",
-  "preco": 5109,
-  "precoEm": "2026-11-12",
+  "preco": 7171,
+  "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-12",
       "preco": 5109
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 7171
     }
   ],
   "nota": 5,
@@ -29,9 +33,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 6079,
-    "off": 15,
-    "parcelas": "12x R$491,06",
+    "parcelas": "10x R$717,11 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-fender-standard-precision-bass-mn-candy-cola-destro-vermelho-envernizado-4/p/MLB47464631"
   },

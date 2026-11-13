@@ -1,20 +1,26 @@
 {
   "nome": "Fone Sony MDR-7506",
   "meli": "https://meli.la/12x9vzd",
-  "preco": 739,
-  "precoEm": "2026-11-12",
+  "preco": 744,
+  "precoEm": "2026-11-13",
   "categoria": "fone",
   "historico": [
     {
       "data": "2026-11-12",
       "preco": 739
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 744
     }
   ],
   "imagemAlt": "Fone Sony MDR-7506",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://www.mercadolivre.com.br/p/MLB6416458"
+    "parcelas": "12x R$71,94",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-sony-professional-mdr-7506-preto/p/MLB6416458"
   },
   "nota": 4.9,
   "avaliacoes": 1820,

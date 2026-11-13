@@ -1,8 +1,8 @@
 {
   "nome": "Gibson Les Paul Standard '60s",
   "meli": "https://meli.la/2iWtCWH",
-  "preco": 28464,
-  "precoEm": "2026-11-12",
+  "preco": 28314,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 28464
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 28314
     }
   ],
   "imagem": "/images/produtos/gibson-les-paul-standard-60s.webp",
@@ -23,7 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$2.735",
+    "antes": 28464,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-gibson-les-paul-standard-60s-bourbon-burst/p/MLB27311912"
   },

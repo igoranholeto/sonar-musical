@@ -1,8 +1,8 @@
 {
   "nome": "Joyo MOMIX CAB",
   "meli": "https://meli.la/1UCwaKj",
-  "preco": 113,
-  "precoEm": "2026-11-12",
+  "preco": 108,
+  "precoEm": "2026-11-13",
   "categoria": "interface",
   "historico": [
     {
@@ -12,12 +12,18 @@
     {
       "data": "2026-11-12",
       "preco": 113
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 108
     }
   ],
   "imagemAlt": "Joyo MOMIX CAB",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 197,
+    "off": 45,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-joyo-momix-cab-celularpc-preto-p-gravacao-e-streaming/p/MLB36626675"
   },

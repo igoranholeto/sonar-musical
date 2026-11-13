@@ -1,8 +1,8 @@
 {
   "nome": "Eagle CH 889 Dreadnought",
   "meli": "https://meli.la/2iwiSrK",
-  "preco": 1721,
-  "precoEm": "2026-11-12",
+  "preco": 1598,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-12",
       "preco": 1721
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1598
     }
   ],
   "nota": 5,
@@ -21,9 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3937,
-    "off": 56,
-    "parcelas": "10x R$172,10 sem juros",
+    "antes": 1795,
+    "off": 10,
+    "parcelas": "12x R$153,65",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-eagle-classic-ch-889-para-destros-natural-bordo-envernizado/p/MLB15305243"
   },

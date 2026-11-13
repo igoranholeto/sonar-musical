@@ -1,8 +1,8 @@
 {
   "nome": "Kit 4 suportes de parede Don Caprini",
   "meli": "https://meli.la/324ec1w",
-  "preco": 29,
-  "precoEm": "2026-11-12",
+  "preco": 30,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-12",
       "preco": 29
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 30
     }
   ],
   "imagemAlt": "Kit 4 suportes de parede Don Caprini",
@@ -19,7 +23,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 40,
-    "off": 28,
+    "off": 25,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-4-suportes-de-parede-don-caprini-para-violao-guitarra-baixo-ukulele/p/MLB61426490"
   },

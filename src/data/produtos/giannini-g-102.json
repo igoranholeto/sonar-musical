@@ -1,8 +1,8 @@
 {
   "nome": "Giannini G-102",
   "meli": "https://meli.la/1f2DJWp",
-  "preco": 721,
-  "precoEm": "2026-11-12",
+  "preco": 815,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,15 +12,17 @@
     {
       "data": "2026-11-12",
       "preco": 721
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 815
     }
   ],
   "imagemAlt": "Giannini G-102",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1090,
-    "off": 33,
-    "parcelas": "10x R$72,07 sem juros",
+    "parcelas": "10x R$81,48 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-giannini-g-102-e-gita-cor-vermelho-material-do-diapasao-madeira-tecnica-orientacao-da-mao-destro/p/MLB69058041"
   },

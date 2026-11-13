@@ -1,8 +1,8 @@
 {
   "nome": "Viola Caipira Giannini Start VS-14",
   "meli": "https://meli.la/15ERjjQ",
-  "preco": 395,
-  "precoEm": "2026-11-12",
+  "preco": 423,
+  "precoEm": "2026-11-13",
   "categoria": "viola",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-12",
       "preco": 395
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 423
     }
   ],
   "nota": 4.7,
@@ -30,8 +34,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 541,
-    "off": 26,
-    "parcelas": "12x R$38,64",
+    "off": 21,
+    "parcelas": "12x R$40,87",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/viola-caipira-giannini-start-vs-14-com-10-cordas-preta/p/MLB73442115"
   },

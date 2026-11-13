@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha Pacifica 012",
   "meli": "https://meli.la/17iAf1U",
-  "preco": 1694,
-  "precoEm": "2026-11-12",
+  "preco": 1729,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 1694
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1729
     }
   ],
   "nota": 5,
@@ -25,7 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1783,
+    "antes": 1820,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-pacifica-yamaha-pac012100-series-branca-eletrica-cor-white-orientacao-da-mao-destro/p/MLB32088934"
   },

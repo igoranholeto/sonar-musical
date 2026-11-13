@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Mini-X (baixo)",
   "meli": "https://meli.la/2dKjvDv",
-  "preco": 157,
-  "precoEm": "2026-11-12",
+  "preco": 167,
+  "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-12",
       "preco": 157
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 167
     }
   ],
   "imagemAlt": "M-Vave Mini-X (baixo)",
@@ -19,7 +23,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 230,
-    "off": 31,
+    "off": 27,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/m-vave-combo-amplificador-valvular-para-baixo-mini-x-preto-5w/p/MLB47383297"
   },

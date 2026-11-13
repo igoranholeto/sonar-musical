@@ -1,8 +1,8 @@
 {
   "nome": "Boss ME-90",
   "meli": "https://meli.la/2tKSt9M",
-  "preco": 3203,
-  "precoEm": "2026-11-12",
+  "preco": 3399,
+  "precoEm": "2026-11-13",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/boss-me-90.webp",
   "imagemAlt": "Pedaleira Boss ME-90",
@@ -18,14 +18,16 @@
     {
       "data": "2026-11-11",
       "preco": 3203
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 3399
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4654,
-    "off": 31,
-    "parcelas": "12x R$307,86",
+    "parcelas": "10x R$339,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/boss-me-90-pedaleira-multiefeitos-para-guitarra-me-90/p/MLB27796166"
   },

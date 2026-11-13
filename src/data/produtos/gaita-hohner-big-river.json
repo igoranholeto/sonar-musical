@@ -1,20 +1,26 @@
 {
   "nome": "Gaita Hohner Big River 590/20 (Dó)",
   "meli": "https://meli.la/1dbZAgF",
-  "preco": 315,
-  "precoEm": "2026-11-12",
+  "preco": 359,
+  "precoEm": "2026-11-13",
   "categoria": "sopro",
   "historico": [
     {
       "data": "2026-11-12",
       "preco": 315
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 359
     }
   ],
   "imagemAlt": "Gaita Hohner Big River 590/20 (Dó)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://produto.mercadolivre.com.br/MLB-4637969392"
+    "parcelas": "7x R$51,29 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/gaita-diatonica-hohner-big-river-59020-c-do-10-furos-prateado/p/MLB33997462"
   },
   "imagem": "/images/produtos/gaita-hohner-big-river.webp",
   "ficha": [

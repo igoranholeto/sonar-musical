@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg RJB4 (Jazz Bass)",
   "meli": "https://meli.la/113naBP",
-  "preco": 1070,
-  "precoEm": "2026-11-12",
+  "preco": 1092,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 1070
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1092
     }
   ],
   "imagem": "/images/produtos/strinberg-rjb4-jazz-bass.webp",
@@ -23,7 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$107 sem juros",
+    "parcelas": "10x R$109,27 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-eletrico-strinberg-rjb-4-jazz-4-cordas-preto/p/MLB58694598"
   },

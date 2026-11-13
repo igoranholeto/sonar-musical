@@ -1,22 +1,24 @@
 {
   "nome": "Aroma TDX-15",
   "meli": "https://meli.la/2vxQpcL",
-  "preco": 1449,
-  "precoEm": "2026-11-12",
+  "preco": 2000,
+  "precoEm": "2026-11-13",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1449
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2000
     }
   ],
   "imagemAlt": "Aroma TDX-15",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2000,
-    "off": 27,
-    "parcelas": "10x R$145 sem juros",
+    "parcelas": "10x R$200 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-15-de-7-pecas-com-modulo-de-som/p/MLB27680114"
   },

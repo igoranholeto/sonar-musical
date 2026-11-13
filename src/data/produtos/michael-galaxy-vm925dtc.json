@@ -1,8 +1,8 @@
 {
   "nome": "Michael Galaxy VM925DTC",
   "meli": "https://meli.la/1nyvxY2",
-  "preco": 1192,
-  "precoEm": "2026-11-12",
+  "preco": 1172,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-12",
       "preco": 1192
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1172
     }
   ],
   "nota": 4.8,
@@ -33,7 +37,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$115,73",
+    "parcelas": "12x R$113,82",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-michael-galaxy-vm925dtc-folk-sunburst-acetinado-para-destros/p/MLB15245617"
   },

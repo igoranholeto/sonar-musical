@@ -1,8 +1,8 @@
 {
   "nome": "Pioneer DJ DDJ-FLX4",
   "meli": "https://meli.la/1BXLgUy",
-  "preco": 3087,
-  "precoEm": "2026-11-12",
+  "preco": 2752,
+  "precoEm": "2026-11-13",
   "categoria": "controlador",
   "historico": [
     {
@@ -12,15 +12,18 @@
     {
       "data": "2026-11-12",
       "preco": 3087
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2752
     }
   ],
   "imagemAlt": "Pioneer DJ DDJ-FLX4",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3250,
-    "off": 5,
-    "parcelas": "12x R$296,76",
+    "antes": 4099,
+    "off": 32,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/controlador-pioneer-dj-ddj-flx4-preto/p/MLB22023879"
   },

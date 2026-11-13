@@ -1,22 +1,26 @@
 {
   "nome": "Tagima Headless H6S1",
   "meli": "https://meli.la/1dWRxmQ",
-  "preco": 1890,
-  "precoEm": "2026-11-12",
+  "preco": 1966,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1890
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1966
     }
   ],
   "imagemAlt": "Tagima Headless H6S1",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2603,
-    "off": 27,
-    "parcelas": "10x R$189 sem juros",
+    "antes": 2567,
+    "off": 23,
+    "parcelas": "10x R$196,62 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-headless-tagima-h6s1-2h-6-cordas-escala-escura-natural-satin/p/MLB48959107"
   },

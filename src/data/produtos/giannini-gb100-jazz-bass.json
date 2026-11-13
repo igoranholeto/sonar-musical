@@ -1,8 +1,8 @@
 {
   "nome": "Giannini GB100 Jazz Bass",
   "meli": "https://meli.la/2YtfaDs",
-  "preco": 997,
-  "precoEm": "2026-11-12",
+  "preco": 1039,
+  "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,15 +12,17 @@
     {
       "data": "2026-11-12",
       "preco": 997
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1039
     }
   ],
   "imagemAlt": "Giannini GB100 Jazz Bass",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1573,
-    "off": 36,
-    "parcelas": "10x R$99,69 sem juros",
+    "parcelas": "10x R$103,97 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-giannini-gb100-jazz-bass-4-cordas-preto-tortoise/p/MLB23013100"
   },
