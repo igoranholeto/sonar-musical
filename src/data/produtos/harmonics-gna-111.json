@@ -1,8 +1,8 @@
 {
   "nome": "Harmonics GNA-111",
   "meli": "https://meli.la/2uPLW9p",
-  "preco": 303,
-  "precoEm": "2026-11-12",
+  "preco": 296,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-11",
       "preco": 303
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 296
     }
   ],
   "nota": 4.7,
@@ -21,8 +25,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 600,
-    "off": 49,
+    "antes": 350,
+    "off": 15,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-harmonics-gna-111-acustico-sunburst-6-cordas-madeira/p/MLB16041604"
   },

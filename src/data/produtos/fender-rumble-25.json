@@ -1,8 +1,8 @@
 {
   "nome": "Fender Rumble 25",
   "meli": "https://meli.la/1nJYMCV",
-  "preco": 1956,
-  "precoEm": "2026-11-12",
+  "preco": 1789,
+  "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-12",
       "preco": 1956
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1789
     }
   ],
   "imagem": "/images/produtos/fender-rumble-25.webp",
@@ -27,7 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$195,60 sem juros",
+    "parcelas": "12x R$172,04",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-fender-rumble-series-25-para-baixo-de-25w-cor-pretoprata/p/MLB16026277"
   },

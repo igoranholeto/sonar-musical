@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez Mikro GSRM20",
   "meli": "https://meli.la/2FmwLuh",
-  "preco": 2091,
-  "precoEm": "2026-11-12",
+  "preco": 2019,
+  "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 2091
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2019
     }
   ],
   "imagemAlt": "Ibanez Mikro GSRM20",
@@ -23,7 +27,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$209,16 sem juros",
+    "antes": 2995,
+    "off": 32,
+    "parcelas": "12x R$194,06",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bass-guitar-ibanez-gsrm20bwnf-mikro-walnut-flat-poplar-body/p/MLB2069233273"
   },

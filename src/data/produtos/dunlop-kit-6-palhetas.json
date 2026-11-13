@@ -1,8 +1,8 @@
 {
   "nome": "Kit 6 Palhetas Dunlop com Porta-Palhetas",
   "meli": "https://meli.la/2GTYGH9",
-  "preco": 47,
-  "precoEm": "2026-11-12",
+  "preco": 55,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "nota": 5,
   "avaliacoes": 7,
@@ -18,13 +18,17 @@
     {
       "data": "2026-11-10",
       "preco": 47
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 55
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 69,
-    "off": 31,
+    "off": 20,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-6-palhetas-dunlop-com-porta-palhetas-gibson-flying-v/up/MLBU5249782499"
   },

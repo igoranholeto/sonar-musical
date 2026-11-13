@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TW-55 (Telecaster)",
   "meli": "https://meli.la/1qTMXz2",
-  "preco": 957,
-  "precoEm": "2026-11-12",
+  "preco": 917,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-10",
       "preco": 957
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 917
     }
   ],
   "imagem": "/images/produtos/tagima-tw-55-telecaster.webp",
@@ -36,8 +40,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1249,
-    "off": 23,
-    "parcelas": "10x R$95,70 sem juros",
+    "off": 26,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tw-55-serie-tw-destra-preta-com-braco-de-bordo/p/MLB29609687"
   },

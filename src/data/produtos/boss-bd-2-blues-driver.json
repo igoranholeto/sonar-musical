@@ -1,8 +1,8 @@
 {
   "nome": "Boss BD-2 Blues Driver",
   "meli": "https://meli.la/1fxW6H1",
-  "preco": 916,
-  "precoEm": "2026-11-12",
+  "preco": 979,
+  "precoEm": "2026-11-13",
   "categoria": "pedal",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-10",
       "preco": 916
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 979
     }
   ],
   "imagem": "/images/produtos/boss-bd-2-blues-driver.webp",
@@ -27,9 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1159,
-    "off": 20,
-    "parcelas": "12x R$88,92",
+    "parcelas": "12x R$95,06",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-blues-driver-bd-2-azul/p/MLB18087447"
   },

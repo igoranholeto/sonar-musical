@@ -1,13 +1,17 @@
 {
   "nome": "Suporte de chão Don Caprini",
   "meli": "https://meli.la/1o3S9EF",
-  "preco": 49,
-  "precoEm": "2026-11-12",
+  "preco": 47,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 49
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 47
     }
   ],
   "imagemAlt": "Suporte de chão Don Caprini",
@@ -15,7 +19,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 79,
-    "off": 37,
+    "off": 40,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-de-chao-dobravel-don-caprini-para-violao-guitarra-e-baixo-universal-e-portatil/p/MLB67662721"
   },

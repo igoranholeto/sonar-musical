@@ -1,8 +1,8 @@
 {
   "nome": "SSL 2+",
   "meli": "https://meli.la/12Gis3d",
-  "preco": 2500,
-  "precoEm": "2026-11-12",
+  "preco": 2318,
+  "precoEm": "2026-11-13",
   "categoria": "interface",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-12",
       "preco": 2500
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2318
     }
   ],
   "imagem": "/images/produtos/ssl-2.webp",
@@ -27,9 +31,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3099,
-    "off": 19,
-    "parcelas": "12x R$240,29",
+    "antes": 3967,
+    "off": 41,
+    "parcelas": "12x R$222,80",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-solid-state-logic-ssl-2-mkii-2x4-usb-cor-cinza-escuro/p/MLB42367455"
   },

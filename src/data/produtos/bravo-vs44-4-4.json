@@ -1,13 +1,17 @@
 {
   "nome": "Violino Bravo VS44 4/4",
   "meli": "https://meli.la/1opwGt3",
-  "preco": 371,
-  "precoEm": "2026-11-12",
+  "preco": 383,
+  "precoEm": "2026-11-13",
   "categoria": "violino",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 371
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 383
     }
   ],
   "imagemAlt": "Violino Bravo VS44 4/4",
@@ -15,8 +19,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 613,
-    "off": 39,
-    "parcelas": "7x R$53 sem juros",
+    "off": 37,
+    "parcelas": "7x R$54,70 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-44-bravo-music-vs44-estudante-iniciante-com-estojo-arco-breu-tamanho-adulto-cor-vintage-satin-fosco/p/MLB52744234"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Waldman WIG-350 (Floyd Rose)",
-  "meli": "https://meli.la/2jzFzxu",
-  "preco": 2250,
-  "precoEm": "2026-11-12",
+  "meli": "https://meli.la/2RGXV27",
+  "preco": 2381,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,16 +12,20 @@
     {
       "data": "2026-11-10",
       "preco": 2250
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2381
     }
   ],
   "imagem": "/images/produtos/waldman-wig-350-floyd-rose.webp",
   "imagemAlt": "Waldman WIG-350 (Floyd Rose)",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$225 sem juros",
+    "desde": "2026-11-13",
+    "parcelas": "12x R$228,92",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-waldman-wig350-bk/up/MLBU4323523104"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-waldman-wig350-bk-6-cordas-corpo-solist-preto/p/MLB40961148"
   },
   "ficha": [
     [

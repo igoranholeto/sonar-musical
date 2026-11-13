@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SF200C",
   "meli": "https://meli.la/1tvMQLt",
-  "preco": 799,
-  "precoEm": "2026-11-12",
+  "preco": 775,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-11",
       "preco": 799
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 775
     }
   ],
   "imagem": "/images/produtos/strinberg-sf200c.webp",
@@ -29,9 +33,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1399,
-    "off": 42,
-    "parcelas": "12x R$77,26",
+    "antes": 1699,
+    "off": 54,
+    "parcelas": "12x R$74,95",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sf200c-mahogany-satin-6-cordas-sapele-black-series/p/MLB15533736"
   },

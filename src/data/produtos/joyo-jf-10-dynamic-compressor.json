@@ -1,8 +1,8 @@
 {
   "nome": "Joyo JF-10 Dynamic Compressor",
   "meli": "https://meli.la/11fbXCH",
-  "preco": 178,
-  "precoEm": "2026-11-12",
+  "preco": 180,
+  "precoEm": "2026-11-13",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 178
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 180
     }
   ],
   "imagem": "/images/produtos/joyo-jf-10-dynamic-compressor.webp",
@@ -23,7 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "5x R$35,69 sem juros",
+    "parcelas": "6x R$30,06 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/joyo-jf-10-dynamic-compressor-guitarra-efeito-pedal-verdadei/p/MLB2023035288"
   },

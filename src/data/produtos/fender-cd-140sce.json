@@ -1,8 +1,8 @@
 {
   "nome": "Fender CD-140SCE",
   "meli": "https://meli.la/2DPwdHU",
-  "preco": 2809,
-  "precoEm": "2026-11-12",
+  "preco": 2896,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 2809
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2896
     }
   ],
   "nota": 4.7,
@@ -22,8 +26,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 4469,
-    "off": 37,
-    "parcelas": "12x R$269,99",
+    "off": 35,
+    "parcelas": "12x R$278,35",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-fender-classic-design-cd-140sce-all-mahogany-para-destros-nogueira-brilhante/p/MLB17438238"
   },

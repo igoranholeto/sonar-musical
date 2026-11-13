@@ -1,8 +1,8 @@
 {
   "nome": "Line 6 Helix LT",
   "meli": "https://meli.la/1iqeaKL",
-  "preco": 8923,
-  "precoEm": "2026-11-12",
+  "preco": 11440,
+  "precoEm": "2026-11-13",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/line-6-helix-lt.webp",
   "imagemAlt": "Pedaleira Line 6 Helix LT",
@@ -26,14 +26,16 @@
     {
       "data": "2026-11-12",
       "preco": 8923
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 11440
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 14514,
-    "off": 38,
-    "parcelas": "10x R$892,30 sem juros",
+    "parcelas": "12x R$1.099",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-line-6-helix-lt-helixlt-preto/p/MLB17430518"
   },

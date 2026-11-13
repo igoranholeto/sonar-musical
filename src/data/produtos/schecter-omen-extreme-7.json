@@ -1,8 +1,8 @@
 {
   "nome": "Schecter Omen Extreme-7",
   "meli": "https://meli.la/2XqbP8r",
-  "preco": 8029,
-  "precoEm": "2026-11-12",
+  "preco": 6734,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 8029
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 6734
     }
   ],
   "imagem": "/images/produtos/schecter-omen-extreme-7.webp",
@@ -19,7 +23,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$771,79",
+    "antes": 8634,
+    "off": 22,
+    "parcelas": "10x R$673,46 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-schecter-omen-extreme-7-mogno-7-cordas-preto/p/MLB17844044"
   },

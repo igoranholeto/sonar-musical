@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg Diamond DD5SC",
   "meli": "https://meli.la/2kQgPBU",
-  "preco": 2999,
-  "precoEm": "2026-11-12",
+  "preco": 2899,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-12",
       "preco": 2999
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2899
     }
   ],
   "imagem": "/images/produtos/strinberg-dd5sc-diamond.webp",
@@ -25,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4160,
-    "off": 27,
-    "parcelas": "12x R$288,25",
+    "parcelas": "10x R$289,97 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-strinberg-dd5sc-cb-cherry-burst-diamond-aco-c-case-cor-laranja-escuro-orientacao-da-mao-destro/p/MLB52496416"
   },

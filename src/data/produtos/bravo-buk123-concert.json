@@ -2,7 +2,7 @@
   "nome": "Bravo BUK123 Concert",
   "meli": "https://meli.la/1L914Vh",
   "preco": 175,
-  "precoEm": "2026-11-12",
+  "precoEm": "2026-11-13",
   "categoria": "ukulele",
   "historico": [
     {
@@ -14,9 +14,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 310,
-    "off": 43,
-    "parcelas": "12x R$17,34",
+    "antes": 259,
+    "off": 32,
+    "parcelas": "5x R$35,10 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-concert-bravo-music-buk123-23-polegadas-acustico-cor-black-acabamento-fosco-orientacao-da-mao-destro/p/MLB62130542"
   },

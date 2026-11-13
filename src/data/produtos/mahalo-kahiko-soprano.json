@@ -1,13 +1,17 @@
 {
   "nome": "Mahalo Kahiko Soprano",
   "meli": "https://meli.la/1TmZrbr",
-  "preco": 122,
-  "precoEm": "2026-11-12",
+  "preco": 125,
+  "precoEm": "2026-11-13",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 122
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 125
     }
   ],
   "imagemAlt": "Mahalo Kahiko Soprano",
@@ -15,7 +19,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 157,
-    "off": 22,
+    "off": 20,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-soprano-mahalo-serie-kahiko-marrom-natural-com-capa/p/MLB28110825"
   },

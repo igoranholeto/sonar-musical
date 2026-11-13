@@ -1,13 +1,17 @@
 {
   "nome": "Epiphone SG Standard",
   "meli": "https://meli.la/2QVYGGb",
-  "preco": 6194,
-  "precoEm": "2026-11-12",
+  "preco": 6044,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-08-18",
       "preco": 6194
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 6044
     }
   ],
   "imagem": "/images/produtos/epiphone-sg-standard.webp",
@@ -15,7 +19,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$595,40",
+    "antes": 6194,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-epiphone-inspired-by-gibson-sg-standard-mogno-ebony/p/MLB17462945"
   },

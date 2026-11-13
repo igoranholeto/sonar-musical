@@ -1,8 +1,8 @@
 {
   "nome": "Hartke TX300 (cabeçote de baixo)",
   "meli": "https://meli.la/16BkZzo",
-  "preco": 3271,
-  "precoEm": "2026-11-12",
+  "preco": 3412,
+  "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,15 +12,17 @@
     {
       "data": "2026-11-12",
       "preco": 3271
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 3412
     }
   ],
   "imagemAlt": "Hartke TX300 (cabeçote de baixo)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3849,
-    "off": 15,
-    "parcelas": "10x R$327,19 sem juros",
+    "parcelas": "10x R$341,20 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cabecote-baixo-hartke-tx300-valvulado-300w-rms-20hz-20khz-preto/p/MLB20963401"
   },

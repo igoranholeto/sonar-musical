@@ -1,8 +1,8 @@
 {
   "nome": "Epiphone 1959 Les Paul Standard",
   "meli": "https://meli.la/1BMjEvC",
-  "preco": 11584,
-  "precoEm": "2026-11-12",
+  "preco": 12751,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,13 +12,17 @@
     {
       "data": "2026-11-12",
       "preco": 11584
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 12751
     }
   ],
   "imagemAlt": "Epiphone 1959 Les Paul Standard",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$1.113",
+    "antes": 12901,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-1959-les-paul-standard-reissue-sunburst/p/MLB64203509"
   },

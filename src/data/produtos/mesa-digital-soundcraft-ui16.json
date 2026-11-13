@@ -1,21 +1,26 @@
 {
   "nome": "Mesa digital Soundcraft Ui16",
   "meli": "https://meli.la/29bs7sx",
-  "preco": 2374,
-  "precoEm": "2026-11-12",
+  "preco": 2412,
+  "precoEm": "2026-11-13",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2374
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 2412
     }
   ],
   "imagemAlt": "Mesa digital Soundcraft Ui16",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2525,
-    "off": 6,
+    "antes": 4599,
+    "off": 47,
+    "parcelas": "10x R$241,22 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mesa-digital-soundcraft-ui16/p/MLB15938381"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Terra TCV01",
   "meli": "https://meli.la/25yqmpa",
-  "preco": 689,
-  "precoEm": "2026-11-12",
+  "preco": 633,
+  "precoEm": "2026-11-13",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 689
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 633
     }
   ],
   "imagem": "/images/produtos/terra-tcv01.webp",
@@ -23,7 +27,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$68,85 sem juros",
+    "antes": 689,
+    "off": 7,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-terra-acustico-fosco-tcv01-mh-cavaco-com-capa/up/MLBU2334391588"
   },

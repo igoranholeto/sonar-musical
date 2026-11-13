@@ -1,23 +1,29 @@
 {
   "nome": "Michael GM217N Stratocaster",
-  "meli": "https://meli.la/16pmA8C",
-  "preco": 890,
-  "precoEm": "2026-11-12",
+  "meli": "https://meli.la/2seMNk3",
+  "preco": 838,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 890
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 838
     }
   ],
   "imagemAlt": "Michael GM217N Stratocaster",
   "imagem": "/images/produtos/michael-gm217n.webp",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$89 sem juros",
+    "desde": "2026-11-13",
+    "antes": 919,
+    "off": 8,
+    "parcelas": "12x R$81,03",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-michael-gm217n-stratocaster-vintage-sunburst/p/MLB24068750"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-strato-michael-gm217n-vintage-sunburst-madeira-ebano-destro/p/MLB18514050"
   },
   "ficha": [
     [

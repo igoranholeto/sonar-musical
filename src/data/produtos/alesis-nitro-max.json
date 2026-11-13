@@ -1,13 +1,17 @@
 {
   "nome": "Alesis Nitro Max",
   "meli": "https://meli.la/2djSEbe",
-  "preco": 4707,
-  "precoEm": "2026-11-12",
+  "preco": 5923,
+  "precoEm": "2026-11-13",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 4707
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 5923
     }
   ],
   "nota": 4.9,
@@ -17,9 +21,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 5923,
-    "off": 20,
-    "parcelas": "10x R$470,70 sem juros",
+    "parcelas": "10x R$592,38 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-alesis-nitro-max-preta/p/MLB47926788"
   },

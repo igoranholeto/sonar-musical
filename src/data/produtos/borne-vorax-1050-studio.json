@@ -1,8 +1,8 @@
 {
   "nome": "Borne Vorax 1050 Studio",
   "meli": "https://meli.la/1A8zXGY",
-  "preco": 1195,
-  "precoEm": "2026-11-12",
+  "preco": 1099,
+  "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1195
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1099
     }
   ],
   "imagem": "/images/produtos/borne-vorax-1050-studio.webp",
@@ -20,8 +24,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1516,
-    "off": 21,
-    "parcelas": "12x R$116,04",
+    "off": 27,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-vorax-1050-studio-borne-preto-50w/p/MLB36602227"
   },

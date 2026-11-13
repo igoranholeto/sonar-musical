@@ -1,8 +1,8 @@
 {
   "nome": "Augustine Classic Blue",
   "meli": "https://meli.la/21WnC5f",
-  "preco": 137,
-  "precoEm": "2026-11-12",
+  "preco": 130,
+  "precoEm": "2026-11-13",
   "categoria": "cordas",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 137
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 130
     }
   ],
   "imagem": "/images/produtos/augustine-classic-blue.webp",
@@ -24,8 +28,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 177,
-    "off": 22,
-    "parcelas": "4x R$34,25 sem juros",
+    "off": 26,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-augustine-classic-blue-para-violao-nylon-tensao-mista/p/MLB21478823"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Joyo Atmosphere R-14",
   "meli": "https://meli.la/27R6tDo",
-  "preco": 559,
-  "precoEm": "2026-11-12",
+  "preco": 542,
+  "precoEm": "2026-11-13",
   "categoria": "pedal",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-12",
       "preco": 559
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 542
     }
   ],
   "imagem": "/images/produtos/joyo-atmosphere-r-14.webp",
@@ -28,8 +32,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 660,
-    "off": 15,
-    "parcelas": "12x R$54,06",
+    "off": 17,
+    "parcelas": "12x R$52,45",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-reverb-digital-joyo-atmosphere-r-14-9-efeitos-preto/p/MLB17756464"
   },

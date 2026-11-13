@@ -1,8 +1,8 @@
 {
   "nome": "Vivace Mozart MO44",
   "meli": "https://meli.la/1HbMNJA",
-  "preco": 361,
-  "precoEm": "2026-11-12",
+  "preco": 381,
+  "precoEm": "2026-11-13",
   "categoria": "violino",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-12",
       "preco": 361
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 381
     }
   ],
   "nota": 4.8,
@@ -22,8 +26,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 553,
-    "off": 34,
-    "parcelas": "12x R$35,35",
+    "off": 31,
+    "parcelas": "12x R$37,27",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-vivace-mozart-mo44-44-com-case-luxo/p/MLB24633525"
   },

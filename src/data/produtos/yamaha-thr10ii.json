@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha THR10II",
   "meli": "https://meli.la/1NW1q4C",
-  "preco": 3299,
-  "precoEm": "2026-11-12",
+  "preco": 3024,
+  "precoEm": "2026-11-13",
   "categoria": "amplificador",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-12",
       "preco": 3299
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 3024
     }
   ],
   "imagem": "/images/produtos/yamaha-thr10ii.webp",
@@ -31,7 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$329,90 sem juros",
+    "parcelas": "12x R$290,69",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-yamaha-guitarra-violao-baixo-bluetooth-thr10-ii/p/MLB46425466"
   },

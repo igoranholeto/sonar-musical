@@ -1,8 +1,8 @@
 {
   "nome": "Suporte ASK G6 Dobrável",
   "meli": "https://meli.la/2nh7tuj",
-  "preco": 49,
-  "precoEm": "2026-11-12",
+  "preco": 46,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-12",
       "preco": 49
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 46
     }
   ],
   "nota": 4.8,

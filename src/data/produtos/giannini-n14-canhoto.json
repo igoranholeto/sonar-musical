@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start N-14 Canhoto",
-  "meli": "https://meli.la/2yx4xEY",
-  "preco": 599,
-  "precoEm": "2026-11-12",
+  "meli": "https://meli.la/2zCDvgo",
+  "preco": 560,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-11",
       "preco": 599
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 560
     }
   ],
   "nota": 4.8,
@@ -20,11 +24,10 @@
   "imagem": "/images/produtos/giannini-n14-canhoto.webp",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 630,
-    "off": 5,
+    "desde": "2026-11-13",
+    "parcelas": "12x R$54,15",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-giannini-canhoto-n14-capa-reforcada-cor-black-material-do-diapasao-ebano/p/MLB60296797"
+    "catalogo": "https://www.mercadolivre.com.br/violao-canhoto-nylon-giannini-start-n-14-natural/p/MLB68061482"
   },
   "ficha": [
     [

@@ -1,13 +1,17 @@
 {
   "nome": "Suporte Hercules GS401BB",
   "meli": "https://meli.la/1UTDYHc",
-  "preco": 269,
-  "precoEm": "2026-11-12",
+  "preco": 199,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 269
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 199
     }
   ],
   "nota": 4.9,
@@ -17,7 +21,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$44,83 sem juros",
+    "antes": 269,
+    "off": 26,
+    "parcelas": "6x R$33,17 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-para-violao-acustico-hercules-gs401bb-dobravel-preto/p/MLB27113983"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Capotraste Braçadeira para Violão e Guitarra",
   "meli": "https://meli.la/2An8N8T",
-  "preco": 21,
-  "precoEm": "2026-11-12",
+  "preco": 20,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "nota": 4.8,
   "avaliacoes": 5792,
@@ -10,6 +10,10 @@
     {
       "data": "2026-11-02",
       "preco": 21
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 20
     }
   ],
   "imagem": "/images/produtos/capotraste-bracadeira.webp",
@@ -18,7 +22,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 27,
-    "off": 22,
+    "off": 25,
     "freteGratis": true,
     "catalogo": "https://produto.mercadolivre.com.br/MLB-1854287207-capotraste-bracadeira-guitarra-e-violo-aco-e-nylon-preto-_JM"
   },

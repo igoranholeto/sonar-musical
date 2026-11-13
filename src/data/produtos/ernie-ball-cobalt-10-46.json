@@ -1,8 +1,8 @@
 {
   "nome": "Ernie Ball Cobalt 10–46",
   "meli": "https://meli.la/1RihyWc",
-  "preco": 141,
-  "precoEm": "2026-11-12",
+  "preco": 134,
+  "precoEm": "2026-11-13",
   "categoria": "cordas",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 141
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 134
     }
   ],
   "imagem": "/images/produtos/ernie-ball-cobalt-10-46.webp",
@@ -25,7 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "4x R$35,36 sem juros",
+    "antes": 141,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/corda-ernie-ball-010-regular-slinky-cobalt-para-guitarra/p/MLB21392299"
   },

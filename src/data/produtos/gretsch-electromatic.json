@@ -1,8 +1,8 @@
 {
   "nome": "Gretsch Electromatic",
   "meli": "https://meli.la/2xQHFvK",
-  "preco": 6665,
-  "precoEm": "2026-11-12",
+  "preco": 7016,
+  "precoEm": "2026-11-13",
   "categoria": "guitarra",
   "imagem": "/images/produtos/gretsch-electromatic.webp",
   "imagemAlt": "Gretsch Electromatic hollowbody",
@@ -22,13 +22,18 @@
     {
       "data": "2026-11-12",
       "preco": 6665
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 7016
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 7425,
-    "off": 10,
+    "off": 5,
+    "parcelas": "12x R$674,39",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-gretsch-electromatic-g5622t-center-block-de-bordo-orange-stain-brilhante-com-diapasao-de-laurel/p/MLB18029645"
   },

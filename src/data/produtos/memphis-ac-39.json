@@ -1,8 +1,8 @@
 {
   "nome": "Memphis AC-39 Nylon",
   "meli": "https://meli.la/2R7MGku",
-  "preco": 521,
-  "precoEm": "2026-11-12",
+  "preco": 522,
+  "precoEm": "2026-11-13",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-12",
       "preco": 521
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 522
     }
   ],
   "nota": 4.7,

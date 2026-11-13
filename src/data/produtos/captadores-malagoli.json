@@ -1,8 +1,8 @@
 {
   "nome": "Captadores Malagoli",
   "meli": "https://meli.la/1fCXvJ7",
-  "preco": 661,
-  "precoEm": "2026-11-12",
+  "preco": 682,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 661
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 682
     }
   ],
   "imagem": "/images/produtos/captadores-malagoli.webp",
@@ -26,8 +30,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 799,
-    "off": 17,
-    "parcelas": "12x R$63,92",
+    "off": 14,
+    "parcelas": "12x R$65,95",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-captadores-malagoli-custom-59-braco-84-ponte-brancos/p/MLB35948630"
   },

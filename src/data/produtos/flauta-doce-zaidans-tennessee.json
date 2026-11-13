@@ -2,7 +2,7 @@
   "nome": "Flauta doce soprano Zaidans Tennessee",
   "meli": "https://meli.la/2UVW1ZZ",
   "preco": 28,
-  "precoEm": "2026-11-12",
+  "precoEm": "2026-11-13",
   "categoria": "sopro",
   "historico": [
     {
@@ -14,7 +14,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "catalogo": "https://produto.mercadolivre.com.br/MLB-3542396295"
+    "antes": 37,
+    "off": 23,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-doce-barroca-soprano-zaidans-tennessee-com-bag-e-vareta-de-limpeza-cor-bege/p/MLB28871303"
   },
   "imagem": "/images/produtos/flauta-doce-zaidans-tennessee.webp",
   "ficha": [

@@ -1,22 +1,24 @@
 {
   "nome": "Malibu 26S Tenor",
   "meli": "https://meli.la/2Gn38QD",
-  "preco": 264,
-  "precoEm": "2026-11-12",
+  "preco": 281,
+  "precoEm": "2026-11-13",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 264
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 281
     }
   ],
   "imagemAlt": "Malibu 26S Tenor",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 281,
-    "off": 6,
-    "parcelas": "6x R$44,02 sem juros",
+    "parcelas": "6x R$46,83 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-malibu-tenor-26s-sapele-natural-com-capa/p/MLB61385751"
   },

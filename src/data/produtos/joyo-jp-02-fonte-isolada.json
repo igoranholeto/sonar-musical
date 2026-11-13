@@ -1,8 +1,8 @@
 {
   "nome": "Joyo JP-02 fonte isolada",
   "meli": "https://meli.la/181oMb2",
-  "preco": 309,
-  "precoEm": "2026-11-12",
+  "preco": 496,
+  "precoEm": "2026-11-13",
   "categoria": "acessorio",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-11",
       "preco": 309
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 496
     }
   ],
   "imagem": "/images/produtos/joyo-jp-02-fonte-isolada.webp",
@@ -27,9 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 490,
-    "off": 37,
-    "parcelas": "12x R$30,22",
+    "parcelas": "12x R$47,94",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/joyo-jp-02-fuente-pedales-10-salidas-aisladas-9v-12v-18v/p/MLB2112504595"
   },

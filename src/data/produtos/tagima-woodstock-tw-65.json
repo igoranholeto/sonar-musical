@@ -1,22 +1,24 @@
 {
   "nome": "Tagima Woodstock TW-65",
   "meli": "https://meli.la/1fGJ7WK",
-  "preco": 1286,
-  "precoEm": "2026-11-12",
+  "preco": 1428,
+  "precoEm": "2026-11-13",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1286
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1428
     }
   ],
   "imagemAlt": "Tagima Woodstock TW-65",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1570,
-    "off": 18,
-    "parcelas": "10x R$128,60 sem juros",
+    "parcelas": "10x R$142,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-tagima-woodstock-tw-65-branco-vintage-4-cordas-2-captadores/p/MLB22939674"
   },

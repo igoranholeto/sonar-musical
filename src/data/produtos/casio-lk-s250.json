@@ -1,13 +1,17 @@
 {
   "nome": "Casio LK-S250 (61 teclas iluminadas)",
   "meli": "https://meli.la/1KLAUGW",
-  "preco": 1092,
-  "precoEm": "2026-11-12",
+  "preco": 1115,
+  "precoEm": "2026-11-13",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1092
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 1115
     }
   ],
   "nota": 4.9,
@@ -18,8 +22,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 2295,
-    "off": 52,
-    "parcelas": "12x R$106,01",
+    "off": 51,
+    "parcelas": "12x R$108,24",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-key-lighting-lk-lk-s250-preto/p/MLB16109755"
   },

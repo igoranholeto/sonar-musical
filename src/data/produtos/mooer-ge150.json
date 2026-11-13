@@ -1,8 +1,8 @@
 {
   "nome": "Mooer GE150",
   "meli": "https://meli.la/2DSqumj",
-  "preco": 943,
-  "precoEm": "2026-11-12",
+  "preco": 965,
+  "precoEm": "2026-11-13",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 943
+    },
+    {
+      "data": "2026-11-13",
+      "preco": 965
     }
   ],
   "imagem": "/images/produtos/mooer-ge150.webp",
@@ -24,8 +28,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1484,
-    "off": 36,
-    "parcelas": "12x R$91,59",
+    "off": 35,
+    "parcelas": "12x R$93,65",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-mooer-ge150-para-guitarra-com-multi-efeitos-e-pedal-de-expressao/p/MLB17756477"
   },
