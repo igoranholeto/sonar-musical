@@ -46,8 +46,9 @@ function fecharArquivo() {
   // Linha que só mudou a URL de um link (ex.: /afinador -> /afinador/) não é conteúdo novo.
   const norm = (l) => l.replace(/\]\([^)]*\)/g, ']()').replace(/href="[^"]*"/g, 'href=""').trim();
   // A linha de abertura do <QuickAnswer pergunta="..."> é marcação (a pergunta pode citar
-  // "até R$ 3.000"), não preço do texto.
-  const corpo = (ls) => ls.filter((l) => l.trim() && l.trim() !== '---' && !CHAVES_FM.test(l) && !/^import /.test(l) && !/^\s*"[@a-zA-Z]+":/.test(l) && !/^\s*<QuickAnswer\b/.test(l)).map(norm);
+  // "até R$ 3.000"), não preço do texto. A nota do Sonar no CTA (avaliacao={4.5}) também
+  // não conta: igualar a nota do produto entre os posts não é conteúdo novo.
+  const corpo = (ls) => ls.filter((l) => l.trim() && l.trim() !== '---' && !CHAVES_FM.test(l) && !/^import /.test(l) && !/^\s*"[@a-zA-Z]+":/.test(l) && !/^\s*<QuickAnswer\b/.test(l) && !/^\s*avaliacao=\{[\d.]+\}\s*$/.test(l)).map(norm);
   const menos = corpo(mudancas.menos);
   const mais = corpo(mudancas.mais);
   const precoMudou = precos(menos) !== precos(mais);
