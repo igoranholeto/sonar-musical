@@ -160,11 +160,14 @@ const produtoSchema: Record<string, unknown> | null =
 
 <article class="afi" style={cardStyle}>
   <div class="afi__main">
+    {/* Foto e título também levam à loja: o Clarity mostrou toques na imagem e
+        no nome esperando abrir o produto. data-espelho = mesmo destino do botão
+        (o BaseLayout conta a posição pelo botão; a foto sai do Tab e do leitor de tela). */}
     {imagem && (
-      <div class="afi__media">
-        <img class="afi__img" src={imagem} alt={imagemAlt || produto} width="84" height="84" loading="lazy" decoding="async" />
+      <a class="afi__media afi__link" href={url} target="_blank" rel="noopener noreferrer sponsored nofollow" tabindex="-1" aria-hidden="true" data-produto={produto} data-bloco="cta-foto" data-valor={valor} data-espelho>
+        <img class="afi__img" src={imagem} alt="" width="84" height="84" loading="lazy" decoding="async" />
         <div class="afi__shadow" aria-hidden="true"></div>
-      </div>
+      </a>
     )}
 
     <div class="afi__body">
@@ -174,7 +177,7 @@ const produtoSchema: Record<string, unknown> | null =
         {marca && <span class="afi__chip">{marca}</span>}
       </div>
 
-      <h3 class="afi__title">{produto}</h3>
+      <h3 class="afi__title"><a class="afi__link" href={url} target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto={produto} data-bloco="cta-titulo" data-valor={valor} data-espelho>{produto}</a></h3>
 
       {avaliacaoLabel && (
         <div class="afi__rating" aria-label={`Avaliação: ${avaliacaoLabel} de 5`}>
@@ -293,6 +296,9 @@ const produtoSchema: Record<string, unknown> | null =
     margin: 0; font-size: 21px; line-height: 1.15; font-weight: 800; letter-spacing: -0.02em;
     color: #f5f5f5; text-wrap: pretty;
   }
+  /* Foto e título linkados: sem o sublinhado/cor de link do .prose-post. */
+  .afi a.afi__link { color: inherit !important; text-decoration: none !important; }
+  .afi .afi__title a.afi__link:hover { text-decoration: underline !important; text-underline-offset: 3px; }
 
   .afi .afi__rating { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
   .afi .afi__stars {
