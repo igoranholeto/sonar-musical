@@ -45,15 +45,27 @@ export function dadosDoCard(card) {
   };
   const antes = reais(card.match(/andes-money-amount--previous[\s\S]*?aria-label="([^"]+)"/)?.[1]);
   const off = Number(card.match(/(\d{1,2})% OFF/)?.[1]) || undefined;
-  const parcelas = card
+  let parcelas = card
     .match(/poly-price__installments[^>]*>([\s\S]*?)<\/span>\s*<\/div>/)?.[1]
     ?.replace(/<[^>]+>/g, '')
     .replace(/&nbsp;|\s+/g, ' ')
+    .replace(/R\$\s*/g, 'R$ ')
     .trim();
+  // Desde nov/2026 o ML mostra o preço do Pix como principal ("44% OFF no Pix") e o
+  // cartão vem embaixo: "ou R$ 573,54 em 10x R$ 57,35 sem juros". O og:title traz o do Pix.
+  const pix = /poly-price__current[\s\S]*?no Pix/.test(card.split('poly-price__installments')[0]);
+  let cartao;
+  const ou = parcelas?.match(/^ou R\$ ([\d.]+)(?:,(\d{1,2}))? em (\d+x R\$ [\d.,]+(?: sem juros)?)/);
+  if (ou) {
+    cartao = Math.round(Number(`${ou[1].replace(/\./g, '')}.${ou[2] ?? '0'}`));
+    parcelas = ou[3];
+  }
   const href = card.match(/href="(https:\/\/[^"]+)"/)?.[1]?.split(/[?#]/)[0];
   return {
     antes,
     off,
+    pix: pix || undefined,
+    cartao: pix ? cartao : undefined,
     parcelas: parcelas && /^\d+x R\$/.test(parcelas) ? parcelas : undefined,
     freteGratis: /frete grátis/i.test(card),
     catalogo: href?.includes('mercadolivre.com.br') ? href : undefined,
@@ -74,6 +86,8 @@ export function montarAnuncio(prod, situacao, card, hoje, { linkNovo = false } =
     desde: anterior.status === situacao && anterior.desde ? anterior.desde : hoje,
     // O riscado só vale se for maior que o preço de hoje (às vezes o card fica defasado).
     ...(c.antes > Math.round(prod.preco) ? { antes: c.antes, off: c.off } : {}),
+    // Preço do Pix: o do catálogo (og:title) só vale no Pix; no cartão sai `cartao`.
+    ...(c.pix ? { pix: true, ...(c.cartao > Math.round(prod.preco) ? { cartao: c.cartao } : {}) } : {}),
     ...(c.parcelas ? { parcelas: c.parcelas } : {}),
     ...(situacao === 'ativo' ? { freteGratis: Boolean(c.freteGratis) } : {}),
     ...(catalogoML ? { catalogo: catalogoML } : {}),

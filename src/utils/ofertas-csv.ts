@@ -37,6 +37,8 @@ export async function csvResumo() {
       'acompanhado_desde',
       'conferido_em',
       'pagina',
+      'preco_atual_e_no_pix',
+      'preco_cartao_brl',
     ],
     ...ofertas.map((o) => [
       o.id,
@@ -54,6 +56,8 @@ export async function csvResumo() {
       dia(o.acompanhadoDesde),
       dia(o.precoEm),
       absUrl(`/produto/${o.id}/`),
+      o.pix ? 'sim' : 'nao',
+      o.cartao,
     ]),
   ]);
 }

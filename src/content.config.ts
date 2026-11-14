@@ -66,6 +66,10 @@ const produtos = defineCollection({
         desde: z.coerce.date(),
         antes: z.number().positive().optional(),
         off: z.number().int().positive().optional(),
+        // pix = o preço do catálogo é o do Pix (o ML exibe "X% OFF no Pix");
+        // cartao = o total no cartão, que o anúncio mostra embaixo ("ou R$ 573,54 em 10x").
+        pix: z.boolean().optional(),
+        cartao: z.number().positive().optional(),
         parcelas: z.string().optional(),
         freteGratis: z.boolean().optional(),
         catalogo: z.string().url().optional(),

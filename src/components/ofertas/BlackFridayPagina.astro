@@ -81,7 +81,8 @@ const dataset = !categoria && {
   spatialCoverage: { '@type': 'Place', name: 'Brasil' },
   measurementTechnique: 'Coleta automática do preço exibido no anúncio de cada produto no Mercado Livre; cada mudança de preço é registrada com a data.',
   variableMeasured: [
-    { ...brl, name: 'Preço atual à vista' },
+    { ...brl, name: 'Preço atual à vista (no Pix quando o anúncio dá desconto no Pix)' },
+    { ...brl, name: 'Preço no cartão, quando o preço atual é o do Pix' },
     { ...brl, name: 'Preço riscado exibido no anúncio' },
     { '@type': 'PropertyValue', name: 'Desconto exibido no anúncio', unitText: 'percentual' },
     { ...brl, name: 'Menor preço registrado' },

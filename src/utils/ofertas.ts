@@ -42,6 +42,9 @@ export interface Oferta {
   /** Preço riscado que o próprio anúncio exibe, e o "% OFF" dele. */
   antes?: number;
   off?: number;
+  /** O preço é o do Pix; no cartão o anúncio cobra `cartao` (total). */
+  pix?: boolean;
+  cartao?: number;
   /** "10x R$ 470,70 sem juros" (só quando é sem juros). */
   parcelas?: string;
   freteGratis?: boolean;
@@ -234,6 +237,8 @@ function montarOferta(p: CollectionEntry<'produtos'>, posts: PostQueRecomenda[])
     statusDesde: an?.desde,
     antes,
     off: antes ? an?.off : undefined,
+    pix: status === 'ativo' && an?.pix ? true : undefined,
+    cartao: status === 'ativo' && an?.pix && an.cartao && an.cartao > preco ? Math.round(an.cartao) : undefined,
     parcelas: status === 'ativo' && an?.parcelas && /sem juros/i.test(an.parcelas) ? an.parcelas.replace(/R\$(?=\d)/, 'R$ ') : undefined,
     freteGratis: status === 'ativo' ? an?.freteGratis : undefined,
     nota: d.nota,

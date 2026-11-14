@@ -77,6 +77,7 @@ const mais = (...k: string[]) => (vantagem && k.includes(vantagem) ? '' : 'of__m
             </s>
           )}
           <strong class="of__preco">{reais(o.preco)}</strong>
+          {o.pix && <span class="of__pix" title={o.cartao ? `No cartão: ${reais(o.cartao)}` : undefined}>no Pix</span>}
         </div>
         {o.desconto && <p class:list={['of__eco', mais('eco')]}>Economia de {reais(o.desconto.reais)}</p>}
         {v && (
@@ -87,9 +88,13 @@ const mais = (...k: string[]) => (vantagem && k.includes(vantagem) ? '' : 'of__m
           </p>
         )}
         {o.menorRegistrado && <p class:list={['of__selo', mais('selo')]}>Menor preço que registramos</p>}
-        {(o.parcelas || o.freteGratis) && (
+        {(o.parcelas || o.cartao || o.freteGratis) && (
           <p class:list={['of__extra', mais('frete', 'parcelas')]}>
-            {o.parcelas && <span class={mais('parcelas') || undefined}>{o.parcelas}</span>}
+            {o.cartao ? (
+              <span class={mais('parcelas') || undefined} title={o.parcelas}>ou {reais(o.cartao)} no cartão</span>
+            ) : (
+              o.parcelas && <span class={mais('parcelas') || undefined}>{o.parcelas}</span>
+            )}
             {o.freteGratis && <span class:list={['of__frete', mais('frete')]}>Frete grátis</span>}
           </p>
         )}
@@ -174,6 +179,7 @@ const mais = (...k: string[]) => (vantagem && k.includes(vantagem) ? '' : 'of__m
 
   .of__precos { display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 8px; margin-top: 4px; }
   .of__antes { font-size: 13px; color: var(--color-muted); }
+  .of__pix { font-size: 12px; font-weight: 600; color: var(--color-muted); }
   .of__preco { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
   .of__eco { font-size: 13px; font-weight: 700; color: #15803d; }
   .of__var { font-size: 12px; font-weight: 600; }
