@@ -2,7 +2,7 @@
   "nome": "Ernie Ball Super Slinky para baixo",
   "meli": "https://meli.la/2vJinaE",
   "preco": 243,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "cordas",
   "historico": [
     {
@@ -24,6 +24,9 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 255,
+    "pix": true,
+    "cartao": 255,
+    "parcelas": "6x R$ 42,58 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-ernie-ball-baixo-4-cordas-super-slink-045/up/MLBU1405596607"
   },

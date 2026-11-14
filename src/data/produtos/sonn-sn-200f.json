@@ -2,7 +2,7 @@
   "nome": "Sonn SN-200F",
   "meli": "https://meli.la/14QcmFg",
   "preco": 1260,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "bateria",
   "historico": [
     {
@@ -16,6 +16,9 @@
     "desde": "2026-11-13",
     "antes": 1400,
     "off": 10,
+    "pix": true,
+    "cartao": 1400,
+    "parcelas": "10x R$ 140 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-sonn-sn-200f-com-7-pads-usb-midi-e-modulo-digital/p/MLB75282750"
   },

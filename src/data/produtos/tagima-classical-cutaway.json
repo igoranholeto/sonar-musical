@@ -1,20 +1,26 @@
 {
   "nome": "Tagima Classical Cutaway",
   "meli": "https://meli.la/2Jas4Je",
-  "preco": 849,
-  "precoEm": "2026-11-13",
+  "preco": 923,
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 849
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 923
     }
   ],
   "imagemAlt": "Tagima Classical Cutaway",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$84,90 sem juros",
+    "antes": 1234,
+    "off": 25,
+    "parcelas": "12x R$ 89,61",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-classical-cutaway-spruce-nylon-prata/p/MLB37941546"
   },

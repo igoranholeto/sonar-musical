@@ -1,8 +1,8 @@
 {
   "nome": "Elixir 80/20 Bronze Custom Light .011",
   "meli": "https://meli.la/2VGdkmg",
-  "preco": 161,
-  "precoEm": "2026-11-13",
+  "preco": 129,
+  "precoEm": "2026-11-14",
   "categoria": "cordas",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 161
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 129
     }
   ],
   "imagem": "/images/produtos/elixir-80-20-bronze-custom-light-011.webp",
@@ -27,8 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 187,
-    "off": 14,
+    "parcelas": "4x R$ 32,25 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-pviolao-elixir-011-bronze-custom-light/p/MLB21431960"
   },

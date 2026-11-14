@@ -1,20 +1,24 @@
 {
   "nome": "Bateria Acústica RMV Flow (bumbo 20\")",
   "meli": "https://meli.la/1B3ChXM",
-  "preco": 2026,
-  "precoEm": "2026-11-13",
+  "preco": 2025,
+  "precoEm": "2026-11-14",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 2026
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 2025
     }
   ],
   "imagemAlt": "Bateria Acústica RMV Flow (bumbo 20\")",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$194,72",
+    "parcelas": "12x R$ 194,72",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-rmv-flow-completa-com-bumbo-20-e-prato-grafite/p/MLB68093149"
   },

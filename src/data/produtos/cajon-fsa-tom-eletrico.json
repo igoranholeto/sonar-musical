@@ -1,8 +1,8 @@
 {
   "nome": "Cajon FSA Tom+ elétrico",
   "meli": "https://meli.la/2raJBzQ",
-  "preco": 378,
-  "precoEm": "2026-11-13",
+  "preco": 302,
+  "precoEm": "2026-11-14",
   "categoria": "percussao",
   "historico": [
     {
@@ -12,13 +12,19 @@
     {
       "data": "2026-11-12",
       "preco": 378
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 302
     }
   ],
   "imagemAlt": "Cajon FSA Tom+ elétrico",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$36,98",
+    "antes": 378,
+    "off": 20,
+    "parcelas": "12x R$ 29,58",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-tom-eletrico-com-acessorios-profissional-bknt/p/MLB47180794"
   },

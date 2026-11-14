@@ -1,8 +1,8 @@
 {
   "nome": "Boss DD-8 Digital Delay",
   "meli": "https://meli.la/24wtScj",
-  "preco": 1690,
-  "precoEm": "2026-11-13",
+  "preco": 1699,
+  "precoEm": "2026-11-14",
   "categoria": "pedal",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-13",
       "preco": 1690
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1699
     }
   ],
   "imagem": "/images/produtos/boss-dd-8-digital-delay.webp",
@@ -31,7 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$162,44",
+    "parcelas": "12x R$ 163,30",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-digital-delay-dd-8-creme/p/MLB17941169"
   },

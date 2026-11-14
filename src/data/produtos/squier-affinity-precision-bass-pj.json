@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Precision Bass PJ",
   "meli": "https://meli.la/16ALw1L",
-  "preco": 4021,
-  "precoEm": "2026-11-13",
+  "preco": 3600,
+  "precoEm": "2026-11-14",
   "categoria": "acessorio",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-13",
       "preco": 4021
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 3600
     }
   ],
   "imagem": "/images/produtos/squier-affinity-precision-bass-pj.webp",
@@ -35,7 +39,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4232,
+    "antes": 3790,
+    "off": 5,
+    "pix": true,
+    "cartao": 3790,
+    "parcelas": "10x R$ 379,05 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-fender-squier-affinity-precision-bass-pj-mn-bp-branco/p/MLB23203720"
   },

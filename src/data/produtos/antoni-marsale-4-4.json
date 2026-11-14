@@ -2,7 +2,7 @@
   "nome": "Violino Antoni Marsale 4/4",
   "meli": "https://meli.la/2rzEHWn",
   "preco": 1268,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violino",
   "historico": [
     {
@@ -24,6 +24,9 @@
     "desde": "2026-11-11",
     "antes": 1999,
     "off": 36,
+    "pix": true,
+    "cartao": 1378,
+    "parcelas": "10x R$ 137,85 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-44-antoni-marsale-profissional-ajustado-luthier/p/MLB44011589"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-510",
   "meli": "https://meli.la/2okmTrf",
-  "preco": 945,
-  "precoEm": "2026-11-13",
+  "preco": 920,
+  "precoEm": "2026-11-14",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 945
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 920
     }
   ],
   "imagem": "/images/produtos/tagima-tg-510.webp",
@@ -27,7 +31,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$94,50 sem juros",
+    "antes": 1056,
+    "off": 12,
+    "parcelas": "10x R$ 92 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tg-510-stratocaster-violeta-c-alavanca/p/MLB17453007"
   },

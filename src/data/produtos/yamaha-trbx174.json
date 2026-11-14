@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha TRBX174",
   "meli": "https://meli.la/1J3ai3j",
-  "preco": 1949,
-  "precoEm": "2026-11-13",
+  "preco": 1899,
+  "precoEm": "2026-11-14",
   "categoria": "baixo",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-13",
       "preco": 1949
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1899
     }
   ],
   "nota": 4.9,
@@ -33,7 +37,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$194,90 sem juros",
+    "parcelas": "10x R$ 189,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-de-4-cordas-yamaha-trbx-174-screwed-maple/p/MLB22764774"
   },

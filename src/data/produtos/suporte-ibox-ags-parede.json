@@ -1,13 +1,17 @@
 {
   "nome": "Suporte de Parede Ibox AGS (trava automática)",
-  "meli": "https://meli.la/1jq9HeS",
-  "preco": 41,
-  "precoEm": "2026-11-13",
+  "meli": "https://meli.la/2vZEBwp",
+  "preco": 46,
+  "precoEm": "2026-11-14",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 41
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 46
     }
   ],
   "nota": 4.7,
@@ -16,11 +20,11 @@
   "imagem": "/images/produtos/suporte-ibox-ags-parede.webp",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 70,
-    "off": 41,
+    "desde": "2026-11-14",
+    "antes": 57,
+    "off": 20,
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/suporte-de-parede-para-violao-e-guitarra-trava-automatica-cor-preto/p/MLB27048344"
+    "catalogo": "https://www.mercadolivre.com.br/suporte-de-parede-ibox-ags-com-trava-automatica-para-guitarra-violao-e-baixo-suporta-15kg-preto-palheta-groover/p/MLB75911529"
   },
   "ficha": [
     [

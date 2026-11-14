@@ -1,8 +1,8 @@
 {
   "nome": "TC Electronic Skysurfer Reverb",
   "meli": "https://meli.la/2oEPbjR",
-  "preco": 478,
-  "precoEm": "2026-11-13",
+  "preco": 436,
+  "precoEm": "2026-11-14",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 478
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 436
     }
   ],
   "imagem": "/images/produtos/tc-electronic-skysurfer-reverb.webp",
@@ -23,7 +27,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "9x R$53,11 sem juros",
+    "antes": 459,
+    "pix": true,
+    "cartao": 459,
+    "parcelas": "9x R$ 51 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-reverb-tc-electronic-skysurfer-azul-celeste-para-guitarra/p/MLB17771192"
   },

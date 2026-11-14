@@ -1,8 +1,8 @@
 {
   "nome": "Tagima XB-21",
   "meli": "https://meli.la/2FcBjEN",
-  "preco": 1034,
-  "precoEm": "2026-11-13",
+  "preco": 1071,
+  "precoEm": "2026-11-14",
   "categoria": "baixo",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 1034
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1071
     }
   ],
   "nota": 4.9,
@@ -25,9 +29,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1283,
-    "off": 19,
-    "parcelas": "12x R$100,47",
+    "antes": 1500,
+    "off": 28,
+    "parcelas": "12x R$ 104,04",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-tagima-xb-21-passivo-de-4-cordas-metallic-deep-orange/p/MLB26525957"
   },

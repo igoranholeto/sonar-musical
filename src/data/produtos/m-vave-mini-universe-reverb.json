@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Mini Universe Reverb",
   "meli": "https://meli.la/1a7MGfg",
-  "preco": 198,
-  "precoEm": "2026-11-13",
+  "preco": 190,
+  "precoEm": "2026-11-14",
   "categoria": "pedal",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-13",
       "preco": 198
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 190
     }
   ],
   "imagem": "/images/produtos/m-vave-mini-universe-reverb.webp",
@@ -31,9 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 220,
-    "off": 10,
-    "parcelas": "12x R$19,60",
+    "antes": 206,
+    "off": 8,
+    "parcelas": "12x R$ 18,76",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-m-vave-mini-universe-reverb-com-9-tipos-para-guitarra/p/MLB35715871"
   },

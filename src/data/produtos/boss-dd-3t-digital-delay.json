@@ -1,8 +1,8 @@
 {
   "nome": "Boss DD-3T Digital Delay",
   "meli": "https://meli.la/1B8UwmT",
-  "preco": 1329,
-  "precoEm": "2026-11-13",
+  "preco": 1444,
+  "precoEm": "2026-11-14",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-10",
       "preco": 1329
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1444
     }
   ],
   "imagem": "/images/produtos/boss-dd-3t-digital-delay.webp",
@@ -23,9 +27,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1477,
-    "off": 10,
-    "parcelas": "10x R$132,98 sem juros",
+    "antes": 1699,
+    "off": 15,
+    "parcelas": "10x R$ 144,42 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-boss-dd-3t-delay-digital-para-guitarra-branco/p/MLB18055126"
   },

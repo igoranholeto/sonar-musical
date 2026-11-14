@@ -1,20 +1,24 @@
 {
   "nome": "Fone Samson SR850",
   "meli": "https://meli.la/2ZuYRao",
-  "preco": 448,
-  "precoEm": "2026-11-13",
+  "preco": 466,
+  "precoEm": "2026-11-14",
   "categoria": "fone",
   "historico": [
     {
       "data": "2026-11-12",
       "preco": 448
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 466
     }
   ],
   "imagemAlt": "Fone Samson SR850",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "8x R$56 sem juros",
+    "parcelas": "9x R$ 51,78 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-profissional-samson-sr850-semi-aberto-para-estudio/p/MLB24605419"
   },

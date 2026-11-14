@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez RGD7521",
   "meli": "https://meli.la/2i2JAjF",
-  "preco": 9399,
-  "precoEm": "2026-11-13",
+  "preco": 9564,
+  "precoEm": "2026-11-14",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 9399
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 9564
     }
   ],
   "imagem": "/images/produtos/ibanez-rgd7521.webp",
@@ -19,7 +23,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$939,98 sem juros",
+    "antes": 11257,
+    "off": 15,
+    "parcelas": "12x R$ 919,33",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rgd7521pb-dsf-de-7-cordas-azul-aco-com-escala-em-panga-panga/p/MLB62105381"
   },

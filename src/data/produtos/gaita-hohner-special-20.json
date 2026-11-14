@@ -2,7 +2,7 @@
   "nome": "Gaita Hohner Special 20 (Dó)",
   "meli": "https://meli.la/2T5qoou",
   "preco": 455,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "sopro",
   "historico": [
     {
@@ -20,6 +20,9 @@
     "desde": "2026-11-12",
     "antes": 479,
     "off": 5,
+    "pix": true,
+    "cartao": 479,
+    "parcelas": "9x R$ 53,22 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/gaita-hohner-special-20-harmonica-diatonica-10-furos-afinacao-c-do/p/MLB28232494"
   },

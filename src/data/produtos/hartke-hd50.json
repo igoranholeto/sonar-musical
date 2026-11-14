@@ -1,8 +1,8 @@
 {
   "nome": "Hartke HD50",
   "meli": "https://meli.la/1vuNKsU",
-  "preco": 3309,
-  "precoEm": "2026-11-13",
+  "preco": 3299,
+  "precoEm": "2026-11-14",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 3309
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 3299
     }
   ],
   "imagem": "/images/produtos/hartke-hd50.webp",
@@ -19,7 +23,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$330,90 sem juros",
+    "parcelas": "10x R$ 329,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-hartke-hd-series-hd50-transistor-para-baixo-de-50w-cor-preto/p/MLB6074207"
   },

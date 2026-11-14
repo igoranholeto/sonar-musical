@@ -2,7 +2,7 @@
   "nome": "Baquetas Liverpool Nirvana 7A",
   "meli": "https://meli.la/1ssDrin",
   "preco": 25,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "acessorio",
   "historico": [
     {
@@ -18,8 +18,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 30,
-    "off": 16,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baquetas-liverpool-eco-bio-nirvana-7a-p-madeira/p/MLB27406667"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Rozini Estudante RX207 (7 cordas)",
   "meli": "https://meli.la/2r4QS8w",
-  "preco": 1109,
-  "precoEm": "2026-11-13",
+  "preco": 1275,
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 1109
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1275
     }
   ],
   "nota": 4.9,
@@ -27,7 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$107,68",
+    "parcelas": "12x R$ 123,82",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-rozini-estudante-classico-7-cordas-fosco-imbuia/p/MLB20711085"
   },

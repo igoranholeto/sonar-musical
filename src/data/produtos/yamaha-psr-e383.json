@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha PSR-E383",
   "meli": "https://meli.la/2SUjrXC",
-  "preco": 1594,
-  "precoEm": "2026-11-13",
+  "preco": 1583,
+  "precoEm": "2026-11-14",
   "categoria": "teclado",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 1594
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1583
     }
   ],
   "nota": 4.9,
@@ -29,7 +33,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$159,40 sem juros",
+    "antes": 1799,
+    "off": 12,
+    "parcelas": "10x R$ 158,31 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-psr-e383-61-teclas-sensitivas/p/MLB37340366"
   },
