@@ -1,7 +1,7 @@
 {
   "nome": "Giannini Start SF-14",
   "meli": "https://meli.la/1DYuM6Y",
-  "preco": 564,
+  "preco": 581,
   "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
@@ -27,7 +27,7 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 564
+      "preco": 581
     }
   ],
   "imagem": "/images/produtos/giannini-start-sf-14.webp",
@@ -36,10 +36,10 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 747,
-    "off": 24,
+    "off": 22,
     "pix": true,
-    "cartao": 614,
-    "parcelas": "10x R$ 61,36 sem juros",
+    "cartao": 631,
+    "parcelas": "10x R$ 63,10 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-sf-14-flat-aco-preto/p/MLB21402668"
   },

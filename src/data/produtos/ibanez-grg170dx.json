@@ -1,22 +1,24 @@
 {
   "nome": "Ibanez GRG170DX",
   "meli": "https://meli.la/2FahpSp",
-  "preco": 2453,
+  "preco": 2717,
   "precoEm": "2026-11-14",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2453
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 2717
     }
   ],
   "imagemAlt": "Ibanez GRG170DX",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3896,
-    "off": 37,
-    "parcelas": "12x R$ 235,77",
+    "parcelas": "12x R$ 261,15",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rg-gio-grg170dx-de-choupo-black-night-com-diapasao-de-amaranto/p/MLB17820546"
   },

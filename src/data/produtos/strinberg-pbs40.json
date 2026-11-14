@@ -1,7 +1,7 @@
 {
   "nome": "Strinberg PBS40",
   "meli": "https://meli.la/1P5NQFk",
-  "preco": 1120,
+  "preco": 1045,
   "precoEm": "2026-11-14",
   "categoria": "acessorio",
   "historico": [
@@ -35,7 +35,7 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 1120
+      "preco": 1045
     }
   ],
   "imagem": "/images/produtos/strinberg-pbs40.webp",
@@ -45,7 +45,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 112 sem juros",
+    "parcelas": "10x R$ 104,54 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-eletrico-strinberg-pbs40-preto-4-cordas-captadores-1pb-1jb-passivo/p/MLB24815481"
   },

@@ -1,7 +1,7 @@
 {
   "nome": "Hofma HMF290 Folk",
   "meli": "https://meli.la/2uX7o5V",
-  "preco": 713,
+  "preco": 723,
   "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
@@ -15,14 +15,14 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 713
+      "preco": 723
     }
   ],
   "imagemAlt": "Hofma HMF290 Folk",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 68,95",
+    "parcelas": "12x R$ 69,93",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-folk-hofma-hmf290-dreadnought-eletroacustico-tampo-abeto-piezo-audisys-xr-6-cordas/p/MLB16112063"
   },

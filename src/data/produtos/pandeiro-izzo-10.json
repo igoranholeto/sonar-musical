@@ -1,7 +1,7 @@
 {
   "nome": "Pandeiro Izzo 10\"",
   "meli": "https://meli.la/1fwfkGA",
-  "preco": 80,
+  "preco": 93,
   "precoEm": "2026-11-14",
   "categoria": "percussao",
   "historico": [
@@ -19,18 +19,14 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 80
+      "preco": 93
     }
   ],
   "imagemAlt": "Pandeiro Izzo 10\"",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 120,
-    "off": 33,
-    "pix": true,
-    "cartao": 84,
-    "parcelas": "3x R$ 28,01 sem juros",
+    "parcelas": "3x R$ 31,03 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pandeiro-profissional-izzo-de-abs-com-pele-sintetica-preta-10/p/MLB26408339"
   },
