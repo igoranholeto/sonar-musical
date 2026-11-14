@@ -32,7 +32,7 @@ export const AFINADORES: Pagina[] = [
     intro: 'Este <strong>afinador de cavaquinho</strong> funciona pelo microfone do celular ou do computador, sem instalar aplicativo. Ele já abre na afinação padrão <strong>Ré, Sol, Si, Ré</strong>: toque uma corda por vez e leve a agulha até o centro.',
     passos: [
       'Confira a afinação no menu: <strong>Ré Sol Si Ré</strong> já vem selecionada.',
-      'Clique em <strong>Ativar Microfone</strong> e permita o acesso.',
+      'Clique em <strong>Ativar microfone</strong> e permita o acesso.',
       'Toque a 4ª corda (a mais grossa, em cima) solta. O afinador mostra a nota e o desvio.',
       'Agulha à esquerda: a corda está grave, aperte a tarraxa. À direita: está aguda, afrouxe.',
       'Quando ficar verde e no centro, passe para a próxima corda até a 1ª.',
@@ -66,7 +66,7 @@ export const AFINADORES: Pagina[] = [
     intro: 'Este <strong>afinador de ukulele</strong> funciona pelo microfone do celular ou do computador, sem instalar aplicativo. Ele já abre na afinação padrão <strong>Sol, Dó, Mi, Lá</strong>: toque uma corda por vez e leve a agulha até o centro.',
     passos: [
       'Confira a afinação no menu: <strong>Sol Dó Mi Lá</strong> já vem selecionada. Para ukulele barítono, escolha a opção barítono.',
-      'Clique em <strong>Ativar Microfone</strong> e permita o acesso.',
+      'Clique em <strong>Ativar microfone</strong> e permita o acesso.',
       'Toque a 4ª corda (a de cima, Sol) solta. O afinador mostra a nota e o desvio.',
       'Agulha à esquerda: a corda está grave, aperte a tarraxa. À direita: está aguda, afrouxe.',
       'Quando ficar verde e no centro, passe para a próxima corda até a 1ª (Lá).',
@@ -100,15 +100,15 @@ export const AFINADORES: Pagina[] = [
     intro: 'Este <strong>afinador de viola caipira</strong> funciona pelo microfone do celular ou do computador, sem instalar aplicativo. Escolha a afinação no menu (Cebolão em Ré já vem selecionada), toque um par de cada vez e leve a agulha até o centro.',
     passos: [
       'Escolha a afinação no menu: <strong>Cebolão em Ré</strong>, <strong>Cebolão em Mi</strong>, <strong>Rio Abaixo</strong> ou <strong>Natural</strong>.',
-      'Clique em <strong>Ativar Microfone</strong> e permita o acesso.',
+      'Clique em <strong>Ativar microfone</strong> e permita o acesso.',
       'Comece pelo 5º par. Toque só a corda mais grossa do par e leve a agulha ao centro.',
-      'Depois toque a outra corda do mesmo par e afine pela mesma nota. O afinador mostra o nome da nota em qualquer oitava.',
+      'Depois toque a outra corda do mesmo par. O afinador reconhece a corda fina da oitava e mostra "corda da oitava" no mesmo par. Se quiser ouvir a nota certa, toque no card do par: ele soa a referência e trava o afinador nele.',
       'Repita par a par até o 1º. Agulha à esquerda: aperte a cravelha. À direita: afrouxe.',
     ],
     secoes: [
       {
         titulo: 'Como afinar os pares da viola',
-        html: '<p>A viola caipira tem <strong>dez cordas em cinco pares</strong>. Nos dois pares mais agudos (2º e 1º), as duas cordas têm exatamente a mesma nota. Nos três mais graves (5º, 4º e 3º), uma corda fica uma oitava acima da outra. Por isso a dica é afinar cada corda sozinha: com as duas soando juntas, o microfone fica confuso.</p><p>Como o afinador mostra o nome da nota independentemente da oitava, a corda fina de um par oitavado aparece com a mesma letra da grossa. Afine as duas até a agulha ficar no centro na mesma nota.</p>',
+        html: '<p>A viola caipira tem <strong>dez cordas em cinco pares</strong>. Nos dois pares mais agudos (2º e 1º), as duas cordas têm exatamente a mesma nota. Nos três mais graves (5º, 4º e 3º), uma corda fica uma oitava acima da outra. Por isso a dica é afinar cada corda sozinha: com as duas soando juntas, o microfone fica confuso.</p><p>O afinador sabe quais pares são oitavados: a corda fina do 5º, 4º e 3º par aparece como "corda da oitava" do mesmo par, medida contra a nota certa. Quando a nota de uma corda fina coincide com a de outro par (no Cebolão em Ré, o Lá da oitava do 5º par é a mesma nota do 2º par), o visor avisa que a leitura serve para as duas. Para não ter dúvida, toque no card do par: o afinador toca a nota de referência e fica travado nele até você tocar no card de novo.</p>',
       },
       {
         titulo: 'Afinações de viola no menu',
@@ -117,7 +117,7 @@ export const AFINADORES: Pagina[] = [
     ],
     faq: [
       { question: 'Qual a afinação mais usada na viola caipira?', answer: 'O Cebolão, em Ré (Lá, Ré, Fá#, Lá, Ré) ou em Mi (Si, Mi, Sol#, Si, Mi), do 5º par para o 1º. Rio Abaixo e a afinação Natural também são comuns, e as quatro estão no menu do afinador.' },
-      { question: 'Como afinar as cordas oitavadas da viola?', answer: 'Afine uma corda de cada vez. Primeiro a mais grossa do par, depois a mais fina pela mesma nota: o afinador mostra o nome da nota em qualquer oitava, então as duas devem chegar ao centro com a mesma letra.' },
+      { question: 'Como afinar as cordas oitavadas da viola?', answer: 'Afine uma corda de cada vez. Primeiro a mais grossa do par, depois a mais fina: o afinador reconhece a corda da oitava e mede contra a nota certa do par. Se preferir, toque no card do par para ouvir a referência e travar o afinador nele.' },
       { question: 'O afinador de viola caipira é grátis e funciona no celular?', answer: 'Sim. É gratuito, sem cadastro e sem aplicativo. Funciona no navegador do celular ou do computador; basta permitir o microfone. O som é analisado no próprio aparelho e nada é gravado.' },
     ],
   },
@@ -133,7 +133,7 @@ export const AFINADORES: Pagina[] = [
     afinacoesResumo: 'Sol Ré Lá Mi (GDAE), do par mais grave para o mais agudo, a mesma afinação do violino.',
     intro: 'Este <strong>afinador de bandolim</strong> funciona pelo microfone do celular ou do computador, sem instalar aplicativo. Ele já abre na afinação <strong>Sol, Ré, Lá, Mi</strong>: toque uma corda de cada vez e leve a agulha até o centro.',
     passos: [
-      'Clique em <strong>Ativar Microfone</strong> e permita o acesso.',
+      'Clique em <strong>Ativar microfone</strong> e permita o acesso.',
       'Comece pelo par mais grave (Sol). Toque uma corda só e leve a agulha ao centro.',
       'Toque a outra corda do mesmo par e afine pela mesma nota.',
       'Agulha à esquerda: a corda está grave, aperte a tarraxa. À direita: está aguda, afrouxe.',

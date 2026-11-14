@@ -36,6 +36,7 @@ const ROTULOS: Record<string, string> = {
 
   <!-- Nota detectada -->
   <div class="note-block">
+    <p id="target-line" class="target-line">Ative o microfone e toque uma corda</p>
     <div class="note-row">
       <span id="note-name" class="note-name">–</span>
       <sup id="note-octave" class="note-octave"></sup>
@@ -75,31 +76,33 @@ const ROTULOS: Record<string, string> = {
     </svg>
   </div>
 
-  <!-- Frequência -->
+  <!-- Hint de direção (dentro do visor, perto da agulha) -->
+  <div id="direction-hint" class="direction-hint direction-hint--hidden" aria-live="polite"></div>
+
+  <!-- Frequência e nível do microfone -->
   <div class="freq-row">
     <span id="freq-display" class="freq-display">– Hz</span>
+    <span class="level" aria-hidden="true"><span id="level-bar" class="level__bar"></span></span>
   </div>
 </div>
 
-<!-- Cordas -->
-<div id="strings-display" class="strings-grid"></div>
-
-<!-- Hint de direção -->
-<div id="direction-hint" class="direction-hint direction-hint--hidden" aria-live="polite"></div>
-
-<!-- Botão microfone -->
+<!-- Botão microfone (logo abaixo do visor: no celular ficava escondido depois das cordas) -->
 <div class="mic-wrap">
-  <button id="mic-btn" class="mic-btn">
+  <button type="button" id="mic-btn" class="mic-btn">
     <svg id="mic-icon" width="20" height="20" viewBox="0 0 24 24" fill="none"
       stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
       <path d="M12 2a3 3 0 0 1 3 3v7a3 3 0 0 1-6 0V5a3 3 0 0 1 3-3z"/>
       <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
       <line x1="12" y1="19" x2="12" y2="22"/>
     </svg>
-    <span id="mic-label">Ativar Microfone</span>
+    <span id="mic-label">Ativar microfone</span>
   </button>
   <p id="mic-status" class="mic-status"></p>
 </div>
+
+<!-- Cordas: tocar numa toca a nota de referência e trava o afinador nela -->
+<div id="strings-display" class="strings-grid" role="group" aria-label="Cordas"></div>
+<p id="strings-hint" class="strings-hint">Toque numa corda para ouvir a nota certa e travar o afinador nela.</p>
 </div>
 
 <style is:global>
@@ -330,20 +333,50 @@ const ROTULOS: Record<string, string> = {
   }
 
   .string-card {
+    position: relative;
     background: var(--color-card);
     border: 1px solid var(--color-border);
     border-radius: 0.75rem;
-    padding: 0.55rem 0.35rem;
+    padding: 0.6rem 0.2rem 0.5rem;
+    min-height: 64px;
     text-align: center;
-    transition: border-color 0.25s, background 0.25s;
+    color: var(--color-foreground);
+    font-family: inherit;
+    cursor: pointer;
+    touch-action: manipulation;
+    transition: border-color 0.2s, background 0.2s, transform 0.1s;
+  }
+  .string-card:hover { border-color: var(--color-brand); }
+  .string-card:active { transform: scale(0.96); }
+
+  .string-card.active  { border-color: var(--color-brand); background: rgba(230,57,70,0.1); }
+  .string-card.in-tune { border-color: #22c55e;            background: rgba(34,197,94,0.12); }
+  .string-card.locked  { border-color: var(--color-brand); box-shadow: inset 0 0 0 1px var(--color-brand); }
+  .string-card.done::after {
+    content: '✓'; position: absolute; top: 3px; right: 6px;
+    font-size: 0.7rem; font-weight: 800; color: #22c55e;
   }
 
-  .string-card.active  { border-color: var(--color-brand); background: rgba(230,57,70,0.08); }
-  .string-card.in-tune { border-color: #22c55e;            background: rgba(34,197,94,0.1); }
+  .string-num  { display: block; font-size: 0.62rem; color: var(--color-subtle); margin-bottom: 2px; white-space: nowrap; }
+  .string-note { display: block; font-size: 0.95rem; font-weight: 800; }
+  .string-full { display: block; font-size: 0.62rem; color: var(--color-subtle); margin-top: 1px; }
 
-  .string-num  { font-size: 0.65rem; color: var(--color-subtle); margin-bottom: 2px; }
-  .string-note { font-size: 0.85rem; font-weight: 800; }
-  .string-full { font-size: 0.65rem; color: var(--color-subtle); margin-top: 1px; }
+  .strings-hint {
+    font-size: 0.75rem; color: var(--color-subtle); text-align: center;
+    margin: -0.75rem 0 2.5rem; min-height: 1.2em;
+  }
+
+  /* Corda/par alvo, acima da nota */
+  .target-line {
+    font-size: 0.78rem; font-weight: 600; color: var(--color-muted);
+    margin: 0 0 0.35rem; min-height: 1.2em; text-align: center;
+  }
+  .target-line strong { color: var(--color-foreground); }
+
+  /* Nível do microfone: mostra que ele está ouvindo, mesmo sem nota */
+  .freq-row { display: flex; align-items: center; justify-content: center; gap: 0.6rem; }
+  .level { width: 64px; height: 4px; border-radius: 2px; background: var(--color-elevated, rgba(255,255,255,0.08)); overflow: hidden; }
+  .level__bar { display: block; height: 100%; width: 100%; background: var(--color-subtle); transform-origin: left; transform: scaleX(0); transition: transform 0.08s linear; }
 
   /* ── Microfone ───────────────────────────────────────────── */
   .mic-wrap {
@@ -351,7 +384,7 @@ const ROTULOS: Record<string, string> = {
     flex-direction: column;
     align-items: center;
     gap: 0.6rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1.25rem;
   }
 
   .mic-btn {
@@ -406,15 +439,21 @@ const ROTULOS: Record<string, string> = {
     font-size: 0.88rem;
     font-weight: 700;
     letter-spacing: 0.01em;
-    margin-bottom: 1.25rem;
-    transition: opacity 0.25s, transform 0.25s;
+    margin: 0 0 0.75rem;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .direction-hint--ok {
+    background: rgba(34,197,94,0.1);
+    color: #4ade80;
+    border: 1px solid rgba(34,197,94,0.2);
+    visibility: visible;
   }
 
   .direction-hint--hidden {
     opacity: 0;
     pointer-events: none;
     transform: translateY(-4px);
-    margin-bottom: 1.25rem;
     /* ocupa espaço mesmo invisível para evitar layout shift */
     visibility: hidden;
   }
@@ -626,8 +665,24 @@ const ROTULOS: Record<string, string> = {
 </style>
 
 <script>
-// ─── Afinações ────────────────────────────────────────────────────────────────
-const TUNINGS: Record<string, { label: string; strings: string[] }[]> = {
+// Afinador reescrito em nov/2026. O que mudou e por quê:
+// - Detecção (McLeod/NSDF) em duas etapas: busca grossa num sinal reduzido a
+//   ~11 kHz e refino na taxa cheia só em volta do período achado. A versão
+//   anterior fazia a conta inteira a 44 kHz em todo quadro (pesado no celular)
+//   e deixava o lóbulo do atraso zero virar "pico" (leituras agudas falsas).
+// - Uma suavização só (mediana de 3 + média móvel rápida). Antes eram três em
+//   série, e a cor, os cents e o "Afinado" vinham da agulha atrasada.
+// - Os cents são medidos contra a CORDA da afinação, não contra o semitom mais
+//   perto: uma 3ª da viola em Sol no Cebolão (Fá#) agora aparece 1 semitom
+//   acima, e não "afinada em Sol".
+// - Pares oitavados da viola: a corda fina do 5º, 4º e 3º par é reconhecida
+//   como parte do mesmo par (antes ia para o 2º par).
+// - Tocar numa corda toca a nota de referência e trava o afinador nela.
+
+type Afinacao = { label: string; strings: string[]; oitavas?: boolean[] };
+// Viola: nos 3 pares graves (5º, 4º, 3º) uma das cordas é uma oitava acima.
+const OIT_VIOLA = [true, true, true, false, false];
+const TUNINGS: Record<string, Afinacao[]> = {
   guitarra: [
     { label: 'Standard (E)',   strings: ['E2','A2','D3','G3','B3','E4'] },
     { label: 'Drop D',         strings: ['D2','A2','D3','G3','B3','E4'] },
@@ -649,10 +704,10 @@ const TUNINGS: Record<string, { label: string; strings: string[] }[]> = {
     { label: 'Barítono Ré Sol Si Mi',      strings: ['D3','G3','B3','E4'] },
   ],
   viola: [
-    { label: 'Cebolão em Ré',  strings: ['A2','D3','F#3','A3','D4'] },
-    { label: 'Cebolão em Mi',  strings: ['B2','E3','G#3','B3','E4'] },
-    { label: 'Rio Abaixo',     strings: ['G2','D3','G3','B3','D4'] },
-    { label: 'Natural',        strings: ['A2','D3','G3','B3','E4'] },
+    { label: 'Cebolão em Ré',  strings: ['A2','D3','F#3','A3','D4'], oitavas: OIT_VIOLA },
+    { label: 'Cebolão em Mi',  strings: ['B2','E3','G#3','B3','E4'], oitavas: OIT_VIOLA },
+    { label: 'Rio Abaixo',     strings: ['G2','D3','G3','B3','D4'], oitavas: OIT_VIOLA },
+    { label: 'Natural',        strings: ['A2','D3','G3','B3','E4'], oitavas: OIT_VIOLA },
   ],
   bandolim: [
     { label: 'Sol Ré Lá Mi (GDAE)', strings: ['G3','D4','A4','E5'] },
@@ -667,502 +722,551 @@ const TUNINGS: Record<string, { label: string; strings: string[] }[]> = {
     { label: 'DADGAD',         strings: ['D2','A2','D3','G3','A3','D4'] },
   ],
 };
+const COM_PARES = new Set(['viola', 'bandolim']);
 
 const NOTE_NAMES = ['C','C#','D','D#','E','F','F#','G','G#','A','A#','B'];
-const ENHARMONICS: Record<string, string> = {
-  'Db':'C#','Eb':'D#','Fb':'E','Gb':'F#','Ab':'G#','Bb':'A#','Cb':'B',
+const ENHARMONICS: Record<string, string> = { Db:'C#', Eb:'D#', Fb:'E', Gb:'F#', Ab:'G#', Bb:'A#', Cb:'B' };
+const SOLFEJO: Record<string, string> = {
+  C:'Dó', 'C#':'Dó#', Db:'Ré♭', D:'Ré', 'D#':'Ré#', Eb:'Mi♭', E:'Mi', F:'Fá', 'F#':'Fá#',
+  Gb:'Sol♭', G:'Sol', 'G#':'Sol#', Ab:'Lá♭', A:'Lá', 'A#':'Lá#', Bb:'Si♭', B:'Si',
 };
 
-function noteToFreq(note: string): number {
-  let n = note.replace(/(\d)/, '');
-  const oct = parseInt(note.replace(/\D/g, ''));
-  n = ENHARMONICS[n] ?? n;
-  const idx = NOTE_NAMES.indexOf(n);
-  if (idx === -1) return 0;
-  return 440 * Math.pow(2, ((oct + 1) * 12 + idx - 69) / 12);
+const letra = (nota: string) => nota.replace(/\d+$/, '');
+function noteToMidi(note: string): number {
+  const n = ENHARMONICS[letra(note)] ?? letra(note);
+  return (parseInt(note.replace(/\D/g, ''), 10) + 1) * 12 + NOTE_NAMES.indexOf(n);
 }
+const midiToFreq = (m: number) => 440 * Math.pow(2, (m - 69) / 12);
 
-function freqToNoteInfo(freq: number) {
-  const midi = 12 * Math.log2(freq / 440) + 69;
-  const rounded = Math.round(midi);
-  const cents = Math.round((midi - rounded) * 100);
-  const octave = Math.floor(rounded / 12) - 1;
-  const note = NOTE_NAMES[((rounded % 12) + 12) % 12];
-  return { note, cents, octave };
-}
+// ─── DOM ──────────────────────────────────────────────────────────────────────
+const $ = (id: string) => document.getElementById(id)!;
+const micBtn = $('mic-btn'), micLabel = $('mic-label'), micStatus = $('mic-status');
+const noteName = $('note-name'), noteOctave = $('note-octave'), centsPill = $('cents-pill');
+const freqDisplay = $('freq-display'), needle = $('needle'), needlePivot = $('needle-pivot');
+const arcGreen = $('arc-green'), tunerDisplay = $('tuner-display'), inTuneBadge = $('in-tune-badge');
+const directionHint = $('direction-hint'), stringsDisplay = $('strings-display');
+const stringsHint = $('strings-hint'), targetLine = $('target-line'), levelBar = $('level-bar');
+const tuningSelect = $('tuning-select') as HTMLSelectElement;
 
 // ─── Estado ───────────────────────────────────────────────────────────────────
-let instrument = (document.getElementById('tuner-root') as HTMLElement | null)?.dataset.instrument ?? 'guitarra';
-let currentTuningIdx = 0;
+let instrument = ($('tuner-root') as HTMLElement).dataset.instrument ?? 'guitarra';
+let tuningIdx = 0;
+let travada = -1;                 // índice da corda travada (-1 = automático)
+const feitas = new Set<number>(); // cordas que já chegaram ao centro
+let cards: HTMLButtonElement[] = [];
+
 let isListening = false;
 let audioCtx: AudioContext | null = null;
+let outCtx: AudioContext | null = null;  // só para a nota de referência sem microfone
 let analyser: AnalyserNode | null = null;
 let micStream: MediaStream | null = null;
 let rafId: number | null = null;
-let inTuneTimer: ReturnType<typeof setTimeout> | null = null;
-let inTuneBellPlayed = false;
-let holdUntil = 0;
+let buf: Float32Array = new Float32Array(0);
+let dec: Float32Array = new Float32Array(0);
+let wakeLock: any = null;
 
-// ─── DOM refs ─────────────────────────────────────────────────────────────────
-const micBtn         = document.getElementById('mic-btn')!;
-const micLabel       = document.getElementById('mic-label')!;
-const micStatus      = document.getElementById('mic-status')!;
-const noteName       = document.getElementById('note-name')!;
-const noteOctave     = document.getElementById('note-octave')!;
-const centsPill      = document.getElementById('cents-pill')!;
-const freqDisplay    = document.getElementById('freq-display')!;
-const needle         = document.getElementById('needle')!;
-const needlePivot    = document.getElementById('needle-pivot')!;
-const arcGreen       = document.getElementById('arc-green')!;
-const tunerDisplay   = document.getElementById('tuner-display')!;
-const inTuneBadge    = document.getElementById('in-tune-badge')!;
-const directionHint  = document.getElementById('direction-hint')!;
-const stringsDisplay = document.getElementById('strings-display')!;
-const tuningSelect   = document.getElementById('tuning-select') as HTMLSelectElement;
+const afinacao = () => TUNINGS[instrument][tuningIdx];
+const pares = () => COM_PARES.has(instrument);
 
-// ─── Renderiza dropdown de afinações ─────────────────────────────────────────
+// ─── Afinações e cordas ───────────────────────────────────────────────────────
 function renderTunings() {
   tuningSelect.innerHTML = '';
   TUNINGS[instrument].forEach((t, i) => {
     const opt = document.createElement('option');
     opt.value = String(i);
-    opt.textContent = `${t.label}, ${t.strings.join(' ')}`;
-    if (i === currentTuningIdx) opt.selected = true;
+    opt.textContent = `${t.label}, ${t.strings.map(letra).join(' ')}`;
+    if (i === tuningIdx) opt.selected = true;
     tuningSelect.appendChild(opt);
   });
 }
 
-tuningSelect.addEventListener('change', () => {
-  currentTuningIdx = parseInt(tuningSelect.value);
+function nomeCorda(i: number) {
+  const n = afinacao().strings.length - i;
+  return pares() ? `${n}º par` : `${n}ª corda`;
+}
+
+function renderStrings() {
+  const t = afinacao();
+  stringsDisplay.innerHTML = '';
+  stringsDisplay.style.setProperty('--cordas', String(t.strings.length));
+  cards = t.strings.map((s, i) => {
+    const b = document.createElement('button');
+    b.type = 'button';
+    b.className = 'string-card';
+    b.setAttribute('aria-pressed', 'false');
+    b.setAttribute('aria-label', `${nomeCorda(i)}, ${SOLFEJO[letra(s)] ?? letra(s)}: ouvir a nota e travar`);
+    b.innerHTML = `<span class="string-num">${nomeCorda(i)}</span><span class="string-note">${letra(s)}</span><span class="string-full">${SOLFEJO[letra(s)] ?? ''}</span>`;
+    b.addEventListener('click', () => clicarCorda(i));
+    stringsDisplay.appendChild(b);
+    return b;
+  });
+  atualizarCards(-1, false);
+}
+
+let cardsAtivo = -2, cardsAfinado = false;
+function atualizarCards(ativo: number, afinado: boolean, forcar = false) {
+  if (!forcar && ativo === cardsAtivo && afinado === cardsAfinado) return;
+  cardsAtivo = ativo; cardsAfinado = afinado;
+  cards.forEach((c, i) => {
+    c.classList.toggle('active', i === ativo && !afinado);
+    c.classList.toggle('in-tune', i === ativo && afinado);
+    c.classList.toggle('locked', i === travada);
+    c.classList.toggle('done', feitas.has(i));
+    c.setAttribute('aria-pressed', i === travada ? 'true' : 'false');
+  });
+}
+
+function textoAlvoParado() {
+  if (travada >= 0) {
+    const s = afinacao().strings[travada];
+    return `Travado no <strong>${nomeCorda(travada)}</strong> (${SOLFEJO[letra(s)]}). Toque essa corda.`;
+  }
+  return isListening ? 'Toque uma corda' : 'Ative o microfone e toque uma corda';
+}
+
+function reiniciarAfinacao() {
+  travada = -1;
+  feitas.clear();
+  alvoAtual = null;
   renderStrings();
   resetDisplay();
-});
-
-// ─── Cordas ───────────────────────────────────────────────────────────────────
-function renderStrings(activeIdx = -1, inTuneIdx = -1) {
-  const strings = TUNINGS[instrument][currentTuningIdx].strings;
-  stringsDisplay.innerHTML = '';
-  stringsDisplay.style.setProperty('--cordas', String(strings.length));
-  strings.forEach((s, i) => {
-    const card = document.createElement('div');
-    card.className = 'string-card'
-      + (i === activeIdx  ? ' active'  : '')
-      + (i === inTuneIdx  ? ' in-tune' : '');
-    const num = strings.length - i;
-    const noteOnly = s.replace(/\d/, '');
-    card.innerHTML = `<div class="string-num">${num}ª</div><div class="string-note">${noteOnly}</div>`;
-    stringsDisplay.appendChild(card);
-  });
+  stringsHint.textContent = 'Toque numa corda para ouvir a nota certa e travar o afinador nela.';
 }
 
-// ─── Tabs instrumento ─────────────────────────────────────────────────────────
-document.querySelectorAll('.tab-btn').forEach(btn => {
+tuningSelect.addEventListener('change', () => {
+  tuningIdx = parseInt(tuningSelect.value, 10);
+  reiniciarAfinacao();
+});
+
+document.querySelectorAll<HTMLElement>('.tab-btn').forEach((btn) => {
   btn.addEventListener('click', () => {
-    instrument = (btn as HTMLElement).dataset.instrument!;
-    currentTuningIdx = 0;
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('tab-btn--active'));
-    btn.classList.add('tab-btn--active');
+    instrument = btn.dataset.instrument!;
+    tuningIdx = 0;
+    document.querySelectorAll('.tab-btn').forEach((b) => b.classList.toggle('tab-btn--active', b === btn));
     renderTunings();
-    renderStrings();
-    resetDisplay();
+    reiniciarAfinacao();
   });
 });
 
-renderTunings();
-renderStrings();
-
-// ─── Reset ────────────────────────────────────────────────────────────────────
-function resetDisplay() {
-  noteName.textContent = '–';
-  noteName.style.color = '';
-  noteOctave.textContent = '';
-  setCentsPill(null);
-  setDirectionHint(0);
-  freqDisplay.textContent = '– Hz';
-  setNeedle(0, true);
-  setInTune(false);
-  tunerDisplay.classList.remove('holding-state');
-  holdUntil = 0;
+// ─── Nota de referência (síntese aditiva: altura exata, timbre de corda) ─────
+const cacheRef = new Map<string, AudioBuffer>();
+let ignorarAte = 0;
+function bufferReferencia(ctx: AudioContext, midi: number): AudioBuffer {
+  const chave = `${ctx.sampleRate}:${midi}`;
+  const pronto = cacheRef.get(chave);
+  if (pronto) return pronto;
+  const sr = ctx.sampleRate, dur = 2, len = Math.floor(sr * dur);
+  const b = ctx.createBuffer(1, len, sr);
+  const d = b.getChannelData(0);
+  const f = midiToFreq(midi);
+  const H = Math.max(1, Math.min(10, Math.floor(5000 / f)));
+  for (let h = 1; h <= H; h++) {
+    const amp = 1 / Math.pow(h, 1.1);
+    const tau = 0.9 / (1 + 0.45 * (h - 1));   // harmônicos agudos somem antes
+    const w = 2 * Math.PI * f * h / sr;
+    for (let n = 0; n < len; n++) d[n] += amp * Math.exp(-n / (sr * tau)) * Math.sin(w * n);
+  }
+  let pico = 0;
+  for (let n = 0; n < len; n++) pico = Math.max(pico, Math.abs(d[n]));
+  const ataque = Math.floor(sr * 0.004);
+  for (let n = 0; n < len; n++) d[n] = (d[n] / pico) * 0.5 * (n < ataque ? n / ataque : 1);
+  cacheRef.set(chave, b);
+  return b;
 }
 
-// ─── Cents pill ───────────────────────────────────────────────────────────────
-// Recebe cents derivados de currentAngle para sincronizar com a agulha visual
-function setCentsPill(cents: number | null) {
-  if (cents === null) {
-    centsPill.textContent = '· · ·';
-    centsPill.className = 'cents-pill cents-pill--idle';
-    return;
-  }
-  const sign = cents >= 0 ? '+' : '';
-  centsPill.textContent = `${sign}${cents}¢`;
-  const abs = Math.abs(cents);
-  if (abs <= 8)       centsPill.className = 'cents-pill cents-pill--green';
-  else if (abs <= 25) centsPill.className = 'cents-pill cents-pill--yellow';
-  else                centsPill.className = 'cents-pill cents-pill--red';
+function tocarReferencia(midi: number) {
+  try {
+    let ctx = audioCtx;
+    if (!ctx) {
+      try { if ((navigator as any).audioSession) (navigator as any).audioSession.type = 'playback'; } catch (_) {}
+      outCtx = outCtx ?? new ((window.AudioContext || (window as any).webkitAudioContext) as typeof AudioContext)();
+      ctx = outCtx;
+    }
+    if (ctx.state === 'suspended') ctx.resume();
+    const src = ctx.createBufferSource();
+    src.buffer = bufferReferencia(ctx, midi);
+    src.connect(ctx.destination);
+    src.start();
+    ignorarAte = performance.now() + 1300; // o microfone ouviria a própria referência
+  } catch (_) { /* sem áudio: segue só com o travamento */ }
 }
 
-// ─── Direction hint ───────────────────────────────────────────────────────────
-// cents < 0 → nota grave (flat) → apertar cravelha (sobe afinação)
-// cents > 0 → nota aguda (sharp) → soltar cravelha (desce afinação)
-function setDirectionHint(cents: number) {
-  const abs = Math.abs(cents);
-  if (abs <= 8) {
-    directionHint.className = 'direction-hint direction-hint--hidden';
-    directionHint.textContent = '';
-    return;
-  }
-  const isVeryOff = abs > 25;
-  if (cents < 0) {
-    // nota baixa demais → precisa apertar → sobe o tom
-    directionHint.className = `direction-hint ${isVeryOff ? 'direction-hint--red-low' : 'direction-hint--low'}`;
-    directionHint.innerHTML = `<span>↑</span> Nota grave, aperte a cravelha`;
+function clicarCorda(i: number) {
+  if (travada === i) {
+    travada = -1;
+    stringsHint.textContent = 'Modo automático: toque qualquer corda.';
   } else {
-    // nota alta demais → precisa soltar → desce o tom
-    directionHint.className = `direction-hint ${isVeryOff ? 'direction-hint--red-high' : 'direction-hint--high'}`;
-    directionHint.innerHTML = `<span>↓</span> Nota aguda, solte a cravelha`;
+    travada = i;
+    alvoAtual = null;
+    tocarReferencia(noteToMidi(afinacao().strings[i]));
+    (window as any).gtag?.('event', 'tool_use', { ferramenta: 'afinador', acao: 'referencia', instrumento: instrument });
+    stringsHint.textContent = `Travado no ${nomeCorda(i)}. Toque de novo para ouvir; toque no destacado para voltar ao automático.`;
   }
+  atualizarCards(cardsAtivo, cardsAfinado, true);
+  if (!temLeitura) targetLine.innerHTML = textoAlvoParado();
 }
 
-// ─── Agulha ───────────────────────────────────────────────────────────────────
-let currentAngle = 0;
-let targetAngle = 0;
-
-// Retorna os cents visuais (derivados da posição atual da agulha)
-// Pill, cor e hint sempre derivam daqui → ficam 100% sincronizados com o visual
-function visualCents(): number {
-  return Math.round(currentAngle / 1.8);
-}
-
-function tickNeedle() {
-  currentAngle += (targetAngle - currentAngle) * 0.09;
-  needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
-}
-
-function setNeedle(cents: number, instant = false) {
-  targetAngle = Math.max(-90, Math.min(90, cents * 1.8));
-  if (instant) {
-    currentAngle = targetAngle;
-    needle.setAttribute('transform', `rotate(${currentAngle} 150 140)`);
+// ─── Detecção: McLeod (NSDF) em duas etapas ──────────────────────────────────
+function nsdf(x: Float32Array, W: number, tau: number, o = 0): number {
+  let r = 0, e = 0;
+  for (let i = o; i < o + W; i++) {
+    const a = x[i], b = x[i + tau];
+    r += a * b; e += a * a + b * b;
   }
+  return e > 0 ? (2 * r) / e : 0;
 }
 
-function updateNeedleColor(absCents: number) {
-  const color = absCents <= 8 ? '#22c55e' : absCents <= 25 ? '#facc15' : '#e63946';
-  needle.setAttribute('stroke', color);
-  needlePivot.setAttribute('fill', color);
+let pisoRuido = 0.002;
+function detectar(sr: number): { f: number; clareza: number; rms: number } {
+  const N = buf.length;
+  let media = 0;
+  for (let i = 0; i < N; i++) media += buf[i];
+  media /= N;
+  let rms = 0;
+  for (let i = 0; i < N; i++) { buf[i] -= media; rms += buf[i] * buf[i]; }
+  rms = Math.sqrt(rms / N);
+  const portao = Math.max(0.0035, pisoRuido * 2.5);
+  if (rms < portao) {
+    pisoRuido = pisoRuido * 0.97 + rms * 0.03;
+    return { f: -1, clareza: 0, rms };
+  }
+
+  // 1) Reduz para ~11 kHz (média de D amostras + suavização 1-2-1).
+  const D = Math.max(1, Math.floor(sr / 11000));
+  const M = Math.floor(N / D);
+  for (let i = 0; i < M; i++) {
+    let s = 0;
+    for (let k = 0; k < D; k++) s += buf[i * D + k];
+    dec[i] = s / D;
+  }
+  for (let i = M - 2; i >= 1; i--) dec[i] = 0.25 * dec[i - 1] + 0.5 * dec[i] + 0.25 * dec[i + 1];
+  const srD = sr / D;
+  const W = Math.floor(M / 2);
+  const tMin = Math.max(2, Math.floor(srD / 1400));
+  const tMax = Math.min(M - W - 2, Math.ceil(srD / 50));
+
+  // 2) Picos dos lóbulos positivos DEPOIS do primeiro cruzamento negativo
+  //    (o lóbulo do atraso zero não é período).
+  let cruzou = false;
+  let lobMax = -1, lobLag = -1;
+  const picos: Array<[number, number]> = [];
+  for (let t = 1; t <= tMax; t++) {
+    const v = nsdf(dec, W, t);
+    if (!cruzou) { if (v <= 0) cruzou = true; continue; }
+    if (v > 0) {
+      if (v > lobMax) { lobMax = v; lobLag = t; }
+    } else if (lobLag > 0) {
+      picos.push([lobLag, lobMax]);
+      lobMax = -1; lobLag = -1;
+    }
+  }
+  if (lobLag > 0) picos.push([lobLag, lobMax]);
+  const validos = picos.filter(([t]) => t >= tMin);
+  if (!validos.length) return { f: -1, clareza: 0, rms };
+  const maior = validos.reduce((m, p) => Math.max(m, p[1]), 0);
+  const escolhido = validos.find((p) => p[1] >= 0.9 * maior)!;
+  if (escolhido[1] < 0.6) return { f: -1, clareza: escolhido[1], rms };
+
+  // 3) Refino na taxa cheia, só em volta do período achado. Antes, um
+  //    passa-baixa de 2 polos em ~2,5x a fundamental: os harmônicos agudos de
+  //    corda real são um pouco "esticados" (inarmonicidade) e puxariam a
+  //    leitura alguns cents para cima.
+  const fc = Math.min(sr / 4, 2.5 * (srD / escolhido[0]));
+  const k = 1 - Math.exp((-2 * Math.PI * fc) / sr);
+  let y1 = 0, y2 = 0;
+  for (let i = 0; i < N; i++) { y1 += k * (buf[i] - y1); y2 += k * (y1 - y2); buf[i] = y2; }
+  // O começo do sinal filtrado tem o transiente do filtro: fica de fora.
+  const O = Math.min(Math.ceil((3 * sr) / fc), Math.floor(N / 8));
+  const WF = Math.floor(N / 2);
+  const c = escolhido[0] * D;
+  let melhor = c, vMelhor = -2;
+  const ini = Math.max(2, c - D - 1), fim = Math.min(N - O - WF - 2, c + D + 1);
+  for (let t = ini; t <= fim; t++) {
+    const v = nsdf(buf, WF, t, O);
+    if (v > vMelhor) { vMelhor = v; melhor = t; }
+  }
+  const a = nsdf(buf, WF, melhor - 1, O), b = nsdf(buf, WF, melhor + 1, O);
+  const den = a - 2 * vMelhor + b;
+  const ajuste = den !== 0 ? (0.5 * (a - b)) / den : 0;
+  const periodo = melhor + Math.max(-0.5, Math.min(0.5, ajuste));
+  return { f: sr / periodo, clareza: vMelhor, rms };
 }
 
-// ─── In-tune ──────────────────────────────────────────────────────────────────
+// ─── Leitura suavizada (em semitons MIDI) ────────────────────────────────────
+const ultimas: number[] = [];
+let suave = 0;
+let temLeitura = false;
+let saltos = 0;
+let ultimaValida = 0;
+
+function registrar(m: number, agora: number) {
+  if (agora - ultimaValida > 250) ultimas.length = 0;
+  ultimaValida = agora;
+  ultimas.push(m);
+  if (ultimas.length > 3) ultimas.shift();
+  const med = ultimas.slice().sort((x, y) => x - y)[Math.floor(ultimas.length / 2)];
+  if (!temLeitura) { suave = med; temLeitura = true; saltos = 0; return; }
+  if (Math.abs(med - suave) > 0.6) {
+    // Nota nova: confirma em 2 quadros para não piscar com o ataque da palheta.
+    if (++saltos >= 2) { suave = med; saltos = 0; ultimas.length = 0; ultimas.push(med); }
+    return;
+  }
+  saltos = 0;
+  suave += (med - suave) * 0.3;
+}
+
+// ─── Corda alvo ──────────────────────────────────────────────────────────────
+type Alvo = { idx: number; midi: number; oitava: boolean; tambem?: number };
+let alvoAtual: Alvo | null = null;
+function escolherAlvo(m: number): Alvo | null {
+  const t = afinacao();
+  if (travada >= 0) {
+    const base = noteToMidi(t.strings[travada]);
+    const k = Math.round((m - base) / 12);
+    return { idx: travada, midi: base + 12 * k, oitava: k !== 0 };
+  }
+  const cands: Alvo[] = [];
+  t.strings.forEach((s, i) => {
+    const base = noteToMidi(s);
+    cands.push({ idx: i, midi: base, oitava: false });
+    if (t.oitavas?.[i]) cands.push({ idx: i, midi: base + 12, oitava: true });
+  });
+  // Empate de nota (ex.: Lá3 é o 2º par e também a corda fina do 5º no
+  // Cebolão em Ré): prefere o par principal e avisa da outra corda.
+  const dist = (c: Alvo) => Math.abs(m - c.midi) + (c.oitava ? 0.01 : 0);
+  let melhor = cands[0];
+  for (const c of cands) if (dist(c) < dist(melhor)) melhor = c;
+  const gemea = cands.find((c) => c !== melhor && c.midi === melhor.midi);
+  if (gemea) melhor = { ...melhor, tambem: gemea.idx };
+  if (Math.abs(m - melhor.midi) > 2.6) return null;
+  // Histerese: não troca de corda por pouco (evita pular entre pares vizinhos).
+  if (alvoAtual && alvoAtual.midi !== melhor.midi && Math.abs(m - alvoAtual.midi) <= Math.abs(m - melhor.midi) + 0.35 && Math.abs(m - alvoAtual.midi) <= 2.6) {
+    return alvoAtual;
+  }
+  return melhor;
+}
+
+// ─── Visor ───────────────────────────────────────────────────────────────────
+let anguloAtual = 0, anguloAlvo = 0;
+function desenharAgulha() {
+  anguloAtual += (anguloAlvo - anguloAtual) * 0.35;
+  needle.setAttribute('transform', `rotate(${anguloAtual.toFixed(2)} 150 140)`);
+}
+function corPara(abs: number) { return abs <= 5 ? '#22c55e' : abs <= 20 ? '#facc15' : '#e63946'; }
+
+let ultimoPill = '', ultimaDica = '', ultimaCor = '';
+function setPill(c: number | null) {
+  let txt: string, cls: string;
+  if (c === null) { txt = '· · ·'; cls = 'idle'; }
+  else {
+    const abs = Math.abs(c), sinal = c >= 0 ? '+' : '−';
+    if (Math.round(abs) === 0) txt = '0¢';
+    else if (abs < 100) txt = `${sinal}${Math.round(abs)}¢`;
+    else {
+      const st = Math.round(abs / 10) / 10;
+      txt = `${sinal}${String(st).replace('.', ',')} ${st >= 2 ? 'semitons' : 'semitom'}`;
+    }
+    cls = abs <= 5 ? 'green' : abs <= 20 ? 'yellow' : 'red';
+  }
+  const chave = txt + cls;
+  if (chave === ultimoPill) return;
+  ultimoPill = chave;
+  centsPill.textContent = txt;
+  centsPill.className = `cents-pill cents-pill--${cls}`;
+}
+
+function setDica(c: number | null, afinado: boolean) {
+  let cls = 'hidden', html = '';
+  if (c !== null) {
+    const abs = Math.abs(c);
+    if (afinado) { cls = 'ok'; html = '✓ Afinado. Pode ir para a próxima corda.'; }
+    else if (abs > 5) {
+      const leve = abs <= 20;
+      cls = c < 0 ? (leve ? 'low' : 'red-low') : (leve ? 'high' : 'red-high');
+      html = c < 0
+        ? `<span>↑</span> ${leve ? 'Quase: aperte de leve' : 'Grave: aperte a cravelha'}`
+        : `<span>↓</span> ${leve ? 'Quase: afrouxe de leve' : 'Aguda: afrouxe a cravelha'}`;
+    }
+  }
+  const chave = cls + html;
+  if (chave === ultimaDica) return;
+  ultimaDica = chave;
+  directionHint.className = `direction-hint direction-hint--${cls}`;
+  directionHint.innerHTML = html;
+}
+
+function setCor(cor: string) {
+  if (cor === ultimaCor) return;
+  ultimaCor = cor;
+  needle.setAttribute('stroke', cor);
+  needlePivot.setAttribute('fill', cor);
+}
+
+let afinadoDesde = 0, afinado = false;
 function setInTune(on: boolean) {
-  if (on) {
-    tunerDisplay.classList.add('in-tune-state');
-    tunerDisplay.classList.remove('holding-state');
-    inTuneBadge.classList.add('visible');
-    noteName.style.color = '#22c55e';
-    arcGreen.setAttribute('opacity', '0.7');
-  } else {
-    tunerDisplay.classList.remove('in-tune-state');
-    inTuneBadge.classList.remove('visible');
-    arcGreen.setAttribute('opacity', '0.3');
-  }
+  if (on === afinado) return;
+  afinado = on;
+  tunerDisplay.classList.toggle('in-tune-state', on);
+  inTuneBadge.classList.toggle('visible', on);
+  arcGreen.setAttribute('opacity', on ? '0.7' : '0.3');
 }
 
 function playTuneSound(ctx: AudioContext) {
   try {
-    const osc = ctx.createOscillator();
-    const gain = ctx.createGain();
-    osc.connect(gain);
-    gain.connect(ctx.destination);
-    osc.frequency.value = 880;
-    osc.type = 'sine';
+    const osc = ctx.createOscillator(), gain = ctx.createGain();
+    osc.connect(gain); gain.connect(ctx.destination);
+    osc.frequency.value = 880; osc.type = 'sine';
     gain.gain.setValueAtTime(0, ctx.currentTime);
     gain.gain.linearRampToValueAtTime(0.08, ctx.currentTime + 0.02);
     gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + 0.4);
-    osc.start(ctx.currentTime);
-    osc.stop(ctx.currentTime + 0.4);
-  } catch (_) { /* silently ignore if audio context closed */ }
+    osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.4);
+    ignorarAte = performance.now() + 450;
+  } catch (_) {}
 }
 
-// ─── McLeod Pitch Method (MPM / NSDF) ────────────────────────────────────────
-// Mais confiável que autocorrelação simples, menos erros de oitava em cordas
-function detectFrequency(buf: Float32Array, sampleRate: number): number {
-  const N = buf.length;
-  const W = Math.floor(N / 2);
-
-  // Gate de energia RMS
-  let rms = 0;
-  for (let i = 0; i < N; i++) rms += buf[i] * buf[i];
-  rms = Math.sqrt(rms / N);
-  if (rms < 0.015) return -1;
-
-  // Faixa de frequência do violão/guitarra: ~55 Hz (A1) a ~1100 Hz
-  const lagMin = Math.max(1, Math.floor(sampleRate / 1100));
-  const lagMax = Math.min(W - 2, Math.ceil(sampleRate / 55));
-
-  // Σ x(i)² para a janela fixa [0, W)
-  let sumX0 = 0;
-  for (let i = 0; i < W; i++) sumX0 += buf[i] * buf[i];
-
-  // Σ x(i+tau)² com janela deslizante, atualização O(1) por passo
-  let sumXt = 0;
-  for (let i = lagMin; i < lagMin + W && i < N; i++) sumXt += buf[i] * buf[i];
-
-  // Coleta picos dos lóbulos positivos do NSDF
-  const peaks: Array<{ lag: number; nsdf: number; r: number }> = [];
-  let inLobe = false;
-  let lobeMax = -Infinity;
-  let lobeMaxLag = -1;
-  let lobeMaxR = 0;
-
-  for (let tau = lagMin; tau <= lagMax; tau++) {
-    if (tau > lagMin) {
-      sumXt -= buf[tau - 1] * buf[tau - 1];
-      const idx = tau + W - 1;
-      if (idx < N) sumXt += buf[idx] * buf[idx];
-    }
-
-    let r = 0;
-    for (let i = 0; i < W; i++) r += buf[i] * buf[i + tau];
-
-    const denom = sumX0 + sumXt;
-    const nsdf = denom > 1e-8 ? 2 * r / denom : 0;
-
-    if (nsdf > 0) {
-      inLobe = true;
-      if (nsdf > lobeMax) { lobeMax = nsdf; lobeMaxLag = tau; lobeMaxR = r; }
-    } else if (inLobe) {
-      if (lobeMaxLag >= lagMin) peaks.push({ lag: lobeMaxLag, nsdf: lobeMax, r: lobeMaxR });
-      inLobe = false;
-      lobeMax = -Infinity;
-      lobeMaxLag = -1;
-    }
-  }
-  if (inLobe && lobeMaxLag >= lagMin) peaks.push({ lag: lobeMaxLag, nsdf: lobeMax, r: lobeMaxR });
-
-  if (peaks.length === 0) return -1;
-
-  // Rejeita sinal não-harmônico / ruído
-  const globalMax = peaks.reduce((m, p) => Math.max(m, p.nsdf), 0);
-  if (globalMax < 0.35) return -1;
-
-  // Primeiro pico >= K * globalMax (K=0.86 do McLeod), evita erros de oitava
-  const K = 0.86;
-  let best = peaks[0];
-  for (const p of peaks) {
-    if (p.nsdf >= K * globalMax) { best = p; break; }
-  }
-
-  const bestLag = best.lag;
-  if (bestLag <= 0 || bestLag + 1 >= N) return -1;
-
-  // Interpolação parabólica para precisão sub-amostra
-  let rM = 0, rP = 0;
-  for (let i = 0; i < W; i++) {
-    rM += buf[i] * buf[i + bestLag - 1];
-    rP += buf[i] * buf[i + bestLag + 1];
-  }
-  const d = 2 * best.r - rM - rP;
-  const refined = d !== 0 ? bestLag + 0.5 * (rP - rM) / d : bestLag;
-  return sampleRate / refined;
+function resetDisplay() {
+  temLeitura = false; ultimas.length = 0; saltos = 0;
+  noteName.textContent = '–';
+  noteName.style.color = '';
+  noteOctave.textContent = '';
+  freqDisplay.textContent = '– Hz';
+  targetLine.innerHTML = textoAlvoParado();
+  setPill(null); setDica(null, false); setInTune(false); setCor('#e63946');
+  anguloAlvo = 0;
+  tunerDisplay.classList.remove('holding-state');
+  atualizarCards(-1, false, true);
 }
 
-// ─── Mediana com limpeza de histórico em silêncio ──────────────────────────
-const FREQ_HISTORY_SIZE = 5;
-const freqHistory: number[] = [];
-let framesSinceValid = 0;
-
-function medianFreq(freq: number): number {
-  if (freq > 0) {
-    framesSinceValid = 0;
-    freqHistory.push(freq);
-    if (freqHistory.length > FREQ_HISTORY_SIZE) freqHistory.shift();
-  } else {
-    framesSinceValid++;
-    // Limpa o histórico após silêncio prolongado para evitar leituras obsoletas
-    if (framesSinceValid > 12) freqHistory.length = 0;
-  }
-  if (freqHistory.length === 0) return -1;
-  const sorted = freqHistory.slice().sort((a, b) => a - b);
-  return sorted[Math.floor(sorted.length / 2)];
-}
-
-let smoothedCents = 0;
-
-// ─── Loop de análise ──────────────────────────────────────────────────────────
-function analysisLoop() {
+// ─── Loop ────────────────────────────────────────────────────────────────────
+function loop() {
   if (!analyser || !audioCtx) return;
+  rafId = requestAnimationFrame(loop);
+  if (audioCtx.state === 'suspended') { audioCtx.resume().catch(() => {}); return; }
 
-  // Verifica se o AudioContext ainda está rodando (pode ser suspenso no mobile)
-  if (audioCtx.state === 'suspended') {
-    audioCtx.resume().catch(() => {});
-    rafId = requestAnimationFrame(analysisLoop);
-    return;
+  analyser.getFloatTimeDomainData(buf);
+  const agora = performance.now();
+  const { f, clareza, rms } = detectar(audioCtx.sampleRate);
+  levelBar.style.transform = `scaleX(${Math.min(1, Math.sqrt(rms / 0.08)).toFixed(3)})`;
+
+  let ok = f > 50 && f < 1400 && agora > ignorarAte;
+  if (ok) {
+    const m = 69 + 12 * Math.log2(f / 440);
+    // Clareza média só vale se confirma a leitura atual (nota decaindo).
+    if (clareza < 0.8 && !(temLeitura && Math.abs(m - suave) < 0.3)) ok = false;
+    else registrar(m, agora);
   }
 
-  const buf = new Float32Array(analyser.fftSize);
-  analyser.getFloatTimeDomainData(buf);
-
-  const rawFreq = detectFrequency(buf, audioCtx.sampleRate);
-  const freq = medianFreq(rawFreq);
-
-  tickNeedle();
-
-  if (freq > 50 && freq < 1400) {
-    const { note, cents, octave } = freqToNoteInfo(freq);
-
-    holdUntil = Date.now() + 1000;
+  if (temLeitura && agora - ultimaValida < 120) {
     tunerDisplay.classList.remove('holding-state');
+    const m = suave;
+    const alvo = escolherAlvo(m);
+    alvoAtual = alvo;
+    const ref = alvo ? alvo.midi : Math.round(m);
+    const c = (m - ref) * 100;
+    const abs = Math.abs(c);
+    const arred = Math.round(m);
 
-    // Snap instantâneo se a nota mudou muito (onset detection)
-    const centsDiff = Math.abs(cents - smoothedCents);
-    smoothedCents += (cents - smoothedCents) * (centsDiff > 30 ? 1.0 : 0.25);
+    const t = afinacao();
+    const escrita = alvo && ((arred - alvo.midi) % 12 === 0) ? letra(t.strings[alvo.idx]) : NOTE_NAMES[((arred % 12) + 12) % 12];
+    noteName.textContent = escrita;
+    noteOctave.textContent = String(Math.floor(arred / 12) - 1);
+    freqDisplay.textContent = `${midiToFreq(m).toFixed(1)} Hz`;
+    targetLine.innerHTML = alvo
+      ? `<strong>${nomeCorda(alvo.idx)}</strong> · ${SOLFEJO[letra(t.strings[alvo.idx])]}${alvo.oitava && travada < 0 ? ' (corda da oitava)' : ''}${alvo.tambem !== undefined && travada < 0 ? `, serve também para a corda fina do ${nomeCorda(alvo.tambem)}` : ''}`
+      : 'Fora das cordas desta afinação. Toque no card da corda para travar nela.';
 
-    noteName.textContent = note;
-    noteOctave.textContent = String(octave);
-    freqDisplay.textContent = `${freq.toFixed(1)} Hz`;
-
-    // Avança a agulha em direção ao alvo suavizado
-    setNeedle(smoothedCents);
-
-    // Pill, cor e hint derivam de visualCents(), sempre em sync com a agulha
-    const vc = visualCents();
-    const absVc = Math.abs(vc);
-    setCentsPill(vc);
-    updateNeedleColor(absVc);
-    setDirectionHint(vc);
-
-    if (absVc > 8) {
-      noteName.style.color = absVc < 25 ? '#facc15' : '#e63946';
-    } else {
-      noteName.style.color = '';
-    }
-
-    // Corda mais próxima
-    const strings = TUNINGS[instrument][currentTuningIdx].strings;
-    let closestIdx = -1, closestDiff = Infinity;
-    strings.forEach((s, i) => {
-      const diff = Math.abs(freq - noteToFreq(s));
-      if (diff < closestDiff) { closestDiff = diff; closestIdx = i; }
-    });
-
-    const isInTune = absVc <= 8;
-    if (isInTune) {
-      if (!inTuneTimer) {
-        inTuneTimer = setTimeout(() => {
-          setInTune(true);
-          if (!inTuneBellPlayed && audioCtx) { playTuneSound(audioCtx); inTuneBellPlayed = true; }
-        }, 500);
+    // Afinado com histerese: entra com ≤4¢ por 250 ms, sai acima de 7¢.
+    if (alvo && (afinado ? abs <= 7 : abs <= 4)) {
+      if (!afinadoDesde) afinadoDesde = agora;
+      if (!afinado && agora - afinadoDesde > 250) {
+        setInTune(true);
+        if (!feitas.has(alvo.idx)) { feitas.add(alvo.idx); playTuneSound(audioCtx); }
       }
     } else {
-      if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
-      inTuneBellPlayed = false;
+      afinadoDesde = 0;
       setInTune(false);
     }
 
-    renderStrings(closestIdx, isInTune ? closestIdx : -1);
-  } else {
-    // Decaimento rápido para centro, evita agulha parada fora do centro após soltar a corda
-    smoothedCents += (0 - smoothedCents) * 0.12;
-    setNeedle(smoothedCents);
-
-    if (Date.now() < holdUntil) {
-      tunerDisplay.classList.add('holding-state');
-      // Durante hold: pill idle, não mostrar cents defasados
-      setCentsPill(null);
-      setDirectionHint(0);
-    } else {
-      if (Math.abs(smoothedCents) < 1) smoothedCents = 0;
-      noteName.textContent = '–';
-      noteName.style.color = '';
-      noteOctave.textContent = '';
-      setCentsPill(null);
-      setDirectionHint(0);
-      freqDisplay.textContent = '– Hz';
-      tunerDisplay.classList.remove('holding-state');
-      needle.setAttribute('stroke', '#e63946');
-      needlePivot.setAttribute('fill', '#e63946');
-      if (inTuneTimer) { clearTimeout(inTuneTimer); inTuneTimer = null; }
-      inTuneBellPlayed = false;
-      setInTune(false);
-      renderStrings();
-    }
+    anguloAlvo = Math.max(-50, Math.min(50, c)) * 1.8;
+    const cor = afinado ? '#22c55e' : corPara(abs);
+    setCor(cor);
+    noteName.style.color = afinado || abs <= 5 ? '#22c55e' : abs <= 20 ? '#facc15' : '#e63946';
+    setPill(alvo || abs < 50 ? c : null);
+    setDica(alvo ? c : null, afinado);
+    atualizarCards(alvo ? alvo.idx : -1, afinado);
+  } else if (temLeitura && agora - ultimaValida < 1500) {
+    // Corda soltou: segura a última leitura (sem a agulha voltar ao centro e
+    // fingir que está afinado).
+    tunerDisplay.classList.add('holding-state');
+  } else if (temLeitura) {
+    alvoAtual = null;
+    afinadoDesde = 0;
+    resetDisplay();
   }
-
-  rafId = requestAnimationFrame(analysisLoop);
+  desenharAgulha();
 }
 
-// ─── Microfone, com fix de iOS/Safari ───────────────────────────────────────
+// ─── Microfone ───────────────────────────────────────────────────────────────
+async function manterTela() {
+  try { wakeLock = await (navigator as any).wakeLock?.request('screen'); } catch (_) { wakeLock = null; }
+}
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden && isListening && !wakeLock) manterTela();
+});
+
 micBtn.addEventListener('click', async () => {
-  if (isListening) {
-    stopListening();
-    return;
-  }
+  if (isListening) { stopListening(); return; }
   (window as any).gtag?.('event', 'tool_use', { ferramenta: 'afinador', acao: 'microfone', instrumento: instrument });
-
   try {
-    micStatus.textContent = 'Solicitando acesso ao microfone…';
-
+    micStatus.textContent = 'Pedindo acesso ao microfone…';
+    try { if ((navigator as any).audioSession) (navigator as any).audioSession.type = 'play-and-record'; } catch (_) {}
     micStream = await navigator.mediaDevices.getUserMedia({
-      audio: {
-        echoCancellation: false,
-        noiseSuppression: false,
-        autoGainControl: false,
-        // Constraints adicionais para iOS Safari
-        sampleRate: { ideal: 44100 },
-      },
+      audio: { echoCancellation: false, noiseSuppression: false, autoGainControl: false, channelCount: 1 },
     });
-
-    // Webkit fallback (iOS Safari < 14.5)
-    const AudioCtxClass = (window.AudioContext || (window as any).webkitAudioContext) as typeof AudioContext;
-    audioCtx = new AudioCtxClass();
-
-    // iOS requer resume() explícito dentro do gesto do usuário
-    if (audioCtx.state === 'suspended') {
-      await audioCtx.resume();
-    }
-
+    const Ctx = (window.AudioContext || (window as any).webkitAudioContext) as typeof AudioContext;
+    audioCtx = new Ctx();
+    if (audioCtx.state === 'suspended') await audioCtx.resume();
     analyser = audioCtx.createAnalyser();
-    // fftSize menor para performance em mobile (ainda preciso para baixas frequências)
-    analyser.fftSize = 4096;
+    analyser.fftSize = audioCtx.sampleRate > 50000 ? 8192 : 4096;
     analyser.smoothingTimeConstant = 0;
-
-    const source = audioCtx.createMediaStreamSource(micStream);
-    source.connect(analyser);
+    audioCtx.createMediaStreamSource(micStream).connect(analyser);
+    buf = new Float32Array(analyser.fftSize);
+    dec = new Float32Array(analyser.fftSize);
+    pisoRuido = 0.002;
 
     isListening = true;
     micBtn.classList.add('active');
     micLabel.textContent = 'Parar';
-    micStatus.textContent = 'Ouvindo… toque uma corda!';
-
-    analysisLoop();
+    micStatus.textContent = 'Ouvindo. Toque uma corda de cada vez, perto do microfone.';
+    resetDisplay();
+    manterTela();
+    loop();
   } catch (err: any) {
-    const msg = err?.name === 'NotAllowedError'
-      ? 'Acesso ao microfone negado. Toque o botão novamente e permita o acesso.'
+    micStatus.textContent = err?.name === 'NotAllowedError'
+      ? 'Acesso ao microfone negado. Libere o microfone para este site nas configurações do navegador e toque de novo.'
       : err?.name === 'NotFoundError'
-      ? 'Nenhum microfone encontrado neste dispositivo.'
-      : `Erro ao acessar microfone: ${err?.message ?? 'desconhecido'}`;
-    micStatus.textContent = msg;
+      ? 'Nenhum microfone encontrado neste aparelho.'
+      : `Não deu para abrir o microfone: ${err?.message ?? 'erro desconhecido'}`;
   }
 });
 
 function stopListening() {
   if (rafId) cancelAnimationFrame(rafId);
-  micStream?.getTracks().forEach(t => t.stop());
+  micStream?.getTracks().forEach((t) => t.stop());
   audioCtx?.close();
-  freqHistory.length = 0;
-  framesSinceValid = 0;
-  smoothedCents = 0;
-  currentAngle = 0;
-  targetAngle = 0;
-  holdUntil = 0;
-  audioCtx = null;
-  analyser = null;
-  micStream = null;
+  wakeLock?.release?.().catch(() => {}); wakeLock = null;
+  audioCtx = null; analyser = null; micStream = null;
   isListening = false;
   micBtn.classList.remove('active');
-  micLabel.textContent = 'Ativar Microfone';
+  micLabel.textContent = 'Ativar microfone';
   micStatus.textContent = '';
+  levelBar.style.transform = 'scaleX(0)';
+  anguloAtual = 0;
+  needle.setAttribute('transform', 'rotate(0 150 140)');
   resetDisplay();
-  renderStrings();
 }
+
+renderTunings();
+renderStrings();
+resetDisplay();
 </script>
