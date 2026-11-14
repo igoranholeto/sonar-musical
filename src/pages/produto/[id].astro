@@ -71,7 +71,7 @@ const faq = [
   {
     question: `Qual o preço de ${o.nome} hoje?`,
     answer: disponivel
-      ? `Na última checagem, em ${fmtDataAno(o.precoEm)}, ${o.nome} custava ${reais(o.preco)} à vista no Mercado Livre${o.parcelas ? `, ou ${o.parcelas}` : ''}${o.freteGratis ? ', com frete grátis' : ''}. O preço pode mudar a qualquer momento; o que vale é o do anúncio na hora da compra.`
+      ? `Na última checagem, em ${fmtDataAno(o.precoEm)}, ${o.nome} custava ${reais(o.preco)} ${o.pix ? 'no Pix' : 'à vista'} no Mercado Livre${o.cartao ? `, ou ${reais(o.cartao)} no cartão${o.parcelas ? ` (${o.parcelas})` : ''}` : o.parcelas ? `, ou ${o.parcelas}` : ''}${o.freteGratis ? ', com frete grátis' : ''}. O preço pode mudar a qualquer momento; o que vale é o do anúncio na hora da compra.`
       : `O último preço que registramos foi ${reais(o.preco)}, em ${fmtDataAno(o.precoEm)}. Hoje o anúncio que acompanhamos ${o.status === 'pausado' ? 'está pausado, sem estoque' : 'saiu do ar'}${alt ? `; uma opção parecida e disponível é ${alt.nome}, por ${reais(alt.preco)}` : ''}.`,
   },
   disponivel && {
@@ -160,6 +160,7 @@ const schema = [
             <div class="pr__precos">
               {o.desconto && <s>{reais(o.desconto.de)}</s>}
               <strong>{reais(o.preco)}</strong>
+              {o.pix && <span class="pr__pix">no Pix</span>}
               {o.desconto && <span class="pr__pct">-{o.desconto.pct}%</span>}
             </div>
             {o.desconto && (
@@ -168,9 +169,10 @@ const schema = [
                 <span>{o.desconto.fonte === 'anuncio' ? ' sobre o preço riscado do anúncio' : ` sobre o preço que registramos antes (${fmtData(o.variacao!.em)})`}</span>
               </p>
             )}
-            {(o.parcelas || o.freteGratis) && (
+            {(o.parcelas || o.cartao || o.freteGratis) && (
               <p class="pr__extra">
-                {o.parcelas && <span>{o.parcelas}</span>}
+                {o.cartao && <span>ou {reais(o.cartao)} no cartão{o.parcelas ? ` (${o.parcelas})` : ''}</span>}
+                {o.parcelas && !o.cartao && <span>{o.parcelas}</span>}
                 {o.freteGratis && <span class="pr__frete">Frete grátis</span>}
               </p>
             )}
@@ -332,6 +334,7 @@ const schema = [
   .pr__precos { display: flex; align-items: baseline; flex-wrap: wrap; gap: 6px 12px; }
   .pr__precos s { color: var(--color-muted); }
   .pr__precos strong { font-size: 34px; font-weight: 900; letter-spacing: -0.02em; }
+  .pr__pix { font-size: 14px; font-weight: 700; color: var(--color-muted); }
   .pr__pct { padding: 3px 8px; border-radius: 7px; background: var(--color-brand-fill); color: #fff; font-weight: 800; font-size: 14px; }
   .pr__eco { margin-top: 4px; font-weight: 700; color: #15803d; }
   .pr__eco span { font-weight: 400; color: var(--color-muted); font-size: 13px; }
