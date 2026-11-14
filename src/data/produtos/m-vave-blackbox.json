@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Blackbox",
   "meli": "https://meli.la/1kv1WJS",
-  "preco": 327,
-  "precoEm": "2026-11-13",
+  "preco": 347,
+  "precoEm": "2026-11-14",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -16,14 +16,19 @@
     {
       "data": "2026-11-13",
       "preco": 327
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 347
     }
   ],
   "imagemAlt": "M-Vave Blackbox",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 400,
-    "off": 18,
+    "antes": 460,
+    "off": 24,
+    "parcelas": "12x R$ 33,95",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-multiefeitos-m-vave-blackbox-digital-para-guitarra-com-bluetooth/p/MLB41558421"
   },

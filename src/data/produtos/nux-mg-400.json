@@ -1,13 +1,17 @@
 {
   "nome": "Nux MG-400",
   "meli": "https://meli.la/29gR61X",
-  "preco": 1172,
-  "precoEm": "2026-11-13",
+  "preco": 1379,
+  "precoEm": "2026-11-14",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 1172
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1379
     }
   ],
   "nota": 4.8,
@@ -17,9 +21,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1379,
-    "off": 15,
-    "parcelas": "12x R$113,82",
+    "parcelas": "12x R$ 133,91",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-nux-mg-400-preto/p/MLB19794621"
   },

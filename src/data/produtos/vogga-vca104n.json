@@ -2,7 +2,7 @@
   "nome": "Vogga VCA104N (38\", nylon)",
   "meli": "https://meli.la/1dbiFr6",
   "preco": 257,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -23,6 +23,7 @@
     "desde": "2026-11-11",
     "antes": 372,
     "off": 30,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-vogga-vca104n-38-nylon-preto-78-envernizado/p/MLB22331445"
   },

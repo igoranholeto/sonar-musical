@@ -2,7 +2,7 @@
   "nome": "Casio Casiotone SA-81 (44 mini teclas)",
   "meli": "https://meli.la/2TNnbHC",
   "preco": 515,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "teclado",
   "historico": [
     {
@@ -27,6 +27,9 @@
     "desde": "2026-11-11",
     "antes": 736,
     "off": 29,
+    "pix": true,
+    "cartao": 560,
+    "parcelas": "10x R$ 55,99 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-infantil-casiotone-sa-81-com-44-teclas-casio-cor-preto/p/MLB25164785"
   },

@@ -2,7 +2,7 @@
   "nome": "Kit Violão Giannini Eletroacústico (nylon)",
   "meli": "https://meli.la/19CAMn6",
   "preco": 616,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -25,6 +25,7 @@
     "desde": "2026-11-11",
     "antes": 999,
     "off": 38,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletrico-giannini-nf14-nylon-acessorios-completo/up/MLBU4163545197"
   },

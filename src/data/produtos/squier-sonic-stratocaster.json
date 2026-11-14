@@ -1,8 +1,8 @@
 {
   "nome": "Squier Sonic Stratocaster",
   "meli": "https://meli.la/1Lc6ewB",
-  "preco": 2132,
-  "precoEm": "2026-11-13",
+  "preco": 2070,
+  "precoEm": "2026-11-14",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 2132
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 2070
     }
   ],
   "imagem": "/images/produtos/squier-sonic-stratocaster.webp",
@@ -23,7 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$213,30 sem juros",
+    "parcelas": "12x R$ 198,96",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-squier-sonic-strat-preta-destro-black-madeira-de-bordo/p/MLB25343104"
   },

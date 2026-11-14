@@ -2,7 +2,7 @@
   "nome": "Kit Violão Giannini Eletroacústico (aço)",
   "meli": "https://meli.la/1VCQujA",
   "preco": 615,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -25,6 +25,7 @@
     "desde": "2026-11-11",
     "antes": 1226,
     "off": 49,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-giannini-eletroacustico-corda-aco-destro-flat-cutaway-profissional-eletrico-acustico-estudo-iniciante-natural/p/MLB66739901"
   },

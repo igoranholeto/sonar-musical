@@ -2,7 +2,7 @@
   "nome": "Snark SN-RE (recarregável)",
   "meli": "https://meli.la/2HZq83u",
   "preco": 209,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "acessorio",
   "historico": [
     {
@@ -27,6 +27,9 @@
     "desde": "2026-11-11",
     "antes": 220,
     "off": 5,
+    "pix": true,
+    "cartao": 220,
+    "parcelas": "6x R$ 36,65 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/afinador-cromatico-recarregavel-snark-clip-on-360-instrumentos/p/MLB29262919"
   },

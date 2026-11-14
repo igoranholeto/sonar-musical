@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha TRBX504",
   "meli": "https://meli.la/2KASsc4",
-  "preco": 4437,
-  "precoEm": "2026-11-13",
+  "preco": 4488,
+  "precoEm": "2026-11-14",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-11",
       "preco": 4437
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 4488
     }
   ],
   "nota": 4.9,
@@ -21,7 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$443,77 sem juros",
+    "parcelas": "10x R$ 448,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-yamaha-trbx504-de-4-cordas-ativo-e-na-cor-brick-burst/p/MLB48598493"
   },

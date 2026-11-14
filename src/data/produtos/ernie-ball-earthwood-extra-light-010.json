@@ -1,8 +1,8 @@
 {
   "nome": "Ernie Ball Earthwood Extra Light .010",
   "meli": "https://meli.la/2VtxjWs",
-  "preco": 58,
-  "precoEm": "2026-11-13",
+  "preco": 60,
+  "precoEm": "2026-11-14",
   "categoria": "cordas",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 58
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 60
     }
   ],
   "imagem": "/images/produtos/ernie-ball-earthwood-extra-light-010.webp",
@@ -28,7 +32,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 78,
-    "off": 25,
+    "off": 23,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-aco-010-ernie-ball-earthwood-extra-leve/p/MLB70109117"
   },

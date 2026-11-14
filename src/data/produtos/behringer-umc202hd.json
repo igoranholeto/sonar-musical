@@ -1,13 +1,17 @@
 {
   "nome": "Behringer U-Phoria UMC202HD",
   "meli": "https://meli.la/2bHyo9d",
-  "preco": 911,
-  "precoEm": "2026-11-13",
+  "preco": 910,
+  "precoEm": "2026-11-14",
   "categoria": "interface",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 911
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 910
     }
   ],
   "imagemAlt": "Behringer U-Phoria UMC202HD",
@@ -16,7 +20,7 @@
     "desde": "2026-11-13",
     "antes": 996,
     "off": 8,
-    "parcelas": "12x R$88,34",
+    "parcelas": "12x R$ 88,34",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-usb-behringer-u-phoria-umc202hd-cor-preta/p/MLB24547439"
   },

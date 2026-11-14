@@ -1,13 +1,17 @@
 {
   "nome": "Michael Rocker GMS250 (com efeitos)",
   "meli": "https://meli.la/2hdDxzk",
-  "preco": 870,
-  "precoEm": "2026-11-13",
+  "preco": 899,
+  "precoEm": "2026-11-14",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 870
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 899
     }
   ],
   "nota": 4.7,
@@ -17,9 +21,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1018,
-    "off": 14,
-    "parcelas": "12x R$84,11",
+    "parcelas": "12x R$ 86,98",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strato-cefeito-michael-rocker-gms250-sunburst-black/p/MLB28599032"
   },

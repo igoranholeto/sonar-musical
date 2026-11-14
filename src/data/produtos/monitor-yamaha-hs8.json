@@ -1,22 +1,26 @@
 {
   "nome": "Monitor Yamaha HS8",
   "meli": "https://meli.la/2Buu8ui",
-  "preco": 2647,
-  "precoEm": "2026-11-13",
+  "preco": 2710,
+  "precoEm": "2026-11-14",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2647
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 2710
     }
   ],
   "imagemAlt": "Monitor Yamaha HS8",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4089,
-    "off": 35,
-    "parcelas": "12x R$254,42",
+    "antes": 5999,
+    "off": 54,
+    "parcelas": "12x R$ 260,48",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/yamaha-hs-hs8-monitor-de-referencia-para-estudio-cor-preto/p/MLB22641288"
   },

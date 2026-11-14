@@ -1,22 +1,28 @@
 {
   "nome": "Sennheiser HD 25",
-  "meli": "https://meli.la/2rWm2j1",
-  "preco": 2199,
-  "precoEm": "2026-11-13",
+  "meli": "https://meli.la/327uDAA",
+  "preco": 1250,
+  "precoEm": "2026-11-14",
   "categoria": "fone",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2199
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1250
     }
   ],
   "imagemAlt": "Sennheiser HD 25",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$211,46",
+    "desde": "2026-11-14",
+    "antes": 1492,
+    "off": 16,
+    "parcelas": "10x R$ 125 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-profissional-sennheiser-preto-hd-25-monitoramento-dj-broadcast-com-cabo-removivel-mq550/p/MLB69255883"
+    "catalogo": "https://www.mercadolivre.com.br/sennheiser-hd-25-fone-de-ouvido-cor-black/p/MLB6338746"
   },
   "ficha": [
     [

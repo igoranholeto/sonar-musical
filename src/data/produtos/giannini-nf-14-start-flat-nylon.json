@@ -1,8 +1,8 @@
 {
   "nome": "Giannini NF-14 Start Flat (nylon)",
   "meli": "https://meli.la/26g6Hoj",
-  "preco": 504,
-  "precoEm": "2026-11-13",
+  "preco": 505,
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -16,15 +16,19 @@
     {
       "data": "2026-11-13",
       "preco": 504
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 505
     }
   ],
   "imagemAlt": "Giannini NF-14 Start Flat (nylon)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 999,
-    "off": 49,
-    "parcelas": "12x R$48,74",
+    "antes": 829,
+    "off": 39,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-giannini-nf-14-start-flat-nailon-44/p/MLB16041597"
   },

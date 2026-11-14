@@ -2,7 +2,7 @@
   "nome": "Giannini N6 3/4",
   "meli": "https://meli.la/2raUkhE",
   "preco": 332,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -29,6 +29,9 @@
     "desde": "2026-11-11",
     "antes": 384,
     "off": 13,
+    "pix": true,
+    "cartao": 350,
+    "parcelas": "6x R$ 58,33 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-infantil-giannini-n6-36-nylon-acustico-34-preto/up/MLBU5732112542"
   },

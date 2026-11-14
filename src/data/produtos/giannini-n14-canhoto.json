@@ -2,7 +2,7 @@
   "nome": "Giannini Start N-14 Canhoto",
   "meli": "https://meli.la/1ddCu6t",
   "preco": 635,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -27,6 +27,9 @@
     "desde": "2026-11-13",
     "antes": 690,
     "off": 8,
+    "pix": true,
+    "cartao": 690,
+    "parcelas": "10x R$ 69 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-giannini-canhoto-n14-capa-reforcada-cor-natural-material-do-diapasao-ebano/p/MLB74910680"
   },

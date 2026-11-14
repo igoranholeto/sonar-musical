@@ -2,7 +2,7 @@
   "nome": "Taylor 214ce",
   "meli": "https://meli.la/2ZcEDHz",
   "preco": 13579,
-  "precoEm": "2026-11-13",
+  "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
@@ -23,7 +23,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$1.357 sem juros",
+    "parcelas": "10x R$ 1.357 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-taylor-214ce-grand-auditorium-aco-c-pre-amplificador/p/MLB15109469"
   },

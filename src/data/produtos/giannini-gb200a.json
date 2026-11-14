@@ -1,8 +1,8 @@
 {
   "nome": "Giannini GB200A",
   "meli": "https://meli.la/1zHRWmn",
-  "preco": 1264,
-  "precoEm": "2026-11-13",
+  "preco": 1195,
+  "precoEm": "2026-11-14",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,15 +12,19 @@
     {
       "data": "2026-11-13",
       "preco": 1264
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1195
     }
   ],
   "imagemAlt": "Giannini GB200A",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1580,
-    "off": 20,
-    "parcelas": "10x R$126,45 sem juros",
+    "antes": 2229,
+    "off": 46,
+    "parcelas": "10x R$ 119,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-giannini-gb200a-ativo-de-4-cordas-transparent-blue/p/MLB24045634"
   },

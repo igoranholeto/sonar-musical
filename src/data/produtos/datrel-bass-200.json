@@ -1,13 +1,17 @@
 {
   "nome": "Datrel Bass 200",
   "meli": "https://meli.la/2bXTHGU",
-  "preco": 1103,
-  "precoEm": "2026-11-13",
+  "preco": 1102,
+  "precoEm": "2026-11-14",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 1103
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 1102
     }
   ],
   "imagemAlt": "Datrel Bass 200",
@@ -16,7 +20,7 @@
     "desde": "2026-11-13",
     "antes": 2499,
     "off": 55,
-    "parcelas": "12x R$107,05",
+    "parcelas": "12x R$ 107,05",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-contrabaixo-datrel-bass-200-200w-12-pol-cor-preto/p/MLB36760536"
   },
