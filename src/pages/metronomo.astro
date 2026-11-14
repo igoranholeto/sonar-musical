@@ -13,7 +13,7 @@ const faqItems = [
   },
   {
     question: "O que são as subdivisões (colcheia, tercina, semicolcheia)?",
-    answer: "São as divisões de cada tempo. Na semínima, há um clique por tempo. Na colcheia, dois cliques por tempo; na tercina, três; na semicolcheia, quatro; na sextina, seis; e na fusa, oito. Estudar com subdivisão ajuda a tocar levadas rápidas mantendo a precisão, porque você ouve o 'entre-tempo' e não só a batida principal."
+    answer: "São as divisões de cada tempo. Sem subdivisão, há um clique por tempo. Na colcheia, dois cliques por tempo; na tercina, três; na semicolcheia, quatro. O clique da subdivisão é mais baixo que o do tempo, para você ouvir o 'entre-tempo' sem perder a batida principal. Estudar assim ajuda a tocar levadas rápidas com precisão."
   },
   {
     question: "Como usar o metrônomo para estudar guitarra?",
@@ -21,22 +21,21 @@ const faqItems = [
   },
   {
     question: "Para que serve o acento no tempo 1?",
-    answer: "O primeiro tempo de cada compasso recebe um clique mais agudo (o acento) para você sentir onde o compasso começa. Isso ajuda a manter a noção de compasso, 3/4 (valsa), 4/4 (a maioria do rock e pop) ou 6/8, sem se perder."
+    answer: "O primeiro tempo de cada compasso recebe um clique mais agudo (o acento) para você sentir onde o compasso começa. Isso ajuda a manter a noção de compasso, 3/4 (valsa), 4/4 (a maioria do rock e pop) ou 6/8, sem se perder. No 6/8, o tempo 4 ganha um acento mais leve, porque o compasso se sente em dois blocos de três."
   },
   {
     question: "O que é o tap tempo?",
-    answer: "É uma forma de descobrir o BPM de uma música batendo no ritmo. Toque no botão 'Bater tempo' junto com a batida da música algumas vezes e o metrônomo calcula automaticamente o BPM correspondente."
+    answer: "É uma forma de descobrir o BPM de uma música batendo no ritmo. Toque no botão 'Toque no ritmo' junto com a batida da música, quatro vezes ou mais, e o metrônomo mostra o BPM na hora. Se parar de tocar por alguns segundos, a contagem recomeça."
   }
 ];
 
-// Renderizadas no servidor (evita layout shift / CLS)
+// Renderizadas no servidor (evita layout shift / CLS). Sextina e fusa saíram em
+// nov/2026: o Clarity mostrou gente trocando de subdivisão sem achar a certa.
 const SUBDIVISIONS_UI = [
-  { label: 'Semínima', n: 1 },
+  { label: 'Nenhuma', n: 1 },
   { label: 'Colcheia', n: 2 },
   { label: 'Tercina', n: 3 },
-  { label: 'Semicolch.', n: 4 },
-  { label: 'Sextina', n: 6 },
-  { label: 'Fusa', n: 8 },
+  { label: 'Semi­colcheia', n: 4 },
 ];
 ---
 
@@ -56,71 +55,62 @@ const SUBDIVISIONS_UI = [
   <div class="metro-page">
     <header class="metro-header">
       <h1>Metrônomo Online</h1>
-      <p class="metro-subtitle">Timing preciso · Subdivisões · Tap tempo · Grátis</p>
+      <p class="metro-subtitle">Escolha o BPM, aperte iniciar e toque junto</p>
     </header>
 
     <div class="metro-card">
       <div class="bpm-display">
-        <button class="bpm-step" data-step="-1" aria-label="Diminuir 1 BPM">−</button>
+        <button type="button" class="bpm-step" data-step="-1" aria-label="Diminuir BPM (segure para ir mais rápido)">−</button>
         <div class="bpm-center">
-          <span id="bpm-value" class="bpm-value">100</span>
+          <span id="bpm-value" class="bpm-value" aria-live="polite">100</span>
           <div class="bpm-meta">
             <span class="bpm-unit">BPM</span>
-            <span id="tempo-term" class="tempo-term">Moderato</span>
+            <span id="tempo-term" class="tempo-term">Andante</span>
           </div>
         </div>
-        <button class="bpm-step" data-step="1" aria-label="Aumentar 1 BPM">+</button>
+        <button type="button" class="bpm-step" data-step="1" aria-label="Aumentar BPM (segure para ir mais rápido)">+</button>
       </div>
 
       <input id="bpm-slider" type="range" min="40" max="240" value="100" step="1" class="bpm-slider" aria-label="Ajustar BPM" />
 
-      <div id="beat-dots" class="beat-dots" aria-hidden="true"></div>
+      <div id="beat-dots" class="beat-dots" aria-hidden="true">
+        <span class="beat-dot beat-dot--accent"></span><span class="beat-dot"></span><span class="beat-dot"></span><span class="beat-dot"></span>
+      </div>
 
-      <button id="play-btn" class="play-btn" aria-pressed="false">
-        <svg class="icon-play" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
-        <svg class="icon-stop" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
+      <button type="button" id="play-btn" class="play-btn" aria-pressed="false">
+        <svg class="icon-play" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+        <svg class="icon-stop" width="22" height="22" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/></svg>
         <span id="play-label">Iniciar</span>
       </button>
-      <p class="metro-hint">Barra de espaço inicia/para</p>
+
+      <div class="tap-wrap">
+        <button type="button" id="tap-btn" class="tap-btn">Toque no ritmo</button>
+        <p id="tap-info" class="tap-info" aria-live="polite">Não sabe o BPM? Toque no botão junto com a música.</p>
+      </div>
     </div>
 
     <div class="metro-controls">
       <div class="control-block">
         <span class="control-label">Compasso</span>
-        <div id="signature-row" class="btn-row">
-          <button class="mini-btn" data-beats="2">2/4</button>
-          <button class="mini-btn" data-beats="3">3/4</button>
-          <button class="mini-btn mini-btn--active" data-beats="4">4/4</button>
-          <button class="mini-btn" data-beats="6">6/8</button>
+        <div id="signature-row" class="btn-row" role="group" aria-label="Compasso">
+          <button type="button" class="mini-btn" data-beats="2" aria-pressed="false">2/4</button>
+          <button type="button" class="mini-btn" data-beats="3" aria-pressed="false">3/4</button>
+          <button type="button" class="mini-btn mini-btn--active" data-beats="4" aria-pressed="true">4/4</button>
+          <button type="button" class="mini-btn" data-beats="6" aria-pressed="false">6/8</button>
         </div>
       </div>
       <div class="control-block">
         <span class="control-label">Subdivisão</span>
-        <div id="subdivision-row" class="btn-row btn-row--wrap">
+        <div id="subdivision-row" class="btn-row" role="group" aria-label="Subdivisão">
           {SUBDIVISIONS_UI.map((s, i) => (
-            <button type="button" class={`mini-btn${i === 0 ? ' mini-btn--active' : ''}`} data-sub={s.n}>
-              {s.label}<small>{s.n}×</small>
+            <button type="button" class={`mini-btn${i === 0 ? ' mini-btn--active' : ''}`} data-sub={s.n} aria-pressed={i === 0 ? 'true' : 'false'}>
+              {s.label}<small>{s.n === 1 ? '1 por tempo' : `${s.n} por tempo`}</small>
             </button>
           ))}
         </div>
       </div>
     </div>
-
-    <div class="metro-controls metro-controls--2">
-      <div class="control-block">
-        <span class="control-label">Andamento rápido</span>
-        <div class="btn-row">
-          <button class="mini-btn" data-bpm="60">60</button>
-          <button class="mini-btn" data-bpm="90">90</button>
-          <button class="mini-btn" data-bpm="120">120</button>
-          <button class="mini-btn" data-bpm="160">160</button>
-        </div>
-      </div>
-      <div class="control-block">
-        <span class="control-label">Descobrir o BPM</span>
-        <button id="tap-btn" class="tap-btn">Bater tempo</button>
-      </div>
-    </div>
+    <p class="metro-hint">Teclado: espaço inicia e para, setas mudam o BPM (com Shift, de 5 em 5).</p>
 
     <section class="metro-article">
       <h2>Como usar o metrônomo para estudar</h2>
@@ -175,14 +165,15 @@ const SUBDIVISIONS_UI = [
     width: 22px; height: 22px; border: 3px solid var(--color-card);
     border-radius: 50%; background: var(--color-brand-fill); cursor: pointer;
   }
-  .beat-dots { display: flex; justify-content: center; gap: 0.6rem; min-height: 18px; margin-bottom: 1.25rem; }
+  .beat-dots { display: flex; justify-content: center; gap: 0.7rem; min-height: 26px; margin-bottom: 1.4rem; }
   .beat-dot {
-    width: 13px; height: 13px; border-radius: 50%; background: var(--color-elevated);
-    border: 1px solid var(--color-border); transition: transform 0.06s ease-out, background 0.06s;
+    width: 20px; height: 20px; border-radius: 50%; background: var(--color-elevated);
+    border: 2px solid var(--color-border); transition: transform 0.07s ease-out, background 0.07s;
   }
-  .beat-dot--on { background: var(--color-brand-fill); transform: scale(1.35); }
+  .beat-dot--on { background: var(--color-foreground); transform: scale(1.25); }
   .beat-dot--accent { border-color: var(--color-brand); }
-  .beat-dot--accent.beat-dot--on { background: #ff5b67; box-shadow: 0 0 12px rgba(230,57,70,0.6); }
+  .beat-dot--accent.beat-dot--on { background: #ff5b67; box-shadow: 0 0 14px rgba(230,57,70,0.6); }
+  .beat-dot--meio { border-color: rgba(230,57,70,0.5); }
   .play-btn {
     display: inline-flex; align-items: center; gap: 0.55rem; padding: 0.75rem 2.25rem;
     border-radius: 999px; border: none; background: var(--color-brand-fill); color: #fff;
@@ -194,9 +185,12 @@ const SUBDIVISIONS_UI = [
   .icon-stop { display: none; }
   .play-btn.is-playing .icon-play { display: none; }
   .play-btn.is-playing .icon-stop { display: inline; }
-  .metro-hint { font-size: 0.75rem; color: var(--color-subtle); margin-top: 0.8rem; }
-  .metro-controls { display: grid; grid-template-columns: 1fr 1fr; gap: 0.85rem; margin-top: 0.85rem; }
-  @media (max-width: 520px) { .metro-controls { grid-template-columns: 1fr; } }
+  .metro-hint { font-size: 0.75rem; color: var(--color-subtle); margin-top: 0.9rem; text-align: center; }
+  @media (hover: none) { .metro-hint { display: none; } }
+  .metro-controls { display: grid; grid-template-columns: 1fr; gap: 0.85rem; margin-top: 0.85rem; }
+  .tap-wrap { margin-top: 1.25rem; padding-top: 1.1rem; border-top: 1px solid var(--color-border); }
+  .tap-info { font-size: 0.8rem; color: var(--color-muted); margin-top: 0.55rem; min-height: 1.3em; font-variant-numeric: tabular-nums; }
+  .tap-info strong { color: var(--color-foreground); }
   .control-block {
     background: var(--color-card); border: 1px solid var(--color-border);
     border-radius: 14px; padding: 0.9rem 1rem; text-align: center;
@@ -206,9 +200,8 @@ const SUBDIVISIONS_UI = [
     color: var(--color-muted); font-weight: 700; margin-bottom: 0.7rem;
   }
   .btn-row { display: flex; gap: 0.35rem; justify-content: center; }
-  .btn-row--wrap { flex-wrap: wrap; }
   .mini-btn {
-    flex: 1 1 auto; min-width: 42px; padding: 0.45rem 0.35rem; border-radius: 9px;
+    flex: 1 1 0; min-width: 0; min-height: 44px; padding: 0.5rem 0.25rem; border-radius: 9px;
     border: 1px solid var(--color-border); background: var(--color-elevated);
     color: var(--color-foreground); font-weight: 600; font-size: 0.82rem; cursor: pointer;
     transition: border-color 0.15s, background 0.15s, color 0.15s;
@@ -217,12 +210,14 @@ const SUBDIVISIONS_UI = [
   .mini-btn--active { background: var(--color-brand-fill); border-color: var(--color-brand); color: #fff; }
   .mini-btn small { display: block; font-size: 0.62rem; opacity: 0.7; font-weight: 500; }
   .tap-btn {
-    width: 100%; padding: 0.65rem 0; border-radius: 9px; border: 1px solid var(--color-border);
-    background: var(--color-elevated); color: var(--color-foreground); font-weight: 700; cursor: pointer;
-    transition: border-color 0.15s, transform 0.08s;
+    width: 100%; max-width: 320px; padding: 0.85rem 0; border-radius: 12px; border: 1px solid var(--color-border);
+    background: var(--color-elevated); color: var(--color-foreground); font-weight: 700; font-size: 0.95rem; cursor: pointer;
+    transition: border-color 0.15s, transform 0.08s, background 0.1s;
+    touch-action: manipulation; -webkit-user-select: none; user-select: none;
   }
   .tap-btn:hover { border-color: var(--color-brand); }
-  .tap-btn:active { transform: scale(0.97); border-color: var(--color-brand); }
+  .tap-btn.is-hit { transform: scale(0.97); border-color: var(--color-brand); background: rgba(230,57,70,0.12); }
+  .bpm-step, .mini-btn, .play-btn { touch-action: manipulation; -webkit-user-select: none; user-select: none; }
   .metro-article { margin-top: 2.5rem; }
   .metro-article h2 { font-size: 1.35rem; font-weight: 700; margin-bottom: 1rem; }
   .metro-article p { line-height: 1.8; color: var(--color-muted); margin-bottom: 1.1rem; }
@@ -231,6 +226,10 @@ const SUBDIVISIONS_UI = [
 </style>
 
 <script>
+  // Metrônomo com agendamento no relógio do Web Audio (preciso mesmo com a aba
+  // ocupada). Revisto em nov/2026 a partir das gravações do Clarity: o "bater
+  // tempo" recebia dezenas de toques sem retorno, o +/- só andava de 1 em 1 e o
+  // clique da subdivisão era baixo demais para perceber.
   const bpmValue = document.getElementById('bpm-value')!;
   const tempoTerm = document.getElementById('tempo-term')!;
   const slider = document.getElementById('bpm-slider') as HTMLInputElement;
@@ -238,7 +237,9 @@ const SUBDIVISIONS_UI = [
   const playLabel = document.getElementById('play-label')!;
   const beatDots = document.getElementById('beat-dots')!;
   const tapBtn = document.getElementById('tap-btn')!;
+  const tapInfo = document.getElementById('tap-info')!;
 
+  const MIN = 40, MAX = 240;
   let bpm = 100;
   let beatsPerMeasure = 4;
   let subdiv = 1;
@@ -250,8 +251,23 @@ const SUBDIVISIONS_UI = [
   let nextNoteTime = 0;
   let schedulerTimer: number | null = null;
   const notesInQueue: { beat: number; sub: number; time: number }[] = [];
-  const LOOKAHEAD = 25;
-  const SCHEDULE_AHEAD = 0.1;
+  const LOOKAHEAD_MS = 25;
+
+  // ── Preferências (só conveniência; a página funciona sem) ──────────────────
+  const CHAVE = 'sonar-metronomo';
+  function salvar() {
+    try { localStorage.setItem(CHAVE, JSON.stringify({ bpm, beatsPerMeasure, subdiv })); } catch (_) {}
+  }
+  function carregar() {
+    try {
+      const s = JSON.parse(localStorage.getItem(CHAVE) || 'null');
+      if (s && typeof s.bpm === 'number') {
+        bpm = s.bpm;
+        if ([2, 3, 4, 6].includes(s.beatsPerMeasure)) beatsPerMeasure = s.beatsPerMeasure;
+        if ([1, 2, 3, 4].includes(s.subdiv)) subdiv = s.subdiv;
+      }
+    } catch (_) {}
+  }
 
   function tempoName(v: number) {
     if (v < 60) return 'Largo';
@@ -262,85 +278,118 @@ const SUBDIVISIONS_UI = [
     if (v < 200) return 'Presto';
     return 'Prestissimo';
   }
-  function clampBpm(v: number) { return Math.max(40, Math.min(240, Math.round(v))); }
+  function clampBpm(v: number) { return Math.max(MIN, Math.min(MAX, Math.round(v))); }
   function setBpm(v: number) {
     bpm = clampBpm(v);
     bpmValue.textContent = String(bpm);
     tempoTerm.textContent = tempoName(bpm);
     slider.value = String(bpm);
+    salvar();
+  }
+
+  // Acento: tempo 1 forte; no 6/8 o tempo 4 ganha um acento médio (2 blocos de 3).
+  function nivel(beat: number) {
+    if (beat === 0) return 2;
+    if (beatsPerMeasure === 6 && beat === 3) return 1;
+    return 0;
   }
 
   function buildDots() {
     beatDots.innerHTML = '';
     for (let i = 0; i < beatsPerMeasure; i++) {
       const d = document.createElement('span');
-      d.className = 'beat-dot' + (i === 0 ? ' beat-dot--accent' : '');
+      const n = nivel(i);
+      d.className = 'beat-dot' + (n === 2 ? ' beat-dot--accent' : n === 1 ? ' beat-dot--meio' : '');
       beatDots.appendChild(d);
     }
   }
 
-  document.querySelectorAll<HTMLElement>('[data-sub]').forEach((b) => {
-    b.addEventListener('click', () => {
-      document.querySelectorAll('[data-sub]').forEach((x) => x.classList.remove('mini-btn--active'));
-      b.classList.add('mini-btn--active');
-      subdiv = Number(b.dataset.sub);
+  function marcar(grupo: string, ativo: Element) {
+    document.querySelectorAll(grupo).forEach((x) => {
+      x.classList.toggle('mini-btn--active', x === ativo);
+      x.setAttribute('aria-pressed', x === ativo ? 'true' : 'false');
     });
-  });
+  }
 
+  // ── Som: clique curto de "woodblock" (triângulo com queda de altura) ───────
   function scheduleClick(beat: number, sub: number, time: number) {
     if (!audioCtx) return;
     const osc = audioCtx.createOscillator();
     const gain = audioCtx.createGain();
     let freq: number, vol: number;
-    if (sub !== 0) { freq = 1300; vol = 0.18; }            // subdivisão
-    else if (beat === 0) { freq = 1600; vol = 0.6; }       // acento (tempo 1)
-    else { freq = 900; vol = 0.42; }                        // tempo normal
-    osc.frequency.value = freq;
-    gain.gain.setValueAtTime(vol, time);
-    gain.gain.exponentialRampToValueAtTime(0.001, time + 0.045);
+    if (sub !== 0) { freq = 1050; vol = 0.32; }
+    else {
+      const n = nivel(beat);
+      freq = n === 2 ? 1760 : n === 1 ? 1400 : 1200;
+      vol = n === 2 ? 0.9 : n === 1 ? 0.7 : 0.6;
+    }
+    osc.type = 'triangle';
+    osc.frequency.setValueAtTime(freq * 1.5, time);
+    osc.frequency.exponentialRampToValueAtTime(freq, time + 0.012);
+    gain.gain.setValueAtTime(0.0001, time);
+    gain.gain.exponentialRampToValueAtTime(vol, time + 0.002);
+    gain.gain.exponentialRampToValueAtTime(0.0001, time + 0.06);
     osc.connect(gain); gain.connect(audioCtx.destination);
-    osc.start(time); osc.stop(time + 0.05);
+    osc.start(time); osc.stop(time + 0.07);
     notesInQueue.push({ beat, sub, time });
   }
 
   function scheduler() {
     if (!audioCtx) return;
-    while (nextNoteTime < audioCtx.currentTime + SCHEDULE_AHEAD) {
+    // Aba em segundo plano: o navegador segura os timers em ~1 s, então agenda mais à frente.
+    const ahead = document.hidden ? 1.5 : 0.12;
+    while (nextNoteTime < audioCtx.currentTime + ahead) {
       scheduleClick(currentBeat, subIndex, nextNoteTime);
       nextNoteTime += (60.0 / bpm) / subdiv;
       subIndex++;
       if (subIndex >= subdiv) { subIndex = 0; currentBeat = (currentBeat + 1) % beatsPerMeasure; }
     }
-    schedulerTimer = window.setTimeout(scheduler, LOOKAHEAD);
+    schedulerTimer = window.setTimeout(scheduler, LOOKAHEAD_MS);
   }
 
+  let aceso: Element | null = null;
   function draw() {
     if (!isPlaying || !audioCtx) return;
     const now = audioCtx.currentTime;
-    while (notesInQueue.length && notesInQueue[0].time < now) {
+    while (notesInQueue.length && notesInQueue[0].time <= now) {
       const note = notesInQueue.shift()!;
       if (note.sub === 0) {
-        const dots = beatDots.querySelectorAll('.beat-dot');
-        dots.forEach((d) => d.classList.remove('beat-dot--on'));
-        const active = dots[note.beat];
-        if (active) {
-          active.classList.add('beat-dot--on');
-          setTimeout(() => active.classList.remove('beat-dot--on'), 90);
-        }
+        aceso?.classList.remove('beat-dot--on');
+        aceso = beatDots.children[note.beat] ?? null;
+        aceso?.classList.add('beat-dot--on');
+      } else if (note.sub === 1 && aceso) {
+        aceso.classList.remove('beat-dot--on');
       }
+    }
+    // Sem subdivisão, apaga a bolinha na metade do tempo.
+    if (aceso && subdiv === 1 && notesInQueue.length && notesInQueue[0].time - now < (30 / bpm)) {
+      aceso.classList.remove('beat-dot--on');
     }
     requestAnimationFrame(draw);
   }
 
+  // Tela acesa enquanto toca (no celular, a tela apagando cortava o som).
+  let wakeLock: any = null;
+  async function manterTela() {
+    try { wakeLock = await (navigator as any).wakeLock?.request('screen'); } catch (_) { wakeLock = null; }
+  }
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden && isPlaying && !wakeLock) manterTela();
+  });
+
   function start() {
     (window as any).gtag?.('event', 'tool_use', { ferramenta: 'metronomo', acao: 'tocar' });
+    // iPhone no modo silencioso: sem isso o Web Audio sai mudo (Safari 17+).
+    try { if ((navigator as any).audioSession) (navigator as any).audioSession.type = 'playback'; } catch (_) {}
     if (!audioCtx) audioCtx = new (window.AudioContext || (window as any).webkitAudioContext)();
     if (audioCtx.state === 'suspended') audioCtx.resume();
     isPlaying = true;
     currentBeat = 0; subIndex = 0;
+    notesInQueue.length = 0;
     nextNoteTime = audioCtx.currentTime + 0.06;
     scheduler();
     requestAnimationFrame(draw);
+    manterTela();
     playBtn.classList.add('is-playing');
     playLabel.textContent = 'Parar';
     playBtn.setAttribute('aria-pressed', 'true');
@@ -350,7 +399,8 @@ const SUBDIVISIONS_UI = [
     isPlaying = false;
     if (schedulerTimer !== null) { clearTimeout(schedulerTimer); schedulerTimer = null; }
     notesInQueue.length = 0;
-    beatDots.querySelectorAll('.beat-dot').forEach((d) => d.classList.remove('beat-dot--on'));
+    aceso?.classList.remove('beat-dot--on'); aceso = null;
+    wakeLock?.release?.().catch(() => {}); wakeLock = null;
     playBtn.classList.remove('is-playing');
     playLabel.textContent = 'Iniciar';
     playBtn.setAttribute('aria-pressed', 'false');
@@ -360,41 +410,107 @@ const SUBDIVISIONS_UI = [
 
   playBtn.addEventListener('click', toggle);
   slider.addEventListener('input', () => setBpm(Number(slider.value)));
+
+  // +/-: toque muda 1; segurando, repete e acelera (passos de 5 depois de 1,5 s).
   document.querySelectorAll<HTMLElement>('.bpm-step').forEach((btn) => {
-    btn.addEventListener('click', () => setBpm(bpm + Number(btn.dataset.step)));
+    const dir = Number(btn.dataset.step);
+    let t: number | null = null;
+    let inicio = 0;
+    let repetiu = false;
+    const parar = () => { if (t !== null) { clearTimeout(t); t = null; } };
+    const repetir = () => {
+      repetiu = true;
+      const passo = performance.now() - inicio > 1500 ? 5 : 1;
+      setBpm(passo === 5 ? Math.round((bpm + dir * 5) / 5) * 5 : bpm + dir);
+      t = window.setTimeout(repetir, passo === 5 ? 140 : 70);
+    };
+    btn.addEventListener('pointerdown', (e) => {
+      if (e.button !== 0) return;
+      inicio = performance.now(); repetiu = false;
+      parar();
+      t = window.setTimeout(repetir, 400);
+    });
+    ['pointerup', 'pointerleave', 'pointercancel'].forEach((ev) => btn.addEventListener(ev, parar));
+    btn.addEventListener('click', () => { if (!repetiu) setBpm(bpm + dir); repetiu = false; });
+    btn.addEventListener('contextmenu', (e) => e.preventDefault());
   });
-  document.querySelectorAll<HTMLElement>('[data-bpm]').forEach((btn) => {
-    btn.addEventListener('click', () => setBpm(Number(btn.dataset.bpm)));
-  });
+
   document.querySelectorAll<HTMLElement>('[data-beats]').forEach((btn) => {
     btn.addEventListener('click', () => {
-      document.querySelectorAll('[data-beats]').forEach((b) => b.classList.remove('mini-btn--active'));
-      btn.classList.add('mini-btn--active');
+      marcar('[data-beats]', btn);
       beatsPerMeasure = Number(btn.dataset.beats);
-      currentBeat = 0;
+      currentBeat = 0; subIndex = 0;
+      aceso = null;
       buildDots();
+      salvar();
+    });
+  });
+  document.querySelectorAll<HTMLElement>('[data-sub]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      marcar('[data-sub]', btn);
+      subdiv = Number(btn.dataset.sub);
+      subIndex = 0;
+      salvar();
     });
   });
 
+  // ── Toque no ritmo: mediana dos últimos intervalos, com retorno a cada toque ─
   let taps: number[] = [];
-  tapBtn.addEventListener('click', () => {
+  let tapReset: number | null = null;
+  function tocar(e: Event) {
+    e.preventDefault();
     const now = performance.now();
-    taps = taps.filter((t) => now - t < 2000);
+    if (taps.length && now - taps[taps.length - 1] > 2500) taps = [];
     taps.push(now);
-    if (taps.length >= 2) {
-      const intervals = [];
-      for (let i = 1; i < taps.length; i++) intervals.push(taps[i] - taps[i - 1]);
-      setBpm(60000 / (intervals.reduce((a, b) => a + b, 0) / intervals.length));
+    if (taps.length > 9) taps.shift();
+    tapBtn.classList.add('is-hit');
+    setTimeout(() => tapBtn.classList.remove('is-hit'), 90);
+    if (taps.length < 2) {
+      tapInfo.textContent = 'Continue tocando no ritmo…';
+    } else {
+      const iv: number[] = [];
+      for (let i = 1; i < taps.length; i++) iv.push(taps[i] - taps[i - 1]);
+      const ord = iv.slice().sort((a, b) => a - b);
+      const med = ord[Math.floor(ord.length / 2)];
+      // Ignora toques fora do ritmo (40% longe da mediana).
+      const bons = iv.filter((x) => Math.abs(x - med) < med * 0.4);
+      const media = bons.reduce((a, b) => a + b, 0) / bons.length;
+      const v = clampBpm(60000 / media);
+      setBpm(v);
+      tapInfo.innerHTML = taps.length < 4
+        ? `<strong>${v} BPM</strong> · mais ${4 - taps.length} toque${4 - taps.length > 1 ? 's' : ''} para firmar`
+        : `<strong>${v} BPM</strong> · ${taps.length} toques. Pare de tocar para recomeçar.`;
     }
-  });
+    if (tapReset !== null) clearTimeout(tapReset);
+    tapReset = window.setTimeout(() => {
+      if (taps.length >= 2) tapInfo.innerHTML = `Pronto: <strong>${bpm} BPM</strong>.${isPlaying ? '' : ' Aperte iniciar para ouvir.'}`;
+      taps = [];
+    }, 2500);
+  }
+  // pointerdown responde no instante do toque (o click do celular chega atrasado).
+  tapBtn.addEventListener('pointerdown', tocar);
+  tapBtn.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') tocar(e); });
 
   document.addEventListener('keydown', (e) => {
-    if (e.code === 'Space' && !(e.target as HTMLElement).matches('input, textarea, button')) {
+    const alvo = e.target as HTMLElement;
+    if (alvo.matches('input, textarea, select') || alvo === tapBtn) return;
+    if (e.code === 'Space' && !alvo.matches('button')) {
       e.preventDefault();
       toggle();
+    } else if (e.key === 'ArrowUp' || e.key === 'ArrowRight') {
+      if (alvo.matches('button')) return;
+      e.preventDefault(); setBpm(bpm + (e.shiftKey ? 5 : 1));
+    } else if (e.key === 'ArrowDown' || e.key === 'ArrowLeft') {
+      if (alvo.matches('button')) return;
+      e.preventDefault(); setBpm(bpm - (e.shiftKey ? 5 : 1));
     }
   });
 
+  carregar();
+  setBpm(bpm);
+  const bB = document.querySelector(`[data-beats="${beatsPerMeasure}"]`);
+  if (bB) marcar('[data-beats]', bB);
+  const bS = document.querySelector(`[data-sub="${subdiv}"]`);
+  if (bS) marcar('[data-sub]', bS);
   buildDots();
-  setBpm(100);
 </script>
