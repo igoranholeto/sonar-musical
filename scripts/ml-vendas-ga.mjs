@@ -8,6 +8,11 @@
 //   node scripts/ml-vendas-ga.mjs             mostra o que seria enviado (nada sai daqui)
 //   node scripts/ml-vendas-ga.mjs --validar   confere os eventos no endpoint de debug do GA
 //   node scripts/ml-vendas-ga.mjs --enviar    envia as vendas novas e grava enviadoEm
+//   node scripts/ml-vendas-ga.mjs --conhecidas
+//        imprime os pedidos já anotados, para colar em scripts/ml-vendas-painel.js
+//   node scripts/ml-vendas-ga.mjs --importar privado/ml-painel.txt
+//        junta na lista o que scripts/ml-vendas-painel.js leu no painel: vendas novas,
+//        mudança de status e não efetivadas (cancelada depois de enviada vira refund)
 //
 // Cada venda em privado/vendas-ml.json (lista):
 //   {
@@ -28,15 +33,24 @@
 // Venda cancelada depois de enviada vira evento refund.
 // A chave GA_MP_SECRET vem do .env e nunca é impressa.
 
-import { readFileSync, writeFileSync, existsSync } from 'node:fs';
+import { readFileSync, writeFileSync, existsSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 
 const MEDICAO = 'G-WZDXX7MLBD';
 const ARQUIVO = 'privado/vendas-ml.json';
 const LIMITE_RETRO_MS = 71 * 3600 * 1000; // o GA aceita até 72 h
 
-const args = new Set(process.argv.slice(2));
-const modo = args.has('--enviar') ? 'enviar' : args.has('--validar') ? 'validar' : 'mostrar';
+const argv = process.argv.slice(2);
+const args = new Set(argv);
+const modo = args.has('--enviar')
+  ? 'enviar'
+  : args.has('--validar')
+    ? 'validar'
+    : args.has('--importar')
+      ? 'importar'
+      : args.has('--conhecidas')
+        ? 'conhecidas'
+        : 'mostrar';
 
 function lerSegredo() {
   let v = process.env.GA_MP_SECRET;
@@ -115,6 +129,170 @@ if (!existsSync(ARQUIVO)) {
   process.exit(1);
 }
 const vendas = JSON.parse(readFileSync(ARQUIVO, 'utf8'));
+
+// ---------- painel de afiliados -> privado/vendas-ml.json ----------
+const LETRA = { 'em revisão': 'R', aprovada: 'A', cancelada: 'X' };
+function statusPt(bruto = '') {
+  if (/REVIEW|PENDING/.test(bruto)) return 'em revisão';
+  if (/CANCEL|REJECT|DENIED|REFUND|NOT_|NAO_EFETIVADA/.test(bruto)) return 'cancelada';
+  if (/APPROV|PAID|CONFIRM|LIQUID|AVAILABLE/.test(bruto)) return 'aprovada';
+  return bruto.toLowerCase() || 'em revisão';
+}
+
+// Acha o produto do catálogo pelo nome do anúncio (modelo pesa mais que palavra comum).
+function fichas(s) {
+  return new Set(
+    String(s)
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .toLowerCase()
+      .replace(/([a-z]+)-(\d)/g, '$1$2')
+      .split(/[^a-z0-9]+/)
+      .filter((t) => t.length >= 2),
+  );
+}
+let catalogoNomes;
+function adivinharProduto(nome) {
+  if (!catalogoNomes) {
+    let titulos = {};
+    try {
+      for (const r of JSON.parse(readFileSync('covers-src/_afiliados-check.json', 'utf8')))
+        for (const id of r.ids ?? []) titulos[id] = String(r.ml ?? '').replace(/\s-\sR\$.*$/, '');
+    } catch {
+      titulos = {};
+    }
+    catalogoNomes = readdirSync('src/data/produtos')
+      .filter((f) => f.endsWith('.json'))
+      .map((f) => {
+        const id = f.slice(0, -5);
+        const p = JSON.parse(readFileSync(`src/data/produtos/${f}`, 'utf8'));
+        return { id, t: fichas(`${id} ${p.nome} ${titulos[id] ?? ''}`) };
+      });
+  }
+  const alvo = fichas(nome);
+  const peso = (t) => (/\d/.test(t) && /[a-z]/.test(t) ? 3 : 1);
+  // Kit só ganha de produto avulso se o anúncio vendido também for kit.
+  const kit = (id) => (id.startsWith('kit-') && !alvo.has('kit') ? 2 : 0);
+  const notas = catalogoNomes
+    .map((c) => ({ id: c.id, n: [...alvo].reduce((s, t) => s + (c.t.has(t) ? peso(t) : 0), 0) - kit(c.id) }))
+    .sort((a, b) => b.n - a.n);
+  const [a, b] = notas;
+  return a && a.n >= 5 && a.n - (b?.n ?? 0) >= 2 ? a.id : undefined;
+}
+
+function falhar(msg) {
+  console.error(`✗ ${msg}\nNada foi gravado.`);
+  process.exit(1);
+}
+
+function importar(arq) {
+  if (!arq || !existsSync(arq)) falhar(`Arquivo do painel não encontrado: ${arq ?? '(faltou o caminho)'}`);
+  const ls = readFileSync(arq, 'utf8')
+    .replace(/\r/g, '')
+    .split('\n')
+    .map((l) => l.trim())
+    .filter((l) => l && !l.startsWith('#'));
+  const cab = ls.shift()?.match(/^ML\|[^|]*\|vendas (\d+)\|linhas (\d+)\|soma (-?[\d.]+)$/);
+  if (!cab) falhar('A 1ª linha precisa ser o cabeçalho "ML|...|vendas N|linhas N|soma X".');
+  if (ls.length !== Number(cab[2])) falhar(`O painel mandou ${cab[2]} linhas e o arquivo tem ${ls.length}: faltou ou sobrou parte.`);
+
+  const novas = [];
+  const canc = [];
+  let soma = 0;
+  for (const l of ls) {
+    const c = l.split('|');
+    if (c[0] === 'V' && c.length >= 10) {
+      const [, id, dataBr, venda, comissao, pct, tipo, status, mlb, ...nome] = c;
+      const d = dataBr.match(/^(\d{2})\/(\d{2})\/(\d{4})$/);
+      const v = { id, data: d && `${d[3]}-${d[2]}-${d[1]}`, venda: Number(venda), comissao: Number(comissao), pct: Number(pct), tipo, status, mlb, nome: nome.join(' ') };
+      if (!/^\d{10,}$/.test(id) || !v.data || !Number.isFinite(v.venda) || !Number.isFinite(v.comissao)) falhar(`Linha com valor estranho: ${l}`);
+      soma += v.comissao;
+      novas.push(v);
+    } else if (c[0] === 'C' && /^\d{10,}$/.test(c[1] ?? '')) {
+      canc.push({ id: c[1], status: c[2] ?? '' });
+    } else {
+      falhar(`Linha fora do formato: ${l}`);
+    }
+  }
+  if (Math.abs(soma - Number(cab[3])) > 0.011) falhar(`A soma das comissões deu R$ ${soma.toFixed(2)} e o painel mandou R$ ${cab[3]}: algum valor foi copiado errado.`);
+
+  const idsDoPainel = new Set(novas.map((v) => v.id));
+  const acha = (p) =>
+    vendas.find((v) => v.pedido === p.id || v.pedidoPainel === p.id) ??
+    // O painel às vezes mostra outro número para o mesmo pedido: mesma data e mesmo valor.
+    (p.data &&
+      vendas.find(
+        (v) => !v.pedidoPainel && !idsDoPainel.has(v.pedido) && v.data === p.data && Math.abs(v.venda - p.venda) < 0.01,
+      ));
+
+  const log = [];
+  for (const p of novas) {
+    const st = statusPt(p.status);
+    const v = acha(p);
+    if (!v) {
+      const idProduto = adivinharProduto(p.nome);
+      vendas.push({
+        pedido: p.id,
+        data: p.data,
+        produto: p.nome,
+        ...(idProduto && { idProduto }),
+        venda: p.venda,
+        comissao: p.comissao,
+        status: st,
+        tipo: p.tipo === 'I' ? 'indireta' : 'direta',
+        mlb: p.mlb || null,
+        idVisitante: null,
+        idSessao: null,
+        pagina: null,
+        enviadoEm: null,
+        estornadoEm: null,
+      });
+      log.push(`nova      #${p.id}  ${p.data}  R$ ${p.comissao.toFixed(2)}  ${p.nome.slice(0, 44)}  [${idProduto ?? 'produto não identificado'}]`);
+      continue;
+    }
+    if (v.pedido !== p.id && !v.pedidoPainel) {
+      v.pedidoPainel = p.id;
+      log.push(`mesmo     #${v.pedido} aparece no painel como #${p.id}`);
+    }
+    if (v.status === 'cancelada' && st !== 'cancelada') {
+      log.push(`atenção   #${v.pedido} está cancelada aqui e "${p.status}" no painel: mantida cancelada, confira à mão`);
+    } else if (v.status !== st) {
+      log.push(`status    #${v.pedido}  ${v.status} -> ${st}${st === 'cancelada' && v.enviadoEm ? ' (vira refund no --enviar)' : ''}`);
+      v.status = st;
+    }
+    if (Math.abs(v.comissao - p.comissao) >= 0.01) {
+      if (v.enviadoEm) log.push(`comissão  #${v.pedido}  R$ ${v.comissao.toFixed(2)} no GA, R$ ${p.comissao.toFixed(2)} no painel (GA fica com o valor enviado)`);
+      else {
+        log.push(`comissão  #${v.pedido}  R$ ${v.comissao.toFixed(2)} -> R$ ${p.comissao.toFixed(2)}`);
+        v.comissao = p.comissao;
+        v.venda = p.venda;
+      }
+    }
+  }
+  for (const c of canc) {
+    const v = vendas.find((x) => x.pedido === c.id || x.pedidoPainel === c.id);
+    if (!v) log.push(`não efet. #${c.id} não está na lista (nunca foi enviada ao GA): nada a fazer`);
+    else if (v.status !== 'cancelada') {
+      log.push(`não efet. #${v.pedido}  ${v.status} -> cancelada${v.enviadoEm ? ' (vira refund no --enviar)' : ''}`);
+      v.status = 'cancelada';
+    }
+  }
+
+  writeFileSync(ARQUIVO, JSON.stringify(vendas, null, 2) + '\n');
+  console.log(log.length ? log.join('\n') : 'O painel não trouxe nada novo.');
+  console.log(`\n${cab[1]} vendas no painel (janela da leitura); lista com ${vendas.length} pedidos.`);
+}
+
+if (modo === 'conhecidas') {
+  const lista = vendas.flatMap((v) => [v.pedido, v.pedidoPainel].filter(Boolean).map((id) => `${id}:${LETRA[v.status] ?? 'R'}`));
+  console.log(`const CONHECIDAS = '${lista.join(',')}';`);
+  process.exit(0);
+}
+if (modo === 'importar') {
+  importar(argv[argv.indexOf('--importar') + 1]);
+  console.log('Próximo passo: node scripts/ml-vendas-ga.mjs --validar e depois --enviar.');
+  process.exit(0);
+}
 
 const fila = [];
 for (const v of vendas) {
