@@ -1,19 +1,23 @@
 {
   "nome": "Bravo BUK123 Concert",
   "meli": "https://meli.la/1L914Vh",
-  "preco": 175,
+  "preco": 175.49,
   "precoEm": "2026-11-14",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 175
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 175.49
     }
   ],
   "imagemAlt": "Bravo BUK123 Concert",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
+    "desde": "2026-11-14",
     "antes": 259,
     "off": 32,
     "parcelas": "5x R$ 35,10 sem juros",

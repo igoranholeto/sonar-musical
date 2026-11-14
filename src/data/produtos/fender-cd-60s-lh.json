@@ -1,7 +1,7 @@
 {
   "nome": "Fender CD-60S Canhoto",
   "meli": "https://meli.la/1AZtupz",
-  "preco": 1899,
+  "preco": 1918,
   "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
@@ -27,7 +27,7 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 1899
+      "preco": 1918
     }
   ],
   "nota": 4.8,
@@ -37,7 +37,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 189,90 sem juros",
+    "parcelas": "10x R$ 191,84 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-fender-classic-design-cd-60s-para-canhotos-natural-nogueira-brilhante/p/MLB14073504"
   },

@@ -1,20 +1,24 @@
 {
   "nome": "Takamine GC6CE",
   "meli": "https://meli.la/12KrJNw",
-  "preco": 3789,
+  "preco": 3574,
   "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 3789
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 3574
     }
   ],
   "imagemAlt": "Takamine GC6CE",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 378,91 sem juros",
+    "parcelas": "12x R$ 343,53",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-takamine-g-series-gc6ce-n-gc6ce-n-para-destros-preta-laurel/p/MLB16112056"
   },

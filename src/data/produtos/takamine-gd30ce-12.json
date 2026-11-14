@@ -1,7 +1,7 @@
 {
   "nome": "Takamine GD30CE-12",
   "meli": "https://meli.la/2uErbs5",
-  "preco": 3633,
+  "preco": 3912,
   "precoEm": "2026-11-14",
   "categoria": "violao",
   "historico": [
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 3633
+    },
+    {
+      "data": "2026-11-14",
+      "preco": 3912
     }
   ],
   "nota": 4.9,
@@ -25,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4768,
-    "off": 23,
-    "parcelas": "12x R$ 349,24",
+    "parcelas": "10x R$ 391,23 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-takamine-gd30ce-12-cordas-natural-tp4td/p/MLB41812927"
   },

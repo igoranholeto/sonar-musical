@@ -1,7 +1,7 @@
 {
   "nome": "Shelby SU21M Soprano",
   "meli": "https://meli.la/1wRrT5M",
-  "preco": 219,
+  "preco": 212,
   "precoEm": "2026-11-14",
   "categoria": "ukulele",
   "historico": [
@@ -11,16 +11,14 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 219
+      "preco": 212
     }
   ],
   "imagemAlt": "Shelby SU21M Soprano",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 270,
-    "off": 18,
-    "parcelas": "12x R$ 21,68",
+    "parcelas": "12x R$ 20,99",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-shelby-soprano-su21m-natural-fosco-by-eagle-cor-marrom/p/MLB27975348"
   },

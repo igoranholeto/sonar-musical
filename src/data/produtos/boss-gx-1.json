@@ -1,7 +1,7 @@
 {
   "nome": "Boss GX-1",
   "meli": "https://meli.la/1m7SiF9",
-  "preco": 1998,
+  "preco": 1971,
   "precoEm": "2026-11-14",
   "categoria": "pedaleira",
   "historico": [
@@ -31,7 +31,7 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 1998
+      "preco": 1971
     }
   ],
   "imagem": "/images/produtos/boss-gx-1.webp",
@@ -39,9 +39,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2798,
-    "off": 28,
-    "parcelas": "10x R$ 199,80 sem juros",
+    "parcelas": "12x R$ 189,45",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-de-efeitos-p-guitarra-boss-gx1-gx-1-multiefeitos-preto/p/MLB65287987"
   },

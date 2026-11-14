@@ -1,7 +1,7 @@
 {
   "nome": "Yamaha P-145 (piano digital)",
   "meli": "https://meli.la/1LskgJN",
-  "preco": 3093,
+  "preco": 2938,
   "precoEm": "2026-11-14",
   "categoria": "piano",
   "historico": [
@@ -23,7 +23,7 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 3093
+      "preco": 2938
     }
   ],
   "nota": 4.9,
@@ -34,8 +34,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 3399,
-    "off": 9,
-    "parcelas": "12x R$ 297,30",
+    "off": 13,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-yamaha-p-145bt-bluetooth-c-fonte-p145bt-cor-preto/p/MLB52688693"
   },

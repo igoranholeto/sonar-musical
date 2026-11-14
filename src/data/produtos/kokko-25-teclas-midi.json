@@ -26,8 +26,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 430,
-    "off": 25,
+    "antes": 480,
+    "off": 32,
     "parcelas": "12x R$ 31,50",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-kokko-professional-midi-25-teclas-daw/p/MLB67135608"

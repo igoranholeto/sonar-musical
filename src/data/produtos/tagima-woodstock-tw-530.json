@@ -1,7 +1,7 @@
 {
   "nome": "Tagima Woodstock TW-530",
   "meli": "https://meli.la/1b3E3cB",
-  "preco": 930,
+  "preco": 910,
   "precoEm": "2026-11-14",
   "categoria": "guitarra",
   "historico": [
@@ -15,16 +15,16 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 930
+      "preco": 910
     }
   ],
   "imagemAlt": "Tagima Woodstock TW-530",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1999,
-    "off": 53,
-    "parcelas": "12x R$ 90,27",
+    "antes": 971,
+    "off": 6,
+    "parcelas": "10x R$ 90,98 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-tagima-tw530-woodstock-tw-530-strato-cor-black-material-do-diapasao-bordo-orientacao-da-mao-destro/p/MLB25332585"
   },

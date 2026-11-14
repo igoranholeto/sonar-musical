@@ -18,7 +18,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "12x R$ 90,67",
+    "antes": 1699,
+    "off": 45,
+    "parcelas": "12x R$ 90,71",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-audio-technica-m-series-ath-m40x-ath-m40x-preto/p/MLB6337847"
   },

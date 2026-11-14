@@ -1,7 +1,7 @@
 {
   "nome": "Shelby SU23M Concert",
   "meli": "https://meli.la/2NEMgJj",
-  "preco": 249,
+  "preco": 253,
   "precoEm": "2026-11-14",
   "categoria": "ukulele",
   "historico": [
@@ -27,7 +27,7 @@
     },
     {
       "data": "2026-11-14",
-      "preco": 249
+      "preco": 253
     }
   ],
   "imagem": "/images/produtos/shelby-su23m-concert.webp",
@@ -37,7 +37,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 24,65",
+    "parcelas": "12x R$ 24,74",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-shelby-su23m-concert-cor-marrom/p/MLB27938267"
   },
