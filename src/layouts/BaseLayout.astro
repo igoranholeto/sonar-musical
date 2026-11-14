@@ -52,6 +52,31 @@ const organizationSchema = {
 // box foi aposentado pelo Google e o urlTemplate fazia o crawler rastrear
 // /busca/?q={search_term_string}, que aparecia como não indexada no Search Console.
 const isHome = Astro.url.pathname === '/';
+
+// Tipo de página para o GA (content_group no page_view): agrupa os relatórios por
+// tipo de conteúdo em vez de URL a URL. Posts do blog são classificados pelo slug.
+function grupoDaPagina(p: string): string {
+  if (p === '/') return 'home';
+  const blog = p.match(/^\/blog\/([^/]+)\/?$/);
+  if (blog) {
+    const s = blog[1];
+    if (/(^|-)vs(-|$)|-ou-|^diferenca-/.test(s)) return 'comparativo';
+    if (/^melhor(es)?-/.test(s)) return 'guia de compra';
+    if (/-(e-bom|e-boa|vale-a-pena)$|-guia-completo$/.test(s)) return 'review';
+    if (/^preco-/.test(s)) return 'preço';
+    if (/^presente-/.test(s)) return 'presente';
+    return 'informativo';
+  }
+  if (p.startsWith('/blog/')) return 'lista do blog';
+  if (p.startsWith('/produto/')) return 'ficha de produto';
+  if (p.startsWith('/black-friday/')) return 'black friday';
+  if (p.startsWith('/categoria/')) return 'categoria';
+  if (p.startsWith('/bandas/')) return 'bandas';
+  if (/^\/(afinador|metronomo|gerador-de-escalas|acordes|ferramentas|qual-guitarra|tablaturas|aprender)\//.test(p)) return 'ferramenta';
+  if (p.startsWith('/busca/')) return 'busca';
+  return 'institucional';
+}
+const grupoGA = grupoDaPagina(Astro.url.pathname);
 const websiteSchema = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
@@ -64,7 +89,7 @@ const websiteSchema = {
 ---
 
 <!doctype html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-grupo={grupoGA}>
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -175,7 +200,11 @@ const websiteSchema = {
       function gtag() { window.dataLayer.push(arguments); }
       window.gtag = gtag;
       gtag('js', new Date());
-      gtag('config', 'G-WZDXX7MLBD', { send_page_view: true });
+      // content_group: tipo de página (data-grupo no <html>, calculado no build).
+      gtag('config', 'G-WZDXX7MLBD', {
+        send_page_view: true,
+        content_group: document.documentElement.dataset.grupo || 'institucional',
+      });
 
       // O gtag.js custa ~400 ms de thread principal num celular médio. Ele só é
       // baixado na primeira interação (toque, rolagem, tecla, mouse) ou depois de
@@ -244,11 +273,23 @@ const websiteSchema = {
       document.addEventListener('click', function (e) {
         var alvo = e.target instanceof Element ? e.target.closest(AFILIADO) : null;
         if (!(alvo instanceof HTMLAnchorElement)) return;
-        var links = Array.prototype.slice.call(document.querySelectorAll(AFILIADO));
+        // Foto e título dos cards (data-espelho) repetem o link do botão: ficam fora
+        // da contagem, e o clique neles herda a posição do botão do mesmo produto.
+        var links = Array.prototype.slice.call(document.querySelectorAll(AFILIADO)).filter(function (a: Element) {
+          return !a.hasAttribute('data-espelho');
+        });
+        var base: Element | null = alvo;
+        if (alvo.hasAttribute('data-espelho')) {
+          var caixa = alvo.closest('.afi, .pr__topo');
+          base = caixa ? caixa.querySelector('a[href*="meli.la"]:not([data-espelho]), a[href*="mercadolivre.com"]:not([data-espelho])') : null;
+          for (var i = 0; !base && i < links.length; i++) {
+            if (links[i].href === alvo.href) { base = links[i]; break; }
+          }
+        }
         var params: Record<string, unknown> = {
           produto: alvo.dataset.produto || (alvo.textContent || '').trim().slice(0, 100),
           bloco: alvo.dataset.bloco || 'texto',
-          posicao: links.indexOf(alvo) + 1,
+          posicao: links.indexOf(base) + 1,
           total_links: links.length,
           link_url: alvo.href,
           transport_type: 'beacon',
@@ -268,6 +309,16 @@ const websiteSchema = {
         // ainda não existem, então espera o gtag responder, com teto de 3 s.
         if (idsGA().cid) enviar();
         else { gtag('get', 'G-WZDXX7MLBD', 'client_id', enviar); setTimeout(enviar, 3000); }
+      }, true);
+
+      // Formulários do Netlify: inscrição no alerta de preço (sign_up) e contato
+      // (generate_lead). Enviado por beacon porque a página troca logo em seguida.
+      document.addEventListener('submit', function (e) {
+        var form = e.target instanceof HTMLFormElement ? e.target : null;
+        if (!form || !form.hasAttribute('data-netlify')) return;
+        var nome = form.getAttribute('name') || '';
+        var evento = nome === 'newsletter' ? 'sign_up' : 'generate_lead';
+        gtag('event', evento, { method: nome, form_name: nome, transport_type: 'beacon' });
       }, true);
     </script>
   </head>
