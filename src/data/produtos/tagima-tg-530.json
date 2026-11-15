@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-530",
   "meli": "https://meli.la/2WxhG4W",
-  "preco": 848,
-  "precoEm": "2026-11-14",
+  "preco": 869,
+  "precoEm": "2026-11-15",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-14",
       "preco": 848
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 869
     }
   ],
   "nota": 4.9,
@@ -33,9 +37,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1218,
-    "off": 30,
-    "pix": true,
+    "antes": 905,
+    "off": 3,
+    "parcelas": "10x R$ 86,93 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tg-530-stratocaster-sunburst-3-captadores-tremolo/p/MLB17449694"
   },

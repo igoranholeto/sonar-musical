@@ -1,22 +1,24 @@
 {
   "nome": "Behringer UMC22",
   "meli": "https://meli.la/1KmfpdD",
-  "preco": 520,
-  "precoEm": "2026-11-14",
+  "preco": 505,
+  "precoEm": "2026-11-15",
   "categoria": "interface",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 520
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 505
     }
   ],
   "imagemAlt": "Behringer UMC22",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 579,
-    "off": 10,
-    "parcelas": "10x R$ 52 sem juros",
+    "parcelas": "12x R$ 48,83",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-behringer-u-phoria-umc22-midas-usb/p/MLB21805119"
   },

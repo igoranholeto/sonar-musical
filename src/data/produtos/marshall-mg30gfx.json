@@ -1,8 +1,8 @@
 {
   "nome": "Marshall MG30GFX",
   "meli": "https://meli.la/2u4uu33",
-  "preco": 2461,
-  "precoEm": "2026-11-14",
+  "preco": 2446,
+  "precoEm": "2026-11-15",
   "categoria": "amplificador",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-14",
       "preco": 2461
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 2446
     }
   ],
   "imagemAlt": "Marshall MG30GFX",
@@ -35,9 +39,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2829,
-    "off": 13,
-    "parcelas": "10x R$ 246,16 sem juros",
+    "parcelas": "10x R$ 244,61 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplifier-marshall-m-mg30gfx-u-30w-1x10-gold-fx/p/MLB2088965147"
   },

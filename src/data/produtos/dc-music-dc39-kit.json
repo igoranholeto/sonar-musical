@@ -1,8 +1,8 @@
 {
   "nome": "DC Music DC39 (kit)",
   "meli": "https://meli.la/16JTH8g",
-  "preco": 294,
-  "precoEm": "2026-11-14",
+  "preco": 284,
+  "precoEm": "2026-11-15",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-13",
       "preco": 294
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 284
     }
   ],
   "imagemAlt": "DC Music DC39 (kit)",
@@ -19,10 +23,10 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 329,
-    "off": 10,
+    "off": 13,
     "pix": true,
-    "cartao": 309,
-    "parcelas": "6x R$ 51,54 sem juros",
+    "cartao": 299,
+    "parcelas": "6x R$ 49,83 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-iniciante-dc-music-dc39-completo-c-capa-e-capotraste/p/MLB65979901"
   },

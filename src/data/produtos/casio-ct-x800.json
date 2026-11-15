@@ -1,13 +1,17 @@
 {
   "nome": "Casio CT-X800",
   "meli": "https://meli.la/2JKdz2s",
-  "preco": 1400,
-  "precoEm": "2026-11-14",
+  "preco": 1330,
+  "precoEm": "2026-11-15",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 1400
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 1330
     }
   ],
   "nota": 4.9,
@@ -18,7 +22,9 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1539,
-    "off": 9,
+    "off": 13,
+    "pix": true,
+    "cartao": 1400,
     "parcelas": "10x R$ 140,05 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-ct-x-ct-x800-61-teclas-preto/p/MLB28114002"

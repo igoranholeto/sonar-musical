@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start N-14 (nylon)",
   "meli": "https://meli.la/18y2PqQ",
-  "preco": 449,
-  "precoEm": "2026-11-14",
+  "preco": 402,
+  "precoEm": "2026-11-15",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-14",
       "preco": 449
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 402
     }
   ],
   "nota": 4.8,
@@ -25,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 799,
-    "off": 43,
-    "parcelas": "12x R$ 43,42",
+    "parcelas": "8x R$ 50,25 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-giannini-n-14-natural-tampo-sabina-verniz-brilhante-com-cordas-de-nylon/p/MLB16038230"
   },

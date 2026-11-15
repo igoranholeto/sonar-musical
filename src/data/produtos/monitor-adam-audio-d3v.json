@@ -1,8 +1,8 @@
 {
   "nome": "Monitor Adam Audio D3V",
   "meli": "https://meli.la/2xRrYeH",
-  "preco": 2937,
-  "precoEm": "2026-11-14",
+  "preco": 3028,
+  "precoEm": "2026-11-15",
   "categoria": "estudio",
   "historico": [
     {
@@ -20,15 +20,17 @@
     {
       "data": "2026-11-14",
       "preco": 2937
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 3028
     }
   ],
   "imagemAlt": "Monitor Adam Audio D3V",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3504,
-    "off": 16,
-    "parcelas": "12x R$ 282,31",
+    "parcelas": "12x R$ 291,04",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-adam-audio-d3v-black/p/MLB45840293"
   },

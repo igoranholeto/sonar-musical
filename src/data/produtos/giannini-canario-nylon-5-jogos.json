@@ -1,20 +1,24 @@
 {
   "nome": "Giannini Canário nylon (5 jogos)",
   "meli": "https://meli.la/2eEXKEB",
-  "preco": 94,
-  "precoEm": "2026-11-14",
+  "preco": 96,
+  "precoEm": "2026-11-15",
   "categoria": "cordas",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 94
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 96
     }
   ],
   "imagemAlt": "Giannini Canário nylon (5 jogos)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "3x R$ 31,17 sem juros",
+    "parcelas": "3x R$ 31,83 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-nylon-medio-giannini-canario-5-jogos/p/MLB29382305"
   },

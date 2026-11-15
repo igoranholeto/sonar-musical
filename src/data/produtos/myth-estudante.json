@@ -1,8 +1,8 @@
 {
   "nome": "Cavaquinho Myth Estudante",
   "meli": "https://meli.la/2TBioxZ",
-  "preco": 299,
-  "precoEm": "2026-11-14",
+  "preco": 284,
+  "precoEm": "2026-11-15",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -16,12 +16,20 @@
     {
       "data": "2026-11-14",
       "preco": 299
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 284
     }
   ],
   "imagemAlt": "Cavaquinho Myth Estudante",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 300,
+    "off": 5,
+    "pix": true,
+    "cartao": 299,
     "parcelas": "6x R$ 49,83 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaco-cavaquinho-acustico-estudante-natural-cor-myth-zellmer/p/MLB46512865"

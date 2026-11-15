@@ -1,8 +1,8 @@
 {
   "nome": "Casio Casiotone CT-S300",
   "meli": "https://meli.la/31rJVQs",
-  "preco": 899,
-  "precoEm": "2026-11-14",
+  "preco": 850,
+  "precoEm": "2026-11-15",
   "categoria": "teclado",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-11",
       "preco": 899
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 850
     }
   ],
   "nota": 4.9,
@@ -21,11 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 999,
-    "off": 10,
-    "pix": true,
-    "cartao": 999,
-    "parcelas": "10x R$ 99,90 sem juros",
+    "antes": 1935,
+    "off": 56,
+    "parcelas": "12x R$ 82,20",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-casiotone-ct-s300-61-teclas-preto/p/MLB16109680"
   },

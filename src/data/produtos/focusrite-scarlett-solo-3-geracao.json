@@ -1,8 +1,8 @@
 {
   "nome": "Focusrite Scarlett Solo (3ª geração)",
   "meli": "https://meli.la/23unz1G",
-  "preco": 1098,
-  "precoEm": "2026-11-14",
+  "preco": 2950,
+  "precoEm": "2026-11-15",
   "categoria": "interface",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-12",
       "preco": 1098
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 2950
     }
   ],
   "imagem": "/images/produtos/focusrite-scarlett-solo-3-geracao.webp",
@@ -31,7 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 109,80 sem juros",
+    "parcelas": "10x R$ 295 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-focusrite-scarlett-solo-red-3-geracao/p/MLB19770634"
   },

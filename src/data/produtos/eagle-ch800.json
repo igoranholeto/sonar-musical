@@ -1,8 +1,8 @@
 {
   "nome": "Eagle CH800 Nylon Eletroacústico",
   "meli": "https://meli.la/1f2xTbr",
-  "preco": 1510,
-  "precoEm": "2026-11-14",
+  "preco": 1359,
+  "precoEm": "2026-11-15",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 1510
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 1359
     }
   ],
   "nota": 4.8,
@@ -30,8 +34,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1616,
-    "off": 6,
-    "parcelas": "12x R$ 145,14",
+    "off": 15,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-eagle-ch800-stvg-nylon/p/MLB51243536"
   },

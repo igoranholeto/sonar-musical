@@ -1,8 +1,8 @@
 {
   "nome": "Encordoamento Strinberg SB-45 para baixo",
   "meli": "https://meli.la/2fqXcaR",
-  "preco": 45,
-  "precoEm": "2026-11-14",
+  "preco": 49,
+  "precoEm": "2026-11-15",
   "categoria": "cordas",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-12",
       "preco": 45
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 49
     }
   ],
   "imagem": "/images/produtos/encordoamento-strinberg-sb-45-para-baixo.webp",

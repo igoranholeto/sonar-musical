@@ -1,8 +1,8 @@
 {
   "nome": "Mesa de som Soundcraft Mi-8",
   "meli": "https://meli.la/2S6XhU1",
-  "preco": 970,
-  "precoEm": "2026-11-14",
+  "preco": 998,
+  "precoEm": "2026-11-15",
   "categoria": "estudio",
   "historico": [
     {
@@ -12,15 +12,19 @@
     {
       "data": "2026-11-13",
       "preco": 970
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 998
     }
   ],
   "imagemAlt": "Mesa de som Soundcraft Mi-8",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "antes": 2249,
-    "off": 56,
-    "parcelas": "12x R$ 94,16",
+    "antes": 1405,
+    "off": 29,
+    "parcelas": "12x R$ 96,84",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-soundcraft-mi-8-analogico-com-8-canais/p/MLB44642558"
   },

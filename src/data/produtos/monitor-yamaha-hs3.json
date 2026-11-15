@@ -1,8 +1,8 @@
 {
   "nome": "Monitor Yamaha HS3",
   "meli": "https://meli.la/1eSefw6",
-  "preco": 1503,
-  "precoEm": "2026-11-14",
+  "preco": 1495,
+  "precoEm": "2026-11-15",
   "categoria": "estudio",
   "historico": [
     {
@@ -12,15 +12,17 @@
     {
       "data": "2026-11-14",
       "preco": 1503
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 1495
     }
   ],
   "imagemAlt": "Monitor Yamaha HS3",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2088,
-    "off": 28,
-    "parcelas": "12x R$ 144,50",
+    "parcelas": "10x R$ 149,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-ativo-52w-rms-preto-yamaha-hs3b/p/MLB29193467"
   },

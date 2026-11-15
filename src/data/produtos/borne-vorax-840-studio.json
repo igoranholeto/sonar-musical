@@ -1,8 +1,8 @@
 {
   "nome": "Borne Vorax 840 Studio",
   "meli": "https://meli.la/1rASzjt",
-  "preco": 790,
-  "precoEm": "2026-11-14",
+  "preco": 751,
+  "precoEm": "2026-11-15",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-09",
       "preco": 790
+    },
+    {
+      "data": "2026-11-15",
+      "preco": 751
     }
   ],
   "imagem": "/images/produtos/borne-vorax-840-studio.webp",
@@ -19,6 +23,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 790,
+    "off": 5,
+    "pix": true,
+    "cartao": 790,
     "parcelas": "10x R$ 79 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-borne-para-guitarra-vorax-840-studio-palha/p/MLB26626244"
