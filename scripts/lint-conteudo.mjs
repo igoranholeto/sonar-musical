@@ -24,6 +24,13 @@ const catalogo = new Map(
 for (const [id, p] of catalogo) {
   if (!/^https:\/\/meli\.la\//.test(p.meli ?? '')) err(`produtos/${id}.json`, `link fora do meli.la: ${p.meli}`);
   if (!(p.preco > 0)) err(`produtos/${id}.json`, 'sem preço');
+  // Instrumento na categoria errada aparece na vitrine errada da Black Friday (8 baixos
+  // ficaram em "acessorio" até 16/11). O ML preenche "Tipo de baixo" na ficha de todo baixo.
+  // ("Tipo de violão" e "Tipo de bateria" não servem: aparecem em capa e em microfone a pilha.)
+  const tipoBaixo = (p.ficha ?? []).some(([k]) => k === 'Tipo de baixo');
+  if (tipoBaixo && p.categoria !== 'baixo') err(`produtos/${id}.json`, `ficha diz "Tipo de baixo" mas a categoria é "${p.categoria}" (use "baixo")`);
+  if (p.categoria === 'acessorio' && /\b(jazz bass|precision bass|baixo el[ée]trico|contrabaixo)\b/i.test(p.nome))
+    err(`produtos/${id}.json`, `"${p.nome}" parece um baixo, mas está em "acessorio"`);
 }
 
 const linhaDe = (t, i) => t.slice(0, i).split('\n').length;
