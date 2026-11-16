@@ -73,7 +73,7 @@ integrantes:
           preco: ~R$ 15.950
           obs: Sax estudante com boa afinação e resposta.
           similar: "Yamaha YTS-480"
-          urlAfiliado: https://meli.la/13Wo5Dd
+          urlAfiliado: https://meli.la/2tczk86
   - foto: /images/bill-evans-sonar.webp
     fotoAlt: bill evans integrante
     pontos:

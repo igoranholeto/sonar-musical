@@ -43,7 +43,7 @@ integrantes:
           nome: Mesa Boogie Dual Rectifier
           preco: ~R$ 21.790
           similar: "Mesa Boogie Single Rectifier"
-          urlAfiliado: https://meli.la/2VqC1Jm
+          urlAfiliado: https://meli.la/21jwg8a
         low:
           nome: Boss Katana 100 MkII
           preco: ~R$ 5.490

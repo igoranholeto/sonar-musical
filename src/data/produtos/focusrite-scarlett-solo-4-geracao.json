@@ -1,0 +1,86 @@
+{
+  "nome": "Focusrite Scarlett Solo (4ª geração)",
+  "meli": "https://meli.la/2a1v6AC",
+  "preco": 1490,
+  "precoEm": "2026-11-16",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 1490
+    }
+  ],
+  "imagem": "/images/produtos/focusrite-scarlett-solo-4-geracao.webp",
+  "imagemAlt": "Focusrite Scarlett Solo (4ª geração)",
+  "ficha": [
+    [
+      "Marca",
+      "Focusrite"
+    ],
+    [
+      "Linha",
+      "Scarlett"
+    ],
+    [
+      "Modelo",
+      "Solo"
+    ],
+    [
+      "Geração",
+      "4ª geração"
+    ],
+    [
+      "Cor",
+      "Vermelho"
+    ],
+    [
+      "Altura",
+      "4,35 cm"
+    ],
+    [
+      "Largura",
+      "14,35 cm"
+    ],
+    [
+      "Profundidade",
+      "9,58 cm"
+    ],
+    [
+      "Peso",
+      "320 g"
+    ],
+    [
+      "Quantidade de entradas",
+      "2"
+    ],
+    [
+      "Quantidade de saídas",
+      "2"
+    ],
+    [
+      "Taxa de amostragem",
+      "192 kHz"
+    ],
+    [
+      "Resolução de áudio",
+      "24 bit"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Conexão",
+      "USB-C"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1491,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "parcelas": "10x R$ 149 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-focusrite-scarlett-solo-4-gen-garantia-3-anos-procedencia-oficial/p/MLB27088462"
+  }
+}
