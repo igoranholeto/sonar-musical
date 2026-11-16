@@ -20,7 +20,10 @@ export const handler = async (event: { body?: string | null }) => {
     connectLambda(event as never);
     const produtos = await core.carregarPrecos(deploy.deploy_ssl_url || deploy.ssl_url || 'https://sonarmusical.com.br');
     const r = await core.verificarAlertas({
-      store: getStore({ name: core.STORE, consistency: 'strong' }),
+      // Consistência padrão (eventual): no formato Lambda o Blobs não tem a URL sem cache
+      // que a leitura "strong" exige e a leitura falha. Um alerta criado segundos antes
+      // fica para a próxima rodada (o diário às 9h30 ou o próximo deploy).
+      store: getStore(core.STORE),
       produtos,
       chave: process.env.BREVO_API_KEY,
     });
