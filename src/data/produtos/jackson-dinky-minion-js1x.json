@@ -1,8 +1,8 @@
 {
   "nome": "Jackson Dinky Minion JS1X",
   "meli": "https://meli.la/1xH9h7j",
-  "preco": 2344,
-  "precoEm": "2026-11-15",
+  "preco": 2436,
+  "precoEm": "2026-11-16",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-15",
       "preco": 2344
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 2436
     }
   ],
   "nota": 4.9,
@@ -25,9 +29,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2467,
-    "off": 5,
-    "parcelas": "12x R$ 225,33",
+    "antes": 2592,
+    "off": 6,
+    "parcelas": "10x R$ 243,67 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-jackson-js-series-dinky-minion-js1x-amaranth-finger/p/MLB62470092"
   },

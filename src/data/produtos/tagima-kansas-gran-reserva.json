@@ -2,7 +2,7 @@
   "nome": "Tagima Kansas Gran Reserva",
   "meli": "https://meli.la/1KvPfjT",
   "preco": 999,
-  "precoEm": "2026-11-14",
+  "precoEm": "2026-11-16",
   "categoria": "violao",
   "historico": [
     {
@@ -13,8 +13,12 @@
   "nota": 5,
   "avaliacoes": 7,
   "anuncio": {
-    "status": "pausado",
-    "desde": "2026-11-15",
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "antes": 1350,
+    "off": 26,
+    "parcelas": "10x R$ 99,90 sem juros",
+    "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-tagima-gran-reserva-kansas-folk-cutaway-dkmop/p/MLB68437504"
   },
   "ficha": [

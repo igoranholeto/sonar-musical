@@ -1,8 +1,8 @@
 {
   "nome": "Kokko 25 teclas (MIDI)",
   "meli": "https://meli.la/2JPdovz",
-  "preco": 322,
-  "precoEm": "2026-11-15",
+  "preco": 318,
+  "precoEm": "2026-11-16",
   "categoria": "controlador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-14",
       "preco": 322
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 318
     }
   ],
   "imagemAlt": "Kokko 25 teclas (MIDI)",
@@ -27,8 +31,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 430,
-    "off": 25,
-    "parcelas": "12x R$ 31,50",
+    "off": 26,
+    "parcelas": "12x R$ 31,11",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-kokko-professional-midi-25-teclas-daw/p/MLB67135608"
   },

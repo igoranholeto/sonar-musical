@@ -1,8 +1,8 @@
 {
   "nome": "Marshall MG15GR",
   "meli": "https://meli.la/2j1vFqX",
-  "preco": 1549,
-  "precoEm": "2026-11-15",
+  "preco": 1430,
+  "precoEm": "2026-11-16",
   "categoria": "amplificador",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-15",
       "preco": 1549
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 1430
     }
   ],
   "imagemAlt": "Marshall MG15GR",
@@ -31,9 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1774,
-    "off": 12,
-    "parcelas": "10x R$ 154,95 sem juros",
+    "antes": 1694,
+    "off": 15,
+    "parcelas": "12x R$ 138,86",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/musical-instrument-amplifier-marshall-m-mg15g-u-15w-gold-8/p/MLB2073026667"
   },

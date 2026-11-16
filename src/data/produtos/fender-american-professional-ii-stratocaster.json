@@ -1,8 +1,8 @@
 {
   "nome": "Fender American Professional II Stratocaster",
   "meli": "https://meli.la/1cqEFgJ",
-  "preco": 17624,
-  "precoEm": "2026-11-15",
+  "preco": 18749,
+  "precoEm": "2026-11-16",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-14",
       "preco": 17624
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 18749
     }
   ],
   "imagem": "/images/produtos/fender-american-professional-ii-stratocaster.webp",
@@ -31,9 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 18749,
-    "off": 6,
-    "parcelas": "12x R$ 1.693",
+    "parcelas": "12x R$ 1.802",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-american-professional-ii-stratocaster-rw-ann/p/MLB42166852"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Seizi Katana Musashi Fun HSS",
   "meli": "https://meli.la/1VVfLKF",
-  "preco": 1200,
-  "precoEm": "2026-11-15",
+  "preco": 1180,
+  "precoEm": "2026-11-16",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,13 +16,17 @@
     {
       "data": "2026-11-15",
       "preco": 1200
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 1180
     }
   ],
   "imagemAlt": "Seizi Katana Musashi Fun HSS",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 116,49",
+    "parcelas": "12x R$ 114,55",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-seizi-katana-musashi-fun-hss-cor-light-silver-sparkle-material-do-diapasao-madeira-de-bordo-orientacao-da-mao-destro/p/MLB66312589"
   },

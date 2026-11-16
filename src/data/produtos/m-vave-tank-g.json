@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Tank-G",
   "meli": "https://meli.la/1tNza3C",
-  "preco": 409,
-  "precoEm": "2026-11-15",
+  "preco": 355,
+  "precoEm": "2026-11-16",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-15",
       "preco": 409
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 355
     }
   ],
   "imagem": "/images/produtos/m-vave-tank-g.webp",
@@ -36,8 +40,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 470,
-    "off": 13,
-    "parcelas": "12x R$ 39,54",
+    "off": 24,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-guitarra-multi-efeitos-effects-pedal-guitarra-m-vave-tank-g/p/MLB66054835"
   },

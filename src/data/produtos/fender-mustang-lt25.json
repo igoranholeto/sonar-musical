@@ -15,10 +15,8 @@
   "imagemAlt": "Fender Mustang LT25",
   "imagem": "/images/produtos/fender-mustang-lt25.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$ 229,90 sem juros",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-16",
     "catalogo": "https://www.mercadolivre.com.br/amplificador-fender-combo-mustang-lt-25-231-1100-000-cor-preto-voltagem/p/MLB24088503"
   },
   "ficha": [

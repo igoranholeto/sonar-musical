@@ -1,8 +1,8 @@
 {
   "nome": "Monitor Edifier MR4",
   "meli": "https://meli.la/17ujjMD",
-  "preco": 1198,
-  "precoEm": "2026-11-15",
+  "preco": 1085,
+  "precoEm": "2026-11-16",
   "categoria": "estudio",
   "historico": [
     {
@@ -16,13 +16,19 @@
     {
       "data": "2026-11-14",
       "preco": 1198
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 1085
     }
   ],
   "imagemAlt": "Monitor Edifier MR4",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 119,88 sem juros",
+    "antes": 1329,
+    "off": 18,
+    "parcelas": "12x R$ 105,37",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/edifier-caixa-monitor-referencia-ativo-mr4-42-watts-estudio-cor-branco/p/MLB24457722"
   },

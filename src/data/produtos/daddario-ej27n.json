@@ -1,8 +1,8 @@
 {
   "nome": "D'Addario EJ27N",
   "meli": "https://meli.la/2GTDLjH",
-  "preco": 63,
-  "precoEm": "2026-11-15",
+  "preco": 59,
+  "precoEm": "2026-11-16",
   "categoria": "cordas",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-15",
       "preco": 63
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 59
     }
   ],
   "imagem": "/images/produtos/daddario-ej27n.webp",
@@ -36,7 +40,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 78,
-    "off": 20,
+    "off": 24,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-classico-daddario-ej27n-de-nailon-importado/p/MLB21868235"
   },

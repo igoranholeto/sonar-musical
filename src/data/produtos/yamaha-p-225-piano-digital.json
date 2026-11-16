@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha P-225 (piano digital)",
   "meli": "https://meli.la/12ojaqr",
-  "preco": 4489,
-  "precoEm": "2026-11-15",
+  "preco": 4488,
+  "precoEm": "2026-11-16",
   "categoria": "piano",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-15",
       "preco": 4489
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 4488
     }
   ],
   "imagemAlt": "Yamaha P-225 (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 448,90 sem juros",
+    "parcelas": "12x R$ 431,37",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-yamaha-p-225b-88-teclas-preto/p/MLB28270257"
   },

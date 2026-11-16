@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start CS-14 EP (natural)",
   "meli": "https://meli.la/1mohE9g",
-  "preco": 465,
-  "precoEm": "2026-11-15",
+  "preco": 331,
+  "precoEm": "2026-11-16",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-15",
       "preco": 465
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 331
     }
   ],
   "imagem": "/images/produtos/giannini-start-cs-14-eq.webp",
@@ -35,9 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 581,
-    "off": 20,
-    "parcelas": "9x R$ 51,66 sem juros",
+    "antes": 389,
+    "off": 15,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-giannini-eletroacustico-start-cs-14-ep-nat-fosco/p/MLB24633559"
   },

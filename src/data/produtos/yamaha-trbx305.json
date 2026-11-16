@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha TRBX305 (5 cordas)",
   "meli": "https://meli.la/1VP7Jac",
-  "preco": 2975,
-  "precoEm": "2026-11-15",
+  "preco": 3049,
+  "precoEm": "2026-11-16",
   "categoria": "baixo",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 2975
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 3049
     }
   ],
   "nota": 4.9,
@@ -29,9 +33,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3685,
-    "off": 19,
-    "parcelas": "12x R$ 285,95",
+    "parcelas": "12x R$ 293,06",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-yamaha-de-5-cordas-active-black-trbx305-bl-msi-body-finish-poliuretano-brilhante-orientacao-mao-direita/p/MLB24779530"
   },

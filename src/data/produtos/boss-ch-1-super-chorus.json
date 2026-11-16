@@ -1,8 +1,8 @@
 {
   "nome": "Boss CH-1 Super Chorus",
   "meli": "https://meli.la/2HAFJKC",
-  "preco": 782,
-  "precoEm": "2026-11-15",
+  "preco": 759,
+  "precoEm": "2026-11-16",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-14",
       "preco": 782
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 759
     }
   ],
   "imagem": "/images/produtos/boss-ch-1-super-chorus.webp",
@@ -24,8 +28,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 930,
-    "off": 15,
-    "parcelas": "12x R$ 75,62",
+    "off": 18,
+    "parcelas": "12x R$ 73,35",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-super-chorus-ch-1-azul/p/MLB17474248"
   },

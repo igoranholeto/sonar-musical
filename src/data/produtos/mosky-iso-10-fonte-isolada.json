@@ -1,8 +1,8 @@
 {
   "nome": "Mosky ISO-10 fonte isolada",
   "meli": "https://meli.la/2cJQAxQ",
-  "preco": 202,
-  "precoEm": "2026-11-15",
+  "preco": 222,
+  "precoEm": "2026-11-16",
   "categoria": "acessorio",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-14",
       "preco": 202
+    },
+    {
+      "data": "2026-11-16",
+      "preco": 222
     }
   ],
   "imagem": "/images/produtos/mosky-iso-10-fonte-isolada.webp",
@@ -35,7 +39,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 33,61 sem juros",
+    "parcelas": "12x R$ 21,95",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fonte-de-alimentacao-mosky-iso-10-power-guitar-effect-pedal/p/MLB2058793559"
   },
