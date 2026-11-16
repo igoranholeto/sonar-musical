@@ -22,3 +22,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     </div>
   </div>
 </BaseLayout>
+
+<script>
+  // O Netlify repassa a query do link (?t=<token>) no redirecionamento: tira da barra
+  // antes de o GA carregar (ele só carrega na primeira interação).
+  if (location.search) history.replaceState(null, '', location.pathname);
+</script>

@@ -26,6 +26,9 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <script>
   const id = new URLSearchParams(location.search).get('p') ?? '';
+  // O Netlify repassa a query do link de confirmação (?t=<token>) no redirecionamento:
+  // limpa a barra antes de o GA carregar (ele só carrega na primeira interação).
+  if (location.search) history.replaceState(null, '', location.pathname);
   if (/^[a-z0-9-]{1,80}$/.test(id)) {
     const link = document.getElementById('alerta-link') as HTMLAnchorElement | null;
     if (link) {
