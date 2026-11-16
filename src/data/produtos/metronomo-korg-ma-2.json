@@ -1,0 +1,38 @@
+{
+  "nome": "Metrônomo Digital Korg MA-2",
+  "meli": "https://meli.la/22Rkmbd",
+  "preco": 320,
+  "precoEm": "2026-11-16",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 320
+    }
+  ],
+  "imagem": "/images/produtos/metronomo-korg-ma-2.webp",
+  "imagemAlt": "Metrônomo Digital Korg MA-2",
+  "ficha": [
+    [
+      "Marca",
+      "Korg"
+    ],
+    [
+      "Modelo",
+      "MA-2"
+    ],
+    [
+      "Com tela",
+      "Sim"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 9,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "parcelas": "6x R$ 53,33 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/metronomo-digital-korg-ma-2-bkrd-preto-vermelho-compacto-com-tela/p/MLB26687791"
+  }
+}

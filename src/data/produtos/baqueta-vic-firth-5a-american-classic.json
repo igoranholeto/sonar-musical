@@ -1,0 +1,58 @@
+{
+  "nome": "Baqueta Vic Firth American Classic 5A (par)",
+  "meli": "https://meli.la/28MGRQf",
+  "preco": 100,
+  "precoEm": "2026-11-16",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 100
+    }
+  ],
+  "imagem": "/images/produtos/baqueta-vic-firth-5a-american-classic.webp",
+  "imagemAlt": "Baqueta Vic Firth American Classic 5A (par)",
+  "ficha": [
+    [
+      "Marca",
+      "Vic Firth"
+    ],
+    [
+      "Linha",
+      "American Classic"
+    ],
+    [
+      "Tamanho",
+      "5A"
+    ],
+    [
+      "Material da vara",
+      "Nogueira americana (hickory)"
+    ],
+    [
+      "Material da ponta",
+      "Madeira"
+    ],
+    [
+      "Comprimento",
+      "40,64 cm"
+    ],
+    [
+      "Diâmetro",
+      "1,44 cm"
+    ],
+    [
+      "Quantidade de peças",
+      "2"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1651,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "parcelas": "4x R$ 25 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baqueta-vic-firth-american-classic-5a-madeira/p/MLB34721533"
+  }
+}

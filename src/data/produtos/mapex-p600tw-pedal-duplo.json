@@ -1,0 +1,56 @@
+{
+  "nome": "Pedal Duplo de Bumbo Mapex Mars P600TW",
+  "meli": "https://meli.la/2TuCCsM",
+  "preco": 1404,
+  "precoEm": "2026-11-16",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 1404
+    }
+  ],
+  "imagem": "/images/produtos/mapex-p600tw-pedal-duplo.webp",
+  "imagemAlt": "Pedal Duplo de Bumbo Mapex Mars P600TW",
+  "ficha": [
+    [
+      "Marca",
+      "Mapex"
+    ],
+    [
+      "Linha",
+      "Mars"
+    ],
+    [
+      "Modelo",
+      "P600TW"
+    ],
+    [
+      "Tipo de pedal",
+      "Bumbo"
+    ],
+    [
+      "Sistema de tração",
+      "Corrente dupla"
+    ],
+    [
+      "É pedal duplo",
+      "Sim"
+    ],
+    [
+      "Peso",
+      "5 kg"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 113,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "antes": 1809,
+    "off": 22,
+    "parcelas": "12x R$ 136,30",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-bumbo-duplo-mapex-p600tw-mars-corrente-dupla/p/MLB36683349"
+  }
+}

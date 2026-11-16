@@ -1,0 +1,46 @@
+{
+  "nome": "Pedal de Bumbo Mapex P250",
+  "meli": "https://meli.la/2MPgTXM",
+  "preco": 268,
+  "precoEm": "2026-11-16",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 268
+    }
+  ],
+  "imagem": "/images/produtos/mapex-p250-pedal-bumbo.webp",
+  "imagemAlt": "Pedal de Bumbo Mapex P250",
+  "ficha": [
+    [
+      "Marca",
+      "Mapex"
+    ],
+    [
+      "Modelo",
+      "P-250"
+    ],
+    [
+      "Tipo de pedal",
+      "Bumbo"
+    ],
+    [
+      "Sistema de tração",
+      "Corrente"
+    ],
+    [
+      "É pedal duplo",
+      "Não"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 186,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "parcelas": "6x R$ 44,67 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-bumbo-bateria-mapex-p250-simples-serie-250/p/MLB37937362"
+  }
+}

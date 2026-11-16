@@ -1,0 +1,46 @@
+{
+  "nome": "Pedal de Bumbo Pearl Demonator P-930",
+  "meli": "https://meli.la/2xg5hic",
+  "preco": 1307,
+  "precoEm": "2026-11-16",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 1307
+    }
+  ],
+  "imagem": "/images/produtos/pearl-demonator-p930.webp",
+  "imagemAlt": "Pedal de Bumbo Pearl Demonator P-930",
+  "ficha": [
+    [
+      "Marca",
+      "Pearl"
+    ],
+    [
+      "Linha",
+      "Demonator"
+    ],
+    [
+      "Modelo",
+      "P-930"
+    ],
+    [
+      "Tipo de pedal",
+      "Bumbo"
+    ],
+    [
+      "É pedal duplo",
+      "Não"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 17,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "parcelas": "10x R$ 130,78 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-pearl-demonator-single-p-930/p/MLB29575474"
+  }
+}

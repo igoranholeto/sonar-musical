@@ -1,0 +1,46 @@
+{
+  "nome": "Pedal de Bumbo Odery P-803EQ Equalizer",
+  "meli": "https://meli.la/1nvFqTM",
+  "preco": 498.9,
+  "precoEm": "2026-11-16",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-16",
+      "preco": 498.9
+    }
+  ],
+  "imagem": "/images/produtos/odery-p803eq-pedal-bumbo.webp",
+  "imagemAlt": "Pedal de Bumbo Odery P-803EQ Equalizer",
+  "ficha": [
+    [
+      "Marca",
+      "Odery"
+    ],
+    [
+      "Modelo",
+      "P-803EQ"
+    ],
+    [
+      "Tipo de pedal",
+      "Bumbo"
+    ],
+    [
+      "Sistema de tração",
+      "Corrente dupla"
+    ],
+    [
+      "É pedal duplo",
+      "Não"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 169,
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-16",
+    "parcelas": "9x R$ 55,43 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-bumbo-odery-simples-p803eq-equalizer-corrente-dupla/p/MLB29196375"
+  }
+}

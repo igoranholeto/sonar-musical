@@ -177,6 +177,17 @@ const MAP = {
   'melhor-cavaquinho-eletrico':     { kicker: 'CAVAQUINHO · 2026', l1: 'CAVAQUINHO', l2: 'ELÉTRICO', q: 'cavaquinho samba', prefer: /^File:2 cavaquinhos 2\.jpg$/i },
   'bateria-eletronica-aroma-e-boa': { kicker: 'BATERIA · REVIEW', l1: 'BATERIA AROMA', l2: 'É BOA?', q: 'Electronic drum kit', prefer: /^File:Electronic drum kit\.jpg$/i },
   'acessorios-para-piano-digital':  { kicker: 'TECLADOS · ACESSÓRIOS', l1: 'ACESSÓRIOS', l2: 'PIANO DIGITAL', q: 'Yamaha P80 Digital Piano sustain pedal', prefer: /Yamaha P80 Digital Piano - sustain pedal/i },
+  // Lote 2026-11-16 (vendas reais + SERP fraca)
+  'bateria-voik-e-boa':             { kicker: 'BATERIA · REVIEW', l1: 'BATERIA VOIK', l2: 'É BOA?', q: 'acoustic drum kit' },
+  'nux-mg-30-e-boa':                { kicker: 'PEDALEIRAS · REVIEW', l1: 'NUX MG-30', l2: 'É BOA?', q: 'guitar effects pedals' },
+  'fifine-k669b-e-bom':             { kicker: 'HOME STUDIO · REVIEW', l1: 'FIFINE K669B', l2: 'É BOM?', q: 'condenser microphone' },
+  'presente-para-baterista':        { kicker: 'BATERIA · PRESENTES', l1: 'PRESENTE PARA', l2: 'BATERISTA', q: 'drumsticks snare drum' },
+  'melhor-pedal-de-bumbo':          { kicker: 'BATERIA · 2026', l1: 'MELHOR PEDAL', l2: 'DE BUMBO', q: 'bass drum pedal' },
+  'teclado-yamaha-ou-casio':        { kicker: 'TECLADOS · COMPARATIVO', l1: 'TECLADO YAMAHA', l2: 'OU CASIO?', q: 'Casio CTK keyboard' },
+  'como-afinar-ukulele':            { kicker: 'UKULELE · TUTORIAL', l1: 'COMO AFINAR', l2: 'UKULELE', q: 'ukulele' },
+  'como-afinar-cavaquinho':         { kicker: 'CAVAQUINHO · TUTORIAL', l1: 'COMO AFINAR', l2: 'CAVAQUINHO', q: 'cavaquinho brasileiro' },
+  'acordes-de-ukulele-para-iniciantes': { kicker: 'UKULELE · PARA INICIANTES', l1: 'ACORDES DE', l2: 'UKULELE', q: 'playing ukulele' },
+  'acordes-de-cavaquinho-para-iniciantes': { kicker: 'CAVAQUINHO · PARA INICIANTES', l1: 'ACORDES DE', l2: 'CAVAQUINHO', q: 'cavaquinho musician' },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
