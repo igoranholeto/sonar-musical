@@ -7,6 +7,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import FAQ from '../../components/FAQ.astro';
 import OfertaCard from '../../components/ofertas/OfertaCard.astro';
 import GraficoPreco from '../../components/ofertas/GraficoPreco.astro';
+import AlertaPreco from '../../components/AlertaPreco.astro';
 import { breadcrumb, absUrl } from '../../utils/schema';
 import {
   NOMES_CATEGORIA,
@@ -215,6 +216,8 @@ const schema = [
             {o.menorRegistrado && ' É o menor preço que registramos.'}
           </p>
         )}
+
+        <AlertaPreco id={o.id} nome={o.nome} preco={o.preco} disponivel={disponivel} />
       </div>
     </section>
 

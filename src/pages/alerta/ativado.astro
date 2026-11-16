@@ -1,0 +1,52 @@
+---
+// Destino do clique em "Confirmar alerta" (GET /api/alerta/confirmar → 303 para cá com ?p=<id>).
+// O nome do produto vem de /alertas/precos.json; sem ele, a página continua fazendo sentido.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Alerta de preço ativado"
+  description="Seu alerta de preço do Sonar Musical está ativo."
+  noindex
+>
+  <div class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <h1 class="text-4xl font-black mb-4">Alerta ativado</h1>
+    <p class="text-muted text-lg mb-4" id="alerta-produto">
+      Pronto. Quando o preço mudar do jeito que você pediu, mandamos um e-mail.
+    </p>
+    <p class="text-muted mb-10">
+      É um aviso por alerta. Ele vale por 180 dias, e todo e-mail nosso tem o link para cancelar.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="/black-friday/" id="alerta-link" class="px-6 py-3 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors">Ver as ofertas</a>
+      <a href="/" class="px-6 py-3 border border-border font-semibold rounded-xl hover:border-brand transition-colors">Voltar ao início</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const id = new URLSearchParams(location.search).get('p') ?? '';
+  if (/^[a-z0-9-]{1,80}$/.test(id)) {
+    const link = document.getElementById('alerta-link') as HTMLAnchorElement | null;
+    if (link) {
+      link.href = `/produto/${id}/`;
+      link.textContent = 'Voltar para o produto';
+    }
+    const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+    w.gtag?.('event', 'alerta_confirmado', { item_id: id });
+    fetch('/alertas/precos.json')
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        const nome = j?.produtos?.[id]?.n;
+        const alvo = document.getElementById('alerta-produto');
+        if (!nome || !alvo) return;
+        alvo.textContent = '';
+        alvo.append('Pronto. Estamos de olho em ');
+        const forte = document.createElement('strong');
+        forte.className = 'text-foreground';
+        forte.textContent = nome;
+        alvo.append(forte, '. Quando o preço mudar do jeito que você pediu, mandamos um e-mail.');
+      })
+      .catch(() => {});
+  }
+</script>

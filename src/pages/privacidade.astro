@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const descricao =
-  'Quais dados o Sonar Musical coleta (newsletter, contato e estatísticas de visita), para quê, com quem ficam e como pedir para ver ou apagar os seus.';
+  'Quais dados o Sonar Musical coleta (newsletter, alertas de preço, contato e estatísticas de visita), para quê, com quem ficam e como pedir para ver ou apagar os seus.';
 
 const schema = {
   '@context': 'https://schema.org',
@@ -11,14 +11,14 @@ const schema = {
   url: 'https://sonarmusical.com.br/privacidade/',
   inLanguage: 'pt-BR',
   description: descricao,
-  dateModified: '2026-11-11',
+  dateModified: '2026-11-16',
   isPartOf: { '@type': 'WebSite', name: 'Sonar Musical', url: 'https://sonarmusical.com.br' },
 };
 
 const direitos = [
   'Confirmar se temos dados seus e receber uma cópia deles.',
   'Corrigir dados incompletos ou desatualizados.',
-  'Pedir que apaguemos seus dados ou cancelar a newsletter a qualquer momento.',
+  'Pedir que apaguemos seus dados ou cancelar a newsletter e os alertas de preço a qualquer momento.',
   'Saber com quais empresas os dados são compartilhados (estão listadas nesta página).',
   'Revogar um consentimento que você deu, como o da newsletter.',
 ];
@@ -34,7 +34,7 @@ const link = 'text-brand underline underline-offset-2';
       <p class="text-muted text-lg leading-relaxed">
         Esta página explica quais dados o Sonar Musical coleta, para quê, onde eles ficam e como você pode pedir para ver ou apagar os seus, conforme a Lei Geral de Proteção de Dados (LGPD, Lei 13.709/2018).
       </p>
-      <p class="text-sm text-muted mt-3">Atualizada em 11 de novembro de 2026.</p>
+      <p class="text-sm text-muted mt-3">Atualizada em 16 de novembro de 2026.</p>
     </header>
 
     <section class="mb-10">
@@ -54,6 +54,19 @@ const link = 'text-brand underline underline-offset-2';
       </p>
       <p class="text-foreground/80 leading-relaxed">
         Todo e-mail tem um link para cancelar a inscrição. Depois de cancelar, você não recebe mais nada. Não vendemos nem emprestamos a lista para ninguém.
+      </p>
+    </section>
+
+    <section class="mb-10">
+      <h2 class="text-xl font-bold mb-4">Alerta de preço de um produto</h2>
+      <p class="text-foreground/80 leading-relaxed mb-3">
+        Na ficha de cada produto dá para pedir um aviso quando o preço baixar, chegar a um valor ou o anúncio voltar. Para isso guardamos <strong>seu e-mail</strong>, o produto, a condição que você escolheu e o preço do dia em que o alerta foi criado. O alerta só vale depois que você clica no link de confirmação que chega no seu e-mail.
+      </p>
+      <p class="text-foreground/80 leading-relaxed mb-3">
+        Esses dados ficam no armazenamento do <strong>Netlify</strong> e os e-mails saem pelo <strong>Brevo</strong>. O e-mail do alerta não entra na newsletter, a não ser que você marque a caixa para receber também o resumo de ofertas. Para evitar abuso, contamos quantos alertas saem de cada conexão por dia, guardando só um código embaralhado do endereço IP, que é apagado no dia seguinte.
+      </p>
+      <p class="text-foreground/80 leading-relaxed">
+        Cada alerta avisa uma vez e depois para. Apagamos o alerta não confirmado em 7 dias, o que já avisou em 30 dias e qualquer alerta ativo depois de 180 dias. Todo e-mail de alerta tem um link para cancelar na hora.
       </p>
     </section>
 
@@ -107,7 +120,7 @@ const link = 'text-brand underline underline-offset-2';
     <section class="mb-10">
       <h2 class="text-xl font-bold mb-4">Onde os dados ficam</h2>
       <p class="text-foreground/80 leading-relaxed">
-        Netlify, Brevo, Google e Microsoft podem guardar dados em servidores fora do Brasil, com as proteções previstas nos contratos desses serviços. Mantemos os dados só enquanto servem à finalidade descrita aqui: a inscrição na newsletter até você cancelar, e as mensagens de contato até a conversa terminar.
+        Netlify, Brevo, Google e Microsoft podem guardar dados em servidores fora do Brasil, com as proteções previstas nos contratos desses serviços. Mantemos os dados só enquanto servem à finalidade descrita aqui: a inscrição na newsletter até você cancelar, os alertas de preço pelos prazos descritos acima, e as mensagens de contato até a conversa terminar.
       </p>
     </section>
 

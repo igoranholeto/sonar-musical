@@ -1,0 +1,24 @@
+---
+// Link de confirmação expirado, já usado ou alerta apagado.
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Link de alerta inválido"
+  description="Este link de alerta de preço expirou ou já foi usado."
+  noindex
+>
+  <div class="max-w-2xl mx-auto px-4 py-24 text-center">
+    <h1 class="text-4xl font-black mb-4">Este link não vale mais</h1>
+    <p class="text-muted text-lg mb-4">
+      O alerta pode ter sido cancelado, já ter avisado e encerrado, ou o link de confirmação passou dos 7 dias.
+    </p>
+    <p class="text-muted mb-10">
+      Para acompanhar o preço de novo, abra a ficha do produto e crie outro alerta. Leva meio minuto.
+    </p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <a href="/black-friday/" class="px-6 py-3 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors">Ver as ofertas</a>
+      <a href="/" class="px-6 py-3 border border-border font-semibold rounded-xl hover:border-brand transition-colors">Voltar ao início</a>
+    </div>
+  </div>
+</BaseLayout>

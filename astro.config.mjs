@@ -13,8 +13,10 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [mdx(), sitemap({
     serialize: lastmodSerializer(),
-    // Busca interna é noindex: não entra no sitemap.
-    filter: (page) => !page.includes('/busca/') && !page.includes('/contato-enviado/') && !page.includes('/newsletter/'),
+    // Busca interna e páginas de retorno de formulário são noindex: não entram no sitemap.
+    // '/alerta' cobre /alerta/* (alerta de preço) e /alertas/precos.json.
+    filter: (page) =>
+      !page.includes('/busca/') && !page.includes('/contato-enviado/') && !page.includes('/newsletter/') && !page.includes('/alerta'),
   })],
   compressHTML: true,
   build: {

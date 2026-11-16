@@ -1,0 +1,174 @@
+---
+// "Me avise quando baixar": alerta de preço por e-mail na ficha /produto/<id>/.
+// Envia para /api/alerta (netlify/functions/alerta-preco.mts); sem JavaScript o form
+// funciona como POST comum e cai em /alerta/confirme/. Com anúncio fora do ar, o alerta
+// vira "me avise quando voltar".
+import { reais } from '../utils/ofertas';
+
+interface Props {
+  id: string;
+  nome: string;
+  preco: number;
+  disponivel: boolean;
+}
+const { id, nome, preco, disponivel } = Astro.props;
+const sugestao = Math.max(1, Math.round((preco * 0.9) / 10) * 10);
+const uid = `alerta-${id}`;
+---
+
+<details class="al" data-alerta data-preco={preco}>
+  <summary class="al__sum">
+    <svg class="al__ico" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9" /><path d="M10.3 21a1.94 1.94 0 0 0 3.4 0" /></svg>
+    <span>
+      <strong>{disponivel ? 'Me avise quando o preço baixar' : 'Me avise quando voltar'}</strong>
+      <small>Grátis, por e-mail, sem cadastro</small>
+    </span>
+    <svg class="al__seta" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="m6 9 6 6 6-6" /></svg>
+  </summary>
+
+  <form class="al__form" method="POST" action="/api/alerta" novalidate>
+    <input type="hidden" name="id" value={id} />
+    <p class="al__oculto" aria-hidden="true">
+      <label>Não preencha: <input name="bot-field" tabindex="-1" autocomplete="off" /></label>
+    </p>
+
+    {disponivel ? (
+      <fieldset class="al__tipos">
+        <legend class="al__oculto">Quando avisar</legend>
+        <label class="al__op">
+          <input type="radio" name="tipo" value="queda" checked />
+          <span>Em qualquer queda de preço (hoje {reais(preco)})</span>
+        </label>
+        <label class="al__op">
+          <input type="radio" name="tipo" value="alvo" />
+          <span>Quando chegar a</span>
+          <span class="al__alvo">
+            <span aria-hidden="true">R$</span>
+            <input type="text" name="alvo" inputmode="decimal" placeholder={sugestao.toLocaleString('pt-BR')} aria-label="Preço que você quer pagar, em reais" autocomplete="off" />
+          </span>
+        </label>
+      </fieldset>
+    ) : (
+      <>
+        <input type="hidden" name="tipo" value="volta" />
+        <p class="al__txt">O anúncio de {nome} está fora do ar. Avisamos por e-mail quando ele voltar.</p>
+      </>
+    )}
+
+    <div class="al__linha">
+      <label for={`${uid}-email`} class="al__oculto">Seu e-mail</label>
+      <input id={`${uid}-email`} type="email" name="email" placeholder="seu@email.com" autocomplete="email" required />
+      <button type="submit">Criar alerta</button>
+    </div>
+    <label class="al__news">
+      <input type="checkbox" name="newsletter" value="on" />
+      <span>Também quero o resumo das ofertas da Black Friday e do Natal</span>
+    </label>
+    <p class="al__msg" role="status" aria-live="polite"></p>
+    <p class="al__letras">
+      Mandamos um e-mail para você confirmar. É um aviso por alerta, e dá para cancelar com um clique. Os preços são conferidos uma vez por dia. <a href="/privacidade/">Privacidade</a>.
+    </p>
+  </form>
+  <div class="al__ok" role="status" hidden data-ok>
+    <strong>Falta um clique.</strong> Enviamos um e-mail com o assunto "Confirme seu alerta de preço". Abra e toque em <em>Confirmar alerta</em> para ativar. Não chegou? Olhe o spam ou a aba Promoções.
+  </div>
+</details>
+
+<script>
+  document.querySelectorAll<HTMLDetailsElement>('[data-alerta]').forEach((caixa) => {
+    const form = caixa.querySelector('form')!;
+    const msg = form.querySelector<HTMLElement>('.al__msg')!;
+    const alvo = form.querySelector<HTMLInputElement>('input[name="alvo"]');
+    const preco = Number(caixa.dataset.preco);
+    const id = (form.elements.namedItem('id') as HTMLInputElement).value;
+
+    // Digitar o valor já escolhe a opção "quando chegar a".
+    const marcarAlvo = () => {
+      const r = form.querySelector<HTMLInputElement>('input[value="alvo"]');
+      if (r) r.checked = true;
+    };
+    alvo?.addEventListener('focus', marcarAlvo);
+    alvo?.addEventListener('input', marcarAlvo);
+
+    const erro = (t: string) => {
+      msg.textContent = t;
+      msg.className = 'al__msg al__msg--erro';
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const dados = new FormData(form);
+      if (dados.get('tipo') !== 'alvo') dados.delete('alvo');
+      const email = String(dados.get('email') ?? '').trim();
+      if (!/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(email)) return erro('Confira o e-mail: parece incompleto.');
+      if (dados.get('tipo') === 'alvo') {
+        const bruto = String(dados.get('alvo') ?? '').replace(/\s|R\$/g, '');
+        const v = Number(bruto.includes(',') ? bruto.replace(/\./g, '').replace(',', '.') : bruto.replace(/\.(?=\d{3}$)/, ''));
+        if (!Number.isFinite(v) || v < 1) return erro('Digite o preço que você quer pagar, por exemplo 1.200.');
+        if (v >= preco) return erro('O preço de hoje já está abaixo disso. Escolha um valor menor ou "qualquer queda".');
+      }
+      const botao = form.querySelector('button')!;
+      botao.disabled = true;
+      msg.textContent = 'Enviando...';
+      msg.className = 'al__msg';
+      try {
+        const r = await fetch('/api/alerta', {
+          method: 'POST',
+          headers: { accept: 'application/json' },
+          body: new URLSearchParams(dados as unknown as Record<string, string>),
+        });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || !j.ok) {
+          botao.disabled = false;
+          return erro(j.erro || 'Não deu certo agora. Tente de novo em alguns minutos.');
+        }
+        form.hidden = true;
+        caixa.querySelector<HTMLElement>('[data-ok]')!.hidden = false;
+        const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+        w.gtag?.('event', 'generate_lead', { method: 'alerta_preco', form_name: 'alerta-preco', item_id: id });
+      } catch {
+        botao.disabled = false;
+        erro('Sem conexão. Tente de novo em instantes.');
+      }
+    });
+  });
+</script>
+
+<style>
+  .al { margin-top: 12px; border: 1px solid var(--color-border); border-radius: 14px; background: var(--color-card); }
+  .al__sum { display: flex; align-items: center; gap: 12px; padding: 12px 14px; cursor: pointer; list-style: none; }
+  .al__sum::-webkit-details-marker { display: none; }
+  .al__sum span { display: flex; flex-direction: column; flex: 1; line-height: 1.3; }
+  .al__sum strong { font-size: 15px; font-weight: 800; color: var(--color-foreground); }
+  .al__sum small { font-size: 13px; color: var(--color-muted); }
+  .al__ico { flex: none; color: var(--color-brand); }
+  .al__seta { flex: none; color: var(--color-muted); transition: transform 0.15s; }
+  .al[open] .al__seta { transform: rotate(180deg); }
+  .al__sum:hover strong { color: var(--color-brand); }
+  .al__form { padding: 0 14px 14px; }
+  .al__tipos { border: 0; margin: 0 0 10px; padding: 0; display: grid; gap: 8px; }
+  .al__op { display: flex; align-items: center; flex-wrap: wrap; gap: 6px 8px; font-size: 14px; color: var(--color-foreground); cursor: pointer; }
+  .al__op input[type='radio'] { accent-color: var(--color-brand-fill); width: 16px; height: 16px; }
+  .al__alvo { display: inline-flex; align-items: center; gap: 4px; padding: 0 8px; border: 1px solid var(--color-border); border-radius: 8px; background: var(--color-surface); }
+  .al__alvo span { font-size: 14px; color: var(--color-muted); }
+  .al__alvo input { width: 7.5em; padding: 6px 0; border: 0; background: transparent; color: var(--color-foreground); font-size: 15px; outline: none; }
+  .al__alvo:focus-within { border-color: var(--color-brand); }
+  .al__txt { font-size: 14px; color: var(--color-muted); margin-bottom: 10px; line-height: 1.5; }
+  .al__linha { display: flex; gap: 8px; flex-wrap: wrap; }
+  .al__linha input { flex: 1 1 180px; min-width: 0; padding: 11px 12px; border-radius: 10px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-foreground); font-size: 15px; }
+  .al__linha input:focus { outline: none; border-color: var(--color-brand); }
+  .al__linha button { flex: 0 0 auto; padding: 11px 18px; border: 0; border-radius: 10px; background: var(--color-brand-fill); color: #fff; font-weight: 800; font-size: 15px; cursor: pointer; }
+  .al__linha button:hover { background: var(--color-brand-dark); }
+  .al__linha button:disabled { opacity: 0.6; cursor: wait; }
+  .al__news { display: flex; align-items: flex-start; gap: 8px; margin-top: 10px; font-size: 13px; color: var(--color-muted); cursor: pointer; line-height: 1.4; }
+  .al__news input { margin-top: 2px; accent-color: var(--color-brand-fill); }
+  .al__msg { margin-top: 8px; font-size: 14px; color: var(--color-muted); min-height: 0; }
+  .al__msg:empty { display: none; }
+  .al__msg--erro { color: var(--color-brand); font-weight: 600; }
+  .al__letras { margin-top: 8px; font-size: 12px; line-height: 1.5; color: var(--color-subtle); }
+  .al__letras a { text-decoration: underline; color: inherit; }
+  .al__ok { margin: 0 14px 14px; padding: 12px; border-radius: 10px; background: rgba(21, 128, 61, 0.1); font-size: 14px; line-height: 1.55; color: var(--color-foreground); }
+  .al__ok strong { color: #15803d; }
+  :global(.dark) .al__ok strong { color: #4ade80; }
+  .al__oculto { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>

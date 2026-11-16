@@ -177,3 +177,7 @@ ${beneficio('email', 'No máximo um e-mail por semana', 'Sem enxurrada. Sair da 
     });
   },
 };
+
+// Peças do layout, reaproveitadas pelos e-mails transacionais do alerta de preço
+// (netlify/lib/alertas-core.mjs).
+export { layout, botao, pilula, h1, h2, p, divisor, SITE, IMG, VERMELHO, TEXTO, SUAVE, BORDA, FONTE };

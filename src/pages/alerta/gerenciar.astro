@@ -1,0 +1,90 @@
+---
+// Cancelar ou "continuar acompanhando" um alerta de preço, a partir dos links do e-mail
+// (/alerta/gerenciar/?a=cancelar|reativar&t=<token>).
+// A mudança só acontece no clique do botão (POST): robôs que abrem links de e-mail fazem
+// GET e não podem cancelar nada. O token sai da barra de endereço assim que a página
+// abre, antes de o GA ou o Clarity carregarem (os dois só carregam na primeira interação).
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="Gerenciar alerta de preço"
+  description="Cancele ou mantenha seu alerta de preço do Sonar Musical."
+  noindex
+>
+  <div class="max-w-2xl mx-auto px-4 py-24 text-center" id="gerenciar">
+    <h1 class="text-4xl font-black mb-4" data-titulo>Gerenciar alerta</h1>
+    <p class="text-muted text-lg mb-10" data-texto>Abra esta página pelo link do e-mail do alerta.</p>
+    <div class="flex flex-wrap justify-center gap-3">
+      <button type="button" hidden data-acao class="px-6 py-3 bg-brand-fill text-white font-semibold rounded-xl hover:bg-brand-dark transition-colors disabled:opacity-60"></button>
+      <a href="/" data-inicio class="px-6 py-3 border border-border font-semibold rounded-xl hover:border-brand transition-colors">Voltar ao início</a>
+    </div>
+  </div>
+</BaseLayout>
+
+<script>
+  const params = new URLSearchParams(location.search);
+  const acao = params.get('a');
+  const token = params.get('t') ?? '';
+  if (location.search) history.replaceState(null, '', location.pathname);
+
+  const raiz = document.getElementById('gerenciar')!;
+  const titulo = raiz.querySelector<HTMLElement>('[data-titulo]')!;
+  const texto = raiz.querySelector<HTMLElement>('[data-texto]')!;
+  const botao = raiz.querySelector<HTMLButtonElement>('[data-acao]')!;
+
+  const COPY = {
+    cancelar: {
+      titulo: 'Cancelar este alerta?',
+      texto: 'Você para de receber avisos de preço deste produto. Outros alertas que você criou continuam valendo.',
+      botao: 'Cancelar alerta',
+      feito: 'Alerta cancelado',
+      feitoTexto: 'Pronto, não mandamos mais avisos deste produto. Se mudar de ideia, é só criar outro na ficha do produto.',
+    },
+    reativar: {
+      titulo: 'Continuar acompanhando?',
+      texto: 'O alerta volta a valer a partir do preço de hoje, por mais 180 dias. Avisamos de novo quando baixar.',
+      botao: 'Continuar acompanhando',
+      feito: 'Alerta ativo de novo',
+      feitoTexto: 'Pronto, seguimos de olho.',
+    },
+  } as const;
+
+  if ((acao === 'cancelar' || acao === 'reativar') && /^[A-Za-z0-9_-]{32}$/.test(token)) {
+    const c = COPY[acao];
+    titulo.textContent = c.titulo;
+    texto.textContent = c.texto;
+    botao.textContent = c.botao;
+    botao.hidden = false;
+    botao.addEventListener('click', async () => {
+      botao.disabled = true;
+      try {
+        const r = await fetch(`/api/alerta/${acao}`, {
+          method: 'POST',
+          headers: { 'content-type': 'application/json', accept: 'application/json' },
+          body: JSON.stringify({ t: token }),
+        });
+        const j = await r.json().catch(() => ({}));
+        if (!r.ok || !j.ok) {
+          titulo.textContent = 'Este link não vale mais';
+          texto.textContent = 'O alerta já foi apagado ou expirou. Para acompanhar o preço de novo, crie outro alerta na ficha do produto.';
+          botao.hidden = true;
+          return;
+        }
+        titulo.textContent = c.feito;
+        texto.textContent = acao === 'reativar' && j.condicao ? `Pronto: avisamos ${j.condicao}.` : c.feitoTexto;
+        botao.hidden = true;
+        if (j.id && /^[a-z0-9-]{1,80}$/.test(j.id)) {
+          const link = raiz.querySelector<HTMLAnchorElement>('[data-inicio]')!;
+          link.href = `/produto/${j.id}/`;
+          link.textContent = 'Ver o produto';
+        }
+        const w = window as unknown as { gtag?: (...a: unknown[]) => void };
+        w.gtag?.('event', acao === 'cancelar' ? 'alerta_cancelado' : 'alerta_reativado', { item_id: j.id ?? '' });
+      } catch {
+        botao.disabled = false;
+        texto.textContent = 'Sem conexão. Tente de novo em instantes.';
+      }
+    });
+  }
+</script>
