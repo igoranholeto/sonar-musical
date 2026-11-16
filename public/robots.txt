@@ -1,23 +1,111 @@
 User-agent: *
 Allow: /
 Disallow: /admin/
+Disallow: /api/
 
-# Crawlers de IA: busca/resposta (citam e mandam visita) e treino.
-# Um grupo só, para todos herdarem o bloqueio do /admin/.
+# Robôs de IA: todos liberados (busca, assistentes, agentes e treino), com as mesmas
+# regras do resto. Um grupo só, sem linha em branco no meio, para todos herdarem o
+# bloqueio de /admin/ (painel do CMS) e /api/ (formulários, não é conteúdo).
+# Resumo do site para IA: https://sonarmusical.com.br/llms.txt (completo em /llms-full.txt)
+# OpenAI (ChatGPT)
+User-agent: GPTBot
 User-agent: OAI-SearchBot
 User-agent: ChatGPT-User
-User-agent: GPTBot
+User-agent: OAI-AdsBot
+User-agent: Operator
+# Anthropic (Claude)
+User-agent: ClaudeBot
 User-agent: Claude-SearchBot
 User-agent: Claude-User
-User-agent: ClaudeBot
-User-agent: PerplexityBot
-User-agent: Perplexity-User
+User-agent: Claude-Web
+User-agent: anthropic-ai
+# Google (Gemini, AI Overviews, NotebookLM)
 User-agent: Google-Extended
+User-agent: GoogleOther
+User-agent: GoogleOther-Image
+User-agent: GoogleOther-Video
+User-agent: Google-CloudVertexBot
+User-agent: Gemini-Deep-Research
+User-agent: GoogleAgent-Mariner
+User-agent: GoogleAgent-URLContext
+User-agent: Google-NotebookLM
+User-agent: NotebookLM
+# Microsoft (Copilot usa o índice do Bing, liberado no grupo *)
+User-agent: AzureAI-SearchBot
+# Apple (Siri, Spotlight, Apple Intelligence)
 User-agent: Applebot
 User-agent: Applebot-Extended
+# Perplexity
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+# Meta (Meta AI)
+User-agent: meta-externalagent
+User-agent: meta-externalfetcher
+User-agent: meta-webindexer
+User-agent: FacebookBot
+User-agent: facebookexternalhit
+# Amazon (Alexa, Rufus, Nova)
+User-agent: Amazonbot
+User-agent: Amzn-SearchBot
+User-agent: Amzn-User
+User-agent: amazon-kendra
+User-agent: bedrockbot
+User-agent: NovaAct
+# xAI (Grok)
+User-agent: GrokBot
+User-agent: xAI-Grok
+# Mistral (Le Chat)
+User-agent: MistralAI-User
+User-agent: MistralAI-Index
+User-agent: MistralAI-Training
+# DeepSeek, Cohere, Alibaba (Qwen), Moonshot (Kimi), Baidu, Tencent, Huawei, ByteDance
+User-agent: DeepSeekBot
+User-agent: cohere-ai
+User-agent: cohere-training-data-crawler
+User-agent: QwenBot
+User-agent: TongyiBot
+User-agent: KimiBot
+User-agent: Kimi-SearchBot
+User-agent: Kimi-User
+User-agent: MoonshotBot
+User-agent: ERNIEBot
+User-agent: Hunyuan
+User-agent: PetalBot
+User-agent: PanguBot
 User-agent: Bytespider
+User-agent: DoubaoBot
+User-agent: TikTokSpider
+# Buscadores com IA: DuckDuckGo, Brave, Yandex, Kagi, You.com, Exa, Phind, Andi, iAsk, Liner
+User-agent: DuckAssistBot
+User-agent: Bravebot
+User-agent: YandexAdditional
+User-agent: YandexAdditionalBot
+User-agent: kagi-fetcher
+User-agent: YouBot
+User-agent: ExaBot
+User-agent: ExaSearchBot
+User-agent: PhindBot
+User-agent: Andibot
+User-agent: iaskspider
+User-agent: LinerBot
+User-agent: Liner-User
+# Bases abertas e provedores de dados para IA
 User-agent: CCBot
+User-agent: AI2Bot
+User-agent: Ai2Bot-Dolma
+User-agent: Diffbot
+User-agent: Timpibot
+User-agent: omgili
+User-agent: omgilibot
+User-agent: Webzio-Extended
+User-agent: TavilyBot
+User-agent: FirecrawlAgent
+User-agent: LinkupBot
+User-agent: ShapBot
+User-agent: Cloudflare-AutoRAG
+User-agent: Manus-User
 Allow: /
 Disallow: /admin/
+Disallow: /api/
 
 Sitemap: https://sonarmusical.com.br/sitemap-index.xml
