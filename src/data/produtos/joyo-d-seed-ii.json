@@ -1,8 +1,8 @@
 {
   "nome": "Joyo D-Seed II",
   "meli": "https://meli.la/2aot1tA",
-  "preco": 439,
-  "precoEm": "2026-11-16",
+  "preco": 537,
+  "precoEm": "2026-11-17",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 439
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 537
     }
   ],
   "imagem": "/images/produtos/joyo-d-seed-ii.webp",
@@ -19,9 +23,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 516,
-    "off": 15,
-    "parcelas": "8x R$ 54,83 sem juros",
+    "antes": 679,
+    "off": 20,
+    "parcelas": "12x R$ 51,96",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-delay-looper-joyo-d-seed-ii-branco-para-guitarra-eletrica/p/MLB17460599"
   },

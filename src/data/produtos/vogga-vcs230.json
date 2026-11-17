@@ -1,8 +1,8 @@
 {
   "nome": "Vogga VCS230 (aço, eletroacústico)",
   "meli": "https://meli.la/1kNxNc9",
-  "preco": 696,
-  "precoEm": "2026-11-16",
+  "preco": 649,
+  "precoEm": "2026-11-17",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-16",
       "preco": 696
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 649
     }
   ],
   "imagemAlt": "Vogga VCS230 (aço, eletroacústico)",
@@ -20,8 +24,10 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 915,
-    "off": 23,
-    "parcelas": "10x R$ 69,65 sem juros",
+    "off": 29,
+    "pix": true,
+    "cartao": 705,
+    "parcelas": "10x R$ 70,51 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-aco-vogga-vcs230-eletroacustico-cutaway-com-afinado/up/MLBU4104164674"
   },

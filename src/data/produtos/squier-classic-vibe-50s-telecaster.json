@@ -1,8 +1,8 @@
 {
   "nome": "Squier Classic Vibe '50s Telecaster",
   "meli": "https://meli.la/2vwdayA",
-  "preco": 4698,
-  "precoEm": "2026-11-16",
+  "preco": 4469,
+  "precoEm": "2026-11-17",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-10",
       "preco": 4698
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 4469
     }
   ],
   "imagem": "/images/produtos/squier-classic-vibe-50s-telecaster.webp",
@@ -28,8 +32,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 5052,
-    "off": 7,
-    "parcelas": "10x R$ 469,86 sem juros",
+    "off": 11,
+    "parcelas": "10x R$ 447 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-squier-classic-vibe-50s-telecaster-mn-butter/up/MLBU1979095748"
   },

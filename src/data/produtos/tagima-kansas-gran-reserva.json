@@ -1,25 +1,31 @@
 {
   "nome": "Tagima Kansas Gran Reserva",
-  "meli": "https://meli.la/1KvPfjT",
-  "preco": 999,
-  "precoEm": "2026-11-16",
+  "imagem": "/images/produtos/tagima-kansas-gran-reserva.webp",
+  "imagemAlt": "Violão Tagima Kansas Gran Reserva folk com cutaway",
+  "meli": "https://meli.la/247awXs",
+  "preco": 923,
+  "precoEm": "2026-11-17",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-10-29",
       "preco": 999
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 923
     }
   ],
   "nota": 5,
   "avaliacoes": 7,
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-16",
-    "antes": 1350,
-    "off": 26,
-    "parcelas": "10x R$ 99,90 sem juros",
+    "desde": "2026-11-17",
+    "antes": 1136,
+    "off": 18,
+    "parcelas": "12x R$ 89,60",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/violao-tagima-gran-reserva-kansas-folk-cutaway-dkmop/p/MLB68437504"
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-tagima-kansas-eq-gran-reserva/p/MLB26220181"
   },
   "ficha": [
     [

@@ -1,20 +1,26 @@
 {
   "nome": "Bateria Acústica Voik BAM22-GD",
   "meli": "https://meli.la/2HQ3SdF",
-  "preco": 2174,
-  "precoEm": "2026-11-16",
+  "preco": 2108,
+  "precoEm": "2026-11-17",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 2174
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 2108
     }
   ],
   "imagemAlt": "Bateria Acústica Voik BAM22-GD",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 208,96",
+    "antes": 5045,
+    "off": 58,
+    "parcelas": "12x R$ 202,69",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-voik-bam22-gd-cor-gold-brilhante-bumbo-22-caixa-com-botao-de-ajuste-fino-na-vibracao-8-pecas-maquina-de-chimbal-completa-com-pratos-banco-e-baqueta-para-iniciantes-focus-series/p/MLB51536132"
   },

@@ -1,22 +1,26 @@
 {
   "nome": "Seizi Vintage Fun Budokan HSS",
   "meli": "https://meli.la/1BxbY4e",
-  "preco": 1148,
-  "precoEm": "2026-11-16",
+  "preco": 1230,
+  "precoEm": "2026-11-17",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 1148
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 1230
     }
   ],
   "imagemAlt": "Seizi Vintage Fun Budokan HSS",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 1249,
-    "off": 8,
-    "parcelas": "10x R$ 114,80 sem juros",
+    "antes": 1399,
+    "off": 12,
+    "parcelas": "10x R$ 123 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-seizi-vintage-fun-budokan-hss-destro-surf-green/p/MLB66086016"
   },

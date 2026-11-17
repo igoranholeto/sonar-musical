@@ -1,13 +1,17 @@
 {
   "nome": "Cajon FSA Tom+ acústico",
   "meli": "https://meli.la/1n8Pqbj",
-  "preco": 229,
-  "precoEm": "2026-11-16",
+  "preco": 211,
+  "precoEm": "2026-11-17",
   "categoria": "percussao",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 229
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 211
     }
   ],
   "imagemAlt": "Cajon FSA Tom+ acústico",
@@ -15,8 +19,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 299,
-    "off": 23,
-    "parcelas": "12x R$ 22,67",
+    "off": 29,
+    "parcelas": "12x R$ 20,89",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-tom-profissional-acustico/p/MLB37411086"
   },

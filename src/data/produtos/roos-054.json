@@ -1,8 +1,8 @@
 {
   "nome": "Cavaquinho Roos 054",
   "meli": "https://meli.la/2REeUbp",
-  "preco": 254,
-  "precoEm": "2026-11-16",
+  "preco": 255,
+  "precoEm": "2026-11-17",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -12,13 +12,17 @@
     {
       "data": "2026-11-13",
       "preco": 254
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 255
     }
   ],
   "imagemAlt": "Cavaquinho Roos 054",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 24,85",
+    "parcelas": "12x R$ 24,94",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-roos-054-preto-com-acabamento-fosco/p/MLB34489499"
   },

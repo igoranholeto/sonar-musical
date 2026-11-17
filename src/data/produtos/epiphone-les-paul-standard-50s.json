@@ -1,8 +1,8 @@
 {
   "nome": "Epiphone Les Paul Standard 50s",
   "meli": "https://meli.la/2SVg4Aq",
-  "preco": 8307,
-  "precoEm": "2026-11-16",
+  "preco": 7725,
+  "precoEm": "2026-11-17",
   "categoria": "guitarra",
   "imagem": "/images/produtos/epiphone-les-paul-standard-50s.webp",
   "imagemAlt": "Epiphone Les Paul Standard 50s",
@@ -34,12 +34,18 @@
     {
       "data": "2026-11-11",
       "preco": 8307
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 7725
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 830,70 sem juros",
+    "antes": 8307,
+    "off": 7,
+    "parcelas": "10x R$ 772,55 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-epiphone-les-paul-standard-50s-heritage-cherry-sunburst/p/MLB18347193"
   },

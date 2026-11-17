@@ -1,8 +1,8 @@
 {
   "nome": "Nux MG-30 Versatile Modeler",
   "meli": "https://meli.la/1KQuW4c",
-  "preco": 1986,
-  "precoEm": "2026-11-16",
+  "preco": 1946,
+  "precoEm": "2026-11-17",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-15",
       "preco": 1986
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 1946
     }
   ],
   "imagem": "/images/produtos/nux-mg-30-versatile-modeler.webp",
@@ -36,8 +40,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 2566,
-    "off": 22,
-    "parcelas": "10x R$ 198,60 sem juros",
+    "off": 24,
+    "parcelas": "10x R$ 194,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-nux-versatile-modeler-mg-30-preto/p/MLB18586450"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Fender Player II Jaguar",
   "meli": "https://meli.la/2Q1UC7A",
-  "preco": 8642,
-  "precoEm": "2026-11-16",
+  "preco": 8536,
+  "precoEm": "2026-11-17",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,13 +12,17 @@
     {
       "data": "2026-11-13",
       "preco": 8642
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 8536
     }
   ],
   "imagemAlt": "Fender Player II Jaguar",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 8792,
+    "parcelas": "12x R$ 820,47",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-player-ii-jaguar-polar-white/p/MLB68586129"
   },

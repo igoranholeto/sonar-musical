@@ -1,8 +1,8 @@
 {
   "nome": "Boss Katana Mini",
   "meli": "https://meli.la/1eWwYk9",
-  "preco": 843,
-  "precoEm": "2026-11-16",
+  "preco": 866,
+  "precoEm": "2026-11-17",
   "categoria": "amplificador",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-15",
       "preco": 843
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 866
     }
   ],
   "imagem": "/images/produtos/boss-katana-mini-7w.webp",
@@ -39,9 +43,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1094,
+    "antes": 1123,
     "off": 22,
-    "parcelas": "10x R$ 84,34 sem juros",
+    "parcelas": "10x R$ 86,57 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitar-combo-amplifier-boss-katana-mini-7-watt-1x4/p/MLB2039555870"
   },

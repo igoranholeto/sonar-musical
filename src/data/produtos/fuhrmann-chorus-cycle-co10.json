@@ -1,8 +1,8 @@
 {
   "nome": "Fuhrmann Chorus Cycle CO10",
   "meli": "https://meli.la/2Ei8mLk",
-  "preco": 375,
-  "precoEm": "2026-11-16",
+  "preco": 314,
+  "precoEm": "2026-11-17",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 375
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 314
     }
   ],
   "imagem": "/images/produtos/fuhrmann-chorus-cycle-co10.webp",
@@ -20,8 +24,10 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 422,
-    "off": 11,
-    "parcelas": "7x R$ 53,57 sem juros",
+    "off": 25,
+    "pix": true,
+    "cartao": 364,
+    "parcelas": "7x R$ 51,96 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeitos-fuhrmann-chorus-cycle-co10-cor-azul/p/MLB24562858"
   },

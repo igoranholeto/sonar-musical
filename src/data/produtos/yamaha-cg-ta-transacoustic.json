@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha CG-TA TransAcoustic",
   "meli": "https://meli.la/2e8UAmj",
-  "preco": 3899,
-  "precoEm": "2026-11-16",
+  "preco": 3949,
+  "precoEm": "2026-11-17",
   "categoria": "violao",
   "historico": [
     {
@@ -24,15 +24,19 @@
     {
       "data": "2026-11-16",
       "preco": 3899
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 3949
     }
   ],
   "imagemAlt": "Yamaha CG-TA TransAcoustic",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4699,
-    "off": 17,
-    "parcelas": "12x R$ 374,76",
+    "antes": 4938,
+    "off": 20,
+    "parcelas": "12x R$ 379,65",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-transacoustic-cg-ta-para-destros-natural/p/MLB16041600"
   },

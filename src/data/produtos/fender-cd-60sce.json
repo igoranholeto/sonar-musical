@@ -1,8 +1,8 @@
 {
   "nome": "Fender CD-60SCE",
   "meli": "https://meli.la/2cuTSoz",
-  "preco": 2097,
-  "precoEm": "2026-11-16",
+  "preco": 2309,
+  "precoEm": "2026-11-17",
   "categoria": "violao",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-16",
       "preco": 2097
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 2309
     }
   ],
   "nota": 4.8,
@@ -37,7 +41,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 201,62",
+    "parcelas": "12x R$ 221,98",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletroacustica-fender-cd-60sce-black-fishman/p/MLB52126833"
   },

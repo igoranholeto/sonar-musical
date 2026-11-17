@@ -1,8 +1,8 @@
 {
   "nome": "Malibu 21S Soprano",
   "meli": "https://meli.la/2VjXo1C",
-  "preco": 229,
-  "precoEm": "2026-11-16",
+  "preco": 211,
+  "precoEm": "2026-11-17",
   "categoria": "ukulele",
   "historico": [
     {
@@ -12,13 +12,19 @@
     {
       "data": "2026-11-13",
       "preco": 229
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 211
     }
   ],
   "imagemAlt": "Malibu 21S Soprano",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 38,17 sem juros",
+    "antes": 229,
+    "off": 8,
+    "parcelas": "6x R$ 35,11 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-acustico-malibu-soprano-sapele-21s-fosco-natural/p/MLB29765179"
   },

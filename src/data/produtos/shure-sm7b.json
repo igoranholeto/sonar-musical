@@ -1,8 +1,8 @@
 {
   "nome": "Shure SM7B",
   "meli": "https://meli.la/1v2xxHb",
-  "preco": 2557,
-  "precoEm": "2026-11-16",
+  "preco": 2850,
+  "precoEm": "2026-11-17",
   "categoria": "microfone",
   "historico": [
     {
@@ -16,13 +16,17 @@
     {
       "data": "2026-11-15",
       "preco": 2557
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 2850
     }
   ],
   "imagemAlt": "Shure SM7B",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 255,70 sem juros",
+    "parcelas": "10x R$ 285 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-dinamico-shure-sm7b-estudio-podcast-preto-som-profissional-isolamento-ruido-versatil/p/MLB15157110"
   },

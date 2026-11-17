@@ -1,8 +1,8 @@
 {
   "nome": "Michael VMF400 (kit eletroacústico folk)",
   "meli": "https://meli.la/1BWf3cM",
-  "preco": 827,
-  "precoEm": "2026-11-16",
+  "preco": 804,
+  "precoEm": "2026-11-17",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 827
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 804
     }
   ],
   "nota": 5,
@@ -21,9 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1067,
+    "antes": 1036,
     "off": 22,
-    "parcelas": "10x R$ 82,66 sem juros",
+    "parcelas": "12x R$ 77,75",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletroacustico-folk-michael-vmf400-completo-sitka/p/MLB75040469"
   },

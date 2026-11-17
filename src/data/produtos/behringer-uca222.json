@@ -1,8 +1,8 @@
 {
   "nome": "Behringer UCA222",
   "meli": "https://meli.la/2M6nzPp",
-  "preco": 265,
-  "precoEm": "2026-11-16",
+  "preco": 246,
+  "precoEm": "2026-11-17",
   "categoria": "interface",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-16",
       "preco": 265
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 246
     }
   ],
   "imagemAlt": "Behringer UCA222",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 44,17 sem juros",
+    "antes": 331,
+    "off": 25,
+    "parcelas": "12x R$ 24,35",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-usb-uca222-behringer-vermelho/p/MLB66529409"
   },

@@ -1,20 +1,24 @@
 {
   "nome": "Mesa de som Behringer Xenyx 1002FX",
   "meli": "https://meli.la/2wCwcjf",
-  "preco": 1149,
-  "precoEm": "2026-11-16",
+  "preco": 1870,
+  "precoEm": "2026-11-17",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-12",
       "preco": 1149
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 1870
     }
   ],
   "imagemAlt": "Mesa de som Behringer Xenyx 1002FX",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "12x R$ 111,63",
+    "parcelas": "12x R$ 179,74",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/console-behringer-1002fx-xenyx-de-mistura/p/MLB15981964"
   },

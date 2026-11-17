@@ -1,8 +1,8 @@
 {
   "nome": "Malibu 23S Concert",
   "meli": "https://meli.la/1TVWiaA",
-  "preco": 261,
-  "precoEm": "2026-11-16",
+  "preco": 245,
+  "precoEm": "2026-11-17",
   "categoria": "ukulele",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-13",
       "preco": 261
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 245
     }
   ],
   "imagem": "/images/produtos/malibu-23s-concert.webp",
@@ -33,7 +37,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 43,49 sem juros",
+    "antes": 261,
+    "off": 6,
+    "parcelas": "6x R$ 40,88 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-malibu-concert-23-sapele-natural-com-bag/p/MLB28089960"
   },

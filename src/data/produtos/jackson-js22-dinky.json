@@ -1,8 +1,8 @@
 {
   "nome": "Jackson JS22 Dinky",
   "meli": "https://meli.la/2HQ7JPQ",
-  "preco": 2113,
-  "precoEm": "2026-11-16",
+  "preco": 2141,
+  "precoEm": "2026-11-17",
   "categoria": "guitarra",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-16",
       "preco": 2113
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 2141
     }
   ],
   "imagem": "/images/produtos/jackson-js22-dinky.webp",
@@ -39,9 +43,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2272,
-    "off": 7,
-    "parcelas": "12x R$ 203,16",
+    "parcelas": "12x R$ 205,81",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-jackson-js-series-js22-dinky-de-choupo-2018-blue-brilhante-com-diapasao-de-amaranto/p/MLB17829408"
   },

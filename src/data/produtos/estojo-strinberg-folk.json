@@ -1,8 +1,8 @@
 {
   "nome": "Estojo rígido Strinberg (folk)",
   "meli": "https://meli.la/17KtCN3",
-  "preco": 727,
-  "precoEm": "2026-11-16",
+  "preco": 700,
+  "precoEm": "2026-11-17",
   "categoria": "acessorio",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-16",
       "preco": 727
+    },
+    {
+      "data": "2026-11-17",
+      "preco": 700
     }
   ],
   "nota": 5,
@@ -41,9 +45,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 749,
-    "off": 3,
-    "parcelas": "10x R$ 72,65 sem juros",
+    "parcelas": "10x R$ 69,97 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/estojo-rigido-strinberg-aveludado-para-violao-folk-takamine-gd30-gd71-gd93/p/MLB27557014"
   },
