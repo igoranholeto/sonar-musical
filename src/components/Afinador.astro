@@ -665,6 +665,22 @@ const ROTULOS: Record<string, string> = {
 </style>
 
 <script>
+// O loop roda a cada quadro (~60/s). Só escreve no DOM quando o valor muda:
+// poupa bateria no celular e evita que o replay do Clarity, que perde remoções
+// quando há mutação demais, empilhe notas e dicas antigas na gravação.
+const escritos = new WeakMap<Element, string>();
+function texto(el: Element, v: string) {
+  if (escritos.get(el) === v) return;
+  escritos.set(el, v);
+  el.textContent = v;
+}
+function html(el: Element, v: string) {
+  if (escritos.get(el) === v) return;
+  escritos.set(el, v);
+  el.innerHTML = v;
+}
+let ultimaFreq = 0, ultimaCorNota = '';
+
 // Afinador reescrito em nov/2026. O que mudou e por quê:
 // - Detecção (McLeod/NSDF) em duas etapas: busca grossa num sinal reduzido a
 //   ~11 kHz e refino na taxa cheia só em volta do período achado. A versão
@@ -903,7 +919,7 @@ function clicarCorda(i: number) {
     stringsHint.textContent = `Travado no ${nomeCorda(i)}. Toque de novo para ouvir; toque no destacado para voltar ao automático.`;
   }
   atualizarCards(cardsAtivo, cardsAfinado, true);
-  if (!temLeitura) targetLine.innerHTML = textoAlvoParado();
+  if (!temLeitura) html(targetLine, textoAlvoParado());
 }
 
 // ─── Detecção: McLeod (NSDF) em duas etapas ──────────────────────────────────
@@ -1047,10 +1063,14 @@ function escolherAlvo(m: number): Alvo | null {
 }
 
 // ─── Visor ───────────────────────────────────────────────────────────────────
-let anguloAtual = 0, anguloAlvo = 0;
+
+let anguloAtual = 0, anguloAlvo = 0, anguloEscrito = '';
 function desenharAgulha() {
   anguloAtual += (anguloAlvo - anguloAtual) * 0.35;
-  needle.setAttribute('transform', `rotate(${anguloAtual.toFixed(2)} 150 140)`);
+  const a = anguloAtual.toFixed(1);
+  if (a === anguloEscrito) return;
+  anguloEscrito = a;
+  needle.setAttribute('transform', `rotate(${a} 150 140)`);
 }
 function corPara(abs: number) { return abs <= 5 ? '#22c55e' : abs <= 20 ? '#facc15' : '#e63946'; }
 
@@ -1126,11 +1146,12 @@ function playTuneSound(ctx: AudioContext) {
 
 function resetDisplay() {
   temLeitura = false; ultimas.length = 0; saltos = 0;
-  noteName.textContent = '–';
+  texto(noteName, '–');
+  ultimaCorNota = '';
   noteName.style.color = '';
-  noteOctave.textContent = '';
-  freqDisplay.textContent = '– Hz';
-  targetLine.innerHTML = textoAlvoParado();
+  texto(noteOctave, '');
+  texto(freqDisplay, '– Hz');
+  html(targetLine, textoAlvoParado());
   setPill(null); setDica(null, false); setInTune(false); setCor('#e63946');
   anguloAlvo = 0;
   tunerDisplay.classList.remove('holding-state');
@@ -1146,7 +1167,8 @@ function loop() {
   analyser.getFloatTimeDomainData(buf);
   const agora = performance.now();
   const { f, clareza, rms } = detectar(audioCtx.sampleRate);
-  levelBar.style.transform = `scaleX(${Math.min(1, Math.sqrt(rms / 0.08)).toFixed(3)})`;
+  const nivel = `scaleX(${Math.min(1, Math.sqrt(rms / 0.08)).toFixed(2)})`;
+  if (levelBar.style.transform !== nivel) levelBar.style.transform = nivel;
 
   let ok = f > 50 && f < 1400 && agora > ignorarAte;
   if (ok) {
@@ -1168,12 +1190,13 @@ function loop() {
 
     const t = afinacao();
     const escrita = alvo && ((arred - alvo.midi) % 12 === 0) ? letra(t.strings[alvo.idx]) : NOTE_NAMES[((arred % 12) + 12) % 12];
-    noteName.textContent = escrita;
-    noteOctave.textContent = String(Math.floor(arred / 12) - 1);
-    freqDisplay.textContent = `${midiToFreq(m).toFixed(1)} Hz`;
-    targetLine.innerHTML = alvo
+    texto(noteName, escrita);
+    texto(noteOctave, String(Math.floor(arred / 12) - 1));
+    // Hz com uma casa muda todo quadro; 10 leituras por segundo bastam para o olho.
+    if (agora - ultimaFreq > 100) { ultimaFreq = agora; texto(freqDisplay, `${midiToFreq(m).toFixed(1)} Hz`); }
+    html(targetLine, alvo
       ? `<strong>${nomeCorda(alvo.idx)}</strong> · ${SOLFEJO[letra(t.strings[alvo.idx])]}${alvo.oitava && travada < 0 ? ' (corda da oitava)' : ''}${alvo.tambem !== undefined && travada < 0 ? `, serve também para a corda fina do ${nomeCorda(alvo.tambem)}` : ''}`
-      : 'Fora das cordas desta afinação. Toque no card da corda para travar nela.';
+      : 'Fora das cordas desta afinação. Toque no card da corda para travar nela.');
 
     // Afinado com histerese: entra com ≤4¢ por 250 ms, sai acima de 7¢.
     if (alvo && (afinado ? abs <= 7 : abs <= 4)) {
@@ -1190,7 +1213,8 @@ function loop() {
     anguloAlvo = Math.max(-50, Math.min(50, c)) * 1.8;
     const cor = afinado ? '#22c55e' : corPara(abs);
     setCor(cor);
-    noteName.style.color = afinado || abs <= 5 ? '#22c55e' : abs <= 20 ? '#facc15' : '#e63946';
+    const corNota = afinado || abs <= 5 ? '#22c55e' : abs <= 20 ? '#facc15' : '#e63946';
+    if (corNota !== ultimaCorNota) { ultimaCorNota = corNota; noteName.style.color = corNota; }
     setPill(alvo || abs < 50 ? c : null);
     setDica(alvo ? c : null, afinado);
     atualizarCards(alvo ? alvo.idx : -1, afinado);
@@ -1262,7 +1286,8 @@ function stopListening() {
   micStatus.textContent = '';
   levelBar.style.transform = 'scaleX(0)';
   anguloAtual = 0;
-  needle.setAttribute('transform', 'rotate(0 150 140)');
+  anguloEscrito = '0.0';
+  needle.setAttribute('transform', 'rotate(0.0 150 140)');
   resetDisplay();
 }
 
