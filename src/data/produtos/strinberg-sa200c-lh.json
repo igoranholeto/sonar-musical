@@ -1,0 +1,142 @@
+{
+  "nome": "Strinberg SA200C LH (canhoto)",
+  "meli": "https://meli.la/1sHggwm",
+  "preco": 1050,
+  "precoEm": "2026-11-17",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 1050
+    }
+  ],
+  "imagemAlt": "Strinberg SA200C LH (canhoto)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "parcelas": "10x R$ 105 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-canhoto-strinberg-artistico-sa-200-c-eletrico-ns/up/MLBU1712428012"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Black"
+    ],
+    [
+      "Modelo",
+      "SA200C"
+    ],
+    [
+      "Cor",
+      "Natural fosco"
+    ],
+    [
+      "Acabamento do corpo",
+      "Fosco"
+    ],
+    [
+      "Forma do corpo",
+      "Mini Jumbo"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Com braço desmontável",
+      "Não"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "20"
+    ],
+    [
+      "Comprimento da escala",
+      "647,7 mm"
+    ],
+    [
+      "Orientação da mão",
+      "Canhoto"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "É infantil",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "Jack, XLR"
+    ],
+    [
+      "Tipo de ressonador",
+      "Cone único biscoito"
+    ],
+    [
+      "Com corte",
+      "Sim"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Marca das cordas",
+      "Strinberg"
+    ],
+    [
+      "Material das cordas",
+      "Metal"
+    ],
+    [
+      "Material da ponte",
+      "Louro-indiano"
+    ],
+    [
+      "Tipos de controle",
+      "Afinador, Pré-amplificador"
+    ],
+    [
+      "Acessórios incluídos",
+      "Bag, Cabo"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "imagem": "/images/produtos/strinberg-sa200c-lh.webp"
+}

@@ -1,0 +1,69 @@
+{
+  "nome": "Porta-palhetas com 5 palhetas Dunlop Frejat",
+  "meli": "https://meli.la/2r1VYZ5",
+  "preco": 29,
+  "precoEm": "2026-11-17",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 29
+    }
+  ],
+  "imagemAlt": "Porta-palhetas com 5 palhetas Dunlop Frejat",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/porta-palheta-dolphin-pedestal-c-5-palhetas-dunlop-frejat/up/MLBU1424455283"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Dunlop"
+    ],
+    [
+      "Modelo",
+      "frejat classics"
+    ],
+    [
+      "É set",
+      "Não"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Formato de venda",
+      "Kit"
+    ],
+    [
+      "Quantidade de embalagens",
+      "6"
+    ],
+    [
+      "Quantidade de unidades por embalagem",
+      "5"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Guitarra, Violão"
+    ],
+    [
+      "Artista relacionado",
+      "Frejat"
+    ],
+    [
+      "Quantidade de palhetas",
+      "5"
+    ],
+    [
+      "É palheta tipo dedeira",
+      "Não"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 51,
+  "imagem": "/images/produtos/dunlop-frejat-porta-palhetas.webp"
+}

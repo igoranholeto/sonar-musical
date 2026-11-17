@@ -1,0 +1,108 @@
+{
+  "nome": "Groove Drums GD922 (bateria acústica)",
+  "meli": "https://meli.la/2A6MFoN",
+  "preco": 2940,
+  "precoEm": "2026-11-17",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 2940
+    }
+  ],
+  "imagemAlt": "Groove Drums GD922 (bateria acústica)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 3599,
+    "off": 18,
+    "parcelas": "12x R$ 282,65",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-completa-groove-drums-banco-pratos-pedal-pele-hidraulica-gd922-bumbo-22-black/p/MLB42464679"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Groove"
+    ],
+    [
+      "Linha",
+      "Alligator"
+    ],
+    [
+      "Modelo",
+      "GD920"
+    ],
+    [
+      "Cor",
+      "Bumbo 22 - Black"
+    ],
+    [
+      "Acabamento",
+      "Envernizado"
+    ],
+    [
+      "Peso",
+      "34 kg"
+    ],
+    [
+      "Quantidade de peças",
+      "5"
+    ],
+    [
+      "Materiais",
+      "Álamo"
+    ],
+    [
+      "Idade",
+      "Adultos"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Não"
+    ],
+    [
+      "Inclui prato splash",
+      "Não"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ],
+    [
+      "Inclui pedal de bumbo",
+      "Sim"
+    ],
+    [
+      "Inclui pedal de chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui banqueta",
+      "Sim"
+    ],
+    [
+      "Diâmetro do bumbo",
+      "20 \""
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 227,
+  "imagem": "/images/produtos/groove-drums-gd922.webp"
+}

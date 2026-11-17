@@ -1,0 +1,94 @@
+{
+  "nome": "Yamaha Arius YDP-145 (piano digital com móvel)",
+  "meli": "https://meli.la/1Z1cpn9",
+  "preco": 7999,
+  "precoEm": "2026-11-17",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 7999
+    }
+  ],
+  "imagemAlt": "Yamaha Arius YDP-145 (piano digital com móvel)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "parcelas": "12x R$ 768,84",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/yamaha-ydp-145-piano-digital-cor-preto-com-estante-e-banco/p/MLB23005097"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Arius"
+    ],
+    [
+      "Modelo",
+      "YDP-145"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Acabamento",
+      "Preto/Fosco"
+    ],
+    [
+      "Peso",
+      "57 kg"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo graduada"
+    ],
+    [
+      "Polifonia máxima",
+      "192"
+    ],
+    [
+      "É portátil",
+      "Não"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "Com display LED",
+      "Sim"
+    ],
+    [
+      "Com pedal",
+      "Sim"
+    ],
+    [
+      "Efeitos",
+      "Reverberação"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "USB, Fones de ouvido"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 36,
+  "imagem": "/images/produtos/yamaha-arius-ydp-145.webp"
+}

@@ -1,29 +1,33 @@
 {
-  "nome": "Sonn SN-200F",
-  "meli": "https://meli.la/14QcmFg",
-  "preco": 1260,
-  "precoEm": "2026-11-16",
+  "nome": "Roland TD-07DMK",
+  "meli": "https://meli.la/2iqXfYu",
+  "preco": 6349,
+  "precoEm": "2026-11-17",
   "categoria": "bateria",
   "historico": [
     {
-      "data": "2026-11-13",
-      "preco": 1260
+      "data": "2026-11-17",
+      "preco": 6349
     }
   ],
-  "imagemAlt": "Sonn SN-200F",
+  "imagemAlt": "Roland TD-07DMK",
   "anuncio": {
-    "status": "encerrado",
+    "status": "ativo",
     "desde": "2026-11-17",
-    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-sonn-sn-200f-com-7-pads-usb-midi-e-modulo-digital/p/MLB75282750"
+    "antes": 9939,
+    "off": 36,
+    "parcelas": "12x R$ 610,24",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-roland-td-07dmk-v-drums-series-td07dmk-cor-preto/p/MLB29019768"
   },
   "ficha": [
     [
       "Marca",
-      "SONN"
+      "Roland"
     ],
     [
       "Modelo",
-      "SN-200F"
+      "TD-07DMK"
     ],
     [
       "Cor",
@@ -31,7 +35,7 @@
     ],
     [
       "Quantidade de corpos",
-      "1"
+      "8"
     ],
     [
       "Inclui caixa",
@@ -51,7 +55,7 @@
     ],
     [
       "Inclui surdo",
-      "Não"
+      "Sim"
     ],
     [
       "Inclui chimbal",
@@ -59,11 +63,11 @@
     ],
     [
       "Inclui pedais",
-      "Sim"
+      "Não"
     ],
     [
       "Inclui baquetas",
-      "Sim"
+      "Não"
     ],
     [
       "É portátil",
@@ -75,14 +79,26 @@
     ],
     [
       "Quantidade de sons",
-      "30"
+      "143"
     ],
     [
       "Funções do módulo de som",
-      "15 setups, 165 timbres, funçao metrônomo, programavel"
+      "Metrônomo"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "Mix In, USB Computer, DC IN"
+    ],
+    [
+      "Inclui banqueta",
+      "Não"
     ]
   ],
-  "nota": 4.9,
-  "avaliacoes": 18,
-  "imagem": "/images/produtos/sonn-sn-200f.webp"
+  "nota": 5,
+  "avaliacoes": 80,
+  "imagem": "/images/produtos/roland-td-07dmk.webp"
 }

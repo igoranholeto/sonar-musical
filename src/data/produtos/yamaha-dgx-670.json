@@ -1,0 +1,98 @@
+{
+  "nome": "Yamaha DGX-670 (piano digital)",
+  "meli": "https://meli.la/2dordS9",
+  "preco": 8924,
+  "precoEm": "2026-11-17",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 8924
+    }
+  ],
+  "imagemAlt": "Yamaha DGX-670 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 10258,
+    "off": 12,
+    "parcelas": "12x R$ 857,80",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/yamaha-piano-digital-dgx-670-corrente-domestica-preto-pretofosco/p/MLB70351797"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "Piano Digital"
+    ],
+    [
+      "Modelo",
+      "DGX-670"
+    ],
+    [
+      "Tipo de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento",
+      "Preto/Fosco"
+    ],
+    [
+      "Altura",
+      "15,1 cm"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo graduada"
+    ],
+    [
+      "É portátil",
+      "Sim"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ],
+    [
+      "Com Bluetooth",
+      "Sim"
+    ],
+    [
+      "Com display LED",
+      "Sim"
+    ],
+    [
+      "Com pedal",
+      "Sim"
+    ],
+    [
+      "Efeitos",
+      "Reverberação, Coro"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "USB, Fones de ouvido"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador de energia CA (PA-300C), Cabo de energia, Cadastro no On-line Member, Estante para partitura, Estante para piano L-300B, Manual do proprietário"
+    ]
+  ],
+  "imagem": "/images/produtos/yamaha-dgx-670.webp"
+}

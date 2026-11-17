@@ -1,0 +1,152 @@
+{
+  "nome": "Yamaha PSR-SX600",
+  "meli": "https://meli.la/33LVMur",
+  "preco": 6699,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 6699
+    }
+  ],
+  "imagemAlt": "Yamaha PSR-SX600",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 7200,
+    "off": 6,
+    "parcelas": "12x R$ 643,98",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-arranjador-yamaha-psr-sx600/p/MLB20200478"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "SX"
+    ],
+    [
+      "Modelo",
+      "PSR-SX600"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Modelo detalhado",
+      "PSR-SX600-BRA"
+    ],
+    [
+      "Quantidade de teclas",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "128"
+    ],
+    [
+      "Quantidade de ritmos",
+      "415"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Não"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Porta partituras"
+    ],
+    [
+      "Tela",
+      "LCD TFT WQVGA colorido"
+    ],
+    [
+      "Fonte sonora",
+      "AHL"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Nível 2"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "USB,Entrada para microfone,Saída para fones de ouvido"
+    ],
+    [
+      "Adaptador AC",
+      "Adaptador de energia"
+    ],
+    [
+      "Com ranhura para cartão de memória",
+      "Não"
+    ],
+    [
+      "Com metrónomo",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Com resposta ao toque",
+      "Não"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Quantidade de tons",
+      "850"
+    ],
+    [
+      "Quantidade de canções",
+      "73"
+    ],
+    [
+      "É kit",
+      "Não"
+    ],
+    [
+      "Altura",
+      "13,4 cm"
+    ],
+    [
+      "Largura",
+      "100 cm"
+    ],
+    [
+      "Profundidade",
+      "41 cm"
+    ],
+    [
+      "Peso",
+      "8,1 kg"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 2128,
+  "imagem": "/images/produtos/yamaha-psr-sx600.webp"
+}

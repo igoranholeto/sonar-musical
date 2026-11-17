@@ -1,0 +1,108 @@
+{
+  "nome": "Tagima Woodstock TW-66 (baixo)",
+  "meli": "https://meli.la/1t6ZMKG",
+  "preco": 1163,
+  "precoEm": "2026-11-17",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 1163
+    }
+  ],
+  "imagemAlt": "Tagima Woodstock TW-66 (baixo)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 2349,
+    "off": 50,
+    "parcelas": "10x R$ 116,39 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contra-baixo-eletrico-tagima-tw-66-woodstock-butterscotsh-cor-dourado-orientacao-da-mao-destro-quantidade-de-4/p/MLB23495591"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Woodstock"
+    ],
+    [
+      "Modelo",
+      "TW-66"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Cor",
+      "Dourado"
+    ],
+    [
+      "Acabamento do corpo",
+      "Envernizado"
+    ],
+    [
+      "Quantidade de cordas",
+      "4"
+    ],
+    [
+      "Comprimento da escala",
+      "863,6 mm"
+    ],
+    [
+      "Origem",
+      "Brasil"
+    ],
+    [
+      "Tipo de madeira do corpo",
+      "Álamo"
+    ],
+    [
+      "Tipo de madeira do braço",
+      "Bordo"
+    ],
+    [
+      "Tipo de material do diapasão",
+      "Arce"
+    ],
+    [
+      "Tipo de ponte",
+      "Padrão"
+    ],
+    [
+      "Tipo de captadores",
+      "1 Tagima P model"
+    ],
+    [
+      "Tipo de equalização do captadores",
+      "Passivo"
+    ],
+    [
+      "Quantidade de captadores",
+      "2"
+    ],
+    [
+      "Quantidade de trastes",
+      "21"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo"
+    ],
+    [
+      "Forma do braço",
+      "C"
+    ],
+    [
+      "Configuração dos captadores",
+      "SS"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 278,
+  "imagem": "/images/produtos/tagima-tw-66.webp"
+}

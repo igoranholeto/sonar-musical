@@ -1,0 +1,152 @@
+{
+  "nome": "Casio CT-X5000",
+  "meli": "https://meli.la/2UH2p1W",
+  "preco": 2481,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 2481
+    }
+  ],
+  "imagemAlt": "Casio CT-X5000",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 3283,
+    "off": 24,
+    "parcelas": "10x R$ 248,15 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-arranjador-casio-ct-x5000-61-teclas-ctx5000/p/MLB42382728"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Alta Gama"
+    ],
+    [
+      "Modelo",
+      "X500010"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "11,6 cm"
+    ],
+    [
+      "Largura",
+      "94,8 cm"
+    ],
+    [
+      "Profundidade",
+      "38,4 cm"
+    ],
+    [
+      "Peso",
+      "7 kg"
+    ],
+    [
+      "Modelo detalhado",
+      "CT-X5000"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "235"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador ca (ad-e24250lw)"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Fonte sonora",
+      "AiX"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Nível 1"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Entrada para microfone, Saída para fones de ouvido, USB"
+    ],
+    [
+      "Adaptador AC",
+      "AD-E24250LW"
+    ],
+    [
+      "Com ranhura para cartão de memória",
+      "Sim"
+    ],
+    [
+      "Com metrónomo",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Com resposta ao toque",
+      "Sim"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Quantidade de tons",
+      "800"
+    ],
+    [
+      "Quantidade de canções",
+      "30"
+    ],
+    [
+      "Quantidade de baterias",
+      "6"
+    ],
+    [
+      "Controle de sintonia",
+      "465,9 Hz"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 36,
+  "imagem": "/images/produtos/casio-ct-x5000.webp"
+}

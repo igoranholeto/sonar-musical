@@ -1,0 +1,144 @@
+{
+  "nome": "Casio CT-X3000",
+  "meli": "https://meli.la/29L59Lk",
+  "preco": 2099,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 2099
+    }
+  ],
+  "imagemAlt": "Casio CT-X3000",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 3290,
+    "off": 36,
+    "parcelas": "10x R$ 209,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-alta-gama-ct-x3000-61-teclas-preto/p/MLB16117899"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Alta Gama"
+    ],
+    [
+      "Modelo",
+      "CT-X3000"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "235"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica, Pilha"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Fonte sonora",
+      "Alimentação de corrente"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb, Chorus, Atraso, DSP"
+    ],
+    [
+      "Compatibilidade MIDI com GM",
+      "Nível 1"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "USB, Pedal, Fones de ouvido, Entrada de áudio"
+    ],
+    [
+      "Adaptador AC",
+      "AD-A12150LW"
+    ],
+    [
+      "Com ranhura para cartão de memória",
+      "Sim"
+    ],
+    [
+      "Com metrónomo",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Com resposta ao toque",
+      "Sim"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Quantidade de tons",
+      "800"
+    ],
+    [
+      "Quantidade de canções",
+      "30"
+    ],
+    [
+      "Quantidade de baterias",
+      "6"
+    ],
+    [
+      "Controle de sintonia",
+      "465,9 Hz"
+    ],
+    [
+      "Altura",
+      "11,6 cm"
+    ],
+    [
+      "Largura",
+      "94 cm"
+    ],
+    [
+      "Profundidade",
+      "38 cm"
+    ],
+    [
+      "Peso",
+      "6,9 kg"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 366,
+  "imagem": "/images/produtos/casio-ct-x3000.webp"
+}

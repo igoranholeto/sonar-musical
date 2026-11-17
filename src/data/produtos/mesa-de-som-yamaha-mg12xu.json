@@ -1,0 +1,124 @@
+{
+  "nome": "Mesa de som Yamaha MG12XU",
+  "meli": "https://meli.la/1FkHGyW",
+  "preco": 2619,
+  "precoEm": "2026-11-17",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 2619
+    }
+  ],
+  "imagemAlt": "Mesa de som Yamaha MG12XU",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 2951,
+    "off": 11,
+    "parcelas": "12x R$ 251,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/console-yamaha-mg12xu-de-mistura/p/MLB15954985"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Linha",
+      "MG"
+    ],
+    [
+      "Modelo",
+      "MG12XU"
+    ],
+    [
+      "Consumo energético",
+      "22 W"
+    ],
+    [
+      "Tipo de console",
+      "Digital"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Com alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Com efeitos",
+      "Sim"
+    ],
+    [
+      "Principais efeitos incluídos",
+      "Rev hall, Rev room, Rev stage, Rev plate, Drum amb, Early ref, Gate rev, Single dly, Delay, Vocal echo, Karaoke, Phaser, Flanger, Chorus, Symphonic"
+    ],
+    [
+      "Conectores",
+      "4 combo XLR/TRS 6.3 mm in, 2 mic XLR in, 2 line TS L-mono/R 6.3 mm in, 2 line TS L/R 6.3 mm in, 2 line RCA L/R in, 2 aux send TRS 6.3 mm, 2 group TRS 6.3 mm out, 1 monitor TRS L/R 6.3 mm out, 1 stereo XLR L/R out, 1 stereo TRS L/R out, 1 footswitch jack 6.3 mm, 1 phone TRS 6.3 mm, 1 USB-B in-out"
+    ],
+    [
+      "Quantidade de canais",
+      "12"
+    ],
+    [
+      "Conectividade",
+      "USB"
+    ],
+    [
+      "Material da carcaça",
+      "Metal"
+    ],
+    [
+      "Acessórios incluídos",
+      "1 adaptador de CA, 1 manual, 1 informação de download de Cubase AI, 1 especificação técnica"
+    ],
+    [
+      "Com equalizador",
+      "Sim"
+    ],
+    [
+      "Com software incluído",
+      "Sim"
+    ],
+    [
+      "Quantidade de buses",
+      "5"
+    ],
+    [
+      "Quantidade de efeitos",
+      "24"
+    ],
+    [
+      "Quantidade de canais estéreos",
+      "4"
+    ],
+    [
+      "Resposta em frequência",
+      "20 Hz - 48000 Hz"
+    ],
+    [
+      "Altura",
+      "11,8 cm"
+    ],
+    [
+      "Comprimento",
+      "30,8 cm"
+    ],
+    [
+      "Largura",
+      "42,2 cm"
+    ],
+    [
+      "Peso",
+      "4,2 kg"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 855,
+  "imagem": "/images/produtos/mesa-de-som-yamaha-mg12xu.webp"
+}

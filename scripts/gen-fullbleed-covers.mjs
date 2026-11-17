@@ -188,6 +188,16 @@ const MAP = {
   'como-afinar-cavaquinho':         { kicker: 'CAVAQUINHO · TUTORIAL', l1: 'COMO AFINAR', l2: 'CAVAQUINHO', q: 'cavaquinho brasileiro' },
   'acordes-de-ukulele-para-iniciantes': { kicker: 'UKULELE · PARA INICIANTES', l1: 'ACORDES DE', l2: 'UKULELE', q: 'playing ukulele' },
   'acordes-de-cavaquinho-para-iniciantes': { kicker: 'CAVAQUINHO · PARA INICIANTES', l1: 'ACORDES DE', l2: 'CAVAQUINHO', q: 'cavaquinho musician' },
+  'melhor-teclado-arranjador':      { kicker: 'TECLADOS · GUIA 2026', l1: 'TECLADO', l2: 'ARRANJADOR', q: 'keyboard player stage synthesizer', prefer: /keyboard|synth|yamaha|korg|roland/i, avoid: /logo|computer/i },
+  'yamaha-psr-sx600-vale-a-pena':   { kicker: 'TECLADOS · REVIEW', l1: 'PSR-SX600', l2: 'VALE A PENA?', q: 'Yamaha PSR keyboard', prefer: /yamaha|psr|keyboard/i },
+  'roland-e-x50-e-bom':             { kicker: 'TECLADOS · REVIEW', l1: 'ROLAND E-X50', l2: 'É BOM?', q: 'Roland keyboard arranger', prefer: /roland|keyboard/i, avoid: /logo|drum/i },
+  'casio-ct-x3000-ou-ct-x5000':     { kicker: 'TECLADOS · COMPARATIVO', l1: 'CT-X3000', l2: 'OU CT-X5000?', q: 'Casio electronic keyboard', prefer: /casio|keyboard/i, avoid: /watch|calculator|logo/i },
+  'casio-privia-px-s1100-e-bom':    { kicker: 'PIANO DIGITAL · REVIEW', l1: 'PRIVIA PX-S1100', l2: 'É BOM?', q: 'digital piano', prefer: /piano/i, avoid: /logo|grand piano concert/i },
+  'piano-digital-yamaha-ou-casio':  { kicker: 'PIANO DIGITAL · COMPARATIVO', l1: 'YAMAHA', l2: 'OU CASIO?', q: 'piano keys closeup', prefer: /piano|keys/i, avoid: /logo/i },
+  'bateria-eletronica-roland-vale-a-pena': { kicker: 'BATERIA · GUIA', l1: 'BATERIA ROLAND', l2: 'VALE A PENA?', q: 'electronic drum kit', prefer: /drum/i, avoid: /logo/i },
+  'mesa-de-som-para-igreja':        { kicker: 'HOME STUDIO · GUIA', l1: 'MESA DE SOM', l2: 'PARA IGREJA', q: 'audio mixing console faders', prefer: /mix|console|fader|desk/i, avoid: /logo/i },
+  'line-6-hx-stomp-vale-a-pena':    { kicker: 'PEDAIS · REVIEW', l1: 'HX STOMP', l2: 'VALE A PENA?', q: 'guitar pedalboard effects pedals', prefer: /pedal/i, avoid: /logo|bicycle|car/i },
+  'melhor-piano-digital-com-movel': { kicker: 'PIANO DIGITAL · GUIA 2026', l1: 'PIANO DIGITAL', l2: 'COM MÓVEL', q: 'upright piano living room', prefer: /piano/i, avoid: /logo|grand/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
@@ -268,7 +278,7 @@ const NONFREE = /(fair use|non[\s-]?free|copyright|all rights)/i;
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
 async function searchCommons(q) {
-  const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent('filetype:bitmap ' + q)}&gsrnamespace=6&gsrlimit=25&prop=imageinfo&iiprop=url|extmetadata|mime|size&iiurlwidth=1600`;
+  const url = `https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=${encodeURIComponent('filetype:bitmap ' + q)}&gsrnamespace=6&gsrlimit=25&prop=imageinfo&iiprop=url|extmetadata|mime|size&iiurlwidth=1280`;
   let res;
   for (let attempt = 0; attempt < 5; attempt++) {
     res = await fetch(url, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0 (contato via site sonarmusical.com.br)' } });
@@ -339,11 +349,21 @@ for (const [slug, cfg] of Object.entries(WORK)) {
     const ok = (c) => !usedTitles.has(c.title) && !(cfg.avoid && cfg.avoid.test(c.title));
     // Sem fallback para candidatos barrados pelo avoid: antes, quando nada passava, a
     // capa saía com a foto evitada (ex.: guitarra Fender de museu num post de outra marca).
-    const pick = cands.find(ok);
-    if (!pick) { console.log(`! todos os candidatos barrados p/ ${slug} (q="${cfg.q}"): ajuste q/avoid`); continue; }
+    const okList = cands.filter(ok);
+    if (!okList.length) { console.log(`! todos os candidatos barrados p/ ${slug} (q="${cfg.q}"): ajuste q/avoid`); continue; }
+    // baixa a versão 1280px (tamanho padrão de miniatura no Commons); se uma foto
+    // insistir em 429, tenta o próximo candidato em vez de derrubar a capa
+    let pick, img;
+    for (const c of okList.slice(0, 4)) {
+      for (let tent = 0; tent < 3; tent++) {
+        img = await fetch(c.thumburl, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0' } });
+        if (img.ok) break;
+        await sleep(4000 * (tent + 1));
+      }
+      if (img.ok) { pick = c; break; }
+    }
+    if (!pick) throw new Error('download da foto ' + img.status);
     usedTitles.add(pick.title);
-    // baixa a versão 1600px
-    const img = await fetch(pick.thumburl, { headers: { 'User-Agent': 'SonarMusical-cover-bot/1.0' } });
     const buf = Buffer.from(await img.arrayBuffer());
     const cachePath = path.join(CACHE, slug + '.img');
     fs.writeFileSync(cachePath, buf);

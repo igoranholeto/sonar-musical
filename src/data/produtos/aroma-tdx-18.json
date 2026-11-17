@@ -1,0 +1,104 @@
+{
+  "nome": "Aroma TDX-18",
+  "meli": "https://meli.la/2sXGGdj",
+  "preco": 2261,
+  "precoEm": "2026-11-17",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 2261
+    }
+  ],
+  "imagemAlt": "Aroma TDX-18",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 2899,
+    "off": 22,
+    "parcelas": "10x R$ 226,12 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-portatil-aroma-tdx-18-10-corpos-bluetooth-usb-preta/p/MLB36522227"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Aroma"
+    ],
+    [
+      "Modelo",
+      "TDX-18"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "10"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui prato splash",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Sim"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui pedais",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ],
+    [
+      "É portátil",
+      "Sim"
+    ],
+    [
+      "Inclui módulo de som",
+      "Sim"
+    ],
+    [
+      "Funções do módulo de som",
+      "20"
+    ],
+    [
+      "Tipo de alimentação",
+      "Elétrica"
+    ],
+    [
+      "Tipos de conexões",
+      "USB,MIDI"
+    ],
+    [
+      "Inclui banqueta",
+      "Sim"
+    ],
+    [
+      "É kit",
+      "Não"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 357,
+  "imagem": "/images/produtos/aroma-tdx-18.webp"
+}

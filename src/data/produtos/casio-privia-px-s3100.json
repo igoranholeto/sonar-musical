@@ -1,0 +1,110 @@
+{
+  "nome": "Casio Privia PX-S3100 (piano digital)",
+  "meli": "https://meli.la/2biLtXj",
+  "preco": 6063,
+  "precoEm": "2026-11-17",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 6063
+    }
+  ],
+  "imagemAlt": "Casio Privia PX-S3100 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "parcelas": "10x R$ 606,35 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-px-s3100-88-teclas-bluetooth-pxs3100-110v220v/p/MLB27732949"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "Privia"
+    ],
+    [
+      "Modelo",
+      "PXS310010"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo graduada"
+    ],
+    [
+      "Polifonia máxima",
+      "192"
+    ],
+    [
+      "Quantidade de ritmos",
+      "200"
+    ],
+    [
+      "Quantidade de canções",
+      "700"
+    ],
+    [
+      "É portátil",
+      "Sim"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ],
+    [
+      "Com Bluetooth",
+      "Sim"
+    ],
+    [
+      "Com display LED",
+      "Sim"
+    ],
+    [
+      "Com pedal",
+      "Sim"
+    ],
+    [
+      "Efeitos",
+      "Reverberação"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "P10, P2, USB"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador Bluetooth (WU-BT10)"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Altura",
+      "10,2 cm"
+    ],
+    [
+      "Largura",
+      "23,2 cm"
+    ],
+    [
+      "Profundidade",
+      "23,2 cm"
+    ],
+    [
+      "Peso",
+      "11,4 kg"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 30,
+  "imagem": "/images/produtos/casio-privia-px-s3100.webp"
+}

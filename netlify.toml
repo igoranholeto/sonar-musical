@@ -101,6 +101,31 @@
   [headers.values]
     Link = '<https://sonarmusical.com.br/tablaturas/power-chords-essenciais.pdf>; rel="canonical"'
 
+# Fichas de produto que saíram do Mercado Livre (17/11/2026): 301 para o substituto ou a categoria.
+[[redirects]]
+  from = "/produto/strinberg-sc200c-lh/"
+  to = "/produto/strinberg-sa200c-lh/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/produto/dunlop-kit-6-palhetas/"
+  to = "/produto/dunlop-frejat-porta-palhetas/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/produto/mackintec-mk-cb200-baixo/"
+  to = "/black-friday/amplificador/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/produto/sonn-sn-200f/"
+  to = "/black-friday/bateria/"
+  status = 301
+  force = true
+
 # Headers de segurança em todas as páginas
 # CSP: unpkg.com e 'unsafe-eval' são exigidos pelo Decap CMS em /admin — o ajv do Decap
 # compila schema avaliando string como JS, e sem 'unsafe-eval' o CMS nem carrega o config.

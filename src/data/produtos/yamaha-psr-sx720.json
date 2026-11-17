@@ -1,0 +1,72 @@
+{
+  "nome": "Yamaha PSR-SX720",
+  "meli": "https://meli.la/1v5B6om",
+  "preco": 11129,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 11129
+    }
+  ],
+  "imagemAlt": "Yamaha PSR-SX720",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 14990,
+    "off": 25,
+    "parcelas": "10x R$ 1.113 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/yamaha-psr-sx720-100240-pa-300c-5060hz/p/MLB41166613"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "Psr-sx720"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "1,5 cm"
+    ],
+    [
+      "Modelo detalhado",
+      "PSR-SX720"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "128"
+    ],
+    [
+      "Quantidade de ritmos",
+      "450"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Manual"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 52,
+  "imagem": "/images/produtos/yamaha-psr-sx720.webp"
+}

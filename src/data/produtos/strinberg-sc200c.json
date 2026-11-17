@@ -1,0 +1,110 @@
+{
+  "nome": "Strinberg SC200C",
+  "meli": "https://meli.la/2f2mG6U",
+  "preco": 950,
+  "precoEm": "2026-11-17",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 950
+    }
+  ],
+  "imagemAlt": "Strinberg SC200C",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "parcelas": "10x R$ 95 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sc200c-fosco-natural-6-cordas-nylon/p/MLB16066818"
+  },
+  "ficha": [
+    [
+      "Material do diapasão",
+      "Blackwood"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "É ressonador",
+      "Não"
+    ],
+    [
+      "Tipo de violão",
+      "Eletroacústica"
+    ],
+    [
+      "É tamanho mini",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "P10"
+    ],
+    [
+      "Com corte",
+      "Sim"
+    ],
+    [
+      "Quantidade de cordas",
+      "6"
+    ],
+    [
+      "Material das cordas",
+      "Náilon"
+    ],
+    [
+      "Material da ponte",
+      "Blackwood"
+    ],
+    [
+      "Tipos de controle",
+      "Volume, Afinador, Pré-amplificador"
+    ],
+    [
+      "Marca",
+      "Strinberg"
+    ],
+    [
+      "Linha",
+      "Black"
+    ],
+    [
+      "Modelo",
+      "SC200C"
+    ],
+    [
+      "Cor",
+      "Natural"
+    ],
+    [
+      "Forma do corpo",
+      "Clássica"
+    ],
+    [
+      "Material do tampo",
+      "Abeto"
+    ],
+    [
+      "Materiais do fundo",
+      "Sapele"
+    ],
+    [
+      "Materiais dos laterais",
+      "Sapele"
+    ],
+    [
+      "Materiais do braço",
+      "Nato"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 22,
+  "imagem": "/images/produtos/strinberg-sc200c.webp"
+}

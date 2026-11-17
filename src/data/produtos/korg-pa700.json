@@ -1,0 +1,134 @@
+{
+  "nome": "Korg Pa700",
+  "meli": "https://meli.la/1EUSGFJ",
+  "preco": 12386,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 12386
+    }
+  ],
+  "imagemAlt": "Korg Pa700",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "parcelas": "12x R$ 1.190",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-arranjador-korg-pa700-61-teclas-com-370-ritmos-preto/p/MLB21721230"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Korg"
+    ],
+    [
+      "Modelo",
+      "PA 700"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Modelo detalhado",
+      "Korg PA700"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "128"
+    ],
+    [
+      "Quantidade de ritmos",
+      "370"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Não"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Atril"
+    ],
+    [
+      "Tela",
+      "Digital"
+    ],
+    [
+      "Fonte sonora",
+      "Motor de Som EDS-X"
+    ],
+    [
+      "Função sampling",
+      "Carrega formatos KORG WAV AIFF e SoundFont™, Salva formatos KORG WAV e AIFF"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverberações, Atrasos, Simulações de pedal vintage, Simuladores de amplificador e caixa de som, Limitador, Equalizador Mestre, Processador Vocal 5 FX 28 de fábrica 64 Presets de usuário, Processador de guitarra 3 x FX Presets 45 de fábrica 64 Usuário"
+    ],
+    [
+      "Acompanhamento automático",
+      "Mais de 370 Estilos de Fábrica, Oito faixas de Acompanhamento 4 Conjuntos de Teclado 4 Pads por Estilo"
+    ],
+    [
+      "Adaptador AC",
+      "100-240 Voltios 50/60 Hz 25 Vatios normal 0.3 Vatios en modo de espera"
+    ],
+    [
+      "Com ranhura para cartão de memória",
+      "Sim"
+    ],
+    [
+      "Com metrónomo",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Com resposta ao toque",
+      "Sim"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Altura",
+      "1,32 cm"
+    ],
+    [
+      "Largura",
+      "103 cm"
+    ],
+    [
+      "Profundidade",
+      "3,78 cm"
+    ],
+    [
+      "Peso",
+      "9,9 kg"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 33,
+  "imagem": "/images/produtos/korg-pa700.webp"
+}

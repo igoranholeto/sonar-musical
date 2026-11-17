@@ -1,0 +1,120 @@
+{
+  "nome": "Roland E-X50",
+  "meli": "https://meli.la/11GU7RF",
+  "preco": 2770,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 2770
+    }
+  ],
+  "imagemAlt": "Roland E-X50",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 3145,
+    "off": 11,
+    "parcelas": "10x R$ 277 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-roland-arranjador-e-x50-61-teclas-usb-com-fonte-ex50-cor-preto/p/MLB21017160"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Roland"
+    ],
+    [
+      "Modelo",
+      "E-X50"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "14,1 cm"
+    ],
+    [
+      "Peso",
+      "9,6 kg"
+    ],
+    [
+      "Modelo detalhado",
+      "Teclado Arranjador E-X50"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "256"
+    ],
+    [
+      "Quantidade de ritmos",
+      "300"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Não"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Inclui acessórios",
+      "Não"
+    ],
+    [
+      "Acessórios incluídos",
+      "Folheto \"usando a unidade com segurança\", Manual de usuário, Porta partituras"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Efeitos digitais",
+      "Reverb"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "Saída para fones de ouvido, USB"
+    ],
+    [
+      "Com metrónomo",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Com resposta ao toque",
+      "Sim"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Quantidade de tons",
+      "140"
+    ],
+    [
+      "Quantidade de canções",
+      "30"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 456,
+  "imagem": "/images/produtos/roland-e-x50.webp"
+}

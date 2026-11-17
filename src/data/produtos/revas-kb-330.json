@@ -1,0 +1,132 @@
+{
+  "nome": "Revas KB-330 (by Roland)",
+  "meli": "https://meli.la/13im2eS",
+  "preco": 1056,
+  "precoEm": "2026-11-17",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 1056
+    }
+  ],
+  "imagemAlt": "Revas KB-330 (by Roland)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 1237,
+    "off": 14,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-roland-revas-kb-330-capa-preto/p/MLB65324416"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Roland Revas"
+    ],
+    [
+      "Linha",
+      "Arranjador"
+    ],
+    [
+      "Modelo",
+      "KB-330"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Altura",
+      "14,5 cm"
+    ],
+    [
+      "Largura",
+      "36 cm"
+    ],
+    [
+      "Profundidade",
+      "36 cm"
+    ],
+    [
+      "Peso",
+      "4,5 kg"
+    ],
+    [
+      "Modelo detalhado",
+      "KB-330"
+    ],
+    [
+      "Quantidade de chaves",
+      "61"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "100"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente elétrica"
+    ],
+    [
+      "Inclui acessórios",
+      "Sim"
+    ],
+    [
+      "Acessórios incluídos",
+      "Capa, Suporte partitura"
+    ],
+    [
+      "Tela",
+      "LCD"
+    ],
+    [
+      "Efeitos digitais",
+      "Dual"
+    ],
+    [
+      "Com ranhura para cartão de memória",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Com resposta ao toque",
+      "Sim"
+    ],
+    [
+      "Quantidade de caixas de som",
+      "2"
+    ],
+    [
+      "Quantidade de tons",
+      "390"
+    ],
+    [
+      "Quantidade de canções",
+      "110"
+    ],
+    [
+      "Quantidade de baterias",
+      "6"
+    ]
+  ],
+  "nota": 4.9,
+  "avaliacoes": 156,
+  "imagem": "/images/produtos/revas-kb-330.webp"
+}

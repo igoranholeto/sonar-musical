@@ -1,0 +1,92 @@
+{
+  "nome": "Datrel BAS300 (cubo de baixo 300 W)",
+  "meli": "https://meli.la/1TypEhj",
+  "preco": 1638,
+  "precoEm": "2026-11-17",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 1638
+    }
+  ],
+  "imagemAlt": "Datrel BAS300 (cubo de baixo 300 W)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 2300,
+    "off": 28,
+    "parcelas": "12x R$ 157,45",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-de-baixo-datrel-300w-falante-15-aluminio-profissional-preto/p/MLB20963398"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Datrel"
+    ],
+    [
+      "Linha",
+      "Professional (KICKBACK)"
+    ],
+    [
+      "Modelo",
+      "BAS-300"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "23,6 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "43 cm x 46 cm x 58 cm"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "XLR equilibrada, Headphone"
+    ],
+    [
+      "Tipo de amplificador",
+      "Elétrico"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Transistor"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bivolt, Cabo de energia"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Baixo"
+    ],
+    [
+      "Com reverb",
+      "Não"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "300 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ]
+  ],
+  "nota": 4.8,
+  "avaliacoes": 250,
+  "imagem": "/images/produtos/datrel-bas-300.webp"
+}

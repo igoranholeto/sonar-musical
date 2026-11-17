@@ -1,0 +1,116 @@
+{
+  "nome": "Casio CDP-S360 (piano digital)",
+  "meli": "https://meli.la/2EABHhS",
+  "preco": 3533,
+  "precoEm": "2026-11-17",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 3533
+    }
+  ],
+  "imagemAlt": "Casio CDP-S360 (piano digital)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "antes": 3719,
+    "off": 5,
+    "parcelas": "12x R$ 339,58",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-casio-cdp-s360-stage-digital-preto/p/MLB46163762"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Linha",
+      "CDP-S"
+    ],
+    [
+      "Modelo",
+      "Cdp-s360"
+    ],
+    [
+      "Tipo de alimentação",
+      "Alimentación de CA o baterías tamaño AA de 6"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento",
+      "Preto"
+    ],
+    [
+      "Largura",
+      "132,2 cm"
+    ],
+    [
+      "Profundidade",
+      "23,2 cm"
+    ],
+    [
+      "Peso",
+      "10,9 kg"
+    ],
+    [
+      "Modelo detalhado",
+      "cdp-s360"
+    ],
+    [
+      "Quantidade de teclas",
+      "88"
+    ],
+    [
+      "Tipo de ação das teclas",
+      "Ação de martelo"
+    ],
+    [
+      "Polifonia máxima",
+      "128"
+    ],
+    [
+      "Quantidade de ritmos",
+      "200"
+    ],
+    [
+      "É portátil",
+      "Sim"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ],
+    [
+      "Com Bluetooth",
+      "Sim"
+    ],
+    [
+      "Com display LED",
+      "Sim"
+    ],
+    [
+      "Com pedal",
+      "Sim"
+    ],
+    [
+      "Efeitos",
+      "Reverberação, Coro"
+    ],
+    [
+      "Terminais de entrada/saída",
+      "USB, Fones de ouvido, Entrada de áudio, DAMPER, Unidad de pedal"
+    ],
+    [
+      "Acessórios incluídos",
+      "Pedal"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 5,
+  "imagem": "/images/produtos/casio-cdp-s360-piano-digital.webp"
+}

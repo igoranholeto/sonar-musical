@@ -1,0 +1,94 @@
+{
+  "nome": "Line 6 HX Stomp",
+  "meli": "https://meli.la/345DNHz",
+  "preco": 4749,
+  "precoEm": "2026-11-17",
+  "categoria": "pedaleira",
+  "historico": [
+    {
+      "data": "2026-11-17",
+      "preco": 4749
+    }
+  ],
+  "imagemAlt": "Line 6 HX Stomp",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-17",
+    "parcelas": "10x R$ 474,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedaleira-multiefeitos-line-6-hx-stomp-preto-226-efeitos-guitarra-baixo/p/MLB25446108"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Line 6"
+    ],
+    [
+      "Linha",
+      "Helix"
+    ],
+    [
+      "Modelo",
+      "HX Stomp"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "10 cm x 12.6 cm x 5 cm"
+    ],
+    [
+      "Peso",
+      "800 g"
+    ],
+    [
+      "É vocal",
+      "Sim"
+    ],
+    [
+      "Inclui pedal de expressão",
+      "Não"
+    ],
+    [
+      "Quantidade de efeitos",
+      "226"
+    ],
+    [
+      "Tensão de operação",
+      "9V"
+    ],
+    [
+      "Instrumentos compatíveis",
+      "Baixo, Guitarra elétrica"
+    ],
+    [
+      "Tecnologias do pedal",
+      "Digital"
+    ],
+    [
+      "Tipos de efeitos",
+      "Multi-efeitos"
+    ],
+    [
+      "Tipos de alimentação",
+      "Adaptador de CD"
+    ],
+    [
+      "Inclui fonte de alimentação",
+      "Sim"
+    ],
+    [
+      "Inclui bateria",
+      "Não"
+    ],
+    [
+      "Com luz indicadora",
+      "Sim"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 3,
+  "imagem": "/images/produtos/line-6-hx-stomp.webp"
+}
