@@ -1,0 +1,74 @@
+{
+  "nome": "Roland TD-07KV",
+  "meli": "https://meli.la/2JbpkgD",
+  "preco": 9232,
+  "precoEm": "2026-11-18",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-18",
+      "preco": 9232
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 29,
+  "imagemAlt": "Roland TD-07KV",
+  "imagem": "/images/produtos/roland-td-07kv.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Roland"
+    ],
+    [
+      "Modelo",
+      "TD-07KV"
+    ],
+    [
+      "Bumbo",
+      "KD-10"
+    ],
+    [
+      "Caixa",
+      "PDX-8, pele mesh"
+    ],
+    [
+      "Tons",
+      "3x PDX-6A, pele mesh"
+    ],
+    [
+      "Chimbal",
+      "CY-5"
+    ],
+    [
+      "Pratos",
+      "CY-8 (ataque) e CY-8 (condução)"
+    ],
+    [
+      "Rack",
+      "4 hastes"
+    ],
+    [
+      "Kits",
+      "50"
+    ],
+    [
+      "Instrumentos",
+      "143"
+    ],
+    [
+      "Efeitos",
+      "30 tipos"
+    ],
+    [
+      "Conexões",
+      "Bluetooth 4.2 (áudio e MIDI), USB, saída P2 e MIX IN P2"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-18",
+    "parcelas": "10x R$ 923,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-digital-roland-td-07kv-td07-kv-compacta-cor-preto/p/MLB24426681"
+  }
+}

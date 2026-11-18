@@ -198,6 +198,17 @@ const MAP = {
   'mesa-de-som-para-igreja':        { kicker: 'HOME STUDIO · GUIA', l1: 'MESA DE SOM', l2: 'PARA IGREJA', q: 'audio mixing console faders', prefer: /mix|console|fader|desk/i, avoid: /logo/i },
   'line-6-hx-stomp-vale-a-pena':    { kicker: 'PEDAIS · REVIEW', l1: 'HX STOMP', l2: 'VALE A PENA?', q: 'guitar pedalboard effects pedals', prefer: /pedal/i, avoid: /logo|bicycle|car/i },
   'melhor-piano-digital-com-movel': { kicker: 'PIANO DIGITAL · GUIA 2026', l1: 'PIANO DIGITAL', l2: 'COM MÓVEL', q: 'upright piano living room', prefer: /piano/i, avoid: /logo|grand/i },
+  // Lote 2026-11-18
+  'melhor-bateria-eletronica-profissional': { kicker: 'BATERIA · GUIA 2026', l1: 'BATERIA ELETRÔNICA', l2: 'PROFISSIONAL', q: 'Yamaha DTX electronic drum kit', prefer: /drum|dtx/i, avoid: /logo/i },
+  'roland-td-07kv-vale-a-pena':     { kicker: 'BATERIA · REVIEW', l1: 'ROLAND TD-07KV', l2: 'VALE A PENA?', q: 'Roland V-Drums', prefer: /v-drums|roland|drum/i, avoid: /logo|keyboard|synth/i },
+  'medeli-mz537-e-boa':             { kicker: 'BATERIA · REVIEW', l1: 'MEDELI MZ537', l2: 'É BOA?', q: 'drummer playing electronic drums', prefer: /drum/i, avoid: /logo/i },
+  'alesis-nitro-max-e-boa':         { kicker: 'BATERIA · REVIEW', l1: 'ALESIS NITRO MAX', l2: 'É BOA?', q: 'Alesis electronic drums', prefer: /alesis|drum/i, avoid: /logo/i },
+  'tagima-t-550-e-boa':             { kicker: 'GUITARRAS · REVIEW', l1: 'TAGIMA T-550', l2: 'É BOA?', q: 'Telecaster sunburst guitar', prefer: /telecaster|tele/i, avoid: /logo|bass/i },
+  'borne-vorax-2200-e-bom':         { kicker: 'AMPLIFICADORES · REVIEW', l1: 'BORNE VORAX 2200', l2: 'É BOM?', q: 'guitar combo amplifier 2x12', prefer: /amp|amplifier|combo/i, avoid: /logo|bass|car/i },
+  'melhor-baixo-ate-2000-reais':    { kicker: 'BAIXOS · GUIA 2026', l1: 'BAIXO', l2: 'ATÉ R$ 2.000', q: 'electric bass guitar player', prefer: /bass/i, avoid: /logo|fish|double bass|contrabass|drum/i },
+  'cort-cr300-e-boa':               { kicker: 'GUITARRAS · REVIEW', l1: 'CORT CR300', l2: 'É BOA?', q: 'Les Paul flame top guitar', prefer: /les paul|flame/i, avoid: /logo|bass/i },
+  'melhor-piano-digital-ate-3000-reais': { kicker: 'PIANO DIGITAL · GUIA 2026', l1: 'PIANO DIGITAL', l2: 'ATÉ R$ 3.000', q: 'Casio Privia digital piano', prefer: /digital|privia|casio|piano/i, avoid: /logo|grand|steinway|acoustic/i },
+  'yamaha-p-145-e-bom':             { kicker: 'PIANO DIGITAL · REVIEW', l1: 'YAMAHA P-145', l2: 'É BOM?', q: 'Yamaha digital piano', prefer: /yamaha|piano/i, avoid: /logo|grand|motorcycle/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

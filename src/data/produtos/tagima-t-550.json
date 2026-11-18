@@ -1,0 +1,72 @@
+{
+  "nome": "Tagima T-550 (Telecaster)",
+  "meli": "https://meli.la/348CDxF",
+  "preco": 1541,
+  "precoEm": "2026-11-18",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-18",
+      "preco": 1541
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 77,
+  "imagemAlt": "Tagima T-550 (Telecaster)",
+  "imagem": "/images/produtos/tagima-t-550.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Linha",
+      "Classic Series"
+    ],
+    [
+      "Modelo",
+      "T-550"
+    ],
+    [
+      "Formato",
+      "Telecaster"
+    ],
+    [
+      "Corpo",
+      "Amieiro"
+    ],
+    [
+      "Braço",
+      "Bordo, parafusado, perfil C"
+    ],
+    [
+      "Escala",
+      "647,7 mm, 22 trastes jumbo"
+    ],
+    [
+      "Captador do braço",
+      "Tagima Lipstick Alnico"
+    ],
+    [
+      "Captador da ponte",
+      "Tagima Single Coil Alnico"
+    ],
+    [
+      "Ponte",
+      "Fixa estilo TL"
+    ],
+    [
+      "Controles",
+      "Volume, tone e chave de 3 posições"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-18",
+    "antes": 2140,
+    "off": 28,
+    "parcelas": "12x R$ 148,16",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-t-550-telecaster-amieiro-sunburst-2022-classic-series/p/MLB19069388"
+  }
+}

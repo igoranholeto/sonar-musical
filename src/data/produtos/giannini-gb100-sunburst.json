@@ -1,0 +1,68 @@
+{
+  "nome": "Giannini GB100 Jazz Bass Sunburst",
+  "meli": "https://meli.la/32i35yN",
+  "preco": 903,
+  "precoEm": "2026-11-18",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-18",
+      "preco": 903
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 85,
+  "imagemAlt": "Giannini GB100 Jazz Bass Sunburst",
+  "imagem": "/images/produtos/giannini-gb100-sunburst.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "GB100 3TS/TT (Jazz Bass)"
+    ],
+    [
+      "Corpo",
+      "Álamo"
+    ],
+    [
+      "Braço",
+      "Bordo, perfil C"
+    ],
+    [
+      "Escala",
+      "864 mm, 20 trastes"
+    ],
+    [
+      "Captadores",
+      "2 single coil estilo Jazz Bass"
+    ],
+    [
+      "Eletrônica",
+      "Passiva"
+    ],
+    [
+      "Cor",
+      "Sunburst com escudo tartaruga"
+    ],
+    [
+      "Itens inclusos",
+      "Chave de regulagem"
+    ],
+    [
+      "Origem",
+      "China"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-18",
+    "antes": 1523,
+    "off": 40,
+    "parcelas": "12x R$ 87,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-4-cordas-giannini-gb100-3tstt-sunburst-turtle/p/MLB24335881"
+  }
+}

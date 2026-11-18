@@ -1,0 +1,74 @@
+{
+  "nome": "Medeli MZ537 (kit com banco e fone)",
+  "meli": "https://meli.la/2aVgd8Z",
+  "preco": 5117,
+  "precoEm": "2026-11-18",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-18",
+      "preco": 5117
+    }
+  ],
+  "imagemAlt": "Medeli MZ537 (kit com banco e fone)",
+  "imagem": "/images/produtos/medeli-mz537.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Medeli"
+    ],
+    [
+      "Modelo",
+      "MZ537"
+    ],
+    [
+      "Caixa",
+      "10\", pele mesh, 2 zonas"
+    ],
+    [
+      "Tons",
+      "3x 8\", pele mesh"
+    ],
+    [
+      "Bumbo",
+      "6\", pele em tecido"
+    ],
+    [
+      "Chimbal",
+      "10\", pedal de controle contínuo"
+    ],
+    [
+      "Pratos",
+      "Ataque 2 zonas com choke; condução 12\" com 3 zonas"
+    ],
+    [
+      "Sons",
+      "459"
+    ],
+    [
+      "Kits",
+      "31 de fábrica + 8 do usuário"
+    ],
+    [
+      "Conexões",
+      "Bluetooth áudio, USB áudio/MIDI, MIDI In/Out, P10, P2"
+    ],
+    [
+      "Itens inclusos",
+      "Banco almofadado e fone Solus FS-40"
+    ],
+    [
+      "Peso",
+      "13,5 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-18",
+    "antes": 7929,
+    "off": 35,
+    "parcelas": "10x R$ 511,78 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-bateria-eletronica-medeli-mz537-com-banqueta-e-fones-de-ouvido/p/MLB75833645"
+  }
+}

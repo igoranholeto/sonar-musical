@@ -1,0 +1,76 @@
+{
+  "nome": "Cort CR300 (Les Paul)",
+  "meli": "https://meli.la/2yBFVNo",
+  "preco": 6938,
+  "precoEm": "2026-11-18",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-18",
+      "preco": 6938
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "imagemAlt": "Cort CR300 (Les Paul)",
+  "imagem": "/images/produtos/cort-cr300.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Cort"
+    ],
+    [
+      "Modelo",
+      "CR300"
+    ],
+    [
+      "Formato",
+      "Les Paul (single cut)"
+    ],
+    [
+      "Corpo",
+      "Mogno"
+    ],
+    [
+      "Braço",
+      "Bordo"
+    ],
+    [
+      "Diapasão",
+      "Pau-rosa"
+    ],
+    [
+      "Escala",
+      "628,65 mm, 22 trastes"
+    ],
+    [
+      "Captadores",
+      "2 humbuckers"
+    ],
+    [
+      "Ponte",
+      "Tune-o-matic, fixa"
+    ],
+    [
+      "Controles",
+      "Volume e tom"
+    ],
+    [
+      "Cor",
+      "Flaming Burst"
+    ],
+    [
+      "Origem",
+      "Indonésia"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-18",
+    "antes": 9999,
+    "off": 30,
+    "parcelas": "12x R$ 666,92",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-cort-les-paul-cr-profissional-estudio-palco-show-de/up/MLBU3812817411"
+  }
+}

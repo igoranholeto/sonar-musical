@@ -1,4 +1,5 @@
 import { execSync } from 'node:child_process';
+import { readdirSync, readFileSync } from 'node:fs';
 
 /**
  * Data do último commit de cada arquivo versionado, em uma única passada pelo
@@ -46,12 +47,48 @@ function sourceFor(pathname) {
   return `src/pages/${secao}.astro`;
 }
 
+/**
+ * Categoria de cada JSON do catálogo. As páginas de Black Friday e as fichas
+ * /produto/ são geradas desses arquivos, que a rotina diária de preços
+ * commita quando o anúncio muda.
+ */
+function categoriaPorProduto() {
+  const map = new Map();
+  try {
+    for (const f of readdirSync('src/data/produtos')) {
+      if (!f.endsWith('.json')) continue;
+      const { categoria } = JSON.parse(readFileSync(`src/data/produtos/${f}`, 'utf8'));
+      map.set(`src/data/produtos/${f}`, categoria ?? null);
+    }
+  } catch {
+    // Sem catálogo: essas URLs saem sem lastmod.
+  }
+  return map;
+}
+
+/** Commit mais recente entre os produtos (de uma categoria ou de todas). */
+function maisRecente(dates, categorias, categoria) {
+  let melhor = null;
+  for (const [arquivo, cat] of categorias) {
+    if (categoria && cat !== categoria) continue;
+    const d = dates.get(arquivo);
+    if (d && (!melhor || Date.parse(d) > Date.parse(melhor))) melhor = d;
+  }
+  return melhor;
+}
+
 /** `serialize` do @astrojs/sitemap que preenche lastmod a partir do histórico. */
 export function lastmodSerializer() {
   const dates = gitDatesByFile();
+  const categorias = categoriaPorProduto();
 
   return (item) => {
-    const date = dates.get(sourceFor(new URL(item.url).pathname));
+    const pathname = new URL(item.url).pathname;
+    const [secao, slug] = pathname.split('/').filter(Boolean);
+    let date;
+    if (secao === 'produto' && slug) date = dates.get(`src/data/produtos/${slug}.json`);
+    else if (secao === 'black-friday') date = maisRecente(dates, categorias, slug);
+    else date = dates.get(sourceFor(pathname));
     if (date) item.lastmod = date;
     return item;
   };
