@@ -1,8 +1,8 @@
 {
   "nome": "Focusrite Scarlett 2i2 (4ª geração)",
   "meli": "https://meli.la/33dt7Tz",
-  "preco": 1990,
-  "precoEm": "2026-11-17",
+  "preco": 1988,
+  "precoEm": "2026-11-18",
   "categoria": "interface",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-16",
       "preco": 1990
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 1988
     }
   ],
   "imagemAlt": "Focusrite Scarlett 2i2 (4ª geração)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 191,27",
+    "antes": 2800,
+    "off": 29,
+    "parcelas": "12x R$ 191,08",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-focusrite-scarlett-2i2-usb-c-de-4-geracao-cor-vermelha/p/MLB27308270"
   },

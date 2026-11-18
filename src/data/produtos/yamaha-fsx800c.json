@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha FSX800C",
   "meli": "https://meli.la/1cjob1m",
-  "preco": 4065,
-  "precoEm": "2026-11-17",
+  "preco": 3658,
+  "precoEm": "2026-11-18",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-17",
       "preco": 4065
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 3658
     }
   ],
   "nota": 4.9,
@@ -21,7 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 406,51 sem juros",
+    "antes": 4065,
+    "off": 9,
+    "parcelas": "10x R$ 365,86 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-yamaha-fsx800c-concert-com-cutaway-ruby-red/p/MLB15261919"
   },

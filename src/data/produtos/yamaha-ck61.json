@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha CK61",
   "meli": "https://meli.la/12Sw2E6",
-  "preco": 7770,
-  "precoEm": "2026-11-17",
+  "preco": 7970,
+  "precoEm": "2026-11-18",
   "categoria": "teclado",
   "historico": [
     {
@@ -24,13 +24,17 @@
     {
       "data": "2026-11-17",
       "preco": 7770
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 7970
     }
   ],
   "imagemAlt": "Yamaha CK61",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 777 sem juros",
+    "parcelas": "12x R$ 766,05",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-ck61-61-teclas-stage-keyboard-bluetooth/p/MLB28959370"
   },

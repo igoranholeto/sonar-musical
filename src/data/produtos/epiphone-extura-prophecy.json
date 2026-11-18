@@ -1,8 +1,8 @@
 {
   "nome": "Epiphone Extura Prophecy",
-  "meli": "https://meli.la/1jq5m19",
-  "preco": 13552,
-  "precoEm": "2026-11-17",
+  "meli": "https://meli.la/2ew8YdQ",
+  "preco": 13102,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,18 +12,22 @@
     {
       "data": "2026-11-17",
       "preco": 13552
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 13102
     }
   ],
   "imagem": "/images/produtos/epiphone-extura-prophecy.webp",
   "imagemAlt": "Epiphone Extura Prophecy",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 14572,
-    "off": 7,
-    "parcelas": "10x R$ 1.355 sem juros",
+    "desde": "2026-11-18",
+    "antes": 14558,
+    "off": 10,
+    "parcelas": "10x R$ 1.310 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-extura-prophecy-black-aged-gloss/up/MLBU5239463999"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-extura-prophecy-yellow-tiger-aged-gloss/up/MLBU5277340710"
   },
   "ficha": [
     [

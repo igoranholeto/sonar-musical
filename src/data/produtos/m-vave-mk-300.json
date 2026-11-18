@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave MK-300",
   "meli": "https://meli.la/2wQnrfH",
-  "preco": 878,
-  "precoEm": "2026-11-17",
+  "preco": 898,
+  "precoEm": "2026-11-18",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-16",
       "preco": 878
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 898
     }
   ],
   "imagem": "/images/produtos/m-vave-mk-300.webp",
@@ -39,9 +43,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1199,
-    "off": 26,
-    "parcelas": "10x R$ 87,80 sem juros",
+    "antes": 1359,
+    "off": 34,
+    "parcelas": "12x R$ 86,80",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-multi-efeitos-para-guitarra-e-baixo-m-vave-mk-300-preto/p/MLB75412181"
   },

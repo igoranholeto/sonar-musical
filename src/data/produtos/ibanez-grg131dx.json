@@ -1,22 +1,26 @@
 {
   "nome": "Ibanez GRG131DX",
   "meli": "https://meli.la/1zQ7dkQ",
-  "preco": 2098,
-  "precoEm": "2026-11-17",
+  "preco": 2231,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2098
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 2231
     }
   ],
   "imagemAlt": "Ibanez GRG131DX",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4999,
-    "off": 58,
-    "parcelas": "10x R$ 209,80 sem juros",
+    "antes": 2789,
+    "off": 20,
+    "parcelas": "12x R$ 214,46",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rg-gio-grg131dx-de-choupo-black-flat-com-diapasao-de-amaranto/p/MLB17469489"
   },

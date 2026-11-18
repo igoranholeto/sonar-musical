@@ -1,8 +1,8 @@
 {
   "nome": "Gibson SG Standard",
   "meli": "https://meli.la/2Jdi8bf",
-  "preco": 19769,
-  "precoEm": "2026-11-17",
+  "preco": 19132,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-17",
       "preco": 19769
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 19132
     }
   ],
   "imagem": "/images/produtos/gibson-sg-standard.webp",
@@ -28,8 +32,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 21258,
-    "off": 7,
-    "parcelas": "10x R$ 1.977 sem juros",
+    "off": 10,
+    "parcelas": "10x R$ 1.913 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-gibson-sg-standard-classic-white/up/MLBU3911725558"
   },

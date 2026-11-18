@@ -1,8 +1,8 @@
 {
   "nome": "Shure Beta 58A",
   "meli": "https://meli.la/1so6tL7",
-  "preco": 578,
-  "precoEm": "2026-11-17",
+  "preco": 699,
+  "precoEm": "2026-11-18",
   "categoria": "microfone",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-17",
       "preco": 578
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 699
     }
   ],
   "imagemAlt": "Shure Beta 58A",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 57,80 sem juros",
+    "parcelas": "10x R$ 69,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-dinamico-shure-beta-58a-original-supercardioide-para-vocal/p/MLB29796928"
   },

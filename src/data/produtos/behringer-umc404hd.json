@@ -1,8 +1,8 @@
 {
   "nome": "Behringer U-Phoria UMC404HD",
   "meli": "https://meli.la/18AHnMW",
-  "preco": 1448,
-  "precoEm": "2026-11-17",
+  "preco": 1529,
+  "precoEm": "2026-11-18",
   "categoria": "interface",
   "historico": [
     {
@@ -16,13 +16,17 @@
     {
       "data": "2026-11-16",
       "preco": 1448
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 1529
     }
   ],
   "imagemAlt": "Behringer U-Phoria UMC404HD",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 144,82 sem juros",
+    "parcelas": "10x R$ 153 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-behringer-u-phoria-umc404hd-2-geracao/p/MLB15396034"
   },

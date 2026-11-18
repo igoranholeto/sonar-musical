@@ -1,8 +1,8 @@
 {
   "nome": "Giannini N6 3/4",
-  "meli": "https://meli.la/2raUkhE",
-  "preco": 332,
-  "precoEm": "2026-11-17",
+  "meli": "https://meli.la/1oKWZ5L",
+  "preco": 317,
+  "precoEm": "2026-11-18",
   "categoria": "violao",
   "historico": [
     {
@@ -20,20 +20,22 @@
     {
       "data": "2026-11-13",
       "preco": 332
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 317
     }
   ],
   "imagem": "/images/produtos/giannini-n6-3-4.webp",
   "imagemAlt": "Giannini N6 3/4",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 384,
-    "off": 13,
+    "desde": "2026-11-18",
+    "antes": 413,
+    "off": 23,
     "pix": true,
-    "cartao": 350,
-    "parcelas": "6x R$ 58,33 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/violao-infantil-giannini-n6-36-nylon-acustico-34-preto/up/MLBU5732112542"
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-infantil-giannini-start-n6-34-preto-ebano-6-cordas/p/MLB16043138"
   },
   "ficha": [
     [

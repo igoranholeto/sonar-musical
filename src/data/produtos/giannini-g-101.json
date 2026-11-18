@@ -1,8 +1,8 @@
 {
   "nome": "Giannini G-101",
   "meli": "https://meli.la/2LSkG4A",
-  "preco": 753,
-  "precoEm": "2026-11-17",
+  "preco": 673,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-14",
       "preco": 753
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 673
     }
   ],
   "imagem": "/images/produtos/giannini-g-101.webp",
@@ -43,9 +47,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 900,
-    "off": 16,
-    "parcelas": "12x R$ 72,80",
+    "antes": 1090,
+    "off": 38,
+    "parcelas": "12x R$ 65,08",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-giannini-g-101-standard-stratocaster-captadores-1h-2s/p/MLB29815601"
   },

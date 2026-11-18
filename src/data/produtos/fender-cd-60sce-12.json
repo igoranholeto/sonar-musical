@@ -1,8 +1,8 @@
 {
   "nome": "Fender CD-60SCE-12",
   "meli": "https://meli.la/1fbMkwW",
-  "preco": 2669,
-  "precoEm": "2026-11-17",
+  "preco": 2935,
+  "precoEm": "2026-11-18",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-15",
       "preco": 2669
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 2935
     }
   ],
   "nota": 4.9,
@@ -33,9 +37,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3505,
-    "off": 23,
-    "parcelas": "12x R$ 256,54",
+    "antes": 3690,
+    "off": 20,
+    "parcelas": "10x R$ 293,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-fender-classic-design-cd-60sce-12-para-destros-natural-nogueira/p/MLB15698797"
   },

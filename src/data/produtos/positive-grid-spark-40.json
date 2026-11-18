@@ -1,8 +1,8 @@
 {
   "nome": "Positive Grid Spark 40",
   "meli": "https://meli.la/1mdc1mJ",
-  "preco": 3962,
-  "precoEm": "2026-11-17",
+  "preco": 4190,
+  "precoEm": "2026-11-18",
   "categoria": "amplificador",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 3962
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 4190
     }
   ],
   "nota": 5,
@@ -25,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "antes": 4559,
-    "off": 13,
-    "parcelas": "12x R$ 380,89",
+    "parcelas": "12x R$ 402,73",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/combo-amplificador-positive-grid-spark-40w-pretomarrom-baixo-violao/p/MLB22947997"
   },

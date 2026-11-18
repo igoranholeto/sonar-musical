@@ -1,8 +1,8 @@
 {
   "nome": "Fone Superlux HD681",
   "meli": "https://meli.la/1cqQVRN",
-  "preco": 339,
-  "precoEm": "2026-11-17",
+  "preco": 348,
+  "precoEm": "2026-11-18",
   "categoria": "fone",
   "historico": [
     {
@@ -16,13 +16,17 @@
     {
       "data": "2026-11-16",
       "preco": 339
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 348
     }
   ],
   "imagemAlt": "Fone Superlux HD681",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "12x R$ 33,16",
+    "parcelas": "6x R$ 58 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/superlux-hd681-fone-over-ear-pretovermelho-dinamico-32-10hz-30khz/p/MLB6338644"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Fuhrmann Chorus Cycle CO10",
   "meli": "https://meli.la/2Ei8mLk",
-  "preco": 314,
-  "precoEm": "2026-11-17",
+  "preco": 328,
+  "precoEm": "2026-11-18",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-17",
       "preco": 314
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 328
     }
   ],
   "imagem": "/images/produtos/fuhrmann-chorus-cycle-co10.webp",
@@ -24,7 +28,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 422,
-    "off": 25,
+    "off": 22,
     "pix": true,
     "cartao": 364,
     "parcelas": "7x R$ 51,96 sem juros",

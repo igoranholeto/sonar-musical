@@ -1,8 +1,8 @@
 {
   "nome": "Epiphone Flying V",
   "meli": "https://meli.la/1nPxaem",
-  "preco": 9232,
-  "precoEm": "2026-11-17",
+  "preco": 8935,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "imagem": "/images/produtos/epiphone-flying-v.webp",
   "imagemAlt": "Epiphone Flying V",
@@ -18,14 +18,18 @@
     {
       "data": "2026-11-17",
       "preco": 9232
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 8935
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 9927,
-    "off": 7,
-    "parcelas": "10x R$ 923,29 sem juros",
+    "off": 9,
+    "parcelas": "10x R$ 893,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-flying-v-black-black/p/MLB36855397"
   },

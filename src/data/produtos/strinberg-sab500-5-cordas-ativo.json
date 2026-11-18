@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SAB500 5 cordas ativo",
   "meli": "https://meli.la/2WG3HkY",
-  "preco": 1369,
-  "precoEm": "2026-11-17",
+  "preco": 1276,
+  "precoEm": "2026-11-18",
   "categoria": "baixo",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-15",
       "preco": 1369
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 1276
     }
   ],
   "imagem": "/images/produtos/strinberg-sab500-5-cordas-ativo.webp",
@@ -29,9 +33,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2538,
-    "off": 46,
-    "parcelas": "10x R$ 136,99 sem juros",
+    "parcelas": "12x R$ 123,87",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-5-cordas-strinberg-sab500-twr-ativo/p/MLB22907991"
   },

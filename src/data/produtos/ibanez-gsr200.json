@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GSR200",
   "meli": "https://meli.la/2dpzzo2",
-  "preco": 2252,
-  "precoEm": "2026-11-17",
+  "preco": 2254,
+  "precoEm": "2026-11-18",
   "categoria": "baixo",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-17",
       "preco": 2252
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 2254
     }
   ],
   "nota": 4.9,
@@ -21,9 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2393,
-    "off": 5,
-    "parcelas": "12x R$ 216,45",
+    "antes": 2799,
+    "off": 19,
+    "parcelas": "12x R$ 216,65",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-4-cordas-ibanez-eletrico-gsr-200-bk/p/MLB25808635"
   },

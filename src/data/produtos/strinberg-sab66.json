@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SAB66 6 cordas",
   "meli": "https://meli.la/2qowcyV",
-  "preco": 1652,
-  "precoEm": "2026-11-17",
+  "preco": 1602,
+  "precoEm": "2026-11-18",
   "categoria": "baixo",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 1652
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 1602
     }
   ],
   "nota": 4.9,
@@ -26,8 +30,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 3299,
-    "off": 49,
-    "parcelas": "12x R$ 158,78",
+    "off": 51,
+    "parcelas": "12x R$ 154,02",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-6-cordas-strinberg-sab66-ativo-humbucker-hh-freixo-fosco/p/MLB24132879"
   },

@@ -1,21 +1,23 @@
 {
   "nome": "Gaita JDR em Dó",
   "meli": "https://meli.la/2udqYLY",
-  "preco": 32,
-  "precoEm": "2026-11-17",
+  "preco": 30,
+  "precoEm": "2026-11-18",
   "categoria": "sopro",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 32
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 30
     }
   ],
   "imagemAlt": "Gaita JDR em Dó",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 40,
-    "off": 20,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/gaita-de-boca-harmonica-diatonica-jdr-10-furos-metal-fume-afinacao-do/p/MLB34194647"
   },

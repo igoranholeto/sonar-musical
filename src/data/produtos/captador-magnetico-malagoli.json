@@ -1,8 +1,8 @@
 {
   "nome": "Captador magnético Malagoli",
-  "meli": "https://meli.la/15zG7tJ",
-  "preco": 159,
-  "precoEm": "2026-11-17",
+  "meli": "https://meli.la/2VbJLBh",
+  "preco": 133,
+  "precoEm": "2026-11-18",
   "categoria": "acessorio",
   "imagem": "/images/produtos/captador-magnetico-malagoli.webp",
   "imagemAlt": "Captador magnético Malagoli",
@@ -14,13 +14,22 @@
     {
       "data": "2026-11-05",
       "preco": 159
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 133
     }
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
+    "desde": "2026-11-18",
+    "antes": 140,
+    "off": 5,
+    "pix": true,
+    "cartao": 140,
+    "parcelas": "4x R$ 35 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/captador-magnetico-malagoli-para-violao-encaixe-viola-cavaco/up/MLBU3156502204"
+    "catalogo": "https://www.mercadolivre.com.br/captador-magnetico-malagoli-para-violao-encaixe-viola-cavaco/p/MLB28537756"
   },
   "ficha": [
     [

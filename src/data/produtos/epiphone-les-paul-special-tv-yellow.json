@@ -1,8 +1,8 @@
 {
   "nome": "Epiphone Les Paul Special TV Yellow",
   "meli": "https://meli.la/2PabU7n",
-  "preco": 5546,
-  "precoEm": "2026-11-17",
+  "preco": 5367,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-17",
       "preco": 5546
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 5367
     }
   ],
   "imagemAlt": "Epiphone Les Paul Special TV Yellow",
@@ -19,8 +23,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 5963,
-    "off": 7,
-    "parcelas": "10x R$ 554,65 sem juros",
+    "off": 9,
+    "parcelas": "10x R$ 536,76 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-les-paul-special-tv-yellow/p/MLB42647175"
   },

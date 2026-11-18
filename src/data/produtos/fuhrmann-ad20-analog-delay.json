@@ -1,8 +1,8 @@
 {
   "nome": "Fuhrmann AD20 Analog Delay",
   "meli": "https://meli.la/1we7uv1",
-  "preco": 296,
-  "precoEm": "2026-11-17",
+  "preco": 300,
+  "precoEm": "2026-11-18",
   "categoria": "pedal",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 296
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 300
     }
   ],
   "imagem": "/images/produtos/fuhrmann-ad20-analog-delay.webp",
@@ -19,9 +23,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 326,
-    "off": 9,
-    "parcelas": "6x R$ 49,33 sem juros",
+    "antes": 384,
+    "off": 21,
+    "pix": true,
+    "cartao": 326,
+    "parcelas": "6x R$ 54,33 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-analogico-delay-ad20-fuhrmann-azul/p/MLB47691462"
   },

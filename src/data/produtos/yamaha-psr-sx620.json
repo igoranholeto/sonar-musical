@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha PSR-SX620",
   "meli": "https://meli.la/1N6RQmj",
-  "preco": 6624,
-  "precoEm": "2026-11-17",
+  "preco": 6825,
+  "precoEm": "2026-11-18",
   "categoria": "teclado",
   "historico": [
     {
@@ -20,15 +20,19 @@
     {
       "data": "2026-11-17",
       "preco": 6624
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 6825
     }
   ],
   "imagemAlt": "Yamaha PSR-SX620",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 7360,
-    "off": 10,
-    "parcelas": "12x R$ 636,68",
+    "antes": 10500,
+    "off": 35,
+    "parcelas": "10x R$ 682,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-psr-sx620-61-teclas-preto/p/MLB78920861"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Fonte M-Vave para pedais",
   "meli": "https://meli.la/2Vddziu",
-  "preco": 79,
-  "precoEm": "2026-11-17",
+  "preco": 85,
+  "precoEm": "2026-11-18",
   "categoria": "pedal",
   "historico": [
     {
@@ -20,13 +20,18 @@
     {
       "data": "2026-11-17",
       "preco": 79
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 85
     }
   ],
   "imagemAlt": "Fonte M-Vave para pedais",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "3x R$ 26,33 sem juros",
+    "antes": 120,
+    "off": 28,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/m-vave-fonte-de-alimentacao-para-pedal-de-efeito-de-guitar/p/MLB37142407"
   },

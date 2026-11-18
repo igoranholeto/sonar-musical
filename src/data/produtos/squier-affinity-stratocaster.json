@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Stratocaster",
   "meli": "https://meli.la/26ELWyG",
-  "preco": 2820,
-  "precoEm": "2026-11-17",
+  "preco": 2936,
+  "precoEm": "2026-11-18",
   "categoria": "guitarra",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-17",
       "preco": 2820
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 2936
     }
   ],
   "imagem": "/images/produtos/squier-affinity-stratocaster.webp",
@@ -47,7 +51,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 282,06 sem juros",
+    "parcelas": "10x R$ 293,69 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-squier-by-fender-affinity-series-stratocaster-de-choupo-olympic-white-brilhante-com-diapasao-de-bordo/p/MLB18905278"
   },

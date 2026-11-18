@@ -1,8 +1,8 @@
 {
   "nome": "Microfone Behringer C-1",
   "meli": "https://meli.la/17nZZ35",
-  "preco": 509,
-  "precoEm": "2026-11-17",
+  "preco": 569,
+  "precoEm": "2026-11-18",
   "categoria": "microfone",
   "historico": [
     {
@@ -24,15 +24,19 @@
     {
       "data": "2026-11-17",
       "preco": 509
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 569
     }
   ],
   "imagemAlt": "Microfone Behringer C-1",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "antes": 599,
-    "off": 15,
-    "pix": true,
+    "antes": 921,
+    "off": 38,
+    "parcelas": "10x R$ 56,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-behringer-c-1-condensador-cardioide-cor-dourado/p/MLB15155447"
   },

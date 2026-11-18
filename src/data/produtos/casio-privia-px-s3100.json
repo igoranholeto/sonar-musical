@@ -1,20 +1,24 @@
 {
   "nome": "Casio Privia PX-S3100 (piano digital)",
   "meli": "https://meli.la/2biLtXj",
-  "preco": 6063,
-  "precoEm": "2026-11-17",
+  "preco": 5734,
+  "precoEm": "2026-11-18",
   "categoria": "piano",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 6063
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 5734
     }
   ],
   "imagemAlt": "Casio Privia PX-S3100 (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 606,35 sem juros",
+    "parcelas": "10x R$ 573,42 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-px-s3100-88-teclas-bluetooth-pxs3100-110v220v/p/MLB27732949"
   },

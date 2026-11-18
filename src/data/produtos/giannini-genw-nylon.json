@@ -1,8 +1,8 @@
 {
   "nome": "Giannini GENW Nylon",
   "meli": "https://meli.la/24Mkbd4",
-  "preco": 23,
-  "precoEm": "2026-11-17",
+  "preco": 24,
+  "precoEm": "2026-11-18",
   "categoria": "cordas",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-17",
       "preco": 23
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 24
     }
   ],
   "imagem": "/images/produtos/giannini-genw-nylon.webp",
@@ -43,8 +47,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 26,
-    "off": 10,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-giannini-genw-5921-para-violao-nylon-com-6-cordas/p/MLB53807263"
   },

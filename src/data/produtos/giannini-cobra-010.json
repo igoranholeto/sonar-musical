@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Cobra .010",
   "meli": "https://meli.la/2yLHcWG",
-  "preco": 27,
-  "precoEm": "2026-11-17",
+  "preco": 26,
+  "precoEm": "2026-11-18",
   "categoria": "cordas",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-12",
       "preco": 27
+    },
+    {
+      "data": "2026-11-18",
+      "preco": 26
     }
   ],
   "imagem": "/images/produtos/giannini-cobra-010.webp",
