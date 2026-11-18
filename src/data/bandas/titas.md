@@ -80,8 +80,8 @@ integrantes:
         original:
           nome: Martin 0-18
           preco: ~R$ 11.199
-          similar: "Martin 000-10E"
-          urlAfiliado: https://meli.la/1m7zf5V
+          similar: "Martin 000 Jr-E Sapele"
+          urlAfiliado: https://meli.la/16roKBh
         low:
           nome: Yamaha FG800
           preco: ~R$ 2.055
