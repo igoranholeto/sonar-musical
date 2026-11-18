@@ -351,10 +351,31 @@ const badgeClass = categoryColors[category] ?? 'bg-elevated text-muted';
     /* Do 10º bloco em diante o navegador só faz layout e pintura quando o bloco
        chega perto da tela. Em post longo, o primeiro layout da página inteira
        custava centenas de ms no celular e era a maior fatia do TBT. A barra de
-       compra (position: fixed) fica de fora, porque a contenção quebraria o fixed. */
-    .prose-post > :global(:nth-child(n+10):not(.barra):not(.lightbox)) {
-      content-visibility: auto;
-      contain-intrinsic-size: auto 280px;
+       compra (position: fixed) fica de fora, porque a contenção quebraria o fixed.
+
+       Ao subir por blocos ainda não desenhados, cada um troca a altura estimada
+       pela real. O Chrome do Android e do desktop compensa a rolagem (scroll
+       anchoring); o WebKit (Safari e qualquer navegador do iPhone) não compensa, e
+       a página pulava e parava fora da seção (18/11, iPhone 14 Pro Max). Por isso
+       a regra só vale onde há overflow-anchor. Títulos e o aviso de afiliado ficam
+       de fora (custam nada e erravam 200px cada, 280 estimados contra 30 a 77
+       reais) e as estimativas seguem a média medida no post de pedaleiras. */
+    @supports (overflow-anchor: auto) {
+      .prose-post > :global(:where(:nth-child(n+10):not(.barra, .lightbox, h2, h3, h4, .afi-disclosure))) {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 240px;
+      }
+      .prose-post > :global(p:nth-child(n+10)) {
+        contain-intrinsic-size: auto 190px;
+      }
+      @media (min-width: 768px) {
+        .prose-post > :global(:where(:nth-child(n+10))) {
+          contain-intrinsic-size: auto 160px;
+        }
+        .prose-post > :global(p:nth-child(n+10)) {
+          contain-intrinsic-size: auto 100px;
+        }
+      }
     }
     .prose-post :global(h2:not([class])) {
       position: relative;
