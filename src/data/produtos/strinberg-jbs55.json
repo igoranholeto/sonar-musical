@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg JBS55 5 cordas",
   "meli": "https://meli.la/2SZ3tUL",
-  "preco": 1607,
-  "precoEm": "2026-11-18",
+  "preco": 1529,
+  "precoEm": "2026-11-19",
   "categoria": "baixo",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-18",
       "preco": 1607
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 1529
     }
   ],
   "nota": 4.8,
@@ -33,11 +37,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1746,
-    "off": 7,
     "pix": true,
-    "cartao": 1746,
-    "parcelas": "10x R$ 174,69 sem juros",
+    "cartao": 1663,
+    "parcelas": "10x R$ 166,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-strinberg-jbs55na-natural-5-cordas-passivo-eletrico/p/MLB38893749"
   },

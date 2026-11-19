@@ -2,7 +2,7 @@
   "nome": "D-Tech Nexus",
   "meli": "https://meli.la/2dd8xXx",
   "preco": 2526,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "bateria",
   "historico": [
     {
@@ -22,8 +22,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2949,
-    "off": 14,
     "pix": true,
     "cartao": 2659,
     "parcelas": "10x R$ 266 sem juros",

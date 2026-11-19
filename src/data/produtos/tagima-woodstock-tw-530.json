@@ -2,7 +2,7 @@
   "nome": "Tagima Woodstock TW-530",
   "meli": "https://meli.la/1b3E3cB",
   "preco": 818,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "guitarra",
   "historico": [
     {
@@ -34,8 +34,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 971,
-    "off": 15,
     "pix": true,
     "cartao": 889,
     "parcelas": "10x R$ 88,90 sem juros",

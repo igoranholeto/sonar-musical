@@ -2,7 +2,7 @@
   "nome": "Pandeiro Izzo 10\"",
   "meli": "https://meli.la/1fwfkGA",
   "preco": 78,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "percussao",
   "historico": [
     {
@@ -38,7 +38,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 82,
     "pix": true,
     "cartao": 82,
     "parcelas": "3x R$ 27,35 sem juros",

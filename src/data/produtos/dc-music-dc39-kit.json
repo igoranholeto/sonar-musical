@@ -2,7 +2,7 @@
   "nome": "DC Music DC39 (kit)",
   "meli": "https://meli.la/16JTH8g",
   "preco": 284,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "violao",
   "historico": [
     {
@@ -22,8 +22,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 329,
-    "off": 13,
     "pix": true,
     "cartao": 299,
     "parcelas": "6x R$ 49,83 sem juros",

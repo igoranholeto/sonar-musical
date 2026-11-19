@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-580",
   "meli": "https://meli.la/2tRrGiR",
-  "preco": 1167,
-  "precoEm": "2026-11-18",
+  "preco": 1112,
+  "precoEm": "2026-11-19",
   "categoria": "guitarra",
   "historico": [
     {
@@ -28,13 +28,17 @@
     {
       "data": "2026-11-18",
       "preco": 1167
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 1112
     }
   ],
   "imagemAlt": "Tagima TG-580",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 116,76 sem juros",
+    "parcelas": "10x R$ 111,20 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-tagima-2s-1-h-roasted-maple-escudo-awh-tg-580-ow/p/MLB60294817"
   },

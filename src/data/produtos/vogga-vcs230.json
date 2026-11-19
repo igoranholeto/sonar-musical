@@ -2,7 +2,7 @@
   "nome": "Vogga VCS230 (aço, eletroacústico)",
   "meli": "https://meli.la/1kNxNc9",
   "preco": 649,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "violao",
   "historico": [
     {
@@ -23,8 +23,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 915,
-    "off": 29,
     "pix": true,
     "cartao": 705,
     "parcelas": "10x R$ 70,51 sem juros",

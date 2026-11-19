@@ -2,7 +2,7 @@
   "nome": "Hofma HVE241 4/4 (by Eagle)",
   "meli": "https://meli.la/1bKUv7W",
   "preco": 607,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "violino",
   "historico": [
     {
@@ -25,8 +25,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1199,
-    "off": 49,
     "pix": true,
     "cartao": 660,
     "parcelas": "10x R$ 65,99 sem juros",

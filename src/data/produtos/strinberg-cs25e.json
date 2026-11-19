@@ -1,22 +1,24 @@
 {
   "nome": "Cavaquinho Strinberg CS25E",
   "meli": "https://meli.la/2K9yTaU",
-  "preco": 603,
-  "precoEm": "2026-11-18",
+  "preco": 570,
+  "precoEm": "2026-11-19",
   "categoria": "cavaquinho",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 603
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 570
     }
   ],
   "imagemAlt": "Cavaquinho Strinberg CS25E",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 1099,
-    "off": 45,
-    "parcelas": "10x R$ 60,34 sem juros",
+    "parcelas": "10x R$ 57 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-eletrico-strinberg-cs25e-4-cordas-acessorios/up/MLBU3939333966"
   },

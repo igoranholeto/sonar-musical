@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-520",
   "meli": "https://meli.la/1ZNumdY",
-  "preco": 869,
-  "precoEm": "2026-11-18",
+  "preco": 921,
+  "precoEm": "2026-11-19",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,13 +12,17 @@
     {
       "data": "2026-11-13",
       "preco": 869
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 921
     }
   ],
   "imagemAlt": "Tagima TG-520",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 86,90 sem juros",
+    "parcelas": "12x R$ 89,36",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-stratocaster-tw-series-tg-520-vermelha-22-trastes/p/MLB17473264"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Giannini GUK-23 Concert",
   "meli": "https://meli.la/2re4xqT",
-  "preco": 369,
-  "precoEm": "2026-11-18",
+  "preco": 380,
+  "precoEm": "2026-11-19",
   "categoria": "ukulele",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-17",
       "preco": 369
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 380
     }
   ],
   "nota": 4.8,
@@ -37,9 +41,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 493,
-    "off": 25,
-    "parcelas": "7x R$ 52,71 sem juros",
+    "parcelas": "12x R$ 37,17",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-concert-giannini-guk-23-acustico-nylon-com-bag-cor-walnut-satin/p/MLB36293035"
   },

@@ -2,7 +2,7 @@
   "nome": "Violino Antoni Marsale 4/4",
   "meli": "https://meli.la/2rzEHWn",
   "preco": 1268,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "violino",
   "historico": [
     {
@@ -22,8 +22,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1999,
-    "off": 36,
     "pix": true,
     "cartao": 1378,
     "parcelas": "10x R$ 137,85 sem juros",

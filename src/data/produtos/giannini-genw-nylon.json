@@ -1,8 +1,8 @@
 {
   "nome": "Giannini GENW Nylon",
   "meli": "https://meli.la/24Mkbd4",
-  "preco": 24,
-  "precoEm": "2026-11-18",
+  "preco": 21,
+  "precoEm": "2026-11-19",
   "categoria": "cordas",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-18",
       "preco": 24
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 21
     }
   ],
   "imagem": "/images/produtos/giannini-genw-nylon.webp",

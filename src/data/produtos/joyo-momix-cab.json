@@ -1,8 +1,8 @@
 {
   "nome": "Joyo MOMIX CAB",
   "meli": "https://meli.la/1UCwaKj",
-  "preco": 113,
-  "precoEm": "2026-11-18",
+  "preco": 108,
+  "precoEm": "2026-11-19",
   "categoria": "interface",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-18",
       "preco": 113
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 108
     }
   ],
   "imagemAlt": "Joyo MOMIX CAB",

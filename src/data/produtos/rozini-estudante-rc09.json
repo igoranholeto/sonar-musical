@@ -1,8 +1,8 @@
 {
   "nome": "Rozini Estudante RC09",
   "meli": "https://meli.la/265d9Hv",
-  "preco": 816,
-  "precoEm": "2026-11-18",
+  "preco": 862,
+  "precoEm": "2026-11-19",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-18",
       "preco": 816
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 862
     }
   ],
   "imagem": "/images/produtos/rozini-estudante-rc09.webp",
@@ -35,9 +39,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1071,
-    "off": 23,
-    "parcelas": "12x R$ 78,95",
+    "parcelas": "10x R$ 86,15 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-rozini-estudante-acustico-imbuia-com-escala-roxinho-rc09/p/MLB27878567"
   },

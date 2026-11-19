@@ -1,8 +1,8 @@
 {
   "nome": "Suporte Hercules GS200B",
   "meli": "https://meli.la/1KwKRMi",
-  "preco": 175,
-  "precoEm": "2026-11-18",
+  "preco": 132,
+  "precoEm": "2026-11-19",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-18",
       "preco": 175
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 132
     }
   ],
   "nota": 4.9,
@@ -21,7 +25,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 17,26",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-profissional-para-guitarra-c-expack-hercules-gs200b-cor-preto/p/MLB27048334"
   },

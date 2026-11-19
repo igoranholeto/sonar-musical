@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Cube Baby Bass",
   "meli": "https://meli.la/2dyHCzh",
-  "preco": 151,
-  "precoEm": "2026-11-18",
+  "preco": 158,
+  "precoEm": "2026-11-19",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -36,15 +36,16 @@
     {
       "data": "2026-11-18",
       "preco": 151
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 158
     }
   ],
   "imagemAlt": "M-Vave Cube Baby Bass",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 210,
-    "off": 28,
-    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-m-vave-cube-baby-bass-multi-efeitos-azul-para-baixo-eletrico/p/MLB19553722"
   },

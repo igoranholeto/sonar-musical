@@ -2,7 +2,7 @@
   "nome": "Borne Vorax 840 Studio",
   "meli": "https://meli.la/1rASzjt",
   "preco": 751,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "amplificador",
   "historico": [
     {
@@ -23,8 +23,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 790,
-    "off": 5,
     "pix": true,
     "cartao": 790,
     "parcelas": "10x R$ 79 sem juros",

@@ -1,8 +1,8 @@
 {
   "nome": "Positive Grid Spark Mini",
   "meli": "https://meli.la/1uSgktL",
-  "preco": 2712,
-  "precoEm": "2026-11-18",
+  "preco": 2630,
+  "precoEm": "2026-11-19",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-06",
       "preco": 2712
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 2630
     }
   ],
   "imagem": "/images/produtos/positive-grid-spark-mini.webp",
@@ -29,9 +33,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3289,
-    "off": 17,
-    "parcelas": "12x R$ 260,70",
+    "parcelas": "12x R$ 252,79",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-de-guitarra-portatil-bluetooth-positive-grid-spark-mini-10w-preto/p/MLB23529170"
   },

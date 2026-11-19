@@ -1,8 +1,8 @@
 {
   "nome": "Casio Casiotone CT-S300",
   "meli": "https://meli.la/31rJVQs",
-  "preco": 907,
-  "precoEm": "2026-11-18",
+  "preco": 878,
+  "precoEm": "2026-11-19",
   "categoria": "teclado",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-17",
       "preco": 907
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 878
     }
   ],
   "nota": 4.9,
@@ -29,8 +33,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1027,
-    "off": 11,
     "pix": true,
     "cartao": 976,
     "parcelas": "10x R$ 97,57 sem juros",

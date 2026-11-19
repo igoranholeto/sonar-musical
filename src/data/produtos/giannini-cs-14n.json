@@ -1,8 +1,8 @@
 {
   "nome": "Giannini CS-14N",
   "meli": "https://meli.la/17vYaQu",
-  "preco": 326,
-  "precoEm": "2026-11-18",
+  "preco": 319,
+  "precoEm": "2026-11-19",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-18",
       "preco": 326
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 319
     }
   ],
   "imagem": "/images/produtos/giannini-cs-14n.webp",
@@ -43,8 +47,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 499,
-    "off": 34,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-giannini-cavaco-cs-14n-cor-natural/p/MLB25274030"

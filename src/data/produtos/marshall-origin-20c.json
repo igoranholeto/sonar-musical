@@ -1,8 +1,8 @@
 {
   "nome": "Marshall Origin 20C",
   "meli": "https://meli.la/1xbgVgk",
-  "preco": 5497,
-  "precoEm": "2026-11-18",
+  "preco": 4997,
+  "precoEm": "2026-11-19",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-13",
       "preco": 5497
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 4997
     }
   ],
   "imagem": "/images/produtos/marshall-origin-20c.webp",
@@ -27,9 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 5797,
-    "off": 5,
-    "parcelas": "10x R$ 549,70 sem juros",
+    "parcelas": "10x R$ 499,70 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-marshall-origin-20c-combo-para-guitarra-20w/up/MLBU3858614456"
   },

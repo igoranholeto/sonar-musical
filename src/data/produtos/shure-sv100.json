@@ -1,8 +1,8 @@
 {
   "nome": "Shure SV100",
   "meli": "https://meli.la/1tydZZj",
-  "preco": 203,
-  "precoEm": "2026-11-18",
+  "preco": 186,
+  "precoEm": "2026-11-19",
   "categoria": "microfone",
   "historico": [
     {
@@ -28,15 +28,17 @@
     {
       "data": "2026-11-18",
       "preco": 203
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 186
     }
   ],
   "imagemAlt": "Shure SV100",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 305,
-    "off": 33,
-    "parcelas": "12x R$ 20,05",
+    "parcelas": "12x R$ 18,40",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-shure-sv100/p/MLB22441900"
   },

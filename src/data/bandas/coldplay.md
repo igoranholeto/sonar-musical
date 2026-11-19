@@ -105,10 +105,10 @@ integrantes:
           similar: "Sterling StingRay Ray35 (5 cordas)"
           urlAfiliado: https://meli.la/2M74peU
         low:
-          nome: Sterling by Music Man StingRay Ray4
-          preco: ~R$ 3.500
+          nome: Sterling by Music Man Sub Ray4
+          preco: ~R$ 5.300
           obs: Mesmo timbre estalado por um preço acessível.
-          urlAfiliado: https://meli.la/1gk1ssT
+          urlAfiliado: https://meli.la/28Wiyva
   - foto: /images/will-champion-sonar.webp
     fotoAlt: will baterista coldplay
     pontos:

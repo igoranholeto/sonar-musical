@@ -1,8 +1,8 @@
 {
   "nome": "LR Baggs Anthem",
   "meli": "https://meli.la/2FDc7Pf",
-  "preco": 2499,
-  "precoEm": "2026-11-18",
+  "preco": 4000,
+  "precoEm": "2026-11-19",
   "categoria": "acessorio",
   "imagem": "/images/produtos/lr-baggs-anthem.webp",
   "imagemAlt": "LR Baggs Anthem",
@@ -14,6 +14,10 @@
     {
       "data": "2026-11-05",
       "preco": 2499
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 4000
     }
   ],
   "nota": 4.9,
@@ -21,7 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 249,90 sem juros",
+    "parcelas": "10x R$ 400 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/captador-violao-lr-baggs-anthem-tru-mic-piezo-e-microfone-preto/p/MLB41739806"
   },

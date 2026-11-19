@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GD11MCE",
   "meli": "https://meli.la/2SPmQqw",
-  "preco": 2476,
-  "precoEm": "2026-11-18",
+  "preco": 2408,
+  "precoEm": "2026-11-19",
   "categoria": "violao",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-18",
       "preco": 2476
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 2408
     }
   ],
   "nota": 4.9,
@@ -61,9 +65,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3439,
-    "off": 28,
-    "parcelas": "10x R$ 247,61 sem juros",
+    "parcelas": "12x R$ 231,47",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-takamine-gd11mce-mgs-tp-4t-g-series-folk-eletroacustico-mahogany-satin-fosco/p/MLB14037749"
   },

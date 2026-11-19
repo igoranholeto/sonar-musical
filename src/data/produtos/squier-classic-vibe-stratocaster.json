@@ -1,8 +1,8 @@
 {
   "nome": "Squier Classic Vibe Stratocaster",
   "meli": "https://meli.la/2Zao8tQ",
-  "preco": 4657,
-  "precoEm": "2026-11-18",
+  "preco": 4651,
+  "precoEm": "2026-11-19",
   "categoria": "guitarra",
   "historico": [
     {
@@ -48,6 +48,10 @@
     {
       "data": "2026-11-18",
       "preco": 4657
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 4651
     }
   ],
   "imagem": "/images/produtos/squier-classic-vibe-stratocaster.webp",
@@ -55,7 +59,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 465,73 sem juros",
+    "parcelas": "10x R$ 465,11 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-squier-by-fender-classic-vibe-stratocaster-60s-de-nato-candy-apple-red-brilhante-com-diapasao-de-figueira-benjamim/p/MLB18509125"
   },

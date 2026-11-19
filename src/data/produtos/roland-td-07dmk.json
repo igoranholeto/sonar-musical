@@ -1,22 +1,24 @@
 {
   "nome": "Roland TD-07DMK",
   "meli": "https://meli.la/2iqXfYu",
-  "preco": 6349,
-  "precoEm": "2026-11-18",
+  "preco": 6440,
+  "precoEm": "2026-11-19",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 6349
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 6440
     }
   ],
   "imagemAlt": "Roland TD-07DMK",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 9939,
-    "off": 36,
-    "parcelas": "12x R$ 610,24",
+    "parcelas": "12x R$ 619,08",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-roland-td-07dmk-v-drums-series-td07dmk-cor-preto/p/MLB29019768"
   },

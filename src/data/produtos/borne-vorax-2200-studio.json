@@ -1,13 +1,17 @@
 {
   "nome": "Borne Vorax 2200 Studio",
   "meli": "https://meli.la/1kf1Ydt",
-  "preco": 2122,
-  "precoEm": "2026-11-18",
+  "preco": 2099,
+  "precoEm": "2026-11-19",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-18",
       "preco": 2122
+    },
+    {
+      "data": "2026-11-19",
+      "preco": 2099
     }
   ],
   "nota": 5,
@@ -63,8 +67,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-18",
-    "antes": 3170,
-    "off": 33,
     "pix": true,
     "cartao": 2282,
     "parcelas": "10x R$ 228,24 sem juros",

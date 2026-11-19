@@ -2,7 +2,7 @@
   "nome": "Mesa de som digital Teyun A8",
   "meli": "https://meli.la/2yRdREf",
   "preco": 371,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "estudio",
   "historico": [
     {
@@ -18,8 +18,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "antes": 750,
-    "off": 50,
     "pix": true,
     "cartao": 390,
     "parcelas": "7x R$ 55,71 sem juros",

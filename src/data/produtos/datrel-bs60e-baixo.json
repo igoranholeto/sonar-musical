@@ -2,7 +2,7 @@
   "nome": "Datrel BS60E (baixo)",
   "meli": "https://meli.la/2wyWybJ",
   "preco": 625,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "amplificador",
   "historico": [
     {
@@ -22,8 +22,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 800,
-    "off": 21,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-datrel-para-contra-baixo-60w-8-bs60e-preto/p/MLB22243357"

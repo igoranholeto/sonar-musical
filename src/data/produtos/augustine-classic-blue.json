@@ -2,7 +2,7 @@
   "nome": "Augustine Classic Blue",
   "meli": "https://meli.la/21WnC5f",
   "preco": 130,
-  "precoEm": "2026-11-18",
+  "precoEm": "2026-11-19",
   "categoria": "cordas",
   "historico": [
     {
@@ -27,8 +27,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 177,
-    "off": 26,
     "pix": true,
     "cartao": 137,
     "parcelas": "4x R$ 34,25 sem juros",
