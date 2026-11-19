@@ -3,6 +3,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Newsletter from '../components/Newsletter.astro';
 import AuthorAvatar from '../components/AuthorAvatar.astro';
 import { authors } from '../data/authors';
+import { ORG_ID } from '../utils/schema';
 
 const igor = authors['igor-anholeto'];
 
@@ -13,11 +14,7 @@ const aboutSchema = {
   url: 'https://sonarmusical.com.br/about',
   inLanguage: 'pt-BR',
   description: 'O Sonar Musical é um blog de equipamentos musicais que publica análises honestas e guias de compra para guitarristas.',
-  publisher: {
-    '@type': 'Organization',
-    name: 'Sonar Musical',
-    url: 'https://sonarmusical.com.br',
-  },
+  publisher: { '@id': ORG_ID },
 };
 ---
 
