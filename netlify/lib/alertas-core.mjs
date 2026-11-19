@@ -102,8 +102,15 @@ export const links = (token, id) => ({
 });
 
 // --------------------------------------------------------------------------- e-mails
-const caixaProduto = (nome, linhas) => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin:6px 0 4px;border:1px solid ${BORDA};border-radius:12px">
-  <tr><td style="padding:18px 20px;font-family:${FONTE};color:${TEXTO}">
+// Foto do produto (JPG de fundo branco gerado no build, ver src/utils/foto-email.ts):
+// só quando o feed marca `f`, com largura e altura fixas para o Outlook não esticar.
+const fotoProduto = (prod, id, href) =>
+  prod.f
+    ? `<tr><td align="center" style="padding:18px 20px 0;line-height:0"><a href="${href}"><img src="${SITE}/images/email-produtos/${id}.jpg" width="240" height="180" alt="${esc(prod.n)}" style="display:block;width:240px;max-width:100%;height:auto;border:0"></a></td></tr>`
+    : '';
+
+const caixaProduto = (nome, linhas, foto = '') => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" bgcolor="#ffffff" style="margin:6px 0 4px;border:1px solid ${BORDA};border-radius:12px">
+  ${foto}<tr><td style="padding:18px 20px;font-family:${FONTE};color:${TEXTO}">
     <p style="margin:0 0 6px;font-size:17px;line-height:1.35;font-weight:800">${nome}</p>
     ${linhas.map((l) => `<p style="margin:0;font-size:15px;line-height:1.6;color:${SUAVE}">${l}</p>`).join('\n    ')}
   </td></tr>
@@ -129,7 +136,7 @@ export function emailConfirmacao(a, prod, token) {
     caixaProduto(nome, [
       a.tipo === 'volta' ? `Hoje: anúncio fora do ar (último preço ${reais(prod.p)})` : `Hoje: <strong style="color:${TEXTO}">${precoTxt(prod)}</strong> (conferido em ${dataBr(prod.e)})`,
       `Avisamos ${descreverCondicao(a)}.`,
-    ]),
+    ], fotoProduto(prod, a.id, l.produto)),
     botao(l.confirmar, 'Confirmar alerta'),
     '<div style="clear:both"></div>',
     p(`Não foi você? Ignore este e-mail: sem o clique, nada acontece e o pedido é apagado em ${DIAS_PENDENTE} dias.`, `font-size:14px;color:${SUAVE};margin-top:18px`),
@@ -161,7 +168,7 @@ export function emailDisparo(a, prod, token) {
   const corpo = [
     h1(volta ? 'O produto voltou' : 'O preço baixou'),
     p(volta ? 'O produto que você pediu para acompanhar voltou a ficar disponível no Mercado Livre.' : a.tipo === 'alvo' ? `O preço chegou ao valor que você pediu (${reais(a.alvo)} ou menos).` : 'O preço do produto que você acompanha caiu.'),
-    caixaProduto(nome, linhas),
+    caixaProduto(nome, linhas, fotoProduto(prod, a.id, l.produto)),
     botao(l.produto, 'Ver o produto e o histórico'),
     '<div style="clear:both"></div>',
     p(`Preço conferido no Mercado Livre em ${dataBr(prod.e)}. Os preços mudam rápido, principalmente perto da Black Friday: confira o valor no anúncio antes de comprar.`, `font-size:14px;color:${SUAVE};margin-top:18px`),
