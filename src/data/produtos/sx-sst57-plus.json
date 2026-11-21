@@ -1,0 +1,68 @@
+{
+  "nome": "Guitarra SX SST57+ Vintage Series",
+  "meli": "https://meli.la/1ST8fve",
+  "preco": 928,
+  "precoEm": "2026-11-21",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 928
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 164,
+  "imagemAlt": "Guitarra SX SST57+ Vintage Series",
+  "imagem": "/images/produtos/sx-sst57-plus.webp",
+  "ficha": [
+    [
+      "Marca",
+      "SX"
+    ],
+    [
+      "Modelo",
+      "SST57+ (Vintage Series)"
+    ],
+    [
+      "Formato",
+      "Stratocaster"
+    ],
+    [
+      "Corpo",
+      "Basswood (tília)"
+    ],
+    [
+      "Braço e escala",
+      "Maple (bordo)"
+    ],
+    [
+      "Escala",
+      "648 mm, 21 trastes"
+    ],
+    [
+      "Captadores",
+      "3 single coil"
+    ],
+    [
+      "Controles",
+      "1 volume, 2 tonalidades, chave de 5 posições"
+    ],
+    [
+      "Ponte",
+      "Tremolo"
+    ],
+    [
+      "Inclui",
+      "Bag de nylon"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 1159,
+    "off": 20,
+    "parcelas": "12x R$ 90,04",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-sx-vintage-series-sst57-stratocaster-de-tilia-2018-black-brilhante-com-diapasao-de-bordo/p/MLB18498567"
+  }
+}

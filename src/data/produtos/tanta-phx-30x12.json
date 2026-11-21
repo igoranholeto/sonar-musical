@@ -1,0 +1,48 @@
+{
+  "nome": "Tantã de mão PHX Samba Music 30 cm x 12\"",
+  "meli": "https://meli.la/24pKicy",
+  "preco": 302,
+  "precoEm": "2026-11-21",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 302
+    }
+  ],
+  "imagemAlt": "Tantã de mão PHX Samba Music 30 cm x 12\"",
+  "imagem": "/images/produtos/tanta-phx-30x12.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Samba Music PHX"
+    ],
+    [
+      "Tamanho",
+      "30 cm x 12\""
+    ],
+    [
+      "Corpo",
+      "Madeira (eucalipto)"
+    ],
+    [
+      "Pele",
+      "Cristal transparente"
+    ],
+    [
+      "Ferragens",
+      "Cromadas"
+    ],
+    [
+      "Suporte",
+      "Não incluso"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "6x R$ 50,25 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-4052766589-tantan-de-mo-samba-music-e-pagode-phx-30x12-pele-cristal-_JM"
+  }
+}

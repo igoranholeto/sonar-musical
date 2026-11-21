@@ -1,0 +1,54 @@
+{
+  "nome": "Bateria Nagano Garage Fusion (bumbo 20\")",
+  "meli": "https://meli.la/2PQ3MMS",
+  "preco": 4240,
+  "precoEm": "2026-11-21",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 4240
+    }
+  ],
+  "nota": 3.7,
+  "avaliacoes": 3,
+  "imagemAlt": "Bateria Nagano Garage Fusion (bumbo 20\")",
+  "imagem": "/images/produtos/nagano-garage-fusion.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Nagano"
+    ],
+    [
+      "Linha",
+      "Garage Fusion"
+    ],
+    [
+      "Bumbo",
+      "20 x 16\""
+    ],
+    [
+      "Surdo",
+      "14 x 14\""
+    ],
+    [
+      "Caixa",
+      "14 x 5\""
+    ],
+    [
+      "Inclui",
+      "Ferragens, pedais e banqueta"
+    ],
+    [
+      "Pratos",
+      "Não inclusos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "12x R$ 407,53",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-nagano-garage-fusion-bumbo-20-cor-modern-white/p/MLB53986074"
+  }
+}

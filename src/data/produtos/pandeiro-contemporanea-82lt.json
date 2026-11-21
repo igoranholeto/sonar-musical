@@ -1,0 +1,54 @@
+{
+  "nome": "Pandeiro Contemporânea 82LT 10\" de madeira",
+  "meli": "https://meli.la/345zTWT",
+  "preco": 230,
+  "precoEm": "2026-11-21",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 230
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 279,
+  "imagemAlt": "Pandeiro Contemporânea 82LT 10\" de madeira",
+  "imagem": "/images/produtos/pandeiro-contemporanea-82lt.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Contemporânea"
+    ],
+    [
+      "Modelo",
+      "82LT"
+    ],
+    [
+      "Tamanho",
+      "10\""
+    ],
+    [
+      "Corpo",
+      "Madeira"
+    ],
+    [
+      "Pele",
+      "Nylon leitosa"
+    ],
+    [
+      "Tarraxas",
+      "Cromadas"
+    ],
+    [
+      "Peso",
+      "520 g"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "12x R$ 22,75",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pandeiro-10-pol-madeira-contemporanea-82lt-tarraxas-cromadas-cor-natural/p/MLB25952227"
+  }
+}

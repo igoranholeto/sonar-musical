@@ -1,0 +1,56 @@
+{
+  "nome": "Kit Violão Eagle CH800 (nylon, Pro Series)",
+  "meli": "https://meli.la/1xxYbja",
+  "preco": 1959,
+  "precoEm": "2026-11-21",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 1959
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 25,
+  "imagemAlt": "Kit Violão Eagle CH800 (nylon, Pro Series)",
+  "imagem": "/images/produtos/kit-violao-eagle-ch800.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Eagle"
+    ],
+    [
+      "Modelo",
+      "CH800"
+    ],
+    [
+      "Tipo",
+      "Eletroacústico, cordas de nylon"
+    ],
+    [
+      "Corpo",
+      "Clássico com cutaway"
+    ],
+    [
+      "Tampo",
+      "Abeto"
+    ],
+    [
+      "Acabamento",
+      "Satin natural"
+    ],
+    [
+      "Kit",
+      "Acessórios Pro Series"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 2799,
+    "off": 29,
+    "parcelas": "12x R$ 188,39",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-violao-eagle-ch800-classico-nylon-pro-series-acessorios/up/MLBU4137303623"
+  }
+}

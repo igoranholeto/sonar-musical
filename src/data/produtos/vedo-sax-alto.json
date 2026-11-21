@@ -1,0 +1,60 @@
+{
+  "nome": "Saxofone Alto Vedo VD-SKS",
+  "meli": "https://meli.la/2ieq7sh",
+  "preco": 1499,
+  "precoEm": "2026-11-21",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 1499
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 34,
+  "imagemAlt": "Saxofone Alto Vedo VD-SKS",
+  "imagem": "/images/produtos/vedo-sax-alto.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Vedo"
+    ],
+    [
+      "Modelo",
+      "VD-SKS"
+    ],
+    [
+      "Tipo",
+      "Saxofone alto em Mi bemol"
+    ],
+    [
+      "Material",
+      "Latão (cobre H68)"
+    ],
+    [
+      "Acabamento",
+      "Laqueado"
+    ],
+    [
+      "Tudel",
+      "Curvo"
+    ],
+    [
+      "Comprimento",
+      "67 cm"
+    ],
+    [
+      "Estojo",
+      "Incluso, com kit de limpeza"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 1999,
+    "off": 25,
+    "parcelas": "12x R$ 145,52",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/saxofone-alto-em-mi-bemol-vedo-com-estojo-e-limpeza-laqueado/up/MLBU4297363225"
+  }
+}

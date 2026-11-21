@@ -1,0 +1,60 @@
+{
+  "nome": "Bateria Nagano Solution (ultracompacta)",
+  "meli": "https://meli.la/2qcv67E",
+  "preco": 3223,
+  "precoEm": "2026-11-21",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 3223
+    }
+  ],
+  "imagemAlt": "Bateria Nagano Solution (ultracompacta)",
+  "imagem": "/images/produtos/nagano-solution.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Nagano"
+    ],
+    [
+      "Linha",
+      "Solution"
+    ],
+    [
+      "Formato",
+      "Ultracompacta, com bag para os tambores"
+    ],
+    [
+      "Bumbo",
+      "18\""
+    ],
+    [
+      "Tom",
+      "10\""
+    ],
+    [
+      "Surdo",
+      "13\", com pés"
+    ],
+    [
+      "Caixa",
+      "12\""
+    ],
+    [
+      "Ferragens",
+      "2 estantes girafa, máquina de chimbal, pedal e banco"
+    ],
+    [
+      "Pratos",
+      "Não inclusos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "12x R$ 309,80",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-nagano-solution-white-oyster-wlc/up/MLBU5564588388"
+  }
+}

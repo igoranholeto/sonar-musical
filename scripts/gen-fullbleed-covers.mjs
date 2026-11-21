@@ -209,6 +209,16 @@ const MAP = {
   'cort-cr300-e-boa':               { kicker: 'GUITARRAS · REVIEW', l1: 'CORT CR300', l2: 'É BOA?', q: 'Les Paul flame top guitar', prefer: /les paul|flame/i, avoid: /logo|bass/i },
   'melhor-piano-digital-ate-3000-reais': { kicker: 'PIANO DIGITAL · GUIA 2026', l1: 'PIANO DIGITAL', l2: 'ATÉ R$ 3.000', q: 'Casio Privia digital piano', prefer: /digital|privia|casio|piano/i, avoid: /logo|grand|steinway|acoustic/i },
   'yamaha-p-145-e-bom':             { kicker: 'PIANO DIGITAL · REVIEW', l1: 'YAMAHA P-145', l2: 'É BOM?', q: 'Yamaha digital piano', prefer: /yamaha|piano/i, avoid: /logo|grand|motorcycle/i },
+  'melhor-microfone-sem-fio':       { kicker: 'MICROFONES · GUIA 2026', l1: 'MICROFONE', l2: 'SEM FIO', q: 'Shure wireless microphone', prefer: /microphone|wireless|shure/i, avoid: /logo|studio|condenser|podcast/i },
+  'microfone-kadosh-e-bom':         { kicker: 'MICROFONES · REVIEW', l1: 'MICROFONE KADOSH', l2: 'É BOM?', q: 'dynamic microphone on stand', prefer: /microphone/i, avoid: /logo|studio|podcast|condenser|holding|standing|singer/i },
+  'melhor-saxofone-para-iniciante': { kicker: 'SOPRO · GUIA 2026', l1: 'SAXOFONE', l2: 'PARA INICIANTE', q: 'alto saxophone', prefer: /saxophone|sax/i, avoid: /logo|stamp|statue/i },
+  'teclado-yamaha-psr-qual-comprar': { kicker: 'TECLADOS · GUIA 2026', l1: 'YAMAHA PSR', l2: 'QUAL COMPRAR?', q: 'Yamaha PSR keyboard', prefer: /psr|yamaha|keyboard/i, avoid: /logo|motorcycle|grand/i },
+  'yamaha-psr-e483-vale-a-pena':    { kicker: 'TECLADOS · REVIEW', l1: 'YAMAHA PSR-E483', l2: 'VALE A PENA?', q: 'Yamaha portable keyboard', prefer: /yamaha|keyboard/i, avoid: /logo|motorcycle|grand/i },
+  'bateria-nagano-e-boa':           { kicker: 'BATERIA · REVIEW', l1: 'BATERIA NAGANO', l2: 'É BOA?', q: 'drum kit bebop', prefer: /drum|kit/i, avoid: /logo|electronic|military|drummer/i },
+  'guitarra-sx-e-boa':              { kicker: 'GUITARRAS · REVIEW', l1: 'GUITARRA SX', l2: 'É BOA?', q: 'Stratocaster guitar body', prefer: /strat/i, avoid: /logo|bass|dylan|museum|MET/i },
+  'melhor-kit-violao-iniciante':    { kicker: 'VIOLÃO · GUIA 2026', l1: 'KIT DE VIOLÃO', l2: 'PARA INICIANTE', q: 'classical guitar nylon strings', prefer: /guitar|violão/i, avoid: /electric|logo|bass/i },
+  'melhor-pandeiro':                { kicker: 'PERCUSSÃO · GUIA 2026', l1: 'PANDEIRO', l2: 'QUAL COMPRAR?', q: 'pandeiro', prefer: /pandeiro/i, avoid: /logo/i },
+  'melhor-tanta-para-pagode':       { kicker: 'PERCUSSÃO · GUIA 2026', l1: 'TANTÃ', l2: 'PARA PAGODE', q: 'rebolo samba', prefer: /rebolo/i, avoid: /logo|djvu|sert/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

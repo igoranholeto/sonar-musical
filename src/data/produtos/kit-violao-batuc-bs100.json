@@ -1,0 +1,60 @@
+{
+  "nome": "Kit Violão Batuc BS100 Eletroacústico",
+  "meli": "https://meli.la/16tEMtL",
+  "preco": 359,
+  "precoEm": "2026-11-21",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 359
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 156,
+  "imagemAlt": "Kit Violão Batuc BS100 Eletroacústico",
+  "imagem": "/images/produtos/kit-violao-batuc-bs100.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Batuc"
+    ],
+    [
+      "Modelo",
+      "BS100 (linha Start)"
+    ],
+    [
+      "Tipo",
+      "Eletroacústico, cordas de aço"
+    ],
+    [
+      "Corpo",
+      "Dreadnought com cutaway, 38\" (7/8)"
+    ],
+    [
+      "Tampo e fundo",
+      "Basswood"
+    ],
+    [
+      "Laterais",
+      "Tília"
+    ],
+    [
+      "Eletrônica",
+      "Equalizador"
+    ],
+    [
+      "Kit",
+      "Capa e acessórios"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 999,
+    "off": 64,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletrico-iniciante-batuc-bs100-kit-completo-acessorios-cordas-aco-cutaway-38-polegadas-equalizador-cor-natural/p/MLB66394424"
+  }
+}

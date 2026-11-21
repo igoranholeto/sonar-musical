@@ -1,0 +1,60 @@
+{
+  "nome": "Guitarra SX SST Alder Series",
+  "meli": "https://meli.la/2WwSggF",
+  "preco": 1729,
+  "precoEm": "2026-11-21",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 1729
+    }
+  ],
+  "imagemAlt": "Guitarra SX SST Alder Series",
+  "imagem": "/images/produtos/sx-sst-alder.webp",
+  "ficha": [
+    [
+      "Marca",
+      "SX"
+    ],
+    [
+      "Modelo",
+      "SST/Alder (Alder Series)"
+    ],
+    [
+      "Formato",
+      "Stratocaster"
+    ],
+    [
+      "Corpo",
+      "Amieiro (alder)"
+    ],
+    [
+      "Braço e escala",
+      "Bordo"
+    ],
+    [
+      "Escala",
+      "648 mm"
+    ],
+    [
+      "Captadores",
+      "3 single coil"
+    ],
+    [
+      "Chave",
+      "5 posições"
+    ],
+    [
+      "Ponte",
+      "Tremolo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "12x R$ 166,25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-sx-alder-series-sst-alder-natural/up/MLBU4564371811"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "nome": "TEC7 LP 10 (microfone para pandeiro)",
+  "meli": "https://meli.la/2U71UK3",
+  "preco": 176,
+  "precoEm": "2026-11-21",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 176
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 8,
+  "imagemAlt": "TEC7 LP 10 (microfone para pandeiro)",
+  "imagem": "/images/produtos/tec7-lp10.webp",
+  "ficha": [
+    [
+      "Marca",
+      "TEC7"
+    ],
+    [
+      "Modelo",
+      "LP 10"
+    ],
+    [
+      "Tipo",
+      "Condensador, supercardioide"
+    ],
+    [
+      "Resposta",
+      "40 Hz a 12 kHz"
+    ],
+    [
+      "Alimentação",
+      "Bateria (não usa phantom power)"
+    ],
+    [
+      "Saída",
+      "P10"
+    ],
+    [
+      "Usos indicados",
+      "Pandeiro, repique de mão, tantã, percussão"
+    ],
+    [
+      "Peso",
+      "80 g"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 200,
+    "off": 12,
+    "parcelas": "5x R$ 35,18 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-para-pandeiro-reco-nao-usa-phantom/up/MLBU1089602689"
+  }
+}

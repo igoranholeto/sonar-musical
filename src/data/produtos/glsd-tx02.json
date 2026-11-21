@@ -1,0 +1,60 @@
+{
+  "nome": "GLSD TX02 (2 microfones de mão sem fio)",
+  "meli": "https://meli.la/1ET9TBL",
+  "preco": 669,
+  "precoEm": "2026-11-21",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 669
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 128,
+  "imagemAlt": "GLSD TX02 (2 microfones de mão sem fio)",
+  "imagem": "/images/produtos/glsd-tx02.webp",
+  "ficha": [
+    [
+      "Marca",
+      "GLSD"
+    ],
+    [
+      "Modelo",
+      "TX02"
+    ],
+    [
+      "Formato",
+      "2 microfones de mão"
+    ],
+    [
+      "Tipo",
+      "Dinâmico, cardioide"
+    ],
+    [
+      "Corpo",
+      "Liga de alumínio"
+    ],
+    [
+      "Alimentação",
+      "Pilhas AA"
+    ],
+    [
+      "Saída do receptor",
+      "XLR, com cabo P10 incluso"
+    ],
+    [
+      "Homologação Anatel",
+      "03030-25-17529"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 867,
+    "off": 22,
+    "parcelas": "10x R$ 66,86 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-duplo-sem-fio-glsd-tx02-dinamico-cardioide/up/MLBU3834798136"
+  }
+}

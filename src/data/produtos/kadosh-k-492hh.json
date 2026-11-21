@@ -1,0 +1,62 @@
+{
+  "nome": "Kadosh K-492HH (2 headsets sem fio)",
+  "meli": "https://meli.la/1vWXv1n",
+  "preco": 1235,
+  "precoEm": "2026-11-21",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 1235
+    }
+  ],
+  "nota": 4.5,
+  "avaliacoes": 68,
+  "imagemAlt": "Kadosh K-492HH (2 headsets sem fio)",
+  "imagem": "/images/produtos/kadosh-k-492hh.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Kadosh"
+    ],
+    [
+      "Modelo",
+      "K-492HH"
+    ],
+    [
+      "Formato",
+      "2 headsets com bodypack"
+    ],
+    [
+      "Cápsula",
+      "Dinâmica, cardioide (K4.9M)"
+    ],
+    [
+      "Frequência",
+      "UHF, 614,2 a 669,7 MHz"
+    ],
+    [
+      "Resposta",
+      "50 Hz a 12 kHz"
+    ],
+    [
+      "Saídas do receptor",
+      "2 XLR balanceadas e 1 P10 (mix)"
+    ],
+    [
+      "Alimentação",
+      "Pilhas nos transmissores; receptor com fonte bivolt 12 V"
+    ],
+    [
+      "Recursos",
+      "Visor LCD, sincronia por infravermelho, antenas BNC"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "12x R$ 119,94",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-duplo-kadosh-k-492hh-profissional-com-capsula-cardioide-para-igrejas-e-shows/p/MLB20989002"
+  }
+}

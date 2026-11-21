@@ -1,0 +1,62 @@
+{
+  "nome": "Bateria Nagano Beat Tangerine Matt (bumbo 16\")",
+  "meli": "https://meli.la/2bQXiZW",
+  "preco": 4229,
+  "precoEm": "2026-11-21",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 4229
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 7,
+  "imagemAlt": "Bateria Nagano Beat Tangerine Matt (bumbo 16\")",
+  "imagem": "/images/produtos/nagano-beat-tangerine.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Nagano"
+    ],
+    [
+      "Linha",
+      "Beat"
+    ],
+    [
+      "Cascos",
+      "Basswood, 7 mm"
+    ],
+    [
+      "Bumbo",
+      "16 x 14\", com elevador"
+    ],
+    [
+      "Tom",
+      "10 x 7\""
+    ],
+    [
+      "Surdo",
+      "13 x 13\", de chão"
+    ],
+    [
+      "Caixa",
+      "12 x 6\", de madeira"
+    ],
+    [
+      "Ferragens",
+      "Duplas: estante reta, girafa sobre o bumbo, máquina de chimbal, pedal e banco"
+    ],
+    [
+      "Pratos",
+      "Não inclusos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "parcelas": "10x R$ 422,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-nagano-beat-acustica-tgm-tangerine-matt-bumbo-16/p/MLB40959049"
+  }
+}

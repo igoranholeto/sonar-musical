@@ -1,0 +1,64 @@
+{
+  "nome": "Saxofone Alto Halk HAL1100G",
+  "meli": "https://meli.la/1xqojc2",
+  "preco": 2158,
+  "precoEm": "2026-11-21",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 2158
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 67,
+  "imagemAlt": "Saxofone Alto Halk HAL1100G",
+  "imagem": "/images/produtos/halk-sax-alto.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Halk"
+    ],
+    [
+      "Modelo",
+      "HAL1100G"
+    ],
+    [
+      "Tipo",
+      "Saxofone alto em Mi bemol"
+    ],
+    [
+      "Material",
+      "Latão"
+    ],
+    [
+      "Acabamento",
+      "Laqueado dourado"
+    ],
+    [
+      "Tudel",
+      "Curvo"
+    ],
+    [
+      "Altura",
+      "64 cm"
+    ],
+    [
+      "Palheta inclusa",
+      "Força 2,5"
+    ],
+    [
+      "Estojo",
+      "Incluso"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 2998,
+    "off": 28,
+    "parcelas": "10x R$ 215,86 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/saxofone-alto-halk-eb-mib-dourado-novo-com-garantia/up/MLBU727264011"
+  }
+}

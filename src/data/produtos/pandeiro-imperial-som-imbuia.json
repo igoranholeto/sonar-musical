@@ -1,0 +1,48 @@
+{
+  "nome": "Pandeiro Imperial Som de Imbuia 10\" (pele de couro)",
+  "meli": "https://meli.la/23dGCAk",
+  "preco": 184,
+  "precoEm": "2026-11-21",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 184
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 23,
+  "imagemAlt": "Pandeiro Imperial Som de Imbuia 10\" (pele de couro)",
+  "imagem": "/images/produtos/pandeiro-imperial-som-imbuia.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Imperial Som"
+    ],
+    [
+      "Tamanho",
+      "10\""
+    ],
+    [
+      "Corpo",
+      "Madeira (imbuia)"
+    ],
+    [
+      "Pele",
+      "Couro animal"
+    ],
+    [
+      "Peso",
+      "450 g"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 220,
+    "off": 16,
+    "parcelas": "6x R$ 30,72 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pandeiro-madeira-imbuia-10-polegadas-pele-couro-animal/up/MLBU4423780551"
+  }
+}

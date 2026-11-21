@@ -1,0 +1,52 @@
+{
+  "nome": "Saxofone Soprano Vedo (Si bemol)",
+  "meli": "https://meli.la/21cT4BP",
+  "preco": 1459,
+  "precoEm": "2026-11-21",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 1459
+    }
+  ],
+  "nota": 4.4,
+  "avaliacoes": 33,
+  "imagemAlt": "Saxofone Soprano Vedo (Si bemol)",
+  "imagem": "/images/produtos/vedo-sax-soprano.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Vedo"
+    ],
+    [
+      "Tipo",
+      "Saxofone soprano em Si bemol"
+    ],
+    [
+      "Material",
+      "Latão"
+    ],
+    [
+      "Acabamento",
+      "Laca dourada"
+    ],
+    [
+      "Tudel",
+      "Curvo"
+    ],
+    [
+      "Estojo",
+      "Incluso"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 1999,
+    "off": 27,
+    "parcelas": "12x R$ 141,63",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/saxofone-soprano-profissional-vedo-em-si-bemol-com-estojo/up/MLBU4316890094"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "nome": "Onistek ON-MC811 (microfone sem fio recarregável)",
+  "meli": "https://meli.la/1kkTcvb",
+  "preco": 69,
+  "precoEm": "2026-11-21",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-21",
+      "preco": 69
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 2254,
+  "imagemAlt": "Onistek ON-MC811 (microfone sem fio recarregável)",
+  "imagem": "/images/produtos/onistek-on-mc811.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Onistek"
+    ],
+    [
+      "Modelo",
+      "ON-MC811"
+    ],
+    [
+      "Formato",
+      "1 microfone de mão"
+    ],
+    [
+      "Tipo",
+      "Dinâmico, cardioide"
+    ],
+    [
+      "Receptor",
+      "Plugue P10 recarregável, com adaptador"
+    ],
+    [
+      "Alimentação",
+      "Bateria de lítio recarregável (cabo USB incluso)"
+    ],
+    [
+      "Usos indicados",
+      "Aula, igreja, karaokê, palestra"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-21",
+    "antes": 100,
+    "off": 31,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-dinamico-recarregavel-display-digital/up/MLBU1443016845"
+  }
+}
