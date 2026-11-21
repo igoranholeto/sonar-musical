@@ -2,7 +2,7 @@
   "nome": "Malibu Abacaxi 23SP",
   "meli": "https://meli.la/24ughBK",
   "preco": 253,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "ukulele",
   "historico": [
     {
@@ -26,6 +26,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 275,
+    "off": 8,
     "parcelas": "6x R$ 42,14 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-acustico-malibu-abacaxi-23sp-sapele-concerto-c-capa-cor-marrom/p/MLB50913111"

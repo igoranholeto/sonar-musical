@@ -1,20 +1,24 @@
 {
   "nome": "Casio CT-X3000",
   "meli": "https://meli.la/29L59Lk",
-  "preco": 2099,
-  "precoEm": "2026-11-19",
+  "preco": 2175,
+  "precoEm": "2026-11-21",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 2099
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 2175
     }
   ],
   "imagemAlt": "Casio CT-X3000",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 209,90 sem juros",
+    "parcelas": "12x R$ 209,05",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-alta-gama-ct-x3000-61-teclas-preto/p/MLB16117899"
   },

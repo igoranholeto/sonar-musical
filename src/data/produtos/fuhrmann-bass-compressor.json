@@ -1,8 +1,8 @@
 {
   "nome": "Fuhrmann Bass Compressor",
   "meli": "https://meli.la/2PkLAz1",
-  "preco": 318,
-  "precoEm": "2026-11-19",
+  "preco": 335,
+  "precoEm": "2026-11-21",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 318
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 335
     }
   ],
   "imagem": "/images/produtos/fuhrmann-bass-compressor.webp",
@@ -23,8 +27,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "pix": true,
-    "cartao": 335,
+    "antes": 442,
+    "off": 24,
     "parcelas": "6x R$ 55,83 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeitos-bass-compressor-fuhrmann/p/MLB17511222"

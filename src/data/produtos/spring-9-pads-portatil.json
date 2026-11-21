@@ -2,7 +2,7 @@
   "nome": "Bateria eletrônica Spring 9 pads (portátil)",
   "meli": "https://meli.la/2BkLNMR",
   "preco": 276,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "bateria",
   "historico": [
     {
@@ -30,6 +30,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 380,
+    "off": 27,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-spring-9-pads-usb-midi-portatil-completa-preta/p/MLB26387879"

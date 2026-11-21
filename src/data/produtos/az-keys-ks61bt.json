@@ -1,20 +1,26 @@
 {
   "nome": "AZ Keys Sense KS61BT",
   "meli": "https://meli.la/1VPdMsd",
-  "preco": 600,
-  "precoEm": "2026-11-19",
+  "preco": 513,
+  "precoEm": "2026-11-21",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 600
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 513
     }
   ],
   "imagemAlt": "AZ Keys Sense KS61BT",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 58,02",
+    "antes": 857,
+    "off": 40,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-az-keys-sense-ks61bt-com-61-teclas-sensiveis-bluetooth-e-midi-usb/p/MLB49256662"
   },

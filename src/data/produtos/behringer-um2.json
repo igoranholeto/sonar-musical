@@ -1,8 +1,8 @@
 {
   "nome": "Behringer UM2",
   "meli": "https://meli.la/2QkAmHU",
-  "preco": 399,
-  "precoEm": "2026-11-19",
+  "preco": 368,
+  "precoEm": "2026-11-21",
   "categoria": "interface",
   "historico": [
     {
@@ -40,13 +40,17 @@
     {
       "data": "2026-11-19",
       "preco": 399
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 368
     }
   ],
   "imagemAlt": "Behringer UM2",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 39,03",
+    "parcelas": "7x R$ 52,57 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-behringer-u-phoria-um2-preta/p/MLB21643134"
   },

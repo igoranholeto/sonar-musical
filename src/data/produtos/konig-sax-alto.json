@@ -1,8 +1,8 @@
 {
   "nome": "Sax Alto Konig (Mi bemol)",
   "meli": "https://meli.la/1WT2K2z",
-  "preco": 1239,
-  "precoEm": "2026-11-19",
+  "preco": 1279,
+  "precoEm": "2026-11-21",
   "categoria": "sopro",
   "historico": [
     {
@@ -12,12 +12,18 @@
     {
       "data": "2026-11-18",
       "preco": 1239
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1279
     }
   ],
   "imagemAlt": "Sax Alto Konig (Mi bemol)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
+    "antes": 2484,
+    "off": 48,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/sax-alto-konig-eb-dourado-completo-com-estojo-boquilha/up/MLBU3019553509"

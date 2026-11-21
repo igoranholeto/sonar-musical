@@ -1,8 +1,8 @@
 {
   "nome": "Meteoro Space Junior 35GS",
   "meli": "https://meli.la/2RqXrTp",
-  "preco": 501,
-  "precoEm": "2026-11-19",
+  "preco": 471,
+  "precoEm": "2026-11-21",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-18",
       "preco": 501
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 471
     }
   ],
   "imagem": "/images/produtos/meteoro-space-junior-35gs.webp",
@@ -27,9 +31,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 523,
+    "off": 10,
     "pix": true,
-    "cartao": 545,
-    "parcelas": "10x R$ 54,50 sem juros",
+    "cartao": 523,
+    "parcelas": "10x R$ 52,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-combo-meteoro-space-junior-35gs-35-w-2-canais-preto/p/MLB19971068"
   },

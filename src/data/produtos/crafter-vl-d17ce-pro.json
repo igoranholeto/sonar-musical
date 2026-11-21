@@ -1,8 +1,8 @@
 {
   "nome": "Crafter VL D-17CE Pro",
   "meli": "https://meli.la/1XFmnqF",
-  "preco": 4059,
-  "precoEm": "2026-11-19",
+  "preco": 4399,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-18",
       "preco": 4059
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 4399
     }
   ],
   "nota": 5,
@@ -45,7 +49,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 390,14",
+    "parcelas": "10x R$ 439,98 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-folk-cutway-aco-crafter-vl-d-17ce-pro-com-bag-vl-pro/p/MLB35778478"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Monitor Mackie CR3.5 (par)",
   "meli": "https://meli.la/2VT2AJX",
-  "preco": 1002,
-  "precoEm": "2026-11-19",
+  "preco": 1030,
+  "precoEm": "2026-11-21",
   "categoria": "estudio",
   "historico": [
     {
@@ -36,13 +36,17 @@
     {
       "data": "2026-11-19",
       "preco": 1002
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1030
     }
   ],
   "imagemAlt": "Monitor Mackie CR3.5 (par)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 97,29",
+    "parcelas": "12x R$ 99,99",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/monitor-de-audio-cr35-par-mackie/p/MLB46187367"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GRX120SP",
   "meli": "https://meli.la/1E6WkTM",
-  "preco": 2180,
-  "precoEm": "2026-11-19",
+  "preco": 2116,
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,13 +12,19 @@
     {
       "data": "2026-11-19",
       "preco": 2180
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 2116
     }
   ],
   "imagemAlt": "Ibanez GRX120SP",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 218,05 sem juros",
+    "antes": 2727,
+    "off": 22,
+    "parcelas": "10x R$ 211,64 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-ibanez-gio-grx120sp-noble-gray-metallic-matte/p/MLB66910004"
   },

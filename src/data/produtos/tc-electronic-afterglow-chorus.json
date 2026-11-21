@@ -1,8 +1,8 @@
 {
   "nome": "TC Electronic Afterglow Chorus",
   "meli": "https://meli.la/1jU6fR3",
-  "preco": 400,
-  "precoEm": "2026-11-19",
+  "preco": 408,
+  "precoEm": "2026-11-21",
   "categoria": "pedal",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-11",
       "preco": 400
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 408
     }
   ],
   "imagem": "/images/produtos/tc-electronic-afterglow-chorus.webp",
@@ -23,7 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 39,12",
+    "parcelas": "8x R$ 51 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-chorus-tc-electronic-afterglow-analogo-para-guitarra-amarelo/p/MLB21789161"
   },

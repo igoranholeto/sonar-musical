@@ -1,8 +1,8 @@
 {
   "nome": "Cavaquinho Giannini Start CS-14 EP",
   "meli": "https://meli.la/18jKQST",
-  "preco": 392,
-  "precoEm": "2026-11-19",
+  "preco": 372,
+  "precoEm": "2026-11-21",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -12,13 +12,19 @@
     {
       "data": "2026-11-19",
       "preco": 392
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 372
     }
   ],
   "imagemAlt": "Cavaquinho Giannini Start CS-14 EP",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 38,35",
+    "antes": 700,
+    "off": 46,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-giannini-eletrico-start-cs-14-ep-black/p/MLB24776613"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Cort G280 Select",
   "meli": "https://meli.la/2XiAL8e",
-  "preco": 3743,
-  "precoEm": "2026-11-19",
+  "preco": 4024,
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-18",
       "preco": 3743
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 4024
     }
   ],
   "nota": 4.9,
@@ -33,7 +37,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 359,76",
+    "parcelas": "12x R$ 386,82",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-cort-g280-select-6-cordas-ambar-stratocaster-tremolo/p/MLB20287575"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start S-14",
   "meli": "https://meli.la/1r5izbe",
-  "preco": 497,
-  "precoEm": "2026-11-19",
+  "preco": 489,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-16",
       "preco": 497
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 489
     }
   ],
   "imagem": "/images/produtos/giannini-start-s-14.webp",
@@ -31,7 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "9x R$ 55,21 sem juros",
+    "parcelas": "12x R$ 47,29",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-aco-giannini-s-14-start-estudo-cor-preto-orientacao-da-mao-destro/p/MLB70068568"
   },

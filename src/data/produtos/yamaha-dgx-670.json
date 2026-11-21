@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha DGX-670 (piano digital)",
-  "meli": "https://meli.la/2ZGs83v",
-  "preco": 9779,
-  "precoEm": "2026-11-19",
+  "meli": "https://meli.la/1vT2yGy",
+  "preco": 10999,
+  "precoEm": "2026-11-21",
   "categoria": "piano",
   "historico": [
     {
@@ -12,15 +12,19 @@
     {
       "data": "2026-11-18",
       "preco": 9779
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 10999
     }
   ],
   "imagemAlt": "Yamaha DGX-670 (piano digital)",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-18",
-    "parcelas": "10x R$ 977,90 sem juros",
-    "freteGratis": false,
-    "catalogo": "https://www.mercadolivre.com.br/piano-digital-yamaha-dgx-670b-preto-com-movel-e-pedais/up/MLBU3711245964"
+    "desde": "2026-11-21",
+    "parcelas": "10x R$ 1.099 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-yamaha-dgx670-com-estante-l300b-dgx-670-e-pedal-lp1b-cor-preto-110v220v/p/MLB27596092"
   },
   "ficha": [
     [

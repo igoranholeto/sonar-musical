@@ -1,8 +1,8 @@
 {
   "nome": "Audient iD4 MkII",
   "meli": "https://meli.la/1LRg4PJ",
-  "preco": 1543,
-  "precoEm": "2026-11-19",
+  "preco": 1580,
+  "precoEm": "2026-11-21",
   "categoria": "interface",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-17",
       "preco": 1543
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1580
     }
   ],
   "imagem": "/images/produtos/audient-id4-mkii.webp",
@@ -39,7 +43,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 154,31 sem juros",
+    "antes": 2307,
+    "off": 31,
+    "parcelas": "10x R$ 158,02 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/audient-id4-mkii-usb-c-audio-interface-class-a-preamp/p/MLB2022537015"
   },

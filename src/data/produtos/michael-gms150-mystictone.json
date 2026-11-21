@@ -2,7 +2,7 @@
   "nome": "Michael Mystictone GMS150",
   "meli": "https://meli.la/1oYqfqr",
   "preco": 1509,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -21,6 +21,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1677,
+    "off": 9,
     "parcelas": "10x R$ 150,95 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-michael-mystictone-gms150-sub-ssh-al-destro-sunburst-roasted-maple/p/MLB75235371"

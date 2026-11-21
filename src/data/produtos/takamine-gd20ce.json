@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GD20CE",
   "meli": "https://meli.la/2gyD5HG",
-  "preco": 3524,
-  "precoEm": "2026-11-19",
+  "preco": 3799,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-17",
       "preco": 3524
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 3799
     }
   ],
   "nota": 4.8,
@@ -37,7 +41,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 352,49 sem juros",
+    "parcelas": "10x R$ 379,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-takamine-g-series-gd20ce-ns-gd20ce-ns-para-destros-natural-ovangkol/p/MLB15097909"
   },

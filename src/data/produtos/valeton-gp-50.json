@@ -1,8 +1,8 @@
 {
   "nome": "Valeton GP-50",
   "meli": "https://meli.la/2r1fxwv",
-  "preco": 899,
-  "precoEm": "2026-11-19",
+  "preco": 757,
+  "precoEm": "2026-11-21",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-19",
       "preco": 899
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 757
     }
   ],
   "imagem": "/images/produtos/valeton-gp-50.webp",
@@ -39,7 +43,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 86,93",
+    "antes": 814,
+    "off": 7,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-valeton-gp50-ir-loader-nam-multiefeitos-preto/p/MLB65366468"
   },

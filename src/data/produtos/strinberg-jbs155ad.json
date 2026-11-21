@@ -2,7 +2,7 @@
   "nome": "Strinberg JBS155AD 5 cordas",
   "meli": "https://meli.la/2FF1pmj",
   "preco": 2015,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "baixo",
   "historico": [
     {
@@ -33,6 +33,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 2799,
+    "off": 28,
     "parcelas": "10x R$ 201,53 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-strinberg-jbs155ad-5-cordas-acabamento-do-corpo-brilhante-cor-preto-orientacao-da-mao-destro/p/MLB46664087"

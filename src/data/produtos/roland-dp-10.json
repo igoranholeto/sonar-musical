@@ -1,8 +1,8 @@
 {
   "nome": "Pedal de Sustain Roland DP-10",
   "meli": "https://meli.la/1RzwbDd",
-  "preco": 400,
-  "precoEm": "2026-11-19",
+  "preco": 408,
+  "precoEm": "2026-11-21",
   "categoria": "acessorio",
   "historico": [
     {
@@ -24,13 +24,17 @@
     {
       "data": "2026-11-19",
       "preco": 400
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 408
     }
   ],
   "imagemAlt": "Pedal de Sustain Roland DP-10",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 39,09",
+    "parcelas": "12x R$ 39,45",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-sustain-roland-dp10-1-ano-de/p/MLB27040494"
   },

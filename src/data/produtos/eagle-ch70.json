@@ -1,8 +1,8 @@
 {
   "nome": "Eagle CH70 Mini Jumbo",
   "meli": "https://meli.la/2pZA7wY",
-  "preco": 1454,
-  "precoEm": "2026-11-19",
+  "preco": 1382,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 1454
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1382
     }
   ],
   "imagemAlt": "Eagle CH70 Mini Jumbo",
@@ -23,6 +27,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1803,
+    "off": 23,
+    "pix": true,
+    "cartao": 1454,
     "parcelas": "10x R$ 145,49 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eagle-ch70-yb-mini-jumbo-eletroacustico-com-bag/p/MLB80690170"

@@ -2,7 +2,7 @@
   "nome": "Cort CR300 (Les Paul)",
   "meli": "https://meli.la/2yBFVNo",
   "preco": 6938,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -67,6 +67,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-18",
+    "antes": 9999,
+    "off": 30,
     "parcelas": "12x R$ 666,92",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-cort-les-paul-cr-profissional-estudio-palco-show-de/up/MLBU3812817411"

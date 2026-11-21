@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha CGX122MC",
   "meli": "https://meli.la/1kXkYE5",
-  "preco": 3656,
-  "precoEm": "2026-11-19",
+  "preco": 3679,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-19",
       "preco": 3656
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 3679
     }
   ],
   "imagemAlt": "Yamaha CGX122MC",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 365,69 sem juros",
+    "parcelas": "10x R$ 367,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-yamaha-eletrico-cgx122mc-nylon-natural/p/MLB27561024"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Boss DS-1",
   "meli": "https://meli.la/1b1fgdS",
-  "preco": 619,
-  "precoEm": "2026-11-19",
+  "preco": 549,
+  "precoEm": "2026-11-21",
   "categoria": "pedal",
   "historico": [
     {
@@ -44,6 +44,10 @@
     {
       "data": "2026-11-19",
       "preco": 619
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 549
     }
   ],
   "imagem": "/images/produtos/boss-ds-1.webp",
@@ -51,7 +55,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 59,86",
+    "antes": 649,
+    "off": 15,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-distortion-ds-1/p/MLB17436041"
   },

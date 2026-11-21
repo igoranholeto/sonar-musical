@@ -2,7 +2,7 @@
   "nome": "Gaita Orleans Stone em Dó",
   "meli": "https://meli.la/1kQ93jX",
   "preco": 43,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "sopro",
   "historico": [
     {
@@ -14,6 +14,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 73,
+    "off": 40,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/gaita-boca-harmonica-orleans-stone-diatonica-c-do-10-furos/p/MLB32026218"
   },

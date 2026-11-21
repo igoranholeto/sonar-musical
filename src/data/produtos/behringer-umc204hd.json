@@ -1,8 +1,8 @@
 {
   "nome": "Behringer U-Phoria UMC204HD",
   "meli": "https://meli.la/1NM4Rto",
-  "preco": 994,
-  "precoEm": "2026-11-19",
+  "preco": 1058,
+  "precoEm": "2026-11-21",
   "categoria": "interface",
   "historico": [
     {
@@ -24,13 +24,17 @@
     {
       "data": "2026-11-19",
       "preco": 994
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1058
     }
   ],
   "imagemAlt": "Behringer U-Phoria UMC204HD",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 96,49",
+    "parcelas": "10x R$ 105,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-u-phoria-umc204hd-cor-preta-behringer/p/MLB24474693"
   },

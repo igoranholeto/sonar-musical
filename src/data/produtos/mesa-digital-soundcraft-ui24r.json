@@ -1,8 +1,8 @@
 {
   "nome": "Mesa digital Soundcraft Ui24R",
   "meli": "https://meli.la/1CMrQ6N",
-  "preco": 4650,
-  "precoEm": "2026-11-19",
+  "preco": 4283,
+  "precoEm": "2026-11-21",
   "categoria": "estudio",
   "historico": [
     {
@@ -32,13 +32,19 @@
     {
       "data": "2026-11-19",
       "preco": 4650
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 4283
     }
   ],
   "imagemAlt": "Mesa digital Soundcraft Ui24R",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 465 sem juros",
+    "antes": 6299,
+    "off": 32,
+    "parcelas": "12x R$ 411,70",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-digital-soundcraft-ui24r-24-canais-rack-profissional/p/MLB15846900"
   },

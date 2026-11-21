@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Performance GSF-1D CEQ",
   "meli": "https://meli.la/1uXeLXQ",
-  "preco": 684,
-  "precoEm": "2026-11-19",
+  "preco": 602,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-18",
       "preco": 684
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 602
     }
   ],
   "imagem": "/images/produtos/giannini-performance-gsf-1d-ceq.webp",
@@ -41,6 +45,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1000,
+    "off": 39,
+    "pix": true,
+    "cartao": 684,
     "parcelas": "10x R$ 68,43 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-performance-gsf-1d-ceq-natural/p/MLB16023220"

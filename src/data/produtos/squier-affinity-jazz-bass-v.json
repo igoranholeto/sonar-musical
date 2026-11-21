@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Jazz Bass V",
   "meli": "https://meli.la/2cRGbUY",
-  "preco": 3989,
-  "precoEm": "2026-11-19",
+  "preco": 3797,
+  "precoEm": "2026-11-21",
   "categoria": "baixo",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-19",
       "preco": 3989
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 3797
     }
   ],
   "imagem": "/images/produtos/squier-affinity-jazz-bass-v.webp",
@@ -59,7 +63,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 398,93 sem juros",
+    "parcelas": "10x R$ 379,71 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-fender-squier-jazz-bass-v-affinity-5-cordas-sunburst/p/MLB59895551"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Millenium 5",
   "meli": "https://meli.la/1uBUo3Q",
-  "preco": 1627,
-  "precoEm": "2026-11-19",
+  "preco": 1431,
+  "precoEm": "2026-11-21",
   "categoria": "baixo",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-13",
       "preco": 1627
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1431
     }
   ],
   "nota": 4.8,
@@ -33,7 +37,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 156,38",
+    "antes": 3600,
+    "off": 60,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-eletrico-tagima-millenium-5-cordas-preto-soap-bar-hh-maple/p/MLB24099753"
   },

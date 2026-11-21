@@ -1,8 +1,8 @@
 {
   "nome": "Akai MPK Mini MK3",
   "meli": "https://meli.la/16Gd8oe",
-  "preco": 574,
-  "precoEm": "2026-11-19",
+  "preco": 600,
+  "precoEm": "2026-11-21",
   "categoria": "controlador",
   "historico": [
     {
@@ -32,13 +32,19 @@
     {
       "data": "2026-11-19",
       "preco": 574
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 600
     }
   ],
   "imagemAlt": "Akai MPK Mini MK3",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 57,35 sem juros",
+    "antes": 750,
+    "off": 20,
+    "parcelas": "10x R$ 59,99 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/controlador-midi-akai-mpk-mini-mk3-c-25-teclas-e-8-pads-para-producao-musical/p/MLB22305134"
   },

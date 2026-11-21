@@ -1,20 +1,26 @@
 {
   "nome": "Monitor IK Multimedia iLoud Micro",
   "meli": "https://meli.la/2swr56J",
-  "preco": 2941,
-  "precoEm": "2026-11-19",
+  "preco": 2913,
+  "precoEm": "2026-11-21",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 2941
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 2913
     }
   ],
   "imagemAlt": "Monitor IK Multimedia iLoud Micro",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 294,16 sem juros",
+    "antes": 3096,
+    "off": 5,
+    "parcelas": "10x R$ 291,40 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-ik-multimedia-iloud-micro-bluetooth/p/MLB26717163"
   },

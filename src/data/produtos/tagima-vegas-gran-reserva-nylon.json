@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Vegas Gran Reserva Nylon",
   "meli": "https://meli.la/2VkjH92",
-  "preco": 1154,
-  "precoEm": "2026-11-19",
+  "preco": 1211,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-17",
       "preco": 1154
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1211
     }
   ],
   "imagem": "/images/produtos/tagima-vegas-gran-reserva-nylon.webp",
@@ -19,7 +23,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "12x R$ 112,11",
+    "antes": 1893,
+    "off": 36,
+    "parcelas": "12x R$ 117,63",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-vegas-gran-reserva-nylon-grand-auditorium-com-cutaway/p/MLB67462032"
   },

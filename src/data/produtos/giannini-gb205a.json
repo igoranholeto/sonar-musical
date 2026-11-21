@@ -2,7 +2,7 @@
   "nome": "Giannini GB205A (5 cordas)",
   "meli": "https://meli.la/2AxzSYC",
   "preco": 1181,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "baixo",
   "historico": [
     {
@@ -33,6 +33,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 3007,
+    "off": 60,
     "parcelas": "10x R$ 118,10 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-5-cordas-ativo-giannini-gb205a-preto-verniz-brilhante/p/MLB28450172"

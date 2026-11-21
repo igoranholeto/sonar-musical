@@ -1,8 +1,8 @@
 {
   "nome": "Fender Blues Junior IV",
   "meli": "https://meli.la/2GyrobK",
-  "preco": 6906,
-  "precoEm": "2026-11-19",
+  "preco": 7113,
+  "precoEm": "2026-11-21",
   "categoria": "amplificador",
   "imagem": "/images/produtos/fender-blues-junior-iv.webp",
   "imagemAlt": "Fender Blues Junior IV",
@@ -58,12 +58,18 @@
     {
       "data": "2026-11-19",
       "preco": 6906
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 7113
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 663,82",
+    "antes": 7528,
+    "off": 5,
+    "parcelas": "10x R$ 711,37 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fender-blues-junior-iv-guitar-amplifier-black-with-2-ye/p/MLB2048949591"
   },

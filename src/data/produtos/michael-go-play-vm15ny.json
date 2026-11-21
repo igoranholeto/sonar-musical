@@ -1,8 +1,8 @@
 {
   "nome": "Michael Go Play VM15NY",
   "meli": "https://meli.la/2gu2NW5",
-  "preco": 427,
-  "precoEm": "2026-11-19",
+  "preco": 449,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-19",
       "preco": 427
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 449
     }
   ],
   "nota": 4.7,
@@ -41,8 +45,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "pix": true,
-    "cartao": 449,
+    "antes": 1500,
+    "off": 70,
     "parcelas": "8x R$ 56,12 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-michael-go-play-vm15ny-preto-cordas-nailon-44/p/MLB16060674"

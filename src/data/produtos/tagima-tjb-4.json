@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TJB-4",
   "meli": "https://meli.la/2ZdvuHE",
-  "preco": 1634,
-  "precoEm": "2026-11-19",
+  "preco": 1501,
+  "precoEm": "2026-11-21",
   "categoria": "baixo",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-18",
       "preco": 1634
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1501
     }
   ],
   "nota": 5,
@@ -45,9 +49,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 2216,
+    "off": 32,
     "pix": true,
-    "cartao": 1720,
-    "parcelas": "10x R$ 172,01 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-tagima-tjb4-s-4-cordas-jazz-bass-owh-cor-olympic-white-orientacao-da-mao-destro/p/MLB24874275"
   },

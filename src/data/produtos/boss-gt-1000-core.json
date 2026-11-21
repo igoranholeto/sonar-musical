@@ -1,8 +1,8 @@
 {
   "nome": "Boss GT-1000 Core",
   "meli": "https://meli.la/1DjtHob",
-  "preco": 5241,
-  "precoEm": "2026-11-19",
+  "preco": 5367,
+  "precoEm": "2026-11-21",
   "categoria": "pedaleira",
   "imagem": "/images/produtos/boss-gt-1000-core.webp",
   "imagemAlt": "Boss GT-1000 Core",
@@ -26,12 +26,16 @@
     {
       "data": "2026-11-17",
       "preco": 5241
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 5367
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 524,17 sem juros",
+    "parcelas": "10x R$ 536,78 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/boss-gt-1000core-multi-effects-processor-guitar/p/MLB2058854609"
   },

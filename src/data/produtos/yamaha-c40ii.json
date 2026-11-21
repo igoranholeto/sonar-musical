@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha C40II",
   "meli": "https://meli.la/1NqR7Cd",
-  "preco": 980,
-  "precoEm": "2026-11-19",
+  "preco": 889,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-19",
       "preco": 980
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 889
     }
   ],
   "imagemAlt": "Yamaha C40II",
@@ -31,7 +35,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 95,13",
+    "parcelas": "12x R$ 85,97",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-c40ii-c40-para-destros-natural/p/MLB16068101"
   },

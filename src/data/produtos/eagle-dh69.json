@@ -1,13 +1,17 @@
 {
   "nome": "Eagle DH69 Clássico com Capa",
   "meli": "https://meli.la/2r6oW2t",
-  "preco": 1250,
-  "precoEm": "2026-11-19",
+  "preco": 1150,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 1250
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1150
     }
   ],
   "nota": 4.6,
@@ -17,6 +21,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1250,
+    "off": 8,
+    "pix": true,
+    "cartao": 1250,
     "parcelas": "10x R$ 125 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eagle-dh69-classico-nylon-mogno-pro-series-capa-cor-vintage-orientacao-da-mao-destro/p/MLB34143415"

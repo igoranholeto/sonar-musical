@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Tank-B (baixo)",
   "meli": "https://meli.la/2pon4vV",
-  "preco": 520,
-  "precoEm": "2026-11-19",
+  "preco": 430,
+  "precoEm": "2026-11-21",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -16,13 +16,17 @@
     {
       "data": "2026-11-19",
       "preco": 520
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 430
     }
   ],
   "imagemAlt": "M-Vave Tank-B (baixo)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-19",
-    "parcelas": "12x R$ 50,28",
+    "parcelas": "12x R$ 41,58",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-multi-efeitos-cuvave-tank-b-para-baixo-c-36-efeitos-e-bluetooth/p/MLB40550778"
   },

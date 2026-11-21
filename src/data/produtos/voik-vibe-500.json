@@ -1,13 +1,17 @@
 {
   "nome": "Voik VIBE-500 Nitro Core",
-  "meli": "https://meli.la/1iKqkbb",
-  "preco": 1685,
-  "precoEm": "2026-11-19",
+  "meli": "https://meli.la/2DHazP6",
+  "preco": 1686,
+  "precoEm": "2026-11-21",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-10",
       "preco": 1685
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1686
     }
   ],
   "nota": 4.8,
@@ -16,10 +20,12 @@
   "imagem": "/images/produtos/voik-vibe-500.webp",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$ 161,96",
+    "desde": "2026-11-21",
+    "antes": 3351,
+    "off": 49,
+    "parcelas": "12x R$ 162,05",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-voik-vibe-500-nitro-core-midi-usb-7-pecas-caixa-mesh-15-kits-silenciosa-completa-com-banco-fone-baqueta-para-iniciantes-e-drums-series-cor-preto-bivolt-110v220v/p/MLB47365552"
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-voik-vibe-500-completa-para-iniciantes/up/MLBU2183705849"
   },
   "ficha": [
     [

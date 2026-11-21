@@ -1,8 +1,8 @@
 {
   "nome": "Gaita Hohner Blues Harp 532/20 (Dó)",
   "meli": "https://meli.la/2ns3yNW",
-  "preco": 388,
-  "precoEm": "2026-11-19",
+  "preco": 416,
+  "precoEm": "2026-11-21",
   "categoria": "sopro",
   "historico": [
     {
@@ -36,13 +36,19 @@
     {
       "data": "2026-11-19",
       "preco": 388
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 416
     }
   ],
   "imagemAlt": "Gaita Hohner Blues Harp 532/20 (Dó)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "12x R$ 37,97",
+    "antes": 499,
+    "off": 16,
+    "parcelas": "8x R$ 52 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/gaita-harmonica-diatonica-hohner-blues-harp-53220-c-10-furos-do/p/MLB28682110"
   },

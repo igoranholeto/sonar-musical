@@ -1,8 +1,8 @@
 {
   "nome": "Valeton GP-200LT",
   "meli": "https://meli.la/1Q9MB2D",
-  "preco": 1685,
-  "precoEm": "2026-11-19",
+  "preco": 1599,
+  "precoEm": "2026-11-21",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -44,6 +44,10 @@
     {
       "data": "2026-11-19",
       "preco": 1685
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1599
     }
   ],
   "imagem": "/images/produtos/valeton-gp-200lt.webp",
@@ -51,7 +55,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 162,02",
+    "parcelas": "12x R$ 153,69",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-valeton-gp-200lt-multi-efeitos-usb-c-portatil-preta-240-efeitos/p/MLB54207131"
   },

@@ -2,7 +2,7 @@
   "nome": "D'Addario EXL220 para baixo",
   "meli": "https://meli.la/2DZUgH6",
   "preco": 141,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "cordas",
   "historico": [
     {
@@ -23,6 +23,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 170,
+    "off": 16,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-daddario-para-contrabaixo-4-cordas-exl220/p/MLB21325946"
   },

@@ -2,7 +2,7 @@
   "nome": "Fender Player II Stratocaster",
   "meli": "https://meli.la/1fxUt7H",
   "preco": 8768,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -45,6 +45,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 9230,
+    "off": 5,
     "parcelas": "10x R$ 876,85 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-player-ii-stratocaster-maple-fingerboard-destro-azul-bordo/p/MLB40457164"

@@ -1,8 +1,8 @@
 {
   "nome": "Mosky ISO-10 fonte isolada",
   "meli": "https://meli.la/2cJQAxQ",
-  "preco": 249,
-  "precoEm": "2026-11-19",
+  "preco": 254,
+  "precoEm": "2026-11-21",
   "categoria": "acessorio",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-17",
       "preco": 249
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 254
     }
   ],
   "imagem": "/images/produtos/mosky-iso-10-fonte-isolada.webp",
@@ -43,9 +47,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 41,42 sem juros",
+    "antes": 325,
+    "off": 21,
+    "parcelas": "6x R$ 42,42 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/hc-fonte-de-alimentacao-isolada-10-saidas-para-pedais-de-gu/p/MLB2058793559"
+    "catalogo": "https://www.mercadolivre.com.br/b-fonte-de-alimentacao-isolada-10-saidas-para-pedais-de-gui/p/MLB2058793559"
   },
   "ficha": [
     [

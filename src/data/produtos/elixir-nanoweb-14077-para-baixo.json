@@ -2,7 +2,7 @@
   "nome": "Elixir Nanoweb 14077 para baixo",
   "meli": "https://meli.la/2DoJSgv",
   "preco": 419,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "cordas",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 549,
+    "off": 23,
     "parcelas": "12x R$ 40,51",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-para-contrabaixo-4-cordas-elixir-nanoweb-045-105/p/MLB22412335"

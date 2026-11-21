@@ -1,8 +1,8 @@
 {
   "nome": "Monitor Yamaha HS5 (par)",
   "meli": "https://meli.la/12eoGqy",
-  "preco": 3574,
-  "precoEm": "2026-11-19",
+  "preco": 3653,
+  "precoEm": "2026-11-21",
   "categoria": "estudio",
   "historico": [
     {
@@ -16,13 +16,19 @@
     {
       "data": "2026-11-18",
       "preco": 3574
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 3653
     }
   ],
   "imagemAlt": "Monitor Yamaha HS5 (par)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "10x R$ 357,40 sem juros",
+    "antes": 4698,
+    "off": 22,
+    "parcelas": "10x R$ 365,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/yamaha-hs-hs5-monitor-de-studio-profissional-70-w-preto/p/MLB22555723"
   },

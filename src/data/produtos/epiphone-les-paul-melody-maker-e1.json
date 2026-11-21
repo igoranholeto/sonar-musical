@@ -2,7 +2,7 @@
   "nome": "Epiphone Les Paul Melody Maker E1",
   "meli": "https://meli.la/1queqsd",
   "preco": 1551,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -22,6 +22,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1724,
+    "off": 10,
     "parcelas": "10x R$ 155,19 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-epiphone-les-paul-melody-maker-e1-azul-pacific-com-captadores-ceramic/p/MLB17460465"

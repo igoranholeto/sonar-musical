@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Performance J12 DLX 12 cordas",
   "meli": "https://meli.la/2nkegmr",
-  "preco": 1886,
-  "precoEm": "2026-11-19",
+  "preco": 1857,
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-19",
       "preco": 1886
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1857
     }
   ],
   "nota": 4.9,
@@ -29,6 +33,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 2418,
+    "off": 23,
+    "parcelas": "12x R$ 178,50",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-aco-eletroacustico-12-cordas-giannini-performance-deluxe-j12-dlx/p/MLB44196014"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave SMK-37 Pro",
   "meli": "https://meli.la/1pEL1io",
-  "preco": 512,
-  "precoEm": "2026-11-19",
+  "preco": 497,
+  "precoEm": "2026-11-21",
   "categoria": "controlador",
   "historico": [
     {
@@ -32,13 +32,19 @@
     {
       "data": "2026-11-19",
       "preco": 512
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 497
     }
   ],
   "imagemAlt": "M-Vave SMK-37 Pro",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 49,52",
+    "antes": 680,
+    "off": 26,
+    "parcelas": "12x R$ 48,06",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/controlador-midi-m-vave-smk-37-pro-com-almofada-de-bateria/p/MLB64904247"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SPS260",
   "meli": "https://meli.la/2He4cUp",
-  "preco": 1394,
-  "precoEm": "2026-11-19",
+  "preco": 1399,
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -32,13 +32,17 @@
     {
       "data": "2026-11-19",
       "preco": 1394
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1399
     }
   ],
   "imagemAlt": "Strinberg SPS260",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 135,41",
+    "parcelas": "10x R$ 139,97 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/strinberg-lps-series-sps260-les-paul/p/MLB17805303"
   },

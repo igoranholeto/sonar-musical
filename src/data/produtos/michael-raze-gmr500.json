@@ -2,7 +2,7 @@
   "nome": "Michael Raze GMR500 Headless",
   "meli": "https://meli.la/273zKiT",
   "preco": 3519,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "guitarra",
   "historico": [
     {
@@ -27,6 +27,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 4029,
+    "off": 12,
     "parcelas": "12x R$ 338,33",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-michael-raze-gmr500-matte-scarlet/up/MLBU3956778956"

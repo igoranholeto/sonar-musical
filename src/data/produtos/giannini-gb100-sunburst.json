@@ -2,7 +2,7 @@
   "nome": "Giannini GB100 Jazz Bass Sunburst",
   "meli": "https://meli.la/32i35yN",
   "preco": 949,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "baixo",
   "historico": [
     {
@@ -63,6 +63,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-18",
+    "antes": 1523,
+    "off": 37,
     "parcelas": "12x R$ 92,09",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-4-cordas-giannini-gb100-3tstt-sunburst-turtle/p/MLB24335881"

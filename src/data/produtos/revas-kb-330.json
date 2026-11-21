@@ -2,7 +2,7 @@
   "nome": "Revas KB-330 (by Roland)",
   "meli": "https://meli.la/13im2eS",
   "preco": 977,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "teclado",
   "historico": [
     {
@@ -22,6 +22,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
+    "antes": 1149,
+    "off": 15,
     "pix": true,
     "cartao": 1149,
     "parcelas": "10x R$ 114,90 sem juros",

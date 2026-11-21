@@ -2,7 +2,7 @@
   "nome": "Memphis MD-18 Folk Eletroacústico",
   "meli": "https://meli.la/2LE9VjL",
   "preco": 640.31,
-  "precoEm": "2026-11-19",
+  "precoEm": "2026-11-21",
   "categoria": "violao",
   "historico": [
     {
@@ -27,6 +27,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
+    "antes": 821,
+    "off": 22,
     "parcelas": "10x R$ 64,03 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletrico-tagima-memphis-md18-preto-md-18-md-18/p/MLB39169361"

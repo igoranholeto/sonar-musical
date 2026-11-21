@@ -1,8 +1,8 @@
 {
   "nome": "Encordoamento Strinberg SB-45 para baixo",
   "meli": "https://meli.la/2fqXcaR",
-  "preco": 49,
-  "precoEm": "2026-11-19",
+  "preco": 45,
+  "precoEm": "2026-11-21",
   "categoria": "cordas",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-19",
       "preco": 49
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 45
     }
   ],
   "imagem": "/images/produtos/encordoamento-strinberg-sb-45-para-baixo.webp",
@@ -43,6 +47,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 80,
+    "off": 43,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-strinberg-sb-45-contrabaixo-4-cordas-nickel-wound-045/p/MLB53905417"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Teclado dobrável Tomate MSY-9995",
   "meli": "https://meli.la/1Du2cD3",
-  "preco": 217,
-  "precoEm": "2026-11-19",
+  "preco": 218,
+  "precoEm": "2026-11-21",
   "categoria": "teclado",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-17",
       "preco": 217
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 218
     }
   ],
   "imagemAlt": "Teclado dobrável Tomate MSY-9995",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 21,49",
+    "antes": 380,
+    "off": 42,
+    "parcelas": "12x R$ 21,58",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-eletronico-dobravel-tomate-msy-9995-de-61-teclas-para-iniciante/p/MLB61269445"
   },

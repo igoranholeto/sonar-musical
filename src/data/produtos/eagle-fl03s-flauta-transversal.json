@@ -1,8 +1,8 @@
 {
   "nome": "Flauta Transversal Eagle FL03S",
   "meli": "https://meli.la/1yHs1qg",
-  "preco": 1124,
-  "precoEm": "2026-11-19",
+  "preco": 1109,
+  "precoEm": "2026-11-21",
   "categoria": "sopro",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-18",
       "preco": 1124
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 1109
     }
   ],
   "imagemAlt": "Flauta Transversal Eagle FL03S",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 112,49 sem juros",
+    "antes": 1399,
+    "off": 20,
+    "parcelas": "12x R$ 107,66",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-eagle-prata-fl03s-c-estojo-luxo/p/MLB36598081"
   },

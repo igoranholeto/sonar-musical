@@ -1,20 +1,26 @@
 {
   "nome": "Yamaha Arius YDP-145 (piano digital com móvel)",
   "meli": "https://meli.la/1Z1cpn9",
-  "preco": 7999,
-  "precoEm": "2026-11-19",
+  "preco": 7662,
+  "precoEm": "2026-11-21",
   "categoria": "piano",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 7999
+    },
+    {
+      "data": "2026-11-21",
+      "preco": 7662
     }
   ],
   "imagemAlt": "Yamaha Arius YDP-145 (piano digital com móvel)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "12x R$ 768,84",
+    "antes": 7899,
+    "off": 3,
+    "parcelas": "12x R$ 736,45",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/yamaha-ydp-145-piano-digital-cor-preto-com-estante-e-banco/p/MLB23005097"
   },
