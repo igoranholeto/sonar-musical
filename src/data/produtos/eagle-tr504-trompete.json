@@ -1,8 +1,8 @@
 {
   "nome": "Trompete Eagle TR504",
   "meli": "https://meli.la/1UVM1ob",
-  "preco": 1783,
-  "precoEm": "2026-11-21",
+  "preco": 1879,
+  "precoEm": "2026-11-22",
   "categoria": "sopro",
   "historico": [
     {
@@ -12,15 +12,19 @@
     {
       "data": "2026-11-15",
       "preco": 1783
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 1879
     }
   ],
   "imagemAlt": "Trompete Eagle TR504",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 3699,
-    "off": 51,
-    "parcelas": "12x R$ 171,38",
+    "antes": 2631,
+    "off": 28,
+    "parcelas": "10x R$ 188 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/trompete-eagle-tr504-l-laqueado-profissional-tr-504-estojo/p/MLB28193790"
   },

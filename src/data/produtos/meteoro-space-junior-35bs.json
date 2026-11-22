@@ -1,8 +1,8 @@
 {
   "nome": "Meteoro Space Júnior 35BS",
   "meli": "https://meli.la/2U8sB3G",
-  "preco": 594,
-  "precoEm": "2026-11-21",
+  "preco": 625,
+  "precoEm": "2026-11-22",
   "categoria": "amplificador",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 594
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 625
     }
   ],
   "imagem": "/images/produtos/meteoro-space-junior-35bs.webp",
@@ -35,10 +39,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 625,
-    "off": 5,
-    "pix": true,
-    "cartao": 625,
     "parcelas": "10x R$ 62,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-contra-baixo-meteoro-space-junior-35bs-35w-cor-preto/p/MLB19861462"

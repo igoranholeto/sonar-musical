@@ -1,8 +1,8 @@
 {
   "nome": "Cort KX100",
   "meli": "https://meli.la/1DwtDTf",
-  "preco": 1999,
-  "precoEm": "2026-11-21",
+  "preco": 2039,
+  "precoEm": "2026-11-22",
   "categoria": "guitarra",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-21",
       "preco": 1999
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 2039
     }
   ],
   "nota": 4.8,
@@ -25,7 +29,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "12x R$ 192,14",
+    "antes": 2802,
+    "off": 27,
+    "parcelas": "12x R$ 195,98",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-cort-kx-series-kx100-iron-oxide-24-trastes/p/MLB18058307"
   },

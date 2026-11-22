@@ -1,13 +1,17 @@
 {
   "nome": "Kit Yamaha PSR-E483 com suporte X, capa e pedal",
-  "meli": "https://meli.la/2vr4M2x",
-  "preco": 2607,
-  "precoEm": "2026-11-21",
+  "meli": "https://meli.la/1MGLPUh",
+  "preco": 2790,
+  "precoEm": "2026-11-22",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-21",
       "preco": 2607
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 2790
     }
   ],
   "imagemAlt": "Kit Yamaha PSR-E483 com suporte X, capa e pedal",
@@ -32,11 +36,9 @@
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-21",
-    "antes": 2688,
-    "off": 3,
-    "parcelas": "12x R$ 250,61",
+    "desde": "2026-11-22",
+    "parcelas": "12x R$ 268,17",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/kit-teclado-yamaha-psr-e483-suporte-x-capa-pedal-sustain/up/MLBU5834724894"
+    "catalogo": "https://www.mercadolivre.com.br/kit-teclado-yamaha-psr-e483-suporte-x-capa-pedal/up/MLBU3785154871"
   }
 }

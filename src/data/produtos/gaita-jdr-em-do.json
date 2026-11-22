@@ -1,8 +1,8 @@
 {
   "nome": "Gaita JDR em Dó",
   "meli": "https://meli.la/2udqYLY",
-  "preco": 32,
-  "precoEm": "2026-11-21",
+  "preco": 30,
+  "precoEm": "2026-11-22",
   "categoria": "sopro",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-21",
       "preco": 32
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 30
     }
   ],
   "imagemAlt": "Gaita JDR em Dó",

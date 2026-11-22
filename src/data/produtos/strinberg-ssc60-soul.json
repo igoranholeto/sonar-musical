@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg Soul SSC60 Nylon",
   "meli": "https://meli.la/2ey3dNL",
-  "preco": 1578,
-  "precoEm": "2026-11-21",
+  "preco": 1713,
+  "precoEm": "2026-11-22",
   "categoria": "violao",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-19",
       "preco": 1578
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 1713
     }
   ],
   "imagem": "/images/produtos/strinberg-ssc60-soul.webp",
@@ -35,9 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1854,
-    "off": 14,
-    "parcelas": "12x R$ 151,71",
+    "antes": 2295,
+    "off": 25,
+    "parcelas": "10x R$ 171,36 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-strinberg-soul-ssc60-mgs-nylon-marrom/p/MLB77301543"
   },

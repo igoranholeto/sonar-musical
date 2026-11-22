@@ -1,8 +1,8 @@
 {
   "nome": "Boss CE-5 Chorus Ensemble",
   "meli": "https://meli.la/1sTYmgw",
-  "preco": 912,
-  "precoEm": "2026-11-21",
+  "preco": 940,
+  "precoEm": "2026-11-22",
   "categoria": "pedal",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-17",
       "preco": 912
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 940
     }
   ],
   "imagem": "/images/produtos/boss-ce-5-chorus-ensemble.webp",
@@ -31,9 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1030,
-    "off": 11,
-    "parcelas": "12x R$ 88,53",
+    "antes": 990,
+    "off": 5,
+    "parcelas": "10x R$ 94 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-chorus-ensemble-ce-5-azul-celeste/p/MLB18030880"
   },

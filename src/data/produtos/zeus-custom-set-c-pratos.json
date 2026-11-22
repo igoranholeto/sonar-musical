@@ -1,8 +1,8 @@
 {
   "nome": "Kit de Pratos Zeus Custom Set C (14, 16, 20)",
   "meli": "https://meli.la/1fRWMKz",
-  "preco": 2239,
-  "precoEm": "2026-11-21",
+  "preco": 2199,
+  "precoEm": "2026-11-22",
   "categoria": "acessorio",
   "historico": [
     {
@@ -24,13 +24,19 @@
     {
       "data": "2026-11-19",
       "preco": 2239
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 2199
     }
   ],
   "imagemAlt": "Kit de Pratos Zeus Custom Set C (14, 16, 20)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 215,21",
+    "antes": 3420,
+    "off": 35,
+    "parcelas": "12x R$ 211,36",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-pratos-zeus-custom-set-c-141620-hihat-crash-ride-cbag/p/MLB26397174"
   },

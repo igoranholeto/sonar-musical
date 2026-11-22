@@ -1,8 +1,8 @@
 {
   "nome": "Memphis AD-39 Nylon",
   "meli": "https://meli.la/2GXXA6X",
-  "preco": 484,
-  "precoEm": "2026-11-21",
+  "preco": 485,
+  "precoEm": "2026-11-22",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-21",
       "preco": 484
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 485
     }
   ],
   "nota": 4.9,
@@ -25,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1000,
-    "off": 51,
-    "parcelas": "9x R$ 53,78 sem juros",
+    "parcelas": "9x R$ 53,89 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-nylon-tagima-memphis-ad-39-6-cordas-acustico-natural/p/MLB42060321"
   },

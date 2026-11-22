@@ -1,22 +1,26 @@
 {
   "nome": "Casio CT-X5000",
   "meli": "https://meli.la/2UH2p1W",
-  "preco": 2481,
-  "precoEm": "2026-11-21",
+  "preco": 2452,
+  "precoEm": "2026-11-22",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 2481
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 2452
     }
   ],
   "imagemAlt": "Casio CT-X5000",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 3283,
-    "off": 24,
-    "parcelas": "10x R$ 248,15 sem juros",
+    "antes": 3184,
+    "off": 23,
+    "parcelas": "12x R$ 235,71",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-arranjador-casio-ct-x5000-61-teclas-ctx5000/p/MLB42382728"
   },

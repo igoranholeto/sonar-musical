@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Looper Pro",
   "meli": "https://meli.la/2Zvpsf9",
-  "preco": 179,
-  "precoEm": "2026-11-21",
+  "preco": 172,
+  "precoEm": "2026-11-22",
   "categoria": "pedal",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-21",
       "preco": 179
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 172
     }
   ],
   "imagem": "/images/produtos/m-vave-looper-pro.webp",
@@ -40,7 +44,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 260,
-    "off": 31,
+    "off": 33,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-m-vave-looper-pro-para-guitarra-com-9-loops-e-afinador-integrado/p/MLB40868406"

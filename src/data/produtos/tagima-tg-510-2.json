@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TG-510",
   "meli": "https://meli.la/1kRfMN7",
-  "preco": 938,
-  "precoEm": "2026-11-21",
+  "preco": 846,
+  "precoEm": "2026-11-22",
   "categoria": "guitarra",
   "historico": [
     {
@@ -48,6 +48,10 @@
     {
       "data": "2026-11-21",
       "preco": 938
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 846
     }
   ],
   "imagem": "/images/produtos/tagima-tg-510-2.webp",
@@ -56,8 +60,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1143,
-    "off": 17,
-    "parcelas": "12x R$ 91,06",
+    "off": 25,
+    "parcelas": "12x R$ 81,81",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-tagima-tw-series-tg-510-stratocaster-tilia-preta/p/MLB17453005"
   },

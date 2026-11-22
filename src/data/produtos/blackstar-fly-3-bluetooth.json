@@ -1,8 +1,8 @@
 {
   "nome": "Blackstar Fly 3",
   "meli": "https://meli.la/1yPaLJd",
-  "preco": 806,
-  "precoEm": "2026-11-21",
+  "preco": 793,
+  "precoEm": "2026-11-22",
   "categoria": "amplificador",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-21",
       "preco": 806
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 793
     }
   ],
   "imagem": "/images/produtos/blackstar-fly-3-bluetooth.webp",
@@ -59,9 +63,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 926,
-    "off": 13,
-    "parcelas": "12x R$ 77,94",
+    "parcelas": "12x R$ 76,64",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/electric-guitar-mini-amplifier-blackstar-fly3blue-3w/p/MLB2063467948"
   },

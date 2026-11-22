@@ -1,8 +1,8 @@
 {
   "nome": "Vogga VCS260 Audience (folk aço, eletroacústico)",
   "meli": "https://meli.la/1hMCD3o",
-  "preco": 656,
-  "precoEm": "2026-11-21",
+  "preco": 616,
+  "precoEm": "2026-11-22",
   "categoria": "violao",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-21",
       "preco": 656
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 616
     }
   ],
   "nota": 4.5,
@@ -41,7 +45,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 63,44",
+    "antes": 1090,
+    "off": 43,
+    "parcelas": "10x R$ 61,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-vogga-vcs260-audience-folk-aco-vcs260-bk/p/MLB70619597"
   },

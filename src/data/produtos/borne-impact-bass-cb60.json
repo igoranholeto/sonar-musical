@@ -1,8 +1,8 @@
 {
   "nome": "Borne Impact Bass CB60",
   "meli": "https://meli.la/1Mz6kr7",
-  "preco": 682,
-  "precoEm": "2026-11-21",
+  "preco": 655,
+  "precoEm": "2026-11-22",
   "categoria": "amplificador",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 682
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 655
     }
   ],
   "imagem": "/images/produtos/borne-impact-bass-cb60.webp",
@@ -35,7 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-16",
-    "parcelas": "12x R$ 65,96",
+    "antes": 776,
+    "off": 15,
+    "parcelas": "12x R$ 63,34",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-de-baixo-borne-impact-bass-cb60-20w-nf-e-gtia/up/MLBU1779575078"
   },

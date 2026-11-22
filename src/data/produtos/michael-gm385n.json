@@ -1,8 +1,8 @@
 {
   "nome": "Michael GM385N Telecaster",
   "meli": "https://meli.la/1PqBwA4",
-  "preco": 961,
-  "precoEm": "2026-11-21",
+  "preco": 965,
+  "precoEm": "2026-11-22",
   "categoria": "guitarra",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-21",
       "preco": 961
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 965
     }
   ],
   "nota": 4.6,
@@ -49,11 +53,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1067,
-    "off": 10,
+    "antes": 1049,
+    "off": 8,
     "pix": true,
-    "cartao": 1067,
-    "parcelas": "10x R$ 106,79 sem juros",
+    "cartao": 1049,
+    "parcelas": "10x R$ 104,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-michael-telecaster-gm385n-6-cordas-tilia-preto/p/MLB17488705"
   },

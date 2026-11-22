@@ -1,8 +1,8 @@
 {
   "nome": "Arturia MiniLab 3",
   "meli": "https://meli.la/28HgmGK",
-  "preco": 970,
-  "precoEm": "2026-11-21",
+  "preco": 954,
+  "precoEm": "2026-11-22",
   "categoria": "controlador",
   "historico": [
     {
@@ -32,13 +32,17 @@
     {
       "data": "2026-11-21",
       "preco": 970
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 954
     }
   ],
   "imagemAlt": "Arturia MiniLab 3",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "10x R$ 97 sem juros",
+    "parcelas": "10x R$ 95,40 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/arturia-minilab-25-black-teclado-controlador-midi-usb-loja/p/MLB22433021"
   },

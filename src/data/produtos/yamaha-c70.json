@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha C70II",
   "meli": "https://meli.la/2Sq4jE9",
-  "preco": 1180,
-  "precoEm": "2026-11-21",
+  "preco": 1199,
+  "precoEm": "2026-11-22",
   "categoria": "violao",
   "historico": [
     {
@@ -16,13 +16,17 @@
     {
       "data": "2026-11-19",
       "preco": 1180
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 1199
     }
   ],
   "imagemAlt": "Yamaha C70II",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 118 sem juros",
+    "parcelas": "12x R$ 116,39",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-yamaha-c70ii-c70-acustico-nylon-natural/p/MLB25239228"
   },

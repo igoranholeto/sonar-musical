@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha MX61",
   "meli": "https://meli.la/2SiqXJm",
-  "preco": 4629,
-  "precoEm": "2026-11-21",
+  "preco": 4389,
+  "precoEm": "2026-11-22",
   "categoria": "teclado",
   "historico": [
     {
@@ -32,15 +32,17 @@
     {
       "data": "2026-11-21",
       "preco": 4629
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 4389
     }
   ],
   "imagemAlt": "Yamaha MX61",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 6999,
-    "off": 33,
-    "parcelas": "10x R$ 462,94 sem juros",
+    "parcelas": "10x R$ 438,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-61-teclas-yamaha-sintetizador-mx61-cor-preto/p/MLB46405111"
   },

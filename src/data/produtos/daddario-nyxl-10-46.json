@@ -1,8 +1,8 @@
 {
   "nome": "D'Addario NYXL 10–46",
-  "meli": "https://meli.la/1Cbj7PW",
-  "preco": 120,
-  "precoEm": "2026-11-21",
+  "meli": "https://meli.la/2vEedSH",
+  "preco": 129,
+  "precoEm": "2026-11-22",
   "categoria": "cordas",
   "imagem": "/images/produtos/daddario-nyxl-10-46.webp",
   "imagemAlt": "D'Addario NYXL 10–46",
@@ -22,17 +22,19 @@
     {
       "data": "2026-11-10",
       "preco": 120
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 129
     }
   ],
   "nota": 4.6,
   "avaliacoes": 14,
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 138,
-    "off": 13,
+    "desde": "2026-11-22",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/encordoamento-para-guitarra-10-46-daddario-nyxl1046/up/MLBU2311008458"
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-daddario-nyxl-1046-guitarra-010-nickel/up/MLBU1094116549"
   },
   "ficha": [
     [

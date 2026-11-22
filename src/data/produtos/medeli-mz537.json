@@ -1,13 +1,17 @@
 {
-  "nome": "Medeli MZ537 (kit com banco e fone)",
-  "meli": "https://meli.la/2aVgd8Z",
-  "preco": 5117,
-  "precoEm": "2026-11-21",
+  "nome": "Medeli MZ537 (kit com banco)",
+  "meli": "https://meli.la/1nqs3yo",
+  "preco": 4976,
+  "precoEm": "2026-11-22",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-18",
       "preco": 5117
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 4976
     }
   ],
   "imagemAlt": "Medeli MZ537 (kit com banco e fone)",
@@ -64,11 +68,13 @@
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-18",
-    "antes": 7929,
-    "off": 35,
-    "parcelas": "10x R$ 511,78 sem juros",
+    "desde": "2026-11-22",
+    "antes": 6980,
+    "off": 28,
+    "parcelas": "10x R$ 499,90 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/kit-bateria-eletronica-medeli-mz537-com-banqueta-e-fones-de-ouvido/p/MLB75833645"
-  }
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-medeli-mz537-mesh-bluetooth-com-usb-midi-e-459-sons/p/MLB75548686"
+  },
+  "nota": 5,
+  "avaliacoes": 1
 }

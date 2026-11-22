@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Sonic Deluxe Les Paul Gold Top",
   "meli": "https://meli.la/1Uy73GY",
-  "preco": 1276,
-  "precoEm": "2026-11-21",
+  "preco": 1389,
+  "precoEm": "2026-11-22",
   "categoria": "guitarra",
   "historico": [
     {
@@ -28,14 +28,19 @@
     {
       "data": "2026-11-18",
       "preco": 1276
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 1389
     }
   ],
   "imagemAlt": "Giannini Sonic Deluxe Les Paul Gold Top",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 1650,
-    "off": 22,
+    "antes": 1899,
+    "off": 26,
+    "parcelas": "12x R$ 134,84",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-giannini-sonic-deluxe-les-paul-gold-top-6-cordas/p/MLB62550254"
   },

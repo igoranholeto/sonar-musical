@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Dallas Gran Reserva",
   "meli": "https://meli.la/1tMZC9n",
-  "preco": 984,
-  "precoEm": "2026-11-21",
+  "preco": 964,
+  "precoEm": "2026-11-22",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-21",
       "preco": 984
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 964
     }
   ],
   "imagem": "/images/produtos/tagima-dallas-gran-reserva.webp",
@@ -31,9 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1240,
-    "off": 20,
-    "parcelas": "12x R$ 95,50",
+    "antes": 1341,
+    "off": 28,
+    "parcelas": "10x R$ 96,40 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-tagima-dallas-gran-reserva-mogno-6-cordas-eletroacustico/p/MLB53421511"
   },

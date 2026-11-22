@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Jazz Bass",
   "meli": "https://meli.la/1J96m3f",
-  "preco": 3337,
-  "precoEm": "2026-11-21",
+  "preco": 3428,
+  "precoEm": "2026-11-22",
   "categoria": "baixo",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-21",
       "preco": 3337
+    },
+    {
+      "data": "2026-11-22",
+      "preco": 3428
     }
   ],
   "imagem": "/images/produtos/squier-affinity-jazz-bass.webp",
@@ -39,9 +43,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3799,
-    "off": 12,
-    "parcelas": "10x R$ 333,73 sem juros",
+    "parcelas": "10x R$ 342,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-squier-affinity-jazz-bass-4-cordas-sunburst-destro-marrom-poliuretano-brilhante-4/p/MLB22814045"
   },
