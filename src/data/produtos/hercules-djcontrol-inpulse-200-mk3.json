@@ -1,0 +1,76 @@
+{
+  "nome": "Hercules DJControl Inpulse 200 MK3",
+  "meli": "https://meli.la/2tXc29B",
+  "preco": 902,
+  "precoEm": "2026-11-22",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 902
+    }
+  ],
+  "imagemAlt": "Hercules DJControl Inpulse 200 MK3",
+  "imagem": "/images/produtos/hercules-djcontrol-inpulse-200-mk3.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Hercules"
+    ],
+    [
+      "Modelo",
+      "Inpulse 200 MK3"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Com comunicação USB-MIDI",
+      "Sim"
+    ],
+    [
+      "Conectores de saída",
+      "RCA e P2 (3,5 mm)"
+    ],
+    [
+      "Software incluídos",
+      "DJUCED e Serato DJ Lite"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Nomes dos sistemas operacionais",
+      "Windows e macOS"
+    ],
+    [
+      "Quantidade de decks",
+      "2"
+    ],
+    [
+      "Quantidade de jog wheels",
+      "2"
+    ],
+    [
+      "Quantidade total de pads",
+      "8"
+    ],
+    [
+      "Quantidade de faders de volume",
+      "2"
+    ],
+    [
+      "Com crossfader",
+      "Sim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "parcelas": "12x R$ 87,57",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/controlador-dj-hercules-djcontrol-inpulse-200-mk3-preto/p/MLB2092536899"
+  }
+}

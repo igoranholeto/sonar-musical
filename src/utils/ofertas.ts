@@ -88,7 +88,7 @@ export const NOMES_CATEGORIA: Record<string, { singular: string; plural: string 
   microfone: { singular: 'Microfone', plural: 'Microfones' },
   fone: { singular: 'Fone de ouvido', plural: 'Fones de ouvido' },
   estudio: { singular: 'Equipamento de estúdio', plural: 'Equipamentos de estúdio' },
-  controlador: { singular: 'Controlador MIDI', plural: 'Controladores MIDI' },
+  controlador: { singular: 'Controlador MIDI ou de DJ', plural: 'Controladores MIDI e de DJ' },
   cordas: { singular: 'Encordoamento', plural: 'Encordoamentos' },
   acessorio: { singular: 'Acessório', plural: 'Acessórios' },
 };

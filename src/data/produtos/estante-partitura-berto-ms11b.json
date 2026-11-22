@@ -1,0 +1,84 @@
+{
+  "nome": "Estante de partitura Bertô MS-11B (com bolsa)",
+  "meli": "https://meli.la/32DxkqY",
+  "preco": 39,
+  "precoEm": "2026-11-22",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 39
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 3906,
+  "imagemAlt": "Estante de partitura Bertô MS-11B (com bolsa)",
+  "imagem": "/images/produtos/estante-partitura-berto-ms11b.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Bertô"
+    ],
+    [
+      "Modelo",
+      "MS-11B Estante Musical"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Peso",
+      "750 g"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Altura mínima do atril - Altura máxima do atril",
+      "75 cm - 1.3 m"
+    ],
+    [
+      "Altura da bandeja",
+      "24 cm"
+    ],
+    [
+      "Largura da bandeja",
+      "46,5 cm"
+    ],
+    [
+      "Peso máximo suportado",
+      "2 kg"
+    ],
+    [
+      "É dobrável",
+      "Sim"
+    ],
+    [
+      "Quantidade de partes",
+      "1"
+    ],
+    [
+      "É antiderrapante",
+      "Sim"
+    ],
+    [
+      "Com ângulo ajustável",
+      "Sim"
+    ],
+    [
+      "Inclui estojo",
+      "Sim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "antes": 94,
+    "off": 58,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/estante-porta-partitura-berto-preto-ajustavel-75cm-13m-dobravel-com-bolsa/p/MLB29547739"
+  }
+}

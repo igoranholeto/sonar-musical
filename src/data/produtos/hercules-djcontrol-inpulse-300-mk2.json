@@ -1,0 +1,76 @@
+{
+  "nome": "Hercules DJControl Inpulse 300 MK2",
+  "meli": "https://meli.la/2XHvwUP",
+  "preco": 2406,
+  "precoEm": "2026-11-22",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 2406
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 8,
+  "imagemAlt": "Hercules DJControl Inpulse 300 MK2",
+  "imagem": "/images/produtos/hercules-djcontrol-inpulse-300-mk2.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Hercules"
+    ],
+    [
+      "Linha",
+      "DJControl"
+    ],
+    [
+      "Modelo",
+      "Inpulse 300 MK2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Com comunicação USB-MIDI",
+      "Sim"
+    ],
+    [
+      "Conectores de entrada",
+      "RCA"
+    ],
+    [
+      "Conectores de saída",
+      "RCA"
+    ],
+    [
+      "Software incluídos",
+      "Serato DJ Lite"
+    ],
+    [
+      "Tipos de alimentação",
+      "Corrente doméstica"
+    ],
+    [
+      "Quantidade de canais",
+      "2"
+    ],
+    [
+      "Quantidade de decks",
+      "2"
+    ],
+    [
+      "Quantidade de jog wheels",
+      "2"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "antes": 2977,
+    "off": 19,
+    "parcelas": "10x R$ 240,69 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/controladora-dj-hercules-dj-control-inpulse-300-mk2-p/p/MLB28127179"
+  }
+}

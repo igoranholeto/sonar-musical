@@ -1,0 +1,64 @@
+{
+  "nome": "Banqueta em X Saty GTB15",
+  "meli": "https://meli.la/17gp42M",
+  "preco": 103,
+  "precoEm": "2026-11-22",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 103
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 175,
+  "imagemAlt": "Banqueta em X Saty GTB15",
+  "imagem": "/images/produtos/banqueta-saty-gtb15.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Saty"
+    ],
+    [
+      "Modelo",
+      "GTB15"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Comprimento x Largura",
+      "30 cm x 40 cm"
+    ],
+    [
+      "Material do estofamento",
+      "Couro"
+    ],
+    [
+      "Material da estrutura",
+      "Aço"
+    ],
+    [
+      "Altura mínima - Altura máxima",
+      "42 cm - 50 cm"
+    ],
+    [
+      "Peso máximo suportado",
+      "120 kg"
+    ],
+    [
+      "É ajustável",
+      "Sim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "antes": 114,
+    "off": 10,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banqueta-banco-em-x-p-teclado-piano-gtb15-gakki-saty/p/MLB52055696"
+  }
+}

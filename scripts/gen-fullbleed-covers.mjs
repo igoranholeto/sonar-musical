@@ -219,6 +219,16 @@ const MAP = {
   'melhor-kit-violao-iniciante':    { kicker: 'VIOLÃO · GUIA 2026', l1: 'KIT DE VIOLÃO', l2: 'PARA INICIANTE', q: 'classical guitar nylon strings', prefer: /guitar|violão/i, avoid: /electric|logo|bass/i },
   'melhor-pandeiro':                { kicker: 'PERCUSSÃO · GUIA 2026', l1: 'PANDEIRO', l2: 'QUAL COMPRAR?', q: 'pandeiro', prefer: /pandeiro/i, avoid: /logo/i },
   'melhor-tanta-para-pagode':       { kicker: 'PERCUSSÃO · GUIA 2026', l1: 'TANTÃ', l2: 'PARA PAGODE', q: 'rebolo samba', prefer: /rebolo/i, avoid: /logo|djvu|sert/i },
+  'presente-para-musico':           { kicker: 'PRESENTES · NATAL 2026', l1: 'PRESENTE', l2: 'PARA MÚSICO', q: 'musical instruments collection', prefer: /instrument/i, avoid: /logo|museum|stamp|child|kid|girl|boy/i },
+  'amigo-secreto-musico':           { kicker: 'PRESENTES · NATAL 2026', l1: 'AMIGO SECRETO', l2: 'PARA MÚSICO', q: 'guitar capo', prefer: /capo/i, avoid: /logo|child|kid|girl|boy|cape|verde/i },
+  'presente-para-tecladista':       { kicker: 'TECLADOS · PRESENTES', l1: 'PRESENTE PARA', l2: 'TECLADISTA', q: 'electronic keyboard instrument', prefer: /keyboard|synth/i, avoid: /computer|logo|typewriter|child|kid/i },
+  'presente-para-baixista':         { kicker: 'BAIXOS · PRESENTES', l1: 'PRESENTE PARA', l2: 'BAIXISTA', q: 'electric bass guitar', prefer: /bass/i, avoid: /logo|fish|double bass|contrabass|upright|drum/i },
+  'presente-para-quem-toca-violao': { kicker: 'VIOLÕES · PRESENTES', l1: 'PRESENTE PARA', l2: 'QUEM TOCA VIOLÃO', q: 'acoustic guitar soundhole', prefer: /soundhole|sound hole|acoustic guitar/i, avoid: /rig|bass|logo|ukulele|violin|cello|electric|label|museum|signed|player|concert|couple|person|people|woman|man|playing|girl|boy|recording|singer|band/i },
+  'instrumento-musical-para-crianca': { kicker: 'INFANTIL · GUIA 2026', l1: 'INSTRUMENTO', l2: 'PARA CRIANÇA', q: 'xylophone', prefer: /xylophone|glockenspiel|metallophone/i, avoid: /logo|child|kid|girl|boy|stamp/i },
+  'melhor-teclado-ate-1000-reais':  { kicker: 'TECLADOS · GUIA 2026', l1: 'TECLADO', l2: 'ATÉ R$ 1.000', q: 'Casiotone keyboard', prefer: /casiotone|keyboard|CT-/i, avoid: /logo|calculator|watch|F-91|wrist|computer|child|kid/i },
+  'melhor-baixo-ate-1000-reais':    { kicker: 'BAIXOS · GUIA 2026', l1: 'BAIXO', l2: 'ATÉ R$ 1.000', q: 'bass guitar headstock', prefer: /bass/i, avoid: /logo|fish|double bass|contrabass|upright|drum/i },
+  'melhor-amplificador-de-guitarra-ate-1000-reais': { kicker: 'AMPLIFICADORES · 2026', l1: 'AMPLIFICADOR', l2: 'ATÉ R$ 1.000', q: 'guitar amplifier combo', prefer: /amp|amplifier/i, avoid: /logo|bass|car|radio/i },
+  'melhor-controladora-dj-para-iniciante': { kicker: 'DJ · GUIA 2026', l1: 'CONTROLADORA', l2: 'DE DJ', q: 'DJ controller', prefer: /controller|dj/i, avoid: /logo|game|xbox|playstation|nintendo/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

@@ -1,0 +1,82 @@
+{
+  "nome": "Kit suporte e banqueta em X Saty SX01",
+  "meli": "https://meli.la/23EMGSh",
+  "preco": 184,
+  "precoEm": "2026-11-22",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 184
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 372,
+  "imagemAlt": "Kit suporte e banqueta em X Saty SX01",
+  "imagem": "/images/produtos/kit-suporte-banqueta-saty-sx01.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Saty"
+    ],
+    [
+      "Modelo",
+      "SX01"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Tipo de suporte",
+      "X"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Quantidade de longarinas",
+      "1"
+    ],
+    [
+      "Altura máxima",
+      "56 cm"
+    ],
+    [
+      "Largura mínima",
+      "40 cm"
+    ],
+    [
+      "Largura máxima",
+      "60 cm"
+    ],
+    [
+      "Peso máximo suportado",
+      "10 kg"
+    ],
+    [
+      "É dobrável",
+      "Sim"
+    ],
+    [
+      "É duplo",
+      "Não"
+    ],
+    [
+      "Com pedestal para microfone",
+      "Não"
+    ],
+    [
+      "Com base para notebook",
+      "Não"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "parcelas": "6x R$ 30,67 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-suporte-e-banqueta-em-x-para-teclado-saty-sx01-regulavel/p/MLB42059174"
+  }
+}

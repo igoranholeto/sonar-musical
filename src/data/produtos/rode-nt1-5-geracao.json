@@ -1,0 +1,72 @@
+{
+  "nome": "Rode NT1 5ª geração",
+  "meli": "https://meli.la/2MVQdwL",
+  "preco": 2421,
+  "precoEm": "2026-11-22",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 2421
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 90,
+  "imagemAlt": "Rode NT1 5ª geração",
+  "imagem": "/images/produtos/rode-nt1-5-geracao.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Rode"
+    ],
+    [
+      "Modelo",
+      "NT1 5ª geração"
+    ],
+    [
+      "Cor",
+      "Prateado"
+    ],
+    [
+      "Tipo de microfone",
+      "Condensador"
+    ],
+    [
+      "Padrão polar",
+      "Cardioide"
+    ],
+    [
+      "Conector de saída",
+      "XLR"
+    ],
+    [
+      "Frequência mínima - Frequência máxima",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Impedância",
+      "100 Ω"
+    ],
+    [
+      "Material",
+      "Alumínio"
+    ],
+    [
+      "Peso",
+      "395 g"
+    ],
+    [
+      "Comprimento do cabo",
+      "6 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "antes": 2690,
+    "off": 10,
+    "parcelas": "12x R$ 232,70",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-condensador-rode-nt1-5-gen-estudio-gravacao/p/MLB34291123"
+  }
+}

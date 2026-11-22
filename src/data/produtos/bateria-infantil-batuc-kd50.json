@@ -1,0 +1,84 @@
+{
+  "nome": "Bateria infantil acústica Batuc KD50",
+  "meli": "https://meli.la/1VJZtqF",
+  "preco": 1589,
+  "precoEm": "2026-11-22",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-22",
+      "preco": 1589
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 3,
+  "imagemAlt": "Bateria infantil acústica Batuc KD50",
+  "imagem": "/images/produtos/bateria-infantil-batuc-kd50.webp",
+  "ficha": [
+    [
+      "Marca",
+      "Batuc"
+    ],
+    [
+      "Linha",
+      "KD"
+    ],
+    [
+      "Modelo",
+      "KD50"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Acabamento",
+      "Verniz brilhante"
+    ],
+    [
+      "Peso",
+      "15 kg"
+    ],
+    [
+      "Quantidade de peças",
+      "5"
+    ],
+    [
+      "Materiais",
+      "Madeira,Aço"
+    ],
+    [
+      "Idade",
+      "Crianças"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Não"
+    ],
+    [
+      "Inclui prato splash",
+      "Não"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-22",
+    "antes": 2205,
+    "off": 27,
+    "parcelas": "12x R$ 152,82",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-infantil-acustica-completa-batuc-kd50-5-pecas-em-madeira-poplar-ferragens-cromada-premium-bumbo-16-cor-preto/p/MLB66373414"
+  }
+}
