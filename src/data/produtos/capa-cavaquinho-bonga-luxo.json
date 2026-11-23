@@ -1,0 +1,69 @@
+{
+  "nome": "Capa acolchoada Bonga Luxo para cavaquinho",
+  "meli": "https://meli.la/2tgQrBn",
+  "preco": 78,
+  "precoEm": "2026-11-23",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-23",
+      "preco": 78
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 499,
+  "imagem": "/images/produtos/capa-cavaquinho-bonga-luxo.webp",
+  "imagemAlt": "Capa acolchoada Bonga Luxo para cavaquinho",
+  "ficha": [
+    [
+      "Marca",
+      "Bonga"
+    ],
+    [
+      "Modelo",
+      "Capa Bag Luxo para cavaquinho"
+    ],
+    [
+      "Tipo de estrutura",
+      "Bag acolchoado"
+    ],
+    [
+      "Material do interior",
+      "Nylon resinado e espuma de alta densidade"
+    ],
+    [
+      "Material do exterior",
+      "Poliéster 600D impermeável"
+    ],
+    [
+      "Comprimento interior",
+      "64 cm"
+    ],
+    [
+      "Largura interior",
+      "27 cm"
+    ],
+    [
+      "Altura interior",
+      "7 cm"
+    ],
+    [
+      "Peso",
+      "400 g"
+    ],
+    [
+      "Com bolsos",
+      "Sim"
+    ],
+    [
+      "É impermeável",
+      "Sim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-23",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/capa-bag-case-bonga-luxo-cavaquinho-acolchoada-impermeavel/up/MLBU595119107"
+  }
+}

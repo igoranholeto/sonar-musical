@@ -1,0 +1,67 @@
+{
+  "nome": "Encordoamento São Gonçalo para cavaquinho (kit com 3)",
+  "meli": "https://meli.la/2apZySw",
+  "preco": 22,
+  "precoEm": "2026-11-23",
+  "categoria": "cordas",
+  "historico": [
+    {
+      "data": "2026-11-23",
+      "preco": 22
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 3277,
+  "imagem": "/images/produtos/cordas-cavaquinho-sao-goncalo-kit-3.webp",
+  "imagemAlt": "Encordoamento São Gonçalo para cavaquinho (kit com 3)",
+  "ficha": [
+    [
+      "Marca",
+      "São Gonçalo"
+    ],
+    [
+      "Linha",
+      "São Gonçalo Cavaco Triple Pack"
+    ],
+    [
+      "Modelo",
+      "131tp"
+    ],
+    [
+      "Instrumento recomendado",
+      "Cavaquinho"
+    ],
+    [
+      "Quantidade de embalagens",
+      "3"
+    ],
+    [
+      "Quantidade de cordas",
+      "4 por jogo"
+    ],
+    [
+      "Materiais",
+      "Aço inoxidável"
+    ],
+    [
+      "Tensão",
+      "Média"
+    ],
+    [
+      "Notas",
+      "Ré, Ré, Sol"
+    ],
+    [
+      "Ponta",
+      "Com bolinha"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-23",
+    "antes": 32,
+    "off": 31,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-3-encordoamento-sao-goncalo-cordas-p-cavaco-com-bolinha/p/MLB22628605"
+  }
+}

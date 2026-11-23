@@ -1,0 +1,94 @@
+{
+  "nome": "Teclado SONN SN-TC01",
+  "meli": "https://meli.la/1Npk9YL",
+  "preco": 338,
+  "precoEm": "2026-11-23",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-23",
+      "preco": 338
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 298,
+  "imagem": "/images/produtos/teclado-sonn-sn-tc01.webp",
+  "imagemAlt": "Teclado SONN SN-TC01",
+  "ficha": [
+    [
+      "Marca",
+      "SONN"
+    ],
+    [
+      "Modelo",
+      "SN-TC01"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de teclas",
+      "61"
+    ],
+    [
+      "Com resposta ao toque",
+      "Não"
+    ],
+    [
+      "Polifonia máxima",
+      "32"
+    ],
+    [
+      "Quantidade de tons",
+      "300"
+    ],
+    [
+      "Quantidade de ritmos",
+      "300"
+    ],
+    [
+      "Quantidade de canções",
+      "50"
+    ],
+    [
+      "Com metrônomo",
+      "Sim"
+    ],
+    [
+      "Com gravador",
+      "Sim"
+    ],
+    [
+      "Tela",
+      "Display LED"
+    ],
+    [
+      "Com interface MIDI",
+      "Não"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte bivolt"
+    ],
+    [
+      "Acessórios incluídos",
+      "Suporte de partitura"
+    ],
+    [
+      "Peso",
+      "2,7 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-23",
+    "antes": 375,
+    "off": 10,
+    "pix": true,
+    "cartao": 375,
+    "parcelas": "7x R$ 53,57 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-sonn-sn-tc01-de-61-teclas-para-iniciantes-com-300-timbres-e-ritmos/p/MLB60839381"
+  }
+}

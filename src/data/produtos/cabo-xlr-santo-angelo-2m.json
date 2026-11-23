@@ -1,0 +1,53 @@
+{
+  "nome": "Cabo de microfone XLR Santo Angelo (2 m)",
+  "meli": "https://meli.la/2yTAdNq",
+  "preco": 62,
+  "precoEm": "2026-11-23",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-23",
+      "preco": 62
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 52,
+  "imagem": "/images/produtos/cabo-xlr-santo-angelo-2m.webp",
+  "imagemAlt": "Cabo de microfone XLR Santo Angelo (2 m)",
+  "ficha": [
+    [
+      "Marca",
+      "Santo Angelo"
+    ],
+    [
+      "Modelo",
+      "XLR Balanceado SA2X SCX30"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Comprimento do cabo",
+      "2 m"
+    ],
+    [
+      "Conector de entrada",
+      "XLR fêmea"
+    ],
+    [
+      "Conector de saída",
+      "XLR macho"
+    ],
+    [
+      "Tipo de versão",
+      "3 pinos, balanceado"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-23",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cabo-de-microfone-xlr-para-xlr-balanceado-santo-angelo-2-metros/p/MLB74608819"
+  }
+}

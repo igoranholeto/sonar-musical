@@ -1,0 +1,88 @@
+{
+  "nome": "Violão Queen's Conthey D13751 (cordas de aço)",
+  "meli": "https://meli.la/2cQcmLJ",
+  "preco": 230,
+  "precoEm": "2026-11-23",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-23",
+      "preco": 230
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 7522,
+  "imagem": "/images/produtos/violao-queens-conthey-d13751.webp",
+  "imagemAlt": "Violão Queen's Conthey D13751 (cordas de aço)",
+  "ficha": [
+    [
+      "Marca",
+      "Queen's"
+    ],
+    [
+      "Modelo",
+      "Conthey D13751"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Material do tampo",
+      "Bétula"
+    ],
+    [
+      "Materiais do fundo",
+      "Tília"
+    ],
+    [
+      "Materiais dos laterais",
+      "Mogno"
+    ],
+    [
+      "Materiais do braço",
+      "Bétula"
+    ],
+    [
+      "Tamanho do corpo",
+      "4/4"
+    ],
+    [
+      "Quantidade de trastes",
+      "19"
+    ],
+    [
+      "Orientação da mão",
+      "Destro"
+    ],
+    [
+      "Material das cordas",
+      "Aço"
+    ],
+    [
+      "Com corte",
+      "Não"
+    ],
+    [
+      "Conectores de saída",
+      "Não possui"
+    ],
+    [
+      "Inclui capa",
+      "Não"
+    ],
+    [
+      "Acessórios incluídos",
+      "1 palheta e 3 cordas extras de aço"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-23",
+    "antes": 455,
+    "off": 49,
+    "parcelas": "12x R$ 22,77",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-classico-queens-conthey-d13751-6-cordas-aco-preto-verniz/p/MLB17798223"
+  }
+}

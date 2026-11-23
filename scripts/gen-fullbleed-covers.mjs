@@ -229,6 +229,16 @@ const MAP = {
   'melhor-baixo-ate-1000-reais':    { kicker: 'BAIXOS · GUIA 2026', l1: 'BAIXO', l2: 'ATÉ R$ 1.000', q: 'bass guitar headstock', prefer: /bass/i, avoid: /logo|fish|double bass|contrabass|upright|drum/i },
   'melhor-amplificador-de-guitarra-ate-1000-reais': { kicker: 'AMPLIFICADORES · 2026', l1: 'AMPLIFICADOR', l2: 'ATÉ R$ 1.000', q: 'guitar amplifier combo', prefer: /amp|amplifier/i, avoid: /logo|bass|car|radio/i },
   'melhor-controladora-dj-para-iniciante': { kicker: 'DJ · GUIA 2026', l1: 'CONTROLADORA', l2: 'DE DJ', q: 'DJ controller', prefer: /controller|dj/i, avoid: /logo|game|xbox|playstation|nintendo/i },
+  'melhor-ukulele-ate-300-reais':   { kicker: 'UKULELE · GUIA 2026', l1: 'UKULELE', l2: 'ATÉ R$ 300', q: 'soprano ukulele', prefer: /ukulele/i, avoid: /logo|festival|orchestra|band|map|person|people|player|girl|boy|man|woman|child/i },
+  'melhor-cavaquinho-ate-500-reais': { kicker: 'CAVAQUINHO · GUIA 2026', l1: 'CAVAQUINHO', l2: 'ATÉ R$ 500', q: 'cavaquinho instrumento', prefer: /cavaquinho/i, avoid: /logo|ukulele|map/i },
+  'melhor-violao-ate-300-reais':    { kicker: 'VIOLÕES · GUIA 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 300', q: 'classical guitar', prefer: /A Classical Guitar|Guitar May 2009|Classical-guitar|Guitar - Nylon/i, avoid: /bass|logo|ukulele|violin|cello|electric|player|concert|museum|signed|torres|hauser|festival|person|people|man|woman|girl|boy|couple/i },
+  'melhor-teclado-ate-500-reais':   { kicker: 'TECLADOS · GUIA 2026', l1: 'TECLADO', l2: 'ATÉ R$ 500', q: 'portable electronic keyboard instrument', prefer: /keyboard/i, avoid: /logo|calculator|watch|F-91|wrist|computer|typewriter|child|kid|laptop/i },
+  'melhor-pedaleira-ate-1000-reais': { kicker: 'PEDAIS · GUIA 2026', l1: 'PEDALEIRA', l2: 'ATÉ R$ 1.000', q: 'guitar multi-effects pedal', prefer: /Boss ME-50|Boss ME-30/i, avoid: /logo|bicycle|car|piano|sewing|Pedalino|PedalPro/i },
+  'melhor-interface-de-audio-ate-1000-reais': { kicker: 'HOME STUDIO · 2026', l1: 'INTERFACE', l2: 'ATÉ R$ 1.000', q: 'USB audio interface', prefer: /interface|focusrite|scarlett|audio/i, avoid: /logo|network|motherboard|computer|screenshot|diagram/i },
+  'presente-para-cantor':           { kicker: 'PRESENTES · NATAL 2026', l1: 'PRESENTE PARA', l2: 'CANTOR', q: 'Shure SM58 microphone', prefer: /sm58|microphone/i, avoid: /bass|guitar|studio|logo|person|people|singer|man|woman|girl|boy|concert|band|politic|speech|president/i },
+  'presente-para-quem-toca-cavaquinho': { kicker: 'CAVAQUINHO · PRESENTES', l1: 'PRESENTE PARA', l2: 'CAVAQUINISTA', q: 'cavaquinho samba', prefer: /cavaquinho/i, avoid: /logo|ukulele|map/i },
+  'presente-para-produtor-musical': { kicker: 'PRESENTES · NATAL 2026', l1: 'PRESENTE PARA', l2: 'PRODUTOR', q: 'home studio MIDI keyboard', prefer: /studio|midi/i, avoid: /logo|person|people|man|woman|girl|boy|tv|radio station|newsroom/i },
+  'presente-para-dj':               { kicker: 'DJ · PRESENTES', l1: 'PRESENTE', l2: 'PARA DJ', q: 'DJ headphones mixer', prefer: /dj|headphone|mixer/i, avoid: /logo|game|xbox|playstation|nintendo|person|people|man|woman|girl|boy|crowd|festival/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
