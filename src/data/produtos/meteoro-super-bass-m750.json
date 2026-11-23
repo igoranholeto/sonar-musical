@@ -1,8 +1,8 @@
 {
   "nome": "Meteoro Super Bass M750",
   "meli": "https://meli.la/24iznPs",
-  "preco": 1337,
-  "precoEm": "2026-11-22",
+  "preco": 1306,
+  "precoEm": "2026-11-23",
   "categoria": "amplificador",
   "historico": [
     {
@@ -24,17 +24,19 @@
     {
       "data": "2026-11-21",
       "preco": 1337
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1306
     }
   ],
   "imagemAlt": "Meteoro Super Bass M750",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1454,
-    "off": 7,
+    "antes": 1420,
+    "off": 8,
     "pix": true,
-    "cartao": 1454,
-    "parcelas": "10x R$ 145,43 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-baixo-meteoro-super-bass-m750-75-watts/p/MLB20609668"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Suporte ASK G6 Dobrável",
   "meli": "https://meli.la/2nh7tuj",
-  "preco": 36,
-  "precoEm": "2026-11-22",
+  "preco": 41,
+  "precoEm": "2026-11-23",
   "categoria": "acessorio",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-17",
       "preco": 36
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 41
     }
   ],
   "nota": 4.8,
@@ -41,8 +45,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 57,
-    "off": 36,
+    "antes": 44,
+    "off": 8,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-violao-guitarra-baixo-ask-g6-dobravel-preto/p/MLB27048519"
   },

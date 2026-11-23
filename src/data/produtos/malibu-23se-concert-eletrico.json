@@ -1,8 +1,8 @@
 {
   "nome": "Malibu 23SE Concert Elétrico",
   "meli": "https://meli.la/1T2D8tF",
-  "preco": 369,
-  "precoEm": "2026-11-22",
+  "preco": 388,
+  "precoEm": "2026-11-23",
   "categoria": "ukulele",
   "historico": [
     {
@@ -20,15 +20,17 @@
     {
       "data": "2026-11-22",
       "preco": 369
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 388
     }
   ],
   "imagemAlt": "Malibu 23SE Concert Elétrico",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 389,
-    "off": 5,
-    "parcelas": "12x R$ 36,09",
+    "parcelas": "7x R$ 55,39 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-eletroacustico-concert-malibu-23se-natural-fosco/p/MLB52162396"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Kokko KMF1",
   "meli": "https://meli.la/349EJ1o",
-  "preco": 345,
-  "precoEm": "2026-11-22",
+  "preco": 410,
+  "precoEm": "2026-11-23",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-18",
       "preco": 345
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 410
     }
   ],
   "imagemAlt": "Kokko KMF1",
@@ -31,8 +35,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 540,
-    "off": 36,
-    "parcelas": "12x R$ 33,77",
+    "off": 24,
+    "parcelas": "12x R$ 39,68",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-guitarra-kokko-kmf1-multiefeitos-59-efeitos-lcd-preto/p/MLB39387844"
   },

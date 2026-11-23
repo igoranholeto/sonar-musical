@@ -1,8 +1,8 @@
 {
   "nome": "Aroma TDX-25 II",
   "meli": "https://meli.la/2z5gnyT",
-  "preco": 5450,
-  "precoEm": "2026-11-22",
+  "preco": 5626,
+  "precoEm": "2026-11-23",
   "categoria": "bateria",
   "historico": [
     {
@@ -24,13 +24,17 @@
     {
       "data": "2026-11-22",
       "preco": 5450
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 5626
     }
   ],
   "imagemAlt": "Aroma TDX-25 II",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 545,05 sem juros",
+    "parcelas": "12x R$ 540,81",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-25-ii-9-corpos-bluetooth-420-sons/p/MLB49042208"
   },

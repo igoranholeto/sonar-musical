@@ -1,8 +1,8 @@
 {
   "nome": "Casio Privia PX-5S (piano digital)",
   "meli": "https://meli.la/1c6LziU",
-  "preco": 4579,
-  "precoEm": "2026-11-22",
+  "preco": 4762,
+  "precoEm": "2026-11-23",
   "categoria": "piano",
   "historico": [
     {
@@ -16,15 +16,19 @@
     {
       "data": "2026-11-21",
       "preco": 4579
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 4762
     }
   ],
   "imagemAlt": "Casio Privia PX-5S (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 6727,
-    "off": 31,
-    "parcelas": "10x R$ 457,90 sem juros",
+    "antes": 6106,
+    "off": 22,
+    "parcelas": "12x R$ 457,78",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-privia-px-5s-wec-2-px5s-pedal-e-fonte/p/MLB22022147"
   },

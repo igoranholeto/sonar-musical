@@ -1,8 +1,8 @@
 {
   "nome": "Vox AC15C1",
   "meli": "https://meli.la/33zLBrf",
-  "preco": 6958,
-  "precoEm": "2026-11-22",
+  "preco": 7108,
+  "precoEm": "2026-11-23",
   "categoria": "amplificador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-13",
       "preco": 6958
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 7108
     }
   ],
   "imagem": "/images/produtos/vox-ac15c1.webp",
@@ -19,7 +23,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 7108,
+    "parcelas": "12x R$ 683,24",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/combo-vox-ac15c1/up/MLBU3483463803"
   },

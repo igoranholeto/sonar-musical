@@ -1,8 +1,8 @@
 {
   "nome": "Fender Standard Stratocaster",
   "meli": "https://meli.la/2uopBty",
-  "preco": 6295,
-  "precoEm": "2026-11-22",
+  "preco": 5445,
+  "precoEm": "2026-11-23",
   "categoria": "guitarra",
   "historico": [
     {
@@ -40,13 +40,19 @@
     {
       "data": "2026-11-22",
       "preco": 6295
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 5445
     }
   ],
   "imagemAlt": "Fender Standard Stratocaster",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 629,53 sem juros",
+    "antes": 8000,
+    "off": 31,
+    "parcelas": "10x R$ 544,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-fender-stratocaster-standard-sunburst-de-6-cordas/p/MLB47079290"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Meteoro Space 50",
   "meli": "https://meli.la/2AWwphC",
-  "preco": 1804,
-  "precoEm": "2026-11-22",
+  "preco": 1899,
+  "precoEm": "2026-11-23",
   "categoria": "amplificador",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-21",
       "preco": 1804
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1899
     }
   ],
   "imagem": "/images/produtos/meteoro-space-50.webp",
@@ -23,9 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1899,
-    "off": 5,
-    "parcelas": "10x R$ 180,41 sem juros",
+    "parcelas": "10x R$ 189,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-space-50-para-guitarra-de-50w-preto/p/MLB24754743"
   },

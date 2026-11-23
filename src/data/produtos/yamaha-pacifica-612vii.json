@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha Pacifica 612VII",
-  "meli": "https://meli.la/2ifJRxu",
-  "preco": 6470,
-  "precoEm": "2026-11-22",
+  "meli": "https://meli.la/17uNsiJ",
+  "preco": 6828,
+  "precoEm": "2026-11-23",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,16 +12,20 @@
     {
       "data": "2026-11-09",
       "preco": 6470
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 6828
     }
   ],
   "imagem": "/images/produtos/yamaha-pacifica-612vii.webp",
   "imagemAlt": "Yamaha Pacifica 612VII",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$ 647 sem juros",
+    "desde": "2026-11-23",
+    "parcelas": "10x R$ 682,80 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-pacifica-612vii-flame-maple-black/p/MLB22765631"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-pacifica-612-viix-vw-vintage-white-yamaha-orientacao-da-mao-destro/p/MLB46019766"
   },
   "ficha": [
     [

@@ -1,17 +1,21 @@
 {
   "nome": "Cort CR300 (Les Paul)",
-  "meli": "https://meli.la/2yBFVNo",
-  "preco": 6938,
-  "precoEm": "2026-11-22",
+  "meli": "https://meli.la/2o4V23Y",
+  "preco": 4449,
+  "precoEm": "2026-11-23",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-18",
       "preco": 6938
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 4449
     }
   ],
   "nota": 5,
-  "avaliacoes": 1,
+  "avaliacoes": 15,
   "imagemAlt": "Cort CR300 (Les Paul)",
   "imagem": "/images/produtos/cort-cr300.webp",
   "ficha": [
@@ -21,7 +25,7 @@
     ],
     [
       "Modelo",
-      "CR300"
+      "CR300 (CR-300-ATB)"
     ],
     [
       "Formato",
@@ -32,12 +36,16 @@
       "Mogno"
     ],
     [
-      "Braço",
+      "Tampo",
       "Bordo"
     ],
     [
+      "Braço",
+      "Mogno, colado (set-in)"
+    ],
+    [
       "Diapasão",
-      "Pau-rosa"
+      "Jatobá"
     ],
     [
       "Escala",
@@ -45,7 +53,11 @@
     ],
     [
       "Captadores",
-      "2 humbuckers"
+      "2 humbuckers EMG Retroactive Fat 55"
+    ],
+    [
+      "Chave seletora",
+      "3 posições"
     ],
     [
       "Ponte",
@@ -57,20 +69,16 @@
     ],
     [
       "Cor",
-      "Flaming Burst"
-    ],
-    [
-      "Origem",
-      "Indonésia"
+      "Aged vintage sunburst"
     ]
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-18",
-    "antes": 9999,
-    "off": 30,
-    "parcelas": "12x R$ 666,92",
+    "desde": "2026-11-23",
+    "antes": 5099,
+    "off": 12,
+    "parcelas": "12x R$ 427,72",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-cort-les-paul-cr-profissional-estudio-palco-show-de/up/MLBU3812817411"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-cort-cr300-mogno-humbucker-emg-sunburst-6-cordas/p/MLB17496741"
   }
 }

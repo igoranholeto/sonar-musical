@@ -1,8 +1,8 @@
 {
   "nome": "Meteoro Nitrous Drive 15",
   "meli": "https://meli.la/2yvCmDd",
-  "preco": 855,
-  "precoEm": "2026-11-22",
+  "preco": 828,
+  "precoEm": "2026-11-23",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-22",
       "preco": 855
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 828
     }
   ],
   "imagem": "/images/produtos/meteoro-nitrous-drive-15.webp",
@@ -28,7 +32,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 900,
-    "off": 5,
+    "off": 8,
     "pix": true,
     "cartao": 900,
     "parcelas": "10x R$ 90 sem juros",

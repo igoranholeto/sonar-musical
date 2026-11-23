@@ -1,0 +1,92 @@
+{
+  "nome": "Aroma TDX-15S com caixa mesh e banco",
+  "meli": "https://meli.la/2urUeAF",
+  "preco": 2392,
+  "precoEm": "2026-11-23",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-23",
+      "preco": 2392
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 318,
+  "imagem": "/images/produtos/aroma-tdx-15s.webp",
+  "imagemAlt": "Aroma TDX-15S com caixa mesh e banco",
+  "ficha": [
+    [
+      "Marca",
+      "Aroma"
+    ],
+    [
+      "Modelo",
+      "TDX-15S"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Quantidade de corpos",
+      "5"
+    ],
+    [
+      "Inclui caixa",
+      "Sim"
+    ],
+    [
+      "Inclui prato de condução",
+      "Sim"
+    ],
+    [
+      "Inclui prato de ataque",
+      "Sim"
+    ],
+    [
+      "Inclui surdo",
+      "Sim"
+    ],
+    [
+      "Inclui chimbal",
+      "Sim"
+    ],
+    [
+      "Inclui pedais",
+      "Sim"
+    ],
+    [
+      "Inclui baquetas",
+      "Sim"
+    ],
+    [
+      "Inclui módulo de som",
+      "Sim"
+    ],
+    [
+      "Quantidade de sons",
+      "12"
+    ],
+    [
+      "Tipo de alimentação",
+      "Fonte de alimentação"
+    ],
+    [
+      "Tipos de conexões",
+      "USB, OUTPUT, Auxiliar, MIDI"
+    ],
+    [
+      "Inclui banqueta",
+      "Sim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-23",
+    "antes": 2990,
+    "off": 20,
+    "parcelas": "12x R$ 229,91",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-15s-com-caixa-mesh-e-banco/p/MLB24835899"
+  }
+}

@@ -1,13 +1,17 @@
 {
   "nome": "Bateria Nagano Solution (ultracompacta)",
   "meli": "https://meli.la/2qcv67E",
-  "preco": 3223,
-  "precoEm": "2026-11-22",
+  "preco": 3225,
+  "precoEm": "2026-11-23",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-21",
       "preco": 3223
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 3225
     }
   ],
   "imagemAlt": "Bateria Nagano Solution (ultracompacta)",
@@ -53,7 +57,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
-    "parcelas": "12x R$ 309,80",
+    "parcelas": "12x R$ 310,01",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-nagano-solution-white-oyster-wlc/up/MLBU5564588388"
   }

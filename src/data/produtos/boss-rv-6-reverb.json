@@ -1,8 +1,8 @@
 {
   "nome": "Boss RV-6 Reverb",
   "meli": "https://meli.la/2TDj5kN",
-  "preco": 1519,
-  "precoEm": "2026-11-22",
+  "preco": 1490,
+  "precoEm": "2026-11-23",
   "categoria": "pedal",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-19",
       "preco": 1519
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1490
     }
   ],
   "imagem": "/images/produtos/boss-rv-6-reverb.webp",
@@ -39,11 +43,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1599,
-    "off": 5,
-    "pix": true,
-    "cartao": 1599,
-    "parcelas": "10x R$ 159,90 sem juros",
+    "parcelas": "10x R$ 149 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-reverb-rv-6-cinza-escuro/p/MLB23231611"
   },

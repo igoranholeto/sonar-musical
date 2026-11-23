@@ -1,8 +1,8 @@
 {
   "nome": "Bravo BUK123 Concert",
   "meli": "https://meli.la/1L914Vh",
-  "preco": 167,
-  "precoEm": "2026-11-22",
+  "preco": 166,
+  "precoEm": "2026-11-23",
   "categoria": "ukulele",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-19",
       "preco": 167
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 166
     }
   ],
   "imagemAlt": "Bravo BUK123 Concert",

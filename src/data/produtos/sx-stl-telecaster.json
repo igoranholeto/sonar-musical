@@ -1,8 +1,8 @@
 {
   "nome": "Guitarra SX Telecaster STL de freixo",
   "meli": "https://meli.la/2Q9tBzH",
-  "preco": 2350,
-  "precoEm": "2026-11-22",
+  "preco": 2199,
+  "precoEm": "2026-11-23",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-22",
       "preco": 2350
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 2199
     }
   ],
   "nota": 4.9,
@@ -55,7 +59,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
-    "parcelas": "10x R$ 235 sem juros",
+    "antes": 2899,
+    "off": 24,
+    "parcelas": "10x R$ 219,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-sx-telecaster-stl-natural-de-freixo/p/MLB24083940"
   }

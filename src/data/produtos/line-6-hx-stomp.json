@@ -1,20 +1,24 @@
 {
   "nome": "Line 6 HX Stomp",
   "meli": "https://meli.la/345DNHz",
-  "preco": 4749,
-  "precoEm": "2026-11-22",
+  "preco": 4699,
+  "precoEm": "2026-11-23",
   "categoria": "pedaleira",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 4749
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 4699
     }
   ],
   "imagemAlt": "Line 6 HX Stomp",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 474,90 sem juros",
+    "parcelas": "10x R$ 469,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedaleira-multiefeitos-line-6-hx-stomp-preto-226-efeitos-guitarra-baixo/p/MLB25446108"
   },

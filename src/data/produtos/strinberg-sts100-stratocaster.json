@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg STS100 (Stratocaster)",
   "meli": "https://meli.la/1bpU2h9",
-  "preco": 735,
-  "precoEm": "2026-11-22",
+  "preco": 845,
+  "precoEm": "2026-11-23",
   "categoria": "guitarra",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-22",
       "preco": 735
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 845
     }
   ],
   "imagem": "/images/produtos/strinberg-sts100-stratocaster.webp",
@@ -47,7 +51,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 71,07",
+    "parcelas": "10x R$ 84,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-strinberg-sts100-stratocaster-tilia-branca-brilhante/p/MLB23405932"
   },

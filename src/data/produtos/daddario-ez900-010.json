@@ -1,8 +1,8 @@
 {
   "nome": "D'Addario EZ900 .010",
   "meli": "https://meli.la/2eKzWZy",
-  "preco": 53,
-  "precoEm": "2026-11-22",
+  "preco": 66,
+  "precoEm": "2026-11-23",
   "categoria": "cordas",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-21",
       "preco": 53
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 66
     }
   ],
   "imagem": "/images/produtos/daddario-ez900-010.webp",
@@ -19,8 +23,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 66,
-    "off": 20,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-violao-aco-010-daddario-ez900-b-mizinha-extra/up/MLBU1472063865"
   },

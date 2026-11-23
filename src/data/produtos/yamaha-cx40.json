@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha CX40 (nylon eletroacústico)",
   "meli": "https://meli.la/2cwQGU4",
-  "preco": 1229,
-  "precoEm": "2026-11-22",
+  "preco": 1026,
+  "precoEm": "2026-11-23",
   "categoria": "violao",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-22",
       "preco": 1229
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1026
     }
   ],
   "nota": 4.8,
@@ -41,7 +45,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 122,91 sem juros",
+    "parcelas": "10x R$ 102,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-cx40-para-destros-natural-pau-rosa/p/MLB16046655"
   },

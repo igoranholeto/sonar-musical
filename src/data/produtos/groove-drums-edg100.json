@@ -1,8 +1,8 @@
 {
   "nome": "Groove Drums EDG100",
   "meli": "https://meli.la/2VVKqzv",
-  "preco": 1547,
-  "precoEm": "2026-11-22",
+  "preco": 1535,
+  "precoEm": "2026-11-23",
   "categoria": "bateria",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-22",
       "preco": 1547
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1535
     }
   ],
   "imagemAlt": "Groove Drums EDG100",

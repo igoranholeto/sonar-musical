@@ -1,8 +1,8 @@
 {
   "nome": "Fonte Boss PSA-120ZS 9V",
   "meli": "https://meli.la/1hHEhFL",
-  "preco": 267,
-  "precoEm": "2026-11-22",
+  "preco": 253,
+  "precoEm": "2026-11-23",
   "categoria": "acessorio",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-18",
       "preco": 267
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 253
     }
   ],
   "imagem": "/images/produtos/fonte-boss-psa-120zs-9v.webp",
@@ -23,7 +27,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 44,54 sem juros",
+    "parcelas": "12x R$ 24,75",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fonte-pedal-boss-psa-120zs/p/MLB20224436"
   },

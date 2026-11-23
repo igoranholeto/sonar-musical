@@ -1,13 +1,17 @@
 {
   "nome": "Pedal sustain DC Music",
   "meli": "https://meli.la/2oihmYS",
-  "preco": 38,
-  "precoEm": "2026-11-22",
+  "preco": 43,
+  "precoEm": "2026-11-23",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 38
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 43
     }
   ],
   "imagemAlt": "Pedal sustain DC Music",
@@ -15,7 +19,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 78,
-    "off": 51,
+    "off": 44,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-sustain-teclado-universal-para-casio-yamaha-roland-smart-piano-marca-dc-music/p/MLB51986542"
   },

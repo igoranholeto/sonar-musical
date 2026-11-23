@@ -1,8 +1,8 @@
 {
   "nome": "Aroma TDX-22 II",
-  "meli": "https://meli.la/1JqRWQX",
+  "meli": "https://meli.la/2wU3t4q",
   "preco": 3329,
-  "precoEm": "2026-11-22",
+  "precoEm": "2026-11-23",
   "categoria": "bateria",
   "historico": [
     {
@@ -12,12 +12,16 @@
     {
       "data": "2026-11-12",
       "preco": 3329
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 3329
     }
   ],
   "imagemAlt": "Aroma TDX-22 II",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
+    "desde": "2026-11-23",
     "antes": 4499,
     "off": 26,
     "parcelas": "10x R$ 332,93 sem juros",

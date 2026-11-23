@@ -1,8 +1,8 @@
 {
   "nome": "Tagima T-640 HSS",
   "meli": "https://meli.la/11EEjy9",
-  "preco": 1620,
-  "precoEm": "2026-11-22",
+  "preco": 1408,
+  "precoEm": "2026-11-23",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-21",
       "preco": 1620
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1408
     }
   ],
   "imagemAlt": "Tagima T-640 HSS",
@@ -31,7 +35,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 2599,
-    "off": 37,
+    "off": 45,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-tagima-t-640-hss-roasted-maple-olympic-white/p/MLB42812251"

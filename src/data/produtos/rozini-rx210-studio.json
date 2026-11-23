@@ -1,8 +1,8 @@
 {
   "nome": "Rozini Studio RX210 (nylon)",
   "meli": "https://meli.la/2r3bDt9",
-  "preco": 1263,
-  "precoEm": "2026-11-22",
+  "preco": 1276,
+  "precoEm": "2026-11-23",
   "categoria": "violao",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-22",
       "preco": 1263
+    },
+    {
+      "data": "2026-11-23",
+      "preco": 1276
     }
   ],
   "nota": 4.7,
@@ -61,7 +65,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1330,
+    "antes": 1344,
     "off": 5,
     "pix": true,
     "freteGratis": true,
