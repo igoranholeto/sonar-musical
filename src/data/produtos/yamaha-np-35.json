@@ -1,0 +1,82 @@
+{
+  "nome": "Yamaha Piaggero NP-35 (76 teclas)",
+  "meli": "https://meli.la/1pEPz6n",
+  "preco": 3595,
+  "precoEm": "2026-11-24",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 3595
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 14,
+  "imagemAlt": "Yamaha Piaggero NP-35 (76 teclas)",
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "NP-35 Piaggero"
+    ],
+    [
+      "Quantidade de teclas",
+      "76"
+    ],
+    [
+      "Com teclas sensíveis",
+      "Sim"
+    ],
+    [
+      "Sensibilidade ao toque",
+      "Forte, Média, Suave, Fixa"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Quantidade de ritmos",
+      "10"
+    ],
+    [
+      "Quantidade de canções",
+      "25"
+    ],
+    [
+      "Efeitos",
+      "Dual, Reforço de Som, Reverb (6 tipos)"
+    ],
+    [
+      "Terminais",
+      "DC IN 12V, fones de ouvido, sustain, USB para host"
+    ],
+    [
+      "É portátil",
+      "Sim"
+    ],
+    [
+      "Com Bluetooth",
+      "Não"
+    ],
+    [
+      "Acessórios incluídos",
+      "Adaptador CA PA-150B, estante de partitura"
+    ],
+    [
+      "Peso",
+      "6 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "parcelas": "10x R$ 359,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-np-35b-piaggero-preto-76-teclas-c-fonte-yamaha-100-240v/p/MLB27514778"
+  },
+  "imagem": "/images/produtos/yamaha-np-35.webp"
+}

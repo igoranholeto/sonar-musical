@@ -239,6 +239,16 @@ const MAP = {
   'presente-para-quem-toca-cavaquinho': { kicker: 'CAVAQUINHO · PRESENTES', l1: 'PRESENTE PARA', l2: 'CAVAQUINISTA', q: 'cavaquinho samba', prefer: /cavaquinho/i, avoid: /logo|ukulele|map/i },
   'presente-para-produtor-musical': { kicker: 'PRESENTES · NATAL 2026', l1: 'PRESENTE PARA', l2: 'PRODUTOR', q: 'home studio MIDI keyboard', prefer: /studio|midi/i, avoid: /logo|person|people|man|woman|girl|boy|tv|radio station|newsroom/i },
   'presente-para-dj':               { kicker: 'DJ · PRESENTES', l1: 'PRESENTE', l2: 'PARA DJ', q: 'DJ headphones mixer', prefer: /dj|headphone|mixer/i, avoid: /logo|game|xbox|playstation|nintendo|person|people|man|woman|girl|boy|crowd|festival/i },
+  'melhor-piano-digital-ate-5000-reais': { kicker: 'PIANO DIGITAL · 2026', l1: 'PIANO DIGITAL', l2: 'ATÉ R$ 5.000', q: 'Yamaha P-515', prefer: /Yamaha P-515/i, avoid: /logo|person|people|man|woman|girl|boy|concert|grand piano|synthesizer|organ/i },
+  'melhor-bateria-eletronica-ate-3000-reais': { kicker: 'BATERIA · GUIA 2026', l1: 'BATERIA ELETRÔNICA', l2: 'ATÉ R$ 3.000', q: 'electronic drum kit', prefer: /electronic drum|roland td|e-drum/i, avoid: /logo|person|people|man|woman|girl|boy|concert|crowd/i },
+  'melhor-teclado-ate-2000-reais': { kicker: 'TECLADO · GUIA 2026', l1: 'TECLADO', l2: 'ATÉ R$ 2.000', q: 'Yamaha PSR keyboard', prefer: /psr|yamaha|casio|keyboard/i, avoid: /logo|computer|typing|pc|laptop|person|people|man|woman|girl|boy/i },
+  'melhor-amplificador-de-guitarra-ate-500-reais': { kicker: 'AMPLIFICADOR · 2026', l1: 'AMPLIFICADOR', l2: 'ATÉ R$ 500', q: 'small guitar amplifier', prefer: /amplifier|amp|combo/i, avoid: /logo|circuit|schematic|stereo|hifi|person|people|man|woman|concert/i },
+  'melhor-guitarra-custo-beneficio': { kicker: 'GUITARRA · GUIA 2026', l1: 'GUITARRA', l2: 'CUSTO-BENEFÍCIO', q: 'Stratocaster electric guitar', prefer: /stratocaster|strat/i, avoid: /logo|bass|band|singer|person|people|man|woman|concert/i },
+  'melhor-violino-ate-1000-reais': { kicker: 'VIOLINO · GUIA 2026', l1: 'VIOLINO', l2: 'ATÉ R$ 1.000', q: 'violin', prefer: /Violin at hotel/i, avoid: /logo|cello|person|people|man|woman|girl|boy|orchestra|concert/i },
+  'melhor-amplificador-para-teclado': { kicker: 'TECLADO · AMPLIFICADOR', l1: 'AMPLIFICADOR', l2: 'PARA TECLADO', q: 'keyboard amplifier', prefer: /music shop interior/i, avoid: /logo|computer|typing|pc|laptop|person|people|man|woman|crowd/i },
+  'melhor-violao-ate-3000-reais': { kicker: 'VIOLÃO · GUIA 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 3.000', q: 'Yamaha APX guitar', prefer: /Yamaha APX700 blue sunburst/i, avoid: /logo|electric|bass|person|people|man|woman|girl|boy|concert|band/i },
+  'melhor-baixo-ate-3000-reais': { kicker: 'BAIXO · GUIA 2026', l1: 'BAIXO', l2: 'ATÉ R$ 3.000', q: 'bass guitar body', prefer: /Sandberg Electra TT bass guitar body in suburst\.jpg/i, avoid: /logo|fish|double bass|upright|person|people|man|woman|concert|band/i },
+  'melhor-teclado-76-teclas': { kicker: 'TECLADO · GUIA 2026', l1: 'TECLADO', l2: '76 TECLAS', q: 'Yamaha DGX keyboard', prefer: /File:Yamaha DGX-205\.jpg|Dgx-205 7/i, avoid: /logo|computer|typing|pc|laptop|person|people|man|woman|girl|boy/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

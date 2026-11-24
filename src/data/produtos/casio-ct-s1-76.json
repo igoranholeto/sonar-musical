@@ -1,0 +1,64 @@
+{
+  "nome": "Casio Casiotone CT-S1-76 (76 teclas)",
+  "meli": "https://meli.la/2oLX7ed",
+  "preco": 2112,
+  "precoEm": "2026-11-24",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 2112
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2,
+  "imagemAlt": "Casio Casiotone CT-S1-76 (76 teclas)",
+  "ficha": [
+    [
+      "Marca",
+      "Casio"
+    ],
+    [
+      "Modelo",
+      "CT-S1-76BK"
+    ],
+    [
+      "Quantidade de teclas",
+      "76"
+    ],
+    [
+      "Polifonia máxima",
+      "64"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "Fonte bivolt ou 6 pilhas"
+    ],
+    [
+      "Acessórios incluídos",
+      "Apoio de partitura, fonte bivolt"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Peso",
+      "5,3 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "antes": 2640,
+    "off": 20,
+    "parcelas": "10x R$ 211,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-casiotone-ct-s1-com-76-teclas-preto/p/MLB45652996"
+  },
+  "imagem": "/images/produtos/casio-ct-s1-76.webp"
+}

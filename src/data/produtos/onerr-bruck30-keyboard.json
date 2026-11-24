@@ -1,0 +1,76 @@
+{
+  "nome": "Onerr Bruck30 Keyboard (amplificador para teclado)",
+  "meli": "https://meli.la/2KF98Cm",
+  "preco": 1027,
+  "precoEm": "2026-11-24",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 1027
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 66,
+  "imagemAlt": "Onerr Bruck30 Keyboard (amplificador para teclado)",
+  "ficha": [
+    [
+      "Marca",
+      "Onerr"
+    ],
+    [
+      "Linha",
+      "Bruck"
+    ],
+    [
+      "Modelo",
+      "Bruck30 Keyboard"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "30 W"
+    ],
+    [
+      "Resposta em frequência",
+      "80 Hz - 16 kHz"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "XLR balanceada"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Teclado, piano digital"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "33 cm x 16 cm x 28 cm"
+    ],
+    [
+      "Peso",
+      "5,4 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "antes": 1139,
+    "off": 9,
+    "parcelas": "10x R$ 102,75 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-amplificada-onerr-bruck30-para-teclado-e-piano-digital-preto/p/MLB30899654"
+  },
+  "imagem": "/images/produtos/onerr-bruck30-keyboard.webp"
+}

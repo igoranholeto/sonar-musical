@@ -1,0 +1,76 @@
+{
+  "nome": "Meteoro Space Double 35 (violão e teclado)",
+  "meli": "https://meli.la/1fFzr53",
+  "preco": 708,
+  "precoEm": "2026-11-24",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 708
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 145,
+  "imagemAlt": "Meteoro Space Double 35 (violão e teclado)",
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "Space"
+    ],
+    [
+      "Modelo",
+      "Space Double 35"
+    ],
+    [
+      "Cor",
+      "Creme"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "35 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Teclado, violão"
+    ],
+    [
+      "Voltagem",
+      "127/220V"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "35 cm x 35 cm x 25 cm"
+    ],
+    [
+      "Peso",
+      "6,5 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "antes": 811,
+    "off": 12,
+    "parcelas": "10x R$ 70,76 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-violao-meteoro-space-double-35w-cor-creme/p/MLB21875749"
+  },
+  "imagem": "/images/produtos/meteoro-space-double-35.webp"
+}

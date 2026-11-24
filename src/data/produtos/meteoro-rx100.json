@@ -1,0 +1,78 @@
+{
+  "nome": "Meteoro RX100 (amplificador para teclado, 100 W)",
+  "meli": "https://meli.la/2EDXeuz",
+  "preco": 2638,
+  "precoEm": "2026-11-24",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 2638
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 8,
+  "imagemAlt": "Meteoro RX100 (amplificador para teclado, 100 W)",
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Modelo",
+      "RX100"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "100 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ],
+    [
+      "Alto-falante",
+      "12\""
+    ],
+    [
+      "Resposta em frequência",
+      "20 Hz - 20 kHz"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Conectores de entrada",
+      "Jack"
+    ],
+    [
+      "Conectores de saída",
+      "XLR balanceado"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Teclado"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "34 cm x 34 cm x 46 cm"
+    ],
+    [
+      "Peso",
+      "25 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "parcelas": "10x R$ 263,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-combo-meteoro-rx100-100w-para-teclado-com-falante-de-12/p/MLB20756064"
+  },
+  "imagem": "/images/produtos/meteoro-rx100.webp"
+}

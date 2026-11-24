@@ -1,0 +1,74 @@
+{
+  "nome": "Meteoro Nitrous NK30 (amplificador para teclado)",
+  "meli": "https://meli.la/1mfStzs",
+  "preco": 1149,
+  "precoEm": "2026-11-24",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 1149
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 113,
+  "imagemAlt": "Meteoro Nitrous NK30 (amplificador para teclado)",
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Linha",
+      "Nitrous"
+    ],
+    [
+      "Modelo",
+      "NK 30"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "30 W"
+    ],
+    [
+      "Classe",
+      "D"
+    ],
+    [
+      "Quantidade de canais",
+      "1"
+    ],
+    [
+      "Conectores de entrada",
+      "P10"
+    ],
+    [
+      "Instrumentos recomendados",
+      "Teclado"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bivolt"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "33 cm x 23 cm x 32 cm"
+    ],
+    [
+      "Peso",
+      "9 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "parcelas": "10x R$ 114,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-para-teclados-meteoro-nitrous-nk-30-30w/p/MLB20253622"
+  },
+  "imagem": "/images/produtos/meteoro-nitrous-nk30.webp"
+}

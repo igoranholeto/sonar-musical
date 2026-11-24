@@ -1,0 +1,62 @@
+{
+  "nome": "Roland Juno-D7 (76 teclas)",
+  "meli": "https://meli.la/2Dr5cgo",
+  "preco": 11389,
+  "precoEm": "2026-11-24",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 11389
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1,
+  "imagemAlt": "Roland Juno-D7 (76 teclas)",
+  "ficha": [
+    [
+      "Marca",
+      "Roland"
+    ],
+    [
+      "Modelo",
+      "Juno-D7"
+    ],
+    [
+      "Quantidade de teclas",
+      "76"
+    ],
+    [
+      "Polifonia máxima",
+      "128"
+    ],
+    [
+      "Quantidade de ritmos",
+      "95"
+    ],
+    [
+      "Com interface MIDI",
+      "Sim"
+    ],
+    [
+      "Tipos de alimentação",
+      "Bateria/corrente doméstica"
+    ],
+    [
+      "Inclui pedais",
+      "Não"
+    ],
+    [
+      "Acessórios incluídos",
+      "Cabo de alimentação, manual"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "parcelas": "10x R$ 1.138 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-roland-juno-d7-76-teclas-preto-midi-128-vozes-127v/p/MLB47426378"
+  },
+  "imagem": "/images/produtos/roland-juno-d7.webp"
+}
