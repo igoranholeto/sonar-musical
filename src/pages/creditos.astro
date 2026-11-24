@@ -11,7 +11,10 @@ const grupos = CREDITOS_FOTOS.reduce((acc, foto) => {
 
 const bandas = Object.values(grupos);
 
-// Cada foto creditada vira um ImageObject com autor, licença e origem (Commons).
+// Cada foto creditada vira um Photograph com autor, licença e origem (Commons).
+// Não é ImageObject de propósito: esta página não exibe as fotos, então não há contentUrl
+// para dar, e o Google trata ImageObject com creator/license como "Metadados de imagens"
+// e marca cada item sem contentUrl como erro crítico no Search Console (278 em 22/11/2026).
 const todosCreditos = [...CREDITOS_FOTOS, ...CREDITOS_CAPAS];
 const creditosSchema = {
   '@context': 'https://schema.org',
@@ -29,7 +32,7 @@ const creditosSchema = {
       '@type': 'ListItem',
       position: i + 1,
       item: {
-        '@type': 'ImageObject',
+        '@type': 'Photograph',
         name: c.descricao,
         creditText: c.autor,
         creator: { '@type': 'Person', name: c.autor, ...(c.autorUrl ? { url: c.autorUrl } : {}) },
