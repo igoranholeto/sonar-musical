@@ -269,7 +269,8 @@ export function sincronizarPrecosTexto({ ids = null, posts = null, aplicar = fal
       const p = cat.get(id);
       const atual = Math.round(p.preco);
       const novo = fmtPreco(atual);
-      const velhos = [...valoresDe(id)].filter((v) => v !== atual);
+      // Preço no cartão também é atual: não vira "velho" só por estar no histórico.
+      const velhos = [...valoresDe(id)].filter((v) => !atuaisDe(id).has(v));
       for (const v of velhos) {
         const outro = doPost.find((o) => o !== id && valoresDe(o).has(v));
         const velho = fmtPreco(v);
