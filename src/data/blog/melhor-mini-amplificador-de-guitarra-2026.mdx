@@ -24,14 +24,14 @@ import BarraCompra from '../../components/BarraCompra.astro';
   veredito="Para estudar em casa com o melhor som por real, o <strong>Boss Katana Mini</strong>: 7 watts, EQ de 3 bandas, delay analógico e funciona a pilha."
   itens={[
     { id: "boss-katana-mini-7w", rotulo: "Melhor mini amplificador" },
-    { id: "blackstar-fly-3-bluetooth", rotulo: "De bolso, com Bluetooth" },
+    { id: "marshall-ms-4", rotulo: "De bolso, a bateria" },
     { id: "borne-vorax-630-studio", rotulo: "Mais potência por real" },
   ]}
 />
 
 <FaixaOrcamento titulo="Ir direto para o seu perfil" itens={[
   { rotulo: "Melhor timbre", href: "#1-boss-katana-mini-melhor-timbre-da-categoria" },
-  { rotulo: "De bolso", href: "#2-blackstar-fly-3-melhor-portátil-de-bolso" },
+  { rotulo: "De bolso", href: "#2-marshall-ms-4-melhor-de-bolso" },
   { rotulo: "Primeiro amp", href: "#3-fender-frontman-10g-melhor-primeiro-amplificador" },
   { rotulo: "Com app", href: "#4-positive-grid-spark-mini-melhor-com-modelagem-e-app" },
   { rotulo: "Som premium", href: "#5-yamaha-thr10ii-melhor-som-absoluto-desktop-premium" },
@@ -45,7 +45,7 @@ Você mora em apartamento, o vizinho já reclamou duas vezes e o amplificador de
 Mini amplificador não é amplificador de brinquedo. A geração atual entrega modelagem digital, efeitos embutidos, saída de fone, entrada auxiliar e alimentação por bateria em caixas que cabem na mochila. Alguns soam melhor no volume de quarto do que um valvulado de 30 watts soaria, porque valvulado só entrega o timbre bom quando está alto.
 
 <QuickAnswer pergunta="Qual o melhor mini amplificador de guitarra?">
-Para praticar em casa, **3 a 10 watts resolvem**. O melhor timbre geral da categoria é o **Boss Katana Mini**; o mais portátil com Bluetooth é o **Blackstar Fly 3**; o melhor primeiro amplificador barato é o **Fender Frontman 10G**. Acima de R$ 2.500, o **Positive Grid Spark Mini** e o **Yamaha THR10II** entram em outro patamar de som.
+Para praticar em casa, **3 a 10 watts resolvem**. O melhor timbre geral da categoria é o **Boss Katana Mini**; o mais portátil é o **Marshall MS-4**, que funciona com bateria de 9 V; o melhor primeiro amplificador barato é o **Fender Frontman 10G**. Acima de R$ 2.500, o **Positive Grid Spark Mini** e o **Yamaha THR10II** entram em outro patamar de som.
 </QuickAnswer>
 
 ## Comparativo rápido
@@ -53,8 +53,8 @@ Para praticar em casa, **3 a 10 watts resolvem**. O melhor timbre geral da categ
 <ComparativoProdutos
   colunas={["Modelo", "Potência", "Alimentação", "Bluetooth", "Preço no ML"]}
   linhas={[
-    { celulas: ["Boss Katana Mini", "7 W", "Pilha AA / fonte", "Não", "R$ 857"], destaque: true, badge: "Melhor timbre geral" },
-    { celulas: ["Blackstar Fly 3", "3 W", "Pilha AA / fonte", "Sim (versão BT)", "R$ 794"] },
+    { celulas: ["Boss Katana Mini", "7 W", "Pilha AA / fonte", "Não", "R$ 1.289"], destaque: true, badge: "Melhor timbre geral" },
+    { celulas: ["Marshall MS-4", "1 W", "Bateria 9 V / fonte", "Não", "R$ 555"] },
     { celulas: ["Fender Frontman 10G", "10 W", "Fonte (tomada, 120 V)", "Não", "R$ 939"] },
     { celulas: ["Positive Grid Spark Mini", "10 W", "Bateria interna", "Sim", "R$ 2.630"] },
     { celulas: ["Yamaha THR10II", "20 W", "Fonte / bateria", "Sim", "R$ 2.999"] },
@@ -70,7 +70,7 @@ Preços conferidos no Mercado Livre em 24/11/2026 pelo Sonar Musical. Confira o 
 
 **Tamanho do falante.** É o fator que mais define o som e o que ninguém olha. Falante de 3 polegadas não reproduz graves, o timbre fica fino independentemente do EQ. De 6,5" para cima o corpo aparece. Um amp de 5 W com falante de 6,5" soa mais cheio que um de 15 W com falante de 4".
 
-**Alimentação por bateria ou pilha.** Diferença entre "amplificador pequeno" e "amplificador portátil". Modelos a pilha AA (Katana Mini, Fly 3) você leva para a praia; modelos com bateria de lítio interna (Spark Mini) recarregam via USB. Se o amp só liga na tomada, ele é um amp de mesa, não portátil.
+**Alimentação por bateria ou pilha.** Diferença entre "amplificador pequeno" e "amplificador portátil". Modelos a pilha ou bateria comum (Katana Mini com pilhas AA, MS-4 com bateria de 9 V) você leva para a praia; modelos com bateria de lítio interna (Spark Mini) recarregam via USB. Se o amp só liga na tomada, ele é um amp de mesa, não portátil.
 
 **Saída de fone e entrada auxiliar.** Obrigatório para uso em apartamento. A saída de fone permite estudar em silêncio; a entrada auxiliar (P2 ou Bluetooth) permite tocar junto com a música. Confira se a saída de fone tem simulação de gabinete, sem ela, o timbre no fone fica áspero e artificial.
 
@@ -88,7 +88,7 @@ O Katana Mini é a referência quando o critério é som puro por real gasto. S�
 - EQ: 3 bandas (grave, médio, agudo), raro nessa faixa
 - Alimentação: 6 pilhas AA ou fonte 9V
 - Saídas: fone (P2), entrada auxiliar
-- Preço no Mercado Livre em 24/11/2026: R$ 857
+- Preço no Mercado Livre em 24/11/2026: R$ 1.289
 
 O EQ de três bandas é o diferencial técnico real: os concorrentes trazem um único knob de "tone", e isso limita muito o ajuste. Aqui você corta médio para um som mais moderno ou levanta grave para compensar o falante pequeno.
 
@@ -102,31 +102,28 @@ O ponto fraco é honesto: não tem Bluetooth, não tem reverb e a saída de fone
   destaques={["EQ de 3 bandas, controle real que os rivais não têm", "Canal Brown com saturação da linha Katana grande", "Funciona com 6 pilhas AA, leva para qualquer lugar"]}
 />
 
-## 2. Blackstar Fly 3, melhor portátil de bolso
+## 2. Marshall MS-4, melhor de bolso
 
-O Fly 3 é o mini amp mais vendido do mundo e cabe literalmente na mão. Três watts, falante de 3 polegadas, dois canais e o circuito ISF (Infinite Shape Feature) da Blackstar, um knob único que desloca o caráter do EQ entre resposta americana (mais brilhante, aberta) e britânica (mais média, encorpada).
+O MS-4 é a miniatura da pilha Marshall: um cabeçote com duas caixinhas, 1 watt, controles de ganho, tom e volume e uma chave de overdrive. Funciona com uma bateria de 9 V ou com fonte, tem saída de fone e clipe para prender no cinto ou na alça da guitarra.
 
 **Especificações:**
-- Potência: 3 W (6 W no pack estéreo com a caixa extra)
-- Falante: 3"
-- Canais: 2 (Clean, Overdrive)
-- Efeitos: delay digital (tape delay)
-- Controle ISF: varia o caráter do EQ entre americano e britânico
-- Alimentação: 6 pilhas AA ou fonte
-- Peso: 0,9 kg
-- Bluetooth: só na versão Fly 3 Bluetooth
-- Preço no Mercado Livre em 24/11/2026: R$ 794
+- Potência: 1 W
+- Formato: cabeçote com duas caixas, como uma pilha Marshall
+- Canais: limpo e overdrive (chave)
+- Alimentação: bateria de 9 V ou fonte
+- Saídas: fone
+- Preço no Mercado Livre em 24/11/2026: R$ 555
 
-Vale saber que existem duas versões no mercado brasileiro: a Fly 3 original e a Fly 3 Bluetooth. A diferença de preço é pequena e a versão com Bluetooth transforma o amp em caixa de som para o celular, o que muda o uso no dia a dia. Compre a versão Bluetooth.
+O som é pequeno, como o de qualquer amplificador desse tamanho: não espere grave nem volume para tocar com outra pessoa. O que ele faz bem é estar sempre à mão, no sofá, na viagem ou em cima da mesa, e agradar como presente. Para guitarrista de metal que precisa de peso, o Katana Mini é a escolha melhor apesar do tamanho maior.
 
-O falante de 3 polegadas é a limitação física da proposta: não espere grave. Para guitarrista de metal que precisa de peso, o Katana Mini é a escolha melhor apesar do tamanho maior.
+Até novembro de 2026 esta posição era do **Blackstar Fly 3**. Hoje o Fly 3 de guitarra só aparece no Mercado Livre como compra internacional, com imposto de importação e ICMS cobrados à parte no fechamento do pedido, e por isso saiu da lista.
 
 <AfiliadoCTA
-  id="blackstar-fly-3-bluetooth"
-  descricao="O mini amp mais portátil que ainda soa como amplificador de verdade, 900 gramas, pilha AA e Bluetooth"
-  avaliacao={4.3}
+  id="marshall-ms-4"
+  descricao="Mini amplificador de 1 W em formato de pilha Marshall, a bateria de 9 V"
+  avaliacao={3.6}
   badge="Mais Portátil"
-  destaques={["Só 900 g, cabe na mochila com a guitarra", "Controle ISF, alterna entre timbre americano e britânico", "Vira caixa Bluetooth para o celular quando não está tocando"]}
+  destaques={["Formato de pilha Marshall", "Funciona com bateria de 9 V", "Saída de fone para tocar em silêncio"]}
 />
 
 ## 3. Fender Frontman 10G, melhor primeiro amplificador
@@ -232,8 +229,8 @@ Se o seu uso é 100% doméstico e você quer o melhor timbre, gaste em Katana Mi
 
 | Seu perfil | Modelo indicado |
 |---|---|
-| Quero o melhor timbre por menos de R$ 1.200 | Boss Katana Mini |
-| Preciso levar na mochila todo dia | Blackstar Fly 3 Bluetooth |
+| Quero o melhor timbre por cerca de R$ 1.300 | Boss Katana Mini |
+| Preciso levar na mochila todo dia | Marshall MS-4 |
 | É meu primeiro amplificador, orçamento curto | Fender Frontman 10G |
 | Estou aprendendo e quero recursos de estudo | Positive Grid Spark Mini |
 | Quero som de amp grande em volume de quarto | Yamaha THR10II |
@@ -278,6 +275,6 @@ Quer saber mais sobre o Katana Mini? Leia a análise completa em [Boss Katana Mi
   },
   {
     question: "Mini amplificador funciona a pilha ou bateria?",
-    answer: "Depende do modelo, e é o item mais confundido da categoria. Boss Katana Mini e Blackstar Fly 3 funcionam com 6 pilhas AA. O Positive Grid Spark Mini tem bateria de lítio recarregável por USB-C. Já o Fender Frontman 10G e o Borne Vorax 630 só funcionam ligados na tomada, são amplificadores pequenos, não portáteis."
+    answer: "Depende do modelo, e é o item mais confundido da categoria. O Boss Katana Mini funciona com 6 pilhas AA e o Marshall MS-4 com uma bateria de 9 V. O Positive Grid Spark Mini tem bateria de lítio recarregável por USB-C. Já o Fender Frontman 10G e o Borne Vorax 630 só funcionam ligados na tomada, são amplificadores pequenos, não portáteis."
   }
 ]} />

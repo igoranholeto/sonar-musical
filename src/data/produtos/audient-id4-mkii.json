@@ -53,10 +53,8 @@
   "imagem": "/images/produtos/audient-id4-mkii.webp",
   "imagemAlt": "Audient iD4 MkII",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$ 189,96 sem juros",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-24",
     "catalogo": "https://www.mercadolivre.com.br/audient-id4-mkii-usb-c-audio-interface-class-a-preamp/p/MLB2022537015"
   },
   "ficha": [

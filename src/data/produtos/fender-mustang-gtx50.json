@@ -57,12 +57,8 @@
     }
   ],
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 4912,
-    "off": 18,
-    "parcelas": "12x R$ 384,70",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-24",
     "catalogo": "https://www.mercadolivre.com.br/fender-mustang-gtx50-guitar-amplifier/p/MLB2097252488"
   },
   "ficha": [

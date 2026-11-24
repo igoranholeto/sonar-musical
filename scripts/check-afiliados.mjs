@@ -3,6 +3,8 @@
 // destaque (URL com ref=). Quando o anúncio é encerrado, o mesmo link cai na página genérica
 // de listas (/social/<id>/lists), e o leitor não encontra o produto. Quando é só pausado, a
 // página abre normalmente, mas o primeiro card (o produto do link) traz "Anúncio pausado".
+// INTERNACIONAL = Compra Internacional (selo CBT, "Envio de EUA/China"): o preço mostrado não
+// inclui os impostos de importação, então o link tem de ser trocado por um anúncio nacional.
 // Uso: node scripts/check-afiliados.mjs   (lista só os quebrados; --all mostra todos)
 //      --md arquivo.md grava um relatório em Markdown (usado pelo GitHub Actions)
 //      --atualizar-precos grava no catálogo o preço que o ML mostra hoje em cada link OK
@@ -65,7 +67,7 @@ for (const [url, l] of links) {
   const d = await destino(url);
   const { fim, titulo, card } = d;
   const status = statusDoDestino(d);
-  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ids: [...l.ids], ml: status === 'OK' || status === 'PAUSADO' ? titulo : '', card, fim, onde: [...l.onde] });
+  resultado.push({ status, url, produtos: [...l.produtos].join(' / '), ids: [...l.ids], ml: status === 'OK' || status === 'PAUSADO' || status === 'INTERNACIONAL' ? titulo : '', origem: d.internacional || undefined, card, fim, onde: [...l.onde] });
 }
 
 const quebrados = resultado.filter((r) => r.status !== 'OK');
@@ -87,7 +89,9 @@ if (process.argv.includes('--atualizar-precos')) {
   for (const r of resultado) {
     // Situação do anúncio (páginas /black-friday/ e /produto/<id>/). VERIFICAR é falha
     // passageira do ML, então não mexe no que já estava gravado.
-    const situacao = { OK: 'ativo', PAUSADO: 'pausado', LISTA: 'encerrado' }[r.status];
+    // INTERNACIONAL conta como encerrado: a ficha fica sem botão até o link ser trocado por
+    // um anúncio nacional (o preço do anúncio importado não inclui os impostos).
+    const situacao = { OK: 'ativo', PAUSADO: 'pausado', LISTA: 'encerrado', INTERNACIONAL: 'encerrado' }[r.status];
     if (!situacao) continue;
     const preco = r.status === 'OK' ? precoDoTitulo(r.ml) : 0;
     for (const id of r.ids) {
@@ -123,11 +127,11 @@ if (mdIdx > 0) {
   const md = [
     `${resultado.length} links verificados: ${resultado.length - quebrados.length} OK, ${quebrados.length} quebrados ou a verificar.`,
     '',
-    'LISTA = o anúncio saiu do ar e o link cai na vitrine genérica. PAUSADO = o link abre o produto, mas o anúncio está pausado e não dá para comprar. VERIFICAR = o ML não respondeu como esperado (pode ser bloqueio temporário).',
+    'LISTA = o anúncio saiu do ar e o link cai na vitrine genérica. PAUSADO = o link abre o produto, mas o anúncio está pausado e não dá para comprar. INTERNACIONAL = Compra Internacional: o preço não inclui os impostos de importação, trocar por um anúncio nacional. VERIFICAR = o ML não respondeu como esperado (pode ser bloqueio temporário).',
     'Para corrigir: gerar um link novo no painel de afiliados e trocar `meli` (e o preço) no arquivo do produto.',
     '',
     ...linhas,
   ].join('\n');
   fs.writeFileSync(process.argv[mdIdx + 1], md + '\n');
 }
-process.exitCode = quebrados.some((r) => r.status === 'LISTA' || r.status === 'PAUSADO') ? 1 : 0;
+process.exitCode = quebrados.some((r) => ['LISTA', 'PAUSADO', 'INTERNACIONAL'].includes(r.status)) ? 1 : 0;

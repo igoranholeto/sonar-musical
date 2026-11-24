@@ -45,12 +45,8 @@
   "imagem": "/images/produtos/mosky-iso-6-fonte-isolada.webp",
   "imagemAlt": "Mosky ISO-6 fonte isolada",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 345,
-    "off": 32,
-    "parcelas": "12x R$ 23,16",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-24",
     "catalogo": "https://www.mercadolivre.com.br/fonte-de-pedal-isolada-profissional-mosky-iso-6-us-plug/p/MLB2031502646"
   },
   "ficha": [

@@ -63,9 +63,9 @@ integrantes:
       - tipo: Pedais
         original:
           nome: Boss CE-2 Chorus (vintage)
-          preco: ~R$ 1.705
+          preco: ~R$ 2.240
           similar: "Boss CE-2W Waza Craft (reedição)"
-          urlAfiliado: https://meli.la/1iXnVQE
+          urlAfiliado: https://meli.la/19DasjP
         low:
           nome: Boss CE-5 Chorus Ensemble
           preco: ~R$ 990

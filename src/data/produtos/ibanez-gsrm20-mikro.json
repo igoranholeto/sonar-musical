@@ -41,12 +41,8 @@
   "imagemAlt": "Ibanez Mikro GSRM20",
   "imagem": "/images/produtos/ibanez-gsrm20-mikro.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 3185,
-    "off": 30,
-    "parcelas": "12x R$ 214,23",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-24",
     "catalogo": "https://www.mercadolivre.com.br/bass-guitar-ibanez-gsrm20bwnf-mikro-walnut-flat-poplar-body/p/MLB2069233273"
   },
   "ficha": [

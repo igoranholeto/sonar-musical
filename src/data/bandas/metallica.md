@@ -156,10 +156,9 @@ integrantes:
           urlAfiliado: https://meli.la/1f8mhZF
         low:
           nome: Zildjian ZBT
-          preco: ~R$ 3.557
+          preco: ~R$ 3.297
           obs: Entrada na linha Zildjian com bom brilho.
-          similar: "Zildjian I Family (kit de pratos)"
-          urlAfiliado: https://meli.la/1veU34S
+          urlAfiliado: https://meli.la/2jsRE6n
 albuns:
   - ano: 1986
     videoYoutubeId: Dr15iUxVi5Y

@@ -50,6 +50,10 @@ for (const [chave, { p, u }] of Object.entries(MAP)) {
       console.log(`✗ ${id}: o link novo ${u} está ${status === 'LISTA' ? 'encerrado' : 'pausado'}; nada gravado`);
       continue;
     }
+    if (status === 'INTERNACIONAL') {
+      console.log(`✗ ${id}: o link novo ${u} é Compra Internacional (${link.internacional}); o preço não inclui os impostos de importação. Gere o link de um anúncio nacional. Nada gravado`);
+      continue;
+    }
     if (status === 'VERIFICAR') console.log(`! ${id}: o ML não respondeu ao abrir ${u}; anúncio gravado como ativo sem os dados do card`);
     const doTitulo = precoDoTitulo(link.titulo);
     if (doTitulo && Math.abs(doTitulo - Math.round(preco)) > 1) console.log(`! ${id}: o og:title do link novo diz R$ ${doTitulo}, e o MAP diz R$ ${p}`);

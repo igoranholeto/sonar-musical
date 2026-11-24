@@ -16,17 +16,29 @@ export async function destino(url) {
       const [c1, c2 = html.length] = [...html.matchAll(/class="poly-card[ "]/g)].map((m) => m.index);
       const card = c1 != null ? html.slice(c1, c2) : '';
       const pausado = card.includes('Anúncio pausado');
-      return { fim: r.url, titulo, pausado, card: dadosDoCard(card) };
+      return { fim: r.url, titulo, pausado, internacional: origemInternacional(card), card: dadosDoCard(card) };
     } catch {
       await new Promise((ok) => setTimeout(ok, 1500));
     }
   }
-  return { fim: '', titulo: '', pausado: false, card: {} };
+  return { fim: '', titulo: '', pausado: false, internacional: '', card: {} };
 }
 
-/** OK, LISTA (anúncio encerrado), PAUSADO ou VERIFICAR (o ML não respondeu como esperado). */
-export const statusDoDestino = ({ fim, pausado }) =>
-  fim.includes('/lists') ? 'LISTA' : !fim.includes('ref=') ? 'VERIFICAR' : pausado ? 'PAUSADO' : 'OK';
+// Compra Internacional (CBT, "Envio de EUA/China"): o card traz o selo poly-component__cbt e,
+// para leitor de tela, "Internacional USA". O preço do og:title não inclui os impostos de
+// importação (II + ICMS, que quase dobram o valor no checkout), então esse anúncio nunca serve
+// para o site. Devolve a origem ("USA", "China"...) ou '' se o anúncio é nacional.
+export function origemInternacional(card) {
+  if (!card || !/poly-component__cbt|#poly_cbt/.test(card)) return '';
+  return card.match(/andes-visually-hidden">Internacional ([^<]+)</)?.[1]?.trim() || 'exterior';
+}
+
+/**
+ * OK, LISTA (anúncio encerrado), PAUSADO, INTERNACIONAL (Compra Internacional, preço sem
+ * impostos de importação: trocar por anúncio nacional) ou VERIFICAR (o ML não respondeu como esperado).
+ */
+export const statusDoDestino = ({ fim, pausado, internacional }) =>
+  fim.includes('/lists') ? 'LISTA' : !fim.includes('ref=') ? 'VERIFICAR' : pausado ? 'PAUSADO' : internacional ? 'INTERNACIONAL' : 'OK';
 
 /** Preço do dia: o og:title termina em " - R$ 1.234" ou " - R$ 1.234,56" (0 se não achar). */
 export function precoDoTitulo(titulo) {

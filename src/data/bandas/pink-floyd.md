@@ -39,9 +39,6 @@ integrantes:
       - tipo: Pedais
         original:
           nome: Binson Echorec (delay vintage)
-          preco: ~R$ 1.797
-          similar: "Catalinbread Echorec (pedal)"
-          urlAfiliado: https://meli.la/27Mf2Tw
         low:
           nome: Boss DD-8 Digital Delay
           preco: ~R$ 1.500

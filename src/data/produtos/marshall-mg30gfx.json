@@ -53,10 +53,8 @@
   "imagemAlt": "Marshall MG30GFX",
   "imagem": "/images/produtos/marshall-mg30gfx.webp",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "10x R$ 265,90 sem juros",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-24",
     "catalogo": "https://www.mercadolivre.com.br/amplifier-marshall-m-mg30gfx-u-30w-1x10-gold-fx/p/MLB2088965147"
   },
   "ficha": [

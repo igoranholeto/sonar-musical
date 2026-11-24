@@ -1,0 +1,24 @@
+{
+  "nome": "Audient EVO 4",
+  "meli": "https://meli.la/211of7Z",
+  "preco": 1167,
+  "precoEm": "2026-11-24",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 1167
+    }
+  ],
+  "imagem": "/images/produtos/audient-evo-4.webp",
+  "imagemAlt": "Audient EVO 4",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "antes": 1269,
+    "off": 7,
+    "parcelas": "12x R$ 113,38",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-usb-audient-evo-4-2x2-com-pre-amplificadores-e-conectividade-usb-c-preto/p/MLB24593838"
+  }
+}
