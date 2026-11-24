@@ -37,7 +37,7 @@ integrantes:
           preco: ~R$ 1.969
           obs: Mesma forma icônica com captação ativa por menos.
           similar: "Strinberg EXS480 (formato Explorer)"
-          urlAfiliado: https://meli.la/1YD6BEW
+          urlAfiliado: https://meli.la/1E6mecd
       - tipo: Amplificação
         original:
           nome: Mesa Boogie Dual Rectifier

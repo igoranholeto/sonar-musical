@@ -1,6 +1,6 @@
 {
   "nome": "Strinberg EXS480",
-  "meli": "https://meli.la/1YD6BEW",
+  "meli": "https://meli.la/1E6mecd",
   "preco": 1969,
   "precoEm": "2026-11-24",
   "categoria": "guitarra",
@@ -8,16 +8,20 @@
     {
       "data": "2026-10-29",
       "preco": 1969
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1969
     }
   ],
   "imagem": "/images/produtos/strinberg-exs480.webp",
   "imagemAlt": "Strinberg EXS480",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
+    "desde": "2026-11-24",
     "parcelas": "12x R$ 189,25",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-strinberg-explorer-exs480-preta-com-bag-estofado/up/MLBU4127937976"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-strinberg-exs480-explorer-onyx-black-com-bag-estofada-hh/p/MLB75232781"
   },
   "ficha": [
     [
@@ -65,6 +69,6 @@
       "648 mm"
     ]
   ],
-  "nota": 4,
-  "avaliacoes": 1
+  "nota": 4.9,
+  "avaliacoes": 8
 }

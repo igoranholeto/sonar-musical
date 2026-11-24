@@ -25,10 +25,8 @@
   "imagem": "/images/produtos/vox-ac15c1.webp",
   "imagemAlt": "Vox AC15C1",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 7120,
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-24",
     "catalogo": "https://www.mercadolivre.com.br/combo-vox-ac15c1/up/MLBU3483463803"
   },
   "ficha": [

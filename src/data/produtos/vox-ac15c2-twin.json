@@ -1,0 +1,54 @@
+{
+  "nome": "Vox AC15C2 Twin",
+  "meli": "https://meli.la/2rvCLBg",
+  "preco": 11650,
+  "precoEm": "2026-11-24",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-24",
+      "preco": 11650
+    }
+  ],
+  "imagem": "/images/produtos/vox-ac15c2-twin.webp",
+  "imagemAlt": "Vox AC15C2 Twin",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-24",
+    "antes": 12010,
+    "off": 3,
+    "parcelas": "12x R$ 1.119,81",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-guitarra-vox-ac15c2-twin-valvulado-15w/up/MLBU4523220240"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "VOX"
+    ],
+    [
+      "Modelo",
+      "AC15C2 Twin"
+    ],
+    [
+      "Tipo de amplificador",
+      "Combo"
+    ],
+    [
+      "Tecnologia do amplificador",
+      "Valvulado"
+    ],
+    [
+      "Potência de saída (RMS)",
+      "15 W"
+    ],
+    [
+      "Peso",
+      "30,2 kg"
+    ],
+    [
+      "Largura x Profundidade x Altura",
+      "70,2 cm x 26,5 cm x 55,6 cm"
+    ]
+  ]
+}
