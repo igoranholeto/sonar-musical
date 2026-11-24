@@ -1,5 +1,7 @@
 ---
 import type { MarkdownHeading } from 'astro';
+import fs from 'node:fs';
+import path from 'node:path';
 import BaseLayout from './BaseLayout.astro';
 import Rating from '../components/Rating.astro';
 import AuthorBio from '../components/AuthorBio.astro';
@@ -80,6 +82,18 @@ const absoluteImage = image
 
 const canonicalPostUrl = new URL(Astro.url.pathname, Astro.site).href;
 
+// O Google recomenda a imagem do Article em 16:9, 4:3 e 1:1 e corta para uma miniatura
+// quase quadrada no celular. As versões extras (sem título, que nesse tamanho não se
+// leria) vêm de scripts/gen-capas-formatos.mjs; só entra no schema o que existir.
+const capaNome = image?.match(/^\/images\/blog\/([^/]+)\.(?:jpg|png)$/)?.[1];
+const formatosCapa = capaNome
+  ? ['4x3', '1x1']
+      .map((f) => `/images/blog/formatos/${capaNome}-${f}.webp`)
+      .filter((p) => fs.existsSync(path.join(process.cwd(), 'public', p)))
+      .map((p) => `https://sonarmusical.com.br${p}`)
+  : [];
+const articleImage = absoluteImage && formatosCapa.length ? [absoluteImage, ...formatosCapa] : absoluteImage;
+
 // Capa (LCP do post): capas locais usam o WebP de 800px dos cards no mobile e o
 // original de 1200px só em tela larga/retina. Antes ia sempre o JPG de 1200px
 // (LCP mobile ~3,4 s no Lighthouse). Unsplash segue redimensionado via URL.
@@ -111,7 +125,7 @@ const articleSchema = {
   publisher: organizationRef,
   articleSection: category,
   ...(tags.length > 0 && { keywords: tags.join(', ') }),
-  ...(absoluteImage && { image: absoluteImage }),
+  ...(articleImage && { image: articleImage }),
 };
 
 // Prós e contras visíveis no post viram positiveNotes/negativeNotes: o Google mostra
