@@ -126,10 +126,10 @@
   status = 301
   force = true
 
-# Headers de segurança em todas as páginas
-# CSP: unpkg.com e 'unsafe-eval' são exigidos pelo Decap CMS em /admin — o ajv do Decap
-# compila schema avaliando string como JS, e sem 'unsafe-eval' o CMS nem carrega o config.
-# (Netlify aplica o header no site inteiro; regras mais específicas não substituem as mais amplas.)
+# Headers de segurança em todas as páginas.
+# A CSP do site fica numa <meta> no BaseLayout (sem 'unsafe-eval' e sem unpkg). Aqui ela
+# não pode ir no "/*": a Netlify soma as regras que casam com o caminho, e duas CSPs
+# valem juntas (a mais fechada venceria no /admin e o Decap pararia de carregar).
 [[headers]]
   for = "/*"
   [headers.values]
@@ -139,4 +139,10 @@
     Referrer-Policy = "strict-origin-when-cross-origin"
     Permissions-Policy = "camera=(), microphone=(self), geolocation=()"
     Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
-    Content-Security-Policy = "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://identity.netlify.com https://unpkg.com https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://www.google.com.br https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://www.google.com.br https://identity.netlify.com https://*.clarity.ms https://c.bing.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://identity.netlify.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+
+# CSP do painel do CMS: unpkg.com e 'unsafe-eval' são exigidos pelo Decap CMS. O ajv do
+# Decap compila schema avaliando string como JS, e sem 'unsafe-eval' o CMS nem carrega o config.
+[[headers]]
+  for = "/admin/*"
+  [headers.values]
+    Content-Security-Policy ="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://www.googletagmanager.com https://identity.netlify.com https://unpkg.com https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://images.unsplash.com https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://www.google.com.br https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://www.google.com.br https://identity.netlify.com https://*.clarity.ms https://c.bing.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://identity.netlify.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"

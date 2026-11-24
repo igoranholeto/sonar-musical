@@ -93,6 +93,13 @@ const websiteSchema = {
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- CSP do site (o /admin tem a dele no netlify.toml). Sem 'unsafe-eval': só
+         'wasm-unsafe-eval', que a busca do Pagefind usa. identity.netlify.com fica para o
+         link de convite do CMS, que cai numa página pública. Precisa vir antes de qualquer script. -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' 'unsafe-inline' 'wasm-unsafe-eval' https://www.googletagmanager.com https://identity.netlify.com https://*.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; img-src 'self' data: blob: https://images.unsplash.com https://i.ytimg.com https://*.google-analytics.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://www.google.com.br https://*.clarity.ms https://c.bing.com; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.google-analytics.com https://analytics.google.com https://*.analytics.google.com https://*.googletagmanager.com https://*.g.doubleclick.net https://www.google.com https://www.google.com.br https://identity.netlify.com https://*.clarity.ms https://c.bing.com; frame-src https://www.youtube.com https://www.youtube-nocookie.com https://identity.netlify.com; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests"
+    />
     <meta name="generator" content={Astro.generator} />
 
     <!-- Aplica o tema antes do primeiro paint, evitando flash -->
