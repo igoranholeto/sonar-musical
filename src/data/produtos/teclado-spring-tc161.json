@@ -1,13 +1,17 @@
 {
   "nome": "Teclado Spring TC161",
   "meli": "https://meli.la/1xaAr6X",
-  "preco": 482,
-  "precoEm": "2026-11-23",
+  "preco": 470,
+  "precoEm": "2026-11-24",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-23",
       "preco": 482
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 470
     }
   ],
   "nota": 4.9,
@@ -63,9 +67,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
-    "antes": 507,
-    "off": 5,
-    "parcelas": "9x R$ 53,54 sem juros",
+    "parcelas": "12x R$ 45,45",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-spring-tc161-de-61-teclas-preto-para-iniciante-e-estudo-com-suporte/p/MLB28114004"
   }

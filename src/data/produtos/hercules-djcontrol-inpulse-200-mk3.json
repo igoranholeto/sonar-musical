@@ -1,13 +1,17 @@
 {
   "nome": "Hercules DJControl Inpulse 200 MK3",
   "meli": "https://meli.la/2tXc29B",
-  "preco": 902,
-  "precoEm": "2026-11-23",
+  "preco": 904,
+  "precoEm": "2026-11-24",
   "categoria": "controlador",
   "historico": [
     {
       "data": "2026-11-22",
       "preco": 902
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 904
     }
   ],
   "imagemAlt": "Hercules DJControl Inpulse 200 MK3",
@@ -69,7 +73,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
-    "parcelas": "12x R$ 87,57",
+    "parcelas": "12x R$ 87,71",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/controlador-dj-hercules-djcontrol-inpulse-200-mk3-preto/p/MLB2092536899"
   }

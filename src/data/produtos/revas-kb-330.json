@@ -1,8 +1,8 @@
 {
   "nome": "Revas KB-330 (by Roland)",
   "meli": "https://meli.la/13im2eS",
-  "preco": 1111,
-  "precoEm": "2026-11-23",
+  "preco": 977,
+  "precoEm": "2026-11-24",
   "categoria": "teclado",
   "historico": [
     {
@@ -20,15 +20,21 @@
     {
       "data": "2026-11-23",
       "preco": 1111
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 977
     }
   ],
   "imagemAlt": "Revas KB-330 (by Roland)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 1237,
-    "off": 10,
-    "parcelas": "12x R$ 107,94",
+    "antes": 1149,
+    "off": 15,
+    "pix": true,
+    "cartao": 1149,
+    "parcelas": "10x R$ 114,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-roland-revas-kb-330-capa-preto/p/MLB65324416"
   },

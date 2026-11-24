@@ -1,8 +1,8 @@
 {
   "nome": "Joyo Zip Amp R-04",
   "meli": "https://meli.la/1i15UTE",
-  "preco": 310,
-  "precoEm": "2026-11-23",
+  "preco": 311,
+  "precoEm": "2026-11-24",
   "categoria": "pedal",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 310
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 311
     }
   ],
   "imagem": "/images/produtos/joyo-zip-amp-r-04.webp",
@@ -35,7 +39,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 30,35",
+    "parcelas": "12x R$ 30,40",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/joyo-r-04-zip-amp-pedal-overdrive-compressao-guitarra/p/MLB2031025882"
   },

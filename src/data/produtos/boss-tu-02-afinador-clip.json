@@ -1,8 +1,8 @@
 {
   "nome": "Boss TU-02 Afinador Clip",
   "meli": "https://meli.la/16vSK3m",
-  "preco": 129,
-  "precoEm": "2026-11-23",
+  "preco": 91,
+  "precoEm": "2026-11-24",
   "categoria": "acessorio",
   "nota": 4.9,
   "avaliacoes": 1322,
@@ -22,6 +22,10 @@
     {
       "data": "2026-11-23",
       "preco": 129
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 91
     }
   ],
   "imagem": "/images/produtos/boss-tu-02-afinador-clip.webp",
@@ -29,6 +33,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 129,
+    "off": 29,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/afinador-clip-cromatico-boss-tu-02-baixo-guitarra-violao/up/MLBU608429789"
   },

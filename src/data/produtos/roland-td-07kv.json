@@ -1,13 +1,17 @@
 {
   "nome": "Roland TD-07KV",
-  "meli": "https://meli.la/2JbpkgD",
-  "preco": 9232,
-  "precoEm": "2026-11-23",
+  "meli": "https://meli.la/2cbFRYy",
+  "preco": 8990,
+  "precoEm": "2026-11-24",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-18",
       "preco": 9232
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 8990
     }
   ],
   "nota": 5,
@@ -66,8 +70,10 @@
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-18",
-    "parcelas": "10x R$ 923,20 sem juros",
+    "desde": "2026-11-24",
+    "antes": 14500,
+    "off": 38,
+    "parcelas": "12x R$ 864,09",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-digital-roland-td-07kv-td07-kv-compacta-cor-preto/p/MLB24426681"
   }

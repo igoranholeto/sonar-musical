@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha PSR-E583",
   "meli": "https://meli.la/1fGHxN4",
-  "preco": 3145,
-  "precoEm": "2026-11-23",
+  "preco": 3289,
+  "precoEm": "2026-11-24",
   "categoria": "teclado",
   "historico": [
     {
@@ -36,13 +36,17 @@
     {
       "data": "2026-11-23",
       "preco": 3145
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 3289
     }
   ],
   "imagemAlt": "Yamaha PSR-E583",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 302,29",
+    "parcelas": "10x R$ 328,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-psr-e583-61-teclas/p/MLB65443649"
   },

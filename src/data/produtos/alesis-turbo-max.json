@@ -1,8 +1,8 @@
 {
   "nome": "Alesis Turbo Max",
   "meli": "https://meli.la/23W2hRv",
-  "preco": 2341,
-  "precoEm": "2026-11-23",
+  "preco": 1998,
+  "precoEm": "2026-11-24",
   "categoria": "bateria",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 2341
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1998
     }
   ],
   "imagemAlt": "Alesis Turbo Max",
@@ -35,7 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 225,03",
+    "antes": 2517,
+    "off": 20,
+    "parcelas": "10x R$ 199,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-alesis-turbo-max/up/MLBU3870949288"
   },

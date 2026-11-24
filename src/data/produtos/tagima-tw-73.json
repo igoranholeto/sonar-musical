@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TW-73",
   "meli": "https://meli.la/2YeT67f",
-  "preco": 1466,
-  "precoEm": "2026-11-23",
+  "preco": 1273,
+  "precoEm": "2026-11-24",
   "categoria": "baixo",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-15",
       "preco": 1466
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1273
     }
   ],
   "nota": 4.9,
@@ -26,8 +30,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1629,
-    "off": 10,
-    "parcelas": "12x R$ 142,32",
+    "off": 21,
+    "parcelas": "12x R$ 123,67",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-tagima-4-cordas-tw-73-tw73-mdsv-4c-passivo/p/MLB37782240"
   },

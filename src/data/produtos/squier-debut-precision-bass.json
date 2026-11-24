@@ -1,8 +1,8 @@
 {
   "nome": "Squier Debut Precision Bass",
   "meli": "https://meli.la/2MydWZD",
-  "preco": 1610,
-  "precoEm": "2026-11-23",
+  "preco": 1579,
+  "precoEm": "2026-11-24",
   "categoria": "baixo",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-23",
       "preco": 1610
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1579
     }
   ],
   "nota": 4.9,
@@ -37,7 +41,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 161 sem juros",
+    "antes": 1874,
+    "off": 15,
+    "parcelas": "10x R$ 158 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-fender-squier-debut-precision-bass-lrl-wpg-03/p/MLB37919974"
   },

@@ -1,13 +1,17 @@
 {
   "nome": "Mahalo Java Tenor",
   "meli": "https://meli.la/1gHNkvN",
-  "preco": 191,
-  "precoEm": "2026-11-23",
+  "preco": 192,
+  "precoEm": "2026-11-24",
   "categoria": "ukulele",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 191
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 192
     }
   ],
   "imagemAlt": "Mahalo Java Tenor",
@@ -16,7 +20,7 @@
     "desde": "2026-11-11",
     "antes": 272,
     "off": 29,
-    "parcelas": "12x R$ 18,92",
+    "parcelas": "12x R$ 18,98",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-tenor-acustico-mahalo-java-4-cordas-cor-marrom/p/MLB35576465"
   },

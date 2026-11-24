@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg GSS400 (SG)",
   "meli": "https://meli.la/1hsoTYC",
-  "preco": 1195,
-  "precoEm": "2026-11-23",
+  "preco": 988,
+  "precoEm": "2026-11-24",
   "categoria": "guitarra",
   "historico": [
     {
@@ -40,15 +40,21 @@
     {
       "data": "2026-11-22",
       "preco": 1195
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 988
     }
   ],
   "imagemAlt": "Strinberg GSS400 (SG)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1359,
-    "off": 12,
-    "parcelas": "10x R$ 119,59 sem juros",
+    "antes": 1291,
+    "off": 23,
+    "pix": true,
+    "cartao": 1073,
+    "parcelas": "10x R$ 107,40 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-strinberg-gss400-bk-sg-double-cut-hh-preta-corpo-em-poplar-braco-okoume-escala-purple-heart-ponte-tune-o-matic-22-trastes/p/MLB67576429"
   },

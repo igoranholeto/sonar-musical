@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha Revstar Element",
-  "meli": "https://meli.la/1PNdgbB",
-  "preco": 4160,
-  "precoEm": "2026-11-23",
+  "meli": "https://meli.la/1wqcApf",
+  "preco": 4149,
+  "precoEm": "2026-11-24",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,16 +20,20 @@
     {
       "data": "2026-11-10",
       "preco": 4160
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 4149
     }
   ],
   "imagem": "/images/produtos/yamaha-revstar-element.webp",
   "imagemAlt": "Yamaha Revstar Element",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$ 399,85",
+    "desde": "2026-11-24",
+    "parcelas": "10x R$ 414,90 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-yamaha-rse20-sb-revstar-swift-blue-destro-azul-destro-swift-blue/p/MLB70012690"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-revstar-rse20-red-copper/p/MLB23746479"
   },
   "ficha": [
     [
@@ -46,7 +50,7 @@
     ],
     [
       "Cor",
-      "Swift blue"
+      "Red Copper"
     ],
     [
       "Quantidade de cordas",

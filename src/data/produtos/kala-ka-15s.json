@@ -1,8 +1,8 @@
 {
   "nome": "Kala KA-15S Soprano",
   "meli": "https://meli.la/2eDaZU4",
-  "preco": 615,
-  "precoEm": "2026-11-23",
+  "preco": 617,
+  "precoEm": "2026-11-24",
   "categoria": "ukulele",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 615
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 617
     }
   ],
   "imagemAlt": "Kala KA-15S Soprano",
@@ -35,9 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 711,
+    "antes": 712,
     "off": 13,
-    "parcelas": "12x R$ 59,52",
+    "parcelas": "12x R$ 59,62",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukelele-soprano-de-caoba-kala-ka-15s/p/MLB2061159711"
   },

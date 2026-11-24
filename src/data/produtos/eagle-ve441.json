@@ -1,8 +1,8 @@
 {
   "nome": "Eagle VE441",
   "meli": "https://meli.la/2gvvKc8",
-  "preco": 799,
-  "precoEm": "2026-11-23",
+  "preco": 841,
+  "precoEm": "2026-11-24",
   "categoria": "violino",
   "historico": [
     {
@@ -48,6 +48,10 @@
     {
       "data": "2026-11-22",
       "preco": 799
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 841
     }
   ],
   "nota": 4.9,
@@ -58,8 +62,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1326,
-    "off": 39,
-    "pix": true,
+    "off": 36,
+    "parcelas": "12x R$ 81,37",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-eagle-44-ve441-case-breu-e-arco-cor-marrom-claro/p/MLB28051694"
   },

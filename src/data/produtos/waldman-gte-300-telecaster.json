@@ -1,8 +1,8 @@
 {
   "nome": "Waldman GTE-300 (Telecaster)",
   "meli": "https://meli.la/1d5mAeN",
-  "preco": 1248,
-  "precoEm": "2026-11-23",
+  "preco": 1233,
+  "precoEm": "2026-11-24",
   "categoria": "guitarra",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-23",
       "preco": 1248
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1233
     }
   ],
   "imagem": "/images/produtos/waldman-gte-300-telecaster.webp",
@@ -43,7 +47,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 124,80 sem juros",
+    "parcelas": "12x R$ 119,75",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-telecaster-waldman-gte-300-6-cordas-preta-eletrica/p/MLB27495836"
   },

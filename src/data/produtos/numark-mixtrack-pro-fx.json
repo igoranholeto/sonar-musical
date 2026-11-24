@@ -1,13 +1,17 @@
 {
   "nome": "Numark Mixtrack Pro FX",
   "meli": "https://meli.la/1bpGSBb",
-  "preco": 2170,
-  "precoEm": "2026-11-23",
+  "preco": 2149,
+  "precoEm": "2026-11-24",
   "categoria": "controlador",
   "historico": [
     {
       "data": "2026-11-22",
       "preco": 2170
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 2149
     }
   ],
   "nota": 4.9,
@@ -63,7 +67,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
-    "parcelas": "12x R$ 208,57",
+    "parcelas": "12x R$ 206,55",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/numark-controlador-de-dj-usb-mixtrack-pro-fx-preto-com-serato-dj-lite/p/MLB19875756"
   }

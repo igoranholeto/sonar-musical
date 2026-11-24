@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha C40 (nylon)",
   "meli": "https://meli.la/1xEtgLu",
-  "preco": 915,
-  "precoEm": "2026-11-23",
+  "preco": 886,
+  "precoEm": "2026-11-24",
   "categoria": "violao",
   "historico": [
     {
@@ -48,6 +48,10 @@
     {
       "data": "2026-11-22",
       "preco": 915
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 886
     }
   ],
   "imagem": "/images/produtos/yamaha-c40-nylon.webp",
@@ -56,7 +60,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 963,
-    "off": 5,
+    "off": 8,
     "pix": true,
     "cartao": 963,
     "parcelas": "10x R$ 96,27 sem juros",

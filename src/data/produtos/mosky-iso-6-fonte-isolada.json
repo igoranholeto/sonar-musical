@@ -1,8 +1,8 @@
 {
   "nome": "Mosky ISO-6 fonte isolada",
   "meli": "https://meli.la/2JjMmsu",
-  "preco": 221,
-  "precoEm": "2026-11-23",
+  "preco": 234,
+  "precoEm": "2026-11-24",
   "categoria": "acessorio",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-21",
       "preco": 221
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 234
     }
   ],
   "imagem": "/images/produtos/mosky-iso-6-fonte-isolada.webp",
@@ -43,9 +47,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 282,
-    "off": 21,
-    "parcelas": "6x R$ 36,90 sem juros",
+    "antes": 345,
+    "off": 32,
+    "parcelas": "12x R$ 23,16",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fonte-de-pedal-isolada-profissional-mosky-iso-6-us-plug/p/MLB2031502646"
   },

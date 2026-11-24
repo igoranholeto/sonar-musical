@@ -1,13 +1,17 @@
 {
   "nome": "Kadosh K-392M (2 microfones de mão sem fio)",
-  "meli": "https://meli.la/1tqwTLn",
-  "preco": 494,
-  "precoEm": "2026-11-23",
+  "meli": "https://meli.la/1uiHSem",
+  "preco": 415,
+  "precoEm": "2026-11-24",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-21",
       "preco": 494
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 415
     }
   ],
   "nota": 4.7,
@@ -42,11 +46,11 @@
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-21",
-    "antes": 800,
-    "off": 38,
-    "parcelas": "9x R$ 54,89 sem juros",
+    "desde": "2026-11-24",
+    "antes": 798,
+    "off": 47,
+    "parcelas": "12x R$ 40,13",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-kadosh-k392m-uhf-novo-modelo-bastao-igreja/up/MLBU3898152560"
+    "catalogo": "https://www.mercadolivre.com.br/microfone-kadosh-s-fio-k392m-duplo-bastao-igreja-palco/p/MLB33316754"
   }
 }

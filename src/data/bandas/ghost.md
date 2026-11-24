@@ -110,9 +110,9 @@ integrantes:
       - tipo: Teclado
         original:
           nome: Moog Little Phatty
-          preco: ~R$ 8.190
+          preco: ~R$ 8.779
           similar: "Moog Messenger"
-          urlAfiliado: https://meli.la/2wjnFDQ
+          urlAfiliado: https://meli.la/1dpnJfd
         low:
           nome: Behringer Model D
           preco: ~R$ 8.942

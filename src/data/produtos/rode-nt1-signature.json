@@ -1,8 +1,8 @@
 {
   "nome": "Microfone Rode NT1 Signature Series",
   "meli": "https://meli.la/2U1UncE",
-  "preco": 1337,
-  "precoEm": "2026-11-23",
+  "preco": 1339,
+  "precoEm": "2026-11-24",
   "categoria": "microfone",
   "historico": [
     {
@@ -20,15 +20,19 @@
     {
       "data": "2026-11-21",
       "preco": 1337
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1339
     }
   ],
   "imagemAlt": "Microfone Rode NT1 Signature Series",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
-    "antes": 1555,
+    "antes": 1558,
     "off": 14,
-    "parcelas": "10x R$ 133,77 sem juros",
+    "parcelas": "10x R$ 133,99 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-rode-nt1-condensador-signature-series-sjuros-preto/p/MLB35509833"
   },

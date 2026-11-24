@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave SMC-Mixer",
   "meli": "https://meli.la/1oAQZew",
-  "preco": 190,
-  "precoEm": "2026-11-23",
+  "preco": 187,
+  "precoEm": "2026-11-24",
   "categoria": "controlador",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-23",
       "preco": 190
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 187
     }
   ],
   "imagemAlt": "M-Vave SMC-Mixer",
@@ -19,8 +23,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 260,
-    "off": 26,
-    "parcelas": "12x R$ 18,83",
+    "off": 28,
+    "parcelas": "12x R$ 18,53",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/console-mixagem-controller-midi-sem-fio-43-botoes-8-pads-smc-mixer/p/MLB52863472"
   },

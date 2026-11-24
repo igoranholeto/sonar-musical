@@ -1,8 +1,8 @@
 {
   "nome": "Donner DED-70 (completa, com banco e fone)",
   "meli": "https://meli.la/2jKhPmE",
-  "preco": 2459,
-  "precoEm": "2026-11-23",
+  "preco": 1749,
+  "precoEm": "2026-11-24",
   "categoria": "bateria",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-21",
       "preco": 2459
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 1749
     }
   ],
   "nota": 4.7,
@@ -22,8 +26,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 3279,
-    "off": 25,
-    "parcelas": "10x R$ 245,90 sem juros",
+    "off": 46,
+    "parcelas": "10x R$ 175 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-ded70-mesh-completa-c-banco-fone-donner-preto/p/MLB47917343"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez AZES40 (HSS)",
   "meli": "https://meli.la/1vKhkKj",
-  "preco": 3365,
-  "precoEm": "2026-11-23",
+  "preco": 3351,
+  "precoEm": "2026-11-24",
   "categoria": "guitarra",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-23",
       "preco": 3365
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 3351
     }
   ],
   "imagemAlt": "Ibanez AZES40 (HSS)",

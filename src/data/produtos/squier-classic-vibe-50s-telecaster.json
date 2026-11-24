@@ -1,8 +1,8 @@
 {
   "nome": "Squier Classic Vibe '50s Telecaster",
   "meli": "https://meli.la/1esbo9y",
-  "preco": 4747,
-  "precoEm": "2026-11-23",
+  "preco": 4649,
+  "precoEm": "2026-11-24",
   "categoria": "guitarra",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-23",
       "preco": 4747
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 4649
     }
   ],
   "imagem": "/images/produtos/squier-classic-vibe-50s-telecaster.webp",
@@ -43,7 +47,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-19",
-    "parcelas": "12x R$ 456,30",
+    "parcelas": "10x R$ 464,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-squier-by-fender-classic-vibe-50s-telecaster-de-pinho-butterscotch-blonde-brilhante-com-diapasao-de-bordo/p/MLB18383744"
   },

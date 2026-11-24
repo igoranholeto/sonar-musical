@@ -1,8 +1,8 @@
 {
   "nome": "Shure BLX24/SM58 (sem fio)",
   "meli": "https://meli.la/31F2bRk",
-  "preco": 2405,
-  "precoEm": "2026-11-23",
+  "preco": 2893,
+  "precoEm": "2026-11-24",
   "categoria": "microfone",
   "historico": [
     {
@@ -12,13 +12,17 @@
     {
       "data": "2026-11-19",
       "preco": 2405
+    },
+    {
+      "data": "2026-11-24",
+      "preco": 2893
     }
   ],
   "imagemAlt": "Shure BLX24/SM58 (sem fio)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 240,50 sem juros",
+    "parcelas": "10x R$ 289,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-shure-receptor-sem-fio-bastao-mao-blx24brsm58-m15-cor-preto/p/MLB35493478"
   },
