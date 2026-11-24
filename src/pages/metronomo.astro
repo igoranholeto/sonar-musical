@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
 import FAQ from '../components/FAQ.astro';
 
 const faqItems = [
@@ -53,6 +54,7 @@ const SUBDIVISIONS_UI = [
   }}
 >
   <div class="metro-page">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Metrônomo', path: '/metronomo/' }]} />
     <header class="metro-header">
       <h1>Metrônomo Online</h1>
       <p class="metro-subtitle">Escolha o BPM, aperte iniciar e toque junto</p>

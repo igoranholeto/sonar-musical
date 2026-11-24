@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
 import FAQ from '../components/FAQ.astro';
 
 // Quiz de recomendação. Progressive enhancement: sem JS, mostra a lista de
@@ -87,6 +88,7 @@ const faq = [
   }}
 >
   <section class="qg">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Qual guitarra é pra você?', path: '/qual-guitarra/' }]} />
     <div class="qg__head">
       <span class="qg__kicker"><span class="qg__dot" aria-hidden="true"></span> Achado em 3 perguntas</span>
       <h1>Qual guitarra é pra você?</h1>

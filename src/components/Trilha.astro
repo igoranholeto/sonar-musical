@@ -1,0 +1,55 @@
+---
+// Trilha de navegação (breadcrumb): a visível e o BreadcrumbList em JSON-LD saem da mesma
+// lista, para nunca divergirem. Usado nas páginas que não têm trilha própria no layout
+// (ferramentas, afinadores por instrumento, autor). O último item é a página atual.
+// `oculta` emite só o JSON-LD, para telas cheias como o jogo, onde a trilha visível atrapalha.
+import { breadcrumb } from '../utils/schema';
+
+interface Props {
+  itens: { name: string; path: string }[];
+  oculta?: boolean;
+  class?: string;
+}
+
+const { itens, oculta = false, class: classe = '' } = Astro.props;
+const ultimo = itens.length - 1;
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(breadcrumb(itens))} />
+{!oculta && (
+  <nav aria-label="Navegação em breadcrumb" class:list={['trilha', classe]}>
+    {itens.map((it, i) =>
+      i < ultimo ? (
+        <>
+          <a href={it.path}>{it.name}</a>
+          <span aria-hidden="true">/</span>
+        </>
+      ) : (
+        <span aria-current="page">{it.name}</span>
+      ),
+    )}
+  </nav>
+)}
+
+<style>
+  .trilha {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px 8px;
+    margin-bottom: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--color-muted);
+  }
+  .trilha a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+  .trilha a:hover {
+    color: var(--color-foreground);
+  }
+  .trilha [aria-current='page'] {
+    color: var(--color-foreground);
+  }
+</style>

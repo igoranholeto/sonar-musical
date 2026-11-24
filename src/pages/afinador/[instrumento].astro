@@ -3,6 +3,7 @@
 // /bandolim/). Mesma ferramenta do /afinador/, com o instrumento já selecionado,
 // as afinações dele e um texto próprio. O de guitarra e violão continua em /afinador/.
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Trilha from '../../components/Trilha.astro';
 import Afinador from '../../components/Afinador.astro';
 import { AFINADORES, type Pagina } from '../../data/afinadores';
 
@@ -41,6 +42,7 @@ const schema = [
 
 <BaseLayout title={p.title} description={p.description} schema={schema}>
   <section class="tuner-page">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Afinador', path: '/afinador/' }, { name: p.nome[0].toUpperCase() + p.nome.slice(1), path: `/afinador/${p.slug}/` }]} />
     <div class="tuner-header">
       <h1>{p.h1}</h1>
       <p class="tuner-subtitle">{p.subtitulo}</p>

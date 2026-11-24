@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
 import FAQ from '../components/FAQ.astro';
 
 const site = 'https://sonarmusical.com.br';
@@ -101,6 +102,7 @@ const schema = [
   schema={schema}
 >
   <div class="tools-page">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }]} />
     <header class="tools-header">
       <h1>Ferramentas grátis para guitarra e violão</h1>
       <p class="tools-subtitle">

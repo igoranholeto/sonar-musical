@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
 import FAQ from '../components/FAQ.astro';
 
 const faqItems = [
@@ -64,6 +65,7 @@ const SCALES = [
   }}
 >
   <div class="scale-page">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Gerador de escalas', path: '/gerador-de-escalas/' }]} />
     <header class="scale-header">
       <h1>Gerador de Escalas para Guitarra</h1>
       <p class="scale-subtitle">Escolha a tônica e a escala · Notas no braço + som · Grátis</p>

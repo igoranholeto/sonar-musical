@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
 import Afinador from '../components/Afinador.astro';
 
 const faq = [
@@ -60,6 +61,7 @@ const schema = [
   schema={schema}
 >
   <section class="tuner-page">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Afinador', path: '/afinador/' }]} />
     <div class="tuner-header">
       <h1>Afinador Online de Violão e Guitarra</h1>
       <p class="tuner-subtitle">Microfone · Detecção automática · Grátis</p>

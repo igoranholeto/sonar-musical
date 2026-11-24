@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Trilha from '../../components/Trilha.astro';
 import { SKIN_COLORS } from '../../data/rpg';
 ---
 
@@ -9,6 +10,7 @@ import { SKIN_COLORS } from '../../data/rpg';
 >
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&display=swap" rel="stylesheet" />
+  <Trilha oculta itens={[{ name: 'Início', path: '/' }, { name: 'Aprender', path: '/aprender/' }, { name: 'Rock Star Quest', path: '/aprender/jogo/' }]} />
 
   <section class="max-w-2xl mx-auto px-4 py-3 sm:py-12">
     <a href="/aprender/" class="inline-flex items-center gap-1.5 text-xs sm:text-sm text-muted hover:text-foreground transition-colors mb-2 sm:mb-6">

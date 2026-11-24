@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
 import FAQ from '../components/FAQ.astro';
 
 const faqItems = [
@@ -55,6 +56,7 @@ const QUALITIES_UI = [
   }}
 >
   <div class="chord-page">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Dicionário de acordes', path: '/acordes/' }]} />
     <header class="chord-header">
       <h1>Dicionário de Acordes</h1>
       <p class="chord-subtitle">Guitarra e violão · Diagrama + som · Grátis</p>
