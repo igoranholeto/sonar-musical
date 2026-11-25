@@ -1,0 +1,50 @@
+{
+  "nome": "Focusrite Scarlett 2i2 Studio (4ª geração)",
+  "meli": "https://meli.la/1ojwjst",
+  "preco": 2885,
+  "precoEm": "2026-11-25",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 2885
+    }
+  ],
+  "imagem": "/images/produtos/focusrite-scarlett-2i2-studio-4-geracao.webp",
+  "imagemAlt": "Focusrite Scarlett 2i2 Studio (4ª geração)",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 277,30",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-interface-audio-focusrite-scarlett-2i2-studio-4th-gen-cor-vermelho/p/MLB27884876"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Focusrite"
+    ],
+    [
+      "Linha",
+      "Scarlett Studio"
+    ],
+    [
+      "Geração",
+      "4ª geração"
+    ],
+    [
+      "Inclui",
+      "Interface Scarlett 2i2, microfone condensador CM25 MKIII e fone SH-450"
+    ],
+    [
+      "Resolução",
+      "24 bits / 192 kHz"
+    ],
+    [
+      "Conexão",
+      "USB-C"
+    ]
+  ],
+  "nota": 5,
+  "avaliacoes": 75
+}

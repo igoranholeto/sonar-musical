@@ -1,0 +1,44 @@
+{
+  "nome": "Behringer Podcastudio 2 USB",
+  "meli": "https://meli.la/1QwbCDg",
+  "preco": 1394,
+  "precoEm": "2026-11-25",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1394
+    }
+  ],
+  "imagem": "/images/produtos/behringer-podcastudio-2-usb.webp",
+  "imagemAlt": "Behringer Podcastudio 2 USB",
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 139,40 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-podcast-studio-2-behringer-usb-home-studio/up/MLBU1421065395"
+  },
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Modelo",
+      "Podcastudio 2 USB"
+    ],
+    [
+      "Inclui",
+      "Mesa Xenyx 302USB com interface USB, microfone XM8500 e fone HPM1000"
+    ],
+    [
+      "Alimentação fantasma",
+      "Sim"
+    ],
+    [
+      "Conexões",
+      "P10, P2, RCA, USB, XLR"
+    ]
+  ]
+}

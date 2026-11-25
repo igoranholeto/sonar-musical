@@ -249,6 +249,17 @@ const MAP = {
   'melhor-violao-ate-3000-reais': { kicker: 'VIOLÃO · GUIA 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 3.000', q: 'Yamaha APX guitar', prefer: /Yamaha APX700 blue sunburst/i, avoid: /logo|electric|bass|person|people|man|woman|girl|boy|concert|band/i },
   'melhor-baixo-ate-3000-reais': { kicker: 'BAIXO · GUIA 2026', l1: 'BAIXO', l2: 'ATÉ R$ 3.000', q: 'bass guitar body', prefer: /Sandberg Electra TT bass guitar body in suburst\.jpg/i, avoid: /logo|fish|double bass|upright|person|people|man|woman|concert|band/i },
   'melhor-teclado-76-teclas': { kicker: 'TECLADO · GUIA 2026', l1: 'TECLADO', l2: '76 TECLAS', q: 'Yamaha DGX keyboard', prefer: /File:Yamaha DGX-205\.jpg|Dgx-205 7/i, avoid: /logo|computer|typing|pc|laptop|person|people|man|woman|girl|boy/i },
+  // Lote 2026-11-25
+  'melhor-guitarra-ate-1500-reais': { kicker: 'GUITARRA · GUIA 2026', l1: 'GUITARRA', l2: 'ATÉ R$ 1.500', q: 'Squier Stratocaster', prefer: /File:Squier Fender Stratocaster guitar\.jpg/i, avoid: /logo/i },
+  'melhor-violao-ate-1500-reais': { kicker: 'VIOLÃO · GUIA 2026', l1: 'VIOLÃO', l2: 'ATÉ R$ 1.500', q: 'Fender acoustic guitar', prefer: /Violao-fender-GIIE/i, avoid: /logo/i },
+  'melhor-baixo-ate-1500-reais': { kicker: 'BAIXO · GUIA 2026', l1: 'BAIXO', l2: 'ATÉ R$ 1.500', q: 'Fender Jazz Bass', prefer: /File:Fender jazz bass\.jpg/i, avoid: /logo/i },
+  'melhor-teclado-ate-3000-reais': { kicker: 'TECLADO · GUIA 2026', l1: 'TECLADO', l2: 'ATÉ R$ 3.000', q: 'Yamaha PSR keyboard', prefer: /Yamaha PSR-E333/i, avoid: /logo/i },
+  'kit-home-studio-para-iniciante': { kicker: 'HOME STUDIO · 2026', l1: 'KIT HOME STUDIO', l2: 'PARA INICIANTE', q: 'home studio microphone', prefer: /Kathabhidhana\.jpg/i, avoid: /logo/i },
+  'melhor-microfone-para-igreja': { kicker: 'MICROFONE · GUIA 2026', l1: 'MICROFONE', l2: 'PARA IGREJA', q: 'Shure SM58 microphone', prefer: /Microphone in hall/i, avoid: /logo/i },
+  'presente-para-professor-de-musica': { kicker: 'PRESENTES · 2026', l1: 'PRESENTE', l2: 'PARA PROFESSOR', q: 'music stand sheet music', prefer: /Regent St Festival/i, avoid: /logo/i },
+  'presente-para-namorado-musico': { kicker: 'PRESENTES · 2026', l1: 'PRESENTE', l2: 'PARA NAMORADO', q: 'Fender acoustic guitar', prefer: /Fender Acoustic Guitar \(3077573225\)/i, avoid: /logo/i },
+  'presente-de-natal-para-musico': { kicker: 'NATAL · PRESENTES', l1: 'PRESENTE DE NATAL', l2: 'PARA MÚSICO', q: 'soprano ukulele', prefer: /laminated mahogany wood, body, front, model b/i, avoid: /logo/i },
+  'presente-para-pai-musico': { kicker: 'PRESENTES · 2026', l1: 'PRESENTE', l2: 'PARA PAI MÚSICO', q: 'classical guitar nylon', prefer: /Guitarra Cl.sica\.jpg/i, avoid: /logo/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).
