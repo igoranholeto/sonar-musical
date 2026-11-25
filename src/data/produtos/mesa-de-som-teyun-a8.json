@@ -1,8 +1,8 @@
 {
   "nome": "Mesa de som digital Teyun A8",
   "meli": "https://meli.la/2yRdREf",
-  "preco": 750,
-  "precoEm": "2026-11-24",
+  "preco": 329,
+  "precoEm": "2026-11-25",
   "categoria": "estudio",
   "historico": [
     {
@@ -24,13 +24,17 @@
     {
       "data": "2026-11-24",
       "preco": 750
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 329
     }
   ],
   "imagemAlt": "Mesa de som digital Teyun A8",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "10x R$ 75 sem juros",
+    "parcelas": "12x R$ 32,16",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-digital-teyun-a8-8-canais-bluetooth-usb-phantom-48v/p/MLB28570150"
   },

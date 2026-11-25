@@ -1,13 +1,17 @@
 {
   "nome": "Marshall MS-4 Micro Stack",
   "meli": "https://meli.la/1dbRVV8",
-  "preco": 555,
-  "precoEm": "2026-11-24",
+  "preco": 472,
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-09",
       "preco": 555
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 472
     }
   ],
   "nota": 5,
@@ -17,7 +21,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 53,67",
+    "parcelas": "12x R$ 45,62",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-mini-combo-duplo-stack-marshall-ms-4/up/MLBU5174577503"
   },

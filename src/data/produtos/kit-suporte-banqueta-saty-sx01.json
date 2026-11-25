@@ -1,8 +1,8 @@
 {
   "nome": "Kit suporte e banqueta em X Saty SX01",
   "meli": "https://meli.la/23EMGSh",
-  "preco": 180,
-  "precoEm": "2026-11-24",
+  "preco": 184,
+  "precoEm": "2026-11-25",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-24",
       "preco": 180
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 184
     }
   ],
   "nota": 4.8,
@@ -79,9 +83,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
-    "antes": 254,
-    "off": 29,
-    "parcelas": "12x R$ 17,76",
+    "parcelas": "6x R$ 30,58 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-suporte-e-banqueta-em-x-para-teclado-saty-sx01-regulavel/p/MLB42059174"
   }

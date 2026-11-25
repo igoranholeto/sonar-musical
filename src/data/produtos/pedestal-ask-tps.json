@@ -2,7 +2,7 @@
   "nome": "Pedestal girafa ASK TPS para microfone",
   "meli": "https://meli.la/1cZqbqR",
   "preco": 56,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "acessorio",
   "historico": [
     {
@@ -63,8 +63,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
-    "antes": 59,
-    "off": 5,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedestal-ask-para-1-microfone-girafa-tps-preto/p/MLB26429061"
   }

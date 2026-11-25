@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez Talman TMB100",
   "meli": "https://meli.la/2uXiXN4",
-  "preco": 3125,
-  "precoEm": "2026-11-24",
+  "preco": 2916,
+  "precoEm": "2026-11-25",
   "categoria": "baixo",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-23",
       "preco": 3125
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2916
     }
   ],
   "nota": 5,
@@ -25,7 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 300,36",
+    "parcelas": "12x R$ 280,34",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-4-cordas-ibanez-talman-bass-tmb100-preto/p/MLB25070380"
   },

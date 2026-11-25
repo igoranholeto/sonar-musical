@@ -1,8 +1,8 @@
 {
   "nome": "Memphis Denver Nylon",
   "meli": "https://meli.la/28x3KLa",
-  "preco": 351,
-  "precoEm": "2026-11-24",
+  "preco": 399,
+  "precoEm": "2026-11-25",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-23",
       "preco": 351
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 399
     }
   ],
   "nota": 4.7,
@@ -33,9 +37,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 526,
-    "off": 33,
-    "pix": true,
+    "parcelas": "12x R$ 39,05",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-acustico-tagima-memphis-denver-natural-satin-fosco-diestro/p/MLB26068681"
   },

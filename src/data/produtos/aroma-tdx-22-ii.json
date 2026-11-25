@@ -1,8 +1,8 @@
 {
   "nome": "Aroma TDX-22 II",
   "meli": "https://meli.la/2wU3t4q",
-  "preco": 3329,
-  "precoEm": "2026-11-24",
+  "preco": 3179,
+  "precoEm": "2026-11-25",
   "categoria": "bateria",
   "historico": [
     {
@@ -16,15 +16,17 @@
     {
       "data": "2026-11-23",
       "preco": 3329
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 3179
     }
   ],
   "imagemAlt": "Aroma TDX-22 II",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
-    "antes": 4499,
-    "off": 26,
-    "parcelas": "10x R$ 332,93 sem juros",
+    "parcelas": "10x R$ 318 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-22-ii-completa-com-banco-e-fones-de-ouvido/p/MLB56459342"
   },

@@ -1,13 +1,17 @@
 {
   "nome": "Meteoro Space Double 35 (violão e teclado)",
   "meli": "https://meli.la/1fFzr53",
-  "preco": 708,
-  "precoEm": "2026-11-24",
+  "preco": 686,
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-24",
       "preco": 708
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 686
     }
   ],
   "nota": 4.9,
@@ -66,9 +70,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
-    "antes": 811,
-    "off": 12,
-    "parcelas": "10x R$ 70,76 sem juros",
+    "parcelas": "10x R$ 68,62 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-violao-meteoro-space-double-35w-cor-creme/p/MLB21875749"
   },

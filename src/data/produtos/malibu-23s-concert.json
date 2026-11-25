@@ -1,8 +1,8 @@
 {
   "nome": "Malibu 23S Concert",
   "meli": "https://meli.la/1TVWiaA",
-  "preco": 195,
-  "precoEm": "2026-11-24",
+  "preco": 193,
+  "precoEm": "2026-11-25",
   "categoria": "ukulele",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-24",
       "preco": 195
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 193
     }
   ],
   "imagem": "/images/produtos/malibu-23s-concert.webp",
@@ -41,8 +45,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 210,
-    "off": 7,
     "pix": true,
     "cartao": 210,
     "parcelas": "6x R$ 35 sem juros",

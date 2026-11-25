@@ -1,8 +1,8 @@
 {
   "nome": "Cajon FSA Strike SK2000 elétrico",
   "meli": "https://meli.la/2tnRDGc",
-  "preco": 361,
-  "precoEm": "2026-11-24",
+  "preco": 399,
+  "precoEm": "2026-11-25",
   "categoria": "percussao",
   "historico": [
     {
@@ -16,15 +16,17 @@
     {
       "data": "2026-11-16",
       "preco": 361
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 399
     }
   ],
   "imagemAlt": "Cajon FSA Strike SK2000 elétrico",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 499,
-    "off": 27,
-    "parcelas": "12x R$ 35,31",
+    "parcelas": "7x R$ 57 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-strike-sk-2000-eletrico/p/MLB26416383"
   },

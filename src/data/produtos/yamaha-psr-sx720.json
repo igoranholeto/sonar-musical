@@ -2,7 +2,7 @@
   "nome": "Yamaha PSR-SX720",
   "meli": "https://meli.la/1v5B6om",
   "preco": 10658,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "teclado",
   "historico": [
     {
@@ -18,8 +18,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 12590,
-    "off": 15,
     "parcelas": "12x R$ 1.024",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/yamaha-psr-sx720-100240-pa-300c-5060hz/p/MLB41166613"

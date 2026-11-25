@@ -2,7 +2,7 @@
   "nome": "M-Vave Pocket Amp",
   "meli": "https://meli.la/1Wno42r",
   "preco": 226,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -34,8 +34,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 300,
-    "off": 24,
     "pix": true,
     "cartao": 246,
     "parcelas": "6x R$ 41 sem juros",

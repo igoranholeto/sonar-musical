@@ -1,8 +1,8 @@
 {
   "nome": "Datrel BAS-100",
   "meli": "https://meli.la/2SEqDyu",
-  "preco": 1189,
-  "precoEm": "2026-11-24",
+  "preco": 1259,
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-23",
       "preco": 1189
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1259
     }
   ],
   "imagem": "/images/produtos/datrel-bas-100.webp",
@@ -39,7 +43,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 115,52",
+    "parcelas": "10x R$ 125,94 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-baixo-datrel-bas-100-100w-woofer-10-aluminio/p/MLB36239580"
   },

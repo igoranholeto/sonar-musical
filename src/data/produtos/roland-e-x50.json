@@ -1,8 +1,8 @@
 {
   "nome": "Roland E-X50",
   "meli": "https://meli.la/11GU7RF",
-  "preco": 2755,
-  "precoEm": "2026-11-24",
+  "preco": 2779,
+  "precoEm": "2026-11-25",
   "categoria": "teclado",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-22",
       "preco": 2755
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2779
     }
   ],
   "imagemAlt": "Roland E-X50",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "12x R$ 264,89",
+    "parcelas": "10x R$ 278 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-roland-arranjador-e-x50-61-teclas-usb-com-fonte-ex50-cor-preto/p/MLB21017160"
   },

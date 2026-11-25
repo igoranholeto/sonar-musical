@@ -2,7 +2,7 @@
   "nome": "Fender Frontman 10G",
   "meli": "https://meli.la/1ddXKx6",
   "preco": 1760,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
@@ -27,8 +27,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1955,
-    "off": 9,
     "parcelas": "10x R$ 176,02 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-fender-frontman-10g-10w-1x6/p/MLB38343011"

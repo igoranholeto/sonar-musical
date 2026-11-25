@@ -2,7 +2,7 @@
   "nome": "Capa para violão AVS (simples)",
   "meli": "https://meli.la/2B2TfDA",
   "preco": 48,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "acessorio",
   "historico": [
     {
@@ -21,8 +21,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 55,
-    "off": 12,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/capa-bag-para-violao-case-classico-folk-alca-dupla-brinde/up/MLBU1753858706"
   },

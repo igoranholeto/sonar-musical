@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GRGR221PA",
   "meli": "https://meli.la/32SsFFG",
-  "preco": 2639,
-  "precoEm": "2026-11-24",
+  "preco": 2810,
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-22",
       "preco": 2639
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2810
     }
   ],
   "imagemAlt": "Ibanez GRGR221PA",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 263,99 sem juros",
+    "parcelas": "12x R$ 270,09",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-ibanez-grgr221pa-aqb-rg-gio-aqua-burst-hh-6-cordas-corpo-okoume-top-poplar-burl-diapasao-purpleheart-ponte-f106/p/MLB17914728"
   },

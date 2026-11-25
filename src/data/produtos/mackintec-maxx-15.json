@@ -2,7 +2,7 @@
   "nome": "Mackintec Maxx 15",
   "meli": "https://meli.la/2hc3vcv",
   "preco": 345,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
@@ -22,8 +22,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 420,
-    "off": 17,
     "parcelas": "12x R$ 33,74",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-combo-transistor-mackintec-maxx-15w-guitarra-preto-p10/p/MLB15141874"

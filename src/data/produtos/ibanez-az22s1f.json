@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez AZ22S1F",
   "meli": "https://meli.la/18muMvm",
-  "preco": 4950,
-  "precoEm": "2026-11-24",
+  "preco": 4961,
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,15 +24,17 @@
     {
       "data": "2026-11-21",
       "preco": 4950
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 4961
     }
   ],
   "imagemAlt": "Ibanez AZ22S1F",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 5500,
-    "off": 10,
-    "parcelas": "12x R$ 475,78",
+    "parcelas": "12x R$ 476,83",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-ibanez-az-az22s1f-txb-transparent-turquoise-burst/p/MLB54892353"
   },

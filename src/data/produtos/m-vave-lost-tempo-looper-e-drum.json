@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Lost Tempo Looper e Drum",
   "meli": "https://meli.la/1g99Auc",
-  "preco": 444,
-  "precoEm": "2026-11-24",
+  "preco": 408,
+  "precoEm": "2026-11-25",
   "categoria": "pedal",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-23",
       "preco": 444
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 408
     }
   ],
   "imagem": "/images/produtos/m-vave-lost-tempo-looper-e-drum.webp",
@@ -43,7 +47,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 42,93",
+    "parcelas": "8x R$ 51,01 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-m-vave-looper-e-drum-lost-tempo-30-baterias-11-min-guitarra/p/MLB35725637"
   },

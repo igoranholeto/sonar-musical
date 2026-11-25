@@ -1,8 +1,8 @@
 {
   "nome": "Michael GML600 Les Paul",
   "meli": "https://meli.la/1S4QjoE",
-  "preco": 1790,
-  "precoEm": "2026-11-24",
+  "preco": 1572,
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-24",
       "preco": 1790
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1572
     }
   ],
   "imagemAlt": "Michael GML600 Les Paul",
@@ -31,11 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1946,
-    "off": 8,
     "pix": true,
-    "cartao": 1946,
-    "parcelas": "10x R$ 194,60 sem juros",
+    "cartao": 1709,
+    "parcelas": "10x R$ 170,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-profissional-les-paul-michael-gml600-cherry-burst/p/MLB78433708"
   },

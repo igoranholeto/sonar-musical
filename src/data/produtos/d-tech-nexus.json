@@ -1,8 +1,8 @@
 {
   "nome": "D-Tech Nexus",
   "meli": "https://meli.la/2dd8xXx",
-  "preco": 2763,
-  "precoEm": "2026-11-24",
+  "preco": 2418,
+  "precoEm": "2026-11-25",
   "categoria": "bateria",
   "historico": [
     {
@@ -28,15 +28,17 @@
     {
       "data": "2026-11-24",
       "preco": 2763
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2418
     }
   ],
   "imagemAlt": "D-Tech Nexus",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2999,
-    "off": 7,
-    "parcelas": "10x R$ 276,30 sem juros",
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-d-tech-nexus-caixa-e-tons-mesh-dual-zone-cor-preto/p/MLB53361024"
   },

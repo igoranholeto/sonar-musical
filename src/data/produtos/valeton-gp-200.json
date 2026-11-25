@@ -1,8 +1,8 @@
 {
   "nome": "Valeton GP-200",
   "meli": "https://meli.la/32VUAui",
-  "preco": 1925,
-  "precoEm": "2026-11-24",
+  "preco": 1921,
+  "precoEm": "2026-11-25",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -72,6 +72,10 @@
     {
       "data": "2026-11-24",
       "preco": 1925
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1921
     }
   ],
   "nota": 4.9,
@@ -81,8 +85,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2027,
-    "off": 5,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-valeton-gp-200-multi-effects-processor-preto/p/MLB18956422"

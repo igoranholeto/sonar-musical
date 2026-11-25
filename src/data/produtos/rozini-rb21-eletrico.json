@@ -1,8 +1,8 @@
 {
   "nome": "Bandolim Rozini Estudante RB21 Eletrificado",
   "meli": "https://meli.la/1b9TzfL",
-  "preco": 1432,
-  "precoEm": "2026-11-24",
+  "preco": 1556,
+  "precoEm": "2026-11-25",
   "categoria": "bandolim",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-23",
       "preco": 1432
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1556
     }
   ],
   "nota": 5,
@@ -25,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1556,
-    "off": 7,
-    "parcelas": "12x R$ 139,06",
+    "parcelas": "12x R$ 149,56",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bandolim-rozini-estudante-eletrificado-verniz-fosco-imbuia/p/MLB27359631"
   },

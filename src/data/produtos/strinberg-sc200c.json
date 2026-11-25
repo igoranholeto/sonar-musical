@@ -1,20 +1,24 @@
 {
   "nome": "Strinberg SC200C",
   "meli": "https://meli.la/2f2mG6U",
-  "preco": 950,
-  "precoEm": "2026-11-24",
+  "preco": 1085,
+  "precoEm": "2026-11-25",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 950
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1085
     }
   ],
   "imagemAlt": "Strinberg SC200C",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 95 sem juros",
+    "parcelas": "12x R$ 105,33",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sc200c-fosco-natural-6-cordas-nylon/p/MLB16066818"
   },

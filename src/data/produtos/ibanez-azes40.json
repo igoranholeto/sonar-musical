@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez AZES40 (HSS)",
   "meli": "https://meli.la/1vKhkKj",
-  "preco": 3351,
-  "precoEm": "2026-11-24",
+  "preco": 3249,
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "historico": [
     {
@@ -32,17 +32,19 @@
     {
       "data": "2026-11-24",
       "preco": 3351
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 3249
     }
   ],
   "imagemAlt": "Ibanez AZES40 (HSS)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 4629,
-    "off": 27,
     "pix": true,
-    "cartao": 3565,
-    "parcelas": "10x R$ 356,50 sem juros",
+    "cartao": 3449,
+    "parcelas": "10x R$ 345 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-ibanez-azes-hss-de-6-cordas-purist-blue/p/MLB24133372"
   },

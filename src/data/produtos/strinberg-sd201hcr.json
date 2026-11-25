@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SD201HCR",
   "meli": "https://meli.la/29xc6sy",
-  "preco": 1193,
-  "precoEm": "2026-11-24",
+  "preco": 1099,
+  "precoEm": "2026-11-25",
   "categoria": "violao",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-24",
       "preco": 1193
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1099
     }
   ],
   "imagem": "/images/produtos/strinberg-sd201hcr.webp",
@@ -43,9 +47,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1750,
-    "off": 31,
-    "parcelas": "10x R$ 119,30 sem juros",
+    "parcelas": "12x R$ 106,69",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sd201hcr-destro-6-cordas-mahogany-satin/p/MLB19463605"
   },

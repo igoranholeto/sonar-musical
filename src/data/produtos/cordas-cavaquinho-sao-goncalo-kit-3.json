@@ -2,7 +2,7 @@
   "nome": "Encordoamento São Gonçalo para cavaquinho (kit com 3)",
   "meli": "https://meli.la/2apZySw",
   "preco": 22,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "cordas",
   "historico": [
     {
@@ -59,8 +59,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
-    "antes": 32,
-    "off": 31,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-3-encordoamento-sao-goncalo-cordas-p-cavaco-com-bolinha/p/MLB22628605"
   }

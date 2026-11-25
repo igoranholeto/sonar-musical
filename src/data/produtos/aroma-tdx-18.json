@@ -1,22 +1,24 @@
 {
   "nome": "Aroma TDX-18",
   "meli": "https://meli.la/2sXGGdj",
-  "preco": 2261,
-  "precoEm": "2026-11-24",
+  "preco": 2129,
+  "precoEm": "2026-11-25",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-17",
       "preco": 2261
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2129
     }
   ],
   "imagemAlt": "Aroma TDX-18",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 2899,
-    "off": 22,
-    "parcelas": "10x R$ 226,12 sem juros",
+    "parcelas": "10x R$ 213 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-portatil-aroma-tdx-18-10-corpos-bluetooth-usb-preta/p/MLB36522227"
   },

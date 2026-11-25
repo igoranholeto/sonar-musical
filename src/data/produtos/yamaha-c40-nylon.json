@@ -57,14 +57,8 @@
   "imagem": "/images/produtos/yamaha-c40-nylon.webp",
   "imagemAlt": "Yamaha C40 (nylon)",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "antes": 963,
-    "off": 8,
-    "pix": true,
-    "cartao": 963,
-    "parcelas": "10x R$ 96,27 sem juros",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-25",
     "catalogo": "https://www.mercadolivre.com.br/violao-yamaha-c40m-ii-acustico-nylon-iniciante/p/MLB28726740"
   },
   "ficha": [

@@ -2,7 +2,7 @@
   "nome": "Tagima Sixmart",
   "meli": "https://meli.la/2hp8125",
   "preco": 1013,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "historico": [
     {
@@ -42,8 +42,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1238,
-    "off": 18,
     "parcelas": "10x R$ 101,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-stratocaster-tagima-sixmart-com-efeitos-cor-metallic-deep-silver-orientacao-da-mao-destro/p/MLB52063129"

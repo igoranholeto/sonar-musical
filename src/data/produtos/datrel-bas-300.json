@@ -1,8 +1,8 @@
 {
   "nome": "Datrel BAS300 (cubo de baixo 300 W)",
   "meli": "https://meli.la/1TypEhj",
-  "preco": 2022,
-  "precoEm": "2026-11-24",
+  "preco": 2107,
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,14 +20,17 @@
     {
       "data": "2026-11-24",
       "preco": 2022
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2107
     }
   ],
   "imagemAlt": "Datrel BAS300 (cubo de baixo 300 W)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
-    "antes": 2129,
-    "pix": true,
+    "parcelas": "10x R$ 210,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-de-baixo-datrel-300w-falante-15-aluminio-profissional-preto/p/MLB20963398"
   },

@@ -2,7 +2,7 @@
   "nome": "Strinberg GSS400 (SG)",
   "meli": "https://meli.la/1hsoTYC",
   "preco": 988,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "historico": [
     {
@@ -50,8 +50,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1291,
-    "off": 23,
     "pix": true,
     "cartao": 1073,
     "parcelas": "10x R$ 107,40 sem juros",

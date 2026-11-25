@@ -1,8 +1,8 @@
 {
   "nome": "Arturia KeyLab Essential 61 MK3",
   "meli": "https://meli.la/2oE45NE",
-  "preco": 2266,
-  "precoEm": "2026-11-24",
+  "preco": 2269,
+  "precoEm": "2026-11-25",
   "categoria": "controlador",
   "historico": [
     {
@@ -32,15 +32,17 @@
     {
       "data": "2026-11-23",
       "preco": 2266
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2269
     }
   ],
   "imagemAlt": "Arturia KeyLab Essential 61 MK3",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 2987,
-    "off": 24,
-    "parcelas": "12x R$ 217,88",
+    "parcelas": "12x R$ 218,18",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-arturia-keylab-essential-61-mk3-black/p/MLB26598496"
   },

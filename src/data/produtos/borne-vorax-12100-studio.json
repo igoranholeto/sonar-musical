@@ -1,8 +1,8 @@
 {
   "nome": "Borne Vorax 12100 Studio",
   "meli": "https://meli.la/341kuhx",
-  "preco": 1689,
-  "precoEm": "2026-11-24",
+  "preco": 1982,
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
@@ -44,6 +44,10 @@
     {
       "data": "2026-11-23",
       "preco": 1689
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1982
     }
   ],
   "imagem": "/images/produtos/borne-vorax-12100-studio.webp",
@@ -51,9 +55,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2210,
-    "off": 23,
-    "pix": true,
+    "parcelas": "12x R$ 190,56",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-borne-vorax-12100-para-guitarra-100w-com-reverb/p/MLB24059017"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha NTX1 Nylon",
   "meli": "https://meli.la/1FQ5xyY",
-  "preco": 3181,
-  "precoEm": "2026-11-24",
+  "preco": 3399,
+  "precoEm": "2026-11-25",
   "categoria": "violao",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-19",
       "preco": 3181
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 3399
     }
   ],
   "nota": 4.8,
@@ -41,9 +45,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 3535,
-    "off": 10,
-    "parcelas": "12x R$ 305,80",
+    "parcelas": "10x R$ 339,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-nx-ntx1-para-destros-natural/p/MLB16050548"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Andes",
   "meli": "https://meli.la/2NZnNYS",
-  "preco": 798,
-  "precoEm": "2026-11-24",
+  "preco": 789,
+  "precoEm": "2026-11-25",
   "categoria": "violao",
   "historico": [
     {
@@ -28,15 +28,17 @@
     {
       "data": "2026-11-24",
       "preco": 798
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 789
     }
   ],
   "imagemAlt": "Tagima Andes",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 1799,
-    "off": 55,
-    "parcelas": "12x R$ 77,15",
+    "parcelas": "12x R$ 76,30",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-tagima-andes-vermelho-cor-candy-apple-satin-fosco-material-do-diapasao-okoume-orientacao-da-mao-destro/p/MLB26638441"
   },

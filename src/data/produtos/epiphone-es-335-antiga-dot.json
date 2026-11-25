@@ -2,7 +2,7 @@
   "nome": "Epiphone ES-335 (antiga Dot)",
   "meli": "https://meli.la/1ckVH6v",
   "preco": 8436,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "guitarra",
   "imagem": "/images/produtos/epiphone-es-335-antiga-dot.webp",
   "imagemAlt": "Epiphone ES-335 (antiga Dot)",
@@ -31,9 +31,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 9374,
-    "off": 10,
-    "parcelas": "10x R$ 843,67 sem juros",
+    "parcelas": "10x R$ 843,66 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-epiphone-es335-semi-acustica-vintage-sunburst/up/MLBU3912708047"
   },

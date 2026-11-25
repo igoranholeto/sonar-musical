@@ -1,8 +1,8 @@
 {
   "nome": "Michael VNM49",
   "meli": "https://meli.la/19WCT1a",
-  "preco": 878,
-  "precoEm": "2026-11-24",
+  "preco": 1298,
+  "precoEm": "2026-11-25",
   "categoria": "violino",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-22",
       "preco": 878
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 1298
     }
   ],
   "nota": 4.9,
@@ -21,9 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1950,
-    "off": 55,
-    "parcelas": "10x R$ 87,75 sem juros",
+    "parcelas": "12x R$ 126,10",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-acustico-michael-vnm49-44-spruce-ebano-estojo-arcos/p/MLB35093824"
   },

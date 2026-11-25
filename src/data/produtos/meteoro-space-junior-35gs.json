@@ -2,7 +2,7 @@
   "nome": "Meteoro Space Junior 35GS",
   "meli": "https://meli.la/2RqXrTp",
   "preco": 471,
-  "precoEm": "2026-11-24",
+  "precoEm": "2026-11-25",
   "categoria": "amplificador",
   "historico": [
     {
@@ -31,8 +31,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 523,
-    "off": 10,
     "pix": true,
     "cartao": 523,
     "parcelas": "10x R$ 52,30 sem juros",

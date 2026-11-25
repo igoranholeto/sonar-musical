@@ -1,8 +1,8 @@
 {
   "nome": "Mesa de som Yamaha MG12XU",
   "meli": "https://meli.la/1FkHGyW",
-  "preco": 2365,
-  "precoEm": "2026-11-24",
+  "preco": 2175,
+  "precoEm": "2026-11-25",
   "categoria": "estudio",
   "historico": [
     {
@@ -20,15 +20,17 @@
     {
       "data": "2026-11-22",
       "preco": 2365
+    },
+    {
+      "data": "2026-11-25",
+      "preco": 2175
     }
   ],
   "imagemAlt": "Mesa de som Yamaha MG12XU",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "antes": 3737,
-    "off": 36,
-    "parcelas": "12x R$ 227,32",
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/console-yamaha-mg12xu-de-mistura/p/MLB15954985"
   },
