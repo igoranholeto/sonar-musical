@@ -1,0 +1,62 @@
+{
+  "nome": "Baixo SX SJB75 Ash (4 cordas)",
+  "meli": "https://meli.la/1sReN4x",
+  "preco": 1999,
+  "precoEm": "2026-11-25",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1999
+    }
+  ],
+  "nota": 4.3,
+  "avaliacoes": 3,
+  "ficha": [
+    [
+      "Marca",
+      "SX"
+    ],
+    [
+      "Modelo",
+      "SJB75 (série Ash)"
+    ],
+    [
+      "Formato",
+      "Jazz Bass"
+    ],
+    [
+      "Cordas",
+      "4"
+    ],
+    [
+      "Corpo",
+      "Swamp ash"
+    ],
+    [
+      "Braço e escala",
+      "Bordo canadense, 20 trastes"
+    ],
+    [
+      "Captadores",
+      "2 single coil estilo Jazz Bass, passivos"
+    ],
+    [
+      "Ponte",
+      "Tradicional vintage"
+    ],
+    [
+      "Cor",
+      "Sunburst"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 200 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/contrabaixo-sx-4-cordas-em-ash-sjb75-sunburst/p/MLB70635435"
+  },
+  "imagemAlt": "Baixo SX SJB75 Ash (4 cordas)",
+  "imagem": "/images/produtos/sx-sjb75-ash.webp"
+}

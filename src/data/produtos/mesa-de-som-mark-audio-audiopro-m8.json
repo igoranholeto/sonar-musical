@@ -1,0 +1,62 @@
+{
+  "nome": "Mesa de som Mark Audio AudioPro M8",
+  "meli": "https://meli.la/1FqHMkQ",
+  "preco": 928.2,
+  "precoEm": "2026-11-25",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 928.2
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 2,
+  "ficha": [
+    [
+      "Marca",
+      "Mark Audio"
+    ],
+    [
+      "Modelo",
+      "AudioPro M8"
+    ],
+    [
+      "Tipo",
+      "Analógica"
+    ],
+    [
+      "Canais",
+      "8 (2 estéreo)"
+    ],
+    [
+      "Phantom power",
+      "Sim"
+    ],
+    [
+      "Efeitos",
+      "DSP com reverb, delay, chorus e eco"
+    ],
+    [
+      "Conexões",
+      "XLR, P10, RCA, USB e Bluetooth"
+    ],
+    [
+      "Equalizador",
+      "Sim"
+    ],
+    [
+      "Carcaça",
+      "Metal"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 92,82 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-analogica-mark-audio-audiopro-m8-8-canais-com-bluetooth-e-efeitos/p/MLB61201621"
+  },
+  "imagemAlt": "Mesa de som Mark Audio AudioPro M8",
+  "imagem": "/images/produtos/mesa-de-som-mark-audio-audiopro-m8.webp"
+}

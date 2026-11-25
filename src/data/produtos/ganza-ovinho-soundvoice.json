@@ -1,0 +1,49 @@
+{
+  "nome": "Ganzá ovinho Soundvoice (par)",
+  "meli": "https://meli.la/1jMy7Zw",
+  "preco": 25.9,
+  "precoEm": "2026-11-25",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 25.9
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 672,
+  "ficha": [
+    [
+      "Marca",
+      "Soundvoice"
+    ],
+    [
+      "Modelo",
+      "SGEGG"
+    ],
+    [
+      "Tipo",
+      "Chocalho ovinho (egg shaker)"
+    ],
+    [
+      "Material",
+      "ABS"
+    ],
+    [
+      "Quantidade",
+      "2"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/par-de-ganza-chocalho-ovinho-percussao-musical-preto-spring/p/MLB32387171"
+  },
+  "imagemAlt": "Ganzá ovinho Soundvoice (par)",
+  "imagem": "/images/produtos/ganza-ovinho-soundvoice.webp"
+}

@@ -1,0 +1,50 @@
+{
+  "nome": "Pele Williams WC1D porosa 14\"",
+  "meli": "https://meli.la/2HKekWy",
+  "preco": 109.65,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 109.65
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 120,
+  "ficha": [
+    [
+      "Marca",
+      "Williams"
+    ],
+    [
+      "Modelo",
+      "WC1D"
+    ],
+    [
+      "Diâmetro",
+      "14\""
+    ],
+    [
+      "Camadas",
+      "1"
+    ],
+    [
+      "Tipo",
+      "Porosa com dot interno"
+    ],
+    [
+      "Uso",
+      "Caixa ou tom"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "4x R$ 27,41 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pele-14-wc1d-porosa-com-dot-interno-williams/p/MLB27946606"
+  },
+  "imagemAlt": "Pele Williams WC1D porosa 14\"",
+  "imagem": "/images/produtos/pele-williams-wc1d-14.webp"
+}

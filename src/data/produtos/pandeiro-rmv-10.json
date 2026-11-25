@@ -1,0 +1,49 @@
+{
+  "nome": "Pandeiro RMV 10\" (pele leitosa)",
+  "meli": "https://meli.la/1YcJSA9",
+  "preco": 64.9,
+  "precoEm": "2026-11-25",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 64.9
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 24,
+  "ficha": [
+    [
+      "Marca",
+      "RMV"
+    ],
+    [
+      "Diâmetro",
+      "10\""
+    ],
+    [
+      "Corpo",
+      "ABS"
+    ],
+    [
+      "Pele",
+      "Sintética leitosa"
+    ],
+    [
+      "Platinelas",
+      "10"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pandeiro-profissional-rmv-10-polegadas-preto-pele-leitosa/up/MLBU752374890"
+  },
+  "imagemAlt": "Pandeiro RMV 10\" (pele leitosa)",
+  "imagem": "/images/produtos/pandeiro-rmv-10.webp"
+}

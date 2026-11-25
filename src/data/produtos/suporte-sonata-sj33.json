@@ -1,0 +1,53 @@
+{
+  "nome": "Suporte Sonata SJ33 para 3 instrumentos",
+  "meli": "https://meli.la/2GJvMzD",
+  "preco": 113.8,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 113.8
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 283,
+  "ficha": [
+    [
+      "Marca",
+      "Sonata"
+    ],
+    [
+      "Modelo",
+      "SJ33"
+    ],
+    [
+      "Tipo",
+      "De chão"
+    ],
+    [
+      "Capacidade",
+      "3 instrumentos"
+    ],
+    [
+      "Serve para",
+      "Violão, guitarra, baixo e viola"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-estante-3-violao-chao-violao-guitarra-sonata-sj33-cor-preto/p/MLB36188756"
+  },
+  "imagemAlt": "Suporte Sonata SJ33 para 3 instrumentos",
+  "imagem": "/images/produtos/suporte-sonata-sj33.webp"
+}

@@ -1,0 +1,49 @@
+{
+  "nome": "Pele Williams Reflect porosa com dot 14\"",
+  "meli": "https://meli.la/1si8kXM",
+  "preco": 149.9,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 149.9
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 67,
+  "ficha": [
+    [
+      "Marca",
+      "Williams"
+    ],
+    [
+      "Modelo",
+      "Reflect (DSAA2D17)"
+    ],
+    [
+      "Diâmetro",
+      "14\""
+    ],
+    [
+      "Camadas",
+      "2"
+    ],
+    [
+      "Tipo",
+      "Porosa com dot"
+    ],
+    [
+      "Uso",
+      "Caixa"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pele-porosa-com-dot-williams-reflect-para-caixa-14/p/MLB47633858"
+  },
+  "imagemAlt": "Pele Williams Reflect porosa com dot 14\"",
+  "imagem": "/images/produtos/pele-williams-reflect-14.webp"
+}

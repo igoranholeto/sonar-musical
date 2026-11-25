@@ -1,0 +1,58 @@
+{
+  "nome": "Piano infantil Tomate MSC-A10 (37 teclas)",
+  "meli": "https://meli.la/19TeP1t",
+  "preco": 300.69,
+  "precoEm": "2026-11-25",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 300.69
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 3,
+  "ficha": [
+    [
+      "Marca",
+      "Tomate"
+    ],
+    [
+      "Modelo",
+      "MSC-A10"
+    ],
+    [
+      "Teclas",
+      "37"
+    ],
+    [
+      "Acabamento",
+      "Madeira, marrom"
+    ],
+    [
+      "Conexões",
+      "Entrada de microfone e saída de fone"
+    ],
+    [
+      "Medidas",
+      "55,5 x 28 x 8,5 cm"
+    ],
+    [
+      "Peso",
+      "2,9 kg"
+    ],
+    [
+      "Acompanha",
+      "Fonte bivolt, cabo P2, suporte de partitura e adesivo com as notas"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 29,41",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-infantil-de-madeira-tomate-msc-a10-com-37-teclas-e-saida-para-fone/p/MLB76011650"
+  },
+  "imagemAlt": "Piano infantil Tomate MSC-A10 (37 teclas)",
+  "imagem": "/images/produtos/tomate-msc-a10.webp"
+}

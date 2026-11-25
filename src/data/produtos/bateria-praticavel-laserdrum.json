@@ -1,0 +1,50 @@
+{
+  "nome": "Bateria praticável LaserDrum LD Standard Plus",
+  "meli": "https://meli.la/2yQw4Kp",
+  "preco": 331.34,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 331.34
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 71,
+  "ficha": [
+    [
+      "Marca",
+      "LaserDrum"
+    ],
+    [
+      "Modelo",
+      "LD Standard Plus"
+    ],
+    [
+      "Tipo",
+      "Bateria praticável para estudo, regulável"
+    ],
+    [
+      "Material",
+      "MDF e borracha"
+    ],
+    [
+      "Acompanha",
+      "Pedal e baquetas"
+    ],
+    [
+      "Peso",
+      "8,95 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "6x R$ 55,22 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-praticavel-estudo-regulavel-cbaquetas-e-pedal/up/MLBU3876130490"
+  },
+  "imagemAlt": "Bateria praticável LaserDrum LD Standard Plus",
+  "imagem": "/images/produtos/bateria-praticavel-laserdrum.webp"
+}

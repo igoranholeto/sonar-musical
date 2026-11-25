@@ -1,0 +1,66 @@
+{
+  "nome": "Baixo Tagima TBM-4 ativo (4 cordas)",
+  "meli": "https://meli.la/2mv2j7d",
+  "preco": 1295,
+  "precoEm": "2026-11-25",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1295
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 87,
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Modelo",
+      "TBM-4 (linha Special)"
+    ],
+    [
+      "Formato",
+      "Music Man"
+    ],
+    [
+      "Cordas",
+      "4"
+    ],
+    [
+      "Corpo",
+      "Tília"
+    ],
+    [
+      "Braço",
+      "Bordo, 21 trastes"
+    ],
+    [
+      "Escala",
+      "Technical wood"
+    ],
+    [
+      "Captador",
+      "1 humbucker com ímã Alnico V"
+    ],
+    [
+      "Eletrônica",
+      "Ativa"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 125,80",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baixo-tagima-special-tbm-4-ativo-de-4-cordas-preto-para-destros/p/MLB24089382"
+  },
+  "imagemAlt": "Baixo Tagima TBM-4 ativo (4 cordas)",
+  "imagem": "/images/produtos/tagima-tbm-4.webp"
+}

@@ -1,0 +1,46 @@
+{
+  "nome": "Pedal duplo Groove GP510",
+  "meli": "https://meli.la/1VtZD2Q",
+  "preco": 636,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 636
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 128,
+  "ficha": [
+    [
+      "Marca",
+      "Groove"
+    ],
+    [
+      "Modelo",
+      "GP510"
+    ],
+    [
+      "Tipo",
+      "Pedal duplo de bumbo"
+    ],
+    [
+      "Transmissão",
+      "Corrente dupla"
+    ],
+    [
+      "Peso",
+      "4,9 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 61,50",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-duplo-groove-gp510-de-corrente-dupla-para-bateria/p/MLB41822768"
+  },
+  "imagemAlt": "Pedal duplo Groove GP510",
+  "imagem": "/images/produtos/groove-gp510.webp"
+}

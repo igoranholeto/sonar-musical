@@ -1,0 +1,53 @@
+{
+  "nome": "Pandeiro Vip Jesus holográfico 10\"",
+  "meli": "https://meli.la/1ZywN7L",
+  "preco": 78.37,
+  "precoEm": "2026-11-25",
+  "categoria": "percussao",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 78.37
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 2751,
+  "ficha": [
+    [
+      "Marca",
+      "Vip"
+    ],
+    [
+      "Modelo",
+      "P10 Jesus HP"
+    ],
+    [
+      "Diâmetro",
+      "10\""
+    ],
+    [
+      "Corpo",
+      "ABS"
+    ],
+    [
+      "Pele",
+      "Sintética"
+    ],
+    [
+      "Platinelas",
+      "5 pares"
+    ],
+    [
+      "Acabamento",
+      "Holográfico com a palavra Jesus"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pandeiro-jesus-profissional-holografico-10pol/p/MLB69910923"
+  },
+  "imagemAlt": "Pandeiro Vip Jesus holográfico 10\"",
+  "imagem": "/images/produtos/pandeiro-vip-jesus-holografico.webp"
+}

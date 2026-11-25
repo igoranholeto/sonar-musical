@@ -1,0 +1,62 @@
+{
+  "nome": "Kit baixo Voik Pulse-4 (4 cordas, com capa)",
+  "meli": "https://meli.la/1kpS4rZ",
+  "preco": 932,
+  "precoEm": "2026-11-25",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 932
+    }
+  ],
+  "nota": 4,
+  "avaliacoes": 1,
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Modelo",
+      "Pulse-4 (linha Horizon)"
+    ],
+    [
+      "Cordas",
+      "4"
+    ],
+    [
+      "Escala",
+      "Rosewood, 24 trastes, 864 mm"
+    ],
+    [
+      "Corpo",
+      "Olmo"
+    ],
+    [
+      "Braço",
+      "Bordo"
+    ],
+    [
+      "Captadores",
+      "2 single coil estilo Jazz Bass (J-J), passivos"
+    ],
+    [
+      "Acabamento",
+      "Natural fosco"
+    ],
+    [
+      "Acompanha",
+      "Capa BV-5100"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 90,47",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-baixo-passivo-voik-pulse-4-matte-natural-4-cordas-24-trastes-captador-j-j-horizon-series-escala-rosewood-864mm-24-trastes-com-capa-para-destros/p/MLB67422239"
+  },
+  "imagemAlt": "Kit baixo Voik Pulse-4 (4 cordas, com capa)",
+  "imagem": "/images/produtos/kit-baixo-voik-pulse-4.webp"
+}

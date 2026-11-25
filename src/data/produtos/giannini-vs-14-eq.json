@@ -1,0 +1,66 @@
+{
+  "nome": "Viola caipira Giannini VS-14 EQ (elétrica)",
+  "meli": "https://meli.la/2MExMow",
+  "preco": 619.7,
+  "precoEm": "2026-11-25",
+  "categoria": "viola",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 619.7
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 443,
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "VS-14 EQ (linha Start)"
+    ],
+    [
+      "Tipo",
+      "Viola caipira eletroacústica, 10 cordas"
+    ],
+    [
+      "Tampo",
+      "Tília"
+    ],
+    [
+      "Braço",
+      "Cedro"
+    ],
+    [
+      "Escala e cavalete",
+      "Sabina"
+    ],
+    [
+      "Comprimento da escala",
+      "580 mm"
+    ],
+    [
+      "Equalizador",
+      "Graves, médios, agudos, fase e volume"
+    ],
+    [
+      "Saída",
+      "P10"
+    ],
+    [
+      "Acabamento",
+      "Natural acetinado"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 61,97 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/viola-eletroacustico-giannini-vs-14-eq-natural-satinado-destros/p/MLB19647293"
+  },
+  "imagemAlt": "Viola caipira Giannini VS-14 EQ (elétrica)",
+  "imagem": "/images/produtos/giannini-vs-14-eq.webp"
+}

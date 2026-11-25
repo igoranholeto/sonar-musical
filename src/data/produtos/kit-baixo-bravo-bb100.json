@@ -1,0 +1,58 @@
+{
+  "nome": "Kit baixo Bravo BB100 (4 cordas)",
+  "meli": "https://meli.la/2Aizah5",
+  "preco": 1027,
+  "precoEm": "2026-11-25",
+  "categoria": "baixo",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1027
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 103,
+  "ficha": [
+    [
+      "Marca",
+      "Bravo Music"
+    ],
+    [
+      "Modelo",
+      "BB100 (kit)"
+    ],
+    [
+      "Cordas",
+      "4"
+    ],
+    [
+      "Escala",
+      "625 mm, 20 trastes"
+    ],
+    [
+      "Corpo e braço",
+      "Paulownia"
+    ],
+    [
+      "Captadores",
+      "2 single coil estilo Jazz Bass, passivos"
+    ],
+    [
+      "Cor",
+      "Sunburst tortoise"
+    ],
+    [
+      "Acompanha",
+      "Afinador, cabo P10 e correia"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 99,79",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-contra-baixo-bravo-4-cordas-bb100-passivo-acessorios-acabamento-do-corpo-envernizado-cor-sunburst-tortoise-orientacao-da-mao-destro/p/MLB62207889"
+  },
+  "imagemAlt": "Kit baixo Bravo BB100 (4 cordas)",
+  "imagem": "/images/produtos/kit-baixo-bravo-bb100.webp"
+}

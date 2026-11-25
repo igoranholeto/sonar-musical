@@ -1,0 +1,50 @@
+{
+  "nome": "Bag para pratos Log Bags (4 divisórias)",
+  "meli": "https://meli.la/2fpjkPS",
+  "preco": 272.69,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 272.69
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 81,
+  "ficha": [
+    [
+      "Marca",
+      "Log Bags"
+    ],
+    [
+      "Tipo",
+      "Semi case para pratos"
+    ],
+    [
+      "Divisórias",
+      "4"
+    ],
+    [
+      "Medidas",
+      "59 x 59 x 9 cm"
+    ],
+    [
+      "Material",
+      "Lona marítima"
+    ],
+    [
+      "Cor",
+      "Marrom-escuro"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "6x R$ 45,45 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bag-capa-pratos-bateria-4-divisorias-semi-case-profissional/up/MLBU3485296419"
+  },
+  "imagemAlt": "Bag para pratos Log Bags (4 divisórias)",
+  "imagem": "/images/produtos/bag-pratos-log-bags-4.webp"
+}

@@ -1,0 +1,53 @@
+{
+  "nome": "Estante de partitura Oscar Stands OS204",
+  "meli": "https://meli.la/1fPimhZ",
+  "preco": 112.99,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 112.99
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 481,
+  "ficha": [
+    [
+      "Marca",
+      "Oscar Stands"
+    ],
+    [
+      "Modelo",
+      "OS204"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Altura",
+      "47 cm a 1,16 m"
+    ],
+    [
+      "Bandeja",
+      "50 x 38 cm, ângulo ajustável"
+    ],
+    [
+      "Carga máxima",
+      "10 kg"
+    ],
+    [
+      "Peso",
+      "700 g"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/estante-partitura-oscar-stands-os204-preto-antiderrapante-regulavel/p/MLB41850930"
+  },
+  "imagemAlt": "Estante de partitura Oscar Stands OS204",
+  "imagem": "/images/produtos/estante-partitura-oscar-stands-os204.webp"
+}

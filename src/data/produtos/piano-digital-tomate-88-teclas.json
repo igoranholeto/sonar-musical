@@ -1,0 +1,66 @@
+{
+  "nome": "Piano digital Tomate 88 teclas (marrom)",
+  "meli": "https://meli.la/1QWwm9V",
+  "preco": 1274,
+  "precoEm": "2026-11-25",
+  "categoria": "piano",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1274
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 13,
+  "ficha": [
+    [
+      "Marca",
+      "Tomate"
+    ],
+    [
+      "Teclas",
+      "88, sensíveis ao toque"
+    ],
+    [
+      "Polifonia",
+      "64 notas"
+    ],
+    [
+      "Ritmos e músicas",
+      "100 e 100"
+    ],
+    [
+      "Efeitos",
+      "Reverb e chorus"
+    ],
+    [
+      "Conexões",
+      "Bluetooth, USB, fone, saída para amplificador e entrada de pedal"
+    ],
+    [
+      "Acompanha",
+      "3 pedais e fonte"
+    ],
+    [
+      "Medidas",
+      "130 x 35 x 15 cm"
+    ],
+    [
+      "Peso",
+      "12 kg"
+    ],
+    [
+      "Cor",
+      "Marrom"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 127,40 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/piano-digital-teclado-musical-eletronico-88-teclas/up/MLBU3870486956"
+  },
+  "imagemAlt": "Piano digital Tomate 88 teclas (marrom)",
+  "imagem": "/images/produtos/piano-digital-tomate-88-teclas.webp"
+}

@@ -1,0 +1,49 @@
+{
+  "nome": "Suporte para teclado Ibox X10 (em X)",
+  "meli": "https://meli.la/1yLQFqd",
+  "preco": 62.99,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 62.99
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 518,
+  "ficha": [
+    [
+      "Marca",
+      "Ibox"
+    ],
+    [
+      "Modelo",
+      "X10"
+    ],
+    [
+      "Tipo",
+      "Em X, simples, dobrável"
+    ],
+    [
+      "Altura",
+      "40 a 91 cm"
+    ],
+    [
+      "Carga máxima",
+      "15 kg"
+    ],
+    [
+      "Material",
+      "Aço e plástico"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-para-teclado-musical-x-ibox-x10-ajustavel-e-dobravel-de-aco-preto/p/MLB29661640"
+  },
+  "imagemAlt": "Suporte para teclado Ibox X10 (em X)",
+  "imagem": "/images/produtos/suporte-teclado-ibox-x10.webp"
+}

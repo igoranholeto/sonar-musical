@@ -1,0 +1,54 @@
+{
+  "nome": "Microfone de lapela sem fio Ulanzi J12 (USB-C, 2 mics)",
+  "meli": "https://meli.la/1LihRGb",
+  "preco": 178,
+  "precoEm": "2026-11-25",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 178
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 638,
+  "ficha": [
+    [
+      "Marca",
+      "Ulanzi"
+    ],
+    [
+      "Modelo",
+      "J12"
+    ],
+    [
+      "Tipo",
+      "Lapela sem fio, 2 transmissores"
+    ],
+    [
+      "Conexão",
+      "Receptor USB-C (Android e iPhone 15 em diante)"
+    ],
+    [
+      "Padrão polar",
+      "Omnidirecional"
+    ],
+    [
+      "Bateria",
+      "Lítio recarregável"
+    ],
+    [
+      "Uso",
+      "Vídeo, aula e podcast no celular"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 17,59",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-j12-ulanzi-android-tipo-c-2-mics-c-nf/up/MLBU1976670907"
+  },
+  "imagemAlt": "Microfone de lapela sem fio Ulanzi J12 (USB-C, 2 mics)",
+  "imagem": "/images/produtos/ulanzi-j12.webp"
+}

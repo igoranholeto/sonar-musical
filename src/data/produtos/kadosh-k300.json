@@ -1,0 +1,50 @@
+{
+  "nome": "Microfone Kadosh K300 (com fio)",
+  "meli": "https://meli.la/2ZoG6SN",
+  "preco": 101,
+  "precoEm": "2026-11-25",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 101
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 3,
+  "ficha": [
+    [
+      "Marca",
+      "Kadosh"
+    ],
+    [
+      "Modelo",
+      "K300"
+    ],
+    [
+      "Tipo",
+      "De mão, com fio"
+    ],
+    [
+      "Cápsula",
+      "Dinâmica, cardioide"
+    ],
+    [
+      "Resposta",
+      "70 Hz a 14 kHz"
+    ],
+    [
+      "Cabo",
+      "3 m, XLR e P10"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "4x R$ 25,25 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-com-fio-kadosh-k300-profissional-cor-preto-de-mao/up/MLBU4055428057"
+  },
+  "imagemAlt": "Microfone Kadosh K300 (com fio)",
+  "imagem": "/images/produtos/kadosh-k300.webp"
+}

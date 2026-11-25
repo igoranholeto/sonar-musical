@@ -1,0 +1,66 @@
+{
+  "nome": "Kit violão Giannini GDC1 CEQ (folk elétrico)",
+  "meli": "https://meli.la/19Rq9f6",
+  "preco": 1112.01,
+  "precoEm": "2026-11-25",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1112.01
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 71,
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "GDC1 CEQ (linha Performance)"
+    ],
+    [
+      "Tipo",
+      "Folk eletroacústico, cordas de aço"
+    ],
+    [
+      "Corpo",
+      "Dreadnought com cutaway"
+    ],
+    [
+      "Tampo",
+      "Basswood"
+    ],
+    [
+      "Fundo e laterais",
+      "Basswood e tília"
+    ],
+    [
+      "Braço",
+      "Okoumé"
+    ],
+    [
+      "Escala",
+      "647,7 mm"
+    ],
+    [
+      "Eletrônica",
+      "Equalizador com afinador"
+    ],
+    [
+      "Acompanha",
+      "Capa, alça e acessórios do kit"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 107,95",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletrico-giannini-aco-folk-afinador-acessorios-cor-gdc1-ceq-ns/p/MLB35094598"
+  },
+  "imagemAlt": "Kit violão Giannini GDC1 CEQ (folk elétrico)",
+  "imagem": "/images/produtos/kit-giannini-gdc1-ceq.webp"
+}

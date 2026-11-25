@@ -1,0 +1,62 @@
+{
+  "nome": "Tagima Sixmart Wind (assinatura Whindersson Nunes)",
+  "meli": "https://meli.la/2m6LnSf",
+  "preco": 1049,
+  "precoEm": "2026-11-25",
+  "categoria": "guitarra",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 1049
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 25,
+  "ficha": [
+    [
+      "Marca",
+      "Tagima"
+    ],
+    [
+      "Modelo",
+      "Sixmart Wind (Signature Whindersson Nunes)"
+    ],
+    [
+      "Formato",
+      "Singlecut"
+    ],
+    [
+      "Corpo",
+      "Poplar (álamo)"
+    ],
+    [
+      "Braço",
+      "Bordo, shape C"
+    ],
+    [
+      "Escala",
+      "Techwood, 22 trastes, 628,65 mm"
+    ],
+    [
+      "Captadores",
+      "2 humbuckers cerâmicos, chave de 3 posições"
+    ],
+    [
+      "Ponte",
+      "Tune-o-matic"
+    ],
+    [
+      "Cor",
+      "Azul"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 104,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-tagima-sixmart-wind-signature-whindersson-nunes-azul/p/MLB54221708"
+  },
+  "imagemAlt": "Tagima Sixmart Wind (assinatura Whindersson Nunes)",
+  "imagem": "/images/produtos/tagima-sixmart-wind-whindersson.webp"
+}

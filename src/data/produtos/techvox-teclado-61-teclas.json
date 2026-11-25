@@ -1,0 +1,46 @@
+{
+  "nome": "Teclado TechVox 61 teclas",
+  "meli": "https://meli.la/17nYJS7",
+  "preco": 388,
+  "precoEm": "2026-11-25",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 388
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 478,
+  "ficha": [
+    [
+      "Marca",
+      "TechVox"
+    ],
+    [
+      "Teclas",
+      "61"
+    ],
+    [
+      "Ritmos",
+      "200"
+    ],
+    [
+      "MIDI",
+      "Não"
+    ],
+    [
+      "Alimentação",
+      "Fonte bivolt (inclusa)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "7x R$ 55,43 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-profissional-piano-eletronico-61-teclas/up/MLBU1977996926"
+  },
+  "imagemAlt": "Teclado TechVox 61 teclas",
+  "imagem": "/images/produtos/techvox-teclado-61-teclas.webp"
+}

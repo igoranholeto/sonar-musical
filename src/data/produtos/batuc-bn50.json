@@ -1,0 +1,58 @@
+{
+  "nome": "Violão Batuc BN50 (clássico, nylon)",
+  "meli": "https://meli.la/2gEqGUC",
+  "preco": 285.99,
+  "precoEm": "2026-11-25",
+  "categoria": "violao",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 285.99
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 33,
+  "ficha": [
+    [
+      "Marca",
+      "Batuc"
+    ],
+    [
+      "Modelo",
+      "BN50"
+    ],
+    [
+      "Tipo",
+      "Clássico acústico"
+    ],
+    [
+      "Cordas",
+      "Nylon"
+    ],
+    [
+      "Tamanho",
+      "7/8"
+    ],
+    [
+      "Tampo",
+      "Basswood"
+    ],
+    [
+      "Braço",
+      "Linden"
+    ],
+    [
+      "Acabamento",
+      "Envernizado, natural"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "6x R$ 47,66 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violao-acustico-iniciante-classico-batuc-bn50-6-cordas-nylon-estudante-cor-natural/p/MLB75469234"
+  },
+  "imagemAlt": "Violão Batuc BN50 (clássico, nylon)",
+  "imagem": "/images/produtos/batuc-bn50.webp"
+}

@@ -1,0 +1,53 @@
+{
+  "nome": "D'Addario EJ10-B (aço 10-47)",
+  "meli": "https://meli.la/1xhzrsF",
+  "preco": 45,
+  "precoEm": "2026-11-25",
+  "categoria": "cordas",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 45
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 698,
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario"
+    ],
+    [
+      "Modelo",
+      "EJ10-B"
+    ],
+    [
+      "Instrumento",
+      "Violão de aço"
+    ],
+    [
+      "Liga",
+      "Bronze 80/20"
+    ],
+    [
+      "Calibres",
+      ".010 .014 .023 .030 .039 .047"
+    ],
+    [
+      "Tensão",
+      "Extra light"
+    ],
+    [
+      "Extra",
+      "Acompanha corda Mi aguda reserva (PL010)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/daddario-ej10-b-encordoamento-para-violao-aco-10-47-com-corda-extra-pl010-8020-bronze/p/MLB22027433"
+  },
+  "imagemAlt": "D'Addario EJ10-B (aço 10-47)",
+  "imagem": "/images/produtos/daddario-ej10-b.webp"
+}

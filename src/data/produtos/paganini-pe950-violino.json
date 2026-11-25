@@ -1,0 +1,53 @@
+{
+  "nome": "Cordas para violino Paganini PE950",
+  "meli": "https://meli.la/27wUHGM",
+  "preco": 39.9,
+  "precoEm": "2026-11-25",
+  "categoria": "cordas",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 39.9
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 879,
+  "ficha": [
+    [
+      "Marca",
+      "Paganini"
+    ],
+    [
+      "Modelo",
+      "PE950 Special Quality"
+    ],
+    [
+      "Instrumento",
+      "Violino 4/4"
+    ],
+    [
+      "Material",
+      "Aço"
+    ],
+    [
+      "Tensão",
+      "Média"
+    ],
+    [
+      "Calibres",
+      ".010 .018 .025 .027"
+    ],
+    [
+      "Cordas",
+      "4"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/encordoamento-para-violino-paganini-special-quality-com-4-cordas-de-aco-e-tensao-media/p/MLB21441975"
+  },
+  "imagemAlt": "Cordas para violino Paganini PE950",
+  "imagem": "/images/produtos/paganini-pe950-violino.webp"
+}

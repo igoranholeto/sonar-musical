@@ -1,0 +1,50 @@
+{
+  "nome": "Banco para bateria DC Music",
+  "meli": "https://meli.la/11961Cz",
+  "preco": 319,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 319
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 177,
+  "ficha": [
+    [
+      "Marca",
+      "DC Music"
+    ],
+    [
+      "Tipo",
+      "Banco selim para bateria"
+    ],
+    [
+      "Assento",
+      "Couro sintético"
+    ],
+    [
+      "Base",
+      "Tripé com pernas duplas"
+    ],
+    [
+      "Altura",
+      "45 a 65 cm"
+    ],
+    [
+      "Carga máxima",
+      "120 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "6x R$ 55,91 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banco-selim-dc-music-p-bateria-preto-com-ajuste-de-altura-e-base-tripe-reforcada/p/MLB68588962"
+  },
+  "imagemAlt": "Banco para bateria DC Music",
+  "imagem": "/images/produtos/banco-bateria-dc-music.webp"
+}

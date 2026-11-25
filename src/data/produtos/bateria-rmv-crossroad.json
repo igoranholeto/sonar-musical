@@ -1,0 +1,54 @@
+{
+  "nome": "Bateria acústica RMV Crossroad (completa)",
+  "meli": "https://meli.la/2XwwUwQ",
+  "preco": 2393,
+  "precoEm": "2026-11-25",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 2393
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 5,
+  "ficha": [
+    [
+      "Marca",
+      "RMV"
+    ],
+    [
+      "Modelo",
+      "Crossroad"
+    ],
+    [
+      "Tipo",
+      "Acústica, 5 peças"
+    ],
+    [
+      "Bumbo",
+      "22\""
+    ],
+    [
+      "Inclui",
+      "Caixa, surdo, chimbal, prato de ataque, pedal de bumbo, máquina de chimbal e banco"
+    ],
+    [
+      "Cor",
+      "Castanho acetinado"
+    ],
+    [
+      "Peso",
+      "29,5 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-rmv-crossroad-castanho-completa/p/MLB66387362"
+  },
+  "imagemAlt": "Bateria acústica RMV Crossroad (completa)",
+  "imagem": "/images/produtos/bateria-rmv-crossroad.webp"
+}

@@ -1,0 +1,58 @@
+{
+  "nome": "Kit cavaquinho Giannini CS14 (preto)",
+  "meli": "https://meli.la/1npceTt",
+  "preco": 430.99,
+  "precoEm": "2026-11-25",
+  "categoria": "cavaquinho",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 430.99
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 15,
+  "ficha": [
+    [
+      "Marca",
+      "Giannini"
+    ],
+    [
+      "Modelo",
+      "CS14 (kit estudante)"
+    ],
+    [
+      "Tipo",
+      "Acústico"
+    ],
+    [
+      "Corpo e tampo",
+      "Basswood"
+    ],
+    [
+      "Braço",
+      "Okoumé"
+    ],
+    [
+      "Cordas",
+      "Aço"
+    ],
+    [
+      "Cor",
+      "Preto brilhante"
+    ],
+    [
+      "Acompanha",
+      "Acessórios do kit"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "8x R$ 53,87 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-2186741214-kit-cavaquinho-estudante-giannini-acustico-cs14-acessorios-_JM"
+  },
+  "imagemAlt": "Kit cavaquinho Giannini CS14 (preto)",
+  "imagem": "/images/produtos/kit-cavaquinho-giannini-cs14.webp"
+}

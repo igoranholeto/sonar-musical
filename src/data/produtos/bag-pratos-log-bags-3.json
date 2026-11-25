@@ -1,0 +1,50 @@
+{
+  "nome": "Bag para pratos Log Bags (3 divisórias)",
+  "meli": "https://meli.la/1w6na1o",
+  "preco": 123,
+  "precoEm": "2026-11-25",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 123
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 364,
+  "ficha": [
+    [
+      "Marca",
+      "Log Bags"
+    ],
+    [
+      "Modelo",
+      "Extra luxo"
+    ],
+    [
+      "Tipo",
+      "Capa acolchoada para pratos"
+    ],
+    [
+      "Divisórias",
+      "3"
+    ],
+    [
+      "Material",
+      "Náilon"
+    ],
+    [
+      "Cor",
+      "Preto"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "4x R$ 30,81 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/capa-bag-para-pratos-de-bateria-acolchoada-3-divisorias-preto/p/MLB57363334"
+  },
+  "imagemAlt": "Bag para pratos Log Bags (3 divisórias)",
+  "imagem": "/images/produtos/bag-pratos-log-bags-3.webp"
+}

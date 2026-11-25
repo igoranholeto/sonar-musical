@@ -1,0 +1,66 @@
+{
+  "nome": "Novation Launchkey 61 MK4",
+  "meli": "https://meli.la/1MGjg27",
+  "preco": 3690,
+  "precoEm": "2026-11-25",
+  "categoria": "controlador",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 3690
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 5,
+  "ficha": [
+    [
+      "Marca",
+      "Novation"
+    ],
+    [
+      "Modelo",
+      "Launchkey 61 MK4"
+    ],
+    [
+      "Teclas",
+      "61, sensíveis à velocidade"
+    ],
+    [
+      "Pads",
+      "16"
+    ],
+    [
+      "Faders",
+      "9"
+    ],
+    [
+      "Knobs",
+      "8"
+    ],
+    [
+      "Recursos",
+      "Arpejador, rodas de pitch e modulação, botões de oitava e de DAW"
+    ],
+    [
+      "Pedal",
+      "1 entrada"
+    ],
+    [
+      "Software",
+      "Ableton Live Lite"
+    ],
+    [
+      "Cor",
+      "Branco"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "10x R$ 369 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/controlador-novation-launchkey-61-mk4-branco/up/MLBU5705651481"
+  },
+  "imagemAlt": "Novation Launchkey 61 MK4",
+  "imagem": "/images/produtos/novation-launchkey-61-mk4.webp"
+}

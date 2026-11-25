@@ -1,0 +1,50 @@
+{
+  "nome": "Bateria acústica Premium PM20 Max",
+  "meli": "https://meli.la/2DcjepL",
+  "preco": 2779,
+  "precoEm": "2026-11-25",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 2779
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 1,
+  "ficha": [
+    [
+      "Marca",
+      "Premium"
+    ],
+    [
+      "Modelo",
+      "PM20 Max"
+    ],
+    [
+      "Tipo",
+      "Acústica, 5 peças"
+    ],
+    [
+      "Inclui",
+      "Caixa, surdo, chimbal, prato de ataque, pedal de bumbo, máquina de chimbal e baquetas"
+    ],
+    [
+      "Não inclui",
+      "Banco"
+    ],
+    [
+      "Acabamento",
+      "Laqueado brilhante, SG Surf Green"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 267,20",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-premium-20-max-pm20-intermediarios-ensaios-igrejas/up/MLBU5219815564"
+  },
+  "imagemAlt": "Bateria acústica Premium PM20 Max",
+  "imagem": "/images/produtos/bateria-premium-pm20-max.webp"
+}

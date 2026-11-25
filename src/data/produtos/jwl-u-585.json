@@ -1,0 +1,54 @@
+{
+  "nome": "Microfone sem fio JWL U-585 (2 de mão)",
+  "meli": "https://meli.la/2yXK8id",
+  "preco": 446.99,
+  "precoEm": "2026-11-25",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 446.99
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 193,
+  "ficha": [
+    [
+      "Marca",
+      "JWL"
+    ],
+    [
+      "Modelo",
+      "U-585"
+    ],
+    [
+      "Tipo",
+      "Sem fio, 2 microfones de mão"
+    ],
+    [
+      "Cápsula",
+      "Dinâmica, unidirecional"
+    ],
+    [
+      "Resposta",
+      "40 Hz a 20 kHz"
+    ],
+    [
+      "Saída",
+      "XLR no receptor"
+    ],
+    [
+      "Uso",
+      "Igreja e eventos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 43,22",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfones-jwl-u-585-dinamico-unidirecional-cor-preto/up/MLBU1757337440"
+  },
+  "imagemAlt": "Microfone sem fio JWL U-585 (2 de mão)",
+  "imagem": "/images/produtos/jwl-u-585.webp"
+}

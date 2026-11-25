@@ -1,0 +1,50 @@
+{
+  "nome": "Teclado Sonata MK-2089 (61 teclas, com microfone)",
+  "meli": "https://meli.la/1JxE6Sf",
+  "preco": 452,
+  "precoEm": "2026-11-25",
+  "categoria": "teclado",
+  "historico": [
+    {
+      "data": "2026-11-25",
+      "preco": 452
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 41,
+  "ficha": [
+    [
+      "Marca",
+      "Sonata"
+    ],
+    [
+      "Modelo",
+      "MK-2089"
+    ],
+    [
+      "Teclas",
+      "61"
+    ],
+    [
+      "Ritmos",
+      "255"
+    ],
+    [
+      "Alimentação",
+      "Fonte bivolt"
+    ],
+    [
+      "Acompanha",
+      "Microfone de mão, estante de partitura e fonte"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-25",
+    "parcelas": "12x R$ 43,71",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/teclado-musical-estudante-61-teclas-sonata-510-sons-c-mic-cor-preto/p/MLB52786317"
+  },
+  "imagemAlt": "Teclado Sonata MK-2089 (61 teclas, com microfone)",
+  "imagem": "/images/produtos/sonata-mk-2089.webp"
+}
