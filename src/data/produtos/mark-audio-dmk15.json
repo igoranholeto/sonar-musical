@@ -1,0 +1,66 @@
+{
+  "nome": "Caixa ativa Mark Audio DMK15 (15\", 800 W)",
+  "meli": "https://meli.la/1VuNv9R",
+  "preco": 2790,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 2790
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 37,
+  "ficha": [
+    [
+      "Marca",
+      "Mark Audio"
+    ],
+    [
+      "Modelo",
+      "DMK15 (Digital Series)"
+    ],
+    [
+      "Tipo",
+      "Caixa ativa de duas vias com DSP"
+    ],
+    [
+      "Falante",
+      "15 polegadas"
+    ],
+    [
+      "Potência",
+      "800 W (potência dinâmica total)"
+    ],
+    [
+      "Entradas",
+      "XLR e TRS balanceadas"
+    ],
+    [
+      "Conexões",
+      "Bluetooth, USB, SD, FM"
+    ],
+    [
+      "Peso",
+      "22 kg"
+    ],
+    [
+      "Voltagem",
+      "Bivolt"
+    ],
+    [
+      "Resposta",
+      "50 Hz a 20 kHz"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "10x R$ 279 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-ativa-mark-audio-dmk15-digital-series-15-pol-800w-rms-bluetooth-usb-sd-fm-bivolt-dsp-profissional/p/MLB54397763"
+  },
+  "imagem": "/images/produtos/mark-audio-dmk15.webp",
+  "imagemAlt": "Caixa ativa Mark Audio DMK15 (15\", 800 W)"
+}

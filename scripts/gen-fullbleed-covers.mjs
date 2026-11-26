@@ -260,6 +260,17 @@ const MAP = {
   'presente-para-namorado-musico': { kicker: 'PRESENTES · 2026', l1: 'PRESENTE', l2: 'PARA NAMORADO', q: 'Fender acoustic guitar', prefer: /Fender Acoustic Guitar \(3077573225\)/i, avoid: /logo/i },
   'presente-de-natal-para-musico': { kicker: 'NATAL · PRESENTES', l1: 'PRESENTE DE NATAL', l2: 'PARA MÚSICO', q: 'soprano ukulele', prefer: /laminated mahogany wood, body, front, model b/i, avoid: /logo/i },
   'presente-para-pai-musico': { kicker: 'PRESENTES · 2026', l1: 'PRESENTE', l2: 'PARA PAI MÚSICO', q: 'classical guitar nylon', prefer: /Guitarra Cl.sica\.jpg/i, avoid: /logo/i },
+  // Lote 2026-11-26
+  'melhor-baixo-para-igreja': { kicker: 'BAIXO · IGREJA 2026', l1: 'BAIXO', l2: 'PARA IGREJA', q: '5 string bass guitar', prefer: /bass/i, avoid: /logo|double bass|upright|fish|person|people|man|woman|concert|band|player/i },
+  'melhor-bateria-eletronica-para-igreja': { kicker: 'BATERIA · IGREJA 2026', l1: 'BATERIA ELETRÔNICA', l2: 'PARA IGREJA', q: 'electronic drum kit', prefer: /electronic drum|e-drum|roland td|td-/i, avoid: /logo|person|people|man|woman|girl|boy|concert|crowd|drummer/i },
+  'melhor-pedaleira-para-igreja': { kicker: 'PEDALEIRA · IGREJA 2026', l1: 'PEDALEIRA', l2: 'PARA IGREJA', q: 'guitar multi-effects processor floor', prefer: /multi|effect|processor|pedal/i, avoid: /logo|person|people|man|woman|car|bicycle|piano|organ/i },
+  'melhor-caixa-de-som-para-igreja': { kicker: 'SOM · IGREJA 2026', l1: 'CAIXA DE SOM', l2: 'PARA IGREJA', q: 'JBL EON speaker', prefer: /eon|dxr|speaker|loudspeaker/i, avoid: /logo|person|people|man|woman|girl|boy|car|crowd|computer|radio|phone|laptop|gazebo|outdoor/i },
+  'melhor-ukulele-ate-500-reais': { kicker: 'UKULELE · GUIA 2026', l1: 'UKULELE', l2: 'ATÉ R$ 500', q: 'concert ukulele', prefer: /ukulele/i, avoid: /logo|person|people|man|woman|girl|boy|player|band/i },
+  'melhor-bateria-eletronica-ate-2000-reais': { kicker: 'BATERIA · GUIA 2026', l1: 'BATERIA ELETRÔNICA', l2: 'ATÉ R$ 2.000', q: 'Yamaha DTX electronic drum kit', prefer: /dtx|electronic drum|e-drum|drum kit/i, avoid: /logo|person|people|man|woman|girl|boy|concert|crowd|drummer|machine|synth|keyboard|juno|studio/i },
+  'melhor-microfone-para-podcast': { kicker: 'MICROFONE · 2026', l1: 'MICROFONE', l2: 'PARA PODCAST', q: 'condenser microphone pop filter', prefer: /pop filter|condenser|studio microphone|podcast/i, avoid: /logo|person|people|man|woman|girl|boy|host|conference|webinar/i },
+  'melhor-microfone-ate-500-reais': { kicker: 'MICROFONE · GUIA 2026', l1: 'MICROFONE', l2: 'ATÉ R$ 500', q: 'Shure SM58 microphone', prefer: /sm58|sm57|beta|microphone/i, avoid: /logo|person|people|man|woman|girl|boy|singer|concert|crowd|museum|namm/i },
+  'melhor-amplificador-de-baixo-ate-1000-reais': { kicker: 'BAIXO · AMPLIFICADOR', l1: 'AMP DE BAIXO', l2: 'ATÉ R$ 1.000', q: 'bass amplifier combo', prefer: /bass amp|bass combo|ampeg|rumble|hartke|bass/i, avoid: /logo|person|people|man|woman|concert|band|fish|circuit|schematic/i },
+  'melhor-violino-eletrico': { kicker: 'VIOLINO · GUIA 2026', l1: 'VIOLINO', l2: 'ELÉTRICO', q: 'Yamaha silent violin', prefer: /silent violin|electric violin|e-violin|yamaha/i, avoid: /logo|person|people|man|woman|girl|boy|orchestra|concert|player|violinist|playing/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

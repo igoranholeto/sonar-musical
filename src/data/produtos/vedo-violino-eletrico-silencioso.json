@@ -1,0 +1,52 @@
+{
+  "nome": "Kit violino elétrico silencioso Vedo 4/4",
+  "meli": "https://meli.la/2yvwVSs",
+  "preco": 735,
+  "precoEm": "2026-11-26",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 735
+    }
+  ],
+  "nota": 4,
+  "avaliacoes": 3,
+  "ficha": [
+    [
+      "Marca",
+      "Vedo"
+    ],
+    [
+      "Tipo",
+      "Violino elétrico silencioso"
+    ],
+    [
+      "Tamanho",
+      "4/4"
+    ],
+    [
+      "Corpo",
+      "Bordo maciço"
+    ],
+    [
+      "Espelho",
+      "Ébano"
+    ],
+    [
+      "Acompanha",
+      "Estojo, arco, espaleira, cabo, saída de fone, cordas reserva"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 998,
+    "off": 26,
+    "parcelas": "12x R$ 71,07",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-de-violino-eletrico-silencioso-vedo-para-iniciantes/up/MLBU4936457039"
+  },
+  "imagem": "/images/produtos/vedo-violino-eletrico-silencioso.webp",
+  "imagemAlt": "Kit violino elétrico silencioso Vedo 4/4"
+}

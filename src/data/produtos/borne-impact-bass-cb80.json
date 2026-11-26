@@ -1,0 +1,56 @@
+{
+  "nome": "Borne Impact Bass CB80 (30 W)",
+  "meli": "https://meli.la/2uth9Jk",
+  "preco": 797,
+  "precoEm": "2026-11-26",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 797
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 87,
+  "ficha": [
+    [
+      "Marca",
+      "Borne"
+    ],
+    [
+      "Modelo",
+      "Impact Bass CB80"
+    ],
+    [
+      "Tipo",
+      "Cubo para baixo (combo)"
+    ],
+    [
+      "Potência",
+      "30 W RMS"
+    ],
+    [
+      "Tecnologia",
+      "Transistor"
+    ],
+    [
+      "Peso",
+      "7 kg"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1199,
+    "off": 33,
+    "parcelas": "12x R$ 77,07",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-borne-impact-bass-cb80-transistor-para-contrabaixo-de-30w-cor-preto/p/MLB6074943"
+  },
+  "imagem": "/images/produtos/borne-impact-bass-cb80.webp",
+  "imagemAlt": "Borne Impact Bass CB80 (30 W)"
+}

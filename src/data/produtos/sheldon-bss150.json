@@ -1,0 +1,56 @@
+{
+  "nome": "Sheldon BSS150 (15 W, baixo)",
+  "meli": "https://meli.la/1x4PMNL",
+  "preco": 384,
+  "precoEm": "2026-11-26",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 384
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 1329,
+  "ficha": [
+    [
+      "Marca",
+      "Sheldon"
+    ],
+    [
+      "Modelo",
+      "BSS150"
+    ],
+    [
+      "Tipo",
+      "Cubo para baixo (combo)"
+    ],
+    [
+      "Potência",
+      "15 W RMS"
+    ],
+    [
+      "Tecnologia",
+      "Transistor"
+    ],
+    [
+      "Saída",
+      "XLR balanceada"
+    ],
+    [
+      "Peso",
+      "3,5 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 799,
+    "off": 51,
+    "parcelas": "12x R$ 37,56",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/cubo-para-baixo-bss150-sheldon-preto-15w/p/MLB20683619"
+  },
+  "imagem": "/images/produtos/sheldon-bss150.webp",
+  "imagemAlt": "Sheldon BSS150 (15 W, baixo)"
+}

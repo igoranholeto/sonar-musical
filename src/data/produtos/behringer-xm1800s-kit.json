@@ -1,0 +1,56 @@
+{
+  "nome": "Kit Behringer XM1800S (3 microfones dinâmicos)",
+  "meli": "https://meli.la/2iP1ua5",
+  "preco": 424,
+  "precoEm": "2026-11-26",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 424
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2517,
+  "ficha": [
+    [
+      "Marca",
+      "Behringer"
+    ],
+    [
+      "Modelo",
+      "Ultravoice XM1800S"
+    ],
+    [
+      "Tipo",
+      "Kit com 3 microfones de mão dinâmicos"
+    ],
+    [
+      "Captação",
+      "Supercardioide"
+    ],
+    [
+      "Impedância",
+      "600 Ω"
+    ],
+    [
+      "Acompanha",
+      "Estojo, clipes e adaptador"
+    ],
+    [
+      "Resposta",
+      "80 Hz a 15 kHz"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 540,
+    "off": 21,
+    "parcelas": "8x R$ 53 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-microfone-behringer-ultravoice-xm1800s-dinamico-supercardioide-preto/p/MLB7567473"
+  },
+  "imagem": "/images/produtos/behringer-xm1800s-kit.webp",
+  "imagemAlt": "Kit Behringer XM1800S (3 microfones dinâmicos)"
+}

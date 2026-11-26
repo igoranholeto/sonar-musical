@@ -1,0 +1,62 @@
+{
+  "nome": "Caixa ativa Waldman TC-1800 DSP (15\", 450 W)",
+  "meli": "https://meli.la/2MsWLJS",
+  "preco": 2550,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 2550
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 375,
+  "ficha": [
+    [
+      "Marca",
+      "Waldman"
+    ],
+    [
+      "Modelo",
+      "TC-1800 DSP"
+    ],
+    [
+      "Tipo",
+      "Caixa ativa com DSP"
+    ],
+    [
+      "Falante",
+      "15 polegadas"
+    ],
+    [
+      "Potência",
+      "450 W RMS"
+    ],
+    [
+      "Entradas",
+      "XLR e RCA"
+    ],
+    [
+      "Conexões",
+      "Bluetooth"
+    ],
+    [
+      "Homologação Anatel",
+      "219722307120"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "10x R$ 255 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-waldman-tc1800-dsp-ativo-15-pol-450w-preto/p/MLB39971180"
+  },
+  "imagem": "/images/produtos/waldman-tc1800.webp",
+  "imagemAlt": "Caixa ativa Waldman TC-1800 DSP (15\", 450 W)"
+}

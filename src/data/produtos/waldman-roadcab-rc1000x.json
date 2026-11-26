@@ -1,0 +1,68 @@
+{
+  "nome": "Caixa ativa Waldman RoadCab RC-1000X (15\")",
+  "meli": "https://meli.la/1FawGs2",
+  "preco": 1655,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1655
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 51,
+  "ficha": [
+    [
+      "Marca",
+      "Waldman"
+    ],
+    [
+      "Modelo",
+      "RoadCab RC-1000X"
+    ],
+    [
+      "Tipo",
+      "Caixa ativa trapezoidal (frente ou retorno)"
+    ],
+    [
+      "Falantes",
+      "Woofer de 15\" e driver de titânio"
+    ],
+    [
+      "Conexões",
+      "Bluetooth, rádio, visor"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ],
+    [
+      "Potência",
+      "350 W RMS (1.000 W de pico)"
+    ],
+    [
+      "Resposta",
+      "45 Hz a 20 kHz"
+    ],
+    [
+      "Entradas",
+      "Microfone XLR/P10 e linha XLR/RCA"
+    ],
+    [
+      "Saídas",
+      "Linha (XLR/P10) e para caixa passiva"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 2299,
+    "off": 28,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-som-ativa-15-waldman-roadcab-rc1000x-1000w-para-evento-preto/p/MLB69762375"
+  },
+  "imagem": "/images/produtos/waldman-roadcab-rc1000x.webp",
+  "imagemAlt": "Caixa ativa Waldman RoadCab RC-1000X (15\")"
+}

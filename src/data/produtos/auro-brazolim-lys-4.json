@@ -1,0 +1,70 @@
+{
+  "nome": "Violino elétrico Auro Brazolim Lys (4 cordas)",
+  "meli": "https://meli.la/2TZxkpw",
+  "preco": 4439,
+  "precoEm": "2026-11-26",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 4439
+    }
+  ],
+  "ficha": [
+    [
+      "Marca",
+      "Auro Brazolim"
+    ],
+    [
+      "Modelo",
+      "Lys"
+    ],
+    [
+      "Tipo",
+      "Violino elétrico"
+    ],
+    [
+      "Cordas",
+      "4"
+    ],
+    [
+      "Tamanho",
+      "4/4"
+    ],
+    [
+      "Corpo",
+      "Cedro e acrílico"
+    ],
+    [
+      "Peso",
+      "2 kg"
+    ],
+    [
+      "Braço",
+      "Tauari"
+    ],
+    [
+      "Espelho",
+      "Ipê"
+    ],
+    [
+      "Captação",
+      "Dual piezo, com controle de volume"
+    ],
+    [
+      "Saída",
+      "P10"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 6499,
+    "off": 31,
+    "parcelas": "10x R$ 444 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-eletrico-auro-brazolim-lys-4-cordas-branco/up/MLBU3849388873"
+  },
+  "imagem": "/images/produtos/auro-brazolim-lys-4.webp",
+  "imagemAlt": "Violino elétrico Auro Brazolim Lys (4 cordas)"
+}

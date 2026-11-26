@@ -1,0 +1,60 @@
+{
+  "nome": "Datrel BAS-60 (60 W, baixo)",
+  "meli": "https://meli.la/2AWzrHd",
+  "preco": 746,
+  "precoEm": "2026-11-26",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 746
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 49,
+  "ficha": [
+    [
+      "Marca",
+      "Datrel"
+    ],
+    [
+      "Modelo",
+      "BAS-60"
+    ],
+    [
+      "Tipo",
+      "Cubo para baixo (combo)"
+    ],
+    [
+      "Potência",
+      "60 W RMS"
+    ],
+    [
+      "Tecnologia",
+      "Transistor"
+    ],
+    [
+      "Saída",
+      "Fone de ouvido"
+    ],
+    [
+      "Peso",
+      "7,9 kg"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 769,
+    "off": 3,
+    "parcelas": "12x R$ 72,13",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-contrabaixo-60w-bas-60-datrel-cubo-amplificador-cor-preto/p/MLB22944093"
+  },
+  "imagem": "/images/produtos/datrel-bas-60.webp",
+  "imagemAlt": "Datrel BAS-60 (60 W, baixo)"
+}

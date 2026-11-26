@@ -1,0 +1,54 @@
+{
+  "nome": "Microfone Fifine K688 (dinâmico, USB e XLR)",
+  "meli": "https://meli.la/26mWhkG",
+  "preco": 384,
+  "precoEm": "2026-11-26",
+  "categoria": "microfone",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 384
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1508,
+  "ficha": [
+    [
+      "Marca",
+      "Fifine"
+    ],
+    [
+      "Modelo",
+      "K688"
+    ],
+    [
+      "Tipo",
+      "Microfone dinâmico de estúdio"
+    ],
+    [
+      "Captação",
+      "Cardioide"
+    ],
+    [
+      "Conexões",
+      "USB e XLR"
+    ],
+    [
+      "Peso",
+      "500 g"
+    ],
+    [
+      "Resposta",
+      "70 Hz a 15 kHz"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "12x R$ 37,56",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/microfone-dinamico-fifine-k688-usb-xlr-gravacao-podcast/p/MLB25832574"
+  },
+  "imagem": "/images/produtos/fifine-k688.webp",
+  "imagemAlt": "Microfone Fifine K688 (dinâmico, USB e XLR)"
+}

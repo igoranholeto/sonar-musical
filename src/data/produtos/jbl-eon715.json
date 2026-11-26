@@ -1,0 +1,70 @@
+{
+  "nome": "Caixa ativa JBL EON715 (15\", 650 W)",
+  "meli": "https://meli.la/2dadUet",
+  "preco": 3709,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 3709
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 51,
+  "ficha": [
+    [
+      "Marca",
+      "JBL"
+    ],
+    [
+      "Modelo",
+      "EON715"
+    ],
+    [
+      "Tipo",
+      "Caixa ativa"
+    ],
+    [
+      "Falantes",
+      "Woofer de 15\" e tweeter"
+    ],
+    [
+      "Potência",
+      "650 W RMS (1.300 W de pico)"
+    ],
+    [
+      "Conexões",
+      "Bluetooth"
+    ],
+    [
+      "Homologação Anatel",
+      "122402102701"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ],
+    [
+      "Resposta",
+      "50 Hz a 20 kHz"
+    ],
+    [
+      "Entradas",
+      "XLR e TRS"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 5499,
+    "off": 32,
+    "pix": true,
+    "cartao": 3904,
+    "parcelas": "10x R$ 390,43 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-de-som-ativa-jbl-eon-715-650-wrms-com-bluetooth-e-cor-preto/p/MLB44464123"
+  },
+  "imagem": "/images/produtos/jbl-eon715.webp",
+  "imagemAlt": "Caixa ativa JBL EON715 (15\", 650 W)"
+}

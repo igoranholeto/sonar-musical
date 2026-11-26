@@ -1,0 +1,58 @@
+{
+  "nome": "Caixa ativa O'Neal OPB-5060D (2 x 15\", 650 W)",
+  "meli": "https://meli.la/1v21iEy",
+  "preco": 4130,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 4130
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 155,
+  "ficha": [
+    [
+      "Marca",
+      "O'Neal"
+    ],
+    [
+      "Modelo",
+      "OPB-5060D"
+    ],
+    [
+      "Tipo",
+      "Caixa ativa com dois falantes de 15\""
+    ],
+    [
+      "Potência",
+      "650 W RMS"
+    ],
+    [
+      "Altura",
+      "1,15 m"
+    ],
+    [
+      "Conexões",
+      "Bluetooth"
+    ],
+    [
+      "Homologação Anatel",
+      "020821105519"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "10x R$ 413 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-acustica-profissional-ativa-oneal-opb-5060d-bluetooth/p/MLB26069990"
+  },
+  "imagem": "/images/produtos/oneal-opb-5060d.webp",
+  "imagemAlt": "Caixa ativa O'Neal OPB-5060D (2 x 15\", 650 W)"
+}

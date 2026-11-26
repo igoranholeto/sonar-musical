@@ -1,0 +1,52 @@
+{
+  "nome": "Violino elétrico Orquezz 1179 4/4",
+  "meli": "https://meli.la/2L4zyTK",
+  "preco": 2757,
+  "precoEm": "2026-11-26",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 2757
+    }
+  ],
+  "ficha": [
+    [
+      "Marca",
+      "Orquezz"
+    ],
+    [
+      "Modelo",
+      "1179"
+    ],
+    [
+      "Tipo",
+      "Violino elétrico"
+    ],
+    [
+      "Tamanho",
+      "4/4"
+    ],
+    [
+      "Corpo",
+      "Madeira maciça, envernizado"
+    ],
+    [
+      "Espelho",
+      "Ébano"
+    ],
+    [
+      "Acompanha",
+      "Estojo, arco, breu, cabo P2, fone de ouvido, pilhas"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "10x R$ 275,74 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-eletrico-44-profissional-orquezz-pretoamarelo/p/MLB70492429"
+  },
+  "imagem": "/images/produtos/orquezz-violino-eletrico-profissional.webp",
+  "imagemAlt": "Violino elétrico Orquezz 1179 4/4"
+}

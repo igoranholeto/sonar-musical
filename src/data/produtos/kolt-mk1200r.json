@@ -1,0 +1,58 @@
+{
+  "nome": "Monitor Kolt MK1200R (par)",
+  "meli": "https://meli.la/2iMiCU1",
+  "preco": 689,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 689
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 160,
+  "ficha": [
+    [
+      "Marca",
+      "Kolt"
+    ],
+    [
+      "Modelo",
+      "MK1200R"
+    ],
+    [
+      "Tipo",
+      "Par de monitores ativos"
+    ],
+    [
+      "Potência",
+      "2 x 18 W"
+    ],
+    [
+      "Acompanha",
+      "Cabo P2/RCA"
+    ],
+    [
+      "Peso",
+      "5,3 kg"
+    ],
+    [
+      "Entradas",
+      "RCA"
+    ],
+    [
+      "Voltagem",
+      "220 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "12x R$ 66,63",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-mk1200r-kolt-2x18w/p/MLB22575880"
+  },
+  "imagem": "/images/produtos/kolt-mk1200r.webp",
+  "imagemAlt": "Monitor Kolt MK1200R (par)"
+}

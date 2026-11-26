@@ -1,0 +1,56 @@
+{
+  "nome": "Violino elétrico Orquezz Scroll Z-010E 4/4",
+  "meli": "https://meli.la/1yvxBrs",
+  "preco": 935,
+  "precoEm": "2026-11-26",
+  "categoria": "violino",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 935
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 11,
+  "ficha": [
+    [
+      "Marca",
+      "Orquezz"
+    ],
+    [
+      "Modelo",
+      "Scroll Z-010E"
+    ],
+    [
+      "Tipo",
+      "Violino elétrico"
+    ],
+    [
+      "Tamanho",
+      "4/4"
+    ],
+    [
+      "Corpo",
+      "Madeira maciça"
+    ],
+    [
+      "Espelho",
+      "Madeira tingida"
+    ],
+    [
+      "Acompanha",
+      "Estojo, arco, breu, cabo P2, fone de ouvido"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1183,
+    "off": 20,
+    "parcelas": "10x R$ 93,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/violino-intermediario-eletrico-orquezz-scroll-44-preto/up/MLBU1163082613"
+  },
+  "imagem": "/images/produtos/orquezz-violino-eletrico-scroll.webp",
+  "imagemAlt": "Violino elétrico Orquezz Scroll Z-010E 4/4"
+}

@@ -1,0 +1,72 @@
+{
+  "nome": "Caixa ativa Staner PS 1501 (15\", 200 W)",
+  "meli": "https://meli.la/1TaWuMu",
+  "preco": 1504,
+  "precoEm": "2026-11-26",
+  "categoria": "estudio",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1504
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1417,
+  "ficha": [
+    [
+      "Marca",
+      "Staner"
+    ],
+    [
+      "Modelo",
+      "PS 1501"
+    ],
+    [
+      "Tipo",
+      "Caixa ativa"
+    ],
+    [
+      "Falante",
+      "15 polegadas"
+    ],
+    [
+      "Potência",
+      "200 W RMS"
+    ],
+    [
+      "Conexões",
+      "Bluetooth, USB/SD, rádio FM"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ],
+    [
+      "Peso",
+      "17 kg"
+    ],
+    [
+      "Entradas",
+      "Microfone XLR/TRS e linha XLR/RCA/P2"
+    ],
+    [
+      "Saída",
+      "Pre-out XLR"
+    ],
+    [
+      "Transporte",
+      "Rodízios no gabinete"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 2176,
+    "off": 30,
+    "parcelas": "12x R$ 144,56",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/caixa-ativa-staner-ps-1501-preta-bluetooth-200w-som-profissional-portatil/p/MLB16008381"
+  },
+  "imagem": "/images/produtos/staner-ps-1501.webp",
+  "imagemAlt": "Caixa ativa Staner PS 1501 (15\", 200 W)"
+}

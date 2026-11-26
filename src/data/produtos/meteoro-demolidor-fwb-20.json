@@ -1,0 +1,66 @@
+{
+  "nome": "Meteoro Demolidor FWB-20 (20 W, baixo)",
+  "meli": "https://meli.la/1mB1ZJk",
+  "preco": 865,
+  "precoEm": "2026-11-26",
+  "categoria": "amplificador",
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 865
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 82,
+  "ficha": [
+    [
+      "Marca",
+      "Meteoro"
+    ],
+    [
+      "Modelo",
+      "Demolidor FWB-20"
+    ],
+    [
+      "Tipo",
+      "Cubo para baixo (combo)"
+    ],
+    [
+      "Potência",
+      "20 W RMS"
+    ],
+    [
+      "Tecnologia",
+      "Transistor"
+    ],
+    [
+      "Peso",
+      "7,1 kg"
+    ],
+    [
+      "Voltagem",
+      "127/220 V"
+    ],
+    [
+      "Falante",
+      "8 polegadas"
+    ],
+    [
+      "Controles",
+      "Volume, agudo, médio e grave"
+    ],
+    [
+      "Saída",
+      "Fone de ouvido"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "10x R$ 86,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-meteoro-demolidor-fwb-20-transistor-para-baixo-cor-preto/p/MLB15191723"
+  },
+  "imagem": "/images/produtos/meteoro-demolidor-fwb-20.webp",
+  "imagemAlt": "Meteoro Demolidor FWB-20 (20 W, baixo)"
+}
