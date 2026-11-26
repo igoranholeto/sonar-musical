@@ -2,7 +2,7 @@
   "nome": "Pele Williams Reflect porosa com dot 14\"",
   "meli": "https://meli.la/1si8kXM",
   "preco": 149.9,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 390,
+    "off": 61,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pele-porosa-com-dot-williams-reflect-para-caixa-14/p/MLB47633858"
   },

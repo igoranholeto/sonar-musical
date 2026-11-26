@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GIO GRG121DX",
   "meli": "https://meli.la/1A8fwN1",
-  "preco": 2311,
-  "precoEm": "2026-11-25",
+  "preco": 2323,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "imagem": "/images/produtos/ibanez-gio-grg121dx.webp",
   "imagemAlt": "Ibanez GIO GRG121DX",
@@ -46,12 +46,18 @@
     {
       "data": "2026-11-25",
       "preco": 2311
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 2323
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 231,19 sem juros",
+    "antes": 2599,
+    "off": 10,
+    "parcelas": "10x R$ 233,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-ibanez-grg121dx-bkf-rg-gio-black/p/MLB17469494"
   },

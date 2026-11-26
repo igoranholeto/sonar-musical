@@ -1,8 +1,8 @@
 {
   "nome": "Kalani KAL 200 CT Concert",
   "meli": "https://meli.la/345wRL2",
-  "preco": 418,
-  "precoEm": "2026-11-25",
+  "preco": 366,
+  "precoEm": "2026-11-26",
   "categoria": "ukulele",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-15",
       "preco": 418
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 366
     }
   ],
   "nota": 4.9,
@@ -21,7 +25,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 40,46",
+    "antes": 397,
+    "off": 7,
+    "parcelas": "12x R$ 35,79",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ukulele-kalani-concerto-24-kal-200-ct-acustico-sapele-tabaco-com-bag/p/MLB28069952"
   },

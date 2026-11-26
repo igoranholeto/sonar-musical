@@ -2,7 +2,7 @@
   "nome": "Pedal duplo Groove GP510",
   "meli": "https://meli.la/1VtZD2Q",
   "preco": 636,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -37,6 +37,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1133,
+    "off": 43,
     "parcelas": "12x R$ 61,50",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-duplo-groove-gp510-de-corrente-dupla-para-bateria/p/MLB41822768"

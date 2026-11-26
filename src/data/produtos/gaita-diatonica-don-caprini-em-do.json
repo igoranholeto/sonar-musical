@@ -2,7 +2,7 @@
   "nome": "Gaita diatônica Don Caprini em Dó",
   "meli": "https://meli.la/1wf2yrH",
   "preco": 38,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "sopro",
   "historico": [
     {
@@ -18,6 +18,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 70,
+    "off": 46,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/gaita-de-boca-diatonica-harmonica-profissional-premium-em-do-c-10-furos-20-tons-cromada-para-blues-folk-rock-com-estojo-don-caprini/p/MLB65113134"
   },

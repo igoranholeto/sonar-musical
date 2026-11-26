@@ -2,7 +2,7 @@
   "nome": "Baixo SX SJB75 Ash (4 cordas)",
   "meli": "https://meli.la/1sReN4x",
   "preco": 1999,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
@@ -53,6 +53,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 2499,
+    "off": 19,
     "parcelas": "10x R$ 200 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-sx-4-cordas-em-ash-sjb75-sunburst/p/MLB70635435"

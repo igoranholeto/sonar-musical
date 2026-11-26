@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez PS60 Iceman",
   "meli": "https://meli.la/2TetjDm",
-  "preco": 3693,
-  "precoEm": "2026-11-25",
+  "preco": 3630,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-25",
       "preco": 3693
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 3630
     }
   ],
   "imagemAlt": "Ibanez PS60 Iceman",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 369,30 sem juros",
+    "parcelas": "12x R$ 348,90",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-ps-series-ps60-iceman-de-choupo-2018-black-com-diapasao-de-amaranto/p/MLB17774400"
   },

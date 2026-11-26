@@ -2,7 +2,7 @@
   "nome": "Onerr Bruck30 Keyboard (amplificador para teclado)",
   "meli": "https://meli.la/2KF98Cm",
   "preco": 1027,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "amplificador",
   "historico": [
     {
@@ -66,6 +66,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
+    "antes": 1139,
+    "off": 9,
     "parcelas": "10x R$ 102,75 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/caixa-amplificada-onerr-bruck30-para-teclado-e-piano-digital-preto/p/MLB30899654"

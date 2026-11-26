@@ -1,8 +1,8 @@
 {
   "nome": "Casio Privia PX-S1100 (piano digital)",
   "meli": "https://meli.la/1ZGNtwA",
-  "preco": 3599,
-  "precoEm": "2026-11-25",
+  "preco": 3690,
+  "precoEm": "2026-11-26",
   "categoria": "piano",
   "historico": [
     {
@@ -32,13 +32,19 @@
     {
       "data": "2026-11-25",
       "preco": 3599
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 3690
     }
   ],
   "imagemAlt": "Casio Privia PX-S1100 (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 359,90 sem juros",
+    "antes": 4590,
+    "off": 19,
+    "parcelas": "10x R$ 369 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-px-s1100-88-teclas-bluetooth-cor-preto/p/MLB33934512"
   },

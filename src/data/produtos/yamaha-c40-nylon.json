@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha C40 (nylon)",
   "meli": "https://meli.la/1xEtgLu",
-  "preco": 886,
-  "precoEm": "2026-11-24",
+  "preco": 865,
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -52,13 +52,23 @@
     {
       "data": "2026-11-24",
       "preco": 886
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 865
     }
   ],
   "imagem": "/images/produtos/yamaha-c40-nylon.webp",
   "imagemAlt": "Yamaha C40 (nylon)",
   "anuncio": {
-    "status": "encerrado",
-    "desde": "2026-11-25",
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 910,
+    "off": 5,
+    "pix": true,
+    "cartao": 910,
+    "parcelas": "10x R$ 91 sem juros",
+    "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-yamaha-c40m-ii-acustico-nylon-iniciante/p/MLB28726740"
   },
   "ficha": [

@@ -2,7 +2,7 @@
   "nome": "Afinador de clip Bertô",
   "meli": "https://meli.la/2r2jMNA",
   "preco": 26,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -17,6 +17,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 40,
+    "off": 34,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/afinador-digital-cromatico-berto-pinca-clip-giratorio-360-display-lcd-para-violao-guitarra-ukulele-violino-cavaco-viola-caipira/p/MLB41927042"
   },

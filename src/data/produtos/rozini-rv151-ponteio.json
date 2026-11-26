@@ -1,8 +1,8 @@
 {
   "nome": "Viola Caipira Rozini Ponteio RV151 (acústica)",
   "meli": "https://meli.la/2au4cQk",
-  "preco": 1071,
-  "precoEm": "2026-11-25",
+  "preco": 1420,
+  "precoEm": "2026-11-26",
   "categoria": "viola",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-10",
       "preco": 1071
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1420
     }
   ],
   "nota": 5,
@@ -21,7 +25,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 107,20 sem juros",
+    "parcelas": "10x R$ 142,10 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/viola-caipira-ponteio-natural-rv151acn-rozini/p/MLB34372268"
   },

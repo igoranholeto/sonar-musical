@@ -2,7 +2,7 @@
   "nome": "Escaleta Bertô 32 teclas",
   "meli": "https://meli.la/33t1NFK",
   "preco": 79,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "sopro",
   "historico": [
     {
@@ -22,6 +22,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 188,
+    "off": 58,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/escaleta-melodica-berto-preto-32-teclas-capa-bocal-mangueira/p/MLB28451533"
   },

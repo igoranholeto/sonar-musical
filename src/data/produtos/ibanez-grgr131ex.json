@@ -2,7 +2,7 @@
   "nome": "Ibanez GRGR131EX",
   "meli": "https://meli.la/2drHQFX",
   "preco": 2375,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -46,6 +46,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 3126,
+    "off": 24,
     "parcelas": "10x R$ 237,58 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rg-gio-grgr131ex-de-choupo-2021-black-flat-fosco-com-diapasao-de-amaranto/p/MLB17829413"

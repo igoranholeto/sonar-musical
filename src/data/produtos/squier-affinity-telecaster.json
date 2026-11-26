@@ -1,8 +1,8 @@
 {
   "nome": "Squier Affinity Telecaster",
   "meli": "https://meli.la/2dWJXKX",
-  "preco": 2599,
-  "precoEm": "2026-11-25",
+  "preco": 2880,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-25",
       "preco": 2599
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 2880
     }
   ],
   "imagem": "/images/produtos/squier-affinity-telecaster.webp",
@@ -47,7 +51,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 249,81",
+    "parcelas": "10x R$ 288 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-squier-by-fender-affinity-telecaster-cuo-color-2-cores-sunburst-maple-fingerboard-material-orientacao-direita/p/MLB25909840"
   },

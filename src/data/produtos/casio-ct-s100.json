@@ -2,7 +2,7 @@
   "nome": "Casio Casiotone CT-S100",
   "meli": "https://meli.la/2rdoX1N",
   "preco": 667,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -65,6 +65,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 950,
+    "off": 29,
     "pix": true,
     "cartao": 741,
     "parcelas": "10x R$ 74,09 sem juros",

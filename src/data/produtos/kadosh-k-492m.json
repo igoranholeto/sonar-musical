@@ -2,7 +2,7 @@
   "nome": "Kadosh K-492M (2 microfones de mão sem fio)",
   "meli": "https://meli.la/2kBQsvc",
   "preco": 1083,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "microfone",
   "historico": [
     {
@@ -59,6 +59,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 1348,
+    "off": 19,
     "parcelas": "12x R$ 105,16",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-duplo-kadosh-k492m-uhf-profissional-mao/up/MLBU3153692028"

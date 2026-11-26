@@ -2,7 +2,7 @@
   "nome": "Medeli MZ537 (kit com banco)",
   "meli": "https://meli.la/1nqs3yo",
   "preco": 4877,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -73,6 +73,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
+    "antes": 6980,
+    "off": 30,
     "parcelas": "10x R$ 490 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-medeli-mz537-mesh-bluetooth-com-usb-midi-e-459-sons/p/MLB75548686"

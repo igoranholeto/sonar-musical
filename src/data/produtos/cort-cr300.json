@@ -2,7 +2,7 @@
   "nome": "Cort CR300 (Les Paul)",
   "meli": "https://meli.la/2o4V23Y",
   "preco": 4449,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -75,6 +75,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
+    "antes": 5099,
+    "off": 12,
     "parcelas": "12x R$ 427,72",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-cort-cr300-mogno-humbucker-emg-sunburst-6-cordas/p/MLB17496741"

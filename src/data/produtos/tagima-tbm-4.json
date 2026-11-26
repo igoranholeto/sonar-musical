@@ -2,7 +2,7 @@
   "nome": "Baixo Tagima TBM-4 ativo (4 cordas)",
   "meli": "https://meli.la/2mv2j7d",
   "preco": 1295,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
@@ -57,6 +57,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1336,
+    "off": 3,
     "parcelas": "12x R$ 125,80",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baixo-tagima-special-tbm-4-ativo-de-4-cordas-preto-para-destros/p/MLB24089382"

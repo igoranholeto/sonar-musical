@@ -2,7 +2,7 @@
   "nome": "Pele Remo Emperor porosa 14\"",
   "meli": "https://meli.la/1uqLwzr",
   "preco": 152.1,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -37,6 +37,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 169,
+    "off": 10,
     "parcelas": "5x R$ 30,42 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pele-14-emperor-porosa-remo-be-0114-00/p/MLB27057483"

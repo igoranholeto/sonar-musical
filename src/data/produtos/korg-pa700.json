@@ -2,7 +2,7 @@
   "nome": "Korg Pa700",
   "meli": "https://meli.la/1EUSGFJ",
   "preco": 11466,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -18,6 +18,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
+    "antes": 13489,
+    "off": 15,
     "parcelas": "12x R$ 1.102",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-arranjador-korg-pa700-61-teclas-com-370-ritmos-preto/p/MLB21721230"

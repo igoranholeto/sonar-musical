@@ -2,7 +2,7 @@
   "nome": "Rebolo Izzo 12\" x 50 cm (alumínio)",
   "meli": "https://meli.la/11ynBp6",
   "preco": 346,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "percussao",
   "historico": [
     {
@@ -47,6 +47,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 389,
+    "off": 10,
     "parcelas": "6x R$ 57,73 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/rebolo-tantan-conico-izzo-12-pol-x-50-cm-aluminio-pele-napa/p/MLB34376091"

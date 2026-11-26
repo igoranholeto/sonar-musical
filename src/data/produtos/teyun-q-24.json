@@ -1,8 +1,8 @@
 {
   "nome": "Teyun Q-24",
   "meli": "https://meli.la/2BoHBDr",
-  "preco": 288,
-  "precoEm": "2026-11-25",
+  "preco": 270,
+  "precoEm": "2026-11-26",
   "categoria": "interface",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-21",
       "preco": 288
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 270
     }
   ],
   "imagemAlt": "Teyun Q-24",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
-    "parcelas": "6x R$ 48 sem juros",
+    "antes": 480,
+    "off": 43,
+    "parcelas": "12x R$ 26,41",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-usb-teyun-q-24-24bit-192khz-2-canais-preto/p/MLB49181541"
   },

@@ -2,7 +2,7 @@
   "nome": "Pad de Estudo Zaidan's 12\"",
   "meli": "https://meli.la/1PFrULs",
   "preco": 56.9,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -39,6 +39,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-16",
+    "antes": 60,
+    "off": 5,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pad-estudo-praticavel-bateria-12-zaidans-cor-preto/p/MLB45377714"
   }

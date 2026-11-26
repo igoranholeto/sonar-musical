@@ -2,7 +2,7 @@
   "nome": "Kit teclado Bravo BP100 (61 teclas)",
   "meli": "https://meli.la/2yELatC",
   "preco": 446.49,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -51,6 +51,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 763,
+    "off": 41,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-teclado-musical-bravo-bp100-61-teclas-300-timbres-300-ritmos-com-gravacao-sustain-e-vibrato-capa-suporte-em-x-fonte-e-porta-partituras-para-iniciantes-e-estudantes-cor-preto/p/MLB82602839"

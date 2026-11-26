@@ -2,7 +2,7 @@
   "nome": "Suporte para teclado Ibox X10 (em X)",
   "meli": "https://meli.la/1yLQFqd",
   "preco": 62.99,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 70,
+    "off": 10,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-para-teclado-musical-x-ibox-x10-ajustavel-e-dobravel-de-aco-preto/p/MLB29661640"
   },

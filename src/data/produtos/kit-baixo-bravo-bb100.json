@@ -1,13 +1,17 @@
 {
   "nome": "Kit baixo Bravo BB100 (4 cordas)",
   "meli": "https://meli.la/2Aizah5",
-  "preco": 1027,
-  "precoEm": "2026-11-25",
+  "preco": 1007,
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 1027
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1007
     }
   ],
   "nota": 5,
@@ -49,7 +53,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
-    "parcelas": "12x R$ 99,79",
+    "antes": 1499,
+    "off": 32,
+    "parcelas": "12x R$ 97,85",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-contra-baixo-bravo-4-cordas-bb100-passivo-acessorios-acabamento-do-corpo-envernizado-cor-sunburst-tortoise-orientacao-da-mao-destro/p/MLB62207889"
   },

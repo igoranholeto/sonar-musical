@@ -2,7 +2,7 @@
   "nome": "Pandeirola meia-lua DC Music",
   "meli": "https://meli.la/2uXfRB7",
   "preco": 30,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "percussao",
   "historico": [
     {
@@ -18,6 +18,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 49,
+    "off": 39,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pandeiro-meia-lua-pandeirola-pandeiro-profissional-preto-diversos-marca-dc-music/p/MLB49090876"
   },

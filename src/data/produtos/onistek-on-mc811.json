@@ -2,7 +2,7 @@
   "nome": "Onistek ON-MC811 (microfone sem fio recarregável)",
   "meli": "https://meli.la/1kkTcvb",
   "preco": 69,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "microfone",
   "historico": [
     {
@@ -47,6 +47,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 100,
+    "off": 31,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-dinamico-recarregavel-display-digital/up/MLBU1443016845"
   }

@@ -1,8 +1,8 @@
 {
   "nome": "Boss RC-1 Loop Station",
   "meli": "https://meli.la/2HAQHk4",
-  "preco": 1038,
-  "precoEm": "2026-11-25",
+  "preco": 1037,
+  "precoEm": "2026-11-26",
   "categoria": "pedal",
   "historico": [
     {
@@ -44,6 +44,10 @@
     {
       "data": "2026-11-24",
       "preco": 1038
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1037
     }
   ],
   "imagem": "/images/produtos/boss-rc-1-loop-station.webp",
@@ -51,7 +55,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 100,79",
+    "antes": 1206,
+    "off": 13,
+    "parcelas": "12x R$ 100,71",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-loop-station-rc-1-vermelho/p/MLB17473309"
   },

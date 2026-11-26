@@ -2,7 +2,7 @@
   "nome": "Yamaha Revstar RSS02T",
   "meli": "https://meli.la/1gYwDr4",
   "preco": 6174,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -22,6 +22,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 6499,
+    "off": 5,
     "parcelas": "12x R$ 593,43",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-revstar-standard-rss02t-chambered-de-mogno-hot-merlot-poliuretano-brilhante-com-diapasao-de-pau-rosa/p/MLB22522683"

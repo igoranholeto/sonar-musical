@@ -2,7 +2,7 @@
   "nome": "Pioneer DJ DDJ-FLX2",
   "meli": "https://meli.la/1JajQVW",
   "preco": 1812,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "controlador",
   "historico": [
     {
@@ -71,6 +71,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
+    "antes": 2527,
+    "off": 28,
     "parcelas": "10x R$ 181,21 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/controladora-pioneer-dj-ddj-flx2-rekordbox-serato-djay-cor-preto/p/MLB45220958"

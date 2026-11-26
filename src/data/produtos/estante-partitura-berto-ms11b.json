@@ -1,13 +1,17 @@
 {
   "nome": "Estante de partitura Bertô MS-11B (com bolsa)",
   "meli": "https://meli.la/32DxkqY",
-  "preco": 39,
-  "precoEm": "2026-11-25",
+  "preco": 42,
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-22",
       "preco": 39
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 42
     }
   ],
   "nota": 4.9,
@@ -75,7 +79,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
-    "pix": true,
+    "antes": 94,
+    "off": 55,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/estante-porta-partitura-berto-preto-ajustavel-75cm-13m-dobravel-com-bolsa/p/MLB29547739"
   }

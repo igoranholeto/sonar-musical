@@ -2,7 +2,7 @@
   "nome": "Bateria Nagano Beat (bumbo 16\")",
   "meli": "https://meli.la/16Ccd9x",
   "preco": 3697,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -59,6 +59,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 4299,
+    "off": 14,
     "parcelas": "10x R$ 369,71 sem juros",
     "freteGratis": true,
     "catalogo": "https://produto.mercadolivre.com.br/MLB-3249094096-bateria-nagano-beat-bumbo-16-com-ferragens-e-banco-baqueta-_JM"

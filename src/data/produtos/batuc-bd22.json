@@ -1,8 +1,8 @@
 {
   "nome": "Bateria Acústica Batuc BD22",
   "meli": "https://meli.la/1P8Xz72",
-  "preco": 2011,
-  "precoEm": "2026-11-25",
+  "preco": 1899,
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -28,13 +28,19 @@
     {
       "data": "2026-11-25",
       "preco": 2011
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1899
     }
   ],
   "imagemAlt": "Bateria Acústica Batuc BD22",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 201,20 sem juros",
+    "antes": 3799,
+    "off": 50,
+    "parcelas": "12x R$ 182,62",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-completa-batuc-bd22-iniciante-5-pecas-pratos-banco-pedal-bumbo-22-wine-red/p/MLB66912955"
   },

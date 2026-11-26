@@ -1,8 +1,8 @@
 {
   "nome": "Rozini Studio RX210 (nylon)",
   "meli": "https://meli.la/2r3bDt9",
-  "preco": 1084,
-  "precoEm": "2026-11-25",
+  "preco": 1227,
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -64,6 +64,10 @@
     {
       "data": "2026-11-25",
       "preco": 1084
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1227
     }
   ],
   "nota": 4.7,
@@ -73,7 +77,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 105,33",
+    "parcelas": "12x R$ 119,12",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-rozini-rx210acflp-para-destros-natural-pau-ferro-fosco/p/MLB16044339"
   },

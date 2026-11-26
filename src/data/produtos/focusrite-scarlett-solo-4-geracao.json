@@ -1,8 +1,8 @@
 {
   "nome": "Focusrite Scarlett Solo (4ª geração)",
   "meli": "https://meli.la/2a1v6AC",
-  "preco": 1399,
-  "precoEm": "2026-11-25",
+  "preco": 1533,
+  "precoEm": "2026-11-26",
   "categoria": "interface",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-25",
       "preco": 1399
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1533
     }
   ],
   "imagem": "/images/produtos/focusrite-scarlett-solo-4-geracao.webp",
@@ -99,7 +103,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-16",
-    "parcelas": "12x R$ 135,81",
+    "antes": 1868,
+    "off": 17,
+    "parcelas": "10x R$ 153,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-focusrite-scarlett-solo-4-gen-garantia-3-anos-procedencia-oficial/p/MLB27088462"
   }

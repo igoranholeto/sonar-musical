@@ -1,13 +1,17 @@
 {
   "nome": "Capa acolchoada Orquezz para teclado de 61 teclas",
   "meli": "https://meli.la/1se8fm5",
-  "preco": 94,
-  "precoEm": "2026-11-25",
+  "preco": 77,
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-22",
       "preco": 94
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 77
     }
   ],
   "nota": 4.9,
@@ -43,7 +47,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
-    "parcelas": "3x R$ 31,36 sem juros",
+    "antes": 97,
+    "off": 20,
+    "parcelas": "3x R$ 25,75 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bag-capa-teclado-58-acolchoada-casio-roland-yamaha-61-teclas-preto/p/MLB69292336"
   }

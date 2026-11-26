@@ -2,7 +2,7 @@
   "nome": "Kit violão Giannini GDC1 CEQ (folk elétrico)",
   "meli": "https://meli.la/19Rq9f6",
   "preco": 1112.01,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -57,6 +57,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1634,
+    "off": 31,
     "parcelas": "12x R$ 107,95",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-violao-eletrico-giannini-aco-folk-afinador-acessorios-cor-gdc1-ceq-ns/p/MLB35094598"

@@ -2,7 +2,7 @@
   "nome": "Suporte Bertô 5 Instrumentos",
   "meli": "https://meli.la/2FhqEWq",
   "preco": 193,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -21,6 +21,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 300,
+    "off": 35,
     "parcelas": "12x R$ 19,09",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/suporte-chao-berto-para-5-instrumentos-violao-guitarra-baixo-preto/p/MLB39368526"

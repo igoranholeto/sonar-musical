@@ -2,7 +2,7 @@
   "nome": "Saxofone Alto Vedo VD-SKS",
   "meli": "https://meli.la/2ieq7sh",
   "preco": 1499,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "sopro",
   "historico": [
     {
@@ -59,6 +59,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 1999,
+    "off": 25,
     "parcelas": "12x R$ 145,52",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/saxofone-alto-em-mi-bemol-vedo-com-estojo-e-limpeza-laqueado/up/MLBU4297363225"

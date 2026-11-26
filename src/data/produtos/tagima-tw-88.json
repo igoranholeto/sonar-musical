@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TW-88",
   "meli": "https://meli.la/1cb5GEh",
-  "preco": 1200,
-  "precoEm": "2026-11-25",
+  "preco": 1376,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -44,13 +44,19 @@
     {
       "data": "2026-11-25",
       "preco": 1200
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1376
     }
   ],
   "imagemAlt": "Tagima TW-88",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 120 sem juros",
+    "antes": 1792,
+    "off": 23,
+    "parcelas": "12x R$ 133,67",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-tagima-telecaster-escala-escura-tw-88-olympic-white/p/MLB55907921"
   },

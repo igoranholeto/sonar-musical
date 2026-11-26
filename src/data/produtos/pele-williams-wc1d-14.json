@@ -2,7 +2,7 @@
   "nome": "Pele Williams WC1D porosa 14\"",
   "meli": "https://meli.la/2HKekWy",
   "preco": 109.65,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 129,
+    "off": 15,
     "parcelas": "4x R$ 27,41 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pele-14-wc1d-porosa-com-dot-interno-williams/p/MLB27946606"

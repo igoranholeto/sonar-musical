@@ -2,7 +2,7 @@
   "nome": "Teclado TechVox 61 teclas",
   "meli": "https://meli.la/17nYJS7",
   "preco": 388,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -37,6 +37,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 552,
+    "off": 29,
     "parcelas": "7x R$ 55,43 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-profissional-piano-eletronico-61-teclas/up/MLBU1977996926"

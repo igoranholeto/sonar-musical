@@ -2,7 +2,7 @@
   "nome": "O'Neal OCK 600X (amplificador para teclado, 200 W)",
   "meli": "https://meli.la/1KRhN8k",
   "preco": 2595,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "amplificador",
   "historico": [
     {
@@ -70,6 +70,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
+    "antes": 3050,
+    "off": 14,
     "parcelas": "10x R$ 259,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-oneal-ock-600x-transistor-para-teclado-de-200w-cor-preto/p/MLB15559487"

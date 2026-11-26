@@ -2,7 +2,7 @@
   "nome": "Strinberg HBN4M (baixo headless)",
   "meli": "https://meli.la/2QRmd3S",
   "preco": 2397,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
@@ -71,6 +71,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-18",
+    "antes": 4114,
+    "off": 41,
     "parcelas": "12x R$ 230,46",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-strinberg-hbn4m-headless-4-cordas-eletrico-ativo-onix-black/p/MLB55754074"

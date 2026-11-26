@@ -2,7 +2,7 @@
   "nome": "Ibanez AZES40 (HSS)",
   "meli": "https://meli.la/1vKhkKj",
   "preco": 3249,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -42,6 +42,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 4629,
+    "off": 29,
     "pix": true,
     "cartao": 3449,
     "parcelas": "10x R$ 345 sem juros",

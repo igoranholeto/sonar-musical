@@ -2,7 +2,7 @@
   "nome": "Boss DS-1",
   "meli": "https://meli.la/1b1fgdS",
   "preco": 517,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "pedal",
   "historico": [
     {
@@ -71,6 +71,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 788,
+    "off": 34,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-distortion-ds-1/p/MLB17436041"

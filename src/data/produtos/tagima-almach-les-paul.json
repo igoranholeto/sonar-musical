@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Almach Les Paul",
   "meli": "https://meli.la/2xc1zMG",
-  "preco": 1308,
-  "precoEm": "2026-11-25",
+  "preco": 1635,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -20,13 +20,17 @@
     {
       "data": "2026-11-25",
       "preco": 1308
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1635
     }
   ],
   "imagemAlt": "Tagima Almach Les Paul",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 126,97",
+    "parcelas": "10x R$ 163,57 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-les-paul-tagima-almach-6-cordas-preto-fosco/p/MLB49694159"
   },

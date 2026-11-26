@@ -2,7 +2,7 @@
   "nome": "Boss Katana Mini",
   "meli": "https://meli.la/2SaBBRz",
   "preco": 1289,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "amplificador",
   "historico": [
     {
@@ -55,6 +55,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
+    "antes": 1330,
+    "off": 3,
     "parcelas": "12x R$ 125,20",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-amplificador-boss-para-guitarra-katana-ktn-mini/up/MLBU1121129228"

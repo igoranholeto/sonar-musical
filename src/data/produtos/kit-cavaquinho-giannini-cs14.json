@@ -2,7 +2,7 @@
   "nome": "Kit cavaquinho Giannini CS14 (preto)",
   "meli": "https://meli.la/1npceTt",
   "preco": 430.99,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -49,6 +49,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 634,
+    "off": 32,
     "parcelas": "8x R$ 53,87 sem juros",
     "freteGratis": true,
     "catalogo": "https://produto.mercadolivre.com.br/MLB-2186741214-kit-cavaquinho-estudante-giannini-acustico-cs14-acessorios-_JM"

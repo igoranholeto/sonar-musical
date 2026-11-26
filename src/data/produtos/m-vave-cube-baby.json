@@ -1,8 +1,8 @@
 {
   "nome": "M-Vave Cube Baby",
   "meli": "https://meli.la/2ErWC9c",
-  "preco": 192,
-  "precoEm": "2026-11-25",
+  "preco": 223,
+  "precoEm": "2026-11-26",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -12,13 +12,19 @@
     {
       "data": "2026-11-25",
       "preco": 192
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 223
     }
   ],
   "imagemAlt": "M-Vave Cube Baby",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 19,05",
+    "antes": 259,
+    "off": 14,
+    "parcelas": "6x R$ 37,12 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-m-vave-cube-baby-preto-multifuncional-guitarra-eletrica/p/MLB19464828"
   },

@@ -1,13 +1,17 @@
 {
   "nome": "Eagle EV744 4/4 (violino elétrico)",
   "meli": "https://meli.la/26jVWKw",
-  "preco": 1815,
-  "precoEm": "2026-11-25",
+  "preco": 1820,
+  "precoEm": "2026-11-26",
   "categoria": "violino",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 1815
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1820
     }
   ],
   "nota": 5,
@@ -17,9 +21,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 181,50 sem juros",
+    "parcelas": "10x R$ 182 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/violino-eagle-ev744-44-eletrico/p/MLB28399777"
+    "catalogo": "https://www.mercadolivre.com.br/violino-eagle-ev744-c-case-cor-natural/p/MLB28135044"
   },
   "ficha": [
     [

@@ -1,8 +1,8 @@
 {
   "nome": "AKG K52",
   "meli": "https://meli.la/2u9CmB8",
-  "preco": 241,
-  "precoEm": "2026-11-25",
+  "preco": 246,
+  "precoEm": "2026-11-26",
   "categoria": "fone",
   "historico": [
     {
@@ -44,13 +44,19 @@
     {
       "data": "2026-11-25",
       "preco": 241
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 246
     }
   ],
   "imagemAlt": "AKG K52",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "6x R$ 40,24 sem juros",
+    "antes": 289,
+    "off": 15,
+    "parcelas": "12x R$ 24,32",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-akg-k52-preto/p/MLB6344408"
   },

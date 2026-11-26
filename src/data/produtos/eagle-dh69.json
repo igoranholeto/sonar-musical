@@ -2,7 +2,7 @@
   "nome": "Eagle DH69 Clássico com Capa",
   "meli": "https://meli.la/2r6oW2t",
   "preco": 1150,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -21,6 +21,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1250,
+    "off": 8,
     "pix": true,
     "cartao": 1250,
     "parcelas": "10x R$ 125 sem juros",

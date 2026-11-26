@@ -2,7 +2,7 @@
   "nome": "Bag para pratos Log Bags (3 divisórias)",
   "meli": "https://meli.la/1w6na1o",
   "preco": 123,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 145,
+    "off": 15,
     "parcelas": "4x R$ 30,81 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/capa-bag-para-pratos-de-bateria-acolchoada-3-divisorias-preto/p/MLB57363334"

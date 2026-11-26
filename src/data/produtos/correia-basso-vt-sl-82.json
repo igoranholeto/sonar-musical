@@ -2,7 +2,7 @@
   "nome": "Correia de couro Basso VT SL 82",
   "meli": "https://meli.la/1TXbpb9",
   "preco": 69,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -69,6 +69,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
+    "antes": 79,
+    "off": 12,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/correia-alca-violao-guitarra-baixo-basso-vt-sl-82-couro/p/MLB82639487"
   }

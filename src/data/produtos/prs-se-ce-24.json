@@ -2,7 +2,7 @@
   "nome": "PRS SE CE 24",
   "meli": "https://meli.la/2pBR2Y7",
   "preco": 8539,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -23,6 +23,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 8989,
+    "off": 5,
     "parcelas": "10x R$ 853,95 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-prs-se-ce-24-standard-satin-charcoal-novo-original/up/MLBU3287332338"

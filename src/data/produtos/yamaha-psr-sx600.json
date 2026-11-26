@@ -2,7 +2,7 @@
   "nome": "Yamaha PSR-SX600",
   "meli": "https://meli.la/33LVMur",
   "preco": 6699,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -14,6 +14,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
+    "antes": 7200,
+    "off": 6,
     "parcelas": "12x R$ 643,98",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-arranjador-yamaha-psr-sx600/p/MLB20200478"

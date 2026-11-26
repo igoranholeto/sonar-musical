@@ -2,7 +2,7 @@
   "nome": "Tagima Sixmart Wind (assinatura Whindersson Nunes)",
   "meli": "https://meli.la/2m6LnSf",
   "preco": 1049,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -53,6 +53,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 2099,
+    "off": 50,
     "parcelas": "10x R$ 104,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-tagima-sixmart-wind-signature-whindersson-nunes-azul/p/MLB54221708"

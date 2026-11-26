@@ -2,7 +2,7 @@
   "nome": "Borne Vorax 840 Studio",
   "meli": "https://meli.la/2fKfLDL",
   "preco": 783,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "amplificador",
   "historico": [
     {
@@ -27,6 +27,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
+    "antes": 880,
+    "off": 11,
     "parcelas": "12x R$ 75,71",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-borne-vorax-840-studio-c-interface-cor-pretodourado/p/MLB14998584"

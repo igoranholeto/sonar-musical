@@ -2,7 +2,7 @@
   "nome": "Kit Violão Bravo AN100",
   "meli": "https://meli.la/2Q4gTLw",
   "preco": 323,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -18,6 +18,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 479,
+    "off": 32,
     "parcelas": "12x R$ 31,60",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-violao-acustico-bravo-an100-iniciante-capa-palheta-cor-blue-burst-orientacao-mao-destro/p/MLB35103946"

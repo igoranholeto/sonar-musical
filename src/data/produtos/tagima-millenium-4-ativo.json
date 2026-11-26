@@ -2,7 +2,7 @@
   "nome": "Tagima Millenium 4 (ativo)",
   "meli": "https://meli.la/28iXawu",
   "preco": 1461,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
@@ -33,6 +33,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1699,
+    "off": 14,
     "parcelas": "10x R$ 146,11 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-4-cordas-tagima-ativo-iniciante-eletrico-mill4/up/MLBU4022713015"

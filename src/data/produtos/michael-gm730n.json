@@ -2,7 +2,7 @@
   "nome": "Michael GM730N Les Paul",
   "meli": "https://meli.la/1R94wch",
   "preco": 1430,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -53,6 +53,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1882,
+    "off": 24,
     "parcelas": "12x R$ 138,88",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-michael-gm730n-les-paul-dourada-humbucker-tilia/p/MLB17967588"

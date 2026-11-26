@@ -2,7 +2,7 @@
   "nome": "Alesis Nitro Max",
   "meli": "https://meli.la/2ZUfRrs",
   "preco": 4736,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -25,6 +25,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-18",
+    "antes": 5148,
+    "off": 8,
     "parcelas": "12x R$ 455,22",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-alesis-nitro-max-kit-8-pecas-bluetooth/up/MLBU1473765089"

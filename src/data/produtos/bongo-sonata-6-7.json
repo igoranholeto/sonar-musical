@@ -2,7 +2,7 @@
   "nome": "Bongô Sonata Pro 6\" e 7\"",
   "meli": "https://meli.la/2igbb27",
   "preco": 335.2,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "percussao",
   "historico": [
     {
@@ -49,6 +49,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 419,
+    "off": 20,
     "parcelas": "12x R$ 32,79",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bongo-percussao-profissional-6-e-7-pele-animal-e-bag-sonata-cor-vermelho/p/MLB69058874"

@@ -2,7 +2,7 @@
   "nome": "Nux MG-300",
   "meli": "https://meli.la/2f8zWuv",
   "preco": 1359,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "pedaleira",
   "historico": [
     {
@@ -35,6 +35,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1598,
+    "off": 15,
     "parcelas": "10x R$ 135,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-nux-mg-300-preto/p/MLB17366238"

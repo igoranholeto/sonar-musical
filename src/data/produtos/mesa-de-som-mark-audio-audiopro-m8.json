@@ -2,7 +2,7 @@
   "nome": "Mesa de som Mark Audio AudioPro M8",
   "meli": "https://meli.la/1FqHMkQ",
   "preco": 928.2,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "estudio",
   "historico": [
     {
@@ -53,6 +53,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1092,
+    "off": 15,
     "parcelas": "10x R$ 92,82 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-analogica-mark-audio-audiopro-m8-8-canais-com-bluetooth-e-efeitos/p/MLB61201621"

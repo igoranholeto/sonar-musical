@@ -2,7 +2,7 @@
   "nome": "Casio Casiotone SA-50 (32 mini teclas)",
   "meli": "https://meli.la/1o3dMZK",
   "preco": 430,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -65,6 +65,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 480,
+    "off": 10,
     "parcelas": "12x R$ 41,58",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-infantil-casio-32-mini-teclas-portatil-sa-50/p/MLB23450870"

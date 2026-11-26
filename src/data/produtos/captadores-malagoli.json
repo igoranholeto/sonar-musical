@@ -1,8 +1,8 @@
 {
   "nome": "Captadores Malagoli",
-  "meli": "https://meli.la/1fCXvJ7",
-  "preco": 660,
-  "precoEm": "2026-11-25",
+  "meli": "https://meli.la/2WaHDsk",
+  "preco": 661,
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-25",
       "preco": 660
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 661
     }
   ],
   "imagem": "/images/produtos/captadores-malagoli.webp",
@@ -32,10 +36,12 @@
   "avaliacoes": 400,
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$ 63,82",
+    "desde": "2026-11-26",
+    "antes": 799,
+    "off": 17,
+    "parcelas": "12x R$ 63,92",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/kit-captadores-malagoli-custom-59-braco-84-ponte-brancos/p/MLB35948630"
+    "catalogo": "https://www.mercadolivre.com.br/kit-humbucker-malagoli-custom-59-e-custom-84-preto-para-guitarra/p/MLB27413575"
   },
   "ficha": [
     [
@@ -48,7 +54,7 @@
     ],
     [
       "Cor",
-      "Branco"
+      "Preto"
     ],
     [
       "Tipos de instrumentos compatíveis",

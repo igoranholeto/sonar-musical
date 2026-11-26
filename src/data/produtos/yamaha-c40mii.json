@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha C40MII",
   "meli": "https://meli.la/1zqj8zZ",
-  "preco": 829,
-  "precoEm": "2026-11-25",
+  "preco": 929,
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -60,6 +60,10 @@
     {
       "data": "2026-11-25",
       "preco": 829
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 929
     }
   ],
   "imagemAlt": "Yamaha C40MII",
@@ -67,7 +71,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "pix": true,
+    "parcelas": "12x R$ 90,14",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-c40mii-44-nailon-natural-fosco/p/MLB16062884"
   },

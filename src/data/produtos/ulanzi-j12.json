@@ -2,7 +2,7 @@
   "nome": "Microfone de lapela sem fio Ulanzi J12 (USB-C, 2 mics)",
   "meli": "https://meli.la/1LihRGb",
   "preco": 178,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "microfone",
   "historico": [
     {
@@ -45,6 +45,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 320,
+    "off": 44,
     "parcelas": "12x R$ 17,59",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-j12-ulanzi-android-tipo-c-2-mics-c-nf/up/MLBU1976670907"

@@ -2,7 +2,7 @@
   "nome": "Rebolo cônico PHX Samba Music (alumínio)",
   "meli": "https://meli.la/2gE5Tba",
   "preco": 310,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "percussao",
   "historico": [
     {
@@ -55,6 +55,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 336,
+    "off": 7,
     "parcelas": "12x R$ 30,29",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/rebolo-formato-conico-pagode-samba-music-phx-aluminio-cor-branco-cor-e-acabamento-prateado/p/MLB65534836"

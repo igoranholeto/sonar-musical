@@ -1,8 +1,8 @@
 {
   "nome": "Sennheiser HD 25",
   "meli": "https://meli.la/327uDAA",
-  "preco": 1250,
-  "precoEm": "2026-11-25",
+  "preco": 1294,
+  "precoEm": "2026-11-26",
   "categoria": "fone",
   "historico": [
     {
@@ -12,13 +12,19 @@
     {
       "data": "2026-11-14",
       "preco": 1250
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1294
     }
   ],
   "imagemAlt": "Sennheiser HD 25",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-14",
-    "parcelas": "10x R$ 125 sem juros",
+    "antes": 1362,
+    "off": 5,
+    "parcelas": "10x R$ 129,48 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/sennheiser-hd-25-fone-de-ouvido-cor-black/p/MLB6338746"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Groove Drums GD922 (bateria acústica)",
   "meli": "https://meli.la/2A6MFoN",
-  "preco": 2660,
-  "precoEm": "2026-11-25",
+  "preco": 2698,
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-24",
       "preco": 2660
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 2698
     }
   ],
   "imagemAlt": "Groove Drums GD922 (bateria acústica)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 266,10 sem juros",
+    "antes": 3899,
+    "off": 30,
+    "parcelas": "10x R$ 269,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-acustica-completa-groove-drums-banco-pratos-pedal-pele-hidraulica-gd922-bumbo-22-black/p/MLB42464679"
   },

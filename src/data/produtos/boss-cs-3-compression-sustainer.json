@@ -2,7 +2,7 @@
   "nome": "Boss CS-3 Compression Sustainer",
   "meli": "https://meli.la/2BMtYj4",
   "preco": 780,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "pedal",
   "historico": [
     {
@@ -55,6 +55,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1005,
+    "off": 22,
     "parcelas": "12x R$ 75,43",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-compression-sustainer-cs-3-azul/p/MLB17436049"

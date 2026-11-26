@@ -1,8 +1,8 @@
 {
   "nome": "Pedal de Bumbo Mapex P410",
   "meli": "https://meli.la/2EJURQs",
-  "preco": 336,
-  "precoEm": "2026-11-25",
+  "preco": 349,
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-24",
       "preco": 336
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 349
     }
   ],
   "imagem": "/images/produtos/mapex-p410-pedal-bumbo.webp",
@@ -55,7 +59,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-16",
-    "parcelas": "12x R$ 32,89",
+    "antes": 1199,
+    "off": 70,
+    "parcelas": "12x R$ 34,14",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-bumbo-simples-mapex-p410-com-corrente/p/MLB29180573"
   }

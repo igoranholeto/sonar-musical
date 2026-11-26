@@ -1,8 +1,8 @@
 {
   "nome": "Kit 50 palhetas Alice",
   "meli": "https://meli.la/2sYGuyQ",
-  "preco": 27,
-  "precoEm": "2026-11-25",
+  "preco": 28,
+  "precoEm": "2026-11-26",
   "categoria": "acessorio",
   "historico": [
     {
@@ -12,12 +12,18 @@
     {
       "data": "2026-11-25",
       "preco": 27
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 28
     }
   ],
   "imagemAlt": "Kit 50 palhetas Alice",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 30,
+    "off": 8,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-50-palhetas-alice-guitarra-violao-baixo-abs-espessuras-diversas/p/MLB28643692"
   },

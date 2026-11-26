@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Roadman Nylon",
   "meli": "https://meli.la/1cmQHL4",
-  "preco": 1379,
-  "precoEm": "2026-11-25",
+  "preco": 1282,
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -32,13 +32,19 @@
     {
       "data": "2026-11-23",
       "preco": 1379
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1282
     }
   ],
   "imagemAlt": "Giannini Roadman Nylon",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 137,90 sem juros",
+    "antes": 3087,
+    "off": 58,
+    "parcelas": "10x R$ 128,20 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-roadman-nylon-mogno-pre-amplificador/p/MLB38406421"
   },

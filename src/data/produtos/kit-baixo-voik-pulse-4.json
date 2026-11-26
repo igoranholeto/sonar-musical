@@ -2,7 +2,7 @@
   "nome": "Kit baixo Voik Pulse-4 (4 cordas, com capa)",
   "meli": "https://meli.la/1kpS4rZ",
   "preco": 932,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
@@ -53,6 +53,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1661,
+    "off": 43,
     "parcelas": "12x R$ 90,47",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-baixo-passivo-voik-pulse-4-matte-natural-4-cordas-24-trastes-captador-j-j-horizon-series-escala-rosewood-864mm-24-trastes-com-capa-para-destros/p/MLB67422239"

@@ -1,13 +1,17 @@
 {
   "nome": "Focusrite Scarlett 2i2 Studio (4ª geração)",
   "meli": "https://meli.la/1ojwjst",
-  "preco": 2885,
-  "precoEm": "2026-11-25",
+  "preco": 2964,
+  "precoEm": "2026-11-26",
   "categoria": "interface",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 2885
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 2964
     }
   ],
   "imagem": "/images/produtos/focusrite-scarlett-2i2-studio-4-geracao.webp",
@@ -15,7 +19,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
-    "parcelas": "12x R$ 277,30",
+    "parcelas": "10x R$ 296,44 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-interface-audio-focusrite-scarlett-2i2-studio-4th-gen-cor-vermelho/p/MLB27884876"
   },

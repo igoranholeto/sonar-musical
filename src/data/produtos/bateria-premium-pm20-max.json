@@ -2,7 +2,7 @@
   "nome": "Bateria acústica Premium PM20 Max",
   "meli": "https://meli.la/2DcjepL",
   "preco": 2779,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 3699,
+    "off": 24,
     "parcelas": "12x R$ 267,20",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-premium-20-max-pm20-intermediarios-ensaios-igrejas/up/MLBU5219815564"

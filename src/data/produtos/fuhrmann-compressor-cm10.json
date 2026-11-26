@@ -2,7 +2,7 @@
   "nome": "Fuhrmann Compressor CM10",
   "meli": "https://meli.la/2UiNeN9",
   "preco": 317,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "pedal",
   "historico": [
     {
@@ -31,6 +31,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 394,
+    "off": 19,
     "parcelas": "6x R$ 52,78 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-fuhrmann-compressor-cm10-azul-escuro/p/MLB17938281"

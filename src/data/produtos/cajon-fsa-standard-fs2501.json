@@ -1,8 +1,8 @@
 {
   "nome": "Cajón FSA Standard FS2501 (elétrico)",
   "meli": "https://meli.la/2hKP2xT",
-  "preco": 502,
-  "precoEm": "2026-11-25",
+  "preco": 503,
+  "precoEm": "2026-11-26",
   "categoria": "percussao",
   "historico": [
     {
@@ -40,13 +40,19 @@
     {
       "data": "2026-11-25",
       "preco": 502
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 503
     }
   ],
   "imagemAlt": "Cajón FSA Standard FS2501 (elétrico)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 48,54",
+    "antes": 689,
+    "off": 26,
+    "parcelas": "10x R$ 50,30 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cajon-eletrico-fsa-standard-fs2501-preto/p/MLB26329553"
   },

@@ -2,7 +2,7 @@
   "nome": "Kit Violão Giannini Eletroacústico (aço)",
   "meli": "https://meli.la/1VCQujA",
   "preco": 669,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -27,9 +27,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1226,
+    "off": 45,
     "parcelas": "10x R$ 66,90 sem juros",
     "freteGratis": true,
-    "catalogo": "https://produto.mercadolivre.com.br/MLB-6471512718-giannini-start-sf-14-sf14-natural-natural-destro-bordo-_JM"
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-6471512718-violo-acustico-giannini-start-sf-14-natural-natural-destro-bordo-_JM"
   },
   "ficha": [
     [

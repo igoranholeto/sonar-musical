@@ -2,7 +2,7 @@
   "nome": "Piano digital Tomate 88 teclas (marrom)",
   "meli": "https://meli.la/1QWwm9V",
   "preco": 1274,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "piano",
   "historico": [
     {
@@ -57,6 +57,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1699,
+    "off": 25,
     "parcelas": "10x R$ 127,40 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-teclado-musical-eletronico-88-teclas/up/MLBU3870486956"

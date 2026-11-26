@@ -1,8 +1,8 @@
 {
   "nome": "Michael GML600 Les Paul",
-  "meli": "https://meli.la/1S4QjoE",
-  "preco": 1572,
-  "precoEm": "2026-11-25",
+  "meli": "https://meli.la/32bS9es",
+  "preco": 1788,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -28,18 +28,24 @@
     {
       "data": "2026-11-25",
       "preco": 1572
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1788
     }
   ],
   "imagemAlt": "Michael GML600 Les Paul",
   "imagem": "/images/produtos/michael-gml600.webp",
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-11",
+    "desde": "2026-11-26",
+    "antes": 2090,
+    "off": 14,
     "pix": true,
-    "cartao": 1709,
-    "parcelas": "10x R$ 170,90 sem juros",
+    "cartao": 1943,
+    "parcelas": "10x R$ 194,37 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-profissional-les-paul-michael-gml600-cherry-burst/p/MLB78433708"
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-michael-les-paul-gml600-hsb-honey-sunburst/p/MLB79414791"
   },
   "ficha": [
     [
@@ -60,7 +66,7 @@
     ],
     [
       "Cor",
-      "Marrom"
+      "Honey Sunburst"
     ],
     [
       "Material do diapasão",

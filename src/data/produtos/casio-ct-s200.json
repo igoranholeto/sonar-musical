@@ -1,8 +1,8 @@
 {
   "nome": "Casio Casiotone CT-S200",
   "meli": "https://meli.la/27grj6r",
-  "preco": 646,
-  "precoEm": "2026-11-25",
+  "preco": 640,
+  "precoEm": "2026-11-26",
   "categoria": "teclado",
   "historico": [
     {
@@ -36,13 +36,21 @@
     {
       "data": "2026-11-25",
       "preco": 646
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 640
     }
   ],
   "imagemAlt": "Casio Casiotone CT-S200",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 62,47",
+    "antes": 674,
+    "off": 5,
+    "pix": true,
+    "cartao": 674,
+    "parcelas": "10x R$ 67,40 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-musical-casio-casiotone-ct-s200-61-teclas-vermelho/p/MLB16107364"
   },

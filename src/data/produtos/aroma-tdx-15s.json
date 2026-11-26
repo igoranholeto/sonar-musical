@@ -2,7 +2,7 @@
   "nome": "Aroma TDX-15S com caixa mesh e banco",
   "meli": "https://meli.la/2urUeAF",
   "preco": 2392,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "bateria",
   "historico": [
     {
@@ -83,6 +83,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-23",
+    "antes": 2990,
+    "off": 20,
     "parcelas": "12x R$ 229,91",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-eletronica-aroma-tdx-15s-com-caixa-mesh-e-banco/p/MLB24835899"

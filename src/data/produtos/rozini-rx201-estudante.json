@@ -2,7 +2,7 @@
   "nome": "Rozini Estudante RX201 (nylon)",
   "meli": "https://meli.la/1ChAjmR",
   "preco": 762,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "violao",
   "historico": [
     {
@@ -29,6 +29,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 1126,
+    "off": 32,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-rozini-estudante-classico-acustico-fosco/p/MLB16068617"

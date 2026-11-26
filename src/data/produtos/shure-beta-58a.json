@@ -2,7 +2,7 @@
   "nome": "Shure Beta 58A",
   "meli": "https://meli.la/2xbTDKZ",
   "preco": 989.1,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "microfone",
   "historico": [
     {
@@ -34,6 +34,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
+    "antes": 1099,
+    "off": 10,
     "parcelas": "10x R$ 98,91 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-vocal-dinamico-super-cardioide-beta-58a-shure-cor-cinza/p/MLB38728418"

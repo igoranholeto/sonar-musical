@@ -1,13 +1,17 @@
 {
   "nome": "Kit guitarra Bravo BEG100 com amplificador",
   "meli": "https://meli.la/2iikwK8",
-  "preco": 1442,
-  "precoEm": "2026-11-25",
+  "preco": 1264,
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 1442
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 1264
     }
   ],
   "nota": 4.9,
@@ -53,7 +57,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
-    "parcelas": "12x R$ 140,07",
+    "antes": 1789,
+    "off": 29,
+    "parcelas": "12x R$ 122,80",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-guitarra-eletrica-stratocaster-bravo-music-beg100-iniciante-amplificador-acessorios-completo-orientacao-da-mao-destro-cor-metallic-red/p/MLB50110592"
   },

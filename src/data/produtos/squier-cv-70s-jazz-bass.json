@@ -1,8 +1,8 @@
 {
   "nome": "Squier Classic Vibe '70s Jazz Bass",
   "meli": "https://meli.la/279bekP",
-  "preco": 5199,
-  "precoEm": "2026-11-25",
+  "preco": 5178,
+  "precoEm": "2026-11-26",
   "categoria": "baixo",
   "historico": [
     {
@@ -52,13 +52,17 @@
     {
       "data": "2026-11-24",
       "preco": 5199
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 5178
     }
   ],
   "imagemAlt": "Squier Classic Vibe '70s Jazz Bass",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "parcelas": "12x R$ 499,71",
+    "parcelas": "10x R$ 517,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contrabaixo-fender-squier-classic-vibe-70s-jazz-bass-mn-nat/p/MLB21747951"
   },

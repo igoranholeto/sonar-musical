@@ -1,13 +1,17 @@
 {
   "nome": "Microfone sem fio Aiwa AWS (2 de mão)",
   "meli": "https://meli.la/2n2gK9N",
-  "preco": 329.9,
-  "precoEm": "2026-11-25",
+  "preco": 264,
+  "precoEm": "2026-11-26",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 329.9
+    },
+    {
+      "data": "2026-11-26",
+      "preco": 264
     }
   ],
   "nota": 5,
@@ -45,6 +49,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 649,
+    "off": 59,
+    "pix": true,
+    "cartao": 330,
     "parcelas": "6x R$ 54,98 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-de-mao-sem-fio-aiwa-aws-para-karaoke-com-2-unidades-p10/p/MLB67166124"

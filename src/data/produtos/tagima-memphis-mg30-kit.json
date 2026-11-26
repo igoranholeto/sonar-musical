@@ -2,7 +2,7 @@
   "nome": "Tagima Memphis MG30 Kit",
   "meli": "https://meli.la/2a4Vf5n",
   "preco": 1299,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "guitarra",
   "historico": [
     {
@@ -19,6 +19,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 2498,
+    "off": 48,
     "parcelas": "12x R$ 126,11",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-guitarra-eletrica-tagima-memphis-mg-30-sunburst-p-iniciante-completo-destro-tilia/up/MLBU3840723818"

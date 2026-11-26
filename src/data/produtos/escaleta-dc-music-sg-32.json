@@ -2,7 +2,7 @@
   "nome": "Escaleta DC Music SG-32",
   "meli": "https://meli.la/2JU9rcB",
   "preco": 69,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "sopro",
   "historico": [
     {
@@ -22,6 +22,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 179,
+    "off": 61,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/escaleta-melodica-32-teclas-sg-32-preta-com-capa-e-acessorios-preto/p/MLB66759522"
   },

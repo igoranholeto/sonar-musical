@@ -2,7 +2,7 @@
   "nome": "Kit violino Eagle VE441 4/4 (com case e acessórios)",
   "meli": "https://meli.la/2UHeEWY",
   "preco": 1147,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-26",
   "categoria": "violino",
   "historico": [
     {
@@ -41,6 +41,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 1699,
+    "off": 32,
     "parcelas": "10x R$ 114,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-violino-eagle-ve441-44-case-estante-espaleira-afinador/up/MLBU1320968978"

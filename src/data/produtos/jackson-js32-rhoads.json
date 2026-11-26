@@ -25,10 +25,8 @@
   "imagem": "/images/produtos/jackson-js32-rhoads.webp",
   "imagemAlt": "Jackson JS32 Rhoads",
   "anuncio": {
-    "status": "ativo",
-    "desde": "2026-11-11",
-    "parcelas": "12x R$ 394,55",
-    "freteGratis": true,
+    "status": "encerrado",
+    "desde": "2026-11-26",
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-jackson-js-series-rhoads-js32-de-choupo-ivory-brilhante-com-diapasao-de-amaranto/p/MLB17932227"
   },
   "ficha": [
