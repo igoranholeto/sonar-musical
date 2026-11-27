@@ -1,0 +1,43 @@
+{
+  "nome": "Trava de correia Zampi Strap Lock (par)",
+  "meli": "https://meli.la/1uiKxAH",
+  "preco": 31,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 31
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 678,
+  "ficha": [
+    [
+      "Marca",
+      "Zampi"
+    ],
+    [
+      "Tipo",
+      "Trava de correia (strap lock)"
+    ],
+    [
+      "Material",
+      "Metal"
+    ],
+    [
+      "Quantidade",
+      "1 par"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 45,
+    "off": 31,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/par-trava-de-correia-strap-lock-guitarra-violao-baixo/up/MLBU3192442723"
+  },
+  "imagem": "/images/produtos/strap-lock-par.webp",
+  "imagemAlt": "Trava de correia Zampi Strap Lock (par)"
+}

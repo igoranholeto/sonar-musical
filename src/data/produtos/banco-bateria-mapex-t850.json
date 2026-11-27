@@ -1,0 +1,48 @@
+{
+  "nome": "Banco de bateria Mapex T850 (série 800)",
+  "meli": "https://meli.la/2HYaNZG",
+  "preco": 1069,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 1069
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 46,
+  "ficha": [
+    [
+      "Marca",
+      "Mapex"
+    ],
+    [
+      "Modelo",
+      "T850 (série 800)"
+    ],
+    [
+      "Assento",
+      "Redondo"
+    ],
+    [
+      "Altura",
+      "Até 66 cm"
+    ],
+    [
+      "Pernas",
+      "Duplas"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1587,
+    "off": 32,
+    "parcelas": "12x R$ 103,86",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banco-para-bateria-mapex-serie-800-t850-preto/p/MLB25902678"
+  },
+  "imagem": "/images/produtos/banco-bateria-mapex-t850.webp",
+  "imagemAlt": "Banco de bateria Mapex T850 (série 800)"
+}

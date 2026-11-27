@@ -1,0 +1,52 @@
+{
+  "nome": "Pedal Sonicake Vexpress (volume e expressão)",
+  "meli": "https://meli.la/1x5kmxs",
+  "preco": 342,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 342
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 304,
+  "ficha": [
+    [
+      "Marca",
+      "Sonicake"
+    ],
+    [
+      "Modelo",
+      "Vexpress"
+    ],
+    [
+      "Funções",
+      "Volume e expressão"
+    ],
+    [
+      "Circuito",
+      "Passivo"
+    ],
+    [
+      "Alimentação",
+      "Não precisa"
+    ],
+    [
+      "Uso",
+      "Guitarra e baixo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 380,
+    "off": 10,
+    "parcelas": "12x R$ 33,45",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-expressao-e-volume-sonicake-vexpress-para-baixo-e-guitarra/p/MLB21792231"
+  },
+  "imagem": "/images/produtos/sonicake-vexpress.webp",
+  "imagemAlt": "Pedal Sonicake Vexpress (volume e expressão)"
+}

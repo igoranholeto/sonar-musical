@@ -1,0 +1,48 @@
+{
+  "nome": "Suporte para teclado Saty SZ-02 (em Z)",
+  "meli": "https://meli.la/2vkJRsT",
+  "preco": 227,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 227
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 476,
+  "ficha": [
+    [
+      "Marca",
+      "Saty"
+    ],
+    [
+      "Modelo",
+      "SZ-02"
+    ],
+    [
+      "Tipo",
+      "Em Z"
+    ],
+    [
+      "Altura",
+      "68 a 98 cm"
+    ],
+    [
+      "Carga",
+      "Até 40 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 317,
+    "off": 28,
+    "parcelas": "12x R$ 22,47",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/saty-sz-02-suporte-fixo-em-z-para-teclado-piano-profissional-cor-preto/p/MLB27322428"
+  },
+  "imagem": "/images/produtos/suporte-teclado-saty-sz02.webp",
+  "imagemAlt": "Suporte para teclado Saty SZ-02 (em Z)"
+}

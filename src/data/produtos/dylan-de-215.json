@@ -1,0 +1,59 @@
+{
+  "nome": "Fone in-ear Dylan DE-215",
+  "meli": "https://meli.la/1vvFQ8M",
+  "preco": 103,
+  "precoEm": "2026-11-27",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 103
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 294,
+  "ficha": [
+    [
+      "Marca",
+      "Dylan"
+    ],
+    [
+      "Modelo",
+      "DE-215"
+    ],
+    [
+      "Tipo",
+      "Fone in-ear com fio"
+    ],
+    [
+      "Driver",
+      "Dinâmico"
+    ],
+    [
+      "Resposta",
+      "20 Hz a 20 kHz"
+    ],
+    [
+      "Sensibilidade",
+      "115 dB"
+    ],
+    [
+      "Impedância",
+      "20 Ω"
+    ],
+    [
+      "Cabo",
+      "Removível, banhado a prata, 1,2 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 137,
+    "off": 24,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-ouvido-in-ear-dylan-de-215-monitor-palco-cor-branco/p/MLB31404444"
+  },
+  "imagem": "/images/produtos/dylan-de-215.webp",
+  "imagemAlt": "Fone in-ear Dylan DE-215"
+}

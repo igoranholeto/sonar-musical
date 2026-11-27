@@ -1,0 +1,44 @@
+{
+  "nome": "Pedal de volume Boss FV-50H",
+  "meli": "https://meli.la/1rpvjJm",
+  "preco": 431,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 431
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 61,
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "FV-50H"
+    ],
+    [
+      "Impedância",
+      "Alta (guitarra ou baixo direto no pedal)"
+    ],
+    [
+      "Alimentação",
+      "Não precisa"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 540,
+    "off": 20,
+    "parcelas": "12x R$ 41,65",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-volume-boss-fv50h-loja-autorizada/p/MLB20006301"
+  },
+  "imagem": "/images/produtos/boss-fv-50h.webp",
+  "imagemAlt": "Pedal de volume Boss FV-50H"
+}

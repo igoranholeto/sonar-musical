@@ -1,0 +1,56 @@
+{
+  "nome": "Taramps T0202",
+  "meli": "https://meli.la/2QSfRAA",
+  "preco": 149,
+  "precoEm": "2026-11-27",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 149
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 176,
+  "ficha": [
+    [
+      "Marca",
+      "Taramps"
+    ],
+    [
+      "Modelo",
+      "T0202"
+    ],
+    [
+      "Canais",
+      "2 (XLR e P10)"
+    ],
+    [
+      "Phantom power",
+      "+48 V"
+    ],
+    [
+      "Iluminação",
+      "LED RGB"
+    ],
+    [
+      "Carcaça",
+      "Metal"
+    ],
+    [
+      "Conexão",
+      "USB"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 199,
+    "off": 25,
+    "parcelas": "4x R$ 37,22 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-taramps-t0202-usb-de-2-canais-branca-com-led-rgb-e-phantom-power/p/MLB49101450"
+  },
+  "imagem": "/images/produtos/taramps-t0202.webp",
+  "imagemAlt": "Taramps T0202"
+}

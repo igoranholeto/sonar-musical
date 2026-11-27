@@ -1,0 +1,48 @@
+{
+  "nome": "Correia Ibox CM504 (couro sintético)",
+  "meli": "https://meli.la/2PoGNhg",
+  "preco": 37,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 37
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1179,
+  "ficha": [
+    [
+      "Marca",
+      "Ibox"
+    ],
+    [
+      "Modelo",
+      "CM504"
+    ],
+    [
+      "Material",
+      "Couro sintético"
+    ],
+    [
+      "Largura",
+      "5 cm"
+    ],
+    [
+      "Comprimento",
+      "70 cm a 1,45 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 53,
+    "off": 29,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-para-violaoguitarrabaixo-em-couro-duplo-cm504/p/MLB24347481"
+  },
+  "imagem": "/images/produtos/correia-couro-duplo-cm504.webp",
+  "imagemAlt": "Correia Ibox CM504 (couro sintético)"
+}

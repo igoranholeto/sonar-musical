@@ -1,0 +1,48 @@
+{
+  "nome": "Bateria infantil DM Toys Rock Party",
+  "meli": "https://meli.la/1QcvZqE",
+  "preco": 146,
+  "precoEm": "2026-11-27",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 146
+    }
+  ],
+  "nota": 4.1,
+  "avaliacoes": 1269,
+  "ficha": [
+    [
+      "Marca",
+      "DM Toys"
+    ],
+    [
+      "Modelo",
+      "Rock Party DMT6066"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Altura",
+      "51 cm"
+    ],
+    [
+      "Idade",
+      "A partir de 6 anos (segundo a descrição)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 193,
+    "off": 24,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-infantil-instrumento-musical-rock-party-dm-toys-azul-dmt6066az/p/MLB23553462"
+  },
+  "imagem": "/images/produtos/dm-toys-rock-party.webp",
+  "imagemAlt": "Bateria infantil DM Toys Rock Party"
+}

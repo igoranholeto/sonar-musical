@@ -1,0 +1,50 @@
+{
+  "nome": "Suporte para teclado DC Music X duplo",
+  "meli": "https://meli.la/12XaJDB",
+  "preco": 94,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 94
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 156,
+  "ficha": [
+    [
+      "Marca",
+      "DC Music"
+    ],
+    [
+      "Tipo",
+      "Em X duplo"
+    ],
+    [
+      "Regulagem",
+      "7 níveis"
+    ],
+    [
+      "Altura",
+      "23,5 a 94 cm"
+    ],
+    [
+      "Carga",
+      "Até 25 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 189,
+    "off": 50,
+    "pix": true,
+    "cartao": 110,
+    "parcelas": "4x R$ 27,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-para-teclado-musical-x-duplo-ajustavel-dc-music-preto/p/MLB67463545"
+  },
+  "imagem": "/images/produtos/suporte-teclado-dc-music-x-duplo.webp",
+  "imagemAlt": "Suporte para teclado DC Music X duplo"
+}

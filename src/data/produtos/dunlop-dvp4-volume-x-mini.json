@@ -1,0 +1,44 @@
+{
+  "nome": "Pedal de volume Dunlop DVP4 Volume (X) Mini",
+  "meli": "https://meli.la/2w1k1BA",
+  "preco": 1397,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 1397
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 8,
+  "ficha": [
+    [
+      "Marca",
+      "Dunlop"
+    ],
+    [
+      "Modelo",
+      "DVP4 Volume (X) Mini"
+    ],
+    [
+      "Tamanho",
+      "Mini"
+    ],
+    [
+      "Saída extra",
+      "Expressão (auxiliar)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1899,
+    "off": 26,
+    "parcelas": "10x R$ 139,70 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/dunlop-dvp4-volume-x-mini-guitar-effects-pedal/p/MLB19783153"
+  },
+  "imagem": "/images/produtos/dunlop-dvp4-volume-x-mini.webp",
+  "imagemAlt": "Pedal de volume Dunlop DVP4 Volume (X) Mini"
+}

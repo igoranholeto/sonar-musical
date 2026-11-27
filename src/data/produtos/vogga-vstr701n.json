@@ -1,0 +1,52 @@
+{
+  "nome": "Trompete Vogga VSTR701N (laqueado)",
+  "meli": "https://meli.la/1tST1TW",
+  "preco": 887,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 887
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 49,
+  "ficha": [
+    [
+      "Marca",
+      "Vogga"
+    ],
+    [
+      "Modelo",
+      "VSTR701N"
+    ],
+    [
+      "Afinação",
+      "Si bemol (Bb)"
+    ],
+    [
+      "Pistos",
+      "Aço inox"
+    ],
+    [
+      "Bocal",
+      "7C"
+    ],
+    [
+      "Acompanha",
+      "Estojo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1396,
+    "off": 36,
+    "parcelas": "12x R$ 85,77",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/trompete-vogga-vstr701n-laqueado/p/MLB35445020"
+  },
+  "imagem": "/images/produtos/vogga-vstr701n.webp",
+  "imagemAlt": "Trompete Vogga VSTR701N (laqueado)"
+}

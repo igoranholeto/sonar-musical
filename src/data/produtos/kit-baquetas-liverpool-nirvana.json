@@ -1,0 +1,47 @@
+{
+  "nome": "Kit baquetas Liverpool Nirvana Eco Bio (7A, 5A e 5B)",
+  "meli": "https://meli.la/1jEYY75",
+  "preco": 46,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 46
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 2171,
+  "ficha": [
+    [
+      "Marca",
+      "Liverpool"
+    ],
+    [
+      "Linha",
+      "Nirvana Eco Bio"
+    ],
+    [
+      "Tamanhos",
+      "7A, 5A e 5B (3 pares)"
+    ],
+    [
+      "Material",
+      "Madeira"
+    ],
+    [
+      "Cor",
+      "Marfim"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 70,
+    "off": 33,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-baquetas-bateria-liverpool-nirvana-eco-bio-7a-5a-e-5b-madeira/p/MLB27342719"
+  },
+  "imagem": "/images/produtos/kit-baquetas-liverpool-nirvana.webp",
+  "imagemAlt": "Kit baquetas Liverpool Nirvana Eco Bio (7A, 5A e 5B)"
+}

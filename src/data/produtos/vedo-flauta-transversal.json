@@ -1,0 +1,48 @@
+{
+  "nome": "Flauta transversal Vedo em Dó (cuproníquel)",
+  "meli": "https://meli.la/2FRbUcq",
+  "preco": 425,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 425
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 217,
+  "ficha": [
+    [
+      "Marca",
+      "Vedo"
+    ],
+    [
+      "Afinação",
+      "Dó (C)"
+    ],
+    [
+      "Chaves",
+      "16, furos fechados"
+    ],
+    [
+      "Material",
+      "Cuproníquel prateado"
+    ],
+    [
+      "Acompanha",
+      "Estojo e kit de limpeza"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 888,
+    "off": 52,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-16-furos-vedo-cuproniquel-prateada-para-iniciantes-c-do/p/MLB62671001"
+  },
+  "imagem": "/images/produtos/vedo-flauta-transversal.webp",
+  "imagemAlt": "Flauta transversal Vedo em Dó (cuproníquel)"
+}

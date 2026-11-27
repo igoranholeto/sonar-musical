@@ -1,0 +1,47 @@
+{
+  "nome": "Correia de couro Basso VT SL 52",
+  "meli": "https://meli.la/1tuPWdP",
+  "preco": 75,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 75
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 441,
+  "ficha": [
+    [
+      "Marca",
+      "Basso"
+    ],
+    [
+      "Modelo",
+      "VT SL 52"
+    ],
+    [
+      "Material",
+      "Couro, acolchoada"
+    ],
+    [
+      "Largura",
+      "7 cm"
+    ],
+    [
+      "Comprimento",
+      "92 cm a 1,45 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 79,
+    "off": 5,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-alca-violao-guitarra-baixo-basso-vt-sl-52-couro/up/MLBU3574203710"
+  },
+  "imagem": "/images/produtos/correia-basso-vt-sl-52.webp",
+  "imagemAlt": "Correia de couro Basso VT SL 52"
+}

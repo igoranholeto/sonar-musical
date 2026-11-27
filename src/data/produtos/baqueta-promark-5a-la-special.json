@@ -1,0 +1,48 @@
+{
+  "nome": "Baqueta Promark LA Special 5A (hickory)",
+  "meli": "https://meli.la/2ejk9NT",
+  "preco": 69,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 69
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 469,
+  "ficha": [
+    [
+      "Marca",
+      "Promark"
+    ],
+    [
+      "Modelo",
+      "LA Special"
+    ],
+    [
+      "Tamanho",
+      "5A"
+    ],
+    [
+      "Madeira",
+      "Hickory"
+    ],
+    [
+      "Ponta",
+      "Madeira"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 110,
+    "off": 37,
+    "parcelas": "3x R$ 23,08 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baqueta-promark-5a-la-special-hickory-ponta-de-madeira-bateria/p/MLB50888431"
+  },
+  "imagem": "/images/produtos/baqueta-promark-5a-la-special.webp",
+  "imagemAlt": "Baqueta Promark LA Special 5A (hickory)"
+}

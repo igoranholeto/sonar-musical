@@ -1,0 +1,44 @@
+{
+  "nome": "Correia Ernie Ball Jacquard Black Pleasant Pheasant",
+  "meli": "https://meli.la/2ZRUtL7",
+  "preco": 235,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 235
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 25,
+  "ficha": [
+    [
+      "Marca",
+      "Ernie Ball"
+    ],
+    [
+      "Modelo",
+      "5372 (Jacquard)"
+    ],
+    [
+      "Largura",
+      "5 cm"
+    ],
+    [
+      "Comprimento",
+      "1,04 m a 1,83 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 262,
+    "off": 10,
+    "parcelas": "12x R$ 23,31",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-guitarra-black-pleasant-pheasant-jacquard-ernie-ball/p/MLB45797819"
+  },
+  "imagem": "/images/produtos/correia-ernie-ball-jacquard.webp",
+  "imagemAlt": "Correia Ernie Ball Jacquard Black Pleasant Pheasant"
+}

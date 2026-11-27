@@ -1,0 +1,48 @@
+{
+  "nome": "Suporte para teclado Stay Slim 1100 (com bag)",
+  "meli": "https://meli.la/1XSJDdJ",
+  "preco": 655,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 655
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 26,
+  "ficha": [
+    [
+      "Marca",
+      "Stay Music"
+    ],
+    [
+      "Modelo",
+      "Slim 1100"
+    ],
+    [
+      "Material",
+      "Alumínio"
+    ],
+    [
+      "Carga",
+      "Até 20 kg"
+    ],
+    [
+      "Acompanha",
+      "Bag"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1022,
+    "off": 36,
+    "parcelas": "12x R$ 63,29",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-teclado-musical-estante-slim-1100-1-base-c-bag-stay-cor-vermelho/p/MLB70622822"
+  },
+  "imagem": "/images/produtos/suporte-teclado-stay-slim-1100.webp",
+  "imagemAlt": "Suporte para teclado Stay Slim 1100 (com bag)"
+}

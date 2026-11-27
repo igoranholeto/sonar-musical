@@ -1,0 +1,51 @@
+{
+  "nome": "Banco de bateria Voik B-930",
+  "meli": "https://meli.la/1xEe3CY",
+  "preco": 152,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 152
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 27,
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Modelo",
+      "B-930"
+    ],
+    [
+      "Assento",
+      "Redondo"
+    ],
+    [
+      "Altura",
+      "42 a 52 cm"
+    ],
+    [
+      "Pernas",
+      "Duplas"
+    ],
+    [
+      "Carga",
+      "Até 100 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 307,
+    "off": 50,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banco-de-bateria-voik-b-930-metal-cromado-pernas-duplas-pes-reforcados-regulagem-de-altura-redondo-ate-100kg-cor-preto/p/MLB68022255"
+  },
+  "imagem": "/images/produtos/banco-bateria-voik-b930.webp",
+  "imagemAlt": "Banco de bateria Voik B-930"
+}

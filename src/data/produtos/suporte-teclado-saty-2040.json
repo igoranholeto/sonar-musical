@@ -1,0 +1,48 @@
+{
+  "nome": "Suporte para teclado Saty 2040 (X duplo)",
+  "meli": "https://meli.la/1b4AAZ8",
+  "preco": 200,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 200
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 169,
+  "ficha": [
+    [
+      "Marca",
+      "Saty"
+    ],
+    [
+      "Modelo",
+      "2040"
+    ],
+    [
+      "Tipo",
+      "Em X com ferragem dupla"
+    ],
+    [
+      "Altura",
+      "56 a 90 cm"
+    ],
+    [
+      "Carga",
+      "Até 40 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 499,
+    "off": 59,
+    "parcelas": "12x R$ 19,78",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-x-saty-2040-com-ferragem-dupla-para-teclado/p/MLB27187845"
+  },
+  "imagem": "/images/produtos/suporte-teclado-saty-2040.webp",
+  "imagemAlt": "Suporte para teclado Saty 2040 (X duplo)"
+}

@@ -1,0 +1,48 @@
+{
+  "nome": "Pedal de volume Boss FV-50L",
+  "meli": "https://meli.la/2njhzds",
+  "preco": 530,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 530
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 61,
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "FV-50L"
+    ],
+    [
+      "Impedância",
+      "Baixa (depois dos efeitos ou para teclado)"
+    ],
+    [
+      "Conexões",
+      "Estéreo: 2 entradas e 2 saídas"
+    ],
+    [
+      "Alimentação",
+      "Não precisa"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 693,
+    "off": 23,
+    "parcelas": "12x R$ 51,25",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-volume-boss-fv-50l-cor-preto/p/MLB22948386"
+  },
+  "imagem": "/images/produtos/boss-fv-50l.webp",
+  "imagemAlt": "Pedal de volume Boss FV-50L"
+}

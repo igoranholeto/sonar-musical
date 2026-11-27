@@ -1,0 +1,48 @@
+{
+  "nome": "Flauta transversal Hofma HFL01N (niquelada)",
+  "meli": "https://meli.la/27wWcFR",
+  "preco": 800,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 800
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 47,
+  "ficha": [
+    [
+      "Marca",
+      "Hofma"
+    ],
+    [
+      "Modelo",
+      "HFL01N"
+    ],
+    [
+      "Afinação",
+      "Dó (C)"
+    ],
+    [
+      "Acabamento",
+      "Niquelado"
+    ],
+    [
+      "Acompanha",
+      "Case"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1199,
+    "off": 33,
+    "parcelas": "10x R$ 79,99 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-niquelada-em-c-do-hofma-hfl01n-com-case/p/MLB54537910"
+  },
+  "imagem": "/images/produtos/hofma-hfl01n.webp",
+  "imagemAlt": "Flauta transversal Hofma HFL01N (niquelada)"
+}

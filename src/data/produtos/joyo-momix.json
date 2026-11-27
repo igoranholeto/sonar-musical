@@ -1,0 +1,51 @@
+{
+  "nome": "Joyo Momix (mini interface para celular e PC)",
+  "meli": "https://meli.la/2Mkh2au",
+  "preco": 114,
+  "precoEm": "2026-11-27",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 114
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 532,
+  "ficha": [
+    [
+      "Marca",
+      "Joyo"
+    ],
+    [
+      "Modelo",
+      "Momix"
+    ],
+    [
+      "Canais",
+      "1 entrada e 2 saídas"
+    ],
+    [
+      "Resolução",
+      "16 bit / 48 kHz"
+    ],
+    [
+      "Phantom power",
+      "Não"
+    ],
+    [
+      "Compatível com",
+      "Celular (iPhone e Android) e PC"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 197,
+    "off": 42,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mini-interface-de-audio-usb-joyo-momix-cab-lig-net-adaptador-mini-mixer-para-celular-iphone-android-pc-gravacao-streaming-guitarra-plug-play-compacta-profissional-preto/p/MLB65943226"
+  },
+  "imagem": "/images/produtos/joyo-momix.webp",
+  "imagemAlt": "Joyo Momix (mini interface para celular e PC)"
+}

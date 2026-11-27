@@ -1,0 +1,48 @@
+{
+  "nome": "Banco de bateria Mapex T675A (selim)",
+  "meli": "https://meli.la/13ZeV5G",
+  "preco": 692,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 692
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 69,
+  "ficha": [
+    [
+      "Marca",
+      "Mapex"
+    ],
+    [
+      "Modelo",
+      "T675A"
+    ],
+    [
+      "Assento",
+      "Selim"
+    ],
+    [
+      "Altura",
+      "44,5 a 62 cm"
+    ],
+    [
+      "Ferragem",
+      "Dupla"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1004,
+    "off": 31,
+    "parcelas": "12x R$ 66,92",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banco-de-bateria-mapex-t675a-selim-ferragem-dupla/p/MLB25912256"
+  },
+  "imagem": "/images/produtos/banco-bateria-mapex-t675a.webp",
+  "imagemAlt": "Banco de bateria Mapex T675A (selim)"
+}

@@ -1,0 +1,50 @@
+{
+  "nome": "Trompete pocket Tander Si bemol (laqueado)",
+  "meli": "https://meli.la/1aJUY2Y",
+  "preco": 934,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 934
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 47,
+  "ficha": [
+    [
+      "Marca",
+      "Tander"
+    ],
+    [
+      "Modelo",
+      "NTPBBL"
+    ],
+    [
+      "Tipo",
+      "Trompete pocket (compacto)"
+    ],
+    [
+      "Afinação",
+      "Si bemol (Bb)"
+    ],
+    [
+      "Acabamento",
+      "Laqueado"
+    ],
+    [
+      "Peso",
+      "2,4 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "12x R$ 90,68",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/trompete-pocket-bb-laqueado/up/MLBU750269156"
+  },
+  "imagem": "/images/produtos/trompete-pocket-bb.webp",
+  "imagemAlt": "Trompete pocket Tander Si bemol (laqueado)"
+}

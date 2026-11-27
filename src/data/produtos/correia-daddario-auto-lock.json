@@ -1,0 +1,47 @@
+{
+  "nome": "Correia D'Addario Auto Lock PWSPL200 (com trava)",
+  "meli": "https://meli.la/2ENSgXM",
+  "preco": 156,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 156
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 10,
+  "ficha": [
+    [
+      "Marca",
+      "D'Addario (Planet Waves)"
+    ],
+    [
+      "Modelo",
+      "PWSPL200 Auto Lock"
+    ],
+    [
+      "Trava",
+      "Integrada nas pontas"
+    ],
+    [
+      "Largura",
+      "5 cm"
+    ],
+    [
+      "Comprimento",
+      "88 cm a 1,51 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 170,
+    "off": 8,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-guitarra-com-trava-daddario-pwspl200-lock-preto/p/MLB66978075"
+  },
+  "imagem": "/images/produtos/correia-daddario-auto-lock.webp",
+  "imagemAlt": "Correia D'Addario Auto Lock PWSPL200 (com trava)"
+}

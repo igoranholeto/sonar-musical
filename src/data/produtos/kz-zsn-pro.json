@@ -1,0 +1,47 @@
+{
+  "nome": "Fone in-ear KZ ZSN Pro (sem microfone)",
+  "meli": "https://meli.la/22gMVUs",
+  "preco": 95,
+  "precoEm": "2026-11-27",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 95
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 78,
+  "ficha": [
+    [
+      "Marca",
+      "KZ"
+    ],
+    [
+      "Modelo",
+      "ZSN Pro"
+    ],
+    [
+      "Tipo",
+      "Fone in-ear com fio"
+    ],
+    [
+      "Cabo",
+      "Desmontável"
+    ],
+    [
+      "Microfone",
+      "Não"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 248,
+    "off": 61,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-in-ear-kz-zsn-pro-retorno-palco-dj-sem-mic/up/MLBU4589372540"
+  },
+  "imagem": "/images/produtos/kz-zsn-pro.webp",
+  "imagemAlt": "Fone in-ear KZ ZSN Pro (sem microfone)"
+}

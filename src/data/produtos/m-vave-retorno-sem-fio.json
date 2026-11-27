@@ -1,0 +1,44 @@
+{
+  "nome": "Retorno in-ear sem fio M-Vave (com fone)",
+  "meli": "https://meli.la/2JHYWhK",
+  "preco": 305,
+  "precoEm": "2026-11-27",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 305
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 164,
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Tipo",
+      "Sistema de retorno in-ear sem fio (transmissor e receptor)"
+    ],
+    [
+      "Entradas",
+      "P10 e P3"
+    ],
+    [
+      "Acompanha",
+      "1 fone in-ear"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 349,
+    "off": 12,
+    "parcelas": "6x R$ 50,78 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/retorno-de-ouvido-monitor-de-palco-in-ear-m-vave-fone/up/MLBU3363633601"
+  },
+  "imagem": "/images/produtos/m-vave-retorno-sem-fio.webp",
+  "imagemAlt": "Retorno in-ear sem fio M-Vave (com fone)"
+}

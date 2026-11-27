@@ -1,0 +1,54 @@
+{
+  "nome": "Bateria infantil Zellmer Rock (com chimbal)",
+  "meli": "https://meli.la/2ZYtoM2",
+  "preco": 919,
+  "precoEm": "2026-11-27",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 919
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 12,
+  "ficha": [
+    [
+      "Marca",
+      "Zellmer"
+    ],
+    [
+      "Modelo",
+      "Rock"
+    ],
+    [
+      "Cascos",
+      "MDF"
+    ],
+    [
+      "Bumbo",
+      "14\""
+    ],
+    [
+      "Inclui",
+      "Máquina de chimbal"
+    ],
+    [
+      "Acompanha",
+      "Adesivos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 999,
+    "off": 8,
+    "pix": true,
+    "cartao": 999,
+    "parcelas": "10x R$ 99,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-infantil-rock-zellmer-completa-c-chimbal-adesivos/up/MLBU4727545088"
+  },
+  "imagem": "/images/produtos/zellmer-bateria-infantil-rock.webp",
+  "imagemAlt": "Bateria infantil Zellmer Rock (com chimbal)"
+}

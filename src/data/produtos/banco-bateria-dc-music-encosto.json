@@ -1,0 +1,50 @@
+{
+  "nome": "Banco de bateria DC Music com encosto (selim)",
+  "meli": "https://meli.la/1WSCrVk",
+  "preco": 486,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 486
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 195,
+  "ficha": [
+    [
+      "Marca",
+      "DC Music"
+    ],
+    [
+      "Assento",
+      "Selim com encosto"
+    ],
+    [
+      "Ajuste",
+      "Pneumático"
+    ],
+    [
+      "Altura",
+      "45 a 60 cm"
+    ],
+    [
+      "Carga",
+      "Até 150 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 799,
+    "off": 39,
+    "pix": true,
+    "cartao": 540,
+    "parcelas": "10x R$ 54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/banco-selim-preto-para-bateria-com-encosto-assento-confortavel-dc-music/p/MLB32280322"
+  },
+  "imagem": "/images/produtos/banco-bateria-dc-music-encosto.webp",
+  "imagemAlt": "Banco de bateria DC Music com encosto (selim)"
+}

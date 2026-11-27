@@ -1,0 +1,48 @@
+{
+  "nome": "Trompete Vedo Si bemol para iniciantes",
+  "meli": "https://meli.la/11LupEU",
+  "preco": 617,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 617
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 100,
+  "ficha": [
+    [
+      "Marca",
+      "Vedo"
+    ],
+    [
+      "Afinação",
+      "Si bemol (Bb)"
+    ],
+    [
+      "Acabamento",
+      "Laqueado dourado"
+    ],
+    [
+      "Bocal",
+      "7C"
+    ],
+    [
+      "Acompanha",
+      "Estojo rígido e kit de limpeza"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1099,
+    "off": 43,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/vedo-trompete-iniciantes-instrumentos-em-si-bemol-com-bocal-cor-dourado/p/MLB75739130"
+  },
+  "imagem": "/images/produtos/vedo-trompete-iniciante.webp",
+  "imagemAlt": "Trompete Vedo Si bemol para iniciantes"
+}

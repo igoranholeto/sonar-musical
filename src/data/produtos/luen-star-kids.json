@@ -1,0 +1,46 @@
+{
+  "nome": "Bateria infantil Luen Star Kids (com chimbal)",
+  "meli": "https://meli.la/2ByHH7t",
+  "preco": 965,
+  "precoEm": "2026-11-27",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 965
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 344,
+  "ficha": [
+    [
+      "Marca",
+      "Luen"
+    ],
+    [
+      "Modelo",
+      "Star Kids"
+    ],
+    [
+      "Inclui",
+      "Chimbal"
+    ],
+    [
+      "Peso",
+      "7 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1072,
+    "off": 10,
+    "pix": true,
+    "cartao": 1072,
+    "parcelas": "10x R$ 107,26 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-infantil-luen-star-kids-com-chimbal-completa-cor-azul/p/MLB59817261"
+  },
+  "imagem": "/images/produtos/luen-star-kids.webp",
+  "imagemAlt": "Bateria infantil Luen Star Kids (com chimbal)"
+}

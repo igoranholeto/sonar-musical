@@ -1,0 +1,64 @@
+{
+  "nome": "Bateria infantil RMV Rock Kids (com chimbal)",
+  "meli": "https://meli.la/2ntGgDa",
+  "preco": 746,
+  "precoEm": "2026-11-27",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 746
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1304,
+  "ficha": [
+    [
+      "Marca",
+      "RMV"
+    ],
+    [
+      "Modelo",
+      "Rock Kids"
+    ],
+    [
+      "Cascos",
+      "Madeira (eucalipto)"
+    ],
+    [
+      "Peles",
+      "BG"
+    ],
+    [
+      "Bumbo",
+      "14\""
+    ],
+    [
+      "Tons, caixa e surdo",
+      "8\""
+    ],
+    [
+      "Inclui",
+      "Chimbal"
+    ],
+    [
+      "Idade",
+      "3 a 8 anos"
+    ],
+    [
+      "Peso",
+      "6 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1099,
+    "off": 32,
+    "parcelas": "12x R$ 72,14",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-musical-infantil-rmv-rock-kids-com-chimbal-preta/p/MLB28075918"
+  },
+  "imagem": "/images/produtos/rmv-rock-kids.webp",
+  "imagemAlt": "Bateria infantil RMV Rock Kids (com chimbal)"
+}

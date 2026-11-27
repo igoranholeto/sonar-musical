@@ -1,0 +1,48 @@
+{
+  "nome": "M-Audio M-Track Solo",
+  "meli": "https://meli.la/2Cqen5U",
+  "preco": 439,
+  "precoEm": "2026-11-27",
+  "categoria": "interface",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 439
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 1323,
+  "ficha": [
+    [
+      "Marca",
+      "M-Audio"
+    ],
+    [
+      "Modelo",
+      "M-Track Solo"
+    ],
+    [
+      "Entradas",
+      "2 (1 com pré de microfone e phantom power)"
+    ],
+    [
+      "Resolução",
+      "16 bit / 48 kHz"
+    ],
+    [
+      "Conexão",
+      "USB"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 629,
+    "off": 30,
+    "parcelas": "8x R$ 54,87 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/interface-de-audio-m-audio-2-canais-m-track-solo-usb-preto/p/MLB22797748"
+  },
+  "imagem": "/images/produtos/m-audio-m-track-solo.webp",
+  "imagemAlt": "M-Audio M-Track Solo"
+}

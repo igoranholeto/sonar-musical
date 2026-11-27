@@ -1,0 +1,51 @@
+{
+  "nome": "Baqueta Torelli TQ020 de fibra (5A)",
+  "meli": "https://meli.la/1fWR6Fd",
+  "preco": 31,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 31
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 2033,
+  "ficha": [
+    [
+      "Marca",
+      "Torelli"
+    ],
+    [
+      "Modelo",
+      "TQ020"
+    ],
+    [
+      "Material",
+      "Fibra"
+    ],
+    [
+      "Tamanho",
+      "5A"
+    ],
+    [
+      "Comprimento",
+      "39,8 cm"
+    ],
+    [
+      "Peso",
+      "72 g"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 38,
+    "off": 20,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/par-de-baquetas-torelli-tq020-fibra-preta/p/MLB27041136"
+  },
+  "imagem": "/images/produtos/baqueta-torelli-tq020-fibra.webp",
+  "imagemAlt": "Baqueta Torelli TQ020 de fibra (5A)"
+}

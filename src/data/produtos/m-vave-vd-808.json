@@ -1,0 +1,48 @@
+{
+  "nome": "Pedal M-Vave VD-808 (wah e volume)",
+  "meli": "https://meli.la/1ousEYe",
+  "preco": 232,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 232
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 385,
+  "ficha": [
+    [
+      "Marca",
+      "M-Vave"
+    ],
+    [
+      "Modelo",
+      "VD-808"
+    ],
+    [
+      "Funções",
+      "Wah e volume"
+    ],
+    [
+      "Circuito",
+      "Ativo"
+    ],
+    [
+      "Alimentação",
+      "9 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 310,
+    "off": 25,
+    "parcelas": "12x R$ 23,01",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeitos-m-vave-vd-808-wah-e-volume-para-guitarra/p/MLB49963404"
+  },
+  "imagem": "/images/produtos/m-vave-vd-808.webp",
+  "imagemAlt": "Pedal M-Vave VD-808 (wah e volume)"
+}

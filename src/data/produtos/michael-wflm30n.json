@@ -1,0 +1,48 @@
+{
+  "nome": "Flauta transversal Michael WFLM30N",
+  "meli": "https://meli.la/1zuYdQ2",
+  "preco": 1223,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 1223
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 52,
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "WFLM30N"
+    ],
+    [
+      "Afinação",
+      "Dó (C)"
+    ],
+    [
+      "Acabamento",
+      "Prateado"
+    ],
+    [
+      "Acompanha",
+      "Estojo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 1529,
+    "off": 20,
+    "parcelas": "10x R$ 122,32 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-michael-wflm30n-prateada-com-estojo/p/MLB26770309"
+  },
+  "imagem": "/images/produtos/michael-wflm30n.webp",
+  "imagemAlt": "Flauta transversal Michael WFLM30N"
+}

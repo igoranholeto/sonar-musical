@@ -1,0 +1,52 @@
+{
+  "nome": "Mini bateria infantil Atentu (5 tambores)",
+  "meli": "https://meli.la/1UigbiL",
+  "preco": 120,
+  "precoEm": "2026-11-27",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 120
+    }
+  ],
+  "nota": 4.5,
+  "avaliacoes": 2572,
+  "ficha": [
+    [
+      "Marca",
+      "Atentu"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Tambores",
+      "5"
+    ],
+    [
+      "Acompanha",
+      "Banquinho"
+    ],
+    [
+      "Idade",
+      "A partir de 3 anos"
+    ],
+    [
+      "Certificação Inmetro",
+      "007616/2024"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 173,
+    "off": 31,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/mini-bateria-infantil-banquinho-brinquedo-com-5-tambores-cor-azul/p/MLB44607464"
+  },
+  "imagem": "/images/produtos/atentu-mini-bateria-5-tambores.webp",
+  "imagemAlt": "Mini bateria infantil Atentu (5 tambores)"
+}

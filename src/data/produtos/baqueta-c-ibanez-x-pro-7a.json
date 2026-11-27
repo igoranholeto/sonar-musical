@@ -1,0 +1,47 @@
+{
+  "nome": "Baqueta C. Ibañez X-Pro 7A (para bateria eletrônica)",
+  "meli": "https://meli.la/31EReGT",
+  "preco": 33,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 33
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 444,
+  "ficha": [
+    [
+      "Marca",
+      "C. Ibañez"
+    ],
+    [
+      "Modelo",
+      "X-Pro"
+    ],
+    [
+      "Tamanho",
+      "7A"
+    ],
+    [
+      "Ponta",
+      "Nylon"
+    ],
+    [
+      "Indicação",
+      "Bateria eletrônica"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 35,
+    "off": 6,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baqueta-7a-eletronica-c-ibanez-x-pro-para-bateria/p/MLB39189255"
+  },
+  "imagem": "/images/produtos/baqueta-c-ibanez-x-pro-7a.webp",
+  "imagemAlt": "Baqueta C. Ibañez X-Pro 7A (para bateria eletrônica)"
+}

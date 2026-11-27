@@ -1,0 +1,50 @@
+{
+  "nome": "Flauta transversal Yamaha YFL-212",
+  "meli": "https://meli.la/1pH1pX3",
+  "preco": 4471,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 4471
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 21,
+  "ficha": [
+    [
+      "Marca",
+      "Yamaha"
+    ],
+    [
+      "Modelo",
+      "YFL-212"
+    ],
+    [
+      "Afinação",
+      "Dó (C)"
+    ],
+    [
+      "Material",
+      "Alpaca (níquel) prateada"
+    ],
+    [
+      "Acompanha",
+      "Estojo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 4968,
+    "off": 10,
+    "pix": true,
+    "cartao": 4968,
+    "parcelas": "10x R$ 496,80 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-soprano-c-yfl-212-prata-yamaha/p/MLB26770293"
+  },
+  "imagem": "/images/produtos/yamaha-yfl-212.webp",
+  "imagemAlt": "Flauta transversal Yamaha YFL-212"
+}

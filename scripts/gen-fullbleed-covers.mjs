@@ -271,6 +271,17 @@ const MAP = {
   'melhor-microfone-ate-500-reais': { kicker: 'MICROFONE · GUIA 2026', l1: 'MICROFONE', l2: 'ATÉ R$ 500', q: 'Shure SM58 microphone', prefer: /sm58|sm57|beta|microphone/i, avoid: /logo|person|people|man|woman|girl|boy|singer|concert|crowd|museum|namm/i },
   'melhor-amplificador-de-baixo-ate-1000-reais': { kicker: 'BAIXO · AMPLIFICADOR', l1: 'AMP DE BAIXO', l2: 'ATÉ R$ 1.000', q: 'bass amplifier combo', prefer: /bass amp|bass combo|ampeg|rumble|hartke|bass/i, avoid: /logo|person|people|man|woman|concert|band|fish|circuit|schematic/i },
   'melhor-violino-eletrico': { kicker: 'VIOLINO · GUIA 2026', l1: 'VIOLINO', l2: 'ELÉTRICO', q: 'Yamaha silent violin', prefer: /silent violin|electric violin|e-violin|yamaha/i, avoid: /logo|person|people|man|woman|girl|boy|orchestra|concert|player|violinist|playing/i },
+  // Lote 2026-11-27
+  'melhor-fone-de-retorno': { kicker: 'FONE · PALCO 2026', l1: 'FONE DE', l2: 'RETORNO', q: 'in-ear monitor earphones', prefer: /in-ear|iem|earphone|monitor/i, avoid: /logo|person|people|man|woman|girl|boy|singer|concert|crowd|anatomy|hearing aid|ear canal/i },
+  'melhor-correia-para-guitarra': { kicker: 'GUITARRA · ACESSÓRIO', l1: 'CORREIA', l2: 'PARA GUITARRA', q: 'guitar strap', prefer: /strap/i, avoid: /logo|person|people|man|woman|girl|boy|concert|watch|camera|bag|backpack/i },
+  'melhor-trompete-para-iniciante': { kicker: 'SOPRO · GUIA 2026', l1: 'TROMPETE', l2: 'PARA INICIANTE', q: 'Bb trumpet', prefer: /trumpet/i, avoid: /logo|person|people|man|woman|girl|boy|player|band|orchestra|concert|statue|angel|painting|stamp/i },
+  'melhor-flauta-transversal-para-iniciante': { kicker: 'SOPRO · GUIA 2026', l1: 'FLAUTA', l2: 'TRANSVERSAL', q: 'Western concert flute', prefer: /flute/i, avoid: /logo|person|people|man|woman|girl|boy|player|orchestra|concert|recorder|pan flute|bamboo|painting|glass|champagne/i },
+  'melhor-bateria-infantil': { kicker: 'BATERIA · INFANTIL', l1: 'BATERIA', l2: 'INFANTIL', q: 'junior drum kit', prefer: /drum/i, avoid: /logo|person|people|man|woman|girl|boy|child|kid|concert|military|drummer/i },
+  'melhor-interface-de-audio-ate-500-reais': { kicker: 'ESTÚDIO · GUIA 2026', l1: 'INTERFACE', l2: 'ATÉ R$ 500', q: 'Focusrite Scarlett audio interface', prefer: /scarlett|interface|focusrite|behringer|umc/i, avoid: /logo|person|people|man|woman|girl|boy|screenshot|software/i },
+  'melhor-baqueta-para-bateria': { kicker: 'BATERIA · ACESSÓRIO', l1: 'BAQUETA', l2: 'PARA BATERIA', q: 'drumsticks snare drum', prefer: /drumstick|sticks/i, avoid: /logo|person|people|man|woman|girl|boy|concert|drummer|chicken|food|lacrosse|hockey/i },
+  'melhor-banco-para-bateria': { kicker: 'BATERIA · ACESSÓRIO', l1: 'BANCO', l2: 'PARA BATERIA', q: 'drum stool', prefer: /drum stool|drum throne|drum seat|stool/i, avoid: /logo|person|people|man|woman|girl|boy|king|queen|royal|palace|church|pope|bishop|knossos|throne room|museum|ancient|bar stool|kitchen/i },
+  'melhor-pedal-de-volume': { kicker: 'PEDAL · GUIA 2026', l1: 'PEDAL', l2: 'DE VOLUME', q: 'Zoom G3 expression pedal setting general view', prefer: /general view/i, avoid: /logo|person|people|woman|car|bicycle|piano|organ|hammond|sewing|inside|circuit|hand|finger|desk/i },
+  'melhor-suporte-para-teclado': { kicker: 'TECLADO · ACESSÓRIO', l1: 'SUPORTE', l2: 'PARA TECLADO', q: 'keyboard stand synthesizer', prefer: /stand|keyboard|synth/i, avoid: /logo|person|people|man|woman|girl|boy|concert|computer|typing|laptop/i },
 };
 
 // Posts com MOTIVO de guitarra (texto vem do POSTS de gen-covers; aqui só a query da foto CC).

@@ -1,0 +1,50 @@
+{
+  "nome": "Trompete Michael WTRM30 (laqueado)",
+  "meli": "https://meli.la/1WZ47yL",
+  "preco": 1272,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 1272
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 229,
+  "ficha": [
+    [
+      "Marca",
+      "Michael"
+    ],
+    [
+      "Modelo",
+      "WTRM30"
+    ],
+    [
+      "Pistos",
+      "3, em aço inox"
+    ],
+    [
+      "Detalhes",
+      "Anel na 3ª bomba e 2 válvulas de água"
+    ],
+    [
+      "Acabamento",
+      "Laqueado dourado"
+    ],
+    [
+      "Acompanha",
+      "Capa"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "10x R$ 127,20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/trompete-michael-wtrm30-3-valvulas-laqueado-com-capa-cor-dourado/p/MLB28328950"
+  },
+  "imagem": "/images/produtos/michael-wtrm30.webp",
+  "imagemAlt": "Trompete Michael WTRM30 (laqueado)"
+}

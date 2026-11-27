@@ -1,0 +1,47 @@
+{
+  "nome": "Correia Basso CLA 13 (acolchoada)",
+  "meli": "https://meli.la/13u5LSK",
+  "preco": 73,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 73
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 2000,
+  "ficha": [
+    [
+      "Marca",
+      "Basso"
+    ],
+    [
+      "Modelo",
+      "CLA 13"
+    ],
+    [
+      "Material",
+      "Suede sintético acolchoado"
+    ],
+    [
+      "Largura",
+      "7 cm"
+    ],
+    [
+      "Comprimento",
+      "92 cm a 1,45 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 81,
+    "off": 10,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-basso-cla-13-para-guitarra-violao-e-baixo-sintetico-liso-preta-ajustavel-e-confortavel/p/MLB25877163"
+  },
+  "imagem": "/images/produtos/correia-basso-cla-13.webp",
+  "imagemAlt": "Correia Basso CLA 13 (acolchoada)"
+}

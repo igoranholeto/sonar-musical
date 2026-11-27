@@ -1,0 +1,44 @@
+{
+  "nome": "Baqueta Liverpool Sensation Grip 5A",
+  "meli": "https://meli.la/2iesghr",
+  "preco": 34,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 34
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 759,
+  "ficha": [
+    [
+      "Marca",
+      "Liverpool"
+    ],
+    [
+      "Modelo",
+      "EVA5AM Sensation Grip Series"
+    ],
+    [
+      "Tamanho",
+      "5A"
+    ],
+    [
+      "Material",
+      "Madeira com grip de EVA"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 40,
+    "off": 14,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/baqueta-de-madeira-liverpool-eva5am-sensation-grip-series-5a-cor-marfim/p/MLB27041826"
+  },
+  "imagem": "/images/produtos/baqueta-liverpool-sensation-5a.webp",
+  "imagemAlt": "Baqueta Liverpool Sensation Grip 5A"
+}

@@ -1,0 +1,42 @@
+{
+  "nome": "Pedal de volume Boss FV-30H",
+  "meli": "https://meli.la/1zZFPzR",
+  "preco": 855,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 855
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 7,
+  "ficha": [
+    [
+      "Marca",
+      "Boss"
+    ],
+    [
+      "Modelo",
+      "FV-30H"
+    ],
+    [
+      "Impedância",
+      "Alta"
+    ],
+    [
+      "Uso",
+      "Guitarra e baixo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "10x R$ 85,54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-de-volume-boss-fv30h-p-baixo-guitarra-alta-impedancia-cor-cinza/p/MLB20698584"
+  },
+  "imagem": "/images/produtos/boss-fv-30h.webp",
+  "imagemAlt": "Pedal de volume Boss FV-30H"
+}

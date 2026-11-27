@@ -1,0 +1,56 @@
+{
+  "nome": "Suporte para teclado ASK X10S (em X)",
+  "meli": "https://meli.la/31CcF9A",
+  "preco": 60,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 60
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 4228,
+  "ficha": [
+    [
+      "Marca",
+      "ASK"
+    ],
+    [
+      "Modelo",
+      "X10S"
+    ],
+    [
+      "Tipo",
+      "Em X, dobrável"
+    ],
+    [
+      "Trava",
+      "Memória de posição"
+    ],
+    [
+      "Altura",
+      "66 cm a 1 m"
+    ],
+    [
+      "Carga",
+      "Até 30 kg"
+    ],
+    [
+      "Material",
+      "Aço"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 116,
+    "off": 48,
+    "parcelas": "3x R$ 20 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-x-para-teclado-ask-x10s-preto-de-aco-dobravel-com-memoria-de-posicao-universal/p/MLB36495299"
+  },
+  "imagem": "/images/produtos/suporte-teclado-ask-x10s.webp",
+  "imagemAlt": "Suporte para teclado ASK X10S (em X)"
+}

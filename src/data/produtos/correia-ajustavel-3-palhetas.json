@@ -1,0 +1,37 @@
+{
+  "nome": "Correia ajustável para violão, guitarra e baixo (+ 3 palhetas)",
+  "meli": "https://meli.la/2wtdsid",
+  "preco": 32,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 32
+    }
+  ],
+  "ficha": [
+    [
+      "Tipo",
+      "Correia ajustável"
+    ],
+    [
+      "Uso",
+      "Violão, guitarra e baixo"
+    ],
+    [
+      "Acompanha",
+      "3 palhetas"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 40,
+    "off": 20,
+    "freteGratis": true,
+    "catalogo": "https://produto.mercadolivre.com.br/MLB-3900603321-correia-violo-guitarra-baixo-alca-ajustavel-3-palhetas-_JM"
+  },
+  "imagem": "/images/produtos/correia-ajustavel-3-palhetas.webp",
+  "imagemAlt": "Correia ajustável para violão, guitarra e baixo (+ 3 palhetas)"
+}

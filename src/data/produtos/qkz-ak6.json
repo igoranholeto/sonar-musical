@@ -1,0 +1,61 @@
+{
+  "nome": "Fone in-ear QKZ AK6 (com microfone)",
+  "meli": "https://meli.la/1mg8r4u",
+  "preco": 30,
+  "precoEm": "2026-11-27",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 30
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 3915,
+  "ficha": [
+    [
+      "Marca",
+      "QKZ"
+    ],
+    [
+      "Modelo",
+      "AK6"
+    ],
+    [
+      "Tipo",
+      "Fone in-ear com fio"
+    ],
+    [
+      "Driver",
+      "8 mm"
+    ],
+    [
+      "Impedância",
+      "32 Ω"
+    ],
+    [
+      "Resposta",
+      "7 Hz a 40 kHz"
+    ],
+    [
+      "Sensibilidade",
+      "90 dB"
+    ],
+    [
+      "Microfone",
+      "Sim"
+    ],
+    [
+      "Acompanha",
+      "Case"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-qkz-ak6-retorno-de-palco-com-microfone-case-cor-branco/p/MLB26626455"
+  },
+  "imagem": "/images/produtos/qkz-ak6.webp",
+  "imagemAlt": "Fone in-ear QKZ AK6 (com microfone)"
+}

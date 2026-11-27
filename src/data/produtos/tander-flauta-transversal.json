@@ -1,0 +1,46 @@
+{
+  "nome": "Flauta transversal Tander em Dó (cuproníquel)",
+  "meli": "https://meli.la/1gwmYhr",
+  "preco": 511,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 511
+    }
+  ],
+  "nota": 5,
+  "avaliacoes": 9,
+  "ficha": [
+    [
+      "Marca",
+      "Tander"
+    ],
+    [
+      "Afinação",
+      "Dó (C)"
+    ],
+    [
+      "Chaves",
+      "16"
+    ],
+    [
+      "Material",
+      "Cuproníquel prateado"
+    ],
+    [
+      "Acompanha",
+      "Estojo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "12x R$ 49,39",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-tander-cupronickel-em-do-c-com-estojo-prateado/p/MLB26482627"
+  },
+  "imagem": "/images/produtos/tander-flauta-transversal.webp",
+  "imagemAlt": "Flauta transversal Tander em Dó (cuproníquel)"
+}

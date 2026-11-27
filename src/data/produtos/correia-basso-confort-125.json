@@ -1,0 +1,48 @@
+{
+  "nome": "Correia Basso Confort 12,5 cm (para baixo)",
+  "meli": "https://meli.la/2aivNMD",
+  "preco": 180,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 180
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 111,
+  "ficha": [
+    [
+      "Marca",
+      "Basso"
+    ],
+    [
+      "Modelo",
+      "Confort"
+    ],
+    [
+      "Material",
+      "Neoprene e espuma"
+    ],
+    [
+      "Largura",
+      "12,5 cm"
+    ],
+    [
+      "Comprimento",
+      "1 m a 1,45 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 189,
+    "off": 5,
+    "parcelas": "12x R$ 17,78",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-para-guitarra-e-contrabaixo-basso-confort-125-cm-preta/p/MLB62606427"
+  },
+  "imagem": "/images/produtos/correia-basso-confort-125.webp",
+  "imagemAlt": "Correia Basso Confort 12,5 cm (para baixo)"
+}

@@ -1,0 +1,46 @@
+{
+  "nome": "Flauta transversal Moresky em Dó (16 chaves)",
+  "meli": "https://meli.la/1DdEvFq",
+  "preco": 649,
+  "precoEm": "2026-11-27",
+  "categoria": "sopro",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 649
+    }
+  ],
+  "nota": 4.7,
+  "avaliacoes": 93,
+  "ficha": [
+    [
+      "Marca",
+      "Moresky"
+    ],
+    [
+      "Afinação",
+      "Dó (C)"
+    ],
+    [
+      "Chaves",
+      "16, furos fechados"
+    ],
+    [
+      "Material",
+      "Cuproníquel prateado"
+    ],
+    [
+      "Acompanha",
+      "Estojo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "10x R$ 64,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/flauta-transversal-moresky-prateado-16-chaves-cuproniquel-iniciante/p/MLB27413536"
+  },
+  "imagem": "/images/produtos/moresky-flauta-transversal.webp",
+  "imagemAlt": "Flauta transversal Moresky em Dó (16 chaves)"
+}

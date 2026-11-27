@@ -1,0 +1,50 @@
+{
+  "nome": "Pedal Sonicake VolWah (mini wah e volume)",
+  "meli": "https://meli.la/1XjXw2d",
+  "preco": 400,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 400
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 251,
+  "ficha": [
+    [
+      "Marca",
+      "Sonicake"
+    ],
+    [
+      "Modelo",
+      "VolWah"
+    ],
+    [
+      "Funções",
+      "Wah e volume"
+    ],
+    [
+      "Tamanho",
+      "Mini"
+    ],
+    [
+      "Circuito",
+      "Ativo, analógico"
+    ],
+    [
+      "Alimentação",
+      "9 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "12x R$ 39,13",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/sonicake-volwah-mini-pedal-volume-wah-wah-analogo-guitarra-eletrica-preto/p/MLB18029443"
+  },
+  "imagem": "/images/produtos/sonicake-volwah.webp",
+  "imagemAlt": "Pedal Sonicake VolWah (mini wah e volume)"
+}

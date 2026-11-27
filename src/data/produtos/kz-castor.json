@@ -1,0 +1,59 @@
+{
+  "nome": "Fone in-ear KZ Castor (com case)",
+  "meli": "https://meli.la/1JsaWdU",
+  "preco": 135,
+  "precoEm": "2026-11-27",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 135
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 285,
+  "ficha": [
+    [
+      "Marca",
+      "KZ"
+    ],
+    [
+      "Modelo",
+      "Castor"
+    ],
+    [
+      "Tipo",
+      "Fone in-ear com fio"
+    ],
+    [
+      "Impedância",
+      "30 Ω"
+    ],
+    [
+      "Sensibilidade",
+      "103 dB"
+    ],
+    [
+      "Cabo",
+      "1,2 m"
+    ],
+    [
+      "Ajuste de som",
+      "Sim"
+    ],
+    [
+      "Acompanha",
+      "Case"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 165,
+    "off": 18,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-de-alta-fidelidade-kz-castor-in-ear-monitor-de-palco-case-kz-origina-preto/p/MLB54234015"
+  },
+  "imagem": "/images/produtos/kz-castor.webp",
+  "imagemAlt": "Fone in-ear KZ Castor (com case)"
+}

@@ -1,0 +1,42 @@
+{
+  "nome": "Pedal Hotone Soul Press II (wah, volume e expressão)",
+  "meli": "https://meli.la/2m42CFn",
+  "preco": 749,
+  "precoEm": "2026-11-27",
+  "categoria": "pedal",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 749
+    }
+  ],
+  "nota": 4.8,
+  "avaliacoes": 154,
+  "ficha": [
+    [
+      "Marca",
+      "Hotone"
+    ],
+    [
+      "Modelo",
+      "Soul Press II"
+    ],
+    [
+      "Funções",
+      "Wah, volume e expressão"
+    ],
+    [
+      "Alimentação",
+      "9 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "12x R$ 72,43",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/pedal-wah-wah-hotone-soul-press-ii-guitarra-eletrica-azul/p/MLB19522298"
+  },
+  "imagem": "/images/produtos/hotone-soul-press-ii.webp",
+  "imagemAlt": "Pedal Hotone Soul Press II (wah, volume e expressão)"
+}

@@ -1,0 +1,53 @@
+{
+  "nome": "Bateria infantil Toy King TK-1423 (5 tambores)",
+  "meli": "https://meli.la/2qDm7av",
+  "preco": 78,
+  "precoEm": "2026-11-27",
+  "categoria": "bateria",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 78
+    }
+  ],
+  "nota": 4.4,
+  "avaliacoes": 500,
+  "ficha": [
+    [
+      "Marca",
+      "Toy King"
+    ],
+    [
+      "Modelo",
+      "TK-1423"
+    ],
+    [
+      "Material",
+      "Plástico"
+    ],
+    [
+      "Tambores",
+      "5"
+    ],
+    [
+      "Acompanha",
+      "Banco e baquetas"
+    ],
+    [
+      "Idade",
+      "A partir de 3 anos"
+    ],
+    [
+      "Certificação Inmetro",
+      "004012/2021"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/bateria-infantil-toy-king-tk-1423-5-tambores-azul-com-baquetas-e-banco/p/MLB23535491"
+  },
+  "imagem": "/images/produtos/toy-king-tk-1423.webp",
+  "imagemAlt": "Bateria infantil Toy King TK-1423 (5 tambores)"
+}

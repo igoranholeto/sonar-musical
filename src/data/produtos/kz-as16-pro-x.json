@@ -1,0 +1,52 @@
+{
+  "nome": "Fone in-ear KZ AS16 Pro X (16 drivers)",
+  "meli": "https://meli.la/1DDKkjU",
+  "preco": 324,
+  "precoEm": "2026-11-27",
+  "categoria": "fone",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 324
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 391,
+  "ficha": [
+    [
+      "Marca",
+      "KZ"
+    ],
+    [
+      "Modelo",
+      "AS16 Pro X"
+    ],
+    [
+      "Tipo",
+      "Fone in-ear com fio"
+    ],
+    [
+      "Drivers",
+      "16 armaduras balanceadas"
+    ],
+    [
+      "Cabo",
+      "Desmontável"
+    ],
+    [
+      "Microfone",
+      "Não"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 499,
+    "off": 35,
+    "parcelas": "6x R$ 54 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fone-kz-as16-pro-x-2024-sem-mic-retorno-de-palco-preto/p/MLB61761762"
+  },
+  "imagem": "/images/produtos/kz-as16-pro-x.webp",
+  "imagemAlt": "Fone in-ear KZ AS16 Pro X (16 drivers)"
+}

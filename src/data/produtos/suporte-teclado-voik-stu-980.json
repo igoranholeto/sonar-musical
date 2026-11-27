@@ -1,0 +1,48 @@
+{
+  "nome": "Suporte para teclado Voik STU-980 (88 teclas)",
+  "meli": "https://meli.la/29k3VSQ",
+  "preco": 279,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 279
+    }
+  ],
+  "nota": 4.6,
+  "avaliacoes": 33,
+  "ficha": [
+    [
+      "Marca",
+      "Voik"
+    ],
+    [
+      "Modelo",
+      "STU-980"
+    ],
+    [
+      "Altura",
+      "63 cm (fixa)"
+    ],
+    [
+      "Teclados",
+      "Até 88 teclas"
+    ],
+    [
+      "Carga",
+      "Até 50 kg"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 594,
+    "off": 53,
+    "parcelas": "6x R$ 46,50 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/suporte-para-teclado-musical-88-teclas-ate-50kg-voik-stu-980-cor-preto/p/MLB45125890"
+  },
+  "imagem": "/images/produtos/suporte-teclado-voik-stu-980.webp",
+  "imagemAlt": "Suporte para teclado Voik STU-980 (88 teclas)"
+}

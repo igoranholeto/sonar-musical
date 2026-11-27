@@ -1,0 +1,47 @@
+{
+  "nome": "Correia Ernie Ball Polypro",
+  "meli": "https://meli.la/2dGHYAU",
+  "preco": 79,
+  "precoEm": "2026-11-27",
+  "categoria": "acessorio",
+  "historico": [
+    {
+      "data": "2026-11-27",
+      "preco": 79
+    }
+  ],
+  "nota": 4.9,
+  "avaliacoes": 1107,
+  "ficha": [
+    [
+      "Marca",
+      "Ernie Ball"
+    ],
+    [
+      "Modelo",
+      "Polypro P04037"
+    ],
+    [
+      "Material",
+      "Polipropileno"
+    ],
+    [
+      "Largura",
+      "5 cm"
+    ],
+    [
+      "Comprimento",
+      "1,04 m a 1,82 m"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 114,
+    "off": 31,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/correia-ernie-ball-polypro-para-guitarra-violao-ou-baixo-cor-preta/p/MLB42694885"
+  },
+  "imagem": "/images/produtos/correia-ernie-ball-polypro.webp",
+  "imagemAlt": "Correia Ernie Ball Polypro"
+}
