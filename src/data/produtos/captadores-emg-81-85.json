@@ -1,0 +1,44 @@
+{
+  "nome": "Captadores EMG 81 + 85 (ativos, par)",
+  "meli": "https://meli.la/2eoi3pJ",
+  "preco": 1869,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "EMG"
+    ],
+    [
+      "Modelo",
+      "81 (ponte) + 85 (braço)"
+    ],
+    [
+      "Tipo",
+      "Humbucker ativo (precisa de bateria 9V)"
+    ],
+    [
+      "Formato",
+      "Humbucker padrão"
+    ],
+    [
+      "Inclui",
+      "Potenciômetros 25k e conectores solderless"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "12x R$ 179,64",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/par-de-captadores-emg-ativos-81-85-black-made-in-usa/up/MLBU2375850430"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1869
+    }
+  ],
+  "imagem": "/images/produtos/captadores-emg-81-85.webp",
+  "imagemAlt": "Captadores EMG 81 + 85 (ativos, par)"
+}

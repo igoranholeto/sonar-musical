@@ -1,0 +1,46 @@
+{
+  "nome": "Captador Seymour Duncan Hot Rails Strat (ponte)",
+  "meli": "https://meli.la/1JH5xrA",
+  "preco": 906,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Seymour Duncan"
+    ],
+    [
+      "Modelo",
+      "SHR-1b Hot Rails"
+    ],
+    [
+      "Tipo",
+      "Humbucker no tamanho de single coil"
+    ],
+    [
+      "Posição",
+      "Ponte"
+    ],
+    [
+      "Formato",
+      "Stratocaster (tamanho padrão de single)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1069,
+    "off": 15,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/captador-seymour-duncan-hot-rails-ponte-black/up/MLBU3356762787"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 906
+    }
+  ],
+  "imagem": "/images/produtos/seymour-duncan-hot-rails-strat.webp",
+  "imagemAlt": "Captador Seymour Duncan Hot Rails Strat (ponte)"
+}

@@ -1,0 +1,39 @@
+{
+  "nome": "Nut Graph Tech Tusq PQ-5000 (estilo Fender)",
+  "meli": "https://meli.la/2q17uPT",
+  "preco": 125,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Graph Tech"
+    ],
+    [
+      "Modelo",
+      "Tusq PQ-5000-00"
+    ],
+    [
+      "Material",
+      "Tusq (sintético)"
+    ],
+    [
+      "Formato",
+      "Estilo Fender, base reta, já com rasgos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/graphtech-tusq-pq-5000-00-fender-style/up/MLBU731614096"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 125
+    }
+  ],
+  "imagem": "/images/produtos/nut-graph-tech-tusq-pq-5000.webp",
+  "imagemAlt": "Nut Graph Tech Tusq PQ-5000 (estilo Fender)"
+}

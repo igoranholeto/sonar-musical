@@ -1,0 +1,40 @@
+{
+  "nome": "Potenciômetro CTS A250K (eixo curto)",
+  "meli": "https://meli.la/2oG4UQ5",
+  "preco": 72,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "CTS"
+    ],
+    [
+      "Valor",
+      "250k logarítmico (A)"
+    ],
+    [
+      "Eixo",
+      "Curto, estriado de 24 dentes"
+    ],
+    [
+      "Uso",
+      "Volume e tone de guitarra com single coil"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "3x R$ 24 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/potenciometro-cts-a250k-eixo-curto-volume-original/up/MLBU2271292377"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 72
+    }
+  ],
+  "imagem": "/images/produtos/potenciometro-cts-a250k-curto.webp",
+  "imagemAlt": "Potenciômetro CTS A250K (eixo curto)"
+}

@@ -1,0 +1,46 @@
+{
+  "nome": "Tarraxas Gotoh SG301 com trava (3+3)",
+  "meli": "https://meli.la/2qgr15t",
+  "preco": 550,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Gotoh"
+    ],
+    [
+      "Modelo",
+      "SG301-04 MGT (Magnum Lock)"
+    ],
+    [
+      "Tipo",
+      "Blindada com trava"
+    ],
+    [
+      "Disposição",
+      "3+3"
+    ],
+    [
+      "Furo",
+      "10 mm (padrão de tarraxa blindada)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 709,
+    "off": 22,
+    "parcelas": "12x R$ 53,18",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/tarraxas-gotoh-sg301-04-mgt-com-trava-magnum-lock-3x3-cromadas-para-guitarra/p/MLB75234203"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 550
+    }
+  ],
+  "imagem": "/images/produtos/tarraxas-gotoh-sg301-trava-3x3.webp",
+  "imagemAlt": "Tarraxas Gotoh SG301 com trava (3+3)"
+}

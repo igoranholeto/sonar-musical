@@ -1,0 +1,38 @@
+{
+  "nome": "Chave Switchcraft 3 posições (toggle curta)",
+  "meli": "https://meli.la/1HojrwE",
+  "preco": 322,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Switchcraft"
+    ],
+    [
+      "Tipo",
+      "Toggle 3 posições, corpo curto"
+    ],
+    [
+      "Uso",
+      "Les Paul, SG e PRS"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 350,
+    "off": 8,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/chave-seletora-toggle-switch-short-switchcraft-les-paul-prs/up/MLBU787739303"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 322
+    }
+  ],
+  "imagem": "/images/produtos/chave-switchcraft-3-posicoes.webp",
+  "imagemAlt": "Chave Switchcraft 3 posições (toggle curta)"
+}

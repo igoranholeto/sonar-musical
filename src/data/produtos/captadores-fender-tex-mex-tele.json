@@ -1,0 +1,46 @@
+{
+  "nome": "Captadores Fender Tex-Mex Telecaster (ponte e braço)",
+  "meli": "https://meli.la/2ig4j2z",
+  "preco": 660,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Modelo",
+      "Tex-Mex Telecaster"
+    ],
+    [
+      "Tipo",
+      "Single coil (ponte e braço)"
+    ],
+    [
+      "Ímã",
+      "Alnico 5"
+    ],
+    [
+      "Formato",
+      "Telecaster"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 777,
+    "off": 15,
+    "parcelas": "12x R$ 63,85",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-de-captadores-fender-tex-mex-telecaster-pickup-set/up/MLBU1736731945"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 660
+    }
+  ],
+  "imagem": "/images/produtos/captadores-fender-tex-mex-tele.webp",
+  "imagemAlt": "Captadores Fender Tex-Mex Telecaster (ponte e braço)"
+}

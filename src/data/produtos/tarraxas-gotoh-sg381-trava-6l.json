@@ -1,0 +1,46 @@
+{
+  "nome": "Tarraxas Gotoh SG381 com trava (6 em linha)",
+  "meli": "https://meli.la/2EPcdUQ",
+  "preco": 469,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Gotoh"
+    ],
+    [
+      "Modelo",
+      "SG381 MG (Magnum Lock)"
+    ],
+    [
+      "Tipo",
+      "Blindada com trava"
+    ],
+    [
+      "Disposição",
+      "6 em linha"
+    ],
+    [
+      "Furo",
+      "10 mm (padrão de tarraxa blindada)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 510,
+    "off": 8,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/tarraxa-guitarra-gotoh-trava-sg381mg-05-l6-6-em-linha/up/MLBU1130898784"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 469
+    }
+  ],
+  "imagem": "/images/produtos/tarraxas-gotoh-sg381-trava-6l.webp",
+  "imagemAlt": "Tarraxas Gotoh SG381 com trava (6 em linha)"
+}

@@ -1,0 +1,39 @@
+{
+  "nome": "Nut Graph Tech Tusq XL PQL-6643 (PRS e Ibanez)",
+  "meli": "https://meli.la/1nJfCHR",
+  "preco": 135,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Graph Tech"
+    ],
+    [
+      "Modelo",
+      "Tusq XL PQL-6643-00"
+    ],
+    [
+      "Material",
+      "Tusq XL (autolubrificado)"
+    ],
+    [
+      "Formato",
+      "Base reta, 43 mm, já com rasgos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/graphtech-tusq-xl-pql-6643-00-prs-e-ibanez-/up/MLBU803331926"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 135
+    }
+  ],
+  "imagem": "/images/produtos/nut-graph-tech-tusq-xl-pql-6643.webp",
+  "imagemAlt": "Nut Graph Tech Tusq XL PQL-6643 (PRS e Ibanez)"
+}

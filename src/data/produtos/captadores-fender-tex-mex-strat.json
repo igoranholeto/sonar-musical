@@ -1,0 +1,48 @@
+{
+  "nome": "Captadores Fender Tex-Mex Strat (set com 3)",
+  "meli": "https://meli.la/29mz4f9",
+  "preco": 932,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Fender"
+    ],
+    [
+      "Modelo",
+      "Tex-Mex Strat"
+    ],
+    [
+      "Tipo",
+      "Single coil (3 unidades)"
+    ],
+    [
+      "Ímã",
+      "Alnico 5"
+    ],
+    [
+      "Formato",
+      "Stratocaster (tamanho padrão)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1054,
+    "off": 11,
+    "pix": true,
+    "cartao": 981,
+    "parcelas": "10x R$ 98,09 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-de-captadores-fender-tex-mex-strat-pickup-set/p/MLB28608902"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 932
+    }
+  ],
+  "imagem": "/images/produtos/captadores-fender-tex-mex-strat.webp",
+  "imagemAlt": "Captadores Fender Tex-Mex Strat (set com 3)"
+}

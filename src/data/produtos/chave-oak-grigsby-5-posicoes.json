@@ -1,0 +1,35 @@
+{
+  "nome": "Chave seletora Oak Grigsby 5 posições",
+  "meli": "https://meli.la/2jZfyu7",
+  "preco": 140,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Oak Grigsby"
+    ],
+    [
+      "Tipo",
+      "Chave de lâmina 5 posições"
+    ],
+    [
+      "Uso",
+      "Stratocaster e superstrato"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/chave-seletora-guitarra-5-posicoes-oak-grigsby-fender/up/MLBU3831038146"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 140
+    }
+  ],
+  "imagem": "/images/produtos/chave-oak-grigsby-5-posicoes.webp",
+  "imagemAlt": "Chave seletora Oak Grigsby 5 posições"
+}

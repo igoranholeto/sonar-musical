@@ -1,0 +1,46 @@
+{
+  "nome": "Captadores Malagoli Texas Soul (set com 3)",
+  "meli": "https://meli.la/2An62yF",
+  "preco": 1026,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Malagoli"
+    ],
+    [
+      "Modelo",
+      "Texas Soul"
+    ],
+    [
+      "Tipo",
+      "Single coil (3 unidades)"
+    ],
+    [
+      "Fabricação",
+      "Brasil"
+    ],
+    [
+      "Formato",
+      "Stratocaster (tamanho padrão)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1209,
+    "off": 15,
+    "parcelas": "12x R$ 99,69",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-3-captadores-malagoli-single-texas-soul-para-guitarra/up/MLBU3721320302"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1026
+    }
+  ],
+  "imagem": "/images/produtos/captadores-malagoli-texas-soul.webp",
+  "imagemAlt": "Captadores Malagoli Texas Soul (set com 3)"
+}

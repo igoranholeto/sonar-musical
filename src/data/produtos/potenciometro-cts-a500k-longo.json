@@ -1,0 +1,39 @@
+{
+  "nome": "Potenciômetro CTS A500K (eixo longo, Les Paul)",
+  "meli": "https://meli.la/2iWZ83z",
+  "preco": 130,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "CTS"
+    ],
+    [
+      "Valor",
+      "500k logarítmico (A)"
+    ],
+    [
+      "Eixo",
+      "Longo, para tampo grosso (Les Paul)"
+    ],
+    [
+      "Uso",
+      "Volume e tone de guitarra com humbucker"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/potenciometro-longo-cts-original-500ka-para-les-paul-gibson/up/MLBU749027951"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 130
+    }
+  ],
+  "imagem": "/images/produtos/potenciometro-cts-a500k-longo.webp",
+  "imagemAlt": "Potenciômetro CTS A500K (eixo longo, Les Paul)"
+}

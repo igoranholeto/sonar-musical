@@ -1,0 +1,747 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
+import FAQ from '../components/FAQ.astro';
+import { AREA_DA_PECA, GUITARRAS, NOME_CAPTACAO, NOME_FORMATO, ORIGEM_DADO, PECAS, avaliar } from '../data/upgrades-guitarra';
+import { carregarOfertas, fmtData, reais } from '../utils/ofertas';
+import { absUrl, ORG_ID, WEBSITE_ID } from '../utils/schema';
+
+// Upgrade de guitarra. O leitor escolhe a guitarra (ou descreve a dele) e a página mostra o que vem de
+// fábrica, por onde começar e quais peças à venda no Mercado Livre servem nela, com o motivo de cada
+// "serve" e "não serve". Sem JavaScript ficam as tabelas de ficha de fábrica e de peças, que são o
+// conteúdo lido pelo Google. Dados e regras em src/data/upgrades-guitarra.ts.
+
+const path = '/upgrade-de-guitarra/';
+const ofertas = await carregarOfertas();
+
+const pecas = PECAS.map((p) => ({ p, o: ofertas.get(p.id) })).filter(
+  (x): x is { p: (typeof PECAS)[number]; o: NonNullable<typeof x.o> } => !!x.o && x.o.status === 'ativo',
+);
+const hoje = pecas.reduce((d, { o }) => (o.precoEm > d ? o.precoEm : d), new Date(0));
+
+const dadosCliente = {
+  pecas: Object.fromEntries(
+    pecas.map(({ o, p }) => [
+      p.id,
+      { nome: o.nome, preco: o.preco, pix: !!o.pix, precoEm: fmtData(o.precoEm), meli: o.meli, imagem: o.imagem, valor: o.valorClique },
+    ]),
+  ),
+  produtos: Object.fromEntries(GUITARRAS.filter((g) => g.produto && ofertas.has(g.produto)).map((g) => [g.id, `/produto/${g.produto}/`])),
+  // Foto da guitarra (recorte do catálogo), quando ela é vendida no site.
+  fotos: Object.fromEntries(
+    GUITARRAS.map((g) => [g.id, g.produto ? ofertas.get(g.produto)?.imagem : undefined]).filter((x): x is [string, string] => !!x[1]),
+  ),
+};
+
+const populares = ['tagima-tg-510', 'tagima-tg-530', 'squier-affinity-strat', 'yamaha-pacifica-012', 'ibanez-grg121dx', 'giannini-g-100', 'strinberg-sts100', 'memphis-mg-30', 'epiphone-les-paul-standard-50s', 'squier-debut-strat'];
+const curtoGuitarra = (id: string) => {
+  const g = GUITARRAS.find((x) => x.id === id)!;
+  return `${g.marca.split(' ')[0]} ${g.modelo.replace(/ \(.*\)$/, '').replace(/^GIO /, '')}`;
+};
+
+// Tabela de peças: em quais guitarras da lista cada uma serve direto.
+const TIPO_PECA: Record<string, string> = {
+  'set-strat': 'set de 3 singles de Strato',
+  single: 'single de Strato (1 unidade)',
+  rail: 'humbucker no tamanho de single',
+  humbucker: 'humbucker (1 unidade)',
+  'set-hh': 'par de humbuckers',
+  'set-tele': 'set de Telecaster',
+  'tarraxa-6l': 'tarraxas com trava, 6 em linha',
+  'tarraxa-3x3': 'tarraxas com trava, 3+3',
+  'nut-fender': 'nut estilo Fender',
+  'nut-43-reto': 'nut de base reta, 43 mm',
+  'nut-gibson': 'nut estilo Gibson',
+  'pot-250': 'potenciômetro 250k',
+  'pot-500-curto': 'potenciômetro 500k',
+  'pot-500-longo': 'potenciômetro 500k',
+  'chave-5': 'chave de 5 posições',
+  'toggle-3': 'chave toggle de 3 posições',
+  strap: 'trava de correia',
+};
+const nomeGuitarra = (g: (typeof GUITARRAS)[number]) => `${g.marca.replace(/ \(.*\)$/, '')} ${g.modelo}`;
+const ondeServe = pecas.map(({ p, o }) => {
+  const direto = GUITARRAS.filter((g) => avaliar(p, g)?.nivel === 'direto');
+  const ajuste = GUITARRAS.filter((g) => avaliar(p, g)?.nivel === 'ajuste');
+  return { p, o, direto, ajuste };
+});
+
+const faq = [
+  {
+    question: 'Vale a pena fazer upgrade numa guitarra barata?',
+    answer:
+      'Vale quando o braço é bom e o problema está nas peças. Comece pela regulagem com um luthier, que resolve trastejado e desafinação sem trocar nada. Depois, o captador é a troca que mais muda o som de uma guitarra de entrada, porque os de fábrica costumam ser cerâmicos e simples. Tarraxa com trava e nut melhor ajudam a afinação, principalmente em guitarra com alavanca.',
+  },
+  {
+    question: 'Posso colocar humbucker numa Stratocaster com 3 single coils?',
+    answer:
+      'Um humbucker de tamanho normal não cabe no buraco de single: precisa abrir a madeira e trocar o escudo. O jeito sem corte é o humbucker no tamanho de single, como o Seymour Duncan Hot Rails, que entra no lugar do single da ponte e dá peso para distorção.',
+  },
+  {
+    question: 'Tarraxa com trava resolve a guitarra que desafina?',
+    answer:
+      'Ajuda, mas raramente sozinha. A desafinação de guitarra com alavanca costuma vir do nut, que prende a corda no rasgo, e da regulagem da ponte. Tarraxa com trava diminui as voltas de corda no pino e acelera a troca de cordas. O pacote que mais resolve é regulagem, nut de Tusq ou osso e tarraxa com trava.',
+  },
+  {
+    question: 'Potenciômetro de 250k ou de 500k?',
+    answer:
+      '250k para single coil (Stratocaster e Telecaster) e 500k para humbucker (Les Paul, SG e superstrato com dois humbuckers). O valor errado não queima nada, só muda o brilho: 250k em humbucker abafa, 500k em single deixa estridente. Os CTS têm eixo de 24 dentes, então os knobs de muitas guitarras asiáticas precisam ser trocados junto.',
+  },
+  {
+    question: 'Preciso de luthier para trocar as peças?',
+    answer:
+      'Captador, potenciômetro e chave pedem solda; quem já solda faz em casa, com o esquema de ligação na mão. Nut sempre pede luthier, porque a peça vem um pouco maior e os rasgos precisam ser ajustados. Tarraxa e trava de correia são troca de parafuso, mas a tarraxa pode precisar de um furo novo para o parafuso de fixação.',
+  },
+  {
+    question: 'De onde vêm os dados de fábrica das guitarras?',
+    answer:
+      'Da ficha técnica no site de cada fabricante (Tagima, Fender, Ibanez, Jackson, Cort, Yamaha, Epiphone e Giannini), conferida em 26/11/2026. Para as poucas guitarras cujo fabricante não publica a ficha, a tabela abaixo diz de onde veio o dado e o que vale conferir na sua.',
+  },
+];
+
+const titulo = 'Upgrade de Guitarra: o que Trocar na Sua e o que Serve Nela';
+const descricao =
+  'Escolha sua guitarra e veja o que vem de fábrica, por onde começar o upgrade e quais captadores, tarraxas, nut e peças elétricas servem nela, com o motivo.';
+
+// O BreadcrumbList sai do componente Trilha.
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  '@id': absUrl(path) + '#app',
+  name: 'Upgrade de guitarra: o que serve na sua',
+  url: absUrl(path),
+  description: descricao,
+  applicationCategory: 'UtilitiesApplication',
+  operatingSystem: 'Web',
+  inLanguage: 'pt-BR',
+  isAccessibleForFree: true,
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  publisher: { '@id': ORG_ID },
+  isPartOf: { '@id': WEBSITE_ID },
+};
+---
+
+<BaseLayout title={titulo} description={descricao} schema={schema}>
+  <section class="ug">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Upgrade de guitarra', path }]} />
+
+    <header class="ug__head">
+      <span class="ug__kicker"><span class="ug__dot" aria-hidden="true"></span> {GUITARRAS.length} guitarras · {pecas.length} peças à venda</span>
+      <h1>Upgrade de guitarra: o que serve na sua</h1>
+      <p class="ug__sub">
+        Escolha sua guitarra. A ferramenta mostra o que vem de fábrica, por onde vale começar e quais peças encaixam nela,
+        com o motivo de cada "serve" e "não serve".
+      </p>
+    </header>
+
+    <div class="ug__app" id="ug-app" data-js-off>
+      <p class="ug__semjs">A ferramenta precisa de JavaScript. As tabelas de ficha de fábrica e de peças logo abaixo funcionam sem ele.</p>
+
+      <div class="ug__painel">
+        <h2 class="ug__h">1. Sua guitarra</h2>
+        <div class="ug__busca">
+          <label for="ug-busca" class="ug__oculto">Buscar guitarra pelo modelo ou pela marca</label>
+          <svg class="ug__lupa" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input
+            id="ug-busca"
+            type="text"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="ug-opcoes"
+            autocomplete="off"
+            placeholder="Busque: TG-510, Affinity, Pacifica, GRG..."
+          />
+          <ul id="ug-opcoes" class="ug__opcoes" role="listbox" hidden></ul>
+        </div>
+
+        <div class="ug__populares" aria-label="Guitarras mais comuns">
+          <span>Mais comuns:</span>
+          {populares.map((id) => <button type="button" class="ug__chip" data-g={id}>{curtoGuitarra(id)}</button>)}
+        </div>
+
+        <div id="ug-sel" class="ug__sel" aria-live="polite"></div>
+
+        <details class="ug__outro" id="ug-outro-box">
+          <summary>Minha guitarra não está na lista</summary>
+          <form id="ug-outro" class="ug__outro-form">
+            <label>Formato
+              <select name="f">
+                <option value="strato">Stratocaster</option>
+                <option value="tele">Telecaster</option>
+                <option value="superstrato">Superstrato (Ibanez, Jackson)</option>
+                <option value="lespaul">Les Paul</option>
+                <option value="sg">SG</option>
+              </select>
+            </label>
+            <label>Captadores
+              <select name="c">
+                <option value="SSS">3 singles (SSS)</option>
+                <option value="HSS">humbucker na ponte + 2 singles (HSS)</option>
+                <option value="HH">2 humbuckers (HH)</option>
+                <option value="HSH">humbucker, single, humbucker (HSH)</option>
+                <option value="TT">Telecaster (2 singles)</option>
+              </select>
+            </label>
+            <label>Ponte
+              <select name="p">
+                <option value="tremolo">com alavanca</option>
+                <option value="fixa">fixa</option>
+                <option value="tele">fixa de Telecaster</option>
+                <option value="tom">tune-o-matic (Les Paul, SG)</option>
+              </select>
+            </label>
+            <label>Tarraxas
+              <select name="t">
+                <option value="6L">6 do mesmo lado</option>
+                <option value="3+3">3 de cada lado</option>
+              </select>
+            </label>
+            <button type="submit">Ver o que serve</button>
+            <p class="ug__dica">Humbucker é o captador largo, com duas fileiras de polos. Single é o estreito, com uma fileira.</p>
+          </form>
+        </details>
+
+        <h2 class="ug__h ug__h--obj">2. O que você quer melhorar</h2>
+        <div class="ug__obj" role="radiogroup" aria-label="Objetivo do upgrade">
+          <label><input type="radio" name="ug-obj" value="tudo" checked /> Tudo</label>
+          <label><input type="radio" name="ug-obj" value="timbre" /> Timbre</label>
+          <label><input type="radio" name="ug-obj" value="peso" /> Mais peso</label>
+          <label><input type="radio" name="ug-obj" value="afinacao" /> Afinação</label>
+        </div>
+      </div>
+
+      <div class="ug__painel ug__painel--res">
+        <div id="ug-res" class="ug__res" aria-live="polite">
+          <p class="ug__vazio">Escolha a sua guitarra para ver o que vem nela de fábrica e o que serve no upgrade.</p>
+        </div>
+        <button type="button" class="ug__copiar" id="ug-copiar" hidden>Copiar o link deste resultado</button>
+      </div>
+    </div>
+
+    <script type="application/json" id="ug-dados" set:html={JSON.stringify(dadosCliente)} />
+
+    <article class="ug__texto">
+      <h2>Como saber se uma peça serve na sua guitarra</h2>
+      <p>
+        Quatro medidas decidem quase tudo. A ferramenta confere cada uma contra a ficha de fábrica e avisa quando a troca pede
+        um luthier.
+      </p>
+      <ul>
+        <li>
+          <strong>Captadores:</strong> single de Strato, humbucker e Telecaster têm tamanhos diferentes. Trocar por um do mesmo
+          tipo é direto; humbucker no lugar de single exige abrir a madeira, a não ser que seja um humbucker no tamanho de
+          single, como o Hot Rails.
+        </li>
+        <li><strong>Tarraxas:</strong> 6 do mesmo lado ou 3 de cada lado, e o furo: as blindadas usam 10 mm, as vintage, um furo mais fino.</li>
+        <li><strong>Nut:</strong> o formato muda entre Fender, Gibson e superstrato, e a troca sempre pede ajuste dos rasgos.</li>
+        <li><strong>Elétrica:</strong> 250k para single coil, 500k para humbucker, e chave de 3 ou 5 posições igual à original.</li>
+      </ul>
+      <p>
+        Antes de comprar peça, faça uma regulagem com um luthier: altura das cordas, oitavas e tensor resolvem a maior parte do
+        trastejado e da desafinação. Veja o guia de <a href="/blog/como-fazer-manutencao-guitarra-em-casa/">manutenção da guitarra em casa</a>,
+        o de <a href="/blog/fret-buzz-traste-zerando/">trastejado</a> e a comparação dos
+        <a href="/blog/melhores-captadores-de-guitarra-2026/">melhores captadores de guitarra</a>.
+      </p>
+
+      <h2 id="fabrica">O que vem de fábrica nas guitarras mais vendidas</h2>
+      <p>
+        Captadores, ponte, tarraxas e nut de {GUITARRAS.length} guitarras, como cada fabricante descreve, conferidos em 26/11/2026.
+        A última coluna diz de onde veio o dado.
+      </p>
+      <div class="ug__tabela">
+        <table>
+          <thead>
+            <tr><th scope="col">Guitarra</th><th scope="col">Captadores</th><th scope="col">Ponte</th><th scope="col">Tarraxas</th><th scope="col">Nut</th><th scope="col">Dado</th></tr>
+          </thead>
+          <tbody>
+            {GUITARRAS.map((g) => (
+              <tr>
+                <th scope="row">
+                  {dadosCliente.produtos[g.id] ? <a href={dadosCliente.produtos[g.id]}>{nomeGuitarra(g)}</a> : nomeGuitarra(g)}
+                  <small>{NOME_FORMATO[g.formato]}, {NOME_CAPTACAO[g.captacao]}</small>
+                </th>
+                <td>{g.captadores}</td>
+                <td>{g.ponteTexto}</td>
+                <td>{g.tarraxas === '3+3' ? '3+3' : '6 em linha'}, {g.tarraxasTexto}</td>
+                <td>{g.nut}{g.nutMm ? `, ${g.nutMm.toLocaleString('pt-BR')} mm` : ''}</td>
+                <td>{g.dado === 'fabricante' ? g.fonte : `${g.fonte}${g.confirmar ? `; confira: ${g.confirmar}` : ''}`}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <h2 id="pecas">Peças de upgrade e em quais guitarras servem</h2>
+      <p>
+        Peças com anúncio nacional no Mercado Livre, preços conferidos em {fmtData(hoje)}. "Serve direto" quer dizer que encaixa
+        sem mexer na madeira nem no escudo; solda conta como instalação normal.
+      </p>
+      <div class="ug__tabela">
+        <table>
+          <thead>
+            <tr><th scope="col">Peça</th><th scope="col">Serve direto em</th><th scope="col">Preço</th></tr>
+          </thead>
+          <tbody>
+            {ondeServe.map(({ p, o, direto, ajuste }) => (
+              <tr>
+                <th scope="row">
+                  <a href={`/produto/${p.id}/`}>{o.nome}</a>
+                  <small>{TIPO_PECA[p.tipo]}</small>
+                </th>
+                <td>
+                  {direto.length === GUITARRAS.length
+                    ? 'todas as guitarras da lista'
+                    : direto.length
+                      ? direto.map(nomeGuitarra).join(', ')
+                      : ajuste.length
+                        ? `com ajuste de luthier: ${ajuste.length} ${ajuste.length === 1 ? 'guitarra' : 'guitarras'} da lista (${AREA_DA_PECA[p.tipo] === 'nut' ? 'toda troca de nut' : 'veja na ferramenta'})`
+                        : 'veja na ferramenta'}
+                </td>
+                <td>{reais(o.preco)}{o.pix ? ' no Pix' : ''}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+      <p class="ug__nota">
+        Dado de fábrica: {Object.values(ORIGEM_DADO).join('; ')}. O fabricante pode mudar peças entre lotes; na dúvida, olhe a sua
+        guitarra antes de comprar.
+      </p>
+    </article>
+
+    <FAQ items={faq} />
+  </section>
+</BaseLayout>
+
+<!-- Global: os cards são montados pelo script (innerHTML), que não recebe o escopo do Astro. Tudo usa o prefixo ug__. -->
+<style is:global>
+  .ug { max-width: 72rem; margin: 0 auto; padding: 2.5rem 1rem 5rem; }
+  .ug__head { max-width: 46rem; margin: 0 auto 2rem; text-align: center; }
+  .ug__kicker { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand); }
+  .ug__dot { width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand-fill); }
+  .ug h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 800; margin: 0.5rem 0 0.6rem; line-height: 1.15; }
+  .ug__sub { color: var(--color-muted); line-height: 1.6; }
+
+  .ug__app { display: grid; gap: 1.25rem; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 960px) { .ug__app { grid-template-columns: minmax(0, 4fr) minmax(0, 7fr); align-items: start; } }
+  .ug__app[data-js-off] .ug__painel { display: none; }
+  .ug__app:not([data-js-off]) .ug__semjs { display: none; }
+  .ug__semjs { padding: 1rem; border: 1px dashed var(--color-border); border-radius: 14px; color: var(--color-muted); }
+  .ug__painel { background: var(--color-elevated); border: 1px solid var(--color-border); border-radius: 18px; padding: 1.25rem; min-width: 0; }
+  @media (min-width: 960px) { .ug__painel:first-child { position: sticky; top: 88px; } }
+  .ug__h { font-size: 1rem; font-weight: 800; margin: 0 0 0.75rem; }
+  .ug__h--obj { margin-top: 1.25rem; }
+
+  .ug__busca { position: relative; }
+  .ug__lupa { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--color-muted); pointer-events: none; }
+  .ug__busca input { width: 100%; padding: 12px 12px 12px 38px; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-foreground); font-size: 16px; }
+  .ug__busca input:focus { outline: none; border-color: var(--color-brand); }
+  .ug__opcoes { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--color-card); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18); max-height: 320px; overflow-y: auto; }
+  .ug__opcoes li { display: flex; justify-content: space-between; gap: 8px; padding: 9px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+  .ug__opcoes li small { color: var(--color-muted); white-space: nowrap; }
+  .ug__opcoes li[aria-selected='true'], .ug__opcoes li:hover { background: color-mix(in srgb, var(--color-brand) 10%, var(--color-card)); }
+  .ug__opcoes .ug__nada { cursor: default; color: var(--color-muted); }
+
+  .ug__populares { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 14px; font-size: 13px; color: var(--color-muted); }
+  .ug__chip { padding: 5px 10px; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 13px; font-weight: 600; cursor: pointer; }
+  .ug__chip:hover, .ug__chip[aria-pressed='true'] { border-color: var(--color-brand); }
+  .ug__chip[aria-pressed='true'] { background: color-mix(in srgb, var(--color-brand) 10%, var(--color-card)); }
+
+  .ug__sel:empty { display: none; }
+  .ug__sel { display: flex; align-items: center; gap: 10px; padding: 10px 12px; border-radius: 12px; border: 1px solid color-mix(in srgb, var(--color-brand) 45%, var(--color-border)); background: var(--color-card); font-size: 14px; line-height: 1.4; }
+  .ug__sel > span:last-child { min-width: 0; }
+  .ug__mini { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 28px; padding: 2px; border-radius: 6px; background: #f4f4f5; overflow: hidden; }
+  .ug__mini img { height: 100%; width: auto; max-width: none; object-fit: contain; }
+  .ug__op-nome { display: inline-flex; align-items: center; gap: 8px; min-width: 0; }
+  .ug__opcoes li { align-items: center; }
+  .ug__sel b { display: block; font-size: 15px; }
+  .ug__sel small { color: var(--color-muted); }
+
+  .ug__outro { margin-top: 14px; border-top: 1px solid var(--color-border); padding-top: 10px; }
+  .ug__outro summary { cursor: pointer; font-size: 14px; font-weight: 700; color: var(--color-brand); }
+  .ug__outro-form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; font-size: 13px; }
+  .ug__outro-form label { display: grid; gap: 4px; color: var(--color-muted); }
+  .ug__outro-form select { padding: 9px 10px; border-radius: 10px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-foreground); font-size: 15px; min-width: 0; }
+  .ug__outro-form button { grid-column: 1 / -1; justify-self: start; padding: 9px 16px; border: 0; border-radius: 10px; background: var(--color-brand-fill); color: #fff; font-weight: 800; cursor: pointer; }
+  .ug__dica { grid-column: 1 / -1; margin: 0; font-size: 12.5px; color: var(--color-subtle); }
+
+  .ug__obj { display: flex; flex-wrap: wrap; gap: 6px; }
+  .ug__obj label { display: inline-flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-card); font-size: 13.5px; font-weight: 600; cursor: pointer; }
+  .ug__obj label:has(input:checked) { border-color: var(--color-brand); background: color-mix(in srgb, var(--color-brand) 10%, var(--color-card)); }
+  .ug__obj input { accent-color: var(--color-brand-fill); margin: 0; }
+
+  .ug__res { display: grid; gap: 1rem; }
+  .ug__vazio { margin: 0; padding: 2rem 1rem; text-align: center; color: var(--color-muted); }
+  .ug__ficha { border: 1px solid var(--color-border); border-radius: 16px; background: var(--color-card); padding: 14px 16px; }
+  .ug__ficha--foto { display: grid; grid-template-columns: minmax(0, 1fr) auto; column-gap: 14px; }
+  .ug__ficha--foto > :not(.ug__foto) { grid-column: 1; }
+  .ug__foto { grid-column: 2; grid-row: 1 / span 6; align-self: start; margin: 0; width: 84px; height: 210px; display: flex; align-items: center; justify-content: center; padding: 8px 4px; border-radius: 14px; background: radial-gradient(circle at 50% 40%, #ffffff, #e9e9ec); }
+  .ug__foto img { max-width: 100%; max-height: 100%; object-fit: contain; }
+  @media (max-width: 520px) {
+    .ug__foto { grid-row: 1 / span 2; width: 52px; height: 128px; padding: 6px 3px; }
+    .ug__ficha.ug__ficha--foto > :is(dl, .ug__fonte, .ug__aviso) { grid-column: 1 / -1; }
+    .ug__ficha--foto > .ug__ficha-sub { align-self: start; }
+  }
+  .ug__ficha h2 { font-size: 1.15rem; font-weight: 800; margin: 0 0 2px; line-height: 1.3; }
+  .ug__ficha-sub { margin: 0 0 10px; font-size: 13px; color: var(--color-muted); }
+  .ug__ficha dl { margin: 0; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: 4px 14px; font-size: 13.5px; line-height: 1.45; }
+  .ug__ficha dt { color: var(--color-muted); }
+  .ug__ficha dd { margin: 0; }
+  .ug__fonte { margin: 10px 0 0; font-size: 12.5px; color: var(--color-muted); line-height: 1.5; }
+  .ug__fonte a { color: var(--color-foreground); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .ug__aviso { margin: 8px 0 0; padding: 8px 11px; border-radius: 10px; font-size: 13px; line-height: 1.5; background: color-mix(in srgb, #f59e0b 14%, transparent); }
+
+  .ug__ordem { border: 1px solid var(--color-border); border-radius: 16px; background: var(--color-card); padding: 14px 16px; }
+  .ug__ordem h3 { font-size: 1rem; font-weight: 800; margin: 0 0 8px; }
+  .ug__ordem ol { margin: 0; padding-left: 1.25rem; list-style: decimal; display: grid; gap: 5px; font-size: 13.5px; line-height: 1.5; }
+  .ug__ordem li::marker { color: var(--color-brand); font-weight: 800; }
+  .ug__ordem strong { font-weight: 800; }
+  .ug__ordem a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 2px; }
+
+  .ug__area h3 { font-size: 1.05rem; font-weight: 800; margin: 0.5rem 0 8px; }
+  .ug__cards { display: grid; gap: 10px; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 640px) { .ug__cards { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+  .ug__card { display: flex; flex-direction: column; border: 1px solid var(--color-border); border-radius: 14px; background: var(--color-card); padding: 12px; min-width: 0; }
+  .ug__card-topo { display: flex; gap: 10px; align-items: flex-start; }
+  .ug__card-topo img { flex: none; width: 64px; height: 64px; object-fit: contain; border-radius: 10px; background: #fff; }
+  .ug__card h4 { font-size: 14.5px; font-weight: 800; margin: 2px 0 0; line-height: 1.3; }
+  .ug__selo { display: inline-block; font-size: 10.5px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 7px; border-radius: 6px; background: var(--color-surface); color: var(--color-muted); }
+  .ug__selo--direto { background: rgba(21, 128, 61, 0.14); color: #15803d; }
+  .ug__selo--ajuste, .ug__selo--parcial { background: color-mix(in srgb, #f59e0b 18%, transparent); color: #a16207; }
+  .dark .ug__selo--direto { color: #4ade80; }
+  .dark .ug__selo--ajuste, .dark .ug__selo--parcial { color: #fbbf24; }
+  .ug__motivo { margin: 8px 0 0; font-size: 13px; line-height: 1.5; color: var(--color-foreground); flex: 1; }
+  .ug__preco { margin: 8px 0 0; font-size: 13px; color: var(--color-muted); }
+  .ug__preco b { font-size: 17px; color: var(--color-foreground); }
+  .ug__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; margin-top: 10px; }
+  .ug__btn { display: inline-block; padding: 9px 14px; border-radius: 10px; background: var(--color-brand-fill); color: #fff !important; font-weight: 800; font-size: 13.5px; text-decoration: none; }
+  .ug__btn:hover { background: var(--color-brand-dark); }
+  .ug__ficha-link { font-size: 12.5px; font-weight: 600; color: var(--color-foreground); text-decoration: underline; text-underline-offset: 2px; }
+
+  .ug__nao { border-top: 1px solid var(--color-border); padding-top: 10px; }
+  .ug__nao summary { cursor: pointer; font-size: 14px; font-weight: 700; padding: 4px 0; }
+  .ug__nao ul { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; line-height: 1.55; color: var(--color-muted); display: grid; gap: 4px; }
+  .ug__nao ul b { color: var(--color-foreground); }
+  .ug__copiar { margin-top: 14px; background: none; border: 0; padding: 0; color: var(--color-brand); font-weight: 700; font-size: 14px; cursor: pointer; }
+
+  .ug__texto { max-width: 56rem; margin: 3.5rem auto 0; line-height: 1.7; }
+  .ug__texto h2 { font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 0.75rem; line-height: 1.25; }
+  .ug__texto ul { padding-left: 1.2rem; display: grid; gap: 0.4rem; margin: 0.75rem 0; }
+  .ug__texto a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 2px; }
+  .ug__nota { font-size: 13px; color: var(--color-muted); }
+  .ug__tabela { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--color-border); border-radius: 14px; }
+  .ug__tabela table { width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.4; }
+  .ug__tabela th, .ug__tabela td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+  .ug__tabela thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-muted); background: var(--color-elevated); }
+  .ug__tabela tbody th { font-weight: 600; min-width: 12rem; }
+  .ug__tabela tbody th small { display: block; font-weight: 400; font-size: 12.5px; color: var(--color-muted); }
+  .ug__tabela td { min-width: 9rem; }
+  #pecas + p + .ug__tabela td:nth-child(2) { min-width: 18rem; }
+  .ug__tabela td:last-child { white-space: nowrap; min-width: 0; }
+  #fabrica + p + .ug__tabela td:last-child { white-space: normal; min-width: 10rem; font-size: 12.5px; color: var(--color-muted); }
+  .ug__tabela tbody tr:last-child > * { border-bottom: 0; }
+
+  .ug__oculto { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>
+
+<script>
+  import {
+    AREA_DA_PECA, GUITARRAS, NOME_AREA, NOME_CAPTACAO, NOME_FORMATO, NOME_PONTE, ORIGEM_DADO, PECAS, avaliar, prioridades,
+    type Area, type Guitarra, type GuitarraBase, type Nivel, type Peca,
+  } from '../data/upgrades-guitarra';
+
+  type Oferta = { nome: string; preco: number; pix: boolean; precoEm: string; meli: string; imagem?: string; valor?: number };
+  type Objetivo = 'tudo' | 'timbre' | 'peso' | 'afinacao';
+  type Escolha = { tipo: 'lista'; g: Guitarra } | { tipo: 'outra'; g: GuitarraBase & { ceramico: null } };
+
+  const app = document.getElementById('ug-app');
+  const dadosEl = document.getElementById('ug-dados');
+  if (app && dadosEl) {
+    const { pecas: ofertas, produtos, fotos } = JSON.parse(dadosEl.textContent || '{}') as {
+      pecas: Record<string, Oferta>;
+      produtos: Record<string, string>;
+      fotos: Record<string, string>;
+    };
+    app.removeAttribute('data-js-off');
+
+    const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+    const busca = $<HTMLInputElement>('ug-busca');
+    const lista = $<HTMLUListElement>('ug-opcoes');
+    const selEl = $<HTMLElement>('ug-sel');
+    const res = $<HTMLElement>('ug-res');
+    const copiar = $<HTMLButtonElement>('ug-copiar');
+    const outroForm = $<HTMLFormElement>('ug-outro');
+    const outroBox = $<HTMLDetailsElement>('ug-outro-box');
+
+    const porId = new Map(GUITARRAS.map((g) => [g.id, g]));
+    const reais = (n: number) => 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+    const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const rotulo = (g: Guitarra) => `${g.marca.replace(/ \(.*\)$/, '')} ${g.modelo}`;
+    // Miniatura da guitarra (as fotos do catálogo são recortes em pé); vazio quando não há foto.
+    const miniatura = (id: string, alt: number) =>
+      fotos[id] ? `<span class="ug__mini" style="height:${alt}px"><img src="${esc(fotos[id])}" alt="" height="${alt}" /></span>` : '';
+
+    let escolha: Escolha | null = null;
+    let objetivo: Objetivo = 'tudo';
+
+    // ------------------------------------------------------------ busca
+    const indice = GUITARRAS.map((g) => ({ g, t: norm(`${g.marca} ${g.modelo} ${g.modelo.replace(/-/g, '')} ${NOME_FORMATO[g.formato]}`) }));
+    let ativos: Guitarra[] = [];
+    let cursor = -1;
+    const fecharLista = () => { lista.hidden = true; busca.setAttribute('aria-expanded', 'false'); cursor = -1; };
+    function filtrar() {
+      const q = norm(busca.value);
+      if (!q) return fecharLista();
+      const termos = q.split(' ');
+      ativos = indice.filter((x) => termos.every((t) => x.t.includes(t))).slice(0, 8).map((x) => x.g);
+      lista.innerHTML = ativos.length
+        ? ativos
+            .map(
+              (g, i) =>
+                `<li role="option" id="ug-op-${i}" data-i="${i}" aria-selected="false"><span class="ug__op-nome">${miniatura(g.id, 36)}${esc(rotulo(g))}</span><small>${esc(g.captacao === 'TT' ? 'Tele' : g.captacao)}</small></li>`,
+            )
+            .join('')
+        : '<li class="ug__nada" role="option" aria-disabled="true">Não achamos. Use "Minha guitarra não está na lista".</li>';
+      lista.hidden = false;
+      busca.setAttribute('aria-expanded', 'true');
+      cursor = -1;
+    }
+    function marcar(i: number) {
+      cursor = i;
+      lista.querySelectorAll('li[data-i]').forEach((li, k) => li.setAttribute('aria-selected', String(k === i)));
+      if (i >= 0) busca.setAttribute('aria-activedescendant', `ug-op-${i}`);
+      else busca.removeAttribute('aria-activedescendant');
+    }
+    busca.addEventListener('input', filtrar);
+    busca.addEventListener('focus', () => busca.value && filtrar());
+    busca.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (lista.hidden) filtrar(); marcar(Math.min(ativos.length - 1, cursor + 1)); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); marcar(Math.max(0, cursor - 1)); }
+      else if (e.key === 'Enter') { e.preventDefault(); const g = ativos[cursor >= 0 ? cursor : 0]; if (g && !lista.hidden) escolherLista(g); }
+      else if (e.key === 'Escape') fecharLista();
+    });
+    lista.addEventListener('mousedown', (e) => {
+      const li = (e.target as Element).closest<HTMLElement>('li[data-i]');
+      if (!li) return;
+      e.preventDefault();
+      escolherLista(ativos[Number(li.dataset.i)]);
+    });
+    busca.addEventListener('blur', () => setTimeout(fecharLista, 120));
+
+    document.querySelectorAll<HTMLButtonElement>('.ug__chip[data-g]').forEach((b) =>
+      b.addEventListener('click', () => { const g = porId.get(b.dataset.g!); if (g) escolherLista(g); }),
+    );
+
+    function escolherLista(g: Guitarra) {
+      escolha = { tipo: 'lista', g };
+      busca.value = '';
+      fecharLista();
+      atualizar(true);
+    }
+
+    outroForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = new FormData(outroForm);
+      escolha = { tipo: 'outra', g: montarOutra(String(f.get('f')), String(f.get('c')), String(f.get('p')), String(f.get('t'))) };
+      atualizar(true);
+    });
+
+    function montarOutra(f: string, c: string, p: string, t: string): GuitarraBase & { ceramico: null } {
+      const formato = (['strato', 'tele', 'superstrato', 'lespaul', 'sg'].includes(f) ? f : 'strato') as Guitarra['formato'];
+      const captacao = (formato === 'tele' ? 'TT' : ['SSS', 'HSS', 'HH', 'HSH', 'TT'].includes(c) ? c : 'SSS') as Guitarra['captacao'];
+      const ponte = (['tremolo', 'fixa', 'tele', 'tom'].includes(p) ? p : 'tremolo') as Guitarra['ponte'];
+      const tarraxas = (t === '3+3' ? '3+3' : '6L') as Guitarra['tarraxas'];
+      const chave: Guitarra['chave'] =
+        formato === 'lespaul' || formato === 'sg' ? 'toggle3' : captacao === 'TT' ? 'lamina3' : captacao === 'HH' ? null : 'lamina5';
+      return { formato, captacao, ponte, tarraxas, tarraxaTipo: null, nut: 'não informado', chave, ceramico: null };
+    }
+
+    document.querySelectorAll<HTMLInputElement>('input[name="ug-obj"]').forEach((r) =>
+      r.addEventListener('change', () => { if (r.checked) { objetivo = r.value as Objetivo; atualizar(false); } }),
+    );
+
+    // ------------------------------------------------------------ resultado
+    const ORDEM_NIVEL: Record<Nivel, number> = { direto: 0, ajuste: 1, parcial: 2, dispensa: 3, nao: 4 };
+    const SELO: Record<Nivel, string> = {
+      direto: 'Serve direto',
+      ajuste: 'Serve com luthier',
+      parcial: 'Serve em parte',
+      dispensa: 'A sua já tem',
+      nao: 'Não serve',
+    };
+    const BONUS: Record<Objetivo, Partial<Record<Area, number>>> = {
+      tudo: {},
+      timbre: { captadores: 5, eletrica: 3 },
+      peso: { captadores: 5 },
+      afinacao: { tarraxas: 5, nut: 4.5 },
+    };
+    // Para captadores, a ordem dos cards depende do objetivo.
+    const SOM: Record<Objetivo, Record<string, number>> = {
+      tudo: {},
+      timbre: { vintage: 0, quente: 1, versatil: 2, pesado: 3 },
+      peso: { pesado: 0, versatil: 1, quente: 2, vintage: 3 },
+      afinacao: {},
+    };
+
+    function card(p: Peca, nivel: Nivel, motivo: string) {
+      const o = ofertas[p.id];
+      const img = o.imagem ? `<img src="${esc(o.imagem)}" alt="" width="64" height="64" loading="lazy" />` : '';
+      return `<div class="ug__card">
+        <div class="ug__card-topo">${img}<div>
+          <span class="ug__selo ug__selo--${nivel}">${SELO[nivel]}</span>
+          <h4>${esc(p.curto)}</h4>
+        </div></div>
+        <p class="ug__motivo">${esc(motivo)}${p.generica ? ' Peça sem marca: barata, mas sem histórico de qualidade.' : ''}</p>
+        <p class="ug__preco"><b>${reais(o.preco)}</b>${o.pix ? ' no Pix' : ''} · em ${esc(o.precoEm)}</p>
+        <div class="ug__acoes">
+          <a class="ug__btn" href="${esc(o.meli)}" target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto="${p.id}" data-bloco="upgrade-guitarra"${o.valor ? ` data-valor="${o.valor}"` : ''}>Ver no Mercado Livre</a>
+          <a class="ug__ficha-link" href="/produto/${p.id}/">ficha</a>
+        </div>
+      </div>`;
+    }
+
+    function fichaHtml(e: Escolha) {
+      if (e.tipo === 'outra') {
+        const g = e.g;
+        return `<div class="ug__ficha">
+          <h2>Sua guitarra</h2>
+          <p class="ug__ficha-sub">${esc(NOME_FORMATO[g.formato])}, descrita por você</p>
+          <dl>
+            <dt>Captadores</dt><dd>${esc(NOME_CAPTACAO[g.captacao])}</dd>
+            <dt>Ponte</dt><dd>${esc(NOME_PONTE[g.ponte])}</dd>
+            <dt>Tarraxas</dt><dd>${g.tarraxas === '3+3' ? '3 de cada lado' : '6 do mesmo lado'}</dd>
+          </dl>
+          <p class="ug__aviso">Sem a ficha de fábrica, confira na sua o tipo de tarraxa (blindada ou vintage) e o formato do nut antes de comprar.</p>
+        </div>`;
+      }
+      const g = e.g;
+      const link = produtos[g.id] ? ` · <a href="${produtos[g.id]}">ver preço da ${esc(g.modelo.replace(/ \(.*\)$/, ''))}</a>` : '';
+      const foto = fotos[g.id]
+        ? `<figure class="ug__foto"><img src="${esc(fotos[g.id])}" alt="${esc(rotulo(g))}" loading="lazy" /></figure>`
+        : '';
+      return `<div class="ug__ficha${foto ? ' ug__ficha--foto' : ''}">${foto}
+        <h2>${esc(rotulo(g))}</h2>
+        <p class="ug__ficha-sub">${esc(NOME_FORMATO[g.formato])}, ${esc(NOME_CAPTACAO[g.captacao])}</p>
+        <dl>
+          <dt>Captadores</dt><dd>${esc(g.captadores)}</dd>
+          <dt>Ponte</dt><dd>${esc(g.ponteTexto)}</dd>
+          <dt>Tarraxas</dt><dd>${g.tarraxas === '3+3' ? '3+3' : '6 em linha'}, ${esc(g.tarraxasTexto)}</dd>
+          <dt>Nut</dt><dd>${esc(g.nut)}${g.nutMm ? `, ${g.nutMm.toLocaleString('pt-BR')} mm` : ''}</dd>
+          <dt>Controles</dt><dd>${esc(g.controles)}</dd>
+          <dt>Escala</dt><dd>${esc(g.escala)}${g.trastes ? `, ${g.trastes} trastes` : ''}</dd>
+        </dl>
+        <p class="ug__fonte">De fábrica, segundo ${esc(g.dado === 'fabricante' ? g.fonte : ORIGEM_DADO[g.dado])}${link}</p>
+        ${g.confirmar ? `<p class="ug__aviso">Confira na sua: ${esc(g.confirmar)}.</p>` : ''}
+      </div>`;
+    }
+
+    function atualizar(rolar: boolean) {
+      document.querySelectorAll<HTMLButtonElement>('.ug__chip[data-g]').forEach((b) =>
+        b.setAttribute('aria-pressed', String(escolha?.tipo === 'lista' && escolha.g.id === b.dataset.g)),
+      );
+      if (!escolha) {
+        selEl.innerHTML = '';
+        res.innerHTML = '<p class="ug__vazio">Escolha a sua guitarra para ver o que vem nela de fábrica e o que serve no upgrade.</p>';
+        copiar.hidden = true;
+        return;
+      }
+      const g = escolha.g;
+      selEl.innerHTML =
+        escolha.tipo === 'lista'
+          ? `${miniatura(escolha.g.id, 52)}<span><b>${esc(rotulo(escolha.g))}</b><small>${esc(NOME_CAPTACAO[g.captacao])}, ponte ${esc(NOME_PONTE[g.ponte])}</small></span>`
+          : `<b>Sua guitarra (${esc(NOME_FORMATO[g.formato])})</b><small>${esc(NOME_CAPTACAO[g.captacao])}, ponte ${esc(NOME_PONTE[g.ponte])}</small>`;
+
+      // Avalia todas as peças com anúncio ativo.
+      const avaliadas = PECAS.filter((p) => ofertas[p.id])
+        .map((p) => ({ p, v: avaliar(p, g), area: AREA_DA_PECA[p.tipo] }))
+        .filter((x): x is { p: Peca; v: NonNullable<typeof x.v>; area: Area } => !!x.v);
+
+      const prio = prioridades(g)
+        .map((x) => ({ ...x, peso: x.peso + (BONUS[objetivo][x.area] ?? 0) }))
+        .sort((a, b) => b.peso - a.peso);
+
+      const ordem = `<div class="ug__ordem">
+        <h3>Por onde começar</h3>
+        <ol>
+          <li><strong>Regulagem com um luthier</strong> antes de qualquer peça: altura das cordas, oitavas e tensor resolvem a maior parte do trastejado e da desafinação. <a href="/blog/como-fazer-manutencao-guitarra-em-casa/">O que dá para fazer em casa</a>.</li>
+          ${prio.filter((x) => x.peso > 0).map((x) => `<li><strong>${NOME_AREA[x.area]}:</strong> ${esc(x.texto)}</li>`).join('')}
+        </ol>
+      </div>`;
+
+      const secoes = prio
+        .map((x) => {
+          const som = SOM[objetivo];
+          const itens = avaliadas
+            .filter((a) => a.area === x.area && a.v.nivel !== 'nao')
+            .sort(
+              (a, b) =>
+                ORDEM_NIVEL[a.v.nivel] - ORDEM_NIVEL[b.v.nivel] ||
+                (som[a.p.som ?? ''] ?? 9) - (som[b.p.som ?? ''] ?? 9) ||
+                ofertas[a.p.id].preco - ofertas[b.p.id].preco,
+            );
+          if (!itens.length) return '';
+          return `<section class="ug__area">
+            <h3>${NOME_AREA[x.area]}</h3>
+            <div class="ug__cards">${itens.map((a) => card(a.p, a.v.nivel, a.v.motivo)).join('')}</div>
+          </section>`;
+        })
+        .join('');
+
+      const nao = avaliadas.filter((a) => a.v.nivel === 'nao');
+      const naoHtml = nao.length
+        ? `<details class="ug__nao"><summary>O que não serve na sua e por quê (${nao.length})</summary><ul>${nao
+            .map((a) => `<li><b>${esc(a.p.curto)}:</b> ${esc(a.v.motivo)}</li>`)
+            .join('')}</ul></details>`
+        : '';
+
+      res.innerHTML = fichaHtml(escolha) + ordem + secoes + naoHtml;
+      copiar.hidden = false;
+      salvarUrl();
+      if (rolar && window.matchMedia('(max-width: 959px)').matches) res.scrollIntoView({ behavior: 'auto', block: 'start' });
+    }
+
+    // ------------------------------------------------------------ URL (?g=id ou ?f=&c=&p=&t=, mais &o=)
+    function salvarUrl() {
+      const q = new URLSearchParams();
+      if (escolha?.tipo === 'lista') q.set('g', escolha.g.id);
+      else if (escolha) {
+        q.set('f', escolha.g.formato);
+        q.set('c', escolha.g.captacao);
+        q.set('p', escolha.g.ponte);
+        q.set('t', escolha.g.tarraxas);
+      }
+      if (objetivo !== 'tudo') q.set('o', objetivo);
+      const s = q.toString();
+      history.replaceState(null, '', location.pathname + (s ? `?${s}` : ''));
+    }
+    function lerUrl() {
+      const q = new URLSearchParams(location.search);
+      const o = q.get('o');
+      if (o && ['timbre', 'peso', 'afinacao'].includes(o)) {
+        objetivo = o as Objetivo;
+        const r = document.querySelector<HTMLInputElement>(`input[name="ug-obj"][value="${o}"]`);
+        if (r) r.checked = true;
+      }
+      const g = q.get('g');
+      if (g && porId.has(g)) escolha = { tipo: 'lista', g: porId.get(g)! };
+      else if (q.get('f')) {
+        escolha = { tipo: 'outra', g: montarOutra(q.get('f')!, q.get('c') ?? '', q.get('p') ?? '', q.get('t') ?? '') };
+        outroBox.open = true;
+      }
+      if (escolha) atualizar(false);
+    }
+    copiar.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(location.href);
+        copiar.textContent = 'Link copiado';
+      } catch {
+        copiar.textContent = 'Copie o endereço da barra do navegador';
+      }
+      setTimeout(() => (copiar.textContent = 'Copiar o link deste resultado'), 2500);
+    });
+
+    lerUrl();
+  }
+</script>

@@ -1,0 +1,42 @@
+{
+  "nome": "Trava de correia Dunlop Straplok (par)",
+  "meli": "https://meli.la/1oUgpPA",
+  "preco": 202,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Dunlop"
+    ],
+    [
+      "Modelo",
+      "Straplok Traditional SLS1503BK"
+    ],
+    [
+      "Tipo",
+      "Trava de correia (par)"
+    ],
+    [
+      "Instalação",
+      "Troca os pinos de correia da guitarra"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 213,
+    "off": 5,
+    "parcelas": "12x R$ 20,03",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/strap-lock-trava-de-correia-dunlop-straplok-traditional-sls1503bk-preto-black-oxide-para-guitarra-baixo-e-violao-par-palheta-groover/p/MLB81044159"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 202
+    }
+  ],
+  "imagem": "/images/produtos/dunlop-straplok.webp",
+  "imagemAlt": "Trava de correia Dunlop Straplok (par)"
+}

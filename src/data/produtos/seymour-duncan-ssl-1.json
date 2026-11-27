@@ -1,0 +1,48 @@
+{
+  "nome": "Captador Seymour Duncan SSL-1 Vintage Staggered (Strat)",
+  "meli": "https://meli.la/21DbsCd",
+  "preco": 911,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Seymour Duncan"
+    ],
+    [
+      "Modelo",
+      "SSL-1 Vintage Staggered"
+    ],
+    [
+      "Tipo",
+      "Single coil"
+    ],
+    [
+      "Ímã",
+      "Alnico 5"
+    ],
+    [
+      "Formato",
+      "Stratocaster (tamanho padrão)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 990,
+    "off": 8,
+    "pix": true,
+    "cartao": 990,
+    "parcelas": "10x R$ 99 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/captador-seymour-duncan-ssl-1-vintage-staggered-strat-branco/p/MLB28257307"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 911
+    }
+  ],
+  "imagem": "/images/produtos/seymour-duncan-ssl-1.webp",
+  "imagemAlt": "Captador Seymour Duncan SSL-1 Vintage Staggered (Strat)"
+}

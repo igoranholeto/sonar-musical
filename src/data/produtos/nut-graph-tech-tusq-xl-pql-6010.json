@@ -1,0 +1,39 @@
+{
+  "nome": "Nut Graph Tech Tusq XL PQL-6010 (estilo Gibson)",
+  "meli": "https://meli.la/29TmzS6",
+  "preco": 149,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Graph Tech"
+    ],
+    [
+      "Modelo",
+      "Tusq XL PQL-6010-AG"
+    ],
+    [
+      "Material",
+      "Tusq XL (autolubrificado)"
+    ],
+    [
+      "Formato",
+      "Estilo Gibson, 43 mm, já com rasgos"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/nut-aged-graphtech-tusq-xl-jumbo-gibson-pql-6010-ag/up/MLBU726542539"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 149
+    }
+  ],
+  "imagem": "/images/produtos/nut-graph-tech-tusq-xl-pql-6010.webp",
+  "imagemAlt": "Nut Graph Tech Tusq XL PQL-6010 (estilo Gibson)"
+}

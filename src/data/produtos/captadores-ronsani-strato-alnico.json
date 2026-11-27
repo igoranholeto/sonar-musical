@@ -1,0 +1,40 @@
+{
+  "nome": "Captadores Ronsani Strato Alnico V (set com 3)",
+  "meli": "https://meli.la/2Mf2MyL",
+  "preco": 280,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Ronsani"
+    ],
+    [
+      "Tipo",
+      "Single coil (3 unidades)"
+    ],
+    [
+      "Ímã",
+      "Alnico V"
+    ],
+    [
+      "Formato",
+      "Stratocaster (tamanho padrão)"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "12x R$ 27,38",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/kit-de-captadores-para-guitarra-eletrica-ronsani-strato-alnico-v-branco/p/MLB28719892"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 280
+    }
+  ],
+  "imagem": "/images/produtos/captadores-ronsani-strato-alnico.webp",
+  "imagemAlt": "Captadores Ronsani Strato Alnico V (set com 3)"
+}

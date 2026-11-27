@@ -1,0 +1,39 @@
+{
+  "nome": "Potenciômetro CTS A500K (eixo curto)",
+  "meli": "https://meli.la/2EQL6N6",
+  "preco": 122,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "CTS"
+    ],
+    [
+      "Valor",
+      "500k logarítmico (A)"
+    ],
+    [
+      "Eixo",
+      "Curto, estriado de 24 dentes"
+    ],
+    [
+      "Uso",
+      "Volume e tone de guitarra com humbucker"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/potenciometro-cts-a500s-short-log-500k-haste-curta-guitarra/up/MLBU3519895247"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 122
+    }
+  ],
+  "imagem": "/images/produtos/potenciometro-cts-a500k-curto.webp",
+  "imagemAlt": "Potenciômetro CTS A500K (eixo curto)"
+}
