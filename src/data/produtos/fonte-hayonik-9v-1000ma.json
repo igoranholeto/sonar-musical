@@ -1,0 +1,45 @@
+{
+  "nome": "Fonte Hayonik 9V 1000 mA (daisy chain, 4 pedais)",
+  "meli": "https://meli.la/1c4kJxc",
+  "preco": 41,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Hayonik"
+    ],
+    [
+      "Tipo",
+      "Fonte daisy chain (não isolada)"
+    ],
+    [
+      "Saídas",
+      "1 saída 9V 1000 mA com cabo para 4 pedais"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "Bivolt"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 46,
+    "off": 10,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-para-pedais-9v-1000ma-4-pedal-guitarra-baixo-hayonik/up/MLBU1417189162"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 41
+    }
+  ],
+  "imagem": "/images/produtos/fonte-hayonik-9v-1000ma.webp",
+  "imagemAlt": "Fonte Hayonik 9V 1000 mA (daisy chain, 4 pedais)"
+}

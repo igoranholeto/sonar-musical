@@ -1,0 +1,50 @@
+{
+  "nome": "Fonte isolada Joyo JP-07 (8 saídas + 3 tomadas)",
+  "meli": "https://meli.la/31SAHcS",
+  "preco": 1382,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Joyo"
+    ],
+    [
+      "Modelo",
+      "JP-07"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "3 x 9V 500 mA, 3 x 9V 100 mA, 1 x 12V 500 mA, 1 x 18V 500 mA, 3 tomadas para pedaleira ou amplificador"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "Bivolt"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1454,
+    "off": 5,
+    "parcelas": "12x R$ 134,18",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-isolada-joyo-power-supply-7-para-9-pedais-com-saidas-usb-e-voltagens/p/MLB41444849"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1382
+    }
+  ],
+  "imagem": "/images/produtos/fonte-joyo-jp-07.webp",
+  "imagemAlt": "Fonte isolada Joyo JP-07 (8 saídas + 3 tomadas)"
+}

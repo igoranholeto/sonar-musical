@@ -1,0 +1,48 @@
+{
+  "nome": "Fonte isolada Vitoos AD10S-SV4 (10 saídas)",
+  "meli": "https://meli.la/2GXJGqM",
+  "preco": 1349,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Vitoos"
+    ],
+    [
+      "Modelo",
+      "AD10S-SV4"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "4 x 9V 250 mA, 2 x 9V 500 mA, 4 x 9V/12V/18V 450 mA, USB 5V 1 A"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "100 a 240 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "10x R$ 134,90 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-isolada-vitoos-ad10s-sv4-pedal-pedaleira-efeito-power/up/MLBU5454453885"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1349
+    }
+  ],
+  "imagem": "/images/produtos/fonte-vitoos-ad10s-sv4.webp",
+  "imagemAlt": "Fonte isolada Vitoos AD10S-SV4 (10 saídas)"
+}

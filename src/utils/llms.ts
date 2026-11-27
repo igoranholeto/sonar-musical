@@ -41,6 +41,7 @@ const FERRAMENTAS = [
   { nome: 'Dicionário de acordes', url: '/acordes/', texto: 'diagramas de acordes de violão e guitarra (maior, menor, 7, m7, maj7, sus4) com o som do acorde' },
   { nome: 'Gerador de escalas', url: '/gerador-de-escalas/', texto: 'escolha a tônica e a escala (maior, menor, pentatônica, blues) e veja as notas no braço da guitarra, com áudio' },
   { nome: 'Quiz: qual guitarra é pra você', url: '/qual-guitarra/', texto: 'três perguntas (nível, som e orçamento) que terminam em uma recomendação de guitarra' },
+  { nome: 'Calculadora de fonte para pedais', url: '/calculadora-de-fonte-para-pedais/', texto: 'consumo em mA de mais de 80 pedais e pedaleiras e quais fontes à venda no Brasil alimentam o pedalboard, saída por saída' },
   { nome: 'Tablaturas', url: '/tablaturas/', texto: 'tablaturas de guitarra e violão em PDF, por música ou artista' },
   { nome: 'Rock Star Quest', url: '/aprender/', texto: 'RPG em pixel art para aprender teoria musical jogando' },
 ];

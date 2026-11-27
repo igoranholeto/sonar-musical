@@ -1,0 +1,50 @@
+{
+  "nome": "Fonte isolada Caline CP-204 (8 saídas)",
+  "meli": "https://meli.la/23VsH9H",
+  "preco": 209,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Caline"
+    ],
+    [
+      "Modelo",
+      "CP-204"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "6 x 9V 100 mA, 1 x 9V 500 mA, 1 x 9V/12V 300 mA"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "Bivolt"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 240,
+    "off": 12,
+    "parcelas": "12x R$ 20,73",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-isolada-8-pedais-power-supply-caline-cp-204-nf-gtia/up/MLBU3074168060"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 209
+    }
+  ],
+  "imagem": "/images/produtos/fonte-caline-cp-204.webp",
+  "imagemAlt": "Fonte isolada Caline CP-204 (8 saídas)"
+}

@@ -1,0 +1,50 @@
+{
+  "nome": "Fonte isolada Landscape Isopower 3S",
+  "meli": "https://meli.la/1T1i6Cb",
+  "preco": 813,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Landscape"
+    ],
+    [
+      "Modelo",
+      "Isopower 3S"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "3 seções isoladas de 9V 1000 mA (2 plugues por seção)"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "100 a 240 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 929,
+    "off": 12,
+    "parcelas": "10x R$ 81,30 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-isolada-isopower-3s-landscape-pedais-9-volts/up/MLBU3798026201"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 813
+    }
+  ],
+  "imagem": "/images/produtos/fonte-landscape-isopower-3s.webp",
+  "imagemAlt": "Fonte isolada Landscape Isopower 3S"
+}

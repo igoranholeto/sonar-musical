@@ -1,0 +1,715 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Trilha from '../components/Trilha.astro';
+import FAQ from '../components/FAQ.astro';
+import { FONTES, ORIGEM_DADO, PEDAIS } from '../data/fontes-pedais';
+import { carregarOfertas, fmtData, reais } from '../utils/ofertas';
+import { absUrl, ORG_ID, WEBSITE_ID } from '../utils/schema';
+
+// Calculadora de fonte para pedais. O leitor monta o pedalboard (lista de pedais com consumo
+// conferido no fabricante) e a página mostra quais fontes à venda no Mercado Livre dão conta,
+// com o mapa de qual pedal vai em qual saída. Sem JavaScript sobram as tabelas de consumo e de
+// fontes, que também são o conteúdo que o Google lê. Dados em src/data/fontes-pedais.ts.
+
+const path = '/calculadora-de-fonte-para-pedais/';
+const ofertas = await carregarOfertas();
+
+// Fontes com anúncio ativo, da mais barata para a mais cara.
+const fontes = FONTES.map((f) => ({ f, o: ofertas.get(f.id) }))
+  .filter((x): x is { f: (typeof FONTES)[number]; o: NonNullable<typeof x.o> } => !!x.o && x.o.status === 'ativo')
+  .sort((a, b) => a.o.preco - b.o.preco);
+const hoje = fontes[0]?.o.precoEm ?? new Date();
+
+const dadosCliente = {
+  pedais: PEDAIS.map(({ dado, produto, ...p }) => p),
+  fontes: fontes.map(({ f, o }) => ({
+    ...f,
+    nome: o.nome,
+    preco: o.preco,
+    pix: !!o.pix,
+    precoEm: fmtData(o.precoEm),
+    meli: o.meli,
+    imagem: o.imagem,
+    valor: o.valorClique,
+  })),
+};
+
+// Tabela de consumo agrupada por marca (Boss primeiro: é a marca mais comum nos pedalboards).
+const marcas = [...new Set(PEDAIS.map((p) => p.marca))].sort((a, b) =>
+  a === 'Boss' ? -1 : b === 'Boss' ? 1 : a.localeCompare(b, 'pt-BR'),
+);
+const produtoExiste = (id?: string) => !!id && ofertas.has(id);
+
+const descSaida = (o: { v: number; ma: number }[]) => o.map((x) => `${x.v} V ${x.ma.toLocaleString('pt-BR')} mA`).join(' ou ');
+function resumoSaidas(f: (typeof FONTES)[number]): string {
+  const grupos = new Map<string, number>();
+  for (const s of f.saidas) {
+    const k = descSaida(s.opcoes) + (s.plugues ? ` (${s.plugues} plugues)` : '');
+    grupos.set(k, (grupos.get(k) ?? 0) + 1);
+  }
+  const partes = [...grupos].map(([k, n]) => `${n} x ${k}`);
+  if (f.usb) partes.push(`${f.usb} USB 5 V`);
+  if (f.tomadas) partes.push(`${f.tomadas} tomadas`);
+  return partes.join(', ');
+}
+
+const populares = ['boss-tu-3', 'boss-ds-1', 'boss-sd-1', 'boss-bd-2', 'boss-mt-2', 'boss-cs-3', 'boss-dd-8', 'boss-rv-6', 'ibanez-ts9', 'ehx-big-muff-pi', 'nux-mg-30', 'boss-rc-1'];
+const nomePedal = (id: string) => {
+  const p = PEDAIS.find((x) => x.id === id)!;
+  return p.marca === 'Boss' ? p.nome.split(' ')[0] : p.nome;
+};
+
+const faq = [
+  {
+    question: 'Como calcular a fonte certa para os meus pedais?',
+    answer:
+      'Anote três coisas de cada pedal: a tensão (quase sempre 9 V), o consumo em mA e a polaridade (centro negativo na maioria). Cada pedal precisa de uma saída com a mesma tensão e com corrente igual ou maior que o consumo dele. Some o consumo de todos e deixe uns 20% de folga. A calculadora desta página faz essa conta saída por saída.',
+  },
+  {
+    question: 'Uma fonte de 9 V e 1 A aguenta quantos pedais?',
+    answer:
+      'Em corrente, bastante: 1000 mA alimentam dezenas de pedais analógicos de 10 a 30 mA, como DS-1 e SD-1. O limite real é o ruído. Numa fonte daisy chain todos os pedais dividem o mesmo circuito, e com 4 ou 5 pedais, ou com um pedal digital no meio, aparece chiado. Para pedais digitais, o melhor é uma fonte isolada.',
+  },
+  {
+    question: 'Posso usar uma fonte com mais mA do que o pedal pede?',
+    answer:
+      'Pode. O pedal puxa só a corrente de que precisa, então uma saída de 500 mA alimenta sem problema um pedal de 20 mA. O que não pode errar é a tensão (9 V em pedal de 9 V) e a polaridade: o plugue tem de ser centro negativo, que é o padrão dos pedais.',
+  },
+  {
+    question: 'O que é fonte isolada e quando ela vale a pena?',
+    answer:
+      'Na fonte isolada, cada saída tem um circuito separado. Isso corta o ruído que aparece quando vários pedais dividem o mesmo terra, comum com delays, reverbs e loopers digitais. Com dois ou três pedais analógicos, um cabo daisy chain resolve. A partir de um pedal digital, a fonte isolada costuma ser o fim do chiado. Veja mais no guia de <a href="/blog/fonte-para-pedal/">fonte para pedal</a>.',
+  },
+  {
+    question: 'Pedal de 9 V funciona em 12 V ou 18 V?',
+    answer:
+      'Só quando o fabricante permite, como o Xotic EP Booster, que aceita de 9 a 18 V. Um pedal comum de 9 V pode queimar em 18 V. Na Boss, a linha compacta trabalha em 9 V e usa as fontes PSA.',
+  },
+  {
+    question: 'De onde vêm os dados de consumo dos pedais?',
+    answer:
+      'Os pedais e pedaleiras da Boss vêm da página de especificações de cada modelo no site da Boss. Os outros vêm da ficha técnica do fabricante ou do banco PedalPedia, da RockBoard. A tabela abaixo indica a origem de cada número. Na dúvida, confira a etiqueta embaixo do pedal ou o manual.',
+  },
+];
+
+const titulo = 'Calculadora de Fonte para Pedais: Consumo em mA e Qual Fonte Comprar';
+const descricao =
+  'Monte seu pedalboard e veja o consumo em mA de cada pedal, quanto a fonte precisa entregar e quais fontes à venda no Brasil dão conta, saída por saída.';
+
+// O BreadcrumbList sai do componente Trilha.
+const schema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebApplication',
+  '@id': absUrl(path) + '#app',
+  name: 'Calculadora de fonte para pedais',
+  url: absUrl(path),
+  description: descricao,
+  applicationCategory: 'UtilitiesApplication',
+  operatingSystem: 'Web',
+  inLanguage: 'pt-BR',
+  isAccessibleForFree: true,
+  offers: { '@type': 'Offer', price: '0', priceCurrency: 'BRL' },
+  publisher: { '@id': ORG_ID },
+  isPartOf: { '@id': WEBSITE_ID },
+};
+---
+
+<BaseLayout title={titulo} description={descricao} schema={schema}>
+  <section class="fp">
+    <Trilha itens={[{ name: 'Início', path: '/' }, { name: 'Ferramentas', path: '/ferramentas/' }, { name: 'Calculadora de fonte para pedais', path }]} />
+
+    <header class="fp__head">
+      <span class="fp__kicker"><span class="fp__dot" aria-hidden="true"></span> {PEDAIS.length} pedais e pedaleiras · {fontes.length} fontes à venda</span>
+      <h1>Calculadora de fonte para pedais</h1>
+      <p class="fp__sub">
+        Escolha os pedais do seu pedalboard. A calculadora soma o consumo, confere tensão e corrente de cada um e mostra quais
+        fontes dão conta, com o mapa de qual pedal vai em qual saída.
+      </p>
+    </header>
+
+    <div class="fp__app" id="fp-app" data-js-off>
+      <p class="fp__semjs">A calculadora precisa de JavaScript. As tabelas de consumo e de fontes logo abaixo funcionam sem ele.</p>
+
+      <div class="fp__painel">
+        <h2 class="fp__h">1. Seus pedais</h2>
+        <div class="fp__busca">
+          <label for="fp-busca" class="fp__oculto">Buscar pedal pelo nome ou pela marca</label>
+          <svg class="fp__lupa" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7" /><path d="m20 20-3.5-3.5" /></svg>
+          <input
+            id="fp-busca"
+            type="text"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="fp-opcoes"
+            autocomplete="off"
+            placeholder="Busque o pedal: DS-1, MG-30, Big Muff..."
+          />
+          <ul id="fp-opcoes" class="fp__opcoes" role="listbox" hidden></ul>
+        </div>
+
+        <div class="fp__populares" aria-label="Pedais mais comuns">
+          <span>Mais comuns:</span>
+          {populares.map((id) => <button type="button" class="fp__chip" data-add={id}>+ {nomePedal(id)}</button>)}
+        </div>
+
+        <ol class="fp__sel" id="fp-sel" aria-live="polite"></ol>
+        <p class="fp__vazio" id="fp-vazio">Nenhum pedal ainda. Busque acima ou toque num dos mais comuns.</p>
+
+        <details class="fp__outro">
+          <summary>Meu pedal não está na lista</summary>
+          <form id="fp-outro" class="fp__outro-form">
+            <label>Nome <input name="nome" type="text" required maxlength="40" placeholder="Ex.: Fuzz caseiro" /></label>
+            <label>Tensão
+              <select name="v">
+                <option value="9">9 V</option>
+                <option value="12">12 V</option>
+                <option value="18">18 V</option>
+              </select>
+            </label>
+            <label>Consumo (mA) <input name="ma" type="number" min="1" max="5000" required inputmode="numeric" placeholder="100" /></label>
+            <label class="fp__check"><input name="digital" type="checkbox" /> É digital (delay, reverb, looper, multiefeito)</label>
+            <button type="submit">Adicionar</button>
+            <p class="fp__dica">O consumo vem impresso embaixo do pedal, perto do plugue, ou no manual (procure "Current Draw").</p>
+          </form>
+        </details>
+
+        <label class="fp__check fp__daisy">
+          <input type="checkbox" id="fp-daisy" />
+          Aceito daisy chain: até 3 pedais analógicos dividindo a mesma saída
+        </label>
+      </div>
+
+      <div class="fp__painel fp__painel--res">
+        <h2 class="fp__h">2. Do que a fonte precisa</h2>
+        <div id="fp-resumo" class="fp__resumo" aria-live="polite"></div>
+        <h2 class="fp__h">3. Fontes que dão conta</h2>
+        <div id="fp-res" class="fp__res" aria-live="polite"></div>
+        <button type="button" class="fp__copiar" id="fp-copiar" hidden>Copiar o link deste pedalboard</button>
+      </div>
+    </div>
+
+    <script type="application/json" id="fp-dados" set:html={JSON.stringify(dadosCliente)} />
+
+    <article class="fp__texto">
+      <h2>Como a calculadora escolhe a fonte</h2>
+      <p>
+        Cada pedal precisa de uma saída com a mesma tensão que ele usa e com corrente igual ou maior que o consumo dele. A
+        calculadora distribui os pedais pelas saídas de cada fonte, começando pelos que gastam mais, e mostra o mapa: qual
+        pedal vai em qual saída e quanto sobra. Os pedais de 12 V e 18 V vão primeiro para as saídas que aceitam essas
+        tensões.
+      </p>
+      <ul>
+        <li><strong>Tensão:</strong> quase todo pedal trabalha em 9 V. Pedal de 9 V em saída de 18 V pode queimar.</li>
+        <li><strong>Corrente:</strong> o número em mA é o consumo máximo do pedal. Saída com mais mA do que ele pede não faz mal.</li>
+        <li><strong>Polaridade:</strong> todas as fontes desta página são centro negativo, o padrão dos pedais.</li>
+        <li>
+          <strong>Isolada ou daisy chain:</strong> na fonte isolada, cada pedal tem um circuito só dele. Com pedal digital
+          (delay, reverb, looper, pedaleira), ela é o jeito mais seguro de evitar chiado.
+        </li>
+      </ul>
+      <p>
+        Pedaleiras que pedem 3 A, como a HX Stomp e a Quad Cortex, não cabem em saída de fonte de pedal: use a fonte que vem na
+        caixa. Para a teoria completa, com exemplos de pedalboard, leia o guia de
+        <a href="/blog/fonte-para-pedal/">fonte para pedal de guitarra</a> e o de
+        <a href="/blog/como-montar-pedalboard/">como montar pedalboard</a>.
+      </p>
+
+      <h2 id="consumo">Consumo dos pedais em mA</h2>
+      <p>
+        Tensão e consumo máximo de {PEDAIS.length} pedais e pedaleiras, conferidos em 26/11/2026. Os da Boss saem do site da
+        Boss; a coluna "Dado" mostra a origem dos outros.
+      </p>
+      <div class="fp__tabela">
+        <table>
+          <thead>
+            <tr><th scope="col">Pedal</th><th scope="col">Tensão</th><th scope="col">Consumo</th><th scope="col">Circuito</th><th scope="col">Dado</th></tr>
+          </thead>
+          {marcas.map((m) => (
+            <tbody>
+              <tr class="fp__marca"><th scope="rowgroup" colspan="5">{m}</th></tr>
+              {PEDAIS.filter((p) => p.marca === m).map((p) => (
+                <tr>
+                  <th scope="row">
+                    {produtoExiste(p.produto) ? <a href={`/produto/${p.produto}/`}>{p.marca} {p.nome}</a> : `${p.marca} ${p.nome}`}
+                    {p.obs && <small>{p.obs}</small>}
+                  </th>
+                  <td>{p.alimentacao === 'tomada' ? 'tomada' : p.alimentacao === 'usb' ? 'USB 5 V' : `${p.v} V`}</td>
+                  <td>{p.ma ? `${p.ma.toLocaleString('pt-BR')} mA` : '-'}</td>
+                  <td>{p.pedaleira ? 'pedaleira' : p.digital ? 'digital' : 'analógico'}</td>
+                  <td>{ORIGEM_DADO[p.dado]}</td>
+                </tr>
+              ))}
+            </tbody>
+          ))}
+        </table>
+      </div>
+
+      <h2 id="fontes">Fontes para pedais à venda e o que cada uma entrega</h2>
+      <p>
+        Fontes com anúncio nacional no Mercado Livre. Preços conferidos em {fmtData(hoje)}; as saídas vêm da descrição de
+        cada anúncio.
+      </p>
+      <div class="fp__tabela">
+        <table>
+          <thead>
+            <tr><th scope="col">Fonte</th><th scope="col">Saídas</th><th scope="col">Isolada</th><th scope="col">Preço</th></tr>
+          </thead>
+          <tbody>
+            {fontes.map(({ f, o }) => (
+              <tr>
+                <th scope="row"><a href={`/produto/${f.id}/`}>{o.nome}</a></th>
+                <td>{resumoSaidas(f)}</td>
+                <td>{f.isolada ? 'sim' : 'não'}</td>
+                <td>{reais(o.preco)}{o.pix ? ' no Pix' : ''}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    </article>
+
+    <FAQ items={faq} />
+  </section>
+</BaseLayout>
+
+<!-- Global: os cards e a lista são montados pelo script (innerHTML), que não recebe o escopo do Astro. Tudo usa o prefixo fp__. -->
+<style is:global>
+  .fp { max-width: 72rem; margin: 0 auto; padding: 2.5rem 1rem 5rem; }
+  .fp__head { max-width: 46rem; margin: 0 auto 2rem; text-align: center; }
+  .fp__kicker { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-brand); }
+  .fp__dot { width: 6px; height: 6px; border-radius: 999px; background: var(--color-brand-fill); }
+  .fp h1 { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 800; margin: 0.5rem 0 0.6rem; line-height: 1.15; }
+  .fp__sub { color: var(--color-muted); line-height: 1.6; }
+
+  .fp__app { display: grid; gap: 1.25rem; grid-template-columns: minmax(0, 1fr); }
+  @media (min-width: 960px) { .fp__app { grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); align-items: start; } }
+  .fp__app[data-js-off] .fp__painel { display: none; }
+  .fp__app:not([data-js-off]) .fp__semjs { display: none; }
+  .fp__semjs { padding: 1rem; border: 1px dashed var(--color-border); border-radius: 14px; color: var(--color-muted); }
+  .fp__painel { background: var(--color-elevated); border: 1px solid var(--color-border); border-radius: 18px; padding: 1.25rem; min-width: 0; }
+  @media (min-width: 960px) { .fp__painel--res { position: sticky; top: 88px; } }
+  .fp__h { font-size: 1rem; font-weight: 800; margin: 0 0 0.75rem; }
+  .fp__painel--res .fp__h + * { margin-bottom: 1.25rem; }
+
+  .fp__busca { position: relative; }
+  .fp__lupa { position: absolute; left: 12px; top: 50%; transform: translateY(-50%); color: var(--color-muted); pointer-events: none; }
+  .fp__busca input { width: 100%; padding: 12px 12px 12px 38px; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-foreground); font-size: 16px; }
+  .fp__busca input:focus { outline: none; border-color: var(--color-brand); }
+  .fp__opcoes { position: absolute; z-index: 20; left: 0; right: 0; top: calc(100% + 4px); margin: 0; padding: 4px; list-style: none; background: var(--color-card); border: 1px solid var(--color-border); border-radius: 12px; box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18); max-height: 320px; overflow-y: auto; }
+  .fp__opcoes li { display: flex; justify-content: space-between; gap: 8px; padding: 9px 10px; border-radius: 8px; cursor: pointer; font-size: 14px; }
+  .fp__opcoes li small { color: var(--color-muted); white-space: nowrap; }
+  .fp__opcoes li[aria-selected='true'], .fp__opcoes li:hover { background: color-mix(in srgb, var(--color-brand) 10%, var(--color-card)); }
+  .fp__opcoes .fp__nada { cursor: default; color: var(--color-muted); }
+
+  .fp__populares { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 10px 0 14px; font-size: 13px; color: var(--color-muted); }
+  .fp__chip { padding: 5px 10px; border-radius: 999px; border: 1px solid var(--color-border); background: var(--color-card); color: var(--color-foreground); font-size: 13px; font-weight: 600; cursor: pointer; }
+  .fp__chip:hover { border-color: var(--color-brand); }
+
+  .fp__sel { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .fp__item { display: flex; align-items: center; gap: 8px; padding: 8px 10px; border-radius: 12px; border: 1px solid var(--color-border); background: var(--color-card); }
+  .fp__item-nome { flex: 1; min-width: 0; font-size: 14px; font-weight: 700; line-height: 1.3; }
+  .fp__item-nome small { display: block; font-weight: 500; color: var(--color-muted); font-size: 12.5px; }
+  .fp__qtd { display: inline-flex; align-items: center; border: 1px solid var(--color-border); border-radius: 999px; }
+  .fp__qtd button, .fp__tirar { width: 30px; height: 30px; border: 0; background: none; color: var(--color-foreground); font-size: 17px; line-height: 1; cursor: pointer; border-radius: 999px; }
+  .fp__qtd span { min-width: 1.4em; text-align: center; font-size: 14px; font-weight: 700; }
+  .fp__tirar { color: var(--color-muted); }
+  .fp__tirar:hover, .fp__qtd button:hover { color: var(--color-brand); }
+  .fp__vazio { margin: 4px 0 0; font-size: 14px; color: var(--color-muted); }
+
+  .fp__outro { margin-top: 14px; border-top: 1px solid var(--color-border); padding-top: 10px; }
+  .fp__outro summary { cursor: pointer; font-size: 14px; font-weight: 700; color: var(--color-brand); }
+  .fp__outro-form { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; font-size: 13px; }
+  .fp__outro-form label { display: grid; gap: 4px; color: var(--color-muted); }
+  .fp__outro-form label:first-child, .fp__outro-form .fp__check, .fp__outro-form .fp__dica { grid-column: 1 / -1; }
+  .fp__outro-form input[type='text'], .fp__outro-form input[type='number'], .fp__outro-form select { padding: 9px 10px; border-radius: 10px; border: 1px solid var(--color-border); background: var(--color-surface); color: var(--color-foreground); font-size: 15px; }
+  .fp__outro-form button { grid-column: 1 / -1; justify-self: start; padding: 9px 16px; border: 0; border-radius: 10px; background: var(--color-brand-fill); color: #fff; font-weight: 800; cursor: pointer; }
+  .fp__dica { margin: 0; font-size: 12.5px; color: var(--color-subtle); }
+  .fp__check { display: flex !important; align-items: flex-start; gap: 8px; font-size: 13.5px; color: var(--color-foreground); cursor: pointer; line-height: 1.4; }
+  .fp__check input { margin-top: 2px; accent-color: var(--color-brand-fill); }
+  .fp__daisy { margin-top: 14px; color: var(--color-muted); }
+
+  .fp__resumo { display: grid; gap: 8px; }
+  .fp__total { display: flex; flex-wrap: wrap; gap: 8px; }
+  .fp__total span { padding: 8px 12px; border-radius: 12px; background: var(--color-card); border: 1px solid var(--color-border); font-size: 13px; color: var(--color-muted); }
+  .fp__total b { display: block; font-size: 18px; color: var(--color-foreground); }
+  .fp__aviso { margin: 0; padding: 9px 12px; border-radius: 10px; font-size: 13.5px; line-height: 1.5; background: color-mix(in srgb, #f59e0b 14%, transparent); color: var(--color-foreground); }
+  .fp__aviso--info { background: color-mix(in srgb, var(--color-brand) 9%, transparent); }
+
+  .fp__res { display: grid; gap: 12px; }
+  .fp__card { border: 1px solid var(--color-border); border-radius: 16px; background: var(--color-card); padding: 14px; }
+  .fp__card--top { border-color: color-mix(in srgb, var(--color-brand) 55%, var(--color-border)); }
+  .fp__card-topo { display: flex; gap: 12px; align-items: flex-start; }
+  .fp__card-topo img { flex: none; width: 76px; height: 76px; object-fit: contain; border-radius: 10px; background: #fff; }
+  .fp__card-info { flex: 1; min-width: 0; }
+  .fp__selos { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 4px; }
+  .fp__selo { font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.05em; padding: 2px 7px; border-radius: 6px; background: var(--color-surface); color: var(--color-muted); }
+  .fp__selo--top { background: var(--color-brand-fill); color: #fff; }
+  .fp__selo--ok { background: rgba(21, 128, 61, 0.14); color: #15803d; }
+  .dark .fp__selo--ok { color: #4ade80; }
+  .fp__card h3 { font-size: 15.5px; font-weight: 800; margin: 0; line-height: 1.3; }
+  .fp__preco { margin: 4px 0 0; font-size: 14px; color: var(--color-muted); }
+  .fp__preco b { font-size: 18px; color: var(--color-foreground); }
+  .fp__mapa { margin: 10px 0 0; padding: 0; list-style: none; display: grid; gap: 3px; font-size: 13px; }
+  .fp__mapa li { display: flex; gap: 8px; line-height: 1.4; }
+  .fp__mapa li span:first-child { flex: none; min-width: 9.5em; color: var(--color-muted); font-variant-numeric: tabular-nums; }
+  .fp__mapa .fp__livre { color: var(--color-subtle); }
+  .fp__obs { margin: 8px 0 0; font-size: 12.5px; color: var(--color-muted); line-height: 1.5; }
+  .fp__acoes { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 14px; margin-top: 12px; }
+  .fp__btn { display: inline-block; padding: 10px 16px; border-radius: 10px; background: var(--color-brand-fill); color: #fff !important; font-weight: 800; font-size: 14px; text-decoration: none; }
+  .fp__btn:hover { background: var(--color-brand-dark); }
+  .fp__ficha { font-size: 13px; font-weight: 600; color: var(--color-foreground); text-decoration: underline; text-underline-offset: 2px; }
+  .fp__outras summary { cursor: pointer; font-size: 14px; font-weight: 700; padding: 6px 0; }
+  .fp__outras ul { margin: 6px 0 0; padding-left: 18px; font-size: 13.5px; line-height: 1.6; color: var(--color-muted); }
+  .fp__outras ul a { color: var(--color-foreground); font-weight: 600; }
+  .fp__copiar { margin-top: 14px; background: none; border: 0; padding: 0; color: var(--color-brand); font-weight: 700; font-size: 14px; cursor: pointer; }
+
+  .fp__texto { max-width: 52rem; margin: 3.5rem auto 0; line-height: 1.7; }
+  .fp__texto h2 { font-size: 1.5rem; font-weight: 800; margin: 2.5rem 0 0.75rem; line-height: 1.25; }
+  .fp__texto p, .fp__texto li { color: var(--color-foreground); }
+  .fp__texto ul { padding-left: 1.2rem; display: grid; gap: 0.4rem; margin: 0.75rem 0; }
+  .fp__texto a { color: var(--color-brand); text-decoration: underline; text-underline-offset: 2px; }
+  .fp__tabela { overflow-x: auto; margin: 1rem 0; border: 1px solid var(--color-border); border-radius: 14px; }
+  .fp__tabela table { width: 100%; border-collapse: collapse; font-size: 14px; line-height: 1.4; }
+  .fp__tabela th, .fp__tabela td { padding: 8px 12px; text-align: left; border-bottom: 1px solid var(--color-border); vertical-align: top; }
+  .fp__tabela thead th { font-size: 12px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--color-muted); background: var(--color-elevated); }
+  .fp__tabela tbody th { font-weight: 600; min-width: 13rem; }
+  .fp__tabela tbody th small { display: block; font-weight: 400; font-size: 12.5px; color: var(--color-muted); }
+  .fp__tabela td { white-space: nowrap; }
+  .fp__tabela td:nth-child(2) { white-space: normal; min-width: 12rem; }
+  #consumo + p + .fp__tabela td:nth-child(2) { white-space: nowrap; min-width: 0; }
+  .fp__tabela .fp__marca th { background: var(--color-elevated); font-size: 13px; font-weight: 800; text-transform: uppercase; letter-spacing: 0.06em; color: var(--color-brand); }
+  .fp__tabela tbody:last-child tr:last-child > * { border-bottom: 0; }
+
+  .fp__oculto { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+</style>
+
+<script>
+  type Opcao = { v: number; ma: number };
+  type Saida = { opcoes: Opcao[]; plugues?: number };
+  type Pedal = {
+    id: string; marca: string; nome: string; v: number; ma: number; digital: boolean;
+    pedaleira?: boolean; alimentacao?: 'dc' | 'propria' | 'tomada' | 'usb'; obs?: string;
+  };
+  type Fonte = {
+    id: string; curto: string; nome: string; isolada: boolean; saidas: Saida[]; usb?: number; tomadas?: number;
+    total?: number; obs?: string; preco: number; pix: boolean; precoEm: string; meli: string; imagem?: string; valor?: number;
+  };
+  type Sel = { p: Pedal; n: number };
+
+  const app = document.getElementById('fp-app');
+  const dadosEl = document.getElementById('fp-dados');
+  if (app && dadosEl) {
+    const { pedais, fontes } = JSON.parse(dadosEl.textContent || '{}') as { pedais: Pedal[]; fontes: Fonte[] };
+    app.removeAttribute('data-js-off');
+
+    const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
+    const busca = $<HTMLInputElement>('fp-busca');
+    const lista = $<HTMLUListElement>('fp-opcoes');
+    const selEl = $<HTMLOListElement>('fp-sel');
+    const vazio = $<HTMLElement>('fp-vazio');
+    const resumo = $<HTMLElement>('fp-resumo');
+    const res = $<HTMLElement>('fp-res');
+    const daisy = $<HTMLInputElement>('fp-daisy');
+    const copiar = $<HTMLButtonElement>('fp-copiar');
+
+    const sel: Sel[] = [];
+    const porId = new Map(pedais.map((p) => [p.id, p]));
+    const fmt = (n: number) => n.toLocaleString('pt-BR');
+    const reais = (n: number) => 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+    const esc = (t: string) => t.replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]!);
+    const norm = (t: string) => t.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+    const rotulo = (p: Pedal) => `${p.marca} ${p.nome}`;
+    const meta = (p: Pedal) =>
+      p.alimentacao === 'tomada' ? 'liga na tomada'
+        : p.alimentacao === 'usb' ? 'bateria, carrega pelo USB'
+          : `${p.v} V · ${fmt(p.ma)} mA · ${p.pedaleira ? 'pedaleira' : p.digital ? 'digital' : 'analógico'}`;
+
+    // ------------------------------------------------------------ busca
+    const indice = pedais.map((p) => ({ p, t: norm(`${p.marca} ${p.nome} ${p.nome.replace(/-/g, '')}`) }));
+    let ativos: Pedal[] = [];
+    let cursor = -1;
+    const fecharLista = () => { lista.hidden = true; busca.setAttribute('aria-expanded', 'false'); cursor = -1; };
+    function filtrar() {
+      const q = norm(busca.value);
+      if (!q) return fecharLista();
+      const termos = q.split(' ');
+      ativos = indice.filter((x) => termos.every((t) => x.t.includes(t))).slice(0, 8).map((x) => x.p);
+      lista.innerHTML = ativos.length
+        ? ativos.map((p, i) => `<li role="option" id="fp-op-${i}" data-i="${i}" aria-selected="false"><span>${esc(rotulo(p))}</span><small>${esc(meta(p))}</small></li>`).join('')
+        : '<li class="fp__nada" role="option" aria-disabled="true">Não achamos. Use "Meu pedal não está na lista".</li>';
+      lista.hidden = false;
+      busca.setAttribute('aria-expanded', 'true');
+      cursor = -1;
+    }
+    function marcar(i: number) {
+      cursor = i;
+      lista.querySelectorAll('li[data-i]').forEach((li, k) => li.setAttribute('aria-selected', String(k === i)));
+      if (i >= 0) busca.setAttribute('aria-activedescendant', `fp-op-${i}`);
+      else busca.removeAttribute('aria-activedescendant');
+    }
+    busca.addEventListener('input', filtrar);
+    busca.addEventListener('focus', () => busca.value && filtrar());
+    busca.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowDown') { e.preventDefault(); if (lista.hidden) filtrar(); marcar(Math.min(ativos.length - 1, cursor + 1)); }
+      else if (e.key === 'ArrowUp') { e.preventDefault(); marcar(Math.max(0, cursor - 1)); }
+      else if (e.key === 'Enter') { e.preventDefault(); const p = ativos[cursor >= 0 ? cursor : 0]; if (p && !lista.hidden) escolher(p); }
+      else if (e.key === 'Escape') fecharLista();
+    });
+    lista.addEventListener('mousedown', (e) => {
+      const li = (e.target as Element).closest<HTMLElement>('li[data-i]');
+      if (!li) return;
+      e.preventDefault();
+      escolher(ativos[Number(li.dataset.i)]);
+    });
+    busca.addEventListener('blur', () => setTimeout(fecharLista, 120));
+    function escolher(p: Pedal) {
+      adicionar(p);
+      busca.value = '';
+      fecharLista();
+      busca.focus();
+    }
+
+    // ------------------------------------------------------------ lista do pedalboard
+    function adicionar(p: Pedal, n = 1) {
+      const ja = sel.find((s) => s.p.id === p.id);
+      if (ja) ja.n = Math.min(20, ja.n + n);
+      else sel.push({ p, n });
+      atualizar();
+    }
+    document.querySelectorAll<HTMLButtonElement>('[data-add]').forEach((b) =>
+      b.addEventListener('click', () => { const p = porId.get(b.dataset.add!); if (p) adicionar(p); }),
+    );
+    selEl.addEventListener('click', (e) => {
+      const b = (e.target as Element).closest<HTMLButtonElement>('button[data-acao]');
+      if (!b) return;
+      const i = Number(b.closest<HTMLElement>('[data-k]')!.dataset.k);
+      const s = sel[i];
+      if (b.dataset.acao === 'mais') s.n = Math.min(20, s.n + 1);
+      else if (b.dataset.acao === 'menos') s.n -= 1;
+      if (b.dataset.acao === 'tirar' || s.n <= 0) sel.splice(i, 1);
+      atualizar();
+    });
+
+    let nOutro = 0;
+    $<HTMLFormElement>('fp-outro').addEventListener('submit', (e) => {
+      e.preventDefault();
+      const f = e.currentTarget as HTMLFormElement;
+      const d = new FormData(f);
+      const nome = String(d.get('nome') || '').trim().slice(0, 40);
+      const ma = Math.round(Number(d.get('ma')));
+      if (!nome || !(ma > 0)) return;
+      adicionar({ id: `outro-${++nOutro}`, marca: '', nome, v: Number(d.get('v')) || 9, ma, digital: d.get('digital') === 'on' });
+      f.reset();
+    });
+    daisy.addEventListener('change', atualizar);
+
+    // ------------------------------------------------------------ distribuição dos pedais nas saídas
+    type Uso = { s: Saida; i: number; v: number | null; usados: Pedal[] };
+    type Encaixe = { ok: boolean; usos: Uso[]; sobra: Pedal[]; motivo: string; livres: number };
+
+    const antes = (a: number[], b: number[]) => {
+      for (let k = 0; k < a.length; k++) if (a[k] !== b[k]) return a[k] < b[k];
+      return false;
+    };
+
+    function encaixar(f: Fonte, itens: Pedal[], comDaisy: boolean): Encaixe {
+      const usos: Uso[] = f.saidas.map((s, i) => ({ s, i, v: null, usados: [] }));
+      const cap = (u: Uso, v: number) => u.s.opcoes.find((o) => o.v === v)?.ma ?? 0;
+      const gasto = (u: Uso) => u.usados.reduce((t, p) => t + p.ma, 0);
+      // Tensões raras primeiro, depois o maior consumo (os pequenos se ajeitam no fim).
+      const ordem = [...itens].sort((a, b) => Number(b.v !== 9) - Number(a.v !== 9) || b.ma - a.ma);
+      const sobra: Pedal[] = [];
+      for (const p of ordem) {
+        let melhor: Uso | undefined;
+        let melhorChave: number[] = [];
+        for (const u of usos) {
+          const c = cap(u, p.v);
+          if (!c || (u.v !== null && u.v !== p.v)) continue;
+          if (gasto(u) + p.ma > c) continue;
+          const n = u.usados.length;
+          const plugues = u.s.plugues ?? 1;
+          // 0 saída vazia, 1 plugue extra da própria fonte (1,5 se mistura pedal digital), 2 daisy chain
+          let tipo = 0;
+          if (n >= plugues) {
+            const analogicos = !p.digital && u.usados.every((x) => !x.digital);
+            if (!comDaisy || !analogicos || n >= Math.max(3, plugues)) continue;
+            tipo = 2;
+          } else if (n > 0) tipo = p.digital || u.usados.some((x) => x.digital) ? 1.5 : 1;
+          // Prefere saída vazia, depois saída de uma tensão só (as de 12 V e 18 V ficam para quem
+          // precisa) e, por fim, a que sobra menos corrente.
+          const chave = [tipo, p.v === 9 ? u.s.opcoes.length : 0, c - gasto(u) - p.ma];
+          if (!melhor || antes(chave, melhorChave)) {
+            melhor = u;
+            melhorChave = chave;
+          }
+        }
+        if (melhor) {
+          melhor.usados.push(p);
+          melhor.v = p.v;
+        } else sobra.push(p);
+      }
+      const totalGasto = usos.reduce((t, u) => t + gasto(u), 0);
+      const estourou = !!f.total && totalGasto > f.total;
+      let motivo = '';
+      if (sobra.length) {
+        const p = sobra[0];
+        const comTensao = f.saidas.map((s) => s.opcoes.find((o) => o.v === p.v)?.ma ?? 0).filter(Boolean);
+        if (!comTensao.length) motivo = `não tem saída de ${p.v} V (${rotulo(p).trim()})`;
+        else if (Math.max(...comTensao) < p.ma) motivo = `a saída mais forte de ${p.v} V entrega ${fmt(Math.max(...comTensao))} mA e ${rotulo(p).trim()} pede ${fmt(p.ma)} mA`;
+        else motivo = sobra.length === 1 ? 'falta 1 saída' : `faltam saídas para ${sobra.length} pedais`;
+      } else if (estourou) motivo = `passa do limite total da fonte (cerca de ${fmt(f.total!)} mA)`;
+      return { ok: !sobra.length && !estourou, usos, sobra, motivo, livres: usos.filter((u) => !u.usados.length).length };
+    }
+
+    // ------------------------------------------------------------ desenho
+    const linhaSaida = (u: Uso) => {
+      const desc = u.s.opcoes.map((o) => `${o.v} V ${fmt(o.ma)} mA`).join(' / ');
+      const quem = u.usados.length
+        ? u.usados.map((p) => `${esc(rotulo(p).trim())} <small>(${fmt(p.ma)} mA)</small>`).join(' + ')
+        : '<span class="fp__livre">livre</span>';
+      return `<li><span>Saída ${u.i + 1} · ${desc}</span><span>${quem}</span></li>`;
+    };
+
+    function card(f: Fonte, e: Encaixe, selos: string[], temDigital: boolean, especiais: Pedal[]) {
+      const obs: string[] = [];
+      if (!f.isolada && temDigital && f.saidas.length === 1 && (f.saidas[0].plugues ?? 1) > 1) obs.push('Não é isolada: com pedal digital no mesmo cabo pode aparecer chiado.');
+      if (f.obs) obs.push(f.obs);
+      const usb = especiais.filter((p) => p.alimentacao === 'usb');
+      if (usb.length && f.usb) obs.push(`A saída USB carrega ${usb.map((p) => p.nome).join(' e ')}.`);
+      const tomada = especiais.filter((p) => p.alimentacao === 'tomada' || p.alimentacao === 'propria');
+      if (tomada.length && f.tomadas) obs.push(`${tomada.map((p) => p.nome).join(' e ')} pode${tomada.length > 1 ? 'm' : ''} ligar numa das tomadas da fonte.`);
+      const usados = e.usos.filter((u) => u.usados.length);
+      const livres = e.usos.filter((u) => !u.usados.length);
+      const mapa = [...usados, ...livres.slice(0, 2)].map(linhaSaida).join('') + (livres.length > 2 ? `<li><span></span><span class="fp__livre">+ ${livres.length - 2} ${livres.length - 2 > 1 ? 'saídas livres' : 'saída livre'}</span></li>` : '');
+      return `<div class="fp__card${selos.length ? ' fp__card--top' : ''}">
+        <div class="fp__card-topo">
+          ${f.imagem ? `<img src="${f.imagem}" alt="" width="76" height="76" loading="lazy" decoding="async" />` : ''}
+          <div class="fp__card-info">
+            <div class="fp__selos">${selos.map((t) => `<span class="fp__selo fp__selo--top">${t}</span>`).join('')}${f.isolada ? '<span class="fp__selo fp__selo--ok">isolada</span>' : '<span class="fp__selo">daisy chain</span>'}${e.livres ? `<span class="fp__selo">sobra${e.livres > 1 ? 'm' : ''} ${e.livres} saída${e.livres > 1 ? 's' : ''}</span>` : ''}</div>
+            <h3>${esc(f.nome)}</h3>
+            <p class="fp__preco"><b>${reais(f.preco)}</b>${f.pix ? ' no Pix' : ''} · em ${f.precoEm}</p>
+          </div>
+        </div>
+        <ul class="fp__mapa">${mapa}</ul>
+        ${obs.map((t) => `<p class="fp__obs">${esc(t)}</p>`).join('')}
+        <div class="fp__acoes">
+          <a class="fp__btn" href="${f.meli}" target="_blank" rel="noopener noreferrer sponsored nofollow" data-produto="${esc(f.nome)}" data-bloco="calculadora-fonte"${f.valor ? ` data-valor="${f.valor}"` : ''}>Ver no Mercado Livre</a>
+          <a class="fp__ficha" href="/produto/${f.id}/">Ficha e histórico de preço</a>
+        </div>
+      </div>`;
+    }
+
+    function atualizar() {
+      // Lista
+      selEl.innerHTML = sel
+        .map((s, k) => `<li class="fp__item" data-k="${k}">
+          <span class="fp__item-nome">${esc(rotulo(s.p).trim())}<small>${esc(meta(s.p))}</small></span>
+          <span class="fp__qtd"><button type="button" data-acao="menos" aria-label="Um a menos">−</button><span>${s.n}</span><button type="button" data-acao="mais" aria-label="Um a mais">+</button></span>
+          <button type="button" class="fp__tirar" data-acao="tirar" aria-label="Tirar ${esc(rotulo(s.p).trim())}">×</button>
+        </li>`)
+        .join('');
+      vazio.hidden = sel.length > 0;
+      salvarUrl();
+
+      if (!sel.length) {
+        resumo.innerHTML = '<p class="fp__aviso fp__aviso--info">Adicione os pedais para ver o consumo total e as fontes.</p>';
+        res.innerHTML = '';
+        copiar.hidden = true;
+        return;
+      }
+      copiar.hidden = false;
+
+      const todos = sel.flatMap((s) => Array.from({ length: s.n }, () => s.p));
+      const dc = todos.filter((p) => !p.alimentacao || p.alimentacao === 'dc');
+      const especiais = sel.map((s) => s.p).filter((p) => p.alimentacao && p.alimentacao !== 'dc');
+      const temDigital = dc.some((p) => p.digital);
+
+      // Resumo
+      const porV = new Map<number, number>();
+      dc.forEach((p) => porV.set(p.v, (porV.get(p.v) ?? 0) + p.ma));
+      const total = [...porV.values()].reduce((a, b) => a + b, 0);
+      const caixas = [
+        `<span><b>${todos.length}</b>${todos.length === 1 ? 'item' : 'itens'}</span>`,
+        ...[...porV].sort((a, b) => a[0] - b[0]).map(([v, ma]) => `<span><b>${fmt(ma)} mA</b>em ${v} V</span>`),
+        dc.length ? `<span><b>${fmt(Math.ceil((total * 1.2) / 50) * 50)} mA</b>com 20% de folga</span>` : '',
+      ];
+      const avisos: string[] = [];
+      especiais.forEach((p) => {
+        if (p.alimentacao === 'propria') avisos.push(`<strong>${esc(p.nome)}:</strong> ${esc(p.obs || 'use a fonte original.')} Nenhuma saída de fonte de pedal entrega isso: deixe ela na fonte dela.`);
+        if (p.alimentacao === 'tomada') avisos.push(`<strong>${esc(p.nome)}:</strong> ${esc(p.obs || 'liga direto na tomada.')}`);
+        if (p.alimentacao === 'usb') avisos.push(`<strong>${esc(p.nome)}:</strong> ${esc(p.obs || 'carrega pelo USB.')}`);
+      });
+      const altas = [...new Map(dc.filter((p) => p.ma >= 500).map((p) => [p.id, `${p.nome} (${fmt(p.ma)} mA)`])).values()];
+      if (altas.length) avisos.push(`${esc(altas.join(', '))} ${altas.length > 1 ? 'precisam' : 'precisa'} de uma saída forte, que pouca fonte de pedal tem.`);
+      if (temDigital && dc.length > 1) avisos.push('Você tem pedal digital: prefira fonte isolada, para não ter chiado.');
+      resumo.innerHTML = `<div class="fp__total">${caixas.join('')}</div>${avisos.map((a) => `<p class="fp__aviso">${a}</p>`).join('')}`;
+
+      if (!dc.length) {
+        res.innerHTML = '<p class="fp__aviso fp__aviso--info">Nenhum desses itens usa saída de fonte de pedal.</p>';
+        return;
+      }
+
+      // Fontes
+      const comDaisy = daisy.checked;
+      const r = fontes.map((f) => ({ f, e: encaixar(f, dc, comDaisy) }));
+      const cabem = r.filter((x) => x.e.ok);
+      const naoCabem = r.filter((x) => !x.e.ok);
+      const selos = new Map<string, string[]>();
+      const marcarSelo = (id: string | undefined, t: string) => { if (id) selos.set(id, [...(selos.get(id) ?? []), t]); };
+      const barata = cabem[0];
+      marcarSelo(barata?.f.id, 'mais barata que atende');
+      if (barata && !barata.f.isolada && temDigital) marcarSelo(cabem.find((x) => x.f.isolada)?.f.id, 'mais barata isolada');
+      const folga = cabem.find((x) => x.e.livres >= 2 && !selos.has(x.f.id) && (x.f.isolada || !temDigital));
+      marcarSelo(folga?.f.id, 'com folga para crescer');
+
+      const destaque = cabem.filter((x) => selos.has(x.f.id));
+      const outras = cabem.filter((x) => !selos.has(x.f.id));
+      let html = destaque.map((x) => card(x.f, x.e, selos.get(x.f.id)!, temDigital, especiais)).join('');
+      if (!cabem.length) html += `<p class="fp__aviso">Nenhuma fonte da lista dá conta desse pedalboard${comDaisy ? '' : '. Tente marcar a opção de daisy chain ou divida os pedais em duas fontes'}.</p>`;
+      if (outras.length)
+        html += `<details class="fp__outras"><summary>Outras ${outras.length} fontes que também dão conta</summary>${outras.map((x) => card(x.f, x.e, [], temDigital, especiais)).join('')}</details>`;
+      if (naoCabem.length)
+        html += `<details class="fp__outras"><summary>${naoCabem.length} fontes que não dão conta</summary><ul>${naoCabem
+          .map((x) => `<li><a href="/produto/${x.f.id}/">${esc(x.f.curto)}</a> (${reais(x.f.preco)}): ${esc(x.e.motivo)}</li>`)
+          .join('')}</ul></details>`;
+      res.innerHTML = html;
+    }
+
+    // ------------------------------------------------------------ link compartilhável
+    function salvarUrl() {
+      const u = new URL(location.href);
+      const ids = sel.filter((s) => porId.has(s.p.id)).map((s) => (s.n > 1 ? `${s.p.id}*${s.n}` : s.p.id));
+      const outros = sel.filter((s) => !porId.has(s.p.id)).map((s) => [s.p.nome, s.p.v, s.p.ma, s.p.digital ? 'd' : 'a', s.n].join('~'));
+      ids.length ? u.searchParams.set('p', ids.join(',')) : u.searchParams.delete('p');
+      outros.length ? u.searchParams.set('o', outros.join('|')) : u.searchParams.delete('o');
+      daisy.checked ? u.searchParams.set('dc', '1') : u.searchParams.delete('dc');
+      history.replaceState(null, '', u.pathname + (u.search ? u.search : '') + u.hash);
+    }
+    function lerUrl() {
+      const q = new URLSearchParams(location.search);
+      (q.get('p') || '').split(',').filter(Boolean).forEach((x) => {
+        const [id, n] = x.split('*');
+        const p = porId.get(id);
+        if (p) sel.push({ p, n: Math.min(20, Math.max(1, Number(n) || 1)) });
+      });
+      (q.get('o') || '').split('|').filter(Boolean).forEach((x) => {
+        const [nome, v, ma, d, n] = x.split('~');
+        if (nome && Number(ma) > 0) sel.push({ p: { id: `outro-${++nOutro}`, marca: '', nome: nome.slice(0, 40), v: Number(v) || 9, ma: Number(ma), digital: d === 'd' }, n: Math.min(20, Math.max(1, Number(n) || 1)) });
+      });
+      daisy.checked = q.get('dc') === '1';
+    }
+    copiar.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(location.href);
+        copiar.textContent = 'Link copiado';
+      } catch {
+        copiar.textContent = 'Copie o endereço da barra do navegador';
+      }
+      setTimeout(() => (copiar.textContent = 'Copiar o link deste pedalboard'), 2500);
+    });
+
+    lerUrl();
+    atualizar();
+  }
+</script>

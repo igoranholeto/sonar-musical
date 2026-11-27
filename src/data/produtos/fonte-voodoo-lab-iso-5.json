@@ -1,0 +1,44 @@
+{
+  "nome": "Fonte isolada Voodoo Lab ISO-5",
+  "meli": "https://meli.la/1RvC4w9",
+  "preco": 1485,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Voodoo Lab"
+    ],
+    [
+      "Modelo",
+      "ISO-5"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "3 x 9V 100 mA, 1 x 9V/12V 400 mA, 1 x 18V 150 mA"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "parcelas": "12x R$ 144,17",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-de-alimentacao-isolada-voodoo-lab-iso-5-para-pedais-de-guitarra-12v-18v/p/MLB52516458"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1485
+    }
+  ],
+  "imagem": "/images/produtos/fonte-voodoo-lab-iso-5.webp",
+  "imagemAlt": "Fonte isolada Voodoo Lab ISO-5"
+}

@@ -1,9 +1,9 @@
 {
-  "nome": "Fonte M-Vave para pedais",
+  "nome": "Fonte isolada M-Vave VD-SK1 (8 saídas)",
   "meli": "https://meli.la/2Vddziu",
   "preco": 82,
   "precoEm": "2026-11-26",
-  "categoria": "pedal",
+  "categoria": "acessorio",
   "historico": [
     {
       "data": "2026-11-11",
@@ -30,7 +30,7 @@
       "preco": 82
     }
   ],
-  "imagemAlt": "Fonte M-Vave para pedais",
+  "imagemAlt": "Fonte isolada M-Vave VD-SK1 (8 saídas)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
@@ -49,16 +49,24 @@
       "VD-SK1"
     ],
     [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "6 x 9V 100 mA, 2 x 9V 300 mA"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "USB-C 5V 2 A (carregador não incluso)"
+    ],
+    [
       "Material",
       "Metal"
-    ],
-    [
-      "Tensões de saída",
-      "9V"
-    ],
-    [
-      "Quantidade de pedais",
-      "1"
     ],
     [
       "Comprimento",

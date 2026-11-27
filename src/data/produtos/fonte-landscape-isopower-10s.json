@@ -1,0 +1,50 @@
+{
+  "nome": "Fonte isolada Landscape Isopower 10S",
+  "meli": "https://meli.la/2rHkiyB",
+  "preco": 1829,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Landscape"
+    ],
+    [
+      "Modelo",
+      "Isopower 10S"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "5 x 9V 1000 mA, 3 x 9V 200 mA ou 12V 650 mA, 2 x 9V 100 mA ou 18V 500 mA"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "100 a 240 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 2089,
+    "off": 12,
+    "parcelas": "12x R$ 175,89",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-isolada-isopower-10s-landscape-pedais-9-12-18-volts/up/MLBU3857925808"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1829
+    }
+  ],
+  "imagem": "/images/produtos/fonte-landscape-isopower-10s.webp",
+  "imagemAlt": "Fonte isolada Landscape Isopower 10S"
+}

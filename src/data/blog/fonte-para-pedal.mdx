@@ -19,7 +19,7 @@ import AfiliadoCTA from '../../components/AfiliadoCTA.astro';
 A fonte é o pedal menos glamouroso do pedalboard e um dos mais importantes. Uma fonte errada pode causar chiado, zumbido, pedais que travam e, no pior caso, queimar um pedal. A boa notícia é que acertar é simples quando você entende três números: **voltagem, corrente e polaridade**. Este guia explica tudo isso em linguagem direta, compara fonte isolada e daisy chain e mostra as fontes mais vendidas no Mercado Livre com preço real.
 
 <QuickAnswer pergunta="Qual a melhor fonte para pedal de guitarra?">
-Para **um ou dois pedais**, uma fonte **9 V** de qualidade com **pino central negativo**, como a **Boss PSA-120ZS** (cerca de R$ 270), resolve. Para um **pedalboard com vários pedais**, prefira uma **fonte isolada**, com saídas independentes que evitam ruído: a **Joyo JP-02** (cerca de R$ 399) tem **10 saídas isoladas** com opções de 9, 12 e 18 V e é a isolada mais barata com vendedor nacional no Mercado Livre. Antes de comprar, some a corrente (mA) de todos os pedais e confira se a fonte entrega mais que isso.
+Para **um ou dois pedais**, uma fonte **9 V** de qualidade com **pino central negativo**, como a **Boss PSA-120ZS** (cerca de R$ 270), resolve. Para um **pedalboard com vários pedais**, prefira uma **fonte isolada**, com saídas independentes que evitam ruído: a **Caline CP-204** (cerca de R$ 209) é a isolada de tomada mais barata entre os anúncios nacionais que conferimos, com 8 saídas, e a **Joyo JP-02** (cerca de R$ 399) tem **10 saídas isoladas** com opções de 9, 12 e 18 V. Antes de comprar, some a corrente (mA) de todos os pedais e confira se a fonte entrega mais que isso: a [calculadora de fonte para pedais](/calculadora-de-fonte-para-pedais/) faz a conta saída por saída.
 </QuickAnswer>
 
 ## Comparativo rápido
@@ -28,6 +28,7 @@ Para **um ou dois pedais**, uma fonte **9 V** de qualidade com **pino central ne
   colunas={["Fonte", "Tipo", "Saídas", "Preço no ML"]}
   linhas={[
     { celulas: ["Boss PSA-120ZS", "Fonte individual 9 V", "1", "R$ 270"], badge: "Para 1 pedal" },
+    { celulas: ["Caline CP-204", "Isolada, 9/12 V", "8", "R$ 209"], badge: "Isolada mais barata" },
     { celulas: ["Joyo JP-02", "Isolada, 9/12/18 V", "10", "R$ 399"], destaque: true, badge: "Melhor isolada" },
   ]}
 />
@@ -92,6 +93,8 @@ Pedais antigos e muitos atuais aceitam bateria de 9 V. Ela é prática e silenci
 4. **Confira as saídas:** cada pedal precisa de uma saída com a voltagem certa e corrente suficiente. Pedais digitais devem ir nas saídas de maior corrente.
 5. **Pense no futuro:** se você pretende colocar mais pedais, compre uma fonte com saídas sobrando.
 
+Para não fazer a conta na mão, use a [calculadora de fonte para pedais](/calculadora-de-fonte-para-pedais/): ela tem o consumo de mais de 80 pedais e pedaleiras, conferido no fabricante, e mostra quais fontes à venda dão conta do seu board.
+
 A montagem física do board (velcro, cabos curtos, organização) está em [como montar pedalboard](/blog/como-montar-pedalboard/).
 
 ### Exemplo de cálculo (hipotético)
@@ -108,6 +111,8 @@ Imagine um board com afinador, overdrive, distorção, delay digital e reverb di
 | **Total** | | **425 mA** |
 
 Com a folga de 25%, você precisaria de uma fonte capaz de entregar cerca de 530 mA no total, **com saídas individuais** que suportem os 150 e os 200 mA dos pedais digitais. Uma daisy chain barata, além do risco de ruído, poderia não ter essa corrente. Uma fonte isolada com saídas de maior corrente resolve com folga.
+
+Com números reais, segundo o site da Boss: TU-3 (20 mA), SD-1 (10 mA), DS-1 (10 mA), DD-8 (100 mA) e RV-6 (95 mA) somam 235 mA. [Veja esse board na calculadora](/calculadora-de-fonte-para-pedais/?p=boss-tu-3,boss-sd-1,boss-ds-1,boss-dd-8,boss-rv-6) e as fontes que dão conta dele.
 
 ### Onde colocar a fonte no board
 
@@ -127,6 +132,19 @@ A **PSA** é a fonte individual da Boss, de **9 V** com o padrão de pino centra
   destaques={["9 V, padrão Boss de centro negativo", "Fonte original da marca", "Ideal para um ou dois pedais"]}
 />
 
+### Caline CP-204, a isolada mais barata de tomada
+
+A **CP-204** tem **8 saídas isoladas**: seis de 9 V e 100 mA, uma de 9 V e 500 mA e uma que alterna entre 9 V e 12 V com 300 mA, segundo o anúncio, por cerca de R$ 209. Dá conta de um board de pedais analógicos com um ou dois digitais (a saída de 500 mA segura um delay ou um looper mais gastão).
+
+<AfiliadoCTA
+  id="fonte-caline-cp-204"
+  descricao="Fonte isolada com 8 saídas, uma delas de 500 mA, para boards pequenos e médios"
+  badge="Isolada mais barata"
+  destaques={["8 saídas isoladas", "Uma saída de 500 mA e uma de 9 ou 12 V", "Liga direto na tomada"]}
+/>
+
+Entre as isoladas, mais barata que ela só a **M-Vave VD-SK1** (cerca de R$ 82), também com 8 saídas isoladas, mas que liga num carregador USB-C de 5 V e 2 A, que não vem na caixa. Com 10 W de entrada, ela entrega uns 900 mA somando tudo (conta nossa), então serve para board pequeno.
+
 ### Joyo JP-02, a isolada que vale a compra
 
 A **JP-02** tem **10 saídas isoladas** com opções de **9 V, 12 V e 18 V**, segundo o anúncio, por cerca de R$ 399. Serve do board pequeno ao grande, com pedais digitais e pedais que se beneficiam de voltagem mais alta, e sobra saída para o board crescer.
@@ -141,7 +159,7 @@ A **JP-02** tem **10 saídas isoladas** com opções de **9 V, 12 V e 18 V**, se
 
 ### E as Mosky ISO-6 e ISO-10?
 
-As fontes isoladas da Mosky, de 6 e 10 saídas, já foram as mais baratas desta lista. Em 24/11/2026, porém, elas só aparecem no Mercado Livre como compra internacional: o preço anunciado não inclui o imposto de importação e o ICMS, cobrados no fechamento do pedido, e o anúncio informa plug americano. Por isso saíram da lista.
+As fontes isoladas da Mosky, de 6 e 10 saídas, já foram as mais baratas desta lista. Em 24/11/2026 elas só apareciam no Mercado Livre como compra internacional, com preço sem o imposto de importação e o ICMS. Em 26/11/2026 a **ISO-10** voltou a ter anúncio nacional, por cerca de R$ 600: custa mais que a JP-02, mas tem sete saídas de 300 mA em vez de 100 mA, o que ajuda em board com vários pedais digitais. A ISO-6 segue só como compra internacional.
 
 ## E a fonte da pedaleira?
 

@@ -1,0 +1,50 @@
+{
+  "nome": "Fonte isolada Landscape Isopower 4S",
+  "meli": "https://meli.la/1NPaHws",
+  "preco": 1025,
+  "precoEm": "2026-11-26",
+  "categoria": "acessorio",
+  "ficha": [
+    [
+      "Marca",
+      "Landscape"
+    ],
+    [
+      "Modelo",
+      "Isopower 4S"
+    ],
+    [
+      "Tipo",
+      "Fonte isolada"
+    ],
+    [
+      "Saídas",
+      "2 x 9V 1000 mA, 1 x 9V 200 mA ou 12V 650 mA, 1 x 9V 100 mA ou 18V 500 mA (2 plugues por seção)"
+    ],
+    [
+      "Polaridade",
+      "Centro negativo"
+    ],
+    [
+      "Entrada",
+      "100 a 240 V"
+    ]
+  ],
+  "anuncio": {
+    "status": "ativo",
+    "desde": "2026-11-26",
+    "antes": 1159,
+    "off": 11,
+    "parcelas": "10x R$ 102,60 sem juros",
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/fonte-isolada-isopower-4s-landscape-pedais-9-12-18-volts/up/MLBU3812064982"
+  },
+  "historico": [
+    {
+      "data": "2026-11-26",
+      "preco": 1025
+    }
+  ],
+  "imagem": "/images/produtos/fonte-landscape-isopower-4s.webp",
+  "imagemAlt": "Fonte isolada Landscape Isopower 4S"
+}

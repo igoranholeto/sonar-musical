@@ -72,7 +72,7 @@ function grupoDaPagina(p: string): string {
   if (p.startsWith('/black-friday/')) return 'black friday';
   if (p.startsWith('/categoria/')) return 'categoria';
   if (p.startsWith('/bandas/')) return 'bandas';
-  if (/^\/(afinador|metronomo|gerador-de-escalas|acordes|ferramentas|qual-guitarra|tablaturas|aprender)\//.test(p)) return 'ferramenta';
+  if (/^\/(afinador|metronomo|gerador-de-escalas|acordes|ferramentas|qual-guitarra|calculadora-de-fonte-para-pedais|tablaturas|aprender)\//.test(p)) return 'ferramenta';
   if (p.startsWith('/busca/')) return 'busca';
   return 'institucional';
 }
