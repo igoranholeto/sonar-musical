@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Woodstock TW-66 (baixo)",
   "meli": "https://meli.la/1t6ZMKG",
-  "preco": 1137,
-  "precoEm": "2026-11-26",
+  "preco": 1089,
+  "precoEm": "2026-11-27",
   "categoria": "baixo",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-26",
       "preco": 1137
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1089
     }
   ],
   "imagemAlt": "Tagima Woodstock TW-66 (baixo)",
@@ -39,8 +43,8 @@
     "status": "ativo",
     "desde": "2026-11-17",
     "antes": 2349,
-    "off": 51,
-    "parcelas": "10x R$ 113,70 sem juros",
+    "off": 53,
+    "parcelas": "12x R$ 105,81",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/contra-baixo-eletrico-tagima-tw-66-woodstock-butterscotsh-cor-dourado-orientacao-da-mao-destro-quantidade-de-4/p/MLB23495591"
   },

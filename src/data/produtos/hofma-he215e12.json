@@ -1,8 +1,8 @@
 {
   "nome": "Hofma HE215E12 12 cordas",
   "meli": "https://meli.la/1aURjX3",
-  "preco": 1279,
-  "precoEm": "2026-11-26",
+  "preco": 1199,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 1279
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1199
     }
   ],
   "nota": 4.9,
@@ -26,8 +30,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1999,
-    "off": 35,
-    "parcelas": "10x R$ 128 sem juros",
+    "off": 40,
+    "parcelas": "10x R$ 119,99 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-folk-hofma-he215e12-dreadnought-eletroacustico-12-cordas-piezo-audisys/p/MLB15247574"
   },

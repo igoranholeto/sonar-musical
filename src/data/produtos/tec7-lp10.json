@@ -1,13 +1,17 @@
 {
   "nome": "TEC7 LP 10 (microfone para pandeiro)",
   "meli": "https://meli.la/2U71UK3",
-  "preco": 176,
-  "precoEm": "2026-11-26",
+  "preco": 170,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-21",
       "preco": 176
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 170
     }
   ],
   "nota": 5,
@@ -52,8 +56,8 @@
     "status": "ativo",
     "desde": "2026-11-21",
     "antes": 200,
-    "off": 12,
-    "parcelas": "5x R$ 35,18 sem juros",
+    "off": 15,
+    "parcelas": "5x R$ 33,98 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-para-pandeiro-reco-nao-usa-phantom/up/MLBU1089602689"
   }

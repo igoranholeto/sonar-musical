@@ -1,13 +1,17 @@
 {
   "nome": "Microfone Dylan DG-50 Gooseneck (púlpito)",
   "meli": "https://meli.la/1sq1ZJZ",
-  "preco": 257.9,
-  "precoEm": "2026-11-26",
+  "preco": 245,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 257.9
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 245
     }
   ],
   "imagem": "/images/produtos/dylan-dg-50-gooseneck.webp",
@@ -15,6 +19,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
+    "antes": 258,
+    "off": 5,
+    "pix": true,
+    "cartao": 258,
     "parcelas": "6x R$ 42,98 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-dylan-dg-50-gooseneck-haste-60cm-igreja-pulpito-cor-preto/p/MLB37155211"

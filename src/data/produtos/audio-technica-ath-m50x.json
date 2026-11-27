@@ -1,8 +1,8 @@
 {
   "nome": "Audio-Technica ATH-M50x",
   "meli": "https://meli.la/1Fw8KnS",
-  "preco": 1229,
-  "precoEm": "2026-11-26",
+  "preco": 1344,
+  "precoEm": "2026-11-27",
   "categoria": "fone",
   "historico": [
     {
@@ -24,15 +24,19 @@
     {
       "data": "2026-11-26",
       "preco": 1229
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1344
     }
   ],
   "imagemAlt": "Audio-Technica ATH-M50x",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1380,
-    "off": 10,
-    "parcelas": "12x R$ 119,31",
+    "antes": 2800,
+    "off": 52,
+    "parcelas": "12x R$ 130,47",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/audifonos-profesionales-dinamicos-ath-m50x-audiotechnica-color-black/p/MLB24560880"
   },

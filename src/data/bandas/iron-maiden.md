@@ -199,10 +199,10 @@ integrantes:
           similar: "Marshall Origin 20H"
           urlAfiliado: https://meli.la/2zarDmT
         low:
-          nome: Boss Katana 50
-          preco: ~R$ 4.127
+          nome: Boss Katana 50 Gen 3
+          preco: ~R$ 3.633
           obs: Overdrive dinâmico.
-          urlAfiliado: https://meli.la/2E6pEqu
+          urlAfiliado: https://meli.la/27izYNA
   - foto: /images/nicko-mcbrain-sonar.webp
     fotoAlt: Nicko Mcbrain Baterista
     pontos:

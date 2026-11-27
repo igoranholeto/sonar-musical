@@ -1,8 +1,8 @@
 {
   "nome": "Casio CDP-S110 (piano digital)",
   "meli": "https://meli.la/19fjPPH",
-  "preco": 2149,
-  "precoEm": "2026-11-26",
+  "preco": 2112,
+  "precoEm": "2026-11-27",
   "categoria": "piano",
   "historico": [
     {
@@ -44,15 +44,19 @@
     {
       "data": "2026-11-23",
       "preco": 2149
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2112
     }
   ],
   "imagemAlt": "Casio CDP-S110 (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2415,
-    "off": 11,
-    "parcelas": "12x R$ 206,59",
+    "antes": 3300,
+    "off": 36,
+    "parcelas": "12x R$ 203",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-casio-cdp-s110-88-teclas-com-pedal-e-fonte-voltagem-pilha/p/MLB23883267"
   },

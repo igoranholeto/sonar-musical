@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Cobra .010",
   "meli": "https://meli.la/2yLHcWG",
-  "preco": 28,
-  "precoEm": "2026-11-26",
+  "preco": 24,
+  "precoEm": "2026-11-27",
   "categoria": "cordas",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-24",
       "preco": 28
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 24
     }
   ],
   "imagem": "/images/produtos/giannini-cobra-010.webp",
@@ -31,6 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
+    "antes": 28,
+    "off": 15,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-para-violao-aco-giannini-cobra-bronze-8515-geefle-010-050/p/MLB21419345"
   },

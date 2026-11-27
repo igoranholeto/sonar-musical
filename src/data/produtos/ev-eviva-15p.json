@@ -1,13 +1,17 @@
 {
   "nome": "Caixa ativa Electro-Voice EVIVA-15P (15\", 1.000 W de pico)",
   "meli": "https://meli.la/1em5zG1",
-  "preco": 3084,
-  "precoEm": "2026-11-26",
+  "preco": 2906,
+  "precoEm": "2026-11-27",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-26",
       "preco": 3084
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2906
     }
   ],
   "nota": 4.9,
@@ -58,8 +62,8 @@
     "status": "ativo",
     "desde": "2026-11-26",
     "antes": 3700,
-    "off": 16,
-    "parcelas": "10x R$ 308,40 sem juros",
+    "off": 21,
+    "parcelas": "10x R$ 290,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/caixa-de-som-ativa-ev-electro-voice-eviva-15p-1000w-bivolt-preto/p/MLB59147588"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Borne Vorax 2200 Studio",
-  "meli": "https://meli.la/1kf1Ydt",
-  "preco": 2103,
-  "precoEm": "2026-11-26",
+  "meli": "https://meli.la/324qwNJ",
+  "preco": 2074,
+  "precoEm": "2026-11-27",
   "categoria": "amplificador",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-25",
       "preco": 2103
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2074
     }
   ],
   "nota": 5,
@@ -74,13 +78,11 @@
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-18",
-    "antes": 3170,
-    "off": 33,
-    "pix": true,
-    "cartao": 2213,
-    "parcelas": "10x R$ 221,39 sem juros",
+    "desde": "2026-11-27",
+    "antes": 2440,
+    "off": 15,
+    "parcelas": "10x R$ 207,40 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/amplificador-guitarra-borne-vorax-2200-120w-2x12-cubo-preto/up/MLBU4517299123"
+    "catalogo": "https://www.mercadolivre.com.br/amplificador-combo-borne-vorax-2200-studio-para-guitarra-120w/p/MLB24137281"
   }
 }

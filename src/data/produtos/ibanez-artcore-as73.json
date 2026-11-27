@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez Artcore AS73",
   "meli": "https://meli.la/1h1eAiZ",
-  "preco": 5398,
-  "precoEm": "2026-11-26",
+  "preco": 5244,
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "imagem": "/images/produtos/ibanez-artcore-as73.webp",
   "imagemAlt": "Ibanez Artcore AS73 semi-hollow",
@@ -22,12 +22,16 @@
     {
       "data": "2026-11-11",
       "preco": 5398
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 5244
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 539,80 sem juros",
+    "parcelas": "12x R$ 504,12",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-as-artcore-as73-de-tilia-transparent-cherry-red-com-diapasao-de-nogueira/p/MLB17488555"
   },

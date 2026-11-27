@@ -1,8 +1,8 @@
 {
   "nome": "Trompete Konig Si Bemol",
   "meli": "https://meli.la/1M7fUF4",
-  "preco": 565,
-  "precoEm": "2026-11-26",
+  "preco": 552,
+  "precoEm": "2026-11-27",
   "categoria": "sopro",
   "historico": [
     {
@@ -32,6 +32,10 @@
     {
       "data": "2026-11-26",
       "preco": 565
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 552
     }
   ],
   "imagemAlt": "Trompete Konig Si Bemol",
@@ -39,7 +43,7 @@
     "status": "ativo",
     "desde": "2026-11-13",
     "antes": 899,
-    "off": 37,
+    "off": 38,
     "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/trompete-konig-laqueado-si-bemol/p/MLB68373080"

@@ -1,13 +1,17 @@
 {
   "nome": "Violino elétrico Orquezz 1179 4/4",
   "meli": "https://meli.la/2L4zyTK",
-  "preco": 2757,
-  "precoEm": "2026-11-26",
+  "preco": 2481,
+  "precoEm": "2026-11-27",
   "categoria": "violino",
   "historico": [
     {
       "data": "2026-11-26",
       "preco": 2757
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2481
     }
   ],
   "ficha": [
@@ -43,7 +47,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "parcelas": "10x R$ 275,74 sem juros",
+    "antes": 2757,
+    "off": 10,
+    "parcelas": "10x R$ 248,16 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violino-eletrico-44-profissional-orquezz-pretoamarelo/p/MLB70492429"
   },

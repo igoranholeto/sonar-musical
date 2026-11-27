@@ -1,13 +1,17 @@
 {
   "nome": "Kit Violão Clássico Alpha (nylon)",
   "meli": "https://meli.la/29j77pb",
-  "preco": 329,
-  "precoEm": "2026-11-26",
+  "preco": 266,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
       "data": "2026-11-21",
       "preco": 329
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 266
     }
   ],
   "nota": 4.4,
@@ -40,8 +44,10 @@
     "status": "ativo",
     "desde": "2026-11-21",
     "antes": 499,
-    "off": 34,
-    "parcelas": "6x R$ 54,77 sem juros",
+    "off": 46,
+    "pix": true,
+    "cartao": 280,
+    "parcelas": "6x R$ 46,67 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-alpha-nylon-capa-capo-afinador-palheta/up/MLBU3914160122"
   }

@@ -1,8 +1,8 @@
 {
   "nome": "Novation Launchkey 49 MK4",
   "meli": "https://meli.la/2qyei4L",
-  "preco": 2707,
-  "precoEm": "2026-11-26",
+  "preco": 2409,
+  "precoEm": "2026-11-27",
   "categoria": "controlador",
   "historico": [
     {
@@ -48,13 +48,19 @@
     {
       "data": "2026-11-26",
       "preco": 2707
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2409
     }
   ],
   "imagemAlt": "Novation Launchkey 49 MK4",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "10x R$ 270,70 sem juros",
+    "antes": 2526,
+    "off": 4,
+    "parcelas": "10x R$ 240,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-controlador-novation-launchkey-mk4-49-teclas-branco/p/MLB53223570"
   },

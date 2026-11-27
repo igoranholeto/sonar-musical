@@ -1,13 +1,17 @@
 {
   "nome": "Monitor JBL 104-BT (par, com Bluetooth)",
   "meli": "https://meli.la/2QY9BK9",
-  "preco": 1065,
-  "precoEm": "2026-11-26",
+  "preco": 1085,
+  "precoEm": "2026-11-27",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-26",
       "preco": 1065
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1085
     }
   ],
   "nota": 4.7,
@@ -45,9 +49,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "antes": 3399,
-    "off": 68,
-    "parcelas": "10x R$ 106,50 sem juros",
+    "parcelas": "10x R$ 108,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/par-monitor-de-referencia-jbl-104-bt-bluetooth-60w-104bt/p/MLB24546369"
   },

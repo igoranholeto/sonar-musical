@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start NR 1/4",
   "meli": "https://meli.la/2eXPNX2",
-  "preco": 368,
-  "precoEm": "2026-11-26",
+  "preco": 349,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -48,6 +48,10 @@
     {
       "data": "2026-11-26",
       "preco": 368
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 349
     }
   ],
   "imagem": "/images/produtos/giannini-nr-1-4.webp",
@@ -55,7 +59,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 35,96",
+    "antes": 368,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-infantil-giannini-start-nr-14-para-criancas-tilio-verniz/p/MLB16056547"
   },

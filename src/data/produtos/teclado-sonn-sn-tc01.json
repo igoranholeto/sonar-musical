@@ -1,13 +1,17 @@
 {
   "nome": "Teclado SONN SN-TC01",
   "meli": "https://meli.la/1Npk9YL",
-  "preco": 338,
-  "precoEm": "2026-11-26",
+  "preco": 341,
+  "precoEm": "2026-11-27",
   "categoria": "teclado",
   "historico": [
     {
       "data": "2026-11-23",
       "preco": 338
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 341
     }
   ],
   "nota": 4.9,
@@ -84,7 +88,7 @@
     "status": "ativo",
     "desde": "2026-11-23",
     "antes": 375,
-    "off": 10,
+    "off": 9,
     "pix": true,
     "cartao": 375,
     "parcelas": "7x R$ 53,57 sem juros",

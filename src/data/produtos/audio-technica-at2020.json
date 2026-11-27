@@ -1,20 +1,26 @@
 {
   "nome": "Audio-Technica AT2020",
   "meli": "https://meli.la/1xUBS2M",
-  "preco": 820,
-  "precoEm": "2026-11-26",
+  "preco": 754,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
       "data": "2026-11-11",
       "preco": 820
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 754
     }
   ],
   "imagemAlt": "Audio-Technica AT2020",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 79,28",
+    "antes": 820,
+    "off": 7,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-condensador-preto-audio-technica-at2020/p/MLB57768998"
   },

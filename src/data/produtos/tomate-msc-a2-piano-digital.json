@@ -1,8 +1,8 @@
 {
   "nome": "Tomate MSC-A2 (piano digital)",
   "meli": "https://meli.la/1CVCdsr",
-  "preco": 1190,
-  "precoEm": "2026-11-26",
+  "preco": 1130,
+  "precoEm": "2026-11-27",
   "categoria": "piano",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 1190
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1130
     }
   ],
   "imagemAlt": "Tomate MSC-A2 (piano digital)",
@@ -23,8 +27,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1499,
-    "off": 20,
-    "parcelas": "12x R$ 115,52",
+    "off": 24,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-tomate-msc-a2-de-88-teclas-sensiveis-marrom-com-movel-e-pedal/p/MLB63558268"
   },

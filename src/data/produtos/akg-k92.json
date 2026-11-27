@@ -1,8 +1,8 @@
 {
   "nome": "AKG K92",
   "meli": "https://meli.la/2AvjgTR",
-  "preco": 341,
-  "precoEm": "2026-11-26",
+  "preco": 354,
+  "precoEm": "2026-11-27",
   "categoria": "fone",
   "historico": [
     {
@@ -40,15 +40,17 @@
     {
       "data": "2026-11-26",
       "preco": 341
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 354
     }
   ],
   "imagemAlt": "AKG K92",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 379,
-    "off": 10,
-    "pix": true,
+    "parcelas": "12x R$ 34,63",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fone-de-ouvido-over-ear-akg-k92-matte-black/p/MLB9716495"
   },

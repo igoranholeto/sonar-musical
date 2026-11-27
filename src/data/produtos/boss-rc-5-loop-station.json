@@ -1,8 +1,8 @@
 {
   "nome": "Boss RC-5 Loop Station",
   "meli": "https://meli.la/2JVe6uG",
-  "preco": 1659,
-  "precoEm": "2026-11-26",
+  "preco": 1849,
+  "precoEm": "2026-11-27",
   "categoria": "pedal",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-25",
       "preco": 1659
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1849
     }
   ],
   "imagem": "/images/produtos/boss-rc-5-loop-station.webp",
@@ -47,9 +51,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2183,
-    "off": 23,
-    "parcelas": "12x R$ 159,55",
+    "parcelas": "12x R$ 177,72",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pedal-de-efeito-boss-loop-station-rc-5-vermelho/p/MLB17756468"
   },

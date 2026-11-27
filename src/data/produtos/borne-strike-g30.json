@@ -1,8 +1,8 @@
 {
   "nome": "Borne Strike G30",
   "meli": "https://meli.la/27cRqGN",
-  "preco": 440,
-  "precoEm": "2026-11-26",
+  "preco": 405,
+  "precoEm": "2026-11-27",
   "categoria": "amplificador",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 440
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 405
     }
   ],
   "nota": 5,
@@ -37,7 +41,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 42,55",
+    "antes": 440,
+    "off": 8,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/amplificador-cubo-strike-g30-borne-para-guitarra-15w-preto/up/MLBU3478326317"
   },

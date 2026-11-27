@@ -1,8 +1,8 @@
 {
   "nome": "Gaita Hering Easy Blues 4420C (Dó)",
   "meli": "https://meli.la/1TaN7kz",
-  "preco": 107,
-  "precoEm": "2026-11-26",
+  "preco": 108,
+  "precoEm": "2026-11-27",
   "categoria": "sopro",
   "historico": [
     {
@@ -44,17 +44,19 @@
     {
       "data": "2026-11-26",
       "preco": 107
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 108
     }
   ],
   "imagemAlt": "Gaita Hering Easy Blues 4420C (Dó)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-12",
-    "antes": 149,
-    "off": 28,
+    "antes": 218,
+    "off": 50,
     "pix": true,
-    "cartao": 130,
-    "parcelas": "4x R$ 32,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/gaita-de-boca-harmonica-diatonica-hering-easy-blues-4420c/p/MLB25735553"
   },

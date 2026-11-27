@@ -1,8 +1,8 @@
 {
   "nome": "Mixer Digital Behringer XR18 X Air",
   "meli": "https://meli.la/2Q8VAzF",
-  "preco": 4579,
-  "precoEm": "2026-11-26",
+  "preco": 4136,
+  "precoEm": "2026-11-27",
   "categoria": "estudio",
   "historico": [
     {
@@ -56,15 +56,19 @@
     {
       "data": "2026-11-26",
       "preco": 4579
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 4136
     }
   ],
   "imagemAlt": "Mixer Digital Behringer XR18 X Air",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 5951,
-    "off": 23,
-    "parcelas": "10x R$ 457,90 sem juros",
+    "antes": 4866,
+    "off": 15,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mixer-behringer-xr18-x-air/p/MLB15915004"
   },

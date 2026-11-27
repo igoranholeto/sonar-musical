@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha Revstar Element",
   "meli": "https://meli.la/1wqcApf",
-  "preco": 3970,
-  "precoEm": "2026-11-26",
+  "preco": 4201,
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-25",
       "preco": 3970
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 4201
     }
   ],
   "imagem": "/images/produtos/yamaha-revstar-element.webp",
@@ -35,7 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
-    "parcelas": "12x R$ 381,58",
+    "antes": 5229,
+    "off": 19,
+    "parcelas": "10x R$ 420,10 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-yamaha-revstar-rse20-red-copper/p/MLB23746479"
   },

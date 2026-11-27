@@ -1,8 +1,8 @@
 {
   "nome": "Mosky ISO-10 fonte isolada",
   "meli": "https://meli.la/2fJ4qjf",
-  "preco": 600,
-  "precoEm": "2026-11-26",
+  "preco": 470,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-26",
       "preco": 600
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 470
     }
   ],
   "imagem": "/images/produtos/mosky-iso-10-fonte-isolada.webp",
@@ -59,7 +63,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "parcelas": "12x R$ 58,02",
+    "parcelas": "9x R$ 52,21 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/fonte-alimentacao-mosky-iso-10-guitarra-pedais-10-saidas-isoladas-9v12v18v/p/MLB29425199"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GRGR221PA",
   "meli": "https://meli.la/32SsFFG",
-  "preco": 2810,
-  "precoEm": "2026-11-25",
+  "preco": 2576,
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "historico": [
     {
@@ -24,13 +24,21 @@
     {
       "data": "2026-11-25",
       "preco": 2810
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2576
     }
   ],
   "imagemAlt": "Ibanez GRGR221PA",
   "anuncio": {
-    "status": "encerrado",
-    "desde": "2026-11-26",
-    "catalogo": "https://www.mercadolivre.com.br/guitarra-ibanez-grgr221pa-aqb-rg-gio-aqua-burst-hh-6-cordas-corpo-okoume-top-poplar-burl-diapasao-purpleheart-ponte-f106/p/MLB17914728"
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "antes": 3390,
+    "off": 24,
+    "pix": true,
+    "freteGratis": true,
+    "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-shaded-blue-grgr221pa-aqb-purpleheart-fingerboard-materialwhite-shark-tooth-inlay-orientacao-para-a-mao-direita/p/MLB60062514"
   },
   "ficha": [
     [

@@ -1,8 +1,8 @@
 {
   "nome": "Terra TCV01",
   "meli": "https://meli.la/2PwXRcb",
-  "preco": 459.98,
-  "precoEm": "2026-11-26",
+  "preco": 523,
+  "precoEm": "2026-11-27",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-22",
       "preco": 459.98
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 523
     }
   ],
   "imagem": "/images/produtos/terra-tcv01.webp",
@@ -43,7 +47,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
-    "parcelas": "12x R$ 44,48",
+    "parcelas": "10x R$ 52,32 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-acustico-terra-tcv-01-mh-mahogany/p/MLB26231849"
   },

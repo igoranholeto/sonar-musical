@@ -2,7 +2,7 @@
   "nome": "Yamaha FGX800C",
   "meli": "https://meli.la/1tFKmtk",
   "preco": 3270,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -12,8 +12,10 @@
   ],
   "imagemAlt": "Yamaha FGX800C",
   "anuncio": {
-    "status": "encerrado",
-    "desde": "2026-11-26",
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "10x R$ 327 sem juros",
+    "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustica-yamaha-fgx800c-fgx800c-para-destros-sand-burst-brilhante/p/MLB14040271"
   },
   "ficha": [

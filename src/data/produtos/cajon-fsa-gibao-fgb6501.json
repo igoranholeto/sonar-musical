@@ -1,8 +1,8 @@
 {
   "nome": "Cajón FSA Gibão FGB6501",
   "meli": "https://meli.la/1GJkGKb",
-  "preco": 873,
-  "precoEm": "2026-11-26",
+  "preco": 820,
+  "precoEm": "2026-11-27",
   "categoria": "percussao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-23",
       "preco": 873
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 820
     }
   ],
   "imagemAlt": "Cajón FSA Gibão FGB6501",
@@ -31,8 +35,8 @@
     "status": "ativo",
     "desde": "2026-11-13",
     "antes": 919,
-    "off": 5,
-    "parcelas": "10x R$ 87,35 sem juros",
+    "off": 10,
+    "parcelas": "10x R$ 82 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-fgb6501-gibao-preto/p/MLB52058099"
   },

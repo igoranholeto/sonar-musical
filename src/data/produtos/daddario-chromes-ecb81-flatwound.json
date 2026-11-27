@@ -1,8 +1,8 @@
 {
   "nome": "D'Addario Chromes ECB81 flatwound",
   "meli": "https://meli.la/1mWwdKB",
-  "preco": 445,
-  "precoEm": "2026-11-26",
+  "preco": 409,
+  "precoEm": "2026-11-27",
   "categoria": "cordas",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-17",
       "preco": 445
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 409
     }
   ],
   "imagem": "/images/produtos/daddario-chromes-ecb81-flatwound.webp",
@@ -35,7 +39,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 43,03",
+    "antes": 445,
+    "off": 8,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/encordoamento-baixo-4c-045-daddario-xl-chromes-ecb81/p/MLB26148827"
   },

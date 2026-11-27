@@ -1,13 +1,17 @@
 {
   "nome": "Bateria acústica RMV Crossroad (completa)",
   "meli": "https://meli.la/2XwwUwQ",
-  "preco": 2393,
-  "precoEm": "2026-11-26",
+  "preco": 2519,
+  "precoEm": "2026-11-27",
   "categoria": "bateria",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 2393
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2519
     }
   ],
   "nota": 5,
@@ -46,8 +50,8 @@
     "status": "ativo",
     "desde": "2026-11-25",
     "antes": 2677,
-    "off": 10,
-    "pix": true,
+    "off": 5,
+    "parcelas": "12x R$ 242,21",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-rmv-crossroad-castanho-completa/p/MLB66387362"
   },

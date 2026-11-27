@@ -1,8 +1,8 @@
 {
   "nome": "Ibanez GRG140",
   "meli": "https://meli.la/2rYVWnK",
-  "preco": 2231,
-  "precoEm": "2026-11-26",
+  "preco": 2440,
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "historico": [
     {
@@ -12,15 +12,19 @@
     {
       "data": "2026-11-25",
       "preco": 2231
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2440
     }
   ],
   "imagemAlt": "Ibanez GRG140",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2789,
+    "antes": 3050,
     "off": 20,
-    "parcelas": "12x R$ 214,46",
+    "parcelas": "10x R$ 244 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-ibanez-rg-gio-grg140-soloist-de-okoume-sunburst-com-diapasao-de-amaranto/p/MLB17804269"
   },

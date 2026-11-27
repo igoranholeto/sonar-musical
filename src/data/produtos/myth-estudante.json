@@ -1,8 +1,8 @@
 {
   "nome": "Cavaquinho Myth Estudante",
   "meli": "https://meli.la/2TBioxZ",
-  "preco": 284,
-  "precoEm": "2026-11-26",
+  "preco": 239,
+  "precoEm": "2026-11-27",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-25",
       "preco": 284
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 239
     }
   ],
   "imagemAlt": "Cavaquinho Myth Estudante",
@@ -35,7 +39,7 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 300,
-    "off": 5,
+    "off": 20,
     "pix": true,
     "cartao": 299,
     "parcelas": "6x R$ 49,83 sem juros",

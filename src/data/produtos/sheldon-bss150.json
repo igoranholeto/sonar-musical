@@ -1,13 +1,17 @@
 {
   "nome": "Sheldon BSS150 (15 W, baixo)",
   "meli": "https://meli.la/1x4PMNL",
-  "preco": 384,
-  "precoEm": "2026-11-26",
+  "preco": 398,
+  "precoEm": "2026-11-27",
   "categoria": "amplificador",
   "historico": [
     {
       "data": "2026-11-26",
       "preco": 384
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 398
     }
   ],
   "nota": 4.7,
@@ -45,9 +49,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "antes": 799,
-    "off": 51,
-    "parcelas": "12x R$ 37,56",
+    "parcelas": "12x R$ 38,93",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cubo-para-baixo-bss150-sheldon-preto-15w/p/MLB20683619"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Trava de correia Dunlop Straplok (par)",
   "meli": "https://meli.la/1oUgpPA",
-  "preco": 202,
-  "precoEm": "2026-11-26",
+  "preco": 189,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "ficha": [
     [
@@ -26,8 +26,8 @@
     "status": "ativo",
     "desde": "2026-11-26",
     "antes": 213,
-    "off": 5,
-    "parcelas": "12x R$ 20,03",
+    "off": 11,
+    "parcelas": "12x R$ 18,71",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/strap-lock-trava-de-correia-dunlop-straplok-traditional-sls1503bk-preto-black-oxide-para-guitarra-baixo-e-violao-par-palheta-groover/p/MLB81044159"
   },
@@ -35,6 +35,10 @@
     {
       "data": "2026-11-26",
       "preco": 202
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 189
     }
   ],
   "imagem": "/images/produtos/dunlop-straplok.webp",

@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha DTX402K",
   "meli": "https://meli.la/29PyMnx",
-  "preco": 4003,
-  "precoEm": "2026-11-26",
+  "preco": 3789,
+  "precoEm": "2026-11-27",
   "categoria": "bateria",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-21",
       "preco": 4003
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 3789
     }
   ],
   "imagemAlt": "Yamaha DTX402K",
@@ -24,8 +28,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 5719,
-    "off": 30,
-    "parcelas": "10x R$ 400,33 sem juros",
+    "off": 33,
+    "parcelas": "10x R$ 379 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/bateria-digital-yamaha-dtx-402k-para-iniciantes-original-nf/up/MLBU4068716189"
   },

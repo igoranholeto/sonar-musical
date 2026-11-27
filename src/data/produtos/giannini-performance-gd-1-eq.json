@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Performance GD-1 EQ",
   "meli": "https://meli.la/2kjJ4qk",
-  "preco": 655,
-  "precoEm": "2026-11-26",
+  "preco": 654,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-26",
       "preco": 655
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 654
     }
   ],
   "imagem": "/images/produtos/giannini-performance-gd-1-eq.webp",
@@ -47,9 +51,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 929,
-    "off": 29,
-    "parcelas": "12x R$ 63,34",
+    "antes": 1176,
+    "off": 44,
+    "pix": true,
+    "cartao": 688,
+    "parcelas": "10x R$ 68,82 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-giannini-performance-gd-1-eq-tipo-folk-6-cordas-aco/p/MLB15234376"
   },

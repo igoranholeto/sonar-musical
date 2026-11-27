@@ -1,8 +1,8 @@
 {
   "nome": "Guitarra Infantil com Microfone",
   "meli": "https://meli.la/1M7SdQP",
-  "preco": 79,
-  "precoEm": "2026-11-26",
+  "preco": 71,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "imagem": "/images/produtos/guitarra-infantil-com-microfone.webp",
   "imagemAlt": "Guitarra Infantil com Microfone",
@@ -14,13 +14,18 @@
     {
       "data": "2026-11-05",
       "preco": 79
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 71
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 198,
-    "off": 60,
+    "off": 64,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-e-microfone-infantil-instrumento-brinquedo-musical-cor-azul/p/MLB41517901"
   },

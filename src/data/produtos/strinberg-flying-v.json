@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg Flying V",
   "meli": "https://meli.la/19e2JNw",
-  "preco": 1880,
-  "precoEm": "2026-11-26",
+  "preco": 1974,
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "imagem": "/images/produtos/strinberg-flying-v.webp",
   "imagemAlt": "Strinberg Flying V",
@@ -66,14 +66,18 @@
     {
       "data": "2026-11-25",
       "preco": 1880
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1974
     }
   ],
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 2411,
+    "antes": 2538,
     "off": 22,
-    "parcelas": "12x R$ 180,76",
+    "parcelas": "10x R$ 197,50 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-flyng-v-strinberg-fvs450-pw-pearl-white-passiva-bra-destro-unica/p/MLB68345933"
   },

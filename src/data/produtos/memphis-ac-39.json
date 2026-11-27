@@ -1,8 +1,8 @@
 {
   "nome": "Memphis AC-39 Nylon",
   "meli": "https://meli.la/2R7MGku",
-  "preco": 501,
-  "precoEm": "2026-11-26",
+  "preco": 516,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-23",
       "preco": 501
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 516
     }
   ],
   "nota": 4.7,
@@ -50,8 +54,8 @@
     "status": "ativo",
     "desde": "2026-11-18",
     "antes": 672,
-    "off": 25,
-    "parcelas": "12x R$ 48,45",
+    "off": 23,
+    "parcelas": "10x R$ 51,60 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-tagima-memphis-ac-39-classico-6-cordas-nylon-rosa-verniz-brilhante/p/MLB16103534"
   },

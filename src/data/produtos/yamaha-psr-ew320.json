@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha PSR-EW320 (76 teclas)",
   "meli": "https://meli.la/252sHXD",
-  "preco": 2120,
-  "precoEm": "2026-11-26",
+  "preco": 1969,
+  "precoEm": "2026-11-27",
   "categoria": "teclado",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-26",
       "preco": 2120
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1969
     }
   ],
   "nota": 4.8,
@@ -82,7 +86,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
-    "parcelas": "12x R$ 203,77",
+    "antes": 2698,
+    "off": 27,
+    "parcelas": "10x R$ 196,95 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/teclado-yamaha-psr-ew320-c76-teclas-sensitivas-preto-bivolt/p/MLB39456986"
   },

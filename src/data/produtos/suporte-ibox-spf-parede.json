@@ -1,8 +1,8 @@
 {
   "nome": "Suporte de Parede Ibox SPF",
   "meli": "https://meli.la/22E57Kf",
-  "preco": 25,
-  "precoEm": "2026-11-26",
+  "preco": 23,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-26",
       "preco": 25
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 23
     }
   ],
   "nota": 4.8,
@@ -29,6 +33,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 25,
+    "off": 10,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/ibox-spf-suporte-de-parede-para-violao-guitarra-baixo-ukulele-gancho-cor-preto/p/MLB27048507"
   },

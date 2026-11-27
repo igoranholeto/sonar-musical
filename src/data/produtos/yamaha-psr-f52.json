@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha PSR-F52 (kit com suporte)",
   "meli": "https://meli.la/239ivk3",
-  "preco": 998,
-  "precoEm": "2026-11-26",
+  "preco": 814,
+  "precoEm": "2026-11-27",
   "categoria": "teclado",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-26",
       "preco": 998
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 814
     }
   ],
   "nota": 4.8,
@@ -33,9 +37,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1089,
-    "off": 8,
-    "parcelas": "12x R$ 96,88",
+    "antes": 958,
+    "off": 15,
+    "pix": true,
+    "cartao": 958,
+    "parcelas": "10x R$ 95,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-teclado-61-teclas-psr-f52-yamaha-com-suporte-em-x-cor-preto/p/MLB33419060"
   },

@@ -1,13 +1,17 @@
 {
   "nome": "Pandeiro Vip Jesus holográfico 10\"",
   "meli": "https://meli.la/1ZywN7L",
-  "preco": 78.37,
-  "precoEm": "2026-11-26",
+  "preco": 63,
+  "precoEm": "2026-11-27",
   "categoria": "percussao",
   "historico": [
     {
       "data": "2026-11-25",
       "preco": 78.37
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 63
     }
   ],
   "nota": 4.9,
@@ -46,7 +50,8 @@
     "status": "ativo",
     "desde": "2026-11-25",
     "antes": 89,
-    "off": 11,
+    "off": 29,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/pandeiro-jesus-profissional-holografico-10pol/p/MLB69910923"
   },

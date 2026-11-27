@@ -1,8 +1,8 @@
 {
   "nome": "Fender Frontman 20G",
   "meli": "https://meli.la/15TNP55",
-  "preco": 1271,
-  "precoEm": "2026-11-26",
+  "preco": 1169,
+  "precoEm": "2026-11-27",
   "categoria": "amplificador",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-13",
       "preco": 1271
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1169
     }
   ],
   "imagem": "/images/produtos/fender-frontman-20g.webp",
@@ -23,7 +27,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "12x R$ 123,40",
+    "antes": 1271,
+    "off": 8,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/combo-fender-frontman-20-g-231-1515-000/up/MLBU3757660202"
   },

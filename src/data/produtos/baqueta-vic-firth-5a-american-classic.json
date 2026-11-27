@@ -1,8 +1,8 @@
 {
   "nome": "Baqueta Vic Firth American Classic 5A (par)",
   "meli": "https://meli.la/28MGRQf",
-  "preco": 97,
-  "precoEm": "2026-11-26",
+  "preco": 98,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-25",
       "preco": 97
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 98
     }
   ],
   "imagem": "/images/produtos/baqueta-vic-firth-5a-american-classic.webp",
@@ -71,7 +75,8 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-16",
-    "parcelas": "3x R$ 32,29 sem juros",
+    "antes": 123,
+    "off": 20,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/baqueta-vic-firth-american-classic-5a-madeira/p/MLB34721533"
   }

@@ -1,8 +1,8 @@
 {
   "nome": "Violão Queen's Conthey D13751 (cordas de aço)",
   "meli": "https://meli.la/2cQcmLJ",
-  "preco": 191,
-  "precoEm": "2026-11-26",
+  "preco": 195,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-26",
       "preco": 191
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 195
     }
   ],
   "nota": 4.6,

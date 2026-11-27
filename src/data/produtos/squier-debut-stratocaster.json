@@ -1,8 +1,8 @@
 {
   "nome": "Squier Debut Stratocaster",
   "meli": "https://meli.la/2QfDgoY",
-  "preco": 1630,
-  "precoEm": "2026-11-26",
+  "preco": 1424,
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-26",
       "preco": 1630
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1424
     }
   ],
   "imagem": "/images/produtos/squier-debut-stratocaster.webp",
@@ -59,9 +63,11 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 1772,
-    "off": 8,
-    "parcelas": "10x R$ 163,05 sem juros",
+    "antes": 1499,
+    "off": 5,
+    "pix": true,
+    "cartao": 1499,
+    "parcelas": "10x R$ 149,90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-fender-squier-debut-stratocaster-lr-cor-preto/p/MLB38228088"
   },

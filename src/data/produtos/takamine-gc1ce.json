@@ -1,8 +1,8 @@
 {
   "nome": "Takamine GC1CE (nylon)",
   "meli": "https://meli.la/1XwNZJ7",
-  "preco": 2697,
-  "precoEm": "2026-11-26",
+  "preco": 2158,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-26",
       "preco": 2697
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2158
     }
   ],
   "nota": 4.8,
@@ -61,6 +65,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
+    "antes": 2697,
+    "off": 19,
+    "pix": true,
+    "cartao": 2697,
     "parcelas": "10x R$ 269,79 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-takamine-g-series-gc1ce-n-gc1ce-n-para-destros-natural-ebano-brilhante/p/MLB16044324"

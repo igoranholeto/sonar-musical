@@ -1,8 +1,8 @@
 {
   "nome": "Microfone Fifine AM8 (USB e XLR)",
   "meli": "https://meli.la/1JfKHKh",
-  "preco": 309,
-  "precoEm": "2026-11-26",
+  "preco": 317,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
@@ -36,6 +36,10 @@
     {
       "data": "2026-11-26",
       "preco": 309
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 317
     }
   ],
   "imagem": "/images/produtos/fifine-am8.webp",
@@ -79,7 +83,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-16",
-    "parcelas": "12x R$ 30,23",
+    "antes": 500,
+    "off": 36,
+    "parcelas": "12x R$ 31,01",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-gamer-fifine-am8-usbxlr-dinamico-rgb-para-stream-podcast-pc-mac-android-preto/p/MLB80859796"
   }

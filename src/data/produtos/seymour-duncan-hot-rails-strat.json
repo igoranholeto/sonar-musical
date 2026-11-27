@@ -1,8 +1,8 @@
 {
   "nome": "Captador Seymour Duncan Hot Rails Strat (ponte)",
   "meli": "https://meli.la/1JH5xrA",
-  "preco": 906,
-  "precoEm": "2026-11-26",
+  "preco": 985,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "ficha": [
     [
@@ -30,8 +30,8 @@
     "status": "ativo",
     "desde": "2026-11-26",
     "antes": 1069,
-    "off": 15,
-    "pix": true,
+    "off": 7,
+    "parcelas": "12x R$ 95,63",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/captador-seymour-duncan-hot-rails-ponte-black/up/MLBU3356762787"
   },
@@ -39,6 +39,10 @@
     {
       "data": "2026-11-26",
       "preco": 906
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 985
     }
   ],
   "imagem": "/images/produtos/seymour-duncan-hot-rails-strat.webp",

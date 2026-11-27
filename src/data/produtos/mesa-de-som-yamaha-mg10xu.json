@@ -1,8 +1,8 @@
 {
   "nome": "Mesa de som Yamaha MG10XU",
   "meli": "https://meli.la/1SgZLSH",
-  "preco": 1769,
-  "precoEm": "2026-11-26",
+  "preco": 1592,
+  "precoEm": "2026-11-27",
   "categoria": "estudio",
   "historico": [
     {
@@ -40,6 +40,10 @@
     {
       "data": "2026-11-26",
       "preco": 1769
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1592
     }
   ],
   "imagemAlt": "Mesa de som Yamaha MG10XU",
@@ -47,8 +51,8 @@
     "status": "ativo",
     "desde": "2026-11-12",
     "antes": 2117,
-    "off": 16,
-    "parcelas": "12x R$ 170,03",
+    "off": 24,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/mesa-de-som-console-10-canais-usb-efx-yamaha-mg10xu/p/MLB15954993"
   },

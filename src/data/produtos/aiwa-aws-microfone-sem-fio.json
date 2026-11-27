@@ -1,8 +1,8 @@
 {
   "nome": "Microfone sem fio Aiwa AWS (2 de mão)",
   "meli": "https://meli.la/2n2gK9N",
-  "preco": 264,
-  "precoEm": "2026-11-26",
+  "preco": 271,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-26",
       "preco": 264
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 271
     }
   ],
   "nota": 5,
@@ -50,7 +54,7 @@
     "status": "ativo",
     "desde": "2026-11-25",
     "antes": 649,
-    "off": 59,
+    "off": 58,
     "pix": true,
     "cartao": 330,
     "parcelas": "6x R$ 54,98 sem juros",

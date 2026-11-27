@@ -1,8 +1,8 @@
 {
   "nome": "Captadores Fender Tex-Mex Telecaster (ponte e braço)",
   "meli": "https://meli.la/2ig4j2z",
-  "preco": 660,
-  "precoEm": "2026-11-26",
+  "preco": 777,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "ficha": [
     [
@@ -29,9 +29,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "antes": 777,
-    "off": 15,
-    "parcelas": "12x R$ 63,85",
+    "parcelas": "12x R$ 75,12",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/kit-de-captadores-fender-tex-mex-telecaster-pickup-set/up/MLBU1736731945"
   },
@@ -39,6 +37,10 @@
     {
       "data": "2026-11-26",
       "preco": 660
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 777
     }
   ],
   "imagem": "/images/produtos/captadores-fender-tex-mex-tele.webp",

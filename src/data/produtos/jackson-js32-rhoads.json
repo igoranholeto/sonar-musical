@@ -2,7 +2,7 @@
   "nome": "Jackson JS32 Rhoads",
   "meli": "https://meli.la/1J4N4QW",
   "preco": 4104,
-  "precoEm": "2026-11-25",
+  "precoEm": "2026-11-27",
   "categoria": "guitarra",
   "historico": [
     {
@@ -25,8 +25,10 @@
   "imagem": "/images/produtos/jackson-js32-rhoads.webp",
   "imagemAlt": "Jackson JS32 Rhoads",
   "anuncio": {
-    "status": "encerrado",
-    "desde": "2026-11-26",
+    "status": "ativo",
+    "desde": "2026-11-27",
+    "parcelas": "12x R$ 394,55",
+    "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/guitarra-eletrica-jackson-js-series-rhoads-js32-de-choupo-ivory-brilhante-com-diapasao-de-amaranto/p/MLB17932227"
   },
   "ficha": [

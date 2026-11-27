@@ -1,8 +1,8 @@
 {
   "nome": "Giannini Start N-14",
   "meli": "https://meli.la/2qJ4A17",
-  "preco": 515,
-  "precoEm": "2026-11-26",
+  "preco": 522,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-10",
       "preco": 515
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 522
     }
   ],
   "imagemAlt": "Giannini Start N-14",
@@ -28,8 +32,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 643,
-    "off": 20,
-    "parcelas": "10x R$ 51,45 sem juros",
+    "off": 18,
+    "parcelas": "10x R$ 52,15 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-giannini-acustico-nylon-estudo-n-14-natural/p/MLB37006505"
   },

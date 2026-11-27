@@ -1,8 +1,8 @@
 {
   "nome": "Rozini Studio RC12",
   "meli": "https://meli.la/2TVn4FD",
-  "preco": 1102,
-  "precoEm": "2026-11-26",
+  "preco": 961,
+  "precoEm": "2026-11-27",
   "categoria": "cavaquinho",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-25",
       "preco": 1102
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 961
     }
   ],
   "imagem": "/images/produtos/rozini-studio-rc12.webp",
@@ -32,8 +36,10 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 1451,
-    "off": 24,
-    "parcelas": "10x R$ 110,29 sem juros",
+    "off": 33,
+    "pix": true,
+    "cartao": 1067,
+    "parcelas": "10x R$ 106,80 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cavaquinho-rozini-studio-acustico-verniz-fosco-louro-preto-caixa-baixa-4-cordas-em-aco-braco-cedro-escala-purple-heart/p/MLB26729870"
   },

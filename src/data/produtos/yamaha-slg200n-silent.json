@@ -1,8 +1,8 @@
 {
   "nome": "Yamaha SLG200N Silent",
   "meli": "https://meli.la/2fgtjBR",
-  "preco": 5999,
-  "precoEm": "2026-11-26",
+  "preco": 5682,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -24,13 +24,17 @@
     {
       "data": "2026-11-26",
       "preco": 5999
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 5682
     }
   ],
   "imagemAlt": "Yamaha SLG200N Silent",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 599,90 sem juros",
+    "parcelas": "10x R$ 568,23 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-classico-yamaha-slg200n-para-destros-tobacco-brown-sunburst-mogno/p/MLB16044415"
   },

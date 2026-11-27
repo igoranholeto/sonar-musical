@@ -1,8 +1,8 @@
 {
   "nome": "Cajon FSA Strike SK1000",
   "meli": "https://meli.la/33vGmrh",
-  "preco": 340,
-  "precoEm": "2026-11-26",
+  "preco": 300,
+  "precoEm": "2026-11-27",
   "categoria": "percussao",
   "historico": [
     {
@@ -16,15 +16,19 @@
     {
       "data": "2026-11-26",
       "preco": 340
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 300
     }
   ],
   "imagemAlt": "Cajon FSA Strike SK1000",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "antes": 500,
-    "off": 32,
-    "parcelas": "12x R$ 33,25",
+    "antes": 410,
+    "off": 26,
+    "parcelas": "12x R$ 29,35",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/cajon-fsa-strike-sk1000-natural-acustico-com-esteira-12-fios/p/MLB27987816"
   },

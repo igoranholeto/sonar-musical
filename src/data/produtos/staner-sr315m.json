@@ -1,13 +1,17 @@
 {
   "nome": "Caixa ativa Staner SR315M (15\", 300 W)",
-  "meli": "https://meli.la/2qEyZcc",
-  "preco": 2321,
-  "precoEm": "2026-11-26",
+  "meli": "https://meli.la/1Zzo2t7",
+  "preco": 1854,
+  "precoEm": "2026-11-27",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-26",
       "preco": 2321
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 1854
     }
   ],
   "nota": 4.9,
@@ -52,12 +56,12 @@
   ],
   "anuncio": {
     "status": "ativo",
-    "desde": "2026-11-26",
-    "antes": 2699,
-    "off": 14,
-    "parcelas": "10x R$ 232,11 sem juros",
+    "desde": "2026-11-27",
+    "antes": 6220,
+    "off": 70,
+    "parcelas": "10x R$ 185,40 sem juros",
     "freteGratis": true,
-    "catalogo": "https://www.mercadolivre.com.br/caixa-acustica-ativa-15-staner-sr315m-300w-rms-bluetooth/up/MLBU3243797846"
+    "catalogo": "https://www.mercadolivre.com.br/caixa-ativa-staner-300w-2-vias-bluetooth-radio-fm-sr315m-preta/p/MLB62223711"
   },
   "imagem": "/images/produtos/staner-sr315m.webp",
   "imagemAlt": "Caixa ativa Staner SR315M (15\", 300 W)"

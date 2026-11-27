@@ -1,22 +1,26 @@
 {
   "nome": "Piano Digital Tomate MSC-A3",
   "meli": "https://meli.la/1L1XoAW",
-  "preco": 2262,
-  "precoEm": "2026-11-26",
+  "preco": 2265,
+  "precoEm": "2026-11-27",
   "categoria": "piano",
   "historico": [
     {
       "data": "2026-11-13",
       "preco": 2262
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 2265
     }
   ],
   "imagemAlt": "Piano Digital Tomate MSC-A3",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "antes": 2332,
-    "off": 3,
-    "parcelas": "10x R$ 226,20 sem juros",
+    "antes": 2489,
+    "off": 9,
+    "parcelas": "10x R$ 226,53 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-digital-tomate-msc-a3-88-teclas-profissional-cpedal-triplo-preto/p/MLB69721382"
   },

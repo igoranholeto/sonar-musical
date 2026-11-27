@@ -1,8 +1,8 @@
 {
   "nome": "Fonte isolada M-Vave VD-SK1 (8 saídas)",
   "meli": "https://meli.la/2Vddziu",
-  "preco": 82,
-  "precoEm": "2026-11-26",
+  "preco": 65,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "historico": [
     {
@@ -28,6 +28,10 @@
     {
       "data": "2026-11-21",
       "preco": 82
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 65
     }
   ],
   "imagemAlt": "Fonte isolada M-Vave VD-SK1 (8 saídas)",
@@ -35,7 +39,8 @@
     "status": "ativo",
     "desde": "2026-11-11",
     "antes": 120,
-    "off": 32,
+    "off": 45,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/m-vave-fonte-de-alimentacao-para-pedal-de-efeito-de-guitar/p/MLB37142407"
   },

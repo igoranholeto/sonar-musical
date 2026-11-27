@@ -1,8 +1,8 @@
 {
   "nome": "Casio CDP-S360 (piano digital)",
   "meli": "https://meli.la/2EABHhS",
-  "preco": 3808,
-  "precoEm": "2026-11-26",
+  "preco": 3161,
+  "precoEm": "2026-11-27",
   "categoria": "piano",
   "historico": [
     {
@@ -32,13 +32,19 @@
     {
       "data": "2026-11-26",
       "preco": 3808
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 3161
     }
   ],
   "imagemAlt": "Casio CDP-S360 (piano digital)",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-17",
-    "parcelas": "10x R$ 380,80 sem juros",
+    "antes": 3719,
+    "off": 15,
+    "parcelas": "12x R$ 303,84",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/piano-casio-cdp-s360-stage-digital-preto/p/MLB46163762"
   },

@@ -1,8 +1,8 @@
 {
   "nome": "Tagima Vegas Gran Reserva Nylon",
   "meli": "https://meli.la/29424UC",
-  "preco": 910,
-  "precoEm": "2026-11-26",
+  "preco": 851,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-26",
       "preco": 910
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 851
     }
   ],
   "imagem": "/images/produtos/tagima-vegas-gran-reserva-nylon.webp",
@@ -31,9 +35,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-25",
-    "antes": 1117,
-    "off": 18,
-    "parcelas": "12x R$ 88,37",
+    "antes": 1235,
+    "off": 31,
+    "parcelas": "12x R$ 82,30",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-tagima-nylon-gran-reserva-vegas-eq-natural-open-pore-marrom-escuro/p/MLB27788719"
   },

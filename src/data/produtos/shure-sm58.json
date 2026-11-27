@@ -1,8 +1,8 @@
 {
   "nome": "Shure SM58",
   "meli": "https://meli.la/22cgL9z",
-  "preco": 961,
-  "precoEm": "2026-11-26",
+  "preco": 930,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
@@ -20,6 +20,10 @@
     {
       "data": "2026-11-22",
       "preco": 961
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 930
     }
   ],
   "imagemAlt": "Shure SM58",
@@ -27,8 +31,8 @@
     "status": "ativo",
     "desde": "2026-11-12",
     "antes": 1558,
-    "off": 38,
-    "parcelas": "10x R$ 96,09 sem juros",
+    "off": 40,
+    "parcelas": "10x R$ 93 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-shure-sm58-lc-dinamico-de-mao-com-fio-preto/up/MLBU4938663631"
   },

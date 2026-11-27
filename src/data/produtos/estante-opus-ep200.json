@@ -1,8 +1,8 @@
 {
   "nome": "Estante Opus EP200 para piano digital",
   "meli": "https://meli.la/1g1ge9X",
-  "preco": 484,
-  "precoEm": "2026-11-26",
+  "preco": 400,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "historico": [
     {
@@ -20,13 +20,19 @@
     {
       "data": "2026-11-18",
       "preco": 484
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 400
     }
   ],
   "imagemAlt": "Estante Opus EP200 para piano digital",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-13",
-    "parcelas": "9x R$ 53,78 sem juros",
+    "antes": 635,
+    "off": 37,
+    "parcelas": "7x R$ 57,14 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/estante-suporte-piano-digital-opus-ep200-yamaha-p143145225-cor-preto/p/MLB28059580"
   },

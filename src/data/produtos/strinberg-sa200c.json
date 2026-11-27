@@ -1,8 +1,8 @@
 {
   "nome": "Strinberg SA200C",
   "meli": "https://meli.la/1bqLD4Z",
-  "preco": 899,
-  "precoEm": "2026-11-26",
+  "preco": 911,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -52,6 +52,10 @@
     {
       "data": "2026-11-26",
       "preco": 899
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 911
     }
   ],
   "imagem": "/images/produtos/strinberg-sa200c.webp",
@@ -59,7 +63,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "12x R$ 86,93",
+    "parcelas": "12x R$ 88,46",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-eletroacustico-strinberg-sa200c-black-cordas-metal-fosco/p/MLB15561686"
   },

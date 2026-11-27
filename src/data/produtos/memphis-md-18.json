@@ -1,8 +1,8 @@
 {
   "nome": "Memphis MD-18 Folk Eletroacústico",
   "meli": "https://meli.la/1GD83wg",
-  "preco": 899.99,
-  "precoEm": "2026-11-26",
+  "preco": 837,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -24,6 +24,10 @@
     {
       "data": "2026-11-24",
       "preco": 899.99
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 837
     }
   ],
   "imagemAlt": "Violão Tagima Memphis MD-18 folk eletroacústico preto",
@@ -31,6 +35,10 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-24",
+    "antes": 900,
+    "off": 7,
+    "pix": true,
+    "cartao": 900,
     "parcelas": "10x R$ 90 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-estudante-folk-eletrico-memphis-md-18-nts-cordas-aco/up/MLBU5912392580"

@@ -1,8 +1,8 @@
 {
   "nome": "Kadosh K-492HH (2 headsets sem fio)",
   "meli": "https://meli.la/1vWXv1n",
-  "preco": 993,
-  "precoEm": "2026-11-26",
+  "preco": 941,
+  "precoEm": "2026-11-27",
   "categoria": "microfone",
   "historico": [
     {
@@ -16,6 +16,10 @@
     {
       "data": "2026-11-26",
       "preco": 993
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 941
     }
   ],
   "nota": 4.5,
@@ -63,9 +67,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-21",
-    "antes": 1328,
-    "off": 25,
-    "parcelas": "12x R$ 96,40",
+    "antes": 1275,
+    "off": 26,
+    "parcelas": "12x R$ 91,32",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/microfone-sem-fio-duplo-kadosh-k-492hh-profissional-com-capsula-cardioide-para-igrejas-e-shows/p/MLB20989002"
   }

@@ -1,8 +1,8 @@
 {
   "nome": "Tagima TBW-300 Folk",
   "meli": "https://meli.la/2wLY4WT",
-  "preco": 927,
-  "precoEm": "2026-11-26",
+  "preco": 764,
+  "precoEm": "2026-11-27",
   "categoria": "violao",
   "historico": [
     {
@@ -40,13 +40,19 @@
     {
       "data": "2026-11-26",
       "preco": 927
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 764
     }
   ],
   "imagemAlt": "Tagima TBW-300 Folk",
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-11",
-    "parcelas": "10x R$ 92,70 sem juros",
+    "antes": 899,
+    "off": 15,
+    "parcelas": "12x R$ 73,88",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/violao-tagima-aco-folk-half-cutaway-eq-okume-op-tbw-300-bk/p/MLB49694257"
   },

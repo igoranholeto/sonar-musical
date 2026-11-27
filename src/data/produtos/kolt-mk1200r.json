@@ -1,13 +1,17 @@
 {
   "nome": "Monitor Kolt MK1200R (par)",
   "meli": "https://meli.la/2iMiCU1",
-  "preco": 689,
-  "precoEm": "2026-11-26",
+  "preco": 725,
+  "precoEm": "2026-11-27",
   "categoria": "estudio",
   "historico": [
     {
       "data": "2026-11-26",
       "preco": 689
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 725
     }
   ],
   "nota": 4.8,
@@ -49,7 +53,7 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "parcelas": "12x R$ 66,63",
+    "parcelas": "12x R$ 70,08",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/monitor-de-referencia-mk1200r-kolt-2x18w/p/MLB22575880"
   },

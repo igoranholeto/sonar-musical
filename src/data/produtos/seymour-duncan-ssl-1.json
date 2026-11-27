@@ -1,8 +1,8 @@
 {
   "nome": "Captador Seymour Duncan SSL-1 Vintage Staggered (Strat)",
   "meli": "https://meli.la/21DbsCd",
-  "preco": 911,
-  "precoEm": "2026-11-26",
+  "preco": 990,
+  "precoEm": "2026-11-27",
   "categoria": "acessorio",
   "ficha": [
     [
@@ -29,10 +29,6 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-26",
-    "antes": 990,
-    "off": 8,
-    "pix": true,
-    "cartao": 990,
     "parcelas": "10x R$ 99 sem juros",
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/captador-seymour-duncan-ssl-1-vintage-staggered-strat-branco/p/MLB28257307"
@@ -41,6 +37,10 @@
     {
       "data": "2026-11-26",
       "preco": 911
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 990
     }
   ],
   "imagem": "/images/produtos/seymour-duncan-ssl-1.webp",

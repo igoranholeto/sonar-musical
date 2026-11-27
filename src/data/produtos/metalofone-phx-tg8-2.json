@@ -1,8 +1,8 @@
 {
   "nome": "Metalofone infantil PHX TG8-2 (8 notas)",
   "meli": "https://meli.la/1Xmz52G",
-  "preco": 72,
-  "precoEm": "2026-11-26",
+  "preco": 65,
+  "precoEm": "2026-11-27",
   "categoria": "percussao",
   "historico": [
     {
@@ -12,6 +12,10 @@
     {
       "data": "2026-11-23",
       "preco": 72
+    },
+    {
+      "data": "2026-11-27",
+      "preco": 65
     }
   ],
   "nota": 4.7,
@@ -71,6 +75,9 @@
   "anuncio": {
     "status": "ativo",
     "desde": "2026-11-22",
+    "antes": 72,
+    "off": 10,
+    "pix": true,
     "freteGratis": true,
     "catalogo": "https://www.mercadolivre.com.br/metalofone-xilofone-infantil-phx-tg8-2-colorido-com-8-notas/p/MLB24993934"
   }
